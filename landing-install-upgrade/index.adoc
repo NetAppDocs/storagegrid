@@ -1,0 +1,10 @@
+---
+layout: landing-page
+sidebar: sidebar
+permalink: landing-install-upgrade/index.html
+summary: A StorageGRID system consists of individual hardware-based and software-based nodes. You first install the hardware for each appliance node and configure each Linux or VMware host. Then, you install StorageGRID software on each appliance or software host and connect the nodes into a grid.
+---
+= Install, upgrade, and hotfix StorageGRID
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

@@ -1,0 +1,10 @@
+---
+layout: landing-page
+sidebar: sidebar
+permalink: landing-recover/index.html
+summary: If a grid node fails, you can recover it by replacing the failed physical or virtual server, reinstalling StorageGRID software, and restoring recoverable data.
+---
+= Recover or replace nodes
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

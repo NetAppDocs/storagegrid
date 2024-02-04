@@ -1,0 +1,10 @@
+---
+layout: landing-page
+sidebar: sidebar
+permalink: landing-monitor-troubleshoot/index.html
+summary: When your system is up and running, you should monitor its activities on a regular basis and troubleshoot and resolve any alerts. You might also want to configure an external syslog server, use SNMP monitoring, or collect additional data.
+---
+= Monitor and troubleshoot a StorageGRID system
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/
