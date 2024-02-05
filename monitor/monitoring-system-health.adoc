@@ -85,9 +85,9 @@ The node is connected to the grid.
 
 *Resolved alerts*: You can search and view a history of alerts that have been resolved.
 
-Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38[Video: Alerts overview for StorageGRID 11.8^]
+Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38[Video: Alerts overview for StorageGRID 11.9^]
 
-image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38" alt="Video: Alerts overview for StorageGRID 11.8", window=_blank]
+image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38" alt="Video: Alerts overview for StorageGRID 11.9", window=_blank]
 
 The following table describes the information shown in the Grid Manager for current and resolved alerts.
 
