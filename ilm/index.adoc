@@ -26,10 +26,10 @@ Use these instructions to:
 
 To learn more, review these videos:
 
-* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb6294c0-e9cf-4d04-9d73-b0b901025b2f[Video: Information lifecycle management rules in StorageGRID 11.8^].
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb6294c0-e9cf-4d04-9d73-b0b901025b2f[Video: Information lifecycle management rules in StorageGRID 11.9^].
 +
-image::../media/video-screenshot-ilm-rules-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb6294c0-e9cf-4d04-9d73-b0b901025b2f" alt="Video: Information lifecycle management rules in StorageGRID 11.8", window=_blank]
+image::../media/video-screenshot-ilm-rules-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb6294c0-e9cf-4d04-9d73-b0b901025b2f" alt="Video: Information lifecycle management rules in StorageGRID 11.9", window=_blank]
 
-* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb967139-e032-49ef-b529-b0ba00a7f0ad[Video: Information lifecycle management policies in StorageGRID 11.8^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb967139-e032-49ef-b529-b0ba00a7f0ad[Video: Information lifecycle management policies in StorageGRID 11.9^]
 +
-image::../media/video-screenshot-ilm-policies-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb967139-e032-49ef-b529-b0ba00a7f0ad" alt="Video: Information lifecycle management policies in StorageGRID 11.8", window=_blank]
+image::../media/video-screenshot-ilm-policies-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb967139-e032-49ef-b529-b0ba00a7f0ad" alt="Video: Information lifecycle management policies in StorageGRID 11.9", window=_blank]

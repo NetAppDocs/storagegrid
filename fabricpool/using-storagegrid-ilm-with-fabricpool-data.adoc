@@ -22,7 +22,7 @@ CAUTION: To avoid data loss, do not use an ILM rule that will expire or delete F
 * You have reviewed the link:best-practices-ilm.html[best practices for using ILM with FabricPool data].
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[ILM or Root access permission].
-* If you upgraded to StorageGRID 11.8 from a previous StorageGRID version, you have configured the storage pool you will use. In general, you should create a storage pool for each StorageGRID site you will use to store data. 
+* If you upgraded to StorageGRID 11.9 from a previous StorageGRID version, you have configured the storage pool you will use. In general, you should create a storage pool for each StorageGRID site you will use to store data. 
 +
 NOTE: This prerequisite does not apply if you initially installed StorageGRID 11.7 or 11.8. When you initially install either of these versions, storage pools are automatically created for each site.
 

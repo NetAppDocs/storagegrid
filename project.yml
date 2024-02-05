@@ -1,5 +1,5 @@
 settings:
-  name: "StorageGRID 11.8"
+  name: "StorageGRID 11.9"
   internal:
     pdf_enabled: false
     termcheck_enabled: false
@@ -9,7 +9,7 @@ settings:
     hide_language_selector: true
 sidebar:
   entries:
-    - title: 'StorageGRID 11.8 Docs'
+    - title: 'StorageGRID 11.9 Docs'
       url: /index.html
     - title: Release notes
       url: "/release-notes/index.html"
