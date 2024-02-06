@@ -38,15 +38,7 @@ The recovery process begins. The Grid Manager might become unavailable for a few
 +
 NOTE: To configure a relying party trust, see link:../admin/configuring-sso.html[Configure single sign-on]. To access the default server certificate, log in to the command shell of the Admin Node. Go to the `/var/local/mgmt-api` directory, and select the `server.crt` file.
 
-. Determine if you need to apply a hotfix.
- .. Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
- .. Select *NODES*.
- .. From the list on the left, select the primary Admin Node.
- .. On the Overview tab, note the version displayed in the *Software Version* field.
- .. Select any other grid node.
- .. On the Overview tab, note the version displayed in the *Software Version* field.
-  *** If the versions displayed in the *Software Version* fields are the same, you don't need to apply a hotfix.
-  *** If the versions displayed in the *Software Version* fields are different, you must link:storagegrid-hotfix-procedure.html[apply a hotfix] to update the recovered primary Admin Node to the same version.
+. link:assess-hotfix-requirement-during-primary-admin-node-recovery.html[Determine if you need to apply a hotfix].
 
 
 
