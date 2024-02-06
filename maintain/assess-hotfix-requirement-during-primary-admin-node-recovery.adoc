@@ -13,7 +13,7 @@ After recovering a primary admin node, determine if you need to apply a hotfix.
 
 .Before you begin
 
-Node recovery is complete.
+Primary admin node recovery is complete.
 
 .Steps
  
