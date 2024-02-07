@@ -38,7 +38,7 @@ The recovery process begins. The Grid Manager might become unavailable for a few
 +
 NOTE: To configure a relying party trust, see link:../admin/configuring-sso.html[Configure single sign-on]. To access the default server certificate, log in to the command shell of the Admin Node. Go to the `/var/local/mgmt-api` directory, and select the `server.crt` file.
 
-. link:assess-hotfix-requirement-during-primary-admin-node-recovery.html[Determine if you need to apply a hotfix].
+CAUTION: After recovering a primary admin node, link:assess-hotfix-requirement-during-primary-admin-node-recovery.html[determine if you need to apply a hotfix].
 
 
 
