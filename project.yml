@@ -78,7 +78,7 @@ sidebar:
           entries:
           - title: Overview
             url: "/maintain/grid-node-decommissioning.html"
-          - title: Considerations for Admin, Gateway, or Archive Nodes
+          - title: Considerations for Admin or Gateway Nodes
             url: "/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html"
           - title: Considerations for Storage Nodes
             entries:
