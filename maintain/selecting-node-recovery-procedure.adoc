@@ -31,9 +31,6 @@ link:recovering-from-admin-node-failures.html[Recover from Admin Node failures]
 
 |Gateway Node
 | link:recovering-from-gateway-node-failures.html[Recover from Gateway Node failures].
-
-|Archive Node
-| link:recovering-from-archive-node-failures.html[Recover from Archive Node failures].
 |===
 
 NOTE: If a server that is hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node, you must recover that node first. Recovering the primary Admin Node first prevents other node recoveries from halting as they wait to contact the primary Admin Node.

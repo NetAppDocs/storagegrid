@@ -343,15 +343,9 @@ sidebar:
           url: "/maintain/selecting-start-recovery-to-configure-gateway-node.html"
       - title: Recover from Archive Node failures
         entries:
-        - title: Workflow
+        - title: Recover from Archive Node failures
           pdf-filename: Recover from Archive Node failures
-          url: "/maintain/recovering-from-archive-node-failures.html"    
-        - title: Replace Archive Node
-          url: "/maintain/replacing-archive-node.html"
-        - title: Select Start Recovery to configure Archive Node
-          url: "/maintain/selecting-start-recovery-to-configure-archive-node.html"
-        - title: Reset Archive Node connection to the cloud
-          url: "/maintain/resetting-archive-node-connection-to-cloud.html"
+          url: "/maintain/recovering-from-archive-node-failures.html"
       - title: Replace Linux node
         entries:
         - title: Overview
