@@ -76,6 +76,10 @@ The following is a complete list of StorageGRID services.
 | Monitors and logs all audited system events and transactions to a text log file.
 | Admin Nodes
 
+| ARC (Archive)
+| Provides the management interface with which you configure connections to external archival storage, such as the cloud through an S3 interface.
+| Archive Nodes
+
 | Cassandra Reaper
 | Performs automatic repairs of object metadata.
 | Storage Nodes

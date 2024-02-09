@@ -11,4 +11,4 @@ summary: 'Support for Archive Nodes has been removed.'
 [.lead]
 Support for Archive Nodes has been removed.
 
-For information about Archive Nodes, see https://docs.netapp.com/us-en/storagegrid-118/primer/what-archive-node-is.html[What is an Archive Node^].
+For information about Archive Nodes, see https://docs.netapp.com/us-en/storagegrid-118/primer/what-archive-node-is.html[What is an Archive Node (StorageGRID 11.8 doc site)^].
