@@ -215,8 +215,6 @@ sidebar:
         entries:
         - title: 'Linux: Migrate grid node to new host'
           url: "/maintain/linux-migrating-grid-node-to-new-host.html"
-        - title: Archive Node maintenance for TSM middleware
-          url: "/maintain/archive-node-maintenance-for-tsm-middleware.html"
         - title: 'VMware: Configure virtual machine for automatic restart'
           url: "/maintain/vmware-configuring-virtual-machine-for-automatic-restart.html"
     - title: Recover or replace nodes
