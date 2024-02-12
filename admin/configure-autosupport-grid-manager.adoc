@@ -22,7 +22,7 @@ If you want to change the configuration of StorageGRID AutoSupport, make your ch
 +
 link:configuring-admin-proxy-settings.html[Learn about configuring admin proxy settings].
 
-* If you will use SMTP as the protocol for AutoSupport packages, you have configured an SMTP mail server. The same mail server configuration is used for alarm email notifications (legacy system).
+* If you will use SMTP as the protocol for AutoSupport packages, you have configured an SMTP mail server.
 
 .About this task
 

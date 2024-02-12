@@ -53,7 +53,4 @@ When this request is complete, all features, including the Change tenant root pa
 The previous example causes _all_ deactivated features to be reactivated. If other features have been deactivated that should remain deactivated, you must explicitly specify them in the PUT request. For example, to reactivate the Change tenant root password feature and continue to deactivate the Alarm acknowledgment feature, send this PUT request:
 
 `{ "grid": { "alarmAcknowledgment": true } }`
-
 ====
-
-
