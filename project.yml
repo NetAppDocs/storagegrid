@@ -307,6 +307,8 @@ sidebar:
             url: "/maintain/replacing-primary-admin-node.html"
           - title: Configure replacement primary Admin Node
             url: "/maintain/configuring-replacement-primary-admin-node.html"
+          - title: Determine hotfix requirement for primary Admin Node
+            url: "/maintain/assess-hotfix-requirement-during-primary-admin-node-recovery.html"
           - title: Restore audit log on recovered primary Admin Node
             url: "/maintain/restoring-audit-log-on-recovered-primary-admin-node.html"
           - title: Restore Admin Node database when recovering primary Admin Node
