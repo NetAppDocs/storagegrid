@@ -13,7 +13,7 @@ You might need to decommission a node that is not currently connected to the gri
 
 .Before you begin
 
-* You understand the considerations for decommissioning link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Admin, Gateway, and Archive Nodes] and the considerations for decommissioning link:considerations-for-decommissioning-storage-nodes.html[Storage Nodes].
+* You understand the considerations for decommissioning link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Admin and Gateway Nodes] and the considerations for decommissioning link:considerations-for-decommissioning-storage-nodes.html[Storage Nodes].
 * You have obtained all prerequisite items.
 * You have ensured that no data repair jobs are active. See link:checking-data-repair-jobs.html[Check data repair jobs].
 * You have confirmed that Storage Node recovery is not in progress anywhere in the grid. If it is, you must wait until any Cassandra rebuild performed as part of the recovery is complete. You can then proceed with decommissioning.
@@ -23,9 +23,7 @@ You might need to decommission a node that is not currently connected to the gri
 
 .About this task
 
-You can identify disconnected nodes by looking for Unknown (blue) or Administratively Down (gray) icons in the *Health* column. In the example, the Archive Node named DC1-ARC1 is disconnected.
-
-image::../media/decommission_nodes_page_one_disconnected.png[Decommission Nodes page with one node disconnected]
+You can identify disconnected nodes by looking for the blue Unknown icon image:../media/icon_alarm_blue_unknown.png[Icon Unknown] or the gray Administratively down icon image:../media/icon_alarm_gray_administratively_down.png[Icon Administratively down] in the *Health* column.
 
 Before decommissioning any disconnected node, note the following:
 

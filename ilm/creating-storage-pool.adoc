@@ -46,7 +46,7 @@ NOTE: For new installations of StorageGRID 11.6 or earlier, the All Storage Node
 
 . From the *Site* drop-down list, select a site for this storage pool.
 +
-When you select a site, the number of Storage Nodes and Archive Nodes in the table are automatically updated.
+When you select a site, the number of Storage Nodes in the table are automatically updated.
 +
 In general, don't use the All Sites site in any storage pool. ILM rules that use an All Sites storage pool place objects at any available site, giving you less control of object placement. Also, an All Sites storage pool uses the Storage Nodes at a new site immediately, which might not be the behavior you expect. 
 
@@ -58,6 +58,8 @@ The storage grade, _includes all storage grades_, includes all Storage Nodes at 
 +
 [NOTE]
 ====
+Support for Archive Nodes has been removed. However, some Archive Node settings are still visible in the Grid Manager.
+
 You are prevented from creating duplicate entries or from creating a storage pool that includes both the Archive Nodes storage grade and any storage grade that contains Storage Nodes.
 
 You are warned if you add more than one entry with different storage grades for a site.

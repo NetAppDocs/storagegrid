@@ -32,14 +32,14 @@ NOTE: You can't remove a storage pool if it is being used.
 +
 The details page for the storage pool appears.
 
-. View the *Nodes* tab to learn about the Storage Nodes or Archive Nodes included in the storage pool.
+. View the *Nodes* tab to learn about the Storage Nodes included in the storage pool.
 +
 The table includes the following information for each node:
 
 * Node name
 * Site name
 * Storage grade
-* Storage usage: The percentage of the total usable space for object data that has been used for the Storage Node. This field is not visible for Archive Node pools.
+* Storage usage: The percentage of the total usable space for object data that has been used for the Storage Node.
 +
 NOTE: The same Storage usage (%) value is also shown in the Storage Used - Object Data chart for each Storage Node (select *NODES* > *_Storage Node_* > *Storage*).
 

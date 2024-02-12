@@ -97,7 +97,7 @@ Learn about link:../ilm/manage-erasure-coding-profiles.html[deactivating an eras
 
 | No, you can't decommission an Archive Node unless the node is disconnected.
 | If an Archive Node is still connected, you can't remove it.
-| Complete the steps in link:../maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html#considerations-for-archive-node[Considerations for Archive Node] and then link:decommissioning-disconnected-grid-nodes.html[decommission the disconnected node]. 
+| Support for Archive Nodes has been removed. If you need to decommission an Archive Node, see https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-from-archive-node-failures.html[Recover from Archive Node failures (StorageGRID 11.8 doc site)^] 
 |===
 
 

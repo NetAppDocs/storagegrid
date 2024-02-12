@@ -158,7 +158,7 @@ If eth0 is configured as a trunk, Grid Network traffic flows over the trunk nati
 
 Only inbound admin traffic, such as used for SSH, Grid Manager, or Tenant Manager traffic, is supported over VLAN networks. Outbound traffic, such as used for NTP, DNS, LDAP, KMS, and Cloud Storage Pools, is not supported over VLAN networks.
 
-NOTE: VLAN interfaces can be added to Admin Nodes and Gateway Nodes only. You can't use a VLAN interface for client or admin access to Storage Nodes or Archive Nodes.
+NOTE: VLAN interfaces can be added to Admin Nodes and Gateway Nodes only. You can't use a VLAN interface for client or admin access to Storage Nodes.
 
 See link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces] for instructions and guidelines.
 

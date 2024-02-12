@@ -26,7 +26,6 @@ If you want to enable the global S3 Object Lock setting, you must ensure that th
 * It must create at least two replicated object copies or one erasure-coded copy.
 * These copies must exist on Storage Nodes for the entire duration of each line in the placement instructions.
 * Object copies can't be saved in a Cloud Storage Pool.
-* Object copies can't be saved on Archive Nodes.
 * At least one line of the placement instructions must start at day 0, using *Ingest time* as the reference time.
 * At least one line of the placement instructions must be "forever."
 

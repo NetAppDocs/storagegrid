@@ -49,5 +49,5 @@ VOLI
 a|
 Volume ID
 a|
-If available, the Volume ID of the Storage Node or Archive Node for the last known location of the lost object.
+If available, the Volume ID of the Storage Node for the last known location of the lost object.
 |===

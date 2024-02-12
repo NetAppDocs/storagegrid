@@ -19,7 +19,6 @@ Use the node decommission procedure when any of the following are true:
 +
 TIP: If you want to replace an older appliance with a newer appliance, consider https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/how-appliance-node-cloning-works.html[cloning the appliance node^] instead of adding a new appliance in an expansion and then decommissioning the old appliance. 
 
-
 * You require less total storage.
 * You no longer require a Gateway Node.
 * You no longer require a non-primary Admin Node.

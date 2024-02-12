@@ -36,9 +36,6 @@ If you took *any* of these corrective actions, you must perform additional recov
 |Gateway Node
 | link:selecting-start-recovery-to-configure-gateway-node.html[Select Start Recovery to configure Gateway Node]
 
-|Archive Node
-| link:selecting-start-recovery-to-configure-archive-node.html[Select Start Recovery to configure Archive Node]
-
 |Storage Node (software-based):
 
 * If you had to use the `--force` flag to import the node, or you issued `storagegrid node force-recovery _node-name_`
