@@ -1,6 +1,5 @@
 ---
 permalink: maintain/recovering-from-admin-node-failures.html
-redirect: 
 sidebar: sidebar
 keywords: recover, admin node failure, workflow
 summary: 'The recovery process for an Admin Node depends on whether it is the primary Admin Node or a non-primary Admin Node.'
