@@ -52,9 +52,7 @@ entries:
     - title: Monitor load balancing operations
       url: "/monitor/monitoring-load-balancing-operations.html"      
     - title: Monitor grid federation connections
-      url: "/monitor/grid-federation-monitor-connections.html"   
-    - title: Monitor archival capacity
-      url: "/monitor/monitoring-archival-capacity.html"      
+      url: "/monitor/grid-federation-monitor-connections.html"
   - title: Alerts and alarms
     entries:
     - title: Overview
