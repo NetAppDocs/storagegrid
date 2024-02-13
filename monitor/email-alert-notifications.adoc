@@ -24,8 +24,6 @@ If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin 
 . Select *ALERTS* > *Email setup*.
 +
 The Email Setup page appears.
-+
-image::../media/alerts_email_setup_disabled.png[Alerts Email Setup Disabled]
 
 . Select the *Enable Email Notifications* checkbox to indicate that you want notification emails to be sent when alerts reach configured thresholds.
 +

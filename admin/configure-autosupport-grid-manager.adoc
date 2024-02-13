@@ -18,9 +18,7 @@ If you want to change the configuration of StorageGRID AutoSupport, make your ch
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access permission].
 * If you will use HTTPS for sending AutoSupport packages, you have provided outbound internet access to the primary Admin Node, either directly or link:configuring-admin-proxy-settings.html[using a proxy server] (inbound connections not required).
-* If HTTP is selected on the StorageGRID AutoSupport page, you have configured a proxy server to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers will reject packages sent using HTTP.
-+
-link:configuring-admin-proxy-settings.html[Learn about configuring admin proxy settings].
+* If HTTP is selected on the StorageGRID AutoSupport page, you have link:configuring-admin-proxy-settings.html[configured a proxy server] to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers will reject packages sent using HTTP.
 
 * If you will use SMTP as the protocol for AutoSupport packages, you have configured an SMTP mail server.
 
@@ -39,7 +37,7 @@ You can use any of the following protocols for sending AutoSupport packages:
 
 * *HTTPS*: This is the default and recommended setting for new installations. This protocol uses port 443. If you want to <<Enable AutoSupport on Demand,enable the AutoSupport on Demand feature>>, you must use HTTPS.
 * *HTTP*: If you select HTTP, you must configure a proxy server to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers reject packages sent using HTTP. This protocol uses port 80. 
-* *SMTP*: Use this option if you want AutoSupport packages to be emailed. If you use SMTP as the protocol for AutoSupport packages, you must configure an SMTP mail server on the Legacy Email Setup page (*SUPPORT* > *Alarms (legacy)* > *Legacy email setup*).
+* *SMTP*: Use this option if you want AutoSupport packages to be emailed.
 
 The protocol you set is used for sending all types of AutoSupport packages.
 

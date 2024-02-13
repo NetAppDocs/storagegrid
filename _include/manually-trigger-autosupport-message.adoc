@@ -10,4 +10,4 @@
 +
 StorageGRID attempts to send an AutoSupport package to the NetApp Support Site. If the attempt is successful, the *Most Recent Result* and *Last Successful Time* values on the *Results* tab are updated. If there is a problem, the *Most Recent Result* value updates to "Failed," and StorageGRID does not try to send the AutoSupport package again.
 +
-NOTE: After sending an User-triggered AutoSupport package, refresh the AutoSupport page in your browser after 1 minute to access the most recent results.
+TIP: After sending an User-triggered AutoSupport package, refresh the AutoSupport page in your browser after 1 minute to access the most recent results.
