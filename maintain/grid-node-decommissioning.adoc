@@ -35,7 +35,7 @@ In general, you should decommission grid nodes only when they are connected to t
 For instructions, see link:decommissioning-connected-grid-nodes.html[Decommission connected grid nodes].
 
 Decommission disconnected nodes:: 
-In some cases, you might need to decommission a grid node that is not currently connected to the grid (one whose Health is Unknown or Administratively Down). For example, you can only decommission an Archive Node if it is disconnected. 
+In some cases, you might need to decommission a grid node that is not currently connected to the grid (one whose Health is Unknown or Administratively Down).
 +
 For instructions, see link:decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes].
 
@@ -43,7 +43,7 @@ For instructions, see link:decommissioning-disconnected-grid-nodes.html[Decommis
 
 Before performing either procedure, review the considerations for each type of node:
 
-* link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Considerations for Admin, Gateway, or Archive Node decommission]
+* link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Considerations for Admin or Gateway Node decommission]
 
 * link:considerations-for-decommissioning-storage-nodes.html[Considerations for Storage Node decommission]
 

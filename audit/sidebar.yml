@@ -69,14 +69,8 @@ entries:
         url: "/audit/apct-archive-purge-from-cloud-tier.html"
       - title: 'ARCB: Archive Object Retrieve Begin'
         url: "/audit/arcb-archive-object-retrieve-begin.html"
-      - title: 'ARCE: Archive Object Retrieve End'
-        url: "/audit/arce-archive-object-retrieve-end.html"
       - title: 'ARCT: Archive Retrieve from Cloud-Tier'
         url: "/audit/arct-archive-retrieve-from-cloud-tier.html"
-      - title: 'AREM: Archive Object Remove'
-        url: "/audit/arem-archive-object-remove.html"
-      - title: 'ASCE: Archive Object Store End'
-        url: "/audit/asce-archive-object-store-end.html"
       - title: 'ASCT: Archive Store Cloud-Tier'
         url: "/audit/asct-archive-store-cloud-tier.html"
       - title: 'ATCE: Archive Object Store Begin'

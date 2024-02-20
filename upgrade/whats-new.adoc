@@ -57,7 +57,9 @@ TLS policy configuration and KMIP support::
 
 Account clone improvement:: Existing accounts can be cloned to a remote grid. See link:../admin/grid-federation-what-is-account-clone.html[What is account clone].
 
-Archive Nodes:: Support for Archive Nodes has been removed. 
+Archive Nodes:: Support for Archive Nodes has been removed.
++
+NOTE: You must decommission all Archive Nodes before you can upgrade to StorageGRID 11.9.
 
 Automatic volume restoration:: Added a toggle for volume restoration to occur automatically. See link:../maintain/restoring-volume.html[Restore object data using Grid Manager].
 

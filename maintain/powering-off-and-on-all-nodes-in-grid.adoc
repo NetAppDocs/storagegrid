@@ -123,7 +123,7 @@ NOTE: If a host includes multiple grid nodes, the nodes will come back online au
 +
 NOTE: You will not be able to log in to the Admin Nodes until the Storage Nodes have been restarted.
 
-. Power on the hosts for all Archive Nodes and Storage Nodes.
+. Power on the hosts for all Storage Nodes.
 +
 You can power on these nodes in any order.
 
