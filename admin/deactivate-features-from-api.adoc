@@ -47,10 +47,4 @@ CAUTION: The *activateFeatures* feature can't be reactivated. If you decide to d
 +
 When this request is complete, all features, including the Change tenant root password feature, are reactivated. The *Change tenant root password* management permission now appears in the user interface, and any API request that attempts to change the root password for a tenant will succeed, assuming the user has the *Root access* or *Change tenant root password* management permission.
 
-
-[NOTE]
-====
-The previous example causes _all_ deactivated features to be reactivated. If other features have been deactivated that should remain deactivated, you must explicitly specify them in the PUT request. For example, to reactivate the Change tenant root password feature and continue to deactivate the Alarm acknowledgment feature, send this PUT request:
-
-`{ "grid": { "alarmAcknowledgment": true } }`
-====
+TIP: The previous example causes _all_ deactivated features to be reactivated. If other features have been deactivated that should remain deactivated, you must explicitly specify them in the PUT request.

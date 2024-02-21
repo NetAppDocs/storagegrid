@@ -16,7 +16,7 @@ If you want to monitor StorageGRID using the Simple Network Management Protocol 
 
 == Capabilities
 
-Each StorageGRID node runs an SNMP agent, or daemon, that provides a MIB. The StorageGRID MIB contains table and notification definitions for alerts and alarms. The MIB also contains system description information such as platform and model number for each node. Each StorageGRID node also supports a subset of MIB-II objects. 
+Each StorageGRID node runs an SNMP agent, or daemon, that provides a MIB. The StorageGRID MIB contains table and notification definitions for alerts. The MIB also contains system description information such as platform and model number for each node. Each StorageGRID node also supports a subset of MIB-II objects. 
 
 NOTE: See link:access-snmp-mib.html[Access MIB files] if you want to download the MIB files on your grid nodes. 
 

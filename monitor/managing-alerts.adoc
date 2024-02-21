@@ -11,17 +11,12 @@ summary: 'The alert system provides an easy-to-use interface for detecting, eval
 [.lead]
 The alert system provides an easy-to-use interface for detecting, evaluating, and resolving the issues that can occur during StorageGRID operation.
 
-
-//
-The alert system is designed to be your primary tool for monitoring any issues that might occur in your StorageGRID system. The alert system provides an easy-to-use interface for detecting, evaluating, and resolving issues.
-
 Alerts are triggered at specific severity levels when alert rule conditions evaluate as true. When an alert is triggered, the following actions occur:
 
 * An alert severity icon is shown on the dashboard in the Grid Manager, and the count of Current Alerts is incremented.
 * The alert is shown on the *NODES* summary page and on the *NODES* > *_node_* > *Overview* tab.
 * An email notification is sent, assuming you have configured an SMTP server and provided email addresses for the recipients.
 * An Simple Network Management Protocol (SNMP) notification is sent, assuming you have configured the StorageGRID SNMP agent.
-//
 
 You can create custom alerts, edit or disable alerts, and manage alert notifications.
 
