@@ -15,11 +15,6 @@ You can use the third-party software logs to troubleshoot issues.
 |===
 | Category| File name| Notes| Found on
 
-| Archiving
-m| /var/local/log/dsierror.log
-| Error information for TSM Client APIs.
-| Archive Nodes
-
 | MySQL
 m| 
 /var/local/log/mysql.err

@@ -13,7 +13,6 @@ See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuri
 
 * Review and follow the link:../harden/index.html[StorageGRID system hardening guidelines] to eliminate security risks.
 * link:../monitor/email-alert-notifications.html[Configure email notifications for system alerts].
-* If your StorageGRID system includes any Archive Nodes (deprecated), configure the Archive Node's connection to the target external archival storage system.
 
 == Optional tasks
 

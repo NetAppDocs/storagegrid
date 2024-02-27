@@ -66,7 +66,7 @@ NOTE: If any errors are reported, resolve them, re-upload the hotfix file, and s
 
 .. The hotfix installation progress table appears.
 +
-This table shows all nodes in your grid and the current stage of the hotfix installation for each node. The nodes in the table are grouped by type (Admin Nodes, Gateway Nodes, Storage Nodes, and Archive Nodes).
+This table shows all nodes in your grid and the current stage of the hotfix installation for each node. The nodes in the table are grouped by type (Admin Nodes, Gateway Nodes, and Storage Nodes).
 
 .. The progress bar reaches completion, and then the primary Admin Node is shown as "Complete."
 +

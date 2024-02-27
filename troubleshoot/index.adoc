@@ -210,7 +210,6 @@ Here are some examples of potentially significant changes:
 * Have there been any changes to the network infrastructure? For example, VLANs, routers, or DNS.
 * Have any changes been made to NTP sources?
 * Have any changes been made to the Grid, Admin, or Client Network interfaces?
-* Have any configuration changes been made to the Archive Node?
 * Have any other changes been made to the StorageGRID system or its environment?
 
 === Establish baselines

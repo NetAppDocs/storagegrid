@@ -78,7 +78,7 @@ sidebar:
           entries:
           - title: Overview
             url: "/maintain/grid-node-decommissioning.html"
-          - title: Considerations for Admin, Gateway, or Archive Nodes
+          - title: Considerations for Admin or Gateway Nodes
             url: "/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html"
           - title: Considerations for Storage Nodes
             entries:
@@ -215,8 +215,6 @@ sidebar:
         entries:
         - title: 'Linux: Migrate grid node to new host'
           url: "/maintain/linux-migrating-grid-node-to-new-host.html"
-        - title: Archive Node maintenance for TSM middleware
-          url: "/maintain/archive-node-maintenance-for-tsm-middleware.html"
         - title: 'VMware: Configure virtual machine for automatic restart'
           url: "/maintain/vmware-configuring-virtual-machine-for-automatic-restart.html"
     - title: Recover or replace nodes
@@ -343,15 +341,9 @@ sidebar:
           url: "/maintain/selecting-start-recovery-to-configure-gateway-node.html"
       - title: Recover from Archive Node failures
         entries:
-        - title: Workflow
+        - title: Recover from Archive Node failures
           pdf-filename: Recover from Archive Node failures
-          url: "/maintain/recovering-from-archive-node-failures.html"    
-        - title: Replace Archive Node
-          url: "/maintain/replacing-archive-node.html"
-        - title: Select Start Recovery to configure Archive Node
-          url: "/maintain/selecting-start-recovery-to-configure-archive-node.html"
-        - title: Reset Archive Node connection to the cloud
-          url: "/maintain/resetting-archive-node-connection-to-cloud.html"
+          url: "/maintain/recovering-from-archive-node-failures.html"
       - title: Replace Linux node
         entries:
         - title: Overview

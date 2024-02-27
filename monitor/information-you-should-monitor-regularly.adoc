@@ -47,7 +47,4 @@ A busy system generates large amounts of information. The following list provide
 
 | link:grid-federation-monitor-connections.html[Grid federation connections]
 | Weekly
-
-| link:monitoring-archival-capacity.html[Capacity of the external archival storage system]
-| Weekly
 |===

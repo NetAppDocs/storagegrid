@@ -31,7 +31,6 @@ These instructions describe how to:
 ** link:monitoring-tenant-activity.html[Tenant activity]
 ** link:monitoring-load-balancing-operations.html[Load balancing operations]
 ** link:grid-federation-monitor-connections.html[Grid federation connections]
-** link:monitoring-archival-capacity.html[Archival capacity]
 * link:managing-alerts.html[Manage alerts]
 * link:logs-files-reference.html[View log files]
 * link:configure-audit-messages.html[Configure audit messages and log destinations]

@@ -18,9 +18,9 @@ entries:
       - title: What is a Storage Node
         url: "/primer/what-storage-node-is.html"
       - title: What is a Gateway Node
-        url: "/primer/what-gateway-node-is.html"         
-      - title: What is an Archive Node (deprecated)
-        url: "/primer/what-archive-node-is.html"        
+        url: "/primer/what-gateway-node-is.html"
+      - title: What is an Archive Node
+        url: "/primer/what-archive-node-is.html"
   - title: How StorageGRID manages data  
     entries:
     - title: What is an object

@@ -119,7 +119,7 @@ NOTE: When the upgrade starts on a grid node, the services on that node are stop
 +
 CAUTION: You should download a new copy of the Recovery Package file after  the primary Admin Node is upgraded. The Recovery Package file allows you to restore the system if a failure occurs.
 
-. Review the status tables for each type of node. There are tables for  non-primary Admin Nodes, Gateway Nodes, Storage Nodes, and Archive Nodes.
+. Review the status tables for each type of node. There are tables for  non-primary Admin Nodes, Gateway Nodes, and Storage Nodes.
 +
 A grid node can be in one of these stages when the tables first appear: 
 +

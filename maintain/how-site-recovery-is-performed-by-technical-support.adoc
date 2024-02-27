@@ -46,7 +46,7 @@ NOTE: When an entire site has failed, technical support uses specialized command
 
 . Technical support recovers other failed nodes.
 +
-After object metadata and data have been recovered, technical support uses standard procedures to recover failed Gateway Nodes, non-primary Admin Nodes, or Archive Nodes.
+After object metadata and data have been recovered, technical support uses standard procedures to recover failed Gateway Nodes or non-primary Admin Nodes.
 
 .Related information
 

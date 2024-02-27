@@ -117,12 +117,6 @@ If enterprise networking policies restrict access to any of these ports, you can
 | Primary Admin Node
 | Configuration management internal traffic.
 
-| 1509
-| TCP
-| All nodes
-| Archive Nodes
-| Archive Node internal traffic.
-
 | 1511
 | TCP
 | All nodes
@@ -176,12 +170,6 @@ If enterprise networking policies restrict access to any of these ports, you can
 | All nodes
 | Primary Admin Node
 | Internal traffic for installation, expansion, recovery, and other maintenance procedures.
-
-| 11139
-| TCP
-| Archive/Storage Nodes
-| Archive/Storage Nodes
-| Internal traffic between Storage Nodes and Archive Nodes.
 
 | 18000
 | TCP

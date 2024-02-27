@@ -2,14 +2,14 @@
 permalink: ilm/what-replication-is.html
 sidebar: sidebar
 keywords: replication, object copies
-summary: 'Replication is one of two methods StorageGRID uses to store object data. When objects match an ILM rule that uses replication, the system creates exact copies of object data and stores the copies on Storage Nodes or Archive Nodes.'
+summary: 'Replication is one of two methods StorageGRID uses to store object data. When objects match an ILM rule that uses replication, the system creates exact copies of object data and stores the copies on Storage Nodes.'
 ---
 = What is replication?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replication is one of two methods used by StorageGRID to store object data. When objects match an ILM rule that uses replication, the system creates exact copies of object data and stores the copies on Storage Nodes or Archive Nodes.
+Replication is one of two methods used by StorageGRID to store object data. When objects match an ILM rule that uses replication, the system creates exact copies of object data and stores the copies on Storage Nodes.
 
 When you configure an ILM rule to create replicated copies, you specify how many copies should be created, where those copies should be placed, and how long the copies should be stored at each location.
 

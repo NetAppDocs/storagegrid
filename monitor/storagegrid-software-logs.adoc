@@ -131,10 +131,6 @@ m| /var/local/log/ams.errlog
 | 
 | Admin Nodes
 
-m| /var/local/log/arc.errlog
-| 
-| Archive Nodes
-
 m| /var/local/log/cassandra/system.log
 | Information for the metadata store (Cassandra database) that can be used if problems occur when adding new Storage Nodes, or if the nodetool repair task stalls.
 | Storage Nodes
@@ -158,10 +154,6 @@ m| /var/local/log/cmn.errlog
 m| /var/local/log/cms.errlog
 | This log file might be present on systems that have been upgraded from an older version of StorageGRID. It contains legacy information.
 | Storage Nodes
-
-m| /var/local/log/cts.errlog
-| This log file is only created if the Target Type is *Cloud Tiering - Simple Storage Service (S3).*
-| Archive Nodes
 
 m| /var/local/log/dds.errlog
 | 
