@@ -37,7 +37,7 @@ When the global S3 Object Lock setting is enabled, active and inactive ILM polic
 * Non-compliant rules only apply to objects in buckets that don't have S3 Object Lock enabled or that don't have the legacy Compliance feature enabled.
 * Compliant rules can apply to objects in any bucket; S3 Object Lock or legacy Compliance does not need to be enabled for the bucket.
 
-link:example-7-compliant-ilm-policy-for-s3-object-lock.html[Example of a compliant ILM policy]
+link:example-7-compliant-ilm-policy-for-s3-object-lock.html[Example of a compliant ILM policy for S3 Object Lock]
 
 include::../_include/s3-object-lock-requirements.adoc[]
 
