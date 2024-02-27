@@ -34,7 +34,6 @@ The rolling reboot procedure can reboot multiple nodes at the same time, with th
 
 * Two nodes of the same type will not be rebooted at the same time.
 * Gateway Nodes and Admin Nodes will not be rebooted  at the same time.
-* Storage Nodes and Archive Nodes will not be rebooted at the same time.
 
 Instead, these nodes are rebooted sequentially to ensure that HA groups, object data, and critical node services always remain available. 
 

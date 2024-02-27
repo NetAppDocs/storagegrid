@@ -1,7 +1,7 @@
 ---
 permalink: primer/nodes-and-services.html
 sidebar: sidebar
-keywords: services, grid nodes, primary admin, storage, gateway, archive
+keywords: services, grid nodes, primary admin, storage, gateway
 summary: 'The basic building block of a StorageGRID system is the grid node. Nodes contain services, which are software modules that provide a set of capabilities to a grid node.'
 ---
 = Grid nodes and services: Overview
@@ -28,10 +28,6 @@ See link:what-storage-node-is.html[What is a Storage Node?]
 Gateway Nodes (optional):: Provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent.
 +
 See link:what-gateway-node-is.html[What is a Gateway Node?]
-
-Archive Nodes (deprecated):: Provide an optional interface through which object data can be archived to tape.
-+
-See link:what-archive-node-is.html[What is an Archive Node?]
 
 == Hardware and software nodes
 StorageGRID nodes can be deployed as StorageGRID appliance nodes or as software-based nodes.
@@ -79,10 +75,6 @@ The following is a complete list of StorageGRID services.
 | AMS (Audit Management System)
 | Monitors and logs all audited system events and transactions to a text log file.
 | Admin Nodes
-
-| ARC (Archive)
-| Provides the management interface with which you configure connections to external archival storage, such as the cloud through an S3 interface or tape through TSM middleware.
-| Archive Nodes
 
 | Cassandra Reaper
 | Performs automatic repairs of object metadata.

@@ -20,7 +20,7 @@ Two link:../troubleshoot/verifying-object-integrity.html[verification processes]
 
 * *Background verification* runs automatically, continuously checking the correctness of object data.
 +
-Background verification automatically and continuously checks all Storage Nodes to determine if there are corrupt copies of replicated and erasure-coded object data. If problems are found, the StorageGRID system automatically attempts to replace the corrupt object data from copies stored elsewhere in the system. Background verification does not run on Archive Nodes or on objects in a Cloud Storage Pool.
+Background verification automatically and continuously checks all Storage Nodes to determine if there are corrupt copies of replicated and erasure-coded object data. If problems are found, the StorageGRID system automatically attempts to replace the corrupt object data from copies stored elsewhere in the system. Background verification does not run on objects in a Cloud Storage Pool.
 +
 NOTE: The *Unidentified corrupt object detected* alert is triggered if the system detects a corrupt object that can't be corrected automatically.
 

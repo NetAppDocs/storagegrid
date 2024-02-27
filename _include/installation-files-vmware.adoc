@@ -22,12 +22,6 @@ m|./vsphere/vsphere-non-primary-admin.ovf
 ./vsphere/vsphere-non-primary-admin.mf
 |The template file (`.ovf`) and manifest file (`.mf`) for deploying non-primary Admin Nodes.
 
-m|./vsphere/vsphere-archive.ovf
-
-./vsphere/vsphere-archive.mf
-
-|The template file (`.ovf`) and manifest file (`.mf`) for deploying Archive Nodes.
-
 m|./vsphere/vsphere-gateway.ovf
 
 ./vsphere/vsphere-gateway.mf

@@ -28,7 +28,9 @@ Default audit destinations:: Fresh installations of StorageGRID 11.9 default to 
 
 == Expand grid, maintain grid, recover or replace nodes
 
-.
+Archive Nodes:: Support for Archive Nodes has been removed.
++
+NOTE: You must decommission all Archive Nodes before you can upgrade to StorageGRID 11.9.
 
 
 == Grid Manager

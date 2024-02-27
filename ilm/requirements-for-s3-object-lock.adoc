@@ -26,7 +26,6 @@ If you want to enable the global S3 Object Lock setting, you must ensure that th
 * It must create at least two replicated object copies or one erasure-coded copy.
 * These copies must exist on Storage Nodes for the entire duration of each line in the placement instructions.
 * Object copies can't be saved in a Cloud Storage Pool.
-* Object copies can't be saved on Archive Nodes.
 * At least one line of the placement instructions must start at day 0, using *Ingest time* as the reference time.
 * At least one line of the placement instructions must be "forever."
 
@@ -38,11 +37,7 @@ When the global S3 Object Lock setting is enabled, active and inactive ILM polic
 * Non-compliant rules only apply to objects in buckets that don't have S3 Object Lock enabled or that don't have the legacy Compliance feature enabled.
 * Compliant rules can apply to objects in any bucket; S3 Object Lock or legacy Compliance does not need to be enabled for the bucket.
 
-A compliant ILM policy might include these three rules:
-
-. A compliant rule that creates erasure-coded copies of the objects in a specific bucket with S3 Object Lock enabled. The EC copies are stored on Storage Nodes from day 0 to forever.
-. A non-compliant rule that creates two replicated object copies on Storage Nodes for a year and then moves one object copy to Archive Nodes and stores that copy forever. This rule only applies to buckets that don't have S3 Object Lock or legacy Compliance enabled because it stores only one object copy forever and it uses Archive Nodes.
-. A default, compliant rule that creates two replicated object copies on Storage Nodes from day 0 to forever. This rule applies to any object in any bucket that was not filtered out by the first two rules.
+link:example-7-compliant-ilm-policy-for-s3-object-lock.html[Example of a compliant ILM policy for S3 Object Lock]
 
 include::../_include/s3-object-lock-requirements.adoc[]
 

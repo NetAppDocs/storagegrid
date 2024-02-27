@@ -58,11 +58,6 @@ m|vsphere-gateway.ovf
 
 vsphere-gateway.mf
 |The template file and manifest file for a Gateway Node.
-
-m|vsphere-archive.ovf
-
-vsphere-archive.mf
-|The template file and manifest file for an Archive Node.
 |===
 
 * The `.vdmk`, `.ovf`, and `.mf` files are all in the same directory.
@@ -78,7 +73,7 @@ NOTE: Never use FabricPool to tier any data related to StorageGRID back to Stora
 
 .About this task
 
-Follow these instructions to initially deploy VMware nodes, add a new VMware node in an expansion, or replace a VMware node as part of a recovery operation. Except as noted in the steps, the node deployment procedure is the same for all node types, including Admin Nodes, Storage Nodes, Gateway Nodes, and Archive Nodes.
+Follow these instructions to initially deploy VMware nodes, add a new VMware node in an expansion, or replace a VMware node as part of a recovery operation. Except as noted in the steps, the node deployment procedure is the same for all node types, including Admin Nodes, Storage Nodes, and Gateway Nodes.
 
 If you are installing a new StorageGRID system:
 

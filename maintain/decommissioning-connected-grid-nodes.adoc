@@ -13,7 +13,7 @@ You can decommission and permanently remove nodes that are connected to the grid
 
 .Before you begin
 
-* You understand the considerations for decommissioning link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Admin, Gateway, and Archive Nodes] and the considerations for decommissioning link:considerations-for-decommissioning-storage-nodes.html[Storage Nodes].
+* You understand the considerations for decommissioning link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Admin and Gateway Nodes] and the considerations for decommissioning link:considerations-for-decommissioning-storage-nodes.html[Storage Nodes].
 * You have gathered all required materials.
 * You have ensured that no data repair jobs are active.
 * You have confirmed that Storage Node recovery is not in progress anywhere in the grid. If it is, wait until any Cassandra rebuild performed as part of the recovery is complete. You can then proceed with decommissioning.

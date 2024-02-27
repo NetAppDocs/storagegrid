@@ -11,13 +11,7 @@ summary: 'A Cloud Storage Pool lets you use ILM to move object data outside of y
 [.lead]
 A Cloud Storage Pool lets you use ILM to move object data outside of your StorageGRID system. For example, you might want to move infrequently accessed objects to lower-cost cloud storage, such as Amazon S3 Glacier, S3 Glacier Deep Archive, Google Cloud, or the Archive access tier in Microsoft Azure Blob storage. Or, you might want to maintain a cloud backup of StorageGRID objects to enhance disaster recovery.
 
-From an ILM perspective, a Cloud Storage Pool is similar to a storage pool. To store objects in either location, you select the pool when creating the placement instructions for an ILM rule. However, while storage pools consist of Storage Nodes or Archive Nodes within the StorageGRID system, a Cloud Storage Pool consists of an external bucket (S3) or container (Azure Blob storage).
-
-[CAUTION]
-====
-Moving objects from an Archive Node to an external archival storage system through the S3 API is deprecated and has been replaced by ILM Cloud Storage Pools, which offer more functionality. If you are currently using an Archive Node with the Cloud Tiering - Simple Storage Service (S3) option, link:../admin/migrating-objects-from-cloud-tiering-s3-to-cloud-storage-pool.html[migrate your objects to a Cloud Storage Pool] instead.
-
-====
+From an ILM perspective, a Cloud Storage Pool is similar to a storage pool. To store objects in either location, you select the pool when creating the placement instructions for an ILM rule. However, while storage pools consist of Storage Nodes within the StorageGRID system, a Cloud Storage Pool consists of an external bucket (S3) or container (Azure Blob storage).
 
 The table compares storage pools to Cloud Storage Pools and shows the high-level similarities and differences.
 
@@ -36,7 +30,7 @@ You must set up the external bucket or container before you can create the Cloud
 | Up to 10.
 
 | Where are objects stored?
-| On one or more Storage Nodes or Archive Nodes within StorageGRID.
+| On one or more Storage Nodes within StorageGRID.
 | In an Amazon S3 bucket, Azure Blob storage container, or Google Cloud that is external to the StorageGRID system.
 
 If the Cloud Storage Pool is an Amazon S3 bucket:

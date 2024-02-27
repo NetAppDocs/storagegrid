@@ -111,11 +111,6 @@ a|Gateway Node
 a|100 GB
 a|90 GB
 a|_not applicable_
-
-a|Archive Node
-a|100 GB
-a|90 GB
-a|_not applicable_
 |===
 
 == Example: Calculating the storage requirements for a host
