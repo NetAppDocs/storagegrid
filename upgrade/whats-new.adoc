@@ -11,14 +11,9 @@ summary: 'This release of StorageGRID introduces the following features.'
 [.lead]
 This release of StorageGRID introduces the following features and functional changes.
 
-== For 11.9
-Audit log location change (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
-
-
-
 == Install, upgrade, hotfix
 
-.
+Default audit destinations:: Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
 
 
 == Appliances
