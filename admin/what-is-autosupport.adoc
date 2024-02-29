@@ -36,7 +36,6 @@ An AutoSupport package contains the following XML files and details.
 | AUTOSUPPORT-HISTORY.XML
 | AutoSupport Sequence Number +
 Destination for this AutoSupport +
-Trigger Event +
 Status of Delivery +
 Delivery Attempts +
 AutoSupport Subject +
@@ -172,7 +171,7 @@ Value +
 Index +
 Table ID +
 Table name
-| Server configurations and events file. Contains these details for each node: platform type, operating system, installed memory, available memory, storage connectivity, storage appliance chassis serial number, storage controller failed drive count, compute controller chassis temperature, compute hardware, compute controller serial number, power supply, drive size, drive type, and more.
+| Server configurations. Contains these details for each node: platform type, operating system, installed memory, available memory, storage connectivity, storage appliance chassis serial number, storage controller failed drive count, compute controller chassis temperature, compute hardware, compute controller serial number, power supply, drive size, drive type, and more.
 
 | SERVICE-STATUS.XML
 | Node +

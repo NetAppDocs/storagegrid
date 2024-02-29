@@ -17,9 +17,7 @@ The primary Admin Node hosts the CMN service. Some maintenance procedures can on
 * You have link:admin-group-permissions.html[specific access permissions].
 
 .Steps
-. Select *SUPPORT* > *Tools* > *Grid topology*.
-. Select *_site_* > *Admin Node*, and then select image:../media/icon_plus_sign_black_on_white.gif[plus sign] to expand the topology tree and show the services hosted on this Admin Node.
+. Select *NODES*.
+. Enter *primary* in the search box.
 +
-The primary Admin Node hosts the CMN service.
-
-. If this Admin Node does not host the CMN service, check the other Admin Nodes.
+One primary Admin Node should be listed in the search results.

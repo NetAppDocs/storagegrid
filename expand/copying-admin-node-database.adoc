@@ -20,8 +20,7 @@ When adding Admin Nodes through an expansion procedure, you can optionally copy 
 The StorageGRID software activation process creates an empty database for the NMS service on the expansion Admin Node. When the NMS service starts on the expansion Admin Node, it records information for servers and services that are currently part of the system or added later. This Admin Node database includes the following information:
 
 * Alert history
-* Alarm history
-* Historical attribute data, which is used in the charts and text reports available from the *SUPPORT* > *Tools* > *Grid topology* page
+* Historical attribute data, which is used in legacy-style charts on the Nodes page
 
 To ensure that the Admin Node database is consistent between nodes, you can copy the database from the primary Admin Node to the expansion Admin Node.
 

@@ -13,9 +13,9 @@ Under certain circumstances, such as site- or grid-wide IP address changes, one 
 
 .About this task
 
-In the Grid Manager (*SUPPORT* > *Tools* > *Grid topology*), if a node is gray, or if a node is blue with many of its services showing a status other than Running, you should check for node isolation.
+On the Nodes page of the Grid Manager, if a node is gray, or if a node is blue with many of its services showing a status other than Running, you should check for node isolation.
 
-image::../media/dynamic_ip_service_not_running.gif[screenshot]
+image:../media/nodes_page.png[Nodes page]
 
 Some of the consequences of having isolated nodes include the following:
 
@@ -59,6 +59,6 @@ Local node found on remote node. Update complete.
 . Verify the following for each node that was previously isolated:
  ** The node's services have started.
  ** The status of the Dynamic IP service is "Running" after you run the `storagegrid-status` command.
- ** In the Grid Topology tree, the node no longer appears disconnected from the rest of the grid.
+ ** On the Nodes page, the node no longer appears disconnected from the rest of the grid.
 
 NOTE: If running the `add_node_ip.py` command does not solve the problem, there could be other networking issues that need to be resolved.
