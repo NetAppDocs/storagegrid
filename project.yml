@@ -1,5 +1,6 @@
 settings:
   name: "StorageGRID 11.9"
+  search: "storagegrid-enable,storagegrid-119,storagegrid-appliances"
   internal:
     pdf_enabled: false
     termcheck_enabled: false
@@ -11,6 +12,8 @@ sidebar:
   entries:
     - title: 'StorageGRID 11.9 Docs'
       url: /index.html
+    - title: StorageGRID appliances
+      url: "/storagegrid-hardware.html"
     - title: Release notes
       url: "/release-notes/index.html"
     - title: Get started
