@@ -52,5 +52,5 @@ indexpage:
           url: ../s3/bucket-and-group-access-policies.html
     - title: Use Swift REST API (end of life)
       links:
-        - title: Swift documentation
-          url: https://docs.netapp.com/us-en/storagegrid-118/swift/index.html^
+        - title: Use Swift
+          url: ../swift/index.html
