@@ -14,7 +14,7 @@ This message is generated when ILM starts the process of deleting an object.
 The IDEL message is generated in either of these situations:
 
 * *For objects in compliant S3 buckets*: This message is generated when ILM starts the process of auto-deleting an object because its retention period has expired (assuming the auto-delete setting is enabled and legal hold is off).
-* *For objects in non-compliant S3 buckets or Swift containers*. This message is generated when ILM starts the process of deleting an object because no placement instructions in the active ILM policies currently apply to the object.
+* *For objects in non-compliant S3 buckets*. This message is generated when ILM starts the process of deleting an object because no placement instructions in the active ILM policies currently apply to the object.
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -77,9 +77,9 @@ CLNL: ARC node ID of the object's location if the object data is archived.
 |
 PATH
 |
-S3 Bucket/Key or Swift Container/Object ID
+S3 Bucket/Key
 |
-The S3 bucket name and S3 key name, or the Swift container name and Swift object identifier.
+The S3 bucket name and S3 key name
 
 |
 RSLT

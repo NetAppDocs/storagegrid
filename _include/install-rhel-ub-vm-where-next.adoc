@@ -1,9 +1,9 @@
 // Where to go next for RHEL, UB, and VMware installation - common tasks (required and optional)
 // NOTE: Did not include the Required tasks heading, bcs VMware has an extra bullet at the top of the list.
 
-* link:../admin/managing-tenants.html[Create a tenant account] for each client protocol (Swift or S3) that will be used to store objects on your StorageGRID system.
+* link:../admin/managing-tenants.html[Create a tenant account] for the S3 client protocol that will be used to store objects on your StorageGRID system.
 * link:../admin/controlling-storagegrid-access.html[Control system access] by configuring groups and user accounts. Optionally, you can link:../admin/using-identity-federation.html[configure a federated identity source] (such as Active Directory or OpenLDAP), so you can import administration groups and users. Or, you can link:../admin/managing-users.html#create-a-local-user[create local groups and users].
-* Integrate and test the link:../s3/configuring-tenant-accounts-and-connections.html[S3 API] or link:../swift/configuring-tenant-accounts-and-connections.html[Swift API] client applications you will use to upload objects to your StorageGRID system.
+* Integrate and test the link:../s3/configuring-tenant-accounts-and-connections.html[S3 API] client applications you will use to upload objects to your StorageGRID system.
 * link:../ilm/index.html[Configure the information lifecycle management (ILM) rules and ILM policy] you want to use to protect object data.
 * If your installation includes appliance Storage Nodes, use SANtricity OS to complete the following tasks:
  ** Connect to each StorageGRID appliance.

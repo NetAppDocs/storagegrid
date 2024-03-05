@@ -38,7 +38,7 @@ Clients that use HTTPS connections (recommended) to the grid can use either of t
 
 * Clients that connect to a load balancer endpoint can use a custom certificate for that endpoint. Each load balancer endpoint can be configured to recognize different S3 endpoint domain names.
  
-* Clients that connect to a load balancer endpoint or directly to a Storage Node can customize the global S3 and Swift API certificate to include all required S3 endpoint domain names.
+* Clients that connect to a load balancer endpoint or directly to a Storage Node can customize the global S3 API certificate to include all required S3 endpoint domain names.
 
 NOTE: If you don't add S3 endpoint domain names and the list is empty, support for S3 virtual-hosted-style requests is disabled.
 
@@ -54,7 +54,7 @@ NOTE: If you don't add S3 endpoint domain names and the list is empty, support f
 
 . Ensure that the server certificates that clients use match the required S3 endpoint domain names.
  ** If clients connect to a load balancer endpoint that uses its own certificate, link:../admin/configuring-load-balancer-endpoints.html[update the certificate associated with the endpoint].
- ** If clients connect to a load balancer endpoint that uses the global S3 and Swift API certificate or directly to Storage Nodes, link:../admin/use-s3-setup-wizard-steps.html[update the global S3 and Swift API certificate].
+ ** If clients connect to a load balancer endpoint that uses the global S3 API certificate or directly to Storage Nodes, link:../admin/use-s3-setup-wizard-steps.html[update the global S3 API certificate].
 . Add the DNS records required to ensure that endpoint domain name requests can be resolved.
 
 .Result

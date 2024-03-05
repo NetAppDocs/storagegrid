@@ -553,7 +553,7 @@ HTTP Status
 a|
 BLDR
 a|
-HSTE and HSTU are related to HTTP for all LDR traffic, including S3, Swift, and other internal StorageGRID traffic. An alarm indicates that one of the following situations has occurred:
+HSTE and HSTU are related to HTTP for all LDR traffic, including S3 and other internal StorageGRID traffic. An alarm indicates that one of the following situations has occurred:
 
 * HTTP has been taken offline manually.
 * The Auto-Start HTTP attribute has been disabled.
@@ -1018,8 +1018,8 @@ a|
 Triggered when the certificate used for accessing storage API endpoints is about to expire.
 
 . Select *CONFIGURATION* > *Security* > *Certificates*. 
-. On the *Global* tab, select *S3 and Swift API certificate*.
-. link:../admin/configuring-custom-server-certificate-for-storage-node.html#add-a-custom-s3-and-swift-api-certificate[Upload a new S3 and Swift API certificate.]
+. On the *Global* tab, select *S3 API certificate*.
+. link:../admin/configuring-custom-server-certificate-for-storage-node.html#add-a-custom-s3-api-certificate[Upload a new S3 API certificate.]
 
 a|
 SCHR

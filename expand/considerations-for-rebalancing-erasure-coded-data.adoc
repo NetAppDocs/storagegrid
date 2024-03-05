@@ -25,7 +25,7 @@ The EC rebalance procedure:
 * Does not consider the replicated data usage on each Storage Node when determining where to move erasure-coded data.
 * Redistributes erasure-coded data evenly between Storage Nodes without considering the relative capacities of each node.
 * Will not distribute erasure-coded data to Storage Nodes that are more than 80% full.
-* Might decrease the performance of ILM operations and S3 and Swift client operations when it runs&#8212;additional resources are required to redistribute the erasure-coding fragments. 
+* Might decrease the performance of ILM operations and S3 client operations when it runs&#8212;additional resources are required to redistribute the erasure-coding fragments. 
 
 When the EC rebalance procedure is complete:
 
@@ -78,9 +78,9 @@ NetApp requires EC rebalancing if _all_ of the following statements are true:
 * The *Low Object Storage* alert has been triggered for one or more Storage Nodes at a site, indicating that the nodes are 80% or more full.
 * You are unable to add enough new Storage Nodes for the erasure-coding scheme in use. See link:adding-storage-capacity-for-erasure-coded-objects.html[Add storage capacity for erasure-coded objects].
 
-* Your S3 and Swift clients can tolerate lower performance for their write and read operations while the EC rebalance procedure is running.
+* Your S3 clients can tolerate lower performance for their write and read operations while the EC rebalance procedure is running.
 
-You can optionally run the EC rebalance procedure if you prefer Storage Nodes to be filled to similar levels and your S3 and Swift clients can tolerate lower performance for their write and read operations while the EC rebalance procedure is running.
+You can optionally run the EC rebalance procedure if you prefer Storage Nodes to be filled to similar levels and your S3 clients can tolerate lower performance for their write and read operations while the EC rebalance procedure is running.
 
 == How EC rebalance procedure interacts with other maintenance tasks
 

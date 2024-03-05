@@ -80,10 +80,6 @@ Cloud Mirror Enabled +
 Cloud Mirror Configuration +
 Search Enabled +
 Search Configuration +
-Swift Read ACL Enabled +
-Swift Read ACL Configuration +
-Swift Write ACL Enabled +
-Swift Write ACL Configuration +
 Bucket Tagging Enabled +
 Bucket Tagging Configuration +
 Versioning Configuration
@@ -201,7 +197,7 @@ Value +
 Index +
 Table ID +
 Table name
-| High-level system status data that summarizes StorageGRID usage information. Provides details such as name of grid, names of sites, number of Storage Nodes per grid and per site, license type, license capacity and usage, software support terms, and details of S3 and Swift operations.
+| High-level system status data that summarizes StorageGRID usage information. Provides details such as name of grid, names of sites, number of Storage Nodes per grid and per site, license type, license capacity and usage, software support terms, and details of S3 operations.
 
 | SYSTEM-ALARMS.XML
 | Node +

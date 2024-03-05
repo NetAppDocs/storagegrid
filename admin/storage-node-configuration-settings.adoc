@@ -33,7 +33,7 @@ The following tables summarize Storage Node configuration settings.
 
 | HTTP State
 | HSTE
-| The current state of HTTP for S3, Swift, and other internal StorageGRID traffic:
+| The current state of HTTP for S3 and other internal StorageGRID traffic:
 
 * Offline: No operations are allowed, and any client application that attempts to open an HTTP session to the LDR service receives an error message. Active sessions are gracefully closed.
 * Online: Operation continues normally

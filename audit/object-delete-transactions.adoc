@@ -1,15 +1,15 @@
 ---
 permalink: audit/object-delete-transactions.html
 sidebar: sidebar
-keywords: object delete transaction, S3 delete, Swift delete, SDEL, WDEL 
-summary: 'You can identify object delete transactions in the audit log by locating API-specific \(S3 and Swift\) audit messages.'
+keywords: object delete transaction, S3 delete, SDEL, WDEL 
+summary: 'You can identify object delete transactions in the audit log by locating S3 API-specific audit messages.'
 ---
 = Object delete transactions
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can identify object delete transactions in the audit log by locating API-specific (S3 and Swift) audit messages.
+You can identify object delete transactions in the audit log by locating S3 API-specific audit messages.
 
 Not all audit messages generated during a delete transaction are listed in the following tables. Only messages required to trace the delete transaction are included.
 

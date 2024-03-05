@@ -17,7 +17,7 @@ Object metadata is any information that describes an object. StorageGRID uses ob
 
 For an object in StorageGRID, object metadata includes the following types of information:
 
-* System metadata, including a unique ID for each object (UUID), the object name, the name of the S3 bucket or Swift container, the tenant account name or ID, the logical size of the object, the date and time the object was first created, and the date and time the object was last modified.
+* System metadata, including a unique ID for each object (UUID), the object name, the name of the S3 bucket, the tenant account name or ID, the logical size of the object, the date and time the object was first created, and the date and time the object was last modified.
 * Any custom user metadata key-value pairs associated with the object.
 * For S3 objects, any object tag key-value pairs associated with the object.
 * For replicated object copies, the current storage location of each copy.

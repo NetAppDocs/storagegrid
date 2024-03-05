@@ -34,19 +34,19 @@ The table summarizes when StorageGRID uses each method.
 +
 *Note:* Objects in a bucket that has S3 Object Lock enabled can't be deleted if they are under a legal hold or if a retain-until-date has been specified but not yet met.
 
-* An S3 or Swift client requests deletion and one or more of these conditions is true:
+* An S3 client requests deletion and one or more of these conditions is true:
 
 ** Copies can't be deleted within 30 seconds because, for example, an object location is temporarily unavailable.
 ** Background deletion queues are idle.
 
 | Objects are removed immediately (synchronous deletion)
-| When an S3 or Swift client makes a delete request and *all* of the following conditions are met:
+| When an S3 client makes a delete request and *all* of the following conditions are met:
 
 * All copies can be removed within 30 seconds.
 * Background deletion queues contain objects to process.
 |===
 
-When S3 or Swift clients make delete requests, StorageGRID begins by adding objects to the delete queue. It then switches to performing synchronous deletion. Making sure that the background deletion queue has objects to process allows StorageGRID to process deletes more efficiently, especially for low concurrency clients, while helping to prevent client delete backlogs.
+When S3 Sclients make delete requests, StorageGRID begins by adding objects to the delete queue. It then switches to performing synchronous deletion. Making sure that the background deletion queue has objects to process allows StorageGRID to process deletes more efficiently, especially for low concurrency clients, while helping to prevent client delete backlogs.
 
 == Time required to delete objects
 

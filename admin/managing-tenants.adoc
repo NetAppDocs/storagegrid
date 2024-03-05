@@ -2,22 +2,22 @@
 permalink: admin/managing-tenants.html
 sidebar: sidebar
 keywords: manage tenants, tenant account, what is a tenant
-summary: 'As a grid administrator, you create and manage the tenant accounts that S3 and Swift clients use to store and retrieve objects.'
+summary: 'As a grid administrator, you create and manage the tenant accounts that S3 clients use to store and retrieve objects.'
 ---
-= Manage tenants: Overview
+= Manage tenants
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-As a grid administrator, you create and manage the tenant accounts that S3 and Swift clients use to store and retrieve objects.
+As a grid administrator, you create and manage the tenant accounts that S3 clients use to store and retrieve objects.
 
-NOTE: Support for Swift client applications has been deprecated and will be removed in a future release.
+TIP: Swift details have been removed from this version of the doc site. See https://docs.netapp.com/us-en/storagegrid-118/admin/managing-tenants.html[StorageGRID 11.8: Manage tenants^].
 
 == What are tenant accounts?
 
-A tenant account allows you to use either the Simple Storage Service (S3) REST API or the Swift REST API to store and retrieve objects in a StorageGRID system.
+A tenant account allows you to use the Simple Storage Service (S3) REST API to store and retrieve objects in a StorageGRID system.
 
-Each tenant account has federated or local groups, users, S3 buckets or Swift containers, and objects.
+Each tenant account has federated or local groups, users, S3 buckets, and objects.
 
 Tenant accounts can be used to segregate stored objects by different entities. For example, multiple tenant accounts can be used for either of these use cases:
 
@@ -33,7 +33,7 @@ For more information, see link:../tenant/index.html[Use a tenant account].
 
 When you create a tenant account, you specify the following information:
 
-* Basic information including the tenant name, client type (S3 or Swift) and optional storage quota.
+* Basic information including the tenant name, client type (S3) and optional storage quota.
 
 * Permissions for the tenant account, such as whether the tenant account can use S3 platform services, configure its own identity source, use S3 Select, or use a grid federation connection.
 
@@ -55,5 +55,3 @@ After you create the tenant account, tenant users can sign in to the Tenant Mana
 * Monitor storage usage
 
 TIP: While S3 tenant users can create and manage S3 access key and buckets with the Tenant Manager, they must use an S3 client application to ingest and manage objects. See link:../s3/index.html[Use S3 REST API] for details.
-
-TIP: Swift users must have the Root access permission to access the Tenant Manager. However, the Root access permission does not allow users to authenticate into the Swift REST API to create containers and ingest objects. Users must have the Swift Administrator permission to authenticate into the Swift REST API.

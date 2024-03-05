@@ -115,7 +115,7 @@ entries:
           url: "/admin/global-certificate-types.html"
         - title: Configure management interface certificates
           url: "/admin/configuring-custom-server-certificate-for-grid-manager-tenant-manager.html"
-        - title: Configure S3 and Swift API certificates
+        - title: Configure S3 API certificates
           url: "/admin/configuring-custom-server-certificate-for-storage-node.html"
         - title: Copy or download the Grid CA certificate
           url: "/admin/copying-storagegrid-system-ca-certificate.html"
@@ -191,9 +191,9 @@ entries:
   - title: Configure client connections
     entries:
     - title: Overview
-      pdf-filename: Configure S3 and Swift client connections
+      pdf-filename: Configure S3 client connections
       url: "/admin/configuring-client-connections.html"
-    - title: Security for S3 or Swift clients
+    - title: Security for S3 clients
       url: "/admin/security-for-clients.html"      
     - title: Use S3 setup wizard
       entries:

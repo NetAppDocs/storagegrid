@@ -2,14 +2,14 @@
 permalink: audit/lkcu-overwritten-object-cleanup.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, LKCU, Overwritten Object Cleanup
-summary: 'This message is generated when StorageGRID removes an overwritten object that previously required cleanup to free up storage space. An object is overwritten when an S3 or Swift client writes an object to a path already containing a object. The removal process occurs automatically and in the background.'
+summary: 'This message is generated when StorageGRID removes an overwritten object that previously required cleanup to free up storage space. An object is overwritten when an S3 client writes an object to a path already containing a object. The removal process occurs automatically and in the background.'
 ---
 = LKCU: Overwritten Object Cleanup
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This message is generated when StorageGRID removes an overwritten object that previously required cleanup to free up storage space. An object is overwritten when an S3 or Swift client writes an object to a path already containing a object. The removal process occurs automatically and in the background.
+This message is generated when StorageGRID removes an overwritten object that previously required cleanup to free up storage space. An object is overwritten when an S3 client writes an object to a path already containing a object. The removal process occurs automatically and in the background.
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -35,9 +35,9 @@ The identifier of the object that was removed.
 a|
 PATH
 a|
-S3 Bucket/Key or Swift Container/Object ID
+S3 Bucket/Key
 a|
-The S3 bucket name and S3 key name, or the Swift container name and Swift object identifier.
+The S3 bucket name and S3 key name.
 a|
 SEGC
 a|

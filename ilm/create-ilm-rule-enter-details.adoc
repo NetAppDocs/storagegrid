@@ -25,13 +25,13 @@ When evaluating an object against an link:what-ilm-rule-is.html[ILM rule], Stora
 +
 You should describe the rule's purpose or function so you can recognize the rule later.
 
-. Optionally, select one or more S3 or Swift tenant accounts to which this rule applies. If this rule applies to all tenants, leave this field blank.
+. Optionally, select one or more S3 tenant accounts to which this rule applies. If this rule applies to all tenants, leave this field blank.
 +
 If you don't have either the Root access permission or the Tenant accounts permission, you can't select tenants from the list. Instead, enter the tenant ID or enter multiple IDs as a comma-delimited string.
 
-. Optionally, specify the S3 buckets or Swift containers to which this rule applies.
+. Optionally, specify the S3 buckets to which this rule applies.
 +
-If *applies to all buckets* is selected (default), the rule applies to all S3 buckets or Swift containers.
+If *applies to all buckets* is selected (default), the rule applies to all S3 buckets.
 
 . For S3 tenants, optionally select *Yes* to apply the rule only to older object versions in S3 buckets that have versioning enabled.
 +
@@ -82,7 +82,7 @@ The table shows the types of metadata you can specify in advanced filters, the o
 * does not start with
 * ends with
 * does not end with
-|All or part of a unique S3 or Swift object key.
+|All or part of a unique S3 object key.
 
 For example, you might want to match objects that end with `.txt` or start with `test-object/`.
 
@@ -96,7 +96,7 @@ For example, you might want to match objects that end with `.txt` or start with 
 * is on or after
 |Time and date the object was last retrieved (read or viewed).
 
-*Note:* If you plan to link:using-last-access-time-in-ilm-rules.html[use last access time] as an advanced filter, Last access time updates must be enabled for the S3 bucket or Swift container.
+*Note:* If you plan to link:using-last-access-time-in-ilm-rules.html[use last access time] as an advanced filter, Last access time updates must be enabled for the S3 bucket.
 
 |Location constraint (S3 only)
 |

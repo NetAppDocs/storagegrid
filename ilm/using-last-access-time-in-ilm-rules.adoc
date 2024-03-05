@@ -21,7 +21,7 @@ Take this latency into account when creating ILM rules based on Last access time
 
 * When using Last access time as an advanced filter or as a reference time, you must enable last access time updates for S3 buckets. You can use the link:../tenant/enabling-or-disabling-last-access-time-updates.html[Tenant Manager] or the link:../s3/put-bucket-last-access-time-request.html[Tenant Management API].
 +
-NOTE: Last access time updates are always enabled for Swift containers, but are disabled by default for S3 buckets.
+NOTE: Last access time updates are disabled by default for S3 buckets.
 +
 NOTE: Be aware that enabling last access time updates can reduce performance, especially in systems with small objects. The performance impact occurs because StorageGRID must update the objects with new timestamps every time the objects are retrieved.
 

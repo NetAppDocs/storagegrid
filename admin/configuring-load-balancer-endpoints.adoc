@@ -2,16 +2,16 @@
 permalink: admin/configuring-load-balancer-endpoints.html
 sidebar: sidebar
 keywords: how to configure load balancer endpoint, how to attach certificate to load balancer endpoint
-summary: 'Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.'
+summary: 'Load balancer endpoints determine the ports and network protocols S3 clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.'
 ---
 = Configure load balancer endpoints
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.
+Load balancer endpoints determine the ports and network protocols S3 clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.
 
-NOTE: Support for Swift client applications has been deprecated and will be removed in a future release.
+TIP: Swift details have been removed from this version of the doc site. See https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-client-connections.html[Configure S3 and Swift client connections^].
 
 .Before you begin
 
@@ -35,15 +35,15 @@ NOTE: Changes to an endpoint certificate can take up to 15 minutes to be applied
 
 ** To upload a certificate, you need the server certificate, the certificate private key, and optionally, a CA bundle.
 
-** To generate a certificate, you need all of the domain names and IP addresses that S3 or Swift clients will use to access the endpoint. You must also know the subject (Distinguished Name).
+** To generate a certificate, you need all of the domain names and IP addresses that S3 clients will use to access the endpoint. You must also know the subject (Distinguished Name).
 
-** If you want to use the StorageGRID S3 and Swift API certificate (which can also be used for connections directly to Storage Nodes), you have already replaced the default certificate with a custom certificate signed by an external certificate authority. See 
-link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 and Swift API certificates].
+** If you want to use the StorageGRID S3 API certificate (which can also be used for connections directly to Storage Nodes), you have already replaced the default certificate with a custom certificate signed by an external certificate authority. See 
+link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 API certificates].
 
 [[create-lb-endpoint]]
 == Create a load balancer endpoint
 
-Each S3 or Swift client load balancer endpoint specifies a port, a client type (S3 or Swift), and a network protocol (HTTP or HTTPS). Management interface load balancer endpoints specifies a port, interface type, and untrusted Client Network.
+Each S3 client load balancer endpoint specifies a port, a client type (S3), and a network protocol (HTTP or HTTPS). Management interface load balancer endpoints specifies a port, interface type, and untrusted Client Network.
 
 === Access the wizard
 
@@ -207,20 +207,20 @@ You must select this option if you have not yet created any tenant accounts. Aft
 
 . If you are creating an *HTTPS* endpoint, select the type of security certificate you want to attach to the endpoint.
 +
-The certificate secures the connections between S3 and Swift clients and the Load Balancer service on Admin Node or Gateway Nodes.
+The certificate secures the connections between S3 clients and the Load Balancer service on Admin Node or Gateway Nodes.
 +
 * *Upload certificate*. Select this option if you have custom certificates to upload.
 
 * *Generate certificate*. Select this option if you have the values needed to generate a custom certificate.
 
-* *Use StorageGRID S3 and Swift certificate*. Select this option if you want to use the global S3 and Swift API certificate, which can also be used for connections directly to Storage Nodes. 
+* *Use StorageGRID S3 certificate*. Select this option if you want to use the global S3 API certificate, which can also be used for connections directly to Storage Nodes. 
 +
-You can't select this option unless you have replaced the default S3 and Swift API certificate, which is signed by the grid CA, with a custom certificate signed by an external certificate authority. See
-link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 and Swift API certificates].
+You can't select this option unless you have replaced the default S3 API certificate, which is signed by the grid CA, with a custom certificate signed by an external certificate authority. See
+link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 API certificates].
 
 * *Use management interface certificate*. Select this option if you want to use the global management interface certificate, which can also be used for direct connections to Admin Nodes.
 
-. If you aren't using the StorageGRID S3 and Swift certificate, upload or generate the certificate.
+. If you aren't using the StorageGRID S3 certificate, upload or generate the certificate.
 //tabbed blocks start here
 +
 [role="tabbed-block"]
@@ -248,7 +248,7 @@ For example: `storagegrid_certificate.pem`
 * Select *Copy certificate PEM* or *Copy CA bundle PEM* to copy the certificate contents for pasting elsewhere.
 
 .. Select *Create*. +
-The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 and Swift clients or the management interface and the endpoint.
+The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 clients or the management interface and the endpoint.
 
 --
 //end Upload, begin Generate
@@ -299,7 +299,7 @@ For example: `storagegrid_certificate.pem`
 
 .. Select *Create*.
 +
-The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 and Swift clients or the management interface and this endpoint.
+The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 clients or the management interface and this endpoint.
 --
 ====
 //end tabbed blocks
@@ -318,7 +318,7 @@ The IP address you enter in the DNS record depends on whether you are using an H
 +
 You must also ensure that the DNS record references all required endpoint domain names, including any wildcard names.
 
-. Provide S3 and Swift clients with the information needed to connect to the endpoint:
+. Provide S3 clients with the information needed to connect to the endpoint:
 
 ** Port number
 ** Fully qualified domain name or IP address
@@ -381,13 +381,13 @@ TIP: After editing an endpoint, you might need to wait up to 15 minutes for your
 
 | .. Select the checkbox for the endpoint. 
 .. Select *Actions* > *Edit endpoint certificate*.
-.. Upload or generate a new custom certificate or begin using the global S3 and Swift certificate, as required.
+.. Upload or generate a new custom certificate or begin using the global S3 certificate, as required.
 .. Select *Save changes*.
 
 | .. Select the endpoint name to display the details.
 .. Select the *Certificate* tab.
 .. Select *Edit certificate*.
-.. Upload or generate a new custom certificate or begin using the global S3 and Swift certificate, as required.
+.. Upload or generate a new custom certificate or begin using the global S3 certificate, as required.
 .. Select *Save changes*.
 
 | Edit tenant access
@@ -408,7 +408,7 @@ TIP: After editing an endpoint, you might need to wait up to 15 minutes for your
 
 You can remove one or more endpoints using the *Actions* menu, or you can remove a single endpoint from the details page.
 
-CAUTION: To prevent client disruptions, update any affected S3 or Swift client applications before you remove a load balancer endpoint. Update each client to connect using a port assigned to another load balancer endpoint. Be sure to update any required certificate information as well.
+CAUTION: To prevent client disruptions, update any affected S3 client applications before you remove a load balancer endpoint. Update each client to connect using a port assigned to another load balancer endpoint. Be sure to update any required certificate information as well.
 
 NOTE: If you lose access to Grid Manager while removing a management interface endpoint, update the URL.
 

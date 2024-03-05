@@ -188,8 +188,8 @@ include::../_include/load-balancer-endpoint-binding-mode.adoc[]
 | Generate certificate
 | Use this option to generate a self-signed certificate. See link:configuring-load-balancer-endpoints.html[Configure load balancer endpoints] for details of what to enter.
 
-| Use StorageGRID S3 and Swift certificate
-| Use this option only if you have already uploaded or generated a custom version of the StorageGRID global certificate. See link:configuring-custom-server-certificate-for-storage-node.html[Configure S3 and Swift API certificates] for details. 
+| Use StorageGRID S3 certificate
+| Use this option only if you have already uploaded or generated a custom version of the StorageGRID global certificate. See link:configuring-custom-server-certificate-for-storage-node.html[Configure S3 API certificates] for details. 
 
 |===
 

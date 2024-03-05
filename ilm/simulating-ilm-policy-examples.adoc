@@ -43,7 +43,7 @@ In this example, the *Demo* policy is being simulated. This policy, which is int
 
 .Steps
 . After adding the rules and saving the policy, select *Simulate*.
-. In the *Object* field, enter the S3 bucket/object-key or the Swift container/object-name for a test object, and select *Simulate*.
+. In the *Object* field, enter the S3 bucket/object-key for a test object, and select *Simulate*.
 +
 The Simulation results appear, showing that the `Havok.png` object was matched by the *PNGs* rule.
 +
