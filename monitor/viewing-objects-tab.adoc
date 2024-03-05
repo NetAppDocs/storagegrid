@@ -9,7 +9,7 @@ summary: 'The Objects tab provides information about S3 ingest and retrieve rate
 :imagesdir: ../media/
 
 [.lead]
-The Objects tab provides information about link:../s3/index.html[S3] and link:../swift/index.html[Swift] ingest and retrieve rates.
+The Objects tab provides information about link:../s3/index.html[S3] ingest and retrieve rates.
 
 The Objects tab is shown for each Storage Node, each site, and the entire grid. For Storage Nodes, the Objects tab also provides object counts and information about metadata queries and background verification.
 

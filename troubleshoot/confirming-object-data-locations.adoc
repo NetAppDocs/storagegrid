@@ -16,7 +16,6 @@ Depending on the problem, you might want to link:../audit/object-ingest-transact
  ** *UUID*: The object's Universally Unique Identifier. Enter the UUID in all uppercase.
  ** *CBID*: The object's unique identifier within StorageGRID . You can obtain an object's CBID from the audit log. Enter the CBID in all uppercase.
  ** *S3 bucket and object key*: When an object is ingested through the link:../s3/operations-on-objects.html[S3 interface], the client application uses a bucket and object key combination to store and identify the object.
- ** *Swift container and object name*: When an object is ingested through the link:../swift/object-operations.html[Swift interface], the client application uses a container and object name combination to store and identify the object.
 
 .Steps
 . Select *ILM* > *Object metadata lookup*.
