@@ -1,15 +1,15 @@
 ---
 permalink: admin/identifying-primary-admin-node.html
 sidebar: sidebar
-keywords: cmn service, primary admin node, configuration management node
-summary: 'The primary Admin Node hosts the CMN service. Some maintenance procedures can only be performed using the primary Admin Node.'
+keywords: primary admin node, configuration management node
+summary: 'Some maintenance procedures can only be performed using the primary Admin Node.'
 ---
 = Identify the primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The primary Admin Node hosts the CMN service. Some maintenance procedures can only be performed using the primary Admin Node.
+Some maintenance procedures can only be performed using the primary Admin Node.
 
 .Before you begin
 
@@ -20,4 +20,4 @@ The primary Admin Node hosts the CMN service. Some maintenance procedures can on
 . Select *NODES*.
 . Enter *primary* in the search box.
 +
-One primary Admin Node should be listed in the search results.
+In the search results, identify the node with "Primary Admin Node" displayed in the Type column. One primary Admin Node should be listed.

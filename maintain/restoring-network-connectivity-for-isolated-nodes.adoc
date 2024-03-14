@@ -13,9 +13,7 @@ Under certain circumstances, such as site- or grid-wide IP address changes, one 
 
 .About this task
 
-On the Nodes page of the Grid Manager, if a node is gray, or if a node is blue with many of its services showing a status other than Running, you should check for node isolation.
-
-image:../media/nodes_page.png[Nodes page]
+Check for node isolation by checking for relevant alerts, such as the *Unable to communicate with node* alert.
 
 Some of the consequences of having isolated nodes include the following:
 
