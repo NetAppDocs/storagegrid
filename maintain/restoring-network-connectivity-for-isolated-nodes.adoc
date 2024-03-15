@@ -25,11 +25,11 @@ Some of the consequences of having isolated nodes include the following:
 
 To resolve the isolation issue, you run a command line utility on each isolated node or on one node in a group (all nodes in a subnet that does not contain the primary Admin Node) that is isolated from the grid. The utility provides the nodes with the IP address of a non-isolated node in the grid, which allows the isolated node or group of nodes to contact the entire grid again.
 
-NOTE: If the multicast domain name system (mDNS) is disabled in the networks, the command line utility might have to be run on each isolated node.
+NOTE: If the multicast domain name system (mDNS) is disabled in the networks, you might have to run the command line utility on each isolated node.
 
 .Steps
 
-NOTE: This procedure does not apply when only some services are offline or reporting communication errors.
+This procedure does not apply when only some services are offline or reporting communication errors.
 
 . Access the node and check `/var/local/log/dynip.log` for isolation messages.
 +

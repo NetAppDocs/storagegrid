@@ -11,7 +11,7 @@ summary: 'The primary Admin Node provides more functionality than non-primary Ad
 [.lead]
 The primary Admin Node provides more functionality than non-primary Admin Nodes. For example, some maintenance procedures must be performed using the primary Admin Node.
 
-For more information about Admin Nodes, see link:../primer/what-admin-node-is.html[What is an Admin Node?].
+For more information about Admin Nodes, see link:../primer/what-admin-node-is.html[What is an Admin Node].
 
 .Before you begin
 
