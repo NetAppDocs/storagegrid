@@ -102,8 +102,6 @@ entries:
       url: "/monitor/storagegrid-software-logs.html"
     - title: Deployment and maintenance logs
       url: "/monitor/deployment-and-maintenance-logs.html"
-    - title: Logs for third-party software
-      url: "/monitor/logs-for-third-party-software.html"
     - title: About the bycast.log
       url: "/monitor/about-bycast-log.html"
   - title: Configure audit message and log destinations

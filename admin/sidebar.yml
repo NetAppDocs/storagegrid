@@ -281,9 +281,7 @@ entries:
     - title: Increase Metadata Reserved Space setting
       url: "/admin/increasing-metadata-reserved-space-setting.html"
     - title: Compress stored objects
-      url: "/admin/configuring-stored-object-compression.html" 
-    - title: Storage Node configuration settings
-      url: "/admin/storage-node-configuration-settings.html"
+      url: "/admin/configuring-stored-object-compression.html"
     - title: Manage full Storage Nodes
       url: "/admin/managing-full-storage-nodes.html"
   - title: Manage Admin Nodes

@@ -15,7 +15,6 @@ The logs are categorized as follows:
 
 * link:storagegrid-software-logs.html[StorageGRID software logs]
 * link:deployment-and-maintenance-logs.html[Deployment and maintenance logs]
-* link:logs-for-third-party-software.html[Logs for third-party software]
 * link:about-bycast-log.html[About the bycast.log]
 
 NOTE: The details provided for each log type are for reference only. The logs are intended for advanced troubleshooting by technical support. Advanced techniques that involve reconstructing the problem history using the audit logs and the application log files are beyond the scope of these instructions.

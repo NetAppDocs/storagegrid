@@ -36,7 +36,6 @@ An AutoSupport package contains the following XML files and details.
 | AUTOSUPPORT-HISTORY.XML
 | AutoSupport Sequence Number +
 Destination for this AutoSupport +
-Trigger Event +
 Status of Delivery +
 Delivery Attempts +
 AutoSupport Subject +
@@ -96,7 +95,7 @@ Value +
 Index +
 Table ID +
 Table Name
-| Grid-wide configuration information file. Contains information about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, and ILM configuration), erasure-coding profile details, DNS name, link:../primer/nodes-and-services.html#storagegrid-services[NMS name], and more.
+| Grid-wide configuration information file. Contains information about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, and ILM configuration), erasure-coding profile details, DNS name, and link:../primer/nodes-and-services.html#storagegrid-services[NMS name].
 
 | GRID-SPEC.XML
 | Grid specifications, raw XML
@@ -161,7 +160,7 @@ Value +
 Index +
 Table ID +
 Table name
-| Object status, including background scan status, active transfer, transfer rate, total transfers, delete rate, corrupted fragments, lost objects, missing objects, repair attempted, scan rate, estimated scan period, repair completion status, and more.
+| Object status, including background scan status, active transfer, transfer rate, total transfers, delete rate, corrupted fragments, lost objects, missing objects, repair attempted, scan rate, estimated scan period, and repair completion status.
 
 | SERVER-STATUS.XML
 | Node +
@@ -172,7 +171,7 @@ Value +
 Index +
 Table ID +
 Table name
-| Server configurations and events file. Contains these details for each node: platform type, operating system, installed memory, available memory, storage connectivity, storage appliance chassis serial number, storage controller failed drive count, compute controller chassis temperature, compute hardware, compute controller serial number, power supply, drive size, drive type, and more.
+| Server configurations. Contains these details for each node: platform type, operating system, installed memory, available memory, storage connectivity, storage appliance chassis serial number, storage controller failed drive count, compute controller chassis temperature, compute hardware, compute controller serial number, power supply, drive size, and drive type.
 
 | SERVICE-STATUS.XML
 | Node +
@@ -183,7 +182,7 @@ Value +
 Index +
 Table ID +
 Table name
-| Service node information file. Contains details such as allocated table space, free table space, Reaper metrics of the database, segment repair duration, repair job duration, auto job restarts, auto job termination, and more.
+| Service node information file. Contains details such as allocated table space, free table space, Reaper metrics of the database, segment repair duration, repair job duration, auto job restarts, and auto job termination.
 
 | STORAGE-GRADES.XML
 | Storage grade ID +
