@@ -2,21 +2,21 @@
 permalink: maintain/restoring-network-connectivity-for-isolated-nodes.html
 sidebar: sidebar
 keywords: storagegrid, recover, network connection, restore network connection, isolated node, restore isolated node connection
-summary: 'Under certain circumstances, such as site- or grid-wide IP address changes, one or more groups of nodes might not be able to contact the rest of the grid.'
+summary: 'Under certain circumstances, one or more groups of nodes might not be able to contact the rest of the grid. For example, site- or grid-wide IP address changes can result in isolated nodes.'
 ---
 = Restore network connectivity for isolated nodes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Under certain circumstances, such as site- or grid-wide IP address changes, one or more groups of nodes might not be able to contact the rest of the grid.
+Under certain circumstances, one or more groups of nodes might not be able to contact the rest of the grid. For example, site- or grid-wide IP address changes can result in isolated nodes.
 
 .About this task
 
 Node isolation is indicated by:
 
-* Alerts, such as the *Unable to communicate with node* alert (Grid Manager dashboard or *Alerts* > *Current*).
-* Diagnostics (*SUPPORT* > *Tools* > *Diagnostics*).
+* Alerts, such as *Unable to communicate with node* (*Alerts* > *Current*)
+* Connectivity-related diagnostics (*SUPPORT* > *Tools* > *Diagnostics*)
 
 Some of the consequences of having isolated nodes include the following:
 
@@ -28,6 +28,8 @@ To resolve the isolation issue, you run a command line utility on each isolated 
 NOTE: If the multicast domain name system (mDNS) is disabled in the networks, the command line utility might have to be run on each isolated node.
 
 .Steps
+
+NOTE: This procedure does not apply when only some services are offline or reporting communication errors.
 
 . Access the node and check `/var/local/log/dynip.log` for isolation messages.
 +

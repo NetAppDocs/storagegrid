@@ -2,14 +2,16 @@
 permalink: admin/identifying-primary-admin-node.html
 sidebar: sidebar
 keywords: primary admin node, configuration management node
-summary: 'Some maintenance procedures can only be performed using the primary Admin Node.'
+summary: 'The primary Admin Node provides more functionality than non-primary Admin Nodes. For example, some maintenance procedures must be performed using the primary Admin Node.'
 ---
 = Identify the primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Some maintenance procedures can only be performed using the primary Admin Node.
+The primary Admin Node provides more functionality than non-primary Admin Nodes. For example, some maintenance procedures must be performed using the primary Admin Node.
+
+For more information about Admin Nodes, see link:../primer/what-admin-node-is.html[What is an Admin Node?].
 
 .Before you begin
 
