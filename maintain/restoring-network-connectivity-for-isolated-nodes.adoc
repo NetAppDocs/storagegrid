@@ -13,7 +13,10 @@ Under certain circumstances, such as site- or grid-wide IP address changes, one 
 
 .About this task
 
-Check for node isolation by checking for relevant alerts, such as the *Unable to communicate with node* alert.
+Node isolation is indicated by:
+
+* Alerts, such as the *Unable to communicate with node* alert (Grid Manager dashboard or *Alerts* > *Current*).
+* Diagnostics (*SUPPORT* > *Tools* > *Diagnostics*).
 
 Some of the consequences of having isolated nodes include the following:
 
