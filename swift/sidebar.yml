@@ -2,5 +2,4 @@ section: swift
 title: Use Swift REST API (end of life)
 entries:
   - title: Swift REST API
-    pdf-filename: Use Swift with StorageGRID
     url: "/swift/index.html"

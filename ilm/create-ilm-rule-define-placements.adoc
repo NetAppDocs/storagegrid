@@ -35,7 +35,7 @@ image::../media/ilm_create_ilm_rule_wizard_2.png[Create ILM Rule Wizard Step 2]
 |Last access time
 |The time when the object was last retrieved (read or viewed).
 
-*Note:* To use this option, updates to Last access time must be enabled for the S3 bucket container. See link:using-last-access-time-in-ilm-rules.html[Use Last access time in ILM rules].
+*Note:* To use this option, updates to Last access time must be enabled for the S3 bucket. See link:using-last-access-time-in-ilm-rules.html[Use Last access time in ILM rules].
 
 |User defined creation time
 |A time specified in user-defined metadata.

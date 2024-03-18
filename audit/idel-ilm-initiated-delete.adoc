@@ -79,7 +79,7 @@ PATH
 |
 S3 Bucket/Key
 |
-The S3 bucket name and S3 key name
+The S3 bucket name and S3 key name.
 
 |
 RSLT

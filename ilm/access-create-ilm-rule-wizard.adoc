@@ -18,7 +18,7 @@ NOTE: If you want to create the default ILM rule for a policy, follow the link:c
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 * If you want to specify which tenant accounts this rule applies to, you have the link:../admin/admin-group-permissions.html[Tenant accounts permission] or you know the account ID for each account.
-* If you want the rule to filter objects on last access time metadata, Last access time updates must be enabled by bucket.
+* If you want the rule to filter objects on last access time metadata, Last access time updates must be enabled by S3 bucket.
 * You have configured any Cloud Storage Pools you plan to use. See link:creating-cloud-storage-pool.html[Create Cloud Storage Pool].
 * You are familiar with the link:data-protection-options-for-ingest.html[ingest options].
 * If you need to create a compliant rule for use with S3 Object Lock, you are familiar with the link:requirements-for-s3-object-lock.html[requirements for S3 Object Lock].

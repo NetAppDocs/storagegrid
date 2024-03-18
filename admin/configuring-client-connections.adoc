@@ -9,7 +9,7 @@ summary: 'As a grid administrator, you manage the configuration options that con
 :imagesdir: ../media/
 
 [.lead]
-As a grid administrator, you manage the configuration options that control how S3 of Swift client applications connect to your StorageGRID system to store and retrieve data.
+As a grid administrator, you manage the configuration options that control how S3 client applications connect to your StorageGRID system to store and retrieve data.
 
 TIP: Swift details have been removed from this version of the doc site. See https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-client-connections.html[StorageGRID 11.8: Configure S3 and Swift client connections^].
 
