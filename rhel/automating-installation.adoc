@@ -100,7 +100,7 @@ If you specified that random passwords be generated, open the `Passwords.txt` fi
 
 ----
 ######################################################################
-##### The StorageGRID "recovery package" has been downloaded as: #####
+##### The StorageGRID "Recovery Package" has been downloaded as: #####
 #####           ./sgws-recovery-package-994078-rev1.zip          #####
 #####   Safeguard this file as it will be needed in case of a    #####
 #####                 StorageGRID node recovery.                 #####

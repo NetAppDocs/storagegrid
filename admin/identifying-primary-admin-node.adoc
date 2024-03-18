@@ -1,15 +1,17 @@
 ---
 permalink: admin/identifying-primary-admin-node.html
 sidebar: sidebar
-keywords: cmn service, primary admin node, configuration management node
-summary: 'The primary Admin Node hosts the CMN service. Some maintenance procedures can only be performed using the primary Admin Node.'
+keywords: primary admin node, configuration management node
+summary: 'The primary Admin Node provides more functionality than non-primary Admin Nodes. For example, some maintenance procedures must be performed using the primary Admin Node.'
 ---
 = Identify the primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The primary Admin Node hosts the CMN service. Some maintenance procedures can only be performed using the primary Admin Node.
+The primary Admin Node provides more functionality than non-primary Admin Nodes. For example, some maintenance procedures must be performed using the primary Admin Node.
+
+For more information about Admin Nodes, see link:../primer/what-admin-node-is.html[What is an Admin Node].
 
 .Before you begin
 
@@ -17,9 +19,7 @@ The primary Admin Node hosts the CMN service. Some maintenance procedures can on
 * You have link:admin-group-permissions.html[specific access permissions].
 
 .Steps
-. Select *SUPPORT* > *Tools* > *Grid topology*.
-. Select *_site_* > *Admin Node*, and then select image:../media/icon_plus_sign_black_on_white.gif[plus sign] to expand the topology tree and show the services hosted on this Admin Node.
+. Select *NODES*.
+. Enter *primary* in the search box.
 +
-The primary Admin Node hosts the CMN service.
-
-. If this Admin Node does not host the CMN service, check the other Admin Nodes.
+In the search results, identify the node with "Primary Admin Node" displayed in the Type column. One primary Admin Node should be listed.
