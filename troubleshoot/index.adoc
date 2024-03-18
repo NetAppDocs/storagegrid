@@ -247,7 +247,7 @@ You can collect this information for the entire system or for a specific data ce
 
 |On the Grid Manager dashboard, select *Performance* > *S3 operations* or *Performance* > *Swift operations*.
 
-To see ingest and retrieval rates and counts for a specific site or node, select *NODES* > *_site or Storage Node_* > *Objects*. Position your cursor over the Ingest and Retrieve chart for S3 or Swift.
+To see ingest and retrieval rates and counts for a specific site or node, select *NODES* > *_site or Storage Node_* > *Objects*. Position your cursor over the Ingest and Retrieve chart for S3.
 
 |Failed S3/Swift operations
 |Operations

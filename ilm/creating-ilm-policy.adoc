@@ -172,13 +172,13 @@ Simulate a policy on test objects before activating the policy and applying it t
 
 .Before you begin
 
-* You know the S3 bucket/object-key or the Swift container/object-name for each object you want to test.
+* You know the S3 bucket/object-key for each object you want to test.
 
 .Steps
 
-. Using an S3 or Swift client or the link:../tenant/use-s3-console.html[S3 Console], ingest the objects required to test each rule.
+. Using an S3 client or the link:../tenant/use-s3-console.html[S3 Console], ingest the objects required to test each rule.
 . On the ILM policies page, select the checkbox for the policy, then select *Simulate*.
-. In the *Object* field, enter the S3 `bucket/object-key` or the Swift `container/object-name` for a test object. For example, `bucket-01/filename.png`.
+. In the *Object* field, enter the S3 `bucket/object-key` for a test object. For example, `bucket-01/filename.png`.
 . If S3 versioning is enabled, optionally enter a version ID for the object in the *Version ID* field.
 . Select *Simulate*.
 . In the Simulation results section, confirm that each object was matched by the correct rule.

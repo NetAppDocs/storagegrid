@@ -94,8 +94,8 @@ You must select this option if you have not yet created any tenant accounts.
 |Generate certificate
 |Use this option to generate a self-signed certificate. See link:../admin/configuring-load-balancer-endpoints.html[Configure load balancer endpoints] for details of what to enter.
 
-|Use StorageGRID S3 and Swift certificate
-|This option is available only if you have already uploaded or generated a custom version of the StorageGRID global certificate. See link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 and Swift API certificates] for details.
+|Use StorageGRID S3 certificate
+|This option is available only if you have already uploaded or generated a custom version of the StorageGRID global certificate. See link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 API certificates] for details.
 
 |===
 

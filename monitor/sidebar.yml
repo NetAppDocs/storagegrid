@@ -47,7 +47,7 @@ entries:
       url: "/monitor/monitoring-network-connections-and-performance.html"
     - title: Monitor tenant activity
       url: "/monitor/monitoring-tenant-activity.html"
-    - title: Monitor S3 and Swift client operations
+    - title: Monitor S3 client operations
       url: "/monitor/monitoring-object-ingest-and-retrieval-rates.html"
     - title: Monitor load balancing operations
       url: "/monitor/monitoring-load-balancing-operations.html"      

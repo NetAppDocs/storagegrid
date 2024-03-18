@@ -15,6 +15,6 @@ In this example:
 
 * The Grid Network is used for network traffic related to internal object management operations.
 * The Admin Network is used for traffic related to administrative functions.
-* The Client Network is used for traffic related to S3 and Swift client requests.
+* The Client Network is used for traffic related to S3 client requests.
 
 image::../media/grid_admin_client_networks.png[Grid Admin Client Networks]

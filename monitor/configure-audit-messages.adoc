@@ -100,7 +100,7 @@ NOTE: If you don't require a detailed record of client read operations for your 
 A green banner indicates your configuration has been saved.
 
 == Define HTTP request headers
-You can optionally define any HTTP request headers you want to include in client read and write audit messages. These protocol headers apply to S3 and Swift requests only.
+You can optionally define any HTTP request headers you want to include in client read and write audit messages. These protocol headers apply to S3 requests only.
 
 .Steps
 

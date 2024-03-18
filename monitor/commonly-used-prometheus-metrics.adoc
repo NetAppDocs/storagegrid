@@ -63,7 +63,7 @@ storagegrid_appliance_storage_controller_hardware_status:: The overall status of
 
 storagegrid_content_buckets_and_containers:: The total number of S3 buckets and Swift containers known by this Storage Node.
 
-storagegrid_content_objects:: The total number of S3 and Swift data objects known by this Storage Node. Count is valid only for data objects created by client applications that interface with the system through S3 or Swift.
+storagegrid_content_objects:: The total number of S3 and Swift data objects known by this Storage Node. Count is valid only for data objects created by client applications that interface with the system through S3.
 
 storagegrid_content_objects_lost:: The total number of objects this service detects as missing from the StorageGRID system. Action should be taken to determine the cause of the loss and if recovery is possible.
 +

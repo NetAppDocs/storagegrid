@@ -67,7 +67,7 @@ NOTE: After creating a VLAN interface, wait up to 5 minutes for the new interfac
 
 * If the HA group is for HA protection of Admin Node services, which include the Grid Manager and the Tenant Manager, select interfaces on Admin Nodes only.
 
-* If the HA group is for HA protection of S3 or Swift client traffic, select interfaces on Admin Nodes, Gateway Nodes, or both.
+* If the HA group is for HA protection of S3 client traffic, select interfaces on Admin Nodes, Gateway Nodes, or both.
 
 * If you select interfaces on different types of nodes, an informational note appears. You are reminded that if a failover occurs, services provided by the previously active node might not be available on the newly active node. For example, a backup Gateway Node can't provide HA protection of Admin Node services. Similarly, a backup Admin Node can't perform all of the maintenance procedures that the primary Admin Node can provide.
 
@@ -109,7 +109,7 @@ NOTE: If you use a 32-bit prefix, the VIP network address also serves as the gat
 +
 image::../media/ha_group_select_virtual_ips.png[HA Groups enter VIPs]
 
-. Optionally, if any S3, Swift, administrative or tenant clients will access these VIP addresses from a different subnet, enter the *Gateway IP address*. The gateway address must be within the VIP subnet.
+. Optionally, if any S3 administrative or tenant clients will access these VIP addresses from a different subnet, enter the *Gateway IP address*. The gateway address must be within the VIP subnet.
 +
 Client and admin users will use this gateway to access the virtual IP addresses.
 
@@ -167,7 +167,7 @@ You can remove one or more high availability (HA) groups at a time.
 
 TIP: You can't remove an HA group if it is bound to a load balancer endpoint. To delete an HA group, you must remove it from any load balancer endpoints that use it.
 
-To prevent client disruptions, update any affected S3 or Swift client applications before you remove an HA group. Update each client to connect using another IP address, for example, the virtual IP address of a different HA group or the IP address that was configured for an interface during installation.
+To prevent client disruptions, update any affected S3 client applications before you remove an HA group. Update each client to connect using another IP address, for example, the virtual IP address of a different HA group or the IP address that was configured for an interface during installation.
 
 .Steps
 

@@ -13,11 +13,11 @@ You can group the network interfaces of multiple Admin and Gateway Nodes into a 
 
 == What is an HA group?
 
-You can use high availability (HA) groups to provide highly available data connections for S3 and Swift clients or to provide highly available connections to the Grid Manager and the Tenant Manager.
+You can use high availability (HA) groups to provide highly available data connections for S3 clients or to provide highly available connections to the Grid Manager and the Tenant Manager.
 
 Each HA group provides access to the shared services on the selected nodes.
 
-* HA groups that include Gateway Nodes, Admin Nodes, or both provide highly available data connections for S3 and Swift clients.
+* HA groups that include Gateway Nodes, Admin Nodes, or both provide highly available data connections for S3 clients.
 
 * HA groups that include only Admin Nodes provide highly available connections to the Grid Manager and the Tenant Manager.
 
