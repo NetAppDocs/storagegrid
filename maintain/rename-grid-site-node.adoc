@@ -136,7 +136,7 @@ A success message is shown. The new display names are now used throughout Grid M
 
 // end tabbed area
 
-=== [[download-recovery-package]]Download the recovery package
+=== [[download-recovery-package]]Download the Recovery Package
 
 When you are done renaming items, download and save a new Recovery Package. The new display names for the items you renamed are included in the `Passwords.txt` file.
 
