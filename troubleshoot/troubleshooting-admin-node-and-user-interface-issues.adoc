@@ -11,8 +11,7 @@ summary: 'There are several tasks you can perform to help determine the source o
 [.lead]
 There are several tasks you can perform to help determine the source of issues related to Admin Nodes and the StorageGRID user interface.
 
-.Before you begin
-You have link:../admin/admin-group-permissions.html[specific access permissions].
+NOTE: Make sure you are using a link:../admin/web-browser-requirements.html[supported web browser]. Browser support can change with each StorageGRID release. Confirm you are using browser that is supported by your StorageGRID ver
 
 == Admin Node sign-in errors
 
@@ -41,6 +40,24 @@ If the error is not resolved automatically, go to the next step.
 * If you have only one Admin Node or you still can't sign in, go to the next step.
 
 . Determine if the node's hardware is offline.
+
+. If single sign-on (SSO) is enabled for your StorageGRID system, refer to the steps for link:../admin/configuring-sso.html[configuring single sign-on].
++
+You might need to temporarily disable and re-enable SSO for a single Admin Node to resolve any issues.
++
+NOTE: If SSO is enabled, you can't sign on using a restricted port. You must use port 443.
+
+. Determine if the account you are using belongs to a federated user.
++
+If the federated user account is not working, try signing in to the Grid Manager as a local user, such as root.
+
+ ** If the local user can sign in:
+  ... Review any displayed alarms.
+  ... Select *CONFIGURATION* > *Access Control* > *Identity federation*.
+  ... Click *Test Connection* to validate your connection settings for the LDAP server.
+  ... If the test fails, resolve any configuration errors.
+ ** If the local user can't sign in and you are confident that the credentials are correct, go to the next step.
+
 
 . Use Secure Shell (ssh) to log in to the Admin Node:
  .. Enter the following command: `ssh admin@Admin_Node_IP`
@@ -112,13 +129,8 @@ The output to the terminal indicates where the log archive has been copied.
 +
 Admin Nodes use the ADC service during the authentication process.
 
-. From the Admin Node, log in to each of the ADC Storage Nodes, using the IP addresses you identified.
- .. Enter the following command: `ssh admin@grid_node_IP`
- .. Enter the password listed in the `Passwords.txt` file.
- .. Enter the following command to switch to root: `su -`
- .. Enter the password listed in the `Passwords.txt` file.
-+
-When you are logged in as root, the prompt changes from `$` to `#`.
+. From the Admin Node, use ssh to log in to each of the ADC Storage Nodes, using the IP addresses you identified.
+
 . View the status of all services running on the grid node: `storagegrid-status`
 +
 Make sure the idnt, acct, nginx, and cassandra services are all running.
@@ -134,27 +146,6 @@ The user interface for the Grid Manager or the Tenant Manager might not respond 
 
 .Steps
 
-. Make sure you are using a link:../admin/web-browser-requirements.html[supported web browser].
-+
-NOTE: Browser support can change with each StorageGRID release. Confirm you are using browser that is supported by your StorageGRID version.
-
 . Clear your web browser cache.
 +
 Clearing the cache removes outdated resources used by the previous version of StorageGRID software, and permits the user interface to operate correctly again. For instructions, see the documentation for your web browser.
-
-//. If single sign-on (SSO) is enabled for your StorageGRID system, refer to the steps for link:../admin/configuring-sso.html[configuring single sign-on].
-//+
-//You might need to temporarily disable and re-enable SSO for a single Admin Node to resolve any issues.
-//+
-//NOTE: If SSO is enabled, you can't sign on using a restricted port. You must use port 443.
-
-//. Determine if the account you are using belongs to a federated user.
-//+
-//If the federated user account is not working, try signing in to the Grid Manager as a local user, such as root.
-
-// ** If the local user can sign in:
-//  ... Review any displayed alarms.
-//  ... Select *CONFIGURATION* > *Access Control* > *Identity federation*.
-//  ... Click *Test Connection* to validate your connection settings for the LDAP server.
-//  ... If the test fails, resolve any configuration errors.
-// ** If the local user can't sign in and you are confident that the credentials are correct, go to the next step.
