@@ -47,14 +47,12 @@ entries:
       url: "/monitor/monitoring-network-connections-and-performance.html"
     - title: Monitor tenant activity
       url: "/monitor/monitoring-tenant-activity.html"
-    - title: Monitor S3 and Swift client operations
+    - title: Monitor S3 client operations
       url: "/monitor/monitoring-object-ingest-and-retrieval-rates.html"
     - title: Monitor load balancing operations
       url: "/monitor/monitoring-load-balancing-operations.html"      
     - title: Monitor grid federation connections
-      url: "/monitor/grid-federation-monitor-connections.html"   
-    - title: Monitor archival capacity
-      url: "/monitor/monitoring-archival-capacity.html"      
+      url: "/monitor/grid-federation-monitor-connections.html"
   - title: Alerts and alarms
     entries:
     - title: Overview
@@ -104,8 +102,6 @@ entries:
       url: "/monitor/storagegrid-software-logs.html"
     - title: Deployment and maintenance logs
       url: "/monitor/deployment-and-maintenance-logs.html"
-    - title: Logs for third-party software
-      url: "/monitor/logs-for-third-party-software.html"
     - title: About the bycast.log
       url: "/monitor/about-bycast-log.html"
   - title: Configure audit message and log destinations

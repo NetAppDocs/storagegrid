@@ -2,7 +2,7 @@
 permalink: troubleshoot/troubleshooting-certificate-errors.html
 sidebar: sidebar
 keywords: how to troubleshoot certificate errors
-summary: 'If you see a security or certificate issue when you try to connect to StorageGRID using a web browser, an S3 or Swift client, or an external monitoring tool, you should check the certificate.'
+summary: 'If you see a security or certificate issue when you try to connect to StorageGRID using a web browser, an S3 client, or an external monitoring tool, you should check the certificate.'
 ---
 = Troubleshoot certificate errors
 :icons: font
@@ -10,10 +10,10 @@ summary: 'If you see a security or certificate issue when you try to connect to 
 
 
 [.lead]
-If you see a security or certificate issue when you try to connect to StorageGRID using a web browser, an S3 or Swift client, or an external monitoring tool, you should check the certificate.
+If you see a security or certificate issue when you try to connect to StorageGRID using a web browser, an S3 client, or an external monitoring tool, you should check the certificate.
 
 .About this task
-Certificate errors can cause problems when you try to connect to StorageGRID using the Grid Manager, Grid Management API, Tenant Manager, or the Tenant Management API. Certificate errors can also occur when you try to connect with an S3 or Swift client or external monitoring tool.
+Certificate errors can cause problems when you try to connect to StorageGRID using the Grid Manager, Grid Management API, Tenant Manager, or the Tenant Management API. Certificate errors can also occur when you try to connect with an S3 client or external monitoring tool.
 
 If you are accessing the Grid Manager or Tenant Manager using a domain name instead of an IP address, the browser shows a certificate error without an option to bypass if either of the following occurs:
 
@@ -33,7 +33,7 @@ If you received an alert notification about an expired certificate, access the c
 . Select *CONFIGURATION* > *Security* > *Certificates* and then link:../admin/using-storagegrid-security-certificates.html#access-security-certificates[select the appropriate certificate tab].
 
 . Check the validity period of the certificate. +
-Some web browsers and S3 or Swift clients don't accept certificates with a validity period greater than 398 days.
+Some web browsers and S3 clients don't accept certificates with a validity period greater than 398 days.
 
 . If the certificate has expired or will expire soon, upload or generate a new certificate.
  ** For a server certificate, see the steps for link:../admin/configuring-custom-server-certificate-for-grid-manager-tenant-manager.html#add-a-custom-management-interface-certificate[configuring a custom server certificate for the Grid Manager and the Tenant Manager].

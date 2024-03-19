@@ -26,8 +26,7 @@ For more information, see link:advantages-disadvantages-of-ingest-options.html[A
 You can't use the Balanced or Strict option if the rule uses one of these placements:
 
 ** A Cloud Storage Pool at day 0
-** An Archive Node at day 0
-** A Cloud Storage Pool or an Archive Node when the rule uses a User defined creation time as a Reference time
+** A Cloud Storage Pool when the rule uses a User defined creation time as a Reference time
 
 See link:example-5-ilm-rules-and-policy-for-strict-ingest-behavior.html[Example 5: ILM rules and policy for Strict ingest behavior].
 ====

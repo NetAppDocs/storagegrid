@@ -2,14 +2,14 @@
 permalink: admin/managing-load-balancing.html
 sidebar: sidebar
 keywords: manage load balancing, balance workload, client ingest, client retrieval, distribute connection
-summary: 'You can use load balancing to handle ingest and retrieval workloads from S3 and Swift clients.'
+summary: 'You can use load balancing to handle ingest and retrieval workloads from S3 clients.'
 ---
 = Considerations for load balancing
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use load balancing to handle ingest and retrieval workloads from S3 and Swift clients. 
+You can use load balancing to handle ingest and retrieval workloads from S3 clients. 
 
 == What is load balancing?
 
@@ -27,7 +27,7 @@ As a general best practice, each site in your StorageGRID system should include 
 
 == What is a load balancer endpoint?
 
-A load balancer endpoint defines the port and the network protocol (HTTPS or HTTP) that incoming and outgoing client application requests will use to access those nodes that contain the Load Balancer service. The endpoint also defines the client type (S3 or Swift), the binding mode, and optionally a list of allowed or blocked tenants. 
+A load balancer endpoint defines the port and the network protocol (HTTPS or HTTP) that incoming and outgoing client application requests will use to access those nodes that contain the Load Balancer service. The endpoint also defines the client type (S3), the binding mode, and optionally a list of allowed or blocked tenants. 
 
 To create a load balancer endpoint, either select *CONFIGURATION* > *Network* > *Load balancer endpoints* or complete the FabricPool and S3 setup wizard. For instructions:
 
@@ -58,11 +58,11 @@ You must obtain the following files before you create the load balancer endpoint
 
 * *Generate a self-signed certificate*. 
 
-* *Use the global StorageGRID S3 and Swift certificate*. You must upload or generate a custom version of this certificate before you can select it for the load balancer endpoint. See link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 and Swift API certificates]. 
+* *Use the global StorageGRID S3 certificate*. You must upload or generate a custom version of this certificate before you can select it for the load balancer endpoint. See link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 API certificates]. 
 
 ==== What values do I need?
 
-To create the certificate, you must know all of the domain names and IP addresses that S3 or Swift client applications will use to access the endpoint.
+To create the certificate, you must know all of the domain names and IP addresses that S3 client applications will use to access the endpoint.
 
 The *Subject DN* (Distinguished Name) entry for the certificate must include the fully qualified domain name that the client application will use for StorageGRID. For example:
 
@@ -92,7 +92,7 @@ CAUTION: If the certificate used to secure the connection between the S3 applica
 
 To avoid certificate expiration issues, follow these best practices:
 
-* Carefully monitor any alerts that warn of approaching certificate expiration dates, such as the *Expiration of load balancer endpoint certificate* and *Expiration of global server certificate for S3 and Swift API* alerts.
+* Carefully monitor any alerts that warn of approaching certificate expiration dates, such as the *Expiration of load balancer endpoint certificate* and *Expiration of global server certificate for S3 API* alerts.
 
 * Always keep the StorageGRID and S3 application's versions of the certificate in sync. If you replace or renew the certificate used for a load balancer endpoint, you must replace or renew the equivalent certificate used by the S3 application.
 
@@ -136,6 +136,6 @@ To access the `top-secret.pdf`, a user in the *Top secret* tenant can issue a GE
 
 == CPU availability
 
-The Load Balancer service on each Admin Node and Gateway Node operates independently when forwarding S3 or Swift traffic to the Storage Nodes. Through a weighting process, the Load Balancer service routes more requests to Storage Nodes with higher CPU availability. Node CPU load information is updated every few minutes, but weighting might be updated more frequently. All Storage Nodes are assigned a minimal base weight value, even if a node reports 100% utilization or fails to report its utilization.
+The Load Balancer service on each Admin Node and Gateway Node operates independently when forwarding S3 traffic to the Storage Nodes. Through a weighting process, the Load Balancer service routes more requests to Storage Nodes with higher CPU availability. Node CPU load information is updated every few minutes, but weighting might be updated more frequently. All Storage Nodes are assigned a minimal base weight value, even if a node reports 100% utilization or fails to report its utilization.
 
 In some cases, information about CPU availability is limited to the site where the Load Balancer service is located.

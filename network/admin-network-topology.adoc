@@ -15,7 +15,7 @@ When you configure the Admin Network, you establish the host IP address, subnet 
 
 The Admin Network can be unique to each node and can consist of multiple subnets. Each node can be configured with an Admin External Subnet List (AESL). The AESL lists the subnets reachable over the Admin Network for each node. The AESL must also include the subnets of any services the grid will access over the Admin Network, such as NTP, DNS, KMS, and LDAP. Static routes are applied for each subnet in the AESL.
 
-In this example, the Grid Network is used for traffic related to S3 and Swift client requests and object management. while the Admin Network is used for administrative functions.
+In this example, the Grid Network is used for traffic related to S3 client requests and object management. while the Admin Network is used for administrative functions.
 
 image::../media/grid_admin_networks.png[Grid Admin Networks]
 

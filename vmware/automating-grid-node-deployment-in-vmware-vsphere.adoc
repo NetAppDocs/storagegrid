@@ -47,11 +47,6 @@ m| vsphere-non-primary-admin.ovf
 vsphere-non-primary-admin.mf
 | The template file (`.ovf`) and manifest file (`.mf`) for deploying non-primary Admin Nodes.
 
-m| vsphere-archive.ovf
-
-vsphere-archive.mf
-| The template file (`.ovf`) and manifest file (`.mf`) for deploying Archive Nodes.
-
 m| vsphere-gateway.ovf
 
 vsphere-gateway.mf
@@ -276,7 +271,7 @@ Optional. The temporary password to use when accessing this VM and using SSH dur
 Each node is in its own section of the configuration file. Each node requires the following settings:
 
 * The section head defines the node name that will be displayed in the Grid Manager. You can override that value by specifying the optional NODE_NAME parameter for the node.
-* *NODE_TYPE*: VM_Admin_Node, VM_Storage_Node, VM_Archive_Node, or VM_API_Gateway_Node
+* *NODE_TYPE*: VM_Admin_Node, VM_Storage_Node, or VM_API_Gateway_Node
 * *GRID_NETWORK_IP*: The IP address for the node on the Grid Network.
 * *ADMIN_NETWORK_IP*: The IP address for the node on the Admin Network. Required only if the node is attached to the Admin Network and ADMIN_NETWORK_CONFIG is set to STATIC.
 * *CLIENT_NETWORK_IP*: The IP address for the node on the Client Network. Required only if the node is attached to the Client Network and CLIENT_NETWORK_CONFIG for this node is set to STATIC.
@@ -366,24 +361,6 @@ The following additional setting is optional for Storage Nodes:
 +
 ----
 DISK = INSTANCES=16, CAPACITY=4096
-----
-
-.Archive Node
-
-The following additional setting is required for Archive Nodes:
-
-* *NODE_TYPE*: VM_Archive_Node
-
-This example entry is for an Archive Node that is on the Grid and Admin Networks, but not on the Client Network.
-
-----
-[DC1-ARC1]
-  NODE_TYPE = VM_Archive_Node
-
-  GRID_NETWORK_IP = 10.1.0.4
-  ADMIN_NETWORK_IP = 10.3.0.4
-
-  ADMIN_IP = 10.1.0.2
 ----
 
 .Gateway Node
@@ -561,7 +538,7 @@ If you specified that random passwords should be generated, open the `Passwords.
 
 ----
 ######################################################################
-##### The StorageGRID "recovery package" has been downloaded as: #####
+##### The StorageGRID "Recovery Package" has been downloaded as: #####
 #####           ./sgws-recovery-package-994078-rev1.zip          #####
 #####   Safeguard this file as it will be needed in case of a    #####
 #####                 StorageGRID node recovery.                 #####

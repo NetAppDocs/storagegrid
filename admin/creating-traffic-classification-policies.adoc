@@ -101,7 +101,7 @@ For example, if you want to create a 40 GB/s bandwidth limit for an SLA tier, cr
 
 . Read and review the Traffic classification policy. Use the *Previous* button to go back and make changes as required. When you are satisfied with the policy, select *Save and continue*.
 +
-S3 and Swift client traffic is now handled according to the traffic classification policy. 
+S3 client traffic is now handled according to the traffic classification policy. 
 
 .After you finish
 

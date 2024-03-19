@@ -1,15 +1,15 @@
 ---
 permalink: audit/object-ingest-transactions.html
 sidebar: sidebar
-keywords:  object ingest transaction, S3 ingest, Swift ingest, SPUT, ORLM, WPUT 
-summary: 'You can identify client ingest transactions in the audit log by locating API-specific \(S3 or Swift\) audit messages.'
+keywords:  object ingest transaction, S3 ingest, SPUT, ORLM, WPUT 
+summary: 'You can identify client ingest transactions in the audit log by locating S3 API-specific audit messages.'
 ---
 = Object ingest transactions
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can identify client ingest transactions in the audit log by locating API-specific (S3 or Swift) audit messages.
+You can identify client ingest transactions in the audit log by locating S3 API-specific audit messages.
 
 Not all audit messages generated during an ingest transaction are listed in the following tables. Only the messages required to trace the ingest transaction are included.
 

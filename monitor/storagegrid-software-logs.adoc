@@ -131,10 +131,6 @@ m| /var/local/log/ams.errlog
 | 
 | Admin Nodes
 
-m| /var/local/log/arc.errlog
-| 
-| Archive Nodes
-
 m| /var/local/log/cassandra/system.log
 | Information for the metadata store (Cassandra database) that can be used if problems occur when adding new Storage Nodes, or if the nodetool repair task stalls.
 | Storage Nodes
@@ -158,10 +154,6 @@ m| /var/local/log/cmn.errlog
 m| /var/local/log/cms.errlog
 | This log file might be present on systems that have been upgraded from an older version of StorageGRID. It contains legacy information.
 | Storage Nodes
-
-m| /var/local/log/cts.errlog
-| This log file is only created if the Target Type is *Cloud Tiering - Simple Storage Service (S3).*
-| Archive Nodes
 
 m| /var/local/log/dds.errlog
 | 
@@ -226,7 +218,7 @@ m| /var/local/log/nginx-gw/cgr-access.log.gz
 | Admin Nodes, Gateway Nodes, or both, based on the grid federation configuration.  Only found on the destination grid for cross-grid replication.
 
 m| /var/local/log/nginx-gw/endpoint-access.log.gz
-| Contains access logs for the Load Balancer service, which provides load balancing of S3 and Swift traffic from clients to Storage Nodes.
+| Contains access logs for the Load Balancer service, which provides load balancing of S3 traffic from clients to Storage Nodes.
 | Admin Nodes and Gateway Nodes
 
 m| /var/local/log/persistence*

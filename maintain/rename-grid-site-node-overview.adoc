@@ -126,7 +126,7 @@ If you plan to rename multiple items, document your general naming scheme before
 You can use any naming convention that fits your organizational requirements. Consider these basic suggestions of what to include:
 
 * *Site indicator*: If you have multiple sites, add a site code to each node name. 
-* *Node type*: Node names typically indicate the node's type. You can use abbreviations like `s`, `adm`, `gw`, and `arc` (Storage Node, Admin Node, Gateway Node, and Archive Node).
+* *Node type*: Node names typically indicate the node's type. You can use abbreviations like `s`, `adm`, and `gw` (Storage Node, Admin Node, and Gateway Node).
 * *Node number*: If a site contains more than one of a particular type of node, add a unique number to each node's name.
 
 Think twice before adding specific details to the names that are likely to change over time. For example, don't include IP addresses in node names because these addresses can be changed. Similarly, rack locations or appliance model numbers can change if you move equipment or upgrade the hardware.

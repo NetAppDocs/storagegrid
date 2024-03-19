@@ -39,15 +39,12 @@ A busy system generates large amounts of information. The following list provide
 | link:monitoring-tenant-activity.html[Tenant activity]
 | Weekly
 
-| link:monitoring-object-ingest-and-retrieval-rates.html[S3 and Swift client operations]
+| link:monitoring-object-ingest-and-retrieval-rates.html[S3 client operations]
 | Weekly
 
 | link:monitoring-load-balancing-operations.html[Load balancing operations]
 | After the initial configuration and after any configuration changes
 
 | link:grid-federation-monitor-connections.html[Grid federation connections]
-| Weekly
-
-| link:monitoring-archival-capacity.html[Capacity of the external archival storage system]
 | Weekly
 |===

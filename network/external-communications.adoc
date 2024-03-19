@@ -196,13 +196,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | 443
 | TCP
 | HTTPS
-| Archive Nodes
-| Amazon S3
-| Used for accessing Amazon S3 from Archive Nodes.
-
-| 443
-| TCP
-| HTTPS
 | Storage Nodes with ADC
 | AWS
 | Used for platform services messages sent to AWS or other external services that use HTTPS. Tenants can override the default HTTP port setting of 443 when creating an endpoint.

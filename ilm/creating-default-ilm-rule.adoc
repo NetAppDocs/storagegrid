@@ -50,7 +50,7 @@ The default rule must apply to all tenant accounts.
 
 . Leave the Bucket name drop-down selection as *applies to all buckets*.
 +
-The default rule must apply to all S3 buckets and Swift containers.
+The default rule must apply to all S3 buckets.
 
 . Keep the default answer, *No*, for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?"
 
@@ -76,7 +76,6 @@ NOTE: Don't use a rule that creates erasure-coded copies as the default rule for
   ** It must create at least two replicated object copies or one erasure-coded copy.
   ** These copies must exist on Storage Nodes for the entire duration of each line in the placement instructions.
   ** Object copies can't be saved in a Cloud Storage Pool.
-  ** Object copies can't be saved on Archive Nodes.
   ** At least one line of the placement instructions must start at day 0, using Ingest time as the reference time.
   ** At least one line of the placement instructions must be "forever."
 . Look at the Retention diagram to confirm your placement instructions.

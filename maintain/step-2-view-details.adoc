@@ -29,7 +29,7 @@ image::../media/decommission_site_step_2_site_warnings.png[Decommission Site Ste
 +
 A warning appears in these cases:
 
- ** The site includes a Gateway Node. If S3 and Swift clients are currently connecting to this node, you must configure an equivalent node at another site. Be sure clients can connect to the replacement node before continuing with the decommission procedure.
+ ** The site includes a Gateway Node. If S3 clients are currently connecting to this node, you must configure an equivalent node at another site. Be sure clients can connect to the replacement node before continuing with the decommission procedure.
  ** The site contains a mixture of connected (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]) and disconnected nodes (image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down] or image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown]). Before you can remove this site, you must bring all offline nodes back online.
 
 . Review details about the site you selected to remove.

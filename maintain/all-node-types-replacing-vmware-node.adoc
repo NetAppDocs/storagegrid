@@ -19,7 +19,7 @@ You have determined that the virtual machine can't be restored and must be repla
 
 You use the VMware vSphere Web Client to first remove the virtual machine associated with the failed grid node. Then, you can deploy a new virtual machine.
 
-This procedure is only one step in the grid node recovery process. The node removal and deployment procedure is the same for all VMware nodes, including Admin Nodes, Storage Nodes, Gateway Nodes, and Archive Nodes.
+This procedure is only one step in the grid node recovery process. The node removal and deployment procedure is the same for all VMware nodes, including Admin Nodes, Storage Nodes, and Gateway Nodes.
 
 .Steps
 
@@ -53,7 +53,4 @@ NOTE: After deploying the new node, you can add new virtual disks according to y
 
 |Storage Node
 | link:selecting-start-recovery-to-configure-storage-node.html[Select Start Recovery to configure Storage Node]
-
-|Archive Node
-| link:selecting-start-recovery-to-configure-archive-node.html[Select Start Recovery to configure Archive Node]
 |===

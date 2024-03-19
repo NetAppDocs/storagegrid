@@ -21,7 +21,7 @@ Some of the reasons for recovering a failed grid node as soon as possible includ
 * A failed grid node can cause a 500 internal server error if strict ILM rules are in place.
 * If a grid node is not recovered promptly, recovery times might increase. For example, queues might develop that need to be cleared before recovery is complete.
 
-Always follow the recovery procedure for the specific type of grid node you are recovering. Recovery procedures vary for primary or non-primary Admin Nodes, Gateway Nodes, Archive Nodes, appliance nodes, and Storage Nodes.
+Always follow the recovery procedure for the specific type of grid node you are recovering. Recovery procedures vary for primary or non-primary Admin Nodes, Gateway Nodes, appliance nodes, and Storage Nodes.
 
 == Preconditions for recovering grid nodes
 

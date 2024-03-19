@@ -25,7 +25,7 @@ Before enabling object compression, be aware of the following:
 * You should not select *Compress stored objects* unless you know that the data being stored is compressible.
 * Applications that save objects to StorageGRID might compress objects before saving them. If a client application has already compressed an object before saving it to StorageGRID, selecting this option will not further reduce an object's size.
 * Don't select *Compress stored objects* if you are using NetApp FabricPool with StorageGRID.
-* If *Compress stored objects* is selected, S3 and Swift client applications should avoid performing GetObject operations that specify a range of bytes be returned. These "range read" operations are inefficient because StorageGRID must effectively uncompress the objects to access the requested bytes. GetObject operations that request a small range of bytes from a very large object are especially inefficient; for example, it is inefficient to read a 10 MB range from a 50 GB compressed object.
+* If *Compress stored objects* is selected, S3 client applications should avoid performing GetObject operations that specify a range of bytes be returned. These "range read" operations are inefficient because StorageGRID must effectively uncompress the objects to access the requested bytes. GetObject operations that request a small range of bytes from a very large object are especially inefficient; for example, it is inefficient to read a 10 MB range from a 50 GB compressed object.
 +
 If ranges are read from compressed objects, client requests can time out.
 +

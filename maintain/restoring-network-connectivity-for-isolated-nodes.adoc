@@ -2,20 +2,21 @@
 permalink: maintain/restoring-network-connectivity-for-isolated-nodes.html
 sidebar: sidebar
 keywords: storagegrid, recover, network connection, restore network connection, isolated node, restore isolated node connection
-summary: 'Under certain circumstances, such as site- or grid-wide IP address changes, one or more groups of nodes might not be able to contact the rest of the grid.'
+summary: 'Under certain circumstances, one or more groups of nodes might not be able to contact the rest of the grid. For example, site- or grid-wide IP address changes can result in isolated nodes.'
 ---
 = Restore network connectivity for isolated nodes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Under certain circumstances, such as site- or grid-wide IP address changes, one or more groups of nodes might not be able to contact the rest of the grid.
+Under certain circumstances, one or more groups of nodes might not be able to contact the rest of the grid. For example, site- or grid-wide IP address changes can result in isolated nodes.
 
 .About this task
 
-In the Grid Manager (*SUPPORT* > *Tools* > *Grid topology*), if a node is gray, or if a node is blue with many of its services showing a status other than Running, you should check for node isolation.
+Node isolation is indicated by:
 
-image::../media/dynamic_ip_service_not_running.gif[screenshot]
+* Alerts, such as *Unable to communicate with node* (*Alerts* > *Current*)
+* Connectivity-related diagnostics (*SUPPORT* > *Tools* > *Diagnostics*)
 
 Some of the consequences of having isolated nodes include the following:
 
@@ -24,9 +25,11 @@ Some of the consequences of having isolated nodes include the following:
 
 To resolve the isolation issue, you run a command line utility on each isolated node or on one node in a group (all nodes in a subnet that does not contain the primary Admin Node) that is isolated from the grid. The utility provides the nodes with the IP address of a non-isolated node in the grid, which allows the isolated node or group of nodes to contact the entire grid again.
 
-NOTE: If the multicast domain name system (mDNS) is disabled in the networks, the command line utility might have to be run on each isolated node.
+NOTE: If the multicast domain name system (mDNS) is disabled in the networks, you might have to run the command line utility on each isolated node.
 
 .Steps
+
+This procedure does not apply when only some services are offline or reporting communication errors.
 
 . Access the node and check `/var/local/log/dynip.log` for isolation messages.
 +
@@ -59,6 +62,6 @@ Local node found on remote node. Update complete.
 . Verify the following for each node that was previously isolated:
  ** The node's services have started.
  ** The status of the Dynamic IP service is "Running" after you run the `storagegrid-status` command.
- ** In the Grid Topology tree, the node no longer appears disconnected from the rest of the grid.
+ ** On the Nodes page, the node no longer appears disconnected from the rest of the grid.
 
 NOTE: If running the `add_node_ip.py` command does not solve the problem, there could be other networking issues that need to be resolved.
