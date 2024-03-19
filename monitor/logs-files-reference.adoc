@@ -54,7 +54,7 @@ m| ec
 m| grid
 | General grid logs including debug (`bycast.log`) and `servermanager` logs.
 
-m| grid.xml
+m| grid.json
 | Grid configuration file shared across all nodes.
 
 m| hagroups

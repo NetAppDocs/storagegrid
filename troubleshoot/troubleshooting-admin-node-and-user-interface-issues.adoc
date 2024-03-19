@@ -124,7 +124,7 @@ The output to the terminal indicates where the log archive has been copied.
 ----
 +
 ----
-# vi gpt-list-services adc
+# gpt-list-services adc
 ----
 +
 Admin Nodes use the ADC service during the authentication process.
