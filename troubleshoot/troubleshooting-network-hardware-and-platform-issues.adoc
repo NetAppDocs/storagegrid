@@ -17,12 +17,12 @@ The error 422: Unprocessable Entity can occur for different reasons. Check the e
 
 If you see one of the listed error messages, take the recommended action.
 
-[cols="2a,2a" options="header"]
+[cols="2a,3a" options="header"]
 |===
 | Error message
 | Root cause and corrective action
 
-|----
+| ----
 422: Unprocessable Entity
 
 Validation failed. Please check
@@ -42,11 +42,11 @@ already active on the
 connection, data 0, v3839
 ----
 
-|This message might occur if you select the *Do not use TLS* option for Transport Layer Security (TLS) when configuring identity federation using Windows Active Directory (AD).
+| This message might occur if you select the *Do not use TLS* option for Transport Layer Security (TLS) when configuring identity federation using Windows Active Directory (AD).
 
 Using the *Do not use TLS* option is not supported for use with AD servers that enforce LDAP signing. You must select either the *Use STARTTLS* option or the *Use LDAPS* option for TLS.
 
-|----
+| ----
 422: Unprocessable Entity
 
 Validation failed. Please check
@@ -62,10 +62,9 @@ TLS handshake failed
     (EOF)
 ----
 
-|This message appears if you try to use an unsupported cipher to make a Transport Layer Security (TLS) connection from StorageGRID to an external system used for identify federation or Cloud Storage Pools.
+| This message appears if you try to use an unsupported cipher to make a Transport Layer Security (TLS) connection from StorageGRID to an external system used for identify federation or Cloud Storage Pools.
 
 Check the ciphers that are offered by the external system. The system must use one of the link:../admin/supported-ciphers-for-outgoing-tls-connections.html[ciphers supported by StorageGRID] for outgoing TLS connections, as shown in the instructions for administering StorageGRID.
-
 |===
 
 
@@ -89,7 +88,7 @@ The differences in MTU settings could indicate that some, but not all, eth0 netw
 +
 Use the following arguments for modifying the MTU on Linux- or VMware-based nodes.
 +
-[cols="2a,2a" options="header"]
+[cols="1a,2a" options="header"]
 |===
 |Positional arguments
 |Description
@@ -117,7 +116,6 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 |The node. The default is the local node.
 
 |===
-
 
 == Network Receive Error (NRER) alarm
 
@@ -193,8 +191,6 @@ The ring buffer can be overrun when the StorageGRID system is overloaded and una
  .. Select *SUPPORT* > *Tools* > *Grid topology*.
  .. Select *_site_* > *_grid node_* > *SSM* > *Resources* > *Configuration* > *Main*.
  .. Select *Reset Receive Error Count* and click *Apply Changes*.
-
-
 
 .Related information
 
