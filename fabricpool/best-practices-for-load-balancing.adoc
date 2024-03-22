@@ -41,7 +41,7 @@ CAUTION: If the certificate used to secure the connection between ONTAP and Stor
 
 To avoid certificate expiration issues, follow these best practices:
 
-* Carefully monitor any alerts that warn of approaching certificate expiration dates, such as the *Expiration of load balancer endpoint certificate* and *Expiration of global server certificate for S3 and Swift API* alerts.
+* Carefully monitor any alerts that warn of approaching certificate expiration dates, such as the *Expiration of load balancer endpoint certificate* and *Expiration of global server certificate for S3 API* alerts.
 
 * Always keep the StorageGRID and ONTAP versions of the certificate in sync. If you replace or renew the certificate used for a load balancer endpoint, you must replace or renew the equivalent certificate used by ONTAP for the cloud tier.
 

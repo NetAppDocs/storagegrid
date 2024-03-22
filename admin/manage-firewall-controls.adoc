@@ -67,12 +67,7 @@ CAUTION: Add the privileged IP address before you block access to any ports assi
 After you save your configuration, port 22 and SSH service will be available to hosts on the privileged address list. All other hosts will be denied access to the service no matter what interface the request comes from.
 
 === Example 4: Disable access to unused services
-At a network level, you could disable some services that you don't intend to use. For example if you will not provide Swift access, you would perform the following general steps: 
-
-. Use the toggle on the Manage external access tab to block port 18083. 
-. Use the toggle on the Manage external access tab to block port 18085.
-
-After you save your configuration, the Storage Node no longer allows Swift connectivity, but continues to allow access to other services on unblocked ports.
+At a network level, you could disable some services that you don't intend to use. For example, to block HTTP S3 client traffic, you would use the toggle on the Manage external access tab to block port 18084. 
 
 == Untrusted Client Networks tab
 

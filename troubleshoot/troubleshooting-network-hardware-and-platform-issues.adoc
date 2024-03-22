@@ -79,7 +79,7 @@ The differences in MTU settings could indicate that some, but not all, eth0 netw
 .Steps
 . List the MTU settings for eth0 on all nodes.
  ** Use the query provided in the Grid Manager.
- ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{interface='eth0'}`
+ ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{device="eth0"}`
 . https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/changing-mtu-setting.html[Modify the MTU settings^] as necessary to ensure they are the same for the Grid Network interface (eth0) on all nodes.
  ** For Linux- and VMware-based nodes, use the following command: `+/usr/sbin/change-ip.py [-h] [-n node] mtu network [network...]+`
 +
@@ -336,3 +336,5 @@ storagegrid node stop node-name
 ----
 storagegrid node start node-name
 ----
+
+// 2024 FEB 22, SGRIDDOC-49

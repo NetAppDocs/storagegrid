@@ -29,9 +29,9 @@ If available, the last known direct or near-line location of the lost object. It
 a|
 PATH
 a|
-S3 Bucket/Key or Swift Container/Object ID
+S3 Bucket/Key
 a|
-If available, the S3 bucket name and S3 key name, or the Swift container name and Swift object identifier.
+If available, the S3 bucket name and S3 key name.
 a|
 RSLT
 a|

@@ -50,10 +50,7 @@ indexpage:
           url: ../s3/operations-on-objects.html
         - title: Bucket and group access policies
           url: ../s3/bucket-and-group-access-policies.html
-    - title: Use Swift REST API (deprecated)
+    - title: Use Swift REST API (end of life)
       links:
-        - title: Supported operations
-          url: ../swift/swift-rest-api-supported-operations.html
-        - title: StorageGRID Swift REST API operations
-          url: ../swift/storagegrid-swift-rest-api-operations.html
-        
+        - title: Use Swift
+          url: ../swift/index.html

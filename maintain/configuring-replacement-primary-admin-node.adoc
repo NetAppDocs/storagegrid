@@ -22,10 +22,21 @@ The replacement node must be configured as the primary Admin Node for your Stora
 .Steps
 
 . Open your web browser and navigate to `\https://primary_admin_node_ip`.
+
+. Manage a temporary installer password as needed:
+
+* If a password has already been set using one of these methods, enter the password to proceed.
+ 
+**	A user set the password while accessing the installer previously
+**	For bare metal systems, the password was automatically imported from the node config file at `/etc/storagegrid/nodes/_<node_name>_.conf`
+** For VMs, the SSH/console password was automatically imported from the OVF properties
+
+* If a password has not been set, optionally set a password to secure the StorageGRID installer.
+
+. Click *Recover a failed primary Admin Node*.
 +
 image::../media/install_or_recover_primary_admin_node.png[Install or recover Primary Admin Node]
 
-. Click *Recover a failed primary Admin Node*.
 . Upload the most recent backup of the Recovery Package:
  .. Click *Browse*.
  .. Locate the most recent Recovery Package file for your StorageGRID system, and click *Open*.

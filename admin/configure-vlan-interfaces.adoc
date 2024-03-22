@@ -23,7 +23,7 @@ You can create virtual LAN (VLAN) interfaces on Admin Nodes and Gateway Nodes an
 
 * If the VLAN interface is for Admin Node traffic, which includes traffic related to the Grid Manager and the Tenant Manager, select interfaces on Admin Nodes only.
 
-* If the VLAN interface is for S3 or Swift client traffic, select interfaces on either Admin Nodes or Gateway Nodes.
+* If the VLAN interface is for S3 client traffic, select interfaces on either Admin Nodes or Gateway Nodes.
 
 * If you need to add trunk interfaces, see the following for details:
 

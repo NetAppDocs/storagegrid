@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: object ingest rates, object retrieval rates, monitor s3, client operations
 summary: 'You can monitor object ingest and retrieval rates as well as metrics for object counts, queries, and verification. You can view the number of successful and failed attempts by client applications to read, write, and modify objects in the StorageGRID system.'
 ---
-= Monitor S3 and Swift client operations
+= Monitor S3 client operations
 :icons: font
 :imagesdir: ../media/
 
@@ -19,13 +19,13 @@ You can monitor object ingest and retrieval rates as well as metrics for object 
 
 . From the dashboard, select the *Performance* tab.
 
-. Refer to the S3 and Swift charts, which summarize the number of client operations performed by Storage Nodes and the number of API requests received by Storage Nodes during the selected time frame.
+. Refer to the S3 charts, which summarize the number of client operations performed by Storage Nodes and the number of API requests received by Storage Nodes during the selected time frame.
 
 . Select *NODES* to access the Nodes page.
 
 . From the Nodes home page (grid level), select the *Objects* tab.
 +
-The chart shows S3 and Swift ingest and retrieve rates for your entire StorageGRID system in bytes per second and the amount of data ingested or retrieved. You can select a time interval or apply a custom interval.
+The chart shows S3 ingest and retrieve rates for your entire StorageGRID system in bytes per second and the amount of data ingested or retrieved. You can select a time interval or apply a custom interval.
 
 . To see information for a particular Storage Node, select the node from the list on the left, and select the *Objects* tab.
 +

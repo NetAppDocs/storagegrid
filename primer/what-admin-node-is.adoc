@@ -2,14 +2,14 @@
 permalink: primer/what-admin-node-is.html
 sidebar: sidebar
 keywords: admin nodes
-summary: 'Admin Nodes provide management services such as system configuration, monitoring, and logging. Admin Nodes can also be used to load balance S3 and Swift client traffic. Each grid must have one primary Admin Node and might have any number of non-primary Admin Nodes for redundancy.'
+summary: 'Admin Nodes provide management services such as system configuration, monitoring, and logging. Admin Nodes can also be used to load balance S3 client traffic. Each grid must have one primary Admin Node and might have any number of non-primary Admin Nodes for redundancy.'
 ---
 = What is an Admin Node?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Admin Nodes provide management services such as system configuration, monitoring, and logging. Admin Nodes can also be used to load balance S3 and Swift client traffic. Each grid must have one primary Admin Node and might have any number of non-primary Admin Nodes for redundancy.
+Admin Nodes provide management services such as system configuration, monitoring, and logging. Admin Nodes can also be used to load balance S3 client traffic. Each grid must have one primary Admin Node and might have any number of non-primary Admin Nodes for redundancy.
 
 == Differences between primary and non-primary Admin Nodes
 
@@ -110,7 +110,7 @@ The following table shows the primary services for Admin Nodes; however, this ta
 
 
 | [[load-balancer]]Load Balancer
-| Provides load balancing of S3 and Swift traffic from clients to Storage Nodes.
+| Provides load balancing of S3 traffic from clients to Storage Nodes.
 
 *Note:* This service is also found on Gateway Nodes.
 

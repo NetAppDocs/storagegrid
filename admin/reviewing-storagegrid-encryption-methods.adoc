@@ -38,7 +38,7 @@ Drive encryption doesn't apply to SANtricity-managed drives. If you have a stora
 
 | Stored object encryption
 | You enable the link:changing-network-options-object-encryption.html[Stored object encryption] option in the Grid Manager. When enabled, any new objects that aren't encrypted at the bucket level or at the object level are encrypted during ingest.
-| Newly ingested S3 and Swift object data.
+| Newly ingested S3 object data.
 
 Existing stored objects aren't encrypted. Object metadata and other sensitive data aren't encrypted.
 

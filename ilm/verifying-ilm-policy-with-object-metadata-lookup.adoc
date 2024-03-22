@@ -17,12 +17,11 @@ After you have activated an ILM policy, you should ingest representative test ob
  ** *UUID*: The object's Universally Unique Identifier. Enter the UUID in all uppercase.
  ** *CBID*: The object's unique identifier within StorageGRID. You can obtain an object's CBID from the audit log. Enter the CBID in all uppercase.
  ** *S3 bucket and object key*: When an object is ingested through the S3 interface, the client application uses a bucket and object key combination to store and identify the object. If the S3 bucket is versioned and you want to look up a specific version of an S3 object using the bucket and object key, you have the *version ID*.
- ** *Swift container and object name*: When an object is ingested through the Swift interface, the client application uses a container and object name combination to store and identify the object.
 
 .Steps
 . Ingest the object.
 . Select *ILM* > *Object metadata lookup*.
-. Type the object's identifier in the *Identifier* field. You can enter a UUID, CBID, S3 bucket/object-key, or Swift container/object-name.
+. Type the object's identifier in the *Identifier* field. You can enter a UUID, CBID, or S3 bucket/object-key.
 . Optionally, enter a version ID for the object (S3 only).
 . Select *Look Up*.
 +
@@ -32,7 +31,7 @@ The object metadata lookup results appear. This page lists the following types o
  ** object ID (UUID)
  ** object name
  ** name of the container
- ** result type (object, delete marker, S3 bucket or Swift container) 
+ ** result type (object, delete marker, S3 bucket) 
  ** tenant account name or ID
  ** logical size of the object
  ** date and time the object was first created
@@ -59,5 +58,4 @@ NOTE: If the Audit option is enabled, you can also monitor the audit log for the
 
 * link:../s3/index.html[Use S3 REST API]
 
-* link:../swift/index.html[Use Swift REST API]
 // 2023 nov 8, SGWS-27432

@@ -89,7 +89,7 @@ The connection of each grid node lets the ADC service gather topology informatio
 
 Each Storage Node includes the Distributed Data Store (DDS) service. This service interfaces with the Cassandra database to perform background tasks on the object metadata stored in the StorageGRID system.
 
-The DDS service tracks the total number of objects ingested into the StorageGRID system as well as the total number of objects ingested through each of the system's supported interfaces (S3 or Swift). 
+The DDS service tracks the total number of objects ingested into the StorageGRID system as well as the total number of objects ingested through each of the system's supported interfaces (S3). 
 
 ====
 
@@ -113,9 +113,9 @@ The LDR service handles the following tasks:
 * Object data storage
 * Object data transfers from another LDR service (Storage Node)
 * Data storage management
-* Protocol interfaces (S3 and Swift)
+* S3 protocol interface
 
-The LDR service also maps each S3 and Swift object to its unique UUID.
+The LDR service also maps each S3 object to its unique UUID.
 
 Object stores::
 

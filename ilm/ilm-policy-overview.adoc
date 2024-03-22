@@ -40,7 +40,7 @@ ILM policy tags:: If you want to allow tenants to easily switch between multiple
 +
 For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
 
-Default ILM policy tag:: A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in Swift containers, and any untagged S3 buckets.
+Default ILM policy tag:: A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to any untagged S3 buckets.
 
 image::../media/ilm-policies-tags-conceptual.png[Multiple ILM policies diagram]
 
@@ -52,7 +52,7 @@ When clients save objects to StorageGRID, the objects are evaluated against the 
 
 . If the filters for the first rule in the policy match an object, the object is ingested according to that rule's ingest behavior and stored according to that rule's placement instructions.
 . If the filters for the first rule don't match the object, the object is evaluated against each subsequent rule in the policy until a match is made.
-. If no rules match an object, the ingest behavior and placement instructions for the default rule in the policy are applied. The default rule is the last rule in a policy. The default rule must apply to all tenants, all S3 buckets or Swift containers, and all object versions and can't use any advanced filters.
+. If no rules match an object, the ingest behavior and placement instructions for the default rule in the policy are applied. The default rule is the last rule in a policy. The default rule must apply to all tenants, all S3 buckets, and all object versions, and can't use any advanced filters.
 
 == Example ILM policy
 

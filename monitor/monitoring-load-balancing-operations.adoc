@@ -18,10 +18,10 @@ After configuring load balancing, you should confirm that object ingest and retr
 
 If you configured a high availability (HA) group of Gateway Nodes or Admin Nodes in active-backup mode, only one node in the group actively distributes client requests.
 
-For more information, see link:../admin/configuring-client-connections.html[Configure S3 and Swift client connections].
+For more information, see link:../admin/configuring-client-connections.html[Configure S3 client connections].
 
 .Steps
-. If S3 or Swift clients connect using the Load Balancer service, check that Admin Nodes or Gateway Nodes are actively distributing traffic as you expect:
+. If S3 clients connect using the Load Balancer service, check that Admin Nodes or Gateway Nodes are actively distributing traffic as you expect:
  .. Select *NODES*.
  .. Select a Gateway Node or Admin Node.
  .. On the *Overview* tab, check if a node interface is in an HA group and if the node interface has the role of Primary.

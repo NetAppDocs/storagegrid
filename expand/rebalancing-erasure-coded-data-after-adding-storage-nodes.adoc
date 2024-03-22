@@ -31,9 +31,9 @@ Before starting the procedure, note the following:
 +
 You can rerun the procedure after all volumes are back online.  
 
-* When the EC rebalance procedure is running, the performance of ILM operations and S3 and Swift client operations might be impacted. 
+* When the EC rebalance procedure is running, the performance of ILM operations and S3 client operations might be impacted. 
 +
-NOTE: S3 and Swift API operations to upload objects (or object parts) might fail during the EC rebalance procedure if they require more than 24 hours to complete. Long-duration PUT operations will fail if the applicable ILM rule uses Balanced or Strict placement on ingest. The following error will be reported: `500 Internal Server Error`.
+NOTE: S3 API operations to upload objects (or object parts) might fail during the EC rebalance procedure if they require more than 24 hours to complete. Long-duration PUT operations will fail if the applicable ILM rule uses Balanced or Strict placement on ingest. The following error will be reported: `500 Internal Server Error`.
 
 * During this procedure all nodes have a storage capacity limit of 80%. Nodes that exceed this limit, but still store below the target data partition, are excluded from:
 ** The site imbalance value

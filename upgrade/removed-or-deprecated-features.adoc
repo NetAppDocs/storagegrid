@@ -26,22 +26,14 @@ See the https://mysupport.netapp.com/site/info/version-support[Software Version 
 NOTE: In certain situations, NetApp might end support for particular features sooner than indicated.
 
 [cols="2a,1a,1a,1a,3a" options="header"]
+[cols="2a,1a,1a,1a,3a" options="header"]
 |===
-| Feature| Deprecated| End of Life| Removed| Links to earlier documentation
-
-| Alarms (not Alerts)
-| 11.7
-| 11.8
-| 11.9
-| https://docs.netapp.com/us-en/storagegrid-118/monitor/alarms-reference.html[StorageGRID 11.8: Alarms reference^]
+| Feature| Deprecated| End of Life| Removed
 
 | Archive Node support
 | 11.7
 | 11.8
 | 11.9
-| https://docs.netapp.com/us-en/storagegrid-118/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html[StorageGRID 11.8: Considerations for decommissioning Archive Nodes^]
-
-*Note*: You must decommission all Archive Nodes before you can upgrade to StorageGRID 11.9.
 
 | Audit export through CIFS/Samba
 | 11.1
@@ -59,17 +51,18 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.8
 | 11.9
 | 12.0
+
 | 
-
-
 | NFS audit export
 | 11.8
 | 11.9
 | 12.0
-| 
 
 | Swift API support
 | 11.7
 | 11.9
 | 12.0
+| https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-client-connections.html[Configure S3 and Swift client connections^]
+
+https://docs.netapp.com/us-en/storagegrid-118/swift/index.html[Use Swift REST API^]
 |===

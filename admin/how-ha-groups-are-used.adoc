@@ -12,7 +12,7 @@ summary: 'You can use high availability (HA) groups to provide highly available 
 You can use high availability (HA) groups to provide highly available connections to StorageGRID for object data and for administrative use.
 
 * An HA group can provide highly available administrative connections to the Grid Manager or the Tenant Manager.
-* An HA group can provide highly available data connections for S3 and Swift clients.
+* An HA group can provide highly available data connections for S3 clients.
 * An HA group that contains only one interface allows you to provide many VIP addresses and to explicitly set IPv6 addresses.
 
 An HA group can provide high availability only if all nodes included in the group provide the same services. When you create an HA group, add interfaces from the types of nodes that provide the services you require.
@@ -39,7 +39,7 @@ a|
 * Primary or non-primary Admin Nodes
 
 a|
-S3 or Swift client access -- Load Balancer service
+S3 client access -- Load Balancer service
 a|
 
 * Admin Nodes

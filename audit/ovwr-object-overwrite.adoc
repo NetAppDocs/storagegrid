@@ -47,9 +47,9 @@ The identifier for the previous object within the StorageGRID system.
 |
 PATH
 |
-S3 or Swift Object Path
+S3 Object Path
 |
-The S3 or Swift object path used for both the previous and new object
+The S3 object path used for both the previous and new object
 |
 RSLT
 |
