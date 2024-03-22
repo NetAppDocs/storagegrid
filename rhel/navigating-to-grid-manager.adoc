@@ -27,10 +27,19 @@ Alternatively, you can access the Grid Manager on port 8443:
 +
 `https://_primary_admin_node_ip_:8443`
 +
-NOTE: You can use the IP address for the primary Admin Node IP on the Grid Network or on the Admin Network, as appropriate for your network configuration.
+You can use the IP address for the primary Admin Node IP on the Grid Network or on the Admin Network, as appropriate for your network configuration.
+
+. Manage a temporary installer password as needed:
+
+* If a password has already been set using one of these methods, enter the password to proceed.
+ 
+**	A user set the password while accessing the installer previously
+**	The password was automatically imported from the node config file at `/etc/storagegrid/nodes/_<node_name>_.conf`
+
+* If a password has not been set, optionally set a password to secure the StorageGRID installer.
 
 . Select *Install a StorageGRID system*.
 +
 The page used to configure a StorageGRID system appears.
 +
-image::../media/gmi_installer_first_screen.gif[This image is explained by the surrounding text.]
+image::../media/gmi_installer_first_screen.gif[StorageGRID installer first screen]

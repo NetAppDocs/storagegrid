@@ -117,7 +117,7 @@ NOTE: When the upgrade starts on a grid node, the services on that node are stop
 
 .  When prompted, enter your provisioning passphrase and download a new copy of the Recovery Package.
 +
-CAUTION: You should download a new copy of the Recovery Package file after  the primary Admin Node is upgraded. The Recovery Package file allows you to restore the system if a failure occurs.
+CAUTION: You should download a new copy of the Recovery Package file after the primary Admin Node is upgraded. The Recovery Package file allows you to restore the system if a failure occurs.
 
 . Review the status tables for each type of node. There are tables for  non-primary Admin Nodes, Gateway Nodes, and Storage Nodes.
 +
@@ -204,4 +204,3 @@ NOTE: The upgrade from StorageGRID 11.7 to 11.8 does not require a Cassandra dat
 . Verify that grid operations have returned to normal:
  .. Check that the services are operating normally and that there are no unexpected alerts.
  .. Confirm that client connections to the StorageGRID system are operating as expected.
-
