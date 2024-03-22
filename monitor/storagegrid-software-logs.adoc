@@ -218,7 +218,7 @@ m| /var/local/log/nginx-gw/cgr-access.log.gz
 | Admin Nodes, Gateway Nodes, or both, based on the grid federation configuration.  Only found on the destination grid for cross-grid replication.
 
 m| /var/local/log/nginx-gw/endpoint-access.log.gz
-| Contains access logs for the Load Balancer service, which provides load balancing of S3 and Swift traffic from clients to Storage Nodes.
+| Contains access logs for the Load Balancer service, which provides load balancing of S3 traffic from clients to Storage Nodes.
 | Admin Nodes and Gateway Nodes
 
 m| /var/local/log/persistence*

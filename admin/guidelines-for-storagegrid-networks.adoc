@@ -11,7 +11,7 @@ summary: 'StorageGRID supports up to three network interfaces per grid node, all
 [.lead]
 You can use the Grid Manager to configure and manage StorageGRID networks and connections.
 
-See link:configuring-client-connections.html[Configure S3 and Swift client connections] to learn how to connect S3 or Swift clients.
+See link:configuring-client-connections.html[Configure S3 client connections] to learn how to connect S3 clients.
 
 == Default StorageGRID networks
 By default, StorageGRID supports three network interfaces per grid node, allowing you to configure the networking for each individual grid node to match your security and access requirements. 
@@ -28,7 +28,7 @@ Optional. The Admin Network is typically used for system administration and main
 
 === Client Network
 
-Optional. The Client Network is an open network typically used to provide access to S3 and Swift client applications, so the Grid Network can be isolated and secured. The Client Network can communicate with any subnet reachable through the local gateway.
+Optional. The Client Network is an open network typically used to provide access to S3 client applications, so the Grid Network can be isolated and secured. The Client Network can communicate with any subnet reachable through the local gateway.
 
 == Guidelines
 

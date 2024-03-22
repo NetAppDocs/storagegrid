@@ -50,7 +50,7 @@ The default rule must apply to all tenant accounts.
 
 . Leave the Bucket name drop-down selection as *applies to all buckets*.
 +
-The default rule must apply to all S3 buckets and Swift containers.
+The default rule must apply to all S3 buckets.
 
 . Keep the default answer, *No*, for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?"
 

@@ -30,8 +30,6 @@ To start the lifecycle, a client application stores an object in StorageGRID.
  ** Optionally, the object can be transitioned to Glacier storage. For example, the external S3 bucket might use lifecycle configuration to transition an object to Glacier storage immediately or after some number of days.
 +
 NOTE: If you want to transition objects, you must create a lifecycle configuration for the external S3 bucket, and you must use a storage solution that implements the Glacier storage class and supports the S3 RestoreObject API.
-+
-NOTE: Don't use Cloud Storage Pools for objects that have been ingested by Swift clients. Swift does not support RestoreObject requests, so StorageGRID will not be able to retrieve any Swift objects that have been transitioned to S3 Glacier storage. Issuing a Swift GET object request to retrieve these objects will fail (403 Forbidden).
 
  ** During the transition, the client application can use an S3 HeadObject request to monitor the object's status.
 . *Object restored from Glacier storage*
@@ -55,8 +53,6 @@ To start the lifecycle, a client application stores an object in StorageGRID.
 . *Object moved to Azure Cloud Storage Pool*
 +
 When the object is matched by an ILM rule that uses an Azure Cloud Storage Pool as its placement location, StorageGRID moves the object to the external Azure Blob storage container specified by the Cloud Storage Pool.
-+
-NOTE: Don't use Cloud Storage Pools for objects that have been ingested by Swift clients. Swift does not support RestoreObject requests, so StorageGRID will not be able to retrieve any Swift objects that have been transitioned to the Azure Blob storage Archive tier. Issuing a Swift GET object request to retrieve these objects will fail (403 Forbidden).
 
 . *Object transitioned to Archive tier (non-retrievable state)*
 +

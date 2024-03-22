@@ -17,7 +17,7 @@ The StorageGRID system uses four types of grid nodes:
 
 Admin Nodes:: Provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
 +
-Admin Nodes can also be used to load balance S3 and Swift client traffic.
+Admin Nodes can also be used to load balance S3 client traffic.
 +
 See link:what-admin-node-is.html[What is an Admin Node?]
 
@@ -117,7 +117,7 @@ The following is a complete list of StorageGRID services.
 | All nodes
 
 | Load Balancer (nginx-gw)
-| Provides load balancing of S3 and Swift traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
+| Provides load balancing of S3 traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
 | Admin and Gateway Nodes
 
 | LDR (Local Distribution Router)

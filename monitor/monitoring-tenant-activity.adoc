@@ -2,14 +2,14 @@
 permalink: monitor/monitoring-tenant-activity.html
 sidebar: sidebar
 keywords: how to monitor tenant activity
-summary: 'All S3 and Swift client activity is associated with StorageGRID tenant accounts. You can use the Grid Manager to monitor the storage usage or network traffic for all tenants or a specific tenant. You can use the audit log or Grafana dashboards to gather more detailed information about how tenants are using StorageGRID.'
+summary: 'All S3 client activity is associated with StorageGRID tenant accounts. You can use the Grid Manager to monitor the storage usage or network traffic for all tenants or a specific tenant. You can use the audit log or Grafana dashboards to gather more detailed information about how tenants are using StorageGRID.'
 ---
 = Monitor tenant activity
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-All S3 and Swift client activity is associated with StorageGRID tenant accounts. You can use the Grid Manager to monitor the storage usage or network traffic for all tenants or a specific tenant. You can use the audit log or Grafana dashboards to gather more detailed information about how tenants are using StorageGRID.
+All S3 client activity is associated with StorageGRID tenant accounts. You can use the Grid Manager to monitor the storage usage or network traffic for all tenants or a specific tenant. You can use the audit log or Grafana dashboards to gather more detailed information about how tenants are using StorageGRID.
 
 .Before you begin
 
@@ -69,7 +69,7 @@ This section of the details page provides summary information for the tenant, in
 
 . From the *Space breakdown* tab, review the *Space consumption* chart.
 +
-This chart shows the total space consumption for all of the tenant's S3 buckets (or Swift containers).
+This chart shows the total space consumption for all of the tenant's S3 buckets.
 +
 If a quota was set for this tenant, the amount of quota used and remaining is displayed in text (for example, `85.00 GB of 100 GB used`). If no quota was set, the tenant has an unlimited quota, and the text includes only an amount of space used (for example, `85.00 GB used`). The bar chart shows the percentage of quota in each bucket or container. If the tenant has exceeded the storage quota by more than 1% and by at least 1 GB, the chart shows the total quota and the excess amount.
 +
@@ -85,7 +85,7 @@ NOTE: You can enable the *Tenant quota usage high* alert rule to determine if te
 
 . From the *Space breakdown* tab, review the *Bucket details*.
 +
-This table lists the S3 buckets (or Swift containers) for the tenant. Space used is the total amount of object data in the bucket or container. This value does not represent the storage space required for ILM copies and object metadata.
+This table lists the S3 buckets for the tenant. Space used is the total amount of object data in the bucket or container. This value does not represent the storage space required for ILM copies and object metadata.
 
 . Optionally, select *Export to CSV* to view and export a .csv file containing the usage values for each bucket or container.
 +

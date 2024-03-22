@@ -41,8 +41,8 @@ CLDI: for replicated objects, the LDR node ID and the volume ID of the object's 
 CLNL: ARC node ID of the object's location if the object data is archived.
 
 | PATH
-| S3 Bucket/Key or Swift Container/Object ID
-| The S3 bucket name and S3 key name, or the Swift container name and Swift object identifier.
+| S3 Bucket/Key
+| The S3 bucket name and S3 key name.
 
 | RSLT
 | Result

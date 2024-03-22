@@ -26,7 +26,7 @@ At least one NTP server must be reachable by the primary Admin Node.
 * *LDAP/Active Directory server connections*: Outbound TCP connection from the Identity service on Storage Nodes.
 * *AutoSupport*: Outbound TCP connection from the Admin Nodes to either `support.netapp.com` or a customer-configured proxy.
 * *External key management server*: Outbound TCP connection from each appliance node with node encryption enabled.
-* Inbound TCP connections from S3 and Swift clients.
+* Inbound TCP connections from S3 clients.
 * Outbound requests from StorageGRID platform services such as CloudMirror replication or from Cloud Storage Pools.
 
 If StorageGRID is unable to contact any of the provisioned NTP or DNS servers using the default routing rules, it will automatically attempt contact on all networks (Grid, Admin, and Client) as long as the IP addresses of the DNS and NTP servers are specified. If the NTP or DNS servers can be reached on any network, StorageGRID will automatically create additional routing rules to ensure that network is used for all future attempts to connect to it.
@@ -35,7 +35,7 @@ TIP: Although you can use these automatically discovered host routes, in general
 
 If you aren't ready to configure the optional Admin and Client Networks during deployment, you can configure these networks when you approve grid nodes during the configuration steps. Additionally, you can configure these networks after installation, using the Change IP tool (see link:../maintain/configuring-ip-addresses.html[Configure IP addresses]).
 
-Only S3 and Swift client connections and SSH, Grid Manager, and Tenant Manager administrative connections are supported over VLAN interfaces. Outbound connections, such as to NTP, DNS, LDAP, AutoSupport, and KMS servers, must go over the Client, Admin, or Grid Network interfaces directly. If the interface is configured as a trunk to support VLAN interfaces, this traffic will flow over the interface's native VLAN, as configured at the switch.
+Only S3 client connections and SSH, Grid Manager, and Tenant Manager administrative connections are supported over VLAN interfaces. Outbound connections, such as to NTP, DNS, LDAP, AutoSupport, and KMS servers, must go over the Client, Admin, or Grid Network interfaces directly. If the interface is configured as a trunk to support VLAN interfaces, this traffic will flow over the interface's native VLAN, as configured at the switch.
 
 == Wide Area Networks (WANs) for multiple sites
 

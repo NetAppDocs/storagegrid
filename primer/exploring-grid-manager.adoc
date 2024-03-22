@@ -21,7 +21,7 @@ You can access the Grid Manager using a link:../admin/web-browser-requirements.h
 
 When you first sign in to the Grid Manager, you can use the dashboard to link:../monitor/viewing-dashboard.html[monitor system activities] at a glance.
 
-The dashboard contains information about system health and performance, storage use, ILM processes, S3 and Swift operations, and the nodes in the grid. You can link:../monitor/viewing-dashboard.html[configure the dashboard] by selecting from a collection of cards that contain the information you need to effectively monitor your system.
+The dashboard contains information about system health and performance, storage use, ILM processes, S3 operations, and the nodes in the grid. You can link:../monitor/viewing-dashboard.html[configure the dashboard] by selecting from a collection of cards that contain the information you need to effectively monitor your system.
 
 image::../media/grid_manager_dashboard_and_menu.png[Dashboard in the Grid Manager]
 

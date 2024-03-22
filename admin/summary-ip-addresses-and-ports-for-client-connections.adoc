@@ -2,7 +2,7 @@
 permalink: admin/summary-ip-addresses-and-ports-for-client-connections.html
 sidebar: sidebar
 keywords: ip addresses for client, how to connect to storagegrid, ports, vip
-summary: 'To store or retrieve objects, S3 and Swift client applications connect to the Load Balancer service, which is included on all Admin Nodes and Gateway Nodes, or to the Local Distribution Router (LDR) service, which is included on all Storage Nodes.'
+summary: 'To store or retrieve objects, S3 client applications connect to the Load Balancer service, which is included on all Admin Nodes and Gateway Nodes, or to the Local Distribution Router (LDR) service, which is included on all Storage Nodes.'
 ---
 = Summary: IP addresses and ports for client connections
 :icons: font
@@ -10,7 +10,7 @@ summary: 'To store or retrieve objects, S3 and Swift client applications connect
 
 [.lead]
 
-To store or retrieve objects, S3 and Swift client applications connect to the Load Balancer service, which is included on all Admin Nodes and Gateway Nodes, or to the Local Distribution Router (LDR) service, which is included on all Storage Nodes.
+To store or retrieve objects, S3 client applications connect to the Load Balancer service, which is included on all Admin Nodes and Gateway Nodes, or to the Local Distribution Router (LDR) service, which is included on all Storage Nodes.
 
 Client applications can connect to StorageGRID using the IP address of a grid node and the port number of the service on that node. Optionally, you can create high availability (HA) groups of load-balancing nodes to provide highly available connections that use virtual IP (VIP) addresses. If you want to connect to StorageGRID using a fully qualified domain name (FQDN) instead of an IP or VIP address, you can configure DNS entries.
 
@@ -42,12 +42,6 @@ This table summarizes the different ways that clients can connect to StorageGRID
 
 * HTTPS: 18082
 * HTTP: 18084
-
-Default Swift ports:
-
-* HTTPS: 18083
-* HTTP:18085
-
 |===
 
 == Example URLs
@@ -93,5 +87,5 @@ NOTE: If the port number is 80 or 443, the endpoint is configured only on Gatewa
 
 .. Select the name of the endpoint from the table.
 
-.. Confirm that the *Client type* (S3 or Swift) matches the client application that will use the endpoint. 
+.. Confirm that the *Client type* (S3) matches the client application that will use the endpoint. 
 

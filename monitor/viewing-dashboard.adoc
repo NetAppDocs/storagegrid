@@ -33,7 +33,7 @@ The system-provided dashboard tabs contain cards with the following types of inf
 |General information about the grid, such as active alerts, space usage, and total objects in the grid.
 
 |Performance
-|Space usage, storage used over time, S3 or Swift operations, request duration, error rate.
+|Space usage, storage used over time, S3 operations, request duration, error rate.
 
 |Storage
 |Tenant quota usage and logical space usage. Forecasts of space usage for user data and metadata.
@@ -42,7 +42,7 @@ The system-provided dashboard tabs contain cards with the following types of inf
 |Information lifecycle management queue and evaluation rate.
 
 |Nodes
-|CPU, data, and memory usage by node. S3 or Swift operations by node. Node to site distribution.
+|CPU, data, and memory usage by node. S3 operations by node. Node to site distribution.
 |===
 
 Some of the cards can be maximized for easier viewing. Select the maximize icon image:../media/icon_dashboard_card_maximize.png[Maximize icon] in the upper right corner of the card. To close a maximized card, select the minimize icon image:../media/icon_dashboard_card_minimize.png[Minimize icon] or select *Close*.
