@@ -85,5 +85,4 @@ The table provides a high-level summary of what is supported for each SNMP versi
 * SNMPv3: StorageGRID does not support the Transport Support Mode (TSM).
 * SNMPv3: The only authentication protocol supported is SHA (HMAC-SHA-96).
 * SNMPv3: The only privacy protocol supported is AES.
-
 // 2024 MAR 25, SGRIDDOC-53
