@@ -54,11 +54,6 @@ NOTE: The *Pause* button is enabled only when the ILM evaluation or erasure-code
 
 * You should not make any changes to an ILM policy while a Storage Node is being decommissioned.
 
-* When you decommission a Storage Node, the following alerts and alarms might be triggered and you might receive related email and SNMP notifications:
- ** *Unable to communicate with node* alert. This alert is triggered when you decommission a Storage Node that includes the ADC service. The alert is resolved when the decommission operation completes.
- ** VSTU (Object Verification Status) alarm. This notice-level alarm indicates that the Storage Node is going into maintenance mode during the decommission process.
- ** CASA (Data Store Status) alarm. This major-level alarm indicates that the Cassandra database is going down because services have stopped.
-
 * To permanently and securely remove data, you must wipe the Storage Node's drives after the decommission procedure is complete.
 
 [[considerations-disconnected-storage-nodes]]
