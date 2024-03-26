@@ -47,7 +47,7 @@ NOTE: If SSO is enabled, you can't sign on using a restricted port. You must use
 If the federated user account is not working, try signing in to the Grid Manager as a local user, such as root.
 
  ** If the local user can sign in:
-  ... Review any displayed alarms.
+  ... Review alerts.
   ... Select *CONFIGURATION* > *Access Control* > *Identity federation*.
   ... Click *Test Connection* to validate your connection settings for the LDAP server.
   ... If the test fails, resolve any configuration errors.
@@ -169,5 +169,5 @@ You have link:../admin/admin-group-permissions.html[specific access permissions]
 +
 image::../media/unavailable_admin_node_troubleshooting.gif[screenshot described by surrounding text]
 
-. Determine if alarms have been triggered.
+. Determine if alerts have been triggered.
 . Take the appropriate actions to resolve the issue.

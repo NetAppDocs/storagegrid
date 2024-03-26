@@ -16,16 +16,14 @@ If you want email notifications to be sent when alerts occur, you must provide i
 * You have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission].
 
 .About this task
-Because alarms and alerts are independent systems, the email setup used for alert notifications is not used for alarm notifications and AutoSupport packages. However, you can use the same email server for all notifications.
+The email setup used for alert notifications is not used for AutoSupport packages. However, you can use the same email server for all notifications.
 
-If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport packages, SNMP traps and informs, and legacy alarm notifications. If the primary Admin Node becomes unavailable, notifications are temporarily sent by other Admin Nodes. See link:../primer/what-admin-node-is.html[What is an Admin Node?].
+If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport packages, and SNMP traps and informs. If the primary Admin Node becomes unavailable, notifications are temporarily sent by other Admin Nodes. See link:../primer/what-admin-node-is.html[What is an Admin Node?].
 
 .Steps
 . Select *ALERTS* > *Email setup*.
 +
 The Email Setup page appears.
-+
-image::../media/alerts_email_setup_disabled.png[Alerts Email Setup Disabled]
 
 . Select the *Enable Email Notifications* checkbox to indicate that you want notification emails to be sent when alerts reach configured thresholds.
 +
@@ -38,24 +36,19 @@ If your SMTP server requires authentication, you must provide both a username an
 [cols="1a,2a" options="header"]
 |===
 | Field| Enter
-a|
-Mail Server
-a|
-The fully qualified domain name (FQDN) or IP address of the SMTP server.
-a|
-Port
-a|
-The port used to access the SMTP server. Must be between 1 and 65535.
-a|
-Username (optional)
-a|
-If your SMTP server requires authentication, enter the username to authenticate with.
-a|
-Password (optional)
-a|
-If your SMTP server requires authentication, enter the password to authenticate with.
+
+| Mail Server
+| The fully qualified domain name (FQDN) or IP address of the SMTP server.
+
+| Port
+| The port used to access the SMTP server. Must be between 1 and 65535.
+
+| Username (optional)
+| If your SMTP server requires authentication, enter the username to authenticate with.
+
+| Password (optional)
+| If your SMTP server requires authentication, enter the password to authenticate with.
 |===
-image::../media/alerts_email_smtp_server.png[Alerts Email SMTP Server]
 
 . In the Email Addresses section, enter email addresses for the sender and for each recipient.
  .. For the *Sender Email Address*, specify a valid email address to use as the From address for alert notifications.
@@ -66,8 +59,6 @@ For example: `storagegrid-alerts@example.com`
 +
 Select the plus icon image:../media/icon_plus_sign_black_on_white.gif[plus icon] to add recipients.
 
-+
-image::../media/alerts_email_recipients.png[Alerts Email Recipients]
 . If Transport Layer Security (TLS) is required for communications with the SMTP server, select *Require TLS* in the Transport Layer Security (TLS) section.
  .. In the *CA Certificate* field, provide the CA certificate that will be used to verify the identify of the SMTP server.
 +
@@ -84,28 +75,24 @@ You can copy and paste the contents into this field, or select *Browse* and sele
 +
 You can copy and paste the contents into this field, or select *Browse* and select the file.
 +
-NOTE: If you need to edit the email setup, select the pencil icon to update this field.
-+
-image::../media/alerts_email_tls.png[Alerts Email TLS]
+NOTE: If you need to edit the email setup, select the pencil icon image:../media/icon_edit_tm.png[Edit icon] to update this field.
+
 . In the Filters section, select which alert severity levels should result in email notifications, unless the rule for a specific alert has been silenced.
 +
 [cols="1a,2a" options="header"]
 |===
 | Severity| Description
-a|
-Minor, major, critical
-a|
-An email notification is sent when the minor, major, or critical condition for an alert rule is met.
-a|
-Major, critical
-a|
-An email notification is sent when the major or critical condition for an alert rule is met. Notifications aren't sent for minor alerts.
-a|
-Critical only
-a|
+
+| Minor, major, critical
+| An email notification is sent when the minor, major, or critical condition for an alert rule is met.
+
+| Major, critical
+| An email notification is sent when the major or critical condition for an alert rule is met. Notifications aren't sent for minor alerts.
+
+| Critical only
+| 
 An email notification is sent only when the critical condition for an alert rule is met. Notifications aren't sent for minor or major alerts.
 |===
-image::../media/alerts_email_filters.png[Alerts Email Filters]
 
 . When you are ready to test your email settings, perform these steps:
  .. Select *Send Test Email*.
@@ -118,7 +105,7 @@ NOTE: If the email is not received within a few minutes or if the *Email notific
 
  .. Sign in to any other Admin Nodes and send a test email to verify connectivity from all sites.
 +
-NOTE: When you test alert notifications, you must sign in to every Admin Node to verify connectivity. This is in contrast to testing AutoSupport packages and legacy alarm notifications, where all Admin Nodes send the test email.
+NOTE: When you test alert notifications, you must sign in to every Admin Node to verify connectivity. This is in contrast to testing AutoSupport packages, where all Admin Nodes send the test email.
 . Select *Save*.
 +
 Sending a test email does not save your settings. You must select *Save*.
@@ -136,26 +123,21 @@ image::../media/alerts_email_notification.png[Alerts Email Notification]
 [cols="1a,6a"options="header"]
 |===
 | Callout| Description
-a|
-1
-a|
-The name of the alert, followed by the number of active instances of this alert.
-a|
-2
-a|
-The description of the alert.
-a|
-3
-a|
-Any recommended actions for the alert.
-a|
-4
-a|
-Details about each active instance of the alert, including the node and site affected, the alert severity, the UTC time when the alert rule was triggered, and the name of the affected job and service.
-a|
-5
-a|
-The hostname of the Admin Node that sent the notification.
+
+| 1
+| The name of the alert, followed by the number of active instances of this alert.
+
+| 2
+| The description of the alert.
+
+| 3
+| Any recommended actions for the alert.
+
+| 4
+| Details about each active instance of the alert, including the node and site affected, the alert severity, the UTC time when the alert rule was triggered, and the name of the affected job and service.
+
+| 5
+| The hostname of the Admin Node that sent the notification.
 |===
 
 == How alerts are grouped

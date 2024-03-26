@@ -23,4 +23,4 @@ After you configure the StorageGRID SNMP agent, two types of event-driven notifi
 
 Trap and inform notifications are sent when a default or custom alert is triggered at any severity level. To suppress SNMP notifications for an alert, you must configure a silence for the alert. See link:silencing-alert-notifications.html[Silence alert notifications].
 
-If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport packages, SNMP traps and informs, and legacy alarm notifications. If the primary Admin Node becomes unavailable, notifications are temporarily sent by other Admin Nodes. See link:../primer/what-admin-node-is.html[What is an Admin Node?].
+If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport packages, and SNMP traps and informs. If the primary Admin Node becomes unavailable, notifications are temporarily sent by other Admin Nodes. See link:../primer/what-admin-node-is.html[What is an Admin Node?].

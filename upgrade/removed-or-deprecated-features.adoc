@@ -17,7 +17,7 @@ Deprecated:: The feature *should not* be used in new production environments. Ex
 End of Life:: Last shipped version that contains the feature. No future versions will support the feature. In some cases, documentation for the feature might be removed at this stage.
 Removed:: First version that *does not* contain the feature.
 
-== StorageGRID 11.8 end of feature support
+== StorageGRID end of feature support
 
 Deprecated features will be removed in N+2 major versions. For example, if a feature is deprecated in version N (for example, 6.3), the last version where the feature will exist is N+1 (for example, 6.4). Version N+2 (for example, 6.5) is the first release when the feature doesn't exist in the product.
 

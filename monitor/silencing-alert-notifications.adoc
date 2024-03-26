@@ -22,8 +22,6 @@ If you have enabled the SNMP agent, silences also suppress SNMP traps and inform
 
 CAUTION: Be careful when deciding to silence an alert rule. If you silence an alert, you might not detect an underlying problem until it prevents a critical operation from completing.
 
-NOTE: Because alarms and alerts are independent systems, you can't use this functionality to suppress alarm notifications.
-
 .Steps
 . Select *ALERTS* > *Silences*.
 +

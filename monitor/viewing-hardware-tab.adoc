@@ -85,7 +85,7 @@ Some appliance models don't have a storage controller B.
 |Storage hardware
 |The overall status of the storage controller hardware. If SANtricity System Manager reports a status of Needs Attention for the storage hardware, the StorageGRID system also reports this value.
 
-If the status is "needs attention," first check the storage controller using SANtricity OS. Then, ensure that no other alarms exist that apply to the compute controller.
+If the status is "needs attention," first check the storage controller using SANtricity OS. Then, ensure that no other alerts exist that apply to the compute controller.
 
 |Storage controller failed drive count
 |The number of drives that aren't optimal.
