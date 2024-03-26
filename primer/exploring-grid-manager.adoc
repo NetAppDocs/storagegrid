@@ -186,13 +186,7 @@ NOTE: The tools available from the *Metrics* option are intended for use by tech
 
 === Alarms (legacy)
 
-From the link:../monitor/managing-alarms.html[Alarms (legacy)] section of the Support menu, you can:
-
-* Review current, historical, and global alarms
-* Set up custom events
-* Set up link:../monitor/managing-alarms.html[email notifications for legacy alarms]
-
-NOTE: While the legacy alarm system continues to be supported, the alert system offers significant benefits and is easier to use. 
+The information about legacy alarms has been removed from this version of the documentation. Refer to https://docs.netapp.com/us-en/storagegrid-118/monitor/managing-alerts-and-alarms.html[Manage alerts and alarms (StorageGRID 11.8 documentation)^].
 
 === Other
 
