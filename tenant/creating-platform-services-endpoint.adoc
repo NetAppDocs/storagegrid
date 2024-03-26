@@ -187,7 +187,9 @@ The credentials that you supply must have write permissions for the destination 
 .Amazon SNS endpoints
 --
 Enter or upload the credentials for an Amazon SNS endpoint.
+
 The credentials that you supply must have write permissions for the destination resource.
+
 [cols="1a,2a,2a" options="header"]
 |===
 | Authentication type| Description| Credentials
