@@ -53,6 +53,7 @@ For CloudMirror replication endpoints, you can use the following credentials:
 .Amazon SNS endpoints
 --
 For Amazon SNS endpoints, you can use the following credentials:
+
 *** Access Key: Access key ID and secret access key
 --
 
@@ -199,6 +200,7 @@ The credentials that you supply must have write permissions for the destination 
 * Access key ID
 * Secret access key
 |===
+--
 
 .Kafka endpoints
 --
