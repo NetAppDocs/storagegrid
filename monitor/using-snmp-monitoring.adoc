@@ -16,7 +16,7 @@ If you want to monitor StorageGRID using the Simple Network Management Protocol 
 
 == Capabilities
 
-Each StorageGRID node runs an SNMP agent, or daemon, that provides a MIB. The StorageGRID MIB contains table and notification definitions for alerts and alarms. The MIB also contains system description information such as platform and model number for each node. Each StorageGRID node also supports a subset of MIB-II objects. 
+Each StorageGRID node runs an SNMP agent, or daemon, that provides a MIB. The StorageGRID MIB contains table and notification definitions for alerts. The MIB also contains system description information such as platform and model number for each node. Each StorageGRID node also supports a subset of MIB-II objects. 
 
 NOTE: See link:access-snmp-mib.html[Access MIB files] if you want to download the MIB files on your grid nodes. 
 
@@ -39,10 +39,6 @@ Trap and inform notifications are sent in the following cases:
 * A default or custom alert is triggered at any severity level. To suppress SNMP notifications for an alert, you must link:silencing-alert-notifications.html[configure a silence] for the alert. Alert notifications are sent by the link:../primer/what-admin-node-is.html[preferred sender Admin Node].
 +
 Each alert is mapped to one of three trap types based on the severity level of the alert: activeMinorAlert, activeMajorAlert, and activeCriticalAlert. For a list of the alerts that can trigger these traps, see the link:alerts-reference.html[Alerts reference].
-
-* Certain link:alarms-reference.html[alarms (legacy system)] are triggered at specified severity levels or higher.
-+
-NOTE: SNMP notifications aren't sent for every alarm or every alarm severity.
 
 == SNMP version support
 

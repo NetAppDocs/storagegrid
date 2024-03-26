@@ -34,7 +34,7 @@ If a user-triggered or an event-triggered AutoSupport package fails to send, the
 . Does not attempt to send the package again.
 . Logs the error in `nms.log`.
 
-If a failure occurs and SMTP is the selected protocol, verify that the StorageGRID system's email server is correctly configured and that your email server is running (*SUPPORT* > *Alarms (legacy)* > *> Legacy Email Setup*). The following error message might appear on the AutoSupport page: `AutoSupport packages cannot be sent using SMTP protocol due to incorrect settings on the E-mail Server page.`
+If a failure occurs and SMTP is the selected protocol, verify that the StorageGRID system's email server is correctly configured and that your email server is running (*SUPPORT* > *Alarms (legacy)* > *Legacy Email Setup*). The following error message might appear on the AutoSupport page: `AutoSupport packages cannot be sent using SMTP protocol due to incorrect settings on the E-mail Server page.`
 
 Learn how to link:../monitor/email-alert-notifications.html[configure email server settings].
 

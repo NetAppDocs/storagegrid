@@ -70,8 +70,3 @@ Looking at storage use over time can help you understand how much storage was us
 You can add storage volumes (LUNs) to existing Storage Nodes, or you can add new Storage Nodes.
 +
 NOTE: For more information, see link:../admin/managing-full-storage-nodes.html[Manage full Storage Nodes].
-
-.Related information
-
-link:troubleshooting-storage-status-alarm.html[Troubleshoot the Storage Status (SSTS) alarm (legacy)]
-

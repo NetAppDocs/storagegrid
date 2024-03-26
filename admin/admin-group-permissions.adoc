@@ -20,7 +20,6 @@ By default, any user who belongs to a group that has at least one permission can
 * View the Nodes pages
 * Monitor grid topology
 * View current and resolved alerts
-* View current and historical alarms (legacy system)
 * Change their own password (local users only)
 * View certain information provided on the Configuration and Maintenance pages
 
@@ -33,12 +32,6 @@ The following sections describe the permissions you can assign when creating or 
 == Root access
 
 This permission provides access to all grid administration features.
-
-== Acknowledge alarms (legacy)
-
-This permission provides access to acknowledge and respond to alarms (legacy system). All signed-in users can view current and historical alarms.
-
-If you want a user to monitor grid topology and acknowledge alarms only, you should assign this permission.
 
 == Change tenant root password
 
@@ -128,15 +121,10 @@ This permission provides access to additional grid configuration options.
 TIP: To see these additional options, users must also have the *Grid topology page configuration* permission.
 
 * *ILM*:
- ** Storage grades
+** Storage grades
 * *CONFIGURATION* > *System*:
- ** Storage options
-* *SUPPORT* > *Alarms (legacy)*:
- ** Custom events
- ** Global alarms
- ** Legacy email setup
- * *SUPPORT* > *Other*:
- ** Link cost
+* *SUPPORT* > *Other*:
+** Link cost
 
 == Storage appliance administrator
 

@@ -53,46 +53,32 @@ entries:
       url: "/monitor/monitoring-load-balancing-operations.html"      
     - title: Monitor grid federation connections
       url: "/monitor/grid-federation-monitor-connections.html"
-  - title: Alerts and alarms
+  - title: Manage alerts
     entries:
     - title: Overview
-      url: "/monitor/managing-alerts-and-alarms.html"   
-    - title: Compare alerts and alarms
-      url: "/monitor/comparing-alerts-and-alarms.html"
-    - title: Manage alerts
+      url: "/monitor/managing-alerts.html"   
+    - title: View alert rules
+      url: "/monitor/view-alert-rules.html"
+    - title: Create custom alert rules
+      url: "/monitor/creating-custom-alert-rules.html"
+    - title: Edit alert rules
+      url: "/monitor/editing-alert-rules.html"
+    - title: Disable alert rules
+      url: "/monitor/disabling-alert-rules.html"
+    - title: Remove custom alert rules
+      url: "/monitor/removing-custom-alert-rules.html"  
+    - title: Manage alert notifications
       entries:
-      - title: Overview
-        url: "/monitor/managing-alerts.html"   
-      - title: View alert rules
-        url: "/monitor/view-alert-rules.html"
-      - title: Create custom alert rules
-        url: "/monitor/creating-custom-alert-rules.html"
-      - title: Edit alert rules
-        url: "/monitor/editing-alert-rules.html"
-      - title: Disable alert rules
-        url: "/monitor/disabling-alert-rules.html"
-      - title: Remove custom alert rules
-        url: "/monitor/removing-custom-alert-rules.html"  
-      - title: Manage alert notifications
-        entries:
-        - title: Set up SNMP notifications
-          url: "/monitor/snmp-alert-notifications.html"
-        - title: Set up email notifications
-          url: "/monitor/email-alert-notifications.html"   
-        - title: Silence alert notifications
-          url: "/monitor/silencing-alert-notifications.html"
+      - title: Set up SNMP notifications
+        url: "/monitor/snmp-alert-notifications.html"
+      - title: Set up email notifications
+        url: "/monitor/email-alert-notifications.html"   
+      - title: Silence alert notifications
+        url: "/monitor/silencing-alert-notifications.html"
     - title: Alerts reference
       url: "/monitor/alerts-reference.html"
     - title: Commonly used Prometheus metrics
       url: "/monitor/commonly-used-prometheus-metrics.html"
-    - title: Manage alarms (legacy system)
-      entries:
-      - title: Manage legacy alarms
-        url: "/monitor/managing-alarms.html"
-      - title: View legacy alarms
-        url: "/monitor/viewing-legacy-alarms.html"
-    - title: Alarms reference (legacy system)
-      url: "/monitor/alarms-reference.html"
   - title: Log files reference
     entries:
     - title: Overview

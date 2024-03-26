@@ -35,79 +35,50 @@ This example shows typical output from the `audit-sum` tool. This example shows 
   SPUT                  1771398        0.011        1770.563           0.487
 ----
 
-The `audit-sum` tool provides counts and times for the following S3, Swift, and ILM audit messages in an audit log:
+The `audit-sum` tool provides counts and times for the following S3, Swift, and ILM audit messages in an audit log.
+
+NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that is not listed here, check the previous versions of this topic for older SG releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/using-audit-sum-tool.html[StorageGRID 11.8 Using audit sum tool documentation].
 
 [cols=3*,options="header",cols="14,43,43"]
 |===
 | Code| Description| Refer to
-a|
-ARCT
-a|
-Archive Retrieve from Cloud-Tier
-a|
-link:arct-archive-retrieve-from-cloud-tier.html[ARCT: Archive Retrieve from Cloud-Tier]
-a|
-ASCT
-a|
-Archive Store Cloud-Tier
-a|
-link:asct-archive-store-cloud-tier.html[ASCT: Archive Store Cloud-Tier]
-a|
-IDEL
-a|
-ILM Initiated Delete: Logs when ILM starts the process of deleting an object.
-a|
-link:idel-ilm-initiated-delete.html[IDEL: ILM Initiated Delete]
-a|
-SDEL
-a|
-S3 DELETE: Logs a successful transaction to delete an object or bucket.
-a|
-link:sdel-s3-delete.html[SDEL: S3 DELETE]
-a|
-SGET
-a|
-S3 GET: Logs a successful transaction to retrieve an object or list the objects in a bucket.
-a|
-link:sget-s3-get.html[SGET: S3 GET]
-a|
-SHEA
-a|
-S3 HEAD: Logs a successful transaction to check for the existence of an object or bucket.
-a|
-link:shea-s3-head.html[SHEA: S3 HEAD]
-a|
-SPUT
-a|
-S3 PUT: Logs a successful transaction to create a new object or bucket.
-a|
-link:sput-s3-put.html[SPUT: S3 PUT]
-a|
-WDEL
-a|
-Swift DELETE: Logs a successful transaction to delete an object or container.
-a|
-link:wdel-swift-delete.html[WDEL: Swift DELETE]
-a|
-WGET
-a|
-Swift GET: Logs a successful transaction to retrieve an object or list the objects in a container.
-a|
-link:wget-swift-get.html[WGET: Swift GET]
-a|
-WHEA
-a|
-Swift HEAD: Logs a successful transaction to check for the existence of an object or container.
-a|
-link:whea-swift-head.html[WHEA: Swift HEAD]
-a|
-WPUT
-a|
-Swift PUT: Logs a successful transaction to create a new object or container.
-a|
-link:wput-swift-put.html[WPUT: Swift PUT]
-|===
 
+| IDEL
+| ILM Initiated Delete: Logs when ILM starts the process of deleting an object.
+| link:idel-ilm-initiated-delete.html[IDEL: ILM Initiated Delete]
+
+| SDEL
+| S3 DELETE: Logs a successful transaction to delete an object or bucket.
+| link:sdel-s3-delete.html[SDEL: S3 DELETE]
+
+| SGET
+| S3 GET: Logs a successful transaction to retrieve an object or list the objects in a bucket.
+| link:sget-s3-get.html[SGET: S3 GET]
+
+| SHEA
+| S3 HEAD: Logs a successful transaction to check for the existence of an object or bucket.
+| link:shea-s3-head.html[SHEA: S3 HEAD]
+
+| SPUT
+| S3 PUT: Logs a successful transaction to create a new object or bucket.
+| link:sput-s3-put.html[SPUT: S3 PUT]
+
+| WDEL
+| Swift DELETE: Logs a successful transaction to delete an object or container.
+| link:wdel-swift-delete.html[WDEL: Swift DELETE]
+
+| WGET
+| Swift GET: Logs a successful transaction to retrieve an object or list the objects in a container.
+| link:wget-swift-get.html[WGET: Swift GET]
+
+| WHEA
+| Swift HEAD: Logs a successful transaction to check for the existence of an object or container.
+| link:whea-swift-head.html[WHEA: Swift HEAD]
+
+| WPUT
+| Swift PUT: Logs a successful transaction to create a new object or container.
+| link:wput-swift-put.html[WPUT: Swift PUT]
+|===
 
 The `audit-sum` tool can do the following:
 
