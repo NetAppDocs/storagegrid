@@ -77,7 +77,7 @@ m| /var/local/log/update_grid_federation_config.log
 m| /var/local/log/nms.log
 | 
 * Captures notifications from the Grid Manager and the Tenant Manager.
-* Captures events related to the operation of the NMS service, for example, alarm processing, email notifications, and configuration changes.
+* Captures events related to the operation of the NMS service. For example, email notifications and configuration changes.
 * Contains XML bundle updates resulting from configuration changes made in the system.
 * Contains error messages related to the attribute downsampling done once a day.
 * Contains Java web server error messages, for example, page generation errors and HTTP Status 500 errors.

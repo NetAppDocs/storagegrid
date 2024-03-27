@@ -59,7 +59,9 @@ Minimum size per LUN: 4 TB
 Maximum tested LUN size: 39 TB.
 
 |Storage Node (metadata-only)
-|1 LUN
+|100 GB LUN for OS
+
+1 LUN
 
 Minimum size per LUN: 4 TB
 
@@ -102,3 +104,5 @@ NOTE: If you assign less than 500 GB to volume 0 (non-production use only), 10% 
 * When configuring different Storage Nodes for a site, use the same setting for volume 0 if possible. If a site contains Storage Nodes of different sizes, the Storage Node with the smallest volume 0 will determine the metadata capacity of that site.
 
 For details, go to link:../admin/managing-object-metadata-storage.html[Manage object metadata storage].
+
+// 2024 MAR 25, SGRIDDOC-55

@@ -192,11 +192,6 @@ The ring buffer can be overrun when the StorageGRID system is overloaded and una
  .. Select *_site_* > *_grid node_* > *SSM* > *Resources* > *Configuration* > *Main*.
  .. Select *Reset Receive Error Count* and click *Apply Changes*.
 
-.Related information
-
-link:../monitor/alarms-reference.html[Alarms reference (legacy system)]
-
-
 == Time synchronization errors
 
 You might see issues with time synchronization in your grid.

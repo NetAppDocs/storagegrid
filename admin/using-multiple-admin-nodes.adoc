@@ -11,7 +11,7 @@ summary: 'A StorageGRID system can include multiple Admin Nodes to enable you to
 [.lead]
 A StorageGRID system can include multiple Admin Nodes to enable you to continuously monitor and configure your StorageGRID system even if one Admin Node fails.
 
-If an Admin Node becomes unavailable, attribute processing continues, alerts and alarms (legacy system) are still triggered, and email notifications and AutoSupport packages are still sent. However, having multiple Admin Nodes does not provide failover protection except for notifications and AutoSupport packages. In particular, alarm acknowledgments made from one Admin Node aren't copied to other Admin Nodes.
+If an Admin Node becomes unavailable, attribute processing continues, alerts are still triggered, and email notifications and AutoSupport packages are still sent. However, having multiple Admin Nodes does not provide failover protection except for notifications and AutoSupport packages.
 
 image::../media/admin_node_redundancy.png[Admin Node redundancy diagram]
 

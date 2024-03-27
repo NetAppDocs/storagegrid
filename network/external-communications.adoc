@@ -153,7 +153,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | SNMP
 | SNMP client
 | All nodes
-| Used for SNMP polling. All nodes provide basic information; Admin Nodes also provide alert and alarm data. Defaults to UDP port 161 when configured.
+| Used for SNMP polling. All nodes provide basic information; Admin Nodes also provide alert data. Defaults to UDP port 161 when configured.
 
 *Note:* This port is only required, and is only opened on the node firewall if SNMP is configured. If you plan to use SNMP, you can configure alternate ports.
 
