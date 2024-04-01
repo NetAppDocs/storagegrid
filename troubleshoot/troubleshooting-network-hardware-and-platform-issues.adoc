@@ -67,7 +67,6 @@ TLS handshake failed
 Check the ciphers that are offered by the external system. The system must use one of the link:../admin/supported-ciphers-for-outgoing-tls-connections.html[ciphers supported by StorageGRID] for outgoing TLS connections, as shown in the instructions for administering StorageGRID.
 |===
 
-
 == [[troubleshoot_MTU_alert]]Grid Network MTU mismatch alert
 
 The *Grid Network MTU mismatch* alert is triggered when the maximum transmission unit (MTU) setting for the Grid Network interface (eth0) differs significantly across nodes in the grid.
@@ -114,15 +113,14 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 
 |`-n node, --node node`
 |The node. The default is the local node.
-
 |===
 
-== Network Receive Error (NRER) alarm
+== Node network connectivity error alert
 
-Network Receive Error (NRER) alarms can be caused by connectivity issues between StorageGRID and your network hardware. In some cases, NRER errors can clear without manual intervention. If the errors don't clear, take the recommended actions.
+*Node network connectivity error* alerts can be caused by connectivity issues between StorageGRID and your network hardware. This alert clears on its own after the underlying problem is addressed.
 
 .About this task
-NRER alarms can be caused by the following issues with networking hardware that connects to StorageGRID:
+*Node network connectivity error* alerts can be caused by the following issues with networking hardware that connects to StorageGRID:
 
 * Forward error correction (FEC) is required and not in use
 * Switch port and NIC MTU mismatch
@@ -130,7 +128,7 @@ NRER alarms can be caused by the following issues with networking hardware that 
 * NIC ring buffer overrun
 
 .Steps
-. Follow the troubleshooting steps for all potential causes of the NRER alarm given your network configuration.
+. Follow the troubleshooting steps for all potential causes of this alert given your network configuration.
 
 . Perform the following steps depending on the cause of the error:
 +
@@ -140,11 +138,11 @@ NRER alarms can be caused by the following issues with networking hardware that 
 .FEC mismatch
 --
 
-NOTE: These steps are applicable only for NRER errors caused by FEC mismatch on StorageGRID appliances.
+NOTE: These steps are applicable only for *Node network connectivity error* alerts caused by FEC mismatch on StorageGRID appliances.
 
 .. Check the FEC status of the port in the switch attached to your StorageGRID appliance.
 .. Check the physical integrity of the cables from the appliance to the switch.
-.. If you want to change FEC settings to try to resolve the NRER alarm, first ensure that the appliance is configured for *Auto* mode on the Link Configuration page of the StorageGRID Appliance Installer (see the instructions for your appliance:
+.. If you want to change FEC settings to try to resolve the alert, first ensure that the appliance is configured for *Auto* mode on the Link Configuration page of the StorageGRID Appliance Installer (see the instructions for your appliance:
 +
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SGF6112^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/changing-link-configuration-of-sg6000-cn-controller.html[SG6000^]
@@ -160,9 +158,9 @@ NOTE: StorageGRID appliances support Firecode (FC) and Reed Solomon (RS) FEC, as
 .Switch port and NIC MTU mismatch
 --
 
-If the error is caused by a switch port and NIC MTU mismatch, check that the MTU size configured on the node is the same as the MTU setting for the switch port.
+If the alert is caused by a switch port and NIC MTU mismatch, check that the MTU size configured on the node is the same as the MTU setting for the switch port.
 
-The MTU size configured on the node might be smaller than the setting on the switch port the node is connected to. If a StorageGRID node receives an Ethernet frame larger than its MTU, which is possible with this configuration, the NRER alarm might be reported. If you believe this is what is happening, either change the MTU of the switch port to match the StorageGRID network interface MTU, or change the MTU of the StorageGRID network interface to match the switch port, depending on your end-to-end MTU goals or requirements.
+The MTU size configured on the node might be smaller than the setting on the switch port the node is connected to. If a StorageGRID node receives an Ethernet frame larger than its MTU, which is possible with this configuration, the *Node network connectivity error* alert might be reported. If you believe this is what is happening, either change the MTU of the switch port to match the StorageGRID network interface MTU, or change the MTU of the StorageGRID network interface to match the switch port, depending on your end-to-end MTU goals or requirements.
 
 NOTE: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types. See <<troubleshoot_MTU_alert,Troubleshoot the Grid Network MTU mismatch alert>> for more information.
 
@@ -187,10 +185,7 @@ The ring buffer can be overrun when the StorageGRID system is overloaded and una
 --
 ====
 
-. After you resolve the underlying problem, reset the error counter.
- .. Select *SUPPORT* > *Tools* > *Grid topology*.
- .. Select *_site_* > *_grid node_* > *SSM* > *Resources* > *Configuration* > *Main*.
- .. Select *Reset Receive Error Count* and click *Apply Changes*.
+. Monitor the problem and contact technical support if the alert doesn't resolve.
 
 == Time synchronization errors
 
