@@ -115,12 +115,12 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 |The node. The default is the local node.
 |===
 
-== Node network connectivity error alert
+== Node network reception frame error alert
 
-*Node network connectivity error* alerts can be caused by connectivity issues between StorageGRID and your network hardware. This alert clears on its own after the underlying problem is addressed.
+*Node network reception frame error* alerts can be caused by connectivity issues between StorageGRID and your network hardware. This alert clears on its own after the underlying problem is addressed.
 
 .About this task
-*Node network connectivity error* alerts can be caused by the following issues with networking hardware that connects to StorageGRID:
+*Node network reception frame error* alerts can be caused by the following issues with networking hardware that connects to StorageGRID:
 
 * Forward error correction (FEC) is required and not in use
 * Switch port and NIC MTU mismatch
@@ -138,7 +138,7 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 .FEC mismatch
 --
 
-NOTE: These steps are applicable only for *Node network connectivity error* alerts caused by FEC mismatch on StorageGRID appliances.
+NOTE: These steps are applicable only for *Node network reception frame error* alerts caused by FEC mismatch on StorageGRID appliances.
 
 .. Check the FEC status of the port in the switch attached to your StorageGRID appliance.
 .. Check the physical integrity of the cables from the appliance to the switch.
@@ -160,7 +160,7 @@ NOTE: StorageGRID appliances support Firecode (FC) and Reed Solomon (RS) FEC, as
 
 If the alert is caused by a switch port and NIC MTU mismatch, check that the MTU size configured on the node is the same as the MTU setting for the switch port.
 
-The MTU size configured on the node might be smaller than the setting on the switch port the node is connected to. If a StorageGRID node receives an Ethernet frame larger than its MTU, which is possible with this configuration, the *Node network connectivity error* alert might be reported. If you believe this is what is happening, either change the MTU of the switch port to match the StorageGRID network interface MTU, or change the MTU of the StorageGRID network interface to match the switch port, depending on your end-to-end MTU goals or requirements.
+The MTU size configured on the node might be smaller than the setting on the switch port the node is connected to. If a StorageGRID node receives an Ethernet frame larger than its MTU, which is possible with this configuration, the *Node network reception frame error* alert might be reported. If you believe this is what is happening, either change the MTU of the switch port to match the StorageGRID network interface MTU, or change the MTU of the StorageGRID network interface to match the switch port, depending on your end-to-end MTU goals or requirements.
 
 NOTE: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types. See <<troubleshoot_MTU_alert,Troubleshoot the Grid Network MTU mismatch alert>> for more information.
 
