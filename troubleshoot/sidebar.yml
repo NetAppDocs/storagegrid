@@ -28,11 +28,7 @@ entries:
     - title: Troubleshoot the Low object data storage alert
       url: "/troubleshoot/troubleshooting-low-object-data-storage-alert.html"
     - title: Troubleshoot Low read-only watermark override alerts
-      url: "/troubleshoot/troubleshoot-low-watermark-alert.html" 
-    - title: Troubleshoot the Storage Status (SSTS) alarm
-      url: "/troubleshoot/troubleshooting-storage-status-alarm.html"
-    - title: Troubleshoot delivery of platform services messages (SMTT alarm)
-      url: "/troubleshoot/troubleshooting-delivery-platform-services-messages.html"
+      url: "/troubleshoot/troubleshoot-low-watermark-alert.html"
   - title: Troubleshoot metadata issues
     url: "/troubleshoot/troubleshooting-metadata-issues.html"
   - title: Troubleshoot certificate errors

@@ -107,8 +107,6 @@ sidebar:
             url: "/maintain/decommissioning-connected-grid-nodes.html"
           - title: Pause and resume decommission process for Storage Nodes
             url: "/maintain/pausing-and-resuming-decommission-process-for-storage-nodes.html"
-          - title: Troubleshoot node decommission
-            url: "/maintain/troubleshooting-node-decommissioning.html"
         - title: Decommission site
           entries:
           - title: Considerations for removing a site
