@@ -2,14 +2,14 @@
 permalink: ilm/creating-cloud-storage-pool.html
 sidebar: sidebar
 keywords: how to create cloud storage pool
-summary: 'A Cloud Storage Pool specifies a single external Amazon S3 bucket or other S3-compatible provider, or Azure Blob storage container.'
+summary: 'A Cloud Storage Pool specifies a single external Amazon S3 bucket or other S3-compatible provider or an Azure Blob storage container.'
 ---
 = Create a Cloud Storage Pool
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-A Cloud Storage Pool specifies a single external Amazon S3 bucket or other S3-compatible provider, or Azure Blob storage container. 
+A Cloud Storage Pool specifies a single external Amazon S3 bucket or other S3-compatible provider or an Azure Blob storage container. 
 
 When you create a Cloud Storage Pool, you specify the name and location of the external bucket or container that StorageGRID will use to store objects, the cloud provider type (Amazon S3/GCP or Azure Blob storage), and the information StorageGRID needs to access the external bucket or container.
 
