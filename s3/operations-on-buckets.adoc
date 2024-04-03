@@ -2,14 +2,14 @@
 permalink: s3/operations-on-buckets.html
 sidebar: sidebar
 keywords: bucket, buckets, operations on buckets
-summary: 'The StorageGRID system supports a maximum of 1,000 buckets for each S3 tenant account.'
+summary: 'The StorageGRID system supports a maximum of 5,000 buckets for each S3 tenant account.'
 ---
 = Operations on buckets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The StorageGRID system supports a maximum of 1,000 buckets for each S3 tenant account.
+The StorageGRID system supports a maximum of 5,000 buckets for each S3 tenant account.
 
 Bucket name restrictions follow the AWS US Standard region restrictions, but you should further restrict them to DNS naming conventions to support S3 virtual hosted-style requests.
 
