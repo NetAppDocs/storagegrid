@@ -65,7 +65,7 @@ Other errors are unrecoverable. For example, an unrecoverable error occurs if th
 
 If StorageGRID encounters an unrecoverable endpoint error:
 
-* In the Grid Manager, go to *Support* > *Tools* > *Metrics* > *RSM Dashboard - Platform Services Overview* to view error details.
+* In the Grid Manager, go to *Support* > *Tools* > *Metrics* > *Grafana* > *Platform Services Overview* to view error details.
 
 * In the Tenant Manager, go to *STORAGE (S3)* > *Platform Services Endpoints* to view the error details.
 
