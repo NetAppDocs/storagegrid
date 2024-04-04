@@ -15,6 +15,7 @@ This release of StorageGRID introduces the following features and functional cha
 
 Default audit destinations:: Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
 
+Docker and Podman support:: Support for using Docker as the container run-time for software-only deployments will be removed in a future StorageGRID release. Prepare for this change by using Podman for new StorageGRID 11.9 installations. If you're using Docker with an earlier version of StorageGRID, you won't be able to upgrade to future releases until you change to using Podman only.
 
 == Appliances
 

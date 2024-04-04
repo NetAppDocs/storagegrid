@@ -11,6 +11,8 @@ summary: 'Before installing the container engine (Docker or Podman), you might n
 [.lead]
 Before installing the container engine (Docker or Podman), you might need to format the storage volume and mount it.
 
+NOTE: Support for using Docker as the container run-time for software-only deployments will be removed in a future StorageGRID release. Prepare for this change by using Podman for new StorageGRID 11.9 installations.
+
 .About this task
 
 You can skip these steps if you plan to use local storage for the Docker or Podman storage volume and have sufficient space available on the host partition containing `/var/lib/docker` for Docker and `/var/lib/containers` for Podman.
