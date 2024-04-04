@@ -2,23 +2,21 @@
 permalink: troubleshoot/troubleshooting-metadata-issues.html
 sidebar: sidebar
 keywords: how to troubleshoot metadata issues
-summary: 'If metadata issues occur, alerts will inform you of the source of the issues and recommended actions to take.'
+summary: 'If metadata issues occur, alerts will inform you of the source of the issues and recommended actions to take. In particular, you must add new Storage Nodes if the Low metadata storage alert is triggered.'
 ---
 = Troubleshoot metadata issues
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If metadata issues occur, alerts will inform you of the source of the issues and recommended actions to take.
+If metadata issues occur, alerts will inform you of the source of the issues and recommended actions to take. In particular, you must add new Storage Nodes if the Low metadata storage alert is triggered.
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
-== Low metadata storage alert
-
-If the *Low metadata storage* alert is triggered, you must add new Storage Nodes.
-
 .About this task
+Follow the recommended actions for each metadata-related alert that is triggered. If the *Low metadata storage* alert is triggered, you must add new Storage Nodes.
+
 StorageGRID reserves a certain amount of space on volume 0 of each Storage Node for object metadata. This space, known as the _actual reserved space_, is subdivided into the space allowed for object metadata (the allowed metadata space) and the space required for essential database operations, such as compaction and repair. The allowed metadata space governs overall object capacity.
 
 image::../media/metadata_allowed_space_volume_0.png[Metadata Allowed Space Volume 0]
@@ -42,10 +40,6 @@ CAUTION: When object metadata is using 90% or more of the allowed metadata space
 
 * *Critical*: Object metadata is using 100% or more of the allowed metadata space and is starting to consume the space required for essential database operations. You must stop the ingest of new objects, and you must add new Storage Nodes immediately.
 
-In the following example, object metadata is using more than 100% of the allowed metadata space. This is a critical situation, which will result in inefficient database operation and errors.
-
-image::../media/cdlp_dashboard_alarm.gif[Metadata dashboard Alarm]
-
 CAUTION: If the size of volume 0 is smaller than the Metadata Reserved Space storage option (for example, in a non-production environment), the calculation for the *Low metadata storage* alert might be inaccurate.
 
 .Steps
@@ -57,15 +51,3 @@ CAUTION: If the size of volume 0 is smaller than the Metadata Reserved Space sto
 NOTE: Because StorageGRID keeps complete copies of all object metadata at each site, the metadata capacity of the entire grid is limited by the metadata capacity of the smallest site. If you need to add metadata capacity to one site, you should also link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[expand any other sites] by the same number of Storage Nodes.
 +
 After you perform the expansion, StorageGRID redistributes the existing object metadata to the new nodes, which increases the overall metadata capacity of the grid. No user action is required. The *Low metadata storage* alert is cleared.
-
-== Cassandra-related alerts
-
-Cassandra is used as the metadata store for StorageGRID.
-
-If any link:../monitor/alerts-reference.html#cassandra-alerts[Cassandra alerts] are triggered, take the actions recommended for each alert.
-
-For example:
-
-If the *Cassandra communication error* alert is triggered, you might have to restart the Cassandra service after you resolve the communication issue.
-
-If the *Cassandra repair metrics out of date* alert is triggered, you might have to restart the associated node.
