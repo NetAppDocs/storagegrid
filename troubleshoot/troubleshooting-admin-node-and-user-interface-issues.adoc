@@ -144,6 +144,9 @@ Provide the logs you collected to technical support. See also link:../monitor/lo
 
 The user interface for the Grid Manager or the Tenant Manager might not respond as expected after StorageGRID software is upgraded.
 
+.Before you begin
+* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+
 .Steps
 
 . Clear your web browser cache.
