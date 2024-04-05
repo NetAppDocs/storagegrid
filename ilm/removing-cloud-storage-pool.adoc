@@ -46,7 +46,6 @@ For Step 2 of the Create ILM rule wizard, select the new location from the *copi
 
 . Wait for ILM to remove objects from the Cloud Storage Pool and place them in the new location. 
 
-
 == Delete Cloud Storage Pool
 
 When the Cloud Storage Pool is empty and not used in any ILM rules, you can delete it.
