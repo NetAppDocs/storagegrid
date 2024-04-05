@@ -163,12 +163,21 @@ _For Commercial Cloud Services (C2S) S3 service_
 .. If the client private key is encrypted, enter the passphrase for decrypting the client private key. Otherwise, leave the *Client private key passphrase* field blank.
 
 --
+--
 //Authentication type - end C2S, begin Azure
 .Azure Blob Storage
 --
 .. For *Account name*, enter the name of the Blob storage account that owns the external service container.
 .. For *Account key*, enter the secret key for the Blob storage account.
 
+--
+//Authentication type - end Azure, begin IAM Roles Anywhere
+--
+.IAM Roles Anywhere
+
+_For AWS IAM Roles Anywhere service_
+
+--
 --
 //Authentication type - end Azure, begin Anonymous
 
