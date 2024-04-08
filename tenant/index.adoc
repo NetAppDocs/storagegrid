@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: use tenant account
 summary: 'A tenant account allows you to use either the Simple Storage Service (S3) REST API or the Swift REST API to store and retrieve objects in a StorageGRID system.'
 ---
-= Use a tenant account: Overview
+= Use a tenant account
 :icons: font
 :imagesdir: ../media/
 

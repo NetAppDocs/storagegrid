@@ -1,7 +1,7 @@
 section: network
 title: Networking guidelines
 entries:
-  - title: Overview
+  - title: StorageGRID networking
     pdf-filename: StorageGRID networking guidelines
     url: "/network/index.html"
   - title: StorageGRID network types

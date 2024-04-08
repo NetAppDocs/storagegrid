@@ -11,7 +11,7 @@ summary: 'If you are using FabricPool to tier data to StorageGRID, you must unde
 [.lead]
 If you are using FabricPool to tier data to StorageGRID, you must understand the requirements for using StorageGRID information lifecycle management (ILM) with FabricPool data. 
 
-CAUTION: FabricPool has no knowledge of StorageGRID ILM rules or policies. Data loss can occur if the StorageGRID ILM policy is misconfigured. For detailed information, see link:../ilm/what-ilm-rule-is.html[Create an ILM rule: Overview] and link:../ilm/creating-ilm-policy.html[Create an ILM policy: Overview].
+CAUTION: FabricPool has no knowledge of StorageGRID ILM rules or policies. Data loss can occur if the StorageGRID ILM policy is misconfigured. For detailed information, see link:../ilm/what-ilm-rule-is.html[Use ILM rules to manage objects] and link:../ilm/creating-ilm-policy.html[Create ILM policies].
 
 == Guidelines for using ILM with FabricPool
 When you use the FabricPool setup wizard, the wizard automatically creates a new ILM rule for each S3 bucket you create and adds that rule to an inactive policy. You are prompted to activate the policy. The automatically created rule follows the recommended best practices: it uses 2+1 erasure coding at a single site.

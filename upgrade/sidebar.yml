@@ -1,7 +1,7 @@
 section: upgrade
 title: Upgrade StorageGRID software
 entries:
-  - title: Overview
+  - title: Before you begin
     pdf-filename: Upgrade StorageGRID software 
     url: "/upgrade/index.html"
   - title: What's new in StorageGRID 11.8
