@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, log file formats, log formats, log file format, log format
 summary: 'The audit log files are found on every Admin Node and contain a collection of individual audit messages.'
 ---
-= Audit log file format: Overview
+= Audit log file format
 :icons: font
 :imagesdir: ../media/
 
