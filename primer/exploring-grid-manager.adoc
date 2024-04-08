@@ -141,7 +141,7 @@ Maintenance tasks include:
 
 * link:../maintain/decommission-procedure.html[Decommission operations] to remove unused grid nodes and sites
 * link:../expand/index.html[Expansion operations] to add new grid nodes and sites
-* link:../maintain/grid-node-recovery-procedures.html[Grid node recovery procedures] to replace a failed node and restore data
+* link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[Grid node recovery procedures] to replace a failed node and restore data
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
 * Performing a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes

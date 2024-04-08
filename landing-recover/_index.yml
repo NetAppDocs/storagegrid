@@ -2,8 +2,6 @@ indexpage:
    tiles:
     - title: Get started
       links:
-        - title: 'Overview: Grid node recovery'
-          url: ../maintain/grid-node-recovery-procedures.html
         - title: Warnings and considerations
           url: ../maintain/warnings-and-considerations-for-grid-node-recovery.html
         - title: Gather required materials
@@ -11,7 +9,7 @@ indexpage:
     - title: Recover failed nodes
       links:
         - title: Overview
-          url: ../maintain/grid-node-recovery-procedures.html
+          url: ../maintain/warnings-and-considerations-for-grid-node-recovery.html
         - title: Storage Nodes
           url: ../maintain/recovering-from-storage-node-failures.html
         - title: Admin Nodes

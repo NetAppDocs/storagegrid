@@ -223,8 +223,6 @@ sidebar:
     - title: Recover or replace nodes
       url: "/landing-recover/index.html"
       entries:
-      - title: Overview
-        url: "/maintain/grid-node-recovery-procedures.html"
       - title: Warnings and considerations for grid node recovery
         url: "/maintain/warnings-and-considerations-for-grid-node-recovery.html"
       - title: Gather required materials for grid node recovery
