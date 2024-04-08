@@ -330,9 +330,6 @@ sidebar:
             url: "/maintain/restoring-prometheus-metrics-non-primary-admin-node.html"
       - title: Recover from Gateway Node failures
         entries:
-        - title: Workflow
-          pdf-filename: Recover from Gateway Node failures
-          url: "/maintain/recovering-from-gateway-node-failures.html"
         - title: Replace Gateway Node
           url: "/maintain/replacing-gateway-node.html"
         - title: Select Start Recovery to configure Gateway Node

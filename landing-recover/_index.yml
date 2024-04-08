@@ -15,7 +15,7 @@ indexpage:
         - title: Admin Nodes
           url: ../maintain/recovering-from-admin-node-failures.html
         - title: Gateway Nodes
-          url: ../maintain/recovering-from-gateway-node-failures.html
+          url: ../maintain/replacing-gateway-node.html
         - title: Archive Nodes
           url: ../maintain/recovering-from-archive-node-failures.html
     - title: Replace node
