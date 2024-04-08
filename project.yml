@@ -271,9 +271,6 @@ sidebar:
             url: "/maintain/checking-storage-state-after-recovering-storage-volumes.html"
         - title: Recover from system drive failure
           entries:
-          - title: Workflow
-            pdf-filename: Recover from system drive failure
-            url: "/maintain/recovering-from-system-drive-failure.html"
           - title: Warnings for Storage Node system drive recovery
             url: "/maintain/reviewing-warnings-for-system-drive-recovery.html"
           - title: Replace the Storage Node
