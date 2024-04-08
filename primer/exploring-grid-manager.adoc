@@ -62,7 +62,7 @@ image::../media/nodes_page.png[nodes page main]
 
 == Tenants page
 
-The link:../admin/managing-tenants.html[Tenants] page allows you to link:../tenant/index.html[create and monitor the storage tenant accounts] for your StorageGRID system. You must create at least one tenant account to specify who can store and retrieve objects and which functionality is available to them.
+The link:../admin/managing-tenants.html[Tenants page] allows you to link:../tenant/index.html[create and monitor the storage tenant accounts] for your StorageGRID system. You must create at least one tenant account to specify who can store and retrieve objects and which functionality is available to them.
 
 The Tenants page also provides usage details for each tenant, including the amount of storage used and the number of objects. If you set a quota when you created the tenant, you can see how much of that quota has been used.
 
