@@ -4,7 +4,7 @@ entries:
   - title: Before you begin
     pdf-filename: Upgrade StorageGRID software 
     url: "/upgrade/index.html"
-  - title: What's new in StorageGRID 11.8
+  - title: What's new in StorageGRID 11.9
     url: "/upgrade/whats-new.html"
   - title: Removed or deprecated features
     url: "/upgrade/removed-or-deprecated-features.html"

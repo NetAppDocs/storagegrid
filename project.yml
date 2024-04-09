@@ -111,7 +111,7 @@ sidebar:
             url: "/maintain/troubleshooting-node-decommissioning.html"
         - title: Decommission site
           entries:
-          - title: Considerations for removing a site
+          - title: Considerations for removing site
             url: "/maintain/considerations-for-removing-site.html"
           - title: Gather required materials
             url: "/maintain/gathering-required-materials-site-decom.html"

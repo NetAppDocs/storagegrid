@@ -11,9 +11,9 @@ summary: 'System hardening is the process of eliminating as many security risks 
 [.lead]
 System hardening is the process of eliminating as many security risks as possible from a StorageGRID system.
 
-These guidelines are a supplement to industry-standard best practices for system hardening. For example, you should already use strong passwords for StorageGRID, use HTTPS instead of HTTP, and enable certificate-based authentication where available.
+As you install and configure StorageGRID, use these guidelines to help you meet any prescribed security objectives for confidentiality, integrity, and availability.
 
-As you install and configure StorageGRID, use these guidelines to help you meet any prescribed security objectives for information system confidentiality, integrity, and availability.
+You should already be using industry-standard best practices for system hardening. For example, you use strong passwords for StorageGRID, use HTTPS instead of HTTP, and enable certificate-based authentication where available.
 
 StorageGRID follows the https://security.netapp.com/policy/[NetApp Vulnerability Handling Policy^]. Reported vulnerabilities are verified and addressed according to the product security incident response process.
 
