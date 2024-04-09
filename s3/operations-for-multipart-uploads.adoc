@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: operations, multipart uploads, uploads, rest API
 summary: 'This section describes how StorageGRID supports operations for multipart uploads.'
 ---
-= Operations for multipart uploads: Overview
+= Operations for multipart uploads
 :icons: font
 :imagesdir: ../media/
 

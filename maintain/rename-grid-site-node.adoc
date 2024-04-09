@@ -18,7 +18,7 @@ You can use this procedure to add or update the display names used for your grid
 NOTE: You can add or update display names from a non-primary Admin Node, but you must be signed in to the primary Admin Node to download a Recovery Package. 
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * You have the provisioning passphrase.
-* You understand the requirements and best practices for display names. See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes: Overview].
+* You understand the requirements and best practices for display names. See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes].
 
 == How to rename grid, sites, or nodes
 You can rename your StorageGRID system, one or more sites, or one or more nodes.
@@ -84,7 +84,7 @@ Follow these steps to enter a display name for each item you want to rename.
 .Steps
 . In the *Display name* field, enter a proposed display name for each item in the list.
 +
-See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes: Overview] to learn the naming requirements.
+See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes] to learn the naming requirements.
 
 . To remove any items you don't want to rename, select image:../media/icon-x-to-remove.png[X icon] in the *Remove from list* column.
 +
@@ -117,7 +117,7 @@ image::../media/rename-bulk-rename-tool.png[Bulk rename tool before]
 
 . In the *New string* field, enter the replacement string you want to use instead. For example, enter *DC1*.
 +
-See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes: Overview] to learn the naming requirements.
+See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes] to learn the naming requirements.
 +
 As you enter the replacement string, the names on the left are updated, so you can verify that the new names will be correct.
 + 

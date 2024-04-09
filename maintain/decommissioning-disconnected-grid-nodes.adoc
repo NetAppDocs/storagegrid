@@ -39,7 +39,7 @@ CAUTION: Use caution when you decommission Storage Nodes in a grid containing so
 
 . Unless you are decommissioning an Archive Node (which must be disconnected), attempt to bring any disconnected grid nodes back online or recover them.
 +
-See link:grid-node-recovery-procedures.html[Grid node recovery procedures] for instructions.
+See link:warnings-and-considerations-for-grid-node-recovery.html[Grid node recovery procedures] for instructions.
 
 . If you are unable to recover a disconnected grid node and you want to decommission it while it is disconnected, select the checkbox for that node.
 +

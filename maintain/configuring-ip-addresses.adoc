@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure ip address, change IP tool, ethernet, dhcp, ha group
 summary: 'You can perform network configuration by configuring IP addresses for grid nodes using the Change IP tool.'
 ---
-= Configure IP addresses: Overview
+= IP address guidelines
 :icons: font
 :imagesdir: ../media/
 

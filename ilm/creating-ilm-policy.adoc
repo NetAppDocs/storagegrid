@@ -58,7 +58,7 @@ NOTE: If the link:enabling-s3-object-lock-globally.html[global S3 Object Lock se
 +
 image::../media/video-screenshot-ilm-policies-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb967139-e032-49ef-b529-b0ba00a7f0ad" alt="Video: Information lifecycle management policies in StorageGRID 11.9", window=_blank]
 
-See also link:creating-ilm-policy.html[Create an ILM policy: Overview].
+See also link:ilm-policy-overview.html[Use ILM policies].
 
 .Steps
 . Select *ILM* > *Policies*.
