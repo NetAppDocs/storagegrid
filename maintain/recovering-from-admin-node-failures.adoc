@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recover, admin node failure, workflow
 summary: 'The recovery process for an Admin Node depends on whether it is the primary Admin Node or a non-primary Admin Node.'
 ---
-= Recover from Admin Node failures: Workflow
+= Primary or non-primary Admin Node recovery
 :icons: font
 :imagesdir: ../media/
 

@@ -1,7 +1,7 @@
 section: tenant
 title: Use a tenant account
 entries:
-  - title: Overview
+  - title: What is tenant account
     pdf-filename: Use a StorageGRID tenant account
     url: "/tenant/index.html"
   - title: How to sign in and sign out
@@ -48,7 +48,7 @@ entries:
       url: "/tenant/managing-local-users.html"
   - title: Manage S3 access keys
     entries:
-    - title: Overview
+    - title: Tenant access keys
       pdf-filename: Manage S3 access keys
       url: "/tenant/managing-s3-access-keys.html"
     - title: Create your S3 access keys
@@ -91,7 +91,7 @@ entries:
       url: "/tenant/use-s3-console.html"     
   - title: Manage S3 platform services
     entries:
-    - title: Overview
+    - title: Manage platform services
       pdf-filename: Manage S3 platform services
       url: "/tenant/what-platform-services-are.html"
       entries:

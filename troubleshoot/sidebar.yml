@@ -1,7 +1,7 @@
 section: troubleshoot
 title: Troubleshoot StorageGRID system 
 entries:
-  - title: Overview
+  - title: Troubleshooting guidelines
     pdf-filename: Troubleshoot StorageGRID system 
     url: "/troubleshoot/index.html"
   - title: Troubleshoot object and storage issues
@@ -16,7 +16,7 @@ entries:
       url: /troubleshoot/troubleshoot-s3-put-object-size-too-large-alert.html
     - title: Troubleshoot lost and missing object data
       entries:
-      - title: Overview
+      - title: Methods for retrieving objects
         pdf-filename: Troubleshoot lost and missing object data
         url: "/troubleshoot/troubleshooting-lost-and-missing-object-data.html"    
       - title: Investigate lost objects

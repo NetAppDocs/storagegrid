@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: administrator access, single sign on, sso, users, groups, client certificates, passwords, passphrase
 summary: 'You control who can access StorageGRID and which tasks users can perform by creating or importing groups and users and assigning permissions to each group. Optionally, you can enable single sign-on \(SSO\), create client certificates, and change grid passwords.'
 ---
-= Control StorageGRID access: Overview
+= Control StorageGRID access
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: platform services
 summary: 'StorageGRID platform services can help you implement a hybrid cloud strategy by allowing you to send event notifications and copies of S3 objects and object metadata to external destinations.'
 ---
-= Manage platform services: Overview
+= Manage platform services
 :icons: font
 :imagesdir: ../media/
 

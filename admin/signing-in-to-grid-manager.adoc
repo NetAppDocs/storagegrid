@@ -11,8 +11,6 @@ summary: 'You access the Grid Manager sign-in page by entering the fully qualifi
 [.lead]
 You access the Grid Manager sign-in page by entering the fully qualified domain name (FQDN) or IP address of an Admin Node into the address bar of a supported web browser.
 
-
-== Overview
 Each StorageGRID system includes one primary Admin Node and any number of non-primary Admin Nodes. You can sign in to the Grid Manager on any Admin Node to manage the StorageGRID system. However, some maintenance procedures can only be performed from the primary Admin Node.
 
 === Connect to HA group

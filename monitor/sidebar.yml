@@ -1,14 +1,14 @@
 section: monitor
 title: Monitor StorageGRID system
 entries:
-  - title: Overview
+  - title: Monitoring tasks
     pdf-filename: Monitor StorageGRID system
     url: "/monitor/index.html" 
   - title: View and manage dashboard
     url: "/monitor/viewing-dashboard.html"
   - title: View the Nodes page
     entries:
-    - title: Overview
+    - title: Nodes page contents
       pdf-filename: View the Nodes page
       url: "/monitor/viewing-nodes-page.html"
     - title: View the Overview tab
@@ -55,7 +55,7 @@ entries:
       url: "/monitor/grid-federation-monitor-connections.html"
   - title: Manage alerts
     entries:
-    - title: Overview
+    - title: Alert system
       url: "/monitor/managing-alerts.html"   
     - title: View alert rules
       url: "/monitor/view-alert-rules.html"
@@ -81,7 +81,7 @@ entries:
       url: "/monitor/commonly-used-prometheus-metrics.html"
   - title: Log files reference
     entries:
-    - title: Overview
+    - title: Access log files
       pdf-filename: Log files reference
       url: "/monitor/logs-files-reference.html"
     - title: StorageGRID software logs
@@ -98,7 +98,7 @@ entries:
       url: "/monitor/configure-audit-messages.html" 
   - title: Use SNMP monitoring
     entries:
-    - title: Overview
+    - title: SNMP monitoring
       pdf-filename: Use SNMP monitoring
       url: "/monitor/using-snmp-monitoring.html"
     - title: Configure the SNMP agent

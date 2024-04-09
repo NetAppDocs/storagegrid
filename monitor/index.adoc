@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor StorageGRID
 summary: 'Monitor your StorageGRID system regularly to ensure it is performing as expected.'
 ---
-= Monitor a StorageGRID system: Overview
+= Monitor a StorageGRID system
 :icons: font
 :imagesdir: ../media/
 
