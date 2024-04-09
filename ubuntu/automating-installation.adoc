@@ -117,4 +117,5 @@ StorageGRID has been configured and installed.
 ----
 
 .Related information
-link:overview-of-installation-rest-api.html[Overview of the installation REST API]
+
+link:overview-of-installation-rest-api.html[Installation REST API]

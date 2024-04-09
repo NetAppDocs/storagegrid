@@ -2,13 +2,13 @@ indexpage:
    tiles:
     - title: Get started
       links:
-        - title: Maintenance overview
+        - title: Grid maintenance
           url: ../maintain/index.html
         - title: Download Recovery Package
           url: ../maintain/downloading-recovery-package.html
     - title: Decommission nodes or sites
       links:
-        - title: Overview
+        - title: Decommission types
           url: ../maintain/decommission-procedure.html
         - title: Remove a grid node
           url: ../maintain/grid-node-decommissioning.html
