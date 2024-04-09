@@ -46,7 +46,7 @@ a|
 * Gateway Nodes
 
 a|S3 client access for link:../admin/manage-s3-select-for-tenant-accounts.html[S3 Select]
-a|* SG100 or SG1000 appliances
+a|* Services appliances
 * VMware-based software nodes
 
 *Note*: HA groups are recommended when using S3 Select, but not required.

@@ -65,6 +65,12 @@ For the appliance, this command shuts down the compute controller, but the appli
 [role="tabbed-block"]
 ====
 
+.SG110 or SG1100
+--
+.. Turn off the power to the appliance.
+.. Wait for the blue power LED to turn off.
+--
+
 .SG100 or SG1000
 --
 
@@ -134,6 +140,8 @@ You can power on these nodes in any order.
 .Related information
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 storage appliances^]
+
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg110-1100/index.html[SG110 and SG1100 services appliances^]
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg100-1000/index.html[SG100 and SG1000 services appliances^]
 
