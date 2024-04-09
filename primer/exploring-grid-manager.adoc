@@ -62,7 +62,7 @@ image::../media/nodes_page.png[nodes page main]
 
 == Tenants page
 
-The link:../admin/managing-tenants.html[Tenants] page allows you to link:../tenant/index.html[create and monitor the storage tenant accounts] for your StorageGRID system. You must create at least one tenant account to specify who can store and retrieve objects and which functionality is available to them.
+The link:../admin/managing-tenants.html[Tenants page] allows you to link:../tenant/index.html[create and monitor the storage tenant accounts] for your StorageGRID system. You must create at least one tenant account to specify who can store and retrieve objects and which functionality is available to them.
 
 The Tenants page also provides usage details for each tenant, including the amount of storage used and the number of objects. If you set a quota when you created the tenant, you can see how much of that quota has been used.
 
@@ -141,7 +141,7 @@ Maintenance tasks include:
 
 * link:../maintain/decommission-procedure.html[Decommission operations] to remove unused grid nodes and sites
 * link:../expand/index.html[Expansion operations] to add new grid nodes and sites
-* link:../maintain/grid-node-recovery-procedures.html[Grid node recovery procedures] to replace a failed node and restore data
+* link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[Grid node recovery procedures] to replace a failed node and restore data
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
 * Performing a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes

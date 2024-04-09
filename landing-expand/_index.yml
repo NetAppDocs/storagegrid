@@ -2,7 +2,7 @@ indexpage:
    tiles:
     - title: Get started
       links:
-        - title: Overview of expansion types
+        - title: Expansion types
           url: ../expand/index.html
         - title: 'Guidelines: Add object capacity'
           url: ../expand/guidelines-for-adding-object-capacity.html

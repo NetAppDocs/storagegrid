@@ -358,7 +358,7 @@ Information lifecycle management (ILM) rules control the placement, duration, an
 
 . Review the information provided on the page.
 
-. If you want to add specific instructions for the objects belonging to the new tenant or bucket, create a new rule and a new policy. See link:../ilm/access-create-ilm-rule-wizard.html[Create ILM rule] and link:../ilm/ilm-policy-overview.html[ILM policies: Overview].
+. If you want to add specific instructions for the objects belonging to the new tenant or bucket, create a new rule and a new policy. See link:../ilm/access-create-ilm-rule-wizard.html[Create ILM rule] and link:../ilm/ilm-policy-overview.html[Use ILM policies].
 
 . Select *I have reviewed these steps and understand what I need to do*.
 

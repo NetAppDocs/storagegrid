@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, replace failed node, services appliance
 summary: 'You can use an SG100 or SG1000 services appliance to recover a failed Gateway Node, a failed non-primary Admin Node, or a failed primary Admin Node that was hosted on VMware, a Linux host, or a services appliance. This procedure is one step of the grid node recovery procedure.'
 ---
-= Replace failed node with services appliance: Overview
+= Replace failed node with services appliance
 :icons: font
 :imagesdir: ../media/
 

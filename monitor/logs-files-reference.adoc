@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: log, logs, log files
 summary: 'StorageGRID provides logs that are used to capture events, diagnostic messages, and error conditions. You might be asked to collect log files and forward them to technical support to assist with troubleshooting.'
 ---
-= Log files reference: Overview
+= Log files reference
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message formats, message format 
 summary: 'Audit messages exchanged within the StorageGRID system include standard information common to all messages and specific content describing the event or activity being reported.'
 ---
-= Audit message format: Overview
+= Audit message format
 :icons: font
 :imagesdir: ../media/
 

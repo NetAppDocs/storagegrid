@@ -2,20 +2,18 @@
 permalink: admin/managing-tenants.html
 sidebar: sidebar
 keywords: manage tenants, tenant account, what is a tenant
-summary: 'As a grid administrator, you create and manage the tenant accounts that S3 clients use to store and retrieve objects.'
+summary: 'A tenant account allows you to use the Simple Storage Service \(S3\) REST API to store and retrieve objects in a StorageGRID system.'
 ---
-= Manage tenants
+= What are tenant accounts?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-As a grid administrator, you create and manage the tenant accounts that S3 clients use to store and retrieve objects.
+A tenant account allows you to use the Simple Storage Service (S3) REST API to store and retrieve objects in a StorageGRID system.
 
 TIP: Swift details have been removed from this version of the doc site. See https://docs.netapp.com/us-en/storagegrid-118/admin/managing-tenants.html[StorageGRID 11.8: Manage tenants^].
 
-== What are tenant accounts?
-
-A tenant account allows you to use the Simple Storage Service (S3) REST API to store and retrieve objects in a StorageGRID system.
+As a grid administrator, you create and manage the tenant accounts that S3 clients use to store and retrieve objects.
 
 Each tenant account has federated or local groups, users, S3 buckets, and objects.
 
@@ -31,7 +29,7 @@ For more information, see link:../tenant/index.html[Use a tenant account].
 
 == How do I create a tenant account?
 
-When you create a tenant account, you specify the following information:
+Use the Grid manager to create a tenant account. When you create a tenant account, you specify the following information:
 
 * Basic information including the tenant name, client type (S3) and optional storage quota.
 
