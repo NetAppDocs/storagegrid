@@ -1,7 +1,7 @@
 section: audit
 title: Review audit logs
 entries:
-  - title: Overview
+  - title: Audit messages and logs
     pdf-filename: Review StorageGRID audit logs
     url: "/audit/index.html"
   - title: Audit message flow and retention
@@ -12,7 +12,7 @@ entries:
     url: "/audit/audit-log-file-rotation.html"
   - title: Audit log file format
     entries:
-      - title: Overview
+      - title: Example audit log format
         pdf-filename: Audit log file format
         url: "/audit/audit-log-file-format.html"
       - title: Use audit-explain tool
@@ -21,7 +21,7 @@ entries:
         url: "/audit/using-audit-sum-tool.html"
   - title: Audit message format
     entries:
-      - title: Overview
+      - title: Example audit message
         pdf-filename: Audit message format
         url: "/audit/audit-message-format.html"
       - title: Data types
@@ -46,7 +46,7 @@ entries:
       url: "/audit/metadata-update-messages.html"
   - title: Audit messages
     entries:
-    - title: Overview
+    - title: Message descriptions
       pdf-filename: Audit messages
       url: "/audit/audit-messages-main.html"
     - title: Audit message categories

@@ -60,7 +60,7 @@ indexpage:
       - title: Maintain your grid
         url: /maintain/index.html
       - title: Recover or replace nodes
-        url: /maintain/grid-node-recovery-procedures.html
+        url: /maintain/warnings-and-considerations-for-grid-node-recovery.html
       - title: Maintain StorageGRID appliances
         url: https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/index.html
     - title: Additional instructions
