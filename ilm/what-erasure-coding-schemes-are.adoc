@@ -24,7 +24,7 @@ NOTE: You can't use erasure coding if the storage pool includes two sites.
  ** <<Erasure-coding schemes for storage pools containing three or more sites,Erasure-coding schemes for storage pools containing three or more sites>>
  ** <<Erasure-coding schemes for one-site storage pools,Erasure-coding schemes for one-site storage pools>>
 
-* Don't use a storage pool that includes the default site, All Sites.
+* Don't use a storage pool that includes the All Sites site.
 
 * The storage pool should include at least `_k+m_ +1` Storage Nodes that can store object data.
 +
