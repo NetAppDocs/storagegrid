@@ -18,7 +18,6 @@ By default, any user who belongs to a group that has at least one permission can
 * Sign in to the Grid Manager
 * View the dashboard
 * View the Nodes pages
-* Monitor grid topology
 * View current and resolved alerts
 * Change their own password (local users only)
 * View certain information provided on the Configuration and Maintenance pages
@@ -42,6 +41,8 @@ NOTE: To grant access to the Tenants page, which contains the *Change root passw
 == Grid topology page configuration
 
 This permission provides access to the Configuration tabs on the *SUPPORT* > *Tools* > *Grid topology* page.
+
+NOTE: The Grid topology page has been deprecated and will be removed in a future release.
 
 == ILM
 
