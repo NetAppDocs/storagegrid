@@ -170,7 +170,7 @@ Network maintenance tasks you can perform include:
 
 == Support menu
 
-The Support menu provides options that help technical support analyze and troubleshoot your system. There are three parts to the Support menu: Tools, Alarms (legacy), and Other.
+The Support menu provides options that help technical support analyze and troubleshoot your system.
 
 === Tools
 
