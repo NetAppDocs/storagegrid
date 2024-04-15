@@ -157,29 +157,28 @@ _For Amazon S3/GCP provider type only_
 _For Commercial Cloud Services (C2S) S3 service_
 
 .. For *Temporary credentials URL*, enter the complete URL that StorageGRID will use to obtain temporary credentials from the CAP server, including all the required and optional API parameters assigned to your C2S account.
-.. For *Server CA certificate*, select *Browse*, and upload the PEM-encoded CA certificate that StorageGRID will use to verify the CAP server.
-.. For *Client certificate*, select *Browse*, and upload the PEM-encoded certificate that StorageGRID will use to identify itself to the CAP server.
-.. For *Client private key*, select *Browse*, and upload the PEM-encoded private key for the client certificate.
+.. For *Server CA certificate*, select *Browse* and upload the PEM-encoded CA certificate that StorageGRID will use to verify the CAP server.
+.. For *Client certificate*, select *Browse* and upload the PEM-encoded certificate that StorageGRID will use to identify itself to the CAP server.
+.. For *Client private key*, select *Browse* and upload the PEM-encoded private key for the client certificate.
 .. If the client private key is encrypted, enter the passphrase for decrypting the client private key. Otherwise, leave the *Client private key passphrase* field blank.
-
 --
---
-//Authentication type - end C2S, begin Azure
-.Azure Blob Storage
---
-.. For *Account name*, enter the name of the Blob storage account that owns the external service container.
-.. For *Account key*, enter the secret key for the Blob storage account.
-
 --
 //Authentication type - end Azure, begin IAM Roles Anywhere
---
-.IAM Roles Anywhere
 
+.IAM Roles Anywhere
+--
 _For AWS IAM Roles Anywhere service_
 
+.. For *AWS IAM Roles Anywhere service endpoint URL*, enter the complete URL that StorageGRID will use to obtain credentials from the IAM Roles Anywhere server, including all the required and optional API parameters assigned to your IAM Roles Anywhere account.
+.. For *Trust anchor URN*, 
+.. For *Profile URN*, 
+.. For *Role URN*, 
+.. For *Duration*, 
+.. For *End-entity certificate*, select *Browse* and upload the PEM-encoded certificate that StorageGRID will use to identify itself to the IAM Roles Anywhere server.
+.. For *Client private key*, select *Browse* and upload the PEM-encoded private key for the client certificate.
 --
 --
-//Authentication type - end Azure, begin Anonymous
+//Authentication type - end IAM Roles Anywhere, begin Anonymous
 
 .Anonymous
 --
@@ -197,7 +196,7 @@ No additional information is required.
 |Use the Grid CA certificates installed on the operating system to secure connections.
 
 |Use custom CA certificate
-|Use a custom CA certificate. Select *Browse*, and upload the PEM-encoded certificate.
+|Use a custom CA certificate. Select *Browse* and upload the PEM-encoded certificate.
 
 |Do not verify certificate
 |The certificate used for the TLS connection is not verified.
