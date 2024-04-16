@@ -161,7 +161,7 @@ _For Commercial Cloud Services (C2S) S3 service_
 .. For *Client certificate*, select *Browse* and upload the PEM-encoded certificate that StorageGRID will use to identify itself to the CAP server.
 .. For *Client private key*, select *Browse* and upload the PEM-encoded private key for the client certificate.
 .. If the client private key is encrypted, enter the passphrase for decrypting the client private key. Otherwise, leave the *Client private key passphrase* field blank.
---
+
 --
 //Authentication type - end Azure, begin IAM Roles Anywhere
 
@@ -176,7 +176,7 @@ _For AWS IAM Roles Anywhere service_
 .. For *Duration*, 
 .. For *End-entity certificate*, select *Browse* and upload the PEM-encoded certificate that StorageGRID will use to identify itself to the IAM Roles Anywhere server.
 .. For *Client private key*, select *Browse* and upload the PEM-encoded private key for the client certificate.
---
+
 --
 //Authentication type - end IAM Roles Anywhere, begin Anonymous
 
