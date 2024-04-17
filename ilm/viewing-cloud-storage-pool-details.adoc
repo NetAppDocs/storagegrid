@@ -21,16 +21,17 @@ You can view the details of a Cloud Storage Pool to determine where it's used an
 The Cloud Storage Pools table includes the following information for each Cloud Storage Pool that includes Storage Nodes:
 +
 * *Name*: The unique display name of the pool.
-* *Node count*: The number of nodes in the pool.
-* *Storage usage*: The percentage of the total usable space that has been used for object data on this node. This value does not include object metadata.
-* *Total capacity*: The size of the pool, which equals the total amount of usable space for object data for all nodes in the pool.
+* *URI*: 
+* *Provider type*: 
+* *Container*: 
 * *ILM usage*: How the pool is currently being used. A Cloud Storage Pool might be unused or it might be used in one or more ILM rules, erasure-coding profiles, or both.
+* *Last error*:
 
 . To view details for a specific Cloud Storage Pool, select its name.
 +
-The details page for the Cloud Storage Pool appears.
+The details page for the pool appears.
 
-. View the *Nodes* tab to learn about the Storage Nodes included in the storage pool.
+. View the *Nodes* tab to learn about the Storage Nodes included in the Cloud Storage Pool.
 +
 The table includes the following information for each node:
 
