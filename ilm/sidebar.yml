@@ -62,8 +62,8 @@ entries:
       url: "/ilm/comparing-cloud-storage-pools-to-cloudmirror-replication.html"
     - title: Create Cloud Storage Pool
       url: "/ilm/creating-cloud-storage-pool.html"
-    - title: View Cloud Storage Pool
-      url: "/ilm/viewing-cloud-storage-pool.html"
+    - title: View Cloud Storage Pool details
+      url: "/ilm/viewing-cloud-storage-pool-details.html"
     - title: Edit Cloud Storage Pool
       url: "/ilm/editing-cloud-storage-pool.html"
     - title: Remove Cloud Storage Pool
