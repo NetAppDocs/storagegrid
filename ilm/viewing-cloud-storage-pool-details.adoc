@@ -21,11 +21,11 @@ You can view the details of a Cloud Storage Pool to determine where it's used an
 The Cloud Storage Pools table includes the following information for each Cloud Storage Pool that includes Storage Nodes:
 +
 * *Name*: The unique display name of the pool.
-* *URI*: 
-* *Provider type*: 
-* *Container*: 
+* *URI*: The Uniform Resource Identifier of the Cloud Storage Pool.
+* *Provider type*: Which cloud provider is used for this Cloud Storage Pool. 
+* *Container*: The name of the bucket used for the Cloud Storage Pool.
 * *ILM usage*: How the pool is currently being used. A Cloud Storage Pool might be unused or it might be used in one or more ILM rules, erasure-coding profiles, or both.
-* *Last error*:
+* *Last error*: The last error detected during a health check of this Cloud Storage Pool. 
 
 . To view details for a specific Cloud Storage Pool, select its name.
 +
