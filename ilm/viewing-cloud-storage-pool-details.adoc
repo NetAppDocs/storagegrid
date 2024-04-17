@@ -31,21 +31,12 @@ The Cloud Storage Pools table includes the following information for each Cloud 
 +
 The details page for the pool appears.
 
-. View the *Nodes* tab to learn about the Storage Nodes included in the Cloud Storage Pool.
-+
-The table includes the following information for each node:
+. View the *Authentication* tab to learn about the authentication type for this Cloud Storage Pool and to edit the authentication details.
 
-* Node name
-* Site name
-* Storage grade
-* Storage usage: The percentage of the total usable space for object data that has been used for the Storage Node.
-+
-NOTE: The same Storage usage (%) value is also shown in the Storage Used - Object Data chart for each Storage Node (select *NODES* > *_Storage Node_* > *Storage*).
+. View the *Server verification* tab to learn about verification details, edit verification, download a new certificate, or copy the certificate PEM.
 
-. Select the *ILM usage* tab to determine if the Cloud Storage Pool is currently being used in any ILM rules or erasure-coding profiles.
+. View the *ILM usage* tab to determine if the Cloud Storage Pool is currently being used in any ILM rules or erasure-coding profiles.
 
 . Optionally, go to the *ILM rules page* to learn about and manage any rules that use the Cloud Storage Pool.
 +
 See the link:working-with-ilm-rules-and-ilm-policies.html[instructions for working with ILM rules].
-
-//If you previously uploaded a server or client certificate, you can select *Certificate details* to review the certificate that is currently in use.

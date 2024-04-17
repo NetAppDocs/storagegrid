@@ -41,7 +41,7 @@ The table includes the following information for each node:
 +
 NOTE: The same Storage usage (%) value is also shown in the Storage Used - Object Data chart for each Storage Node (select *NODES* > *_Storage Node_* > *Storage*).
 
-. Select the *ILM usage* tab to determine if the storage pool is currently being used in any ILM rules or erasure-coding profiles.
+. View the *ILM usage* tab to determine if the storage pool is currently being used in any ILM rules or erasure-coding profiles.
 
 . Optionally, go to the *ILM rules page* to learn about and manage any rules that use the storage pool.
 +
