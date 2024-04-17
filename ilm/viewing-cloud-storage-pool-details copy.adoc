@@ -37,6 +37,4 @@ The details page for the pool appears.
 
 . View the *ILM usage* tab to determine if the Cloud Storage Pool is currently being used in any ILM rules or erasure-coding profiles.
 
-. Optionally, go to the *ILM rules page* to learn about and manage any rules that use the Cloud Storage Pool.
-+
-See the link:working-with-ilm-rules-and-ilm-policies.html[instructions for working with ILM rules].
+. Optionally, go to the *ILM rules page* to link:working-with-ilm-rules-and-ilm-policies.html[learn about and manage any rules] that use the Cloud Storage Pool.
