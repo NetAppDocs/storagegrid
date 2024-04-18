@@ -25,10 +25,8 @@ The Storage pools table includes the following information for each storage pool
 * *Storage usage*: The percentage of the total usable space that has been used for object data on this node. This value does not include object metadata.
 * *Total capacity*: The size of the storage pool, which equals the total amount of usable space for object data for all nodes in the storage pool.
 * *ILM usage*: How the storage pool is currently being used. A storage pool might be unused or it might be used in one or more ILM rules, erasure-coding profiles, or both.
-+
-NOTE: You can't remove a storage pool if it is being used.
 
-. To view details about a specific storage pool, select its name.
+. To view details for a specific storage pool, select its name.
 +
 The details page for the storage pool appears.
 
@@ -43,7 +41,7 @@ The table includes the following information for each node:
 +
 NOTE: The same Storage usage (%) value is also shown in the Storage Used - Object Data chart for each Storage Node (select *NODES* > *_Storage Node_* > *Storage*).
 
-. Select the *ILM usage* tab to determine if the storage pool is currently being used in any ILM rules or erasure-coding profiles.
+. View the *ILM usage* tab to determine if the storage pool is currently being used in any ILM rules or erasure-coding profiles.
 
 . Optionally, go to the *ILM rules page* to learn about and manage any rules that use the storage pool.
 +

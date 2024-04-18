@@ -15,6 +15,8 @@ You might be able to increase the Metadata Reserved Space system setting if your
 * You are signed in to the Grid Manager using a link:web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root Access permission or the Grid Topology Page Configuration and Other Grid Configuration permissions].
 
+NOTE: The Grid topology page has been deprecated and will be removed in a future release.
+
 .About this task
 
 You might be able to manually increase the system-wide Metadata Reserved Space setting up to 8 TB.
