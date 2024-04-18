@@ -63,7 +63,7 @@ entries:
     - title: Create Cloud Storage Pool
       url: "/ilm/creating-cloud-storage-pool.html"
     - title: View Cloud Storage Pool details
-      url: "/ilm/viewing-cloud-storage-pool-details.html"
+      url: "/ilm/view-cloud-storage-pool-details.html"
     - title: Edit Cloud Storage Pool
       url: "/ilm/editing-cloud-storage-pool.html"
     - title: Remove Cloud Storage Pool
