@@ -21,8 +21,7 @@ You can edit a Cloud Storage Pool to change its name, service endpoint, or other
 +
 The Cloud Storage Pools table lists the existing Cloud Storage Pools.
 
-. Select the checkbox for the Cloud Storage Pool you want to edit.
-. Select *Actions* > *Edit*.
+. Select the checkbox for the Cloud Storage Pool you want to edit, then select *Actions* > *Edit*.
 +
 Alternatively, select the name of the Cloud Storage Pool, then select *Edit*.
 
