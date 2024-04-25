@@ -172,13 +172,14 @@ _For Commercial Cloud Services (C2S) S3 service_
 --
 _For AWS IAM Roles Anywhere service_
 
-.. *AWS IAM Roles Anywhere service endpoint URL*: Enter the complete URL for GET requests to obtain credentials from the AWS IAM Anywhere Server API.
+.. *AWS IAM Roles Anywhere service region*: Select the region for the Cloud Storage Pool. For example, `us-east-1`.
 .. *Trust anchor URN*: Enter the URN of the trust anchor (can be a root or intermediate CA) that Roles Anywhere uses to validate.
 .. *Profile URN*: Enter the URN of the Roles Anywhere profile that lists the roles that Roles Anywhere can assume.
 .. *Role URN*: Enter the URN of the IAM role that can be assumable for anyone trusted.
 .. *Session duration*: Enter the duration of the temporary security credentials and role session. Enter at least 15 minutes and no more than 12 hours.
-.. *End-entity certificate*: Select *Browse* and upload one or more CA certificates for verifying the AWS IAM Anywhere Server. Use PEM encoding.
-.. *Client private key*: Enter the PEM-encoded private key for the end entity certificate. If the private key is encrypted, use the traditional format. PKCS #8 format is not supported.
+.. *End-entity certificate*: The public key of the X509 certificate signed by the trust anchor and used for the createSession request for AWS IAM Roles Anywhere to issue an STS token. Use PEM encoding.
+.. *End-entity key*: The private key of the end-entity certificate.
+.. *Server CA Bundle* (optional): The public CA certificate bundle of the AWS IAM Roles Anywhere server in Privacy-Enhanced Mail (PEM) format.
 --
 //Authentication type - end IAM Roles Anywhere, begin Anonymous
 
