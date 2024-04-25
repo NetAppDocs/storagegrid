@@ -55,7 +55,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.7
 | 
 
-| Docker container runtime
+| Docker container engine
 | 11.8
 | 11.9
 | 12.0

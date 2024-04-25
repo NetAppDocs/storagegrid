@@ -11,6 +11,8 @@ summary: 'Before installing Docker, you might need to format the Docker storage 
 [.lead]
 Before installing Docker, you might need to format the Docker storage volume and mount it on `/var/lib/docker`.
 
+NOTE: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release.
+
 .About this task
 
 You can skip these steps if you plan to use local storage for the Docker storage volume and have sufficient space available on the host partition containing `/var/lib`.
