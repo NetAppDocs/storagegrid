@@ -11,7 +11,7 @@ summary: 'Before installing the container engine (Docker or Podman), you might n
 [.lead]
 Before installing the container engine (Docker or Podman), you might need to format the storage volume and mount it.
 
-NOTE: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release. Refer to this link:../rhel/software-requirements.html#docker-versions-tested[example of current support].
+NOTE: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release.
 
 .About this task
 
