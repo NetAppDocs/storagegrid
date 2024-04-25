@@ -59,7 +59,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.8
 | 11.9
 | 12.0
-| Podman is replacing Docker as the supported container run-time tool for software-only deployments. Prepare for this change by using Podman for new StorageGRID 11.9 installations. If you're using Docker with an earlier version of StorageGRID, you won't be able to upgrade to future releases until you convert to Podman only.
+| Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release. Refer to this link:../ubuntu/software-requirements.html#docker-versions-tested[example of current support].
 
 | NFS audit export
 | 11.8
