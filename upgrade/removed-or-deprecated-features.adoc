@@ -59,7 +59,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.8
 | 11.9
 | 12.0
-| Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release. Refer to this link:../ubuntu/software-requirements.html#docker-versions-tested[example of current support].
+| Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release. Refer to this link:../ubuntu/software-requirements.html#docker-versions-tested[list of versions currently supported].
 
 | NFS audit export
 | 11.8
