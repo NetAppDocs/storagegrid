@@ -21,13 +21,15 @@ You can edit a Cloud Storage Pool to change its name, service endpoint, or other
 +
 The Cloud Storage Pools table lists the existing Cloud Storage Pools.
 
-. Select the checkbox for the Cloud Storage Pool you want to edit.
-. Select *Actions* > *Edit*.
-. As required, change the display name, service endpoint, authentication credentials, or certificate validation method.
+. Select the checkbox for the Cloud Storage Pool you want to edit, then select *Actions* > *Edit*.
++
+Alternatively, select the name of the Cloud Storage Pool, then select *Edit*.
+
+. As required, change the Cloud Storage Pool name, service endpoint, authentication credentials, or certificate verification method.
 +
 NOTE: You can't change the provider type or the S3 bucket or Azure container for a Cloud Storage Pool.
 +
-If you previously uploaded a server or client certificate, you can select *Certificate details* to review the certificate that is currently in use.
+If you previously uploaded a server or client certificate, you can expand the *Certificate details* accordion to review the certificate that is currently in use.
 
 . Select *Save*.
 +
