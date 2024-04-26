@@ -15,8 +15,6 @@ This release of StorageGRID introduces the following features and functional cha
 
 Default audit destinations:: Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
 
-Docker support:: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release. Refer to this link:../ubuntu/software-requirements.html#docker-versions-tested[example of current support].
-
 == Appliances
 
 .
