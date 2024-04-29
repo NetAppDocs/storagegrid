@@ -292,15 +292,3 @@ entries:
       url: "/admin/identifying-primary-admin-node.html"
     - title: View notification status and queues
       url: "/admin/viewing-notification-status-and-queues.html"
-    - title: Configure audit client access      
-      entries:
-      - title: Configure audit client access for NFS
-        url: "/admin/configuring-audit-client-access.html"
-      - title: Add NFS audit client to audit share
-        url: "/admin/adding-nfs-audit-client-to-audit-share.html"
-      - title: Verify NFS audit integration
-        url: "/admin/verifying-nfs-audit-integration.html"
-      - title: Remove NFS audit client from audit share
-        url: "/admin/removing-nfs-audit-client-from-audit-share.html"
-      - title: Change IP address of NFS audit client
-        url: "/admin/changing-ip-address-of-nfs-audit-client.html"
