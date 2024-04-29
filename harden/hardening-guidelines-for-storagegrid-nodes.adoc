@@ -39,7 +39,7 @@ For a list of all internal and external ports used by StorageGRID, see link:../n
 
 == Disable unused services
 
-For all StorageGRID nodes, you should disable or block access to unused services. For example, if you aren't planning to use DHCP, disable port 68, which is for inbound communication from a DHCP service to all nodes.
+For all StorageGRID nodes, you should disable or block access to unused services. For example, if you aren't planning to use DHCP, use the Grid Manager to close port 68. Select *CONFIGURATION* > *Firewall control* > *Manage external access*. Then change the Status toggle for port 68 from *Open* to *Closed*.
 
 == Virtualization, containers, and shared hardware
 
