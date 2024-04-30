@@ -172,14 +172,16 @@ _For Commercial Cloud Services (C2S) S3 service_
 --
 _For AWS IAM Roles Anywhere service_
 
+StorageGRID uses the AWS Security Token Service (STS) to dynamically generate a short-lived token to access AWS resources.
+
 .. *AWS IAM Roles Anywhere service region*: Select the region for the Cloud Storage Pool. For example, `us-east-1`.
-.. *Trust anchor URN*: Enter the URN of the trust anchor (can be a root or intermediate CA) that Roles Anywhere uses to validate.
-.. *Profile URN*: Enter the URN of the Roles Anywhere profile that lists the roles that Roles Anywhere can assume.
-.. *Role URN*: Enter the URN of the IAM role that can be assumable for anyone trusted.
+.. *Trust anchor URN*: Enter the URN of the trust anchor that validates requests for short-lived STS credentials. Can be a root or intermediate CA.
+.. *Profile URN*: Enter the URN of the IAM Roles Anywhere profile that lists the roles that are assumable for anyone trusted.
+.. *Role URN*: Enter the URN of the IAM role that is assumable for anyone trusted.
 .. *Session duration*: Enter the duration of the temporary security credentials and role session. Enter at least 15 minutes and no more than 12 hours.
-.. *End-entity certificate*: The public key of the X509 certificate signed by the trust anchor and used for the createSession request for AWS IAM Roles Anywhere to issue an STS token. Use PEM encoding.
+.. *End-entity certificate*: The public key, in Privacy-Enhanced Mail (PEM) format, of the X509 certificate signed by the trust anchor. AWS IAM Roles Anywhere uses this key to issue an STS token.
 .. *End-entity key*: The private key of the end-entity certificate.
-.. *Server CA Bundle* (optional): The public CA certificate bundle of the AWS IAM Roles Anywhere server in Privacy-Enhanced Mail (PEM) format.
+.. *Server CA bundle* (optional): One or more trusted CA certificates, in Privacy-Enhanced Mail (PEM) format, for verifying the IAM Roles Anywhere server. If omitted, the server won't be verified.
 --
 //Authentication type - end IAM Roles Anywhere, begin Anonymous
 
