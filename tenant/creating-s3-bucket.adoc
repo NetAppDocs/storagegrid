@@ -64,7 +64,7 @@ Your StorageGRID administrator manages the available regions. A bucket's region 
 |===
 . Select *Continue*.
 
-== Manage object settings
+== Manage settings
 
 .Steps
 
@@ -104,13 +104,15 @@ When *Default retention* is enabled, new objects added to the bucket will be aut
 * These users can delete an object version before its retain-until-date is reached.
 
 * These users can increase, decrease, or remove an object's retain-until-date.
-
 |===
-
 
 .. If *Default retention* is enabled, specify the *Default retention period* for the bucket.
 +
 The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested. Specify a value between 1 and 36,500 days or between 1 and 100 years, inclusive.
+
+. Optionally, select *Enable capacity limit*.
++
+A capacity limit is the maximum number of bytes available for this buckets's objects. This value represents a logical amount (object size), not a physical amount (size on disk). If you don't set a capacity limit, the bucket's capacity is limited only by the tenant's quota if one is set.
 
 . Select *Create bucket*.
 +
