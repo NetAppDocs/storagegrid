@@ -59,6 +59,16 @@ _For the external container_
 * Uniform Resource Identifier (URI) used to access the Blob Storage container.
 * Name of the storage account and the account key. You can use the Azure portal to find these values.
 --
+//end Azure, begin IAM Roles Anywhere
+
+.IAM Roles Anywhere
+--
+_For the external bucket_
+
+* The Uniform Resource Name (URN) of the trust anchor that validates requests for short-lived STS credentials. Can be a root or intermediate CA.
+* The public key, in Privacy-Enhanced Mail (PEM) format, of the X509 certificate signed by the trust anchor.
+* The private key of the end-entity certificate.
+--
 ====
 
 //Before you begin - end tabbed blocks
@@ -179,9 +189,9 @@ StorageGRID uses the AWS Security Token Service (STS) to dynamically generate a 
 .. *Profile URN*: Enter the URN of the IAM Roles Anywhere profile that lists the roles that are assumable for anyone trusted.
 .. *Role URN*: Enter the URN of the IAM role that is assumable for anyone trusted.
 .. *Session duration*: Enter the duration of the temporary security credentials and role session. Enter at least 15 minutes and no more than 12 hours.
-.. *End-entity certificate*: The public key, in Privacy-Enhanced Mail (PEM) format, of the X509 certificate signed by the trust anchor. AWS IAM Roles Anywhere uses this key to issue an STS token.
+.. *End-entity certificate*: The public key, in PEM format, of the X509 certificate signed by the trust anchor. AWS IAM Roles Anywhere uses this key to issue an STS token.
 .. *End-entity key*: The private key of the end-entity certificate.
-.. *Server CA bundle* (optional): One or more trusted CA certificates, in Privacy-Enhanced Mail (PEM) format, for verifying the IAM Roles Anywhere server. If omitted, the server won't be verified.
+.. *Server CA bundle* (optional): One or more trusted CA certificates, in PEM format, for verifying the IAM Roles Anywhere server. If omitted, the server won't be verified.
 --
 //Authentication type - end IAM Roles Anywhere, begin Anonymous
 
