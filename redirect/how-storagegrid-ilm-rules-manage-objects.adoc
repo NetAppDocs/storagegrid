@@ -1,4 +1,3 @@
 ---
 permalink: s3/how-storagegrid-ilm-rules-manage-objects.html
-redirect: storagegrid-118/ilm/index.html
----
+redirect: storagegrid-119
