@@ -1,3 +1,4 @@
 ---
 permalink: maintain/decommissioning-disconnected-storage-nodes.html
-redirect: storagegrid-119
+redirect: storagegrid-119/maintain/considerations-for-decommissioning-storage-nodes.html
+---
