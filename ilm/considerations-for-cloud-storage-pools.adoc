@@ -46,7 +46,7 @@ NOTE: When objects are moved back to StorageGRID from a Cloud Storage Pool, Stor
 
 == S3: Permissions required for the Cloud Storage Pool bucket
 
-The policy for the external S3 bucket used for a Cloud Storage Pool must grant StorageGRID permission to move an object to the bucket, get an object's status, restore an object from Glacier storage when required, and more. Ideally, StorageGRID should have full-control access to the bucket (`s3:*`); however, if this is not possible, the bucket policy must grant the following S3 permissions to StorageGRID:
+The policies for the external S3 bucket used for a Cloud Storage Pool must grant StorageGRID permission to move an object to the bucket, get an object's status, restore an object from Glacier storage when required, and more. Ideally, StorageGRID should have full-control access to the bucket (`s3:*`); however, if this is not possible, the bucket policy must grant the following S3 permissions to StorageGRID:
 
 * `s3:AbortMultipartUpload`
 * `s3:DeleteObject`
