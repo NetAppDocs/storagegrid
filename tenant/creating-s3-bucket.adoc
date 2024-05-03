@@ -112,11 +112,12 @@ The *Default retention period* indicates how long new objects added to this buck
 
 . Optionally, select *Enable capacity limit*.
 +
-A capacity limit is the maximum number of bytes available for this buckets's objects. This value represents a logical amount (object size), not a physical amount (size on disk). If you don't set a capacity limit, the bucket's capacity is limited only by the tenant's quota if one is set.
+The maximum capacity available for this bucket's objects. This value represents a logical amount (object size), not a physical amount (size on disk).
++
+If no limit is set, the capacity for this bucket is unlimited. If your tenant account has a total storage quota and that quota is reached, you won't be able to ingest more objects regardless of remaining capacity limit on a bucket.
 
 . Select *Create bucket*.
 +
 The bucket is created and added to the table on the Buckets page.
 
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view bucket details] and perform additional configuration.
-
