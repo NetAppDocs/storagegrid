@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot a StorageGRID system
 summary: 'If you encounter a problem when using a StorageGRID system, refer to the tips and guidelines in this section for help in determining and resolving the issue.'
 ---
-= Troubleshoot a StorageGRID system: Overview
+= Troubleshoot a StorageGRID system
 :icons: font
 :imagesdir: ../media/
 
@@ -84,17 +84,16 @@ Changes to your StorageGRID system, its configuration, or its environment can ca
 * <<create_timeline,Create a timeline of recent changes>>
 
 |
-Review alerts and alarms
+Review alerts
 |
-Alerts and alarms can help you quickly determine the root cause of a problem by providing important clues as to the underlying issues that might be causing it.
+Alerts can help you quickly determine the root cause of a problem by providing important clues as to the underlying issues that might be causing it.
 
-Review the list of current alerts and alarms to see if StorageGRID has identified the root cause of a problem for you.
+Review the list of current alerts to see if StorageGRID has identified the root cause of a problem for you.
 
-Review alerts and alarms triggered in the past for additional insights.
+Review alerts triggered in the past for additional insights.
 
 |
 * link:../monitor/monitoring-system-health.html#view-current-and-resolved-alerts[View current and resolved alerts]
-* link:../monitor/managing-alarms.html[Manage alarms (legacy system)]
 
 |
 Monitor events
@@ -284,8 +283,8 @@ Use the information that you collect to determine the cause of the problem and p
 
 The analysis is problem‐dependent, but in general:
 
-* Locate points of failure and bottlenecks using the alarms.
-* Reconstruct the problem history using the alarm history and charts.
+* Locate points of failure and bottlenecks using the alerts.
+* Reconstruct the problem history using the alert history and charts.
 * Use charts to find anomalies and compare the problem situation with normal operation.
 
 == Escalation information checklist

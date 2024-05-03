@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, decommission, remove grid node
 summary: 'You can use the node decommission procedure to remove one or more grid nodes at one or more sites. You cannot decommission the primary Admin Node.'
 ---
-= Grid node decommission: Overview
+= Grid node decommission
 :icons: font
 :imagesdir: ../media/
 

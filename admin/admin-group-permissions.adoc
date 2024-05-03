@@ -18,9 +18,7 @@ By default, any user who belongs to a group that has at least one permission can
 * Sign in to the Grid Manager
 * View the dashboard
 * View the Nodes pages
-* Monitor grid topology
 * View current and resolved alerts
-* View current and historical alarms (legacy system)
 * Change their own password (local users only)
 * View certain information provided on the Configuration and Maintenance pages
 
@@ -34,12 +32,6 @@ The following sections describe the permissions you can assign when creating or 
 
 This permission provides access to all grid administration features.
 
-== Acknowledge alarms (legacy)
-
-This permission provides access to acknowledge and respond to alarms (legacy system). All signed-in users can view current and historical alarms.
-
-If you want a user to monitor grid topology and acknowledge alarms only, you should assign this permission.
-
 == Change tenant root password
 
 This permission provides access to the *Change root password* option on the Tenants page, allowing you to control who can change the password for the tenant's local root user. This permission is also used for migrating S3 keys when the S3 key import feature is enabled. Users who don't have this permission can't see the *Change root password* option.
@@ -49,6 +41,8 @@ NOTE: To grant access to the Tenants page, which contains the *Change root passw
 == Grid topology page configuration
 
 This permission provides access to the Configuration tabs on the *SUPPORT* > *Tools* > *Grid topology* page.
+
+NOTE: The Grid topology page has been deprecated and will be removed in a future release.
 
 == ILM
 
@@ -128,15 +122,10 @@ This permission provides access to additional grid configuration options.
 TIP: To see these additional options, users must also have the *Grid topology page configuration* permission.
 
 * *ILM*:
- ** Storage grades
+** Storage grades
 * *CONFIGURATION* > *System*:
- ** Storage options
-* *SUPPORT* > *Alarms (legacy)*:
- ** Custom events
- ** Global alarms
- ** Legacy email setup
- * *SUPPORT* > *Other*:
- ** Link cost
+* *SUPPORT* > *Other*:
+** Link cost
 
 == Storage appliance administrator
 

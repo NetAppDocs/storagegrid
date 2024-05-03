@@ -2,7 +2,7 @@ section: expand
 title: Expand a grid
 url: "/landing-expand/index.html"
 entries:
-  - title: Overview
+  - title: Expansion types
     pdf-filename: Expand your StorageGRID system
     url: "/expand/index.html"
   - title: Plan StorageGRID expansion

@@ -2,18 +2,16 @@
 permalink: admin/managing-high-availability-groups.html
 sidebar: sidebar
 keywords: manage high availability group, ha groups, admin node, gateway node, active interface, backup interface, priority order
-summary: 'You can group the network interfaces of multiple Admin and Gateway Nodes into a high availability \(HA\) group. If the active interface in the HA group fails, a backup interface can manage the workload.'
+summary: 'High availability \(HA\) groups provide highly available data connections for S3 clients and highly available connections to the Grid Manager and the Tenant Manager.'
 ---
-= Manage high availability (HA) groups: Overview
+= What are high availability (HA) groups?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+High availability (HA) groups provide highly available data connections for S3 clients and highly available connections to the Grid Manager and the Tenant Manager.
+
 You can group the network interfaces of multiple Admin and Gateway Nodes into a high availability (HA) group. If the active interface in the HA group fails, a backup interface can manage the workload.
-
-== What is an HA group?
-
-You can use high availability (HA) groups to provide highly available data connections for S3 clients or to provide highly available connections to the Grid Manager and the Tenant Manager.
 
 Each HA group provides access to the shared services on the selected nodes.
 

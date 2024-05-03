@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor StorageGRID
 summary: 'Monitor your StorageGRID system regularly to ensure it is performing as expected.'
 ---
-= Monitor a StorageGRID system: Overview
+= Monitor a StorageGRID system
 :icons: font
 :imagesdir: ../media/
 
@@ -31,7 +31,7 @@ These instructions describe how to:
 ** link:monitoring-tenant-activity.html[Tenant activity]
 ** link:monitoring-load-balancing-operations.html[Load balancing operations]
 ** link:grid-federation-monitor-connections.html[Grid federation connections]
-* link:managing-alerts-and-alarms.html[Manage alerts and legacy alarms]
+* link:managing-alerts.html[Manage alerts]
 * link:logs-files-reference.html[View log files]
 * link:configure-audit-messages.html[Configure audit messages and log destinations]
 * link:considerations-for-external-syslog-server.html[Use an external syslog server] to collect audit information

@@ -72,7 +72,7 @@ entries:
       url: "/ubuntu/reviewing-your-configuration-and-completing-installation.html"
     - title: Post-installation guidelines
       url: "/ubuntu/post-installation-guidelines.html"
-  - title: Overview of the installation REST API
+  - title: Installation REST API
     url: "/ubuntu/overview-of-installation-rest-api.html"
   - title: Where to go next
     url: "/ubuntu/where-to-go-next.html"

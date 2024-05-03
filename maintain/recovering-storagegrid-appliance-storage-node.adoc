@@ -19,6 +19,4 @@ NOTE: If more than one Storage Node at a site has failed, a site recovery proced
 
 CAUTION: If ILM rules are configured to store only one replicated copy and the copy exists on a storage volume that has failed, you will not be able to recover the object.
 
-NOTE: If you encounter a Services: Status - Cassandra (SVST) alarm during recovery, see link:../maintain/recovering-failed-storage-volumes-and-rebuilding-cassandra-database.html[Recover failed storage volumes and rebuild Cassandra database]. After Cassandra is rebuilt, alarms should clear. If alarms don't clear, contact technical support.
-
 NOTE: For hardware maintenance procedures, such as instructions for replacing a controller or reinstalling SANtricity OS, see the https://docs.netapp.com/us-en/storagegrid-appliances/[maintenance instructions for your storage appliance^].

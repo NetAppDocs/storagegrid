@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to manage security 
 summary: 'You can configure various security settings from the Grid Manager to help secure your StorageGRID system.'
 ---
-= Manage security: Overview
+= Manage security
 :icons: font
 :imagesdir: ../media/
 

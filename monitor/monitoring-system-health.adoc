@@ -13,7 +13,7 @@ Monitor the overall health of your StorageGRID system on a daily basis.
 
 .About this task
 
-The StorageGRID system can continue to operate when parts of the grid are unavailable. Potential issues indicated by alerts or alarms (legacy system) aren't necessarily issues with system operations. Investigate issues summarized on the Health status card of the Grid Manager Dashboard.
+The StorageGRID system can continue to operate when parts of the grid are unavailable. Potential issues indicated by alerts aren't necessarily issues with system operations. Investigate issues summarized on the Health status card of the Grid Manager Dashboard.
 
 To be notified of alerts as soon as they are triggered, you can https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/setting-up-email-notifications-for-alerts.html[set up email notifications for alerts^] or link:using-snmp-monitoring.html[configure SNMP traps].
 

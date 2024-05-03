@@ -34,7 +34,7 @@ entries:
       url: "/s3/operations-on-buckets.html"
     - title: Operations on objects
       entries:
-      - title: Overview
+      - title: S3 object operations
         url: "/s3/operations-on-objects.html"
       - title: Use S3 Select
         url: "/s3/use-s3-select.html"
@@ -54,7 +54,7 @@ entries:
         url: "/s3/select-object-content.html"
     - title: Operations for multipart uploads
       entries:
-      - title: Overview
+      - title: Multipart uploads
         pdf-filename: Operations for multipart uploads
         url: "/s3/operations-for-multipart-uploads.html"
       - title: CompleteMultipartUpload
@@ -71,7 +71,7 @@ entries:
       url: "/s3/error-responses.html"
   - title: StorageGRID custom operations
     entries:
-      - title: Overview
+      - title: Custom operations list
         pdf-filename: StorageGRID custom operations
         url: "/s3/custom-operations-on-buckets.html"
       - title: GET Bucket consistency
@@ -92,7 +92,7 @@ entries:
         url: "/s3/get-storage-usage-request.html"
       - title: Deprecated bucket requests for legacy Compliance
         entries:
-        - title: Overview
+        - title: Deprecated features and requests
           pdf-filename: Deprecated bucket requests for legacy Compliance
           url: "/s3/deprecated-bucket-requests-for-legacy-compliance.html"        
         - title: Deprecated - CreateBucket request modifications for compliance
