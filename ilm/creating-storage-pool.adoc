@@ -56,12 +56,7 @@ The storage grade, _includes all storage grades_, includes all Storage Nodes at 
 
 . [[entries]]If you want to use the storage pool in a multi-site erasure-coding profile, select *Add more nodes* to add an entry for each site to the storage pool.
 +
-[NOTE]
-====
-You are warned if you add more than one entry with different storage grades for a site.
-
-Support for Archive Nodes has been removed. However, some Archive Node settings might continue to be visible in the Grid Manager.
-====
+NOTE: You are warned if you add more than one entry with different storage grades for a site.
 +
 To remove an entry, select the delete icon image:../media/icon-x-to-remove.png[delete icon].
 
