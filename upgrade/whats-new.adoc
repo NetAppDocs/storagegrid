@@ -39,8 +39,8 @@ NOTE: You must decommission all Archive Nodes before you can upgrade to StorageG
 
 == Tenant Manager
 
-.
-
+=== Support for IAM Roles Anywhere
+Added support for link:../ilm/creating-cloud-storage-pool.html[IAM Roles Anywhere authentication] for Cloud Storage Pools.
 
 == S3 REST API
 
