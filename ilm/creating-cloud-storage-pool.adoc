@@ -111,7 +111,24 @@ _For Amazon S3/GCP or other S3-compatible provider_
 .. *Access key ID*: Enter the access key ID for the account that owns the external bucket.
 .. *Secret access key*: Enter the secret access key.
 --
-//Authentication type - end Access key, begin CAP
+//Authentication type - end Access key, begin IAM
+
+.IAM Roles Anywhere
+--
+_For AWS IAM Roles Anywhere service_
+
+StorageGRID uses the AWS Security Token Service (STS) to dynamically generate a short-lived token to access AWS resources.
+
+.. *AWS IAM Roles Anywhere region*: Select the region for the Cloud Storage Pool. For example, `us-east-1`.
+.. *Trust anchor URN*: Enter the URN of the trust anchor that validates requests for short-lived STS credentials. Can be a root or intermediate CA.
+.. *Profile URN*: Enter the URN of the IAM Roles Anywhere profile that lists the roles that are assumable for anyone trusted.
+.. *Role URN*: Enter the URN of the IAM role that is assumable for anyone trusted.
+.. *Session duration*: Enter the duration of the temporary security credentials and role session. Enter at least 15 minutes and no more than 12 hours.
+.. *Server CA bundle* (optional): One or more trusted CA certificates, in PEM format, for verifying the IAM Roles Anywhere server. If omitted, the server won't be verified.
+.. *End-entity certificate*: The public key, in PEM format, of the X509 certificate signed by the trust anchor. AWS IAM Roles Anywhere uses this key to issue an STS token.
+.. *End-entity private key*: The private key for the end-entity certificate.
+--
+//Authentication type - end IAM, begin CAP
 
 .CAP (C2S access portal)
 --
@@ -125,7 +142,8 @@ _For Commercial Cloud Services (C2S) S3 service_
 
 NOTE: If the client certificate will be encrypted, use the traditional format for the encryption. PKCS #8 encrypted format is not supported.
 --
-//end C2S, begin Azure
+
+//Authentication type - end CAP, begin Azure
 
 .Azure Blob Storage
 --
@@ -136,24 +154,7 @@ _For Azure Blob Storage, Shared Key only_
 
 You can use the Azure portal to find these values.
 --
-//end Azure, begin IAM Roles Anywhere
-
-.IAM Roles Anywhere
---
-_For AWS IAM Roles Anywhere service_
-
-StorageGRID uses the AWS Security Token Service (STS) to dynamically generate a short-lived token to access AWS resources.
-
-.. *AWS IAM Roles Anywhere service region*: Select the region for the Cloud Storage Pool. For example, `us-east-1`.
-.. *Trust anchor URN*: Enter the URN of the trust anchor that validates requests for short-lived STS credentials. Can be a root or intermediate CA.
-.. *Profile URN*: Enter the URN of the IAM Roles Anywhere profile that lists the roles that are assumable for anyone trusted.
-.. *Role URN*: Enter the URN of the IAM role that is assumable for anyone trusted.
-.. *Session duration*: Enter the duration of the temporary security credentials and role session. Enter at least 15 minutes and no more than 12 hours.
-.. *Server CA bundle* (optional): One or more trusted CA certificates, in PEM format, for verifying the IAM Roles Anywhere server. If omitted, the server won't be verified.
-.. *End-entity certificate*: The public key, in PEM format, of the X509 certificate signed by the trust anchor. AWS IAM Roles Anywhere uses this key to issue an STS token.
-.. *End-entity private key*: The private key for the end-entity certificate.
---
-//Authentication type - end IAM Roles Anywhere, begin Anonymous
+//Authentication type - end Azure, begin Anonymous
 
 .Anonymous
 --
