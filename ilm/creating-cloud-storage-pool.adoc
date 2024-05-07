@@ -19,49 +19,8 @@ StorageGRID validates the Cloud Storage Pool as soon as you save it, so you must
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[required access permissions].
 * You have reviewed the link:considerations-for-cloud-storage-pools.html[considerations for Cloud Storage Pools].
-* The external bucket or container referenced by the Cloud Storage Pool already exists, and you know its name and location.
-* To access the bucket or container, you have the following information for the authentication type you will choose:
-+
-[role="tabbed-block"]
-====
-.S3 access key
---
-_For the external S3 bucket_
-
-* The access key ID for the account that owns the external bucket.
-* The associated secret access key.
-
-Alternatively, you can specify Anonymous for the authentication type. 
---
-//end Access key, begin CAP
-
-.C2S access portal
---
-_For Commercial Cloud Services (C2S) S3 service_
-
-You have the following:
-
-* Complete URL that StorageGRID will use to obtain temporary credentials from the C2S access portal (CAP) server, including all the required and optional API parameters assigned to your C2S account.
-* Server CA certificate issued by an appropriate Government Certificate Authority (CA). StorageGRID uses this certificate to verify the identity of the CAP server. The server CA certificate must use PEM encoding.
-* Client certificate issued by an appropriate Government Certificate Authority (CA). StorageGRID uses this certificate to identity itself to the CAP server. The client certificate must use PEM encoding and must have been granted access to your C2S account.
-* PEM-encoded private key for the client certificate.
-* Passphrase for decrypting the private key for the client certificate, if it is encrypted.
-
-NOTE: If the client certificate will be encrypted, use the traditional format for the encryption. PKCS #8 encrypted format is not supported.
---
-
-//end C2S, begin Azure
-
-.Azure Blob storage
---
-_For the external container_
-
-* Uniform Resource Identifier (URI) used to access the Blob Storage container.
-* Name of the storage account and the account key. You can use the Azure portal to find these values.
---
-====
-
-//Before you begin - end tabbed blocks
+* The external bucket or container referenced by the Cloud Storage Pool already exists, and you have the <<service-endpoint-info,service endpoint information>>.
+* To access the bucket or container, you have the <<authentication-account-info,account information for the authentication type>> you will choose.
 
 .Steps
 . Select *ILM* > *Storage pools* > *Cloud Storage Pools*.
@@ -85,7 +44,7 @@ _For the external container_
 |The name of the external S3 bucket or Azure container. You can't change this value after the Cloud Storage Pool is saved.
 |===
 
-. Based on your Provider type selection, enter the Service endpoint information.
+. [[service-endpoint-info]]Based on your Provider type selection, enter the service endpoint information.
 //Service endpoint - tabbed blocks start here
 +
 [role="tabbed-block"]
@@ -139,7 +98,7 @@ If you don't specify a port, by default port 443 is used for HTTPS and port 80 i
 //Service endpoint - end tabbed blocks
 
 [start=4]
-. Select *Continue*. Then select the authentication type and enter the required information for the Cloud Storage Pool endpoint:
+. [[authentication-account-info]]Select *Continue*. Then select the authentication type and enter the required information for the Cloud Storage Pool endpoint:
 +
 //Authentication type - tabbed blocks start here
 +
@@ -147,41 +106,55 @@ If you don't specify a port, by default port 443 is used for HTTPS and port 80 i
 ====
 .Access key
 --
-_For Amazon S3/GCP provider type only_
+_For Amazon S3/GCP or other S3-compatible provider_
 
 .. *Access key ID*: Enter the access key ID for the account that owns the external bucket.
 .. *Secret access key*: Enter the secret access key.
-
 --
-//Authentication type - end Access key, begin CAP
+//Authentication type - end Access key, begin IAM
+
+.IAM Roles Anywhere
+--
+_For AWS IAM Roles Anywhere service_
+
+StorageGRID uses the AWS Security Token Service (STS) to dynamically generate a short-lived token to access AWS resources.
+
+.. *AWS IAM Roles Anywhere region*: Select the region for the Cloud Storage Pool. For example, `us-east-1`.
+.. *Trust anchor URN*: Enter the URN of the trust anchor that validates requests for short-lived STS credentials. Can be a root or intermediate CA.
+.. *Profile URN*: Enter the URN of the IAM Roles Anywhere profile that lists the roles that are assumable for anyone trusted.
+.. *Role URN*: Enter the URN of the IAM role that is assumable for anyone trusted.
+.. *Session duration*: Enter the duration of the temporary security credentials and role session. Enter at least 15 minutes and no more than 12 hours.
+.. *Server CA certificate* (optional): One or more trusted CA certificates, in PEM format, for verifying the IAM Roles Anywhere server. If omitted, the server won't be verified.
+.. *End-entity certificate*: The public key, in PEM format, of the X509 certificate signed by the trust anchor. AWS IAM Roles Anywhere uses this key to issue an STS token.
+.. *End-entity private key*: The private key for the end-entity certificate.
+--
+//Authentication type - end IAM, begin CAP
 
 .CAP (C2S access portal)
 --
 _For Commercial Cloud Services (C2S) S3 service_
 
 .. *Temporary credentials URL*: Enter the complete URL that StorageGRID will use to obtain temporary credentials from the CAP server, including all the required and optional API parameters assigned to your C2S account.
-.. *Server CA certificate*: Select *Browse* and upload the PEM-encoded CA certificate that StorageGRID will use to verify the CAP server.
-.. *Client certificate*: Select *Browse* and upload the PEM-encoded certificate that StorageGRID will use to identify itself to the CAP server.
+.. *Server CA certificate*: Select *Browse* and upload the CA certificate that StorageGRID will use to verify the CAP server. Certificate must be PEM-encoded and issued by an appropriate Government Certificate Authority (CA).
+.. *Client certificate*: Select *Browse* and upload the certificate that StorageGRID will use to identify itself to the CAP server. The client certificate must be PEM-encoded, issued by an appropriate Government Certificate Authority (CA), and  granted access to your C2S account.
 .. *Client private key*: Select *Browse* and upload the PEM-encoded private key for the client certificate.
 .. If the client private key is encrypted, enter the passphrase for decrypting the client private key. Otherwise, leave the *Client private key passphrase* field blank.
 
+NOTE: If the client certificate will be encrypted, use the traditional format for the encryption. PKCS #8 encrypted format is not supported.
 --
-//Authentication type - end Azure, begin IAM Roles Anywhere
 
-.IAM Roles Anywhere
---
-_For AWS IAM Roles Anywhere service_
+//Authentication type - end CAP, begin Azure
 
-.. *AWS IAM Roles Anywhere service region*: Select the region for the Cloud Storage Pool. For example, `us-east-1`.
-.. *Trust anchor URN*: Enter the URN of the trust anchor (can be a root or intermediate CA) that Roles Anywhere uses to validate.
-.. *Profile URN*: Enter the URN of the Roles Anywhere profile that lists the roles that Roles Anywhere can assume.
-.. *Role URN*: Enter the URN of the IAM role that can be assumable for anyone trusted.
-.. *Session duration*: Enter the duration of the temporary security credentials and role session. Enter at least 15 minutes and no more than 12 hours.
-.. *End-entity certificate*: The public key of the X509 certificate signed by the trust anchor and used for the createSession request for AWS IAM Roles Anywhere to issue an STS token. Use PEM encoding.
-.. *End-entity key*: The private key of the end-entity certificate.
-.. *Server CA Bundle* (optional): The public CA certificate bundle of the AWS IAM Roles Anywhere server in Privacy-Enhanced Mail (PEM) format.
+.Azure Blob Storage
 --
-//Authentication type - end IAM Roles Anywhere, begin Anonymous
+_For Azure Blob Storage, Shared Key only_
+
+.. *Account name*: Enter the name of the storage account that owns the external container
+.. *Account key*: Enter the secret key for the storage account
+
+You can use the Azure portal to find these values.
+--
+//Authentication type - end Azure, begin Anonymous
 
 .Anonymous
 --
