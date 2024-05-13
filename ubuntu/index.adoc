@@ -45,7 +45,7 @@ When all nodes have been deployed, use the Grid Manager to link:navigating-to-gr
 To save time and provide consistency, you can automate the installation of the StorageGRID host service and the configuration of grid nodes.
 
 * Use a standard orchestration framework such as Ansible, Puppet, or Chef to automate:
-** Installation of RHEL
+** Installation of Ubuntu or Debian
 ** Configuration of networking and storage
 ** Installation of the container engine and the StorageGRID host service
 ** Deployment of virtual grid nodes
