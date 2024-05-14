@@ -62,7 +62,7 @@ This value can take up to 10 minutes to update.
 | Usage
 | The percentage used of the bucket's capacity limit, if one has been set.
 
- This value can take up to 10 minutes to update.
+This value can take up to 10 minutes to update.
 
 | Capacity
 | If set, the capacity limit for the bucket.
