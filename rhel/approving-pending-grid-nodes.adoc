@@ -52,12 +52,12 @@ NOTE: When installing a grid with metadata-only nodes, the grid must also contai
 The gateway is required if there are multiple grid subnets.
 
 +
-NOTE: If you selected DHCP for the Grid Network configuration and you change the value here, the new value will be configured as a static address on the node. You must make sure the resulting IP address is not within a DHCP address pool.
+NOTE: If you selected DHCP for the Grid Network configuration and you change the value here, the new value will be configured as a static address on the node. You must make sure the configured IP address is not within a DHCP address pool.
 . If you want to configure the Admin Network for the grid node, add or update the settings in the Admin Network section as necessary.
 +
 Enter the destination subnets of the routes out of this interface in the *Subnets (CIDR)* text box. If there are multiple Admin subnets, the Admin gateway is required.
 +
-NOTE: If you selected DHCP for the Admin Network configuration and you change the value here, the new value will be configured as a static address on the node. You must make sure the resulting IP address is not within a DHCP address pool.
+NOTE: If you selected DHCP for the Admin Network configuration and you change the value here, the new value will be configured as a static address on the node. You must make sure the configured IP address is not within a DHCP address pool.
 +
 *Appliances:* For a StorageGRID appliance, if the Admin Network was not configured during the initial installation using the StorageGRID Appliance Installer, it can't be configured in this Grid Manager dialog box. Instead, you must follow these steps:
 
@@ -77,7 +77,7 @@ For additional information, see the installation instructions for your appliance
 
 . If you want to configure the Client Network for the grid node, add or update the settings in the Client Network section as necessary. If the Client Network is configured, the gateway is required, and it becomes the default gateway for the node after installation.
 +
-NOTE: If you selected DHCP for the Client Network configuration and you change the value here, the new value will be configured as a static address on the node. You must make sure the resulting IP address is not within a DHCP address pool.
+NOTE: If you selected DHCP for the Client Network configuration and you change the value here, the new value will be configured as a static address on the node. You must make sure the configured IP address is not within a DHCP address pool.
 +
 *Appliances:* For a StorageGRID appliance, if the Client Network was not configured during the initial installation using the StorageGRID Appliance Installer, it can't be configured in this Grid Manager dialog box. Instead, you must follow these steps:
 
@@ -106,3 +106,5 @@ image::../media/7_gmi_installer_grid_nodes_approved.gif[This image is explained 
 You must approve all nodes that you want in the grid. However, you can return to this page at any time before you click *Install* on the Summary page. You can modify the properties of an approved grid node by selecting its radio button and clicking *Edit*.
 
 . When you are done approving grid nodes, click *Next*.
+
+// 2024 MAY 1, SGRIDDOC-28
