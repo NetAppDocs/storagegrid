@@ -110,7 +110,7 @@ When *Default retention* is enabled, new objects added to the bucket will be aut
 +
 The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested. Specify a value between 1 and 36,500 days or between 1 and 100 years, inclusive.
 
-. Optionally, select *Enable capacity limit*.
+. [[capacity-limit]]Optionally, select *Enable capacity limit*.
 +
 Capacity limit is the maximum capacity available for this bucket's objects. This value represents a logical amount (object size), not a physical amount (size on disk).
 +
