@@ -22,7 +22,7 @@ You can view the buckets in your tenant account.
 +
 The Buckets page appears.
 
-. Review the summary information for each bucket.
+. Review the summary table for each bucket.
 +
 As required, you can sort the information by any column, or you can page forward and back through the list.
 +
@@ -58,9 +58,9 @@ Date created:: The date and time the bucket was created.
 
 . To view details for a specific bucket, select the bucket name from the table.
 
-. View the summary information to confirm the details for the bucket, such as Region and Object count.
+.. View the summary information at the top of the web page to confirm the details for the bucket, such as Region and Object count.
 
-. As needed, select *Delete objects in bucket* and *Delete bucket*.
+.. As needed, select *Delete objects in bucket* and *Delete bucket*.
 +
 [CAUTION]
 ====
@@ -68,22 +68,22 @@ Pay close attention to the cautions that appear when you select each of these op
 
 * link:deleting-s3-bucket-objects.html[Delete all objects in a bucket]
 
-* link:deleting-s3-bucket.html[Delete a bucket] that is already empty
+* link:deleting-s3-bucket.html[Delete a bucket] (bucket must be empty)
 ====
 
-. View or change settings in each of the tabs as needed.
+.. View or change settings for the bucket in each of the tabs as needed.
 +
 * *S3 Console*: View the objects for the bucket. For more information, refer to link:use-s3-console.html[Use S3 Console].
 
 * *Bucket options*: View or change option settings. Some settings, such as S3 Object Lock, can't be changed after the bucket is created. For more information, refer to:
-** link:ilm-policy-tags.html[ILM policy tags]
 ** link:manage-bucket-consistency.html[Manage bucket consistency]
 ** link:enabling-or-disabling-last-access-time-updates.html[Last access time updates]
 ** link:../tenant/creating-s3-bucket.html#capacity-limit[Capacity limit]
 ** link:changing-bucket-versioning.html[Object versioning]
 ** link:using-s3-object-lock.html[S3 Object Lock]
 ** link:update-default-retention-settings.html[Default bucket retention]
-** link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant)
 ** link:grid-federation-manage-cross-grid-replication.html[Manage cross-grid replication] (if allowed for the tenant)
 
 * *Bucket access*: Configure link:configuring-cross-origin-resource-sharing-cors.html[Cross-Origin Resource Sharing (CORS)] so the bucket and objects in the bucket will be accessible to web applications in other domains.
+
+* *Platform services*: link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant)
