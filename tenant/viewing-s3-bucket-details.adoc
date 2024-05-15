@@ -26,7 +26,7 @@ The Buckets page appears.
 +
 As required, you can sort the information by any column, or you can page forward and back through the list.
 +
-NOTE: The Object Count and Space Used values displayed are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status. If buckets have versioning enabled, deleted object versions are included in the object count.
+NOTE: The Object Count, Space Used, and Usage values displayed are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status. If buckets have versioning enabled, deleted object versions are included in the object count.
 +
 Name:: The bucket's unique name, which can't be changed.
 
