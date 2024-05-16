@@ -48,17 +48,19 @@ This value can take up to 10 minutes to update.
 
 Usage:: The percentage used of the bucket's capacity limit, if one has been set.
 +
-The usage value is based on internal estimates and might be exceeded in some cases. For example, StorageGRID checks capacity limit (if set) when a tenant starts uploading objects and rejects new ingests if the tenant has exceeded the capacity limit. However, StorageGRID does not take into account the size of the current upload when determining if the capacity limit has been exceeded. If objects are deleted, a tenant might be temporarily prevented from uploading new objects until the capacity limit usage is recalculated. The calculations can take 10 minutes or longer.
+The usage value is based on internal estimates and might be exceeded in some cases. For example, StorageGRID checks capacity limit (if set) when a tenant starts uploading objects and rejects new ingests to this bucket if the tenant has exceeded the capacity limit. However, StorageGRID does not take into account the size of the current upload when determining if the capacity limit has been exceeded. If objects are deleted, a tenant might be temporarily prevented from uploading new objects to this bucket until the capacity limit usage is recalculated. The calculations can take 10 minutes or longer.
 +
 This value indicates logical size, not physical size needed to store the objects and their metadata.
 
 Capacity:: If set, the capacity limit for the bucket.
 
-Date created:: The date and time the bucket was created.
+Date created:: The date and time the bucket was created. This column is hidden by default.
 
 . To view details for a specific bucket, select the bucket name from the table.
 
 .. View the summary information at the top of the web page to confirm the details for the bucket, such as Region and Object count.
+
+.. View the Capacity limit usage bar. If the usage is 100% or near 100%, consider increasing the limit or deleting some objects.
 
 .. As needed, select *Delete objects in bucket* and *Delete bucket*.
 +
