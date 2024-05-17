@@ -17,22 +17,11 @@ When objects have been uploaded, the dashboard looks like the following example:
 
 image::../media/tenant_dashboard_with_buckets.png[Dashboard - Bucket List]
 
-== Tenant account summary
+== Tenant account information
 
-The top of the dashboard contains the following information:
+The top of the dashboard displays the number of configured buckets or containers, groups, and users. It also displays the number of platform services endpoints, if any have been configured. Select the links to view the details.
 
-* The number of configured buckets or containers, groups, and users
-* The number of platform services endpoints, if any have been configured
-
-You can select the links to view the details.
-
-The right side of the dashboard contains the following information:
-
-* The total number of objects for the tenant.
-+
-For an S3 account, if no objects have been ingested and you have the link:tenant-management-permissions.html[Root access permission], getting started guidelines appear instead of the total number of objects.
-
-* Tenant details, including the tenant account name and ID and whether the tenant can use link:what-platform-services-are.html[platform services], link:../admin/using-identity-federation.html[its own identity source], link:grid-federation-account-clone.html[grid federation], or  link:../admin/manage-s3-select-for-tenant-accounts.html[S3 Select] (only the permissions that are enabled are listed).
+Depending on the link:tenant-management-permissions.html[tenant management permissions] you have and the options you've configured, the remainder of the dashboard displays various combinations of guidelines, storage usage, object information, and tenant details.
 
 == Storage and quota usage
 
@@ -40,7 +29,7 @@ The Storage usage panel contains the following information:
 
 * The amount of object data for the tenant.
 +
-TIP: This value indicates the total amount of object data uploaded and does not represent the space used to store copies of those objects and their metadata.
+This value indicates the total amount of object data uploaded and does not represent the space used to store copies of those objects and their metadata.
 
 * If a quota is set, the total amount of space available for object data and the amount and percentage of space remaining. The quota limits the amount of object data that can be ingested.
 +
@@ -69,6 +58,12 @@ If quota usage alerts have been enabled in the Grid Manager, these alerts will a
 Consider asking your grid administrator to increase the quota. 
 
 * If you exceed your quota, a notification tells you that you can't upload new objects.
+
+== [[bucket-capacity-usage]]Capacity limit usage
+
+If you've set a capacity limit for your buckets, the percentage of the limit used for each bucket is displayed.
+
+If no limit is set for a bucket, its capacity is unlimited. However, if your tenant account has a total storage quota and that quota is reached, you won't be able to ingest more objects regardless of the remaining capacity limit on a bucket.
 
 == Endpoint errors
 

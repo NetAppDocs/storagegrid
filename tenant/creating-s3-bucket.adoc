@@ -114,7 +114,7 @@ The *Default retention period* indicates how long new objects added to this buck
 +
 Capacity limit is the maximum capacity available for this bucket's objects. This value represents a logical amount (object size), not a physical amount (size on disk).
 +
-If no limit is set, the capacity for this bucket is unlimited. If your tenant account has a total storage quota and that quota is reached, you won't be able to ingest more objects regardless of remaining capacity limit on a bucket.
+If no limit is set, the capacity for this bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
 
 . Select *Create bucket*.
 +
