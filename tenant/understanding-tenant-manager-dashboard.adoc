@@ -61,7 +61,7 @@ Consider asking your grid administrator to increase the quota.
 
 == [[bucket-capacity-usage]]Capacity limit usage
 
-If you've set a capacity limit for your buckets, the percentage of the limit used for each bucket is displayed.
+If you've set a capacity limit for your buckets, the Tenant Manager dashboard displays a list of top buckets by capacity limit usage.
 
 If no limit is set for a bucket, its capacity is unlimited. However, if your tenant account has a total storage quota and that quota is reached, you won't be able to ingest more objects regardless of the remaining capacity limit on a bucket.
 
