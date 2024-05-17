@@ -27,7 +27,7 @@ The Tenants page shows basic information for all current tenant accounts.
 
 . Review the information shown on the Tenant pages.
 +
-The Logical space used, Quota utilization, Quota, and Object count are listed for each tenant. If a quota is not set for a tenant, the Quota utilization and Quota fields contain a dash (&#8212;).
+The Logical space used, Quota usage, Quota, and Object count are listed for each tenant. If a quota is not set for a tenant, the Quota usage and Quota fields contain a dash (&#8212;).
 +
 NOTE: The space used values are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status.
 +
@@ -65,7 +65,7 @@ image::../media/tenant_usage_modal.png[Tenant usage modal]
 
 . Review the tenant overview at the top of the page.
 +
-This section of the details page provides summary information for the tenant, including the tenant's object count, quota utilization, logical space used, and quota setting.
+This section of the details page provides summary information for the tenant, including the tenant's object count, quota usage, logical space used, and quota setting.
 
 . From the *Space breakdown* tab, review the *Space consumption* chart.
 +
@@ -77,9 +77,9 @@ You can place your cursor over the bar chart to see the storage used by each buc
 +
 image::../media/tenant_bucket_space_consumption_GM.png[Tenant bucket consumption bar chart]
 +
-CAUTION: Quota utilization is based on internal estimates and might be exceeded in some cases. For example, StorageGRID checks the quota when a tenant starts uploading objects and rejects new ingests if the tenant has exceeded the quota. However, StorageGRID does not take into account the size of the current upload when determining if the quota has been exceeded. If objects are deleted, a tenant might be temporarily prevented from uploading new objects until the quota utilization is recalculated. Quota utilization calculations can take 10 minutes or longer.
+CAUTION: Quota usage is based on internal estimates and might be exceeded in some cases. For example, StorageGRID checks the quota when a tenant starts uploading objects and rejects new ingests if the tenant has exceeded the quota. However, StorageGRID does not take into account the size of the current upload when determining if the quota has been exceeded. If objects are deleted, a tenant might be temporarily prevented from uploading new objects until the quota usage is recalculated. Quota usage calculations can take 10 minutes or longer.
 +
-NOTE: A tenant's quota utilization indicates the total amount of object data the tenant has uploaded to StorageGRID (logical size). The quota utilization does not represent the space used to store copies of those objects and their metadata (physical size).
+NOTE: A tenant's quota usage indicates the total amount of object data the tenant has uploaded to StorageGRID (logical size). The quota usage does not represent the space used to store copies of those objects and their metadata (physical size).
 +
 NOTE: You can enable the *Tenant quota usage high* alert rule to determine if tenants are consuming their quotas. If enabled, this alert is triggered when a tenant has used 90% of its quota. For instructions, see link:../monitor/editing-alert-rules.html[Edit alert rules].
 
