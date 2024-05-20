@@ -48,6 +48,8 @@ entries:
       url: "/admin/changing-provisioning-passphrase.html"
     - title: Change node console passwords
       url: "/admin/change-node-console-password.html"    
+    - title: Change SSH access keys
+      url: "/admin/change-ssh-access-keys.html"
     - title: Use identity federation
       url: "/admin/using-identity-federation.html"
     - title: Manage admin groups
