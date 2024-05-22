@@ -28,21 +28,15 @@ NOTE: There are separate SSH access passwords for the SSH keys used for communic
 .Steps
 . Select *CONFIGURATION* > *Access control* > *Grid passwords*.
 
-. Under *Change SSH access keys*, select *Make a change*.
-
-== Enter the provisioning passphrase
-
-.Steps
-
-. Enter the provisioning passphrase for your grid.
-
-. Select *Continue*.
+. Under *Change SSH keys*, select *Make a change*.
 
 == [[download-current]]Download the current recovery package
 
 Before changing SSH access keys, download the current Recovery Package. You can use the keys in this file if the key change process fails for any node.
 
 .Steps
+
+. Enter the provisioning passphrase for your grid.
 
 . Select *Download recovery package*.
 
@@ -54,7 +48,7 @@ CAUTION: The Recovery Package file must be secured because it contains encryptio
 
 . When the confirmation dialog appears, select *Yes* if you are ready to start changing the SSH access keys.
 +
-You can't cancel this process after it starts.
+CAUTION: You can't cancel this process after it starts.
 
 == Change SSH access keys
 
@@ -90,7 +84,7 @@ If the key update failed for one or more nodes:
 .. Resolve the issues.
 .. Select *Retry*.
 +
-NOTE: Retrying only changes the SSH access keys on the nodes that failed during previous key change attempts. 
+Retrying only changes the SSH access keys on the nodes that failed during previous key change attempts. 
 
 . After SSH access keys have been changed for all nodes, delete the <<download-current,first Recovery Package you downloaded>>.
 
