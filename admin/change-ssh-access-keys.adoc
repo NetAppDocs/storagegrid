@@ -2,16 +2,14 @@
 permalink: admin/change-ssh-access-keys.html
 sidebar: sidebar
 keywords: ssh access keys, change ssh access keys
-summary: 'Each node in your grid has a unique SSH access key, which you need to log in to the node. Use these steps to change the SSH access keys for each node in your grid. The passwords are stored in the Recovery Package.'
+summary: 'Each node in your grid has a unique SSH access key, which the nodes use to access each other. Changing this access key also updates the internal SSH keys, which the primary Admin Node uses to access nodes. Save a Recovery Package before and after you make the change.'
 ---
 = Change SSH access keys
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Each node in your grid has a unique SSH access key, which you need to log in to the node. Use these steps to change the SSH access keys for each node in your grid. The passwords are stored in the Recovery Package.
-
-Changing this password also updates the internal SSH keys, which are used by the primary Admin Node to access nodes.
+Each node in your grid has a unique SSH access key, which the nodes use to access each other. Changing this access key also updates the internal SSH keys, which the primary Admin Node uses to access nodes. Save a Recovery Package before and after you make the change.
 
 .Before you begin
 
@@ -21,7 +19,7 @@ Changing this password also updates the internal SSH keys, which are used by the
 
 .About this task
 
-Use the SSH password to log in to a node as `admin` or to the root user on a VM/physical console connection. The change SSH access key process creates new passwords for each node in your grid and stores the passwords in an updated `Passwords.txt` file in the Recovery Package. The passwords are listed in the Password column in the Passwords.txt file.
+You use the SSH key to log in to a node as `admin` or to the root user on a VM/physical console connection. The change SSH access key process creates new keys for each node in your grid and stores the keys in an updated `Passwords.txt` file in the Recovery Package. The keys are listed in the Password column in the `Passwords.txt` file.
 
 NOTE: There are separate SSH access passwords for the SSH keys used for communication between nodes. The SSH access passwords aren't changed by this procedure.
 
@@ -42,7 +40,7 @@ NOTE: There are separate SSH access passwords for the SSH keys used for communic
 
 == [[download-current]]Download the current recovery package
 
-Before changing SSH access passwords, download the current Recovery Package. You can use the passwords in this file if the password change process fails for any node.
+Before changing SSH access keys, download the current Recovery Package. You can use the keys in this file if the key change process fails for any node.
 
 .Steps
 
@@ -54,13 +52,13 @@ CAUTION: The Recovery Package file must be secured because it contains encryptio
 
 . Select *Continue*.
 
-. When the confirmation dialog appears, select *Yes* if you are ready to start changing the SSH access passwords.
+. When the confirmation dialog appears, select *Yes* if you are ready to start changing the SSH access keys.
 +
 You can't cancel this process after it starts.
 
 == Change SSH access keys
 
-When the change SSH access keys process starts, a new Recovery Package is generated that includes the new passwords. Then, the passwords are updated on each node.
+When the change SSH access keys process starts, a new Recovery Package is generated that includes the new keys. Then, the keys are updated on each node.
 
 .Steps
 
@@ -71,7 +69,7 @@ When the change SSH access keys process starts, a new Recovery Package is genera
 . When the download completes:
 
 .. Open the `.zip` file.
-.. Confirm that you can access the contents, including the `Passwords.txt` file, which contains the new SSH access passwords.
+.. Confirm that you can access the contents, including the `Passwords.txt` file, which contains the new SSH access keys.
 .. Copy the new Recovery Package file (`.zip`) to two safe, secure, and separate locations.
 +
 CAUTION: Don't overwrite the old Recovery Package.
@@ -80,19 +78,19 @@ The Recovery Package file must be secured because it contains encryption keys an
 
 . Select the checkbox to indicate you have downloaded the new Recovery Package and verified the content.
 
-. Select *Change SSH access keys* and wait for all nodes to be updated with the new passwords. This might take a few minutes.
+. Select *Change SSH access keys* and wait for all nodes to be updated with the new keys. This might take a few minutes.
 +
-If passwords are changed for all nodes, a green success banner appears. Go to the next step.
+If keys are changed for all nodes, a green success banner appears. Go to the next step.
 +
-If there is an error during the update process, a banner message lists the number of nodes that failed to have their passwords changed. The system will automatically retry the process on any node that failed to have its password changed. If the process ends with some nodes still not having a changed password, the *Retry* button appears.
+If there is an error during the update process, a banner message lists the number of nodes that failed to have their keys changed. The system will automatically retry the process on any node that failed to have its key changed. If the process ends with some nodes still not having a changed key, the *Retry* button appears.
 +
-If the password update failed for one or more nodes: 
+If the key update failed for one or more nodes: 
 
 .. Review the error messages listed in the table.
 .. Resolve the issues.
 .. Select *Retry*.
 +
-NOTE: Retrying only changes the SSH access passwords on the nodes that failed during previous password change attempts. 
+NOTE: Retrying only changes the SSH access keys on the nodes that failed during previous key change attempts. 
 
 . After SSH access keys have been changed for all nodes, delete the <<download-current,first Recovery Package you downloaded>>.
 
