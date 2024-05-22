@@ -78,7 +78,6 @@ From the ILM menu you can view and manage ILM:
 * Policies
 * Policy tags
 * Storage pools
-* Erasure coding
 * Storage grades
 * Regions
 * Object metadata lookup

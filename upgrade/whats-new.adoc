@@ -13,7 +13,8 @@ This release of StorageGRID introduces the following features and functional cha
 
 == Install, upgrade, hotfix
 
-Default audit destinations:: Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
+=== Default audit destinations
+Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
 
 == Appliances
 
@@ -33,8 +34,8 @@ NOTE: You must decommission all Archive Nodes before you can upgrade to StorageG
 
 == Grid Manager
 
-.
-
+=== Erasure-coding profiles page moved
+The Erasure-coding profiles page is now at *CONFIGURATION* > *System* > *Erasure coding*. It used to be in the ILM menu.
 
 == Tenant Manager
 
