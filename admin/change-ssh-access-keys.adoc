@@ -42,7 +42,7 @@ NOTE: There are separate SSH access passwords for the SSH keys used for communic
 
 == [[download-current]]Download the current recovery package
 
-Before changing node console passwords, download the current Recovery Package. You can use the passwords in this file if the password change process fails for any node.
+Before changing SSH access passwords, download the current Recovery Package. You can use the passwords in this file if the password change process fails for any node.
 
 .Steps
 
@@ -54,7 +54,7 @@ CAUTION: The Recovery Package file must be secured because it contains encryptio
 
 . Select *Continue*.
 
-. When the confirmation dialog appears, select *Yes* if you are ready to start changing the node console passwords.
+. When the confirmation dialog appears, select *Yes* if you are ready to start changing the SSH access passwords.
 +
 You can't cancel this process after it starts.
 
@@ -71,7 +71,7 @@ When the change SSH access keys process starts, a new Recovery Package is genera
 . When the download completes:
 
 .. Open the `.zip` file.
-.. Confirm that you can access the contents, including the `Passwords.txt` file, which contains the new node console passwords.
+.. Confirm that you can access the contents, including the `Passwords.txt` file, which contains the new SSH access passwords.
 .. Copy the new Recovery Package file (`.zip`) to two safe, secure, and separate locations.
 +
 CAUTION: Don't overwrite the old Recovery Package.
@@ -92,7 +92,7 @@ If the password update failed for one or more nodes:
 .. Resolve the issues.
 .. Select *Retry*.
 +
-NOTE: Retrying only changes the node console passwords on the nodes that failed during previous password change attempts. 
+NOTE: Retrying only changes the SSH access passwords on the nodes that failed during previous password change attempts. 
 
 . After SSH access keys have been changed for all nodes, delete the <<download-current,first Recovery Package you downloaded>>.
 
