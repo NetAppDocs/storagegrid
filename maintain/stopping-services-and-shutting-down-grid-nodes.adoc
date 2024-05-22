@@ -57,6 +57,9 @@ For the appliance, this command shuts down the compute controller, but the appli
  ** For services appliances or SGF6112 appliances
   ... Turn off the power to the appliance.
   ... Wait for the blue power LED to turn off.
+ ** For the SG6160 appliance
+  ... Turn off the power to the SG6100-CN storage controller.
+  ... Wait for the blue power LED on the SG6100-CN storage controller to turn off.
  ** For the SG6000 appliance
   ... Wait for the green Cache Active LED on the back of the storage controllers to turn off.
 +
@@ -75,7 +78,7 @@ The StorageGRID grid has now been shut down.
 
 .Related information
 
-https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 storage appliances^]
+https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 and SG6160 storage appliances^]
 
 https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
 

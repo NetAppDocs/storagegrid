@@ -73,6 +73,7 @@ For details about mapping virtual or physical ports to node network interfaces, 
 
 .Appliance nodes
 
+* https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg6100.html[SG6160 storage appliance^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg6100.html[SGF6112 storage appliance^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg6000.html[SG6000 storage appliance^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg5700.html[SG5700 storage appliance^]
