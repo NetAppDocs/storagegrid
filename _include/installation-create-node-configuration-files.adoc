@@ -41,6 +41,18 @@ The following table defines the values for all supported keys. Each key has one 
 * *Best practice*: Optional, although recommended
 * *Optional*: Optional for all nodes
 
+=== Custom temporary password key
+
+==== CUSTOM_TEMPORARY_PASSWORD_HASH
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
+| Enable setting a custom temporary password to access StorageGRID during installation.
+| Best practice
+|===
+
+
 === Admin Network keys
 
 ==== ADMIN_IP
