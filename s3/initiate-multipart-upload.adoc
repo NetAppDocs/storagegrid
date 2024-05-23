@@ -36,9 +36,12 @@ Specifying `REDUCED_REDUNDANCY` only affects how many copies are created when an
 
 NOTE: If you are ingesting an object into a bucket with S3 Object Lock enabled, the `REDUCED_REDUNDANCY` option is ignored. If you are ingesting an object into a legacy Compliant bucket, the `REDUCED_REDUNDANCY` option returns an error. StorageGRID will always perform a dual-commit ingest to ensure that compliance requirements are satisfied.
 
+== Supported request headers
+
 The following request headers are supported:
 
 * `Content-Type`
+* `x-amz-checksum-sha256`
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata
 +
 When specifying the name-value pair for user-defined metadata, use this general format:
@@ -94,11 +97,12 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 
 The following request header is not supported and returns `XNotImplemented`
 
+* `x-amz-sdk-checksum-algorithm`
+* `x-amz-trailer` 
 * `x-amz-website-redirect-location`
 
 == Versioning
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
 
-
-
+// 2024 MAY 23, SGWS-31243

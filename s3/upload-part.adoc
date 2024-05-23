@@ -15,6 +15,7 @@ The UploadPart operation uploads a part in a multipart upload for an object.
 
 The following request headers are supported:
 
+* `x-amz-checksum-sha256`
 * `Content-Length`
 * `Content-MD5`
 
@@ -32,4 +33,4 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
 
-
+// 2024 MAY 23, SGWS-31243

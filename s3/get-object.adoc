@@ -21,6 +21,14 @@ You can set `partNumber` to 1 for both segmented/multipart objects and  non-segm
 
 StorageGRID does not parse or interpret escaped UTF-8 characters in user-defined metadata. GET requests for an object with escaped UTF-8 characters in user-defined metadata don't return the `x-amz-missing-meta` header if the key name or value includes unprintable characters.
 
+== Supported request header
+
+The following request header is supported:
+
+* `x-amz-checksum-mode`
++
+To return the `x-amz-checksum-sha256` header in the response, it must be provided in the request with value ENABLED.
+
 == Unsupported request header
 
 The following request header is not supported and returns `XNotImplemented`:
@@ -106,3 +114,4 @@ If you are using link:../admin/grid-federation-overview.html[grid federation] an
 
 NOTE: StorageGRID does not support the `x-amz-replication-status` header.
 
+// 2024 MAY 23, SGWS-31243

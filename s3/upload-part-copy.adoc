@@ -15,12 +15,22 @@ The UploadPartCopy operation is implemented with all Amazon S3 REST API behavior
 
 This request reads and writes the object data specified in `x-amz-copy-source-range` within the StorageGRID system.
 
+== Supported request headers
+
 The following request headers are supported:
 
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-none-match`
 * `x-amz-copy-source-if-unmodified-since`
 * `x-amz-copy-source-if-modified-since`
+
+== Unsupported request header
+
+The following request header is not supported:
+
+* `x-amz-checksum-sha256`
++
+The `x-amz-checksum-sha256` is not supported for StorageGRID. However, when you copy an object using AWS, if the source object has a checksum, that checksum value is copied to the new object by default.
 
 == Request headers for server-side encryption
 
@@ -41,3 +51,5 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 == Versioning
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
+
+// 2024 MAY 23, SGWS-31243

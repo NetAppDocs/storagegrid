@@ -15,9 +15,14 @@ The CompleteMultipartUpload operation completes a multipart upload of an object 
 
 Conflicting client requests, such as two clients writing to the same key, are resolved on a "latest-wins" basis. The timing for the "latest-wins" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
 
-== Request headers
+== Supported request headers
 
-The `x-amz-storage-class` request header is supported, and affects how many object copies StorageGRID creates if the matching ILM rule specifies the Dual commit or Balanced link:../ilm/data-protection-options-for-ingest.html[ingest option].
+The following request headers are supported: 
+
+* `x-amz-checksum-sha256`
+* `x-amz-storage-class`
++
+The `x-amz-storage-class` header affects how many object copies StorageGRID creates if the matching ILM rule specifies the Dual commit or Balanced link:../ilm/data-protection-options-for-ingest.html[ingest option].
 
 * `STANDARD`
 +
@@ -50,3 +55,5 @@ If the bucket where the multipart upload occurs is configured for a platform ser
 A tenant can trigger the failed replication or notification by updating the object's metadata or tags. A tenant can resubmit the existing values to avoid making unwanted changes.
 
 Refer to link:../admin/troubleshooting-platform-services.html[Troubleshoot platform services].
+
+// 2024 MAY 23, SGWS-31243
