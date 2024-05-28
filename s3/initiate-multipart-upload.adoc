@@ -41,7 +41,9 @@ NOTE: If you are ingesting an object into a bucket with S3 Object Lock enabled, 
 The following request headers are supported:
 
 * `Content-Type`
-* `x-amz-checksum-sha256`
+* `x-amz-checksum-algorithm`
++
+The `x-amz-checksum-algorithm` header only calculates a checksum value for SHA256. This value is returned when the header is provided in the request.
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata
 +
 When specifying the name-value pair for user-defined metadata, use this general format:
@@ -98,6 +100,8 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 The following request header is not supported and returns `XNotImplemented`
 
 * `x-amz-sdk-checksum-algorithm`
++ 
+The `x-amz-sdk-checksum-algorithm` header is unsupported for all protocols except SHA256.
 * `x-amz-trailer` 
 * `x-amz-website-redirect-location`
 

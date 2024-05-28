@@ -20,6 +20,8 @@ Conflicting client requests, such as two clients writing to the same key, are re
 The following request headers are supported: 
 
 * `x-amz-checksum-sha256`
++
+To return `x-amz-checksum-sha256` in the response, link:initiate-multipart-upload.html[CreateMultipartUpload] must specify SHA256.
 * `x-amz-storage-class`
 +
 The `x-amz-storage-class` header affects how many object copies StorageGRID creates if the matching ILM rule specifies the Dual commit or Balanced link:../ilm/data-protection-options-for-ingest.html[ingest option].

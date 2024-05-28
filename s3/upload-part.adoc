@@ -16,6 +16,9 @@ The UploadPart operation uploads a part in a multipart upload for an object.
 The following request headers are supported:
 
 * `x-amz-checksum-sha256`
++
+The `x-amz-checksum-sha256` header is mandatory when link:initiate-multipart-upload.html[CreateMultipartUpload] specifies SHA256. To return the header in the response, it must be provided in the request
+
 * `Content-Length`
 * `Content-MD5`
 

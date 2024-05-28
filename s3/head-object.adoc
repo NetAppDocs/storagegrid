@@ -27,7 +27,7 @@ The following request header is supported:
 
 * `x-amz-checksum-sha256`
 +
-To return the `x-amz-checksum-sha256` header in the response, it must be provided in the request with value ENABLED.
+To return the `x-amz-checksum-sha256` header in the response, it must be provided in the request with "Value" enabled.
 
 == Unsupported request header
 
