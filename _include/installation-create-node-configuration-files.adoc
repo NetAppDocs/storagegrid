@@ -41,23 +41,6 @@ The following table defines the values for all supported keys. Each key has one 
 * *Best practice*: Optional, although recommended
 * *Optional*: Optional for all nodes
 
-=== Custom temporary password key
-
-==== CUSTOM_TEMPORARY_PASSWORD_HASH
-[cols="4a,2a" option="header"]
-|===
-| Value| Designation
-
-| For the primary Admin Node, set a default temporary password for the StorageGRID Management API during installation.
-
-If this key is omitted, no temporary password will be set by default. Alternatively, you can set a temporary password using the StorageGRID Installation API or StorageGRID Appliance Installer user interface.
-
-Must be a `crypt()` SHA-512 password hash with format `$6$<salt>$<password hash>` for a password of at least 8 and no more than 32 characters.
-
-This hash can be generated using CLI tools, such as the `openssl passwd` command in SHA-512 mode.
-| Best practice or Optional?
-|===
-
 === Admin Network keys
 
 ==== ADMIN_IP
@@ -602,6 +585,23 @@ For more details on MAC cloning:
 
 * link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Ubuntu or Debian)]
 | Best practice
+|===
+
+=== Installation password (temporary) key
+
+==== CUSTOM_TEMPORARY_PASSWORD_HASH
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
+| For the primary Admin Node, set a default temporary password for the StorageGRID Management API during installation.
+
+If this key is omitted, no temporary password will be set by default. Alternatively, you can set a temporary password using the StorageGRID Installation API or StorageGRID Appliance Installer user interface.
+
+Must be a `crypt()` SHA-512 password hash with format `$6$<salt>$<password hash>` for a password of at least 8 and no more than 32 characters.
+
+This hash can be generated using CLI tools, such as the `openssl passwd` command in SHA-512 mode.
+| Best practice or Optional?
 |===
 
 === Interfaces key
