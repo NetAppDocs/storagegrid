@@ -9,7 +9,7 @@ summary: ''
 :imagesdir: ../media/
 
 [.lead]
-This audit message indicates that .
+This message is generated when a leaked object chunk has been detected, cleaned or deleted.
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -19,50 +19,54 @@ CLOC
 a|
 Chunk location
 a|
-Location of the leaked object chunk that got deleted or cleaned by LKDM
+Location of the leaked object chunk that got deleted or cleaned by LKDM.
 a|
 CTYP
 a|
 Chunk type
 a|
-Object chunk type
-It takes the form of `ec: erasure-coded object chunk` or `repl: replicated object chunk`
+Object chunk type it takes the form of:
+
+`ec: erasure-coded object chunk` 
+
+or 
+
+`repl: replicated object chunk`
 a|
 LTYP
 a|
 Leak type
 a|
-The types of leaks detected:
+The type of leak that can be detected:
 
 * `object_leaked: Object doesn’t exist in the grid`
 * `location_leaked: Object exists in the grid but found location doesn’t belong to object`
 * `mup_seg_leaked: multipart upload was aborted or not completed, and the segment/part somehow left out`
 * `segment_leaked: parent uuid/cbid (associated container object) is valid but don't contain this segment`
 * `no_parent: container object is deleted, but segment object is somehow left out and not deleted`
-* `object_leaked, location_leaked`
 a|
 CTIM
 a| 
 Chunk create time
 a|
-Time the leaked chunk was created
+Time the leaked chunk was created.
 a|
-UUID
+Universal unique identifier (UUID)
 a|
 Chunk UUID
 a|
-UUID of the object to which the chunk belongs
+UUID of the object to which the chunk belongs.
 a|
 CBID
 a|
 Chunk Content Block Identifier (CBID)
 a|
-CBID of the object to which the chunk belongs
+CBID of the object to which the chunk belongs.
 a|
 CSIZ
 a|
 Chunk size
 a|
-Size of the leaked chunk
+Size of the leaked chunk.
 |===
 //2024-05-23, SGRIDOC-64

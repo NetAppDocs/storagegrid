@@ -101,6 +101,8 @@ entries:
         url: "/audit/idel-ilm-initiated-delete.html"
       - title: 'LKCU: Overwritten Object Cleanup'
         url: "/audit/lkcu-overwritten-object-cleanup.html"
+      - title: 'LKDM: Leaked Object Cleanup'  
+        url: "/audit/lkdm-leaked-object-cleanup.html"            
       - title: 'LLST: Location Lost'
         url: "/audit/llst-location-lost.html"
       - title: 'MGAU: Management audit message'
