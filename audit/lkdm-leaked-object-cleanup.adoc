@@ -9,7 +9,7 @@ summary: ''
 :imagesdir: ../media/
 
 [.lead]
-This message is generated whenever a leaked chunk in an object has been cleaned or deleted. 
+This message is generated whenever a leaked chunk has been cleaned or deleted. 
 
 [cols="1a,1a,4a" options="header"]
 |===
