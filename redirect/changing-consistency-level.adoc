@@ -1,4 +1,4 @@
 ---
 permalink: tenant/changing-consistency-level.html
-redirect: tenant/manage-bucket-consistency.html
+redirect: storagegrid-119/tenant/manage-bucket-consistency.html
 ---

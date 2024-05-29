@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ILM policy, information lifecycle policy considerations
 summary: 'An information lifecycle management \(ILM\) policy is an ordered set of ILM rules that determines how the StorageGRID system manages object data over time.'
 ---
-= ILM policies: Overview
+= Use ILM policies
 :icons: font
 :imagesdir: ../media/
 

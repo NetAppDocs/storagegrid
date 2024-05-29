@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recover, storage node failure, Reaper
 summary: 'The procedure for recovering a failed Storage Node depends on the type of failure and the type of Storage Node that has failed.'
 ---
-= Recover from Storage Node failures: Overview
+= Recover from Storage Node failures
 :icons: font
 :imagesdir: ../media/
 
@@ -48,7 +48,7 @@ Technical support can determine when it is safe to begin recovery of a second St
 | This procedure is used for software-based Storage Nodes.
 
 | The system drive has failed.
-| link:recovering-from-system-drive-failure.html[Recover from system drive failure]
+| link:reviewing-warnings-for-system-drive-recovery.html[Recover from system drive failure]
 | The node replacement procedure depends on the deployment platform and on whether any storage volumes have also failed.
 |===
 

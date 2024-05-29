@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: maintain overview, maintenance overview, about maintain, about maintenance
 summary: 'Grid maintenance tasks include decommissioning a node or site, renaming a grid, node or site, and maintaining the network. You can also perform host and middleware procedures and grid node procedures.'
 ---
-= Maintain your grid: Overview
+= Grid maintenance
 :icons: font
 :imagesdir: ../media/
 

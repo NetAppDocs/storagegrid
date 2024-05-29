@@ -63,26 +63,19 @@ If StorageGRID encounters a recoverable error, the platform service request will
 
 Other errors are unrecoverable. For example, an unrecoverable error occurs if the endpoint is deleted.
 
-If StorageGRID encounters an unrecoverable endpoint error, the Total Events (SMTT) legacy alarm is triggered in the Grid Manager. To view the Total Events legacy alarm:
+If StorageGRID encounters an unrecoverable endpoint error:
 
-. Select *SUPPORT* > *Tools* > *Grid topology*.
-. Select *_site_* > *_node_* > *SSM* > *Events*.
-. View Last Event at the top of the table.
-+
-Event messages are also listed in `/var/local/log/bycast-err.log`.
+* In the Grid Manager, go to *Support* > *Tools* > *Metrics* > *Grafana* > *Platform Services Overview* to view error details.
 
-. Follow the guidance provided in the SMTT alarm contents to correct the issue.
-. Select the *Configuration* tab to reset event counts.
-. Notify the tenant of the objects whose platform services messages have not been delivered.
-. Instruct the tenant to re-trigger the failed replication or notification by updating the object's metadata or tags.
-+
-The tenant can resubmit the existing values to avoid making unwanted changes.
+* In the Tenant Manager, go to *STORAGE (S3)* > *Platform Services Endpoints* to view the error details.
+
+* Check the `/var/local/log/bycast-err.log` for related errors. Storage Nodes that have the ADC service contain this log file.
 
 == Platform services messages can't be delivered
 
 If the destination encounters an issue that prevents it from accepting platform services messages, the client operation on the bucket succeeds, but the platform services message is not delivered. For example, this error might happen if credentials are updated on the destination such that StorageGRID can no longer authenticate to the destination service.
 
-If platform services messages can't be delivered because of an unrecoverable error, the Total Events (SMTT) legacy alarm is triggered in the Grid Manager.
+Check for related alerts.
 
 == Slower performance for platform service requests
 
