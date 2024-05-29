@@ -78,7 +78,6 @@ From the ILM menu you can view and manage ILM:
 * Policies
 * Policy tags
 * Storage pools
-* Erasure coding
 * Storage grades
 * Regions
 * Object metadata lookup
@@ -113,6 +112,7 @@ System tasks include:
 * Optionally, enabling the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option.
 * link:../ilm/managing-objects-with-s3-object-lock.html[Managing S3 Object Lock]
 * Understanding Storage options such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
+* link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles].
 
 === Monitoring tasks
 
