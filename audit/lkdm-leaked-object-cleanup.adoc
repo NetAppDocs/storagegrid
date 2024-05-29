@@ -9,7 +9,7 @@ summary: ''
 :imagesdir: ../media/
 
 [.lead]
-This message is generated when a leaked object chunk has been detected, cleaned or deleted.
+This message is generated whenever a chunk* of data in an object leaks and that chunk is deleted or cleaned. 
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -19,13 +19,13 @@ CLOC
 a|
 Chunk location
 a|
-Location of the leaked object chunk that got deleted or cleaned by LKDM.
+Location of the object's chunk of data that got deleted or cleaned by LKDM.
 a|
 CTYP
 a|
 Chunk type
 a|
-Object chunk type it takes the form of:
+Type of chunk it takes the form of:
 
 `ec: erasure-coded object chunk` 
 
@@ -37,13 +37,17 @@ LTYP
 a|
 Leak type
 a|
-The type of leak that can be detected:
+The five types of leak that can be detected:
 
-* `object_leaked: Object doesn’t exist in the grid`
-* `location_leaked: Object exists in the grid but found location doesn’t belong to object`
-* `mup_seg_leaked: multipart upload was aborted or not completed, and the segment/part somehow left out`
-* `segment_leaked: parent uuid/cbid (associated container object) is valid but don't contain this segment`
-* `no_parent: container object is deleted, but segment object is somehow left out and not deleted`
+`object_leaked: Object doesn’t exist in the grid`
+
+`location_leaked: Object exists in the grid but found location doesn’t belong to object`
+
+`mup_seg_leaked: multipart upload was aborted or not completed, and the segment/part somehow left out`
+
+`segment_leaked: parent uuid/cbid (associated container object) is valid but don't contain this segment`
+
+`no_parent: container object is deleted, but segment object is somehow left out and not deleted`
 a|
 CTIM
 a| 
@@ -69,4 +73,5 @@ Chunk size
 a|
 Size of the leaked chunk.
 |===
+*The chunk service, which is a primary service for Storage Nodes, manages erasure-coded data and parity fragments.
 //2024-05-23, SGRIDOC-64
