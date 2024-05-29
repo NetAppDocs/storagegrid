@@ -43,6 +43,18 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |===
 | Release| Comments
 
+| 11.9
+| Added support for the `x-amz-checksum` response headers for the following object requests:
+
+* CompleteMultipartUpload: `x-amz-checksum-sha256`
+* CreateMultipartUpload: `x-amz-checksum-algorithm`
+* GetObject: `x-amz-checksum-mode`
+* HeadObject: `x-amz-checksum-mode`
+* PutObject: `x-amz-checksum-sha256`
+* UploadPart: `x-amz-checksum-sha256` 
+
+These `x-amz-checksum` headers provide an object's checksum value for the SHA256 protocol.
+
 | 11.8
 | Updated the names of S3 operations to match the names used in the http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^].
 

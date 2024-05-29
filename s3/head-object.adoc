@@ -25,7 +25,7 @@ StorageGRID does not parse or interpret escaped UTF-8 characters in user-defined
 
 The following request header is supported:
 
-* `x-amz-checksum-sha256`
+* `x-amz-checksum-mode`
 +
 To return the `x-amz-checksum-sha256` header in the response, it must be provided in the request with "Value" enabled.
 

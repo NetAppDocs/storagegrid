@@ -65,6 +65,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 .Request body XML tags
 StorageGRID supports these request body XML tags:
 
+* `ChecksumSHA256`
 * `CompleteMultipartUpload`
 * `ETag`
 * `Part`
@@ -80,6 +81,7 @@ link:complete-multipart-upload.html[CompleteMultipartUpload]
 .URI query parameters and request headers
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus these additional headers:
 
+* `x-amz-checksum-sha256`
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-modified-since`
@@ -134,6 +136,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 * `Content-Encoding`
 * `Content-Language`
 * `Expires`
+* `x-amz-checksum-algorithm`
 * `x-amz-server-side-encryption`
 * `x-amz-storage-class`
 * `x-amz-server-side-encryption-customer-algorithm`
@@ -422,6 +425,7 @@ link:operations-on-buckets.html[Operations on buckets]
 .URI query parameters and request headers
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus these additional URI query parameters:
 
+* `x-amz-checksum-mode`
 * `partNumber`
 * `response-cache-control`
 * `response-content-disposition`
@@ -533,6 +537,7 @@ link:operations-on-buckets.html[Operations on buckets]
 .URI query parameters and request headers
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus these additional headers:
 
+* `x-amz-checksum-mode`
 * `x-amz-server-side-encryption-customer-algorithm`
 * `x-amz-server-side-encryption-customer-key`
 * `x-amz-server-side-encryption-customer-key-MD5`
@@ -921,6 +926,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 
 And these additional request headers:
 
+* `x-amz-checksum-sha256`
 * `x-amz-server-side-encryption-customer-algorithm`
 * `x-amz-server-side-encryption-customer-key`
 * `x-amz-server-side-encryption-customer-key-MD5`		
