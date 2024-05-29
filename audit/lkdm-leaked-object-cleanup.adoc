@@ -9,7 +9,7 @@ summary: ''
 :imagesdir: ../media/
 
 [.lead]
-This message is generated whenever a chunk* of data in an object leaks and that chunk is deleted or cleaned. 
+This message is generated whenever a leaked chunk in an object has been cleaned or deleted. 
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -19,7 +19,7 @@ CLOC
 a|
 Chunk location
 a|
-Location of the object's chunk of data that got deleted or cleaned by LKDM.
+Location of the object's chunk that got deleted or cleaned by LKDM.
 a|
 CTYP
 a|
@@ -73,5 +73,4 @@ Chunk size
 a|
 Size of the leaked chunk.
 |===
-*The chunk service, which is a primary service for Storage Nodes, manages erasure-coded data and parity fragments.
 //2024-05-23, SGRIDOC-64
