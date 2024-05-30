@@ -27,6 +27,8 @@ The following conditions and notes apply to all multipart upload operations:
 
 * All of the multipart upload operations support StorageGRID link:consistency-controls.html[consistency values].
 
+* When an object is ingested using multipart upload, the link:../admin/what-object-segmentation-is.html[object segmentation threshold (1 GiB)] is not applied.
+
 * As required, you can use link:using-server-side-encryption.html[server-side encryption] with multipart uploads. To use SSE (server-side encryption with StorageGRID-managed keys), you include the `x-amz-server-side-encryption` request header in the CreateMultipartUpload request only. To use SSE-C (server-side encryption with customer-provided keys), you specify the same three encryption key request headers in the CreateMultipartUpload request and in each subsequent UploadPart request.
 
 [cols="2a,3a" options="header"]
@@ -60,3 +62,4 @@ The following conditions and notes apply to all multipart upload operations:
 
 |===
 
+// 2024 MAY 15, SGRIDDOC-61
