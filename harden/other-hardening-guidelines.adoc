@@ -13,7 +13,7 @@ In addition to following the hardening guidelines for StorageGRID networks and n
 
 == Temporary installation password
 
-To secure the StorageGRID system during installation, set a temporary installation password on the sign-in page or in the Installation REST API. When set, this password applies to all methods for installing StorageGRID, including the user interface, Installation REST API, and `configure-storagegrid.py` script.
+To secure the StorageGRID system during installation, set a password on the temporary installer password page in the StorageGRID installation UI or in the Installation REST API. When set, this password applies to all methods for installing StorageGRID, including the user interface, Installation REST API, and `configure-storagegrid.py` script.
 
 For more information, refer to:
 

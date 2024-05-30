@@ -601,7 +601,7 @@ Setting this value has no effect when:
 * You set it on nodes other than the primary Admin Node.
 * Installation has completed.
 
-If this key is omitted, no temporary password will be set by default. Alternatively, you can set a temporary password using the StorageGRID Installation API.
+If this key is omitted, by default no temporary password is set. Alternatively, you can set a temporary password using the StorageGRID Installation API.
 
 Must be a `crypt()` SHA-512 password hash with format `$6$<salt>$<password hash>` for a password of at least 8 and no more than 32 characters.
 
