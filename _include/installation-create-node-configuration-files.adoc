@@ -587,7 +587,7 @@ For more details on MAC cloning:
 | Best practice
 |===
 
-=== Installation password (temporary) key
+=== Installation password key (temporary)
 
 ==== CUSTOM_TEMPORARY_PASSWORD_HASH
 [cols="4a,2a" option="header"]
