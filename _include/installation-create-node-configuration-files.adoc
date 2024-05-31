@@ -596,10 +596,9 @@ For more details on MAC cloning:
 
 | For the primary Admin Node, set a default temporary password for the StorageGRID Management API during installation.
 
-Setting this value has no effect when:
+*Note*: Set an installation password on the primary Admin Node only. If you attempt to set a password on another  node type, validation of the node configuration file will fail.
 
-* You set it on nodes other than the primary Admin Node.
-* Installation has completed.
+Setting this value has no effect when installation has completed.
 
 If this key is omitted, by default no temporary password is set. Alternatively, you can set a temporary password using the StorageGRID Installation API.
 
