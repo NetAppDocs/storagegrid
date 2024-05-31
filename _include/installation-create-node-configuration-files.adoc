@@ -587,6 +587,27 @@ For more details on MAC cloning:
 | Best practice
 |===
 
+=== Installation password key (temporary)
+
+==== CUSTOM_TEMPORARY_PASSWORD_HASH
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
+| For the primary Admin Node, set a default temporary password for the StorageGRID Installation API during installation.
+
+*Note*: Set an installation password on the primary Admin Node only. If you attempt to set a password on another  node type, validation of the node configuration file will fail.
+
+Setting this value has no effect when installation has completed.
+
+If this key is omitted, by default no temporary password is set. Alternatively, you can set a temporary password using the StorageGRID Installation API.
+
+Must be a `crypt()` SHA-512 password hash with format `$6$<salt>$<password hash>` for a password of at least 8 and no more than 32 characters.
+
+This hash can be generated using CLI tools, such as the `openssl passwd` command in SHA-512 mode.
+| Best practice
+|===
+
 === Interfaces key
 
 ==== INTERFACE_TARGET_nnnn
