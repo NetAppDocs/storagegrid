@@ -1,7 +1,7 @@
 section: admin
 title: Administer StorageGRID
 entries:
-  - title: Overview
+  - title: Administration tasks
     pdf-filename: Administer a StorageGRID system
     url: "/admin/index.html"
   - title: Get started with Grid Manager
@@ -41,13 +41,15 @@ entries:
         url: "/admin/deactivate-features-from-api.html"            
   - title: Control access to StorageGRID
     entries:
-    - title: Overview
+    - title: StorageGRID access
       pdf-filename: Control access to StorageGRID
       url: "/admin/controlling-storagegrid-access.html"
     - title: Change the provisioning passphrase
       url: "/admin/changing-provisioning-passphrase.html"
     - title: Change node console passwords
       url: "/admin/change-node-console-password.html"    
+    - title: Change SSH access passwords
+      url: "/admin/change-ssh-access-passwords.html"
     - title: Use identity federation
       url: "/admin/using-identity-federation.html"
     - title: Manage admin groups
@@ -99,15 +101,15 @@ entries:
       url: "/admin/grid-federation-retry-failed-replication.html"    
   - title: Manage security
     entries:  
-    - title: Overview
+    - title: Security components
       pdf-filename: Manage security
       url: "/admin/manage-security.html" 
     - title: Review StorageGRID encryption methods
       url: "/admin/reviewing-storagegrid-encryption-methods.html"     
     - title: Manage certificates
       entries:
-      - title: Overview
-        pdf-filename: Manage certificates
+      - title: Manage security certificates
+        pdf-filename: Manage security certificates
         url: "/admin/using-storagegrid-security-certificates.html"
       - title: Configure server certificates
         entries:
@@ -133,10 +135,10 @@ entries:
         url: "/admin/changing-browser-session-timeout-interface.html"      
     - title: Configure key management servers
       entries:
-      - title: Overview
+      - title: What is key management server
         pdf-filename: Configure key management servers
         url: "/admin/kms-configuring.html"
-      - title: Overview of KMS and appliance configuration
+      - title: KMS and appliance configuration
         url: "/admin/kms-overview-of-kms-and-appliance-configuration.html"
       - title: Considerations and requirements for using a key management server
         url: "/admin/kms-considerations-and-requirements.html"
@@ -164,7 +166,7 @@ entries:
         url: "/admin/configure-firewall-controls.html"
   - title: Manage tenants
     entries:
-    - title: Overview
+    - title: What are tenant accounts
       url: "/admin/managing-tenants.html"
       pdf-filename: Manage tenants
     - title: Create tenant account
@@ -177,7 +179,7 @@ entries:
       url: "/admin/deleting-tenant-account.html"
     - title: Manage platform services
       entries:
-      - title: Overview
+      - title: What are platform services
         pdf-filename: Manage platform services for S3 tenant accounts
         url: "/admin/manage-platform-services-for-tenants.html"
       - title: Network and ports for platform services
@@ -190,7 +192,7 @@ entries:
       url: "/admin/manage-s3-select-for-tenant-accounts.html"
   - title: Configure client connections
     entries:
-    - title: Overview
+    - title: Configuration tasks
       pdf-filename: Configure S3 client connections
       url: "/admin/configuring-client-connections.html"
     - title: Security for S3 clients
@@ -203,7 +205,7 @@ entries:
         url: "/admin/use-s3-setup-wizard-steps.html"
     - title: Manage HA groups  
       entries:
-      - title: Overview
+      - title: What is HA group
         pdf-filename: Manage high availability (HA) groups
         url: "/admin/managing-high-availability-groups.html"
       - title: How are HA groups used
@@ -224,7 +226,7 @@ entries:
       url: "/admin/summary-ip-addresses-and-ports-for-client-connections.html"
   - title: Manage networks and connections
     entries:
-    - title: Overview
+    - title: Configure network settings
       url: "/admin/configuring-network-settings.html"
       pdf-filename: Manage networks and connections
     - title: Guidelines for StorageGRID networks
@@ -235,7 +237,7 @@ entries:
       url: "/admin/configure-vlan-interfaces.html"  
     - title: Manage traffic classification policies
       entries:
-      - title: Overview
+      - title: What is traffic classification policy
         pdf-filename: Manage traffic classification policies
         url: "/admin/managing-traffic-classification-policies.html"
       - title: Create traffic classification policies
@@ -254,7 +256,7 @@ entries:
       url: "/admin/manage-link-costs.html"
   - title: Use AutoSupport
     entries:
-    - title: Overview
+    - title: What is AutoSupport
       pdf-filename: Use AutoSupport
       url: "/admin/what-is-autosupport.html"
     - title: Configure AutoSupport
@@ -267,7 +269,7 @@ entries:
       url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Manage Storage Nodes
     entries:
-    - title: Overview
+    - title: Storage Node management
       pdf-filename: Manage Storage Nodes
       url: "/admin/managing-storage-nodes.html"
     - title: Use Storage options
@@ -292,15 +294,3 @@ entries:
       url: "/admin/identifying-primary-admin-node.html"
     - title: View notification status and queues
       url: "/admin/viewing-notification-status-and-queues.html"
-    - title: Configure audit client access      
-      entries:
-      - title: Configure audit client access for NFS
-        url: "/admin/configuring-audit-client-access.html"
-      - title: Add NFS audit client to audit share
-        url: "/admin/adding-nfs-audit-client-to-audit-share.html"
-      - title: Verify NFS audit integration
-        url: "/admin/verifying-nfs-audit-integration.html"
-      - title: Remove NFS audit client from audit share
-        url: "/admin/removing-nfs-audit-client-from-audit-share.html"
-      - title: Change IP address of NFS audit client
-        url: "/admin/changing-ip-address-of-nfs-audit-client.html"

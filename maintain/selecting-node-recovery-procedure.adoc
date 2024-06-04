@@ -30,7 +30,7 @@ link:recovering-from-storage-node-failures.html[Recover from Storage Node failur
 link:recovering-from-admin-node-failures.html[Recover from Admin Node failures]
 
 | Gateway Node
-| link:recovering-from-gateway-node-failures.html[Recover from Gateway Node failures]
+| link:replacing-gateway-node.html[Recover from Gateway Node failures]
 
 | Archive Node
 | https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-from-archive-node-failures.html[Recover from Archive Node failures (StorageGRID 11.8 doc site)^]

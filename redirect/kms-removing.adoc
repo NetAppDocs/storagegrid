@@ -1,4 +1,4 @@
 ---
 permalink: admin/kms-removing.html
-redirect: admin/kms-viewing-details.html
+redirect: storagegrid-119/admin/kms-viewing-details.html
 ---

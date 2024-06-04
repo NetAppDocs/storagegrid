@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to decommission
 summary: 'You can perform a decommission procedure to permanently remove grid nodes or an entire site from the StorageGRID system.'
 ---
-= Decommission procedure: Overview
+= Decommission node or site
 :icons: font
 :imagesdir: ../media/
 

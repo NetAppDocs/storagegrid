@@ -1,4 +1,4 @@
 ---
 permalink: ilm/simulating-ilm-policy.html
-redirect: storagegrid-118/ilm/simulating-ilm-policy-examples.html
+redirect: storagegrid-119/ilm/simulating-ilm-policy-examples.html
 ---

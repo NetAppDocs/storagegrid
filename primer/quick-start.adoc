@@ -126,7 +126,7 @@ Learn how:
 [role="quick-margin-list"]
 * link:../landing-expand/index.html[Expand a grid]
 * link:../landing-maintain/index.html[Maintain your grid]
-* link:../maintain/grid-node-recovery-procedures.html[Recover nodes]
+* link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[Recover nodes]
 
 
 // End snippet

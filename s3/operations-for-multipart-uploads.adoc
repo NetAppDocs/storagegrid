@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: operations, multipart uploads, uploads, rest API
 summary: 'This section describes how StorageGRID supports operations for multipart uploads.'
 ---
-= Operations for multipart uploads: Overview
+= Operations for multipart uploads
 :icons: font
 :imagesdir: ../media/
 
@@ -26,6 +26,8 @@ The following conditions and notes apply to all multipart upload operations:
  ** When evaluating ILM for a part, StorageGRID filters on the size of the part, not the size of the object. This means that parts of an object can be stored in locations that don't meet ILM requirements for the object as a whole. For example, if a rule specifies that all objects 10 GB or larger are stored at DC1 while all smaller objects are stored at DC2, each 1 GB part of a 10-part multipart upload is stored at DC2 at ingest. However, when ILM is evaluated for the object as a whole, all parts of the object are moved to DC1.
 
 * All of the multipart upload operations support StorageGRID link:consistency-controls.html[consistency values].
+
+* When an object is ingested using multipart upload, the link:../admin/what-object-segmentation-is.html[object segmentation threshold (1 GiB)] is not applied.
 
 * As required, you can use link:using-server-side-encryption.html[server-side encryption] with multipart uploads. To use SSE (server-side encryption with StorageGRID-managed keys), you include the `x-amz-server-side-encryption` request header in the CreateMultipartUpload request only. To use SSE-C (server-side encryption with customer-provided keys), you specify the same three encryption key request headers in the CreateMultipartUpload request and in each subsequent UploadPart request.
 
@@ -60,3 +62,4 @@ The following conditions and notes apply to all multipart upload operations:
 
 |===
 
+// 2024 MAY 15, SGRIDDOC-61

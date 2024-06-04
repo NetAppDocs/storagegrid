@@ -250,7 +250,7 @@ PORT_REMAP_INBOUND = client/tcp/443/18082
 +
 This example takes traffic that is sent to port 443 to pass an internal firewall and directs it to port 18082, where the grid node is listening for S3 requests.
 
-* *TEMPORARY_PASSWORD_TYPE*: The type of temporary installation password to be used when accessing the VM console or using SSH before the node joins the grid. 
+* *TEMPORARY_PASSWORD_TYPE*: The type of temporary installation password to be used when accessing the VM console or the StorageGRID Installation API, or using SSH, before the node joins the grid. 
 + 
 TIP: If all or most of the nodes use the same type of temporary installation password, specify the type in the global parameter section. Then, optionally use a different setting for an individual node. For example, if you select *Use Custom Password* globally, you can use *CUSTOM_TEMPORARY_PASSWORD=<password>* to set the password for each node.
 +
@@ -258,13 +258,12 @@ TIP: If all or most of the nodes use the same type of temporary installation pas
 
 **	*Use node name*: The node name is used as the temporary installation password.
 ** *Disable password*: No temporary installation password will be used. If you need to access the VM to debug installation issues, see link:troubleshooting-installation-issues.html[Troubleshoot installation issues].
-**	*Use custom password*: The value provided with *CUSTOM_TEMPORARY_PASSWORD=<password>* is used as the temporary installation password. 
+**	*Use custom password*: The value provided with *CUSTOM_TEMPORARY_PASSWORD=<password>* is used as the temporary installation password and provides access to VM console, the StorageGRID Installation API, and SSH.
 +
 TIP: Optionally, you can omit the *TEMPORARY_PASSWORD_TYPE* parameter and only specify *CUSTOM_TEMPORARY_PASSWORD=<password>*. 
 
 * *CUSTOM_TEMPORARY_PASSWORD=<password>*
-Optional. The temporary password to use when accessing this VM and using SSH during installation. Ignored if *TEMPORARY_PASSWORD_TYPE* is set to *Use node name* or *Disable password*.
-
+Optional. The temporary password to use during installation when accessing VM console, the StorageGRID Installation API, and SSH. Ignored if *TEMPORARY_PASSWORD_TYPE* is set to *Use node name* or *Disable password*.
 
 ==== Node-specific parameters
 
@@ -555,4 +554,4 @@ StorageGRID has been configured and installed.
 
 link:navigating-to-grid-manager.html[Navigate to the Grid Manager]
 
-link:overview-of-installation-rest-api.html[Overview of the installation REST API]
+link:overview-of-installation-rest-api.html[Installation REST API]

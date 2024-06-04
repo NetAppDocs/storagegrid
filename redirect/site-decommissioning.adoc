@@ -1,4 +1,4 @@
 ---
 permalink: maintain/site-decommissioning.html
-redirect: storagegrid-118/maintain/considerations-for-removing-site.html
+redirect: storagegrid-119/maintain/considerations-for-removing-site.html
 ---

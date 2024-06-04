@@ -10,7 +10,7 @@ entries:
     url: "/primer/storagegrid-architecture-and-network-topology.html"
   - title: Grid nodes and services
     entries: 
-      - title: Overview
+      - title: Nodes and services
         url: "/primer/nodes-and-services.html"     
         pdf-filename: Nodes and services 
       - title: What is an Admin Node
@@ -36,7 +36,7 @@ entries:
       url: "/primer/retrieve-data-flow.html"
     - title: Delete data flow
       url: "/primer/delete-data-flow.html"
-    - title: Use information lifecycle management
+    - title: Information lifecycle management
       url: "/primer/using-information-lifecycle-management.html"
   - title: Explore StorageGRID
     entries:

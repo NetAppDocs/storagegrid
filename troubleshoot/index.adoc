@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot a StorageGRID system
 summary: 'If you encounter a problem when using a StorageGRID system, refer to the tips and guidelines in this section for help in determining and resolving the issue.'
 ---
-= Troubleshoot a StorageGRID system: Overview
+= Troubleshoot a StorageGRID system
 :icons: font
 :imagesdir: ../media/
 

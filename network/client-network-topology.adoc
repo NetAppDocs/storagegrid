@@ -20,3 +20,9 @@ In this example, the Client Network is used for S3 client requests and for admin
 image::../media/grid_client_networks.png[Grid Client Networks]
 
 image::../media/grid_client_networks_ips.png[Grid Client Networks IPs]
+
+.Related information
+
+link:../maintain/changing-nodes-network-configuration.html[Change node network configuration]
+
+// 2024 MAY 1, SGRIDDOC-28
