@@ -152,7 +152,7 @@ This field is not displayed for appliance models that don't contain a BMC.
   *** 0: First expansion shelf
   *** 1: Second expansion shelf
 
-*Note:* Expansion shelves apply to the SG6060 only.
+*Note:* Expansion shelves apply only to the SG6060 and SG6160.
 
 |Shelf status
 |The overall status of the storage shelf.
