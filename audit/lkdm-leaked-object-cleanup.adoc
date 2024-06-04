@@ -73,4 +73,4 @@ Chunk size
 a|
 Size of the leaked chunk.
 |===
-//2024-05-23, SGRIDOC-64
+//2024-06-04, SGRIDOC-64
