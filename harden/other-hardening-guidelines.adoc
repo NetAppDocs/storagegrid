@@ -11,6 +11,17 @@ summary: 'In addition to following the hardening guidelines for StorageGRID netw
 [.lead]
 In addition to following the hardening guidelines for StorageGRID networks and nodes, you should follow the hardening guidelines for other areas of the StorageGRID system.
 
+== Temporary installation password
+
+To secure the StorageGRID system during installation, set a password on the temporary installer password page in the StorageGRID installation UI or in the Installation API. When set, this password applies to all methods for installing StorageGRID, including the user interface, Installation API, and `configure-storagegrid.py` script.
+
+For more information, refer to:
+
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
+* link:../vmware/index.html[Install StorageGRID on VMware]
+* https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Install StorageGRID appliance^]
+
 == Logs and audit messages
 
 Always protect StorageGRID logs and audit message output in a secure manner. StorageGRID logs and audit messages provide invaluable information from a support and system availability standpoint. In addition, the information and details contained in StorageGRID logs and audit message output are generally of a sensitive nature.

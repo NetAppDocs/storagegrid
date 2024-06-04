@@ -17,12 +17,12 @@ The error 422: Unprocessable Entity can occur for different reasons. Check the e
 
 If you see one of the listed error messages, take the recommended action.
 
-[cols="2a,2a" options="header"]
+[cols="2a,3a" options="header"]
 |===
 | Error message
 | Root cause and corrective action
 
-|----
+| ----
 422: Unprocessable Entity
 
 Validation failed. Please check
@@ -42,11 +42,11 @@ already active on the
 connection, data 0, v3839
 ----
 
-|This message might occur if you select the *Do not use TLS* option for Transport Layer Security (TLS) when configuring identity federation using Windows Active Directory (AD).
+| This message might occur if you select the *Do not use TLS* option for Transport Layer Security (TLS) when configuring identity federation using Windows Active Directory (AD).
 
 Using the *Do not use TLS* option is not supported for use with AD servers that enforce LDAP signing. You must select either the *Use STARTTLS* option or the *Use LDAPS* option for TLS.
 
-|----
+| ----
 422: Unprocessable Entity
 
 Validation failed. Please check
@@ -62,12 +62,10 @@ TLS handshake failed
     (EOF)
 ----
 
-|This message appears if you try to use an unsupported cipher to make a Transport Layer Security (TLS) connection from StorageGRID to an external system used for identify federation or Cloud Storage Pools.
+| This message appears if you try to use an unsupported cipher to make a Transport Layer Security (TLS) connection from StorageGRID to an external system used for identify federation or Cloud Storage Pools.
 
 Check the ciphers that are offered by the external system. The system must use one of the link:../admin/supported-ciphers-for-outgoing-tls-connections.html[ciphers supported by StorageGRID] for outgoing TLS connections, as shown in the instructions for administering StorageGRID.
-
 |===
-
 
 == [[troubleshoot_MTU_alert]]Grid Network MTU mismatch alert
 
@@ -89,7 +87,7 @@ The differences in MTU settings could indicate that some, but not all, eth0 netw
 +
 Use the following arguments for modifying the MTU on Linux- or VMware-based nodes.
 +
-[cols="2a,2a" options="header"]
+[cols="1a,2a" options="header"]
 |===
 |Positional arguments
 |Description
@@ -115,16 +113,14 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 
 |`-n node, --node node`
 |The node. The default is the local node.
-
 |===
 
+== Node network reception frame error alert
 
-== Network Receive Error (NRER) alarm
-
-Network Receive Error (NRER) alarms can be caused by connectivity issues between StorageGRID and your network hardware. In some cases, NRER errors can clear without manual intervention. If the errors don't clear, take the recommended actions.
+*Node network reception frame error* alerts can be caused by connectivity issues between StorageGRID and your network hardware. This alert clears on its own after the underlying problem is addressed.
 
 .About this task
-NRER alarms can be caused by the following issues with networking hardware that connects to StorageGRID:
+*Node network reception frame error* alerts can be caused by the following issues with networking hardware that connects to StorageGRID:
 
 * Forward error correction (FEC) is required and not in use
 * Switch port and NIC MTU mismatch
@@ -132,7 +128,7 @@ NRER alarms can be caused by the following issues with networking hardware that 
 * NIC ring buffer overrun
 
 .Steps
-. Follow the troubleshooting steps for all potential causes of the NRER alarm given your network configuration.
+. Follow the troubleshooting steps for all potential causes of this alert given your network configuration.
 
 . Perform the following steps depending on the cause of the error:
 +
@@ -142,11 +138,11 @@ NRER alarms can be caused by the following issues with networking hardware that 
 .FEC mismatch
 --
 
-NOTE: These steps are applicable only for NRER errors caused by FEC mismatch on StorageGRID appliances.
+NOTE: These steps are applicable only for *Node network reception frame error* alerts caused by FEC mismatch on StorageGRID appliances.
 
 .. Check the FEC status of the port in the switch attached to your StorageGRID appliance.
 .. Check the physical integrity of the cables from the appliance to the switch.
-.. If you want to change FEC settings to try to resolve the NRER alarm, first ensure that the appliance is configured for *Auto* mode on the Link Configuration page of the StorageGRID Appliance Installer (see the instructions for your appliance:
+.. If you want to change FEC settings to try to resolve the alert, first ensure that the appliance is configured for *Auto* mode on the Link Configuration page of the StorageGRID Appliance Installer (see the instructions for your appliance:
 +
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SG6160^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SGF6112^]
@@ -164,9 +160,9 @@ NOTE: StorageGRID appliances support Firecode (FC) and Reed Solomon (RS) FEC, as
 .Switch port and NIC MTU mismatch
 --
 
-If the error is caused by a switch port and NIC MTU mismatch, check that the MTU size configured on the node is the same as the MTU setting for the switch port.
+If the alert is caused by a switch port and NIC MTU mismatch, check that the MTU size configured on the node is the same as the MTU setting for the switch port.
 
-The MTU size configured on the node might be smaller than the setting on the switch port the node is connected to. If a StorageGRID node receives an Ethernet frame larger than its MTU, which is possible with this configuration, the NRER alarm might be reported. If you believe this is what is happening, either change the MTU of the switch port to match the StorageGRID network interface MTU, or change the MTU of the StorageGRID network interface to match the switch port, depending on your end-to-end MTU goals or requirements.
+The MTU size configured on the node might be smaller than the setting on the switch port the node is connected to. If a StorageGRID node receives an Ethernet frame larger than its MTU, which is possible with this configuration, the *Node network reception frame error* alert might be reported. If you believe this is what is happening, either change the MTU of the switch port to match the StorageGRID network interface MTU, or change the MTU of the StorageGRID network interface to match the switch port, depending on your end-to-end MTU goals or requirements.
 
 NOTE: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types. See <<troubleshoot_MTU_alert,Troubleshoot the Grid Network MTU mismatch alert>> for more information.
 
@@ -191,10 +187,7 @@ The ring buffer can be overrun when the StorageGRID system is overloaded and una
 --
 ====
 
-. After you resolve the underlying problem, reset the error counter.
- .. Select *SUPPORT* > *Tools* > *Grid topology*.
- .. Select *_site_* > *_grid node_* > *SSM* > *Resources* > *Configuration* > *Main*.
- .. Select *Reset Receive Error Count* and click *Apply Changes*.
+. Monitor the problem and contact technical support if the alert doesn't resolve.
 
 == Time synchronization errors
 
@@ -266,13 +259,10 @@ storagegrid node start DC1-S1-172-16-1-172
 You might need to enable IPv6 support in the kernel if you have installed StorageGRID nodes on Linux hosts and you notice that IPv6 addresses have not been assigned to the node containers as expected.
 
 .About this task
-You can see the IPv6 address that has been assigned to a grid node in the following locations in the Grid Manager:
+To see the IPv6 address that has been assigned to a grid node:
 
-* Select *NODES*, and select the node. Then, select *Show more* next to *IP Addresses* on the Overview tab.
-+
-image::../media/node_overview_ip_addresses_ipv6.png[screen shot of Nodes > Overview > IP Addresses]
-
-* Select *SUPPORT* > *Tools* > *Grid topology*. Then, select *_node_* > *SSM* > *Resources*. If an IPv6 address has been assigned, it is listed below the IPv4 address in the *Network Addresses* section.
+. Select *NODES* and select the node.
+. Select *Show additional IP addresses* next to *IP Addresses* on the Overview tab.
 
 If the IPv6 address is not shown and the node is installed on a Linux host, follow these steps to enable IPv6 support in the kernel.
 
@@ -338,5 +328,4 @@ storagegrid node stop node-name
 ----
 storagegrid node start node-name
 ----
-
 // 2024 FEB 22, SGRIDDOC-49

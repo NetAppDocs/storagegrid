@@ -55,17 +55,17 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.7
 | 
 
-| Docker container runtime
+| Docker container engine
 | 11.8
 | 11.9
 | 12.0
-| 
+| Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release. Refer to the link:../ubuntu/software-requirements.html#docker-versions-tested[list of Docker versions currently supported].
 
 | NFS audit export
 | 11.8
 | 11.9
 | 12.0
-| 
+| https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-audit-client-access.html[Configure audit client access for NFS^]
 
 | Swift API support
 | 11.7

@@ -54,7 +54,7 @@ m| ec
 m| grid
 | General grid logs including debug (`bycast.log`) and `servermanager` logs.
 
-m| grid.xml
+m| grid.json
 | Grid configuration file shared across all nodes.
 
 m| hagroups
@@ -112,7 +112,7 @@ m| ssh
 | Logs related to SSH configuration and service.
 
 m| snmp
-| SNMP agent configuration and alarm allow/deny lists used for sending SNMP notifications.
+| SNMP agent configuration used for sending SNMP notifications.
 
 m| sockets-data
 | Sockets data for network debug.
