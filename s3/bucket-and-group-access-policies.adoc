@@ -92,8 +92,8 @@ In the following example, the statement is using the Effect, Principal, Action, 
         "s3:GetObject"
       ],
       "Resource": [
-        "arn:aws:iam:s3:::mybucket",
-        "arn:aws:iam:s3:::mybucket/*"
+        "arn:aws:s3:::mybucket",
+        "arn:aws:s3:::mybucket/*"
       ]
     }
   ]
