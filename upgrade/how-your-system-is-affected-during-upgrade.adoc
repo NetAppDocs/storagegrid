@@ -39,6 +39,7 @@ During the StorageGRID 11.8 upgrade:
 * SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version 4.73.07.
 * SGF6112 appliance is automatically upgraded to BIOS firmware version 3A10.QD and BMC firmware version 3.15.07.
 * SGF6112 is converted from legacy boot mode to UEFI boot mode with secure boot enabled.
+* SG110 and SG1100 appliances were delivered with StorageGRID 11.8 compatible BIOS firmware.
 
 == ILM policies are handled differently according to their status
 
