@@ -88,6 +88,10 @@ Pay close attention to the cautions that appear when you select each of these op
 
 * *Bucket access*: View or change option settings. You must have specific access permissions.
 ** Configure link:configuring-cross-origin-resource-sharing-cors.html[Cross-Origin Resource Sharing (CORS)] so the bucket and objects in the bucket will be accessible to web applications in other domains.
-** link:../s3/bucket-and-group-access-policies.html[Control user access for an S3 bucket and objects] in that bucket. You must have the Root access permission to change this setting.
+ 
+
+Control user access for an S3 bucket and objects in that bucket. See Use bucket and group access policies.
+
+
 
 * *Platform services*: link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant)
