@@ -24,7 +24,7 @@ Use the procedure that matches the replacement platform you select for the node.
 | Linux
 | link:all-node-types-replacing-linux-node.html[Replace a Linux node]
 
-| SG100 and SG1000 services appliances
+| Services appliances
 | link:replacing-failed-node-with-services-appliance.html[Replace a services appliance]
 
 | OpenStack
