@@ -85,13 +85,8 @@ Pay close attention to the cautions that appear when you select each of these op
 ** link:using-s3-object-lock.html[S3 Object Lock]
 ** link:update-default-retention-settings.html[Default bucket retention]
 ** link:grid-federation-manage-cross-grid-replication.html[Manage cross-grid replication] (if allowed for the tenant)
+* *Platform services*: link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant)
 
 * *Bucket access*: View or change option settings. You must have specific access permissions.
 ** Configure link:configuring-cross-origin-resource-sharing-cors.html[Cross-Origin Resource Sharing (CORS)] so the bucket and objects in the bucket will be accessible to web applications in other domains.
- 
-
-Control user access for an S3 bucket and objects in that bucket. See Use bucket and group access policies.
-
-
-
-* *Platform services*: link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant)
+** link:../manage-bucket-policy.html[Control user access] for an S3 bucket and objects in that bucket.
