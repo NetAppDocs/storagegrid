@@ -9,7 +9,7 @@ summary: ''
 :imagesdir: ../media/
 
 [.lead]
-This message is generated when a leaked chunk has been cleaned or deleted. 
+This message is generated when a leaked chunk has been cleaned or deleted. A chunk can be part of a replicated object or an erasure-encoded object.
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -19,7 +19,7 @@ CLOC
 a|
 Chunk location
 a|
-Location of the object's chunk that got deleted or cleaned by LKDM.
+The file path of the leaked chunk that got deleted.
 a|
 CTYP
 a|
@@ -27,11 +27,9 @@ Chunk type
 a|
 Type of chunk it takes the form of:
 
-`ec: erasure-coded object chunk` 
+`ec: Erasure-coded object chunk` 
 
-or 
-
-`repl: replicated object chunk`
+`repl: Replicated object chunk`
 a|
 LTYP
 a|
@@ -43,11 +41,11 @@ The five types of leaks that can be detected:
 
 `location_leaked: Object exists in the grid, but found location doesn’t belong to object`
 
-`mup_seg_leaked: multipart upload was stopped or not completed, and the segment/part was left out`
+`mup_seg_leaked: Multipart upload was stopped or not completed, and the segment/part was left out`
 
-`segment_leaked: parent uuid/cbid (associated container object) is valid but don't contain this segment`
+`segment_leaked: Parent UUID/CBID (associated container object) is valid but doesn't contain this segment`
 
-`no_parent: container object is deleted, but object segment was left out and not deleted`
+`no_parent: Container object is deleted, but object segment was left out and not deleted`
 a|
 CTIM
 a| 
@@ -55,22 +53,22 @@ Chunk create time
 a|
 Time the leaked chunk was created.
 a|
-Universal unique identifier (UUID)
+UUID
 a|
-Chunk UUID
+Universally Unique Identifier
 a|
-UUID of the object to which the chunk belongs to.
+The identifier of the object the chunk belongs to.
 a|
 CBID
 a|
-Chunk Content Block Identifier (CBID)
+Content Block Identifier
 a|
-CBID of the object to which the chunk belongs.
+CBID of the object the leaked chunk belongs to.
 a|
 CSIZ
 a|
-Chunk size
+Content size
 a|
-Size of the leaked chunk.
+The size of the chunk in bytes.
 |===
 //2024-06-04, SGRIDOC-64
