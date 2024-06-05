@@ -25,11 +25,11 @@ The View all buckets and Manage all buckets permissions only allow viewing.
 . On the bucket details page, select *Bucket access* > *Bucket policy*.
 
 . Do one of the following:
-.. Enter a bucket policy by selecting the *Enable policy* checkbox. Then enter a valid JSON formatted string.
++
+* Enter a bucket policy by selecting the *Enable policy* checkbox. Then enter a valid JSON formatted string.
 +
 Each bucket policy has a size limit of 20,480 bytes.
-
-.. Modify an existing policy by editing the string.
-.. Disable a policy by unselecting *Enable policy*.
+* Modify an existing policy by editing the string.
+* Disable a policy by unselecting *Enable policy*.
 
 For detailed information about bucket policies, including language syntax and examples, see link:../s3/example-bucket-policies.html[Example bucket policies].
