@@ -66,6 +66,16 @@ For the appliance, this command shuts down the compute controller, but the appli
 This LED is on when cached data needs to be written to the drives. You must wait for this LED to turn off before you turn off power.
 
   ... Turn off the power to the appliance, and wait for the blue power LED to turn off.
+
+** For the SG5800 appliance
+... Wait for the green Cache Active LED on the back of the storage controller to turn off.
++
+This LED is on when cached data needs to be written to the drives. You must wait for this LED to turn off before you turn off power.
+
+... From the home page of SANtricity System Manager, select *View Operations in Progress*.
+... Confirm that all operations have completed before continuing with the next step.
+... Turn off both power switches on the controller shelf, and wait for all LEDs on the controller shelf to turn off.
+
  ** For the SG5700 appliance
   ... Wait for the green Cache Active LED on the back of the storage controller to turn off.
 +
@@ -81,6 +91,8 @@ The StorageGRID grid has now been shut down.
 https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 and SG6160 storage appliances^]
 
 https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
+
+https://docs.netapp.com/us-en/storagegrid-appliances/sg5800/index.html[SG5800 storage appliances^]
 
 https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
 
