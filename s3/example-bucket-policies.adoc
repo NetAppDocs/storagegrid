@@ -14,14 +14,12 @@ Use the examples in this section to build StorageGRID access policies for bucket
 Bucket policies specify the access permissions for the bucket that the policy is attached to. You configure a bucket policy by using the S3 PutBucketPolicy API through one of these tools:
 
 * link:../tenant/manage-bucket-policy.html[Tenant Manager].
-* AWS CLI using this command:
+* AWS CLI using this command (refer to link:operations-on-buckets.html[Operations on buckets]):
 +
 [subs="specialcharacters,quotes"]
 ----
 > aws s3api put-bucket-policy --bucket examplebucket --policy _file://policy.json_
 ----
-
-Refer to link:operations-on-buckets.html[Operations on buckets].
 
 == Example: Allow everyone read-only access to a bucket
 
