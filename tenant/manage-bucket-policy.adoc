@@ -11,13 +11,12 @@ summary: 'You can control user access for an S3 bucket and the objects in that b
 [.lead]
 You can control user access for an S3 bucket and the objects in that bucket.
 
-//link:../s3/bucket-and-group-access-policies.html[Use bucket and group access policies] for the bucket. You must have the Root access permission to change this setting.
-
-
 .Before you begin
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
 * You belong to a user group that has the link:tenant-management-permissions.html[Root access permission].
++
+The View all buckets and Manage all buckets permissions only allow viewing.
 
 .Steps
 
@@ -25,9 +24,12 @@ You can control user access for an S3 bucket and the objects in that bucket.
 
 . On the bucket details page, select *Bucket access* > *Bucket policy*.
 
-. Enter the bucket policy. Follow these guidelines:
+. Do one of the following:
+.. Enter a bucket policy by selecting the *Enable policy* checkbox. Then enter a valid JSON formatted string.
 +
-* Each bucket policy has a size limit of 20,480 bytes.
-* Enter a valid JSON formatted string.
+Each bucket policy has a size limit of 20,480 bytes.
+
+.. Modify an existing policy by editing the string.
+.. Disable a policy by unselecting *Enable policy*.
 
 For detailed information about bucket policies, including language syntax and examples, see link:../s3/example-bucket-policies.html[Example bucket policies].
