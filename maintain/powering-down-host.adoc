@@ -66,6 +66,21 @@ This LED is on when cached data needs to be written to the drives. You must wait
 .. Turn off the power to the appliance, and wait for the blue power LED to turn off.
 
 --
+
+.SG5800
+--
+.. Wait for the green Cache Active LED on the back of the storage controller to turn off.
++
+This LED is on when cached data needs to be written to the drives. You must wait for this LED to turn off before you turn off power.
+
+.. From the home page of SANtricity System Manager, select *View Operations in Progress*.
+
+.. Confirm that all operations have completed before continuing with the next step.
+
+.. Turn off both power switches on the controller shelf, and wait for all LEDs on the controller shelf to turn off.
+
+--
+
 .SG5700
 --
 .. Wait for the green Cache Active LED on the back of the storage controller to turn off.
@@ -99,6 +114,8 @@ https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 a
 https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
 
 https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
+
+https://docs.netapp.com/us-en/storagegrid-appliances/sg5800/index.html[SG5800 storage appliances^]
 
 https://docs.netapp.com/us-en/storagegrid-appliances/sg110-1100/index.html[SG110 and SG1100 services appliances^]
 
