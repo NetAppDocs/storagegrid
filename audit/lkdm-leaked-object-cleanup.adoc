@@ -25,7 +25,7 @@ CTYP
 a|
 Chunk type
 a|
-Type of chunk it takes the form of:
+Type of chunk:
 
 `ec: Erasure-coded object chunk` 
 
