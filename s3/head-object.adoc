@@ -27,13 +27,16 @@ The following request header is supported:
 
 * `x-amz-checksum-mode`
 +
-To return the `x-amz-checksum-sha256` header in the response, it must be provided in the request with "Value" enabled.
+To return the `x-amz-checksum-sha256` header in the response, it must be provided in the request with "Value" enabled. 
++
+The `partNumber` parameter request is not supported with `x-amz-checksum-mode` and does not return a checksum value in the response. 
 
 == Unsupported request header
 
 The following request header is not supported and returns `XNotImplemented`:
 
 * `x-amz-website-redirect-location`
+* `Range`
 
 == Versioning
 

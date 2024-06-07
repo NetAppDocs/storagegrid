@@ -40,6 +40,13 @@ CAUTION: If a multipart upload is not completed within 15 days, the operation is
 
 NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the Amazon S3 API implementation of the `ETag` value for multipart objects.
 
+== Unsupported request headers
+
+The following request header is not supported and returns `XNotImplemented`
+
+* `x-amz-sdk-checksum-algorithm`
+* `x-amz-trailer` 
+
 == Versioning
 
 This operation completes a multipart upload. If versioning is enabled for a bucket, the object version is created after completion of the multipart upload.

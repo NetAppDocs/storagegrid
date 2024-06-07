@@ -34,6 +34,7 @@ To return the `x-amz-checksum-sha256` header in the response, it must be provide
 The following request header is not supported and returns `XNotImplemented`:
 
 * `x-amz-website-redirect-location`
+* `Range`
 
 == Versioning
 

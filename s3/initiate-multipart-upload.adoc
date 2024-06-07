@@ -43,7 +43,7 @@ The following request headers are supported:
 * `Content-Type`
 * `x-amz-checksum-algorithm`
 +
-The `x-amz-checksum-algorithm` header only calculates a checksum value for SHA256. This value is returned when the header is provided in the request.
+The `x-amz-checksum-algorithm` header only calculates a checksum value for SHA256. This value is returned when `x-amz-checksum-algorithm` is provided in the request.
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata
 +
 When specifying the name-value pair for user-defined metadata, use this general format:
