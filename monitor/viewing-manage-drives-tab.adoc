@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: Manage drives tab, hardware diagnostics, fail drive, logically replace drive
 summary: 'The Manage drives tab enables you to access details and perform troubleshooting and maintenance tasks on the drives in the SGF6112 appliance.'
 ---
-= View the Manage drives tab (SGF6112 only)
+= View the Manage drives tab
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The Manage drives tab enables you to access details and perform troubleshooting and maintenance tasks on the drives in the SGF6112 appliance.
+The Manage drives tab enables you to access details and perform troubleshooting and maintenance tasks on drives in the appliances that support this feature.
 
-NOTE: The Manage drives tab is shown only for SGF6112 storage appliance nodes.
+NOTE: The Manage drives tab is supported for SG110, SG1100, SGF6112, and SG6160 storage appliance nodes.
 
 Using the Manage drives tab, you can do the following:
 
