@@ -11,7 +11,7 @@ summary: 'Erasure-coding schemes control how many data fragments and how many pa
 [.lead]
 Erasure-coding schemes control how many data fragments and how many parity fragments are created for each object.
 
-When you create or edit an ILM rule, you select an available erasure-coding scheme based on how many Storage Nodes and sites make up the storage pool you plan to use.
+When you create or edit an ILM rule, you select an available erasure-coding scheme. StorageGRID automatically creates erasure-coding schemes based on how many Storage Nodes and sites make up the storage pool you plan to use.
 
 == Data protection
 The StorageGRID system uses the Reed-Solomon erasure-coding algorithm. The algorithm slices an object into `k` data fragments and computes `m` parity fragments.
@@ -20,6 +20,8 @@ The `k + m = n` fragments are spread across `n` Storage Nodes to provide data pr
 
 * An object can sustain up to `m` lost or corrupt fragments.
 * To retrieve or repair an object, `k` fragments are needed.
+
+The best data protection is provided by the erasure-coding scheme with the highest node or volume failure tolerance within a storage pool. Failure tolerance depends on the number of parity fragments in the scheme.
 
 == Storage overhead
 The storage overhead of an erasure-coding scheme is calculated by dividing the number of parity fragments (`m`) by the number of data fragments (`k`). You can use the storage overhead to calculate how much disk space each erasure-coded object requires:
