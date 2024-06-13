@@ -18,10 +18,10 @@ The StorageGRID system uses the Reed-Solomon erasure-coding algorithm. The algor
 
 The `k + m = n` fragments are spread across `n` Storage Nodes to provide data protection as follows:
 
-* An object can sustain up to `m` lost or corrupt fragments.
 * To retrieve or repair an object, `k` fragments are needed.
+* An object can sustain up to `m` lost or corrupt fragments. The higher the value of `m`, the higher the failure tolerance.
 
-The best data protection is provided by the erasure-coding scheme with the highest node or volume failure tolerance within a storage pool. Failure tolerance depends on the number of parity fragments in the scheme.
+The best data protection is provided by the erasure-coding scheme with the highest node or volume failure tolerance within a storage pool.
 
 == Storage overhead
 The storage overhead of an erasure-coding scheme is calculated by dividing the number of parity fragments (`m`) by the number of data fragments (`k`). You can use the storage overhead to calculate how much disk space each erasure-coded object requires:
