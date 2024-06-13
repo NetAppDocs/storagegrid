@@ -20,4 +20,5 @@ To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid M
 These legacy requests have been removed:
 
 `/grid/server-types`
+
 `/grid/ntp-roles`
