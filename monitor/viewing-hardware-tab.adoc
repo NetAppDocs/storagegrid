@@ -108,6 +108,8 @@ If the status is "needs attention," first check the storage controller using SAN
 |Storage data drive size
 |The effective size of one data drive.
 
+For the SG6160, the size of the cache drive also displays.
+
 *Note*: For nodes with expansion shelves, use the <<shelf_data_drive_size,Data drive size for each shelf>> instead. Effective drive size might differ by shelf.
 
 |Storage RAID mode
