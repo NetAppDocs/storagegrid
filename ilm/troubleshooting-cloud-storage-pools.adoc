@@ -25,6 +25,19 @@ After resolving any underlying issues, you can determine if the error has been r
 
 If the underlying problem has been resolved, the error message is no longer displayed. However, if the underlying problem has not been fixed (or if a different error is encountered), the error message will be shown in the Last error column within a few minutes.
 
+== Error: Could not save a new Cloud Storage Pool configuration
+
+You might encounter this error when you select an unsupported platform, authentication, or protocol combination with S3 Object Lock during the configuration of a new Cloud Storage Pool. Examples of unsupported combination errors include the following:
+
+* "InvalidRequest: Content-MD5 OR x-amz-checksum" for the HTTP protocol
+* "Cloud Storage Pool Test Failed" for AMRA or anonymous access authentication type
+
+== Error: Endpoint check failure during new Cloud Storage Pool configuration
+
+You might encounter this error when both the default retention mode and S3 Object Lock are enabled after a Cloud Storage Pool endpoint is created in StorageGRID.
+
+Try correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This triggers the validation to update the S3 Object Lock flag.
+
 == Error: This Cloud Storage Pool contains unexpected content
 
 You might encounter this error when you try to create, edit, or delete a Cloud Storage Pool. This error occurs if the bucket or container includes the `x-ntap-sgws-cloud-pool-uuid` marker file, but that file does not have the expected UUID.
@@ -96,3 +109,5 @@ Try one or more of these steps to correct the issue:
 .Related information
 
 link:lifecycle-of-cloud-storage-pool-object.html[Lifecycle of a Cloud Storage Pool object]
+
+// 2024 JUN 14, SGWS-31273
