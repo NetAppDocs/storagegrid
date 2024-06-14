@@ -142,7 +142,6 @@ When you sign in, links appear for configuring buckets, identity federation, gro
 +
 Each link opens the corresponding page in the Tenant Manager. To complete the page, see the link:../tenant/index.html[instructions for using tenant accounts].
 
-
 | Port 443 and you did not set a password for the local root user
 | Select *Sign in*, and enter the credentials for a user in the Root access federated group.
 
@@ -161,7 +160,6 @@ The URL for the Tenant Manager has this format:
 |===
 
 === Sign in later
-
 
 [cols="1a,3a" options="header"]
 |===
@@ -193,6 +191,3 @@ The URL for the Tenant Manager has this format:
 == Configure the tenant
 
 Follow the instructions in link:../tenant/index.html[Use a tenant account] to manage tenant groups and users, S3 access keys, buckets, platform services, and account clone and cross-grid replication.
-
-
-
