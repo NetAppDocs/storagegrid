@@ -66,7 +66,7 @@ When an S3 client issues a PUT transaction, a request is made to create a new ob
 
 | LKRU
 | Object Lock Retain Until Date
-| Value of the request header `x-amz-object-lock-retain-until-date`, if present in the PutObject request.
+| Value of the request header `x-amz-object-lock-retain-until-date`, if present in the PutObject request. Values are limited to within 100 years of the date the bucket was created.
 
 | MTME
 | Last Modified Time
@@ -149,3 +149,5 @@ Empty for anonymous requests.
 | The new versioning state of a bucket. Two states are used: "enabled" or "suspended." Operations on objects don't include this field.
 
 |===
+
+// 2024 JUN 12, SGWS-30061
