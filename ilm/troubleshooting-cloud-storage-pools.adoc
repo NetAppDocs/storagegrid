@@ -29,14 +29,14 @@ If the underlying problem has been resolved, the error message is no longer disp
 
 You might encounter this error when you select an unsupported platform, authentication, or protocol combination with S3 Object Lock during the configuration of a new Cloud Storage Pool. Examples of unsupported combination errors include the following:
 
-* "InvalidRequest: Content-MD5 OR x-amz-checksum" for the HTTP protocol
-* "Cloud Storage Pool Test Failed" for AMRA or anonymous access authentication type
+* `InvalidRequest: Content-MD5 OR x-amz-checksum` for the HTTP protocol
+* `Cloud Storage Pool Test Failed` for the AMRA or anonymous access authentication type
 
 == Error: Endpoint check failure during new Cloud Storage Pool configuration
 
 You might encounter this error when both the default retention mode and S3 Object Lock are enabled after a Cloud Storage Pool endpoint is created in StorageGRID.
 
-Try correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This triggers the validation to update the S3 Object Lock flag.
+Try correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This triggers the validation of the Cloud Storage Pool configuration to update the S3 Object Lock flag.
 
 == Error: This Cloud Storage Pool contains unexpected content
 
