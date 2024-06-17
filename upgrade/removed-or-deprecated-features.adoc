@@ -73,3 +73,8 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 12.0
 | https://docs.netapp.com/us-en/storagegrid-118/swift/index.html[Use Swift REST API (StorageGRID 11.8)^]
 |===
+
+Also refer to:
+
+* link:../upgrade/changes-to-grid-management-api.html[Changes to the Grid Management API]
+* link:../upgrade/changes-to-tenant-management-api.html[Changes to the Tenant Management API]
