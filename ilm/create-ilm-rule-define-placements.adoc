@@ -87,6 +87,8 @@ NOTE: Erasure coding is best suited for objects greater than 1 MB. Don't use era
 .. Select the storage pool you want to add and the erasure-coding scheme you want to use.
 +
 The storage location for an erasure-coded copy includes the name of the erasure-coding scheme, followed by the name of the storage pool.
++
+Available erasure-coding schemes are limited by the number of Storage Nodes in the storage pool you select. A `Recommended` badge appears next to the schemes that provide either the link:../ilm/what-erasure-coding-schemes-are.html[best protection or the lowest storage overhead].
 
 . Optionally:
 .. Select *Add other type or location* to create additional copies at different locations.
