@@ -79,8 +79,8 @@ Some appliance models don't have a storage controller B.
 |Storage appliance chassis serial number
 |The chassis serial number of the appliance.
 
-|Storage controller bundle display version
-|The bundle display version of storage controller A.
+|Storage controller SANtricity OS version
+|The SANtricity OS version of storage controller A.
 
 |Storage controller NVSRAM version
 |NVSRAM version of the storage controller as reported by SANtricity System Manager.
