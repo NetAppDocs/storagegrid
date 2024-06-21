@@ -2,7 +2,7 @@
 permalink: monitor/viewing-manage-drives-tab.html
 sidebar: sidebar
 keywords: Manage drives tab, hardware diagnostics, fail drive, logically replace drive
-summary: 'The Manage drives tab enables you to access details and perform troubleshooting and maintenance tasks on the drives in the SGF6112 appliance.'
+summary: 'The Manage drives tab enables you to access details and perform troubleshooting and maintenance tasks on drives in the appliances that support this feature.'
 ---
 = View the Manage drives tab
 :icons: font
