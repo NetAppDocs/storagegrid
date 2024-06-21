@@ -11,8 +11,6 @@ summary: 'The Manage drives tab enables you to access details and perform troubl
 [.lead]
 The Manage drives tab enables you to access details and perform troubleshooting and maintenance tasks on drives in the appliances that support this feature.
 
-NOTE: The Manage drives tab is supported for SG110, SG1100, SGF6112, and SG6160 storage appliance nodes.
-
 Using the Manage drives tab, you can do the following:
 
 * View a layout of the data storage drives in the appliance
