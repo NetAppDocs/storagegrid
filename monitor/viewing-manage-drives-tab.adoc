@@ -21,4 +21,4 @@ Using the Manage drives tab, you can do the following:
 
 To access the Manage drives tab, you must have the link:../admin/admin-group-permissions.html[Storage appliance administrator or Root access permission].
 
-For information about using the Manage drives tab, see https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/manage-drives-tab.html[Use the Manage drives tab^].
+For information about using the Manage drives tab, see https://reveiw.docs.netapp.com/us-en/storagegrid-appliances_sg119-updates-kp-20240620/commonhardware/manage-drives-tab.html[Use the Manage drives tab^].
