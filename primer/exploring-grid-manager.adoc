@@ -30,7 +30,9 @@ For an explanation of the information shown on each card, select the help icon i
 [[search-field]]
 == Search field
 
-The *Search* field in the header bar allows you to quickly navigate to a specific page within Grid Manager. For example, you can enter *km* to access the Key management server (KMS) page. You can use *Search* to find entries in the sidebar of the Grid Manager and on the Configuration, Maintenance, and Support menus. 
+The *Search* field in the header bar allows you to quickly navigate to a specific page within Grid Manager. For example, you can enter *km* to access the Key management server (KMS) page.
+
+You can use *Search* to find entries in the sidebar of the Grid Manager and on the Configuration, Maintenance, and Support menus. You can also search by name for items like grid nodes and tenant accounts.
 
 == Help menu
 
