@@ -253,8 +253,6 @@ link:../tenant/creating-s3-bucket.html[Create S3 bucket].
 +
 Tenant names don't need to be unique. When the tenant account is created, it receives a unique, numeric account ID.
 
-. If you selected *Use grid federation connection*, select one of the available grid federation connections.
-
 . Define root access for the tenant account, based on whether your StorageGRID system uses link:using-identity-federation.html[identity federation], link:configuring-sso.html[single sign-on (SSO)], or both. 
 +
 [cols="1a,2a" options="header"]
@@ -282,7 +280,7 @@ Select this option if the only user for the tenant will be the root user. If oth
 +
 TIP: If S3 Object Lock is enabled for the grid, the bucket created in this step doesn't have S3 Object Lock enabled. If you need to use an S3 Object Lock bucket for this S3 application, don't select to create a bucket now. Instead, use Tenant Manager to link:../tenant/creating-s3-bucket.html[create the bucket] later.
 +
-.. Enter the name of the bucket that the S3 application will use. For example, `S3-bucket`.
+.. Enter the name of the bucket that the S3 application will use. For example, `s3-bucket`.
 +
 You can't change the bucket name after creating the bucket.
 .. Select the *Region* for this bucket.
