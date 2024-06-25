@@ -15,6 +15,9 @@ NOTE: You can continue to use deprecated versions of the management API with Sto
 
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
+== Review compliance settings after enabling global S3 Object Lock
+When you enable the global S3 Object Lock setting, the per-tenant settings will depend on the StorageGRID release at the time the tenant was created. You should review the compliance settings of existing tenants after enabling the global S3 Object Lock setting.
+
 == Legacy mgmt-api requests removed
 
 These legacy requests have been removed:
@@ -22,3 +25,7 @@ These legacy requests have been removed:
 `/grid/server-types`
 
 `/grid/ntp-roles`
+
+== Limit applied to values for Retain Until Date
+The values for the Retain Until Date parameter for an SPUT (S3 PUT) operation are limited to within 100 years of the date the object was ingested.
+
