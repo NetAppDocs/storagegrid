@@ -13,26 +13,21 @@ This release of StorageGRID introduces the following features and functional cha
 
 == Install, upgrade, hotfix
 
-
-
-
-=== Default audit destinations
+Default audit destinations::
 Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
 
 == Appliances
 
-.
-
 
 == Configure and manage
 
-=== 5,000 buckets per tenant
+5,000 buckets per tenant::
 StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
 
-=== Enable S3 Object Lock
+Enable S3 Object Lock::
 When you enable the global S3 Object Lock setting, the per-tenant settings will depend on the StorageGRID release at the time the tenant was created. You should review the compliance settings of existing tenants after enabling the global S3 Object Lock setting.
 
-=== Retain Until Date
+Retain Until Date::
 The values for the Retain Until Date parameter are limited to within 100 years of the date the object was ingested.
 
 == Expand grid, maintain grid, recover or replace nodes
