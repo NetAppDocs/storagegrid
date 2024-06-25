@@ -42,6 +42,9 @@ NOTE: You must decommission all Archive Nodes before you can upgrade to StorageG
 === Erasure-coding profiles page moved
 The Erasure-coding profiles page is now at *CONFIGURATION* > *System* > *Erasure coding*. It used to be in the ILM menu.
 
+=== Search enhancements
+The link:../primer/exploring-grid-manager.html#search-field[search function] has been enhanced to provide more targeted results.
+
 == Tenant Manager
 
 === Support for IAM Roles Anywhere
