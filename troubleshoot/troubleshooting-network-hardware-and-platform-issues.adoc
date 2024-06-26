@@ -144,9 +144,12 @@ NOTE: These steps are applicable only for *Node network reception frame error* a
 .. Check the physical integrity of the cables from the appliance to the switch.
 .. If you want to change FEC settings to try to resolve the alert, first ensure that the appliance is configured for *Auto* mode on the Link Configuration page of the StorageGRID Appliance Installer (see the instructions for your appliance:
 +
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SG6160^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SGF6112^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/changing-link-configuration-of-sg6000-cn-controller.html[SG6000^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg5800/changing-link-configuration-of-sg5800-controller.html[SG5800^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/changing-link-configuration-of-e5700sg-controller.html[SG5700^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg110-1100/changing-link-configuration-of-services-appliance.html[SG110 and SG1100^]
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg100-1000/changing-link-configuration-of-services-appliance.html[SG100 and SG1000^]
 
 .. Change the FEC settings on the switch ports. The StorageGRID appliance ports will adjust their FEC settings to match, if possible.

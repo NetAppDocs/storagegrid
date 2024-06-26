@@ -2,14 +2,14 @@
 permalink: maintain/starting-software-installation-on-services-appliance-recovery.html
 sidebar: sidebar
 keywords: storagegrid, recover, services appliance, start software installation
-summary: 'To install a Gateway Node or Admin Node on an SG100 or SG1000 services appliance, you use the StorageGRID Appliance Installer, which is included on the appliance.'
+summary: 'To install a Gateway Node or Admin Node on a services appliance, you use the StorageGRID Appliance Installer, which is included on the appliance.'
 ---
 = Start software installation on services appliance
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To install a Gateway Node or Admin Node on an SG100 or SG1000 services appliance, you use the StorageGRID Appliance Installer, which is included on the appliance.
+To install a Gateway Node or Admin Node on a services appliance, you use the StorageGRID Appliance Installer, which is included on the appliance.
 
 .Before you begin
 
@@ -28,7 +28,7 @@ NOTE: A recent version of StorageGRID software is preloaded onto the services ap
 
 .About this task
 
-To install StorageGRID software on an SG100 or SG1000 services appliance:
+To install StorageGRID software on a services appliance:
 
 * For a primary Admin Node, you specify the name of the node and then upload the appropriate software packages (if required).
 * For a non-primary Admin Node or a Gateway Node, you specify or confirm the IP address of the primary Admin Node and the name of the node.
@@ -38,7 +38,7 @@ To install StorageGRID software on an SG100 or SG1000 services appliance:
 
 .Steps
 
-. Open a browser and enter one of the IP addresses for the SG100 or SG1000 services appliance.
+. Open a browser and enter one of the IP addresses for the services appliance.
 +
 `https://_Controller_IP_:8443`
 +
