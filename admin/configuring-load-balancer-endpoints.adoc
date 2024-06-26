@@ -25,7 +25,7 @@ TIP: Swift details have been removed from this version of the doc site. See http
 
 * You have created any high availability (HA) groups you plan to use. HA groups are recommended, but not required. See link:managing-high-availability-groups.html[Manage high availability groups].
 
-* If the load balancer endpoint will be used by link:../admin/manage-s3-select-for-tenant-accounts.html[S3 tenants for S3 Select], it must not use the IP addresses or FQDNs of any bare-metal nodes. Only SG100 or SG1000 appliances and VMware-based software nodes are allowed for the load balancer endpoints used for S3 Select.
+* If the load balancer endpoint will be used by link:../admin/manage-s3-select-for-tenant-accounts.html[S3 tenants for S3 Select], it must not use the IP addresses or FQDNs of any bare-metal nodes. Only services appliances and VMware-based software nodes are allowed for the load balancer endpoints used for S3 Select.
 
 *  You have configured any VLAN interfaces you plan to use. See link:configure-vlan-interfaces.html[Configure VLAN interfaces].
 

@@ -22,7 +22,7 @@ The node replacement procedure you must follow depends on which platform will be
 |Linux
 | link:all-node-types-replacing-linux-node.html[Replace a Linux node]
 
-|SG100 and SG1000 services appliances
+|Services appliances
 | link:replacing-failed-node-with-services-appliance.html[Replace a services appliance]
 
 |OpenStack
