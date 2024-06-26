@@ -34,7 +34,7 @@ You might encounter this error when you select an unsupported platform, authenti
 
 == Error: Endpoint check failure during new Cloud Storage Pool configuration
 
-You might encounter this error when both the default retention mode and S3 Object Lock are enabled after a Cloud Storage Pool endpoint is created in StorageGRID.
+You might encounter this error when you enable the default retention mode after enabling S3 Object Lock. This error occurs if the PUT operation does not have a request header value, such as `Content-MD5`.
 
 To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This triggers the validation of the Cloud Storage Pool configuration to update the S3 Object Lock flag.
 
