@@ -67,9 +67,6 @@ When you specify `aws-chunked` for ``Content-Encoding``StorageGRID does not veri
 Chunked transfer encoding is supported if `aws-chunked` payload signing is also used.
 
 * `x-amz-checksum-sha256`
-+
-To return the `x-amz-checksum-sha256` header in the response, it must be provided in the request.
-
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata.
 +
 When specifying the name-value pair for user-defined metadata, use this general format:
