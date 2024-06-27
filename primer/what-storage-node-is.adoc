@@ -16,22 +16,22 @@ Each site in your StorageGRID system must have at least three Storage Nodes.
 == Types of Storage Nodes
 All Storage Nodes that were installed before StorageGRID 11.8 store both objects and the metadata for those objects. Starting in StorageGRID 11.8, you can choose the Storage Node type for new software-based storage nodes:
 
-Object and metadata Storage Nodes::
-By default, all new Storage Nodes installed in StorageGRID 11.8 will store both objects and metadata.
+Data and metadata Storage Nodes::
+By default, all new Storage Nodes installed in StorageGRID 11.8 will store both object data and metadata.
 
-Metadata-only Storage Nodes (software-based nodes only)::
+Metadata-only Storage Nodes::
 You can specify that a new software-based Storage Node be used to store only metadata. You can also add a metadata-only software-based Storage Node to your StorageGRID system during StorageGRID system expansion.
 +
-NOTE: You can only select the Storage Node type when initially installing the software-based node or when you install the software-based node during StorageGRID system expansion. You can't change the type after the node installation is complete.
+NOTE: You can only select the Storage Node type when initially installing the node or when you install the node during StorageGRID system expansion. You can't change the type after the node installation is complete.
 
 Installing a metadata-only node is typically not required. However, using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for all those objects.
 
-When installing a grid with software-based metadata-only nodes, the grid must also contain a minimum number of nodes for object storage:
+When installing a grid with metadata-only nodes, the grid must also contain a minimum number of nodes for object storage:
 
-* For a single-site grid, at least two Storage Nodes are configured for objects and metadata. 
-* For a multi-site grid, at least one Storage Node per site are configured for objects and metadata.
+* For a single-site grid, at least two Storage Nodes are configured for object data and metadata. 
+* For a multi-site grid, at least one Storage Node per site are configured for object data and metadata.
 
-Software-based Storage Nodes display a metadata-only indication for each metadata-only node on all pages that list the Storage Node type. 
+Storage Nodes display a metadata-only indication for each metadata-only node on all pages that list the Storage Node type. 
 
 == Primary services for Storage Nodes
 
