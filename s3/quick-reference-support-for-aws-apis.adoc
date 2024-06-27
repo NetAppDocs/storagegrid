@@ -821,6 +821,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 * `Content-Disposition`
 * `Content-Encoding`
 * `Content-Language`
+* `x-amz-checksum-sha256`
 * `x-amz-server-side-encryption`
 * `x-amz-storage-class`
 * `x-amz-server-side-encryption-customer-algorithm`

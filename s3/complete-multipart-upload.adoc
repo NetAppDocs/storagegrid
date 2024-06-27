@@ -42,7 +42,7 @@ NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the A
 
 == Unsupported request headers
 
-The following request headers are not supported`
+The following request headers are not supported:
 
 * `x-amz-sdk-checksum-algorithm`
 * `x-amz-trailer` 

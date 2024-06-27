@@ -100,9 +100,6 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 
 The following request headers are not supported:
 
-* `x-amz-sdk-checksum-algorithm`
-+ 
-The `x-amz-sdk-checksum-algorithm` header is unsupported for all protocols except SHA256.
 * `x-amz-trailer` 
 * `x-amz-website-redirect-location`
 +
