@@ -43,7 +43,7 @@ The following request headers are supported:
 * `Content-Type`
 * `x-amz-checksum-algorithm`
 +
-The `x-amz-checksum-algorithm` header only calculates a checksum value for SHA256.
+Currently, only the SHA256 value for `x-amz-checksum-algorithm` is supported.
 
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata
 +
@@ -98,9 +98,8 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 
 == Unsupported request headers
 
-The following request headers are not supported:
+The following request header is not supported:
 
-* `x-amz-trailer` 
 * `x-amz-website-redirect-location`
 +
 The `x-amz-website-redirect-location` header returns `XNotImplemented`.

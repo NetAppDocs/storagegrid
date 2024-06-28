@@ -24,13 +24,6 @@ The following request headers are supported:
 * `x-amz-copy-source-if-unmodified-since`
 * `x-amz-copy-source-if-modified-since`
 
-== Unsupported request header
-
-The following request header is not supported:
-
-* `x-amz-checksum-sha256`
-+
-When you copy an object, if the source object has a checksum, that checksum value is not copied to the new object.
 
 == Request headers for server-side encryption
 

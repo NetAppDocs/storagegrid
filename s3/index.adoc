@@ -44,12 +44,13 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 | Release| Comments
 
 | 11.9
-| Added support for `x-amz-checksum` response headers. These headers provide an object's checksum value for the SHA256 protocol. The following list shows the object request and the supported header:
+| Added support for pre-calculated SHA256 checksum values for the following requests and supported headers. You can use this feature to verify the integrity of uploaded objects:
 
 * CompleteMultipartUpload: `x-amz-checksum-sha256`
 * CreateMultipartUpload: `x-amz-checksum-algorithm`
 * GetObject: `x-amz-checksum-mode`
 * HeadObject: `x-amz-checksum-mode`
+* ListParts: No associated `x-amz-checksum` header
 * PutObject: `x-amz-checksum-sha256`
 * UploadPart: `x-amz-checksum-sha256` 
 

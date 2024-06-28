@@ -81,7 +81,6 @@ link:complete-multipart-upload.html[CompleteMultipartUpload]
 .URI query parameters and request headers
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus these additional headers:
 
-* `x-amz-checksum-sha256`
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-modified-since`
