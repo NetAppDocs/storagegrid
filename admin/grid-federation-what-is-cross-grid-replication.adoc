@@ -61,7 +61,7 @@ The S3 client can verify an object's replication status by issuing a GetObject o
 | Grid| Replication status 
 
 | Source
-| * *SUCCESS*: The replication was successful for all grid connections.
+| * *COMPLETED*: The replication was successful for all grid connections.
 * *PENDING*: The object hasn't been replicated to at least one grid connection.
 * *FAILURE*: Replication is not pending for any grid connection and at least one failed with a permanent failure. A user must resolve the error.
 
@@ -147,6 +147,4 @@ If an S3 client issues a PutObjectTagging or DeleteObjectTagging request, `501 N
 
 The source grid's maximum segment size applies to objects replicated to the destination grid. When objects are replicated to another grid, the *Maximum Segment Size* setting (*CONFIGURATION* > *System* > *Storage options*) of the source grid will be used on both grids. For example, suppose the maximum segment size for the source grid is 1 GB, while the maximum segment size of the destination grid is 50 MB. If you ingest a 2-GB object on the source grid, that object is saved as two 1-GB segments. It will also be replicated to the destination grid as two 1-GB segments, even though that grid's maximum segment size is 50 MB. 
 
-
-
-
+// 2024 JULY 1, SGRIDDOC-48
