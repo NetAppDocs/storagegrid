@@ -85,8 +85,6 @@ In contrast, the CloudMirror service does replicate PutObjectTagging requests or
 
 | Bucket with S3 Object Lock enabled
 | Replication is not supported for source or destination buckets with S3 Object Lock enabled.
-
-If a destination S3 bucket for CloudMirror replication has S3 Object Lock enabled and a default retention configured, the bucket replication configuration (PutBucketReplication) succeeds. However, when CloudMirror tries to replicate the object, the request fails with the following error: "Endpoint had an AWS failure: InvalidRequest: Content-MD5 OR x-amz-checksum- HTTP header is required for Put Object requests with Object Lock parameters". To reenable CloudMirror replication, disable the default retention setting.
 |===
 
 // 2024 JUN 28, SGRIDDOC-67
