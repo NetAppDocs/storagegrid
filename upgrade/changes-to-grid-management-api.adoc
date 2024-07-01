@@ -22,3 +22,9 @@ These legacy requests have been removed:
 `/grid/server-types`
 
 `/grid/ntp-roles`
+
+== Changes to `GET /private/storage-usage` API
+* A new property `''usageCacheDuration''` has been added to the response body. This property specifies the duration (in seconds) for which the usage lookup cache remains valid. This is used when checking the usage against tenant storage quota and bucket capacity limits.
+* The `GET /api/v4//private/storage-usage` behavior has been corrected to match nesting from the schema.
+* These changes only apply to the private API.
+// 2024-07-2, jira SWGS-31283
