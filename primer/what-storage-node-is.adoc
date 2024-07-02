@@ -42,7 +42,7 @@ When installing metadata-only nodes, the grid must also contain a minimum number
 Storage Nodes display a metadata-only indication for each metadata-only node on all pages that list the Storage Node type.
 
 Data-only Storage Node::
-Using a Storage Node exclusively for metadata can make sense if.............
+Using a Storage Node exclusively for data can make sense if.............
 
 When installing data-only nodes, the grid must also contain a minimum number of nodes for metadata storage:
 
