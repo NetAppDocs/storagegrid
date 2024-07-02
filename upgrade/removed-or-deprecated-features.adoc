@@ -41,7 +41,10 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.9
 | https://docs.netapp.com/us-en/storagegrid-118/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html[Considerations for decommissioning Archive Nodes (StorageGRID 11.8)^]
 
-*Note*: You must decommission all Archive Nodes before you can upgrade to StorageGRID 11.9.
+*Note*: Before starting your upgrade, you must:
+
+* Decommission all Archive Nodes. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
+* Remove all Archive Node references from the Cloud Storage Pools and ILM policies. See https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
 
 | Audit export through CIFS/Samba
 | 11.1
