@@ -27,7 +27,7 @@ The following request header is supported:
 
 * `x-amz-checksum-mode`
 + 
-The `Range` header is not supported with `x-amz-checksum-mode` for GetObject.
+The `Range` header is not supported with `x-amz-checksum-mode` for GetObject. When you include `Range` in the request with `x-amz-checksum-mode` enabled, a checksum value is not returned in the response.
 
 == Unsupported request header
 

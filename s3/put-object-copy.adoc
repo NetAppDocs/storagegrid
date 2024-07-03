@@ -80,6 +80,8 @@ The following request headers aren't supported:
 * `Content-Language`
 * `Expires`
 * `x-amz-checksum-sha256`
++
+ When you copy an object, if the source object has a checksum, that checksum value is not copied to the new object."
 * `x-amz-website-redirect-location`
 
 == Storage class options
