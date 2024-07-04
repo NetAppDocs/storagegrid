@@ -50,7 +50,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 * CreateMultipartUpload: `x-amz-checksum-algorithm`
 * GetObject: `x-amz-checksum-mode`
 * HeadObject: `x-amz-checksum-mode`
-* ListParts: No associated `x-amz-checksum` header
+* ListParts
 * PutObject: `x-amz-checksum-sha256`
 * UploadPart: `x-amz-checksum-sha256` 
 
