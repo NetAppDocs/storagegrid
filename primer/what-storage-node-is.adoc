@@ -24,30 +24,30 @@ You can select the Storage Node type in these situations:
 
 * When initially installing a Storage Node
 * When you add a Storage Node during StorageGRID system expansion
-* After you decommission and then add a new Storage Node
 
 NOTE: You can't change the type after the Storage Node installation is complete.
 
-Data and metadata Storage Node::
-By default, all new Storage Nodes installed will store both object data and metadata.
+Data and metadata Storage Node (combined)::
+By default, all new Storage Nodes will store both object data and metadata. This type of Storage Node is called a _combined_ Storage Node.
 
 Metadata-only Storage Node::
 Using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for those objects.
 
 When installing metadata-only nodes, the grid must also contain a minimum number of nodes for data storage:
 
-* For a single-site grid, configure at least two Storage Nodes for object data and metadata. 
-* For a multi-site grid, configure at least one Storage Node _per site_ for object data and metadata.
+* For a single-site grid, configure at least two combined or data-only Storage Nodes. 
+* For a multi-site grid, configure at least one combined or data-only Storage Node _per site_.
 
 Storage Nodes display a metadata-only indication for each metadata-only node on all pages that list the Storage Node type.
 
 Data-only Storage Node::
-Using a Storage Node exclusively for data can make sense if.............
+Using a Storage Node exclusively for data can make sense if your Storage Nodes have differing performance characteristics. For example, you could have data-only, high-capacity spinning-disk Storage Nodes accompanied by metadata-only high-performance Storage Nodes.
 
-When installing data-only nodes, the grid must also contain a minimum number of nodes for metadata storage:
+When installing data-only nodes, the grid must contain the following:
 
-* _first scenario_
-* _second scenario_
+* A minimum of two combined or data-only Storage Nodes _per grid_
+* At least one combined or data-only Storage Node _per site_
+* A minimum of three combined or metadata-only Storage Nodes _per site_
 
 Storage Nodes display a data-only indication for each data-only node on all pages that list the Storage Node type.
 
@@ -73,6 +73,8 @@ NOTE: Some services, such as the ADC service and the RSM service, typically exis
 
 The Administrative Domain Controller (ADC) service authenticates grid nodes and their connections with each other. The ADC service is hosted on a minimum of three Storage Nodes at a site.
 
+*Note*: Data-only Storage Nodes don't host the ADC service.
+
 The ADC service maintains topology information including the location and availability of services. When a grid node requires information from another grid node or an action to be performed by another grid node, it contacts an ADC service to find the best grid node to process its request. In addition, the ADC service retains a copy of the StorageGRID deployment's configuration bundles, allowing any grid node to retrieve current configuration information. 
 
 To facilitate distributed and islanded operations, each ADC service synchronizes certificates, configuration bundles, and information about services and topology with the other ADC services in the StorageGRID system.
@@ -87,8 +89,12 @@ The connection of each grid node lets the ADC service gather topology informatio
 | Cassandra
 | Stores and protects object metadata.
 
+*Note*: Data-only Storage Nodes don't host the Cassandra service.
+
 | Cassandra Reaper
 | Performs automatic repairs of object metadata.
+
+*Note*: Data-only Storage Nodes don't host the Cassandra Reaper service.
 
 | Chunk
 | Manages erasure-coded data and parity fragments.

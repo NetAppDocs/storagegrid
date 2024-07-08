@@ -71,32 +71,34 @@ The grid node configuration form appears.
 |===
 | Field| Description
 
-|Site
-|The name of the site the grid node will be associated with. If you are adding multiple nodes, be sure to select the correct site for each node. If you are adding a new site, all nodes are added to the new site.
+| Site
+| The name of the site the grid node will be associated with. If you are adding multiple nodes, be sure to select the correct site for each node. If you are adding a new site, all nodes are added to the new site.
 
-|Name
-|The system name for the node. System names are required for internal StorageGRID operations and can't be changed.
+| Name
+| The system name for the node. System names are required for internal StorageGRID operations and can't be changed.
 
-|NTP Role
-|The Network Time Protocol (NTP) role of the grid node:
+| Storage Type
+| Storage Nodes only.
+
+| NTP Role
+| The Network Time Protocol (NTP) role of the grid node:
 
 * Select *Automatic* (default) to automatically assign the NTP role to the node. The Primary role will be assigned to Admin Nodes, Storage Nodes with ADC services, Gateway Nodes, and any grid nodes that have non-static IP addresses. The Client role will be assigned to all other grid nodes.
 * Select *Primary* to manually assign the Primary NTP role to the node. At least two nodes at each site should have the Primary role to provide redundant system access to external timing sources.
 * Select *Client* to manually assign the Client NTP role to the node.
 
-|ADC Service (Storage Nodes only)
-|Whether this Storage Node will run the Administrative Domain Controller (ADC) service. The ADC service keeps track of the location and availability of grid services. At least three Storage Nodes at each site must include the ADC service. You can't add the ADC service to a node after it is deployed.
+| ADC Service (combined or metadata-only Storage Nodes)
+| Whether this Storage Node will run the Administrative Domain Controller (ADC) service. The ADC service keeps track of the location and availability of grid services. At least three Storage Nodes at each site must include the ADC service. You can't add the ADC service to a node after it is deployed.
 
 * Select *Yes* if the Storage Node you are replacing includes the ADC service. Because you can't decommission a Storage Node if too few ADC services would remain, this ensures that a new ADC service is available before the old service is removed.
 * Select *Automatic* to let the system determine whether this node requires the ADC service.
 
 Learn about the link:../maintain/understanding-adc-service-quorum.html[ADC quorum].
 
-|Storage Grade (Storage Nodes only)
-|Use the *Default* storage grade, or select the custom storage grade you want to assign to this new node.
+| Storage Grade (combined or data-only Storage Nodes)
+| Use the *Default* storage grade, or select the custom storage grade you want to assign to this new node.
 
 Storage grades are used by ILM storage pools, so your selection can affect which objects will be placed on the Storage Node. 
-
 |===
 
 
@@ -155,7 +157,6 @@ If you are adding Storage Nodes to an existing site, review the percentage shown
 image::../media/grid_expansion_starting_cassandra.png[Grid Expansion > Starting Cassandra and streaming data]
 
 This percentage estimates how complete the Cassandra streaming operation is, based on the total amount of Cassandra data available and the amount that has already been written to the new node.
-
 
 --
 
