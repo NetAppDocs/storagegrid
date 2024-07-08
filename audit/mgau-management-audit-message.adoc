@@ -9,7 +9,7 @@ summary: 'The Management category logs user requests to the Management API. Ever
 :imagesdir: ../media/
 
 [.lead]
-The Management category logs user requests to the Management API. Every HTTP request that is not a GET or HEAD request to a valid API URI logs a response with the username, IP, and type of request to the API. Invalid API URIs (such as /api/v3-authorize) and invalid requests to valid API URIs are not logged.
+The Management category logs user requests to the Management API. Every HTTP request that is not a GET or HEAD request to a valid API URI logs a response containing the username, IP, and type of request to the API. Invalid API URIs (such as /api/v3-authorize) and invalid requests to valid API URIs are not logged.
 
 [cols="1a,1a,4a" options="header"]
 |===
