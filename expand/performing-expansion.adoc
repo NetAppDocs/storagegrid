@@ -77,8 +77,10 @@ The grid node configuration form appears.
 | Name
 | The system name for the node. System names are required for internal StorageGRID operations and can't be changed.
 
-| Storage Type
-| Storage Nodes only.
+| Storage Type (Storage Nodes only)
+| * *Combined*: Object-data and metadata Storage Node
+* *Data-only*: Storage Node containing only object data (no metadata)
+* *Metadata-only*: Storage Node containing only metadata (no object data)
 
 | NTP Role
 | The Network Time Protocol (NTP) role of the grid node:
