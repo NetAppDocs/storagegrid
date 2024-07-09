@@ -38,7 +38,7 @@ When installing metadata-only nodes, the grid must also contain a minimum number
 * For a single-site grid, configure at least two combined or data-only Storage Nodes. 
 * For a multi-site grid, configure at least one combined or data-only Storage Node _per site_.
 
-Storage Nodes display a metadata-only indication for each metadata-only node on all pages that list the Storage Node type.
+NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service>> and can process S3 client requests, performance won't increase if these Storage Nodes contain only spinning-disk storage.
 
 Data-only Storage Node::
 Using a Storage Node exclusively for data can make sense if your Storage Nodes have differing performance characteristics. For example, you could have data-only, high-capacity spinning-disk Storage Nodes accompanied by metadata-only high-performance Storage Nodes.
@@ -48,8 +48,6 @@ When installing data-only nodes, the grid must contain the following:
 * A minimum of two combined or data-only Storage Nodes _per grid_
 * At least one combined or data-only Storage Node _per site_
 * A minimum of three combined or metadata-only Storage Nodes _per site_
-
-Storage Nodes display a data-only indication for each data-only node on all pages that list the Storage Node type.
 
 == Primary services for Storage Nodes
 The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
@@ -64,7 +62,9 @@ NOTE: Some services, such as the ADC service and the RSM service, typically exis
 | Manages tenant accounts.
 
 | Administrative Domain Controller (ADC)
-| Maintains topology and grid-wide configuration. 
+| Maintains topology and grid-wide configuration.
+
+*Note*: Data-only Storage Nodes don't host the ADC service.
 
 // Start snippet: collapsible block
 .Details
@@ -72,8 +72,6 @@ NOTE: Some services, such as the ADC service and the RSM service, typically exis
 ====
 
 The Administrative Domain Controller (ADC) service authenticates grid nodes and their connections with each other. The ADC service is hosted on a minimum of three Storage Nodes at a site.
-
-*Note*: Data-only Storage Nodes don't host the ADC service.
 
 The ADC service maintains topology information including the location and availability of services. When a grid node requires information from another grid node or an action to be performed by another grid node, it contacts an ADC service to find the best grid node to process its request. In addition, the ADC service retains a copy of the StorageGRID deployment's configuration bundles, allowing any grid node to retrieve current configuration information. 
 
@@ -84,7 +82,6 @@ In general, all grid nodes maintain a connection to at least one ADC service. Th
 The connection of each grid node lets the ADC service gather topology information. This grid node information includes the CPU load, available disk space (if it has storage), supported services, and the grid node's site ID. Other services ask the ADC service for topology information through topology queries. The ADC service responds to each query with the latest information received from the StorageGRID system.
 
 ====
-
 
 | Cassandra
 | Stores and protects object metadata.
@@ -119,14 +116,14 @@ The DDS service tracks the total number of objects ingested into the StorageGRID
 | Identity (idnt)
 | Federates user identities from LDAP and Active Directory.
 
-| Local Distribution Router (LDR)
+| [[ldr-service]]Local Distribution Router (LDR)
 | Processes object storage protocol requests and manages object data on disk. 
 
 .Details
 [%collapsible]
 ====
 
-Each Storage Node includes the Local Distribution Router (LDR) service. This service handles content transport functions, including data storage, routing, and request handling. The LDR service does most of the StorageGRID system's hard work by handling data transfer loads and data traffic functions.
+Each _combined_, _data-only_, and _metadata-only_ Storage Node includes the Local Distribution Router (LDR) service. This service handles content transport functions, including data storage, routing, and request handling. The LDR service does most of the StorageGRID system's hard work by handling data transfer loads and data traffic functions.
 
 The LDR service handles the following tasks:
 
@@ -163,12 +160,3 @@ To ensure redundancy and thus protection against loss, three copies of object me
 | Server Status Monitor (SSM)
 | Monitors the operating system and underlying hardware.
 |===
-
-
-
-
-
-
-
-
-
