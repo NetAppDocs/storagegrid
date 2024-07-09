@@ -31,7 +31,7 @@ Data and metadata Storage Node (combined)::
 By default, all new Storage Nodes will store both object data and metadata. This type of Storage Node is called a _combined_ Storage Node.
 
 Metadata-only Storage Node::
-Using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for those objects.
+Using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for those objects. Additionally, metadata-only Storage Nodes hosted on high-performance appliances can increase performance.
 
 When installing metadata-only nodes, the grid must also contain a minimum number of nodes for data storage:
 
@@ -41,7 +41,7 @@ When installing metadata-only nodes, the grid must also contain a minimum number
 NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service>> and can process S3 client requests, performance won't increase if these Storage Nodes contain only spinning-disk storage.
 
 Data-only Storage Node::
-Using a Storage Node exclusively for data can make sense if your Storage Nodes have differing performance characteristics. For example, you could have data-only, high-capacity spinning-disk Storage Nodes accompanied by metadata-only high-performance Storage Nodes.
+Using a Storage Node exclusively for data can make sense if your Storage Nodes have differing performance characteristics. For example, to potentially increase performance, you could have data-only, high-capacity spinning-disk Storage Nodes accompanied by metadata-only high-performance Storage Nodes.
 
 When installing data-only nodes, the grid must contain the following:
 
