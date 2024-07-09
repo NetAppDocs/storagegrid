@@ -36,13 +36,6 @@ Changes to this setting don't apply to objects already in the bucket or to any o
 |===
 | Default retention mode| Description
 
-| Compliance
-| * The object can't be deleted until its retain-until-date is reached.
-
-* The object's retain-until-date can be increased, but it can't be decreased.
-
-* The object's retain-until-date can't be removed until that date is reached.
-
 | Governance
 
 |* Users with the `s3:BypassGovernanceRetention` permission can use the `x-amz-bypass-governance-retention: true` request header to bypass retention settings.
@@ -51,8 +44,13 @@ Changes to this setting don't apply to objects already in the bucket or to any o
 
 * These users can increase, decrease, or remove an object's retain-until-date.
 
-|===
+| Compliance
+| * The object can't be deleted until its retain-until-date is reached.
 
+* The object's retain-until-date can be increased, but it can't be decreased.
+
+* The object's retain-until-date can't be removed until that date is reached.
+|===
 
 . If *Default retention* is enabled, specify the *Default retention period* for the bucket.
 +

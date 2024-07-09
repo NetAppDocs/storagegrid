@@ -47,7 +47,7 @@ NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objec
 * Must be DNS compliant.
 * Must contain at least 3 and no more than 63 characters.
 * Each label must start and end with a lowercase letter or a number and can only use lowercase letters, numbers, and hyphens.
-* Should not use periods in virtual hosted style requests. Periods will cause problems with server wildcard certificate verification.
+* Must not contain periods in virtual hosted style requests. Periods will cause problems with server wildcard certificate verification.
 
 For more information, see the https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html[Amazon Web Services (AWS) documentation on bucket naming rules^].
 
@@ -90,13 +90,6 @@ When *Default retention* is enabled, new objects added to the bucket will be aut
 |===
 | Default retention mode| Description
 
-| Compliance
-| * The object can't be deleted until its retain-until-date is reached.
-
-* The object's retain-until-date can be increased, but it can't be decreased.
-
-* The object's retain-until-date can't be removed until that date is reached.
-
 | Governance
 
 |* Users with the `s3:BypassGovernanceRetention` permission can use the `x-amz-bypass-governance-retention: true` request header to bypass retention settings.
@@ -104,11 +97,23 @@ When *Default retention* is enabled, new objects added to the bucket will be aut
 * These users can delete an object version before its retain-until-date is reached.
 
 * These users can increase, decrease, or remove an object's retain-until-date.
+
+| Compliance
+| * The object can't be deleted until its retain-until-date is reached.
+
+* The object's retain-until-date can be increased, but it can't be decreased.
+
+* The object's retain-until-date can't be removed until that date is reached.
 |===
 
 .. If *Default retention* is enabled, specify the *Default retention period* for the bucket.
 +
-The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested. Specify a value between 1 and 36,500 days or between 1 and 100 years, inclusive.
+The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested. A maximum retention period is set when the tenant is created. The default retention period can't exceed the maximum retention period. The maximum retention period that can be set for a tenant is 100 years.
+
+
+//This value can't exceed the maximum retention period set for the tenant when the tenant was created.
+
+
 
 . [[capacity-limit]]Optionally, select *Enable capacity limit*.
 +
