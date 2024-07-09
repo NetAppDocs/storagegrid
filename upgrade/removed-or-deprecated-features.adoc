@@ -29,7 +29,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 |===
 | Feature| Deprecated| End of Life| Removed| Links to earlier documentation
 
-| Alarms (_not Alerts_)
+| Legacy Alarms (_not Alerts_)
 | 11.7
 | 11.8
 | 11.9
