@@ -99,7 +99,18 @@ m| nginx
 | Load balancer and grid federation configuration files and logs. Also includes Grid Manager and Tenant Manager traffic logs.
 
 m| nginx-gw
-| Load balancer and grid federation configuration files and logs.
+| * `access.log`: Grid Manager and Tenant manager request log messages.
+
+**	These messages are prefixed with `mgmt:` when exported using syslog.
+** The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$request" "$http_host" "$http_user_agent" "$http_referer"`
+
+*	`cgr-access.log.gz`: Inbound cross-grid replication requests.
+** These messages are prefixed with `cgr:` when exported using syslog.
+** The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
+
+*	`endpoint-access.log.gz`: S3 and Swift requests to load balancer endpoints.
+**	These messages are prefixed with `endpoint:` when exported using syslog.
+**	The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
 
 m| ntp
 | NTP configuration file and logs.
