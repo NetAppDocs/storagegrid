@@ -27,7 +27,7 @@ The following request header is supported:
 
 * `x-amz-checksum-mode` 
 +
-The `partNumber` parameter and `Range` header are not supported with `x-amz-checksum-mode` for HeadObject. When you include them in the request with `x-amz-checksum-mode` enabled, StorageGRID does not return a checksum value in the response."
+The `partNumber` parameter and `Range` header are not supported with `x-amz-checksum-mode` for HeadObject. When you include them in the request with `x-amz-checksum-mode` enabled, StorageGRID does not return a checksum value in the response.
 
 == Unsupported request header
 
