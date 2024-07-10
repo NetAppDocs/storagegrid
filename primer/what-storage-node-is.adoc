@@ -14,7 +14,7 @@ Storage Nodes manage and store object data and metadata. Storage Nodes include t
 Each site in your StorageGRID system must have at least three Storage Nodes.
 
 == Types of Storage Nodes
-You can choose from these Storage Node type for new software- and appliance-based Storage Nodes:
+During installation, you can select the type of Storage Node you want to install. These types are available for software-based Storage Nodes and for appliance-based Storage Nodes that support the feature:
 
 * Combined data and metadata Storage Node
 * Metadata-only Storage Node
