@@ -54,6 +54,6 @@ Changes to this setting don't apply to objects already in the bucket or to any o
 
 . If *Default retention* is enabled, specify the *Default retention period* for the bucket.
 +
-The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested. Specify a value between 1 and 36,500 days or between 1 and 100 years, inclusive.
+The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested. Specify a value that is less than or equal to the maximum retention period for the tenant, as set by the grid administrator.
 
 . Select *Save changes*.
