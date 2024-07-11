@@ -149,3 +149,5 @@ Empty for anonymous requests.
 | The new versioning state of a bucket. Two states are used: "enabled" or "suspended." Operations on objects don't include this field.
 
 |===
+
+// 2024 JUN 19, SGWS-30061
