@@ -1,7 +1,7 @@
 ---
 permalink: upgrade/changes-to-grid-management-api.html
 sidebar: sidebar
-keywords: grid management api, api, api version, swagger, rest api
+keywords: grid management api, api, api version, swagger, rest api, usageCacheDuration 
 summary: 'StorageGRID 11.8 uses version 4 of the Grid Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported.'
 ---
 = Changes to the Grid Management API
@@ -29,3 +29,9 @@ These legacy requests have been removed:
 == Limit applied to values for Retain Until Date
 The values for the Retain Until Date parameter for an SPUT (S3 PUT) operation are limited to within 100 years of the date the object was ingested.
 
+== Changes to `GET /private/storage-usage` API
+* A new property, `usageCacheDuration`, has been added to the response body. This property specifies the duration (in seconds) for which the usage lookup cache remains valid. This value applies when checking the usage against tenant storage quota and bucket capacity limits.
+* The `GET /api/v4/private/storage-usage` behavior has been corrected to match nesting from the schema.
+* These changes apply only to the private API.
+
+// 2024-07-2, jira SWGS-31283
