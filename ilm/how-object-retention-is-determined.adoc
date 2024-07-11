@@ -27,7 +27,7 @@ Tenant users can use these methods to control how long their objects are stored 
 
 Grid administrators can use these methods to control object retention:
 
-* Set an S3 Object Lock maximum retention period for each tenant. Then, tenant users can set a default retention period for each of their buckets.
+* Set an S3 Object Lock maximum retention period for each tenant. Then, tenant users can set a default retention period for each of their buckets. The maximum retention period is also enforced on any newly ingested objects for that bucket (object's retain-until-date).
 
 * Create ILM placement instructions to control how long objects are stored. When objects are matched by an ILM rule, StorageGRID stores those objects until the last time period in the ILM rule has elapsed. Objects are retained indefinitely if "forever" is specified for the placement instructions.
 
