@@ -60,7 +60,8 @@ link:operations-for-multipart-uploads.html[Operations for multipart uploads]
 .URI query parameters and request headers
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus this additional URI query parameter:
 
-* `uploadId`	
+* `uploadId`
+* `x-amz-checksum-sha256`	
 
 .Request body XML tags
 StorageGRID supports these request body XML tags:
