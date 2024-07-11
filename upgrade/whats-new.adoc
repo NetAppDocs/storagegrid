@@ -25,7 +25,7 @@ Fresh installations of StorageGRID 11.9 default to local node audit destinations
 StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
 
 Review compliance settings after enabling global S3 Object Lock::
-When you enable the global S3 Object Lock setting, the per-tenant settings will depend on the StorageGRID release at the time the tenant was created. You should review the compliance settings of existing tenants after enabling the global S3 Object Lock setting.
+Review the compliance settings of existing tenants after you enable the global S3 Object Lock setting. When you enable this setting, the S3 Object Lock per-tenant settings depend on the StorageGRID release at the time the tenant was created.
 
 Limit applied to values for Retain Until Date::
 The values for the Retain Until Date parameter for an SPUT (S3 PUT) operation are limited to within 100 years of the date the object was ingested.

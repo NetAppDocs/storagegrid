@@ -16,7 +16,8 @@ NOTE: You can continue to use deprecated versions of the management API with Sto
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
 == Review compliance settings after enabling global S3 Object Lock
-When you enable the global S3 Object Lock setting, the per-tenant settings will depend on the StorageGRID release at the time the tenant was created. You should review the compliance settings of existing tenants after enabling the global S3 Object Lock setting.
+
+Review the compliance settings of existing tenants after you enable the global S3 Object Lock setting. When you enable this setting, the S3 Object Lock per-tenant settings depend on the StorageGRID release at the time the tenant was created.
 
 == Legacy mgmt-api requests removed
 
