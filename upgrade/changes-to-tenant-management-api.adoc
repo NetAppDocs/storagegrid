@@ -16,8 +16,8 @@ NOTE: You can continue to use deprecated versions of the Tenant Management API w
 To learn more, go to link:../tenant/understanding-tenant-management-api.html[Understand the Tenant Management API].
 
 
-== New parameter for setting bucket capacity limit
+== New endpoint for bucket capacity limit
 
-You can use the `quotaObjectBytes` parameter to set a capacity limit for a bucket's objects. 
+You can use the `/org/containers/{bucketName}/quota-object-bytes` API endpoint with GET/PUT operations to get/set the storage capacity limit for a bucket.
 
 // 2024 JUL 10, SGWS-31727
