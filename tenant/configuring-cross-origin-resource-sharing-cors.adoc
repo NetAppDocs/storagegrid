@@ -14,7 +14,9 @@ You can configure cross-origin resource sharing (CORS) for an S3 bucket if you w
 .Before you begin
 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You belong to a user group that has the link:tenant-management-permissions.html[Manage all buckets permission]. This permission overrides the permissions settings in group or bucket policies.
+* For GET CORS configuration requests, you belong to a user group that has the link:tenant-management-permissions.html[Manage all buckets or View all buckets permission]. These permissions override the permissions settings in group or bucket policies.
+* For PUT CORS configuration requests, you belong to a user group that has the link:tenant-management-permissions.html[Manage all buckets permission]. This permission overrides the permissions settings in group or bucket policies.
+* The link:tenant-management-permissions.html[Root access permission] provides access to all CORS configuration requests.
 
 .About this task
 
