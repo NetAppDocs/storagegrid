@@ -98,7 +98,7 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 
 == Unsupported request headers
 
-The following request header is not supported:
+The following request header isn't supported:
 
 * `x-amz-website-redirect-location`
 +
