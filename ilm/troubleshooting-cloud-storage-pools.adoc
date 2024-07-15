@@ -110,4 +110,5 @@ Try one or more of these steps to correct the issue:
 
 link:lifecycle-of-cloud-storage-pool-object.html[Lifecycle of a Cloud Storage Pool object]
 
+// 2024 JUN 18, SGWS-31715
 // 2024 JUN 14, SGWS-31273
