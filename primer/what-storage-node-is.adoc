@@ -38,7 +38,7 @@ When installing metadata-only nodes, the grid must also contain a minimum number
 * For a single-site grid, configure at least two combined or data-only Storage Nodes. 
 * For a multi-site grid, configure at least one combined or data-only Storage Node _per site_.
 
-NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service>> and can process S3 client requests, performance won't increase if these Storage Nodes contain only spinning-disk storage.
+NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service>> and can process S3 client requests, StorageGRID performance might not increase.
 
 Data-only Storage Node::
 Using a Storage Node exclusively for data can make sense if your Storage Nodes have differing performance characteristics. For example, to potentially increase performance, you could have data-only, high-capacity spinning-disk Storage Nodes accompanied by metadata-only high-performance Storage Nodes.
