@@ -63,5 +63,7 @@ If the Cloud Storage Pool is an Azure Blob storage container, StorageGRID transi
 
 | 
 | 
-| *Note*: FabricPool data can't be tiered to Cloud Storage Pools. Objects with S3 Object Lock enabled can't be placed in Cloud Storage Pools.
+| *Note*: FabricPool data can't be tiered to Cloud Storage Pools.
 |===
+
+// 2024 JULY 15, SGRIDDOC-80
