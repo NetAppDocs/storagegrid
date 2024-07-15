@@ -18,6 +18,6 @@ To learn more, go to link:../tenant/understanding-tenant-management-api.html[Und
 
 == New endpoint for bucket capacity limit
 
-You can use the `/org/containers/{bucketName}/quota-object-bytes` API endpoint with GET/PUT operations to get/set the storage capacity limit for a bucket.
+You can use the `/org/containers/{bucketName}/quota-object-bytes` API endpoint with GET/PUT operations to set and get the storage capacity limit for a bucket.
 
 // 2024 JUL 10, SGWS-31727
