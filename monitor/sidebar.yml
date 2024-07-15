@@ -29,7 +29,7 @@ entries:
       url: "/monitor/viewing-load-balancer-tab.html"
     - title: View the Platform services tab
       url: "/monitor/viewing-platform-services-tab.html"
-    - title: View the Manage drives tab (SGF6112 only)
+    - title: View the Manage drives tab
       url: "/monitor/viewing-manage-drives-tab.html"
     - title: View the SANtricity tab (E-Series only)
       url: "/monitor/viewing-santricity-system-manager-tab.html"

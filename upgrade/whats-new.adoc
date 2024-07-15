@@ -30,12 +30,21 @@ StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 bu
 
 Archive Nodes:: Support for Archive Nodes has been removed.
 +
-NOTE: You must decommission all Archive Nodes before you can upgrade to StorageGRID 11.9. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^] 
+[NOTE]
+====
+Before starting your upgrade, you must:
+
+. Decommission all Archive Nodes. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
+. Remove all Archive Node references from the Cloud Storage Pools and ILM policies. See https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
+====
 
 == Grid Manager
 
 === Erasure-coding profiles page moved
 The Erasure-coding profiles page is now at *CONFIGURATION* > *System* > *Erasure coding*. It used to be in the ILM menu.
+
+=== Search enhancements
+The link:../primer/exploring-grid-manager.html#search-field[search function] has been enhanced to provide more targeted results.
 
 == Tenant Manager
 

@@ -1,7 +1,7 @@
 ---
 permalink: upgrade/changes-to-grid-management-api.html
 sidebar: sidebar
-keywords: grid management api, api, api version, swagger, rest api
+keywords: grid management api, api, api version, swagger, rest api, usageCacheDuration 
 summary: 'StorageGRID 11.8 uses version 4 of the Grid Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported.'
 ---
 = Changes to the Grid Management API
@@ -9,21 +9,29 @@ summary: 'StorageGRID 11.8 uses version 4 of the Grid Management API. Version 4 
 :imagesdir: ../media/
 
 [.lead]
-StorageGRID 11.8 uses version 4 of the Grid Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported. 
+StorageGRID 11.9 uses version 4 of the Grid Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported. 
 
-NOTE: You can continue to use deprecated versions of the management API with StorageGRID 11.8; however, support for these versions of the API will be removed in a future release of StorageGRID. After upgrading to StorageGRID 11.8, the deprecated APIs can be deactivated using the `PUT /grid/config/management` API.
+NOTE: You can continue to use deprecated versions of the management API with StorageGRID 11.9; however, support for these versions of the API will be removed in a future release of StorageGRID. After upgrading to StorageGRID 11.9, the deprecated APIs can be deactivated using the `PUT /grid/config/management` API.
 
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
-== Changes for `ilm-policies` API v4
+== Legacy mgmt-api requests removed
 
-Effective starting with StorageGRID 11.8, version 4 of the `ilm-policies` API contains the following differences from the version 3:
+These legacy requests have been removed:
 
-* Historical policies are no longer returned. A new, separate API for getting historical policy and tag data has been added at `/grid/ilm-history`.
-* Properties removed: `proposed`, `historical`, `historicalRules`, `activationTime`.
-* Properties added: `active` (boolean), `activatedBy` (array of tag UUIDs that the policy is assigned to).
-* The optional type query parameter for `GET ilm-policies` now takes the values `inactive` and `active.` The previous values were `proposed`, `active`, and `historical`.
+`/grid/server-types`
 
-== New endpoints for drive management
+`/grid/ntp-roles`
 
-You can use the */grid/drive-details/{nodeId}* API endpoints to perform operations on the drives in specific models of appliance Storage Nodes.
+== Changes to `GET /private/storage-usage` API
+* A new property, `usageCacheDuration`, has been added to the response body. This property specifies the duration (in seconds) for which the usage lookup cache remains valid. This value applies when checking the usage against tenant storage quota and bucket capacity limits.
+* The `GET /api/v4/private/storage-usage` behavior has been corrected to match nesting from the schema.
+* These changes apply only to the private API.
+
+== Changes to `GET cross-grid-replication` API
+The */org/containers/:name/cross-grid-replication* GET API no longer requires the Root access (`rootAccess`) permission; however, you must belong to a user group that has the Manage all buckets (`manageAllBuckets`) or View all buckets (`viewAllBuckets`) permission.
+
+The */org/containers/:name/cross-grid-replication* PUT API is unchanged and still requires the Root access (`rootAccess`) permission.
+
+// 2024-07-2, jira SWGS-31283
+// 2024-07-11, SGWS-32010

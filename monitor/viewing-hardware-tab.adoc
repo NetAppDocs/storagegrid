@@ -82,6 +82,14 @@ Some appliance models don't have a storage controller B.
 |Storage controller firmware version
 |The version of the firmware on the storage controller for this appliance.
 
+|Storage controller SANtricity OS version
+|The SANtricity OS version of storage controller A.
+
+|Storage controller NVSRAM version
+|NVSRAM version of the storage controller as reported by SANtricity System Manager.
+
+For the SG6060 and SG6160, if there is an NVSRAM version mismatch between the two controllers, the version of controller A displays. If controller A is not installed or operational, the version of controller B displays.
+
 |Storage hardware
 |The overall status of the storage controller hardware. If SANtricity System Manager reports a status of Needs Attention for the storage hardware, the StorageGRID system also reports this value.
 
