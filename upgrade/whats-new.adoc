@@ -14,7 +14,9 @@ This release of StorageGRID introduces the following features and functional cha
 == Install, upgrade, hotfix
 
 === Default audit destinations
-Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
+Fresh installations of StorageGRID 11.9 default to local node audit destinations. Before StorageGRID 11.8, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
+
+For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
 
 == Appliances
 
