@@ -26,11 +26,22 @@ Fresh installations of StorageGRID 11.9 default to local node audit destinations
 === 5,000 buckets per tenant
 StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
 
+=== Set I/O priority for erasure-coded data repair
+Input-output (I/O) prioritization allows you to set the priority of erasure coding (EC) repair and purge operations.
+
+In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
+
 == Expand grid, maintain grid, recover or replace nodes
 
 Archive Nodes:: Support for Archive Nodes has been removed.
 +
-NOTE: You must decommission all Archive Nodes before you can upgrade to StorageGRID 11.9. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^] 
+[NOTE]
+====
+Before starting your upgrade, you must:
+
+. Decommission all Archive Nodes. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
+. Remove all Archive Node references from the Cloud Storage Pools and ILM policies. See https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
+====
 
 == Grid Manager
 
@@ -47,4 +58,5 @@ Added support for link:../ilm/creating-cloud-storage-pool.html[IAM Roles Anywher
 
 == S3 REST API
 
-.
+== Storage Node types
+StorageGRID 11.8 provided the ability to install software-based, metadata-only Storage Nodes. StorageGRID 11.9 enables you to install software-based or appliance-based metadata-only _and_ data-only Storage Nodes. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].

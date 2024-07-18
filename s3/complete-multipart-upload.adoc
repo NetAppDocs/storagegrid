@@ -11,13 +11,20 @@ summary: 'The CompleteMultipartUpload operation completes a multipart upload of 
 [.lead]
 The CompleteMultipartUpload operation completes a multipart upload of an object by assembling the previously uploaded parts.
 
+NOTE: StorageGRID supports non-consecutive values for the `partNumber` request parameter with CompleteMultipartUpload. The parameter can start with any value.
+
 == Resolve conflicts
 
 Conflicting client requests, such as two clients writing to the same key, are resolved on a "latest-wins" basis. The timing for the "latest-wins" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
 
-== Request headers
+== Supported request headers
 
-The `x-amz-storage-class` request header is supported, and affects how many object copies StorageGRID creates if the matching ILM rule specifies the Dual commit or Balanced link:../ilm/data-protection-options-for-ingest.html[ingest option].
+The following request headers are supported: 
+
+* `x-amz-checksum-sha256`
+* `x-amz-storage-class`
++
+The `x-amz-storage-class` header affects how many object copies StorageGRID creates if the matching ILM rule specifies the link:../ilm/data-protection-options-for-ingest.html[Dual commit or Balanced ingest option].
 
 * `STANDARD`
 +
@@ -32,6 +39,13 @@ NOTE: If you are ingesting an object into a bucket with S3 Object Lock enabled, 
 CAUTION: If a multipart upload is not completed within 15 days, the operation is marked as inactive and all associated data is deleted from the system.
 
 NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the Amazon S3 API implementation of the `ETag` value for multipart objects.
+
+== Unsupported request headers
+
+The following request headers aren't supported:
+
+* `x-amz-sdk-checksum-algorithm`
+* `x-amz-trailer` 
 
 == Versioning
 
@@ -50,3 +64,5 @@ If the bucket where the multipart upload occurs is configured for a platform ser
 A tenant can trigger the failed replication or notification by updating the object's metadata or tags. A tenant can resubmit the existing values to avoid making unwanted changes.
 
 Refer to link:../admin/troubleshooting-platform-services.html[Troubleshoot platform services].
+
+// 2024 MAY 23, SGWS-31243
