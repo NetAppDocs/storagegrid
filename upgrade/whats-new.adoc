@@ -58,4 +58,5 @@ Added support for link:../ilm/creating-cloud-storage-pool.html[IAM Roles Anywher
 
 == S3 REST API
 
-.
+== Storage Node types
+StorageGRID 11.8 provided the ability to install software-based, metadata-only Storage Nodes. StorageGRID 11.9 enables you to install software-based or appliance-based metadata-only _and_ data-only Storage Nodes. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
