@@ -29,7 +29,7 @@ Search integration service:: Use the link:understanding-search-integration-servi
 +
 For example, you could configure your buckets to send S3 object metadata to a remote Elasticsearch service. You could then use Elasticsearch to perform searches across buckets, and perform sophisticated analyses of patterns present in your object metadata.
 +
-NOTE: Although Elasticsearch integration can be configured on a bucket with S3 Object Lock enabled, the S3 Object Lock metadata (including Retain Until Date and Legal Hold status) of the objects will not be included in the notification messages.
+NOTE: Although Elasticsearch integration can be configured on a bucket with S3 Object Lock enabled, the S3 Object Lock metadata (including Retain Until Date and Legal Hold status) of the objects will not be included in the metadata sent to Elasticsearch.
 
 Because the target location for platform services is typically external to your StorageGRID deployment, platform services give you the power and flexibility that comes from using external storage resources, notification services, and search or analysis services for your data.
 
@@ -83,3 +83,4 @@ The format for the configuration XML is governed by the S3 REST APIs used to imp
 .Related information
 
 link:considerations-for-platform-services.html[Considerations for platform services]
+// 2024-07-18, jira SGRIDDOC-82
