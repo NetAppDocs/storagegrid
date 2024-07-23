@@ -11,47 +11,113 @@ summary: 'This release of StorageGRID introduces the following features.'
 [.lead]
 This release of StorageGRID introduces the following features and functional changes.
 
-== Install, upgrade, hotfix
+== Scalability
 
-=== Default audit destinations
-Fresh installations of StorageGRID 11.9 default to local node audit destinations. For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
+=== Data-only Storage Nodes
+To allow for more granular scaling, you can now install data-only Storage Nodes. Where metadata processing isn't critical, you can optimize your infrastructure cost-effectively. This flexibility helps accommodate varying workloads and growth patterns. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 
-== Appliances
+== Cloud Storage Pool enhancements
 
-.
+=== IAM Roles Anywhere
+Support has been added for short term credentials using IAM Roles Anywhere in Amazon S3 for Cloud Storage Pools.
 
+Traditionally, long-term credentials have been used to access S3 buckets. However, these credentials pose security risks if compromised. Short-term credentials have a limited lifespan, which reduces the risk of unauthorized access.
 
-== Configure and manage
+Refer to link:../ilm/creating-cloud-storage-pool.html[Create Cloud Storage Pool].
+
+=== S3 Object Lock buckets
+You can now configure a Cloud Storage Pool using an Amazon S3 endpoint. S3 Object Lock helps prevent accidental or malicious deletion of objects. If you tier data from StorageGRID to Amazon S3, having object lock enabled on both systems enhanced data protection across the data's lifecycle.
+
+Refer to link:../ilm/creating-cloud-storage-pool.html[Create Cloud Storage Pool].
+
+== Multi-tenancy
+
+=== Bucket limits 
+By setting limits on S3 buckets, you can prevent tenants from monopolizing capacity. Additionally, uncontrolled growth can result in unexpected costs. By having defined limits, you can better estimate tenant storage expenses.
+
+Refer to link:../tenant/creating-s3-bucket.html[Create an S3 bucket].
 
 === 5,000 buckets per tenant
-StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
+To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
 
-== Expand grid, maintain grid, recover or replace nodes
+Refer to link:../s3/operations-on-buckets.html[Operations on S3 buckets].
 
-Archive Nodes:: Support for Archive Nodes has been removed.
-+
-[NOTE]
-====
-Before starting your upgrade, you must:
+=== Set I/O priority for erasure-coded data repair
+Input-output (I/O) prioritization allows you to set the priority of erasure coding (EC) repair and purge operations.
 
-. Decommission all Archive Nodes. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
-. Remove all Archive Node references from the Cloud Storage Pools and ILM policies. See https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
-====
+In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
 
-== Grid Manager
+== S3 Object Lock improvements
+You can now set per-tenant maximum retention time and per-tenant compliance mode. Per-tenant configuration provides the appropriate balance of flexibility and data security.
+
+Refer to 
+
+== S3 compatibility
+
+=== x-amz-checksum-sha256 checksum
+* The S3 REST API now provides support for `x-amz-checksum-sha256` checksum
+
+* StorageGRID now provides SHA-256 checksum support for PUT, GET and HEAD operations. These checksums enhance data integrity.
+
+Refer to link:../s3/operations-on-objects.html[Operations on objects].
+
+=== Amazon AWS endpoint 
+
+AWS endpoints bridge the gap between file and object by allowing applications to connect directly to S3 buckets as if they were local file systems.
+
+_Editing needed starting here:_
+
+== Maintenance and Supportability
+
+=== Default audit destinations
+Fresh installations of StorageGRID 11.9 default to local node audit destinations. Previously, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
+
+For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
+
+=== Improved node decommissioning 
+
+We recently introduced next-generation hardware and we understand that customers need a smooth transition. Moving to these advanced appliances should be hassle-free and efficient. In addition to our existing node-clone process, enhancements to node decommission ensure that retiring old nodes is a painless experience. 
+
+Auto Support: automated hardware failure case creations for legacy appliances 
+
+Metrics UI update	 
+
+Dynamic time limit for node clone operations  
+
+Why: We recently introduced next-generation hardware and we understand that customers need a smooth transition. Moving to these advanced appliances should be hassle-free and efficient. This enhancement improves usability of our node clone process. 
+
+New operating system qualifications 
+
+Support for new 3rd party components 
+
+Grid Manager interface improvements including improved search 
+
+Why: The search field in the Grid Manager header bar now includes better matching logic, allowing you to find pages by searching for common abbreviations and by the names of certain settings within a page. 
+
+You can now also search for more types of items, like nodes, users, and tenant accounts. 
+
+I/O prioritization for repair 
+
+Why: In a storage system like StorageGIRD, various tasks compete for I/O resources. In 11.9, we have begun to add I/O priority management that provides QoS by favouring certain requests over others. Currently, we have these controls for EC repair and purge. This allows you to prioritize repairs to minimize downtime or lower their priority to reduce their impact on regular operations.
+
+== Security
+ssh key rotation 
+
+Why: Rotating SSH keys is not just a security best practice, but a proactive defense mechanism. With 11.9, we allow grid admins to update and rotate the SSH keys easily. 
+
+Alerts for root logins 
+
+Why: Monitoring root SSH logins is a proactive step towards safeguarding your infrastructure. With 11.9, we make this easy via an alert. 
+
+== Appliances
+TLS offload on the SG1100 
+
+Why: By taking advantage of the hardware offload capabilities on the SG1100 load balancer, we can improve performance by not having to copy objects into user space for encryption.
+
+== Grid Manager enhancements
 
 === Erasure-coding profiles page moved
 The Erasure-coding profiles page is now at *CONFIGURATION* > *System* > *Erasure coding*. It used to be in the ILM menu.
 
 === Search enhancements
 The link:../primer/exploring-grid-manager.html#search-field[search function] has been enhanced to provide more targeted results.
-
-== Tenant Manager
-
-=== Support for IAM Roles Anywhere
-Added support for link:../ilm/creating-cloud-storage-pool.html[IAM Roles Anywhere authentication] for Cloud Storage Pools.
-
-== S3 REST API
-
-== Storage Node types
-StorageGRID 11.8 provided the ability to install software-based, metadata-only Storage Nodes. StorageGRID 11.9 enables you to install software-based or appliance-based metadata-only _and_ data-only Storage Nodes. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
