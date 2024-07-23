@@ -42,6 +42,11 @@ To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-
 
 Refer to link:../s3/operations-on-buckets.html[Operations on S3 buckets].
 
+=== Set I/O priority for erasure-coded data repair
+Input-output (I/O) prioritization allows you to set the priority of erasure coding (EC) repair and purge operations.
+
+In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
+
 == S3 Object Lock improvements
 You can now set per-tenant maximum retention time and per-tenant compliance mode. Per-tenant configuration provides the appropriate balance of flexibility and data security.
 

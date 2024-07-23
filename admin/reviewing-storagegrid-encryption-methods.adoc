@@ -33,7 +33,7 @@ The table provides a high-level summary of the encryption methods available in S
 Drive encryption doesn't apply to SANtricity-managed drives. If you have a storage appliance with self-encrypting drives and SANtricity controllers, you can enable drive security in SANtricity.
 
 | Drive security in SANtricity System Manager
-| If the Drive Security feature is enabled for an SG5700 or SG6000 storage appliance, you can use https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[SANtricity System Manager^] to create and manage the security key. The key is required to access the data on the secured drives.
+| If the Drive Security feature is enabled for your StorageGRID appliance, you can use https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[SANtricity System Manager^] to create and manage the security key. The key is required to access the data on the secured drives.
 | Storage appliances that have Full Disk Encryption (FDE) drives or self-encrypting drives. All data on the secured drives is protected against physical loss or removal from the data center. Can't be used with some storage appliances or with any services appliances.
 
 | Stored object encryption
@@ -106,4 +106,5 @@ Depending on your requirements, you can use more than one encryption method at a
 
 If only a small portion of your objects require encryption, consider controlling encryption at the bucket or individual object level instead. Enabling multiple levels of encryption has an additional performance cost.
 
+// 2024 JUL 22, SGRIDDOC-77
 // 2023 JUN 13, SGRIDDOC-7
