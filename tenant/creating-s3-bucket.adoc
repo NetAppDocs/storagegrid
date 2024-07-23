@@ -110,7 +110,7 @@ When *Default retention* is enabled, new objects added to the bucket will be aut
 +
 The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested.
 +
-A _maximum_ retention period, which can be a value from 1 to 100 years, is set when the grid administrator creates the tenant. When you set a _default_ retention period, it can't exceed the value set for the maximum retention period. If needed, ask your grid administrator to increase or decrease the maximum retention period.
+A _maximum_ retention period, which can be a value from 1 day to 100 years, is set when the grid administrator creates the tenant. When you set a _default_ retention period, it can't exceed the value set for the maximum retention period. If needed, ask your grid administrator to increase or decrease the maximum retention period.
 
 . [[capacity-limit]]Optionally, select *Enable capacity limit*.
 +
