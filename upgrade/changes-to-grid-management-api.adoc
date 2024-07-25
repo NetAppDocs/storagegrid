@@ -11,7 +11,7 @@ summary: 'StorageGRID 11.8 uses version 4 of the Grid Management API. Version 4 
 [.lead]
 StorageGRID 11.9 uses version 4 of the Grid Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported. 
 
-NOTE: You can continue to use deprecated versions of the management API with StorageGRID 11.9; however, support for these versions of the API will be removed in a future release of StorageGRID. After upgrading to StorageGRID 11.9, the deprecated APIs can be deactivated using the `PUT /grid/config/management` API.
+NOTE: You can continue to use deprecated versions of the management API with StorageGRID 11.9; however, support for these versions of the API will be removed in a future release of StorageGRID. After upgrading to StorageGRID 11.9, you can deactivate the deprecated APIs by using the `PUT /grid/config/management` API.
 
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
