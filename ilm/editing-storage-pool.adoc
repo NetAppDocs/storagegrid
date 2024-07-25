@@ -11,6 +11,8 @@ summary: 'You can edit a storage pool to change its name or to update sites and 
 [.lead]
 You can edit a storage pool to change its name or to update sites and storage grades.
 
+CAUTION: Adding or removing sites from an existing storage pool won’t move any existing erasure-encoded data. If you want to move the existing data from the site, you must create a new storage pool and EC profile to re-encode the data.
+
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
@@ -37,3 +39,5 @@ NOTE: You are prevented from changing the site or storage grade if the storage p
 
 .After you finish
 If you added a new site or storage grade to a storage pool used in the active ILM policy, activate a new ILM policy to force StorageGRID to use the new site or storage grade. For example, clone your existing ILM policy and then activate the clone. See link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies].
+
+// 2024 JULY 25, SGRIDDOC-84
