@@ -72,10 +72,9 @@ _Editing needed starting here:_
 === Default audit destinations
 Fresh installations of StorageGRID 11.9 default to local node audit destinations. Previously, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
 
-For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations]. (see email from KenW/Aron re: Query re tech case #2009937024, 16 feb 2024)
+For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations].
 
 === Improved node decommissioning 
-
 We recently introduced next-generation hardware and we understand that customers need a smooth transition. Moving to these advanced appliances should be hassle-free and efficient. In addition to our existing node-clone process, enhancements to node decommission ensure that retiring old nodes is a painless experience. 
 
 Auto Support: automated hardware failure case creations for legacy appliances 
