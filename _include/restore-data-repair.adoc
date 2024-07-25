@@ -48,7 +48,9 @@ This command repairs the erasure-coded data on a Storage Node named SG-DC-SN3:
 
 The operation returns a unique `repair ID` that identifies this `repair_data` operation. Use this `repair ID` to track the progress and result of the `repair_data` operation. No other feedback is returned as the recovery process completes.
 
-NOTE: Repairs of erasure-coded data can begin while some Storage Nodes are offline. Repair will complete after all nodes are available.
+Repairs of erasure-coded data can begin while some Storage Nodes are offline. Repair will complete after all nodes are available.
+
+NOTE: You can set the Input-output (I/O) priority for erasure-coded data repair and purge operations. In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
 
 --
 ====
