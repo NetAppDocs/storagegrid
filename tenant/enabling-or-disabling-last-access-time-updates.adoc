@@ -59,6 +59,9 @@ h|Object added to ILM evaluation queue?
 |Yes
 |Yes
 |Yes
+
+*Note*: The list-objects operations do not update the object last access time.
+
 |Yes
 
 |Request to copy an object from one bucket to another
@@ -97,4 +100,4 @@ The bucket details page appears.
 
 . Select *Save changes*.
 
-
+// 2024 JULY 24, SGRIDDOC-83
