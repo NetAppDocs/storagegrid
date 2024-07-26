@@ -121,33 +121,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | External NTP
 | Network time protocol service. Nodes selected as primary NTP sources also synchronize clock times with the external NTP time sources.
 
-| 137
-| UDP
-| NetBIOS
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export for clients that require NetBIOS support.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
-
-| 138
-| UDP
-| NetBIOS
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export for clients that require NetBIOS support.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
-
-| 139
-| TCP
-| SMB
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export for clients that require NetBIOS support.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
-
 | 161
 | TCP/ UDP
 | SNMP
@@ -206,15 +179,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Storage Nodes
 | AWS
 | Cloud Storage Pools requests sent to AWS targets that use HTTPS. Grid administrators can override the default HTTPS port setting of 443 when configuring a Cloud Storage Pool.
-
-| 445
-| TCP
-| SMB
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
 
 | 903
 | TCP
@@ -344,3 +308,4 @@ NOTE: This list does not include ports that might be configured as link:../admin
 |===
 
 // 2023 SEP 19, SGWS-25330
+// 2024 JULY 15, SGRIDOC-78

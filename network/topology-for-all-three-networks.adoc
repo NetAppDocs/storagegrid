@@ -17,4 +17,7 @@ In this example:
 * The Admin Network is used for traffic related to administrative functions.
 * The Client Network is used for traffic related to S3 client requests.
 
+*Topology example: Grid, Admin, and Client Networks*
+
+
 image::../media/grid_admin_client_networks.png[Grid Admin Client Networks]
