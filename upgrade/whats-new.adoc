@@ -26,9 +26,7 @@ Traditionally, long-term credentials have been used to access S3 buckets. Howeve
 Refer to link:../ilm/creating-cloud-storage-pool.html[Create Cloud Storage Pool].
 
 === S3 Object Lock buckets
-You can now configure a Cloud Storage Pool using an Amazon S3 endpoint. S3 Object Lock helps prevent accidental or malicious deletion of objects. If you tier data from StorageGRID to Amazon S3, having object lock enabled on both systems enhanced data protection across the data's lifecycle.
-
-Refer to link:../ilm/creating-cloud-storage-pool.html[Create Cloud Storage Pool].
+You can now configure a Cloud Storage Pool using an Amazon S3 endpoint. S3 Object Lock helps prevent accidental or malicious deletion of objects. If you tier data from StorageGRID to Amazon S3, having object lock enabled on both systems enhances data protection across the data's lifecycle.
 
 == Multi-tenancy
 
