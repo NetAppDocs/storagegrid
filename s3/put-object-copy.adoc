@@ -79,6 +79,9 @@ The following request headers aren't supported:
 * `Content-Encoding`
 * `Content-Language`
 * `Expires`
+* `x-amz-checksum-sha256`
++
+When you copy an object, if the source object has a checksum, StorageGRID doesn't copy that checksum value to the new object. This behavior applies whether or not you try to use `x-amz-checksum-sha256` in the object request.
 * `x-amz-website-redirect-location`
 
 == Storage class options
@@ -131,3 +134,4 @@ NOTE: The `server-side-encryption` value of the object can't be updated. Instead
 
 If the source bucket is versioned, you can use the `x-amz-copy-source` header to copy the latest version of an object. To copy a specific version of an object, you must explicitly specify the version to copy using the `versionId` subresource. If the destination bucket is versioned, the generated version is returned in the `x-amz-version-id` response header. If versioning is suspended for the target bucket, then `x-amz-version-id` returns a "null" value.
 
+// 2024 MAY 23, SGWS-31243

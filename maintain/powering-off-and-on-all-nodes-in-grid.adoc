@@ -65,16 +65,26 @@ For the appliance, this command shuts down the compute controller, but the appli
 [role="tabbed-block"]
 ====
 
-.SG100 or SG1000
+.SG110 or SG1100
 --
-
 .. Turn off the power to the appliance.
 .. Wait for the blue power LED to turn off.
-
 --
+
+.SG100 or SG1000
+--
+.. Turn off the power to the appliance.
+.. Wait for the blue power LED to turn off.
+--
+
+.SG6160
+--
+.. Turn off the power to the SG6100-CN storage controller.
+.. Wait for the blue power LED on the SG6100-CN storage controller to turn off.
+--
+
 .SGF6112
 --
-
 .. Turn off the power to the appliance.
 .. Wait for the blue power LED to turn off.
 --
@@ -89,6 +99,21 @@ This LED is on when cached data needs to be written to the drives. You must wait
 .. Turn off the power to the appliance, and wait for the blue power LED to turn off.
 
 --
+
+.SG5800
+--
+.. Wait for the green Cache Active LED on the back of the storage controller to turn off.
++
+This LED is on when cached data needs to be written to the drives. You must wait for this LED to turn off before you turn off power.
+
+.. From the home page of SANtricity System Manager, select *View Operations in Progress*.
+
+.. Confirm that all operations have completed before continuing with the next step.
+
+.. Turn off both power switches on the controller shelf, and wait for all LEDs on the controller shelf to turn off.
+
+--
+
 .SG5700
 --
 
@@ -133,11 +158,15 @@ You can power on these nodes in any order.
 
 .Related information
 
-* https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 storage appliances^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 and SG6160 storage appliances^]
+
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg110-1100/index.html[SG110 and SG1100 services appliances^]
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg100-1000/index.html[SG100 and SG1000 services appliances^]
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
+
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg5800/index.html[SG5800 storage appliances^]
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
 

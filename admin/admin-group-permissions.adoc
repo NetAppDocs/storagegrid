@@ -50,9 +50,11 @@ This permission provides access to the following *ILM* menu options:
 
 * Rules
 * Policies
-* Erasure coding
-* Regions
+* Policy tags
 * Storage pools
+* Storage grades
+* Regions
+* Object metadata lookup
 
 NOTE: Users must have the *Other grid configuration* and *Grid topology page configuration* permissions to manage storage grades.
 

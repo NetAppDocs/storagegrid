@@ -23,7 +23,7 @@ The table summarizes the main upgrade tasks and lists the approximate time requi
 
 | Run prechecks and upgrade primary Admin Node
 | The upgrade prechecks are run, and the primary Admin Node is stopped, upgraded, and restarted. 
-| 30 minutes to 1 hour, with SG100 and SG1000 appliance nodes requiring the most time. 
+| 30 minutes to 1 hour, with services appliance nodes requiring the most time. 
 
 Unresolved precheck errors will increase this time. 
 

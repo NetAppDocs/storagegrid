@@ -27,9 +27,12 @@ image::../media/grid_manager_dashboard_and_menu.png[Dashboard in the Grid Manage
 
 For an explanation of the information shown on each card, select the help icon image:../media/icon_nms_question.png[question mark icon] for that card.
 
+[[search-field]]
 == Search field
 
-The *Search* field in the header bar allows you to quickly navigate to a specific page within Grid Manager. For example, you can enter *km* to access the Key management server (KMS) page. You can use *Search* to find entries in the sidebar of the Grid Manager and on the Configuration, Maintenance, and Support menus. 
+The *Search* field in the header bar allows you to quickly navigate to a specific page within Grid Manager. For example, you can enter *km* to access the Key management server (KMS) page.
+
+You can use *Search* to find entries in the sidebar of the Grid Manager and on the Configuration, Maintenance, and Support menus. You can also search by name for items like grid nodes and tenant accounts.
 
 == Help menu
 
@@ -78,7 +81,6 @@ From the ILM menu you can view and manage ILM:
 * Policies
 * Policy tags
 * Storage pools
-* Erasure coding
 * Storage grades
 * Regions
 * Object metadata lookup
@@ -113,6 +115,7 @@ System tasks include:
 * Optionally, enabling the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option.
 * link:../ilm/managing-objects-with-s3-object-lock.html[Managing S3 Object Lock]
 * Understanding Storage options such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
+* link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles].
 
 === Monitoring tasks
 
