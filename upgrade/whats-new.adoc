@@ -50,7 +50,10 @@ In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
 == S3 Object Lock improvements
 You can now set per-tenant maximum retention time and per-tenant compliance mode. Per-tenant configuration provides the appropriate balance of flexibility and data security.
 
-Refer to 
+Refer to:
+
+* link:../admin/creating-tenant-account[Create tenant account]
+* link:../ilm/how-object-retention-is-determined.html#how-grid-administrators-control-object-retention[How grid administrators control object retention]
 
 == S3 compatibility
 
@@ -65,53 +68,46 @@ Refer to link:../s3/operations-on-objects.html[Operations on objects].
 
 AWS endpoints bridge the gap between file and object by allowing applications to connect directly to S3 buckets as if they were local file systems.
 
-_Editing needed starting here:_
-
 == Maintenance and Supportability
 
 === Default audit destinations
 Fresh installations of StorageGRID 11.9 default to local node audit destinations. Previously, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
 
-For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations].
+For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#select-audit-information-destinations[Select audit information destinations].
 
 === Improved node decommissioning 
-We recently introduced next-generation hardware and we understand that customers need a smooth transition. Moving to these advanced appliances should be hassle-free and efficient. In addition to our existing node-clone process, enhancements to node decommission ensure that retiring old nodes is a painless experience. 
+To provide a smooth and efficient transition to StorageGRID next-generation hardware, node decommissioning has been improved.
 
-Auto Support: automated hardware failure case creations for legacy appliances 
+=== AutoSupport
+AutoSupport now automatically creates hardware failure cases for legacy appliances.
 
-Metrics UI update	 
+=== Additional enhancements for maintenance and supportability
 
-Dynamic time limit for node clone operations  
+* Metrics UI update	 
 
-Why: We recently introduced next-generation hardware and we understand that customers need a smooth transition. Moving to these advanced appliances should be hassle-free and efficient. This enhancement improves usability of our node clone process. 
+* Dynamic time limit for node clone operations  
 
-New operating system qualifications 
+* New operating system qualifications 
 
-Support for new 3rd party components 
-
-Grid Manager interface improvements including improved search 
-
-Why: The search field in the Grid Manager header bar now includes better matching logic, allowing you to find pages by searching for common abbreviations and by the names of certain settings within a page. 
-
-You can now also search for more types of items, like nodes, users, and tenant accounts. 
-
-I/O prioritization for repair 
-
-Why: In a storage system like StorageGIRD, various tasks compete for I/O resources. In 11.9, we have begun to add I/O priority management that provides QoS by favouring certain requests over others. Currently, we have these controls for EC repair and purge. This allows you to prioritize repairs to minimize downtime or lower their priority to reduce their impact on regular operations.
+* Support for new 3rd party components 
 
 == Security
-ssh key rotation 
 
-Why: Rotating SSH keys is not just a security best practice, but a proactive defense mechanism. With 11.9, we allow grid admins to update and rotate the SSH keys easily. 
+=== SSH access keys rotation 
 
-Alerts for root logins 
+Grid administrators can update and rotate SSH keys. The ability to rotate SSH keys is a security best practice and a proactive defense mechanism.
 
-Why: Monitoring root SSH logins is a proactive step towards safeguarding your infrastructure. With 11.9, we make this easy via an alert. 
+Refer to link:../admin/change-ssh-access-passwords.html[Change SSH access passwords for Admin Nodes].
+
+=== Alerts for root logins 
+
+When an unknown entity signs in to the Grid Manager as root, an alert is triggered. Monitoring root SSH logins is a proactive step toward safeguarding your infrastructure.
 
 == Appliances
-TLS offload on the SG1100 
 
-Why: By taking advantage of the hardware offload capabilities on the SG1100 load balancer, we can improve performance by not having to copy objects into user space for encryption.
+=== TLS offload on the SG1100 
+
+By taking advantage of the hardware offload capabilities on the SG1100 load balancer, performance is improved because objects don't need to be copied into the user space for encryption.
 
 == Grid Manager enhancements
 
@@ -119,4 +115,4 @@ Why: By taking advantage of the hardware offload capabilities on the SG1100 load
 The Erasure-coding profiles page is now at *CONFIGURATION* > *System* > *Erasure coding*. It used to be in the ILM menu.
 
 === Search enhancements
-The link:../primer/exploring-grid-manager.html#search-field[search function] has been enhanced to provide more targeted results.
+The link:../primer/exploring-grid-manager.html#search-field[search field in the Grid Manager] now includes better matching logic, allowing you to find pages by searching for common abbreviations and by the names of certain settings within a page. You can also search for more types of items, like nodes, users, and tenant accounts.
