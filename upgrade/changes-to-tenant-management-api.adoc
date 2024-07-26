@@ -9,12 +9,15 @@ summary: 'StorageGRID 11.8 uses version 4 of the Tenant Management API. Version 
 :imagesdir: ../media/
 
 [.lead]
-StorageGRID 11.8 uses version 4 of the Tenant Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported. 
+StorageGRID 11.9 uses version 4 of the Tenant Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported. 
 
-NOTE: You can continue to use deprecated versions of the Tenant Management API with StorageGRID 11.8; however, support for these versions of the API will be removed in a future release of StorageGRID. After upgrading to StorageGRID 11.8, the deprecated APIs can be deactivated using the `PUT /grid/config/management` API.
+NOTE: You can continue to use deprecated versions of the Tenant Management API with StorageGRID 11.9; however, support for these versions of the API will be removed in a future release of StorageGRID. After upgrading to StorageGRID 11.9, you can deactivate the deprecated APIs by using the `PUT /grid/config/management` API.
 
 To learn more, go to link:../tenant/understanding-tenant-management-api.html[Understand the Tenant Management API].
 
-== New endpoints for ILM policy tags
 
-You can use the */org/ilm-policy-tags* and */org/containers/{bucketName}/ilm-policy-tags* API endpoints to perform operations related to ILM policy tags.
+== New endpoint for bucket capacity limit
+
+You can use the `/org/containers/{bucketName}/quota-object-bytes` API endpoint with GET/PUT operations to get and set the storage capacity limit for a bucket.
+
+// 2024 JUL 10, SGWS-31727
