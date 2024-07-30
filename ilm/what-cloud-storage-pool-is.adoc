@@ -61,9 +61,7 @@ If the Cloud Storage Pool is an Azure Blob storage container, StorageGRID transi
 | Objects are quickly accessible at any time.
 | Low-cost storage.
 
-| 
-| 
-| *Note*: FabricPool data can't be tiered to Cloud Storage Pools.
+*Note*: FabricPool data can't be tiered to Cloud Storage Pools.
 |===
 
 // 2024 JULY 15, SGRIDDOC-80
