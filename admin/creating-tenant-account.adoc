@@ -78,8 +78,6 @@ NOTE: Some of these permissions have additional requirements. For details, selec
 +
 include::../_include/tenant-account-permissions.adoc[]
 
-. If you selected *Use grid federation connection*, select one of the available grid federation connections.
-
 . Optionally, select the advanced permissions you want this tenant to have.
 +
 [cols="1a,3a" options="header"]
