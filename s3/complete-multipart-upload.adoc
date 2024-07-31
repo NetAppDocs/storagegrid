@@ -11,7 +11,7 @@ summary: 'The CompleteMultipartUpload operation completes a multipart upload of 
 [.lead]
 The CompleteMultipartUpload operation completes a multipart upload of an object by assembling the previously uploaded parts.
 
-NOTE: StorageGRID supports non-consecutive values for the `partNumber` request parameter with CompleteMultipartUpload. The parameter can start with any value.
+NOTE: StorageGRID supports non-consecutive values in ascending order for the `partNumber` request parameter with CompleteMultipartUpload. The parameter can start with any value.
 
 == Resolve conflicts
 

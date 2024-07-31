@@ -33,7 +33,7 @@ Full support for AWS Signature Version 2
 
 Support for AWS Signature Version 4, with the following exceptions:
 
-* The SHA256 value is not calculated for the body of the request. The user-submitted value is accepted without validation, as if the value `UNSIGNED-PAYLOAD` had been provided for the `x-amz-content-sha256` header.
+* The SHA-256 value is not calculated for the body of the request. The user-submitted value is accepted without validation, as if the value `UNSIGNED-PAYLOAD` had been provided for the `x-amz-content-sha256` header.
 
 a|
 x-amz-security-token
