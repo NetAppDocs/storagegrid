@@ -14,7 +14,9 @@ Before installing StorageGRID software, verify and configure the hardware so tha
 Each StorageGRID node requires the following minimum resources:
 
 * CPU cores: 8 per node
-* RAM: At least 24 GB per node, and 2 to 16 GB less than the total system RAM, depending on the total RAM available and the amount of non-StorageGRID software running on the system
+* RAM: Dependent on the total RAM available and the amount of non-StorageGRID software running on the system
+** Generally, at least 24 GB per node, and 2 to 16 GB less than the total system RAM
+** A minimum of 64 GB for each tenant that will have approximately 5,000 buckets
 
 Ensure that the number of StorageGRID nodes you plan to run on each physical or virtual host does not exceed the number of CPU cores or the physical RAM available. If the hosts aren't dedicated to running StorageGRID (not recommended), be sure to consider the resource requirements of the other applications.
 

@@ -40,6 +40,8 @@ Refer to link:../tenant/creating-s3-bucket.html[Create an S3 bucket].
 === 5,000 buckets per tenant
 To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
 
+To support 5,000 buckets, a tenant must have a minimum of 64 GB of RAM. Each grid can have a maximum of 100,000 buckets.
+
 Refer to link:../s3/operations-on-buckets.html[Operations on S3 buckets].
 
 == S3 Object Lock improvements
