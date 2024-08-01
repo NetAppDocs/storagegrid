@@ -25,14 +25,7 @@ After resolving any underlying issues, you can determine if the error has been r
 
 If the underlying problem has been resolved, the error message is no longer displayed. However, if the underlying problem has not been fixed (or if a different error is encountered), the error message will be shown in the Last error column within a few minutes.
 
-== Error: Could not save a new Cloud Storage Pool configuration
-
-You might encounter this error when you select an unsupported platform, authentication, or protocol combination with S3 Object Lock during the configuration of a new Cloud Storage Pool. Examples of unsupported combination errors include the following:
-
-* `InvalidRequest: Content-MD5 OR x-amz-checksum` for the HTTP protocol
-* `Cloud Storage Pool Test Failed` for the IAM Roles Anywhere or anonymous access authentication type
-
-== Error: Endpoint check failure during new Cloud Storage Pool configuration
+== Error: Health check failed. Error from endpoint
 
 You might encounter this error when you enable the default retention mode after creating a Cloud Storage Pool with or without S3 Object Lock enabled. This error occurs if the PUT operation does not have a request header value, such as `Content-MD5`.
 
@@ -51,12 +44,18 @@ Try these steps to correct the issue:
 
 == Error: Could not create or update Cloud Storage Pool. Error from endpoint
 
-You might encounter this error when you try to create or edit a Cloud Storage Pool. This error indicates that some kind of connectivity or configuration issue is preventing StorageGRID from writing to the Cloud Storage Pool.
+You might encounter this error under the following circumstances:
+
+* When you try to create or edit a Cloud Storage Pool 
+* When you select an unsupported platform, authentication, or protocol combination with S3 Object Lock during the configuration of a new Cloud Storage Pool 
+
+This error indicates that some kind of connectivity or configuration issue is preventing StorageGRID from writing to the Cloud Storage Pool.
 
 To correct the issue, review the error message from the endpoint.
 
 * If the error message contains `Get _url_: EOF`, check that the service endpoint used for the Cloud Storage Pool does not use HTTP for a container or bucket that requires HTTPS.
 * If the error message contains `Get _url_: net/http: request canceled while waiting for connection`, verify that the network configuration allows Storage Nodes to access the service endpoint used for the Cloud Storage Pool.
+* If the error is due to an unsupported platform, authentication, or protocol, change to a supported configuration with S3 Object Lock and try to save the new Cloud Storage Pool again.
 * For all other endpoint error messages, try one or more of the following:
  ** Create an external container or bucket with the same name you entered for the Cloud Storage Pool, and try to save the new Cloud Storage Pool again.
  ** Correct the container or bucket name you specified for the Cloud Storage Pool, and try to save the new Cloud Storage Pool again.
