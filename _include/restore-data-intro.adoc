@@ -12,11 +12,6 @@ If the recovered Storage Node contains fewer volumes than the node it is replaci
 
 NOTE: The repair-data script is deprecated and will be removed in a future release. When possible, use the link:../maintain/restoring-volume.html[Volume restoration procedure in the Grid Manager].
 
-== Set I/O priority for erasure-coded data repair
-Input-output (I/O) prioritization allows you to set the priority of erasure coding (EC) repair and purge operations.
-
-In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
-
 == Use the `repair-data` script to restore object data
 
 .Before you begin
