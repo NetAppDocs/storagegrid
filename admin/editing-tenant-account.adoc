@@ -70,4 +70,4 @@ NOTE: S3 Object Lock must be enabled on the grid before you can use these settin
 
 .. Select the *S3 Object Lock* tab.
 .. For *Set maximum retention period*, enter a value and select the time period from the pull-down.
-.. For *Allow compliance mode on the tenant*, select the checkbox.
+.. For *Allow compliance mode*, select the checkbox.
