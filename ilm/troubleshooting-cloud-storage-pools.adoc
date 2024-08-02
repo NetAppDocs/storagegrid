@@ -27,9 +27,9 @@ If the underlying problem has been resolved, the error message is no longer disp
 
 == Error: Health check failed. Error from endpoint
 
-You might encounter this error when you enable the default retention mode after creating a Cloud Storage Pool with or without S3 Object Lock enabled. This error occurs if the PUT operation does not have a request header value, such as `Content-MD5`.
+You might encounter this error when you enable S3 Object Lock with default retention for your Amazon S3 bucket after you start using this bucket for a Cloud Storage Pool. This error occurs because the PUT operation does not have a HTTP header with a payload checksum value such as `Content-MD5`. This header value is required by AWS for PUT operations into buckets with S3 Object Lock enabled. 
 
-To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This triggers the validation of the Cloud Storage Pool configuration to update the S3 Object Lock flag.
+To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This triggers the validation of the Cloud Storage Pool configuration that automatically detects and updates the S3 Object Lock flag on a Cloud Storage Pool endpoint configuration.
 
 == Error: This Cloud Storage Pool contains unexpected content
 
@@ -55,7 +55,7 @@ To correct the issue, review the error message from the endpoint.
 
 * If the error message contains `Get _url_: EOF`, check that the service endpoint used for the Cloud Storage Pool does not use HTTP for a container or bucket that requires HTTPS.
 * If the error message contains `Get _url_: net/http: request canceled while waiting for connection`, verify that the network configuration allows Storage Nodes to access the service endpoint used for the Cloud Storage Pool.
-* If the error is due to an unsupported platform, authentication, or protocol, change to a supported configuration with S3 Object Lock and try to save the new Cloud Storage Pool again.
+* If the error is due to an unsupported platform, authentication, or protocol, change to a supported configuration with S3 Object Lock and try to save the new Cloud Storage Pool again. 
 * For all other endpoint error messages, try one or more of the following:
  ** Create an external container or bucket with the same name you entered for the Cloud Storage Pool, and try to save the new Cloud Storage Pool again.
  ** Correct the container or bucket name you specified for the Cloud Storage Pool, and try to save the new Cloud Storage Pool again.
