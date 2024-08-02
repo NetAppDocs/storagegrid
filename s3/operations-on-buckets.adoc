@@ -13,7 +13,7 @@ The StorageGRID system supports a maximum of 5,000 buckets for each S3 tenant ac
 
 Each grid can have a maximum of 100,000 buckets.
 
-To support 5,000 buckets, a tenant must have a minimum of 64 GB of RAM.
+To support 5,000 buckets, each Storage Node in the grid must have a minimum of 64 GB of RAM.
 
 Bucket name restrictions follow the AWS US Standard region restrictions, but you should further restrict them to DNS naming conventions to support S3 virtual hosted-style requests.
 
