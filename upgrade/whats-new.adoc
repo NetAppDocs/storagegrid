@@ -38,14 +38,11 @@ By setting limits on S3 buckets, you can prevent tenants from monopolizing capac
 Refer to link:../tenant/creating-s3-bucket.html[Create an S3 bucket].
 
 === 5,000 buckets per tenant
-To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
+To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant]. Each grid can have a maximum of 100,000 buckets.
+
+To support 5,000 buckets, each Storage Node in the grid must have a minimum of 64 GB of RAM.
 
 Refer to link:../s3/operations-on-buckets.html[Operations on S3 buckets].
-
-=== Set I/O priority for erasure-coded data repair
-Input-output (I/O) prioritization allows you to set the priority of erasure coding (EC) repair and purge operations.
-
-In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
 
 == S3 Object Lock improvements
 You can now set per-tenant maximum retention time and per-tenant compliance mode. Per-tenant configuration provides the appropriate balance of flexibility and data security.
