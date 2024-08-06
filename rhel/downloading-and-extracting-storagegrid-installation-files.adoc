@@ -25,8 +25,8 @@ CAUTION: You must apply any required hotfixes after you install the StorageGRID 
 +
 NOTE: Select the `.zip` file if you are running Windows on the service laptop.
 
-. Save and extract the archive file.
-. As needed, manually the verify downloaded artifacts.
+. Save the archive file.
+. Manually the verify downloaded artifacts.
 +
 Downloaded artifacts::
 +
@@ -42,14 +42,30 @@ Verfication steps::
 .. Verify the leaf certificate is valid using the chain.
 +
 *Example*: `openssl verify -CAfile signatures/CA-Int-Cert.pem signatures/Leaf-Cert.pem`
++
+*Expected output*: `signatures/Leaf-Cert.pem: OK`
+.. If step _a_ failed due to an expired leaf certificate, verify using the `tsr` file.
++
+Example: `openssl ts -CAfile signatures/CA-Int-Cert.pem -untrusted signatures/TS-Cert.pem -verify -data signatures/sha256sum.sig -in signatures/sha256sum.sig.tsr`
++
+*Expected output includes*: `Verification: OK`
 .. Create a public key file from the leaf certificate.
 +
-Expected output: `signatures/Leaf-Cert.pem: OK`
-.. If step a failed due to an expired leaf certificate, verify using the tsr file.
+*Example*: `openssl x509 -pubkey -noout -in signatures/Leaf-Cert.pem > signatures/Leaf-Cert.pub`
 +
-*Example*: `openssl ts -CAfile signatures/CA-Int-Cert.pem -untrusted signatures/TS-Cert.pem -verify -data signatures/sha256sum.sig -in signatures/sha256sum.sig.tsr`
+*Expected output*: _none_
+.. Use the public key to verify the `sha256sum` file against `signatures/sha256sum.sig`.
 +
-Expected output includes: `Verification: OK`
+*Example*: `openssl dgst -sha256 -verify signatures/Leaf-Cert.pub -signature signatures/sha256sum.sig sha256sum`
++
+*Expected output*: `Verified OK`
+.. Verify the `sha256sum` file content against newly created checksums.
++
+*Example*: `sha256sum -c sha256sum`
++
+*Expected output*: `_<filename>_: OK`
+
+. Extract the files from the archive.
 
 . Choose the files you need from the following list.
 +
