@@ -23,7 +23,9 @@ image::../media/grid-federation-workflow.png[Grid federation connection workflow
 
 == Considerations and requirements for grid federation connections
 
-* The grids used for grid federation must be running StorageGRID versions that are either identical or have no more than one version difference between them.
+* The grids used for grid federation must be running StorageGRID versions that are either identical or have no more than one major version difference between them.
++
+For details about version requirements, refer to the link:../release-notes/index.html[Release notes].
 
 * A grid can have one or more grid federation connections to other grids. Each grid federation connection is independent of any other connections. For example, if Grid 1 has one connection with Grid 2 and a second connection with Grid 3, there is no implied connection between Grid 2 and Grid 3.
 
