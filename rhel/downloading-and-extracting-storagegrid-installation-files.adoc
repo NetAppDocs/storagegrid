@@ -26,6 +26,31 @@ CAUTION: You must apply any required hotfixes after you install the StorageGRID 
 NOTE: Select the `.zip` file if you are running Windows on the service laptop.
 
 . Save and extract the archive file.
+. As needed, manually the verify downloaded artifacts.
++
+Downloaded artifacts::
++
+* Leaf certificate: `signatures/Leaf-Cert.pem`
+* Certificate chain: `signatures/CA-Int-Cert.pem`
+* Time stamp response chain: `TS-Cert.pem`
+* Checksum file: `sha256sum`
+* Checksum signature: `signatures/sha256sum.sig`
+* Time stamp response file: `signatures/sha256sum.sig.tsr`
+
+Verfication steps::
+
+.. Verify the leaf certificate is valid using the chain.
++
+*Example*: `openssl verify -CAfile signatures/CA-Int-Cert.pem signatures/Leaf-Cert.pem`
+.. Create a public key file from the leaf certificate.
++
+Expected output: `signatures/Leaf-Cert.pem: OK`
+.. If step a failed due to an expired leaf certificate, verify using the tsr file.
++
+*Example*: `openssl ts -CAfile signatures/CA-Int-Cert.pem -untrusted signatures/TS-Cert.pem -verify -data signatures/sha256sum.sig -in signatures/sha256sum.sig.tsr`
++
+Expected output includes: `Verification: OK`
+
 . Choose the files you need from the following list.
 +
 The files you need depend on your planned grid topology and how you will deploy your StorageGRID system.
