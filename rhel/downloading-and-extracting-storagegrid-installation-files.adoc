@@ -39,14 +39,14 @@ Downloaded artifacts::
 
 Verfication steps::
 
-.. Verify the leaf certificate is valid using the chain.
+.. Use the chain to verify the leaf certificate is valid.
 +
 *Example*: `openssl verify -CAfile signatures/CA-Int-Cert.pem signatures/Leaf-Cert.pem`
 +
 *Expected output*: `signatures/Leaf-Cert.pem: OK`
-.. If step _a_ failed due to an expired leaf certificate, verify using the `tsr` file.
+.. If step _a_ failed because of an expired leaf certificate, use the `tsr` file to verify.
 +
-Example: `openssl ts -CAfile signatures/CA-Int-Cert.pem -untrusted signatures/TS-Cert.pem -verify -data signatures/sha256sum.sig -in signatures/sha256sum.sig.tsr`
+*Example*: `openssl ts -CAfile signatures/CA-Int-Cert.pem -untrusted signatures/TS-Cert.pem -verify -data signatures/sha256sum.sig -in signatures/sha256sum.sig.tsr`
 +
 *Expected output includes*: `Verification: OK`
 .. Create a public key file from the leaf certificate.
