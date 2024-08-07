@@ -13,7 +13,7 @@ You might have to update groups and user accounts appropriately after the upgrad
 
 == Changes to group permissions and options
 
-After upgrading to StorageGRID 11.8, optionally assign the following new permissions to tenant user groups.
+After upgrading to StorageGRID 11.9, optionally assign the following new permissions to tenant user groups.
 
 [cols="1a,2a,2a" options="header"]
 |===
