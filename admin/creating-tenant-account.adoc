@@ -93,8 +93,8 @@ include::../_include/tenant-account-permissions.adoc[]
 
 See link:../admin/grid-federation-manage-tenants.html[Manage the permitted tenants for grid federation].
 
-| S3 Object Lock settings
-| Allow the tenant to specify retention and legal hold settings for the objects ingested into individual buckets:
+| S3 Object Lock
+| Allow the tenant to use specific features of S3 Object Lock:
 
 * *Set maximum retention period* defines how long new objects added to this bucket should be retained, starting from the time they are ingested.
 

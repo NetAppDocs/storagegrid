@@ -82,33 +82,17 @@ Enable S3 Object Lock for a bucket only if you need to keep objects for fixed am
 +
 CAUTION: After the S3 Object Lock setting is enabled for a bucket, it can't be disabled. Anyone with the correct permissions can add objects to this bucket that can't be changed. You might not be able to delete these objects or the bucket itself.
 +
-If you enable S3 Object Lock for a bucket, bucket versioning is enabled automatically. 
+If you enable S3 Object Lock for a bucket, bucket versioning is enabled automatically.
 
 . If you selected *Enable S3 Object Lock*, optionally enable *Default retention* for this bucket.
++
+NOTE: Your grid administrator must give you permission to link:../tenant/using-s3-object-lock.html[use specific features of S3 Object Lock].
 +
 When *Default retention* is enabled, new objects added to the bucket will be automatically protected from being deleted or overwritten. The *Default retention* setting does not apply to objects that have their own retention periods.
 
 .. If *Default retention* is enabled, specify a *Default retention mode* for the bucket.
 +
-[cols="1a,2a" options="header"]
-|===
-| Default retention mode| Description
-
-| Governance
-
-|* Users with the `s3:BypassGovernanceRetention` permission can use the `x-amz-bypass-governance-retention: true` request header to bypass retention settings.
-
-* These users can delete an object version before its retain-until-date is reached.
-
-* These users can increase, decrease, or remove an object's retain-until-date.
-
-| Compliance
-| * The object can't be deleted until its retain-until-date is reached.
-
-* The object's retain-until-date can be increased, but it can't be decreased.
-
-* The object's retain-until-date can't be removed until that date is reached.
-|===
+include::../_include/bucket-governance-compliance.adoc[]
 
 .. If *Default retention* is enabled, specify the *Default retention period* for the bucket.
 +
