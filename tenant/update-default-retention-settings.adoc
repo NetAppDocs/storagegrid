@@ -37,5 +37,7 @@ include::../_include/bucket-governance-compliance.adoc[]
 . If *Default retention* is enabled, specify the *Default retention period* for the bucket.
 +
 The *Default retention period* indicates how long new objects added to this bucket should be retained, starting from the time they are ingested. Specify a value that is less than or equal to the maximum retention period for the tenant, as set by the grid administrator.
++
+A _maximum_ retention period, which can be a value from 1 day to 100 years, is set when the grid administrator creates the tenant. When you set a _default_ retention period, it can't exceed the value set for the maximum retention period. If needed, ask your grid administrator to increase or decrease the maximum retention period.
 
 . Select *Save changes*.
