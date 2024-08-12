@@ -4,13 +4,15 @@
 
 The StorageGRID S3 Object Lock feature is an object-protection solution that is equivalent to S3 Object Lock in Amazon Simple Storage Service (Amazon S3).
 
-As shown in the figure, when the global S3 Object Lock setting is enabled for a StorageGRID system, an S3 tenant account can create buckets with or without S3 Object Lock enabled. If a bucket has S3 Object Lock enabled, bucket versioning is required and is enabled automatically. 
+When the global S3 Object Lock setting is enabled for a StorageGRID system, an S3 tenant account can create buckets with or without S3 Object Lock enabled. If a bucket has S3 Object Lock enabled, bucket versioning is required and is enabled automatically.
 
-If a bucket has S3 Object Lock enabled, S3 client applications can optionally specify retention settings for any object version saved to that bucket.
+*A bucket without S3 Object Lock* can only have objects without retention settings specified. No ingested objects will have retention settings.
+ 
+*A bucket with S3 Object Lock* can have objects with and without retention settings specified by S3 client applications. Some objects ingested will have retention settings.
+ 
+*A bucket with S3 Object Lock and default retention configured* can have uploaded objects with retention settings specified and new objects without retention settings. The new objects use the default setting, because the retention setting hasn't been configured at the object-level.
 
-In addition, a bucket that has S3 Object Lock enabled can optionally have a default retention mode and retention period. The default settings apply only to objects that are added to the bucket without their own retention settings.
-
-image::../media/s3_object_lock_architecture.png[S3 Object Lock Architecture]
+Effectively, all objects ingested have retention settings.
 
 === Retention modes
 The StorageGRID S3 Object Lock feature supports two retention modes to apply different levels of protection to objects. These modes are equivalent to the Amazon S3 retention modes.
