@@ -18,7 +18,7 @@ You can use the Tenant Manager to create S3 buckets for object data.
 +
 NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objects can be granted by link:../s3/bucket-and-group-access-policies.html[bucket policy or group policy].
 
-* If you plan to enable S3 Object Lock for a bucket, a grid admin has enabled the global S3 Object Lock setting for the StorageGRID system, and you have reviewed the requirements for S3 Object Lock buckets and objects. See link:using-s3-object-lock.html[Use S3 Object Lock to retain objects].
+* If you plan to enable S3 Object Lock for a bucket, a grid admin has enabled the global S3 Object Lock setting for the StorageGRID system, and you have reviewed the requirements for S3 Object Lock buckets and objects.
 
 * If each tenant will have 5,000 buckets, each Storage Node in the grid has a minimum of 64 GB of RAM.
 +
