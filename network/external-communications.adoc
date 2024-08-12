@@ -13,11 +13,10 @@ Clients need to communicate with grid nodes to ingest and retrieve content. The 
 
 == Restricted access to ports
 
-If enterprise networking policies restrict access to any of the ports, you can use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports.
+If enterprise networking policies restrict access to any of the ports, you can do one of the following:
 
-== Port remapping
-
-To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap ports when deploying nodes. However, you should not remap load balancer endpoints. For information about port remapping, see the installation instructions:
+* Use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports.
+* Remap ports when deploying nodes. However, you should not remap load balancer endpoints. For information about port remapping, see the installation instructions:
 
 * link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
@@ -26,7 +25,6 @@ To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap por
 * link:../vmware/index.html[Install StorageGRID on VMware]
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
-
 
 == Ports used for external communications
 
@@ -307,5 +305,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 |===
 
-// 2023 SEP 19, SGWS-25330
+// 2024 AUG 12, SGIRDDOC-91
 // 2024 JULY 15, SGRIDOC-78
+// 2023 SEP 19, SGWS-25330
