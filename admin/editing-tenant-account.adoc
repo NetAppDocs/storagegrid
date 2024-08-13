@@ -46,20 +46,28 @@ Use the search box to search for a tenant by name or tenant ID.
 +
 * If you disable *Platform services* for a tenant who is already using them, the services that they have configured for their S3 buckets will stop working. No error message is sent to the tenant. For example, if the tenant has configured CloudMirror replication for an S3 bucket, they can still store objects in the bucket, but copies of those objects will no longer be made in the external S3 bucket that they have configured as an endpoint. See link:manage-platform-services-for-tenants.html[Manage platform services for S3 tenant accounts].
 +
-* Change the setting of *Uses own identity source* to determine whether the tenant account will use its own identity source or the identity source that was configured for the Grid Manager.
+* Change the setting of *Use own identity source* to determine whether the tenant account will use its own identity source or the identity source that was configured for the Grid Manager.
 +
-If *Uses own identity source* is:
+If *Use own identity source* is:
 
- ** Disabled and selected, the tenant has already enabled its own identity source. A tenant must disable its identity source before it can use the identity source that was configured for the Grid Manager.
- ** Disabled and not selected, SSO is enabled for the StorageGRID system. The tenant must use the identity source that was configured for the Grid Manager.
+** Disabled and selected, the tenant has already enabled its own identity source. A tenant must disable its identity source before it can use the identity source that was configured for the Grid Manager.
+** Disabled and not selected, SSO is enabled for the StorageGRID system. The tenant must use the identity source that was configured for the Grid Manager.
 +
 * Select or clear the *Allow S3 Select* permission as needed. See link:manage-s3-select-for-tenant-accounts.html[Manage S3 Select for tenant accounts].
 
 * To remove the *Use grid federation connection* permission:
-.. Go to the tenant's details page.
 .. Select the *Grid federation* tab.
 .. Select *Remove permission*.
 
 * To add the *Use grid federation connection* permission:
+.. Select the *Grid federation* tab.
 .. Select the *Use grid federation connection* checkbox.
 .. Optionally, select *Clone existing local users and groups* to clone them to the remote grid. If you want, you can stop the cloning in progress or retry cloning if some local users or groups failed to be cloned after the last clone operation was completed.
+
+* To set a maximum retention period or allow compliance mode:
++
+NOTE: S3 Object Lock must be enabled on the grid before you can use these settings.
+
+.. Select the *S3 Object Lock* tab.
+.. For *Set maximum retention period*, enter a value and select the time period from the pull-down.
+.. For *Allow compliance mode*, select the checkbox.
