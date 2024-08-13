@@ -1,7 +1,5 @@
 // used in tenant/using-s3-object-lock, ilm/workflow-for-s3-object-lock
 
-== S3 Object Lock tasks
-
 The following lists for grid administrators and tenant users contain the high-level tasks for using the S3 Object Lock feature.
 
 Grid administrator::
