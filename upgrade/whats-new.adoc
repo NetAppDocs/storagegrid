@@ -62,9 +62,9 @@ Refer to:
 
 Refer to link:../s3/operations-on-objects.html[Operations on objects].
 
-=== Amazon AWS endpoint 
+=== Support for AWS Mountpoint 
 
-AWS endpoints bridge the gap between file and object by allowing applications to connect directly to S3 buckets as if they were local file systems.
+AWS Mountpoint bridges the gap between file and object, by allowing applications to connect directly to S3 buckets as if they were local file systems. By supporting Mountpoint, customers can use StorageGRID with more applications and more use cases. 
 
 == Maintenance and Supportability
 
