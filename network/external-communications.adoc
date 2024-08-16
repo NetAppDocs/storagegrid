@@ -16,13 +16,13 @@ Clients need to communicate with grid nodes to ingest and retrieve content. The 
 If enterprise networking policies restrict access to any of the ports, you can do one of the following:
 
 * Use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports.
-* Remap ports when deploying nodes. However, you should not remap load balancer endpoints. For information about port remapping, see the installation instructions:
+* Remap ports when deploying nodes. However, you should not remap load balancer endpoints. See the information about port remapping for your StorageGRID node:
 
-** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
+** link:../rhel/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Red Hat Enterprise Linux]
 
-** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
+** link:../ubuntu/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Ubuntu or Debian]
 
-** link:../vmware/index.html[Install StorageGRID on VMware]
+** link:../vmware/deploying-storagegrid-node-as-virtual-machine.html.html#vmware_remap_ports[Remap ports for StorageGRID on VMware]
 
 ** https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
 
