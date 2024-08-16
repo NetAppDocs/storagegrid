@@ -108,7 +108,7 @@ entries:
     entries:
     - title: Manage objects with S3 Object Lock
       url: "/ilm/managing-objects-with-s3-object-lock.html" 
-    - title: Workflow for S3 Object Lock
+    - title: S3 Object Lock tasks
       url: "/ilm/workflow-for-s3-object-lock.html"
     - title: Requirements for S3 Object Lock
       url: "/ilm/requirements-for-s3-object-lock.html"
