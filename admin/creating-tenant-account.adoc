@@ -72,15 +72,35 @@ If you are creating a tenant that will use a grid federation connection, optiona
 
 .Steps
 
-. Optionally, select any permissions you want this tenant to have.
+. Optionally, select the basic permissions you want this tenant to have.
 +
 NOTE: Some of these permissions have additional requirements. For details, select the help icon for each permission.
 +
 include::../_include/tenant-account-permissions.adoc[]
 
-. If you selected *Use grid federation connection*, select one of the available grid federation connections.
+. Optionally, select the advanced permissions you want this tenant to have.
 +
-image::../media/grid-federation-select-tenant-permission.png[Grid federation select tenant permission]
+[cols="1a,3a" options="header"]
+|===
+| Permission | If selected...
+
+| Grid federation connection
+| The tenant can use a grid federation connection, which:
+
+* Causes this tenant and all tenant groups and users added to the account to be cloned from this grid (the _source grid_) to the other grid in the selected connection (the _destination grid_). 
+
+* Allows this tenant to configure cross-grid replication between corresponding buckets on each grid.
+
+See link:../admin/grid-federation-manage-tenants.html[Manage the permitted tenants for grid federation].
+
+| S3 Object Lock
+| Allow the tenant to use specific features of S3 Object Lock:
+
+* *Set maximum retention period* defines how long new objects added to this bucket should be retained, starting from the time they are ingested.
+
+* *Allow compliance mode* prevents users from overwriting or deleting protected object versions during the retention period.
+|===
+
 . Select *Continue*.
 
 == Define root access and create tenant
