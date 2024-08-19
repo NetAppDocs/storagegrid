@@ -41,8 +41,6 @@ The following required port was added in StorageGRID 11.7. Make sure it's availa
 Before upgrading, confirm that this port is open from all grid nodes to all Storage Nodes.  
 
 Blocking this port will cause S3 service interruptions after upgrade to StorageGRID 11.9.
-
 |===
-
 
 CAUTION: If you have opened any custom firewall ports, you are notified during the upgrade precheck. You must contact technical support before proceeding with the upgrade.
