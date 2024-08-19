@@ -184,8 +184,8 @@ Note the following important guidelines:
 
   *** If you are adding new disks you should use the same type of storage device that was in use before node recovery.
   *** The Storage Node .ovf file defines several VMDKs for storage. Unless these VMDKs meet your storage requirements, you should remove them and assign appropriate VMDKs or RDMs for storage before powering up the node. VMDKs are more commonly used in VMware environments and are easier to manage, while RDMs might provide better performance for workloads that use larger object sizes (for example, greater than 100 MB).
-[[vmware_remap_ports]]
-. If you need to remap the ports used by this node, follow these steps.
+
+. [[vmware-remap-ports]]If you need to remap the ports used by this node, follow these steps.
 +
 You might need to remap a port if your enterprise networking policies restrict access to one or more ports that are used by StorageGRID. See the link:../network/index.html[networking guidelines] for the ports used by StorageGRID.
 +

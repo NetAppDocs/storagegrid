@@ -22,7 +22,7 @@ If enterprise networking policies restrict access to any of the ports, you can d
 
 ** link:../ubuntu/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Ubuntu or Debian]
 
-** link:../vmware/deploying-storagegrid-node-as-virtual-machine.html.html#vmware_remap_ports[Remap ports for StorageGRID on VMware]
+** link:../vmware/deploying-storagegrid-node-as-virtual-machine.html#vmware-remap-ports[Remap ports for StorageGRID on VMware]
 
 ** https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
 
