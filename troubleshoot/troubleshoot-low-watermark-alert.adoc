@@ -17,15 +17,15 @@ When you upgrade to StorageGRID 11.6 or higher, optimized read-only and read-wri
 
 * Your system is close to capacity and would not be able to accept new data if optimized watermarks were applied. StorageGRID will not change watermark settings in this case.
 
-* You previously set any of the storage volume watermarks to a custom value. StorageGRID will not override custom watermark settings with optimized values. However, StorageGRID might trigger the *Low read-only watermark override* alert if your custom value for the Storage volume soft read-only watermark is too small.
+* You previously set any of the storage volume watermarks to a custom value. StorageGRID will not override custom watermark settings with optimized values. However, StorageGRID might trigger the *Low read-only watermark override* alert if your custom value for the storage volume soft read-only watermark is too small.
 
 == Understand the alert
 
 If you use custom values for storage volume watermarks, the *Low read-only watermark override* alert might be triggered for one or more Storage Nodes. 
 
-Each instance of the alert indicates that the custom value of the *Storage volume soft read-only watermark* is smaller than the minimum optimized value for that Storage Node. If you continue to use the custom setting, the Storage Node might run critically low on space before it can safely transition to the read-only state. Some storage volumes might become inaccessible (automatically unmounted) when the node reaches capacity. 
+Each instance of the alert indicates that the custom value of the storage volume soft read-only watermark is smaller than the minimum optimized value for that Storage Node. If you continue to use the custom setting, the Storage Node might run critically low on space before it can safely transition to the read-only state. Some storage volumes might become inaccessible (automatically unmounted) when the node reaches capacity. 
 
-For example, suppose you previously set the *Storage volume soft read-only watermark* to 5 GB. Now suppose that StorageGRID has calculated the following optimized values for the four storage volumes in Storage Node A:
+For example, suppose you previously set the storage volume soft read-only watermark to 5 GB. Now suppose that StorageGRID has calculated the following optimized values for the four storage volumes in Storage Node A:
 
 [cols="2a,2a"]
 |===
@@ -80,7 +80,7 @@ image::../media/nodes_page_object_data_used_with_alert.png[Nodes page showing ob
 
 === [[view-optimized-watermarks]]View optimized storage watermarks
 
-StorageGRID uses two Prometheus metrics to show the optimized values it has calculated for the *Storage volume soft read-only watermark*. You can view the minimum and maximum optimized values for each Storage Node in your grid.
+StorageGRID uses two Prometheus metrics to show the optimized values it has calculated for the storage volume soft read-only watermark. You can view the minimum and maximum optimized values for each Storage Node in your grid.
 
 .Steps
 
@@ -92,13 +92,13 @@ StorageGRID uses two Prometheus metrics to show the optimized values it has calc
 +
 `storagegrid_storage_volume_minimum_optimized_soft_readonly_watermark`
 +
-The last column shows the minimum optimized value of the Soft read-only watermark for all storage volumes on each Storage Node. If this value is greater than the custom setting for the *Storage volume soft read-only watermark*, the *Low read-only watermark override* alert is triggered for the Storage Node.
+The last column shows the minimum optimized value of the soft read-only watermark for all storage volumes on each Storage Node. If this value is greater than the custom setting for the storage volume soft read-only watermark, the *Low read-only watermark override* alert is triggered for the Storage Node.
 
 . To see the recommended maximum soft read-only watermark, enter the following Prometheus metric, and select *Execute*: 
 +
 `storagegrid_storage_volume_maximum_optimized_soft_readonly_watermark`
 +
-The last column shows the maximum optimized value of the Soft read-only watermark for all storage volumes on each Storage Node. 
+The last column shows the maximum optimized value of the soft read-only watermark for all storage volumes on each Storage Node. 
 
 . [[maximum_optimized_value]]Note the maximum optimized value for each Storage Node.
 
