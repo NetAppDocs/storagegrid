@@ -256,7 +256,7 @@ TIP: If all or most of the nodes use the same type of temporary installation pas
 +
 *TEMPORARY_PASSWORD_TYPE* can be one of the following:
 
-**	*Use node name*: The node name is used as the temporary installation password.
+**	*Use node name*: The node name is used as the temporary installation password and provides access to VM console, the StorageGRID Installation API, and SSH.
 ** *Disable password*: No temporary installation password will be used. If you need to access the VM to debug installation issues, see link:troubleshooting-installation-issues.html[Troubleshoot installation issues].
 **	*Use custom password*: The value provided with *CUSTOM_TEMPORARY_PASSWORD=<password>* is used as the temporary installation password and provides access to VM console, the StorageGRID Installation API, and SSH.
 +
