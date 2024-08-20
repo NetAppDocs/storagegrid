@@ -14,7 +14,7 @@ If you are using an S3 tenant, you can change the versioning state for S3 bucket
 .Before you begin
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the link:tenant-management-permissions.html[Manage all buckets or Root access permission]. These permissions override the permissions settings in group or bucket policies.
-* All Storage Nodes are available.
+* •	You've verified that the required number of Storage Nodes and sites are available. If two or more Storage Nodes are not available within any site, or if a site is not available, changes to these settings might not be available.
 
 .About this task
 
