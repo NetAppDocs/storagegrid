@@ -293,6 +293,7 @@ This example entry is for a primary Admin Node that is on all three networks:
 [DC1-ADM1]
   ADMIN_ROLE = Primary
   NODE_TYPE = VM_Admin_Node
+  CUSTOM_TEMPORARY_PASSWORD = Passw0rd
 
   GRID_NETWORK_IP = 10.1.0.2
   ADMIN_NETWORK_IP = 10.3.0.2
