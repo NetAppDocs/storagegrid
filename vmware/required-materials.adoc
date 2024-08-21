@@ -17,7 +17,7 @@ Network plan:: Which networks you intend to attach to each StorageGRID node. Sto
 +
 See the StorageGRID link:../network/index.html[Networking guidelines].
 
-Network information:: Unless you are using DHCP, IP addresses to assign to each grid node and the IP addresses of the DNS and NTP servers.
+Network information:: IP addresses to assign to each grid node and the IP addresses of the DNS and NTP servers.
 
 Servers for grid nodes:: Identify a set of servers (physical, virtual, or both) that, in aggregate, provide sufficient resources to support the number and type of StorageGRID nodes you plan to deploy.
 +
