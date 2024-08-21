@@ -18,7 +18,7 @@ Each StorageGRID node requires the following minimum resources:
 ** Generally, at least 24 GB per node, and 2 to 16 GB less than the total system RAM
 ** A minimum of 64 GB for each tenant that will have approximately 5,000 buckets
 
-Ensure that the number of StorageGRID nodes you plan to run on each physical or virtual host does not exceed the number of CPU cores or the physical RAM available. If the hosts aren't dedicated to running StorageGRID (not recommended), be sure to consider the resource requirements of the other applications.
+VMware supports one node per virtual host. Ensure that the StorageGRID node does not exceed the physical RAM available. If the hosts aren't dedicated to running StorageGRID (not recommended), be sure to consider the resource requirements of the other applications.
 
 CAUTION: Monitor your CPU and memory usage regularly to ensure that these resources continue to accommodate your workload. For example, doubling the RAM and CPU allocation for virtual Storage Nodes would provide similar resources to those provided for StorageGRID appliance nodes. Additionally, if the amount of metadata per node exceeds 500 GB, consider increasing the RAM per node to 48 GB or more. For information about managing object metadata storage, increasing the Metadata Reserved Space setting, and monitoring CPU and memory usage, see the instructions for link:../admin/index.html[administering], link:../monitor/index.html[monitoring], and link:../upgrade/index.html[upgrading] StorageGRID.
 
