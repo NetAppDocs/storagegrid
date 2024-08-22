@@ -160,7 +160,7 @@ NOTE: For the best network performance, all nodes should be configured with simi
 ADMIN_NETWORK_CONFIG = STATIC
 ----
 
-* *ADMIN_NETWORK_TARGET*: The name of an existing VMware network to use for the Admin Network. This setting is required unless the Admin Network is disabled. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
+* *ADMIN_NETWORK_TARGET*: The name of an existing VMware network to use for the Admin Network. This setting is required unless the Admin Network is disabled. If all or most of the nodes use the same network name, you can specify it here. Unlike the Grid Network, all nodes do not need to be connected to the same Admin Network. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
 ADMIN_NETWORK_TARGET = SG Admin Network
