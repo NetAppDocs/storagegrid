@@ -61,9 +61,9 @@ vsphere-gateway.mf
 |===
 
 * The `.vdmk`, `.ovf`, and `.mf` files are all in the same directory.
-* You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single virtual machine server.
+* You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single vSphere host.
 +
-CAUTION: In a production deployment, don't run more than one Storage Node on a single virtual machine server. Using a dedicated virtual machine host for each Storage Node provides an isolated failure domain.
+CAUTION: In a production deployment, don't run more than one Storage Node on a single vSphere host. Using a dedicated virtual machine host for each Storage Node provides an isolated failure domain.
 
 * If you are deploying a node as part of an expansion or recovery operation, you have the link:../expand/index.html[instructions for expanding a StorageGRID system] or the link:../maintain/index.html[recovery and maintenance instructions].
 
