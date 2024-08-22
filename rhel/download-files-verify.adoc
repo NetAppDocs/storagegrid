@@ -14,7 +14,7 @@ If necessary, you can manually verify the files in the StorageGRID installation 
 .Steps
 
 . If you haven't already, link:../rhel/downloading-and-extracting-storagegrid-installation-files.html#download-verification-package[download the verification package] from the https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads page for StorageGRID^].
-. Extract the file:
+. Extract the artifacts from the package:
 +
 `tar -xf StorageGRID_11.9.0_Code_Signature_Verification_Package.tar.gz`
 . Ensure that these artifacts were extracted:
