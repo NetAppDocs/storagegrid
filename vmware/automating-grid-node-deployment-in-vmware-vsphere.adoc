@@ -125,7 +125,7 @@ GRID_NETWORK_CONFIG = DHCP
 * *GRID_NETWORK_TARGET*: The name of an existing VMware network to use for the Grid Network. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-GRID_NETWORK_TARGET = SG-Admin-Network
+GRID_NETWORK_TARGET = SG Admin Network
 ----
 
 * *GRID_NETWORK_MASK*: The network mask for the Grid Network. If all or most of the nodes use the same network mask, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
@@ -163,7 +163,7 @@ ADMIN_NETWORK_CONFIG = STATIC
 * *ADMIN_NETWORK_TARGET*: The name of an existing VMware network to use for the Admin Network. This setting is required unless the Admin Network is disabled. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-ADMIN_NETWORK_TARGET = SG-Admin-Network
+ADMIN_NETWORK_TARGET = SG Admin Network
 ----
 
 * *ADMIN_NETWORK_MASK*: The network mask for the Admin Network. This setting is required if you are using static IP addressing. If all or most of the nodes use the same network mask, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
