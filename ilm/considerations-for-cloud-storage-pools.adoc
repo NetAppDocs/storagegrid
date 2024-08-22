@@ -15,6 +15,13 @@ If you plan to use a Cloud Storage Pool to move objects out of the StorageGRID s
 
 * In general, cloud archival storage, such as Amazon S3 Glacier or Azure Blob storage, is an inexpensive place to store object data. However, the costs to retrieve data from cloud archival storage are relatively high. To achieve the lowest overall cost, you must consider when and how often you will access the objects in the Cloud Storage Pool. Using a Cloud Storage Pool is recommended only for content that you expect to access infrequently.
 * Using Cloud Storage Pools with FabricPool is not supported because of the added latency to retrieve an object from the Cloud Storage Pool target.
+* Objects with S3 Object Lock enabled can't be placed in Cloud Storage Pools.
+* If the destination S3 bucket for a Cloud Storage Pool has S3 Object Lock enabled, the attempt to configure bucket replication (PutBucketReplication) will fail with an AccessDenied error.
+* The following platform, authentication, and protocol combinations with S3 Object lock aren't supported for Cloud Storage Pools:
++
+** *Platforms*: Google Cloud Platform and Azure
+** *Authentication types*: IAM Roles Anywhere and anonymous access 
+** *Protocol*: HTTP
 
 == Considerations for the ports used for Cloud Storage Pools
 
@@ -97,5 +104,6 @@ Don't use Azure Blob storage lifecycle management for the container used with a 
 
 * link:creating-cloud-storage-pool.html[Create a Cloud Storage Pool]
 
+// 2024 JUN 14, SGWS-31273
 // 2024 JULY 15, SGRIDDOC-80
 // 2023 DEC 19, SGRIDDOC-39

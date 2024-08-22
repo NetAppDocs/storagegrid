@@ -471,7 +471,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | The space available for storing object data is low.
 
 | Low read-only watermark override
-| The Storage Volume Soft Read-Only Watermark Override is less than the minimum optimized watermark for a Storage Node.
+| The storage volume soft read-only watermark override is less than the minimum optimized watermark for a Storage Node.
 
 | Low root disk capacity
 | The space available on the root disk is low.

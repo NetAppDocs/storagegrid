@@ -2,7 +2,7 @@ settings:
   name: "StorageGRID 11.9"
   search: "storagegrid-enable,storagegrid-119,storagegrid-appliances"
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
     termcheck_enabled: false
   prod:
     pdf_enabled: false
