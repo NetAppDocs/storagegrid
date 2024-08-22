@@ -83,7 +83,7 @@ If you are installing a new StorageGRID system:
 
 If you are performing an expansion or recovery operation:
 
-* You must ensure that the new virtual machine can connect to the primary Admin Node over the Grid Network.
+* You must ensure that the new virtual machine can connect to all other nodes over the Grid Network.
 
 If you need to remap any of the node's ports, don't power on the new node until the port remap configuration is complete.
 
