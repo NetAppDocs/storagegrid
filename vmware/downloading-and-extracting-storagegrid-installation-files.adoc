@@ -28,7 +28,7 @@ NOTE: Use the `.zip` file if you are running Windows on the service laptop.
 . Save the archive file.
 
 . [[vmware-download-verification-package]]If you need to verify the installation archive:
-.. Download the StorageGRID code signature verification package. The file name for this package uses the format `StorageGRID_<version-number>_Code_Signature_Verification_Package.tar.gz`, where <version-number> is the StorageGRID software version.
+.. Download the StorageGRID code signature verification package. The file name for this package uses the format `StorageGRID_<version-number>_Code_Signature_Verification_Package.tar.gz`, where `<version-number>` is the StorageGRID software version.
 .. Follow the steps to link:../vmware/download-files-verify.html[manually verify the downloaded artifacts]. 
 
 . Extract the files from the archive.
