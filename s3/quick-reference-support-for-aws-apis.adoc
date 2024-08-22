@@ -573,7 +573,6 @@ link:operations-on-the-service.html[Operations on the service > ListBuckets]
 .URI query parameters and request headers
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus these additional parameters:
 
-* `delimiter`
 * `encoding-type`	
 * `key-marker`	
 * `max-uploads`	
@@ -969,4 +968,5 @@ None
 .StorageGRID documentation
 link:upload-part-copy.html[UploadPartCopy]
 
+// 2024 AUG 22, SGRIDDOC-94
 // 2023 OCT 26, SGWS-27431
