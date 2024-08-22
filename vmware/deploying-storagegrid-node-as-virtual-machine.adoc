@@ -138,8 +138,9 @@ Determine which StorageGRID networks the node will use by selecting a destinatio
  ** The Grid Network is required. You must select a destination network in the vSphere environment.
  +
  The Grid Network is used for all internal StorageGRID traffic. It provides connectivity among all nodes in the grid, across all sites and subnets. All nodes on the Grid Network must be able to communicate with all other nodes.
- ** If you use the Admin Network, select a different destination network in the vSphere environment. If you don't use the Admin Network, select the same destination you selected for the Grid Network.
+ ** If you use the Admin Network, select a different destination network in the vSphere environment. If you don't use the Admin Network, select the same destination you selected for the Grid Network. 
  ** If you use the Client Network, select a different destination network in the vSphere environment. If you don't use the Client Network, select the same destination you selected for the Grid Network.
+ ** If you use an Admin or Client network, nodes do not have to be on the same Admin or Client networks.
 
 . For *Customize Template*, configure the required StorageGRID node properties.
 .. Enter the *Node name*.
