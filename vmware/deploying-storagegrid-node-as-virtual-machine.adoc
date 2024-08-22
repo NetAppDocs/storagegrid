@@ -202,7 +202,6 @@ NOTE: Don't remap the ports used in load balancer endpoints.
 NOTE: If only PORT_REMAP is set, the mapping that you specify applies to both inbound and outbound communications. If PORT_REMAP_INBOUND is also specified, PORT_REMAP applies only to outbound communications.
 
   ... Scroll back to the top of the table, and select *Edit*.
-  ... On the Type tab, select *User configurable*, and select *Save*.
   ... Select *Set Value*.
   ... Enter the port mapping:
 +
@@ -221,7 +220,6 @@ For example, to remap ssh traffic from port 22 to port 3022, enter:
 NOTE: If you specify PORT_REMAP_INBOUND and don't specify a value for PORT_REMAP, outbound communications for the port are unchanged.
 
   ... Scroll back to the top of the table, and select *Edit*.
-  ... On the Type tab, select *User configurable*, and select *Save*.
   ... Select *Set Value*.
   ... Enter the port mapping:
 +
