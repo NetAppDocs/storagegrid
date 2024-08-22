@@ -77,7 +77,7 @@ Follow these instructions to initially deploy VMware nodes, add a new VMware nod
 
 If you are installing a new StorageGRID system:
 
-* You must deploy the primary Admin Node before you deploy any other grid node.
+* You can deploy nodes in any order. 
 * You must ensure that each virtual machine can connect to the primary Admin Node over the Grid Network.
 * You must deploy all grid nodes before configuring the grid.
 
