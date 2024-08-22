@@ -15,7 +15,7 @@ After completing grid node deployment and configuration, follow these guidelines
 +
 You can only set up DHCP during the deployment phase. You can't set up DHCP during configuration.
 +
-CAUTION: Nodes reboot when their IP addresses change, which can cause outages if a DHCP address change affects multiple nodes at the same time.
+CAUTION: Nodes reboot when the Grid Network configuration is changed by DHCP, which can cause outages if a DHCP change affects multiple nodes at the same time.
 
 * You must use the Change IP procedures if you want to change IP addresses, subnet masks, and default gateways for a grid node. See link:../maintain/configuring-ip-addresses.html[Configure IP addresses].
 
