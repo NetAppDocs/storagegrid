@@ -26,7 +26,7 @@ NOTE: You can use the VMware `ovftool` utility to determine this value (see the 
 +
 NOTE: If you are deploying to a vApp, the virtual machines will not start automatically the first time, and you must power them on manually.
 
-* You have collected all the required information for the configuration file. See link:collecting-information-about-your-deployment-environment.html[Collect information about your deployment environment] for information.
+* You have collected all the required information for the deployment configuration file. See link:collecting-information-about-your-deployment-environment.html[Collect information about your deployment environment] for information.
 * You have access to the following files from the VMware installation archive for StorageGRID:
 
 [cols="1a,1a" options="header"]
@@ -504,7 +504,7 @@ m| configure-storagegrid.blank.json
 
 * You have created a `configure-storagegrid.json` configuration file. To create this file, you can modify the example configuration file (`configure-storagegrid.sample.json`) or the blank configuration file (`configure-storagegrid.blank.json`).
 
-You can use the `configure-storagegrid.py` Python script and the `configure-storagegrid.json` configuration file to automate the configuration of your StorageGRID system.
+You can use the `configure-storagegrid.py` Python script and the `configure-storagegrid.json` deployment configuration file to automate the configuration of your StorageGRID system.
 
 NOTE: You can also configure the system using the Grid Manager or the Installation API.
 
