@@ -119,7 +119,7 @@ TARGET = vi://vcenter.example.com/vm/sgws
 * *GRID_NETWORK_CONFIG*: The method used to acquire IP addresses, either STATIC or DHCP. The default is STATIC. If all or most of the nodes use the same method for acquiring IP addresses, you can specify that method here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-GRID_NETWORK_CONFIG = DHCP
+GRID_NETWORK_CONFIG = STATIC
 ----
 
 * *GRID_NETWORK_TARGET*: The name of an existing VMware network to use for the Grid Network. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
