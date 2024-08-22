@@ -11,10 +11,12 @@ summary: 'If necessary, you can manually verify the files in the StorageGRID ins
 [.lead]
 If necessary, you can manually verify the files in the StorageGRID installation archive.
 
-.Steps
+.Before you begin
 
-. If you haven't already, link:../rhel/downloading-and-extracting-storagegrid-installation-files.html#rhel-download-verification-package[download the verification package] from the https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads page for StorageGRID^].
+* You have link:../rhel/downloading-and-extracting-storagegrid-installation-files.html#rhel-download-verification-package[downloaded the verification package] from the https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads page for StorageGRID^].
+
+.Steps
 
 include::../_include/installation-files-verification.adoc[]
 
-. Complete the link:../rhel/downloading-and-extracting-storagegrid-installation-files.html[remaining steps] to extract and choose the appropriate installation files. 
+. link:../rhel/downloading-and-extracting-storagegrid-installation-files.html[Complete the remaining steps] to extract and choose the appropriate installation files. 

@@ -2,14 +2,14 @@
 permalink: vmware/downloading-and-extracting-storagegrid-installation-files.html
 sidebar: sidebar
 keywords: how to download vmware installation files
-summary: 'You must download the StorageGRID installation archives and extract the files..'
+summary: 'You must download the StorageGRID installation archives and extract the files. Optionally, you can manually verify the files in the installation package.'
 ---
 = Download and extract the StorageGRID installation files
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must download the StorageGRID installation archives and extract the files..
+You must download the StorageGRID installation archives and extract the files. Optionally, you can manually verify the files in the installation package.
 
 .Steps
 
@@ -25,8 +25,15 @@ CAUTION: You must apply any required hotfixes after you install the StorageGRID 
 +
 NOTE: Use the `.zip` file if you are running Windows on the service laptop.
 
-. Save and extract the archive file.
-. Choose the files you need from the following list.
+. Save the archive file.
+
+. [[vmware-download-verification-package]]If you need to verify the installation archive:
+.. Download the StorageGRID code signature verification package. The file name for this package uses the format `StorageGRID_<version-number>_Code_Signature_Verification_Package.tar.gz`, where <version-number> is the StorageGRID software version.
+.. Follow the steps to link:../vmware/download-files-verify.html[manually verify the downloaded artifacts]. 
+
+. Extract the files from the archive.
+
+. Choose the files you need.
 +
 The files you need depend on your planned grid topology and how you will deploy your StorageGRID system.
 
