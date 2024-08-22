@@ -143,7 +143,7 @@ GRID_NETWORK_GATEWAY = 10.1.0.1
 * *GRID_NETWORK_MTU*: Optional. The maximum transmission unit (MTU) on the Grid Network. If specified, the value must be between 1280 and 9216. For example:
 +
 ----
-GRID_NETWORK_MTU = 8192
+GRID_NETWORK_MTU = 9000
 ----
 +
 If omitted, 1400 is used.
