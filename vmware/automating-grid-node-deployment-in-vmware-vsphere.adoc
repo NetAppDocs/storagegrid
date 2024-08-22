@@ -196,10 +196,10 @@ ADMIN_NETWORK_MTU = 8192
 CLIENT_NETWORK_CONFIG = STATIC
 ----
 
-* *CLIENT_NETWORK_TARGET*: The name of an existing VMware network to use for the Client Network. This setting is required unless the Client Network is disabled. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
+* *CLIENT_NETWORK_TARGET*: The name of an existing VMware network to use for the Client Network. This setting is required unless the Client Network is disabled. If all or most of the nodes use the same network name, you can specify it here. Unlike the Grid Network, all nodes do not need to be connected to the same Client Network. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-CLIENT_NETWORK_TARGET = SG-Client-Network
+CLIENT_NETWORK_TARGET = SG Client Network
 ----
 
 * *CLIENT_NETWORK_MASK*: The network mask for the Client Network. This setting is required if you are using static IP addressing. If all or most of the nodes use the same network mask, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
@@ -380,7 +380,7 @@ This example entry is for an example Gateway Node on all three networks. In this
   ADMIN_NETWORK_IP = 10.3.0.5
 
   CLIENT_NETWORK_CONFIG = STATIC
-  CLIENT_NETWORK_TARGET = SG-Client-Network
+  CLIENT_NETWORK_TARGET = SG Client Network
   CLIENT_NETWORK_MASK = 255.255.255.0
   CLIENT_NETWORK_GATEWAY = 10.4.0.1
   CLIENT_NETWORK_IP = 10.4.0.5
@@ -402,7 +402,7 @@ This example entry is for a non-primary Admin Node that is not on the Client Net
   ADMIN_ROLE = Non-Primary
   NODE_TYPE = VM_Admin_Node
 
-  GRID_NETWORK_TARGET = SG-Grid-Network
+  GRID_NETWORK_TARGET = SG Grid Network
   GRID_NETWORK_IP = 10.1.0.6
   ADMIN_NETWORK_IP = 10.3.0.6
 
