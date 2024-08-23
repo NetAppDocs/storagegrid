@@ -19,4 +19,4 @@ If necessary, you can manually verify the files in the StorageGRID installation 
 
 include::../_include/installation-files-verification.adoc[]
 
-. link:../rhel/downloading-and-extracting-storagegrid-installation-files.html[Complete the remaining steps] to extract and choose the appropriate installation files. 
+. link:../rhel/downloading-and-extracting-storagegrid-installation-files.html[Complete the remaining steps] to extract and choose the appropriate files from the installation archive. 

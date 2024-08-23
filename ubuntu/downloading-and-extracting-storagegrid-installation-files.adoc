@@ -21,21 +21,17 @@ You must download the StorageGRID installation archive and extract the required 
 CAUTION: You must apply any required hotfixes after you install the StorageGRID release. For more information, see the link:../maintain/storagegrid-hotfix-procedure.html[hotfix procedure in the recovery and maintenance instructions]
 
 . Read the End User License Agreement, select the checkbox, and then select *Accept & Continue*.
-+
-The downloads page for the version you selected appears. The page contains three columns:
-
-. In the *Install StorageGRID* column, select the .tgz or .zip file for Ubuntu or Debian.
+. In the *Install StorageGRID* column, select the .tgz or .zip installation archive for Ubuntu or Debian.
 +
 NOTE: Select the `.zip` file if you are running Windows on the service laptop.
 
-. Save the archive file.
+. Save the installation archive.
 
 . [[ubuntu-download-verification-package]]If you need to verify the installation archive:
 .. Download the StorageGRID code signature verification package. The file name for this package uses the format `StorageGRID_<version-number>_Code_Signature_Verification_Package.tar.gz`, where `<version-number>` is the StorageGRID software version.
-.. Follow the steps to link:../ubuntu/download-files-verify.html[manually verify the downloaded artifacts]. 
+.. Follow the steps to link:../ubuntu/download-files-verify.html[manually verify the installation files]. 
 
-. Extract the files from the archive.
-
+. Extract the files from the installation archive.
 . Choose the files you need.
 +
 The files you need depends on your planned grid topology and how you will deploy your StorageGRID system.

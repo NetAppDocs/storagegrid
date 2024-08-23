@@ -1,6 +1,6 @@
 //used in rhel, ub, and vmware "Manually verify installation files (optional)"
 //starts at step 2 bcs step 1 is unique for each OS
-. Extract the artifacts from the package:
+. Extract the artifacts from the verification package:
 +
 `tar -xf StorageGRID_11.9.0_Code_Signature_Verification_Package.tar.gz`
 . Ensure that these artifacts were extracted:
