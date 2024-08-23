@@ -2,14 +2,14 @@
 permalink: upgrade/performing-upgrade.html
 sidebar: sidebar
 keywords: upgrade, how to perform a software upgrade
-summary: 'You can upgrade to StorageGRID 11.8 and apply the latest hotfix for that release at the same time. The StorageGRID upgrade page provides the recommended upgrade path and links directly to the correct download pages.'
+summary: 'You can upgrade to StorageGRID 11.9 and apply the latest hotfix for that release at the same time. The StorageGRID upgrade page provides the recommended upgrade path and links directly to the correct download pages.'
 ---
 = Perform the upgrade
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can upgrade to StorageGRID 11.8 and apply the latest hotfix for that release at the same time. The StorageGRID upgrade page provides the recommended upgrade path and links directly to the correct download pages.
+You can upgrade to StorageGRID 11.9 and apply the latest hotfix for that release at the same time. The StorageGRID upgrade page provides the recommended upgrade path and links directly to the correct download pages.
 
 .Before you begin
 You have reviewed all of the considerations and completed all of the planning and preparation steps.
@@ -27,7 +27,7 @@ As a first step, access the StorageGRID Upgrade page in the Grid Manager.
 
 == Select files
 
-The update path on the StorageGRID Upgrade page indicates which major versions (for example, 11.8.0) and hotfixes (for example, 11.8.0.1) you must install to get to the latest StorageGRID release. You should install the recommended versions and hotfixes in the order shown.
+The update path on the StorageGRID Upgrade page indicates which major versions (for example, 11.9.0) and hotfixes (for example, 11.9.0.1) you must install to get to the latest StorageGRID release. You should install the recommended versions and hotfixes in the order shown.
 
 TIP: If no update path is shown, your browser might not be able to access the NetApp Support Site, or the *Check for software updates* checkbox on the AutoSupport page (*SUPPORT* > *Tools* > *AutoSupport* > *Settings*) might be disabled. 
 
@@ -41,7 +41,7 @@ If no update path is shown, go to the https://mysupport.netapp.com/site/products
 +
 NOTE: If you needed to download and install an RPM or DEB package on all Linux hosts, you might already have the StorageGRID upgrade and hotfix files listed in the update path. 
 
-. Select *Browse* to upload the version upgrade file to StorageGRID: `NetApp_StorageGRID_11.8.0_Software_uniqueID.upgrade`
+. Select *Browse* to upload the version upgrade file to StorageGRID: `NetApp_StorageGRID_11.9.0_Software_uniqueID.upgrade`
 +
 When the upload and validation process is done, a green check mark appears next to the file name.
 
@@ -68,7 +68,7 @@ CAUTION: The Recovery Package file must be secured because it contains encryptio
 
 . Select *Run prechecks*, and wait for the prechecks to complete. 
 
-. Review the details for each reported precheck and resolve any reported errors. See the https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.8_software_upgrade_resolution_guide[StorageGRID software upgrade resolution guide^] for the StorageGRID 11.8 release.
+. Review the details for each reported precheck and resolve any reported errors. See the https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[StorageGRID software upgrade resolution guide^] for the StorageGRID 11.9 release.
 +
 You must resolve all precheck _errors_ before you can upgrade your system. However, you don't need to address precheck _warnings_ before upgrading.
 +
@@ -194,12 +194,11 @@ When all grid nodes have completed the upgrade stages, the *Upgrade other grid n
 
 . During the *Upgrade database* task, the upgrade process checks each node to verify that the Cassandra database does not need to be updated.
 +
-NOTE: The upgrade from StorageGRID 11.7 to 11.8 does not require a Cassandra database upgrade; however, the Cassandra service will be stopped and restarted on each Storage Node. For future StorageGRID feature releases, the Cassandra database update step might take several days to complete.
+NOTE: The upgrade from StorageGRID 11.8 to 11.9 does not require a Cassandra database upgrade; however, the Cassandra service will be stopped and restarted on each Storage Node. For future StorageGRID feature releases, the Cassandra database update step might take several days to complete.
 
 . When the *Upgrade database* task has completed, wait a few minutes for the *Final upgrade steps* to complete.
 
 . When the *Final upgrade steps* have completed, the upgrade is done. The first step, *Select files*, is redisplayed with a green success banner.
-
 
 . Verify that grid operations have returned to normal:
  .. Check that the services are operating normally and that there are no unexpected alerts.

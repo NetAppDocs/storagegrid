@@ -11,4 +11,4 @@ summary: 'Obtain release-specific information about fixed issues and known issue
 [.lead]
 Obtain release-specific information about fixed issues and known issues.
 
-Log in to the NetApp Support Site to https://library.netapp.com/ecm/ecm_download_file/ECMLP2886676[view or download a PDF file^] containing the StorageGRID 11.8 release notes.
+Log in to the NetApp Support Site to https://library.netapp.com/ecm/ecm_download_file/ECMLP2886676[view or download a PDF file^] containing the StorageGRID 11.9 release notes.

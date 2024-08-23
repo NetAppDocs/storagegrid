@@ -96,7 +96,7 @@ When you assign space to volume 0 of a new Storage Node, you must ensure there i
 
 * At a minimum, you must assign at least 4 TB to volume 0.
 +
-NOTE: If you use only one storage volume for a Storage Node and you assign 4 TB or less to the volume, the Storage Node might enter the Storage Read-Only state on startup and store object metadata only.
+NOTE: If you use only one storage volume for a Storage Node and you assign 4 TB or less to the volume, the Storage Node might enter the storage read-only state on startup and store object metadata only.
 +
 NOTE: If you assign less than 500 GB to volume 0 (non-production use only), 10% of the storage volume's capacity is reserved for metadata.
 
