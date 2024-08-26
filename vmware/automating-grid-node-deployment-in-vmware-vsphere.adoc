@@ -2,24 +2,26 @@
 permalink: vmware/automating-grid-node-deployment-in-vmware-vsphere.html
 sidebar: sidebar
 keywords: how to automate installation
-summary: 'You can use VMware vSphere to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.'
+summary: 'You can use the VMware OVF Tool to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.'
 ---
 = Automate the installation (VMware)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use VMware vSphere to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.
+You can use the VMware OVF Tool to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.
 
 == Automate grid node deployment
 
-Use VMware vSphere to automate the deployment of grid nodes.
+Use the VMware OVF Tool to automate the deployment of grid nodes.
 
 .Before you begin
 
 * You have access to a Linux/Unix system with Bash 3.2 or later.
+* You have VMware vSphere with vCenter
 * You have VMware OVF Tool 4.1 installed and correctly configured.
-* You know the username and password required to access VMware vSphere using the OVF Tool.
+* You know the username and password to access VMware vSphere using the OVF Tool
+* You have the sufficient permissions to deploy VMs from OVF files and power them on, and permissions to create additional volumes to attach to the VMs. See the `ovftool` documentation for details.
 * You know the virtual infrastructure (VI) URL for the location in vSphere where you want to deploy the StorageGRID virtual machines. This URL will typically be a vApp, or Resource Pool. For example: `vi://vcenter.example.com/vi/sgws`
 +
 NOTE: You can use the VMware `ovftool` utility to determine this value (see the `ovftool` documentation for details).
