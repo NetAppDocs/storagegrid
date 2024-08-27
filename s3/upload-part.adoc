@@ -29,6 +29,10 @@ If you specified SSE-C encryption for the CreateMultipartUpload request, you mus
 
 CAUTION: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations in link:using-server-side-encryption.html[Use server-side encryption].
 
+If you specified a SHA-256 checksum during the CreateMultipartUpload request, you must also include the following request header in each UploadPart request:
+
+* `x-amz-checksum-sha256`: Specify the SHA-256 checksum for this part.
+
 == Unsupported request headers
 
 The following request headers aren't supported:

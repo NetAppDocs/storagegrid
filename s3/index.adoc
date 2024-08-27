@@ -44,7 +44,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 | Release| Comments
 
 | 11.9
-| Added support for pre-calculated SHA256 checksum values for the following requests and supported headers. You can use this feature to verify the integrity of uploaded objects:
+| Added support for pre-calculated SHA-256 checksum values for the following requests and supported headers. You can use this feature to verify the integrity of uploaded objects:
 
 * CompleteMultipartUpload: `x-amz-checksum-sha256`
 * CreateMultipartUpload: `x-amz-checksum-algorithm`
