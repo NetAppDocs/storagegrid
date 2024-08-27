@@ -33,3 +33,4 @@ The StorageGRID Installation API includes the following sections:
 * *recovery-package* -- Operations to download the Recovery Package.
 * *schemas* -- API schemas for advanced deployments
 * *sites* -- Site-level configuration operations. You can create, view, delete, and modify a site.
+* *temporary-password* -- Operations on the temporary password to secure the mgmt-api during installation.
