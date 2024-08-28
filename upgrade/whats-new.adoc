@@ -58,11 +58,6 @@ Mountpoint for Amazon S3 allows applications to connect directly to S3 buckets a
 
 == Maintenance and Supportability
 
-=== Default audit destinations
-Fresh installations of StorageGRID 11.9 default to local node audit destinations. Previously, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
-
-As needed, you can link:../monitor/configure-audit-messages.html#select-audit-information-destinations[change audit information destinations].
-
 === Improved node decommissioning 
 To provide a smooth and efficient transition to StorageGRID next-generation hardware, link:../maintain/grid-node-decommissioning.html[node decommissioning] has been improved.
 
