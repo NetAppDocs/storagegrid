@@ -46,7 +46,7 @@ Try these steps to correct the issue:
 
 You might encounter this error under the following circumstances:
 
-* When you try to create or edit a Cloud Storage Pool 
+* When you try to create or edit a Cloud Storage Pool. 
 * When you select an unsupported platform, authentication, or protocol combination with S3 Object Lock during the configuration of a new Cloud Storage Pool. See link:../ilm/considerations-for-cloud-storage-pools.html[Considerations for Cloud Storage Pools].
 
 This error indicates that a connectivity or configuration issue is preventing StorageGRID from writing to the Cloud Storage Pool.

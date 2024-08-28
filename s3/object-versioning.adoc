@@ -30,5 +30,3 @@ NOTE: When you upload a new version of an object using a multipart upload operat
 .Related information
 * link:../ilm/how-objects-are-deleted.html#how-s3-versioned-objects-are-deleted[How S3 versioned objects are deleted]
 * link:../ilm/example-4-ilm-rules-and-policy-for-s3-versioned-objects.html[ILM rules and policies for S3 versioned objects (Example 4)].
-
-
