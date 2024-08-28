@@ -212,6 +212,12 @@ NOTE: If only PORT_REMAP is set, the mapping that you specify applies to both in
 For example, to remap ssh traffic from port 22 to port 3022, enter:
 +
 `client/tcp/22/3022`
++
+You can remap multiple ports using a comma-separated list.
++
+For example:
++
+`client/tcp/18082/443, client/tcp/18083/80`
 
 ... Select *OK*.
 
@@ -230,6 +236,12 @@ NOTE: If you specify PORT_REMAP_INBOUND and don't specify a value for PORT_REMAP
 For example, to remap inbound SSH traffic that is sent to port 3022 so that it is received at port 22 by the grid node, enter the following:
 +
 `client/tcp/3022/22`
++
+You can remap multiple inbound ports using a comma-separated list.
++
+For example:
++
+`grid/tcp/3022/22, admin/tcp/3022/22`
 
 ... Select *OK*
 
