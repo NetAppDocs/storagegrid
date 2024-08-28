@@ -237,6 +237,14 @@ PORT_REMAP = client/tcp/18082/443
 ----
 +
 If used alone, this example setting symmetrically maps both inbound and outbound communications for the grid node from port 18082 to port 443. If used in conjunction with PORT_REMAP_INBOUND, this example setting maps outbound communications from port 18082 to port 443.
++
+You can also remap multiple ports using a comma-separated list.
++
+For example:
++
+----
+PORT_REMAP = client/tcp/18082/443, client/tcp/18083/80
+----
 
 * *PORT_REMAP_INBOUND*: Remaps inbound communications for the specified port. If you specify PORT_REMAP_INBOUND but don't specify a value for PORT_REMAP, outbound communications for the port are unchanged.
 +
@@ -251,6 +259,14 @@ PORT_REMAP_INBOUND = client/tcp/443/18082
 ----
 +
 This example takes traffic that is sent to port 443 to pass an internal firewall and directs it to port 18082, where the grid node is listening for S3 requests.
++
+You can also remap multiple inbound ports using a comma-separated list.
++
+For example:
++
+----
+PORT_REMAP_INBOUND = grid/tcp/3022/22, admin/tcp/3022/22
+----
 
 * *TEMPORARY_PASSWORD_TYPE*: The type of temporary installation password to be used when accessing the VM console or the StorageGRID Installation API, or using SSH, before the node joins the grid. 
 + 

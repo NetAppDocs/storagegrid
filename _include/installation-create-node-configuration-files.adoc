@@ -678,6 +678,10 @@ VM_API_Gateway
 The format used is: `_network type_/_protocol_/_default port used by grid node_/_new port_`, where `_network type_` is grid, admin, or client, and `_protocol_` is tcp or udp.
 
 Example: `PORT_REMAP = client/tcp/18082/443`
+
+You can also remap multiple ports using a comma-separated list.
+
+Example: `PORT_REMAP = client/tcp/18082/443, client/tcp/18083/80`
 | Optional
 |===
 
@@ -692,5 +696,9 @@ Example: `PORT_REMAP = client/tcp/18082/443`
 The format used is: `_network type_/_protocol_/_remapped port_/_default port used by grid node_`, where `_network type_` is grid, admin, or client, and `_protocol_` is tcp or udp.
 
 Example: `PORT_REMAP_INBOUND = grid/tcp/3022/22`
+
+You can also remap multiple inbound ports using a comma-separated list.
+
+Example: `PORT_REMAP_INBOUND = grid/tcp/3022/22, admin/tcp/3022/22`
 | Optional
 |===
