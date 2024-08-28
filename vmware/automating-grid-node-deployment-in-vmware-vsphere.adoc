@@ -289,6 +289,7 @@ Each node is in its own section of the configuration file. Each node requires th
 
 * The section head defines the node name that will be displayed in the Grid Manager. You can override that value by specifying the optional NODE_NAME parameter for the node.
 * *NODE_TYPE*: VM_Admin_Node, VM_Storage_Node, or VM_API_Gateway_Node
+* *STORAGE_TYPE*: combined, data, or metadata. This optional parameter for storage nodes defaults to combined (data and metadata) if it is not specified. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 * *GRID_NETWORK_IP*: The IP address for the node on the Grid Network.
 * *ADMIN_NETWORK_IP*: The IP address for the node on the Admin Network. Required only if the node is attached to the Admin Network and ADMIN_NETWORK_CONFIG is set to STATIC.
 * *CLIENT_NETWORK_IP*: The IP address for the node on the Client Network. Required only if the node is attached to the Client Network and CLIENT_NETWORK_CONFIG for this node is set to STATIC.
@@ -374,12 +375,18 @@ The last example creates a symmetric remapping for ssh traffic from port 22 to p
   ADMIN_IP = 10.1.0.2
 ----
 
-The following additional setting is optional for Storage Nodes:
+The following additional settings are optional for Storage Nodes:
 
 * *DISK*: By default, Storage Nodes are assigned three 4 TB disks for RangeDB use. You can increase these settings with the DISK parameter. For example:
 +
 ----
 DISK = INSTANCES=16, CAPACITY=4096
+----
+
+* *STORAGE_TYPE*: By default, all new Storage Nodes are configured to store both object data and metadata, known as a _combined_ Storage Node. You can change the Storage Node type to store only data or metadata with the STORAGE_TYPE parameter. For example:
++
+----
+STORAGE_TYPE = data
 ----
 
 .Gateway Node

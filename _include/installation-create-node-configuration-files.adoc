@@ -648,7 +648,7 @@ Examples:
 | Optional
 |===
 
-=== Node type key
+=== Node type keys
 
 ==== NODE_TYPE
 [cols="4a,2a" option="header"]
@@ -656,12 +656,31 @@ Examples:
 | Value| Designation
 | Type of node:
 
-VM_Admin_Node
-VM_Storage_Node
-VM_Archive_Node
-VM_API_Gateway
+* VM_Admin_Node
+* VM_Storage_Node
+* VM_Archive_Node
+* VM_API_Gateway
 | Required
 |===
+
+==== STORAGE_TYPE
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+| Defines the type of objects a Storage Node contains. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes]. This key is only required for nodes with NODE_TYPE = VM_Storage_Node; don't specify it for other node types. Storage types:
+
+* combined
+* data
+* metadata
+
+*Note*: If the STORAGE_TYPE is not specified, the Storage Node type is set to combined (data and metadata) by default.
+| Optional
+|===
+
+
+
+
+
 
 === Port remap keys
 
