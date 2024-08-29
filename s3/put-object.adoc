@@ -179,8 +179,8 @@ For details, refer to https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-hea
 
 .Related information
 
-link:../ilm/index.html[Manage objects with ILM]
-https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html[Amazon Simple Storage Service API Reference: PutObject^]
+* link:../ilm/index.html[Manage objects with ILM]
+* link:https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html[Amazon Simple Storage Service API Reference: PutObject^]
 
 // 2024 AUG 22, SGRIDDOC-93
 // 2024 MAY 23, SGWS-31243
