@@ -35,8 +35,8 @@ NOTE: You can use multiple gateways and high availability (HA) groups to provide
 During the StorageGRID 11.9 upgrade:
 
 * All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version 3.9.
-*	SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B08.EX.
-*	SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B13.EC.
+*	SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B08.EX and BMC firmware version 4.00.07.
+*	SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B13.EC and BMC firmware version 4.74.07.
 *	SGF6112, SG6160, SG110 and SG1100 appliances are automatically upgraded to BMC firmware version 3.16.07.
 
 == ILM policies are handled differently according to their status
