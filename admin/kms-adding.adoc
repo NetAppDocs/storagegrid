@@ -89,7 +89,7 @@ NOTE: If you uploaded a certificate bundle, the metadata for each certificate ap
 
 . Select *Continue*.
 
-== Step 3: Upload client certificates
+== [[sg-create-key]]Step 3: Upload client certificates
 
 In Step 3 (Upload client certificates) of the Add a Key Management Server wizard, you upload the client certificate and the client certificate private key. The client certificate allows StorageGRID to authenticate itself to the KMS.
 
@@ -103,7 +103,6 @@ The client certificate metadata appears.
 
 . Browse to the location of the private key for the client certificate.
 . Upload the private key file.
-[[sg-create-key]]
 . Select *Test and save*.
 +
 If a key doesn't exist, you are prompted to have StorageGRID create one.
