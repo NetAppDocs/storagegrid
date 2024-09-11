@@ -95,8 +95,9 @@ entries:
     entries:
     - title: Manage platform services
       pdf-filename: Manage S3 platform services
-      url: "/tenant/what-platform-services-are.html"
       entries:
+      - title: StorageGRID platform services
+        url: "/tenant/what-platform-services-are.html"
       - title: CloudMirror replication service
         url: "/tenant/understanding-cloudmirror-replication-service.html"
       - title: Notifications for buckets
