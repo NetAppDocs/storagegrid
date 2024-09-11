@@ -91,14 +91,14 @@ Example:
 +
 ----
 [root@rhel-example ~]# dnf list | grep -i storagegrid
-StorageGRID-Webscale-Images-11-6-0.x86_64   11.6.0-20220210.0232.8d56cfe   @System                              
-StorageGRID-Webscale-Images-11-7-0.x86_64   11.7.0-20230424.2238.1a2cf8c   @System                              
-StorageGRID-Webscale-Images-11-8-0.x86_64   11.8.0-20240131.0139.e3e0c87   @System                              
-StorageGRID-Webscale-Images-11-9-0.x86_64   11.9.0-20240826.1753.4aeeb70   @System                              
-StorageGRID-Webscale-Service-11-6-0.x86_64  11.6.0-20220210.0232.8d56cfe   @System                              
-StorageGRID-Webscale-Service-11-7-0.x86_64  11.7.0-20230424.2238.1a2cf8c   @System                              
-StorageGRID-Webscale-Service-11-8-0.x86_64  11.8.0-20240131.0139.e3e0c87   @System                              
-StorageGRID-Webscale-Service-11-9-0.x86_64  11.9.0-20240826.1753.4aeeb70   @System                              
+StorageGRID-Webscale-Images-11-6-0.x86_64 11.6.0-20220210.0232.8d56cfe @System                              
+StorageGRID-Webscale-Images-11-7-0.x86_64 11.7.0-20230424.2238.1a2cf8c @System                              
+StorageGRID-Webscale-Images-11-8-0.x86_64 11.8.0-20240131.0139.e3e0c87 @System                              
+StorageGRID-Webscale-Images-11-9-0.x86_64 11.9.0-20240826.1753.4aeeb70 @System                              
+StorageGRID-Webscale-Service-11-6-0.x86_64 11.6.0-20220210.0232.8d56cfe @System                              
+StorageGRID-Webscale-Service-11-7-0.x86_64 11.7.0-20230424.2238.1a2cf8c @System                              
+StorageGRID-Webscale-Service-11-8-0.x86_64 11.8.0-20240131.0139.e3e0c87 @System                              
+StorageGRID-Webscale-Service-11-9-0.x86_64 11.9.0-20240826.1753.4aeeb70 @System                              
 [root@rhel-example ~]#
 ----
 .. Remove previous StorageGRID packages: `dnf remove <images-package> <service-package>`
@@ -115,16 +115,16 @@ Unable to read consumer identity
 This system is not registered with an entitlement server. You can use subscription-manager to register.
 
 Dependencies resolved.
-==========================================================================================
+============================================================================
 Package                           Architecture         Version           Repository  Size
-==========================================================================================
+============================================================================
 Removing:
-StorageGRID-Webscale-Images-11-6-0   x86_64   11.6.0-20220210.0232.8d56cfe  @System  2.7 G
-StorageGRID-Webscale-Service-11-6-0  x86_64   11.6.0-20220210.0232.8d56cfe  @System  7.5 M
+StorageGRID-Webscale-Images-11-6-0 x86_64 11.6.0-20220210.0232.8d56cfe @System 2.7 G
+StorageGRID-Webscale-Service-11-6-0 x86_64 11.6.0-20220210.0232.8d56cfe @System 7.5 M
 
 Transaction Summary
-==========================================================================================
-Remove  2 Packages
+============================================================================
+Remove 2 Packages
 
 Freed space: 2.8 G
 Is this ok [y/N]: y
@@ -134,8 +134,8 @@ Running transaction test
 Transaction test succeeded.
 Running transaction
   Preparing: 1/1 
-  Running scriptlet: StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64                                                                              1/2 
-  Erasing: StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64                                                                              1/2 
+  Running scriptlet: StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64  1/2 
+  Erasing: StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64  1/2 
 warning: file /usr/lib64/python2.7/site-packages/netapp/storagegrid/vendor/latest/netaddr/strategy/ipv6.pyc: remove failed: No such file or directory
 warning: file /usr/lib64/python2.7/site-packages/netapp/storagegrid/vendor/latest/netaddr/strategy/ipv4.pyc: remove failed: No such file or directory
 warning: file /usr/lib64/python2.7/site-packages/netapp/storagegrid/vendor/latest/netaddr/strategy/eui64.pyc: remove failed: No such file or directory
@@ -158,11 +158,12 @@ warning: file /usr/lib64/python2.7/site-packages/netapp/storagegrid/vendor/lates
 
   Erasing: StorageGRID-Webscale-Images-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64   2/2 
   Verifying: StorageGRID-Webscale-Images-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64  1/2 
-  Verifying        : StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64  2/2 
+  Verifying: StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64  2/2 
 Installed products updated.
 
 Removed:
-  StorageGRID-Webscale-Images-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64                StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64               
+  StorageGRID-Webscale-Images-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64
+  StorageGRID-Webscale-Service-11-6-0-11.6.0-20220210.0232.8d56cfe.x86_64               
 
 Complete!
 [root@rhel-example ~]#
