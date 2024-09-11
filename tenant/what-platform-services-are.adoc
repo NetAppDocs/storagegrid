@@ -11,7 +11,7 @@ summary: 'StorageGRID platform services can help you implement a hybrid cloud st
 [.lead]
 StorageGRID platform services can help you implement a hybrid cloud strategy by allowing you to send event notifications and copies of S3 objects and object metadata to external destinations.
 
-If the use of platform services is allowed for your tenant account, you can configure these following services for any S3 bucket.
+If the use of platform services is allowed for your tenant account, you can configure these services for any S3 bucket.
 
 == CloudMirror replication
 Use link:understanding-cloudmirror-replication-service.html[StorageGRID CloudMirror replication service] to mirror specific objects from a StorageGRID bucket to a specified external destination.
