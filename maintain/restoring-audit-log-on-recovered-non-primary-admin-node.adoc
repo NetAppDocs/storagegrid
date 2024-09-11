@@ -59,5 +59,3 @@ When prompted, enter the password for admin.
 +
 `chown ams-user:bycast *`
 . Log out as root: `exit`
-
-You must also restore any pre-existing client access to the audit share. For more information, see link:../admin/configuring-audit-client-access.html[Configure audit client access].
