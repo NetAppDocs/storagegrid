@@ -58,7 +58,7 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 
 | Metadata| Conclusion
 
-| No object found ("ERROR":"" )
+| Object <object_identifier> not found
 | If the object is not found, the message "ERROR":"" is returned.
 
 If the object is not found, you can reset the count of *Objects lost* to clear the alert. The lack of an object indicates that the object was intentionally deleted.
