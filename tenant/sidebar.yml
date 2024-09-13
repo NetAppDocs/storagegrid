@@ -125,8 +125,9 @@ entries:
     - title: Configure event notifications
       url: "/tenant/configuring-event-notifications.html"
     - title: Use search integration service
-      url: "/tenant/using-search-integration-service.html"
       entries:
+      - title: Configure search integration service
+        url: "/tenant/using-search-integration-service.html"
       - title: Configure XML for search integration
         url: "/tenant/configuration-xml-for-search-configuration.html"
       - title: Configure search integration service

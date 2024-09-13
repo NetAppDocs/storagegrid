@@ -2,14 +2,14 @@
 permalink: tenant/configuring-cloudmirror-replication.html
 sidebar: sidebar
 keywords: how to configure CloudMirror replication, replication xml
-summary: 'The CloudMirror replication service is one of the three StorageGRID platform services. You can use CloudMirror replication to automatically replicate objects to an external S3 bucket.'
+summary: 'You can use CloudMirror replication to automatically replicate objects to an external S3 bucket.'
 ---
 = Configure CloudMirror replication
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The link:understanding-cloudmirror-replication-service.html[CloudMirror replication service] is one of the three StorageGRID platform services. You can use CloudMirror replication to automatically replicate objects to an external S3 bucket.
+You can use CloudMirror replication to automatically replicate objects to an external S3 bucket.
 
 .Before you begin
 
