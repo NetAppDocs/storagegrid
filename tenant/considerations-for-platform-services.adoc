@@ -13,6 +13,50 @@ Before implementing platform services, review the recommendations and considerat
 
 For information about S3, see link:../s3/index.html[Use S3 REST API].
 
+
+== How platform services are configured
+
+Platform services communicate with external endpoints that you configure using the link:configuring-platform-services-endpoints.html[Tenant Manager] or the link:understanding-tenant-management-api.html[Tenant Management API]. Each endpoint represents an external destination, such as a StorageGRID S3 bucket, an Amazon Web Services bucket, an Amazon SNS topic, or an Elasticsearch cluster hosted locally, on AWS, or elsewhere.
+
+After you create an external endpoint, you can enable a platform service for a bucket by adding XML configuration to the bucket. The XML configuration identifies the objects that the bucket should act on, the action that the bucket should take, and the endpoint that the bucket should use for the service.
+
+You must add separate XML configurations for each platform service that you want to configure. For example:
+
+* If you want all objects whose keys start with `/images` to be replicated to an Amazon S3 bucket, you must add a replication configuration to the source bucket.
+* If you also want to send notifications when these objects are stored to the bucket, you must add a notifications configuration.
+* If you want to index the metadata for these objects, you must add the metadata notification configuration that is used to implement search integration.
+
+The format for the configuration XML is governed by the S3 REST APIs used to implement StorageGRID platform services:
+
+[cols="1a,2a,1a" options="header"]
+|===
+| Platform service| S3 REST API | Refer to
+
+| CloudMirror replication
+| 
+* GetBucketReplication
+* PutBucketReplication
+
+| * link:configuring-cloudmirror-replication.html[CloudMirror replication]
+* link:../s3/operations-on-buckets.html[Operations on buckets]
+
+| Notifications
+| 
+* GetBucketNotificationConfiguration
+* PutBucketNotificationConfiguration
+
+| * link:configuring-event-notifications.html[Notifications]
+* link:../s3/operations-on-buckets.html[Operations on buckets]
+
+| Search integration
+| 
+* GET Bucket metadata notification configuration
+* PUT Bucket metadata notification configuration
+
+| * link:using-search-integration-service.html[Search integration]
+* link:../s3/custom-operations-on-buckets.html[StorageGRID custom operations]
+|===
+
 == Considerations for using platform services
 
 [cols="1a,3a" options="header"]
