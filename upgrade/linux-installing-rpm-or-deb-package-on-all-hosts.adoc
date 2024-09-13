@@ -25,7 +25,7 @@ StorageGRID software versions have this format: 11._x.y_. StorageGRID hotfixes h
 . Sign in with the username and password for your NetApp account.
 . If a Caution/MustRead notice appears, make note of the hotfix number, and select the checkbox.
 
-. Read the End User License Agreement, select the checkbox, and then select *Accept & Continue*.
+. Read the End User License Agreement (EULA), select the checkbox, and then select *Accept & Continue*.
 +
 The downloads page for the version you selected appears. The page contains three columns.
 
@@ -69,7 +69,7 @@ See the steps for installing StorageGRID host services in the installation instr
 * link:../ubuntu/installing-storagegrid-webscale-host-services.html[Ubuntu or Debian: Install StorageGRID host services]
 
 +
-The new packages are installed as additional packages. Don't remove the existing packages.
+The new packages are installed as additional packages.
 
 == Remove installation archives for previous versions
 To free up space on Linux hosts, you can remove the installation archives for previous versions of StorageGRID that you no longer need.
@@ -103,7 +103,9 @@ StorageGRID-Webscale-Service-11-9-0.x86_64 11.9.0-20240826.1753.4aeeb70 @System
 ----
 .. Remove previous StorageGRID packages: `dnf remove _images-package_ _service-package_`
 +
-The warnings can be safely ignored. They refer to files that have been replaced when you install newer StorageGRID packages.
+CAUTION: Do not remove the installation archives for the version of StorageGRID you are currently running or the versions of StorageGRID you are planning to upgrade to.
++
+You can safely ignore the warnings that appear. They refer to files that have been replaced when you install newer StorageGRID packages.
 +
 Example:
 +
@@ -192,6 +194,8 @@ root@debian-example:~#
 
 .. Remove previous StorageGRID packages: `dpkg -r _images-package_ _service-package_`
 +
+CAUTION: Do not remove the installation archives for the version of StorageGRID you are currently running or the versions of StorageGRID you are planning to upgrade to.
++
 Example:
 +
 ----
@@ -247,6 +251,8 @@ storagegrid-11.6.0   API_Gateway    cb480ed37eea   2 years ago     1.35GB
 
 .. Remove the container images for previous StorageGRID versions: `docker rmi _image id_`
 +
+CAUTION: Do not remove the container images for the version of StorageGRID you are currently running or the versions of StorageGRID you are planning to upgrade to.
++
 Example:
 +
 ----
@@ -285,6 +291,8 @@ localhost/storagegrid-11.6.0  API_Gateway   cb480ed37eea  2 years ago    1.38 GB
 ----
 
 .. Remove the container images for previous StorageGRID versions: `podman rmi _image id_`
++
+CAUTION: Do not remove the container images for the version of StorageGRID you are currently running or the versions of StorageGRID you are planning to upgrade to.
 +
 Example:
 +
