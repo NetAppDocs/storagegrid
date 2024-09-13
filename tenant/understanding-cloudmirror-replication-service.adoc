@@ -22,7 +22,6 @@ CloudMirror replication operates independently of the grid's active ILM policies
 CloudMirror replication has important similarities and differences with the cross-grid replication feature. Refer to link:../admin/grid-federation-compare-cgr-to-cloudmirror.html[Compare cross-grid replication and CloudMirror replication].
 
 == CloudMirror and S3 buckets
-
 CloudMirror replication is typically configured to use an external S3 bucket as a destination. However, you can also configure replication to use another StorageGRID deployment or any S3-compatible service.
 
 Existing buckets:: When you enable CloudMirror replication for an existing bucket, only the new objects added to that bucket are replicated. Any existing objects in the bucket aren't replicated. To force the replication of existing objects, you can update the existing object's metadata by performing an object copy.

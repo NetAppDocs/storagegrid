@@ -93,20 +93,21 @@ entries:
       url: "/tenant/use-s3-console.html"     
   - title: Manage S3 platform services
     entries:
-    - title: Manage platform services
+    - title: S3 platform services
       pdf-filename: Manage S3 platform services
       entries:
+      - title: Considerations for platform services
+        url: "/tenant/considerations-for-platform-services.html"
       - title: CloudMirror replication service
         url: "/tenant/understanding-cloudmirror-replication-service.html"
       - title: Notifications for buckets
         url: "/tenant/understanding-notifications-for-buckets.html"
       - title: Search integration service
         url: "/tenant/understanding-search-integration-service.html"
-    - title: Considerations for platform services
-      url: "/tenant/considerations-for-platform-services.html"
-    - title: Configure platform services endpoints
-      url: "/tenant/configuring-platform-services-endpoints.html"
+    - title: Manage platform services endpoints
       entries:
+      - title: Configure platform services endpoints
+        url: "/tenant/configuring-platform-services-endpoints.html"
       - title: Specify URN
         url: "/tenant/specifying-urn-for-platform-services-endpoint.html"
       - title: Create endpoint
