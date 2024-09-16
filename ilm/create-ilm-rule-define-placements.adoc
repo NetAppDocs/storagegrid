@@ -35,7 +35,7 @@ image::../media/ilm_create_ilm_rule_wizard_2.png[Create ILM Rule Wizard Step 2]
 |Last access time
 |The time when the object was last retrieved (read or viewed).
 
-*Note:* To use this option, updates to Last access time must be enabled for the S3 bucket. See link:using-last-access-time-in-ilm-rules.html[Use Last access time in ILM rules].
+*Note:* To use this option, updates to Last access time must be enabled for the S3 bucket. Refer to link:using-last-access-time-in-ilm-rules.html[Use Last access time in ILM rules].
 
 |User defined creation time
 |A time specified in user-defined metadata.
@@ -44,7 +44,7 @@ image::../media/ilm_create_ilm_rule_wizard_2.png[Create ILM Rule Wizard Step 2]
 |"Noncurrent time" is automatically selected if you selected *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" in link:create-ilm-rule-enter-details.html[Step 1 of the Create an ILM rule wizard].
 |===
 +
-NOTE: If you want to create a compliant rule, you must select *Ingest time*. See link:managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock].
+NOTE: If you want to create a compliant rule, you must select *Ingest time*. Refer to link:managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock].
 +
 . In the *Time period and placements* section, enter a starting time and a duration for the first time period.
 +
@@ -54,7 +54,7 @@ For example, you might want to specify where to store objects for the first year
 .. From the *Store objects by* drop-down list, select *replicating*.
 .. Select the number of copies you want to make.
 +
-A warning appears if you change the number of copies to 1. An ILM rule that creates only one replicated copy for any time period puts data at risk of permanent loss. See link:why-you-should-not-use-single-copy-replication.html[Why you should not use single-copy replication].
+A warning appears if you change the number of copies to 1. An ILM rule that creates only one replicated copy for any time period puts data at risk of permanent loss. Refer to link:why-you-should-not-use-single-copy-replication.html[Why you should not use single-copy replication].
 +
 To avoid the risk, do one or more of the following:
 
@@ -94,7 +94,13 @@ Available erasure-coding schemes are limited by the number of Storage Nodes in t
 .. Select *Add other type or location* to create additional copies at different locations.
 .. Select *Add another time period* to add different time periods.
 +
-NOTE: Objects are automatically deleted at the end of the final time period unless another time period ends with *forever*.
+[NOTE]
+====
+Object deletions occur based on the following settings:
+
+* Objects are automatically deleted at the end of the final time period unless another time period ends with *forever*.
+* Depending on link:../ilm/example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html#example-of-bucket-lifecycle-taking-priority-over-ilm-policy[bucket and tenant retention period settings], objects might not be deleted even if the ILM retention period ends.
+====
 
 . If you want to store objects in a Cloud Storage Pool:
  .. In the *Store objects by* drop-down list, select *replicating*.
@@ -119,7 +125,9 @@ The Rule analysis section of the Retention diagram states:
 * StorageGRID site-loss protection will apply for the duration of this rule.
 * Objects processed by this rule will be deleted after Day 4015.
 +
-NOTE: See link:using-multiple-storage-pools-for-cross-site-replication.html[Enable site-loss protection.]
+Refer to link:using-multiple-storage-pools-for-cross-site-replication.html[Enable site-loss protection.]
++
+NOTE: The following screenshot is an example. Your results will vary depending on your StorageGRID version.
 +
 image::../media/ilm_rule_retention_diagram.png[ILM Rule Retention Diagram]
 
