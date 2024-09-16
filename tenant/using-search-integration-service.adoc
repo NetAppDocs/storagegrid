@@ -2,14 +2,14 @@
 permalink: tenant/using-search-integration-service.html
 sidebar: sidebar
 keywords: how to use search integration service
-summary: 'The search integration service is one of the three StorageGRID platform services. You can enable this service to send object metadata to a destination search index whenever an object is created, deleted, or its metadata or tags are updated.'
+summary: 'You can enable the search integration service to send object metadata to a destination search index whenever an object is created, deleted, or its metadata or tags are updated.'
 ---
-= Use search integration service
+= Configure search integration service
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The search integration service is one of the three StorageGRID platform services. You can enable this service to send object metadata to a destination search index whenever an object is created, deleted, or its metadata or tags are updated.
+You can enable the search integration service to send object metadata to a destination search index whenever an object is created, deleted, or its metadata or tags are updated.
 
 You can configure search integration by using the Tenant Manager to apply custom StorageGRID configuration XML to a bucket.
 
