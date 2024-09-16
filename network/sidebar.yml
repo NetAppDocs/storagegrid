@@ -33,7 +33,6 @@ entries:
   - title: Post-installation guidelines
     url: "/network/post-installation-guidelines.html"
   - title: Network port reference
-    url: "/network/network-port-reference.html"
     entries:
     - title: Internal grid node communications
       url: "/network/internal-grid-node-communications.html"
