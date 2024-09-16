@@ -2,18 +2,14 @@
 permalink: tenant/configuring-event-notifications.html
 sidebar: sidebar
 keywords: how to configure event notifications, bucket notification
-summary: 'You can enable notifications for a bucket to send information about specified events to a destination Kafka cluster or service that supports the AWS Simple Notification Service.'
+summary: 'You enable notifications for a bucket by creating notification configuration XML and using the Tenant Manager to apply the XML to a bucket.'
 ---
 = Configure event notifications
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can enable notifications for a bucket to send information about specified events to a destination Kafka cluster or service that supports the AWS Simple Notification Service (Amazon SNS).
-
-For example, you could configure alerts to be sent to administrators about each object added to a bucket, where the objects represent log files associated with a critical system event.
-
-NOTE: Although event notification can be configured on a bucket with S3 Object Lock enabled, the S3 Object Lock metadata (including Retain Until Date and Legal Hold status) of the objects won't be included in the notification messages.
+You enable notifications for a bucket by creating notification configuration XML and using the Tenant Manager to apply the XML to a bucket.
 
 .Before you begin
 
@@ -24,11 +20,19 @@ NOTE: Although event notification can be configured on a bucket with S3 Object L
 
 .About this task
 
-After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Amazon SNS or Kafka topic used as the destination endpoint. To enable notifications for a bucket, you must create and apply valid notification configuration XML. The notification configuration XML must use the URN of an event notifications endpoint for each destination.
+You configure event notifications by associating notification configuration XML with a source bucket. The notification configuration XML follows S3 conventions for configuring bucket notifications, with the destination Kafka or Amazon SNS topic specified as the URN of an endpoint.
 
-For general information about event notifications and how to configure them, see Amazon documentation. For information about how StorageGRID implements the S3 bucket notification configuration API, see the link:../s3/index.html[instructions for implementing S3 client applications].
+For general information about event notifications and how to configure them, refer to the https://docs.aws.amazon.com/s3/[Amazon documentation^]. For information about how StorageGRID implements the S3 bucket notification configuration API, refer to the link:../s3/index.html[instructions for implementing S3 client applications].
 
-If you enable event notifications for a bucket that contains objects, notifications are sent only for actions that are performed after the notification configuration is saved.
+Note the following requirements and characteristics when configuring event notifications for a bucket:
+
+* When you create and apply valid notification configuration XML, it must use the URN of an event notifications endpoint for each destination.
+
+* Although event notification can be configured on a bucket with S3 Object Lock enabled, the S3 Object Lock metadata (including Retain Until Date and Legal Hold status) of the objects won't be included in the notification messages.
+
+* After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Amazon SNS or Kafka topic used as the destination endpoint.
+
+* If you enable event notifications for a bucket that contains objects, notifications are sent only for actions that are performed after the notification configuration is saved.
 
 .Steps
 
@@ -54,7 +58,7 @@ If you enable event notifications for a bucket that contains objects, notificati
  </NotificationConfiguration>
 ----
 
-. In the Tenant Manager select *STORAGE (S3)* > *Buckets*.
+. In the Tenant Manager, select *STORAGE (S3)* > *Buckets*.
 . Select the name of the source bucket.
 +
 The bucket details page appears.
