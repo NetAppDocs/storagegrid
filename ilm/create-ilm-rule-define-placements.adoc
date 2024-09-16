@@ -2,7 +2,7 @@
 permalink: ilm/create-ilm-rule-define-placements.html
 sidebar: sidebar
 keywords: ilm rule step 2, define placements
-summary: 'Step 3 \(Define placements\) of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies \(replicated or erasure-coded\), the storage location, and the number of copies.'
+summary: 'The Define placements step of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies \(replicated or erasure-coded\), the storage location, and the number of copies.'
 ---
 = Step 2 of 3: Define placements
 :icons: font
@@ -10,6 +10,8 @@ summary: 'Step 3 \(Define placements\) of the Create ILM Rule wizard allows you 
 
 [.lead]
 The *Define placements* step of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies (replicated or erasure-coded), the storage location, and the number of copies.
+
+NOTE: The screenshots shown are examples. Your results will vary depending on your StorageGRID version.
 
 .About this task
 
@@ -29,22 +31,22 @@ image::../media/ilm_create_ilm_rule_wizard_2.png[Create ILM Rule Wizard Step 2]
 |===
 | Option| Description
 
-|Ingest time
-|The time when the object was ingested.
+| Ingest time
+| The time when the object was ingested.
 
-|Last access time
-|The time when the object was last retrieved (read or viewed).
+| Last access time
+| The time when the object was last retrieved (read or viewed).
 
-*Note:* To use this option, updates to Last access time must be enabled for the S3 bucket. Refer to link:using-last-access-time-in-ilm-rules.html[Use Last access time in ILM rules].
+To use this option, updates to Last access time must be enabled for the S3 bucket. Refer to link:using-last-access-time-in-ilm-rules.html[Use Last access time in ILM rules].
 
-|User defined creation time
-|A time specified in user-defined metadata.
+| User defined creation time
+| A time specified in user-defined metadata.
 
-|Noncurrent time
-|"Noncurrent time" is automatically selected if you selected *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" in link:create-ilm-rule-enter-details.html[Step 1 of the Create an ILM rule wizard].
+| Noncurrent time
+| "Noncurrent time" is automatically selected if you selected *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" in link:create-ilm-rule-enter-details.html[Step 1 of the Create an ILM rule wizard].
 |===
 +
-NOTE: If you want to create a compliant rule, you must select *Ingest time*. Refer to link:managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock].
+If you want to create a _compliant_ rule, you must select *Ingest time*. Refer to link:managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock].
 +
 . In the *Time period and placements* section, enter a starting time and a duration for the first time period.
 +
@@ -68,7 +70,7 @@ You can safely ignore this warning if this rule already creates multiple copies 
 +
 *If you specify only one storage pool*, be aware that StorageGRID can store only one replicated copy of an object on any given Storage Node. If your grid includes three Storage Nodes and you select 4 as the number of copies, only three copies will be made&#8212;one copy for each Storage Node.
 +
-NOTE: The *ILM placement unachievable* alert is triggered to indicate that the ILM rule could not be completely applied.
+The *ILM placement unachievable* alert is triggered to indicate that the ILM rule could not be completely applied.
 +
 *If you specify more than one storage pool*, keep these rules in mind:
 
@@ -126,8 +128,6 @@ The Rule analysis section of the Retention diagram states:
 * Objects processed by this rule will be deleted after Day 4015.
 +
 Refer to link:using-multiple-storage-pools-for-cross-site-replication.html[Enable site-loss protection.]
-+
-NOTE: The following screenshot is an example. Your results will vary depending on your StorageGRID version.
 +
 image::../media/ilm_rule_retention_diagram.png[ILM Rule Retention Diagram]
 
