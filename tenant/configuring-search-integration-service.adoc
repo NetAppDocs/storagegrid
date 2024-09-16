@@ -43,14 +43,14 @@ If you enable the search integration service for a bucket that already contains 
  </Rule>
 </MetadataNotificationConfiguration>
 ----
-
++
 //added from config-xml-for-search-integ
 The search integration service is configured using a set of rules contained within `<MetadataNotificationConfiguration>` and `</MetadataNotificationConfiguration>` tags. Each rule specifies the objects that the rule applies to, and the destination where StorageGRID should send those objects' metadata.
-
++
 Objects can be filtered on the prefix of the object name. For example, you could send metadata for objects with the prefix `images` to one destination, and metadata for objects with the prefix `videos` to another. Configurations that have overlapping prefixes aren't valid, and are rejected when they are submitted. For example, a configuration that includes one rule for objects with the prefix `test` and a second rule for objects with the prefix `test2` is not allowed.
-
++
 Destinations must be specified using the URN of a StorageGRID endpoint that has been created for the search integration service. These endpoints refer to an index and type defined on an Elasticsearch cluster.
-
++
 ----
 <MetadataNotificationConfiguration>
     <Rule>
@@ -68,9 +68,9 @@ Destinations must be specified using the URN of a StorageGRID endpoint that has 
      ...
 </MetadataNotificationConfiguration>
 ----
-
++
 The table describes the elements in the metadata notification configuration XML.
-
++
 [cols="2a,3a,1a" options="header"]
 |===
 | Name| Description| Required
@@ -227,7 +227,6 @@ This example shows an example of the JSON that could be generated when an object
   }
 }
 ----
-
 The table lists all the fields that are included in the JSON document.
 
 The document name includes the bucket name, object name, and version ID if present.

@@ -75,8 +75,6 @@ The bucket details page appears.
 . Select the *Enable replication* checkbox.
 . Paste the replication configuration XML into the text box, and select *Save changes*.
 +
-image::../media/tenant_bucket_replication_configuration.png[screenshot of replication configuration dialog box]
-+
 NOTE: Platform services must be enabled for each tenant account by a StorageGRID administrator using the Grid Manager or Grid Management API. Contact your StorageGRID administrator if an error occurs when you save the configuration XML.
 
 . Verify that replication is configured correctly:
