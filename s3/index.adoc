@@ -44,15 +44,19 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 | Release| Comments
 
 | 11.9
-| Added support for pre-calculated SHA-256 checksum values for the following requests and supported headers. You can use this feature to verify the integrity of uploaded objects:
+| 
+* Added support for pre-calculated SHA-256 checksum values for the following requests and supported headers. You can use this feature to verify the integrity of uploaded objects:
 
-* CompleteMultipartUpload: `x-amz-checksum-sha256`
-* CreateMultipartUpload: `x-amz-checksum-algorithm`
-* GetObject: `x-amz-checksum-mode`
-* HeadObject: `x-amz-checksum-mode`
-* ListParts
-* PutObject: `x-amz-checksum-sha256`
-* UploadPart: `x-amz-checksum-sha256` 
+** CompleteMultipartUpload: `x-amz-checksum-sha256`
+** CreateMultipartUpload: `x-amz-checksum-algorithm`
+** GetObject: `x-amz-checksum-mode`
+** HeadObject: `x-amz-checksum-mode`
+** ListParts
+** PutObject: `x-amz-checksum-sha256`
+** UploadPart: `x-amz-checksum-sha256`
+
+* Limit applied to values for Retain Until Date
+The values for the Retain Until Date parameter for an SPUT (S3 PUT) operation are limited to within 100 years of the date the object was ingested.
 
 | 11.8
 | Updated the names of S3 operations to match the names used in the http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^].

@@ -53,7 +53,6 @@ Refer to:
 * StorageGRID now provides SHA-256 checksum support for PUT, GET and HEAD operations. These checksums enhance data integrity.
 
 === Mountpoint for Amazon S3 
-
 Mountpoint for Amazon S3 allows applications to connect directly to S3 buckets as if they were local file systems. You can now use StorageGRID with more applications and more use cases. 
 
 == Maintenance and Supportability
@@ -64,15 +63,19 @@ To provide a smooth and efficient transition to StorageGRID next-generation hard
 === AutoSupport
 link:../admin/what-is-autosupport.html[AutoSupport] now automatically creates hardware failure cases for legacy appliances.
 
+=== Expanded node clone operations  
+Node clone usability has been expanded to support larger storage nodes. 
+
+=== Syslog for load balancer endpoints
+Load balancer endpoint access logs contain troubleshooting information, such as HTTP status codes.
+StorageGRID now supports link:../monitor/configure-audit-messages.html[exporting these logs to an external syslog server]. This enhancement allows for more efficient log management and integration with existing monitoring and alerting systems.
+
 === Additional enhancements for maintenance and supportability
-
 * Metrics UI update	 
-
-* Dynamic time limit for node clone operations  
 
 * New operating system qualifications 
 
-* Support for new 3rd party components 
+* Support for new third-party components 
 
 == Security
 

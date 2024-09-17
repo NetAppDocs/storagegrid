@@ -17,7 +17,6 @@ FabricPool workloads often have a high rate of read operations, which can genera
 * If you don't require a record of client read operations for FabricPool or any other S3 application, optionally go to *CONFIGURATION* > *Monitoring* > *Audit and syslog server*. Change the *Client Reads* setting to *Error* to decrease the number of audit messages recorded in the audit log. See link:../monitor/configure-audit-messages.html[Configure audit messages and log destinations] for details.
 
 * If you have a large grid, use multiple types of S3 applications, or want to retain all audit data, configure an external syslog server and save audit information remotely. Using an external server minimizes the performance impact of audit message logging without reducing the completeness of of audit data. See link:../monitor/considerations-for-external-syslog-server.html[Considerations for external syslog server] for details.
- 
 
 == Object encryption
 
