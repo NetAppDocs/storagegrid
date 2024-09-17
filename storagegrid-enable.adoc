@@ -12,5 +12,5 @@ summary: "Learn how to test and enable applications in your StorageGRID environm
 :imagesdir: ./media/
 
 [.lead]
-https://docs.netapp.com/us-en/storagegrid-enable/index.html[Learn how to test and enable applications in your StorageGRID environment^] 
-// 2024-05-1, jira SGRIDOC-23
+Go to https://docs.netapp.com/us-en/storagegrid-enable/index.html [How to enable StorageGRID^] to learn how to test and enable applications in your StorageGRID environment. 
+// 2024-09-17, jira SGRIDOC-23
