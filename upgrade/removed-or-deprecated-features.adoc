@@ -14,8 +14,8 @@ Some features and capabilities were removed or deprecated in this release. Revie
 == Definitions
 
 Deprecated:: The feature *should not* be used in new production environments. Existing production environments can continue using the feature.
-End of Life:: Last shipped version that contains the feature. No future versions will support the feature. In some cases, documentation for the feature might be removed at this stage.
-Removed:: First version that *does not* contain the feature.
+End of Life:: Last shipped version that supports the feature. In some cases, documentation for the feature might be removed at this stage.
+Removed:: First version that *does not* support the feature.
 
 == StorageGRID end of feature support
 
