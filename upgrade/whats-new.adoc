@@ -37,7 +37,10 @@ To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-
 To support 5,000 buckets, each Storage Node in the grid must have a minimum of 64 GB of RAM.
 
 == S3 Object Lock improvements
-You can now set per-tenant maximum retention time and per-tenant compliance mode. Per-tenant configuration provides the appropriate balance of flexibility and data security.
+Per-tenant configuration capabilities provide the appropriate balance of flexibility and data security. You can now:
+
+* Configure per-tenant retention settings
+* Allow or disallow compliance mode at the tenant level
 
 Refer to:
 
