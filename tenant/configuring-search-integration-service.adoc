@@ -34,7 +34,7 @@ If you enable the search integration service for a bucket that already contains 
 +
 Objects can be filtered on the prefix of the object name. For example, you could send metadata for objects with the prefix `images` to one destination, and metadata for objects with the prefix `videos` to another. Configurations that have overlapping prefixes aren't valid, and are rejected when they're submitted. For example, a configuration that includes one rule for objects with the prefix `test` and a second rule for objects with the prefix `test2` is not allowed.
 +
-As needed, <<example-notification-config,refer to the examples for the metadata configuration XML>>.
+As needed, refer to the <<example-notification-config,examples for the metadata configuration XML>>.
 +
 ----
 <MetadataNotificationConfiguration>
@@ -50,7 +50,7 @@ As needed, <<example-notification-config,refer to the examples for the metadata 
 +
 Elements in the metadata notification configuration XML:
 +
-[cols="2a,3a,1a" options="header"]
+[cols="1a,3a,1a" options="header"]
 |===
 | Name| Description| Required
 | MetadataNotificationConfiguration
