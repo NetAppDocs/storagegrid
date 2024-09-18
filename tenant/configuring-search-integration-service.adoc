@@ -32,44 +32,23 @@ If you enable the search integration service for a bucket that already contains 
 
 * When configuring the XML, use the URN of a search integration endpoint as the destination.
 +
+Objects can be filtered on the prefix of the object name. For example, you could send metadata for objects with the prefix `images` to one destination, and metadata for objects with the prefix `videos` to another. Configurations that have overlapping prefixes aren't valid, and are rejected when they're submitted. For example, a configuration that includes one rule for objects with the prefix `test` and a second rule for objects with the prefix `test2` is not allowed.
++
+As needed, <<example-notification-config,refer to the examples for the metadata configuration XML>>.
++
 ----
 <MetadataNotificationConfiguration>
  <Rule>
     <Status>Enabled</Status>
     <Prefix></Prefix>
     <Destination>
-       <Urn>arn:aws:es:us-east-1:11111111111111:domain/mydomain/myindex/mytype</Urn>
+       <Urn>/Urn>
        </Destination>
  </Rule>
 </MetadataNotificationConfiguration>
 ----
 +
-//added from config-xml-for-search-integ
-The search integration service is configured using a set of rules contained within `<MetadataNotificationConfiguration>` and `</MetadataNotificationConfiguration>` tags. Each rule specifies the objects that the rule applies to, and the destination where StorageGRID should send those objects' metadata.
-+
-Objects can be filtered on the prefix of the object name. For example, you could send metadata for objects with the prefix `images` to one destination, and metadata for objects with the prefix `videos` to another. Configurations that have overlapping prefixes aren't valid, and are rejected when they are submitted. For example, a configuration that includes one rule for objects with the prefix `test` and a second rule for objects with the prefix `test2` is not allowed.
-+
-Destinations must be specified using the URN of a StorageGRID endpoint that has been created for the search integration service. These endpoints refer to an index and type defined on an Elasticsearch cluster.
-+
-----
-<MetadataNotificationConfiguration>
-    <Rule>
-        <ID>Rule-1</ID>
-        <Status>rule-status</Status>
-        <Prefix>key-prefix</Prefix>
-        <Destination>
-           <Urn>arn:aws:es:region:account-ID:domain/mydomain/myindex/mytype</Urn>
-        </Destination>
-    </Rule>
-    <Rule>
-        <ID>Rule-2</ID>
-         ...
-    </Rule>
-     ...
-</MetadataNotificationConfiguration>
-----
-+
-The table describes the elements in the metadata notification configuration XML.
+Elements in the metadata notification configuration XML:
 +
 [cols="2a,3a,1a" options="header"]
 |===
@@ -131,7 +110,6 @@ URN is included in the Destination element.
 
 | Yes
 |===
-//end added part
 
 . In the Tenant Manager select *STORAGE (S3)* > *Buckets*.
 . Select the name of the source bucket.
@@ -158,8 +136,7 @@ As necessary, you can disable search integration for a bucket using either of th
 * Select *STORAGE (S3)* > *Buckets* and clear the *Enable search integration* checkbox.
 * If you are using the S3 API directly, use a DELETE Bucket metadata notification request. See the instructions for implementing S3 client applications.
 
-//added from config-xml-for-search-config
-== Example: Metadata notification configuration that applies to all objects
+== [[example-notification-config]]Example: Metadata notification configuration that applies to all objects
 
 In this example, object metadata for all objects is sent to the same destination.
 
@@ -201,9 +178,7 @@ In this example, object metadata for objects that match the prefix `/images` is 
     </Rule>
 </MetadataNotificationConfiguration>
 ----
-//end added part
 
-//add "JSON generated" and "Object metadata included" topics
 == Metadata notification format
 
 When you enable the search integration service for a bucket, a JSON document is generated and sent to the destination endpoint each time object metadata or tags are added, updated, or deleted.
@@ -227,32 +202,39 @@ This example shows an example of the JSON that could be generated when an object
   }
 }
 ----
-The table lists all the fields that are included in the JSON document.
+
+=== Fields included in the JSON document
 
 The document name includes the bucket name, object name, and version ID if present.
 
-[cols="1a,2a" options="header"]
-|===
-| Type| Item name and description
-.4+| Bucket and object information
-| `bucket`: Name of the bucket
-| `key`: Object key name
-| `versionID`: Object version, for objects in versioned buckets
-| `region`: Bucket region, for example `us-east-1`
+Bucket and object information::
++
+`bucket`: Name of the bucket
++
+`key`: Object key name
++
+`versionID`: Object version, for objects in versioned buckets
++
+`region`: Bucket region, for example `us-east-1`
 
-.2+| System metadata
-| `size`: Object size (in bytes) as visible to an HTTP client
-| `md5`: Object hash
+System metadata::
++
+`size`: Object size (in bytes) as visible to an HTTP client
++
+`md5`: Object hash
 
-| User metadata
-| `metadata`: All user metadata for the object, as key-value pairs
-
+User metadata::
++
+`metadata`: All user metadata for the object, as key-value pairs
++
 `key:value`
 
-| Tags
-| `tags`: All object tags defined for the object, as key-value pairs
-
+Tags::
++
+`tags`: All object tags defined for the object, as key-value pairs
++
 `key:value`
-|===
 
-For tags and user metadata, StorageGRID passes dates and numbers to Elasticsearch as strings or as S3 event notifications. To configure Elasticsearch to interpret these strings as dates or numbers, follow the Elasticsearch instructions for dynamic field mapping and for mapping date formats. You must enable the dynamic field mappings on the index before you configure the search integration service. After a document is indexed, you can't edit the document's field types in the index.
+=== How to view results in Elasticsearch
+
+For tags and user metadata, StorageGRID passes dates and numbers to Elasticsearch as strings or as S3 event notifications. To configure Elasticsearch to interpret these strings as dates or numbers, follow the Elasticsearch instructions for dynamic field mapping and for mapping date formats. Enable the dynamic field mappings on the index before you configure the search integration service. After a document is indexed, you can't edit the document's field types in the index.
