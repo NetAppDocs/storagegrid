@@ -24,8 +24,6 @@ The same error that appears on the dashboard also appears at the top of the Plat
 . From the list of endpoints, select the endpoint that has the error.
 . On the endpoint details page, select *Connection*. This tab displays only the most recent error for an endpoint and indicates how long ago the error occurred. Errors that include the red X icon image:../media/icon_alert_red_critical.png[Red X Icon] occurred within the past 7 days.
 
-image::../media/endpoint_error_on_connection_tab.png[Endpoint Error on Connection Tab]
-
 == Check if error is still current
 
 Some errors might continue to be shown in the *Last error* column even after they are resolved. To see if an error is current or to force the removal of a resolved error from the table:
