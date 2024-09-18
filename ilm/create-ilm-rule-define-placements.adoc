@@ -11,7 +11,7 @@ summary: 'The Define placements step of the Create ILM Rule wizard allows you to
 [.lead]
 The *Define placements* step of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies (replicated or erasure-coded), the storage location, and the number of copies.
 
-NOTE: The screenshots shown are examples. Your results will vary depending on your StorageGRID version.
+include::../_include/screenshots-vary.adoc[]
 
 .About this task
 
