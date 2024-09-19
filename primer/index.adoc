@@ -17,7 +17,7 @@ StorageGRID is composed of geographically distributed, redundant, heterogeneous 
 
 image::../media/storagegrid_system_diagram.png[Image with multiple clients]
 
-NOTE: Support for Archive Nodes is deprecated and will be removed in a future release. Moving objects from an Archive Node to an external archival storage system through the S3 API has been replaced by ILM Cloud Storage Pools, which offer more functionality. 
+NOTE: Support for Archive Nodes has been removed. Moving objects from an Archive Node to an external archival storage system through the S3 API has been replaced by link:../ilm/what-cloud-storage-pool-is.html[ILM Cloud Storage Pools], which offer more functionality.
 
 == StorageGRID benefits
 

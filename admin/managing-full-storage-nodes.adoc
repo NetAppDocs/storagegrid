@@ -17,7 +17,7 @@ Each Storage Node supports a maximum number of storage volumes. The defined maxi
 
 == Add storage expansion shelves
 
-Some StorageGRID appliance Storage Nodes, such as the SG6060, can support additional storage shelves. If you have StorageGRID appliances with expansion capabilities that have not already been expanded to maximum capacity, you can add storage shelves to increase capacity. See the instructions for link:../expand/index.html[expanding a StorageGRID system].
+Some StorageGRID appliance Storage Nodes, such as the SG6060 or SG6160, can support additional storage shelves. If you have StorageGRID appliances with expansion capabilities that have not already been expanded to maximum capacity, you can add storage shelves to increase capacity. See the instructions for link:../expand/index.html[expanding a StorageGRID system].
 
 == Add Storage Nodes
 

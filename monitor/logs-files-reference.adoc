@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: log, logs, log files
 summary: 'StorageGRID provides logs that are used to capture events, diagnostic messages, and error conditions. You might be asked to collect log files and forward them to technical support to assist with troubleshooting.'
 ---
-= Log files reference: Overview
+= Log files reference
 :icons: font
 :imagesdir: ../media/
 
@@ -27,6 +27,20 @@ To access the logs, you can link:collecting-log-files-and-system-data.html[colle
 . Enter the password listed in the `Passwords.txt` file.
 . Enter the following command to switch to root: `su -`
 . Enter the password listed in the `Passwords.txt` file.
+
+== Export logs to the syslog server
+
+Exporting the logs to the syslog server provides these capabilities:
+
+* Receive a list of all Grid Manager and Tenant Manager requests, in addition to S3 and Swift requests.
+
+* Better visibility into S3 requests that return errors, without the performance impact caused by audit logging methods.
+
+* Access to HTTP-layer requests and error codes that are easy to parse.
+
+* Better visibility into requests that were blocked by traffic classifiers at the load balancer.
+
+To export the logs, refer to link:../monitor/configure-audit-messages.html[Configure audit messages and log destinations].
 
 == Log file categories
 
@@ -54,7 +68,7 @@ m| ec
 m| grid
 | General grid logs including debug (`bycast.log`) and `servermanager` logs.
 
-m| grid.xml
+m| grid.json
 | Grid configuration file shared across all nodes.
 
 m| hagroups
@@ -85,7 +99,18 @@ m| nginx
 | Load balancer and grid federation configuration files and logs. Also includes Grid Manager and Tenant Manager traffic logs.
 
 m| nginx-gw
-| Load balancer and grid federation configuration files and logs.
+| * `access.log`: Grid Manager and Tenant manager request log messages.
+
+**	These messages are prefixed with `mgmt:` when exported using syslog.
+** The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$request" "$http_host" "$http_user_agent" "$http_referer"`
+
+*	`cgr-access.log.gz`: Inbound cross-grid replication requests.
+** These messages are prefixed with `cgr:` when exported using syslog.
+** The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
+
+*	`endpoint-access.log.gz`: S3 and Swift requests to load balancer endpoints.
+**	These messages are prefixed with `endpoint:` when exported using syslog.
+**	The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
 
 m| ntp
 | NTP configuration file and logs.
@@ -112,7 +137,7 @@ m| ssh
 | Logs related to SSH configuration and service.
 
 m| snmp
-| SNMP agent configuration and alarm allow/deny lists used for sending SNMP notifications.
+| SNMP agent configuration used for sending SNMP notifications.
 
 m| sockets-data
 | Sockets data for network debug.

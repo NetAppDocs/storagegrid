@@ -91,7 +91,7 @@ NOTE: Depending on the audit level configured, the size of user inputs such as S
 
 The following table shows the minimum storage space required for each type of node. You can use this table to determine the minimum amount of storage you must provide to the host in each storage category, based on which nodes will be deployed on that host.
 
-NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the link:../maintain/grid-node-recovery-procedures.html[grid node recovery] procedures for each type of node.
+NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[grid node recovery] procedures for each type of node.
 
 [options="header"]
 |===
@@ -187,7 +187,7 @@ When you assign space to volume 0 of a new Storage Node, you must ensure there i
 
 * At a minimum, you must assign at least 4 TB to volume 0.
 +
-NOTE: If you use only one storage volume for a Storage Node and you assign 4 TB or less to the volume, the Storage Node might enter the Storage Read-Only state on startup and store object metadata only.
+NOTE: If you use only one storage volume for a Storage Node and you assign 4 TB or less to the volume, the Storage Node might enter the storage read-only state on startup and store object metadata only.
 +
 NOTE: If you assign less than 500 GB to volume 0 (non-production use only), 10% of the storage volume's capacity is reserved for metadata.
 

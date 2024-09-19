@@ -1,5 +1,8 @@
 indexpage:
+  title: StorageGRID 11.9 Documentation
   lead: NetApp StorageGRID is a software-defined object storage suite that supports a wide range of use cases across public, private, and hybrid multicloud environments. StorageGRID offers native support for the Amazon S3 API and delivers industry-leading innovations such as automated lifecycle management to store, secure, protect, and preserve unstructured data cost effectively over long periods.
+  summary: NetApp StorageGRID is a software-defined object storage suite that supports a wide range of use cases across public, private, and hybrid multicloud environments. StorageGRID offers native support for the Amazon S3 API and delivers industry-leading innovations such as automated lifecycle management to store, secure, protect, and preserve unstructured data cost effectively over long periods.
+  keywords: storagegrid documentation
   tiles:
     - title: Get started
       links:
@@ -60,7 +63,7 @@ indexpage:
       - title: Maintain your grid
         url: /maintain/index.html
       - title: Recover or replace nodes
-        url: /maintain/grid-node-recovery-procedures.html
+        url: /maintain/warnings-and-considerations-for-grid-node-recovery.html
       - title: Maintain StorageGRID appliances
         url: https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/index.html
     - title: Additional instructions
@@ -71,6 +74,8 @@ indexpage:
         url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
       - title: NetApp learning services
         url: https://www.netapp.com/support-and-training/netapp-university/
+      - title: StorageGRID management using BlueXP
+        url: https://docs.netapp.com/us-en/bluexp-storagegrid/index.html
     - title: More resources
       links:
       - title: StorageGRID support page

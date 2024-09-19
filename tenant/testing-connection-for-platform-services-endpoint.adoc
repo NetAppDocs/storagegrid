@@ -25,14 +25,10 @@ StorageGRID does not validate that the credentials have the correct permissions.
 . Select *STORAGE (S3)* > *Platform services endpoints*.
 +
 The Platform services endpoints page appears and shows the list of platform services endpoints that have already been configured.
-+
-image::../media/endpoints_list.png[Endpoints List]
 
 . Select the endpoint whose connection you want to test.
 +
 The endpoint details page appears.
-+
-image::../media/endpoint_test_connection.png[Test Endpoint Connection]
 
 . Select *Test connection*.
  ** A success message appears if the endpoint can be reached using the specified credentials. The connection to the endpoint is validated from one node at each site.

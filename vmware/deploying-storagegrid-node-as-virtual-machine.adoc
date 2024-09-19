@@ -1,7 +1,7 @@
 ---
 permalink: vmware/deploying-storagegrid-node-as-virtual-machine.html
 sidebar: sidebar
-keywords: how to deploy grid nodes in vsphere or vsphere web client
+keywords: how to deploy grid nodes in vsphere or vsphere web client, port, remap, port remap
 summary: 'You use VMware vSphere Web Client to deploy each grid node as a virtual machine. During deployment, each grid node is created and connected to one or more StorageGRID networks.'
 ---
 = Deploy a StorageGRID node as a virtual machine
@@ -67,7 +67,7 @@ CAUTION: In a production deployment, don't run more than one Storage Node on a s
 
 * If you are deploying a node as part of an expansion or recovery operation, you have the link:../expand/index.html[instructions for expanding a StorageGRID system] or the link:../maintain/index.html[recovery and maintenance instructions].
 
-* If you are deploying a StorageGRID node as a virtual machine with storage assigned from a NetApp ONTAP system, you have confirmed that the volume does not have a FabricPool tiering policy enabled. For example, if a StorageGRID node is running as an virtual machine on a VMWare host, ensure the volume backing the datastore for the node does not have a FabricPool tiering policy enabled. Disabling FabricPool tiering for volumes used with StorageGRID nodes simplifies troubleshooting and storage operations.
+* If you are deploying a StorageGRID node as a virtual machine with storage assigned from a NetApp ONTAP system, you have confirmed that the volume does not have a FabricPool tiering policy enabled. For example, if a StorageGRID node is running as an virtual machine on a VMware host, ensure the volume backing the datastore for the node does not have a FabricPool tiering policy enabled. Disabling FabricPool tiering for volumes used with StorageGRID nodes simplifies troubleshooting and storage operations.
 +
 NOTE: Never use FabricPool to tier any data related to StorageGRID back to StorageGRID itself. Tiering StorageGRID data back to StorageGRID increases troubleshooting and operational complexity.
 
@@ -144,9 +144,9 @@ Determine which StorageGRID networks the node will use by selecting a destinatio
 +
 NOTE: If you are recovering a grid node, you must enter the name of the node you are recovering.
 
-.. Use the *Temporary installation password* drop-down to specify a temporary installation password, so that you can access the VM console or use SSH before the new node joins the grid.
+.. Use the *Temporary installation password* drop-down to specify a temporary installation password, so that you can access the VM console or the StorageGRID Installation API, or use SSH, before the new node joins the grid.
 +
-NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console.html[node console password], which is listed in the `Passwords.txt` file in the Recovery Package. 
+NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console-password.html[node console password], which is listed in the `Passwords.txt` file in the Recovery Package. 
 
 *** *Use node name*: The value you provided for the *Node name* field is used as the temporary installation password.
 *** *Use custom password*: A custom password is used as the temporary installation password.
@@ -184,7 +184,8 @@ Note the following important guidelines:
 
   *** If you are adding new disks you should use the same type of storage device that was in use before node recovery.
   *** The Storage Node .ovf file defines several VMDKs for storage. Unless these VMDKs meet your storage requirements, you should remove them and assign appropriate VMDKs or RDMs for storage before powering up the node. VMDKs are more commonly used in VMware environments and are easier to manage, while RDMs might provide better performance for workloads that use larger object sizes (for example, greater than 100 MB).
-. If you need to remap the ports used by this node, follow these steps.
+
+. [[vmware-remap-ports]]If you need to remap the ports used by this node, follow these steps.
 +
 You might need to remap a port if your enterprise networking policies restrict access to one or more ports that are used by StorageGRID. See the link:../network/index.html[networking guidelines] for the ports used by StorageGRID.
 +
@@ -198,8 +199,6 @@ NOTE: Don't remap the ports used in load balancer endpoints.
 +
 NOTE: If only PORT_REMAP is set, the mapping that you specify applies to both inbound and outbound communications. If PORT_REMAP_INBOUND is also specified, PORT_REMAP applies only to outbound communications.
 
-  ... Scroll back to the top of the table, and select *Edit*.
-  ... On the Type tab, select *User configurable*, and select *Save*.
   ... Select *Set Value*.
   ... Enter the port mapping:
 +
@@ -217,8 +216,6 @@ For example, to remap ssh traffic from port 22 to port 3022, enter:
 +
 NOTE: If you specify PORT_REMAP_INBOUND and don't specify a value for PORT_REMAP, outbound communications for the port are unchanged.
 
-  ... Scroll back to the top of the table, and select *Edit*.
-  ... On the Type tab, select *User configurable*, and select *Save*.
   ... Select *Set Value*.
   ... Enter the port mapping:
 +
@@ -244,3 +241,6 @@ Set the *Memory Reservation* to the same size as the *Memory* allocated to the v
 .After you finish
 
 If you deployed this node as part of an expansion or recovery procedure, return to those instructions to complete the procedure.
+
+// 2024 AUG 12, SGIRDDOC-91
+// mairead-SGRIDOC59-apr9 2024

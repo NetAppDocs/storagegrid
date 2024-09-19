@@ -28,7 +28,5 @@ For S3 objects in versioning-enabled buckets, versioning support allows you to c
 NOTE: When you upload a new version of an object using a multipart upload operation, the noncurrent time for the original version of the object reflects when the multipart upload was created for the new version, not when the multipart upload was completed. In limited cases, the noncurrent time for the original version might be hours or days earlier than the time for the current version.
 
 .Related information
-* link:../ilm/how-objects-are-deleted.html#how-s3-versioned-objects-are-deleted[How S3 versioned objects are deleted]
+* link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted]
 * link:../ilm/example-4-ilm-rules-and-policy-for-s3-versioned-objects.html[ILM rules and policies for S3 versioned objects (Example 4)].
-
-

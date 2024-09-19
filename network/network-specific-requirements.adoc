@@ -61,3 +61,8 @@ The Client Network is optional. If you plan to configure a Client Network, note 
 
 * If the Client Network interface is configured as a trunk to support VLAN interfaces, consider whether configuring the Client Network interface (eth2) is necessary. If configured, Client Network traffic will flow over the trunk native VLAN, as configured in the switch.
 
+.Related information
+
+link:../maintain/changing-nodes-network-configuration.html[Change node network configuration]
+
+// 2024 MAY 1, SGRIDDOC-28

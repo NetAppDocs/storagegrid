@@ -23,7 +23,7 @@ The table summarizes the main upgrade tasks and lists the approximate time requi
 
 | Run prechecks and upgrade primary Admin Node
 | The upgrade prechecks are run, and the primary Admin Node is stopped, upgraded, and restarted. 
-| 30 minutes to 1 hour, with SG100 and SG1000 appliance nodes requiring the most time. 
+| 30 minutes to 1 hour, with services appliance nodes requiring the most time. 
 
 Unresolved precheck errors will increase this time. 
 
@@ -62,7 +62,7 @@ Running the upgrade prechecks before starting the upgrade lets you resolve any e
 | Upgrade database
 | The upgrade process checks each node to verify that the Cassandra database does not need to be updated.
 | 10 seconds per node or a few minutes for the entire grid
-| The upgrade from StorageGRID 11.7 to 11.8 does not require a Cassandra database upgrade; however, the Cassandra service will be stopped and restarted on each Storage Node. 
+| The upgrade from StorageGRID 11.8 to 11.9 does not require a Cassandra database upgrade; however, the Cassandra service will be stopped and restarted on each Storage Node. 
 
 For future StorageGRID feature releases, the Cassandra database update step might take several days to complete.
 
@@ -84,7 +84,7 @@ As a general rule, appliance nodes take longer to upgrade than software-based no
 . If you have Linux nodes, add 15 minutes for each node to account for the time required to download and install the RPM or DEB package.
 . Calculate the total estimated time for the upgrade by adding the results of steps 1 and 2.
 
-== Example: Estimated time to upgrade to StorageGRID 11.8
+== Example: Estimated time to upgrade to StorageGRID 11.9
 
 Suppose your system has 14 grid nodes, of which 8 are Linux nodes.
 
@@ -100,6 +100,6 @@ The estimated time for this step is 2 hours.
 
 . Add the values together.
 +
-You should allow up to 17 hours to complete the upgrade of your system to StorageGRID 11.8.0.
+You should allow up to 17 hours to complete the upgrade of your system to StorageGRID 11.9.0.
 
 NOTE: As required, you can split the maintenance window into smaller windows by approving subsets of grid nodes to upgrade in multiple sessions. For example, you might prefer to upgrade the nodes at site A in one session and then upgrade the nodes at site B in a later session. If you choose to perform the upgrade in more than one session, be aware that you can't start using the new features until all nodes have been upgraded.

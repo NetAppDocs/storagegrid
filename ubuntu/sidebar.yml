@@ -10,6 +10,8 @@ entries:
       url: "/ubuntu/required-materials.html"
     - title: Download and extract StorageGRID installation files
       url: "/ubuntu/downloading-and-extracting-storagegrid-installation-files.html"
+    - title: Manually verify installation files
+      url: "/ubuntu/download-files-verify.html"
     - title: Software requirements
       url: "/ubuntu/software-requirements.html"
     - title: CPU and RAM requirements
@@ -72,7 +74,7 @@ entries:
       url: "/ubuntu/reviewing-your-configuration-and-completing-installation.html"
     - title: Post-installation guidelines
       url: "/ubuntu/post-installation-guidelines.html"
-  - title: Overview of the installation REST API
+  - title: Installation REST API
     url: "/ubuntu/overview-of-installation-rest-api.html"
   - title: Where to go next
     url: "/ubuntu/where-to-go-next.html"

@@ -72,15 +72,35 @@ If you are creating a tenant that will use a grid federation connection, optiona
 
 .Steps
 
-. Optionally, select any permissions you want this tenant to have.
+. Optionally, select the basic permissions you want this tenant to have.
 +
 NOTE: Some of these permissions have additional requirements. For details, select the help icon for each permission.
 +
 include::../_include/tenant-account-permissions.adoc[]
 
-. If you selected *Use grid federation connection*, select one of the available grid federation connections.
+. Optionally, select the advanced permissions you want this tenant to have.
 +
-image::../media/grid-federation-select-tenant-permission.png[Grid federation select tenant permission]
+[cols="1a,3a" options="header"]
+|===
+| Permission | If selected...
+
+| Grid federation connection
+| The tenant can use a grid federation connection, which:
+
+* Causes this tenant and all tenant groups and users added to the account to be cloned from this grid (the _source grid_) to the other grid in the selected connection (the _destination grid_). 
+
+* Allows this tenant to configure cross-grid replication between corresponding buckets on each grid.
+
+See link:../admin/grid-federation-manage-tenants.html[Manage the permitted tenants for grid federation].
+
+| S3 Object Lock
+| Allow the tenant to use specific features of S3 Object Lock:
+
+* *Set maximum retention period* defines how long new objects added to this bucket should be retained, starting from the time they are ingested.
+
+* *Allow compliance mode* prevents users from overwriting or deleting protected object versions during the retention period.
+|===
+
 . Select *Continue*.
 
 == Define root access and create tenant
@@ -142,7 +162,6 @@ When you sign in, links appear for configuring buckets, identity federation, gro
 +
 Each link opens the corresponding page in the Tenant Manager. To complete the page, see the link:../tenant/index.html[instructions for using tenant accounts].
 
-
 | Port 443 and you did not set a password for the local root user
 | Select *Sign in*, and enter the credentials for a user in the Root access federated group.
 
@@ -161,7 +180,6 @@ The URL for the Tenant Manager has this format:
 |===
 
 === Sign in later
-
 
 [cols="1a,3a" options="header"]
 |===
@@ -193,6 +211,3 @@ The URL for the Tenant Manager has this format:
 == Configure the tenant
 
 Follow the instructions in link:../tenant/index.html[Use a tenant account] to manage tenant groups and users, S3 access keys, buckets, platform services, and account clone and cross-grid replication.
-
-
-

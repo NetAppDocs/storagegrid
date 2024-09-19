@@ -1,10 +1,10 @@
 section: upgrade
 title: Upgrade StorageGRID software
 entries:
-  - title: Overview
+  - title: Before you begin
     pdf-filename: Upgrade StorageGRID software 
     url: "/upgrade/index.html"
-  - title: What's new in StorageGRID 11.8
+  - title: What's new in StorageGRID 11.9
     url: "/upgrade/whats-new.html"
   - title: Removed or deprecated features
     url: "/upgrade/removed-or-deprecated-features.html"
@@ -18,8 +18,6 @@ entries:
       url: "/upgrade/estimating-time-to-complete-upgrade.html"
     - title: How your system is affected during upgrade
       url: "/upgrade/how-your-system-is-affected-during-upgrade.html"
-    - title: Impact of upgrade on groups and user accounts
-      url: "/upgrade/impact-of-upgrade-on-groups-and-user-accounts.html"
     - title: Verify installed StorageGRID version
       url: "/upgrade/verifying-installed-version-of-storagegrid.html"
     - title: Obtain required materials

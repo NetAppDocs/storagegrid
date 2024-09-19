@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: nodes page
 summary: 'When you need more detailed information about your StorageGRID system than the dashboard provides, you can use the Nodes page to view metrics for the entire grid, each site in the grid, and each node at a site.'
 ---
-= View the Nodes page: Overview
+= View the Nodes page
 :icons: font
 :imagesdir: ../media/
 
@@ -15,8 +15,9 @@ The Nodes table lists summary information for the entire grid, each site, and ea
 
 include::../_include/metrics-can-contain-wrong-values.adoc[]
 
-
 NOTE: To change units for the storage values displayed in the Grid Manager, select the user drop-down in the upper right of the Grid Manager, then select *User preferences*.
+
+include::../_include/screenshots-vary.adoc[]
 
 image::../media/nodes_table.png[Nodes Menu]
 

@@ -15,6 +15,8 @@ You might be able to increase the Metadata Reserved Space system setting if your
 * You are signed in to the Grid Manager using a link:web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root Access permission or the Grid Topology Page Configuration and Other Grid Configuration permissions].
 
+NOTE: The Grid topology page has been deprecated and will be removed in a future release.
+
 .About this task
 
 You might be able to manually increase the system-wide Metadata Reserved Space setting up to 8 TB.
@@ -33,7 +35,7 @@ For a detailed explanation of how the Metadata Reserved Space setting affects th
 .Steps
 . Determine the current Metadata Reserved Space setting.
  .. Select *CONFIGURATION* > *System* > *Storage options*.
- .. In the Storage Watermarks section, note the value of *Metadata Reserved Space*.
+ .. In the Storage watermarks section, note the value of *Metadata Reserved Space*.
 . Ensure you have enough available space on storage volume 0 of each Storage Node to increase this value.
  .. Select *NODES*.
  .. Select the first Storage Node in the grid.
@@ -57,7 +59,7 @@ For example, if the Metadata Reserved Space setting is currently 4 TB and you wa
 . Update the Metadata Reserved Space setting.
  .. Select *CONFIGURATION* > *System* > *Storage options*.
  .. Select the Configuration tab.
- .. In the Storage Watermarks section, select *Metadata Reserved Space*.
+ .. In the Storage watermarks section, select *Metadata Reserved Space*.
  .. Enter the new value.
 +
 For example, to enter 8 TB, which is the maximum supported value, enter *8000000000000* (8, followed by 12 zeros)

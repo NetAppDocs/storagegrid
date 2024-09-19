@@ -1,7 +1,7 @@
 section: ilm
 title: Manage objects with ILM
 entries:
-  - title: Overview
+  - title: Use ILM
     pdf-filename: Manage StorageGRID objects with ILM
     url: "/ilm/index.html"
   - title: ILM and object lifecycle
@@ -62,6 +62,8 @@ entries:
       url: "/ilm/comparing-cloud-storage-pools-to-cloudmirror-replication.html"
     - title: Create Cloud Storage Pool
       url: "/ilm/creating-cloud-storage-pool.html"
+    - title: View Cloud Storage Pool details
+      url: "/ilm/view-cloud-storage-pool-details.html"
     - title: Edit Cloud Storage Pool
       url: "/ilm/editing-cloud-storage-pool.html"
     - title: Remove Cloud Storage Pool
@@ -74,7 +76,7 @@ entries:
     url: "/ilm/configuring-regions-optional-and-s3-only.html"
   - title: Create ILM rule 
     entries:
-    - title: Overview
+    - title: Use rules to manage objects
       url: "/ilm/what-ilm-rule-is.html"
     - title: Access Create ILM rule wizard
       url: "/ilm/access-create-ilm-rule-wizard.html"
@@ -90,7 +92,7 @@ entries:
       url: "/ilm/creating-default-ilm-rule.html"
   - title: Manage ILM policies
     entries:
-    - title: Overview
+    - title: Use ILM policies
       url: "/ilm/ilm-policy-overview.html"
     - title: Create ILM policies
       url: "/ilm/creating-ilm-policy.html"
@@ -106,7 +108,7 @@ entries:
     entries:
     - title: Manage objects with S3 Object Lock
       url: "/ilm/managing-objects-with-s3-object-lock.html" 
-    - title: Workflow for S3 Object Lock
+    - title: S3 Object Lock tasks
       url: "/ilm/workflow-for-s3-object-lock.html"
     - title: Requirements for S3 Object Lock
       url: "/ilm/requirements-for-s3-object-lock.html"

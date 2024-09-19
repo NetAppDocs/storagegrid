@@ -1,4 +1,4 @@
 ---
 permalink: admin/kms-viewing-details.html
-redirect: admin/kms-managing.html
+redirect: storagegrid-119/admin/kms-managing.html
 ---

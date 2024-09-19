@@ -10,6 +10,8 @@ entries:
       url: "/vmware/required-materials.html"
     - title: Download and extract the StorageGRID installation files
       url: "/vmware/downloading-and-extracting-storagegrid-installation-files.html"
+    - title: Manually verify installation files
+      url: "/vmware/download-files-verify.html"
     - title: Software requirements
       url: "/vmware/software-requirements.html"
     - title: CPU and RAM requirements
@@ -48,7 +50,7 @@ entries:
       url: "/vmware/reviewing-your-configuration-and-completing-installation.html"
     - title: Post-installation guidelines
       url: "/vmware/post-installation-guidelines.html"
-  - title: Overview of the installation REST API
+  - title: Installation REST API
     url: "/vmware/overview-of-installation-rest-api.html"
   - title: Where to go next
     url: "/vmware/where-to-go-next.html"

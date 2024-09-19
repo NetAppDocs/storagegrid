@@ -32,13 +32,12 @@ NOTE: You can use multiple gateways and high availability (HA) groups to provide
 
 == Appliance firmware is upgraded
 
-During the StorageGRID 11.8 upgrade:
+During the StorageGRID 11.9 upgrade:
 
-* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version 3.8.
-* SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B07.EX and BMC firmware version 3.99.07.
-* SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version 4.73.07.
-* SGF6112 appliance is automatically upgraded to BIOS firmware version 3A10.QD and BMC firmware version 3.15.07.
-* SGF6112 is converted from legacy boot mode to UEFI boot mode with secure boot enabled.
+* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version 3.9.
+*	SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B08.EX and BMC firmware version 4.00.07.
+*	SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B13.EC and BMC firmware version 4.74.07.
+*	SGF6112, SG6160, SG110 and SG1100 appliances are automatically upgraded to BMC firmware version 3.16.07.
 
 == ILM policies are handled differently according to their status
 
@@ -50,9 +49,9 @@ During the StorageGRID 11.8 upgrade:
 
 Alerts might be triggered when services start and stop and when the StorageGRID system is operating as a mixed-version environment (some grid nodes running an earlier version, while others have been upgraded to a later version). Other alerts might be triggered after the upgrade completes. 
 
-For example, you might see the *Unable to communicate with node* alert when services are stopped, or you might see the *Cassandra communication error* alert when some nodes have been upgraded to StorageGRID 11.8 but other nodes are still running StorageGRID 11.7. In general, these alerts will clear when the upgrade completes.
+For example, you might see the *Unable to communicate with node* alert when services are stopped, or you might see the *Cassandra communication error* alert when some nodes have been upgraded to StorageGRID 11.9 but other nodes are still running StorageGRID 11.8. In general, these alerts will clear when the upgrade completes.
 
-The *ILM placement unachievable* alert might be triggered when Storage Nodes are stopped during the upgrade to StorageGRID 11.8. This alert might persist for 1 day after the upgrade completes.
+The *ILM placement unachievable* alert might be triggered when Storage Nodes are stopped during the upgrade to StorageGRID 11.9. This alert might persist for 1 day after the upgrade completes.
 
 After the upgrade completes, you can review any upgrade-related alerts by selecting *Recently resolved alerts* or *Current alerts* from the Grid Manager dashboard.
 
@@ -62,7 +61,7 @@ Be aware that a large number of SNMP notifications might be generated when grid 
 
 == Configuration changes are restricted
 
-NOTE: This list applies specifically to upgrades from StorageGRID 11.7 to StorageGRID 11.8. If you're upgrading to another StorageGRID release, refer to the list of restricted changes in the upgrade instructions for that release.
+NOTE: This list applies specifically to upgrades from StorageGRID 11.8 to StorageGRID 11.9. If you're upgrading to another StorageGRID release, refer to the list of restricted changes in the upgrade instructions for that release.
 
 Until the *Enable New Feature* task completes:
 
@@ -73,9 +72,9 @@ Until the *Enable New Feature* task completes:
 +
 NOTE: Contact technical support if you need to recover a node during upgrade.
 
-* You should not manage HA groups, VLAN interfaces, or load balancer endpoints while you're upgrading to StorageGRID 11.8.
+* You should not manage HA groups, VLAN interfaces, or load balancer endpoints while you're upgrading to StorageGRID 11.9.
 
-* Don't delete any HA groups until the upgrade to StorageGRID 11.8 is complete. Virtual IP addresses in other HA groups might become inaccessible.
+* Don't delete any HA groups until the upgrade to StorageGRID 11.9 is complete. Virtual IP addresses in other HA groups might become inaccessible.
 
 Until the *Final Upgrade Steps* task completes:
 
@@ -84,17 +83,17 @@ Until the *Final Upgrade Steps* task completes:
 
 == You can't view bucket details or manage buckets from the Tenant Manager
 
-During the upgrade to StorageGRID 11.8 (that is, while the system is operating as a mixed-version environment), you can't view bucket details or manage buckets using the Tenant Manager. One of the following errors appears on the Buckets page in Tenant Manager:
+During the upgrade to StorageGRID 11.9 (that is, while the system is operating as a mixed-version environment), you can't view bucket details or manage buckets using the Tenant Manager. One of the following errors appears on the Buckets page in Tenant Manager:
 
-* You can't use this API while you're upgrading to 11.8.
+* You can't use this API while you're upgrading to 11.9.
 
-* You can't view bucket versioning details in the Tenant Manager while you're upgrading to 11.8.
+* You can't view bucket versioning details in the Tenant Manager while you're upgrading to 11.9.
 
-This error will resolve after the upgrade to 11.8 is complete. 
+This error will resolve after the upgrade to 11.9 is complete. 
 
 .Workaround
 
-While the 11.8 upgrade is in progress, use the following tools to view bucket details or manage buckets, instead of using the Tenant Manager:
+While the 11.9 upgrade is in progress, use the following tools to view bucket details or manage buckets, instead of using the Tenant Manager:
 
 *	To perform standard S3 operations on a bucket, use either the link:../s3/operations-on-buckets.html[S3 REST API] or the link:../tenant/understanding-tenant-management-api.html[Tenant Management API].
 * To perform StorageGRID custom operations on a bucket (for example, viewing and modifying the bucket consistency, enabling or disabling last access time updates, or configuring search integration), use the Tenant Management API.

@@ -1,0 +1,4 @@
+---
+permalink: network/client-network-requirements.html
+redirect: storagegrid-119/network/network-specific-requirements.html
+---

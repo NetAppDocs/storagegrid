@@ -34,7 +34,7 @@ sidebar:
       - section: upgrade
       - title: Apply StorageGRID hotfix
         entries:
-        - title: 'Hotfix: Overview'
+        - title: Hotfix procedure
           url: "/maintain/storagegrid-hotfix-procedure.html"
         - title: How your system is affected when you apply a hotfix
           url: "/maintain/how-your-system-is-affected-when-you-apply-hotfix.html"
@@ -69,17 +69,17 @@ sidebar:
     - title: Maintain your grid
       url: "/landing-maintain/index.html"
       entries:
-      - title: Overview
+      - title: Grid maintenance
         url: "/maintain/index.html"
       - title: Download Recovery Package
         url: "/maintain/downloading-recovery-package.html"
       - title: Decommission nodes or site
         entries:
-        - title: Overview
+        - title: Decommission node or site
           url: "/maintain/decommission-procedure.html"
         - title: Decommission nodes
           entries:
-          - title: Overview
+          - title: Grid node decommission
             url: "/maintain/grid-node-decommissioning.html"
           - title: Considerations for Admin or Gateway Nodes
             url: "/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html"
@@ -107,11 +107,9 @@ sidebar:
             url: "/maintain/decommissioning-connected-grid-nodes.html"
           - title: Pause and resume decommission process for Storage Nodes
             url: "/maintain/pausing-and-resuming-decommission-process-for-storage-nodes.html"
-          - title: Troubleshoot node decommission
-            url: "/maintain/troubleshooting-node-decommissioning.html"
         - title: Decommission site
           entries:
-          - title: Considerations for removing a site
+          - title: Considerations for removing site
             url: "/maintain/considerations-for-removing-site.html"
           - title: Gather required materials
             url: "/maintain/gathering-required-materials-site-decom.html"
@@ -129,13 +127,13 @@ sidebar:
             url: "/maintain/step-6-monitor-decommission.html"
       - title: 'Rename grid, site, or node'
         entries:
-        - title: Overview
+        - title: Use rename procedure
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
       - title: Node procedures
         entries:
-        - title: Overview
+        - title: Node maintenance procedures
           pdf-filename: Node procedures
           url: "/maintain/grid-node-procedures.html"
         - title: Server Manager procedures
@@ -188,7 +186,7 @@ sidebar:
           url: "/maintain/updating-subnets-for-grid-network.html"
         - title: Configure IP addresses
           entries:
-          - title: Overview
+          - title: IP address guidelines
             url: "/maintain/configuring-ip-addresses.html"
           - title: Change node network configuration
             url: "/maintain/changing-nodes-network-configuration.html"
@@ -223,8 +221,6 @@ sidebar:
     - title: Recover or replace nodes
       url: "/landing-recover/index.html"
       entries:
-      - title: Overview
-        url: "/maintain/grid-node-recovery-procedures.html"
       - title: Warnings and considerations for grid node recovery
         url: "/maintain/warnings-and-considerations-for-grid-node-recovery.html"
       - title: Gather required materials for grid node recovery
@@ -233,7 +229,7 @@ sidebar:
         url: "/maintain/selecting-node-recovery-procedure.html"
       - title: Recover from Storage Node failures
         entries:
-        - title: Overview
+        - title: Storage Node recovery
           url: "/maintain/recovering-from-storage-node-failures.html"
         - title: Recover Storage Node down more than 15 days
           url: "/maintain/recovering-storage-node-that-has-been-down-more-than-15-days.html"
@@ -258,7 +254,7 @@ sidebar:
             url: "/maintain/checking-storage-state-after-recovering-sga.html"
         - title: Recover from storage volume failure where system drive is intact
           entries:
-          - title: Overview
+          - title: Recovery tasks
             pdf-filename: Recover from storage volume failure where system drive is intact
             url: "/maintain/recovering-from-storage-volume-failure-where-system-drive-is-intact.html"
           - title: Warnings for storage volume recovery
@@ -273,9 +269,6 @@ sidebar:
             url: "/maintain/checking-storage-state-after-recovering-storage-volumes.html"
         - title: Recover from system drive failure
           entries:
-          - title: Workflow
-            pdf-filename: Recover from system drive failure
-            url: "/maintain/recovering-from-system-drive-failure.html"
           - title: Warnings for Storage Node system drive recovery
             url: "/maintain/reviewing-warnings-for-system-drive-recovery.html"
           - title: Replace the Storage Node
@@ -294,12 +287,12 @@ sidebar:
           url: "/maintain/monitor-repairs.html"
       - title: Recover from Admin Node failures
         entries:
-        - title: Overview
+        - title: Primary or non-primary Admin Node
           pdf-filename: Recover from Admin Node failures    
           url: "/maintain/recovering-from-admin-node-failures.html"
         - title: Recover from primary Admin Node failures
           entries:
-          - title: Overview
+          - title: Recover primary Admin Node
             pdf-filename: Recover from primary Admin Node failures
             url: "/maintain/recovering-from-primary-admin-node-failures.html"
           - title: Copy audit logs from failed primary Admin Node
@@ -318,7 +311,7 @@ sidebar:
             url: "/maintain/restoring-prometheus-metrics-primary-admin-node.html"
         - title: Recover from non-primary Admin Node failures
           entries:
-          - title: Overview
+          - title: Recover non-primary Admin Node
             pdf-filename: Recover from non-primary Admin Node failures
             url: "/maintain/recovering-from-non-primary-admin-node-failures.html"
           - title: Copy audit logs from failed non-primary Admin Node
@@ -335,9 +328,6 @@ sidebar:
             url: "/maintain/restoring-prometheus-metrics-non-primary-admin-node.html"
       - title: Recover from Gateway Node failures
         entries:
-        - title: Workflow
-          pdf-filename: Recover from Gateway Node failures
-          url: "/maintain/recovering-from-gateway-node-failures.html"
         - title: Replace Gateway Node
           url: "/maintain/replacing-gateway-node.html"
         - title: Select Start Recovery to configure Gateway Node
@@ -349,7 +339,7 @@ sidebar:
           url: "/maintain/recovering-from-archive-node-failures.html"
       - title: Replace Linux node
         entries:
-        - title: Overview
+        - title: Linux node replacement
           pdf-filename: 'Replace Linux node (all grid node types)'
           url: "/maintain/all-node-types-replacing-linux-node.html"
         - title: Deploy new Linux hosts
@@ -362,7 +352,7 @@ sidebar:
         url: "/maintain/all-node-types-replacing-vmware-node.html"
       - title: Replace failed node with services appliance
         entries:
-        - title: Overview
+        - title: Replacement guidelines
           pdf-filename: Replace failed node with services appliance
           url: "/maintain/replacing-failed-node-with-services-appliance.html"
         - title: Install services appliance (platform change only)
@@ -377,6 +367,8 @@ sidebar:
         url: "/maintain/how-site-recovery-is-performed-by-technical-support.html"
     - title: Enable StorageGRID
       url: "/storagegrid-enable.html"
+    - title: StorageGRID and BlueXP
+      url: "/storagegrid-bluexp.html"
     - title: Other versions
       url: "/earlier-versions.html"
     - title: Legal notices
