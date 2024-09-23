@@ -107,7 +107,7 @@ Try one or more of these steps to correct the issue:
 
 == Error: X.509 certificate is out of validity period
 
-You might encounter this error when you try to delete a Cloud Storage Pool. This error occurs if the authentication requires an X.509 certificate to ensure the correct external Cloud Storage Pool is validated and the external pool is empty before the Cloud Storage Pool configuration is deleted.
+You might encounter this error when you try to delete a Cloud Storage Pool. This error occurs when the authentication requires an X.509 certificate to ensure the correct external Cloud Storage Pool is validated and the external pool is empty before the Cloud Storage Pool configuration is deleted.
 
 Try these steps to correct the issue:
 
