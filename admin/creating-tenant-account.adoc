@@ -131,6 +131,8 @@ See link:../admin/grid-federation-manage-tenants.html[Manage the permitted tenan
 . Select *Create tenant*.
 +
 A success message appears, and the new tenant is listed on the Tenants page. To learn how to view tenant details and monitor tenant activity, see link:../monitor/monitoring-tenant-activity.html[Monitor tenant activity].
++
+include::../_include/tenant-settings-delay.adoc[]
 
 . If you selected the *Use grid federation connection* permission for the tenant:
 
