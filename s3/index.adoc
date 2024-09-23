@@ -55,8 +55,9 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 ** PutObject: `x-amz-checksum-sha256`
 ** UploadPart: `x-amz-checksum-sha256`
 
-* Limit applied to values for Retain Until Date
-The values for the Retain Until Date parameter for an SPUT (S3 PUT) operation are limited to within 100 years of the date the object was ingested.
+* Added the ability for the grid administrator to control tenant-level retention and Compliance settings. These settings affect S3 Object Lock settings.
+** Bucket default retention mode and object retention mode: Governance or Compliance, if allowed by the grid administrator.
+** Bucket default retention period and object Retain Until Date: Must be less than or equal to what is allowed by the maximum retention period set by grid administrator.
 
 * Added support for Amazon S3 Mountpoint. Limitations:
 ** No signature verification
