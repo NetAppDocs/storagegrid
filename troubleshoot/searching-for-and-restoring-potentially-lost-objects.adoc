@@ -13,7 +13,6 @@ summary: 'It might be possible to find and restore objects that have triggered a
 It might be possible to find and restore objects that have triggered a Lost Objects (LOST) alarm and an *Object lost* alert and that you have identified as potentially lost.
 
 .Before you begin
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the UUID of any lost object, as identified in link:../troubleshoot/investigating-lost-objects.html[Investigate lost objects].
 * You have the `Passwords.txt` file.
 
@@ -122,6 +121,7 @@ Renamed '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6' to '/var/local/range
 Continue with the next step.
 
 . If the object was successfully restored to StorageGRID, verify that the new locations were created: 
+.. Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 .. Select *ILM* > *Object metadata lookup*.
 .. Enter the UUID and select *Look Up*.
 .. Review the  metadata, and verify the new locations.
