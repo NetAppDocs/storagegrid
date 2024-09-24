@@ -11,6 +11,8 @@ summary: 'For S3 clients that perform strict hostname validation and do not supp
 [.lead]
 For S3 clients that perform strict hostname validation and don't support disabling strict hostname validation, such as ONTAP clients using FabricPool, you can generate or upload a server certificate when you configure the load balancer endpoint.
 
+//inform D.Bagwell if this topic gets updated in future releases (ONTAP docs refer to this topic per ONTAPDOC-2381)
+
 .Before you begin
 
 * You have link:admin-group-permissions.html[specific access permissions].
