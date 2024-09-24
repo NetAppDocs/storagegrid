@@ -18,6 +18,8 @@ TIP: If a tenant has the *Use grid federation connection* permission, you can ed
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access or Tenant accounts permission].
 
+include::../_include/tenant-settings-delay.adoc[]
+
 .Steps
 
 . Select *TENANTS*.
