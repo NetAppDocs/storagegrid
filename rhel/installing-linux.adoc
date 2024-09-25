@@ -13,7 +13,7 @@ You must install StorageGRID on all Red Hat Enterprise Linux grid hosts. For a l
 
 .Before you begin
 
-Ensure that your operating system meets StorageGRID's minimum kernel version requirements, as shown in the list. Use the command `uname -r` to get your operating system's kernel version, or consult with your OS vendor.
+Ensure your operating system meets StorageGRID's minimum kernel version requirements, as listed below. Use the command `uname -r` to get your operating system's kernel version, or consult with your OS vendor.
 
 [cols="1a,2a,2a" options="header"]
 |===
@@ -48,7 +48,7 @@ Ensure that your operating system meets StorageGRID's minimum kernel version req
 
 . Install Linux on all physical or virtual grid hosts according to the distributor's instructions or your standard procedure.
 +
-NOTE: If you are using the standard Linux installer, NetApp recommends selecting the "compute node" software configuration, if available, or "minimal install" base environment. Don't install any graphical desktop environments.
+NOTE: If you are using the standard Linux installer, select the "compute node" software configuration, if available, or "minimal install" base environment. Don't install any graphical desktop environments.
 
 . Ensure that all hosts have access to package repositories, including the Extras channel.
 +
