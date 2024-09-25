@@ -13,10 +13,8 @@ You can control user access for an S3 bucket and the objects in that bucket.
 
 .Before you begin
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-
-* You belong to a user group that has the link:tenant-management-permissions.html[Root access permission].
-+
-The View all buckets and Manage all buckets permissions only allow viewing.
+* You belong to a user group that has the link:tenant-management-permissions.html[Root access permission]. The View all buckets and Manage all buckets permissions only allow viewing.
+* You've verified that the required number of Storage Nodes and sites are available. If two or more Storage Nodes are not available within any site, or if a site is not available, changes to these settings might not be available.
 
 .Steps
 

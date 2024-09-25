@@ -31,17 +31,17 @@ StorageGRID validates the Cloud Storage Pool as soon as you save it, so you must
 |===
 | Field| Description
 
-|Cloud Storage Pool name
-|A name that briefly describes the Cloud Storage Pool and its purpose. Use a name that will be easy to identify when you configure ILM rules.
+| Cloud Storage Pool name
+| A name that briefly describes the Cloud Storage Pool and its purpose. Use a name that will be easy to identify when you configure ILM rules.
 
-|Provider type
-|Which cloud provider you will use for this Cloud Storage Pool:
+| Provider type
+| Which cloud provider you will use for this Cloud Storage Pool:
 
 * *Amazon S3/GCP*: Select this option for an Amazon S3, Commercial Cloud Services (C2S) S3, Google Cloud Platform (GCP), or other S3-compatible provider. 
 * *Azure Blob Storage*
 
-|Bucket or container
-|The name of the external S3 bucket or Azure container. You can't change this value after the Cloud Storage Pool is saved.
+| Bucket or container
+| The name of the external S3 bucket or Azure container. You can't change this value after the Cloud Storage Pool is saved.
 |===
 
 . [[service-endpoint-info]]Based on your Provider type selection, enter the service endpoint information.
@@ -67,14 +67,14 @@ NOTE: Don't use HTTP connections for sensitive data.
 |===
 | Option| Description
 
-|Auto-detect
-|Attempt to automatically detect which URL style to use, based on the information provided. For example, if you specify an IP address, StorageGRID will use a path-style URL. Select this option only if you don't know which specific style to use.
+| Auto-detect
+| Attempt to automatically detect which URL style to use, based on the information provided. For example, if you specify an IP address, StorageGRID will use a path-style URL. Select this option only if you don't know which specific style to use.
 
-|Virtual-hosted-style
-|Use a virtual-hosted-style URL to access the bucket. Virtual-hosted-style URLs include the bucket name as part of the domain name. Example: `+https://bucket-name.s3.company.com/key-name+`
+| Virtual-hosted-style
+| Use a virtual-hosted-style URL to access the bucket. Virtual-hosted-style URLs include the bucket name as part of the domain name. Example: `+https://bucket-name.s3.company.com/key-name+`
 
-|Path-style
-|Use a path-style URL to access the bucket. Path-style URLs include the bucket name at the end. Example: `+https://s3.company.com/bucket-name/key-name+`
+| Path-style
+| Use a path-style URL to access the bucket. Path-style URLs include the bucket name at the end. Example: `+https://s3.company.com/bucket-name/key-name+`
 
 *Note:* The path-style URL option is not recommended and will be deprecated in a future release of StorageGRID.
 |===
@@ -167,16 +167,16 @@ No additional information is required.
 +
 [cols="1a,2a" options="header"]
 |===
-|Option |Description
+| Option| Description
 
-|Use root CA certificates in Storage Node OS
-|Use the Grid CA certificates installed on the operating system to secure connections.
+| Use root CA certificates in Storage Node OS
+| Use the Grid CA certificates installed on the operating system to secure connections.
 
-|Use custom CA certificate
-|Use a custom CA certificate. Select *Browse* and upload the PEM-encoded certificate.
+| Use custom CA certificate
+| Use a custom CA certificate. Select *Browse* and upload the PEM-encoded certificate.
 
-|Do not verify certificate
-|The certificate used for the TLS connection is not verified.
+| Do not verify certificate
+| Selecting this option means that TLS connections to the Cloud Storage Pool aren't secure.
 |===
 +
 . Select *Save*.
