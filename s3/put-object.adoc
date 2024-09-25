@@ -148,7 +148,7 @@ You can use the following request headers to encrypt an object with server-side 
 * *SSE*: Use the following header if you want to encrypt the object with a unique key managed by StorageGRID.
 ** `x-amz-server-side-encryption`
 +
-When the `x-amz-server-side-encryption` header isn't included in the PutObject request, the grid-wide link:../admin/changing-network-options-object-encryption.html[stored object encryption] is omitted from the PutObject response.
+When the `x-amz-server-side-encryption` header isn't included in the PutObject request, the grid-wide link:../admin/changing-network-options-object-encryption.html[stored object encryption setting] is omitted from the PutObject response.
 
 * *SSE-C*: Use all three of these headers if you want to encrypt the object with a unique key that you provide and manage.
  ** `x-amz-server-side-encryption-customer-algorithm`: Specify `AES256`.
