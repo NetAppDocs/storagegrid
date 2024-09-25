@@ -5,7 +5,7 @@ The following lists for grid administrators and tenant users contain the high-le
 Grid administrator::
 * Enable global S3 Object Lock setting for entire StorageGRID system.
 * Ensure that information lifecycle management (ILM) policies are _compliant_; that is, they meet the link:../ilm/managing-objects-with-s3-object-lock.html[requirements of buckets with S3 Object Lock enabled].
-* As needed, allow a tenant to use Compliance as the default retention mode. Otherwise, only Governance mode is allowed.
+* As needed, allow a tenant to use Compliance as the retention mode. Otherwise, only Governance mode is allowed.
 * As needed, set a maximum retention period for a tenant.
 
 Tenant user::
@@ -16,5 +16,5 @@ Tenant user::
 ** Default retention mode: Governance or Compliance, if allowed by the grid administrator.
 ** Default retention period: Must be less than or equal to maximum retention period set by grid administrator.
 * Use the S3 client application to add objects and optionally set object-specific retention:
-** Default retention mode. Governance or Compliance, if allowed by the grid administrator.
-** Default retention period: Must be less than or equal to maximum retention period set by grid administrator.
+** Retention mode. Governance or Compliance, if allowed by the grid administrator.
+** Retain Until Date: Must be less than or equal to what is allowed by the maximum retention period set by grid administrator.
