@@ -42,7 +42,7 @@ Ensure your operating system meets StorageGRID's minimum kernel version requirem
 
 | 11
 | 5.10.0-18-amd64
-| linux-image-5.10.0-18-amd64/stable,no 5.10.150-1
+| linux-image-5.10.0-18-amd64/stable,now 5.10.150-1
 
 | 12
 | 6.1.0-9-amd64
