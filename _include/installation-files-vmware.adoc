@@ -46,7 +46,7 @@ m|./vsphere/configure-sga.py
 |A Python script used to automate the configuration of StorageGRID appliances.
 
 m|./vsphere/storagegrid-ssoauth.py
-|An example Python script that you can use to sign in to the Grid Management API when single sign-on (SSO) is enabled. You can also use this script for Ping Federate.
+|An example Python script that you can use to sign in to the Grid Management API when single sign-on (SSO) is enabled. You can also use this script for Ping Federate integration.
 
 m|./vsphere/configure-storagegrid.sample.json
 |An example configuration file for use with the `configure-storagegrid.py` script.

@@ -21,7 +21,7 @@ NOTE: It is more efficient to perform one single installation of all the nodes, 
 
 . Review the Pending Nodes list, and confirm that it shows all of the grid nodes you deployed.
 +
-NOTE: If a grid node is missing, confirm that it was deployed successfully.
+NOTE: If a grid node is missing, confirm that it was deployed successfully and has the correct Grid Network IP of the primary admin node set for ADMIN_IP.
 
 . Select the radio button next to a pending node you want to approve.
 +
