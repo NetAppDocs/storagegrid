@@ -15,7 +15,7 @@ You must install StorageGRID on all Red Hat Enterprise Linux grid hosts. For a l
 
 Ensure that your operating system meets StorageGRID's minimum kernel version requirements, as shown in the list. Use the command `uname -r` to get your operating system's kernel version, or consult with your OS vendor.
 
-[cols="1a,3a,3a" options="header"]
+[cols="1a,2a,2a" options="header"]
 |===
 | Red Hat Enterprise Linux version| Minimum kernel version| Kernel package name
 
