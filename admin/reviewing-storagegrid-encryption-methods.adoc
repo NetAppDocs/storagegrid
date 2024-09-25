@@ -13,6 +13,7 @@ StorageGRID provides several options for encrypting data. You should review the 
 
 The table provides a high-level summary of the encryption methods available in StorageGRID.
 
+[[bucket-encryption-table]]
 [cols="1a,1a,1a" options="header"]
 |===
 | Encryption option
@@ -42,7 +43,6 @@ Drive encryption doesn't apply to SANtricity-managed drives. If you have a stora
 
 Existing stored objects aren't encrypted. Object metadata and other sensitive data aren't encrypted.
 
-[[bucket-encryption-table]]
 | S3 bucket encryption
 | You issue a PutBucketEncryption request to enable encryption for the bucket. Any new objects that aren't encrypted at the object level are encrypted during ingest.
 | Newly ingested S3 object data only.  

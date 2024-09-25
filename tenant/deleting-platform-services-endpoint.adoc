@@ -21,8 +21,6 @@ You can delete an endpoint if you no longer want to use the associated platform 
 . Select *STORAGE (S3)* > *Platform services endpoints*.
 +
 The Platform services endpoints page appears and shows the list of platform services endpoints that have already been configured.
-+
-image::../media/endpoints_list.png[Endpoints List]
 
 . Select the checkbox for each endpoint you want to delete.
 +
@@ -31,7 +29,5 @@ NOTE: If you delete a platform services endpoint that is in use, the associated 
 . Select *Actions* > *Delete endpoint*.
 +
 A confirmation message appears.
-+
-image::../media/endpoint_delete_confirm.png[Endpoint delete confirm]
 
 . Select *Delete endpoint*.
