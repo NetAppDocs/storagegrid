@@ -61,9 +61,9 @@ vsphere-gateway.mf
 |===
 
 * The `.vdmk`, `.ovf`, and `.mf` files are all in the same directory.
-* You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single virtual machine server.
+* You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single vSphere ESXi host.
 +
-CAUTION: In a production deployment, don't run more than one Storage Node on a single virtual machine server. Using a dedicated virtual machine host for each Storage Node provides an isolated failure domain.
+CAUTION: In a production deployment, don't run more than one Storage Node on a single virtual machine. Do not run multiple virtual machines on the same ESXi host if that would create an unacceptable failure-domain issue.
 
 * If you are deploying a node as part of an expansion or recovery operation, you have the link:../expand/index.html[instructions for expanding a StorageGRID system] or the link:../maintain/index.html[recovery and maintenance instructions].
 
@@ -77,13 +77,13 @@ Follow these instructions to initially deploy VMware nodes, add a new VMware nod
 
 If you are installing a new StorageGRID system:
 
-* You must deploy the primary Admin Node before you deploy any other grid node.
+* You can deploy nodes in any order. 
 * You must ensure that each virtual machine can connect to the primary Admin Node over the Grid Network.
 * You must deploy all grid nodes before configuring the grid.
 
 If you are performing an expansion or recovery operation:
 
-* You must ensure that the new virtual machine can connect to the primary Admin Node over the Grid Network.
+* You must ensure that the new virtual machine can connect to all other nodes over the Grid Network.
 
 If you need to remap any of the node's ports, don't power on the new node until the port remap configuration is complete.
 
@@ -136,8 +136,11 @@ NOTE: Some StorageGRID installations might use larger, more active storage volum
 Determine which StorageGRID networks the node will use by selecting a destination network for each source network.
 
  ** The Grid Network is required. You must select a destination network in the vSphere environment.
- ** If you use the Admin Network, select a different destination network in the vSphere environment. If you don't use the Admin Network, select the same destination you selected for the Grid Network.
+ +
+ The Grid Network is used for all internal StorageGRID traffic. It provides connectivity among all nodes in the grid, across all sites and subnets. All nodes on the Grid Network must be able to communicate with all other nodes.
+ ** If you use the Admin Network, select a different destination network in the vSphere environment. If you don't use the Admin Network, select the same destination you selected for the Grid Network. 
  ** If you use the Client Network, select a different destination network in the vSphere environment. If you don't use the Client Network, select the same destination you selected for the Grid Network.
+ ** If you use an Admin or Client network, nodes do not have to be on the same Admin or Client networks.
 
 . For *Customize Template*, configure the required StorageGRID node properties.
 .. Enter the *Node name*.
@@ -209,6 +212,12 @@ NOTE: If only PORT_REMAP is set, the mapping that you specify applies to both in
 For example, to remap ssh traffic from port 22 to port 3022, enter:
 +
 `client/tcp/22/3022`
++
+You can remap multiple ports using a comma-separated list.
++
+For example:
++
+`client/tcp/18082/443, client/tcp/18083/80`
 
 ... Select *OK*.
 
@@ -226,6 +235,12 @@ NOTE: If you specify PORT_REMAP_INBOUND and don't specify a value for PORT_REMAP
 For example, to remap inbound SSH traffic that is sent to port 3022 so that it is received at port 22 by the grid node, enter the following:
 +
 `client/tcp/3022/22`
++
+You can remap multiple inbound ports using a comma-separated list.
++
+For example:
++
+`grid/tcp/3022/22, admin/tcp/3022/22`
 
 ... Select *OK*
 
