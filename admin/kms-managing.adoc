@@ -117,7 +117,9 @@ CAUTION: You must address any certificate issues as soon as possible to maintain
 
 . When the *KMS CA certificate expiration*, *KMS client certificate expiration*, and *KMS server certificate expiration* alerts are triggered, note the description of each alert and perform the recommended actions.
 +
-NOTE: It might take StorageGRID as long as 30 minutes to get updates to the certificate expiration. Refresh your web browser to see the current values.
+It might take StorageGRID as long as 30 minutes to get updates to the certificate expiration. Refresh your web browser to see the current values.
+
+NOTE: If you get a status of *Server certificate status is unknown*, ensure your KMS allows obtaining a server certificate without requiring a client certificate.
 
 == View encrypted nodes
 
