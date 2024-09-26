@@ -53,6 +53,16 @@ You can do either of the following:
 
 * Use vCenter to set the password:
 
-. Go to *VM*, select the *Configure* tab, and select *vApp Options*. 
-. Update *CUSTOM_TEMPORARY_PASSWORD* with the custom password value or update *TEMPORARY_PASSWORD_TYPE* with the *Use node name* value.
-. Reboot the VM to apply the new password.
+. Power off the VM.
+. Go to *VM*, select the *Configure* tab, and select *vApp Options*.
+. Specify type of temporary installation password to set:
+
+** Select *CUSTOM_TEMPORARY_PASSWORD* to set a custom temporary password.
+** Select *TEMPORARY_PASSWORD_TYPE* to use the node name as the temporary password.
+
+. Select *Set Value*.
+. Set the temporary password:
+** Change *CUSTOM_TEMPORARY_PASSWORD* to a custom password value.
+** Update the *TEMPORARY_PASSWORD_TYPE* with the *Use node name* value.
+
+. Restart the VM to apply the new password.

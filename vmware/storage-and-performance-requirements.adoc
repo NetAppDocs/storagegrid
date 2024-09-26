@@ -27,10 +27,6 @@ NOTE: Never use FabricPool to tier any data related to StorageGRID back to Stora
 
 Each StorageGRID site requires a minimum of three Storage Nodes.
 
-NOTE: In a production deployment, don't run more than one Storage Node on a single virtual machine server. Using a dedicated virtual machine host for each Storage Node provides an isolated failure domain.
-
-Other types of nodes, such as Admin Nodes or Gateway Nodes, can be deployed on the same virtual machine host, or they can be deployed on their own dedicated virtual machine hosts as required. However, if you have multiple nodes of the same type (two Gateway Nodes, for example), don't install all instances on the same virtual machine host.
-
 == Storage requirements by node type
 
 In a production environment, the virtual machines for StorageGRID nodes must meet different requirements, depending on the types of nodes.
