@@ -2,31 +2,33 @@
 permalink: vmware/automating-grid-node-deployment-in-vmware-vsphere.html
 sidebar: sidebar
 keywords: how to automate installation
-summary: 'You can use VMware vSphere to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.'
+summary: 'You can use the VMware OVF Tool to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.'
 ---
 = Automate the installation (VMware)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use VMware vSphere to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.
+You can use the VMware OVF Tool to automate the deployment of grid nodes. You can also automate the configuration of StorageGRID.
 
 == Automate grid node deployment
 
-Use VMware vSphere to automate the deployment of grid nodes.
+Use the VMware OVF Tool to automate the deployment of grid nodes.
 
 .Before you begin
 
 * You have access to a Linux/Unix system with Bash 3.2 or later.
+* You have VMware vSphere with vCenter
 * You have VMware OVF Tool 4.1 installed and correctly configured.
-* You know the username and password required to access VMware vSphere using the OVF Tool.
+* You know the username and password to access VMware vSphere using the OVF Tool
+* You have the sufficient permissions to deploy VMs from OVF files and power them on, and permissions to create additional volumes to attach to the VMs. See the `ovftool` documentation for details.
 * You know the virtual infrastructure (VI) URL for the location in vSphere where you want to deploy the StorageGRID virtual machines. This URL will typically be a vApp, or Resource Pool. For example: `vi://vcenter.example.com/vi/sgws`
 +
 NOTE: You can use the VMware `ovftool` utility to determine this value (see the `ovftool` documentation for details).
 +
 NOTE: If you are deploying to a vApp, the virtual machines will not start automatically the first time, and you must power them on manually.
 
-* You have collected all the required information for the configuration file. See link:collecting-information-about-your-deployment-environment.html[Collect information about your deployment environment] for information.
+* You have collected all the required information for the deployment configuration file. See link:collecting-information-about-your-deployment-environment.html[Collect information about your deployment environment] for information.
 * You have access to the following files from the VMware installation archive for StorageGRID:
 
 [cols="1a,1a" options="header"]
@@ -119,13 +121,13 @@ TARGET = vi://vcenter.example.com/vm/sgws
 * *GRID_NETWORK_CONFIG*: The method used to acquire IP addresses, either STATIC or DHCP. The default is STATIC. If all or most of the nodes use the same method for acquiring IP addresses, you can specify that method here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-GRID_NETWORK_CONFIG = DHCP
+GRID_NETWORK_CONFIG = STATIC
 ----
 
 * *GRID_NETWORK_TARGET*: The name of an existing VMware network to use for the Grid Network. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-GRID_NETWORK_TARGET = SG-Admin-Network
+GRID_NETWORK_TARGET = SG Admin Network
 ----
 
 * *GRID_NETWORK_MASK*: The network mask for the Grid Network. If all or most of the nodes use the same network mask, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
@@ -143,14 +145,14 @@ GRID_NETWORK_GATEWAY = 10.1.0.1
 * *GRID_NETWORK_MTU*: Optional. The maximum transmission unit (MTU) on the Grid Network. If specified, the value must be between 1280 and 9216. For example:
 +
 ----
-GRID_NETWORK_MTU = 8192
+GRID_NETWORK_MTU = 9000
 ----
 +
 If omitted, 1400 is used.
 +
 If you want to use jumbo frames, set the MTU to a value suitable for jumbo frames, such as 9000. Otherwise, keep the default value.
 +
-NOTE: The MTU value of the network must match the value configured on the switch port the node is connected to. Otherwise, network performance issues or packet loss might occur.
+NOTE: The MTU value of the network must match the value configured on the virtual switch port in vSphere that the node is connected to. Otherwise, network performance issues or packet loss might occur.
 +
 NOTE: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types.
 
@@ -160,10 +162,10 @@ NOTE: For the best network performance, all nodes should be configured with simi
 ADMIN_NETWORK_CONFIG = STATIC
 ----
 
-* *ADMIN_NETWORK_TARGET*: The name of an existing VMware network to use for the Admin Network. This setting is required unless the Admin Network is disabled. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
+* *ADMIN_NETWORK_TARGET*: The name of an existing VMware network to use for the Admin Network. This setting is required unless the Admin Network is disabled. If all or most of the nodes use the same network name, you can specify it here. Unlike the Grid Network, all nodes do not need to be connected to the same Admin Network. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-ADMIN_NETWORK_TARGET = SG-Admin-Network
+ADMIN_NETWORK_TARGET = SG Admin Network
 ----
 
 * *ADMIN_NETWORK_MASK*: The network mask for the Admin Network. This setting is required if you are using static IP addressing. If all or most of the nodes use the same network mask, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
@@ -196,10 +198,10 @@ ADMIN_NETWORK_MTU = 8192
 CLIENT_NETWORK_CONFIG = STATIC
 ----
 
-* *CLIENT_NETWORK_TARGET*: The name of an existing VMware network to use for the Client Network. This setting is required unless the Client Network is disabled. If all or most of the nodes use the same network name, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
+* *CLIENT_NETWORK_TARGET*: The name of an existing VMware network to use for the Client Network. This setting is required unless the Client Network is disabled. If all or most of the nodes use the same network name, you can specify it here. Unlike the Grid Network, all nodes do not need to be connected to the same Client Network. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
 +
 ----
-CLIENT_NETWORK_TARGET = SG-Client-Network
+CLIENT_NETWORK_TARGET = SG Client Network
 ----
 
 * *CLIENT_NETWORK_MASK*: The network mask for the Client Network. This setting is required if you are using static IP addressing. If all or most of the nodes use the same network mask, you can specify it here. You can then override the global setting by specifying different settings for one or more individual nodes. For example:
@@ -235,6 +237,14 @@ PORT_REMAP = client/tcp/18082/443
 ----
 +
 If used alone, this example setting symmetrically maps both inbound and outbound communications for the grid node from port 18082 to port 443. If used in conjunction with PORT_REMAP_INBOUND, this example setting maps outbound communications from port 18082 to port 443.
++
+You can also remap multiple ports using a comma-separated list.
++
+For example:
++
+----
+PORT_REMAP = client/tcp/18082/443, client/tcp/18083/80
+----
 
 * *PORT_REMAP_INBOUND*: Remaps inbound communications for the specified port. If you specify PORT_REMAP_INBOUND but don't specify a value for PORT_REMAP, outbound communications for the port are unchanged.
 +
@@ -249,6 +259,14 @@ PORT_REMAP_INBOUND = client/tcp/443/18082
 ----
 +
 This example takes traffic that is sent to port 443 to pass an internal firewall and directs it to port 18082, where the grid node is listening for S3 requests.
++
+You can also remap multiple inbound ports using a comma-separated list.
++
+For example:
++
+----
+PORT_REMAP_INBOUND = grid/tcp/3022/22, admin/tcp/3022/22
+----
 
 * *TEMPORARY_PASSWORD_TYPE*: The type of temporary installation password to be used when accessing the VM console or the StorageGRID Installation API, or using SSH, before the node joins the grid. 
 + 
@@ -271,6 +289,7 @@ Each node is in its own section of the configuration file. Each node requires th
 
 * The section head defines the node name that will be displayed in the Grid Manager. You can override that value by specifying the optional NODE_NAME parameter for the node.
 * *NODE_TYPE*: VM_Admin_Node, VM_Storage_Node, or VM_API_Gateway_Node
+* *STORAGE_TYPE*: combined, data, or metadata. This optional parameter for storage nodes defaults to combined (data and metadata) if it is not specified. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 * *GRID_NETWORK_IP*: The IP address for the node on the Grid Network.
 * *ADMIN_NETWORK_IP*: The IP address for the node on the Admin Network. Required only if the node is attached to the Admin Network and ADMIN_NETWORK_CONFIG is set to STATIC.
 * *CLIENT_NETWORK_IP*: The IP address for the node on the Client Network. Required only if the node is attached to the Client Network and CLIENT_NETWORK_CONFIG for this node is set to STATIC.
@@ -356,12 +375,18 @@ The last example creates a symmetric remapping for ssh traffic from port 22 to p
   ADMIN_IP = 10.1.0.2
 ----
 
-The following additional setting is optional for Storage Nodes:
+The following additional settings are optional for Storage Nodes:
 
 * *DISK*: By default, Storage Nodes are assigned three 4 TB disks for RangeDB use. You can increase these settings with the DISK parameter. For example:
 +
 ----
 DISK = INSTANCES=16, CAPACITY=4096
+----
+
+* *STORAGE_TYPE*: By default, all new Storage Nodes are configured to store both object data and metadata, known as a _combined_ Storage Node. You can change the Storage Node type to store only data or metadata with the STORAGE_TYPE parameter. For example:
++
+----
+STORAGE_TYPE = data
 ----
 
 .Gateway Node
@@ -380,7 +405,7 @@ This example entry is for an example Gateway Node on all three networks. In this
   ADMIN_NETWORK_IP = 10.3.0.5
 
   CLIENT_NETWORK_CONFIG = STATIC
-  CLIENT_NETWORK_TARGET = SG-Client-Network
+  CLIENT_NETWORK_TARGET = SG Client Network
   CLIENT_NETWORK_MASK = 255.255.255.0
   CLIENT_NETWORK_GATEWAY = 10.4.0.1
   CLIENT_NETWORK_IP = 10.4.0.5
@@ -402,7 +427,7 @@ This example entry is for a non-primary Admin Node that is not on the Client Net
   ADMIN_ROLE = Non-Primary
   NODE_TYPE = VM_Admin_Node
 
-  GRID_NETWORK_TARGET = SG-Grid-Network
+  GRID_NETWORK_TARGET = SG Grid Network
   GRID_NETWORK_IP = 10.1.0.6
   ADMIN_NETWORK_IP = 10.3.0.6
 
@@ -504,7 +529,7 @@ m| configure-storagegrid.blank.json
 
 * You have created a `configure-storagegrid.json` configuration file. To create this file, you can modify the example configuration file (`configure-storagegrid.sample.json`) or the blank configuration file (`configure-storagegrid.blank.json`).
 
-You can use the `configure-storagegrid.py` Python script and the `configure-storagegrid.json` configuration file to automate the configuration of your StorageGRID system.
+You can use the `configure-storagegrid.py` Python script and the `configure-storagegrid.json` grid configuration file to automate the configuration of your StorageGRID system.
 
 NOTE: You can also configure the system using the Grid Manager or the Installation API.
 
