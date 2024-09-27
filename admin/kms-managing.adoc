@@ -117,7 +117,9 @@ CAUTION: You must address any certificate issues as soon as possible to maintain
 
 . When the *KMS CA certificate expiration*, *KMS client certificate expiration*, and *KMS server certificate expiration* alerts are triggered, note the description of each alert and perform the recommended actions.
 +
-NOTE: It might take StorageGRID as long as 30 minutes to get updates to the certificate expiration. Refresh your web browser to see the current values.
+It might take StorageGRID as long as 30 minutes to get updates to the certificate expiration. Refresh your web browser to see the current values.
+
+NOTE: If you get a status of *Server certificate status is unknown*, ensure your KMS allows obtaining a server certificate without requiring a client certificate.
 
 == View encrypted nodes
 
@@ -128,7 +130,6 @@ You can view information about the appliance nodes in your StorageGRID system th
 . Select *CONFIGURATION* > *Security* > *Key management server*.
 +
 The Key Management Server page appears. The Configuration Details tab shows any key management servers that have been configured.
-
 
 . From the top of the page, select the *Encrypted nodes* tab.
 +
@@ -287,15 +288,12 @@ You can remove a KMS in these cases:
 . Select *CONFIGURATION* > *Security* > *Key management server*.
 +
 The Key management server page appears and shows all key management servers that have been configured.
-
 . Select the KMS you want to remove, and select *Actions* > *Remove*.
 +
 You can also remove a KMS by selecting the KMS name in the table and selecting *Remove* from the KMS details page.
-
 . Confirm the following is true:
 * You are removing a site-specific KMS for a site that has no appliance node with node encryption enabled.
 * You are removing the default KMS, but a site-specific KMS already exists for each site with node encryption. 
-
 . Select *Yes*.
 +
 The KMS configuration is removed.
