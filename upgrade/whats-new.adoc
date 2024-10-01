@@ -56,7 +56,7 @@ Refer to:
 * StorageGRID now provides SHA-256 checksum support for PUT, GET and HEAD operations. These checksums enhance data integrity.
 
 === Changes to S3 protocol support
-* *Added support for Mountpoint for Amazon S3*. Mountpoint for Amazon S3 allows applications to connect directly to S3 buckets as if they were local file systems. You can now use StorageGRID with more applications and more use cases.
+* Added support for Mountpoint for Amazon S3, which allows applications to connect directly to S3 buckets as if they were local file systems. You can now use StorageGRID with more applications and more use cases.
 * As part of adding support for Mountpoint, StorageGRID 11.9 contains link:../s3/index.html#updates-to-rest-api-support[additional changes to S3 protocol support].
 
 == Maintenance and Supportability
