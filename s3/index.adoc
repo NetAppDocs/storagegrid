@@ -36,7 +36,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 
 |===
 
-
+[[updates-to-rest-api-support]]
 == Updates to S3 REST API support
 
 [cols="1a,4a" options="header"]
@@ -59,9 +59,9 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 ** Bucket default retention mode and object retention mode: Governance or Compliance, if allowed by the grid administrator.
 ** Bucket default retention period and object Retain Until Date: Must be less than or equal to what is allowed by the maximum retention period set by grid administrator.
 
-* Added support for Amazon S3 Mountpoint. Limitations:
-** No signature verification
-** No verification of the CRC32C algorithm during upload
+*	Improved support for `aws-chunked` content encoding and streaming `x-amz-content-sha256` values. Limitations:
+** If present, `chunk-signature` is optional and not validated
+** If present, `x-amz-trailer` content is ignored
 
 | 11.8
 | Updated the names of S3 operations to match the names used in the http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^].
