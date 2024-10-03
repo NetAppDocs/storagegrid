@@ -108,6 +108,28 @@ Table ID +
 Table name
 | Grid tasks (maintenance procedures) status file. Provides details of the grid's active, terminated, completed, failed, and pending tasks.
 
+| GRID.JSON
+| Grid +
+Revision +
+Software Version +
+Description +
+License +
+Passwords +
+DNS +
+NTP +
+Sites +
+Nodes
+| Grid information, such as software version and passwords.
+
+| ILM-CONFIGURATION.XML
+| Attribute ID +
+Attribute Name +
+Value +
+Index +
+Table ID +
+Table Name
+| List of attributes for ILM configurations.
+
 | ILM-STATUS.XML
 | Node +
 Service path +
