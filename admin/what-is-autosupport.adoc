@@ -46,7 +46,7 @@ Time of Generation +
 Autosupport Compressed Size +
 Autosupport Decompressed Size +
 Total Collection Time (ms)
-| AutoSupport history file
+| AutoSupport history file.
 
 | AUTOSUPPORT.XML
 | Node +
@@ -119,7 +119,7 @@ DNS +
 NTP +
 Sites +
 Nodes
-| Grid information, such as software version and passwords.
+| Grid information.
 
 | ILM-CONFIGURATION.XML
 | Attribute ID +
