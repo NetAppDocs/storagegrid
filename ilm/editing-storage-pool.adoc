@@ -11,6 +11,7 @@ summary: 'You can edit a storage pool to change its name or to update sites and 
 [.lead]
 You can edit a storage pool to change its name or to update sites and storage grades.
 
+
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
@@ -31,9 +32,13 @@ You can't edit the All Storage Nodes storage pool (StorageGRID 11.6 and earlier)
 . As required, change the storage pool name.
 . As required, select other sites and storage grades.
 +
-NOTE: You are prevented from changing the site or storage grade if the storage pool is used in an erasure-coding profile and the change would cause the erasure-coding scheme to become invalid. For example, if a storage pool used in a erasure-coding profile currently includes a storage grade with only one site, you are prevented from using a storage grade with two sites because the change would make the erasure-coding scheme invalid.
+You are prevented from changing the site or storage grade if the storage pool is used in an erasure-coding profile and the change would cause the erasure-coding scheme to become invalid. For example, if a storage pool used in a erasure-coding profile currently includes a storage grade with only one site, you are prevented from using a storage grade with two sites because the change would make the erasure-coding scheme invalid.
++
+CAUTION: Adding or removing sites from an existing storage pool won’t move any existing erasure-encoded data. If you want to move the existing data from the site, you must create a new storage pool and EC profile to re-encode the data.
 
 . Select *Save*.
 
 .After you finish
 If you added a new site or storage grade to a storage pool used in the active ILM policy, activate a new ILM policy to force StorageGRID to use the new site or storage grade. For example, clone your existing ILM policy and then activate the clone. See link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies].
+
+// 2024 JULY 25, SGRIDDOC-84

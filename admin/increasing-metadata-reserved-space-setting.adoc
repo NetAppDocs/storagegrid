@@ -35,7 +35,7 @@ For a detailed explanation of how the Metadata Reserved Space setting affects th
 .Steps
 . Determine the current Metadata Reserved Space setting.
  .. Select *CONFIGURATION* > *System* > *Storage options*.
- .. In the Storage Watermarks section, note the value of *Metadata Reserved Space*.
+ .. In the Storage watermarks section, note the value of *Metadata Reserved Space*.
 . Ensure you have enough available space on storage volume 0 of each Storage Node to increase this value.
  .. Select *NODES*.
  .. Select the first Storage Node in the grid.
@@ -59,7 +59,7 @@ For example, if the Metadata Reserved Space setting is currently 4 TB and you wa
 . Update the Metadata Reserved Space setting.
  .. Select *CONFIGURATION* > *System* > *Storage options*.
  .. Select the Configuration tab.
- .. In the Storage Watermarks section, select *Metadata Reserved Space*.
+ .. In the Storage watermarks section, select *Metadata Reserved Space*.
  .. Enter the new value.
 +
 For example, to enter 8 TB, which is the maximum supported value, enter *8000000000000* (8, followed by 12 zeros)

@@ -79,9 +79,9 @@ The following request headers aren't supported:
 * `Content-Encoding`
 * `Content-Language`
 * `Expires`
-* `x-amz-checksum-sha256`
+* `x-amz-checksum-algorithm`
 +
-When you copy an object, if the source object has a checksum, StorageGRID doesn't copy that checksum value to the new object. This behavior applies whether or not you try to use `x-amz-checksum-sha256` in the object request.
+When you copy an object, if the source object has a checksum, StorageGRID doesn't copy that checksum value to the new object. This behavior applies whether or not you try to use `x-amz-checksum-algorithm` in the object request.
 * `x-amz-website-redirect-location`
 
 == Storage class options

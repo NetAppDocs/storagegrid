@@ -2,7 +2,7 @@ settings:
   name: "StorageGRID 11.9"
   search: "storagegrid-enable,storagegrid-119,storagegrid-appliances"
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
     termcheck_enabled: false
   prod:
     pdf_enabled: false
@@ -367,6 +367,8 @@ sidebar:
         url: "/maintain/how-site-recovery-is-performed-by-technical-support.html"
     - title: Enable StorageGRID
       url: "/storagegrid-enable.html"
+    - title: StorageGRID and BlueXP
+      url: "/storagegrid-bluexp.html"
     - title: Other versions
       url: "/earlier-versions.html"
     - title: Legal notices

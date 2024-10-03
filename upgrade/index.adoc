@@ -11,11 +11,10 @@ summary: 'Use these instructions to upgrade a StorageGRID system to a new releas
 [.lead]
 Use these instructions to upgrade a StorageGRID system to a new release.
 
-== About these instructions
-These instructions describe what's new in StorageGRID 11.8 and provide step-by-step instructions for upgrading all nodes in your StorageGRID system to the new release.  
+When you perform the upgrade, all nodes in your StorageGRID system are upgraded.
 
 == Before you begin
-Review these topics to learn about the new features and enhancements in StorageGRID 11.8, determine whether any features have been deprecated or removed, and find out about changes to StorageGRID APIs.
+Review these topics to learn about the new features and enhancements in StorageGRID 11.9, determine whether any features have been deprecated or removed, and find out about changes to StorageGRID APIs.
 
 * link:whats-new.html[What's new in StorageGRID 11.9]
 * link:removed-or-deprecated-features.html[Removed or deprecated features]

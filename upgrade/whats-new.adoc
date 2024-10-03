@@ -14,105 +14,87 @@ This release of StorageGRID introduces the following features and functional cha
 == Scalability
 
 === Data-only Storage Nodes
-To allow for more granular scaling, you can now install data-only Storage Nodes. Where metadata processing isn't critical, you can optimize your infrastructure cost-effectively. This flexibility helps accommodate varying workloads and growth patterns. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
+To allow for more granular scaling, you can now install link:../primer/what-storage-node-is.html#types-of-storage-nodes[data-only Storage Nodes]. Where metadata processing isn't critical, you can optimize your infrastructure cost-effectively. This flexibility helps accommodate varying workloads and growth patterns.
 
 == Cloud Storage Pool enhancements
 
 === IAM Roles Anywhere
-Support has been added for short term credentials using IAM Roles Anywhere in Amazon S3 for Cloud Storage Pools.
+StorageGRID now supports short term credentials using link:../ilm/creating-cloud-storage-pool.html[IAM Roles Anywhere in Amazon S3 for Cloud Storage Pools].
 
-Traditionally, long-term credentials have been used to access S3 buckets. However, these credentials pose security risks if compromised. Short-term credentials have a limited lifespan, which reduces the risk of unauthorized access.
-
-Refer to link:../ilm/creating-cloud-storage-pool.html[Create Cloud Storage Pool].
+Using long-term credentials to access S3 buckets poses security risks if these credentials are compromised. Short-term credentials have a limited lifespan, which reduces the risk of unauthorized access.
 
 === S3 Object Lock buckets
-You can now configure a Cloud Storage Pool using an Amazon S3 endpoint. S3 Object Lock helps prevent accidental or malicious deletion of objects. If you tier data from StorageGRID to Amazon S3, having object lock enabled on both systems enhanced data protection across the data's lifecycle.
-
-Refer to link:../ilm/creating-cloud-storage-pool.html[Create Cloud Storage Pool].
+You can now link:../ilm/creating-cloud-storage-pool.html[configure a Cloud Storage Pool using an Amazon S3 endpoint]. S3 Object Lock helps prevent accidental or malicious deletion of objects. If you tier data from StorageGRID to Amazon S3, having object lock enabled on both systems enhances data protection across the data's lifecycle.
 
 == Multi-tenancy
 
 === Bucket limits 
-By setting limits on S3 buckets, you can prevent tenants from monopolizing capacity. Additionally, uncontrolled growth can result in unexpected costs. By having defined limits, you can better estimate tenant storage expenses.
-
-Refer to link:../tenant/creating-s3-bucket.html[Create an S3 bucket].
+By link:../tenant/creating-s3-bucket.html[setting limits on S3 buckets], you can prevent tenants from monopolizing capacity. Additionally, uncontrolled growth can result in unexpected costs. By having defined limits, you can better estimate tenant storage expenses.
 
 === 5,000 buckets per tenant
-To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant].
+To enhance scalability, StorageGRID now supports up to link:../s3/operations-on-buckets.html[5,000 S3 buckets per tenant]. Each grid can have a maximum of 100,000 buckets.
 
-Refer to link:../s3/operations-on-buckets.html[Operations on S3 buckets].
-
-=== Set I/O priority for erasure-coded data repair
-Input-output (I/O) prioritization allows you to set the priority of erasure coding (EC) repair and purge operations.
-
-In the Grid Manager, select *SUPPORT* > *I/O prioritization*.
+To support 5,000 buckets, each Storage Node in the grid must have a minimum of 64 GB of RAM.
 
 == S3 Object Lock improvements
-You can now set per-tenant maximum retention time and per-tenant compliance mode. Per-tenant configuration provides the appropriate balance of flexibility and data security.
+Per-tenant configuration capabilities provide the appropriate balance of flexibility and data security. You can now configure per-tenant retention settings to:
+
+* Allow or disallow compliance mode
+* Set a maximum retention period
 
 Refer to:
 
-* link:../admin/creating-tenant-account[Create tenant account]
+* link:../ilm/managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock]
 * link:../ilm/how-object-retention-is-determined.html#how-grid-administrators-control-object-retention[How grid administrators control object retention]
+* link:../admin/creating-tenant-account[Create tenant account]
 
 == S3 compatibility
 
 === x-amz-checksum-sha256 checksum
-* The S3 REST API now provides support for `x-amz-checksum-sha256` checksum
+* The S3 REST API now provides support for link:../s3/operations-on-objects.html[`x-amz-checksum-sha256` checksum].
 
 * StorageGRID now provides SHA-256 checksum support for PUT, GET and HEAD operations. These checksums enhance data integrity.
 
-Refer to link:../s3/operations-on-objects.html[Operations on objects].
-
-=== Amazon AWS endpoint 
-
-AWS endpoints bridge the gap between file and object by allowing applications to connect directly to S3 buckets as if they were local file systems.
+=== Changes to S3 protocol support
+* Added support for Mountpoint for Amazon S3, which allows applications to connect directly to S3 buckets as if they were local file systems. You can now use StorageGRID with more applications and more use cases.
+* As part of adding support for Mountpoint, StorageGRID 11.9 contains link:../s3/index.html#updates-to-rest-api-support[additional changes to S3 protocol support].
 
 == Maintenance and Supportability
 
-=== Default audit destinations
-Fresh installations of StorageGRID 11.9 default to local node audit destinations. Previously, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
-
-For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#select-audit-information-destinations[Select audit information destinations].
-
 === Improved node decommissioning 
-To provide a smooth and efficient transition to StorageGRID next-generation hardware, node decommissioning has been improved.
+To provide a smooth and efficient transition to StorageGRID next-generation hardware, link:../maintain/grid-node-decommissioning.html[node decommissioning] has been improved.
 
 === AutoSupport
-AutoSupport now automatically creates hardware failure cases for legacy appliances.
+link:../admin/what-is-autosupport.html[AutoSupport] now automatically creates hardware failure cases for legacy appliances.
+
+=== Expanded node clone operations  
+Node clone usability has been expanded to support larger storage nodes. 
+
+=== Syslog for load balancer endpoints
+Load balancer endpoint access logs contain troubleshooting information, such as HTTP status codes.
+StorageGRID now supports link:../monitor/configure-audit-messages.html[exporting these logs to an external syslog server]. This enhancement allows for more efficient log management and integration with existing monitoring and alerting systems.
 
 === Additional enhancements for maintenance and supportability
-
 * Metrics UI update	 
-
-* Dynamic time limit for node clone operations  
 
 * New operating system qualifications 
 
-* Support for new 3rd party components 
+* Support for new third-party components 
 
 == Security
 
 === SSH access keys rotation 
 
-Grid administrators can update and rotate SSH keys. The ability to rotate SSH keys is a security best practice and a proactive defense mechanism.
-
-Refer to link:../admin/change-ssh-access-passwords.html[Change SSH access passwords for Admin Nodes].
+Grid administrators can now link:../admin/change-ssh-access-passwords.html[update and rotate SSH keys]. The ability to rotate SSH keys is a security best practice and a proactive defense mechanism.
 
 === Alerts for root logins 
 
-When an unknown entity signs in to the Grid Manager as root, an alert is triggered. Monitoring root SSH logins is a proactive step toward safeguarding your infrastructure.
-
-== Appliances
-
-=== TLS offload on the SG1100 
-
-By taking advantage of the hardware offload capabilities on the SG1100 load balancer, performance is improved because objects don't need to be copied into the user space for encryption.
+When an unknown entity signs in to the Grid Manager as root, link:../monitor/alerts-reference.html[an alert is triggered]. Monitoring root SSH logins is a proactive step toward safeguarding your infrastructure.
 
 == Grid Manager enhancements
 
 === Erasure-coding profiles page moved
-The Erasure-coding profiles page is now at *CONFIGURATION* > *System* > *Erasure coding*. It used to be in the ILM menu.
+The Erasure-coding profiles page is now located at *CONFIGURATION* > *System* > *Erasure coding*. It used to be in the ILM menu.
 
 === Search enhancements
 The link:../primer/exploring-grid-manager.html#search-field[search field in the Grid Manager] now includes better matching logic, allowing you to find pages by searching for common abbreviations and by the names of certain settings within a page. You can also search for more types of items, like nodes, users, and tenant accounts.

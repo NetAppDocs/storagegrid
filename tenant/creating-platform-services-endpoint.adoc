@@ -243,8 +243,6 @@ Select *Use delegation taken authentication* if the username and password are de
 . Select *Continue*.
 . Select a radio button for *Verify server* to choose how TLS connection to the endpoint is verified.
 +
-image::../media/endpoint_create_verify_server.png[Create Endpoint - Validate Cert]
-+
 [cols="1a,2a" options="header"]
 |===
 | Type of certificate verification| Description
