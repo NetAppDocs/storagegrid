@@ -2,7 +2,7 @@
 permalink: upgrade/changes-to-tenant-management-api.html
 sidebar: sidebar
 keywords: tenant management api, api, api version, swagger, rest api
-summary: 'StorageGRID 11.8 uses version 4 of the Tenant Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported.'
+summary: 'StorageGRID 11.9 uses version 4 of the Tenant Management API. Version 4 deprecates version 3; however, versions 1, 2, and 3 are still supported.'
 ---
 = Changes to the Tenant Management API
 :icons: font
@@ -15,9 +15,7 @@ NOTE: You can continue to use deprecated versions of the Tenant Management API w
 
 To learn more, go to link:../tenant/understanding-tenant-management-api.html[Understand the Tenant Management API].
 
-
-== New endpoint for bucket capacity limit
-
-You can use the `/org/containers/{bucketName}/quota-object-bytes` API endpoint with GET/PUT operations to get and set the storage capacity limit for a bucket.
+== New API for bucket capacity limit
+You can use the `/org/containers/{bucketName}/quota-object-bytes` API with GET/PUT operations to get and set the storage capacity limit for a bucket.
 
 // 2024 JUL 10, SGWS-31727

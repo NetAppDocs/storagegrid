@@ -10,6 +10,8 @@ entries:
       url: "/vmware/required-materials.html"
     - title: Download and extract the StorageGRID installation files
       url: "/vmware/downloading-and-extracting-storagegrid-installation-files.html"
+    - title: Manually verify installation files
+      url: "/vmware/download-files-verify.html"
     - title: Software requirements
       url: "/vmware/software-requirements.html"
     - title: CPU and RAM requirements

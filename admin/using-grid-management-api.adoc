@@ -29,7 +29,7 @@ The Swagger user interface provides complete details and documentation for each 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have link:admin-group-permissions.html[specific access permissions].
 
-CAUTION: Any API operations you perform using the API Docs webpage are live operations. Be careful not to create, update, or delete configuration data or other data by mistake.
+CAUTION: Any API operations you perform using the API Documentation webpage are live operations. Be careful not to create, update, or delete configuration data or other data by mistake.
 
 .Steps
 . From the Grid Manager header, select the help icon and select *API documentation*.

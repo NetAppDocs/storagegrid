@@ -24,6 +24,8 @@ NOTE: In the examples, the Client Network target has been configured as a best p
 ----
 NODE_TYPE = VM_Admin_Node
 ADMIN_ROLE = Primary
+TEMPORARY_PASSWORD_TYPE = Use custom password
+CUSTOM_TEMPORARY_PASSWORD = Passw0rd
 BLOCK_DEVICE_VAR_LOCAL = /dev/mapper/dc1-adm1-var-local
 BLOCK_DEVICE_AUDIT_LOGS = /dev/mapper/dc1-adm1-audit-logs
 BLOCK_DEVICE_TABLES = /dev/mapper/dc1-adm1-tables

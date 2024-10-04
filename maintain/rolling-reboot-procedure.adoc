@@ -109,4 +109,4 @@ You can stop the rolling reboot procedure from the primary Admin Node. When you 
 .Steps
 
 . Select *MAINTENANCE* > *Tasks* > *Rolling reboot*.
-. From the *Monitor reboot* step, select *Stop reboot*.
+. From the *Monitor reboot* step, select *Stop reboot procedure*.

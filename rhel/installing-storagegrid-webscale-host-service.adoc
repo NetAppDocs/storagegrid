@@ -13,7 +13,7 @@ You use the StorageGRID RPM package to install the StorageGRID host services.
 
 .About this task
 
-These instructions describe how to install the host services from the RPM packages. As an alternative, you can use the Yum repository metadata included in the installation archive to install the RPM packages remotely. See the Yum repository instructions for your Linux operating system.
+These instructions describe how to install the host services from the RPM packages. As an alternative, you can use the DNF repository metadata included in the installation archive to install the RPM packages remotely. See the DNF repository instructions for your Linux operating system.
 
 .Steps
 
@@ -24,13 +24,15 @@ For example, place them in the `/tmp` directory, so you can use the example comm
 . Log in to each host as root or using an account with sudo permission, and run the following commands in the order specified:
 +
 ----
-sudo yum --nogpgcheck localinstall /tmp/StorageGRID-Webscale-Images-version-SHA.rpm
+sudo dnf --nogpgcheck localinstall /tmp/StorageGRID-Webscale-Images-version-SHA.rpm
 ----
 +
 ----
-sudo yum --nogpgcheck localinstall /tmp/StorageGRID-Webscale-Service-version-SHA.rpm
+sudo dnf --nogpgcheck localinstall /tmp/StorageGRID-Webscale-Service-version-SHA.rpm
 ----
 +
 CAUTION: You must install the Images package first, and the Service package second.
 +
 NOTE: If you placed the packages in a directory other than `/tmp`, modify the command to reflect the path you used.
+
+// 2024 SEP 16, SGRIDDOC-95

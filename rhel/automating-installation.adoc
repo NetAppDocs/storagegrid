@@ -40,6 +40,11 @@ You can automate all of the steps for preparing the hosts and deploying virtual 
 
 Example Ansible role and playbook are supplied with the installation archive in the `/extras` folder. The Ansible playbook shows how the `storagegrid` role prepares the hosts and installs StorageGRID onto the target servers. You can customize the role or playbook as necessary.
 
+The installation tasks in the provided `storagegrid` role example use the `ansible.builtin.dnf` module to perform the installation from the local RPM files or a remote Yum repository. If the module is unavailable or not supported, you might need to edit the appropriate Ansible tasks in the following files to use the `yum` or `ansible.builtin.yum` module:
+
+* `roles/storagegrid/tasks/rhel_install_from_repo.yml`
+* `roles/storagegrid/tasks/rhel_install_from_local.yml`
+
 == Automate the configuration of StorageGRID
 
 After deploying the grid nodes, you can automate the configuration of the StorageGRID system.
@@ -116,3 +121,5 @@ StorageGRID has been configured and installed.
 .Related information
 
 link:overview-of-installation-rest-api.html[Installation REST API]
+
+// 2024 SEP 16, SGRIDDOC-95

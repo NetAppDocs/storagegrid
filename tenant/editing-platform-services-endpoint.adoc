@@ -21,8 +21,6 @@ You can edit the configuration for a platform services endpoint to change its na
 . Select *STORAGE (S3)* > *Platform services endpoints*.
 +
 The Platform services endpoints page appears and shows the list of platform services endpoints that have already been configured.
-+
-image::../media/endpoints_list.png[Endpoints List]
 
 . Select the endpoint you want to edit.
 +
