@@ -120,4 +120,4 @@ link:lifecycle-of-cloud-storage-pool-object.html[Lifecycle of a Cloud Storage Po
 
 // 2024 AUG 2, SGRIDDOC-89
 // 2024 JUN 18, SGWS-31715
-// 2024 JUN 14, SGWS-3127
+// 2024 JUN 14, SGWS-31273
