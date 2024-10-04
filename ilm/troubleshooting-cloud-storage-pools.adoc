@@ -33,14 +33,14 @@ To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[
 
 == Error: This Cloud Storage Pool contains unexpected content
 
-You might encounter this error when you try to create, edit, or delete a Cloud Storage Pool. This error occurs if the bucket or container includes the `x-ntap-sgws-cloud-pool-uuid` marker file, but that file does not have the expected UUID.
+You might encounter this error when you try to create, edit, or delete a Cloud Storage Pool. This error occurs if the bucket or container includes the `x-ntap-sgws-cloud-pool-uuid` marker file, but that file doesn't have the metadata field with the expected UUID.
 
 Typically, you will only see this error if you are creating a new Cloud Storage Pool and another instance of StorageGRID is already using the same Cloud Storage Pool.
 
 Try these steps to correct the issue:
 
 * Check to make sure that no one in your organization is also using this Cloud Storage Pool.
-* Delete the `x-ntap-sgws-cloud-pool-uuid` file and try configuring the Cloud Storage Pool again.
+* Delete all existing objects inside the target bucket, including the `x-ntap-sgws-cloud-pool-uuid` file and try configuring the Cloud Storage Pool again.
 
 == Error: Could not create or update Cloud Storage Pool. Error from endpoint
 
@@ -118,5 +118,6 @@ Try these steps to correct the issue:
 
 link:lifecycle-of-cloud-storage-pool-object.html[Lifecycle of a Cloud Storage Pool object]
 
+// 2024 AUG 2, SGRIDDOC-89
 // 2024 JUN 18, SGWS-31715
 // 2024 JUN 14, SGWS-31273
