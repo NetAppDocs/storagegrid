@@ -69,7 +69,7 @@ You can disable the automatic sending of weekly AutoSupport packages at any time
 
 == Disable event-triggered AutoSupport
 
-By default, the StorageGRID system is configured to send an AutoSupport package to technical support every hour or when an important alert or other significant system event occurs.
+By default, the StorageGRID system is configured to send an AutoSupport package to technical support every hour.
 
 You can disable event-triggered AutoSupport at any time.
 

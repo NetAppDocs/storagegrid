@@ -9,7 +9,7 @@ summary: 'If you are performing an expansion to add Storage Nodes and you use IL
 :imagesdir: ../media/
 
 [.lead]
-If you are performing an expansion to add Storage Nodes and you use ILM rules to erasure code data, you might need to perform the EC rebalance procedure if you can't add enough Storage Nodes for the erasure-coding scheme you are using.
+If you are performing an expansion to add Storage Nodes and you use ILM rules to erasure code data, you might need to perform the erasure coding (EC) rebalance procedure if you can't add enough Storage Nodes for the erasure-coding scheme you are using.
 
 After reviewing these considerations, perform the expansion, and then go to link:rebalancing-erasure-coded-data-after-adding-storage-nodes.html[Rebalance erasure-coded data after adding Storage Nodes] to run the procedure. 
 
@@ -50,7 +50,6 @@ Consider the following scenario:
 * All Storage Nodes have become completely full. The *Low Object Storage* alert has been triggered at the major severity level.
 +
 image::../media/used_space_before_expansion.png[Used space before expansion]
-
 
 === Rebalance is not required if you add enough nodes
 
