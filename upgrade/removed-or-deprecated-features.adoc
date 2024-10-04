@@ -14,8 +14,8 @@ Some features and capabilities were removed or deprecated in this release. Revie
 == Definitions
 
 Deprecated:: The feature *should not* be used in new production environments. Existing production environments can continue using the feature.
-End of Life:: Last shipped version that contains the feature. No future versions will support the feature. In some cases, documentation for the feature might be removed at this stage.
-Removed:: First version that *does not* contain the feature.
+End of Life:: Last shipped version that supports the feature. In some cases, documentation for the feature might be removed at this stage.
+Removed:: First version that *does not* support the feature.
 
 == StorageGRID end of feature support
 
@@ -29,7 +29,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 |===
 | Feature| Deprecated| End of Life| Removed| Links to earlier documentation
 
-| Alarms (_not Alerts_)
+| Legacy Alarms (_not Alerts_)
 | 11.7
 | 11.8
 | 11.9
@@ -38,10 +38,13 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | Archive Node support
 | 11.7
 | 11.8
-| 11.9
+| 12.0
 | https://docs.netapp.com/us-en/storagegrid-118/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html[Considerations for decommissioning Archive Nodes (StorageGRID 11.8)^]
 
-*Note*: You must decommission all Archive Nodes before you can upgrade to StorageGRID 11.9.
+*Note*: Before starting your upgrade, you must:
+
+. Decommission all Archive Nodes. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
+. Remove all Archive Node references from storage pools and ILM policies. See https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
 
 | Audit export through CIFS/Samba
 | 11.1

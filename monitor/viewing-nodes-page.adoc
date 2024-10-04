@@ -15,8 +15,9 @@ The Nodes table lists summary information for the entire grid, each site, and ea
 
 include::../_include/metrics-can-contain-wrong-values.adoc[]
 
-
 NOTE: To change units for the storage values displayed in the Grid Manager, select the user drop-down in the upper right of the Grid Manager, then select *User preferences*.
+
+include::../_include/screenshots-vary.adoc[]
 
 image::../media/nodes_table.png[Nodes Menu]
 

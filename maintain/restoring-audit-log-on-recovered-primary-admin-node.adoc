@@ -51,5 +51,3 @@ When prompted, enter the password for admin.
 . For security, delete the audit logs from the failed grid node after verifying that they have been copied successfully to the recovered Admin Node.
 . Update the user and group settings of the audit log files on the recovered Admin Node: `chown ams-user: bycast *`
 . Log out as root: `exit`
-
-You must also restore any pre-existing client access to the audit share. For more information, see link:../admin/configuring-audit-client-access.html[Configure audit client access].

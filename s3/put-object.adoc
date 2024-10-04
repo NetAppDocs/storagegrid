@@ -66,6 +66,7 @@ When you specify `aws-chunked` for ``Content-Encoding``StorageGRID does not veri
 +
 Chunked transfer encoding is supported if `aws-chunked` payload signing is also used.
 
+* `x-amz-checksum-sha256`
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata.
 +
 When specifying the name-value pair for user-defined metadata, use this general format:
@@ -106,8 +107,12 @@ See <<Request headers for server-side encryption>>
 
 The following request headers aren't supported:
 
-* The `x-amz-acl` request header is not supported.
-* The `x-amz-website-redirect-location` request header is not supported and returns `XNotImplemented`.
+* `x-amz-acl` 
+* `x-amz-sdk-checksum-algorithm`
+* `x-amz-trailer` 
+* `x-amz-website-redirect-location`
++
+The `x-amz-website-redirect-location` header returns `XNotImplemented`.
 
 == Storage class options
 
@@ -141,7 +146,10 @@ NOTE: If you are ingesting an object into a bucket with S3 Object Lock enabled, 
 You can use the following request headers to encrypt an object with server-side encryption. The SSE and SSE-C options are mutually exclusive.
 
 * *SSE*: Use the following header if you want to encrypt the object with a unique key managed by StorageGRID.
- ** `x-amz-server-side-encryption`
+** `x-amz-server-side-encryption`
++
+When the `x-amz-server-side-encryption` header isn't included in the PutObject request, the grid-wide link:../admin/changing-network-options-object-encryption.html[stored object encryption setting] is omitted from the PutObject response.
+
 * *SSE-C*: Use all three of these headers if you want to encrypt the object with a unique key that you provide and manage.
  ** `x-amz-server-side-encryption-customer-algorithm`: Specify `AES256`.
  ** `x-amz-server-side-encryption-customer-key`: Specify your encryption key for the new object.
@@ -171,5 +179,8 @@ For details, refer to https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-hea
 
 .Related information
 
-link:../ilm/index.html[Manage objects with ILM]
+* link:../ilm/index.html[Manage objects with ILM]
+* link:https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html[Amazon Simple Storage Service API Reference: PutObject^]
 
+// 2024 AUG 22, SGRIDDOC-93
+// 2024 MAY 23, SGWS-31243

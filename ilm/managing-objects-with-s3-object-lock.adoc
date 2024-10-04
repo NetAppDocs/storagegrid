@@ -23,58 +23,40 @@ If you used the legacy Compliance feature in a previous version of StorageGRID, 
 
 [cols="1a,1a,1a" options="header"]
 |===
-|  | S3 Object Lock| Compliance (legacy)
-a|
-How is the feature enabled globally?
-a|
-From the Grid Manager, select *CONFIGURATION* > *System* > *S3 Object Lock*.
-a|
-No longer supported.
+| | S3 Object Lock| Compliance (legacy)
+
+| How is the feature enabled globally?
+| From the Grid Manager, select *CONFIGURATION* > *System* > *S3 Object Lock*.
+| No longer supported.
 
 
-a|
-How is the feature enabled for a bucket?
-a|
-Users must enable S3 Object Lock when creating a new bucket using the Tenant Manager, the Tenant Management API, or the S3 REST API.
-a|
-No longer supported.
-a|
-Is bucket versioning supported?
-a|
-Yes. Bucket versioning is required and is enabled automatically when S3 Object Lock is enabled for the bucket.
-a|
-No. 
-a|
-How is object retention set?
-a|
-Users can set a retain-until-date for each object version, or they can set a default retention period for each bucket.
-a|
-Users must set a retention period for the entire bucket. The retention period applies to all objects in the bucket.
+| How is the feature enabled for a bucket?
+| Users must enable S3 Object Lock when creating a new bucket using the Tenant Manager, the Tenant Management API, or the S3 REST API.
+| No longer supported.
 
-a|
-Can the retention period be changed?
-a|
-* In compliance mode, the retain-until-date for an object version can be increased but never decreased.
+| Is bucket versioning supported?
+| Yes. Bucket versioning is required and is enabled automatically when S3 Object Lock is enabled for the bucket.
+| No. 
+
+| How is object retention set?
+| Users can set a retain-until-date for each object version, or they can set a default retention period for each bucket.
+| Users must set a retention period for the entire bucket. The retention period applies to all objects in the bucket.
+
+| Can the retention period be changed?
+| * In compliance mode, the retain-until-date for an object version can be increased but never decreased.
 * In governance mode, users with special permissions can decrease or even remove an object's retention settings. 
-a|
-A bucket's retention period can be increased but never decreased.
-a|
-Where is legal hold controlled?
-a|
-Users can place a legal hold or lift a legal hold for any object version in the bucket.
-a|
-A legal hold is placed on the bucket and affects all objects in the bucket.
-a|
-When can objects be deleted?
-a|
-* In compliance mode, an object version can be deleted after the retain-until-date is reached, assuming the object is not under legal hold.
+| A bucket's retention period can be increased but never decreased.
+
+| Where is legal hold controlled?
+| Users can place a legal hold or lift a legal hold for any object version in the bucket.
+| A legal hold is placed on the bucket and affects all objects in the bucket.
+
+| When can objects be deleted?
+| * In compliance mode, an object version can be deleted after the retain-until-date is reached, assuming the object is not under legal hold.
 * In governance mode, users with special permissions can delete an object before its retain-until-date is reached, assuming the object is not under legal hold.
-a|
-An object can be deleted after the retention period expires, assuming the bucket is not under legal hold. Objects can be deleted automatically or manually.
-a|
-Is bucket lifecycle configuration supported?
-a|
-Yes
-a|
-No
+| An object can be deleted after the retention period expires, assuming the bucket is not under legal hold. Objects can be deleted automatically or manually.
+
+| Is bucket lifecycle configuration supported?
+| Yes
+| No
 |===

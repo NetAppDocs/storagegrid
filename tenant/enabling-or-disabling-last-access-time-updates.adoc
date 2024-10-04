@@ -61,6 +61,12 @@ h|Object added to ILM evaluation queue?
 |Yes
 |Yes
 
+|Request to list objects or object versions
+|No
+|No
+|No
+|No
+
 |Request to copy an object from one bucket to another
 |
 * No, for the source copy
@@ -97,4 +103,4 @@ The bucket details page appears.
 
 . Select *Save changes*.
 
-
+// 2024 JULY 24, SGRIDDOC-83

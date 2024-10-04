@@ -1,7 +1,7 @@
 ---
 permalink: vmware/deploying-storagegrid-node-as-virtual-machine.html
 sidebar: sidebar
-keywords: how to deploy grid nodes in vsphere or vsphere web client
+keywords: how to deploy grid nodes in vsphere or vsphere web client, port, remap, port remap
 summary: 'You use VMware vSphere Web Client to deploy each grid node as a virtual machine. During deployment, each grid node is created and connected to one or more StorageGRID networks.'
 ---
 = Deploy a StorageGRID node as a virtual machine
@@ -61,9 +61,9 @@ vsphere-gateway.mf
 |===
 
 * The `.vdmk`, `.ovf`, and `.mf` files are all in the same directory.
-* You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single virtual machine server.
+* You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single vSphere ESXi host.
 +
-CAUTION: In a production deployment, don't run more than one Storage Node on a single virtual machine server. Using a dedicated virtual machine host for each Storage Node provides an isolated failure domain.
+CAUTION: In a production deployment, don't run more than one Storage Node on a single virtual machine. Do not run multiple virtual machines on the same ESXi host if that would create an unacceptable failure-domain issue.
 
 * If you are deploying a node as part of an expansion or recovery operation, you have the link:../expand/index.html[instructions for expanding a StorageGRID system] or the link:../maintain/index.html[recovery and maintenance instructions].
 
@@ -77,13 +77,13 @@ Follow these instructions to initially deploy VMware nodes, add a new VMware nod
 
 If you are installing a new StorageGRID system:
 
-* You must deploy the primary Admin Node before you deploy any other grid node.
+* You can deploy nodes in any order. 
 * You must ensure that each virtual machine can connect to the primary Admin Node over the Grid Network.
 * You must deploy all grid nodes before configuring the grid.
 
 If you are performing an expansion or recovery operation:
 
-* You must ensure that the new virtual machine can connect to the primary Admin Node over the Grid Network.
+* You must ensure that the new virtual machine can connect to all other nodes over the Grid Network.
 
 If you need to remap any of the node's ports, don't power on the new node until the port remap configuration is complete.
 
@@ -136,8 +136,11 @@ NOTE: Some StorageGRID installations might use larger, more active storage volum
 Determine which StorageGRID networks the node will use by selecting a destination network for each source network.
 
  ** The Grid Network is required. You must select a destination network in the vSphere environment.
- ** If you use the Admin Network, select a different destination network in the vSphere environment. If you don't use the Admin Network, select the same destination you selected for the Grid Network.
+ +
+ The Grid Network is used for all internal StorageGRID traffic. It provides connectivity among all nodes in the grid, across all sites and subnets. All nodes on the Grid Network must be able to communicate with all other nodes.
+ ** If you use the Admin Network, select a different destination network in the vSphere environment. If you don't use the Admin Network, select the same destination you selected for the Grid Network. 
  ** If you use the Client Network, select a different destination network in the vSphere environment. If you don't use the Client Network, select the same destination you selected for the Grid Network.
+ ** If you use an Admin or Client network, nodes do not have to be on the same Admin or Client networks.
 
 . For *Customize Template*, configure the required StorageGRID node properties.
 .. Enter the *Node name*.
@@ -146,7 +149,7 @@ NOTE: If you are recovering a grid node, you must enter the name of the node you
 
 .. Use the *Temporary installation password* drop-down to specify a temporary installation password, so that you can access the VM console or the StorageGRID Installation API, or use SSH, before the new node joins the grid.
 +
-NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console.html[node console password], which is listed in the `Passwords.txt` file in the Recovery Package. 
+NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console-password.html[node console password], which is listed in the `Passwords.txt` file in the Recovery Package. 
 
 *** *Use node name*: The value you provided for the *Node name* field is used as the temporary installation password.
 *** *Use custom password*: A custom password is used as the temporary installation password.
@@ -184,7 +187,8 @@ Note the following important guidelines:
 
   *** If you are adding new disks you should use the same type of storage device that was in use before node recovery.
   *** The Storage Node .ovf file defines several VMDKs for storage. Unless these VMDKs meet your storage requirements, you should remove them and assign appropriate VMDKs or RDMs for storage before powering up the node. VMDKs are more commonly used in VMware environments and are easier to manage, while RDMs might provide better performance for workloads that use larger object sizes (for example, greater than 100 MB).
-. If you need to remap the ports used by this node, follow these steps.
+
+. [[vmware-remap-ports]]If you need to remap the ports used by this node, follow these steps.
 +
 You might need to remap a port if your enterprise networking policies restrict access to one or more ports that are used by StorageGRID. See the link:../network/index.html[networking guidelines] for the ports used by StorageGRID.
 +
@@ -198,8 +202,6 @@ NOTE: Don't remap the ports used in load balancer endpoints.
 +
 NOTE: If only PORT_REMAP is set, the mapping that you specify applies to both inbound and outbound communications. If PORT_REMAP_INBOUND is also specified, PORT_REMAP applies only to outbound communications.
 
-  ... Scroll back to the top of the table, and select *Edit*.
-  ... On the Type tab, select *User configurable*, and select *Save*.
   ... Select *Set Value*.
   ... Enter the port mapping:
 +
@@ -210,6 +212,12 @@ NOTE: If only PORT_REMAP is set, the mapping that you specify applies to both in
 For example, to remap ssh traffic from port 22 to port 3022, enter:
 +
 `client/tcp/22/3022`
++
+You can remap multiple ports using a comma-separated list.
++
+For example:
++
+`client/tcp/18082/443, client/tcp/18083/80`
 
 ... Select *OK*.
 
@@ -217,8 +225,6 @@ For example, to remap ssh traffic from port 22 to port 3022, enter:
 +
 NOTE: If you specify PORT_REMAP_INBOUND and don't specify a value for PORT_REMAP, outbound communications for the port are unchanged.
 
-  ... Scroll back to the top of the table, and select *Edit*.
-  ... On the Type tab, select *User configurable*, and select *Save*.
   ... Select *Set Value*.
   ... Enter the port mapping:
 +
@@ -229,6 +235,12 @@ NOTE: If you specify PORT_REMAP_INBOUND and don't specify a value for PORT_REMAP
 For example, to remap inbound SSH traffic that is sent to port 3022 so that it is received at port 22 by the grid node, enter the following:
 +
 `client/tcp/3022/22`
++
+You can remap multiple inbound ports using a comma-separated list.
++
+For example:
++
+`grid/tcp/3022/22, admin/tcp/3022/22`
 
 ... Select *OK*
 
@@ -244,4 +256,6 @@ Set the *Memory Reservation* to the same size as the *Memory* allocated to the v
 .After you finish
 
 If you deployed this node as part of an expansion or recovery procedure, return to those instructions to complete the procedure.
+
+// 2024 AUG 12, SGIRDDOC-91
 // mairead-SGRIDOC59-apr9 2024

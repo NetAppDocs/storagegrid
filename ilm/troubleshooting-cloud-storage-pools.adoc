@@ -25,25 +25,37 @@ After resolving any underlying issues, you can determine if the error has been r
 
 If the underlying problem has been resolved, the error message is no longer displayed. However, if the underlying problem has not been fixed (or if a different error is encountered), the error message will be shown in the Last error column within a few minutes.
 
+== Error: Health check failed. Error from endpoint
+
+You might encounter this error when you enable S3 Object Lock with default retention for your Amazon S3 bucket after you start using this bucket for a Cloud Storage Pool. This error occurs when the PUT operation doesn't have an HTTP header with a payload checksum value such as `Content-MD5`. This header value is required by AWS for PUT operations into buckets with S3 Object Lock enabled. 
+
+To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This action triggers the validation of the Cloud Storage Pool configuration that automatically detects and updates the S3 Object Lock flag on a Cloud Storage Pool endpoint configuration.
+
 == Error: This Cloud Storage Pool contains unexpected content
 
-You might encounter this error when you try to create, edit, or delete a Cloud Storage Pool. This error occurs if the bucket or container includes the `x-ntap-sgws-cloud-pool-uuid` marker file, but that file does not have the expected UUID.
+You might encounter this error when you try to create, edit, or delete a Cloud Storage Pool. This error occurs if the bucket or container includes the `x-ntap-sgws-cloud-pool-uuid` marker file, but that file doesn't have the metadata field with the expected UUID.
 
 Typically, you will only see this error if you are creating a new Cloud Storage Pool and another instance of StorageGRID is already using the same Cloud Storage Pool.
 
 Try these steps to correct the issue:
 
 * Check to make sure that no one in your organization is also using this Cloud Storage Pool.
-* Delete the `x-ntap-sgws-cloud-pool-uuid` file and try configuring the Cloud Storage Pool again.
+* Delete all existing objects inside the target bucket, including the `x-ntap-sgws-cloud-pool-uuid` file, and try configuring the Cloud Storage Pool again.
 
 == Error: Could not create or update Cloud Storage Pool. Error from endpoint
 
-You might encounter this error when you try to create or edit a Cloud Storage Pool. This error indicates that some kind of connectivity or configuration issue is preventing StorageGRID from writing to the Cloud Storage Pool.
+You might encounter this error under the following circumstances:
+
+* When you try to create or edit a Cloud Storage Pool. 
+* When you select an unsupported platform, authentication, or protocol combination with S3 Object Lock during the configuration of a new Cloud Storage Pool. See link:../ilm/considerations-for-cloud-storage-pools.html[Considerations for Cloud Storage Pools].
+
+This error indicates that a connectivity or configuration issue is preventing StorageGRID from writing to the Cloud Storage Pool.
 
 To correct the issue, review the error message from the endpoint.
 
 * If the error message contains `Get _url_: EOF`, check that the service endpoint used for the Cloud Storage Pool does not use HTTP for a container or bucket that requires HTTPS.
 * If the error message contains `Get _url_: net/http: request canceled while waiting for connection`, verify that the network configuration allows Storage Nodes to access the service endpoint used for the Cloud Storage Pool.
+* If the error is due to an unsupported platform, authentication, or protocol, change to a supported configuration with S3 Object Lock and try to save the new Cloud Storage Pool again. 
 * For all other endpoint error messages, try one or more of the following:
  ** Create an external container or bucket with the same name you entered for the Cloud Storage Pool, and try to save the new Cloud Storage Pool again.
  ** Correct the container or bucket name you specified for the Cloud Storage Pool, and try to save the new Cloud Storage Pool again.
@@ -93,8 +105,19 @@ Try one or more of these steps to correct the issue:
 * Check the settings for the Cloud Storage Pool (*ILM* > *Storage pools*).
 * Check the networking configuration of the storage proxy server.
 
+== Error: X.509 certificate is out of validity period
+
+You might encounter this error when you try to delete a Cloud Storage Pool. This error occurs when the authentication requires an X.509 certificate to ensure the correct external Cloud Storage Pool is validated and the external pool is empty before the Cloud Storage Pool configuration is deleted.
+
+Try these steps to correct the issue:
+
+* Update the certificate configured for authentication to the Cloud Storage Pool.
+* Make sure any certificate expiration alert on this Cloud Storage Pool is resolved.
+
 .Related information
 
 link:lifecycle-of-cloud-storage-pool-object.html[Lifecycle of a Cloud Storage Pool object]
 
+// 2024 AUG 2, SGRIDDOC-89
 // 2024 JUN 18, SGWS-31715
+// 2024 JUN 14, SGWS-31273

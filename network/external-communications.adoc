@@ -13,20 +13,18 @@ Clients need to communicate with grid nodes to ingest and retrieve content. The 
 
 == Restricted access to ports
 
-If enterprise networking policies restrict access to any of the ports, you can use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports.
+If enterprise networking policies restrict access to any of the ports, you can do one of the following:
 
-== Port remapping
+* Use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports.
+* Remap ports when deploying nodes. However, you should not remap load balancer endpoints. See the information about port remapping for your StorageGRID node:
 
-To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap ports when deploying nodes. However, you should not remap load balancer endpoints. For information about port remapping, see the installation instructions:
+** link:../rhel/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Red Hat Enterprise Linux]
 
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
+** link:../ubuntu/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Ubuntu or Debian]
 
-* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
+** link:../vmware/deploying-storagegrid-node-as-virtual-machine.html#vmware-remap-ports[Remap ports for StorageGRID on VMware]
 
-* link:../vmware/index.html[Install StorageGRID on VMware]
-
-* https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
-
+** https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
 
 == Ports used for external communications
 
@@ -121,33 +119,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | External NTP
 | Network time protocol service. Nodes selected as primary NTP sources also synchronize clock times with the external NTP time sources.
 
-| 137
-| UDP
-| NetBIOS
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export for clients that require NetBIOS support.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
-
-| 138
-| UDP
-| NetBIOS
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export for clients that require NetBIOS support.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
-
-| 139
-| TCP
-| SMB
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export for clients that require NetBIOS support.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
-
 | 161
 | TCP/ UDP
 | SNMP
@@ -206,15 +177,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Storage Nodes
 | AWS
 | Cloud Storage Pools requests sent to AWS targets that use HTTPS. Grid administrators can override the default HTTPS port setting of 443 when configuring a Cloud Storage Pool.
-
-| 445
-| TCP
-| SMB
-| SMB client
-| Admin Nodes
-| Used by SMB-based audit export.
-
-*Note:* This port is required only if SMB-based audit export is enabled.
 
 | 903
 | TCP
@@ -343,4 +305,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 |===
 
+// 2024 AUG 12, SGIRDDOC-91
+// 2024 JULY 15, SGRIDOC-78
 // 2023 SEP 19, SGWS-25330
