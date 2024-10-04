@@ -120,7 +120,7 @@ If you are using link:../admin/grid-federation-overview.html[grid federation] an
 | Grid| Replication status 
 
 | Source
-| * *SUCCESS*: The replication was successful.
+| * *COMPLETED*: The replication was successful.
 * *PENDING*: The object hasn't been replicated yet.
 * *FAILURE*: The replication failed with a permanent failure. A user must resolve the error.
 
@@ -131,4 +131,5 @@ If you are using link:../admin/grid-federation-overview.html[grid federation] an
 
 NOTE: StorageGRID does not support the `x-amz-replication-status` header.
 
+// 2024 JULY 1, SGRIDDOC-48
 // 2024 MAY 23, SGWS-31243
