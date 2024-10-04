@@ -38,13 +38,13 @@ Leave these fields blank if your proxy server does not require a username or a p
 
 . Select one of the following:
 +
-* If you want to secure the connection to the admin proxy, select *Verify certificate*. Upload a CA bundle to verify the authenticity of SSL certificates presented by the admin proxy server.
+* If you want to secure the connection to the admin proxy, select *Verify proxy certificate*. Upload a CA bundle to verify the authenticity of SSL certificates presented by the admin proxy server.
 +
 CAUTION: AutoSupport on Demand, E-Series AutoSupport through StorageGRID, and Update Path determination on the StorageGRID Upgrade page will not work if a proxy certificate is verified.
 +
 After you upload the CA bundle, its metadata appears.
 +
-* If you don't want to validate certificates when communicating with the admin proxy server, select *Do not verify certificate*.
+* If you don't want to validate certificates when communicating with the admin proxy server, select *Do not verify proxy certificate*.
 
 . Select *Save*.
 +
