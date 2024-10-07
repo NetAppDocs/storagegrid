@@ -2,7 +2,7 @@
 permalink: troubleshoot/searching-for-and-restoring-potentially-lost-objects.html
 sidebar: sidebar
 keywords: how to search lost object, how to restore lost object, how to find lost object
-summary: 'It might be possible to find and restore objects that have triggered a Lost Objects (LOST) alarm and a *Object lost* alert and that you have identified as potentially lost.'
+summary: 'It might be possible to find and restore objects that have triggered an *Object lost* alert and a legacy Lost Objects (LOST) alarm and that you have identified as potentially lost.'
 ---
 = Search for and restore potentially lost objects
 :icons: font
@@ -10,7 +10,7 @@ summary: 'It might be possible to find and restore objects that have triggered a
 
 
 [.lead]
-It might be possible to find and restore objects that have triggered a Lost Objects (LOST) alarm and an *Object lost* alert and that you have identified as potentially lost.
+It might be possible to find and restore objects that have triggered an *Object lost* alert and a legacy Lost Objects (LOST) alarm and that you have identified as potentially lost.
 
 .Before you begin
 * You have the UUID of any lost object, as identified in link:../troubleshoot/investigating-lost-objects.html[Investigate lost objects].
@@ -165,4 +165,5 @@ An ORLM audit message looks like this example message.
 If present, the value of CLDI in LOCS is the node ID and the volume ID where an object copy has been created. This message shows that the ILM has been applied and that two object copies have been created in two locations in the grid.
 . link:resetting-lost-and-missing-object-counts.html[Reset the lost and missing object counts] in the Grid Manager.
 
+// 2024 OCT 7, SGRIDDOC-105
 // 2024 SEP 11: SGRIDDOC-96
