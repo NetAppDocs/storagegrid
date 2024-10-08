@@ -20,9 +20,9 @@ You can create custom alert rules to define your own conditions for triggering a
 
 * You understand the https://prometheus.io/docs/prometheus/latest/querying/basics/[syntax of Prometheus queries^].
 
-* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e3a75bc1-47a2-44b9-a84d-b0b9011dc2d1[Video: Using metrics to create custom alerts in StorageGRID 11.9^].
+* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=54af90c4-9a38-4136-9621-b1ff008604a3[Video: Custom alerts^].
 +
-image::../media/video-screenshot-alert-create-custom-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e3a75bc1-47a2-44b9-a84d-b0b9011dc2d1" alt="Video: Using metrics to create custom alerts in StorageGRID 11.9", window=_blank]
+image::../media/video-screenshot-alert-create-custom-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=54af90c4-9a38-4136-9621-b1ff008604a3" alt="Video: Custom alerts", window=_blank]
 
 .About this task
 StorageGRID does not validate custom alerts. If you decide to create custom alert rules, follow these general guidelines:
