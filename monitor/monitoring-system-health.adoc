@@ -24,17 +24,17 @@ When issues exist, links appear that allow you to view additional details:
 [cols="1a,2a" options="header"]
 |===
 | Link| Appears when...
-|Grid details
-|Any nodes are disconnected (connection state Unknown or Administratively Down).
+| Grid details
+| Any nodes are disconnected (connection state Unknown or Administratively Down).
 
-|Current alerts (Critical, Major, Minor)
-|Alerts are <<View current and resolved alerts,currently active>>.
+| Current alerts (Critical, Major, Minor)
+| Alerts are <<View current and resolved alerts,currently active>>.
 
-|Recently resolved alerts
-|Alerts triggered in the past week <<View current and resolved alerts,are now resolved>>.
+| Recently resolved alerts
+| Alerts triggered in the past week <<View current and resolved alerts,are now resolved>>.
 
-|License
-|There is an issue with the software license for this StorageGRID system. You can link:../admin/updating-storagegrid-license-information.html[update license information as needed].
+| License
+| There is an issue with the software license for this StorageGRID system. You can link:../admin/updating-storagegrid-license-information.html[update license information as needed].
 |===
 
 [monitor-node-connection-states]
@@ -46,37 +46,37 @@ If one or more nodes are disconnected from the grid, critical StorageGRID operat
 |===
 | Icon| Description| Action required
 
-|image:../media/icon_alarm_blue_unknown.png[blue question mark icon]
-|*Not connected - Unknown*
+| image:../media/icon_alarm_blue_unknown.png[blue question mark icon]
+| *Not connected - Unknown*
 
 For an unknown reason, a node is disconnected or services on the node are unexpectedly down. For example, a service on the node might be stopped, or the node might have lost its network connection because of a power failure or unexpected outage.
 
 The *Unable to communicate with node* alert might also be triggered. Other alerts might also be active.
 
-|Requires immediate attention. <<View current and resolved alerts,Select each alert>> and follow the recommended actions.
+| Requires immediate attention. <<View current and resolved alerts,Select each alert>> and follow the recommended actions.
 
 For example, you might need to restart a service that has stopped or restart the host for the node.
 
 *Note*: A node might appear as Unknown during managed shutdown operations. You can ignore the Unknown state in these cases.
 
-|image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon]
-|*Not connected - Administratively down*
+| image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon]
+| *Not connected - Administratively down*
 
 For an expected reason, node is not connected to grid.
 
 For example, the node, or services on the node, has been gracefully shut down, the node is rebooting, or the software is being upgraded. One or more alerts might also be active.
 
 Based on the underlying issue, these nodes often go back online with no intervention.
-|
+| 
 Determine if any alerts are affecting this node.
 
 If one or more alerts are active, <<View current and resolved alerts,select each alert>> and follow the recommended actions.
 
-|image:../media/icon_alert_green_checkmark.png[icon alert green check mark]
-|*Connected*
+| image:../media/icon_alert_green_checkmark.png[icon alert green check mark]
+| *Connected*
 
 The node is connected to the grid.
-|No action required.
+| No action required.
 |===
 
 == View current and resolved alerts
@@ -97,7 +97,7 @@ The following table describes the information shown in the Grid Manager for curr
 | Name or title
 | The name of the alert and its description.
 
- |Severity
+| Severity
 | The severity of the alert. For current alerts, if multiple alerts are grouped the title row shows how many instances of that alert are occurring at each severity.
 
 image:../media/icon_alert_red_critical.png[Icon Alert Red Critical] *Critical*: An abnormal condition exists that has stopped the normal operations of a StorageGRID node or service. You must address the underlying issue immediately. Service disruption and loss of data might result if the issue is not resolved.
