@@ -123,7 +123,7 @@ A green banner indicates your configuration has been saved.
 
 You can optionally configure an external syslog server to save audit logs, application logs, and security event logs to a location outside of your grid. 
 
-NOTE: If you don't want to use an external syslog server, skip this step and go to <<Select-audit-information-destinations,Select audit information destinations>>.
+NOTE: If you don't want to use an external syslog server, skip this step and go to <<select-audit-information-destinations,Select audit information destinations>>.
 
 TIP: If the configuration options available in this procedure aren't flexible enough to meet your requirements, additional configuration options can be applied using the `audit-destinations` endpoints, which are in the private API section of the link:../admin/using-grid-management-api.html[Grid Management API]. For example, you can use the API if you want to use different syslog servers for different groups of nodes.
 
@@ -375,15 +375,15 @@ You are returned to the *Audit and syslog server* page. A green banner indicates
 +
 NOTE: StorageGRID audit information is not sent to the external syslog server until you select a destination that includes the external syslog server. 
 
-[[Select-audit-information-destinations]]
+[[select-audit-information-destinations]]
 == Select audit information destinations
 You can specify where audit logs, security event logs, and link:../monitor/storagegrid-software-logs.html[StorageGRID software logs] are sent. 
 
 [NOTE]
 ====
-* Some destinations are available only if you have configured an external syslog server.
+When you install StorageGRID 11.8 or later as a new installation, the audit information generated on Admin Nodes is stored in `/var/local/log/localaudit.log`. If you upgrade from  StorageGRID 11.7, the audit information is stored in `/var/local/audit/export/localaudit.log`.
 
-* When you install StorageGRID 11.8 or later as a new installation, the audit information generated on Admin Nodes is stored in `/var/local/log/localaudit.log`. If you upgrade from  StorageGRID 11.7, the audit information is stored in `/var/local/audit/export/localaudit.log`.
+Some destinations are available only if you have configured an external syslog server. 
 ====
 
 .Steps
