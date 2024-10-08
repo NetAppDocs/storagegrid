@@ -1,0 +1,5 @@
+//This is the shared information about Active IQ for Admin and Primer topics//
+
+The storage location of audit log files on Admin Nodes depends on whether your installation is an upgrade or a fresh install. See <<Select-audit-information-destinations,Select audit information destinations>>.
+
+// 2024 OCT 4, SGRIDDOC-104
