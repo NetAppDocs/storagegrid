@@ -27,7 +27,7 @@ include::../_include/autosupport-activeiq.adoc[]
 
 == Information included in AutoSupport package
 
-An AutoSupport package contains the following XML files and details.
+An AutoSupport package contains the following files and details.
 
 [cols="2a,2a,3a" options="header"]
 |===
@@ -158,7 +158,7 @@ Time spent collecting +
 Status of this data item +
 Description of the error +
 AutoSupport content type for this data +
-| Contains AutoSupport metadata and brief descriptions of all AutoSupport XML files.
+| Contains AutoSupport metadata and brief descriptions of all AutoSupport files.
 
 | NMS-ENTITIES.XML
 | Attribute index +
