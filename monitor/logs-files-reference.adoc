@@ -112,7 +112,7 @@ m| nginx-gw
 **	These messages are prefixed with `endpoint:` when exported using syslog.
 **	The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
 
-* `nginx-gw/`: Related to the new DNS check alert.
+* `nginx-gw-dns-check.log`: Related to the new DNS check alert.
 
 m| ntp
 | NTP configuration file and logs.
