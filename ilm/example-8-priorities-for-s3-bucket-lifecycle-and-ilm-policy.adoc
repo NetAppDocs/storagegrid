@@ -18,7 +18,7 @@ ILM policy::
 * Rule based on ingest-time reference (default): On Day 0, keep X copies for 50 days
 
 Bucket Lifecycle::
-* `"Filter": {"Prefix": "docs/"}, "Expiration": {"Days": 100}, "NoncurrentVersionExpiration": {"NoncurrentDays": 5}` 
+`"Filter": {"Prefix": "docs/"}, "Expiration": {"Days": 100}, "NoncurrentVersionExpiration": {"NoncurrentDays": 5}` 
 
 Result:: 
 * An object named "docs/text" is ingested. It matches the bucket lifecycle filter of "docs/" prefix.
@@ -37,8 +37,7 @@ ILM policy::
 * Rule based on ingest-time reference (default): On Day 0, keep X copies for 50 days
 
 Bucket Lifecycle::
-
-* `"Filter": {"Prefix": "docs/"}, "Expiration": {"ExpiredObjectDeleteMarker": true}`
+`"Filter": {"Prefix": "docs/"}, "Expiration": {"ExpiredObjectDeleteMarker": true}`
 
 Result:: 
 * An object named "docs/text" is ingested. It matches the bucket lifecycle filter of "docs/" prefix.
@@ -59,7 +58,7 @@ ILM policy::
 * Rule based on ingest-time reference (default): On Day 0, keep X copies forever
 
 Bucket Lifecycle::
-* `"Filter": {}, "Expiration": {"ExpiredObjectDeleteMarker": true}, "NoncurrentVersionExpiration": {"NoncurrentDays": 20}` 
+`"Filter": {}, "Expiration": {"ExpiredObjectDeleteMarker": true}, "NoncurrentVersionExpiration": {"NoncurrentDays": 20}` 
 
 Result:: 
 * The ILM policy is duplicated in the bucket lifecycle.
