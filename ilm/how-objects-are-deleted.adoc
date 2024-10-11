@@ -85,7 +85,7 @@ To remove expired object delete markers use the `Expiration` action with one of 
 ** First rule: Use "Noncurrent time" as the Reference time to match the noncurrent versions of the object. In link:create-ilm-rule-enter-details.html[Step 1 (Enter details) of the Create an ILM rule wizard], select *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" 
 ** Second rule: Use *Ingest time* to match the current version. The "Noncurrent time" rule must appear in the policy above the *Ingest time* rule.
 +
-To remove expired object delete markers, use an Ingest time rule to match the current delete markers. Delete markers are only removed when a *Time period* of *Days* has passed and the current delete maker has expired (and there are no non-current versions).
+To remove expired object delete markers, use an *Ingest time rule* to match the current delete markers. Delete markers are only removed when a *Time period* of *Days* has passed and the current delete maker has become expired (there are no non-current versions).
 
 * *Delete objects in bucket*: Use the tenant manager to link:../tenant/deleting-s3-bucket-objects.html[delete all object versions], including delete markers, from a bucket.
 
