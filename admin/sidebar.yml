@@ -111,18 +111,16 @@ entries:
       - title: Manage security certificates
         pdf-filename: Manage security certificates
         url: "/admin/using-storagegrid-security-certificates.html"
-      - title: Configure server certificates
-        entries:
-        - title: Supported server certificate types
-          url: "/admin/global-certificate-types.html"
-        - title: Configure management interface certificates
-          url: "/admin/configuring-custom-server-certificate-for-grid-manager-tenant-manager.html"
-        - title: Configure S3 API certificates
-          url: "/admin/configuring-custom-server-certificate-for-storage-node.html"
-        - title: Copy or download the Grid CA certificate
-          url: "/admin/copying-storagegrid-system-ca-certificate.html"
-        - title: Configure StorageGRID certificates for FabricPool
-          url: "/admin/configuring-storagegrid-certificates-for-fabricpool.html"
+      - title: Supported server certificate types
+        url: "/admin/global-certificate-types.html"
+      - title: Configure management interface certificates
+        url: "/admin/configuring-custom-server-certificate-for-grid-manager-tenant-manager.html"
+      - title: Configure S3 API certificates
+        url: "/admin/configuring-custom-server-certificate-for-storage-node.html"
+      - title: Copy or download the Grid CA certificate
+        url: "/admin/copying-storagegrid-system-ca-certificate.html"
+      - title: Configure StorageGRID certificates for FabricPool
+        url: "/admin/configuring-storagegrid-certificates-for-fabricpool.html"
       - title: Configure client certificates
         url: "/admin/configuring-administrator-client-certificates.html"
     - title: Configure security settings
