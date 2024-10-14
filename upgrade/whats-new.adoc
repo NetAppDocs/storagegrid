@@ -61,14 +61,17 @@ Refer to:
 
 == Maintenance and Supportability
 
-=== Improved node decommissioning 
-To provide a smooth and efficient transition to StorageGRID next-generation hardware, link:../maintain/grid-node-decommissioning.html[node decommissioning] has been improved.
-
 === AutoSupport
 link:../admin/what-is-autosupport.html[AutoSupport] now automatically creates hardware failure cases for legacy appliances.
 
+=== Improved bucket lifecycle expiration
+ILM ingest time rules with a time period of Days now also remove expired object delete markers. Delete markers are only removed when a time period of Days has passed and the current delete maker has become expired (there are no non-current versions).
+
 === Expanded node clone operations  
 Node clone usability has been expanded to support larger storage nodes. 
+
+=== Improved node decommissioning 
+To provide a smooth and efficient transition to StorageGRID next-generation hardware, link:../maintain/grid-node-decommissioning.html[node decommissioning] has been improved.
 
 === Syslog for load balancer endpoints
 Load balancer endpoint access logs contain troubleshooting information, such as HTTP status codes.
