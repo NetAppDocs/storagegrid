@@ -170,4 +170,5 @@ An ORLM audit message looks like this example message.
 If present, the value of CLDI in LOCS is the node ID and the volume ID where an object copy has been created. This message shows that the ILM has been applied and that two object copies have been created in two locations in the grid.
 . link:resetting-lost-and-missing-object-counts.html[Reset the lost and missing object counts] in the Grid Manager.
 
+// 2024 OCT 8: SGRIDDOC-104
 // 2024 SEP 11: SGRIDDOC-96
