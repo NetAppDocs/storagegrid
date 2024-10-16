@@ -1,5 +1,3 @@
-//This is the shared information about Active IQ for Admin and Primer topics//
+The default storage location of audit messages depends on whether an installation is a fresh install or an upgrade. link:../monitor/configure-audit-messages.html#select-audit-information-destinations[Learn more about audit information destinations]
 
-The storage location of audit log files on Admin Nodes depends on whether your installation is an upgrade or a fresh install. See link:../monitor/configure-audit-messages.html#select-audit-information-destinations[Select audit information destinations].
-
-// 2024 OCT 4, SGRIDDOC-104
+// 2024 Oct 8, SGRIDDOC-98

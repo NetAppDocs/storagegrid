@@ -381,7 +381,9 @@ You can specify where audit logs, security event logs, and link:../monitor/stora
 
 [NOTE]
 ====
-When you install StorageGRID 11.8 or later as a new installation, the audit information generated on Admin Nodes is stored in `/var/local/log/localaudit.log`. If you upgrade from  StorageGRID 11.7, the audit information is stored in `/var/local/audit/export/localaudit.log`.
+StorageGRID defaults to local node audit destinations and stores the audit information in `/var/local/log/localaudit.log`. If you upgrade your appliance from StorageGRID 11.7, the audit messages continue to default to `/var/local/audit/export/audit.log` on the Admin Node, and security event logs and application logs to the local nodes.
+
+When using `/var/local/log/localaudit.log`, the Grid Manger and Tenant Manager audit log entries might be sent to a Storage Node. You can find which node has the most recent entries by using the `run-each-node --parallel zgrep MGAU /var/local/log/localaudit.log | tail` command.
 
 Some destinations are available only if you have configured an external syslog server. 
 ====
@@ -398,7 +400,7 @@ TIP:  *Local nodes only* and *External syslog server* typically provide better p
 | Option| Description
 
 | Local nodes only (default)
-| Audit messages, security event logs, and application logs are not sent to Admin Nodes. Instead, they are saved only on the nodes that generated them ("the local node"). The audit information generated on every local node is stored in `/var/local/log/localaudit.log`
+| Audit messages, security event logs, and application logs are not sent to Admin Nodes. Instead, they are saved only on the nodes that generated them ("the local node"). The audit information generated on every local node is stored in `/var/local/log/localaudit.log`.
 
 *Note*: StorageGRID periodically removes local logs in a rotation to free up space. When the log file for a node reaches 1 GB, the existing file is saved, and a new log file is started. The rotation limit for the log is 21 files. When the 22nd version of the log file is created, the oldest log file is deleted. On average about 20 GB of log data is stored on each node.
 
@@ -425,5 +427,5 @@ A green banner indicates that the audit configuration has been saved.
 New logs are sent to the destinations you selected. Existing logs remain in their current location.
 
 
-// 2024 Oct 8, SGRIDDOC-104
+// 2024 Oct 8, SGRIDDOC-98
 // 2023 SEP 14, SGWS-28029
