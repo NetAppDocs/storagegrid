@@ -68,7 +68,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.8
 | 11.9
 | 12.0
-| https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-audit-client-access.html[Configure audit client access for NFS^]
+| https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-audit-client-access.html[Configure audit client access for NFS (StorageGRID 11.8)^]
 
 | Swift API support
 | 11.7
