@@ -18,17 +18,18 @@ ILM policy::
 * Rule based on ingest-time reference (default): On Day 0, keep X copies for 50 days
 
 Bucket Lifecycle::
-* `Filter: {Prefix: "docs/"}, Expiration: Days: 100, NoncurrentVersionExpiration: Days: 5` 
+`"Filter": {"Prefix": "docs/"}, "Expiration": {"Days": 100}, "NoncurrentVersionExpiration": {"NoncurrentDays": 5}` 
 
 Result:: 
 * An object named "docs/text" is ingested. It matches the bucket lifecycle filter of "docs/" prefix.
 ** After 100 days a delete-marker is created and "docs/text" becomes noncurrent.
 ** After 5 days, a total of 105 days since ingest, "docs/text" is deleted.
+** After 95 days, a total of 200 days since the ingest and 100 days since the delete-marker was created, the expired delete-marker is deleted.
 
 * An object named "video/movie" is ingested. It does not match the filter and uses the ILM retention policy.
 ** After 50 days a delete-marker is created and "video/movie" becomes noncurrent.
 ** After 20 days, a total of 70 days since the ingest, "video/movie" is deleted.
-
+** After 30 days, a total of 100 days since the ingest and 50 days since the delete-marker was created, the expired delete-marker is deleted.
 
 == Example of bucket lifecycle implicitly keeping-forever 
 ILM policy::
@@ -36,8 +37,7 @@ ILM policy::
 * Rule based on ingest-time reference (default): On Day 0, keep X copies for 50 days
 
 Bucket Lifecycle::
-
-* `Filter: {Prefix: "docs/"}, Expiration: ExpiredObjectDeleteMarker: true`
+`"Filter": {"Prefix": "docs/"}, "Expiration": {"ExpiredObjectDeleteMarker": true}`
 
 Result:: 
 * An object named "docs/text" is ingested. It matches the bucket lifecycle filter of "docs/" prefix.
@@ -49,20 +49,23 @@ Delete markers that start with "docs/" are removed when they become expired.
 * An object named "video/movie" is ingested. It does not match the filter and uses the ILM retention policy.
 ** After 50 days a delete-marker is created and "video/movie" becomes noncurrent.
 ** After 20 days, a total of 70 days since the ingest, "video/movie" is deleted.
-
+** After 30 days, a total of 100 days since the ingest and 50 days since the delete-marker was created, the expired delete-marker is deleted.
 
 == Example of using bucket lifecycle to duplicate ILM and clean up expired delete markers 
 
 ILM policy::
 * Rule based on noncurrent-time reference: On Day 0, keep X copies for 20 days
-* Rule based on ingest-time reference (default): On Day 0, keep X copies for 50 days
+* Rule based on ingest-time reference (default): On Day 0, keep X copies forever
 
 Bucket Lifecycle::
-* `Filter: {}, Expiration: Days: 50, NoncurrentVersionExpiration: Days: 20` 
+`"Filter": {}, "Expiration": {"ExpiredObjectDeleteMarker": true}, "NoncurrentVersionExpiration": {"NoncurrentDays": 20}` 
 
 Result:: 
 * The ILM policy is duplicated in the bucket lifecycle.
+** The ILM policy's forever rule is designed for removing objects manually and cleaning up noncurrent versions after 20 days. Consequently, the ingest-time rule will keep expired delete markers forever.
+** The bucket lifecycle duplicates the ILM policy's behavior while adding `"ExpiredObjectDeleteMarker": true`, which removes delete markers once they are expired
+
 * An object is ingested. No filter means that the bucket lifecycle applies to all objects and overrides the ILM retention settings.
-** After 50 days a delete-marker is created and the object becomes noncurrent.
-** After 20 days, a total of 70 days since the ingest, the noncurrent object is deleted and the delete-marker becomes expired.
-** After 30 days, a total of 100 days since the ingest, the expired delete-marker is deleted.
+** When a tenant issues an object delete request, a delete-marker is created and the object becomes noncurrent.
+** After 20 days, the noncurrent object is deleted and the delete-marker becomes expired.
+** Shortly after, the expired delete-marker is deleted.
