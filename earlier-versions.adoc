@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: earlier-versions.html
-keywords: storagegrid, earlier version, documentation, doc site, 11.9, 11.8, 11.7, 11.6, 11.5, 11.4
+keywords: storagegrid, earlier version, documentation, doc site, 11.8, 11.7, 11.6, 11.5, 11.4
 summary: "You can find documentation for other versions of NetApp StorageGRID software here."
 ---
 = Other versions of NetApp StorageGRID documentation
