@@ -22,12 +22,12 @@ You can create custom alerts, edit or disable alerts, and manage alert notificat
 
 To learn more:
 
-* Review the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38[Video: Alerts overview for StorageGRID 11.9^]
+* Review the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2eea81c5-8323-417f-b0a0-b1ff008506c1[Video: Alerts overview^]
 +
-image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38" alt="Video: Alerts overview for StorageGRID 11.9", window=_blank]
+image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2eea81c5-8323-417f-b0a0-b1ff008506c1" alt="Video: Alerts overview", window=_blank]
 
-* Review the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e3a75bc1-47a2-44b9-a84d-b0b9011dc2d1[Video: Using metrics to create custom alerts in StorageGRID 11.9^]
+* Review the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=54af90c4-9a38-4136-9621-b1ff008604a3[Video: Custom alerts^]
 +
-image::../media/video-screenshot-alert-create-custom-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e3a75bc1-47a2-44b9-a84d-b0b9011dc2d1" alt="Video: Using metrics to create custom alerts in StorageGRID 11.9", window=_blank]
+image::../media/video-screenshot-alert-create-custom-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=54af90c4-9a38-4136-9621-b1ff008604a3" alt="Video: Custom alerts", window=_blank]
 
 * See the link:alerts-reference.html[Alerts reference].

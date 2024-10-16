@@ -39,5 +39,5 @@ Ensure your operating system meets StorageGRID's minimum kernel version requirem
 |* link:../release-notes/index.html[Release notes] for StorageGRID 11.9 (sign in required). Be sure to read these carefully before starting the upgrade. 
 * https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[StorageGRID software upgrade resolution guide^] for the major version you are upgrading to (sign in required)
 
-* Other https://docs.netapp.com/us-en/storagegrid-119/index.html[StorageGRID 11.9 documentation^], as required.
+* Other https://docs.netapp.com/us-en/storagegrid-family/index.html[StorageGRID documentation^], as required.
 |===

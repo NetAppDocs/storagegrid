@@ -22,9 +22,9 @@ NOTE: If you want to create the default ILM rule for a policy, follow the link:c
 * You have configured any Cloud Storage Pools you plan to use. See link:creating-cloud-storage-pool.html[Create Cloud Storage Pool].
 * You are familiar with the link:data-protection-options-for-ingest.html[ingest options].
 * If you need to create a compliant rule for use with S3 Object Lock, you are familiar with the link:requirements-for-s3-object-lock.html[requirements for S3 Object Lock].
-* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb6294c0-e9cf-4d04-9d73-b0b901025b2f[Video: Information lifecycle management rules in StorageGRID 11.9^].
+* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9872d38f-80b3-4ad4-9f79-b1ff008760c7[Video: ILM rules overview^].
 +
-image::../media/video-screenshot-ilm-rules-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb6294c0-e9cf-4d04-9d73-b0b901025b2f" alt="Video: Information lifecycle management rules in StorageGRID 11.9", window=_blank]
+image::../media/video-screenshot-ilm-rules-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9872d38f-80b3-4ad4-9f79-b1ff008760c7" alt="Video: ILM rules overview", window=_blank]
 
 .About this task
 
