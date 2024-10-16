@@ -13,7 +13,7 @@ A tenant account allows you to use the Simple Storage Service (S3) REST API to s
 
 Each tenant account has its own federated or local groups, users, S3 buckets, and objects.
 
-TIP: Swift details have been removed from this version of the doc site. See https://docs.netapp.com/us-en/storagegrid-118/tenant/using-storagegrid-tenant-account.html[STorageGRID 11.8: Use StorageGRID tenant account^].
+TIP: Swift details have been removed from this version of the doc site. See https://docs.netapp.com/us-en/storagegrid-118/tenant/using-storagegrid-tenant-account.html[StorageGRID 11.8: Use StorageGRID tenant account^].
 
 Optionally, tenant accounts can be used to segregate stored objects by different entities. For example, multiple tenant accounts can be used for either of these use cases:
 
