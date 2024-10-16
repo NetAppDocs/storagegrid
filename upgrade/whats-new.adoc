@@ -64,13 +64,13 @@ Refer to:
 === AutoSupport
 link:../admin/what-is-autosupport.html[AutoSupport] now automatically creates hardware failure cases for legacy appliances.
 
-=== Improved bucket lifecycle expiration
+=== Expanded node clone operations  
+Node clone usability has been expanded to support larger storage nodes. 
+
+=== Improved ILM handling of expired delete markers
 ILM ingest time rules with a time period of Days now also remove expired object delete markers. Delete markers are only removed when a time period of Days has passed and the current delete maker has become expired (there are no non-current versions).
 
 Refer to link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted] and link:../ilm/example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html#example-of-bucket-lifecycle-taking-priority-over-ilm-policy[Example of bucket lifecycle taking priority over ILM policy].
-
-=== Expanded node clone operations  
-Node clone usability has been expanded to support larger storage nodes. 
 
 === Improved node decommissioning 
 To provide a smooth and efficient transition to StorageGRID next-generation hardware, link:../maintain/grid-node-decommissioning.html[node decommissioning] has been improved.
