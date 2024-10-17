@@ -123,7 +123,7 @@ A green banner indicates your configuration has been saved.
 
 You can optionally configure an external syslog server to save audit logs, application logs, and security event logs to a location outside of your grid. 
 
-NOTE: If you don't want to use an external syslog server, skip this step and go to <<Select-audit-information-destinations,Select audit information destinations>>.
+NOTE: If you don't want to use an external syslog server, skip this step and go to <<select-audit-information-destinations,Select audit information destinations>>.
 
 TIP: If the configuration options available in this procedure aren't flexible enough to meet your requirements, additional configuration options can be applied using the `audit-destinations` endpoints, which are in the private API section of the link:../admin/using-grid-management-api.html[Grid Management API]. For example, you can use the API if you want to use different syslog servers for different groups of nodes.
 
@@ -375,12 +375,18 @@ You are returned to the *Audit and syslog server* page. A green banner indicates
 +
 NOTE: StorageGRID audit information is not sent to the external syslog server until you select a destination that includes the external syslog server. 
 
-[[Select-audit-information-destinations]]
+[[select-audit-information-destinations]]
 == Select audit information destinations
 You can specify where audit logs, security event logs, and link:../monitor/storagegrid-software-logs.html[StorageGRID software logs] are sent. 
 
-NOTE: Some destination are available only if you have configured an external syslog server.
+[NOTE]
+====
+StorageGRID defaults to local node audit destinations and stores the audit information in `/var/local/log/localaudit.log`.
 
+When using `/var/local/log/localaudit.log`, the Grid Manager and Tenant Manager audit log entries might be sent to a Storage Node. You can find which node has the most recent entries by using the `run-each-node --parallel zgrep MGAU /var/local/log/localaudit.log | tail` command.
+
+Some destinations are available only if you have configured an external syslog server. 
+====
 
 .Steps
 
@@ -394,7 +400,7 @@ TIP:  *Local nodes only* and *External syslog server* typically provide better p
 | Option| Description
 
 | Local nodes only (default)
-| Audit messages, security event logs, and application logs are not sent to Admin Nodes. Instead, they are saved only on the nodes that generated them ("the local node"). The audit information generated on every local node is stored in `/var/local/log/localaudit.log`
+| Audit messages, security event logs, and application logs are not sent to Admin Nodes. Instead, they are saved only on the nodes that generated them ("the local node"). The audit information generated on every local node is stored in `/var/local/log/localaudit.log`.
 
 *Note*: StorageGRID periodically removes local logs in a rotation to free up space. When the log file for a node reaches 1 GB, the existing file is saved, and a new log file is started. The rotation limit for the log is 21 files. When the 22nd version of the log file is created, the oldest log file is deleted. On average about 20 GB of log data is stored on each node.
 
@@ -420,4 +426,6 @@ A green banner indicates that the audit configuration has been saved.
 +
 New logs are sent to the destinations you selected. Existing logs remain in their current location.
 
+
+// 2024 Oct 8, SGRIDDOC-98
 // 2023 SEP 14, SGWS-28029
