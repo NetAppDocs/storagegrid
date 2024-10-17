@@ -25,7 +25,7 @@ You can access audit log files directly from the command line of the Admin Node.
 StorageGRID can send audit information by default or you can change the destination:
 
 * StorageGRID defaults to local node audit destinations.
-* Grid Manger and Tenant Manager audit log entries might be sent to a Storage Node.
+* Grid Manager and Tenant Manager audit log entries might be sent to a Storage Node.
 * Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. 
 * link:../monitor/configure-audit-messages.html[Learn about configuring audit messages and log destinations].
 
