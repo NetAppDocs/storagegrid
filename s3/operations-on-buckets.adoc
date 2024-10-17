@@ -19,7 +19,7 @@ Bucket name restrictions follow the AWS US Standard region restrictions, but you
 
 See the following for more information:
 
-* https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html[Amazon Simple Storage Service User Guide: Bucket Restrictions and Limitations^]
+* https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html[Amazon Simple Storage Service User Guide: Bucket quotas, restrictions, and limitations^]
 
 * link:../admin/configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names]
 
