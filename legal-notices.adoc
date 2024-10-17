@@ -16,6 +16,4 @@ include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-
 
 //Add required links (Open source for StorageGRID 11.9)
 
-https://library.netapp.com/ecm/ecm_download_file/2879263[^]
-
-https://library.netapp.com/ecm/ecm_download_file/2881511[^]
+https://library.netapp.com/ecm/ecm_download_file/3330669[^]
