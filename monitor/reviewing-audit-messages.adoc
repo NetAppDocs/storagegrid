@@ -22,7 +22,7 @@ Each Admin Node stores audit messages in text files. The audit share contains th
 
 You can access audit log files directly from the command line of the Admin Node. 
 
-StorageGRID can send audit information by default or you can change the destination:
+StorageGRID can send audit information by default, or you can change the destination:
 
 * StorageGRID defaults to local node audit destinations.
 * Grid Manager and Tenant Manager audit log entries might be sent to a Storage Node.
