@@ -383,7 +383,7 @@ You can specify where audit logs, security event logs, and link:../monitor/stora
 ====
 StorageGRID defaults to local node audit destinations and stores the audit information in `/var/local/log/localaudit.log`.
 
-When using `/var/local/log/localaudit.log`, the Grid Manager and Tenant Manager audit log entries might be sent to a Storage Node. You can find which node has the most recent entries by using the `run-each-node --parallel zgrep MGAU /var/local/log/localaudit.log | tail` command.
+When using `/var/local/log/localaudit.log`, the Grid Manager and Tenant Manager audit log entries might be sent to a Storage Node. You can find which node has the most recent entries by using the `run-each-node --parallel "zgrep MGAU /var/local/log/localaudit.log | tail"` command.
 
 Some destinations are available only if you have configured an external syslog server. 
 ====
