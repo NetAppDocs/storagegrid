@@ -1,4 +1,5 @@
 ---
 permalink: tenant/adding-users-to-local-group.html
-redirect: storagegrid-119/tenant/manage-groups.html#view-or-edit-group
+redirect: storagegrid/tenant/manage-groups.html#view-or-edit-group
 ---
+// 2024-10-18, SGRIDOC108
