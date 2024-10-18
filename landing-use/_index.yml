@@ -41,7 +41,7 @@ indexpage:
     - title: Cross-grid replication
       url: ../tenant/grid-federation-manage-cross-grid-replication.html
     - title: Platform services
-      url: ../tenant/what-platform-services-are.html
+      url: ../tenant/considerations-for-platform-services.html
     - title: S3 Object Lock
       url:  ../tenant/using-s3-object-lock.html
   - title: Use S3 REST API
