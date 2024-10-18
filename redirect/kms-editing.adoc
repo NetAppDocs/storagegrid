@@ -1,4 +1,5 @@
 ---
 permalink: admin/kms-editing.html
-redirect: storagegrid-119/admin/kms-viewing-details.html
+redirect: storagegrid/admin/kms-viewing-details.html
 ---
+// 2024-10-18, SGRIDOC108
