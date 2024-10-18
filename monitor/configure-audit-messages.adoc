@@ -383,7 +383,7 @@ You can specify where audit logs, security event logs, and link:../monitor/stora
 ====
 StorageGRID defaults to local node audit destinations and stores the audit information in `/var/local/log/localaudit.log`.
 
-When using `/var/local/log/localaudit.log`, the Grid Manager and Tenant Manager audit log entries might be sent to a Storage Node. You can find which node has the most recent entries by using the `run-each-node --parallel zgrep MGAU /var/local/log/localaudit.log | tail` command.
+When using `/var/local/log/localaudit.log`, the Grid Manager and Tenant Manager audit log entries might be sent to a Storage Node. You can find which node has the most recent entries by using the `run-each-node --parallel "zgrep MGAU /var/local/log/localaudit.log | tail"` command.
 
 Some destinations are available only if you have configured an external syslog server. 
 ====
@@ -405,13 +405,16 @@ TIP:  *Local nodes only* and *External syslog server* typically provide better p
 *Note*: StorageGRID periodically removes local logs in a rotation to free up space. When the log file for a node reaches 1 GB, the existing file is saved, and a new log file is started. The rotation limit for the log is 21 files. When the 22nd version of the log file is created, the oldest log file is deleted. On average about 20 GB of log data is stored on each node.
 
 | Admin Nodes/local nodes
-| Audit messages are sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes, and security event logs and application logs are stored on the nodes that generated them.
+| Audit messages are sent to the audit log on Admin Nodes, and security event logs and application logs are stored on the nodes that generated them. The audit information is stored in the following files:
+
+* Admin Nodes (Primary and Non-Primary): `/var/local/audit/export/audit.log`
+* All nodes: The `/var/local/log/localaudit.log` file is typically empty or missing. It might contain secondary information, such as an additional copy of some messages.
 
 | External syslog server
-| Audit information is sent to an external syslog server and saved on the local nodes. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server. 
+| Audit information is sent to an external syslog server and saved on the local nodes (`/var/local/log/localaudit.log`). The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server. 
 
 | Admin Node and external syslog server
-| Audit messages are sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes, and audit information is sent to the external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
+| Audit messages are sent to the audit log (`/var/local/audit/export/audit.log`) on Admin Nodes, and audit information is sent to the external syslog server and saved on the local node (`/var/local/log/localaudit.log`). The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
 
 |===
 
