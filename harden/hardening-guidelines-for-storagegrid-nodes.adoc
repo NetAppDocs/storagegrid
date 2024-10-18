@@ -101,4 +101,4 @@ include::../_include/enable-disable-ipmi.adoc[]
 
 * For appliance models containing SED or FIPS NVMe SSDs that you manage using the StorageGRID Appliance Installer and Grid Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[enable and configure StorageGRID drive encryption^].
 
-* For appliances without SED, FDE, or FIPS drives, enable and configure StorageGRID software node encryption https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[using a Key Management Server (KMS)^].
+* For appliances without SED, FDE, or FIPS drives, enable and configure StorageGRID software node encryption https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-node-encryption[using a Key Management Server (KMS)^].

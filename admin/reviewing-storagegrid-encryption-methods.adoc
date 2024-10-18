@@ -92,7 +92,7 @@ An external encryption method provides tighter control over encryption algorithm
 
 An external encryption method provides tighter control over encryption algorithms and keys. Can be combined with the other methods listed.
 
-https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingClientSideEncryption.html[Amazon Simple Storage Service - Developer Guide: Protecting data using client-side encryption^]
+https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingClientSideEncryption.html[Amazon Simple Storage Service - User Guide: Protecting data using client-side encryption^]
 
 |===
 
