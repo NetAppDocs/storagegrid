@@ -227,4 +227,4 @@ Changing the mode from COMPLIANCE to GOVERNANCE is never allowed.
 
 * link:../tenant/using-s3-object-lock.html[Use S3 Object Lock to retain objects]
 
-* https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html[Amazon Simple Storage Service User Guide: Using S3 Object Lock^]
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html[Amazon Simple Storage Service User Guide: Locking Objects^]
