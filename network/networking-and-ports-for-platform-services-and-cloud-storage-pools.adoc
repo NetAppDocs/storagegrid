@@ -13,7 +13,7 @@ If you plan to use StorageGRID platform services or Cloud Storage Pools, you mus
 
 == Networking for platform services
 
-As described in link:../admin/manage-platform-services-for-tenants.html[Manage platform services for tenants] and link:../tenant/what-platform-services-are.html[Manage platform services], platform services include external services that provide search integration, event notification, and CloudMirror replication.
+As described in link:../admin/manage-platform-services-for-tenants.html[Manage platform services for tenants] and link:../tenant/considerations-for-platform-services.html[Manage platform services], platform services include external services that provide search integration, event notification, and CloudMirror replication.
 
 Platform services require access from Storage Nodes that host the StorageGRID ADC service to the external service endpoints. Examples for providing access include:
 
@@ -31,7 +31,7 @@ By default, platform services and Cloud Storage Pool communications use the foll
 * *80*: For endpoint URIs that begin with `http`
 * *443*: For endpoint URIs that begin with `https`
 
-A different port can be specified when the endpoint is created or edited. See link:network-port-reference.html[Network port reference].
+A different port can be specified when the endpoint is created or edited. See link:internal-grid-node-communications.html[Network port reference].
 
 If you use a non-transparent proxy server, you must also link:../admin/configuring-storage-proxy-settings.html[configure storage proxy settings] to allow messages to be sent to external endpoints, such as an endpoint on the internet. 
 
