@@ -464,7 +464,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Alert name| Description
 
 | Elevated zero-request load balancer connections
-| An elevated percentage of connections to load balancer endpoints disconnected without performing requests\.
+| An elevated percentage of connections to load balancer endpoints disconnected without performing requests.
 |===
 
 == Local clock offset alerts
