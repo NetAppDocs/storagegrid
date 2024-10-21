@@ -51,10 +51,9 @@ image::security_certificates.png["Certificates page"]
 * *Load balancer endpoints*: Secures connections between S3 clients and the StorageGRID Load Balancer.
 * *Tenants*: Secures connections to identity federation servers or from platform service endpoints to S3 storage resources.
 * *Other*: Secures StorageGRID connections requiring specific certificates.
-
 +
 Each tab is described below with links to additional certificate details.
-
++
 [role="tabbed-block"]
 ====
 

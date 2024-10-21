@@ -1,4 +1,4 @@
 ---
 permalink: network/network-port-reference.html
-redirect: storagegrid-119/network/internal-grid-node-communications.html
+redirect: storagegrid/network/internal-grid-node-communications.html
 ---

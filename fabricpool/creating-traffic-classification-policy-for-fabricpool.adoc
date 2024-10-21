@@ -26,7 +26,7 @@ NOTE: In general, FabricPool read operations are more important to prioritize th
 +
 For example, if other S3 clients use this StorageGRID system, you should create a traffic classification policy. You can limit network traffic for the other buckets, tenants, IP subnets, or load balancer endpoints.
 
-*Generally, you should not impose quality of service limits on any FabricPool workload; you should only limit the other workloads.
+* Generally, you should not impose quality of service limits on any FabricPool workload; you should only limit the other workloads.
 
 * The limits placed on other workloads should account for the behavior of those workloads. The limits imposed will also vary based on the sizing and capabilities of your grid and what the expected amount of utilization is.
 

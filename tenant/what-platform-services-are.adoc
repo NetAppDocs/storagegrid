@@ -1,4 +1,4 @@
 ---
 permalink: tenant/what-platform-services-are.html
-redirect: storagegrid-119/tenant/considerations-for-platform-services.html
+redirect: storagegrid/tenant/considerations-for-platform-services.html
 ---

@@ -12,7 +12,7 @@ summary: 'You should be familiar with audit messages belonging to the object sto
 [.lead]
 The audit messages belonging to the object storage audit category are used for events related to the storage and management of objects within the StorageGRID system. These include object storage and retrievals, grid-node to grid-node transfers, and verifications.
 
-NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that is not listed here, check the previous versions of this topic for older SG releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/object-storage-audit-messages.html[StorageGRID 11.8 object storage audit messages].
+NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that is not listed here, check the previous versions of this topic for older SG releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/object-storage-audit-messages.html[StorageGRID 11.8 object storage audit messages^].
 
 [cols="1a,2a,1a" options="header"]
 |===
