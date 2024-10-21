@@ -60,7 +60,7 @@ The format for the configuration XML is governed by the S3 REST APIs used to imp
 * GET Bucket metadata notification configuration
 * PUT Bucket metadata notification configuration
 
-| * link:using-search-integration-service.html[Search integration]
+| * link:configuring-search-integration-service.html[Search integration]
 * link:../s3/custom-operations-on-buckets.html[StorageGRID custom operations]
 |===
 

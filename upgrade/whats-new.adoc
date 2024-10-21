@@ -46,7 +46,7 @@ Refer to:
 
 * link:../ilm/managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock]
 * link:../ilm/how-object-retention-is-determined.html#how-grid-administrators-control-object-retention[How grid administrators control object retention]
-* link:../admin/creating-tenant-account[Create tenant account]
+* link:../admin/creating-tenant-account.html[Create tenant account]
 
 == S3 compatibility
 
