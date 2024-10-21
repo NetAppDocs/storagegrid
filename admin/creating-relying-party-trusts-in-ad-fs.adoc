@@ -43,7 +43,7 @@ You can use Windows PowerShell to quickly create one or more relying party trust
 . At the PowerShell command prompt, enter the following command:
 
 +
-`Add-AdfsRelyingPartyTrust -Name "_Admin_Node_Identifer_" -MetadataURL "https://_Admin_Node_FQDN_/api/saml-metadata"
+`Add-AdfsRelyingPartyTrust -Name "_Admin_Node_Identifer_" -MetadataURL "https://_Admin_Node_FQDN_/api/saml-metadata"`
 +
  ** For `_Admin_Node_Identifier_`, enter the Relying Party Identifier for the Admin Node, exactly as it appears on the Single Sign-on page. For example, `SG-DC1-ADM1`.
  ** For `_Admin_Node_FQDN_`, enter the fully qualified domain name for the same Admin Node. (If necessary, you can use the node's IP address instead. However, if you enter an IP address here, be aware that you must update or recreate this relying party trust if that IP address ever changes.)
@@ -188,8 +188,8 @@ For `_Admin_Node_FQDN_`, enter the Admin Node's fully qualified domain name. (If
 *** If you have the custom management certificate you uploaded to StorageGRID, select that certificate.
 *** If you don't have the custom certificate, log in to the Admin Node, go the `/var/local/mgmt-api` directory of the Admin Node, and add the `custom-server.crt` certificate file.
 +
-*Note:* Using the Admin Node's default certificate (`server.crt`) is not recommended. If the Admin Node fails, the default certificate will be regenerated when you recover the node, and you will need to update the relying party trust.
-.. Select *Apply*, and select *OK*.
+NOTE: Using the Admin Node's default certificate (`server.crt`) is not recommended. If the Admin Node fails, the default certificate will be regenerated when you recover the node, and you will need to update the relying party trust.
+.. Select *Apply*, and select *OK*. 
 +
 The Relying Party properties are saved and closed.
 
