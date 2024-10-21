@@ -67,7 +67,7 @@ NOTE: The consistency value for bucket versioning, S3 Object Lock, and bucket en
 
 The following bucket settings do not use strong consistency and have higher availability for changes. Changes to these settings might take some time before having an effect.
 
-* link:what-platform-services-are.html[Platform services configuration: Notification, Replication, or Search integration]
+* link:considerations-for-platform-services.html[Platform services configuration: Notification, Replication, or Search integration]
 * link:configuring-cross-origin-resource-sharing-cors.html[CORS configuration]
 * <<change-bucket-consistency,Change bucket consistency>>
 
