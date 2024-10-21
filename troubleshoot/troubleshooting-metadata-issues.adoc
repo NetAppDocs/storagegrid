@@ -12,7 +12,7 @@ summary: 'If metadata issues occur, alerts will inform you of the source of the 
 If metadata issues occur, alerts will inform you of the source of the issues and recommended actions to take. In particular, you must add new Storage Nodes if the Low metadata storage alert is triggered.
 
 .Before you begin
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
 .About this task
 Follow the recommended actions for each metadata-related alert that is triggered. If the *Low metadata storage* alert is triggered, you must add new Storage Nodes.

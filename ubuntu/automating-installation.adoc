@@ -50,7 +50,7 @@ After deploying the grid nodes, you can automate the configuration of the Storag
 .Before you begin
 
 * You know the location of the following files from the installation archive.
-
++
 [cols="1a,1a" options=header]
 |===
 | Filename| Description
