@@ -96,6 +96,6 @@ NOTE: Support for Docker as the container engine for software-only deployments i
 
 .Related information
 
-link:storage-and-performance-requirements.html[Storage and performance requirements]
+* link:storage-and-performance-requirements.html[Storage and performance requirements]
 
-link:node-container-migration-requirements.html[Node container migration requirements]
+* link:node-container-migration-requirements.html[Node container migration requirements]

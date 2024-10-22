@@ -266,6 +266,6 @@ m| /var/local/log/update-utcn.log
 
 .Related information
 
-link:about-bycast-log.html[About the bycast.log]
+* link:about-bycast-log.html[About the bycast.log]
 
-link:../s3/index.html[Use S3 REST API]
+* link:../s3/index.html[Use S3 REST API]

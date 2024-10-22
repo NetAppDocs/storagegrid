@@ -56,9 +56,9 @@ If a traffic classification policy is designed to limit network traffic, analyze
 
 .Related information
 
-link:viewing-network-tab.html[View the Network tab]
+* link:viewing-network-tab.html[View the Network tab]
 
-link:monitoring-system-health.html#monitor-node-connection-states[Monitor node connection states]
+* link:monitoring-system-health.html#monitor-node-connection-states[Monitor node connection states]
 
 == Monitor node-level resources
 
@@ -75,6 +75,6 @@ image::../media/nodes_page_hardware_tab_graphs.png[Nodes page Hardware tab]
 
 .Related information
 
-link:viewing-hardware-tab.html#view-information-about-appliance-storage-nodes[View information about appliance Storage Nodes]
+* link:viewing-hardware-tab.html#view-information-about-appliance-storage-nodes[View information about appliance Storage Nodes]
 
-link:viewing-hardware-tab.html#view-information-about-appliance-admin-nodes-and-gateway-nodes[View information about appliance Admin Nodes and Gateway Nodes]
+* link:viewing-hardware-tab.html#view-information-about-appliance-admin-nodes-and-gateway-nodes[View information about appliance Admin Nodes and Gateway Nodes]

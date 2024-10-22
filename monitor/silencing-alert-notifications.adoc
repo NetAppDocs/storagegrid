@@ -98,4 +98,4 @@ a|
 
 .Related information
 
-* link:configuring-snmp-agent.html[Configure the SNMP agent]
+link:configuring-snmp-agent.html[Configure the SNMP agent]
