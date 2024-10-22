@@ -35,6 +35,6 @@ Expired keys are removed automatically.
 
 .Related information
 
-link:creating-another-users-s3-access-keys.html[Create another user's S3 access keys]
+* link:creating-another-users-s3-access-keys.html[Create another user's S3 access keys]
 
-link:deleting-another-users-s3-access-keys.html[Delete another user's S3 access keys]
+* link:deleting-another-users-s3-access-keys.html[Delete another user's S3 access keys]

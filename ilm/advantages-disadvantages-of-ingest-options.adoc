@@ -64,4 +64,4 @@ include::../_include/consistency-and-ilm-rule-interaction.adoc[]
 
 .Related information
 
-* link:example-5-ilm-rules-and-policy-for-strict-ingest-behavior.html[Example 5: ILM rules and policy for Strict ingest behavior]
+link:example-5-ilm-rules-and-policy-for-strict-ingest-behavior.html[Example 5: ILM rules and policy for Strict ingest behavior]

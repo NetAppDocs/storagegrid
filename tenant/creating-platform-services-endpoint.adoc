@@ -266,13 +266,13 @@ After you have configured an endpoint, you can use its URN to configure a platfo
 
 .Related information
 
-link:specifying-urn-for-platform-services-endpoint.html[Specify URN for platform services endpoint]
+* link:specifying-urn-for-platform-services-endpoint.html[Specify URN for platform services endpoint]
 
-link:configuring-cloudmirror-replication.html[Configure CloudMirror replication]
+* link:configuring-cloudmirror-replication.html[Configure CloudMirror replication]
 
-link:configuring-event-notifications.html[Configure event notifications]
+* link:configuring-event-notifications.html[Configure event notifications]
 
-link:configuring-search-integration-service.html[Configure search integration service]
+* link:configuring-search-integration-service.html[Configure search integration service]
 
 // 2024 MAR 19, SGRIDDOC-7
 // 2023 SEP 15, SGWS-25330
