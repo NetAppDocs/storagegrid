@@ -231,8 +231,6 @@ sidebar:
         entries:
         - title: Storage Node recovery
           url: "/maintain/recovering-from-storage-node-failures.html"
-        - title: Recover Storage Node down more than 15 days
-          url: "/maintain/recovering-storage-node-that-has-been-down-more-than-15-days.html"
         - title: Recover appliance Storage Node
           entries:
           - title: Warnings for recovering appliance Storage Nodes

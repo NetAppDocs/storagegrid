@@ -35,10 +35,6 @@ Technical support can determine when it is safe to begin recovery of a second St
 
 | Technical support will assess your situation and develop a recovery plan. See link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
-| A Storage Node has been offline for more than 15 days.
-| link:recovering-storage-node-that-has-been-down-more-than-15-days.html[Recover Storage Node down more than 15 days]
-| This procedure is required to ensure Cassandra database integrity.
-
 | An appliance Storage Node has failed.
 | link:recovering-storagegrid-appliance-storage-node.html[Recover appliance Storage Node]
 | The recovery procedure for appliance Storage Nodes is the same for all failures.
