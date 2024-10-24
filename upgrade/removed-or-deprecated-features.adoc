@@ -75,6 +75,24 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.9
 | 12.0
 | https://docs.netapp.com/us-en/storagegrid-118/swift/index.html[Use Swift REST API (StorageGRID 11.8)^]
+
+| Ubuntu 18.04
+| 11.9
+| 11.9
+| 12.0
+| 
+
+| Ubuntu 20.04
+| 11.9
+| 11.9
+| 12.0
+| 
+
+| Debian 11 
+| 11.9
+| 11.9
+| 12.0
+| 
 |===
 
 Also refer to:
