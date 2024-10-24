@@ -37,11 +37,10 @@ You might encounter this error when you try to create, edit, or delete a Cloud S
 
 Typically, you will only see this error if you are creating a new Cloud Storage Pool and another instance of StorageGRID is already using the same Cloud Storage Pool.
 
-Try one of these steps to correct the issue:
+Try these steps to correct the issue:
 
-* If the bucket contains other objects in addition to the `x-ntap-sgws-cloud-pool-uuid` file and you are configuring a new Cloud Storage Pool, create a new bucket and use this new bucket instead.
-
-* If the `x-ntap-sgws-cloud-pool-uuid` file is the only object in the bucket, delete this file.
+* Check to make sure that no one in your organization is also using this Cloud Storage Pool.
+* Delete all existing objects inside the target bucket, including the `x-ntap-sgws-cloud-pool-uuid` file, and try configuring the Cloud Storage Pool again.
 
 If these steps don't apply to your scenario, contact support.
 
@@ -121,6 +120,5 @@ Try these steps to correct the issue:
 
 link:lifecycle-of-cloud-storage-pool-object.html[Lifecycle of a Cloud Storage Pool object]
 
-// 2024 OCT 17, SGRIDDOC-89
 // 2024 JUN 18, SGWS-31715
 // 2024 JUN 14, SGWS-31273
