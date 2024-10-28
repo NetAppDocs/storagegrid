@@ -19,11 +19,7 @@ Ensure your operating system meets StorageGRID's minimum kernel version requirem
 |===
 | Red Hat Enterprise Linux version| Minimum kernel version| Kernel package name
 
-| 8.6
-| 4.18.0-372.26.1.el8_6.x86_64
-| kernel-4.18.0-372.26.1.el8_6.x86_64
-
-| 8.8
+| 8.8 (deprecated)
 | 4.18.0-477.10.1.el8_8.x86_64
 | kernel-4.18.0-477.10.1.el8_8.x86_64
 
@@ -31,11 +27,11 @@ Ensure your operating system meets StorageGRID's minimum kernel version requirem
 | 4.18.0-553.el8_10.x86_64
 | kernel-4.18.0-553.el8_10.x86_64
 
-| 9.0
+| 9.0 (deprecated)
 | 5.14.0-70.22.1.el9_0.x86_64
 | kernel-5.14.0-70.22.1.el9_0.x86_64
 
-| 9.2
+| 9.2 (deprecated)
 | 5.14.0-284.11.1.el9_2.x86_64
 | kernel-5.14.0-284.11.1.el9_2.x86_64
 
