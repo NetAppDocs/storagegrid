@@ -90,7 +90,7 @@ You can see the diagnosis information in the /var/local/log/sn-remount-volumes.l
 This volume could be new or damaged. If you run sn-recovery-postinstall.sh,
 this volume and any data on this volume will be deleted. If you only had two
 copies of object data, you will temporarily have only a single copy.
-StorageGRID Webscale will attempt to restore data redundancy by making
+StorageGRID will attempt to restore data redundancy by making
 additional replicated copies or EC fragments, according to the rules in
 the active ILM policies.
 
@@ -112,7 +112,7 @@ You can see the diagnosis information in the /var/local/log/sn-remount-volumes.l
 This volume could be new or damaged. If you run sn-recovery-postinstall.sh,
 this volume and any data on this volume will be deleted. If you only had two
 copies of object data, you will temporarily have only a single copy.
-StorageGRID Webscale will attempt to restore data redundancy by making
+StorageGRID will attempt to restore data redundancy by making
 additional replicated copies or EC fragments, according to the rules in
 the active ILM policies.
 
