@@ -450,7 +450,7 @@ You can use the `deploy-vsphere-ovftool.sh` Bash script and the deploy-vsphere-o
 
 .Before you begin
 
-* You have created a deploy-vsphere-ovftool.ini configuration file for your environment.
+You have created a deploy-vsphere-ovftool.ini configuration file for your environment.
 
 You can use the help available with the Bash script by entering the help commands (`-h/--help`). For example:
 
@@ -513,7 +513,7 @@ After deploying the grid nodes, you can automate the configuration of the Storag
 .Before you begin
 
 * You know the location of the following files from the installation archive.
-
++
 [cols="1a,1a" options="header"]
 |===
 | Filename| Description
@@ -528,9 +528,9 @@ m| configure-storagegrid.blank.json
 |===
 
 * You have created a `configure-storagegrid.json` configuration file. To create this file, you can modify the example configuration file (`configure-storagegrid.sample.json`) or the blank configuration file (`configure-storagegrid.blank.json`).
-
++
 You can use the `configure-storagegrid.py` Python script and the `configure-storagegrid.json` grid configuration file to automate the configuration of your StorageGRID system.
-
++
 NOTE: You can also configure the system using the Grid Manager or the Installation API.
 
 .Steps
@@ -579,6 +579,6 @@ StorageGRID has been configured and installed.
 
 .Related information
 
-link:navigating-to-grid-manager.html[Navigate to the Grid Manager]
+* link:navigating-to-grid-manager.html[Navigate to the Grid Manager]
 
-link:overview-of-installation-rest-api.html[Installation REST API]
+* link:overview-of-installation-rest-api.html[Installation REST API]

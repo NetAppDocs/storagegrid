@@ -1,4 +1,5 @@
 ---
 permalink: monitor/applying-hotfixes-or-upgrading-software-if-necessary.html
-redirect: storagegrid-119/landing-install-upgrade/index.html
+redirect: storagegrid/landing-install-upgrade/index.html
 ---
+// 2024-10-18, SGRIDOC108

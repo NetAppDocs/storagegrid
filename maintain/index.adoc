@@ -25,4 +25,4 @@ NOTE: In these instructions, "Linux" refers to a Red Hat® Enterprise Linux®, U
 
 == Maintenance procedures for appliances
 
-For hardware procedures, see the https://docs.netapp.com/us-en/storagegrid-appliances/[maintenance instructions for your StorageGRID appliance^].
+For hardware procedures, see the https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/index.html[maintenance instructions for your StorageGRID appliance^].

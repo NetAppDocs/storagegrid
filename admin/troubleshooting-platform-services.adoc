@@ -111,6 +111,6 @@ For additional information see link:../tenant/troubleshooting-platform-services-
 
 .Related information
 
-* link:../troubleshoot/index.html[Troubleshoot StorageGRID system]
+link:../troubleshoot/index.html[Troubleshoot StorageGRID system]
 
 // 2023 SEP 25, SGWS-25330

@@ -37,6 +37,6 @@ If you use a non-transparent proxy server, you must also link:configuring-storag
 
 .Related information
 
-* link:../tenant/index.html[Use a tenant account]
+link:../tenant/index.html[Use a tenant account]
 
 // 2023 SEP 15, SGWS-25330

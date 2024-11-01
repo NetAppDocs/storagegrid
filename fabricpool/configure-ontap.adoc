@@ -18,7 +18,7 @@ After you have obtained the required StorageGRID information, you can go to ONTA
 
 == Access ONTAP System Manager
 
-These instructions describe how to use ONTAP System Manager to add StorageGRID as a cloud tier. You can complete the same configuration using the ONTAP CLI. For instructions, go to https://docs.netapp.com/us-en/ontap/fabricpool/index.html[ONTAP 9: FabricPool tier management with the CLI^].
+These instructions describe how to use ONTAP System Manager to add StorageGRID as a cloud tier. You can complete the same configuration using the ONTAP CLI. For instructions, go to https://docs.netapp.com/us-en/ontap/fabricpool/index.html[ONTAP documentation for FabricPool^].
 
 .Steps
 
@@ -30,7 +30,7 @@ These instructions describe how to use ONTAP System Manager to add StorageGRID a
 
 == Enter StorageGRID values
 
-See https://docs.netapp.com/us-en/ontap/concept_cloud_overview.html[ONTAP 9: FabricPool tier management overview with System Manager^] for more information.
+See https://docs.netapp.com/us-en/ontap/fabricpool/index.html[ONTAP documentation for FabricPool^] for more information.
 
 .Steps
 

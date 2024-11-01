@@ -46,6 +46,6 @@ For more information about the Swift Administrator permission, see the instructi
 
 .Related information
 
-link:creating-groups-for-s3-tenant.html[Create groups for S3 tenant]
+* link:creating-groups-for-s3-tenant.html[Create groups for S3 tenant]
 
-link:creating-groups-for-swift-tenant.html[Create groups for Swift tenant]
+* link:creating-groups-for-swift-tenant.html[Create groups for Swift tenant]

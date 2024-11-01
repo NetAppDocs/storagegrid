@@ -65,9 +65,8 @@ The Identity Provider section appears.
 . Select the *SSO type* from the drop-down list.
 
 . Complete the fields in the Identity Provider section based on the SSO type you selected.
-
 // start tabbed area
-
++
 [role="tabbed-block"]
 ====
 

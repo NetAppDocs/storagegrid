@@ -102,7 +102,7 @@ Don't use Azure Blob storage lifecycle management for the container used with a 
 
 .Related information
 
-* link:creating-cloud-storage-pool.html[Create a Cloud Storage Pool]
+link:creating-cloud-storage-pool.html[Create a Cloud Storage Pool]
 
 // 2024 JUN 14, SGWS-31273
 // 2024 JULY 15, SGRIDDOC-80

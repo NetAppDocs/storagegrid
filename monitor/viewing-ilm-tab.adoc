@@ -19,6 +19,6 @@ image::../media/nodes_page_ilm_tab.png[Nodes page ILM tab]
 
 .Related information
 
-link:monitoring-information-lifecycle-management.html[Monitor information lifecycle management]
+* link:monitoring-information-lifecycle-management.html[Monitor information lifecycle management]
 
-link:../admin/index.html[Administer StorageGRID]
+* link:../admin/index.html[Administer StorageGRID]
