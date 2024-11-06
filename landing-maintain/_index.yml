@@ -1,0 +1,34 @@
+indexpage:
+  title: Maintain a StorageGRID system
+  lead: You can perform maintenance procedures to recover from failures or to keep your StorageGRID system up to date and performing efficiently.
+  summary: You can perform maintenance procedures to recover from failures or to keep your StorageGRID system up to date and performing efficiently.
+  keywords: maintain grid, recovery package
+  tiles:
+  - title: Get started
+    links:
+    - title: Grid maintenance
+      url: ../maintain/index.html
+    - title: Download Recovery Package
+      url: ../maintain/downloading-recovery-package.html
+  - title: Decommission nodes or sites
+    links:
+    - title: Decommission types
+      url: ../maintain/decommission-procedure.html
+    - title: Remove a grid node
+      url: ../maintain/grid-node-decommissioning.html
+    - title: Remove a site
+      url: ../maintain/considerations-for-removing-site.html
+  - title: Additional maintenance procedures
+    links:
+    - title: Rename grid, site, or node
+      url: ../maintain/rename-grid-site-node-overview.html
+    - title: Node procedures
+      url: ../maintain/grid-node-procedures.html
+    - title: Network procedures
+      url: ../maintain/updating-subnets-for-grid-network.html
+    - title: Host and middleware procedures
+      url: ../maintain/linux-migrating-grid-node-to-new-host.html
+  - title: Maintain StorageGRID appliances
+    links:
+    - title: StorageGRID appliances documentation
+      url: https://docs.netapp.com/us-en/storagegrid-appliances/

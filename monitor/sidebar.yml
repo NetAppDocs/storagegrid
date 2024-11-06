@@ -1,0 +1,135 @@
+section: monitor
+title: Monitor StorageGRID system
+entries:
+  - title: Monitoring tasks
+    pdf-filename: Monitor StorageGRID system
+    url: "/monitor/index.html" 
+  - title: View and manage dashboard
+    url: "/monitor/viewing-dashboard.html"
+  - title: View the Nodes page
+    entries:
+    - title: Nodes page contents
+      pdf-filename: View the Nodes page
+      url: "/monitor/viewing-nodes-page.html"
+    - title: View the Overview tab
+      url: "/monitor/viewing-overview-tab.html"
+    - title: View the Hardware tab
+      url: "/monitor/viewing-hardware-tab.html"
+    - title: View the Network tab
+      url: "/monitor/viewing-network-tab.html"
+    - title: View the Storage tab
+      url: "/monitor/viewing-storage-tab.html"
+    - title: View the Objects tab
+      url: "/monitor/viewing-objects-tab.html"
+    - title: View the ILM tab
+      url: "/monitor/viewing-ilm-tab.html"
+    - title: Use the Tasks tab
+      url: "/monitor/using-task-tab-to-reboot-grid-node.html"
+    - title: View the Load balancer tab
+      url: "/monitor/viewing-load-balancer-tab.html"
+    - title: View the Platform services tab
+      url: "/monitor/viewing-platform-services-tab.html"
+    - title: View the Manage drives tab
+      url: "/monitor/viewing-manage-drives-tab.html"
+    - title: View the SANtricity tab (E-Series only)
+      url: "/monitor/viewing-santricity-system-manager-tab.html"
+  - title: Information to monitor regularly
+    entries:
+    - title: What and when to monitor
+      url: "/monitor/information-you-should-monitor-regularly.html"
+    - title: Monitor system health
+      url: "/monitor/monitoring-system-health.html"
+    - title: Monitor storage capacity
+      url: "/monitor/monitoring-storage-capacity.html"
+    - title: Monitor information lifecycle management
+      url: "/monitor/monitoring-information-lifecycle-management.html"
+    - title: Monitor networking and system resources
+      url: "/monitor/monitoring-network-connections-and-performance.html"
+    - title: Monitor tenant activity
+      url: "/monitor/monitoring-tenant-activity.html"
+    - title: Monitor S3 client operations
+      url: "/monitor/monitoring-object-ingest-and-retrieval-rates.html"
+    - title: Monitor load balancing operations
+      url: "/monitor/monitoring-load-balancing-operations.html"      
+    - title: Monitor grid federation connections
+      url: "/monitor/grid-federation-monitor-connections.html"
+  - title: Manage alerts
+    entries:
+    - title: Alert system
+      url: "/monitor/managing-alerts.html"   
+    - title: View alert rules
+      url: "/monitor/view-alert-rules.html"
+    - title: Create custom alert rules
+      url: "/monitor/creating-custom-alert-rules.html"
+    - title: Edit alert rules
+      url: "/monitor/editing-alert-rules.html"
+    - title: Disable alert rules
+      url: "/monitor/disabling-alert-rules.html"
+    - title: Remove custom alert rules
+      url: "/monitor/removing-custom-alert-rules.html"  
+    - title: Manage alert notifications
+      entries:
+      - title: Set up SNMP notifications
+        url: "/monitor/snmp-alert-notifications.html"
+      - title: Set up email notifications
+        url: "/monitor/email-alert-notifications.html"   
+      - title: Silence alert notifications
+        url: "/monitor/silencing-alert-notifications.html"
+    - title: Alerts reference
+      url: "/monitor/alerts-reference.html"
+    - title: Commonly used Prometheus metrics
+      url: "/monitor/commonly-used-prometheus-metrics.html"
+  - title: Log files reference
+    entries:
+    - title: Access log files
+      pdf-filename: Log files reference
+      url: "/monitor/logs-files-reference.html"
+    - title: StorageGRID software logs
+      url: "/monitor/storagegrid-software-logs.html"
+    - title: Deployment and maintenance logs
+      url: "/monitor/deployment-and-maintenance-logs.html"
+    - title: About the bycast.log
+      url: "/monitor/about-bycast-log.html"
+  - title: Configure audit message and log destinations
+    entries:      
+    - title: Considerations for external syslog server
+      url: "/monitor/considerations-for-external-syslog-server.html"  
+    - title: Configure audit messages and external syslog server
+      url: "/monitor/configure-audit-messages.html" 
+  - title: Use SNMP monitoring
+    entries:
+    - title: SNMP monitoring
+      pdf-filename: Use SNMP monitoring
+      url: "/monitor/using-snmp-monitoring.html"
+    - title: Configure the SNMP agent
+      url: "/monitor/configuring-snmp-agent.html"
+    - title: Update the SNMP agent
+      url: "/monitor/updating-snmp-agent.html"
+    - title: Access MIB files
+      url: "/monitor/access-snmp-mib.html"
+  - title: Collect additional StorageGRID data
+    entries:
+    - title: Use charts and graphs
+      url: "/monitor/using-charts-and-reports.html"
+    - title: Use text reports
+      url: "/monitor/types-of-text-reports.html"
+    - title: Monitor PUT and GET performance
+      url: "/monitor/monitoring-put-and-get-performance.html"
+    - title: Monitor object verification operations
+      url: "/monitor/monitoring-object-verification-operations.html"
+    - title: Monitor events
+      url: "/monitor/monitoring-events.html"
+    - title: Review audit messages
+      url: "/monitor/reviewing-audit-messages.html"
+    - title: Collect log files and system data
+      url: "/monitor/collecting-log-files-and-system-data.html"
+    - title: Manually trigger an AutoSupport package
+      url: "/monitor/manually-triggering-autosupport-message.html"
+    - title: View the Grid Topology tree
+      url: "/monitor/viewing-grid-topology-tree.html"
+    - title: Review support metrics
+      url: "/monitor/reviewing-support-metrics.html"
+    - title: Run diagnostics
+      url: "/monitor/running-diagnostics.html"
+    - title: Create custom monitoring applications
+      url: "/monitor/creating-custom-monitoring-applications.html"

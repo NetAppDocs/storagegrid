@@ -1,0 +1,60 @@
+indexpage:
+  title: Install, upgrade, and hotfix StorageGRID
+  lead: A StorageGRID system consists of individual hardware-based and software-based nodes. You first install the hardware for each appliance node and configure each Linux or VMware host. Then, you install StorageGRID software on each appliance or software host and connect the nodes into a grid.
+  summary: A StorageGRID system consists of individual hardware-based and software-based nodes. You first install the hardware for each appliance node and configure each Linux or VMware host. Then, you install StorageGRID software on each appliance or software host and connect the nodes into a grid.
+  keywords: install, upgrade, hotfix
+  tiles:
+  - title: Quick start
+    links:
+    - title: Appliance hardware
+      url: https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html
+    - title: Red Hat Enterprise Linux
+      url: ../rhel/index.html
+    - title: Ubuntu or Debian
+      url: ../ubuntu/index.html   
+    - title: VMware
+      url: ../vmware/index.html  
+  - title: Prepare materials
+    links:
+    - title: Red Hat Enterprise Linux
+      url: ../rhel/required-materials.html
+    - title: Ubuntu or Debian
+      url: ../ubuntu/required-materials.html
+    - title: VMware
+      url: ../vmware/required-materials.html
+  - title: Automate installation
+    links:
+    - title: Red Hat Enterprise Linux
+      url: ../rhel/automating-installation.html
+    - title: Ubuntu or Debian
+      url: ../ubuntu/automating-installation.html
+    - title: VMware
+      url: ../vmware/automating-grid-node-deployment-in-vmware-vsphere.html
+  - title: Deploy nodes
+    links:          
+    - title: Red Hat Enterprise Linux
+      url:  ../rhel/creating-node-configuration-files.html
+    - title: Ubuntu or Debian
+      url:  ../ubuntu/creating-node-configuration-files.html
+    - title: VMware
+      url:  ../vmware/collecting-information-about-your-deployment-environment.html
+  - title: Complete node installation
+    links:  
+    - title: Red Hat Enterprise Linux
+      url:  ../rhel/navigating-to-grid-manager.html
+    - title: Ubuntu or Debian
+      url:  ../ubuntu/navigating-to-grid-manager.html
+    - title: VMware
+      url:  ../vmware/navigating-to-grid-manager.html
+  - title: Upgrade or hotfix
+    links:
+    - title: What's new
+      url: ../upgrade/whats-new.html
+    - title: Estimate time to complete
+      url: ../upgrade/estimating-time-to-complete-upgrade.html
+    - title: How your system is affected during upgrade
+      url: ../upgrade/how-your-system-is-affected-during-upgrade.html
+    - title: Upgrade quick start
+      url: ../upgrade/upgrade-workflow.html
+    - title: Apply hotfix
+      url: ../maintain/storagegrid-hotfix-procedure.html

@@ -1,0 +1,294 @@
+section: admin
+title: Administer StorageGRID
+entries:
+  - title: Administration tasks
+    pdf-filename: Administer a StorageGRID system
+    url: "/admin/index.html"
+  - title: Get started with Grid Manager
+    entries:
+    - title: Web browser requirements
+      url: "/admin/web-browser-requirements.html"
+    - title: Sign in to the Grid Manager
+      url: "/admin/signing-in-to-grid-manager.html"
+    - title: Sign out of the Grid Manager
+      url: "/admin/signing-out-of-grid-manager.html"
+    - title: Change your password
+      url: "/admin/changing-your-password.html"
+    - title: View StorageGRID license information
+      url: "/admin/viewing-storagegrid-license-information.html"
+    - title: Update StorageGRID license information
+      url: "/admin/updating-storagegrid-license-information.html"
+    - title: Use the API     
+      entries:
+      - title: Use the Grid Management API
+        pdf-filename: Grid Management API
+        url: "/admin/using-grid-management-api.html"
+      - title: Grid Management API operations
+        url: "/admin/grid-management-api-operations.html"        
+      - title: Grid Management API versioning
+        url: "/admin/grid-management-api-versioning.html"
+      - title: Protect against Cross-Site Request Forgery (CSRF)
+        url: "/admin/protecting-against-cross-site-request-forgery-csrf.html"
+      - title: Use the API if single sign-on is enabled
+        entries:
+        - title: Active Directory
+          url: "/admin/use-api-if-sso-is-enabled-adfs.html"
+        - title: Azure
+          url: "/admin/use-api-if-sso-is-enabled-azure.html"
+        - title: PingFederate
+          url: "/admin/use-api-if-sso-is-enabled-ping.html"  
+      - title: Deactivate features with the API
+        url: "/admin/deactivate-features-from-api.html"            
+  - title: Control access to StorageGRID
+    entries:
+    - title: StorageGRID access
+      pdf-filename: Control access to StorageGRID
+      url: "/admin/controlling-storagegrid-access.html"
+    - title: Change the provisioning passphrase
+      url: "/admin/changing-provisioning-passphrase.html"
+    - title: Change node console passwords
+      url: "/admin/change-node-console-password.html"    
+    - title: Change SSH access passwords
+      url: "/admin/change-ssh-access-passwords.html"
+    - title: Use identity federation
+      url: "/admin/using-identity-federation.html"
+    - title: Manage admin groups
+      url: "/admin/managing-admin-groups.html"
+    - title: Admin group permissions
+      url: "/admin/admin-group-permissions.html" 
+    - title: Manage users
+      url: "/admin/managing-users.html"
+    - title: Use single sign-on (SSO)
+      entries:
+      - title: Configure single sign-on
+        url: "/admin/configuring-sso.html"
+      - title: Requirements for single sign-on
+        url: "/admin/requirements-for-sso.html"
+      - title: Confirm federated users can sign in
+        url: "/admin/confirming-federated-users-can-sign-in.html"
+      - title: Use sandbox mode
+        url: "/admin/using-sandbox-mode.html"
+      - title: Create relying party trusts in AD FS
+        url: "/admin/creating-relying-party-trusts-in-ad-fs.html"
+      - title: Create enterprise applications in Azure
+        url: "/admin/creating-enterprise-application-azure.html"          
+      - title: Create SP connections in PingFederate
+        url: "/admin/creating-sp-connection-ping.html"
+      - title: Disable single sign-on
+        url: "/admin/disabling-single-sign-on.html"
+      - title: Temporarily disable and reenable single sign-on for one Admin Node
+        url: "/admin/temporarily-disabling-and-reenabling-sso-for-admin-node.html"
+  - title: Use grid federation
+    entries:
+    - title: What is grid federation
+      pdf-filename: Use grid federation
+      url: "/admin/grid-federation-overview.html"
+    - title: What is account clone 
+      url: "/admin/grid-federation-what-is-account-clone.html"
+    - title: What is cross-grid replication
+      url: "/admin/grid-federation-what-is-cross-grid-replication.html"
+    - title: Compare cross-grid replication and CloudMirror replication
+      url: "/admin/grid-federation-compare-cgr-to-cloudmirror.html"               
+    - title: Create grid federation connections
+      url: "/admin/grid-federation-create-connection.html"      
+    - title: Manage grid federation connections
+      url: "/admin/grid-federation-manage-connection.html" 
+    - title: Manage permitted tenants
+      url: "/admin/grid-federation-manage-tenants.html"  
+    - title: Troubleshoot grid federation errors
+      url: "/admin/grid-federation-troubleshoot.html" 
+    - title: Identify and retry failed replication operations
+      url: "/admin/grid-federation-retry-failed-replication.html"    
+  - title: Manage security
+    entries:  
+    - title: Security components
+      pdf-filename: Manage security
+      url: "/admin/manage-security.html" 
+    - title: Review StorageGRID encryption methods
+      url: "/admin/reviewing-storagegrid-encryption-methods.html"     
+    - title: Manage certificates
+      entries:
+      - title: Manage security certificates
+        pdf-filename: Manage security certificates
+        url: "/admin/using-storagegrid-security-certificates.html"
+      - title: Supported server certificate types
+        url: "/admin/global-certificate-types.html"
+      - title: Configure management interface certificates
+        url: "/admin/configuring-custom-server-certificate-for-grid-manager-tenant-manager.html"
+      - title: Configure S3 API certificates
+        url: "/admin/configuring-custom-server-certificate-for-storage-node.html"
+      - title: Copy or download the Grid CA certificate
+        url: "/admin/copying-storagegrid-system-ca-certificate.html"
+      - title: Configure StorageGRID certificates for FabricPool
+        url: "/admin/configuring-storagegrid-certificates-for-fabricpool.html"
+      - title: Configure client certificates
+        url: "/admin/configuring-administrator-client-certificates.html"
+    - title: Configure security settings
+      entries:
+      - title: Manage TLS and SSH policy
+        url: "/admin/manage-tls-ssh-policy.html"
+      - title: Configure network and object security
+        url: "/admin/changing-network-options-object-encryption.html"  
+      - title: Change interface security settings
+        url: "/admin/changing-browser-session-timeout-interface.html"      
+    - title: Configure key management servers
+      entries:
+      - title: What is key management server
+        pdf-filename: Configure key management servers
+        url: "/admin/kms-configuring.html"
+      - title: KMS and appliance configuration
+        url: "/admin/kms-overview-of-kms-and-appliance-configuration.html"
+      - title: Considerations and requirements for using a key management server
+        url: "/admin/kms-considerations-and-requirements.html"
+      - title: Considerations for changing the KMS for a site
+        url: "/admin/kms-considerations-for-changing-for-site.html"
+      - title: Configure StorageGRID as a client in the KMS
+        url: "/admin/kms-configuring-storagegrid-as-client.html"
+      - title: Add a key management server (KMS)
+        url: "/admin/kms-adding.html"
+      - title: Manage a KMS
+        url: "/admin/kms-managing.html"
+    - title: Manage proxy settings
+      entries:
+      - title: Configure storage proxy
+        url: "/admin/configuring-storage-proxy-settings.html"
+      - title: Configure admin proxy
+        url: "/admin/configuring-admin-proxy-settings.html"
+    - title: Control firewalls     
+      entries:
+      - title: Control access at external firewall
+        url: "/admin/controlling-access-through-firewalls.html"  
+      - title: Manage internal firewall
+        url: "/admin/manage-firewall-controls.html"      
+      - title: Configure internal firewall
+        url: "/admin/configure-firewall-controls.html"
+  - title: Manage tenants
+    entries:
+    - title: What are tenant accounts
+      url: "/admin/managing-tenants.html"
+      pdf-filename: Manage tenants
+    - title: Create tenant account
+      url: "/admin/creating-tenant-account.html"  
+    - title: Edit tenant account
+      url: "/admin/editing-tenant-account.html"
+    - title: Change password for tenant&#8217;s local root user
+      url: "/admin/changing-password-for-tenant-local-root-user.html"      
+    - title: Delete tenant account
+      url: "/admin/deleting-tenant-account.html"
+    - title: Manage platform services
+      entries:
+      - title: What are platform services
+        pdf-filename: Manage platform services for S3 tenant accounts
+        url: "/admin/manage-platform-services-for-tenants.html"
+      - title: Network and ports for platform services
+        url: "/admin/networking-and-ports-for-platform-services.html"
+      - title: Per-site delivery of platform services messages
+        url: "/admin/per-site-delivery-of-platform-services-messages.html"
+      - title: Troubleshoot platform services
+        url: "/admin/troubleshooting-platform-services.html"
+    - title: Manage S3 Select for tenant accounts
+      url: "/admin/manage-s3-select-for-tenant-accounts.html"
+  - title: Configure client connections
+    entries:
+    - title: Configuration tasks
+      pdf-filename: Configure S3 client connections
+      url: "/admin/configuring-client-connections.html"
+    - title: Security for S3 clients
+      url: "/admin/security-for-clients.html"      
+    - title: Use S3 setup wizard
+      entries:
+      - title: S3 setup wizard considerations and requirements
+        url: "/admin/use-s3-setup-wizard.html"
+      - title: Access and complete the S3 application setup wizard
+        url: "/admin/use-s3-setup-wizard-steps.html"
+    - title: Manage HA groups  
+      entries:
+      - title: What is HA group
+        pdf-filename: Manage high availability (HA) groups
+        url: "/admin/managing-high-availability-groups.html"
+      - title: How are HA groups used
+        url: "/admin/how-ha-groups-are-used.html"
+      - title: Configuration options for HA groups
+        url: "/admin/configuration-options-for-ha-groups.html"
+      - title: Configure HA groups
+        url: "/admin/configure-high-availability-group.html"
+    - title: Manage load balancing
+      entries:
+      - title: Considerations for load balancing
+        url: "/admin/managing-load-balancing.html"
+      - title: Configure load balancer endpoints
+        url: "/admin/configuring-load-balancer-endpoints.html"  
+    - title: Configure S3 endpoint domain names
+      url: "/admin/configuring-s3-api-endpoint-domain-names.html" 
+    - title: 'Summary: IP addresses and ports for client connections'
+      url: "/admin/summary-ip-addresses-and-ports-for-client-connections.html"
+  - title: Manage networks and connections
+    entries:
+    - title: Configure network settings
+      url: "/admin/configuring-network-settings.html"
+      pdf-filename: Manage networks and connections
+    - title: Guidelines for StorageGRID networks
+      url: "/admin/guidelines-for-storagegrid-networks.html"
+    - title: View IP addresses
+      url: "/admin/viewing-ip-addresses.html"
+    - title: Configure VLAN interfaces
+      url: "/admin/configure-vlan-interfaces.html"  
+    - title: Manage traffic classification policies
+      entries:
+      - title: What is traffic classification policy
+        pdf-filename: Manage traffic classification policies
+        url: "/admin/managing-traffic-classification-policies.html"
+      - title: Create traffic classification policies
+        url: "/admin/creating-traffic-classification-policies.html"
+      - title: Edit a traffic classification policy
+        url: "/admin/editing-traffic-classification-policy.html"
+      - title: Delete a traffic classification policy
+        url: "/admin/deleting-traffic-classification-policy.html"
+      - title: View network traffic metrics
+        url: "/admin/viewing-network-traffic-metrics.html"    
+    - title: Supported ciphers for outgoing TLS connections
+      url: "/admin/supported-ciphers-for-outgoing-tls-connections.html"
+    - title: Benefits of active, idle, and concurrent HTTP connections
+      url: "/admin/benefits-of-active-idle-and-concurrent-http-connections.html" 
+    - title: Manage link costs
+      url: "/admin/manage-link-costs.html"
+  - title: Use AutoSupport
+    entries:
+    - title: What is AutoSupport
+      pdf-filename: Use AutoSupport
+      url: "/admin/what-is-autosupport.html"
+    - title: Configure AutoSupport
+      url: "/admin/configure-autosupport-grid-manager.html"
+    - title: Manually trigger an AutoSupport package
+      url: "/admin/manually-triggering-autosupport-message.html"
+    - title: Troubleshoot AutoSupport packages
+      url: "/admin/troubleshooting-autosupport-messages.html"
+    - title: Send E-Series AutoSupport packages through StorageGRID
+      url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
+  - title: Manage Storage Nodes
+    entries:
+    - title: Storage Node management
+      pdf-filename: Manage Storage Nodes
+      url: "/admin/managing-storage-nodes.html"
+    - title: Use Storage options
+      entries:
+      - title: What is object segmentation
+        url: "/admin/what-object-segmentation-is.html"
+      - title: What are storage volume watermarks
+        url: "/admin/what-storage-volume-watermarks-are.html"
+    - title: Manage object metadata storage
+      url: "/admin/managing-object-metadata-storage.html"
+    - title: Increase Metadata Reserved Space setting
+      url: "/admin/increasing-metadata-reserved-space-setting.html"
+    - title: Compress stored objects
+      url: "/admin/configuring-stored-object-compression.html"
+    - title: Manage full Storage Nodes
+      url: "/admin/managing-full-storage-nodes.html"
+  - title: Manage Admin Nodes
+    entries:
+    - title: Use multiple Admin Nodes
+      url: "/admin/using-multiple-admin-nodes.html"
+    - title: Identify the primary Admin Node
+      url: "/admin/identifying-primary-admin-node.html"
+    - title: View notification status and queues
+      url: "/admin/viewing-notification-status-and-queues.html"

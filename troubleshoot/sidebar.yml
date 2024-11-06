@@ -1,0 +1,42 @@
+section: troubleshoot
+title: Troubleshoot StorageGRID system 
+entries:
+  - title: Troubleshooting guidelines
+    pdf-filename: Troubleshoot StorageGRID system 
+    url: "/troubleshoot/index.html"
+  - title: Troubleshoot object and storage issues
+    entries:
+    - title: Confirm object data locations
+      url: "/troubleshoot/confirming-object-data-locations.html"
+    - title: Object store failures 
+      url: "/troubleshoot/object-store-storage-volume-failures.html"
+    - title: Verify object integrity
+      url: "/troubleshoot/verifying-object-integrity.html"
+    - title: Troubleshoot S3 PUT Object size too large alert
+      url: /troubleshoot/troubleshoot-s3-put-object-size-too-large-alert.html
+    - title: Troubleshoot lost and missing object data
+      entries:
+      - title: Methods for retrieving objects
+        pdf-filename: Troubleshoot lost and missing object data
+        url: "/troubleshoot/troubleshooting-lost-and-missing-object-data.html"    
+      - title: Investigate lost objects
+        url: "/troubleshoot/investigating-lost-objects.html"
+      - title: Search for and restore potentially lost objects
+        url: "/troubleshoot/searching-for-and-restoring-potentially-lost-objects.html"
+      - title: Reset lost and missing object counts
+        url: "/troubleshoot/resetting-lost-and-missing-object-counts.html"
+    - title: Troubleshoot the Low object data storage alert
+      url: "/troubleshoot/troubleshooting-low-object-data-storage-alert.html"
+    - title: Troubleshoot Low read-only watermark override alerts
+      url: "/troubleshoot/troubleshoot-low-watermark-alert.html"
+  - title: Troubleshoot metadata issues
+    url: "/troubleshoot/troubleshooting-metadata-issues.html"
+  - title: Troubleshoot certificate errors
+    url: "/troubleshoot/troubleshooting-certificate-errors.html"
+  - title: Troubleshoot Admin Node and user interface issues
+    url: "/troubleshoot/troubleshooting-admin-node-and-user-interface-issues.html"
+  - title: Troubleshoot network, hardware, and platform issues
+    url: "/troubleshoot/troubleshooting-network-hardware-and-platform-issues.html"
+  - title: Troubleshoot external syslog server
+    url: "/troubleshoot/troubleshooting-syslog-server.html"  
+      

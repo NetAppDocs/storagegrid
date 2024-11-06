@@ -1,0 +1,64 @@
+indexpage:
+  title: Configure and manage a StorageGRID system
+  lead: The configuration tasks you need to perform for a new StorageGRID system depend on how you will use your grid. At a minimum, you set up system access; use the FabricPool and S3 wizards; and manage various storage and security settings.
+  summary: The configuration tasks you need to perform for a new StorageGRID system depend on how you will use your grid. At a minimum, you set up system access; use the FabricPool and S3 wizards; and manage various storage and security settings.
+  keywords: configure, sign in, manage admin groups, manage admin users, use identity federation, use ILM, create tenants, manage client connections, secure system, harden system
+  tiles:
+  - title: Get started
+    links:
+    - title: Sign in to the Grid Manager
+      url: ../admin/signing-in-to-grid-manager.html
+    - title: Configure AutoSupport
+      url: ../admin/configure-autosupport-grid-manager.html
+    - title: Use the Grid Management API
+      url: ../admin/using-grid-management-api.html         
+  - title: Manage admin groups and users
+    links:
+    - title: Use identity federation
+      url: ../admin/using-identity-federation.html
+    - title: Manage admin groups
+      url: ../admin/managing-admin-groups.html  
+    - title: Admin group permissions
+      url: ../admin/admin-group-permissions.html
+    - title: Configure single sign-on
+      url:  ../admin/configuring-sso.html
+  - title: Use grid federation
+    links:
+    - title: What is grid federation?
+      url: ../admin/grid-federation-overview.html
+    - title: Compare cross-grid replication to CloudMirror
+      url: ../admin/grid-federation-compare-cgr-to-cloudmirror.html
+    - title: Create grid federation connections
+      url: ../admin/grid-federation-create-connection.html
+    - title: Manage permitted tenants
+      url: ../admin/grid-federation-manage-tenants.html
+  - title: Manage client connections and tenants
+    links:
+    - title: Configure S3 endpoint domain names  
+      url: ../admin/configuring-s3-api-endpoint-domain-names.html
+    - title: Use S3 setup wizard
+      url: ../admin/use-s3-setup-wizard.html
+    - title: Use FabricPool setup wizard
+      url: ../fabricpool/use-fabricpool-setup-wizard.html 
+    - title: Create tenants
+      url: ../admin/creating-tenant-account.html                
+  - title: Use information lifecycle management (ILM)
+    links:
+    - title: Learn about ILM lifecycle
+      url: ../ilm/how-ilm-operates-throughout-objects-life.html
+    - title: Manage ILM rules
+      url: ../ilm/what-ilm-rule-is.html
+    - title: Manage ILM policies
+      url: ../ilm/creating-ilm-policy.html    
+    - title: ILM examples
+      url: ../ilm/example-1-ilm-rules-and-policy-for-object-storage.html
+  - title: Secure your system
+    links:
+    - title: Why system hardening is critical
+      url: ../harden/index.html
+    - title: Review encryption methods
+      url: ../admin/reviewing-storagegrid-encryption-methods.html
+    - title: Manage security certificates
+      url: ../admin/using-storagegrid-security-certificates.html  
+    - title: Manage TLS and SSH policy
+      url: ../admin/manage-tls-ssh-policy.html    

@@ -1,0 +1,113 @@
+section: s3
+title: Use S3 REST API
+entries:
+  - title: Supported versions and updates
+    pdf-filename: Use S3 with StorageGRID
+    url: "/s3/index.html"
+  - title: 'Quick reference'
+    url: "/s3/quick-reference-support-for-aws-apis.html"         
+  - title: Test S3 REST API connections
+    url: "/s3/configuring-tenant-accounts-and-connections.html"
+  - title: How StorageGRID implements S3 REST API
+    entries:
+    - title: Conflicting client requests
+      url: "/s3/conflicting-client-requests.html"
+    - title: Consistency values
+      url: "/s3/consistency-controls.html"
+    - title: Object versioning
+      url: "/s3/object-versioning.html"
+    - title: Use S3 REST API to configure S3 Object Lock
+      url: "/s3/use-s3-api-for-s3-object-lock.html"  
+    - title: Create S3 lifecycle configuration
+      url: "/s3/create-s3-lifecycle-configuration.html"          
+    - title: Recommendations for implementing S3 REST API
+      url: "/s3/recommendations-for-implementing-s3-rest-api.html"
+  - title: Support for Amazon S3 REST API
+    entries:
+    - title: Implementation details
+      url: "/s3/s3-rest-api-supported-operations-and-limitations.html"  
+    - title: Authenticate requests
+      url: "/s3/authenticating-requests.html"
+    - title: Operations on the service
+      url: "/s3/operations-on-the-service.html"
+    - title: Operations on buckets
+      url: "/s3/operations-on-buckets.html"
+    - title: Operations on objects
+      entries:
+      - title: S3 object operations
+        url: "/s3/operations-on-objects.html"
+      - title: Use S3 Select
+        url: "/s3/use-s3-select.html"
+      - title: Use server-side encryption
+        url: "/s3/using-server-side-encryption.html"
+      - title: CopyObject
+        url: "/s3/put-object-copy.html"
+      - title: GetObject
+        url: "/s3/get-object.html"
+      - title: HeadObject
+        url: "/s3/head-object.html"
+      - title: PutObject
+        url: "/s3/put-object.html"
+      - title: RestoreObject
+        url: "/s3/post-object-restore.html"
+      - title: SelectObjectContent
+        url: "/s3/select-object-content.html"
+    - title: Operations for multipart uploads
+      entries:
+      - title: Multipart uploads
+        pdf-filename: Operations for multipart uploads
+        url: "/s3/operations-for-multipart-uploads.html"
+      - title: CompleteMultipartUpload
+        url: "/s3/complete-multipart-upload.html"
+      - title: CreateMultipartUpload
+        url: "/s3/initiate-multipart-upload.html"
+      - title: ListMultipartUploads
+        url: "/s3/list-multipart-uploads.html"
+      - title: UploadPart
+        url: "/s3/upload-part.html"
+      - title: UploadPartCopy
+        url: "/s3/upload-part-copy.html"
+    - title: Error responses
+      url: "/s3/error-responses.html"
+  - title: StorageGRID custom operations
+    entries:
+      - title: Custom operations list
+        pdf-filename: StorageGRID custom operations
+        url: "/s3/custom-operations-on-buckets.html"
+      - title: GET Bucket consistency
+        url: "/s3/get-bucket-consistency-request.html"
+      - title: PUT Bucket consistency
+        url: "/s3/put-bucket-consistency-request.html"
+      - title: GET Bucket last access time
+        url: "/s3/get-bucket-last-access-time-request.html"
+      - title: PUT Bucket last access time
+        url: "/s3/put-bucket-last-access-time-request.html"
+      - title: DELETE Bucket metadata notification configuration
+        url: "/s3/delete-bucket-metadata-notification-configuration-request.html"
+      - title: GET Bucket metadata notification configuration
+        url: "/s3/get-bucket-metadata-notification-configuration-request.html"
+      - title: PUT Bucket metadata notification configuration
+        url: "/s3/put-bucket-metadata-notification-configuration-request.html"
+      - title: GET Storage Usage
+        url: "/s3/get-storage-usage-request.html"
+      - title: Deprecated bucket requests for legacy Compliance
+        entries:
+        - title: Deprecated features and requests
+          pdf-filename: Deprecated bucket requests for legacy Compliance
+          url: "/s3/deprecated-bucket-requests-for-legacy-compliance.html"        
+        - title: Deprecated - CreateBucket request modifications for compliance
+          url: "/s3/deprecated-put-bucket-request-modifications-for-compliance.html"
+        - title: Deprecated - GET Bucket compliance request
+          url: "/s3/deprecated-get-bucket-compliance-request.html"
+        - title: Deprecated - PUT Bucket compliance request
+          url: "/s3/deprecated-put-bucket-compliance-request.html"
+  - title: Bucket and group access policies
+    entries:
+    - title: Use bucket and group access policies
+      url: "/s3/bucket-and-group-access-policies.html"
+    - title: Example bucket policies
+      url: "/s3/example-bucket-policies.html"
+    - title: Example group policies
+      url: "/s3/example-group-policies.html"      
+  - title: S3 operations tracked in audit logs
+    url: "/s3/s3-operations-tracked-in-audit-logs.html"

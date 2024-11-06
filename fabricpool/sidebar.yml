@@ -1,0 +1,44 @@
+section: fabricpool
+title: Configure StorageGRID for FabricPool
+entries:
+  - title: Quick start
+    pdf-filename: Configure StorageGRID for FabricPool
+    url: "/fabricpool/index.html"
+  - title: Information needed to attach StorageGRID as a cloud tier
+    url: "/fabricpool/information-needed-to-attach-storagegrid-as-cloud-tier.html"    
+  - title: Use FabricPool setup wizard
+    entries:
+    - title: Considerations and requirements
+      url: "/fabricpool/use-fabricpool-setup-wizard.html"
+    - title: Access and complete the wizard
+      url: "/fabricpool/use-fabricpool-setup-wizard-steps.html"
+  - title: Configure StorageGRID manually
+    entries:
+    - title: Create HA group
+      url: "/fabricpool/creating-ha-group-for-fabricpool.html"
+    - title: Create load balancer endpoint
+      url: "/fabricpool/creating-load-balancer-endpoint-for-fabricpool.html"
+    - title: Create tenant account
+      url: "/fabricpool/creating-tenant-account-for-fabricpool.html"
+    - title: Create S3 bucket and obtain access keys
+      url: "/fabricpool/creating-s3-bucket-and-access-key.html"
+    - title: Configure ILM for FabricPool data
+      url: "/fabricpool/using-storagegrid-ilm-with-fabricpool-data.html"
+    - title: Create traffic classification policy
+      url: "/fabricpool/creating-traffic-classification-policy-for-fabricpool.html"
+  - title: Configure ONTAP System Manager
+    url: "/fabricpool/configure-ontap.html" 
+  - title: Configure DNS server
+    url: "/fabricpool/configure-dns-server.html" 
+  - title: StorageGRID best practices for FabricPool
+    entries:
+    - title: Best practices for HA groups
+      url: "/fabricpool/best-practices-for-high-availability-groups.html"    
+    - title: Best practices for load balancing for FabricPool
+      url: "/fabricpool/best-practices-for-load-balancing.html"
+    - title: Best practices for ILM
+      url: "/fabricpool/best-practices-ilm.html"
+    - title: Other best practices
+      url: "/fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html"  
+  - title: Remove FabricPool data from StorageGRID
+    url:  "/fabricpool/remove-fabricpool-data.html"

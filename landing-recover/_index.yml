@@ -1,0 +1,38 @@
+indexpage:
+  title: Recover or replace nodes
+  lead: If a grid node fails, you can recover it by replacing the failed physical or virtual server, reinstalling StorageGRID software, and restoring recoverable data.
+  summary: If a grid node fails, you can recover it by replacing the failed physical or virtual server, reinstalling StorageGRID software, and restoring recoverable data.
+  keywords: recover node, replace node
+  tiles:
+  - title: Get started
+    links:
+    - title: Warnings and considerations
+      url: ../maintain/warnings-and-considerations-for-grid-node-recovery.html
+    - title: Gather required materials
+      url: ../maintain/gathering-required-materials-for-grid-node-recovery.html
+  - title: Recover failed nodes
+    links:
+    - title: Warnings and considerations
+      url: ../maintain/warnings-and-considerations-for-grid-node-recovery.html
+    - title: Storage Nodes
+      url: ../maintain/recovering-from-storage-node-failures.html
+    - title: Admin Nodes
+      url: ../maintain/recovering-from-admin-node-failures.html
+    - title: Gateway Nodes
+      url: ../maintain/replacing-gateway-node.html
+    - title: Archive Nodes
+      url: ../maintain/recovering-from-archive-node-failures.html
+  - title: Replace node
+    links:
+    - title: Replace Linux node
+      url: ../maintain/all-node-types-replacing-linux-node.html
+    - title: Replace VMware node
+      url: ../maintain/all-node-types-replacing-vmware-node.html
+    - title: Replace Linux or VMware node with services appliance
+      url: ../maintain/installing-services-appliance-platform-change-only.html
+    - title: Clone appliance node
+      url: https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/how-appliance-node-cloning-works.html
+  - title: Recover a site
+    links:
+    - title: How technical support recovers a site
+      url: ../maintain/how-site-recovery-is-performed-by-technical-support.html

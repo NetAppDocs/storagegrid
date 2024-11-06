@@ -1,0 +1,44 @@
+indexpage:
+  title: Monitor and troubleshoot a StorageGRID system
+  lead: When your system is up and running, you should monitor its activities on a regular basis and troubleshoot and resolve any alerts. You might also want to configure an external syslog server, use SNMP monitoring, or collect additional data.
+  summary: When your system is up and running, you should monitor its activities on a regular basis and troubleshoot and resolve any alerts. You might also want to configure an external syslog server, use SNMP monitoring, or collect additional data.
+  keywords: monitor, troubleshoot
+  tiles:
+  - title: Monitor your system
+    links:
+    - title: Manage dashboard
+      url: ../monitor/viewing-dashboard.html
+    - title: View Nodes page
+      url: ../monitor/viewing-nodes-page.html
+    - title: Monitor system health
+      url:  ../monitor/monitoring-system-health.html
+    - title: Monitor storage capacity
+      url:  ../monitor/monitoring-storage-capacity.html
+  - title: Manage alerts and notifications
+    links:
+    - title: Manage alerts
+      url: ../monitor/managing-alerts.html
+    - title: Create custom alerts
+      url: ../monitor/creating-custom-alert-rules.html        
+    - title: Manage alert emails
+      url: ../monitor/email-alert-notifications.html
+    - title: Use SNMP monitoring
+      url: ../monitor/using-snmp-monitoring.html
+  - title: Use audit messages and other logs
+    links:
+    - title: Configure audit messages
+      url: ../monitor/configure-audit-messages.html
+    - title: Use external syslog server
+      url: ../monitor/considerations-for-external-syslog-server.html
+    - title: Review audit logs
+      url: ../audit/index.html
+    - title: Log files reference
+      url: ../monitor/logs-files-reference.html       
+  - title: Diagnose and troubleshoot
+    links:
+    - title: Review support metrics
+      url: ../monitor/reviewing-support-metrics.html
+    - title: Run diagnostics
+      url: ../monitor/running-diagnostics.html        
+    - title: Troubleshoot common issues
+      url: ../troubleshoot/index.html

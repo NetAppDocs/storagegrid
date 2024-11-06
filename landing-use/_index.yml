@@ -1,0 +1,60 @@
+indexpage:
+  title: Use StorageGRID tenants and clients
+  lead: After the initial configuration is complete, StorageGRID tenant accounts can create buckets and use S3 client applications to ingest, retrieve, and delete objects.
+  summary: After the initial configuration is complete, StorageGRID tenant accounts can create buckets and use S3 client applications to ingest, retrieve, and delete objects.
+  keywords: use tenant, manage tenant group, manage tenant user, manage s3 access key, manage s3 bucket, use tenant features, use s3 rest api
+  tiles:
+  - title: Learn about tenants
+    links:
+    - title: What is a tenant?
+      url: ../tenant/index.html
+    - title: Sign in to the Tenant Manager
+      url: ../tenant/signing-in-to-tenant-manager.html
+    - title: Monitor tenant accounts
+      url: ../tenant/understanding-tenant-manager-dashboard.html
+    - title: Use Tenant Management API
+      url: ../tenant/understanding-tenant-management-api.html
+  - title: Manage tenant groups and users
+    links:
+    - title: Use identity federation
+      url: ../tenant/using-identity-federation.html
+    - title: Create S3 groups
+      url: ../tenant/creating-groups-for-s3-tenant.html
+    - title: Tenant management permissions
+      url: ../tenant/tenant-management-permissions.html
+    - title: Manage local users
+      url: ../tenant/managing-local-users.html
+  - title: Manage S3 access keys and buckets
+    links:
+    - title: Manage S3 access keys
+      url: ../tenant/managing-s3-access-keys.html
+    - title: Create buckets
+      url: ../tenant/creating-s3-bucket.html
+    - title: View bucket details
+      url: ../tenant/viewing-s3-bucket-details.html
+    - title: Delete bucket
+      url: ../tenant/deleting-s3-bucket.html
+  - title: Use tenant features
+    links:
+    - title: Account clone
+      url: ../tenant/grid-federation-account-clone.html
+    - title: Cross-grid replication
+      url: ../tenant/grid-federation-manage-cross-grid-replication.html
+    - title: Platform services
+      url: ../tenant/considerations-for-platform-services.html
+    - title: S3 Object Lock
+      url:  ../tenant/using-s3-object-lock.html
+  - title: Use S3 REST API
+    links:
+    - title: "Quick reference: Supported S3 API requests"
+      url: ../s3/quick-reference-support-for-aws-apis.html
+    - title: Operations on buckets
+      url: ../s3/operations-on-buckets.html
+    - title: Operations on objects
+      url: ../s3/operations-on-objects.html
+    - title: Bucket and group access policies
+      url: ../s3/bucket-and-group-access-policies.html
+  - title: Use Swift REST API (end of life)
+    links:
+    - title: Use Swift
+      url: ../swift/index.html

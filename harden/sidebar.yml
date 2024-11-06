@@ -1,0 +1,16 @@
+section: harden
+title: System hardening
+entries:
+  - title: General considerations
+    pdf-filename: StorageGRID system hardening
+    url: "/harden/index.html"
+  - title: Hardening guidelines for upgrades
+    url: "/harden/hardening-guidelines-for-software-upgrades.html"
+  - title: Hardening guidelines for networks
+    url: "/harden/hardening-guidelines-for-storagegrid-networks.html"
+  - title: Hardening guidelines for nodes
+    url: "/harden/hardening-guidelines-for-storagegrid-nodes.html"
+  - title: Hardening guidelines for TLS and SSH
+    url: "/harden/hardening-guideline-for-server-certificates.html"
+  - title: Other hardening guidelines
+    url: "/harden/other-hardening-guidelines.html"

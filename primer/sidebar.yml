@@ -1,0 +1,46 @@
+section: primer
+title: Learn about StorageGRID
+entries:
+  - title: What is StorageGRID?
+    pdf-filename: StorageGRID grid primer
+    url: "/primer/index.html"
+  - title: Hybrid clouds with StorageGRID
+    url: "/primer/hybrid-clouds-with-storagegrid.html"
+  - title: Architecture and network topology
+    url: "/primer/storagegrid-architecture-and-network-topology.html"
+  - title: Grid nodes and services
+    entries: 
+      - title: Nodes and services
+        url: "/primer/nodes-and-services.html"     
+        pdf-filename: Nodes and services 
+      - title: What is an Admin Node
+        url: "/primer/what-admin-node-is.html"
+      - title: What is a Storage Node
+        url: "/primer/what-storage-node-is.html"
+      - title: What is a Gateway Node
+        url: "/primer/what-gateway-node-is.html"
+      - title: What is an Archive Node
+        url: "/primer/what-archive-node-is.html"
+  - title: How StorageGRID manages data  
+    entries:
+    - title: What is an object
+      pdf-filename: How StorageGRID manages data - overview
+      url: "/primer/how-storagegrid-manages-data.html"
+    - title: The life of an object
+      url: "/primer/life-of-object.html"
+    - title: Ingest data flow
+      url: "/primer/ingest-data-flow.html"
+    - title: Copy management
+      url: "/primer/copy-management.html"
+    - title: Retrieve data flow
+      url: "/primer/retrieve-data-flow.html"
+    - title: Delete data flow
+      url: "/primer/delete-data-flow.html"
+    - title: Information lifecycle management
+      url: "/primer/using-information-lifecycle-management.html"
+  - title: Explore StorageGRID
+    entries:
+    - title: Explore Grid Manager
+      url: "/primer/exploring-grid-manager.html"
+    - title: Explore Tenant Manager
+      url: "/primer/exploring-tenant-manager.html"
