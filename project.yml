@@ -6,7 +6,7 @@ settings:
     termcheck_enabled: false
   prod:
     pdf_enabled: true
-    harmony_enabled: false
+    harmony_enabled: true
     hide_language_selector: true
 sidebar:
   entries:
