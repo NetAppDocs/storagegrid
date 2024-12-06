@@ -90,7 +90,7 @@ NOTE: Local users can change their own passwords using the *Change password* opt
 .. Select *Save changes*.
 
 |.. Select the user's name to display the details.
-.. Select the edit icon image:../media/icon_edit_tm.png[Edit icon].
+.. Select the edit icon image:../media/icon_edit_tm.png["Edit icon"].
 .. Enter the new name.
 .. Select *Save changes*.
 

@@ -58,7 +58,7 @@ Use the High verification rate only when you suspect that a hardware or software
 . Go to *LDR* > *Verification* > *Configuration* > *Main*.
 . Under Background Verification, select *Verification Rate* > *High* or *Verification Rate* > *Adaptive*.
 +
-image::../media/background_verification_rate.png[setting Verification Rate]
+image::../media/background_verification_rate.png["setting Verification Rate"]
 +
 . Click *Apply Changes*.
 . Monitor the results of background verification for replicated objects.
@@ -174,7 +174,7 @@ This value represents the total number of missing copies of replicated objects a
 If the number of Missing object copies detected is greater than 100, there might be an issue with the Storage Node’s storage.
 
 +
-image::../media/oec_active.png[OEC active job]
+image::../media/oec_active.png["OEC active job"]
 
 .	After the job has completed, take any additional required actions:
 *	If Missing object copies detected is zero, then no issues were found. No action is required.
@@ -194,7 +194,7 @@ When StorageGRID has had time to achieve metadata consistency for the nodes and 
 ... For those jobs, scan the Consistency control column for strong-site or strong-global.
 .. Select the checkbox for each job you want to rerun, then select *Rerun*.
 +
-image::../media/oec_rerun.png[OEC rerun ]
+image::../media/oec_rerun.png["OEC rerun "]
 +
 .. In the Rerun jobs wizard, review the selected nodes and volumes and the consistency.
 .. When you are ready to rerun the jobs, select *Rerun*.

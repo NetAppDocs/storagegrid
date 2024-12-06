@@ -96,7 +96,7 @@ This issue can occur if updates to the Connection status are delayed, which migh
 
 . Select *Retry account clone*.
 +
-image::../media/grid-federation-retry-account-clone.png[screenshot showing an error message and the Retry account clone button]
+image::../media/grid-federation-retry-account-clone.png["screenshot showing an error message and the Retry account clone button"]
 If the error has been resolved, the tenant account will now be cloned to the other grid.
 
 
@@ -107,7 +107,7 @@ If the error has been resolved, the tenant account will now be cloned to the oth
 .Issue
 When link:../monitor/grid-federation-monitor-connections.html[viewing a grid federation connection] (or when link:grid-federation-manage-tenants.html[managing the permitted tenants] for a connection), you notice an error in the *Last error* column on the connection details page. For example:
 
-image::../media/grid-federation-last-error.png[Screenshot showing a message in the Last error column of a grid federation connection]
+image::../media/grid-federation-last-error.png["Screenshot showing a message in the Last error column of a grid federation connection"]
 
 .Details
 For each grid federation connection, the *Last error* column shows the most recent error to occur, if any, when a tenant's data was being replicated to the other grid. This column only shows the last cross-grid replication error to occur; previous errors that might have occurred will not be shown.

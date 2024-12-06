@@ -24,7 +24,7 @@ Optionally, you can change the destination of audit logs and send audit informat
 .Steps
 . Select *SUPPORT* > *Tools* > *Logs*.
 +
-image::../media/support_logs_select_nodes.png[screenshot of log collection UI]
+image::../media/support_logs_select_nodes.png["screenshot of log collection UI"]
 
 . Select the grid nodes for which you want to collect log files.
 +

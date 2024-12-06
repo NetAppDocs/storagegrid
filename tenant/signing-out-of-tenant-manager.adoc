@@ -15,7 +15,7 @@ When you are done working with the Tenant Manager, you must sign out to ensure t
 
 . Locate the username drop-down in the top-right corner of the user interface.
 +
-image::../media/tenant_user_sign_out.png[Sign out link]
+image::../media/tenant_user_sign_out.png["Sign out link"]
 
 . Select the username and then select *Sign out*.
 +

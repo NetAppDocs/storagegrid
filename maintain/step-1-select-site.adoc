@@ -25,7 +25,7 @@ To determine if a site can be decommissioned, start by accessing the Decommissio
 +
 Step 1 (Select Site) of the Decommission Site wizard appears. This step includes an alphabetic list of the sites in your StorageGRID system.
 +
-image::../media/decommission_site_step_select_site.png[Decommission Site Step 1 Select Site]
+image::../media/decommission_site_step_select_site.png["Decommission Site Step 1 Select Site"]
 
 . View the values in the *Used Storage Capacity* column to determine how much storage is currently being used for object data at each site.
 +
@@ -44,7 +44,7 @@ NOTE: If there is more than one reason a site can't be decommissioned, the most 
 |===
 | Decommission Possible reason| Description| Next step
 
-|Green check mark (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark])
+|Green check mark (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"])
 |You can decommission this site.
 |Go to <<decommission_possible,the next step>>.
 
@@ -57,14 +57,14 @@ NOTE: If there is more than one reason a site can't be decommissioned, the most 
 |None. You can't perform this procedure.
 
 |No. All nodes at this site are disconnected. Contact your NetApp account representative.
-|You can't perform a connected site decommission unless every node in the site is connected (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]).
+|You can't perform a connected site decommission unless every node in the site is connected (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]).
 |If you want to perform a disconnected site decommission, you must contact your NetApp account representative, who will review your requirements and enable the rest of the Decommission Site wizard.
 
 *IMPORTANT*: Never take online nodes offline so that you can remove a site. You will lose data.
 
 |===
 +
-The example shows a StorageGRID system with three sites. The green check mark (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]) for the Raleigh and Sunnyvale sites indicates that you can decommission those sites. However, you can't decommission the Vancouver site because it contains the primary Admin Node.
+The example shows a StorageGRID system with three sites. The green check mark (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]) for the Raleigh and Sunnyvale sites indicates that you can decommission those sites. However, you can't decommission the Vancouver site because it contains the primary Admin Node.
 
 [#decommission_possible, start=5]
 . If decommission is possible, select the radio button for the site.

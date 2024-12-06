@@ -58,7 +58,7 @@ The storage grade, _includes all storage grades_, includes all Storage Nodes at 
 +
 NOTE: You are warned if you add more than one entry with different storage grades for a site.
 +
-To remove an entry, select the delete icon image:../media/icon-x-to-remove.png[delete icon].
+To remove an entry, select the delete icon image:../media/icon-x-to-remove.png["delete icon"].
 
 . When you are satisfied with your selections, select *Save*.
 +

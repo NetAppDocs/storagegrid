@@ -23,7 +23,7 @@ You might need to decommission a node that is not currently connected to the gri
 
 .About this task
 
-You can identify disconnected nodes by looking for the blue Unknown icon image:../media/icon_alarm_blue_unknown.png[Icon Unknown] or the gray Administratively down icon image:../media/icon_alarm_gray_administratively_down.png[Icon Administratively down] in the *Health* column.
+You can identify disconnected nodes by looking for the blue Unknown icon image:../media/icon_alarm_blue_unknown.png["Icon Unknown"] or the gray Administratively down icon image:../media/icon_alarm_gray_administratively_down.png["Icon Administratively down"] in the *Health* column.
 
 Before decommissioning any disconnected node, note the following:
 

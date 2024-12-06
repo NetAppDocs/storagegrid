@@ -22,7 +22,7 @@ If you are accessing the Grid Manager or Tenant Manager using a domain name inst
 
 The following example shows a certificate error when the custom management interface certificate expired:
 
-image::../media/certificate_error.png[Example certificate error]
+image::../media/certificate_error.png["Example certificate error"]
 
 To ensure that operations aren't disrupted by a failed server certificate, the *Expiration of server certificate for Management Interface* alert is triggered when the server certificate is about to expire.
 

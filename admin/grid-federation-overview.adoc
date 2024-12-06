@@ -19,7 +19,7 @@ A grid federation connection is a bidirectional, trusted, and secure connection 
 
 The workflow diagram summarizes the steps for configuring a grid federation connection between two grids. 
 
-image::../media/grid-federation-workflow.png[Grid federation connection workflow]
+image::../media/grid-federation-workflow.png["Grid federation connection workflow"]
 
 == Considerations and requirements for grid federation connections
 
@@ -70,7 +70,7 @@ When you configure a grid federation connection, StorageGRID automatically gener
 * Server and client certificates to authenticate and encrypt information sent from grid 1 to grid 2
 * Server and client certificates to authenticate and encrypt information sent from grid 2 to grid 1
 
-image::../media/grid-federation-certificates.png[Grid federation certificates]
+image::../media/grid-federation-certificates.png["Grid federation certificates"]
 
 By default, the certificates are valid for 730 days (2 years). When these certificates near their expiration date, 
 the *Expiration of grid federation certificate* alert reminds you to rotate the certificates, which you can do using the Grid Manager. 

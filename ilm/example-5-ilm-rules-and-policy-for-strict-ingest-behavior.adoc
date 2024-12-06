@@ -53,7 +53,7 @@ This rule applies to objects that belong to the Paris tenant and that have the S
 | Strict. Always use this rule's placements on ingest. Ingest fails if it is not possible to store two copies of the object at the Paris data center.
 |===
 
-image::../media/ilm_rule_1_example_5_strict_ingest.png[ILM Rule 1 Example 5 Strict Ingest]
+image::../media/ilm_rule_1_example_5_strict_ingest.png["ILM Rule 1 Example 5 Strict Ingest"]
 
 == ILM rule 2 for example 5: Balanced ingest for other objects
 

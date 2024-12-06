@@ -36,19 +36,19 @@ NOTE: This procedure is only for configuring a StorageGRID proxy server for E-Se
 +
 The SANtricity System Manager home page appears.
 +
-image::../media/autosupport_santricity_home_page.png[AutoSupport SANtricity home page]
+image::../media/autosupport_santricity_home_page.png["AutoSupport SANtricity home page"]
 
 . Select *SUPPORT* > *Support center* > *AutoSupport*.
 +
 The AutoSupport operations page appears.
 +
-image::../media/autosupport_santricity_operations.png[AutoSupport SANtricity AutoSupport operations]
+image::../media/autosupport_santricity_operations.png["AutoSupport SANtricity AutoSupport operations"]
 
 . Select *Configure AutoSupport Delivery Method*.
 +
 The Configure AutoSupport Delivery Method page appears.
 +
-image::../media/autosupport_configure_delivery_santricity.png[AutoSupport configure AutoSupport delivery method SANtricity]
+image::../media/autosupport_configure_delivery_santricity.png["AutoSupport configure AutoSupport delivery method SANtricity"]
 
 . Select *HTTPS* for the delivery method.
 +

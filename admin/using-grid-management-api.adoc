@@ -34,7 +34,7 @@ CAUTION: Any API operations you perform using the API Documentation webpage are 
 .Steps
 . From the Grid Manager header, select the help icon and select *API documentation*.
 +
-image::../media/help_menu.png[Help Menu]
+image::../media/help_menu.png["Help Menu"]
 
 . To perform an operation with the private API, select *Go to private API documentation* on the StorageGRID Management API page.
 +
@@ -46,7 +46,7 @@ When you expand an API operation, you can see the available HTTP actions, such a
 
 . Select an HTTP action to see the request details, including the endpoint URL, a list of any required or optional parameters, an example of the request body (when required), and the possible responses.
 +
-image::../media/swagger_example.png[Example from Swagger UI]
+image::../media/swagger_example.png["Example from Swagger UI"]
 
 . Determine if the request requires additional parameters, such as a group or user ID. Then, obtain these values. You might need to issue a different API request first to get the information you need.
 . Determine if you need to modify the example request body. If so, you can select *Model* to learn the requirements for each field.

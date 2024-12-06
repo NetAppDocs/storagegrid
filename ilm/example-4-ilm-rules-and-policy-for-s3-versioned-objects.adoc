@@ -56,7 +56,7 @@ Because ILM rule 1 applies to all versions of the object, you must create anothe
 
 To create a rule that uses "Noncurrent time" as the reference time, select *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" in Step 1 (Enter details) of the Create an ILM rule wizard. When you select *Yes*, _Noncurrent time_ is automatically selected for the reference time, and you can't select a different reference time.
 
-image::../media/ilm-rule-apply-only-to-older-object-verions.png[Apply ILM rule only to older object versions (Noncurrent time)]
+image::../media/ilm-rule-apply-only-to-older-object-verions.png["Apply ILM rule only to older object versions (Noncurrent time)"]
 
 In this example, only two copies of the noncurrent versions are stored, and those copies will be stored for two years.
 

@@ -34,7 +34,7 @@ From this tab, you can:
 ** Select an existing connection to link:../admin/grid-federation-manage-connection.html[edit or test].
 
 +
-image::../media/grid-federation-connections-tab.png[Grid federation connections tab]
+image::../media/grid-federation-connections-tab.png["Grid federation connections tab"]
 
 . To see basic information for all tenant accounts on this grid that have the *Use grid federation connection* permission, select the *Permitted tenants* tab.
 +
@@ -45,7 +45,7 @@ From this tab, you can:
 ** Select a permitted tenant and link:../admin/grid-federation-manage-tenants.html[remove the permission].
 ** Check for cross-grid replication errors and clear the last error, if any. See link:../admin/grid-federation-troubleshoot.html[Troubleshoot grid federation errors].
 +
-image::../media/grid-federation-permitted-tenants-tab.png[Grid federation Permitted tenants tab]
+image::../media/grid-federation-permitted-tenants-tab.png["Grid federation Permitted tenants tab"]
 
 == [[view-specific-connection]]View a specific connection
 You can view details for a specific grid federation connection.
@@ -70,7 +70,7 @@ From this tab, you can:
 
 ** Check for cross-grid replication errors and clear the last error. See link:../admin/grid-federation-troubleshoot.html[Troubleshoot grid federation errors].
 +
-image::../media/grid-federation-permitted-tenants-tab-for-connection.png[grid-federation-permitted-tenants-tab-for-connection]
+image::../media/grid-federation-permitted-tenants-tab-for-connection.png["grid-federation-permitted-tenants-tab-for-connection"]
 
 . When viewing a specific connection, select the *Certificates* tab to view the system-generated server and client certificates for this connection.
 +
@@ -80,7 +80,7 @@ From this tab, you can:
 
 ** Select *Server* or *Client* to view or download the associated certificate or copy the certificate PEM.
 +
-image::../media/grid-federation-certificates-tab.png[grid-federation-certificates-tab]
+image::../media/grid-federation-certificates-tab.png["grid-federation-certificates-tab"]
 
 == Review cross-grid replication metrics
 

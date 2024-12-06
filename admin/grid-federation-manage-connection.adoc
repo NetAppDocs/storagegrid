@@ -191,7 +191,7 @@ In general, use the same number of days for the certificates on both sides of th
 
 You can remove a grid federation connection from either grid in the connection. As shown in the figure, you must perform prerequisite steps on both grids to confirm that the connection is not being used by any tenant on either grid.
 
-image::../media/grid-federation-remove-connection.png[steps to remove grid federation connection]
+image::../media/grid-federation-remove-connection.png["steps to remove grid federation connection"]
 
 Before removing a connection, note the following:
 

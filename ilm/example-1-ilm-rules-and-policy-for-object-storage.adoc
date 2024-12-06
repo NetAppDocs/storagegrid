@@ -38,7 +38,7 @@ The Rule analysis section of the Retention diagram states:
 * StorageGRID site-loss protection will apply for the duration of this rule.
 * Objects processed by this rule will not be deleted by ILM.
 
-image::../media/ilm_rule_two_copies_two_data_centers.png[ILM rule 1 for example 1: Copy object data to two sites]
+image::../media/ilm_rule_two_copies_two_data_centers.png["ILM rule 1 for example 1: Copy object data to two sites"]
 
 == ILM rule 2 for example 1: Erasure-coding profile with bucket matching
 
@@ -62,7 +62,7 @@ This example ILM rule uses an erasure-coding profile and an S3 bucket to determi
 | For objects in the S3 bucket named finance-records, create one erasure-coded copy in the pool specified by the erasure-coding profile. Keep this copy forever.
 |===
 
-image::../media/ilm_rule_ec_for_s3_bucket_finance_records.png[ILM rule 2 for example 1: erasure-coding profile with bucket matching]
+image::../media/ilm_rule_ec_for_s3_bucket_finance_records.png["ILM rule 2 for example 1: erasure-coding profile with bucket matching"]
 
 == ILM policy for example 1
 
@@ -73,7 +73,7 @@ A typical ILM policy for a multi-site grid might include ILM rules such as the f
 * At ingest, store all objects belonging to the S3 bucket named `finance-records` in a storage pool that contains three sites. Use 6+3 erasure coding.
 * If an object does not match the first ILM rule, use the policy's default ILM rule, Two Copies Two Data Centers, to store one copy of that object in Site 1, and one copy in Site 2.
 +
-image::../media/policy_1_configured_policy.png[ILM policy for example 1]
+image::../media/policy_1_configured_policy.png["ILM policy for example 1"]
 
 .Related information
 

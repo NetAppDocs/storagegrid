@@ -15,14 +15,14 @@ If an error occurs when StorageGRID attempts to communicate with a platform serv
 
 If any platform services endpoint errors have occurred within the past 7 days, the Tenant Manager dashboard displays an alert message. You can go the Platform services endpoints page to see more details about the error.
 
-image::../media/tenant_dashboard_endpoint_error.png[endpoint error message on the dashboard]
+image::../media/tenant_dashboard_endpoint_error.png["endpoint error message on the dashboard"]
 
 The same error that appears on the dashboard also appears at the top of the Platform services endpoints page. To view a more detailed error message:
 
 .Steps
 
 . From the list of endpoints, select the endpoint that has the error.
-. On the endpoint details page, select *Connection*. This tab displays only the most recent error for an endpoint and indicates how long ago the error occurred. Errors that include the red X icon image:../media/icon_alert_red_critical.png[Red X Icon] occurred within the past 7 days.
+. On the endpoint details page, select *Connection*. This tab displays only the most recent error for an endpoint and indicates how long ago the error occurred. Errors that include the red X icon image:../media/icon_alert_red_critical.png["Red X Icon"] occurred within the past 7 days.
 
 == Check if error is still current
 

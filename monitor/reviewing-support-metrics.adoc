@@ -25,7 +25,7 @@ NOTE: The tools available on the Metrics page are intended for use by technical 
 +
 An example of the Metrics page is shown here:
 +
-image::../media/metrics_page.png[Metrics Page]
+image::../media/metrics_page.png["Metrics Page"]
 
 . To query the current values of StorageGRID metrics and to view graphs of the values over time, click the link in the Prometheus section.
 +
@@ -37,4 +37,4 @@ NOTE: Metrics that include _private_ in their names are intended for internal us
 +
 The Grafana interface for the link you selected appears.
 +
-image::../media/metrics_page_grafana.png[Metrics Page Grafana]
+image::../media/metrics_page_grafana.png["Metrics Page Grafana"]

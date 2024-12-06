@@ -32,7 +32,7 @@ The Decommission Nodes page appears. From this page, you can:
 +
 In this example, the Decommission Possible column indicates that you can decommission the Gateway Node and one of the four Storage Nodes.
 +
-image::../media/decommission_nodes_page_all_connected.png[Decommission Nodes page]
+image::../media/decommission_nodes_page_all_connected.png["Decommission Nodes page"]
 
 . Review the *Decommission Possible* column for each node you want to decommission.
 +
@@ -55,8 +55,8 @@ If a grid node can be decommissioned, this column includes a green check mark, a
 
 The *Health* column includes one of these icons for grid nodes that are disconnected:
 
- ** image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon] (gray): Administratively Down
- ** image:../media/icon_alarm_blue_unknown.png[blue question mark icon] (blue): Unknown
+ ** image:../media/icon_alarm_gray_administratively_down.png["gray questionmark icon"] (gray): Administratively Down
+ ** image:../media/icon_alarm_blue_unknown.png["blue question mark icon"] (blue): Unknown
 
 | You must bring all disconnected nodes back online or link:decommissioning-disconnected-grid-nodes.html[decommission all disconnected nodes] before you can remove a connected node.
 

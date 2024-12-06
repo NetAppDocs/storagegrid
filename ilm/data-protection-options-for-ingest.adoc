@@ -17,7 +17,7 @@ Depending on your choice, StorageGRID makes interim copies and queues the object
 
 The flowchart shows what happens when objects are matched by an ILM rule that uses each of the three ingest options.
 
-image::../media/ingest_object_lifecycle.png[Diagram showing how object ingest occurs for each ingest option]
+image::../media/ingest_object_lifecycle.png["Diagram showing how object ingest occurs for each ingest option"]
 
 == Dual commit
 

@@ -24,7 +24,7 @@ When the site decommission procedure is complete:
 
 You can use the site decommission procedure to remove a site in which all nodes are connected to StorageGRID (referred to as a connected site decommission) or to remove a site in which all nodes are disconnected from StorageGRID (referred to as a disconnected site decommission). Before you begin, you must understand the differences between these procedures.
 
-NOTE: If a site contains a mixture of connected (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]) and disconnected nodes (image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down] or image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown]), you must bring all offline nodes back online.
+NOTE: If a site contains a mixture of connected (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]) and disconnected nodes (image:../media/icon_alarm_gray_administratively_down.png["Icon Alarm Gray Administratively Down"] or image:../media/icon_alarm_blue_unknown.png["Icon Alarm Blue Unknown"]), you must bring all offline nodes back online.
 
 * A connected site decommission allows you to remove an operational site from the StorageGRID system. For example, you can perform a connected site decommission to remove a site that is functional but no longer needed.
 * When StorageGRID removes a connected site, it uses ILM to manage the object data at the site. Before you can start a connected site decommission, you must remove the site from all ILM rules and activate a new ILM policy. The ILM processes to migrate object data and the internal processes to remove a site can occur at the same time, but the best practice is to allow the ILM steps to complete before you start the actual decommission procedure.
@@ -40,8 +40,8 @@ Before removing a connected or disconnected site, you must be aware of the follo
 
 * You can't decommission a site that includes the primary Admin Node.
 * You can't decommission a site if any of the nodes have an interface that belongs to a high availability (HA) group. You must either edit the HA group to remove the node's interface or remove the entire HA group.
-* You can't decommission a site if it contains a mixture of connected (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]) and disconnected (image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown] or image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down]) nodes.
-* You can't decommission a site if any node at any other site is disconnected (image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown] or image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down]).
+* You can't decommission a site if it contains a mixture of connected (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]) and disconnected (image:../media/icon_alarm_blue_unknown.png["Icon Alarm Blue Unknown"] or image:../media/icon_alarm_gray_administratively_down.png["Icon Alarm Gray Administratively Down"]) nodes.
+* You can't decommission a site if any node at any other site is disconnected (image:../media/icon_alarm_blue_unknown.png["Icon Alarm Blue Unknown"] or image:../media/icon_alarm_gray_administratively_down.png["Icon Alarm Gray Administratively Down"]).
 * You can't start the site decommission procedure if an ec-node-repair operation is in progress. See link:checking-data-repair-jobs.html[Check data repair jobs] to track repairs of erasure-coded data.
 
 * While the site decommission procedure is running:
@@ -85,7 +85,7 @@ CAUTION: Never create a single-copy ILM rule to accommodate the removal of a sit
 
 Before StorageGRID can remove a connected site, you must ensure the following:
 
-* All nodes in your StorageGRID system must have a Connection State of *Connected* (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]); however, the nodes can have active alerts.
+* All nodes in your StorageGRID system must have a Connection State of *Connected* (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]); however, the nodes can have active alerts.
 +
 NOTE: You can complete Steps 1-4 of the Decommission Site wizard if one or more nodes are disconnected. However, you can't complete Step 5 of the wizard, which starts the decommission process, unless all nodes are connected.
 
@@ -110,9 +110,9 @@ CAUTION: You should not attempt a disconnected site decommission if you believe 
 link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 * All nodes at the site must have a Connection State of one of the following:
- ** *Unknown* (image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown]): For an unknown reason, a node is disconnected or services on the node are unexpectedly down. For example, a service on the node might be stopped, or the node might have lost its network connection because of a power failure or unexpected outage.
- ** *Administratively Down* (image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down]): The node is not connected to the grid for an expected reason. For example, the node or services on the node have been gracefully shut down.
-* All nodes at all other sites must have a Connection State of *Connected* (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]); however, these other nodes can have active alerts.
+ ** *Unknown* (image:../media/icon_alarm_blue_unknown.png["Icon Alarm Blue Unknown"]): For an unknown reason, a node is disconnected or services on the node are unexpectedly down. For example, a service on the node might be stopped, or the node might have lost its network connection because of a power failure or unexpected outage.
+ ** *Administratively Down* (image:../media/icon_alarm_gray_administratively_down.png["Icon Alarm Gray Administratively Down"]): The node is not connected to the grid for an expected reason. For example, the node or services on the node have been gracefully shut down.
+* All nodes at all other sites must have a Connection State of *Connected* (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]); however, these other nodes can have active alerts.
 * You must understand that you will no longer be able to use StorageGRID to view or retrieve any object data that was stored at the site. When StorageGRID performs this procedure, it makes no attempt to preserve any data from the disconnected site.
 +
 NOTE: If your ILM rules and policy were designed to protect against the loss of a single site, copies of your objects still exist on the remaining sites.

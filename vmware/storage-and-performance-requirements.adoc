@@ -79,7 +79,7 @@ NOTE: An appliance Storage Node can have up to 48 storage volumes.
 
 As shown in the figure, StorageGRID reserves space for object metadata on storage volume 0 of each Storage Node. Any remaining space on storage volume 0 and any other storage volumes in the Storage Node are used exclusively for object data.
 
-image::../media/metadata_space_storage_node.png[Metadata Space Storage Node]
+image::../media/metadata_space_storage_node.png["Metadata Space Storage Node"]
 
 To provide redundancy and to protect object metadata from loss, StorageGRID stores three copies of the metadata for all objects in the system at each site. The three copies of object metadata are evenly distributed across all Storage Nodes at each site.
 

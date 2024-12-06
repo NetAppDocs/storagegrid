@@ -332,7 +332,7 @@ You can view details for existing load balancer endpoints, including the certifi
 
 * To view all details about a specific endpoint, including certificate metadata, select the endpoint's name in the table. The information shown varies depending on the endpoint type and how it's configured.
 +
-image::../media/load_balancer_endpoint_details.png[Load balancer endpoint details]
+image::../media/load_balancer_endpoint_details.png["Load balancer endpoint details"]
 
 * To edit an endpoint, use the *Actions* menu on the Load balancer endpoints page.
 +
@@ -352,7 +352,7 @@ TIP: After editing an endpoint, you might need to wait up to 15 minutes for your
 .. Select *Save*.
 
 | .. Select the endpoint name to display the details.
-.. Select the edit icon image:../media/icon_edit_tm.png[Edit icon].
+.. Select the edit icon image:../media/icon_edit_tm.png["Edit icon"].
 .. Enter the new name.
 .. Select *Save*.
 
