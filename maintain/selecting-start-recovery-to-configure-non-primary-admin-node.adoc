@@ -28,7 +28,7 @@ Nodes appear in the list after they fail, but you can't select a node until it h
 . Enter the *Provisioning Passphrase*.
 . Click *Start Recovery*.
 +
-image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance > Recovery page]
+image::../media/4b_select_recovery_node.png["screenshot showing the Maintenance > Recovery page"]
 
 . Monitor the progress of the recovery in the Recovering Grid Node table.
 +

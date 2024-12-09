@@ -26,7 +26,7 @@ image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hos
 +
 The Alert Rules page appears.
 +
-image::../media/alert_rules_page.png[Alert Rules Page]
+image::../media/alert_rules_page.png["Alert Rules Page"]
 
 . Review the information in the alert rules table:
 +
@@ -39,9 +39,9 @@ image::../media/alert_rules_page.png[Alert Rules Page]
 | Conditions
 | The Prometheus expressions that determine when this alert is triggered. An alert can be triggered at one or more of the following severity levels, but a condition for each severity is not required.
 
- ** *Critical* image:../media/icon_alert_red_critical.png[Icon Alert Red Critical]: An abnormal condition exists that has stopped the normal operations of a StorageGRID node or service. You must address the underlying issue immediately. Service disruption and loss of data might result if the issue is not resolved.
- ** *Major* image:../media/icon_alert_orange_major.png[Icon Alert Orange Major]: An abnormal condition exists that is either affecting current operations or approaching the threshold for a critical alert. You should investigate major alerts and address any underlying issues to ensure that the abnormal condition does not stop the normal operation of a StorageGRID node or service.
- ** *Minor* image:../media/icon_alert_yellow_minor.png[Icon Alert Yellow Minor]: The system is operating normally, but an abnormal condition exists that could affect the system's ability to operate if it continues. You should monitor and resolve minor alerts that don't clear on their own to ensure they don't result in a more serious problem.
+ ** *Critical* image:../media/icon_alert_red_critical.png["Icon Alert Red Critical"]: An abnormal condition exists that has stopped the normal operations of a StorageGRID node or service. You must address the underlying issue immediately. Service disruption and loss of data might result if the issue is not resolved.
+ ** *Major* image:../media/icon_alert_orange_major.png["Icon Alert Orange Major"]: An abnormal condition exists that is either affecting current operations or approaching the threshold for a critical alert. You should investigate major alerts and address any underlying issues to ensure that the abnormal condition does not stop the normal operation of a StorageGRID node or service.
+ ** *Minor* image:../media/icon_alert_yellow_minor.png["Icon Alert Yellow Minor"]: The system is operating normally, but an abnormal condition exists that could affect the system's ability to operate if it continues. You should monitor and resolve minor alerts that don't clear on their own to ensure they don't result in a more serious problem.
 
 | Type
 | The type of alert rule:

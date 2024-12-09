@@ -86,7 +86,7 @@ After a few minutes:
 * *(Deleting objects: read-only)* appears next to the bucket's name on the Buckets page.
 
 +
-image::../media/delete-bucket-objects-in-progress.png[screenshot showing bucket objects being deleted]
+image::../media/delete-bucket-objects-in-progress.png["screenshot showing bucket objects being deleted"]
 
 . As required while the operation is running, select *Stop deleting objects* to halt the process. Then, optionally, select *Delete objects in bucket* to resume the process.
 +
@@ -96,7 +96,7 @@ When you select *Stop deleting objects*, the bucket is returned to write mode; h
 + 
 When the bucket is empty, the status banner is updated, but the bucket remains read only.
 +
-image::../media/delete-bucket-objects-complete.png[screenshot showing all bucket objects deleted]
+image::../media/delete-bucket-objects-complete.png["screenshot showing all bucket objects deleted"]
 
 . Do one of the following:
 

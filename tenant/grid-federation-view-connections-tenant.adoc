@@ -61,7 +61,7 @@ NOTE: This column only shows the last cross-grid replication error to occur; pre
 +
 For example, this error indicates that the destination bucket for cross-grid replication was in an invalid state, possibly because versioning was suspended or S3 Object Lock was enabled.
 +
-image::../media/grid-federation-cgr-object-example-last-error.png[grid-federation-cgr-object-example-last-error]
+image::../media/grid-federation-cgr-object-example-last-error.png["grid-federation-cgr-object-example-last-error"]
 
 . Perform any recommended actions. For example, if versioning was suspended on the destination bucket for cross-grid replication, reenable versioning for that bucket.
 

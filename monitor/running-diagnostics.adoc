@@ -22,9 +22,9 @@ When troubleshooting an issue, you can work with technical support to run diagno
 .About this task
 The Diagnostics page performs a set of diagnostic checks on the current state of the grid. Each diagnostic check can have one of three statuses:
 
-* image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark] *Normal*: All values are within the normal range.
-* image:../media/icon_alert_yellow_minor.png[Icon Alert Yellow Minor] *Attention*: One or more of the values are outside of the normal range.
-* image:../media/icon_alert_red_critical.png[Icon Alert Red Critical] *Caution*: One or more of the values are significantly outside of the normal range.
+* image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"] *Normal*: All values are within the normal range.
+* image:../media/icon_alert_yellow_minor.png["Icon Alert Yellow Minor"] *Attention*: One or more of the values are outside of the normal range.
+* image:../media/icon_alert_red_critical.png["Icon Alert Red Critical"] *Caution*: One or more of the values are significantly outside of the normal range.
 
 Diagnostic statuses are independent of current alerts and might not indicate operational issues with the grid. For example, a diagnostic check might show Caution status even if no alert has been triggered.
 
@@ -35,7 +35,7 @@ The Diagnostics page appears and lists the results for each diagnostic check.  T
 +
 In this example, all diagnostics have a Normal status.
 +
-image::../media/support_diagnostics_page.png[Support Diagnostics Page]
+image::../media/support_diagnostics_page.png["Support Diagnostics Page"]
 
 . To learn more about a specific diagnostic, click anywhere in the row.
 +
@@ -51,7 +51,7 @@ NOTE: You can't change these thresholds.
 In this example, the current CPU utilization for every node in a StorageGRID system is shown. All node values are below the Attention and Caution thresholds, so the overall status of the diagnostic is Normal.
 
 +
-image::../media/support_diagnostics_cpu_utilization.png[Support Diagnostics CPU Utilization]
+image::../media/support_diagnostics_cpu_utilization.png["Support Diagnostics CPU Utilization"]
 
 . *Optional*: To see Grafana charts related to this diagnostic, click the *Grafana dashboard* link.
 +
@@ -61,10 +61,10 @@ The related Grafana dashboard appears. In this example, the Node dashboard appea
 +
 NOTE: You can also access the pre-constructed Grafana dashboards from the Grafana section of the *SUPPORT* > *Tools* > *Metrics* page.
 +
-image::../media/grafana_dashboard_nodes.png[Grafana Dashboard Nodes]
+image::../media/grafana_dashboard_nodes.png["Grafana Dashboard Nodes"]
 
 . *Optional*: To see a chart of the Prometheus expression over time, click *View in Prometheus*.
 +
 A Prometheus graph of the expression used in the diagnostic appears.
 +
-image::../media/support_diagnostics_prometheus_png.png[Support Diagnostics Prometheus Page]
+image::../media/support_diagnostics_prometheus_png.png["Support Diagnostics Prometheus Page"]

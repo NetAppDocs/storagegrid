@@ -45,4 +45,4 @@ The following figure shows how StorageGRID redistributes object metadata when yo
 
 The right side of the figure shows how the existing metadata is redistributed after two Storage Nodes are added to the site. The amount of metadata on each node has decreased, the *Low metadata storage* alert is no longer triggered, and the space available for metadata has increased.
 
-image::../media/metadata_space_after_expansion.png[Diagram of metadata redistributed after two Storage Nodes added]
+image::../media/metadata_space_after_expansion.png["Diagram of metadata redistributed after two Storage Nodes added"]

@@ -21,7 +21,7 @@ Each placement instruction can have multiple lines if you want to create differe
 
 In this example, the ILM rule stores one replicated copy in Site 1 and one replicated copy in Site 2 for the first year. After one year, a 2+1 erasure-coded copy is made and saved at only one site.
 
-image::../media/ilm_create_ilm_rule_wizard_2.png[Create ILM Rule Wizard Step 2]
+image::../media/ilm_create_ilm_rule_wizard_2.png["Create ILM Rule Wizard Step 2"]
 
 .Steps
 
@@ -129,6 +129,6 @@ The Rule analysis section of the Retention diagram states:
 +
 Refer to link:using-multiple-storage-pools-for-cross-site-replication.html[Enable site-loss protection.]
 +
-image::../media/ilm_rule_retention_diagram.png[ILM Rule Retention Diagram]
+image::../media/ilm_rule_retention_diagram.png["ILM Rule Retention Diagram"]
 
 . Select *Continue*. link:create-ilm-rule-select-ingest-behavior.html[Step 3 (Select ingest behavior)] of the Create an ILM rule wizard appears.

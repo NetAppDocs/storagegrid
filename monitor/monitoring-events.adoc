@@ -56,7 +56,7 @@ Consider creating custom events to monitor recurring problems. The following con
 . Click *Edit* image:../media/icon_nms_edit.gif[pencil icon] (or *Insert* image:../media/icon_nms_insert.gif[plus icon] if this is not the first event).
 . Enter a custom event string, for example, shutdown
 +
-image::../media/custom_events.png[screenshot showing where to enter custom event string]
+image::../media/custom_events.png["screenshot showing where to enter custom event string"]
 
 . Select *Apply Changes*.
 . Select *SUPPORT* > *Tools* > *Grid topology*.
@@ -65,7 +65,7 @@ image::../media/custom_events.png[screenshot showing where to enter custom event
 +
 If the count increases, a custom event you are monitoring is being triggered on that grid node.
 +
-image::../media/custom_events_count.png[SSM > Events > Overview page]
+image::../media/custom_events_count.png["SSM > Events > Overview page"]
 
 == Reset the count of custom events to zero
 

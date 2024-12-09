@@ -174,7 +174,7 @@ NOTE: Some StorageGRID recovery procedures use Reaper to handle Cassandra repair
 +
 The Progress bar and the Stage column on the Recovery page provide a high-level status of the `sn-recovery-postinstall.sh` script.
 +
-image::../media/recovering_cassandra.png[screenshot showing recovery progress in Grid Management Interface]
+image::../media/recovering_cassandra.png["screenshot showing recovery progress in Grid Management Interface"]
 
 . After the `sn-recovery-postinstall.sh` script has started services on the node, you can restore object data to any storage volumes that were formatted by the script. 
 +

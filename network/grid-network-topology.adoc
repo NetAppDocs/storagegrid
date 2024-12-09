@@ -21,6 +21,6 @@ In this example, all traffic shares the same network, including traffic related 
 
 NOTE: This topology is appropriate for single-site deployments that aren't externally available, proof-of-concept or test deployments, or when a third-party load balancer acts as the client access boundary. When possible, the Grid Network should be used exclusively for internal traffic. Both the Admin Network and the Client Network have additional firewall restrictions that block external traffic to internal services. Using the Grid Network for external client traffic is supported, but this use offers fewer layers of protection.
 
-image::../media/grid_network.png[Grid Network]
+image::../media/grid_network.png["Grid Network"]
 
-image::../media/grid_network_ips.png[Grid Network IPs]
+image::../media/grid_network_ips.png["Grid Network IPs"]

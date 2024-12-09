@@ -22,7 +22,7 @@ NOTE: When StorageGRID decommissions the site, it will automatically deactivate 
 . Edit or delete each unused rule:
 ** To edit a rule, go the ILM rules page and update all placements that use an erasure-coding profile or storage pool that refers to the site. Then, return to *Step 4 (Remove ILM References)*.
 
-** To delete a rule, select the trash can icon image:../media/icon_trash_can.png[Icon Trash Can] and select *OK*.
+** To delete a rule, select the trash can icon image:../media/icon_trash_can.png["Icon Trash Can"] and select *OK*.
 +
 NOTE: You must delete the *Make 2 Copies* rule before you can decommission a site.
 . Confirm that no unused ILM rules refer to the site, and the *Next* button is enabled.

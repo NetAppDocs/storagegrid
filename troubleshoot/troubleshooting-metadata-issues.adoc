@@ -19,7 +19,7 @@ Follow the recommended actions for each metadata-related alert that is triggered
 
 StorageGRID reserves a certain amount of space on volume 0 of each Storage Node for object metadata. This space, known as the _actual reserved space_, is subdivided into the space allowed for object metadata (the allowed metadata space) and the space required for essential database operations, such as compaction and repair. The allowed metadata space governs overall object capacity.
 
-image::../media/metadata_allowed_space_volume_0.png[Metadata Allowed Space Volume 0]
+image::../media/metadata_allowed_space_volume_0.png["Metadata Allowed Space Volume 0"]
 
 If object metadata consumes more than 100% of the space allowed for metadata, database operations can't run efficiently and errors will occur.
 

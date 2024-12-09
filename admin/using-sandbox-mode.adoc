@@ -50,7 +50,7 @@ Sandbox mode makes it easy to perform this back-and-forth configuration and to t
 +
 The Single Sign-on page appears, with the *Disabled* option selected.
 +
-image::../media/sso_status_disabled.png[Single Sign-on page with SSO Status disabled]
+image::../media/sso_status_disabled.png["Single Sign-on page with SSO Status disabled"]
 +
 NOTE: If the SSO Status options don't appear, confirm you have configured the identity provider as the federated identity source. See link:requirements-for-sso.html[Requirements and considerations for single sign-on].
 
@@ -94,7 +94,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 
 * If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. This generates a table that shows the relying party identifier for each Admin Node in your system, based on the node's hostname.
 +
-image::../media/sso_status_sandbox_mode_active_directory.png[Single Sign-on, Sandbox mode enabled, Relying party identifiers shown for several Admin Nodes]
+image::../media/sso_status_sandbox_mode_active_directory.png["Single Sign-on, Sandbox mode enabled, Relying party identifiers shown for several Admin Nodes"]
 +
 NOTE: You must create a relying party trust for each Admin Node in your StorageGRID system. Having a relying party trust for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 .. Select *Save*.
@@ -125,7 +125,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 
 * If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. This generates a table that shows an enterprise application name for each Admin Node in your system, based on the node's hostname.
 +
-image::../media/sso_status_sandbox_mode_azure.png[Single Sign-on, Sandbox mode enabled, Relying party identifiers shown for several Admin Nodes]
+image::../media/sso_status_sandbox_mode_azure.png["Single Sign-on, Sandbox mode enabled, Relying party identifiers shown for several Admin Nodes"]
 +
 NOTE: You must create an enterprise application for each Admin Node in your StorageGRID system. Having an enterprise application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -161,7 +161,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 
 * If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. This generates a table that shows the SP connection ID for each Admin Node in your system, based on the node's hostname.
 +
-image::../media/sso_status_sandbox_mode_ping_federated.png[Single Sign-on, Sandbox mode enabled, Relying party identifiers shown for several Admin Nodes]
+image::../media/sso_status_sandbox_mode_ping_federated.png["Single Sign-on, Sandbox mode enabled, Relying party identifiers shown for several Admin Nodes"]
 +
 NOTE: You must create an SP connection for each Admin Node in your StorageGRID system. Having an SP connection for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -313,7 +313,7 @@ image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logo
 +
 Select and test one link at a time.
 +
-image::../media/sso_sandbox_mode_enabled_ping.png[Single Sign-on, Sandbox mode notification for Ping Federate]
+image::../media/sso_sandbox_mode_enabled_ping.png["Single Sign-on, Sandbox mode notification for Ping Federate"]
 
 .  Enter the credentials of a federated user. 
 

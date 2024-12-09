@@ -27,7 +27,7 @@ You can complete the FabricPool setup wizard when you start using the StorageGRI
 
 . If the *FabricPool and S3 setup wizard* banner appears on the dashboard, select the link in the banner. If the banner no longer appears, select the help icon from the header bar in the Grid Manager and select *FabricPool and S3 setup wizard*.
 +
-image::../media/help_menu.png[help menu]
+image::../media/help_menu.png["help menu"]
 . In the FabricPool section of the FabricPool and S3 setup wizard page, select *Configure now*.
 +
 *Step 1 of 9: Configure HA group* appears.
@@ -324,7 +324,7 @@ During this step, you download a file that you can use to enter values into ONTA
 
 .Steps
 
-. Optionally, select the copy icon (image:../media/icon_tenant_copy_url.png[copy icon]) to copy both the access key ID and secret access key to the clipboard.
+. Optionally, select the copy icon (image:../media/icon_tenant_copy_url.png["copy icon"]) to copy both the access key ID and secret access key to the clipboard.
 +
 These values are included in the download file, but you might want to save them separately. 
 

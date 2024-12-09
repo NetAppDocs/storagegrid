@@ -15,7 +15,7 @@ Cross-grid replication is the automatic replication of objects between selected 
 
 The workflow diagram summarize the steps for configuring cross-grid replication between buckets on two grids. 
 
-image::../media/grid-federation-cgr-workflow.png[Cross-grid replication workflow]
+image::../media/grid-federation-cgr-workflow.png["Cross-grid replication workflow"]
 
 == Requirements for cross-grid replication
 
@@ -40,12 +40,12 @@ Cross-grid replication can be configured to occur in one direction or in both di
 
 If you enable cross-grid replication for a bucket on only one grid, objects added to that bucket (the source bucket) are replicated to the corresponding bucket on the other grid (the destination bucket). However, objects added to the destination bucket aren't replicated back to the source. In the figure, cross-grid replication is enabled for `my-bucket` from Grid 1 to Grid 2, but it is not enabled in the other direction. 
 
-image::../media/grid-federation-cross-grid-replication-one-direction.png[image showing grid federation connection in one direction]
+image::../media/grid-federation-cross-grid-replication-one-direction.png["image showing grid federation connection in one direction"]
 
 === Replication in both directions
 If you enable cross-grid replication for the same bucket on both grids, objects added to either bucket are replicated to the other grid. In the figure, cross-grid replication is enabled for `my-bucket` in both directions. 
 
-image::../media/grid-federation-cross-grid-replication.png[image showing replication in one direction compared to replication in both directions]
+image::../media/grid-federation-cross-grid-replication.png["image showing replication in one direction compared to replication in both directions"]
 
 === What happens when objects are ingested?
 
@@ -106,7 +106,7 @@ When an S3 client deletes an object from a bucket that has cross-grid replicatio
 
 In the figure, *Replicate delete markers* was set to *Yes* when link:../tenant/grid-federation-manage-cross-grid-replication.html[cross-grid replication was enabled]. Delete requests for the source bucket that include a version ID will not delete objects from the destination bucket. Delete requests for the source bucket that don't include a version ID will appear to delete objects in the destination bucket.
 
-image::../media/grid-federation-cross-grid-replication-delete.png[image showing replicate client delete on both grids]
+image::../media/grid-federation-cross-grid-replication-delete.png["image showing replicate client delete on both grids"]
 
 NOTE: If you want to keep object deletions synchronized between grids, create corresponding link:../s3/create-s3-lifecycle-configuration.html[S3 lifecycle configurations] for the buckets on both grids. 
 
