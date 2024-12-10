@@ -52,6 +52,4 @@ If you want to retry the recovery after resetting the procedure, you must restor
 
 . When the Storage Node reaches the "Waiting for Manual Steps" stage, go to link:remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)].
 +
-image::../media/recovery_reset_button.gif["screenshot showing the stage "waiting for manual steps"]
-
-
+image::../media/recovery_reset_button.gif["screenshot showing the stage waiting for manual steps"]

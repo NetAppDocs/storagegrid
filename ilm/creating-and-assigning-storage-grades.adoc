@@ -29,14 +29,14 @@ NOTE: Don't create more storage grades than necessary. For example, don't create
 .Steps
 . Select *ILM* > *Storage grades*.
 . Define custom storage grades:
-.. For each custom storage grade you want to add, select *Insert* image:../media/icon_nms_insert.gif["insert icon"]o add a row.
+.. For each custom storage grade you want to add, select *Insert* image:../media/icon_nms_insert.gif["insert icon"] to add a row.
  
 .. Enter a descriptive label.
 +
 image::../media/editing_storage_grades.gif["Storage Grades page"]
 
 .. Select *Apply Changes*.
-.. Optionally, if you need to  modify a saved label, select *Edit* image:../media/icon_nms_edit.gif["edit icon"]nd select *Apply Changes*.
+.. Optionally, if you need to  modify a saved label, select *Edit* image:../media/icon_nms_edit.gif["edit icon"] and select *Apply Changes*.
 +
 NOTE: You can't delete storage grades.
 
