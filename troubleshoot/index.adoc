@@ -293,7 +293,7 @@ If you can't resolve the problem on your own, contact technical support. Before 
 
 [cols="1a,2a,4a" options="header"]
 |===
-| image:../media/feature_checkmark.gif[checkmark]
+| image:../media/feature_checkmark.gif["checkmark"]
 | Item
 | Notes
 

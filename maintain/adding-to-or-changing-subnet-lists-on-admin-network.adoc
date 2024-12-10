@@ -62,7 +62,7 @@ TIP: You can reduce the amount of typing required by using "up arrow" to recall 
 
 The example input below shows adding subnets to the Admin Network Subnet List:
 
-image::../media/change_ip_tool_aesl_sample_input.gif[change ip tool aesl example]
+image::../media/change_ip_tool_aesl_sample_input.gif["change ip tool aesl example"]
 --
 . When ready, enter *q* to go back to the main menu screen. Your changes are held until cleared or applied.
 +

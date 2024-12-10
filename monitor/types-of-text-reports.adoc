@@ -19,7 +19,7 @@ A raw text report displays details about the selected attribute:
 * Sample Time: Local date and time that an attribute value was sampled or changed at the source.
 * Value: Attribute value at sample time.
 
-image::../media/raw_text_report.gif[screenshot showing raw text report]
+image::../media/raw_text_report.gif["screenshot showing raw text report"]
 
 == Aggregate text reports
 
@@ -32,7 +32,7 @@ Each entry displays the following information:
 * Minimum Value: The minimum value over the aggregated time period.
 * Maximum Value: The maximum value over the aggregated time period.
 
-image::../media/aggregate_text_report.gif[screenshot showing aggregate text report]
+image::../media/aggregate_text_report.gif["screenshot showing aggregate text report"]
 
 == Generate text reports
 
@@ -79,13 +79,13 @@ The copied data can then be saved into a new document (for example, a spreadshee
 .Steps
 . Select *SUPPORT* > *Tools* > *Grid topology*.
 . Create a text report.
-. Click *Export*image:../media/icon_export.gif[export icon].
+. Click *Export*image:../media/icon_export.gif["export icon"].
 +
-image::../media/export_text_report.gif[screenshot described by surrounding text]
+image::../media/export_text_report.gif["screenshot described by surrounding text"]
 +
 The Export Text Report window opens displaying the report.
 +
-image::../media/export_text_report_data.gif[screenshot showing example text report]
+image::../media/export_text_report_data.gif["screenshot showing example text report"]
 
 . Select and copy the contents of the Export Text Report window.
 +

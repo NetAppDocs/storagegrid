@@ -34,7 +34,7 @@ During this stage, the installer copies the base operating system image for Stor
 . Continue monitoring the installation progress until one of the following occurs:
  ** For appliance Gateway Nodes or non-primary appliance Admin Nodes, the *Install StorageGRID* stage pauses and a message appears on the embedded console, prompting you to approve this node on the Admin Node using the Grid Manager.
 +
-image::../media/monitor_installation_install_sgws.gif[Image is described by surrounding text]
+image::../media/monitor_installation_install_sgws.gif["Image is described by surrounding text"]
 
 ** For appliance primary Admin Nodes, a fifth phase (Load StorageGRID Installer) appears. If the fifth phase is in progress for more than 10 minutes, refresh the page manually.
 +

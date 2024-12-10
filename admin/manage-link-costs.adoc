@@ -19,7 +19,7 @@ Link costs let you prioritize which data center site provides a requested servic
 
 The diagram shows a three site grid that has link costs configured between sites:
 
-image::../media/link_costs.gif[Conceptual diagram for link costs between data centers]
+image::../media/link_costs.gif["Conceptual diagram for link costs between data centers"]
 
 * The Load Balancer service on Admin Nodes and Gateway Nodes equally distributes client connections to all Storage Nodes at the same data center site and to any data center sites with a link cost of 0.
 +
@@ -65,7 +65,7 @@ image::../media/configuring_link_costs.png["Link Cost"]
 +
 You can't change the link cost if the source is the same as the destination.
 +
-To cancel changes, select image:../media/nms_revert.gif[undo icon]*Revert*.
+To cancel changes, select image:../media/nms_revert.gif["undo icon"]evert*.
 
 . Select *Apply Changes*.
 

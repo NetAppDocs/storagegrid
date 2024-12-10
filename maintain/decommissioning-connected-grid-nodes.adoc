@@ -34,7 +34,7 @@ NOTE: If one or more volumes go offline while a decommission is in progress, the
 | Color
 | Severity
 
-| image:../media/icon_alarm_yellow_notice.gif[yellow square icon]
+| image:../media/icon_alarm_yellow_notice.gif["yellow square icon"]
 | Yellow
 | Notice
 

@@ -52,7 +52,7 @@ NOTE: If single sign-on (SSO) is enabled for the StorageGRID system, you must pe
 
 When you expand each API operation, you can see its HTTP action, endpoint URL, a list of any required or optional parameters, an example of the request body (when required), and the possible responses.
 
-image::../media/tenant_api_swagger_example.gif[example showing GET groups operation in Swagger API]
+image::../media/tenant_api_swagger_example.gif["example showing GET groups operation in Swagger API"]
 
 == Issue API requests
 

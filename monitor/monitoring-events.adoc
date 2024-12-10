@@ -34,7 +34,7 @@ The *Last Event* attribute is not shown in the link:using-charts-and-reports.htm
 .. Optionally, select a time period for *Quick Query*.
 .. Select *Update*.
 +
-image::../media/events_report.gif[Events page]
+image::../media/events_report.gif["Events page"]
 
 == Create custom syslog events
 
@@ -53,7 +53,7 @@ Consider creating custom events to monitor recurring problems. The following con
 
 .Steps
 . Select *SUPPORT* > *Alarms (legacy)* > *Custom events*. 
-. Click *Edit* image:../media/icon_nms_edit.gif[pencil icon] (or *Insert* image:../media/icon_nms_insert.gif[plus icon] if this is not the first event).
+. Click *Edit* image:../media/icon_nms_edit.gif["pencil icon"] (or *Insert* image:../media/icon_nms_insert.gif["plus icon"] if this is not the first event).
 . Enter a custom event string, for example, shutdown
 +
 image::../media/custom_events.png["screenshot showing where to enter custom event string"]
@@ -79,6 +79,6 @@ Resetting a counter causes the alarm to be triggered by the next event. In contr
 . Select *_grid node_* > *SSM* > *Events* > *Configuration* > *Main*.
 . Select the *Reset* checkbox for Custom Events.
 +
-image::../media/custom_events_reset.gif[screenshot at SSM > Events > Configuration > Main]
+image::../media/custom_events_reset.gif["screenshot at SSM > Events > Configuration > Main"]
 
 . Select *Apply Changes*.

@@ -36,10 +36,10 @@ image::../media/4b_select_recovery_node.png["screenshot showing the Maintenance 
 +
 When the grid node reaches the "Waiting for Manual Steps" stage, go to the next topic and perform the manual steps to remount and reformat appliance storage volumes.
 +
-image::../media/recovery_reset_button.gif[screenshot showing the stage waiting for manual steps]
+image::../media/recovery_reset_button.gif["screenshot showing the stage waiting for manual steps"]
 +
 NOTE: At any point during the recovery, you can click *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
 +
-image::../media/recovery_reset_warning.gif[screenshot showing the reset recovery warning dialog box]
+image::../media/recovery_reset_warning.gif["screenshot showing the reset recovery warning dialog box"]
 +
 If you want to retry the recovery after resetting the procedure, you must restore the appliance node to a pre-installed state by running `sgareinstall` on the node.

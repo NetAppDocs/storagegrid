@@ -71,7 +71,7 @@ If StorageGRID is using SSO, one of the following screens appears:
 
 * Your organization's SSO page. For example:
 +
-image::../media/sso_organization_page.gif[example organization Sign In page for SSO]
+image::../media/sso_organization_page.gif["example organization Sign In page for SSO"]
 +
 Enter your standard SSO credentials, and select *Sign in*.
 

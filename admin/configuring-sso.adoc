@@ -45,7 +45,7 @@ NOTE: The StorageGRID Sign in page is not shown when you enter the complete URL 
 +
 StorageGRID redirects you to your organization's SSO sign-in page. For example:
 +
-image::../media/sso_organization_page.gif[example organization sign in page for SSO]
+image::../media/sso_organization_page.gif["example organization sign in page for SSO"]
 
 . [[signin_sso]]Sign in with your SSO credentials.
 +

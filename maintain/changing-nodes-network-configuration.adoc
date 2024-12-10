@@ -110,11 +110,11 @@ This validation ensures that the rules for the Grid, Admin, and Client Networks,
 +
 In this example, validation returned errors.
 +
-image::../media/change_ip_tool_validate_sample_error_messages.gif[screenshot described by surrounding text]
+image::../media/change_ip_tool_validate_sample_error_messages.gif["screenshot described by surrounding text"]
 +
 In this example, validation passed.
 +
-image::../media/change_ip_tool_validate_sample_passed_messages.gif[screenshot described by surrounding text]
+image::../media/change_ip_tool_validate_sample_passed_messages.gif["screenshot described by surrounding text"]
 
 . After validation passes, choose one of the following options:
  ** *8*: Save unapplied changes.
