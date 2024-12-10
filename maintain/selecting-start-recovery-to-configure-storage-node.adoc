@@ -43,7 +43,7 @@ image::../media/4b_select_recovery_node.png["screenshot showing the Maintenance 
 +
 NOTE: While the recovery procedure is running, you can click *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
 +
-image::../media/recovery_reset_warning.gif[screenshot showing the reset recovery warning dialog box]
+image::../media/recovery_reset_warning.gif["screenshot showing the reset recovery warning dialog box"]
 +
 If you want to retry the recovery after resetting the procedure, you must restore the node to a pre-installed state, as follows:
 
@@ -52,6 +52,4 @@ If you want to retry the recovery after resetting the procedure, you must restor
 
 . When the Storage Node reaches the "Waiting for Manual Steps" stage, go to link:remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)].
 +
-image::../media/recovery_reset_button.gif[screenshot showing the stage "waiting for manual steps"]
-
-
+image::../media/recovery_reset_button.gif["screenshot showing the stage waiting for manual steps"]

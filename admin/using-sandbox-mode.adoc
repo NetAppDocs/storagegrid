@@ -101,7 +101,7 @@ NOTE: You must create a relying party trust for each Admin Node in your StorageG
 +
 A green check mark appears on the *Save* button for a few seconds.
 +
-image::../media/save_button_green_checkmark.gif[Save Button with a green check mark]
+image::../media/save_button_green_checkmark.gif["Save Button with a green check mark"]
 
 --
 .Azure
@@ -137,7 +137,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 +
 A green check mark appears on the *Save* button for a few seconds.
 +
-image::../media/save_button_green_checkmark.gif[Save Button with a green check mark]
+image::../media/save_button_green_checkmark.gif["Save Button with a green check mark"]
 
 --
 .PingFederate
@@ -177,7 +177,7 @@ https://<Federation Service Name>:<port>/pf/federation_metadata.ping?PartnerSpId
 +
 A green check mark appears on the *Save* button for a few seconds.
 +
-image::../media/save_button_green_checkmark.gif[Save Button with a green check mark]
+image::../media/save_button_green_checkmark.gif["Save Button with a green check mark"]
 
 --
 ====
@@ -270,17 +270,17 @@ Before you enforce the use of single sign-on for your entire StorageGRID system,
 +
 The URL is derived from the value you entered in the *Federation service name* field.
 +
-image::../media/sso_sandbox_mode_url.gif[URL for identity provider sign-on page]
+image::../media/sso_sandbox_mode_url.gif["URL for identity provider sign-on page"]
 
 . Select the link, or copy and paste the URL into a browser, to access your identity provider's sign-on page.
 . To confirm you can use SSO to sign in to StorageGRID, select *Sign in to one of the following sites*, select the relying party identifier for your primary Admin Node, and select *Sign in*.
 +
-image::../media/sso_sandbox_mode_testing.gif[Test relying party trusts in SSO Sandbox Mode]
+image::../media/sso_sandbox_mode_testing.gif["Test relying party trusts in SSO Sandbox Mode"]
 
 . Enter your federated username and password.
  ** If the SSO sign-in and logout operations are successful, a success message appears.
 +
-image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logout test success message]
+image::../media/sso_sandbox_mode_sign_in_success.gif["SSO authentication and logout test success message"]
 
  ** If the SSO operation is unsuccessful, an error message appears. Fix the issue, clear the browser's cookies, and try again.
 . Repeat these steps to verify the SSO connection for each Admin Node in your grid.
@@ -298,7 +298,7 @@ image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logo
 
 ** If the SSO sign-in and logout operations are successful, a success message appears.
 +
-image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logout test success message]
+image::../media/sso_sandbox_mode_sign_in_success.gif["SSO authentication and logout test success message"]
 
 ** If the SSO operation is unsuccessful, an error message appears. Fix the issue, clear the browser's cookies, and try again.
 
@@ -319,7 +319,7 @@ image::../media/sso_sandbox_mode_enabled_ping.png["Single Sign-on, Sandbox mode 
 
  ** If the SSO sign-in and logout operations are successful, a success message appears.
 +
-image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logout test success message]
+image::../media/sso_sandbox_mode_sign_in_success.gif["SSO authentication and logout test success message"]
 
 ** If the SSO operation is unsuccessful, an error message appears. Fix the issue, clear the browser's cookies, and try again.
 

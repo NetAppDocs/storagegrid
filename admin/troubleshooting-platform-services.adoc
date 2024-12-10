@@ -93,7 +93,7 @@ To view the request failure rate for platform services:
 . Select *_site_* > *Platform Services*.
 . View the Request error rate chart.
 +
-image::../media/nodes_page_site_level_platform_services.gif[Nodes Page Site-Level Platform Services]
+image::../media/nodes_page_site_level_platform_services.gif["Nodes Page Site-Level Platform Services"]
 
 == Platform services unavailable alert
 

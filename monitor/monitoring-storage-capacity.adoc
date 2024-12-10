@@ -58,7 +58,7 @@ Monitor the total usable space for each Storage Node to ensure that the node has
 .About this task
 Usable space is the amount of storage space available to store objects. The total usable space for a Storage Node is calculated by adding together the available space on all object stores within the node.
 
-image::../media/calculating_watermarks.gif[Conceptual drawing for Total usable space]
+image::../media/calculating_watermarks.gif["Conceptual drawing for Total usable space"]
 
 .Steps
 . Select *NODES* > *_Storage Node_* > *Storage*.

@@ -41,11 +41,11 @@ NOTE: Grafana charts are also included on the pre-constructed dashboards availab
 
 * *Line graphs*: Available from the Nodes page and from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png["Icon Chart (New)"] after a data value), line graphs are used to plot the values of StorageGRID attributes that have a unit value (such as NTP Frequency Offset, in ppm). The changes in the value are plotted in regular data intervals (bins) over time.
 +
-image::../media/line_graph.gif[Line Graph]
+image::../media/line_graph.gif["Line Graph"]
 
 * *Area graphs*: Available from the Nodes page and from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png["Icon Chart (New)"] after a data value), area graphs are used to plot volumetric attribute quantities, such as object counts or service load values. Area graphs are similar to line graphs, but include a light brown shading below the line. The changes in the value are plotted in regular data intervals (bins) over time.
 +
-image::../media/area_graph.gif[Area Graph]
+image::../media/area_graph.gif["Area Graph"]
 
 * Some graphs are denoted with a different type of chart icon image:../media/icon_chart_new_for_11_5.png["Chart Icon"] and have a different format:
 +
@@ -53,7 +53,7 @@ image::../media/charts_lost_object_detected.png["Charts Lost Object Detected"]
 
 * *State graph*: Available from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png["Icon Chart (New)"] after a data value), state graphs are used to plot attribute values that represent distinct states such as a service state that can be online, standby, or offline. State graphs are similar to line graphs, but the transition is discontinuous; that is, the value jumps from one state value to another.
 +
-image::../media/state_graph.gif[State Graph]
+image::../media/state_graph.gif["State Graph"]
 
 .Related information
 
@@ -70,22 +70,22 @@ The lines and colors used to draw charts have specific meaning.
 [cols="1a,3a" options="header"]
 |===
 | Example| Meaning
-|image:../media/dark_green_chart_line.gif[screenshot showing dark green line]
+|image:../media/dark_green_chart_line.gif["screenshot showing dark green line"]
 |Reported attribute values are plotted using dark green lines.
 
-|image:../media/light_green_chart_line.gif[screenshot showing shading that indicates data binning]
+|image:../media/light_green_chart_line.gif["screenshot showing shading that indicates data binning"]
 |Light green shading around dark green lines indicates that the actual values in that time range vary and have been "binned" for faster plotting. The dark line represents the weighted average. The range in light green indicates the maximum and minimum values within the bin. Light brown shading is used for area graphs to indicate volumetric data.
 
-|image:../media/no_data_plotted_chart.gif[screenshot showing blank areas on plot line]
+|image:../media/no_data_plotted_chart.gif["screenshot showing blank areas on plot line"]
 |Blank areas (no data plotted) indicate that the attribute values were unavailable. The background can be blue, gray, or a mixture of gray and blue, depending on the state of the service reporting the attribute.
 
-|image:../media/light_blue_chart_shading.gif[screenshot showing light blue shading indicating indeterminate values]
+|image:../media/light_blue_chart_shading.gif["screenshot showing light blue shading indicating indeterminate values"]
 |Light blue shading indicates that some or all of the attribute values at that time were indeterminate; the attribute was not reporting values because the service was in an unknown state.
 
-|image:../media/gray_chart_shading.gif[screenshot showing gray shading due to unknown values]
+|image:../media/gray_chart_shading.gif["screenshot showing gray shading due to unknown values"]
 |Gray shading indicates that some or all of the attribute values at that time were not known because the service reporting the attributes was administratively down.
 
-|image:../media/gray_blue_chart_shading.gif[screenshot showing mix of indeterminate and unknown values]
+|image:../media/gray_blue_chart_shading.gif["screenshot showing mix of indeterminate and unknown values"]
 |A mixture of gray and blue shading indicates that some of the attribute values at the time were indeterminate (because the service was in an unknown state), while others were not known because the service reporting the attributes was administratively down.
 |===
 
@@ -127,7 +127,7 @@ image::../media/charts_lost_object_detected.png["Charts Lost Object Detected"]
 . To display charts for attributes that aren't shown on the Node page, select *SUPPORT* > *Tools* > *Grid topology*.
 . Select *_grid node_* > *_component or service_* > *Overview* > *Main*.
 +
-image::../media/nms_chart.gif[screenshot described by surrounding text]
+image::../media/nms_chart.gif["screenshot described by surrounding text"]
 
 . Select the chart icon image:../media/icon_chart_new_for_11_5.png["Chart Icon"] next to the attribute.
 +

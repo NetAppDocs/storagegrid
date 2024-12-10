@@ -57,7 +57,7 @@ For example: `storagegrid-alerts@example.com`
 
  .. In the Recipients section, enter an email address for each email list or person who should receive an email when an alert occurs.
 +
-Select the plus icon image:../media/icon_plus_sign_black_on_white.gif[plus icon] to add recipients.
+Select the plus icon image:../media/icon_plus_sign_black_on_white.gif["plus icon"] to add recipients.
 
 . If Transport Layer Security (TLS) is required for communications with the SMTP server, select *Require TLS* in the Transport Layer Security (TLS) section.
  .. In the *CA Certificate* field, provide the CA certificate that will be used to verify the identify of the SMTP server.

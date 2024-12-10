@@ -76,11 +76,11 @@ This validation ensures that the rules for the Grid Network, such as not using o
 +
 In this example, validation returned errors.
 +
-image::../media/change_ip_tool_validate_sample_error_messages.gif[screenshot described by surrounding text]
+image::../media/change_ip_tool_validate_sample_error_messages.gif["screenshot described by surrounding text"]
 +
 In this example, validation passed.
 +
-image::../media/change_ip_tool_validate_sample_passed_messages.gif[screenshot described by surrounding text]
+image::../media/change_ip_tool_validate_sample_passed_messages.gif["screenshot described by surrounding text"]
 
 . After validation passes, select *10* to apply the new network configuration.
 . Select *stage* to apply the changes the next time the nodes are restarted.

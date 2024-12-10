@@ -76,7 +76,7 @@ image::../media/sso_sign_in_first_time.png["Sign in screen if SSO enabled and no
 
 .. Enter your standard SSO credentials on your organization's SSO sign-in page. For example:
 +
-image::../media/sso_organization_page.gif[example organization sign in page for SSO]
+image::../media/sso_organization_page.gif["example organization sign in page for SSO"]
 
 * If StorageGRID is using SSO and you have previously accessed the Grid Manager or a tenant account:
 

@@ -18,6 +18,6 @@ You must create at least one site when you are installing StorageGRID. You can c
 +
 Add as many additional sites as required for your grid topology. You can add up to 16 sites.
 +
-image::../media/3_gmi_installer_sites_page.gif[This image is explained by the surrounding text.]
+image::../media/3_gmi_installer_sites_page.gif["This image is explained by the surrounding text."]
 
 . Click *Next*.
