@@ -26,11 +26,11 @@ NOTE: Endpoint creation will fail if platform services aren't enabled for the te
 
 If an error occurs when StorageGRID tries to reach an existing endpoint, a message is displayed on the dashboard in the Tenant Manager.
 
-image::../media/tenant_dashboard_endpoint_error.png["endpoint error message on the dashboard"]
+image::../media/tenant_dashboard_endpoint_error.png[endpoint error message on the dashboard]
 
-Tenant users can go to the Endpoints page to review the most recent error message for each endpoint and to determine how long ago the error occurred. The *Last error* column displays the most recent error message for each endpoint and indicates how long ago the error occurred. Errors that include the image:../media/icon_alert_red_critical.png["Red X Icon"] icon occurred within the past 7 days.
+Tenant users can go to the Endpoints page to review the most recent error message for each endpoint and to determine how long ago the error occurred. The *Last error* column displays the most recent error message for each endpoint and indicates how long ago the error occurred. Errors that include the image:../media/icon_alert_red_critical.png[Red X Icon] icon occurred within the past 7 days.
 
-image::../media/endpoints_last_error.png["screenshot of Endpoints page showing Last Error column"]
+image::../media/endpoints_last_error.png[screenshot of Endpoints page showing Last Error column]
 
 NOTE: Some error messages in the *Last error* column might include a logID in parentheses. A grid administrator or technical support can use this ID to locate more detailed information about the error in the bycast.log.
 
@@ -93,7 +93,7 @@ To view the request failure rate for platform services:
 . Select *_site_* > *Platform Services*.
 . View the Request error rate chart.
 +
-image::../media/nodes_page_site_level_platform_services.gif["Nodes Page Site-Level Platform Services"]
+image::../media/nodes_page_site_level_platform_services.gif[Nodes Page Site-Level Platform Services]
 
 == Platform services unavailable alert
 

@@ -47,7 +47,7 @@ When prompted, enter values for the following arguments:
  ** The address for StorageGRID
  ** The tenant account ID, if you want to access the Tenant Management API.
 +
-image::../media/sso_auth_python_script_adfs.png["SSO Authentication Script for AD FS"]
+image::../media/sso_auth_python_script_adfs.png[SSO Authentication Script for AD FS]
 +
 The StorageGRID authorization token is provided in the output. You can now use the token for other requests, similar to how you would use the API if SSO was not being used.
 

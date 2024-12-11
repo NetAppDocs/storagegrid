@@ -34,7 +34,7 @@ To move a node from one host to another, the StorageGRID host service needs to h
 
 Suppose, for example, that StorageGRID NodeA running on Host1 has been configured with the following interface mappings:
 
-image::../media/eth0_bond.gif["This image is explained by the surrounding text."]
+image::../media/eth0_bond.gif[This image is explained by the surrounding text.]
 
 The lefthand side of the arrows corresponds to the traditional interfaces as viewed from within a StorageGRID container (that is, the Grid, Admin, and Client Network interfaces, respectively). The righthand side of the arrows corresponds to the actual host interfaces providing these networks, which are three VLAN interfaces subordinate to the same physical interface bond.
 
@@ -53,5 +53,5 @@ Given this mode of operation, all of the node's system data and object storage v
 
 The following example shows one solution for block device mapping for a StorageGRID Storage Node, where DM multipathing is in use on the hosts, and the alias field has been used in `/etc/multipath.conf` to provide consistent, friendly block device names available on all hosts.
 
-image::../media/block_device_mapping_rhel.gif["This image is explained by the surrounding text."]
+image::../media/block_device_mapping_rhel.gif[This image is explained by the surrounding text.]
 

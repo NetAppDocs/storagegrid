@@ -23,9 +23,9 @@ When you first sign in to the Grid Manager, you can use the dashboard to link:..
 
 The dashboard contains information about system health and performance, storage use, ILM processes, S3 operations, and the nodes in the grid. You can link:../monitor/viewing-dashboard.html[configure the dashboard] by selecting from a collection of cards that contain the information you need to effectively monitor your system.
 
-image::../media/grid_manager_dashboard_and_menu.png["Dashboard in the Grid Manager"]
+image::../media/grid_manager_dashboard_and_menu.png[Dashboard in the Grid Manager]
 
-For an explanation of the information shown on each card, select the help icon image:../media/icon_nms_question.png["question mark icon"] for that card.
+For an explanation of the information shown on each card, select the help icon image:../media/icon_nms_question.png[question mark icon] for that card.
 
 [[search-field]]
 == Search field
@@ -36,7 +36,7 @@ You can use *Search* to find entries in the sidebar of the Grid Manager and on t
 
 == Help menu
 
-The help menu image:../media/icon-help-menu-bar.png["help icon on the menu bar"] provides access to:
+The help menu image:../media/icon-help-menu-bar.png[help icon on the menu bar] provides access to:
 
 * The link:../fabricpool/use-fabricpool-setup-wizard.html[FabricPool] and link:../admin/use-s3-setup-wizard.html[S3 setup] wizard 
 * The StorageGRID documentation center for the current release
@@ -61,7 +61,7 @@ The link:../monitor/viewing-nodes-page.html[Nodes page] displays information abo
 
 The Nodes home page displays combined metrics for the entire grid. To view information for a particular site or node, select the site or node.
 
-image::../media/nodes_page.png["nodes page main"]
+image::../media/nodes_page.png[nodes page main]
 
 == Tenants page
 
@@ -69,7 +69,7 @@ The link:../admin/managing-tenants.html[Tenants page] allows you to link:../tena
 
 The Tenants page also provides usage details for each tenant, including the amount of storage used and the number of objects. If you set a quota when you created the tenant, you can see how much of that quota has been used.
 
-image::../media/tenants_page.png["Tenants Menu and Page"]
+image::../media/tenants_page.png[Tenants Menu and Page]
 
 == ILM menu
 

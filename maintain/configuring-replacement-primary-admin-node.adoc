@@ -35,7 +35,7 @@ The replacement node must be configured as the primary Admin Node for your Stora
 
 . Click *Recover a failed primary Admin Node*.
 +
-image::../media/install_or_recover_primary_admin_node.png["Install or recover Primary Admin Node"]
+image::../media/install_or_recover_primary_admin_node.png[Install or recover Primary Admin Node]
 
 . Upload the most recent backup of the Recovery Package:
  .. Click *Browse*.

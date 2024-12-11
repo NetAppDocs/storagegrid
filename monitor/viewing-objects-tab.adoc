@@ -13,4 +13,4 @@ The Objects tab provides information about link:../s3/index.html[S3 ingest and r
 
 The Objects tab is shown for each Storage Node, each site, and the entire grid. For Storage Nodes, the Objects tab also provides object counts and information about metadata queries and background verification.
 
-image::../media/nodes_page_objects_tab.png["Nodes page Objects tab"]
+image::../media/nodes_page_objects_tab.png[Nodes page Objects tab]

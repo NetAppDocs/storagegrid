@@ -53,7 +53,7 @@ The Python script will then call the corresponding Node.js script to perform the
  
 . When prompted, enter the password and be prepared to provide an MFA authorization to Azure if requested.
 +
-image::../media/sso_api_password_mfa.png["Prompt to enter password and MFA"]
+image::../media/sso_api_password_mfa.png[Prompt to enter password and MFA]
 +
 NOTE: The script assumes MFA is done using Microsoft Authenticator. You might need to modify the script to support other forms of MFA (such as entering a code received in a text message).
 +

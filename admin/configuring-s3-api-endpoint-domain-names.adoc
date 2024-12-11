@@ -79,7 +79,7 @@ If you remove a name used by S3 applications, virtual-hosted-style requests will
 .Steps
 
 . Select *CONFIGURATION* > *Network* > *S3 endpoint domain names*.
-. Select the delete icon image:../media/icon-x-to-remove.png["delete icon"] next to the domain name.
+. Select the delete icon image:../media/icon-x-to-remove.png[delete icon] next to the domain name.
 . Select *Yes* to confirm the deletion.
 
 .Related information

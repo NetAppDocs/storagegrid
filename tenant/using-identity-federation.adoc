@@ -30,7 +30,7 @@ NOTE: If you want to use an LDAP v3 service that is not listed, contact technica
 
 Whether you can configure an identity federation service for your tenant depends on how your tenant account was set up. Your tenant might share the identity federation service that was configured for the Grid Manager. If you see this message when you access the Identity Federation page, you can't configure a separate federated identity source for this tenant.
 
-image::../media/tenant_shares_identity_federation.png["Tenant Shares Identity Federation"]
+image::../media/tenant_shares_identity_federation.png[Tenant Shares Identity Federation]
 
 === Enter configuration
 

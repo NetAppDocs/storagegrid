@@ -18,7 +18,7 @@ You can restore object data for a failed storage volume or Storage Node using Gr
 ** link:../maintain/remounting-and-reformatting-appliance-storage-volumes.html[Remount and reformat appliance storage volumes (manual steps)] 
 ** link:../maintain/remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)]
 
-* You have confirmed that the Storage Node where you are restoring objects has a Connection State of *Connected* image:../media/icon_alert_green_checkmark.png["icon alert green check mark"] on the *NODES* > *Overview* tab in the Grid Manager.
+* You have confirmed that the Storage Node where you are restoring objects has a Connection State of *Connected* image:../media/icon_alert_green_checkmark.png[icon alert green check mark] on the *NODES* > *Overview* tab in the Grid Manager.
 
 * You have confirmed the following:
 ** A grid expansion to add a Storage Node is not in process.

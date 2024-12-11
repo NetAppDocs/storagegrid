@@ -57,7 +57,7 @@ For example: `storagegrid-alerts@example.com`
 
  .. In the Recipients section, enter an email address for each email list or person who should receive an email when an alert occurs.
 +
-Select the plus icon image:../media/icon_plus_sign_black_on_white.gif["plus icon"] to add recipients.
+Select the plus icon image:../media/icon_plus_sign_black_on_white.gif[plus icon] to add recipients.
 
 . If Transport Layer Security (TLS) is required for communications with the SMTP server, select *Require TLS* in the Transport Layer Security (TLS) section.
  .. In the *CA Certificate* field, provide the CA certificate that will be used to verify the identify of the SMTP server.
@@ -75,7 +75,7 @@ You can copy and paste the contents into this field, or select *Browse* and sele
 +
 You can copy and paste the contents into this field, or select *Browse* and select the file.
 +
-NOTE: If you need to edit the email setup, select the pencil icon image:../media/icon_edit_tm.png["Edit icon"] to update this field.
+NOTE: If you need to edit the email setup, select the pencil icon image:../media/icon_edit_tm.png[Edit icon] to update this field.
 
 . In the Filters section, select which alert severity levels should result in email notifications, unless the rule for a specific alert has been silenced.
 +
@@ -118,7 +118,7 @@ After you configure the SMTP email server, email notifications are sent to the d
 
 Email notifications include the following information:
 
-image::../media/alerts_email_notification.png["Alerts Email Notification"]
+image::../media/alerts_email_notification.png[Alerts Email Notification]
 
 [cols="1a,6a"options="header"]
 |===

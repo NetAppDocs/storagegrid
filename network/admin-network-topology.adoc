@@ -17,6 +17,6 @@ The Admin Network can be unique to each node and can consist of multiple subnets
 
 In this example, the Grid Network is used for traffic related to S3 client requests and object management. while the Admin Network is used for administrative functions.
 
-image::../media/grid_admin_networks.png["Grid Admin Networks"]
+image::../media/grid_admin_networks.png[Grid Admin Networks]
 
-image::../media/grid_admin_networks_ips.png["Grid Admin Networks IPs"]
+image::../media/grid_admin_networks_ips.png[Grid Admin Networks IPs]

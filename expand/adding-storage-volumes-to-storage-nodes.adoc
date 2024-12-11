@@ -37,7 +37,7 @@ For appliance Storage Nodes, the Worldwide Name for each disk matches the volume
 +
 To help you interpret disk read and write statistics related to volume mount points, the first portion of the name shown in the *Name* column of the Disk Devices table (that is, _sdc_, _sdd_, _sde_, and so on) matches the value shown in the *Device* column of the Volumes table.
 +
-image::../media/nodes_page_storage_tables_vol_expansion.png["Nodes Page Storage Tables"]
+image::../media/nodes_page_storage_tables_vol_expansion.png[Nodes Page Storage Tables]
 
 . Follow the instructions for your platform to add new storage volumes to the Storage Node.  
 

@@ -76,7 +76,7 @@ To view the details for an ILM rule, including the retention diagram and placeme
 . Select *ILM* > *Rules*.
 . Select the name of the rule whose details you want to view. Example:
 +
-image::../media/ilm_rule_details_page.png["ILM rule details page"]
+image::../media/ilm_rule_details_page.png[ILM rule details page]
 
 Additionally, you can use the details page to clone, edit, or remove a rule. You can't edit or remove a rule if it's used in any policy.
 
@@ -149,6 +149,6 @@ NOTE: Because the dashboard can be customized, the ILM tab might not be availabl
 
 . Monitor the metrics on the ILM tab.
 +
-You can select the question mark image:../media/icon_nms_question.png["question mark icon"] to see a description of the items on the ILM tab.
+You can select the question mark image:../media/icon_nms_question.png[question mark icon] to see a description of the items on the ILM tab.
 +
-image::../media/ilm_metrics_on_dashboard.png["ILM metrics on Grid Manager dashboard"]
+image::../media/ilm_metrics_on_dashboard.png[ILM metrics on Grid Manager dashboard]

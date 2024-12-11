@@ -15,7 +15,7 @@ You must carefully review the configuration information you have entered to ensu
 
 . View the *Summary* page.
 +
-image::../media/11_gmi_installer_summary_page.gif["This image is explained by the surrounding text."]
+image::../media/11_gmi_installer_summary_page.gif[This image is explained by the surrounding text.]
 
 . Verify that all of the grid configuration information is correct. Use the Modify links on the Summary page to go back and correct any errors.
 . Click *Install*.
@@ -34,7 +34,7 @@ CAUTION: The Recovery Package file must be secured because it contains encryptio
 +
 If the installation is still in progress, the status page appears. This page indicates the progress of the installation for each grid node.
 +
-image::../media/12_gmi_installer_status_page.gif["This image is explained by the surrounding text."]
+image::../media/12_gmi_installer_status_page.gif[This image is explained by the surrounding text.]
 +
 When the Complete stage is reached for all grid nodes, the sign-in page for the Grid Manager appears.
 

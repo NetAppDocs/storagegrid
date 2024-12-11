@@ -15,7 +15,7 @@ Object storage decouples the physical location of the data from the method used 
 
 Each object in an object-based storage system has two parts: object data and object metadata.
 
-image::../media/object_conceptual_drawing.png["Object"]
+image::../media/object_conceptual_drawing.png[Object]
 
 == What is object data?
 
@@ -45,7 +45,7 @@ When StorageGRID matches objects to an information lifecycle management (ILM) ru
 
 In the following example, the Make 2 Copies rule specifies that two replicated copies of each object be placed in a storage pool that contains three Storage Nodes.
 
-image::../media/ilm_replication_make_2_copies.png["Make 2 Copies rule"]
+image::../media/ilm_replication_make_2_copies.png[Make 2 Copies rule]
 
 === Erasure coding
 
@@ -53,7 +53,7 @@ When StorageGRID matches objects to an ILM rule that is configured to create era
 
 The following example illustrates the use of erasure coding on an object's data. In this example, the ILM rule uses a 4+2 erasure-coding scheme. Each object is sliced into four equal data fragments, and two parity fragments are computed from the object data. Each of the six fragments is stored on a different Storage Node across three data centers to provide data protection for node failures or site loss.
 
-image::../media/ec_three_sites_4_plus_2.png["Erasure Coded Three Sites 4 Plus 2"]
+image::../media/ec_three_sites_4_plus_2.png[Erasure Coded Three Sites 4 Plus 2]
 
 .Related information
 
