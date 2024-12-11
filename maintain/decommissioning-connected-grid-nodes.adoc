@@ -26,7 +26,7 @@ NOTE: The decommission will not start if one or more volumes are offline (unmoun
 +
 NOTE: If one or more volumes go offline while a decommission is in progress, the decommission process completes after these volumes have come back online.
 
-* All grid nodes have Normal (green) health image:../media/icon_alert_green_checkmark.png[green check mark icon]. If you see one of these icons in the *Health* column, you must try to resolve the issue:
+* All grid nodes have Normal (green) health image:../media/icon_alert_green_checkmark.png["green check mark icon"]. If you see one of these icons in the *Health* column, you must try to resolve the issue:
 +
 [cols="1a,1a,3a" options=header] 
 |===
@@ -34,19 +34,19 @@ NOTE: If one or more volumes go offline while a decommission is in progress, the
 | Color
 | Severity
 
-| image:../media/icon_alarm_yellow_notice.gif[yellow square icon]
+| image:../media/icon_alarm_yellow_notice.gif["yellow square icon"]
 | Yellow
 | Notice
 
-| image:../media/icon_alert_yellow_minor.png[light orange diamond icon]
+| image:../media/icon_alert_yellow_minor.png["light orange diamond icon"]
 | Light orange
 | Minor
 
-| image:../media/icon_alert_orange_major.png[dark orange diamond icon]
+| image:../media/icon_alert_orange_major.png["dark orange diamond icon"]
 | Dark orange
 | Major
 
-| image:../media/icon_alert_red_critical.png[red x icon]
+| image:../media/icon_alert_red_critical.png["red x icon"]
 | Red
 | Critical
 |===

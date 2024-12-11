@@ -130,7 +130,7 @@ You can view details for existing groups, modify a group, or duplicate a group.
 .. Select *Save changes*.
 
 |.. Select the group name to display the details.
-.. Select the edit icon image:../media/icon_edit_tm.png[Edit icon].
+.. Select the edit icon image:../media/icon_edit_tm.png["Edit icon"].
 .. Enter the new name.
 .. Select *Save changes*.
 

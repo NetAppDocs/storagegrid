@@ -41,7 +41,7 @@ CAUTION: Some expansion steps and stages might take a significant amount of time
 +
 The Grid Expansion page appears. The Pending Nodes section lists the nodes that are ready to be added.
 +
-image::../media/grid_expansion_page.png[screenshot showing Grid Expansion page]
+image::../media/grid_expansion_page.png["screenshot showing Grid Expansion page"]
 
 . Select *Configure Expansion*.
 +
@@ -55,7 +55,7 @@ The Site Selection dialog box appears.
 +
 As required, you can position your cursor over a node's *Grid Network MAC Address* to see details about that node.
 +
-image::../media/grid_node_details.png[screenshot of Grid Node details]
+image::../media/grid_node_details.png["screenshot of Grid Node details"]
 +
 NOTE: If a node is missing, confirm that it was deployed successfully.
 
@@ -129,7 +129,7 @@ After a few minutes, this page updates to display the status of the expansion pr
 +
 NOTE: During the "Installing grid nodes" step for a new appliance, the StorageGRID Appliance Installer shows installation moving from Stage 3 to Stage 4, Finalize Installation. When Stage 4 completes, the controller is rebooted.
 +
-image::../media/grid_expansion_progress.png[This image is explained by the surrounding text.]
+image::../media/grid_expansion_progress.png["This image is explained by the surrounding text."]
 +
 NOTE: A site expansion includes an additional task to configure Cassandra for the new site.
 
@@ -156,7 +156,7 @@ CAUTION: Don't reboot any Storage Nodes during either the "Expanding the Cassand
 
 If you are adding Storage Nodes to an existing site, review the percentage shown in the  "Starting Cassandra and streaming data" status message.
 
-image::../media/grid_expansion_starting_cassandra.png[Grid Expansion > Starting Cassandra and streaming data]
+image::../media/grid_expansion_starting_cassandra.png["Grid Expansion > Starting Cassandra and streaming data"]
 
 This percentage estimates how complete the Cassandra streaming operation is, based on the total amount of Cassandra data available and the amount that has already been written to the new node.
 

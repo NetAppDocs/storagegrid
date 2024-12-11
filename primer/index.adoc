@@ -15,7 +15,7 @@ StorageGRID provides secure, durable storage for unstructured data at scale. Int
 
 StorageGRID is composed of geographically distributed, redundant, heterogeneous nodes, which can be integrated with both existing and next-generation client applications.
 
-image::../media/storagegrid_system_diagram.png[Image with multiple clients]
+image::../media/storagegrid_system_diagram.png["Image with multiple clients"]
 
 NOTE: Support for Archive Nodes has been removed. Moving objects from an Archive Node to an external archival storage system through the S3 API has been replaced by link:../ilm/what-cloud-storage-pool-is.html[ILM Cloud Storage Pools], which offer more functionality.
 

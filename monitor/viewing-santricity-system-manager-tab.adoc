@@ -29,7 +29,7 @@ NOTE: You must have SANtricity firmware 8.70 or higher to access SANtricity Syst
 
 The tab displays the home page of SANtricity System Manager.
 
-image::../media/nodes_page_santricity_tab.png[Nodes page SANtricity tab]
+image::../media/nodes_page_santricity_tab.png["Nodes page SANtricity tab"]
 
 NOTE: You can use the SANtricity System Manager link to open the SANtricity System Manager in a new browser window for easier viewing.
 

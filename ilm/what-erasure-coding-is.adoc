@@ -17,15 +17,15 @@ As you create ILM rules, StorageGRID creates erasure-coding profiles that suppor
 
 The following example illustrates the use of an erasure-coding algorithm on an object's data. In this example, the ILM rule uses a 4+2 erasure-coding scheme. Each object is sliced into four equal data fragments, and two parity fragments are computed from the object data. Each of the six fragments is stored on a different node across three data center sites to provide data protection for node failures or site loss.
 
-image::../media/ec_three_sites_4_plus_2.png[Erasure Coding Three Sites 4 Plus 2]
+image::../media/ec_three_sites_4_plus_2.png["Erasure Coding Three Sites 4 Plus 2"]
 
 The 4+2 erasure-coding scheme can be configured in various ways. For example, you can configure a single-site storage pool that contains six Storage Nodes. For link:using-multiple-storage-pools-for-cross-site-replication.html[site-loss protection], you can use a storage pool containing three sites with three Storage Nodes at each site. An object can be retrieved as long as any four of the six fragments (data or parity) remain available. Up to two fragments can be lost without loss of the object data. If an entire site is lost, the object can still be retrieved or repaired, as long as all of the other fragments remain accessible.
 
-image::../media/ec_recoverable_4_plus_2.png[Erasure Coding Recoverable 4 Plus 2]
+image::../media/ec_recoverable_4_plus_2.png["Erasure Coding Recoverable 4 Plus 2"]
 
 If more than two Storage Nodes are lost, the object is not retrievable.
 
-image::../media/ec_unrecoverable_4_plus_2.png[Erasure Coding Unrecoverable 4 Plus 2]
+image::../media/ec_unrecoverable_4_plus_2.png["Erasure Coding Unrecoverable 4 Plus 2"]
 
 .Related information
 

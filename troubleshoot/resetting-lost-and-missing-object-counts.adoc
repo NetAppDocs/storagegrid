@@ -29,7 +29,7 @@ These instructions show resetting the counter from the *LDR* > *Data Store* page
 . Select *_Site_* > *_Storage Node_* > *LDR* > *Data Store* > *Configuration* for the Storage Node that has the *Objects lost* alert or the LOST alarm.
 . Select *Reset Lost Objects Count*.
 +
-image::../media/reset_ldr_lost_object_count.gif[Screenshot of LDR Reset Lost Object count]
+image::../media/reset_ldr_lost_object_count.gif["Screenshot of LDR Reset Lost Object count"]
 
 . Click *Apply Changes*.
 +

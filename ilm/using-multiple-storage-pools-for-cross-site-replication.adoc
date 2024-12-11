@@ -31,9 +31,9 @@ By default, one storage pool is created for each site during StorageGRID install
 
 ILM rule placements:
 
-image::../media/ilm_replication_at_2_sites.png[Replicating 1 copy each at 2 sites]
+image::../media/ilm_replication_at_2_sites.png["Replicating 1 copy each at 2 sites"]
 
-image::../media/ilm_replication_make_2_copies_2_pools_2_sites.png[Make 1 copy at each of 2 sites - site-specific storage pool]
+image::../media/ilm_replication_make_2_copies_2_pools_2_sites.png["Make 1 copy at each of 2 sites - site-specific storage pool"]
 
 If one site is lost, copies of the objects are available at the other site.
 
@@ -46,7 +46,7 @@ Having storage pools that consist of more than one site per storage pool enables
 
 ILM rule placements:
 
-image::../media/ilm_erasure_coding_site_loss_protection_4+2.png[EC 1 storage pool 9 Storage Nodes 3 sites]
+image::../media/ilm_erasure_coding_site_loss_protection_4+2.png["EC 1 storage pool 9 Storage Nodes 3 sites"]
 
 In this example:
 
@@ -58,8 +58,8 @@ NOTE: Erasure coding is allowed in storage pools containing any number of sites 
 
 ILM rule using 4+2 erasure-coding scheme:
 
-image::../media/ec_three_sites_4_plus_2_site_loss_example_template.png[Store objects by erasure coding using a 4+2 EC scheme across 3 sites]
+image::../media/ec_three_sites_4_plus_2_site_loss_example_template.png["Store objects by erasure coding using a 4+2 EC scheme across 3 sites"]
 
 If one site is lost, data can still be recovered:
 
-image::../media/ec_three_sites_4_plus_2_site_loss_example.png[Erasure coding 4+2 EC scheme 1 site lost]
+image::../media/ec_three_sites_4_plus_2_site_loss_example.png["Erasure coding 4+2 EC scheme 1 site lost"]

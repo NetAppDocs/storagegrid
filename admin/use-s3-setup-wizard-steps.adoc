@@ -24,7 +24,7 @@ You can use the S3 setup wizard to configure StorageGRID for use with an S3 appl
 
 . If the *FabricPool and S3 setup wizard* banner appears on the dashboard, select the link in the banner. If the banner no longer appears, select the help icon from the header bar in the Grid Manager and select *FabricPool and S3 setup wizard*.
 +
-image::../media/help_menu.png[help menu]
+image::../media/help_menu.png["help menu"]
 
 . In the S3 application section of the FabricPool and S3 setup wizard page, select *Configure now*.
 
@@ -298,7 +298,7 @@ In the download data step, you can download one or two files to save the details
 
 ** Select *Download access keys* to download a `.csv` file containing the tenant account name, access key ID, and secret access key.
 
-** Select the copy icon (image:../media/icon_tenant_copy_url.png[copy icon]) to copy the access key ID and secret access key to the clipboard.
+** Select the copy icon (image:../media/icon_tenant_copy_url.png["copy icon"]) to copy the access key ID and secret access key to the clipboard.
 
 . Select *Download configuration values* to download a `.txt` file containing the settings for the load balancer endpoint, tenant, bucket, and the root user.
 

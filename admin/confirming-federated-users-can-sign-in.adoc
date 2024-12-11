@@ -39,7 +39,7 @@ TIP: When you enable SSO, an identity source configured in the Tenant Manager is
  .. On the Enter details tab, select *Continue*.
  .. If the *Use own identity source* checkbox is selected, uncheck the box and select *Save*.
 +
-image::../media/sso_uses_own_identity_source_for_tenant.png[Edit Tenant Account > Use own identity source checkbox not selected]
+image::../media/sso_uses_own_identity_source_for_tenant.png["Edit Tenant Account > Use own identity source checkbox not selected"]
 +
 The Tenant page appears.
 

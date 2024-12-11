@@ -33,7 +33,7 @@ The node might be unavailable for a brief time when you add interfaces.
 . In vCenter, add a new network adapter (type VMXNET3) to an Admin Node and Gateway Node VM.  Select *Connected* and *Connect At Power On* checkboxes. 
 
 +
-image::../media/vcenter.png[vCenter]
+image::../media/vcenter.png["vCenter"]
 . Use SSH to log in to the Admin Node or Gateway Node. 
 . Use `ip link show` to confirm the new network interface ens256 is detected.
 +

@@ -39,7 +39,7 @@ When the EC rebalance procedure is complete:
 +
 For example, suppose three 200-TB nodes are each filled to 80% (200 &#215; 0.8 = 160 TB on each node, or 480 TB for the site). If you add a 400-TB node and run the rebalance procedure, all nodes will now have approximately the same amount of erasure-code data (480/4 = 120 TB). However, the Used (%) for the larger node will be less than the Used (%) for the smaller nodes.
 +
-image::../media/used_space_with_larger_node.png[Used space before expansion]
+image::../media/used_space_with_larger_node.png["Used space before expansion"]
 
 == When to rebalance erasure-coded data
 
@@ -49,13 +49,13 @@ Consider the following scenario:
 * The ILM policy uses a 2+1 erasure-coding rule for all objects larger than 1.0 MB and a 2-copy replication rule for smaller objects.
 * All Storage Nodes have become completely full. The *Low Object Storage* alert has been triggered at the major severity level.
 +
-image::../media/used_space_before_expansion.png[Used space before expansion]
+image::../media/used_space_before_expansion.png["Used space before expansion"]
 
 === Rebalance is not required if you add enough nodes
 
 To understand when EC rebalance is not required, suppose you added three (or more) new Storage Nodes. In this case, you don't need to perform EC rebalance. The original Storage Nodes will remain full, but new objects will now use the three new nodes for 2+1 erasure coding&#8212;the two data fragments and the one parity fragment can each be stored on a different node.
 
-image::../media/used_space_after_3_node_expansion.png[Used space after 3-node expansion]
+image::../media/used_space_after_3_node_expansion.png["Used space after 3-node expansion"]
 
 CAUTION: While you can run the EC rebalance procedure in this case, moving the existing erasure-coded data will temporarily decrease the grid's performance, which might impact client operations.
 
@@ -63,11 +63,11 @@ CAUTION: While you can run the EC rebalance procedure in this case, moving the e
 
 To understand when EC rebalance is required, suppose you can only add two Storage Nodes, instead of three. Because the 2+1 scheme requires at least three Storage Nodes to have space available, the empty nodes can't be used for new erasure-coded data.
 
-image::../media/used_space_after_2_node_expansion.png[Used space after 2-node expansion]
+image::../media/used_space_after_2_node_expansion.png["Used space after 2-node expansion"]
 
 To make use of the new Storage Nodes, you should run the EC rebalance procedure. When this procedure runs, StorageGRID redistributes existing erasure-coded data and parity fragments among all Storage Nodes at the site. In this example, when the EC rebalance procedure is complete, all five nodes are now only 60% full, and objects can continue to be ingested into the 2+1 erasure-coding scheme on all Storage Nodes.
 
-image::../media/used_space_after_ec_rebalance.png[Used space aAfter EC rebalance]
+image::../media/used_space_after_ec_rebalance.png["Used space aAfter EC rebalance"]
 
 == Recommendations for EC rebalancing
 

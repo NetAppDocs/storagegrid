@@ -29,11 +29,11 @@ The StorageGRID Sign in page appears.
 
  ** If this is the first time you have accessed the URL on this browser, you are prompted for an account ID:
 +
-image::../media/sso_sign_in_first_time.png[Sign in with SSO enabled first access]
+image::../media/sso_sign_in_first_time.png["Sign in with SSO enabled first access"]
 
  ** If you have previously accessed either the Grid Manager or the Tenant Manager, you are prompted to select a recent account or to enter an account ID:
 +
-image::../media/sign_in_sso.png[StorageGRID Sign In page if SSO is enabled]
+image::../media/sign_in_sso.png["StorageGRID Sign In page if SSO is enabled"]
 
 +
 NOTE: The StorageGRID Sign in page is not shown when you enter the complete URL for a tenant account (that is, a fully qualified domain name or IP address followed by `/?accountId=_20-digit-account-id_`). Instead, you are immediately redirected to your organization's SSO sign-in page, where you can <<signin_sso,sign in with your SSO credentials>>.
@@ -45,7 +45,7 @@ NOTE: The StorageGRID Sign in page is not shown when you enter the complete URL 
 +
 StorageGRID redirects you to your organization's SSO sign-in page. For example:
 +
-image::../media/sso_organization_page.gif[example organization sign in page for SSO]
+image::../media/sso_organization_page.gif["example organization sign in page for SSO"]
 
 . [[signin_sso]]Sign in with your SSO credentials.
 +

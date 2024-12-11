@@ -23,7 +23,7 @@ In this example, the *Example ILM policy* is being simulated against the ingeste
 
 After simulating the policy, confirm that each object was matched by the correct rule.
 
-image::../media/simulate_policy_screen.png[Simulate policy results]
+image::../media/simulate_policy_screen.png["Simulate policy results"]
 
 In this example:
 
@@ -47,7 +47,7 @@ In this example, the *Demo* policy is being simulated. This policy, which is int
 +
 The Simulation results appear, showing that the `Havok.png` object was matched by the *PNGs* rule.
 +
-image::../media/simulate_reorder_rules_pngs_result.png[Example 2: Reordering rules when simulating an ILM policy]
+image::../media/simulate_reorder_rules_pngs_result.png["Example 2: Reordering rules when simulating an ILM policy"]
 +
 However, `Havok.png` was meant to test the *X-men* rule.
 
@@ -60,7 +60,7 @@ However, `Havok.png` was meant to test the *X-men* rule.
 +
 The objects you previously tested are re-evaluated against the updated policy, and the new simulation results are shown. In the example, the Rule matched column shows that the `Havok.png` object now matches the X-men metadata rule, as expected. The Previous match column shows that the PNGs rule matched the object in the previous simulation.
 +
-image::../media/simulate_reorder_rules_correct_result.png[Example 2: Reordering rules when simulating an ILM policy]
+image::../media/simulate_reorder_rules_correct_result.png["Example 2: Reordering rules when simulating an ILM policy"]
 
 == Example 3: Correct a rule when simulating an ILM policy
 
@@ -68,7 +68,7 @@ This example shows how to simulate a policy, correct a rule in the policy, and c
 
 In this example, the *Demo* policy is being simulated. This policy is intended to find objects that have `series=x-men` user metadata. However, unexpected results occurred when simulating this policy against the `Beast.jpg` object. Instead of matching the X-men metadata rule, the object matched the default rule, Two copies two data centers.
 
-image::../media/simulate_results_for_object_wrong_metadata.png[Example 3: Correcting a rule when simulating an ILM policy]
+image::../media/simulate_results_for_object_wrong_metadata.png["Example 3: Correcting a rule when simulating an ILM policy"]
 
 When a test object is not matched by the expected rule in the policy, you must examine each rule in the policy and correct any errors.
 
@@ -87,4 +87,4 @@ As an example, suppose the metadata for the X-men rule was entered as "x-men01" 
 +
 In this example, the corrected X-men rule now matches the `Beast.jpg` object based on the `series=x-men` user metadata, as expected.
 +
-image::../media/simulate_results_for_object_corrected_metadata.png[Example 3: Correcting a rule when simulating an ILM policy]
+image::../media/simulate_results_for_object_corrected_metadata.png["Example 3: Correcting a rule when simulating an ILM policy"]

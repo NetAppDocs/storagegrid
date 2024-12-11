@@ -44,5 +44,5 @@ Follow these steps to delete an IP address of a DNS server.
 
 .Steps
 . Select *MAINTENANCE* > *Network* > *DNS servers*.
-. Select the delete icon image:../media/icon-x-to-remove.png[delete icon] next to the IP address.
+. Select the delete icon image:../media/icon-x-to-remove.png["delete icon"] next to the IP address.
 . Select *Save*.

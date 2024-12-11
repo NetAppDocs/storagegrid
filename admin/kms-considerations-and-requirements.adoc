@@ -61,7 +61,7 @@ For example, suppose your StorageGRID system has three data center sites. You mi
 
 Note that you can't use a KMS for non-appliance nodes or for any appliance nodes that did not have the *Node Encryption* setting enabled during installation.
 
-image::../media/kms_per_site.png[KMS Per Site]
+image::../media/kms_per_site.png["KMS Per Site"]
 
 == What happens when a key is rotated?
 

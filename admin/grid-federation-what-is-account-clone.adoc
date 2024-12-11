@@ -17,7 +17,7 @@ Account clone is required for link:grid-federation-what-is-cross-grid-replicatio
 
 The workflow diagram shows the steps that grid administrators and permitted tenants will perform to set up account clone. These steps are performed after the link:grid-federation-create-connection.html[grid federation connection is configured].
 
-image::../media/grid-federation-account-clone-workflow.png[workflow for account clone]
+image::../media/grid-federation-account-clone-workflow.png["workflow for account clone"]
 
 == Grid admin workflow
 

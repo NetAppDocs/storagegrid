@@ -55,7 +55,7 @@ An interface must be for a Gateway Node or an Admin Node to be included in an HA
 + 
 Use the column headers to sort the rows, or enter a search term to locate interfaces more quickly.
 +
-image::../media/ha_group_add_interfaces.png[HA Groups Add Interfaces]
+image::../media/ha_group_add_interfaces.png["HA Groups Add Interfaces"]
 +
 NOTE: After creating a VLAN interface, wait up to 5 minutes for the new interface to appear in the table.
 +
@@ -73,7 +73,7 @@ NOTE: After creating a VLAN interface, wait up to 5 minutes for the new interfac
 
 * If you can't select an interface, its checkbox is disabled. The tool tip provides more information. 
 +
-image::../media/vlan_parent_interface_tooltip.png[VLAN Interface tool tip]
+image::../media/vlan_parent_interface_tooltip.png["VLAN Interface tool tip"]
 
 * You can't select an interface if its subnet value or gateway conflicts with another selected interface. 
 
@@ -92,7 +92,7 @@ If the HA group includes more than one interface, you can determine which is the
 
 The first interface in the list is the Primary interface. The Primary interface is the active interface unless a failure occurs.
 +
-image::../media/ha_group_determine_failover.png[HA Groups determine priority order]
+image::../media/ha_group_determine_failover.png["HA Groups determine priority order"]
 +
 TIP: If the HA group provides access to the Grid Manager, you must select an interface on the primary Admin Node to be the Primary interface. Some maintenance procedures can only be performed from the primary Admin Node.
 
@@ -107,7 +107,7 @@ The network address must not have any host bits set. For example, `192.16.0.0/22
 +
 NOTE: If you use a 32-bit prefix, the VIP network address also serves as the gateway address and the VIP address.
 +
-image::../media/ha_group_select_virtual_ips.png[HA Groups enter VIPs]
+image::../media/ha_group_select_virtual_ips.png["HA Groups enter VIPs"]
 
 . Optionally, if any S3 administrative or tenant clients will access these VIP addresses from a different subnet, enter the *Gateway IP address*. The gateway address must be within the VIP subnet.
 +

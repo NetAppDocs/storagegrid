@@ -38,7 +38,7 @@ NOTE: StorageGRID considers each erasure-coding profile to be unique and does no
 
 In this example, the active ILM policy was initially designed for a two-site StorageGRID system and uses two ILM rules.
 
-image::../media/policy_6_active_policy.png[Example ILM Policy 6 Active Policy]
+image::../media/policy_6_active_policy.png["Example ILM Policy 6 Active Policy"]
 
 In this ILM policy, objects belonging to Tenant A are protected by 2+1 erasure coding at a single site, while objects belonging to all other tenants are protected across two sites using 2-copy replication.
 

@@ -62,7 +62,7 @@ If the tenant account has the *Use grid federation connection* permission and yo
 
 . Edit group settings as needed. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] and link:creating-groups-for-swift-tenant.html[Create groups for a Swift tenant] for details about what to enter.
 
-.. In the Overview section, change the display name by selecting the name or the edit icon image:../media/icon_edit_tm.png[Edit icon].
+.. In the Overview section, change the display name by selecting the name or the edit icon image:../media/icon_edit_tm.png["Edit icon"].
 
 .. On the *Group permissions* tab, update the permissions, and select *Save changes*.
 
@@ -75,7 +75,7 @@ If the tenant account has the *Use grid federation connection* permission and yo
 . To add one or more existing local users to the group:
 .. Select the Users tab.
 +
-image::../media/manage_users.png[Manage users]
+image::../media/manage_users.png["Manage users"]
 .. Select *Add users*.
 .. Select the existing users you want to add, and select *Add users*.
 +
