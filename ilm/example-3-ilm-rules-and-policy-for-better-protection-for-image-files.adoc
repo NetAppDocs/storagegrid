@@ -41,7 +41,7 @@ NOTE: Erasure coding is best suited for objects greater than 1 MB. Don't use era
 | Create a 2+1 erasure-coded copy using three sites
 |===
 
-image::../media/policy_3_rule_1_ec_images_adv_filtering.png["ILM rule 1 for example 3: Use EC for image files greater than 1 MB"]
+image::../media/policy_3_rule_1_ec_images_adv_filtering.png[ILM rule 1 for example 3: Use EC for image files greater than 1 MB]
 
 Because this rule is configured as the first rule in the policy, the erasure-coding placement instruction only applies to .jpg and .png files that are greater than 1 MB.
 
@@ -76,4 +76,4 @@ This example ILM policy includes three rules:
 * The second rule creates two copies of any remaining image files (that is, images that are 1 MB or smaller).
 * The default rule applies to all remaining objects (that is, any non-image files).
 
-image::../media/policy_3_configured_policy.png["ILM policy for example 3: Better protection for image files"]
+image::../media/policy_3_configured_policy.png[ILM policy for example 3: Better protection for image files]

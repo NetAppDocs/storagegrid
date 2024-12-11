@@ -27,13 +27,13 @@ CAUTION: Be careful when deciding to silence an alert rule. If you silence an al
 +
 The Silences page appears.
 +
-image::../media/alerts_silences_page.png["Alerts > Silences page"]
+image::../media/alerts_silences_page.png[Alerts > Silences page]
 
 . Select *Create*.
 +
 The Create Silence dialog box appears.
 +
-image::../media/alerts_create_silence.png["Alerts > Create Silence"]
+image::../media/alerts_create_silence.png[Alerts > Create Silence]
 
 . Select or enter the following information:
 +

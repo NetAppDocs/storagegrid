@@ -163,8 +163,8 @@ When you define advanced filtering, you can specify multiple types of metadata a
 * The first metadata value specifies objects greater than or equal to 10 MB.
 * The second metadata value specifies objects less than or equal to 100 MB.
 
-image::../media/advanced_filtering_size_between.png["Advanced Filtering example for object size"]
+image::../media/advanced_filtering_size_between.png[Advanced Filtering example for object size]
 
 Using multiple entries allows you to have precise control over which objects are matched. In the following example, the rule applies to objects that have Brand A or Brand B as the value of the camera_type user metadata. However, the rule only applies to those Brand B objects that are smaller than 10 MB.
 
-image::../media/advanced_filtering_multiple_rows.png["Advanced Filtering example for user metadata"]
+image::../media/advanced_filtering_multiple_rows.png[Advanced Filtering example for user metadata]

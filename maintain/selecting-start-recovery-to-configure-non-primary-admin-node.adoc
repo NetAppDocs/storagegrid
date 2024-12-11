@@ -28,13 +28,13 @@ Nodes appear in the list after they fail, but you can't select a node until it h
 . Enter the *Provisioning Passphrase*.
 . Click *Start Recovery*.
 +
-image::../media/4b_select_recovery_node.png["screenshot showing the Maintenance > Recovery page"]
+image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance > Recovery page]
 
 . Monitor the progress of the recovery in the Recovering Grid Node table.
 +
 NOTE: While the recovery procedure is running, you can click *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
 +
-image::../media/recovery_reset_warning.gif["screenshot showing the reset recovery warning dialog box"]
+image::../media/recovery_reset_warning.gif[screenshot showing the reset recovery warning dialog box]
 +
 If you want to retry the recovery after resetting the procedure, you must restore the node to a pre-installed state, as follows:
 

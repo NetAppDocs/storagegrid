@@ -11,7 +11,7 @@ summary: 'StorageGRID uses three storage volume watermarks to ensure that Storag
 [.lead]
 StorageGRID uses three storage volume watermarks to ensure that Storage Nodes are safely transitioned to a read-only state before they run critically low on space and to allow Storage Nodes that have been transitioned to a read-only state to become read-write again.
 
-image::../media/storage_volume_watermarks.png["Storage volume watermarks"]
+image::../media/storage_volume_watermarks.png[Storage volume watermarks]
 
 NOTE: Storage volume watermarks only apply to the space used for replicated and erasure-coded object data. To learn about the space reserved for object metadata on volume 0, go to 
 link:managing-object-metadata-storage.html[Manage object metadata storage].

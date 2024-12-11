@@ -15,12 +15,12 @@ NOTE: Don't use an ILM rule that creates only one replicated copy for any time p
 
 In the following example, the Make 1 Copy ILM rule specifies that one replicated copy of an object be placed in a storage pool that contains three Storage Nodes. When an object is ingested that matches this rule, StorageGRID places a single copy on only one Storage Node.
 
-image::../media/ilm_replication_make_1_copy.png["ILM Replication Make 1 Copy"]
+image::../media/ilm_replication_make_1_copy.png[ILM Replication Make 1 Copy]
 
 When an ILM rule creates only one replicated copy of an object, the object becomes inaccessible when the Storage Node is unavailable. In this example, you will temporarily lose access to object AAA whenever Storage Node 2 is offline, such as during an upgrade or other maintenance procedure. You will lose object AAA entirely if Storage Node 2 fails.
 
-image::../media/ilm_replication_make_1_copy_sn_fails.png["ILM Replication Make 1 Copy SN Fails"]
+image::../media/ilm_replication_make_1_copy_sn_fails.png[ILM Replication Make 1 Copy SN Fails]
 
 To avoid losing object data, you should always make at least two copies of all objects you want to protect with replication. If two or more copies exist, you can still access the object if one Storage Node fails or goes offline.
 
-image::../media/ilm_replication_make_2_copies_sn_fails.png["ILM Replication Make 2 Copies SN Fails"]
+image::../media/ilm_replication_make_2_copies_sn_fails.png[ILM Replication Make 2 Copies SN Fails]

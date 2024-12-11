@@ -59,7 +59,7 @@ The subnets you have specified are configured automatically for your StorageGRID
 .Steps
 
 . Select *MAINTENANCE* > *Network* > *Grid Network*.
-. Select the delete icon image:../media/icon-x-to-remove.png["delete icon"] next to the subnet.
+. Select the delete icon image:../media/icon-x-to-remove.png[delete icon] next to the subnet.
 . Enter the Provisioning passphrase, and select *Save*.
 . Select *Yes* in the confirmation dialog box.
 . Wait until the changes are applied, then download a new Recovery Package.

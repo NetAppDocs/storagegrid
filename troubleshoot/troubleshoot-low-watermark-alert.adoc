@@ -72,7 +72,7 @@ You can resolve the *Low read-only watermark override* alert by updating custom 
 
 . Review the percentage values shown in the *Object data used* column for each Storage Node at every site. 
 +
-image::../media/nodes_page_object_data_used_with_alert.png["Nodes page showing object data used for 3 SNs"]
+image::../media/nodes_page_object_data_used_with_alert.png[Nodes page showing object data used for 3 SNs]
 
 . Follow the appropriate step:
 .. If none of the Storage Nodes are close to full (for example, all *Object data used* values are less than 80%), you can start using the override settings. Go to <<use-optimized-watermarks,Use optimized watermarks>>.

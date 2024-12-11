@@ -34,7 +34,7 @@ You can clone your own access keys if you need to access the same buckets on bot
 +
 `POST /org/users/current-user/replicate-s3-access-key`
 +
-image::../media/grid-federation-post-current-user-replicate.png["POST endpoint for replicating own access key"]
+image::../media/grid-federation-post-current-user-replicate.png[POST endpoint for replicating own access key]
 
 . Select *Try it out*.
 
@@ -42,7 +42,7 @@ image::../media/grid-federation-post-current-user-replicate.png["POST endpoint f
 +
 Be sure to retain the double quotes around each string.
 +
-image::../media/grid-federation-clone-access-key.png["Tenant Manager API entering values to clone access key"]
+image::../media/grid-federation-clone-access-key.png[Tenant Manager API entering values to clone access key]
 
 . If the key will expire, replace the example entry for *expires* with the expiration date and time as a string in ISO 8601 data-time format (for example, `2024-02-28T22:46:33-08:00`). If the key will not expire, enter *null* as the value for the *expires* entry (or remove the *Expires* line and the preceding comma).
 
@@ -79,7 +79,7 @@ You can clone another user's access keys if they need to access the same buckets
 +
 `POST /org/users/{userId}/replicate-s3-access-key`
 +
-image::../media/grid-federation-post-other-user.png["POST endpoint for replicating another user's access key"]
+image::../media/grid-federation-post-other-user.png[POST endpoint for replicating another user's access key]
 
 . Select *Try it out*.
 

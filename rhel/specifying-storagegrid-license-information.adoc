@@ -23,6 +23,6 @@ The license file is validated, and the serial number is displayed.
 +
 NOTE: The StorageGRID installation archive includes a free license that does not provide any support entitlement for the product. You can update to a license that offers support after installation.
 +
-image::../media/2_gmi_installer_license_page.png["StorageGRID installer license page"]
+image::../media/2_gmi_installer_license_page.png[StorageGRID installer license page]
 
 . Select *Next*.

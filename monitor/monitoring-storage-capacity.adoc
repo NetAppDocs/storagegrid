@@ -28,17 +28,17 @@ The Grid Manager dashboard lets you quickly assess how much storage is available
 +
 NOTE: The summary does not include archival media.
 +
-image::../media/dashboard_data_and_metadata_space_usage_breakdown.png["Data and metadata space usage breakdown"]
+image::../media/dashboard_data_and_metadata_space_usage_breakdown.png[Data and metadata space usage breakdown]
 
  .. Note the chart on the Storage over time card. Use the time period drop-down to help you determine how quickly storage is consumed.
 +
-image::../media/dashboard_storage_over_time.png["Storage over time chart"]
+image::../media/dashboard_storage_over_time.png[Storage over time chart]
 
 . Use the Nodes page for additional details on how much storage has been used and how much storage remains available on the grid for object data and object metadata.
  .. Select *NODES*.
  .. Select *_grid_* > *Storage*.
 +
-image::../media/nodes_deployment_storage_tab.png["Nodes Deployment Storage tab"]
+image::../media/nodes_deployment_storage_tab.png[Nodes Deployment Storage tab]
 
  .. Position your cursor over the *Storage used - object data* and the *Storage used - object metadata* charts to see how much object storage and object metadata storage is available for the entire grid, and how much has been used over time.
 +
@@ -58,7 +58,7 @@ Monitor the total usable space for each Storage Node to ensure that the node has
 .About this task
 Usable space is the amount of storage space available to store objects. The total usable space for a Storage Node is calculated by adding together the available space on all object stores within the node.
 
-image::../media/calculating_watermarks.gif["Conceptual drawing for Total usable space"]
+image::../media/calculating_watermarks.gif[Conceptual drawing for Total usable space]
 
 .Steps
 . Select *NODES* > *_Storage Node_* > *Storage*.
@@ -76,13 +76,13 @@ The following values are shown:
  ** *Total*: The total amount of usable space on this node, site, or grid.
 The Used value is the `storagegrid_storage_utilization_data_bytes` metric.
 +
-image::../media/nodes_page_storage_used_object_data.png["Nodes Page Storage Used Object Data"]
+image::../media/nodes_page_storage_used_object_data.png[Nodes Page Storage Used Object Data]
 
 . Review the Available values in the Volumes and Object stores tables, below the graphs.
 +
-NOTE: To view graphs of these values, click the chart icons image:../media/icon_chart_new_for_11_5.png["Chart Icon"] in the Available columns.
+NOTE: To view graphs of these values, click the chart icons image:../media/icon_chart_new_for_11_5.png[Chart Icon] in the Available columns.
 +
-image::../media/nodes_page_storage_tables.png["Object stores tables"]
+image::../media/nodes_page_storage_tables.png[Object stores tables]
 
 . Monitor the values over time to estimate the rate at which usable storage space is being consumed.
 
@@ -113,7 +113,7 @@ Some of the factors that can increase metadata usage include the size and quanti
 
 . Position your cursor over the Storage used - object metadata graph to see the values for a specific time.
 +
-image::../media/storage_used_object_metadata.png["Storage Used - Object Metadata"]
+image::../media/storage_used_object_metadata.png[Storage Used - Object Metadata]
 +
 Used (%):: The percentage of the allowed metadata space that has been used on this Storage Node.
 +
@@ -153,4 +153,4 @@ If you have a new StorageGRID installation, allow data and metadata to accumulat
 . View the dashboard cards, Forecast of data usage by storage pool and Forecast of metadata usage by site.
 . Use these values to estimate when you will need to add new Storage Nodes for data and metadata storage.
 
-image::../media/forecast-metadata-usage.png["Forecast of metadata usage by site"]
+image::../media/forecast-metadata-usage.png[Forecast of metadata usage by site]

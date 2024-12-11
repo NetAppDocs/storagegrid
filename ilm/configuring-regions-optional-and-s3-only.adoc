@@ -51,7 +51,7 @@ The Regions page appears, with the currently defined regions listed. *Region 1* 
 +
 You must use this exact region name as the LocationConstraint request element when you create the corresponding S3 bucket.
 
-. To remove an unused region, select the delete icon image:../media/icon-x-to-remove.png["Remove icon"].
+. To remove an unused region, select the delete icon image:../media/icon-x-to-remove.png[Remove icon].
 +
 An error message appears if you attempt to remove a region that is currently used in any policy (active or inactive).
 

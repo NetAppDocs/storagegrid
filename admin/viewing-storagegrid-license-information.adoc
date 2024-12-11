@@ -18,7 +18,7 @@ You are signed in to the Grid Manager using a link:../admin/web-browser-requirem
 .About this task
 If there is an issue with the software license for this StorageGRID system, the Health status card on the dashboard includes a License status icon and a *License* link. The number indicates the number of license-related issues.
 
-image::../media/dashboard_health_panel_license_status.png["Dashboard Health Status Card License Status"]
+image::../media/dashboard_health_panel_license_status.png[Dashboard Health Status Card License Status]
 
 .Steps
 

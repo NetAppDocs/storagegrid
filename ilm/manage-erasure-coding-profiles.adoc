@@ -70,7 +70,7 @@ StorageGRID prevents you from deactivating an erasure-coding profile if either o
 +
 You can't deactivate an erasure-coding profile if it is used in any ILM rule. In the example, the 2+1 Data Center 1 profile is used in at least one ILM rule.
 +
-image::../media/ec_profile_used_in_ilm_rule.png["EC Profile Used in ILM Rule"]
+image::../media/ec_profile_used_in_ilm_rule.png[EC Profile Used in ILM Rule]
 
 . If the profile is used in an ILM rule, follow these steps:
 .. Select *ILM* > *Rules*.

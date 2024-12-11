@@ -33,7 +33,7 @@ The provisioning passphrase is required for many installation and maintenance pr
 +
 The system displays a green success banner when the provisioning passphrase change is complete. 
 +
-image::../media/change_provisioning_passphrase_success.png["Success message for provisioning passphrase changed"]
+image::../media/change_provisioning_passphrase_success.png[Success message for provisioning passphrase changed]
 
 . Select *Recovery Package*.
 . Enter the new provisioning passphrase to download the new Recovery Package.

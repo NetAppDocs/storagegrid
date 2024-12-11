@@ -13,7 +13,7 @@ Object segmentation is the process of splitting up an object into a collection o
 
 When an object is ingested into the StorageGRID system, the LDR service splits the object into segments, and creates a segment container that lists the header information of all segments as content.
 
-image::../media/object_segmentation_diagram.gif["Object segmentation workflow"]
+image::../media/object_segmentation_diagram.gif[Object segmentation workflow]
 
 On retrieval of a segment container, the LDR service assembles the original object from its segments and returns the object to the client.
 

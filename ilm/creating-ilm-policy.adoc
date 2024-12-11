@@ -188,7 +188,7 @@ CAUTION: Review any changes to the placement of existing replicated and erasure-
 
 .Results
 
-Any edits to the policy's rules will be reflected in the Simulation results and show the new match and previous match. The Simulate policy window retains the objects you tested until you select either *Clear all* or the remove icon image:../media/icon-x-to-remove.png["Remove icon"] for each object in the Simulation results list.
+Any edits to the policy's rules will be reflected in the Simulation results and show the new match and previous match. The Simulate policy window retains the objects you tested until you select either *Clear all* or the remove icon image:../media/icon-x-to-remove.png[Remove icon] for each object in the Simulation results list.
 
 .Related information
 
