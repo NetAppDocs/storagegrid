@@ -21,7 +21,7 @@ If an ILM rule's content placement instructions require replicated copies of obj
 
 The ILM engine in the LDR service controls replication and ensures that the correct number of copies are stored in the correct locations and for the correct amount of time.
 
-image::../media/replication_data_flow.png["diagram showing the process described in surrounding text"]
+image::../media/replication_data_flow.png[diagram showing the process described in surrounding text]
 
 . The ILM engine queries the ADC service to determine the best destination LDR service within the storage pool specified by the ILM rule. It then sends that LDR service a command to initiate replication.
 . The destination LDR service queries the ADC service for the best source location. It then sends a replication request to the source LDR service.
@@ -35,7 +35,7 @@ If an ILM rule includes instructions to make erasure-coded copies of object data
 
 The ILM engine, which is a component of the LDR service, controls erasure coding and ensures that the erasure-coding profile is applied to object data.
 
-image::../media/erasure_coding_data_flow.png["Erasure Coding Data Flow"]
+image::../media/erasure_coding_data_flow.png[Erasure Coding Data Flow]
 
 . The ILM engine queries the ADC service to determine which DDS service can best perform the erasure coding operation. When determined, the ILM engine sends an "initiate" request to that service.
 . The DDS service instructs an LDR to erasure code the object data.
@@ -50,7 +50,7 @@ If an ILM rule's content placement instructions require that a replicated copy o
 
 The ILM engine, which is a component of the LDR service, and the Data Mover service control the movement of objects to the Cloud Storage Pool.
 
-image::../media/cloud_storage_pool_data_flow.png["Cloud Storage Pool Data Flow"]
+image::../media/cloud_storage_pool_data_flow.png[Cloud Storage Pool Data Flow]
 
 . The ILM engine selects a Data Mover service to replicate to the Cloud Storage Pool.
 . The Data Mover service sends the object data to the Cloud Storage Pool.

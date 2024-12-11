@@ -37,7 +37,7 @@ Swift users who don't belong to any groups don't have management permissions or 
 +
 If your tenant account has the *Use grid federation connection* permission, a blue banner indicates that this is the tenant's source grid. Any local users you create on this grid will be cloned to the other grid in the connection.
 +
-image::../media/grid-federation-tenant-user-banner.png["image of blue banner on User page if this is the tenant source grid"]
+image::../media/grid-federation-tenant-user-banner.png[image of blue banner on User page if this is the tenant source grid]
 
 . Select *Create user*.
 
@@ -128,7 +128,7 @@ If the tenant account has the *Use grid federation connection* permission and yo
 
 . Edit user settings as needed. See <<create-user,Create local user>> for details about what to enter.
 
-.. In the Overview section, change the full name by selecting the name or the edit icon image:../media/icon_edit_tm.png["Edit icon"].
+.. In the Overview section, change the full name by selecting the name or the edit icon image:../media/icon_edit_tm.png[Edit icon].
 +
 You can't change the username.
 

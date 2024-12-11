@@ -20,7 +20,7 @@ The default rule is the last rule to be evaluated in an ILM policy, so it can't 
 
 In this example policy, the first rule applies only to objects belonging to test-tenant-1. The default rule, which is last, applies to objects belonging to all other tenant accounts.
 
-image::../media/ilm_policies_page_default_rule.png["ILM Policies Page Default Rule"]
+image::../media/ilm_policies_page_default_rule.png[ILM Policies Page Default Rule]
 
 When you create the default rule, keep these requirements in mind:
 

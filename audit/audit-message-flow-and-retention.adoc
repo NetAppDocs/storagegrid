@@ -21,7 +21,7 @@ In turn, each ADC service acts as a relay and sends its collection of audit mess
 
 Each Admin Node stores audit messages in text log files; the active log file is named `audit.log`.
 
-image::../media/audit_message_flow.gif["Diagram that summarizes audit message flow through relays"]
+image::../media/audit_message_flow.gif[Diagram that summarizes audit message flow through relays]
 
 === Audit message retention
 
@@ -29,7 +29,7 @@ StorageGRID uses a copy-and-delete process to ensure that no audit messages are 
 
 When a node generates or relays an audit message, the message is stored in an audit message queue on the system disk of the grid node. A copy of the message is always held in an audit message queue until the message is written to the audit log file in the Admin Node's `/var/local/log` directory. This helps prevent loss of an audit message during transport.
 
-image::../media/audit_message_retention.gif["diagram that summarizes audit message receipt at the AMS"]
+image::../media/audit_message_retention.gif[diagram that summarizes audit message receipt at the AMS]
 
 The audit message queue can temporarily increase due to network connectivity issues or insufficient audit capacity. As the queues increase, they consume more of the available space in each node's `/var/local/` directory. If the issue persists and a node's audit message directory becomes too full, the individual nodes will prioritize processing their backlog and become temporarily unavailable for new messages.
 

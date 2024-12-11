@@ -58,7 +58,7 @@ If the *Overview* tab includes an entry for *HA groups*, the node is assigned to
 
 In this example, the primary Admin Node has been added to two HA groups. This node is currently the active interface for the Admin clients group and a backup interface for the FabricPool clients group.
 
-image::../media/ha_group_primary_interface.png["HA Group Primary Interface"]
+image::../media/ha_group_primary_interface.png[HA Group Primary Interface]
 
 == What happens when the active interface fails?
 

@@ -15,7 +15,7 @@ NOTE: The Space used values are estimates. These estimates are affected by the t
 
 When objects have been uploaded, the dashboard looks like the following example:
 
-image::../media/tenant_dashboard_with_buckets.png["Dashboard - Bucket List"]
+image::../media/tenant_dashboard_with_buckets.png[Dashboard - Bucket List]
 
 == Tenant account information
 
@@ -39,11 +39,11 @@ CAUTION: Quota usage is based on internal estimates and might be exceeded in som
 +
 You can place your cursor over any of the chart segments to view the total space consumed by that bucket or container.
 +
-image::../media/tenant_dashboard_storage_usage_segment.png["Bar Chart Segment"]
+image::../media/tenant_dashboard_storage_usage_segment.png[Bar Chart Segment]
 
 * To correspond with the bar chart, a list of the largest buckets or containers, including the total amount of object data and the number of objects for each bucket or container.
 +
-image::../media/tenant_dashboard_buckets.png["Tenant Dashboard Buckets"]
+image::../media/tenant_dashboard_buckets.png[Tenant Dashboard Buckets]
 +
 If the tenant has more than nine buckets or containers, all other buckets or containers are combined into a single entry at the bottom of the list.
 
@@ -69,6 +69,6 @@ If no limit is set for a bucket, its capacity is unlimited. However, if your ten
 
 If you have used the Grid Manager to configure one or more endpoints for use with platform services, the Tenant Manager dashboard displays an alert if any endpoint errors have occurred within the past seven days.
 
-image::../media/tenant_dashboard_endpoint_error.png["Dashboard showing endpoint message"]
+image::../media/tenant_dashboard_endpoint_error.png[Dashboard showing endpoint message]
 
 To see details about link:troubleshooting-platform-services-endpoint-errors.html[platform services endpoint errors], select *Endpoints* to display the Endpoints page.

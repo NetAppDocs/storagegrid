@@ -18,15 +18,15 @@ For example:
 . You initially configure a default KMS that applies to all sites that don't have a dedicated KMS.
 . When the KMS is saved, all appliance nodes that have the *Node Encryption* setting enabled connect to the KMS and request the encryption key. This key is used to encrypt the appliance nodes at all sites. This same key must also be used to decrypt those appliances.
 +
-image::../media/kms_default_key.png["KMS Default Key"]
+image::../media/kms_default_key.png[KMS Default Key]
 
 . You decide to add a site-specific KMS for one site (Data Center 3 in the figure). However, because the appliance nodes are already encrypted, a validation error occurs when you attempt to save the configuration for the site-specific KMS. The error occurs because the site-specific KMS does not have the correct key to decrypt the nodes at that site.
 +
-image::../media/kms_wrong_key.png["KMS Wrong Key"]
+image::../media/kms_wrong_key.png[KMS Wrong Key]
 
 . To address the issue, you copy the current version of the encryption key from the default KMS to the new KMS. (Technically, you copy the original key to a new key with the same alias. The original key becomes a prior version of the new key.) The site-specific KMS now has the correct key to decrypt the appliance nodes at Data Center 3, so it can be saved in StorageGRID.
 +
-image::../media/kms_copied_key.png["KMS Copied Key"]
+image::../media/kms_copied_key.png[KMS Copied Key]
 
 == Use cases for changing which KMS is used for a site
 

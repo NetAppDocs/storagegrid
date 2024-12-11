@@ -25,7 +25,7 @@ NOTE: If a grid node is missing, confirm that it was deployed successfully and h
 
 . Select the radio button next to a pending node you want to approve.
 +
-image::../media/5_gmi_installer_grid_nodes_pending.gif["This image is explained by the surrounding text."]
+image::../media/5_gmi_installer_grid_nodes_pending.gif[This image is explained by the surrounding text.]
 
 . Click *Approve*.
 . In General Settings, modify settings for the following properties, as necessary:
@@ -99,7 +99,7 @@ For additional information, see the installation instructions for your appliance
 +
 The grid node entry moves to the Approved Nodes list.
 +
-image::../media/7_gmi_installer_grid_nodes_approved.gif["This image is explained by the surrounding text."]
+image::../media/7_gmi_installer_grid_nodes_approved.gif[This image is explained by the surrounding text.]
 
 . Repeat these steps for each pending grid node you want to approve.
 +

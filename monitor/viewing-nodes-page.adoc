@@ -19,7 +19,7 @@ NOTE: To change units for the storage values displayed in the Grid Manager, sele
 
 include::../_include/screenshots-vary.adoc[]
 
-image::../media/nodes_table.png["Nodes Menu"]
+image::../media/nodes_table.png[Nodes Menu]
 
 [[connection-state]]
 == Connection state icons
@@ -30,7 +30,7 @@ If a node is disconnected from the grid, either of the following icons appears n
 |===
 | Icon| Description| Action required
 
-|image:../media/icon_alarm_blue_unknown.png["blue question mark icon"]
+|image:../media/icon_alarm_blue_unknown.png[blue question mark icon]
 |*Not connected - Unknown*
 
 For an unknown reason, a node is disconnected or services on the node are unexpectedly down. For example, a service on the node might be stopped, or the node might have lost its network connection because of a power failure or unexpected outage.
@@ -43,7 +43,7 @@ For example, you might need to restart a service that has stopped or restart the
 
 *Note*: A node might appear as Unknown during managed shutdown operations. You can ignore the Unknown state in these cases.
 
-|image:../media/icon_alarm_gray_administratively_down.png["gray questionmark icon"]
+|image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon]
 |*Not connected - Administratively down*
 
 For an expected reason, node is not connected to grid.
@@ -63,11 +63,11 @@ If a node is disconnected from the grid, it might have an underlying alert, but 
 
 If there is an active alert for a node, one of the following icons appears next to the node name:
 
-image:../media/icon_alert_red_critical.png["Icon Alert Red Critical"] *Critical*: An abnormal condition exists that has stopped the normal operations of a StorageGRID node or service. You must address the underlying issue immediately. Service disruption and loss of data might result if the issue is not resolved.
+image:../media/icon_alert_red_critical.png[Icon Alert Red Critical] *Critical*: An abnormal condition exists that has stopped the normal operations of a StorageGRID node or service. You must address the underlying issue immediately. Service disruption and loss of data might result if the issue is not resolved.
 
-image:../media/icon_alert_orange_major.png["Icon Alert Orange Major"] *Major*: An abnormal condition exists that is either affecting current operations or approaching the threshold for a critical alert. You should investigate major alerts and address any underlying issues to ensure that the abnormal condition does not stop the normal operation of a StorageGRID node or service.
+image:../media/icon_alert_orange_major.png[Icon Alert Orange Major] *Major*: An abnormal condition exists that is either affecting current operations or approaching the threshold for a critical alert. You should investigate major alerts and address any underlying issues to ensure that the abnormal condition does not stop the normal operation of a StorageGRID node or service.
 
-image:../media/icon_alert_yellow_minor.png["Icon Alert Yellow Minor"] *Minor*: The system is operating normally, but an abnormal condition exists that could affect the system's ability to operate if it continues. You should monitor and resolve minor alerts that don't clear on their own to ensure they don't result in a more serious problem.
+image:../media/icon_alert_yellow_minor.png[Icon Alert Yellow Minor] *Minor*: The system is operating normally, but an abnormal condition exists that could affect the system's ability to operate if it continues. You should monitor and resolve minor alerts that don't clear on their own to ensure they don't result in a more serious problem.
 
 
 == View details for a system, site, or node

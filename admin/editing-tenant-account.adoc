@@ -24,7 +24,7 @@ include::../_include/tenant-settings-delay.adoc[]
 
 . Select *TENANTS*.
 +
-image::../media/tenant_accounts_page.png["Tenant Accounts page"]
+image::../media/tenant_accounts_page.png[Tenant Accounts page]
 
 . Locate the tenant account you want to edit.
 +

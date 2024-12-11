@@ -17,9 +17,9 @@ If you configure a Client Network for a node during installation, the node's def
 
 In this example, the Client Network is used for S3 client requests and for administrative functions, while the Grid Network is dedicated to internal object management operations.
 
-image::../media/grid_client_networks.png["Grid Client Networks"]
+image::../media/grid_client_networks.png[Grid Client Networks]
 
-image::../media/grid_client_networks_ips.png["Grid Client Networks IPs"]
+image::../media/grid_client_networks_ips.png[Grid Client Networks IPs]
 
 .Related information
 

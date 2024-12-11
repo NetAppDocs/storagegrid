@@ -30,7 +30,7 @@ The Alert Rules page appears.
 +
 The Edit Rule dialog box appears. This example shows a default alert rule--the Unique Name, Description, and Recommended Actions fields are disabled and can't be edited.
 +
-image::../media/alert_rules_edit_rule.png["Alerts > Edit Rule"]
+image::../media/alert_rules_edit_rule.png[Alerts > Edit Rule]
 
 . Select or clear the *Enabled* checkbox to determine if this alert rule is currently enabled.
 +
@@ -65,7 +65,7 @@ Optionally, the recommended actions to take when this alert is triggered.     En
 +
 NOTE: If you want to restore a condition for an edited default alert rule back to its original value, select the three dots to the right of the modified condition.
 +
-image::../media/alert_rules_edit_revert_to_default.png["Alert rules: reverting an edited condition to default value"]
+image::../media/alert_rules_edit_revert_to_default.png[Alert rules: reverting an edited condition to default value]
 +
 NOTE: If you update the conditions for a current alert, your changes might not be implemented until the previous condition is resolved. The next time one of the conditions for the rule is met, the alert will reflect the updated values.
 +

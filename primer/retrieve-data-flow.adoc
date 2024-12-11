@@ -15,7 +15,7 @@ The Storage Node's LDR service queries the metadata store for the location of th
 
 NOTE: If the only object copy is on AWS Glacier storage or the Azure Archive tier, the client application must issue an S3 RestoreObject request to restore a retrievable copy to the Cloud Storage Pool.
 
-image::../media/retrieve_data_flow.png["Retrieve"]
+image::../media/retrieve_data_flow.png[Retrieve]
 
 . The LDR service receives a retrieval request from the client application.
 . The LDR service queries the metadata store for the object data location and metadata.

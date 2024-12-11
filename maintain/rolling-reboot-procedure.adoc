@@ -52,7 +52,7 @@ As your first step, access the Rolling reboot page and select the nodes you want
 
 . Review the connection state and alert icons in the *Node name* column.
 +
-TIP: You can't reboot a node if it is disconnected from the grid. The checkboxes are disabled for nodes with these icons: image:../media/icon_alarm_gray_administratively_down.png["gray question mark icon"] or  image:../media/icon_alarm_blue_unknown.png["blue question mark icon"].
+TIP: You can't reboot a node if it is disconnected from the grid. The checkboxes are disabled for nodes with these icons: image:../media/icon_alarm_gray_administratively_down.png[gray question mark icon] or  image:../media/icon_alarm_blue_unknown.png[blue question mark icon].
 
 . If any nodes have active alerts, review the list of alerts in the *Alert summary* column.
 +

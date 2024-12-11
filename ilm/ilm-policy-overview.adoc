@@ -29,7 +29,7 @@ You can have one or more active ILM policies at a time.
 === One policy
 If your grid will use a simple data protection scheme with few tenant-specific and bucket-specific rules, use a single active ILM policy. The ILM rules can contain filters to manage different buckets or tenants.
 
-image::../media/ilm-policies-single.png["Single ILM policies diagram"]
+image::../media/ilm-policies-single.png[Single ILM policies diagram]
 
 When you have only one policy and a tenant's requirements change, you must create a new ILM policy or clone the existing policy to apply changes, simulate, and then activate the new ILM policy. Changes to the ILM policy could result in object moves that could take many days and cause system latency.
 
@@ -42,7 +42,7 @@ For example, you might have three tags named Gold, Silver, and Bronze. You can a
 
 Default ILM policy tag:: A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to any untagged S3 buckets.
 
-image::../media/ilm-policies-tags-conceptual.png["Multiple ILM policies diagram"]
+image::../media/ilm-policies-tags-conceptual.png[Multiple ILM policies diagram]
 
 == How does an ILM policy evaluate objects?
 
@@ -71,7 +71,7 @@ As an example, an ILM policy could contain three ILM rules that specify the foll
 ** Is the last and default rule in the policy. Does not use filters.
 ** Make two replicated copies of all objects not matched by Rule 1 or Rule 2 (objects not belonging to Tenant A that are 1 MB or smaller).
 
-image::../media/ilm_policy_and_rules.png["ILM Policy and Rules"]
+image::../media/ilm_policy_and_rules.png[ILM Policy and Rules]
 
 == What are active and inactive policies?
 

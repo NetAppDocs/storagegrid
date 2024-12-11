@@ -28,7 +28,7 @@ Investigate lost object alerts immediately. You might need to take action to pre
 +
 This number indicates the total number of objects this grid node detects as missing from the entire StorageGRID system. The value is the sum of the Lost objects counters of the Data store component within the LDR and DDS services.
 +
-image::../media/nodes_storage_nodes_objects_page_lost_object.png["Nodes Storage Nodes Object Page lost object"]
+image::../media/nodes_storage_nodes_objects_page_lost_object.png[Nodes Storage Nodes Object Page lost object]
 
 . From an Admin Node, link:../audit/accessing-audit-log-file.html[access the audit log] to determine the unique identifier (UUID) of the object that triggered the *Objects lost* alert:
 .. Log in to the grid node:

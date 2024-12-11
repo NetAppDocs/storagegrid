@@ -25,16 +25,16 @@ CAUTION: If you are performing a disconnected site decommission, ILM can't move 
 
 . From Step 2 (View Details), review any warnings related to the site you selected to remove.
 +
-image::../media/decommission_site_step_2_site_warnings.png["Decommission Site Step 2 Site Warnings"]
+image::../media/decommission_site_step_2_site_warnings.png[Decommission Site Step 2 Site Warnings]
 +
 A warning appears in these cases:
 
  ** The site includes a Gateway Node. If S3 clients are currently connecting to this node, you must configure an equivalent node at another site. Be sure clients can connect to the replacement node before continuing with the decommission procedure.
- ** The site contains a mixture of connected (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]) and disconnected nodes (image:../media/icon_alarm_gray_administratively_down.png["Icon Alarm Gray Administratively Down"] or image:../media/icon_alarm_blue_unknown.png["Icon Alarm Blue Unknown"]). Before you can remove this site, you must bring all offline nodes back online.
+ ** The site contains a mixture of connected (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]) and disconnected nodes (image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down] or image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown]). Before you can remove this site, you must bring all offline nodes back online.
 
 . Review details about the site you selected to remove.
 +
-image::../media/decommission_site_step_2_view_details.png["Decommission Site Step 2 View Details"]
+image::../media/decommission_site_step_2_view_details.png[Decommission Site Step 2 View Details]
 +
 The following information is included for the selected site:
 
@@ -43,16 +43,16 @@ The following information is included for the selected site:
   *** For a connected site decommission, the *Used Space* value represents how much object data must be moved to other sites or deleted with ILM.
   *** For a disconnected site decommission, the *Used Space* value indicates how much object data will become inaccessible when you remove the site.
  ** Node names, types, and connection states:
-  *** image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"] (Connected)
-  *** image:../media/icon_alarm_gray_administratively_down.png["Icon Alarm Gray Administratively Down"] (Administratively Down)
-  *** image:../media/icon_alarm_blue_unknown.png["Icon Alarm Blue Unknown"] (Unknown)
+  *** image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark] (Connected)
+  *** image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down] (Administratively Down)
+  *** image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown] (Unknown)
  ** Details about each node:
   *** For each Storage Node, the amount of space that has been used for object data.
   *** For Admin Nodes and Gateway Nodes, whether the node is currently used in a high availability (HA) group. You can't decommission an Admin Node or a Gateway Node that is used in an HA group. Before you start the decommission, edit HA groups to remove all nodes at the site or remove the HA group if it only includes nodes from this site. For instructions, see link:../admin/managing-high-availability-groups.html[Manage high availability (HA) groups].
 
 . In the Details for Other Sites section of the page, assess how much space is available at the other sites in your grid.
 +
-image::../media/decommission_site_step_2_view_details_for_other_sites.png["Decommission Site Step 2 View Details for Other Sites"]
+image::../media/decommission_site_step_2_view_details_for_other_sites.png[Decommission Site Step 2 View Details for Other Sites]
 +
 If you are performing a connected site decommission and you plan to use ILM to move object data from the selected site (instead of just deleting it), you must ensure that the other sites have enough capacity to accommodate the moved data and that adequate capacity remains for future growth.
 +

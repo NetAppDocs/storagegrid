@@ -77,7 +77,7 @@ The table lists the available interfaces for all Admin Nodes and Gateway Nodes a
 +
 For example, you might want to attach a VLAN to the Client Network (eth2) interface for a Gateway Node and an Admin Node.  
 +
-image::../media/vlan-create-parent-interfaces.png["VLAN create wizard parent interfaces"]
+image::../media/vlan-create-parent-interfaces.png[VLAN create wizard parent interfaces]
 
 . Select *Continue*.
 
@@ -91,7 +91,7 @@ image::../media/vlan-create-parent-interfaces.png["VLAN create wizard parent int
 
 * If you need to change a parent interface, select *Choose parent interfaces* at the top of the page or select *Previous*.
 
-* If you need to remove a parent interface, select the trash can image:../media/icon-trash-can.png["trash can icon"].
+* If you need to remove a parent interface, select the trash can image:../media/icon-trash-can.png[trash can icon].
 
 . Select *Save*.
 

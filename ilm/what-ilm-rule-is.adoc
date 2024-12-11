@@ -66,14 +66,14 @@ Each rule can define multiple placements for a single time period and different 
 
 The example shows two placement instructions on the Define placements page of the Create ILM rule wizard.
 
-image::../media/ilm_rule_multiple_placements_in_single_time_period.png["ILM placements screen from Grid Manager"]
+image::../media/ilm_rule_multiple_placements_in_single_time_period.png[ILM placements screen from Grid Manager]
 
-The first placement instruction image:../media/icon_number_1.png["Icon number 1"] has two lines for the first year:
+The first placement instruction image:../media/icon_number_1.png[Icon number 1] has two lines for the first year:
 
 * The first line creates two replicated object copies at two data center sites.
 * The second line creates a 6+3 erasure-coded copy using all data center sites.
 
-The second placement instruction image:../media/icon_number_2.png["Icon number 1"] creates two copies after one year and keeps those copies forever.
+The second placement instruction image:../media/icon_number_2.png[Icon number 1] creates two copies after one year and keeps those copies forever.
 
 When you define the set of placement instructions for a rule, you must ensure that at least one placement instruction begins at day 0, that there are no gaps between the time periods you have defined, and that the final placement instruction continues either forever or until you no longer require any object copies.
 

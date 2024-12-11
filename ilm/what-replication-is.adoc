@@ -15,7 +15,7 @@ When you configure an ILM rule to create replicated copies, you specify how many
 
 In the following example, the ILM rule specifies that two replicated copies of each object be placed in a storage pool that contains three Storage Nodes.
 
-image::../media/ilm_replication_make_2_copies.png["Make 2 Copies rule"]
+image::../media/ilm_replication_make_2_copies.png[Make 2 Copies rule]
 
 When StorageGRID matches objects to this rule, it creates two copies of the object, placing each copy on a different Storage Node in the storage pool. The two copies might be placed on any two of the three available Storage Nodes. In this case, the rule placed object copies on Storage Nodes 2 and 3. Because there are two copies, the object can be retrieved if any of the nodes in the storage pool fails.
 
