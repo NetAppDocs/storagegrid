@@ -81,7 +81,7 @@ Result: the host MAC for ens256 is b2:9c:02:c2:27:10 and the Admin Network MAC i
 
 Example 1 describes a simple physical interface mapping that requires little or no host-side configuration.
 
-image::../media/rhel_install_vlan_diag_1.gif["VLAN diagram"]
+image::../media/rhel_install_vlan_diag_1.gif[VLAN diagram]
 
 The Linux operating system creates the ensXYZ interfaces automatically during installation or boot, or when the interfaces are hot-added. No configuration is required other than ensuring that the interfaces are set to come up automatically after boot. You do have to determine which ensXYZ corresponds to which StorageGRID network (Grid, Admin, or Client) so you can provide the correct mappings later in the configuration process.
 
@@ -101,7 +101,7 @@ To understand this example, suppose you have three separate subnets for the Grid
 
 If you require separate VLANs and subnets for node networks on the same host, you can add VLAN interfaces on the bond and map them into the host (shown as bond0.1004 in the illustration).
 
-image::../media/rhel_install_vlan_diag_2.gif["This image is explained by the surrounding text."]
+image::../media/rhel_install_vlan_diag_2.gif[This image is explained by the surrounding text.]
 
 .Steps
 

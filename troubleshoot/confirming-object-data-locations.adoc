@@ -25,7 +25,7 @@ You can enter a UUID, CBID, S3 bucket/object-key, or Swift container/object-name
 
 . If you want to look up a specific version of the object, enter the version ID (optional).
 +
-image::../media/object_lookup.png["Object Lookup page"]
+image::../media/object_lookup.png[Object Lookup page]
 
 . Select *Look Up*.
 +
@@ -43,4 +43,4 @@ The link:../ilm/verifying-ilm-policy-with-object-metadata-lookup.html[object met
 The following example shows the object metadata lookup results for an S3 test object that is stored as two replicated copies.
 
 +
-image::../media/object_lookup_results.png["Object Lookup Results"]
+image::../media/object_lookup_results.png[Object Lookup Results]

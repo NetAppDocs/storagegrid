@@ -17,7 +17,7 @@ The StorageGRID system can continue to operate when parts of the grid are unavai
 
 To be notified of alerts as soon as they are triggered, you can https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/setting-up-email-notifications-for-alerts.html[set up email notifications for alerts^] or link:using-snmp-monitoring.html[configure SNMP traps].
 
-image::../media/health_status_card.png["Health status card - dashboard"]
+image::../media/health_status_card.png[Health status card - dashboard]
 
 When issues exist, links appear that allow you to view additional details:
 
@@ -46,7 +46,7 @@ If one or more nodes are disconnected from the grid, critical StorageGRID operat
 |===
 | Icon| Description| Action required
 
-| image:../media/icon_alarm_blue_unknown.png["blue question mark icon"]
+| image:../media/icon_alarm_blue_unknown.png[blue question mark icon]
 | *Not connected - Unknown*
 
 For an unknown reason, a node is disconnected or services on the node are unexpectedly down. For example, a service on the node might be stopped, or the node might have lost its network connection because of a power failure or unexpected outage.
@@ -59,7 +59,7 @@ For example, you might need to restart a service that has stopped or restart the
 
 *Note*: A node might appear as Unknown during managed shutdown operations. You can ignore the Unknown state in these cases.
 
-| image:../media/icon_alarm_gray_administratively_down.png["gray questionmark icon"]
+| image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon]
 | *Not connected - Administratively down*
 
 For an expected reason, node is not connected to grid.
@@ -72,7 +72,7 @@ Determine if any alerts are affecting this node.
 
 If one or more alerts are active, <<View current and resolved alerts,select each alert>> and follow the recommended actions.
 
-| image:../media/icon_alert_green_checkmark.png["icon alert green check mark"]
+| image:../media/icon_alert_green_checkmark.png[icon alert green check mark]
 | *Connected*
 
 The node is connected to the grid.
@@ -100,11 +100,11 @@ The following table describes the information shown in the Grid Manager for curr
 | Severity
 | The severity of the alert. For current alerts, if multiple alerts are grouped the title row shows how many instances of that alert are occurring at each severity.
 
-image:../media/icon_alert_red_critical.png["Icon Alert Red Critical"] *Critical*: An abnormal condition exists that has stopped the normal operations of a StorageGRID node or service. You must address the underlying issue immediately. Service disruption and loss of data might result if the issue is not resolved.
+image:../media/icon_alert_red_critical.png[Icon Alert Red Critical] *Critical*: An abnormal condition exists that has stopped the normal operations of a StorageGRID node or service. You must address the underlying issue immediately. Service disruption and loss of data might result if the issue is not resolved.
 
-image:../media/icon_alert_orange_major.png["Icon Alert Orange Major"] *Major*: An abnormal condition exists that is either affecting current operations or approaching the threshold for a critical alert. You should investigate major alerts and address any underlying issues to ensure that the abnormal condition does not stop the normal operation of a StorageGRID node or service.
+image:../media/icon_alert_orange_major.png[Icon Alert Orange Major] *Major*: An abnormal condition exists that is either affecting current operations or approaching the threshold for a critical alert. You should investigate major alerts and address any underlying issues to ensure that the abnormal condition does not stop the normal operation of a StorageGRID node or service.
 
-image:../media/icon_alert_yellow_minor.png["Icon Alert Yellow Minor"] *Minor*: The system is operating normally, but an abnormal condition exists that could affect the system's ability to operate if it continues. You should monitor and resolve minor alerts that don't clear on their own to ensure they don't result in a more serious problem.
+image:../media/icon_alert_yellow_minor.png[Icon Alert Yellow Minor] *Minor*: The system is operating normally, but an abnormal condition exists that could affect the system's ability to operate if it continues. You should monitor and resolve minor alerts that don't clear on their own to ensure they don't result in a more serious problem.
 
 | Time triggered
 |
@@ -143,11 +143,11 @@ By default, current alerts are shown as follows:
 +
 The Current alerts page is refreshed every two minutes.
 
-. To expand groups of alerts, select the down caret image:../media/icon_alert_caret_down.png["down caret icon"]. To collapse individual alerts in a group, select the up caret image:../media/icon_alert_caret_up.png["Up caret icon"], or select the group's name.
+. To expand groups of alerts, select the down caret image:../media/icon_alert_caret_down.png[down caret icon]. To collapse individual alerts in a group, select the up caret image:../media/icon_alert_caret_up.png[Up caret icon], or select the group's name.
 
 . To display individual alerts instead of groups of alerts, clear the *Group alerts* checkbox.
 
-. To sort current alerts or alert groups, select the up/down arrows image:../media/icon_alert_sort_column.png["Sort arrows icon"] in each column header.
+. To sort current alerts or alert groups, select the up/down arrows image:../media/icon_alert_sort_column.png[Sort arrows icon] in each column header.
  ** When *Group alerts* is selected, both the alert groups and the individual alerts within each group are sorted. For example, you might want to sort the alerts in a group by *Time triggered* to find the most recent instance of a specific alert.
  ** When *Group alerts* is cleared, the entire list of alerts is sorted. For example, you might want to sort all alerts by *Node/Site* to see all alerts affecting a specific node.
 

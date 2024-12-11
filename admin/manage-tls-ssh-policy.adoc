@@ -28,7 +28,7 @@ NOTE: Some StorageGRID services have not been updated to use the ciphers in thes
 + 
 The *TLS and SSH policies* tab shows the available policies. The currently active policy is noted by a green check mark on the policy tile.
 +
-image::../media/securitysettings_tls_ssh_policies_current.png["TLS and SSH policies"]
+image::../media/securitysettings_tls_ssh_policies_current.png[TLS and SSH policies]
 
 . Review the tiles to learn about the available policies.
 +
@@ -72,7 +72,7 @@ You can create a custom policy if you need to apply your own ciphers.
 
 . Select *Copy to clipboard*, and then select *Cancel*.
 +
-image::../media/securitysettings-custom-security-policy-copy.png["copying an existing policy to create a custom policy"]
+image::../media/securitysettings-custom-security-policy-copy.png[copying an existing policy to create a custom policy]
 
 . From the *Custom policy* tile, select *Configure and use*.
 

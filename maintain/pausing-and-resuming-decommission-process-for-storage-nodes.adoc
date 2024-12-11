@@ -35,6 +35,6 @@ The Decommission Nodes page appears. When the decommission procedure reaches eit
 +
 The current stage is paused, and the *Resume* button is enabled.
 +
-image::../media/decommission_nodes_procedure_paused.png["Decommission Nodes Procedure Paused"]
+image::../media/decommission_nodes_procedure_paused.png[Decommission Nodes Procedure Paused]
 
 . After the other maintenance procedure is finished, select *Resume* to proceed with the decommission.

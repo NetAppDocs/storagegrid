@@ -28,13 +28,13 @@ The hotfix is first applied automatically to the primary Admin Node. Then, you m
 +
 The Software Update page appears.
 +
-image::../media/software_update_landing.png["Software Update Landing Page"]
+image::../media/software_update_landing.png[Software Update Landing Page]
 
 . Select *Apply hotfix*.
 +
 The StorageGRID Hotfix page appears.
 +
-image::../media/hotfix_choose_file.png["Hotfix Choose File"]
+image::../media/hotfix_choose_file.png[Hotfix Choose File]
 
 . Select the hotfix file you downloaded from the NetApp Support Site.
  .. Select *Browse*.
@@ -70,7 +70,7 @@ This table shows all nodes in your grid and the current stage of the hotfix inst
 
 .. The progress bar reaches completion, and then the primary Admin Node is shown as "Complete."
 +
-image::../media/hotfix_progress_table.png["Hotfix Progress Table"]
+image::../media/hotfix_progress_table.png[Hotfix Progress Table]
 
 . Optionally, sort the lists of nodes in each grouping in ascending or descending order by *Site*, *Name*, *Progress*, *Stage*, or *Details*. Or, enter a term in the *Search* box to search for specific nodes.
 
@@ -91,7 +91,7 @@ NOTE: You must complete the StorageGRID hotfix before you can start a different 
 +
 When the Stage progresses beyond "Queued," the *Remove* button is hidden and you can no longer remove the node from the hotfix process.
 +
-image::../media/approve_all_progresstable.png["Hotfix progress with remove button"]
+image::../media/approve_all_progresstable.png[Hotfix progress with remove button]
 
 . Wait while the hotfix is applied to each approved grid node.
 +

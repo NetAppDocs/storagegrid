@@ -31,7 +31,7 @@ Each Gateway Node or Admin Node might only require a few minutes or an hour to r
 
 . As soon as a new Recovery Package has been generated, download the file.
 +
-image::../media/decommission_site_step_6_recovery_package.png["Site Decommission Step 6 Recovery Package"]
+image::../media/decommission_site_step_6_recovery_package.png[Site Decommission Step 6 Recovery Package]
 +
 NOTE: Download the Recovery Package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
 
@@ -47,13 +47,13 @@ NOTE: The Recovery Package file must be secured because it contains encryption k
 +
 Data movement started when you activated the new ILM policy in Step 3 (Revise ILM Policy). Data movement will occur throughout the decommission procedure.
 +
-image::../media/decommission_site_step_6_data_movement.png["Decommission Site Step 6 Data Movement"]
+image::../media/decommission_site_step_6_data_movement.png[Decommission Site Step 6 Data Movement]
 
 . In the Node Progress section of the page, monitor the progress of the decommission procedure as nodes are removed.
 +
 When a Storage Node is removed, each node goes through a series of stages. Although most of these stages occur quickly or even imperceptibly, you might need to wait days or even weeks for other stages to complete, based on how much data needs to moved. Additional time is required to manage erasure-coded data and re-evaluate ILM.
 +
-image::../media/decommission_site_step_6_storage_node.png["Decommission Site Step 6 Storage Node"]
+image::../media/decommission_site_step_6_storage_node.png[Decommission Site Step 6 Storage Node]
 +
 If you are monitoring the progress of a connected site decommission, refer to this table to understand the decommission stages for a Storage Node:
 +
@@ -127,7 +127,7 @@ If you are monitoring the progress of a disconnected site decommission, refer to
 . After all nodes have reached the Complete stage, wait for the remaining site decommission operations to complete.
  ** During the *Repair Cassandra* step, StorageGRID makes any necessary repairs to the Cassandra clusters that remain in your grid. These repairs might take several days or more, depending on how many Storage Nodes remain in your grid.
 +
-image::../media/decommission_site_step_6_repair_cassandra.png["Decommission Site Step 6 Repair Cassandra"]
+image::../media/decommission_site_step_6_repair_cassandra.png[Decommission Site Step 6 Repair Cassandra]
 
  ** During the *Deactivate EC Profiles & Delete Storage Pools* step, the following ILM changes are made:
   *** Any erasure-coding profiles that referred to the site are deactivated.
@@ -136,10 +136,10 @@ image::../media/decommission_site_step_6_repair_cassandra.png["Decommission Site
 NOTE: The All Storage Nodes storage pool (StorageGRID 11.6 and earlier) is also removed because it uses the All Sites site.
  ** Finally, during the *Remove Configuration* step, any remaining references to the site and its nodes are removed from the rest of the grid.
 +
-image::../media/decommission_site_step_6_remove_configuration.png["Decommission Site Step 6 Remove Configuration"]
+image::../media/decommission_site_step_6_remove_configuration.png[Decommission Site Step 6 Remove Configuration]
 . When the decommission procedure has completed, the Decommission Site page shows a success message, and the removed site is no longer shown.
 +
-image::../media/decommission_site_success_message.png["Decommission Site Success Message"]
+image::../media/decommission_site_success_message.png[Decommission Site Success Message]
 
 .After you finish
 

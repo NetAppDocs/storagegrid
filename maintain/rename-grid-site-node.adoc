@@ -86,7 +86,7 @@ Follow these steps to enter a display name for each item you want to rename.
 +
 See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes] to learn the naming requirements.
 
-. To remove any items you don't want to rename, select image:../media/icon-x-to-remove.png["X icon"] in the *Remove from list* column.
+. To remove any items you don't want to rename, select image:../media/icon-x-to-remove.png[X icon] in the *Remove from list* column.
 +
 If you will not be proposing a new name for an item, you must remove it from the table.
 
@@ -109,11 +109,11 @@ The *Rename preview* includes all items that were shown for the *Propose new nam
 +
 As you type, your text is highlighted wherever it is found in the names on the left.
 
-. Select image:../media/icon-x-to-remove.png["X icon"] to remove any items that you don't want to rename with this tool. 
+. Select image:../media/icon-x-to-remove.png[X icon] to remove any items that you don't want to rename with this tool. 
 +
-For example, suppose you want to rename all nodes that contain the string `Data-Center-1`, but you don't want to rename the `Data-Center-1` site itself.  Select image:../media/icon-x-to-remove.png["X icon"] to remove the site from the rename preview.
+For example, suppose you want to rename all nodes that contain the string `Data-Center-1`, but you don't want to rename the `Data-Center-1` site itself.  Select image:../media/icon-x-to-remove.png[X icon] to remove the site from the rename preview.
 +
-image::../media/rename-bulk-rename-tool.png["Bulk rename tool before"]
+image::../media/rename-bulk-rename-tool.png[Bulk rename tool before]
 
 . In the *New string* field, enter the replacement string you want to use instead. For example, enter *DC1*.
 +
@@ -121,11 +121,11 @@ See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and
 +
 As you enter the replacement string, the names on the left are updated, so you can verify that the new names will be correct.
 + 
-image::../media/rename-bulk-rename-tool-after.png["Bulk rename tool after"]
+image::../media/rename-bulk-rename-tool-after.png[Bulk rename tool after]
 
 . When you are satisfied with the names shown in the preview, select *Add names* to add the names to the table for the *Propose new names* step. 
 
-. Make any additional changes required, or select image:../media/icon-x-to-remove.png["X icon"] to remove any items that you don't want to rename.
+. Make any additional changes required, or select image:../media/icon-x-to-remove.png[X icon] to remove any items that you don't want to rename.
 
 . When you are ready to rename all items in the table, select *Rename*.
 +
@@ -173,7 +173,7 @@ You can revert a renamed grid, site, or node back to its original system name. W
 .Revert to system names individually
 --
 
-.. Copy each item's original system name and paste it into the *Display name* field, or select image:../media/icon-x-to-remove.png["X icon"] to remove any items you don't want to revert.
+.. Copy each item's original system name and paste it into the *Display name* field, or select image:../media/icon-x-to-remove.png[X icon] to remove any items you don't want to revert.
 +
 To revert a display name, the system name must appear in the *Display name* field, but the name is case insensitive.
 
@@ -192,7 +192,7 @@ A success message appears. The display names for these items are no longer used.
 
 .. Select *Add names* to add the names to the table for the *Propose new names* step. 
 
-.. Confirm that each entry in the *Display name* field matches the name in the *System name* field. Make any changes or select image:../media/icon-x-to-remove.png["X icon"] to remove any items that you don't want to revert.
+.. Confirm that each entry in the *Display name* field matches the name in the *System name* field. Make any changes or select image:../media/icon-x-to-remove.png[X icon] to remove any items that you don't want to revert.
 +
 To revert a display name, the system name must appear in the *Display name* field, but the name is case insensitive.
 

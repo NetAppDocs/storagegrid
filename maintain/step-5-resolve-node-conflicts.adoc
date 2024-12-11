@@ -15,7 +15,7 @@ From Step 5 (Resolve Node Conflicts) of the Decommission Site wizard, you can de
 
 You must ensure that all nodes in your StorageGRID system are in the correct state, as follows:
 
-* All nodes in your StorageGRID system must be connected (image:../media/icon_alert_green_checkmark.png["Icon Alert Green check mark"]).
+* All nodes in your StorageGRID system must be connected (image:../media/icon_alert_green_checkmark.png[Icon Alert Green check mark]).
 +
 NOTE: If you are performing a disconnected site decommission, all nodes at the site you are removing must be disconnected, and all nodes at all other sites must be connected.
 +
@@ -46,9 +46,9 @@ NOTE: If you need to perform another maintenance procedure during a connected si
 
 .Steps
 
-. Review the disconnected nodes section of Step 5 (Resolve Node Conflicts) to determine if any nodes in your StorageGRID system have a Connection State of Unknown (image:../media/icon_alarm_blue_unknown.png["Icon Alarm Blue Unknown"]) or Administratively Down (image:../media/icon_alarm_gray_administratively_down.png["Icon Alarm Gray Administratively Down"]).
+. Review the disconnected nodes section of Step 5 (Resolve Node Conflicts) to determine if any nodes in your StorageGRID system have a Connection State of Unknown (image:../media/icon_alarm_blue_unknown.png[Icon Alarm Blue Unknown]) or Administratively Down (image:../media/icon_alarm_gray_administratively_down.png[Icon Alarm Gray Administratively Down]).
 +
-image::../media/decommission_site_step_5_disconnected_nodes.png["Decommission Site Step 5 Resolve Node Conflicts"]
+image::../media/decommission_site_step_5_disconnected_nodes.png[Decommission Site Step 5 Resolve Node Conflicts]
 
 . If any nodes are disconnected, bring them back online.
 +
@@ -58,7 +58,7 @@ See the link:../maintain/grid-node-procedures.html[Node procedures]. Contact tec
 +
 This table lists any nodes at the selected site that belong to a high availability (HA) group.
 +
-image::../media/decommission_site_step_5_ha_groups.png["Decommission Site Step 5 HA Groups"]
+image::../media/decommission_site_step_5_ha_groups.png[Decommission Site Step 5 HA Groups]
 
 . If any nodes are listed, do either of the following:
 +
@@ -73,19 +73,19 @@ If all nodes are connected and no nodes in the selected site are used in an HA g
 +
 The *Start Decommission* button becomes enabled.
 +
-image::../media/decommission_site_step_5_provision_passphrase.png["Decommission Site Step 5 Provision Passphrase"]
+image::../media/decommission_site_step_5_provision_passphrase.png[Decommission Site Step 5 Provision Passphrase]
 
 . If you are ready to start the site decommission procedure, select *Start Decommission*.
 +
 A warning lists the site and nodes that will be removed. You are reminded that it might take days, weeks, or even months to completely remove the site.
 +
-image::../media/decommission_site_step_5_warning.png["Decommission Site Step 5 Warning"]
+image::../media/decommission_site_step_5_warning.png[Decommission Site Step 5 Warning]
 
 . Review the warning. If you are ready to begin, select *OK*.
 +
 A message appears as the new grid configuration is generated. This process might take some time, depending on the type and number of decommissioned grid nodes.
 +
-image::../media/decommission_site_step_5_grid_configuration.png["Decommission Site Step 5 Grid Configuration"]
+image::../media/decommission_site_step_5_grid_configuration.png[Decommission Site Step 5 Grid Configuration]
 +
 When the new grid configuration has been generated, Step 6 (Monitor Decommission) appears.
 +

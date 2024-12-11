@@ -17,7 +17,7 @@ The StorageGRID Appliance Installer provides status until installation is comple
 +
 The Monitor Installation page shows the installation progress.
 +
-image::../media/monitor_installation_configure_storage.gif["This image is explained by the surrounding text."]
+image::../media/monitor_installation_configure_storage.gif[This image is explained by the surrounding text.]
 +
 The blue status bar indicates which task is currently in progress. Green status bars indicate tasks that have completed successfully.
 +
@@ -33,6 +33,6 @@ During this stage, the installer connects to the storage controller, clears any 
 During this stage, the installer copies the base operating system image for StorageGRID to the appliance.
 . Continue monitoring the installation progress until the *Install StorageGRID* stage pauses and a message appears on the embedded console prompting you to approve this node on the Admin Node using the Grid Manager.
 +
-image::../media/monitor_installation_install_sgws.gif["This image is explained by the surrounding text."]
+image::../media/monitor_installation_install_sgws.gif[This image is explained by the surrounding text.]
 
 . Go to link:selecting-start-recovery-to-configure-appliance-storage-node.html[Select Start Recovery to configure appliance Storage Node].

@@ -15,7 +15,7 @@ The Load Balancer tab is shown for Admin Nodes and Gateway Nodes, each site, and
 
 If there is no I/O being run through the Load Balancer service, or there is no load balancer configured, the graphs display "No data."
 
-image::../media/nodes_page_load_balancer_tab.png["Nodes Page Load Balancer Tab"]
+image::../media/nodes_page_load_balancer_tab.png[Nodes Page Load Balancer Tab]
 
 == Request traffic
 

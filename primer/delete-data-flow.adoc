@@ -31,7 +31,7 @@ See link:../ilm/how-objects-are-deleted.html[How objects are deleted] for more i
 
 == Data flow for client deletes
 
-image::../media/delete_data_flow.png["Client delete data flow"]
+image::../media/delete_data_flow.png[Client delete data flow]
 
 . The LDR service receives a delete request from the client application.
 . The LDR service updates the metadata store so the object looks deleted to client requests, and instructs the ILM engine to remove all copies of object data.
@@ -39,7 +39,7 @@ image::../media/delete_data_flow.png["Client delete data flow"]
 
 == Data flow for ILM deletes
 
-image::../media/automatic_deletion_data_flow.png["Automatic deletion data flow"]
+image::../media/automatic_deletion_data_flow.png[Automatic deletion data flow]
 
 . The ILM engine determines that the object needs to be deleted.
 . The ILM engine notifies the metadata store. The metadata store updates object metadata so that the object looks deleted to client requests.

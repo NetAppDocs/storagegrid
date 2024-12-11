@@ -49,11 +49,11 @@ If StorageGRID is not using SSO, one of the following screens appears:
 
 * The Grid Manager sign-in page. Select the *Tenant sign-in* link.
 +
-image::../media/tenant_login_link.png["Tenant sign-in link on Grid Manager sign in page"]
+image::../media/tenant_login_link.png[Tenant sign-in link on Grid Manager sign in page]
 
 * The Tenant Manager sign-in page. The *Account* field might already be completed, as shown below.
 +
-image::../media/tenant_user_sign_in.png["Tenant Manager Sign In page"]
+image::../media/tenant_user_sign_in.png[Tenant Manager Sign In page]
 
 .. If the tenant's 20-digit account ID is not shown, select the name of the tenant account if it appears in the list of recent accounts, or enter the account ID.
 .. Enter your username and password.
@@ -71,13 +71,13 @@ If StorageGRID is using SSO, one of the following screens appears:
 
 * Your organization's SSO page. For example:
 +
-image::../media/sso_organization_page.gif["example organization Sign In page for SSO"]
+image::../media/sso_organization_page.gif[example organization Sign In page for SSO]
 +
 Enter your standard SSO credentials, and select *Sign in*.
 
 * The Tenant Manager SSO sign-in page.
 +
-image::../media/sign_in_sso.png["Signing in to a tenant account if SSO is enabled"]
+image::../media/sign_in_sso.png[Signing in to a tenant account if SSO is enabled]
 
 .. If the tenant's 20-digit account ID is not shown, select the name of the tenant account if it appears in the list of recent accounts, or enter the account ID.
 .. Select *Sign in*.

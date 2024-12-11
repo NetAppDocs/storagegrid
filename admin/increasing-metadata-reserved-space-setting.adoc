@@ -64,7 +64,7 @@ For example, if the Metadata Reserved Space setting is currently 4 TB and you wa
 +
 For example, to enter 8 TB, which is the maximum supported value, enter *8000000000000* (8, followed by 12 zeros)
 +
-image::../media/metadata_reserved_space.png["Metadata Reserved Space"]
+image::../media/metadata_reserved_space.png[Metadata Reserved Space]
 
  .. Select *Apply Changes*.
 // 2023-11-27, Jira SGRIDDOC-31

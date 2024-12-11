@@ -40,4 +40,4 @@ You can use the IP address for the primary Admin Node IP on the Grid Network or 
 +
 The page used to configure a StorageGRID grid appears.
 +
-image::../media/gmi_installer_first_screen.gif["This image is explained by the surrounding text."]
+image::../media/gmi_installer_first_screen.gif[This image is explained by the surrounding text.]

@@ -25,4 +25,4 @@ For information about changing IP addresses, see link:../maintain/configuring-ip
 +
 The IP addresses for that grid node are listed in a table.
 +
-image::../media/nodes_page_overview_tab_extended.png["Nodes Page IP Addresses"]
+image::../media/nodes_page_overview_tab_extended.png[Nodes Page IP Addresses]

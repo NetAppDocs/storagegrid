@@ -19,7 +19,7 @@ Charts and graphs summarize the values of specific StorageGRID metrics and attri
 
 The Grid Manager dashboard includes cards that summarize available storage for the grid and each site.
 
-image::../media/dashboard_data_and_metadata_space_usage_breakdown.png["Dashboard data and metadata space usage breakdown"]
+image::../media/dashboard_data_and_metadata_space_usage_breakdown.png[Dashboard data and metadata space usage breakdown]
 
 The Storage usage panel on the Tenant Manager dashboard displays the following:
 
@@ -27,7 +27,7 @@ The Storage usage panel on the Tenant Manager dashboard displays the following:
 * A bar chart that represents the relative sizes of the largest buckets or containers
 * The total amount of space used and, if a quota is set, the amount and percentage of space remaining
 
-image::../media/tenant_dashboard_with_buckets.png["Tenant dashboard"]
+image::../media/tenant_dashboard_with_buckets.png[Tenant dashboard]
 
 In addition, graphs that show how StorageGRID metrics and attributes change over time are available from the Nodes page and from the *SUPPORT* > *Tools* > *Grid topology* page.
 
@@ -35,25 +35,25 @@ There are four types of graphs:
 
 * *Grafana charts*: Shown on the Nodes page, Grafana charts are used to plot the values of Prometheus metrics over time. For example, the *NODES* > *Network* tab for a Storage Node includes a Grafana chart for network traffic.
 +
-image::../media/nodes_page_network_tab.png["Nodes page Network tab"]
+image::../media/nodes_page_network_tab.png[Nodes page Network tab]
 +
 NOTE: Grafana charts are also included on the pre-constructed dashboards available from the *SUPPORT* > *Tools* > *Metrics* page.
 
-* *Line graphs*: Available from the Nodes page and from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png["Icon Chart (New)"] after a data value), line graphs are used to plot the values of StorageGRID attributes that have a unit value (such as NTP Frequency Offset, in ppm). The changes in the value are plotted in regular data intervals (bins) over time.
+* *Line graphs*: Available from the Nodes page and from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png[Icon Chart (New)] after a data value), line graphs are used to plot the values of StorageGRID attributes that have a unit value (such as NTP Frequency Offset, in ppm). The changes in the value are plotted in regular data intervals (bins) over time.
 +
-image::../media/line_graph.gif["Line Graph"]
+image::../media/line_graph.gif[Line Graph]
 
-* *Area graphs*: Available from the Nodes page and from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png["Icon Chart (New)"] after a data value), area graphs are used to plot volumetric attribute quantities, such as object counts or service load values. Area graphs are similar to line graphs, but include a light brown shading below the line. The changes in the value are plotted in regular data intervals (bins) over time.
+* *Area graphs*: Available from the Nodes page and from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png[Icon Chart (New)] after a data value), area graphs are used to plot volumetric attribute quantities, such as object counts or service load values. Area graphs are similar to line graphs, but include a light brown shading below the line. The changes in the value are plotted in regular data intervals (bins) over time.
 +
-image::../media/area_graph.gif["Area Graph"]
+image::../media/area_graph.gif[Area Graph]
 
-* Some graphs are denoted with a different type of chart icon image:../media/icon_chart_new_for_11_5.png["Chart Icon"] and have a different format:
+* Some graphs are denoted with a different type of chart icon image:../media/icon_chart_new_for_11_5.png[Chart Icon] and have a different format:
 +
-image::../media/charts_lost_object_detected.png["Charts Lost Object Detected"]
+image::../media/charts_lost_object_detected.png[Charts Lost Object Detected]
 
-* *State graph*: Available from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png["Icon Chart (New)"] after a data value), state graphs are used to plot attribute values that represent distinct states such as a service state that can be online, standby, or offline. State graphs are similar to line graphs, but the transition is discontinuous; that is, the value jumps from one state value to another.
+* *State graph*: Available from the *SUPPORT* > *Tools* > *Grid topology* page (select the chart icon image:../media/icon_chart_new_for_11_5.png[Icon Chart (New)] after a data value), state graphs are used to plot attribute values that represent distinct states such as a service state that can be online, standby, or offline. State graphs are similar to line graphs, but the transition is discontinuous; that is, the value jumps from one state value to another.
 +
-image::../media/state_graph.gif["State Graph"]
+image::../media/state_graph.gif[State Graph]
 
 .Related information
 
@@ -70,22 +70,22 @@ The lines and colors used to draw charts have specific meaning.
 [cols="1a,3a" options="header"]
 |===
 | Example| Meaning
-|image:../media/dark_green_chart_line.gif["screenshot showing dark green line"]
+|image:../media/dark_green_chart_line.gif[screenshot showing dark green line]
 |Reported attribute values are plotted using dark green lines.
 
-|image:../media/light_green_chart_line.gif["screenshot showing shading that indicates data binning"]
+|image:../media/light_green_chart_line.gif[screenshot showing shading that indicates data binning]
 |Light green shading around dark green lines indicates that the actual values in that time range vary and have been "binned" for faster plotting. The dark line represents the weighted average. The range in light green indicates the maximum and minimum values within the bin. Light brown shading is used for area graphs to indicate volumetric data.
 
-|image:../media/no_data_plotted_chart.gif["screenshot showing blank areas on plot line"]
+|image:../media/no_data_plotted_chart.gif[screenshot showing blank areas on plot line]
 |Blank areas (no data plotted) indicate that the attribute values were unavailable. The background can be blue, gray, or a mixture of gray and blue, depending on the state of the service reporting the attribute.
 
-|image:../media/light_blue_chart_shading.gif["screenshot showing light blue shading indicating indeterminate values"]
+|image:../media/light_blue_chart_shading.gif[screenshot showing light blue shading indicating indeterminate values]
 |Light blue shading indicates that some or all of the attribute values at that time were indeterminate; the attribute was not reporting values because the service was in an unknown state.
 
-|image:../media/gray_chart_shading.gif["screenshot showing gray shading due to unknown values"]
+|image:../media/gray_chart_shading.gif[screenshot showing gray shading due to unknown values]
 |Gray shading indicates that some or all of the attribute values at that time were not known because the service reporting the attributes was administratively down.
 
-|image:../media/gray_blue_chart_shading.gif["screenshot showing mix of indeterminate and unknown values"]
+|image:../media/gray_blue_chart_shading.gif[screenshot showing mix of indeterminate and unknown values]
 |A mixture of gray and blue shading indicates that some of the attribute values at the time were indeterminate (because the service was in an unknown state), while others were not known because the service reporting the attributes was administratively down.
 |===
 
@@ -102,34 +102,34 @@ You must be signed in to the Grid Manager using a link:../admin/web-browser-requ
 +
 Some tabs include one or more Grafana charts, which are used to plot the values of Prometheus metrics over time. For example, the *NODES* > *Hardware* tab for a node includes two Grafana charts.
 +
-image::../media/nodes_page_hardware_tab_graphs.png["Nodes Page Hardware Tab Graphs"]
+image::../media/nodes_page_hardware_tab_graphs.png[Nodes Page Hardware Tab Graphs]
 
 . Optionally, position your cursor over the chart to see more detailed values for a particular point in time.
 +
-image::../media/nodes_page_memory_usage_details.png["Nodes Page Memory Usage Details"]
+image::../media/nodes_page_memory_usage_details.png[Nodes Page Memory Usage Details]
 
-. As required, you can often display a chart for a specific attribute or metric. From the table on the Nodes page, select the chart icon image:../media/icon_chart_new_for_11_5.png["Chart Icon"] to the right of the attribute name.
+. As required, you can often display a chart for a specific attribute or metric. From the table on the Nodes page, select the chart icon image:../media/icon_chart_new_for_11_5.png[Chart Icon] to the right of the attribute name.
 +
 NOTE: Charts aren't available for all metrics and attributes.
 +
-*Example 1*: From the Objects tab for a Storage Node, you can select the chart icon image:../media/icon_chart_new_for_11_5.png["Chart Icon"] to see the total number of successful metadata store queries for the Storage Node.
+*Example 1*: From the Objects tab for a Storage Node, you can select the chart icon image:../media/icon_chart_new_for_11_5.png[Chart Icon] to see the total number of successful metadata store queries for the Storage Node.
 +
-image::../media/nodes_page_objects_successful_metadata_queries.png["Successful Metadata Queries"]
+image::../media/nodes_page_objects_successful_metadata_queries.png[Successful Metadata Queries]
 +
-image::../media/nodes_page-objects_chart_successful_metadata_queries.png["Charts Successful Metadata Queries"]
+image::../media/nodes_page-objects_chart_successful_metadata_queries.png[Charts Successful Metadata Queries]
 +
-*Example 2*: From the Objects tab for a Storage Node, you can select the chart icon image:../media/icon_chart_new_for_11_5.png["Chart Icon"] to see the Grafana graph of the count of lost objects detected over time.
+*Example 2*: From the Objects tab for a Storage Node, you can select the chart icon image:../media/icon_chart_new_for_11_5.png[Chart Icon] to see the Grafana graph of the count of lost objects detected over time.
 +
-image::../media/object_count_table.png["Object Count Table"]
+image::../media/object_count_table.png[Object Count Table]
 +
-image::../media/charts_lost_object_detected.png["Charts Lost Object Detected"]
+image::../media/charts_lost_object_detected.png[Charts Lost Object Detected]
 
 . To display charts for attributes that aren't shown on the Node page, select *SUPPORT* > *Tools* > *Grid topology*.
 . Select *_grid node_* > *_component or service_* > *Overview* > *Main*.
 +
-image::../media/nms_chart.gif["screenshot described by surrounding text"]
+image::../media/nms_chart.gif[screenshot described by surrounding text]
 
-. Select the chart icon image:../media/icon_chart_new_for_11_5.png["Chart Icon"] next to the attribute.
+. Select the chart icon image:../media/icon_chart_new_for_11_5.png[Chart Icon] next to the attribute.
 +
 The display automatically changes to the *Reports* > *Charts* page. The chart displays the attribute's data over the past day.
 

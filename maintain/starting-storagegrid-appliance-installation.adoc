@@ -71,7 +71,7 @@ If the *Start Installation* button is not enabled, you might need to change the 
 
 . From the StorageGRID Appliance Installer home page, click *Start Installation*.
 +
-image::../media/appliance_installer_home_start_installation_enabled.gif["This figure is described by the surrounding text."]
+image::../media/appliance_installer_home_start_installation_enabled.gif[This figure is described by the surrounding text.]
 +
 The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 +

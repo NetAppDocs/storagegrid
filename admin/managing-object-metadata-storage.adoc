@@ -31,13 +31,13 @@ StorageGRID maintains object metadata in a Cassandra database, which is stored i
 
 This figure represents the Storage Nodes at two sites. Each site has the same amount of object metadata, and each site's metadata is subdivided among all Storage Nodes at that site.
 
-image::../media/metadata_space_across_sites.png["Metadata Space Across Sites"]
+image::../media/metadata_space_across_sites.png[Metadata Space Across Sites]
 
 == Where is object metadata stored?
 
 This figure represents the storage volumes for a single Storage Node.
 
-image::../media/metadata_space_storage_node.png["Metadata Space Storage Node"]
+image::../media/metadata_space_storage_node.png[Metadata Space Storage Node]
 
 As shown in the figure, StorageGRID reserves space for object metadata on storage volume 0 of each Storage Node. It uses the reserved space to store object metadata and to perform essential database operations. Any remaining space on storage volume 0 and all other storage volumes in the Storage Node are used exclusively for object data (replicated copies and erasure-coded fragments).
 
@@ -122,7 +122,7 @@ Follow these steps to view the actual reserved space for metadata on a particula
 . Select the *Storage* tab.
 . Position your cursor over the Storage Used - Object Metadata chart and locate the *Actual reserved* value.
 +
-image::../media/storage_used_object_metadata_actual_reserved.png["Storage Used - Object Metadata - Actual Reserved"]
+image::../media/storage_used_object_metadata_actual_reserved.png[Storage Used - Object Metadata - Actual Reserved]
 
 In the screenshot, the *Actual reserved* value is 8 TB. This screenshot is for a large Storage Node in a new StorageGRID 11.6 installation. Because the system-wide Metadata reserved space setting is smaller than volume 0 for this Storage Node, the actual reserved space for this node equals the Metadata reserved space setting.
 
@@ -137,7 +137,7 @@ Suppose you install a new StorageGRID system using version 11.7 or later. For th
 
 Each Storage Node's actual reserved space for metadata is subdivided into the space available for object metadata (the _allowed metadata space_) and the space required for essential database operations (such as compaction and repair) and future hardware and software upgrades. The allowed metadata space governs overall object capacity.
 
-image::../media/metadata_allowed_space_volume_0.png["Metadata allowed space volume 0"]
+image::../media/metadata_allowed_space_volume_0.png[Metadata allowed space volume 0]
 
 The following table shows how StorageGRID calculates the *allowed metadata space* for different Storage Nodes, based on the amount of memory for the node and the actual reserved space for metadata.
 
@@ -177,7 +177,7 @@ Follow these steps to view the allowed metadata space for a Storage Node.
 . Select the *Storage* tab.
 . Position your cursor over the Storage used - object metadata chart and locate the *Allowed* value.
 +
-image::../media/storage_used_object_metadata_allowed.png["Storage Used - Object Metadata - Allowed"]
+image::../media/storage_used_object_metadata_allowed.png[Storage Used - Object Metadata - Allowed]
 
 In the screenshot, the *Allowed* value is 3.96 TB, which is the maximum value for a Storage Node whose actual reserved space for metadata is more than 4 TB.
 
@@ -227,7 +227,7 @@ Consider the following example:
 
 Because object metadata is evenly distributed across the Storage Nodes at a site, each node in this example can only hold 1.32 TB of metadata. The additional 0.66 TB of allowed metadata space for SN2 and SN3 can't be used.
 
-image::../media/metadata_space_three_storage_nodes.png["Metadata Space Three Storage Nodes"]
+image::../media/metadata_space_three_storage_nodes.png[Metadata Space Three Storage Nodes]
 
 Similarly, because StorageGRID maintains all object metadata for a StorageGRID system at each site, the overall metadata capacity of a StorageGRID system is determined by the object metadata capacity of the smallest site.
 

@@ -15,6 +15,6 @@ If you want to monitor metrics that aren't displayed on an existing page of the 
 
 You can also access Prometheus metrics directly with an external monitoring tool, such as Grafana. Using an external tool requires that you upload or generate an administrative client certificate to allow StorageGRID to authenticate the tool for security. See the link:../admin/index.html[instructions for administering StorageGRID].
 
-To view the metrics API operations, including the complete list of the metrics that are available, go to the Grid Manager. From the top of the page, select the help icon and select *API documentation* > *metrics*. image:../media/help_api_docs_metrics.png["Help API documentation Metrics section"]
+To view the metrics API operations, including the complete list of the metrics that are available, go to the Grid Manager. From the top of the page, select the help icon and select *API documentation* > *metrics*. image:../media/help_api_docs_metrics.png[Help API documentation Metrics section]
 
 The details of how to implement a custom monitoring application are beyond the scope of this documentation.

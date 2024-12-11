@@ -3,7 +3,7 @@
 . Select *Enable identity federation*.
 . In the LDAP service type section, select the type of LDAP service you want to configure.
 +
-image::../media/ldap_service_type.png["Identity Federation page showing LDAP service type options"]
+image::../media/ldap_service_type.png[Identity Federation page showing LDAP service type options]
 +
 Select *Other* to configure values for an LDAP server that uses Oracle Directory Server.
 
@@ -90,7 +90,7 @@ After entering all values, you must test the connection before you can save the 
 +
 For example, enter your own username and password. Don't include any special characters in the username, such as @ or /.
 +
-image::../media/identity_federation_test_connection.png["Identity federation prompt to validate bind username format"]
+image::../media/identity_federation_test_connection.png[Identity federation prompt to validate bind username format]
 +
 * A "Test connection successful" message appears if the connection settings are valid. Select *Save* to save the configuration.
 +

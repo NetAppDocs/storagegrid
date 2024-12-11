@@ -59,7 +59,7 @@ The following values are shown:
 The Used value is the `storagegrid_storage_utilization_data_bytes` metric.
 
 +
-image::../media/nodes_page_storage_used_object_data.png["Nodes Page Storage Used Object Data"]
+image::../media/nodes_page_storage_used_object_data.png[Nodes Page Storage Used Object Data]
 
 . Select the time controls above the graph to view storage use over different time periods.
 +
