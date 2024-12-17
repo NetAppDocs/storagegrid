@@ -41,7 +41,7 @@ Try one of these steps to correct the issue:
 
 * If you are configuring a new Cloud Storage Pool and the bucket contains the `x-ntap-sgws-cloud-pool-uuid` file and additional object keys, similar to the following example, create a new bucket and use this new bucket instead.
 +
-Example of an additional object key:  
+Example of an additional object key:
 * If the `x-ntap-sgws-cloud-pool-uuid` file is the only object in the bucket, delete this file.
 
 If these steps don't apply to your scenario, contact support.
