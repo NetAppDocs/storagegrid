@@ -6,8 +6,8 @@ settings:
     termcheck_enabled: false
   prod:
     pdf_enabled: true
-    harmony_enabled: false
-    hide_language_selector: true
+    harmony_enabled: true
+    hide_language_selector: false
 sidebar:
   entries:
     - title: 'StorageGRID 11.9 Docs'
