@@ -11,12 +11,7 @@ summary: 'With a few exceptions, you prepare the new hosts as you did during the
 [.lead]
 With a few exceptions, you prepare the new hosts as you did during the initial installation process.
 
-To deploy new or reinstalled physical or virtual Linux hosts, follow the procedure for preparing the hosts in the StorageGRID installation instructions for your Linux operating system:
-
-* link:../rhel/installing-linux.html[Install Linux (Red Hat Enterprise Linux)]
-
-* link:../ubuntu/installing-linux.html[Install Linux (Ubuntu or Debian)]
-
+To deploy new or reinstalled physical or virtual Linux hosts, follow the procedure for preparing the hosts in the StorageGRID installation instructions for your Linux operating system. See link:../swnodes/installing-linux.html[Install RHEL, Ubuntu, or Debian Linux].
 
 This procedure includes steps to accomplish the following tasks:
 
