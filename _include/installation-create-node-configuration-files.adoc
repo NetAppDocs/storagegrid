@@ -198,11 +198,8 @@ Set the key to "true" to cause the StorageGRID container use the MAC address of 
 
 *Best practice:* In networks where promiscuous mode would be required, use the ADMIN_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
-For more details on MAC cloning:
+For more details on MAC cloning for Red Hat Enterprise Linux, Ubuntu, or Debian, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
-* link:../rhel/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Red Hat Enterprise Linux)]
-
-* link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Ubuntu or Debian)]
 | Best practice
 |===
 
@@ -467,11 +464,8 @@ Set the key to "true" to cause the StorageGRID container to use the MAC address 
 
 *Best practice:* In networks where promiscuous mode would be required, use the CLIENT_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
-For more details on MAC cloning:
+For more details on MAC cloning for Red Hat Enterprise Linux, Ubuntu, or Debian, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
-* link:../rhel/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Red Hat Enterprise Linux)]
-
-* link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Ubuntu or Debian)]
 | Best practice
 |===
 
@@ -606,11 +600,8 @@ Set the value of the key to "true" to cause the StorageGRID container to use the
 
 *Best practice:* In networks where promiscuous mode would be required, use the GRID_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
-For more details on MAC cloning:
+For more details on MAC cloning for Red Hat Enterprise Linux, Ubuntu, or Debian, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
-* link:../rhel/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Red Hat Enterprise Linux)]
-
-* link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Ubuntu or Debian)]
 | Best practice
 |===
 

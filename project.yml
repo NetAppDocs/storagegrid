@@ -28,9 +28,7 @@ sidebar:
       entries:
       - title: Install appliances
         url: "/storagegrid-hardware.html" 
-      - section: rhel
-      - section: ubuntu
-      - section: vmware
+      - section: swnodes
       - section: upgrade
       - title: Apply StorageGRID hotfix
         entries:

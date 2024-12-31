@@ -20,12 +20,8 @@ indexpage:
       links:
       - title: Install StorageGRID appliances
         url: https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html    
-      - title: Install StorageGRID on Red Hat Enterprise Linux
-        url: /rhel/index.html
-      - title: Install StorageGRID on Ubuntu or Debian
-        url: /ubuntu/index.html
-      - title: Install StorageGRID on VMware
-        url: /vmware/index.html
+      - title: Install StorageGRID on software-based nodes
+        url: /swnodes/index.html
       - title: Upgrade to new StorageGRID version
         url: /upgrade/index.html
       - title: Apply hotfix
