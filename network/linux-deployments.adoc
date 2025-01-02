@@ -15,7 +15,7 @@ Use a non-bond device, such as a VLAN or virtual Ethernet (veth) pair, for the c
 
 CAUTION: Don't use bond or bridge devices directly as the container network interface. Doing so could prevent node start-up because of a kernel issue with the use of macvlan with bond and bridge devices in the container namespace.
 
-See the installation instructions for link:../rhel/index.html[Red Hat Enterprise Linux] or link:../ubuntu/index.html[Ubuntu or Debian] deployments.
+See the link:../swnodes/index.html[installation instructions].
 
 == Host network configuration for container engine deployments
 :icons: font
@@ -36,8 +36,7 @@ NOTE: A physical interface on the host can be used by the host itself and one or
 
 * If you intend to use VLAN interfaces in StorageGRID, the host must have one or more trunk interfaces that provide access to the desired VLANs. These interfaces can be passed into the node container as eth0, eth2, or as additional interfaces. To add trunk or access interfaces, see the following:
 
-** *RHEL (before installing the node)*: link:../rhel/creating-node-configuration-files.html[Create node configuration files]
-** *Ubuntu or Debian (before installing the node)*: link:../ubuntu/creating-node-configuration-files.html[Create node configuration files]
+** *RHEL, Ubuntu, or Debian (before installing the node)*: link:../swnodes/creating-node-configuration-files.html[Create node configuration files]
 ** *RHEL, Ubuntu, or Debian (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Linux: Add trunk or access interfaces to a node]
 
 === Minimum bandwidth recommendations
@@ -68,8 +67,5 @@ For example, to run one Admin Node, one Gateway Node, and one Storage Node on a 
 
 In this scenario, you should provide a minimum of 11 + 20 + 10 = 41 Gbps of network bandwidth, which could be met by two 40 Gbps interfaces or five 10 Gbps interfaces, potentially aggregated into trunks and then shared by the three or more VLANs carrying the Grid, Admin, and Client subnets local to the physical data center containing the host.
 
-For some recommended ways of configuring physical and network resources on the hosts in your StorageGRID cluster to prepare for your StorageGRID deployment, see the following:
-
-* link:../rhel/configuring-host-network.html[Configure the host network (Red Hat Enterprise Linux)]
-* link:../ubuntu/configuring-host-network.html[Configure the host network (Ubuntu or Debian)]
+For some recommended ways of configuring physical and network resources on the hosts in your StorageGRID cluster to prepare for your StorageGRID deployment, see link:../swnodes/configuring-host-network.html[Configure the host network].
 

@@ -39,10 +39,7 @@ For details, see the instructions for <<download-and-extract-install-files,downl
 |
 * link:../admin/index.html[Administer StorageGRID]
 * link:../release-notes/index.html[Release notes]
-* Installation instructions for your platform
-** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
-** link:../vmware/index.html[Install StorageGRID on VMware]
+* link:../swnodes/index.html[Installation instructions for your platform]
 
 | Current documentation for your platform
 | For supported versions, see the https://imt.netapp.com/matrix/#welcome[Interoperability Matrix Tool (IMT)^].

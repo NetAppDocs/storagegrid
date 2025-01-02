@@ -23,8 +23,7 @@ If enterprise networking policies restrict access to any of these ports, you can
 
 Configure the following ports only if you need to define firewall restrictions that are external to VMware networking.
 
-If enterprise networking policies restrict access to any of these ports, you can remap ports when you deploy nodes using the VMware vSphere Web Client, or by using a configuration file setting when automating grid node deployment. For more information about port remapping and deployment configuration parameters, see 
-link:../vmware/index.html[Install StorageGRID on VMware].
+If enterprise networking policies restrict access to any of these ports, you can remap ports when you deploy nodes using the VMware vSphere Web Client, or by using a configuration file setting when automating grid node deployment. For more information about port remapping and deployment configuration parameters, see the instructions for link:../swnodes/index.html[installing StorageGRID on VMware].
 
 == Guidelines for appliance nodes
 

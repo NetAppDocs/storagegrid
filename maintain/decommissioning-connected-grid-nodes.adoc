@@ -93,9 +93,7 @@ Complete these steps after you complete the node decommission procedure:
 
 . Follow the appropriate step for your platform. For example:
 
- ** *Linux*: You might want to detach the volumes and delete the node configuration files you created during installation. See 
-link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux] and 
-link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian].
+ ** *Linux*: You might want to detach the volumes and delete the node configuration files you created during installation. See link:../swnodes/index.html[Install StorageGRID on software-based nodes].
 
  ** *VMware*: You might want to use the vCenter "Delete from Disk" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
 

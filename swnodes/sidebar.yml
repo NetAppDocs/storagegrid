@@ -43,7 +43,7 @@ entries:
     - title: Automate installation (Ubuntu or Debian)
       url: "/swnodes/automating-installation.html"
     - title: Automate installation (VMware)
-      url: "vmware/automating-grid-node-deployment-in-vmware-vsphere.html
+      url: "/swnodes/automating-grid-node-deployment-in-vmware-vsphere.html
   - title: Deploy virtual grid nodes
     entries:
     - title: Collect information about your deployment environment (VMware)

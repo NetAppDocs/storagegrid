@@ -17,9 +17,7 @@ To secure the StorageGRID system during installation, set a password on the temp
 
 For more information, refer to:
 
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
-* link:../vmware/index.html[Install StorageGRID on VMware]
+* link:../swnodes/index.html[Install StorageGRID on software-based nodes]
 * https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Install StorageGRID appliance^]
 
 == Logs and audit messages

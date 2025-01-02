@@ -204,17 +204,17 @@ You might see issues with network connectivity for StorageGRID nodes hosted on L
 
 === MAC address cloning
 
-In some cases, network issues can be resolved by using MAC address cloning. If you are using virtual hosts, set the value of the MAC address cloning key for each of your networks to "true" in your node configuration file. This setting causes the MAC address of the StorageGRID container to use the MAC address of the host. To create node configuration files, see the instructions for link:../rhel/creating-node-configuration-files.html[Red Hat Enterprise Linux] or link:../ubuntu/creating-node-configuration-files.html[Ubuntu or Debian].
+In some cases, network issues can be resolved by using MAC address cloning. If you are using virtual hosts, set the value of the MAC address cloning key for each of your networks to "true" in your node configuration file. This setting causes the MAC address of the StorageGRID container to use the MAC address of the host. See the instructions to link:../swnodes/creating-node-configuration-files.html[create node configuration files].
 
 NOTE: Create separate virtual network interfaces for use by the Linux host OS. Using the same network interfaces for the Linux host OS and the StorageGRID container might cause the host OS to become unreachable if promiscuous mode has not been enabled on the hypervisor.
 
-For more information about enabling MAC cloning, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
+For more information, see the instructions for link:../swnodes/configuring-host-network.html[enabling MAC cloning].
 
 === Promiscuous mode
 
 If you don't want to use MAC address cloning and would rather allow all interfaces to receive and transmit data for MAC addresses other than the ones assigned by the hypervisor, ensure that the security properties at the virtual switch and port group levels are set to *Accept* for Promiscuous Mode, MAC Address Changes, and Forged Transmits. The values set on the virtual switch can be overridden by the values at the port group level, so ensure that settings are the same in both places.
 
-For more information about using Promiscuous Mode, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
+For more information about using Promiscuous Mode, see the instructions for link:../swnodes/configuring-host-network.html[how to configure the host network].
 
 == Linux: Node status is "orphaned"
 

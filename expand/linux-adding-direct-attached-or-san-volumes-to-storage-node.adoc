@@ -13,11 +13,7 @@ If a Storage Node includes fewer than 16 storage volumes, you can increase its c
 
 .Before you begin
 
-* You have access to the instructions for installing StorageGRID for your Linux platform.
-
-** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
-
+* You have access to the link:../swnodes/index.html[instructions for installing StorageGRID] for your Linux platform.
 * You have the `Passwords.txt` file.
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 
