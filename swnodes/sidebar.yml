@@ -1,5 +1,5 @@
-section: Software-based nodes
-title: Install StorageGRID on software-based nodes
+section: swnodes
+title: Software-based nodes
 entries:
   - title: Quick start
     pdf-filename: Install StorageGRID on software-based nodes
