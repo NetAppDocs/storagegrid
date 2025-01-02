@@ -11,6 +11,12 @@ summary: 'You must understand the storage requirements for StorageGRID nodes, so
 [.lead]
 You must understand the storage requirements for StorageGRID nodes, so you can provide enough space to support the initial configuration and future storage expansion.
 
+Storage and performance requirements vary based on your software-based node implementation:
+
+* <<VMware requirements>>
+* <<Red Hat Enterprise Linux requirements>>
+* <<Ubuntu and Debian requirements>>
+
 == VMware requirements
 
 StorageGRID nodes hosted by virtual machines have specific performance requirements.
