@@ -9,7 +9,7 @@ summary: 'You must create at least one site when you are installing StorageGRID.
 :imagesdir: ../media/
 
 [.lead]
-You must create at least one site when you are installing StorageGRID. You can create additional sites to increase the reliability and storage capacity of your StorageGRID system.
+You must create at least one site when you are installing StorageGRID. You can create additional sites to increase the reliability and storage capacity of your StorageGRID system. 
 
 .Steps
 
