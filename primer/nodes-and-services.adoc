@@ -64,99 +64,179 @@ The following is a complete list of StorageGRID services.
 |===
 | Service | Description| Location
 
+| Account Service
+|	Manages accounts, users, groups, and their related configuration.
+|	Storage Nodes that use the ADC service
+
 | Account Service Forwarder
-| Provides an interface for the Load Balancer service to query the Account Service on remote hosts and provides notifications of Load Balancer Endpoint configuration changes to the Load Balancer service.
+|	Provides an interface for the Load Balancer service to query the Account Service on remote hosts and provides notifications of load balancer endpoint configuration changes to the Load Balancer service.
 | Load Balancer service on Admin Nodes and Gateway Nodes
 
 | ADC (Administrative Domain Controller)
-| Maintains topology information, provides authentication services, and responds to queries from the LDR and CMN services.
-| At least three Storage Nodes containing the ADC service at each site
+|	Maintains topology information, provides authentication services, and responds to queries from the LDR and CMN services.
+|	At least three Storage Nodes containing the ADC service at each site
+
+| Alert Manager
+|	Manages system-wide alerts.
+|	Admin Nodes
 
 | AMS (Audit Management System)
-| Monitors and logs all audited system events and transactions to a text log file.
-| Admin Nodes
+|	Monitors and logs all audited system events and transactions to a text log file.
+|	Admin Nodes
+
+| Avahi Daemon
+|	Handles mDNS, which is used for name resolution and service discovery within the local network.
+|	All nodes
+
+| Cache Service
+|	Runs on load balancer (Gateway) nodes and manages a local cache of object content.
+|	Gateway Nodes
+
+| Cassandra
+|	Manages the distributed database for object metadata.
+|	Storage Nodes (except Data-only)
 
 | Cassandra Reaper
-| Performs automatic repairs of object metadata.
-| Storage Nodes
+|	Performs automatic repairs of object metadata.
+|	Storage Nodes (except Data-only)
 
 | Chunk service
-| Manages erasure-coded data and parity fragments.
-| Storage Nodes
+|	Manages erasure-coded data and parity fragments.
+|	Storage Nodes
 
 | CMN (Configuration Management Node)
-| Manages system-wide configurations and grid tasks. Each grid has one CMN service.
-| Primary Admin Node
+|	Manages legacy maintenance grid tasks. Each grid has one CMN service.
+|	Primary Admin Node
 
 | DDS (Distributed Data Store)
-| Interfaces with the Cassandra database to manage object metadata.
-| Storage Nodes
+|	Interfaces with the Cassandra database to manage object metadata.
+|	Storage Nodes
 
 | DMV (Data Mover)
-| Moves data to cloud endpoints.
-| Storage Nodes
+|	Moves data to Cloud Storage Pools (CSP).
+|	Storage Nodes
 
 | Dynamic IP (dynip)
-| Monitors the grid for dynamic IP changes and updates local configurations.
-| All nodes
+|	Monitors the grid for dynamic IP changes and updates local configurations.
+|	All nodes
+
+| GDU Server
+|	Handles topology changes, deployment, and management tasks on grid nodes.
+|	Admin Nodes
 
 | Grafana
-| Used for metrics visualization in the Grid Manager.
-| Admin Nodes
+|	Used for metrics visualization in the Grid Manager.
+|	Admin Nodes
 
 | High Availability
-| Manages high availability virtual IPs on nodes configured on the High Availability Groups page. This service is also known as the keepalived service.
-| Admin and Gateway Nodes
+|	Manages high availability virtual IPs on nodes configured on the High Availability Groups page. This service is also known as the keepalived service.
+|	Admin and Gateway Nodes
 
 | Identity (idnt)
-| Federates user identities from LDAP and Active Directory.
-| Storage Nodes that use the ADC service
+|	Manages local users and groups, authentication, and federates user identities from LDAP and Active Directory.
+|	Storage Nodes that use the ADC service
+
+| Trace Agent (jaeger-agent)
+|	Receives and processes tracing information submitted by the trace collector (jaeger-collector).
+|	All nodes
+
+| Trace Collector (jaeger-collector)
+|	Performs trace collection to gather information for use by technical support. The trace collector service uses open source Jaeger software.
+|	Admin Nodes
 
 | Lambda Arbitrator
-| Manages S3 Select SelectObjectContent requests.
-| All nodes
-
-| Load Balancer (nginx-gw)
-| Provides load balancing of S3 traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
-| Admin and Gateway Nodes
+|	Manages S3 Select SelectObjectContent requests.
+|	All nodes
 
 | LDR (Local Distribution Router)
-| Manages the storage and transfer of content within the grid.
-| Storage Nodes
+|	Manages the storage and transfer of content within the grid.
+|	Storage Nodes
 
-| MISCd Information Service Control Daemon
-| Provides an interface for querying and managing services on other nodes and for managing environmental configurations on the node such as querying the state of services running on other nodes.
-| All nodes
+| Leak Detection
+|	Detects and cleans leaked erasure coded chunks and replicated data.
+|	Storage Nodes
+
+| Management API
+|	Handles grid management requests from API clients.
+|	Admin Nodes
+
+| Management Interface
+|	Receives and processed attribute notifications from other StorageGRID services.
+|	Admin Nodes
+
+| miscd Information Service Control Daemon
+|	Provides an interface for querying and managing services on other nodes and for managing environmental configurations on the node such as querying the state of services running on other nodes.
+|	All nodes
+
+| MySQL Database Service
+|	Administrative database management service.
+|	Admin Nodes
+
+| Net Monitor
+|	Reports networking config information from ethtool.
+|	All nodes
 
 | nginx
-| Acts as an authentication and secure communication mechanism for various grid services (such as Prometheus and Dynamic IP) to be able to talk to services on other nodes over HTTPS APIs.
-| All nodes
+|	Acts as an authentication and secure communication mechanism for various grid services (such as Prometheus and Dynamic IP) to be able to talk to services on other nodes over HTTPS APIs.
+|	All nodes
 
-| nginx-gw
-| Powers the Load Balancer service.
-| Admin and Gateway Nodes
+| Load Balancer (nginx-gw)
+|	Provides load balancing of S3 traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
+|	Admin and Gateway Nodes
 
 | NMS (Network Management System)
-| Powers the monitoring, reporting, and configuration options that are displayed through the Grid Manager.
+|	Powers the monitoring, reporting, and configuration options that are displayed through the Grid Manager.
 | Admin Nodes
+
+| Node Exporter (Prometheus data collection)
+|	Publishes system-level statistics for Prometheus time series metric collection.
+|	All nodes
+
+| Network Time Protocol (ntp)
+|	Network time protocal (NTP) service.
+|	All nodes
 
 | Persistence
-| Manages files on the root disk that need to persist across a reboot.
-| All nodes
+|	Manages files on the root disk that need to persist across a reboot.
+|	All nodes
 
 | Prometheus
-| Collects time series metrics from services on all nodes.
-| Admin Nodes
+|	Collects time series metrics from services on all nodes.
+|	Admin Nodes
 
 | RSM (Replicated State Machine)
-| Ensures platform service requests are sent to their respective endpoints.
-| Storage Nodes that use the ADC service
+|	Ensures platform service requests are sent to their respective endpoints.
+|	Storage Nodes that use the ADC service
 
-| SSM (Server Status Monitor)
-| Monitors hardware conditions and reports to the NMS service.
-| An instance is present on every grid node
+| rsyslog
+|	Manages reliable persistence of software logs to disk and exports syslog (when the Use External Syslog Server feature is enabled).
+|	All nodes
 
-| Trace collector
-| Performs trace collection to gather information for use by technical support. The trace collector service uses open source Jaeger software.
-| Admin Nodes
+| Server Manager
+|	Manages StorageGRID services.
+|	All nodes
+
+| StorageGRID SNMP Agent
+|	Responds to SNMP requests.
+|	Admin Nodes
+
+| Secure Shell (SSH)
+|	Handles secure access and remote system management.
+|	All nodes
+
+| SSM (System Status Monitor)
+|	Monitors hardware conditions and reports to the NMS service.
+|	All nodes
+
+| Stat
+|	Records additional metrics related to S3 buckets.
+|	Storage Nodes
+
+| Apache Tomcat
+|	Web server for Java-based applications.
+|	Admin Nodes
+
+|SNMP Port Management Service
+|	Handles dynamic management of SNMP ports.
+|	All nodes
 |===
