@@ -236,7 +236,7 @@ The following is a complete list of StorageGRID services.
 |	Web server for Java-based applications.
 |	Admin Nodes
 
-|SNMP Port Management Service
+| SNMP Port Management Service
 |	Handles dynamic management of SNMP ports.
 |	All nodes
 |===
