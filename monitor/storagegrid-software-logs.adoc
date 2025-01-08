@@ -202,7 +202,7 @@ m| /var/local/log/ldr.errlog
 | Storage Nodes
 
 m| /var/local/log/miscd/*.log
-| Contains logs for the miscd service (Information Service Control Daemon), which provides an interface for querying and managing services on other nodes and for managing environmental configurations on the node such as querying the state of services running on other nodes.
+| Contains logs for the MISCd service (Information Service Control Daemon), which provides an interface for querying and managing services on other nodes and for managing environmental configurations on the node such as querying the state of services running on other nodes.
 | All nodes
 
 m| /var/local/log/nginx/*.log
