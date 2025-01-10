@@ -16,4 +16,4 @@ Before upgrading a StorageGRID system, verify the system is ready to accommodate
 . Check for and resolve any active alerts.
 . Refer to link:../network/internal-grid-node-communications.html[Internal grid node communications] and link:../network/external-communications.html[External communications] to ensure that all required ports for StorageGRID 11.9 are opened before you upgrade.
 +
-NOTE: No additional ports are required when upgrading to StorageGRID 11.9.
+NOTE: No additional ports are required when upgrading to StorageGRID 12.0.
