@@ -2,18 +2,16 @@
 permalink: swnodes/configuring-docker-storage-volume.html
 sidebar: sidebar
 keywords: how to configure container engine storage volume, Docker, Podman
-summary: 'Before installing the Docker or Podman (RHEL only) container engine, you might need to format the storage volume and mount it.'
+summary: 'Before installing the Docker or Podman container engine, you might need to format the storage volume and mount it.'
 ---
 = Configure container engine storage volume (RHEL, Ubuntu, or Debian)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before installing the Docker or Podman (RHEL only) container engine, you might need to format the storage volume and mount it.
+Before installing the Docker or Podman container engine, you might need to format the storage volume and mount it.
 
 NOTE: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release.
-
-NOTE: Podman is supported only on RHEL.
 
 .About this task
 
@@ -71,6 +69,12 @@ sudo mount container-storage-volume-device /var/lib/containers
 sudo mkdir -p /var/lib/docker
 sudo mount docker-storage-volume-device /var/lib/docker
 ----
+* For Podman: 
++
+----
+sudo mkdir -p /var/lib/podman
+sudo mount container-storage-volume-device /var/lib/podman
+----
 --
 ====
 
@@ -86,7 +90,7 @@ This step ensures that the storage volume will remount automatically after host 
 The StorageGRID system can run on Linux as a collection of containers. 
 
 * Before you can install StorageGRID for Ubuntu or Debian, you must install Docker.
-* If you have chosen to use the Docker container engine for RHEL, follow these steps to install Docker. Otherwise, <<install-podman-rhel,install Podman>>.
+* If you have chosen to use the Docker container engine, follow these steps to install Docker. Otherwise, <<install-podman-rhel,install Podman>>.
 
 NOTE: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release.
 
@@ -115,11 +119,9 @@ sudo docker version
 The Client and Server versions must be 1.11.0 or later.
 
 [[install-podman-rhel]]
-== Install Podman (RHEL only)
+== Install Podman
 
-The StorageGRID system runs on RHEL as a collection of containers. If you have chosen to use the Podman container engine, follow these steps to install Podman. Otherwise, <<Install Docker,install Docker>>.
-
-NOTE: Podman is supported only on RHEL.
+The StorageGRID system runs as a collection of containers. If you have chosen to use the Podman container engine, follow these steps to install Podman. Otherwise, <<Install Docker,install Docker>>.
 
 .Steps
 
