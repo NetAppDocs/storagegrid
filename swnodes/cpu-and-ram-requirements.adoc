@@ -21,12 +21,12 @@ Each StorageGRID node requires the following minimum resources:
 [role="tabbed-block"]
 ====
 
-.RHEL
+.VMware
 --
 VMware supports one node per virtual machine. Ensure that the StorageGRID node does not exceed the physical RAM available. Each virtual machine must be dedicated to running StorageGRID.
 --
 
-.Ubuntu and Debian
+.RHEL, Ubuntu, and Debian
 --
 Ensure that the number of StorageGRID nodes you plan to run on each physical or virtual host does not exceed the number of CPU cores or the physical RAM available. If the hosts aren't dedicated to running StorageGRID (not recommended), be sure to consider the resource requirements of the other applications.
 --
