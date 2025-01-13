@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure host storage
 summary: 'You must allocate block storage volumes to each host.'
 ---
-= Configure host storage (Red Hat Enterprise Linux, Ubuntu, or Debian)
+= Configure host storage (RHEL, Ubuntu, or Debian)
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: example debian node configuration file, example ubuntu linux node configuration file, example red hat linux node configuration file
 summary: 'You can use the example node configuration files to help set up the node configuration files for your StorageGRID system. The examples show node configuration files for all types of grid nodes.'
 ---
-= Example node configuration files (Red Hat Enterprise Linux, Ubuntu, or Debian)
+= Example node configuration files (RHEL, Ubuntu, or Debian)
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to aggregate red hat linux interface, LACP bond, network scripts
 summary: 'You can use the example files to aggregate four Linux physical interfaces into a single LACP bond and then establish three VLAN interfaces subtending the bond for use as StorageGRID Grid, Admin, and Client Network interfaces.'
 ---
-= Example /etc/sysconfig/network-scripts (Red Hat Enterprise Linux)
+= Example /etc/sysconfig/network-scripts (RHEL)
 :icons: font
 :imagesdir: ../media/
 

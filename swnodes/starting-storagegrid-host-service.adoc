@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to start host service
 summary: 'To start your StorageGRID nodes, and ensure they restart after a host reboot, you must enable and start the StorageGRID host service.'
 ---
-= Start the StorageGRID host service (Red Hat Enterprise Linux, Ubuntu, or Debian)
+= Start the StorageGRID host service (RHEL, Ubuntu, or Debian)
 :icons: font
 :imagesdir: ../media/
 

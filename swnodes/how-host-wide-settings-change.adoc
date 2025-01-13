@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to install on ubuntu, how to install on debian, how to install on red hat linux
 summary: 'On bare metal systems, StorageGRID makes some changes to host-wide `sysctl` settings.'
 ---
-= How host-wide settings change during installation (Red Hat Enterprise Linux, Ubuntu, and Debian)
+= How host-wide settings change during installation (RHEL, Ubuntu, and Debian)
 :icons: font
 :imagesdir: ../media/
 

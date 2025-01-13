@@ -14,7 +14,7 @@ You must understand the storage requirements for StorageGRID nodes, so you can p
 Storage and performance requirements vary based on your software-based node implementation:
 
 * <<VMware requirements>>
-* <<Red Hat Enterprise Linux requirements>>
+* <<RHEL requirements>>
 * <<Ubuntu and Debian requirements>>
 
 == VMware requirements
@@ -112,7 +112,7 @@ NOTE: If you assign less than 500 GB to volume 0 (non-production use only), 10% 
 For details, go to link:../admin/managing-object-metadata-storage.html[Manage object metadata storage].
 // mairead-SGRIDOC59-apr9 2024
 
-== Red Hat Enterprise Linux requirements
+== RHEL requirements
 StorageGRID nodes require three logical categories of storage:
 
 * *Container pool* -- Performance-tier (10K SAS or SSD) storage for the node containers, which will be assigned to the container engine storage driver when you install and configure the container engine on the hosts that will support your StorageGRID nodes.

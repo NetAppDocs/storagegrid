@@ -72,7 +72,7 @@ Use the `.zip` file if you are running Windows on the service laptop.
 |===
 | Platform| Installation archive
 
-| Red Hat Enterprise Linux
+| RHEL
 m|
 include::../_include/installation-archives-rhel.adoc[]
 
@@ -94,7 +94,7 @@ include::../_include/installation-archives-vmware.adoc[]
 +
 The paths listed in the step for each platform are relative to the top-level directory installed by the archive file.
 
-. If you are expanding a Red Hat Enterprise Linux system, select the appropriate files.
+. If you are expanding a RHEL system, select the appropriate files.
 +
 include::../_include/installation-files-rhel.adoc[]
 

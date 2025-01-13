@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure container engine storage volume, Docker, Podman
 summary: 'Before installing the Docker or Podman (RHEL only) container engine, you might need to format the storage volume and mount it.'
 ---
-= Configure container engine storage volume (Red Hat Enterprise Linux, Ubuntu, or Debian)
+= Configure container engine storage volume (RHEL, Ubuntu, or Debian)
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,7 @@ Before installing the Docker or Podman (RHEL only) container engine, you might n
 
 NOTE: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release.
 
-NOTE: Podman is supported only on Red Hat Enterprise Linux (RHEL).
+NOTE: Podman is supported only on RHEL.
 
 .About this task
 
@@ -29,7 +29,7 @@ You can skip these steps if you plan to use local storage for the Docker or Podm
 [role="tabbed-block"]
 ====
 
-.Red Hat Enterprise Linux
+.RHEL
 --
 ----
 sudo mkfs.ext4 container-engine-storage-volume-device
@@ -49,7 +49,7 @@ sudo mkfs.ext4 docker-storage-volume-device
 [role="tabbed-block"]
 ====
 
-.Red Hat Enterprise Linux
+.RHEL
 --
 * For Docker: 
 +
@@ -117,9 +117,9 @@ The Client and Server versions must be 1.11.0 or later.
 [[install-podman-rhel]]
 == Install Podman (RHEL only)
 
-The StorageGRID system runs on Red Hat Enterprise Linux as a collection of containers. If you have chosen to use the Podman container engine, follow these steps to install Podman. Otherwise, <<Install Docker,install Docker>>.
+The StorageGRID system runs on RHEL as a collection of containers. If you have chosen to use the Podman container engine, follow these steps to install Podman. Otherwise, <<Install Docker,install Docker>>.
 
-NOTE: Podman is supported only on Red Hat Enterprise Linux (RHEL).
+NOTE: Podman is supported only on RHEL.
 
 .Steps
 

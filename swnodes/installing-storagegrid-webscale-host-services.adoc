@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to install StorageGRID host services
 summary: 'You use the StorageGRID package for your operating system type to install the StorageGRID host services.'
 ---
-= Install StorageGRID host services (Red Hat Enterprise Linux, Ubuntu, or Debian)
+= Install StorageGRID host services (RHEL, Ubuntu, or Debian)
 :icons: font
 :imagesdir: ../media/
 
@@ -14,7 +14,7 @@ You use the StorageGRID package for your operating system type to install the St
 [role="tabbed-block"]
 ====
 
-.Red Hat Enterprise Linux
+.RHEL
 --
 You use the StorageGRID RPM package to install the StorageGRID host services.
 

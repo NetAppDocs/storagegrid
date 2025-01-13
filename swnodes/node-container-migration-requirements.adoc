@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to migrate a node
 summary: 'The node migration feature allows you to manually move a node from one host to another. Typically, both hosts are in the same physical data center.'
 ---
-= Node container migration requirements (Red Hat Enterprise Linux, Ubuntu, and Debian)
+= Node container migration requirements (RHEL, Ubuntu, and Debian)
 :icons: font
 :imagesdir: ../media/
 

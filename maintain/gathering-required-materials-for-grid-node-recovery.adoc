@@ -76,7 +76,7 @@ Use the `.zip` file if you are running Windows.
 |===
 | Platform| Installation archive
 
-|Red Hat Enterprise Linux
+|RHEL
 m|
 include::../_include/installation-archives-rhel.adoc[]
 

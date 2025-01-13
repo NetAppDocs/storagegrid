@@ -21,7 +21,7 @@ Each StorageGRID node requires the following minimum resources:
 [role="tabbed-block"]
 ====
 
-.Red Hat Enterprise Linux
+.RHEL
 --
 VMware supports one node per virtual machine. Ensure that the StorageGRID node does not exceed the physical RAM available. Each virtual machine must be dedicated to running StorageGRID.
 --
@@ -39,7 +39,7 @@ If hyperthreading is enabled on the underlying physical hosts, you can provide 8
 
 If you are using virtual machines as hosts and have control over the size and number of VMs, you should use a single VM for each StorageGRID node and size the VM accordingly.
 
-(Red hat Enterprise Linux, Debian, and Ubuntu only) For production deployments, you should not run multiple Storage Nodes on the same physical storage hardware or virtual host. Each Storage Node in a single StorageGRID deployment should be in its own isolated failure domain. You can maximize the durability and availability of object data if you ensure that a single hardware failure can only impact a single Storage Node.
+(RHEL, Debian, and Ubuntu only) For production deployments, you should not run multiple Storage Nodes on the same physical storage hardware or virtual host. Each Storage Node in a single StorageGRID deployment should be in its own isolated failure domain. You can maximize the durability and availability of object data if you ensure that a single hardware failure can only impact a single Storage Node.
 
 See also link:storage-and-performance-requirements.html[Storage and performance requirements].
 

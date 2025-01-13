@@ -1,7 +1,7 @@
 ---
 permalink: network/linux-deployments.html
 sidebar: sidebar
-keywords: linux network, container engine, red hat enterprise linux rhel network, ubuntu network
+keywords: linux network, container engine, red hat enterprise linux network, rhel network, ubuntu network
 summary: 'For efficiency, reliability, and security, the StorageGRID system runs on Linux as a collection of container engines. Container engine-related network configuration is not required in a StorageGRID system.'
 ---
 = Linux deployments
