@@ -1,10 +1,10 @@
 ---
-permalink: s3/consistency-controls.html
+permalink: s3/consistency.html
 sidebar: sidebar
 keywords: consistency, consistency control, consistency values
 summary: 'Consistency provides a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. You can change the consistency as required by your application.'
 ---
-= Consistency values
+= Consistency
 :icons: font
 :imagesdir: ../media/
 

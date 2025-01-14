@@ -13,7 +13,7 @@ You should follow these recommendations when implementing the S3 REST API for us
 
 == Recommendations for HEADs to non-existent objects
 
-If your application routinely checks to see if an object exists at a path where you don't expect the object to actually exist, you should use the "Available" link:consistency-controls.html[consistency]. For example, you should use the "Available" consistency if your application HEADs a location before PUT-ing to it.
+If your application routinely checks to see if an object exists at a path where you don't expect the object to actually exist, you should use the "Available" link:consistency.html[consistency]. For example, you should use the "Available" consistency if your application HEADs a location before PUT-ing to it.
 
 Otherwise, if the HEAD operation does not find the object, you might receive a high number of 500 Internal Server errors if two or more Storage Nodes at the same site are unavailable or a remote site is unreachable.
 
