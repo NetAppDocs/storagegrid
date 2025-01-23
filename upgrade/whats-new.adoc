@@ -1,10 +1,10 @@
 ---
 permalink: upgrade/whats-new.html
 sidebar: sidebar
-keywords: what is new in StorageGRID 11.9
+keywords: what is new in StorageGRID 12.0
 summary: 'This release of StorageGRID introduces the following features.'
 ---
-= What's new in StorageGRID 11.9
+= What's new in StorageGRID 12.0
 :icons: font
 :imagesdir: ../media/
 
