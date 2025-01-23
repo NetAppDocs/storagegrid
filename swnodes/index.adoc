@@ -2,14 +2,14 @@
 permalink: swnodes/index.html
 sidebar: sidebar
 keywords: about ubuntu, ubuntu overview, vnware, red hat enterprise linux, rhel, quick start
-summary: 'Follow these high-level steps to install a VMware, RHEL, Ubuntu, or Debian StorageGRID node.'
+summary: 'Follow these high-level steps to install a RHEL, Ubuntu, Debian, or VMware StorageGRID node.'
 ---
 = Quick start for installing StorageGRID on a software-based node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow these high-level steps to install a VMware, Red Hat Enterprise Linux (RHEL), Ubuntu, or Debian StorageGRID node.
+Follow these high-level steps to install a Red Hat Enterprise Linux (RHEL), Ubuntu, Debian, or VMware StorageGRID node.
 
 // Start snippet: Quick start headings as block titles
 // 1 placeholder per entry: Heading text here
@@ -33,8 +33,8 @@ Follow these high-level steps to install a VMware, Red Hat Enterprise Linux (RHE
 Deploy grid nodes. When you deploy grid nodes, they are created as part of the StorageGRID system and connected to one or more networks.
 
 [role="quick-margin-list"]
-* (VMware only) Use the VMware vSphere Web Client, a .vmdk file, and a set of .ovf file templates to link:collecting-information-about-your-deployment-environment.html[deploy the software-based nodes as virtual machines (VMs)] on the servers you prepared in step 1.
 * (RHEL, Ubuntu, and Debian only) To deploy software-based grid nodes on the hosts you prepared in step 1, use the Linux command line and link:creating-node-configuration-files.html[node configuration files].
+* (VMware only) Use the VMware vSphere Web Client, a .vmdk file, and a set of .ovf file templates to link:collecting-information-about-your-deployment-environment.html[deploy the software-based nodes as virtual machines (VMs)] on the servers you prepared in step 1.
 * To deploy StorageGRID appliance nodes, follow the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Quick start for hardware installation^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Configuration

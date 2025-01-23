@@ -21,7 +21,7 @@ You must download the StorageGRID installation archive and extract the required 
 CAUTION: You must apply any required hotfixes after you install the StorageGRID release. For more information, see the link:../maintain/storagegrid-hotfix-procedure.html[hotfix procedure in the recovery and maintenance instructions]
 
 . Read the End User License Agreement, select the checkbox, and then select *Accept & Continue*.
-. In the *Install StorageGRID* column, select the .tgz or .zip installation archive for your software-based node type: RHEL, Ubuntu or Debian or VMware.
+. In the *Install StorageGRID* column, select the .tgz or .zip installation archive for your software-based node type: RHEL, Ubuntu or Debian, or VMware.
 +
 NOTE: Use the `.zip` file if you are running Windows on the service laptop.
 
