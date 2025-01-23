@@ -79,7 +79,7 @@ To free up space on Linux hosts, you can remove the installation archives for pr
 [role="tabbed-block"]
 ====
 
-.Red Hat
+.RHEL
 --
 .. Capture the list of StorageGRID packages installed: `dnf list | grep -i storagegrid`.
 +

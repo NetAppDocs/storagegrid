@@ -14,33 +14,6 @@ You can use a virtual machine to host any type of StorageGRID node. You need one
 [role="tabbed-block"]
 ====
 
-.VMware
---
-*VMware vSphere Hypervisor*
-
-You must install VMware vSphere Hypervisor on a prepared physical server. The hardware must be configured correctly (including firmware versions and BIOS settings) before you install VMware software.
-
-* Configure networking in the hypervisor as required to support networking for the StorageGRID system you are installing.
-+
-link:../network/index.html[Networking guidelines]
-
-* Ensure that the datastore is large enough for the virtual machines and virtual disks that are required to host the grid nodes.
-* If you create more than one datastore, name each datastore so that you can easily identify which datastore to use for each grid node when you create virtual machines.
-
-*ESX host configuration requirements*
-
-CAUTION: You must properly configure the network time protocol (NTP) on each ESX host. If the host time is incorrect, negative effects, including data loss, could occur.
-
-*VMware configuration requirements*
-
-You must install and configure VMware vSphere and vCenter before deploying StorageGRID nodes.
-
-For supported versions of VMware vSphere Hypervisor and VMware vCenter Server software, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
-
-For the steps required to install these VMware products, see the VMware documentation.
-
---
-
 .RHEL
 --
 To install StorageGRID on RHEL, you must install some third-party software packages. Some supported Linux distributions don't contain these packages by default. The software package versions that StorageGRID installations are tested on include those listed on this page. 
@@ -136,5 +109,32 @@ IMPORTANT: Docker support is deprecated and will be removed in a future release.
 * Docker-CE 24.0.5-1
 * Docker-CE 24.0.7-1
 * 1.5-2
+--
+
+.VMware
+--
+*VMware vSphere Hypervisor*
+
+You must install VMware vSphere Hypervisor on a prepared physical server. The hardware must be configured correctly (including firmware versions and BIOS settings) before you install VMware software.
+
+* Configure networking in the hypervisor as required to support networking for the StorageGRID system you are installing.
++
+link:../network/index.html[Networking guidelines]
+
+* Ensure that the datastore is large enough for the virtual machines and virtual disks that are required to host the grid nodes.
+* If you create more than one datastore, name each datastore so that you can easily identify which datastore to use for each grid node when you create virtual machines.
+
+*ESX host configuration requirements*
+
+CAUTION: You must properly configure the network time protocol (NTP) on each ESX host. If the host time is incorrect, negative effects, including data loss, could occur.
+
+*VMware configuration requirements*
+
+You must install and configure VMware vSphere and vCenter before deploying StorageGRID nodes.
+
+For supported versions of VMware vSphere Hypervisor and VMware vCenter Server software, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
+
+For the steps required to install these VMware products, see the VMware documentation.
+
 --
 ====

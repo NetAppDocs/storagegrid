@@ -1,4 +1,4 @@
-//shared section for Red Hat, Ubuntu, and Maintain//
+//shared section for RHEL, Ubuntu, and Maintain//
 .Steps
 
 . Run the following commands on each host:

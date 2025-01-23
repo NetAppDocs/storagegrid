@@ -14,6 +14,21 @@ If any problems occur while installing your StorageGRID system, you can access t
 [role="tabbed-block"]
 ====
 
+.RHEL, Ubuntu, and Debian
+--
+The following installation log files are available from the container that is running each node:
+
+* `/var/local/log/install.log` (found on all grid nodes)
+* `/var/local/log/gdu-server.log` (found on the primary Admin Node)
+
+The following installation log files are available from the host:
+
+* `/var/log/storagegrid/daemon.log`
+* `/var/log/storagegrid/nodes/node-name.log`
+
+To learn how to access the log files, see link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]. 
+--
+
 .VMware
 --
 The following are the main installation log files, which technical support might need to resolve issues.
@@ -65,21 +80,6 @@ You can do either of the following:
 ** Update the *TEMPORARY_PASSWORD_TYPE* with the *Use node name* value.
 
 . Restart the VM to apply the new password.
---
-
-.RHEL, Ubuntu, and Debian
---
-The following installation log files are available from the container that is running each node:
-
-* `/var/local/log/install.log` (found on all grid nodes)
-* `/var/local/log/gdu-server.log` (found on the primary Admin Node)
-
-The following installation log files are available from the host:
-
-* `/var/log/storagegrid/daemon.log`
-* `/var/log/storagegrid/nodes/node-name.log`
-
-To learn how to access the log files, see link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]. 
 --
 ====
 

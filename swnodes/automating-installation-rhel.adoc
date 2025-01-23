@@ -1,7 +1,7 @@
 ---
 permalink: swnodes/automating-installation-rhel.html
 sidebar: sidebar
-keywords: how to automate red hat linux installation
+keywords: how to automate red hat linux installation, how to automate rhel installation
 summary: 'You can automate the installation of the StorageGRID host service and the configuration of grid nodes.'
 ---
 = Automate StorageGRID installation (RHEL)
