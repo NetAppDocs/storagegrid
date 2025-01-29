@@ -682,9 +682,13 @@ s3:ListBucketVersions permissions
 | 
 s3:PutObject
 
+| Compares to the `object-lock-mode` expanded from the request header in the PutObject and CopyObject request.
+
+| s3:object-lock-mode
+| 
 s3:PutObjectRetention
 
-| Compares to the `object-lock-mode` expanded from the request header in the PutObject (and CopyObject) request or from the XML body in the PutObjectRetention request.
+| Compares to the `object-lock-mode` expanded from the XML body in the PutObjectRetention request.
 
 | s3:object-lock-remaining-retention-days
 | s3:PutObject
