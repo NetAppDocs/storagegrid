@@ -95,6 +95,4 @@ indexpage:
       - title: StorageGRID 11.5 documentation
         url: https://docs.netapp.com/us-en/storagegrid-115/index.html
       - title: StorageGRID 11.4 documentation
-        url: https://docs.netapp.com/sgws-114/index.jsp
-      - title: StorageGRID 11.3 documentation
-        url: https://docs.netapp.com/sgws-113/index.jsp
+        url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63374
