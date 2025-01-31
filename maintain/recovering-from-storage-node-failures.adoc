@@ -18,13 +18,9 @@ Use this table to select the recovery procedure for a failed Storage Node.
 | Issue| Action| Notes
 | * More than one Storage Node has failed.
 
-* A second Storage Node has failed less than 15 days after a Storage Node failure or recovery.
-+
-This includes the case where a Storage Node fails while recovery of another Storage Node is still in progress.
-
 | Contact technical support.
 
-| Recovering more than one Storage Node (or more than one Storage Node within 15 days) might affect the integrity of the Cassandra database, which can cause data loss.
+| Recovering more than one Storage Node might affect the integrity of the Cassandra database, which can cause data loss.
 
 Technical support can determine when it is safe to begin recovery of a second Storage Node.
 
