@@ -11,7 +11,7 @@ summary: 'The procedure for recovering a failed StorageGRID appliance Storage No
 [.lead]
 The procedure for recovering a failed StorageGRID appliance Storage Node is the same whether you are recovering from the loss of the system drive or from the loss of storage volumes only.
 
-CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Do not perform the following recovery procedure. Data loss could occur.For more information, refer to link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
+CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Do not perform the following recovery procedure. Data loss could occur. For more information, refer to link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 CAUTION: If ILM rules are configured to store only one replicated copy and the copy exists on a storage volume that has failed, you will not be able to recover the object.
 
