@@ -23,11 +23,9 @@ When Cassandra is rebuilt, the system uses information from other Storage Nodes.
 * Some Cassandra data might not be available.
 * Data loss could occur.
 
-CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Don't perform the following recovery procedure. Data loss could occur.
+CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Do not perform the following recovery procedure. Data loss could occur. For more information, refer to link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
-NOTE: If more than one Storage Node at a site has failed, a site recovery procedure might be required. See link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
-
-CAUTION: If ILM rules are configured to store only one replicated copy and the copy exists on a storage volume that has failed, you will not be able to recover the object.
+CAUTION: If ILM rules are configured to store only one replicated copy and the copy exists on a storage volume that has failed, you won't be able to recover the object.
 
 .Related information
 

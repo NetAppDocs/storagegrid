@@ -13,7 +13,7 @@ If a grid node fails, you must recover it as soon as possible. You must review a
 
 CAUTION: StorageGRID is a distributed system composed of multiple nodes working with each other. Don't use disk snapshots to restore grid nodes. Instead, refer to the recovery and maintenance procedures for each type of node.
 
-NOTE: If an entire StorageGRID site has failed, contact technical support. Technical support will work with you to develop and execute a site recovery plan that maximizes the amount of data that is recovered and meets your business objectives. See link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
+NOTE: If an entire StorageGRID site has failed, contact technical support. Technical support will work with you to develop and execute a site recovery plan that maximizes the amount of data that is recovered and meets your business objectives. Refer to link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 Some of the reasons for recovering a failed grid node as soon as possible include the following:
 

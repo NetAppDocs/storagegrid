@@ -22,9 +22,7 @@ When Cassandra is rebuilt, the system uses information from other Storage Nodes.
 * Some Cassandra data might not be available.
 * Data loss could occur.
 
-CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Don't perform the following recovery procedure. Data loss could occur.
-
-NOTE: If more than one Storage Node at a site has failed, a site recovery procedure might be required. See link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
+CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Don't perform the following recovery procedure. Data loss could occur. For more information, refer to link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 CAUTION: If this Storage Node is in read-only maintenance mode to allow for the retrieval of objects by another Storage Node with failed storage volumes, recover volumes on the Storage Node with failed storage volumes before recovering this failed Storage Node. See the instructions to link:recovering-from-storage-volume-failure-where-system-drive-is-intact.html[recover from storage volume failure where system drive is intact].
 
