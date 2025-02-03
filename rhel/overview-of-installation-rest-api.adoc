@@ -30,6 +30,6 @@ The StorageGRID Installation API includes the following sections:
 * *nodes* -- Node-level configuration operations. You can retrieve a list of grid nodes, delete a grid node, configure a grid node, view a grid node, and reset a grid node's configuration.
 * *provision* -- Provisioning operations. You can start the provisioning operation and view the status of the provisioning operation.
 * *recovery* -- Primary Admin Node recovery operations. You can reset information, upload the Recover Package, start the recovery, and view the status of the recovery operation.
-* *recovery-package* -- Operations to download the Recovery Package.
+* *recovery-package* -- Operations to download the recovery package.
 * *sites* -- Site-level configuration operations. You can create, view, delete, and modify a site.
 * *temporary-password* -- Operations on the temporary password to secure the mgmt-api during installation.
