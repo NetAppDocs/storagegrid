@@ -155,7 +155,7 @@ Maintenance tasks include:
 System maintenance tasks you can perform include:
 
 * link:../admin/viewing-storagegrid-license-information.html[Viewing StorageGRID license information] or link:../admin/updating-storagegrid-license-information.html[updating license information]
-* Generating and downloading the link:../maintain/downloading-recovery-package.html[Recovery Package]
+* Generating and downloading the link:../maintain/downloading-recovery-package.html[recovery package]
 * Performing StorageGRID software updates, including software upgrades, hotfixes, and updates to the SANtricity OS software on selected appliances
 
 ** link:../upgrade/index.html[Upgrade procedure]

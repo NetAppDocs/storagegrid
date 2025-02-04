@@ -153,7 +153,7 @@ Updating grid network configuration on Name
 ----
 
 +
-After you apply or stage changes, a new Recovery Package is generated as a result of the grid configuration change.
+After you apply or stage changes, a new recovery package is generated as a result of the grid configuration change.
 
 . If you selected *stage*, follow these steps after provisioning is complete:
  .. Make the physical or virtual networking changes that are required.
@@ -164,6 +164,6 @@ After you apply or stage changes, a new Recovery Package is generated as a resul
 
  .. Restart the affected nodes.
 . Select *0* to exit the Change IP tool after your changes are complete.
-. Download a new Recovery Package from the Grid Manager.
+. Download a new recovery package from the Grid Manager.
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
