@@ -48,12 +48,14 @@ Details about the diagnostic and its current results appear. The following detai
 NOTE: You can't change these thresholds.
 
  ** *Status values*: A table showing the status and the value of the diagnostic throughout the StorageGRID system.
++
+image::../media/support_diagnostics_cpu_utilization.png[Diagnostics status values example]
 
 . *Optional*: To see Grafana charts related to this diagnostic, click the *Grafana dashboard* link.
 +
 This link is not displayed for all diagnostics.
 +
-The related Grafana dashboard appears. In this example, the Node dashboard appears showing CPU Utilization over time for this node as well as other Grafana charts for the node.
+The related Grafana dashboard appears. In this example, the Node dashboard appears showing CPU utilization over time for this node as well as other Grafana charts for the node.
 +
 NOTE: You can also access the pre-constructed Grafana dashboards from the Grafana section of the *SUPPORT* > *Tools* > *Metrics* page.
 +
