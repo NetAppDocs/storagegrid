@@ -47,11 +47,11 @@ Details about the diagnostic and its current results appear. The following detai
 +
 NOTE: You can't change these thresholds.
 
- ** *Status values*: A table showing the status and the value of the diagnostic throughout the StorageGRID system.
+ ** *Status values*: A graph and table (table not shown in screenshot) showing the status and the value of the diagnostic throughout the StorageGRID system. In this example, the current CPU utilization for every node in a StorageGRID system is shown. All node values are below the Attention and Caution thresholds, so the overall status of the diagnostic is Normal.
 +
 image::../media/support_diagnostics_cpu_utilization.png[Diagnostics status values example]
 
-. *Optional*: To see Grafana charts related to this diagnostic, click the *Grafana dashboard* link.
+. *Optional*: To see Grafana charts related to this diagnostic, select *Grafana dashboard*.
 +
 This link is not displayed for all diagnostics.
 +
