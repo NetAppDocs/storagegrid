@@ -8,7 +8,7 @@ indexpage:
     links:
     - title: Grid maintenance
       url: ../maintain/index.html
-    - title: Download Recovery Package
+    - title: Download recovery package
       url: ../maintain/downloading-recovery-package.html
   - title: Decommission nodes or sites
     links:
