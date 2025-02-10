@@ -22,6 +22,5 @@ You can find documentation for other versions of NetApp StorageGRID software her
 
 * https://docs.netapp.com/us-en/storagegrid-115/index.html[StorageGRID 11.5 documentation^]
 
-* https://docs.netapp.com/sgws-114/index.jsp[StorageGRID 11.4 Documentation Center^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63374[StorageGRID 11.4 Documentation Center^]
 
-* https://docs.netapp.com/sgws-113/index.jsp[StorageGRID 11.3 Documentation Center^]
