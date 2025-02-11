@@ -35,7 +35,7 @@ For a detailed explanation of how the Metadata Reserved Space setting affects th
 .Steps
 . Determine the current Metadata Reserved Space setting.
  .. Select *CONFIGURATION* > *System* > *Storage options*.
- .. In the Storage watermarks section, note the value of *Metadata Reserved Space*.
+ .. Note the value of *Metadata Reserved Space*.
 . Ensure you have enough available space on storage volume 0 of each Storage Node to increase this value.
  .. Select *NODES*.
  .. Select the first Storage Node in the grid.
