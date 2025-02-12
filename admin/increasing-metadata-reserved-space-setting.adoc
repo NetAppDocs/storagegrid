@@ -34,7 +34,7 @@ For a detailed explanation of how the Metadata Reserved Space setting affects th
 
 .Steps
 . Determine the current Metadata Reserved Space setting.
- .. Select *CONFIGURATION* > *System* > *Storage options*.
+ .. Select *CONFIGURATION* > *System* > *Storage settings*.
  .. Note the value of *Metadata Reserved Space*.
 . Ensure you have enough available space on storage volume 0 of each Storage Node to increase this value.
  .. Select *NODES*.
@@ -57,14 +57,10 @@ For example, if the Metadata Reserved Space setting is currently 4 TB and you wa
   *** If one or more Storage Nodes do not have enough available total memory, the Metadata Reserved Space value cannot be increased. Do not continue with this procedure.
   *** If each Storage Node has at least 128 GB of total memory, go to the next step.
 . Update the Metadata Reserved Space setting.
- .. Select *CONFIGURATION* > *System* > *Storage options*.
- .. Select the Configuration tab.
- .. In the Storage watermarks section, select *Metadata Reserved Space*.
+ .. Select *CONFIGURATION* > *System* > *Storage settings*.
+ .. Select *Metadata Reserved Space*.
  .. Enter the new value.
 +
 For example, to enter 8 TB, which is the maximum supported value, enter *8000000000000* (8, followed by 12 zeros)
-+
-image::../media/metadata_reserved_space.png[Metadata Reserved Space]
-
- .. Select *Apply Changes*.
+.. Select *Save*.
 // 2023-11-27, Jira SGRIDDOC-31
