@@ -41,11 +41,11 @@ If you select a very long time period or collect logs from all nodes in a large 
 * *Network trace*: Logs used for network debugging.
 * *Prometheus database*: Time series metrics from the services on all nodes.
 +
-. Optionally, enter notes about the log files you are gathering in the *Notes* text box.
+. Optionally, use the *Notes* text box to enter notes about the log files you are gathering.
 +
 You can use these notes to give technical support information about the problem that prompted you to collect the log files. Your notes are added to a file called `info.txt`, along with other information about the log file collection. The `info.txt` file is saved in the log file archive package.
 
-. Enter the provisioning passphrase for your StorageGRID system in the *Provisioning passphrase* text box.
+. In the *Provisioning passphrase* text box, enter the provisioning passphrase for your StorageGRID system.
 . Select *Collect logs*.
 +
 You can use the Logs page to monitor the progress of log file collection for each grid node.
