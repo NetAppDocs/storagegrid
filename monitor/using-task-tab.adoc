@@ -2,7 +2,7 @@
 permalink: monitor/using-task-tab.html
 sidebar: sidebar
 keywords: Tasks tab, rename node, reboot node, storage state, maintenance mode
-summary: 'The Tasks tab  is shown for all nodes. You can use this tab to rename or reboot a node or to put an appliance node into maintenance mode. For Storage Nodes, you can set the storage state.'
+summary: 'The Tasks tab is shown for all nodes. You can use this tab to rename or reboot a node or to put an appliance node into maintenance mode. For Storage Nodes, you can set the storage state.'
 ---
 = Use the Tasks tab
 :icons: font
