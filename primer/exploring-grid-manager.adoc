@@ -114,7 +114,7 @@ System tasks include:
 * Using link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems.
 * Optionally, enabling the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option.
 * link:../ilm/managing-objects-with-s3-object-lock.html[Managing S3 Object Lock]
-* Understanding Storage options such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
+* Understanding Storage settings such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
 * link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles].
 
 === Monitoring tasks
