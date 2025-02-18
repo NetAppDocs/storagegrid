@@ -26,12 +26,12 @@ You should understand the supported configurations and limitations when viewing 
 ** Fetching any data configuration type 
 ** Viewing metrics using internal API formats
 ** Uploading packages, and downloading logs and Recovery Packages
-* The `application/json` and `multipart/formdata` requests are supported for the `Content-Type` header. 
+* The `application/json` and `multipart/formdata` requests are supported for `Content-Type`. 
 * Grid Manager cannot access the following resources:
 ** Legacy MI service pages (`/nms`) and graphs 
 ** Graphana graphs and prometheus metrics
 ** The SANtricity OS
-* To view data in a different domain, the domain must have StorageGRID 12.0 (or later) installed.
+* To view data in a different domain, the domain must have StorageGRID 12.0 or later installed.
 
 .Steps
 
