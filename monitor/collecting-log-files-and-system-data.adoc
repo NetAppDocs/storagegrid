@@ -59,18 +59,18 @@ If you receive an error message about log size, try collecting logs for a shorte
 * If a "Log collection partially failed" message appears, you can retry the log collection, finish the session, download the partial log file, or send the partial log file to AutoSupport.
 
 . When log file collection is complete:
-** Select *Download* to download the _.tar.gz_ file.
-** Select *Send to AutoSupport* to send the _.tar.gz_ file to technical support.
+** Select *Download* to download the `.tar.gz` file.
+** Select *Send to AutoSupport* to send the `.tar.gz` file to technical support.
 +
-The _.tar.gz_ file contains all log files from all grid nodes where log collection was successful. Inside the combined _.tar.gz_ file, there is one log file archive for each grid node.
+The `.tar.gz` file contains all log files from all grid nodes where log collection was successful. Inside the combined `.tar.gz` file, there is one log file archive for each grid node.
 +
 [NOTE]
 ====
 If you try to send logs to AutoSupport when a link:../troubleshoot/troubleshooting-admin-node-and-user-interface-issues.html[Lumberjack log collection procedure] is in progress, an error appears. Wait for the Lumberjack procedure to complete and try again.
 
-You can send the logs to AutoSupport when an AutoSupport on Demand procedure is in progress."
+You can send the logs to AutoSupport when an AutoSupport on Demand procedure is in progress.
 ====
 
 . Select *Finish*.
 +
-CAUTION: The _.tar.gz_ file is deleted when you select *Finish*. Make sure you download or send the file first.
+CAUTION: The `.tar.gz` file is deleted when you select *Finish*. Make sure you download or send the file first.
