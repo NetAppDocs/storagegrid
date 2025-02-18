@@ -17,7 +17,7 @@ You can use the Grid Manager to retrieve log files and system data (including co
 * You must have the provisioning passphrase.
 
 .About this task
-You can use the Grid Manager to gather link:logs-files-reference.html[log files], system data, and configuration data from any grid node for the time period that you select. Data is collected and archived in a .tar.gz file that you can then download to your local computer.
+You can use the Grid Manager to gather link:logs-files-reference.html[log files], system data, and configuration data from any grid node for the time period that you select. Data is collected and archived in a .tar.gz file that you can then download to your local computer or send to AutoSupport.
 
 Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. See link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
 
@@ -51,6 +51,12 @@ You can use these notes to give technical support information about the problem 
 You can use the Logs page to monitor the progress of log file collection for each grid node.
 +
 If you receive an error message about log size, try collecting logs for a shorter time period or for fewer nodes.
+
+. If log collection fails:
+
+* If a "Log collection failed" message appears, you can retry the log collection or finish the session without retrying.
+
+* If a "Log collection partially failed" message appears, you can retry the log collection, finish the session, download the partial log file, or send the partial log file to AutoSupport.
 
 . When log file collection is complete:
 ** Select *Download* to download the _.tar.gz_ file.
