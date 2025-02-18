@@ -26,10 +26,10 @@ If you want to change the configuration of StorageGRID AutoSupport, make your ch
 
 You can use any combination of the following options to send AutoSupport packages to technical support:
 
+* *User-triggered*: Manually send AutoSupport packages at any time. This method is recommended over Weekly AutoSupport. Refer to link:../admin/manually-triggering-autosupport-message.html[Manually trigger an AutoSupport package] and link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data].
 * *Weekly*: Automatically send AutoSupport packages once per week. Default setting: Enabled.
 * *Event-triggered*: Automatically send AutoSupport packages every hour or when significant system events occur. Default setting: Enabled.
 * *On Demand*: Allow technical support to request that your StorageGRID system send AutoSupport packages automatically, which is useful when they are actively working an issue (requires HTTPS AutoSupport transmission protocol). Default setting: Disabled.
-* *User-triggered*: Manually send AutoSupport packages at any time.
 
 == [[specify-protocol-for-autosupport-packages]]Specify the protocol for AutoSupport packages
 
