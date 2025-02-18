@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure cross-origin resource sharing, cors
 summary: 'You can configure cross-origin resource sharing \(CORS\) for an S3 bucket if you want that bucket and objects in that bucket to be accessible to web applications in other domains.'
 ---
-= Configure CORS for buckets and objects in StorageGIRD
+= Configure StorageGRID CORS for buckets and objects
 :icons: font
 :imagesdir: ../media/
 
