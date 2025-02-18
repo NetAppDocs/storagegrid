@@ -71,6 +71,8 @@ If you try to send logs to AutoSupport when a link:../troubleshoot/troubleshooti
 You can send the logs to AutoSupport when an AutoSupport on Demand procedure is in progress.
 ====
 
+. If you sent a link:../monitor/manually-triggering-autosupport-message.html[user-triggered AutoSupport package], you can view the log in the AIQ systems by searching for `USER_TRIGGERED_SUPPORT_BUNDLE`.
+
 . Select *Finish*.
 +
 CAUTION: The `.tar.gz` file is deleted when you select *Finish*. Make sure you download or send the file first.
