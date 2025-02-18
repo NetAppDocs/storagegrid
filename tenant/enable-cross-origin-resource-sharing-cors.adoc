@@ -1,0 +1,44 @@
+---
+permalink: tenant/enable-cross-origin-resource-sharing-cors.html
+sidebar: sidebar
+keywords: how to configure cross-origin resource sharing, cors
+summary: 'You can configure cross-origin resource sharing \(CORS\) for an S3 bucket if you want that bucket and objects in that bucket to be accessible to web applications in other domains.'
+---
+= Enable CORS for Grid Manager and Tenant Manager 
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can enable cross-origin resource sharing (CORS) for Grid Manager and Tenant Manager if you want to view Grid Manager data and use Tenant Manager APIs in other trusted domains.
+
+.Before you begin
+
+* You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+* The link:tenant-management-permissions.html[Root access permission] provides access to all CORS configuration requests.
+
+.About this task
+
+Cross-origin resource sharing (CORS) is a security mechanism that allows client web applications in one domain to access resources in a different domain. Enabling CORS in StorageGRID allows you to view data and metrics in a custom dashboard hosted for Grid Manager and access Tenant Management APIs. 
+
+You should understand the supported configurations and limitations when viewing Grid Manager data and using Tenant Manager APIs in a different domain:
+
+* Grid Manager cannot access the following resources:
+** Legacy MI service pages (`/nms`) and graphs 
+** Graphana graphs and prometheus metrics
+** The SANtricity OS
+* GRID and Tenant Management API requests (mgmt-api) only are supported. This includes the following: 
+** Fetching any data configuration type 
+** Viewing metrics using internal API formats
+** Uploading packages, and downloading logs and recovery packages
+* The `Content-Type` header only supports `application/json` and `multipart/formdata` requests
+* The trusted domain must have StorageGRID 12.0 or later installed. 
+
+.Steps
+
+. On the Storage GRID Configuration page, select *Network* > *Management interface CORS settings*.
+. Select *Grid Manager*, *Tenant Manager*, or both options.
+* *Grid manager*: Only enables cross-domain interactions for Grid manager.  
+* *Tenant Manager*: Only enables cross-domain interactions for Tenant manager.
+* *Both options*: Enables cross-domain interactions for both Grid manager and Tenant manager.
+. Depending on your configuration, enter the URL that serves the Grid Manager, Tenant Manager, or both options in the *Domains* field.
+

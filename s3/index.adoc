@@ -43,6 +43,9 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |===
 | Release| Comments
 
+|12.0
+|Added support for cross-origin resource sharing (CORS) for Grid Manager and Tenant Manager. This allows you to view Grid Manager data and use Tenant Manager APIs in other trusted domains. link:../tenant/enable-cross-origin-resource-sharing-cors.html[Learn more].
+
 | 11.9
 | 
 * Added support for pre-calculated SHA-256 checksum values for the following requests and supported headers. You can use this feature to verify the integrity of uploaded objects:
