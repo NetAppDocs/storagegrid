@@ -37,8 +37,8 @@ Before adding Storage Nodes to increase metadata capacity, review the following 
 
 Metadata-only Storage Nodes have specific hardware requirements:
 
-* When using StorageGRID appliances, metadata-only nodes can only be configured on SGF6112 appliances with twelve 1.9 TB or twelve 3.8 TB drives.
-* When using software-based nodes, metadata-only nodes can only be added to existing StorageGRID sites using SG6000 or SG6100 appliances. These software-based metadata-only nodes must meet the following minimum requirements:
+* When using StorageGRID appliances, metadata-only nodes can be configured only on SGF6112 appliances with twelve 1.9 TB or twelve 3.8 TB drives.
+* When using software-based nodes, metadata-only nodes can be added only to existing StorageGRID sites using SG6000 or SG6100 appliances. These software-based metadata-only nodes must meet the following minimum requirements:
 ** 128 GB RAM
 ** 8 core CPU
 ** 8 TB SSD or equivalent storage for the Cassandra database (`rangedb/0`)
