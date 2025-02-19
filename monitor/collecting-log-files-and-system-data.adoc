@@ -62,14 +62,7 @@ If you receive an error message about log size, try collecting logs for a shorte
 ** Select *Download* to download the `.tar.gz` file.
 ** Select *Send to AutoSupport* to send the `.tar.gz` file to technical support.
 +
-The `.tar.gz` file contains all log files from all grid nodes where log collection was successful. Inside the combined `.tar.gz` file, there is one log file archive for each grid node.
-+
-[NOTE]
-====
-If you try to send logs to AutoSupport when a link:../troubleshoot/troubleshooting-admin-node-and-user-interface-issues.html[Lumberjack log collection procedure] is in progress, an error appears. Wait for the Lumberjack procedure to complete and try again.
-
-You can send the logs to AutoSupport when an AutoSupport on Demand procedure is in progress.
-====
+The `.tar.gz` file contains all log files from all grid nodes where log collection was successful. The combined `.tar.gz` file contains one log file archive for each grid node.
 
 . Select *Finish*.
 +
