@@ -266,7 +266,7 @@ NOTE: If you use only one storage volume for a Storage Node and you assign 4 TB 
 +
 NOTE: If you assign less than 500 GB to volume 0 (non-production use only), 10% of the storage volume's capacity is reserved for metadata.
 
-* Software-based metadata-only nodes can only be added to existing StorageGRID sites using SG6000 or SG6100 appliances. These software-based metadata-only nodes must meet the following minimum requirements:
+* Software-based metadata-only nodes can be added only to existing StorageGRID sites using SG6000 or SG6100 appliances. These software-based metadata-only nodes must meet the following minimum requirements:
 ** 128 GB RAM
 ** 8 core CPU
 ** 8 TB SSD or equivalent storage for the Cassandra database (`rangedb/0`)
