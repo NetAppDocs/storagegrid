@@ -12,6 +12,4 @@ StorageGRID attempts to send an AutoSupport package to the NetApp Support Site. 
 
 . After 1 minute, refresh the AutoSupport page in your browser to access the most recent results.
 
-. View the package in AIQ systems by searching for `USER_TRIGGERED_SUPPORT_BUNDLE`.
-
 TIP: Additionally, you can link:../monitor/collecting-log-files-and-system-data.html[collect more extensive log files and system data] and send them to the NetApp Support Site.

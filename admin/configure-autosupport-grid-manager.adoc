@@ -30,7 +30,7 @@ You can use any combination of the following options to send AutoSupport package
 * *Event-triggered*: Automatically send AutoSupport packages every hour or when significant system events occur. Default setting: Enabled.
 * *On Demand*: Allow technical support to request that your StorageGRID system send AutoSupport packages automatically, which is useful when they are actively working an issue (requires HTTPS AutoSupport transmission protocol). Default setting: Disabled.
 * *User-triggered*: Manually send AutoSupport packages at any time.
-* *Log collection*: link:../monitor/collecting-log-files-and-system-data.html[manually collect log files and system data to send to technical support].
+* *Log collection*: link:../monitor/collecting-log-files-and-system-data.html[manually collect log files and system data and send an AutoSupport package].
 
 == [[specify-protocol-for-autosupport-packages]]Specify the protocol for AutoSupport packages
 
