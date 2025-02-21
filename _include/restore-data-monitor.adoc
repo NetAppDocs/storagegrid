@@ -4,7 +4,6 @@
 
 [role="tabbed-block"]
 ====
-
 .Replicated data
 --
 
@@ -17,18 +16,22 @@
 . Review the attributes in the Evaluation section. When repairs are complete, the *Awaiting - All* attribute indicates 0 objects.
 
 * To monitor the repair in more detail:
-. Select *SUPPORT* > *Tools* > *Grid topology*.
-. Select *_grid_* > *_Storage Node being repaired_* > *LDR* > *Data Store*.
-. Use a combination of the following attributes to determine, as well as possible, if replicated repairs are complete.
-+
-NOTE: Cassandra inconsistencies might be present, and failed repairs aren't tracked.
+. Select *NODES*.
+. Select *_grid name_* > *ILM*.
+. Position your cursor over the ILM queue graph to see the value of the *Scan rate (objects/sec)* attribute, which is the rate at which objects in the grid are scanned and queued for ILM.
+. In the ILM Queue section, look at the following attributes:
 
-  ** *Repairs Attempted (XRPA)*: Use this attribute to track the progress of replicated repairs. This attribute increases each time a Storage Node tries to repair a high-risk object. When this attribute does not increase for a period longer than the current scan period (provided by the *Scan Period -- Estimated* attribute), it means that ILM scanning found no high-risk objects that need to be repaired on any nodes.
+** *Scan period - estimated*: The estimated time to complete a full ILM scan of all objects.
 +
-NOTE: High-risk objects are objects that are at risk of being completely lost. This does not include objects that don't satisfy their ILM configuration.
+A full scan doesn't guarantee that ILM has been applied to all objects.
 
-  ** *Scan Period -- Estimated (XSCM)*: Use this attribute to estimate when a policy change will be applied to previously ingested objects. If the *Repairs Attempted* attribute does not increase for a period longer than the current scan period, it is probable that replicated repairs are done. Note that the scan period can change. The *Scan Period -- Estimated (XSCM)* attribute applies to the entire grid and is the maximum of all node scan periods. You can query the *Scan Period -- Estimated* attribute history for the grid to determine an appropriate time frame.
- 
+** *Repairs attempted*: The total number of object repair operations for replicated data that have been attempted. This count increments each time a Storage Node tries to repair a high-risk object. High-risk ILM repairs are prioritized if the grid becomes busy.
++
+The same object repair might increment again if replication failed after the repair.
+
++
+These attributes can be useful when you are monitoring the progress of Storage Node volume recovery. If the number of Repairs attempted has stopped increasing and a full scan has been completed, the repair has probably completed.
+
 --
 .Erasure-coded (EC) data
 --
@@ -61,5 +64,4 @@ This command retries a failed volume repair, using the repair ID 694930931927566
 
 --
 ====
-
 // end tabbed area
