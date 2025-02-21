@@ -61,15 +61,11 @@ The link:../monitor/viewing-nodes-page.html[Nodes page] displays information abo
 
 The Nodes home page displays combined metrics for the entire grid. To view information for a particular site or node, select the site or node.
 
-image::../media/nodes_page.png[nodes page main]
-
 == Tenants page
 
 The link:../admin/managing-tenants.html[Tenants page] allows you to link:../tenant/index.html[create and monitor the storage tenant accounts] for your StorageGRID system. You must create at least one tenant account to specify who can store and retrieve objects and which functionality is available to them.
 
 The Tenants page also provides usage details for each tenant, including the amount of storage used and the number of objects. If you set a quota when you created the tenant, you can see how much of that quota has been used.
-
-image::../media/tenants_page.png[Tenants Menu and Page]
 
 == ILM menu
 
@@ -114,7 +110,7 @@ System tasks include:
 * Using link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems.
 * Optionally, enabling the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option.
 * link:../ilm/managing-objects-with-s3-object-lock.html[Managing S3 Object Lock]
-* Understanding Storage options such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
+* Understanding Storage settings such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
 * link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles].
 
 === Monitoring tasks
