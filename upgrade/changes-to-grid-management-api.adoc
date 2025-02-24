@@ -27,7 +27,7 @@ These legacy requests have been removed:
 
 `/grid/ntp-roles`
 
-== Change to `POST /grid/object-metadata API`
+== Change to `POST /grid/object-metadata` API
 HEAD transactions no longer update last access time requests.
 
 
