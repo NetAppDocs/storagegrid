@@ -30,7 +30,6 @@ These legacy requests have been removed:
 == Change to `POST /grid/object-metadata` API
 HEAD transactions no longer update last access time requests.
 
-
 == Changes to `GET /private/storage-usage` API
 * A new property, `usageCacheDuration`, has been added to the response body. This property specifies the duration (in seconds) for which the usage lookup cache remains valid. This value applies when checking the usage against tenant storage quota and bucket capacity limits.
 * The `GET /api/v4/private/storage-usage` behavior has been corrected to match nesting from the schema.
