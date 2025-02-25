@@ -49,7 +49,7 @@ h|Object added to ILM evaluation queue?
 h|Last access time updated?
 h|Object added to ILM evaluation queue?
 
-|Request to retrieve an object's metadata when a HEAD transaction is issued
+|Request to retrieve an object's metadata when a HEAD operation is issued
 |No
 |No
 |No
