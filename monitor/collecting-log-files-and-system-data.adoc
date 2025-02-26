@@ -2,14 +2,14 @@
 permalink: monitor/collecting-log-files-and-system-data.html
 sidebar: sidebar
 keywords: how to collect system data, how to collect logs
-summary: 'You can retrieve StorageGRID log files and system data, including configuration data, and send them technical support.'
+summary: 'You can retrieve StorageGRID log files and system data, including configuration data, and send them to technical support.'
 ---
 = Collect log files and system data
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can retrieve StorageGRID log files and system data, including configuration data, and send them technical support.
+You can retrieve StorageGRID log files and system data, including configuration data, and send them to technical support.
 
 .Before you begin
 * You are signed in to the Grid Manager on the primary Admin Node using a link:../admin/web-browser-requirements.html[supported web browser].
