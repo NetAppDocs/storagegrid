@@ -52,7 +52,7 @@ NOTE: A full scan does not guarantee that ILM has been applied to all objects.
 
  ** *Repairs attempted*: The total number of object repair operations for replicated data that have been attempted. This count increments each time a Storage Node tries to repair a high-risk object. High-risk ILM repairs are prioritized if the grid becomes busy.
 +
-NOTE: The same object repair might increment again if replication failed after the repair.
-
-+
+The same object repair might increment again if replication failed after the repair. +
 These attributes can be useful when you are monitoring the progress of Storage Node volume recovery. If the number of Repairs attempted has stopped increasing and a full scan has been completed, the repair has probably completed.
+
+. Alternatively, submit a Prometheus query for `storagegrid_ilm_scan_period_estimated_minutes` and `storagegrid_ilm_repairs_attempted`.
