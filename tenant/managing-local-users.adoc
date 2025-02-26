@@ -142,6 +142,20 @@ You can't change the username.
 
 . Confirm that you selected *Save changes* for each section you changed.
 
+== Import federated users
+
+You can import one or more federated users, up to a maximum of 100 users.
+
+.Steps
+
+. Navigate to the *Access Management* > *Users* page. 
+. Select *Import federated users*.
+. Enter the UUID or shortname for one or more multiple federated users, and select *Import*.
++
+The federated user information displays on the Users page.
+. If the import into the Users field fails for one or more users:
+.. Select *Copy Users*.
+.. Retry the import by selecting *Previous*, and pasting the copied users to the *Import federated users* field.
 
 == Duplicate local user
 
@@ -170,6 +184,7 @@ To retry a clone that failed:
 . View the status of the clone operation from the details page of each user you're cloning.
 
 For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
+
 
 == Delete one or more local users
 
