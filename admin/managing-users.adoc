@@ -136,6 +136,21 @@ NOTE: Local users can change their own passwords using the *Change password* opt
 .. Select *Save changes*.
 |===
 
+== Import federated users
+
+You can import one or more federated users, up to a maximum of 100 users, directly into the Users page.
+
+.Steps
+
+. Select *CONFIGURATION* > *Users*. 
+. Select *Import federated users*.
+. Enter the UUID or username for one or more federated users, and select *Import*.
++
+The federated user information displays on the Users page.
+. If the import into the Users field fails for one or more users:
+.. Select *Copy Users*.
+.. Retry the import by selecting *Previous*, and pasting the copied users to the *Import federated users* field..
+
 == Duplicate a user
 You can duplicate an existing user to create a new user with the same permissions.
 
@@ -156,3 +171,5 @@ NOTE: You can't delete the root user.
 . From the Users page, select the checkbox for each user you want to remove. 
 . Select *Actions* > *Delete user*.
 . Select *Delete user*.
+
+// 2025 FEB 26, SGWS-34007
