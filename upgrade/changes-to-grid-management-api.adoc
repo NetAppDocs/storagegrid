@@ -17,7 +17,7 @@ To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid M
 
 == New private endpoints for Move ADC
 
-Added the following private endpoints for the new `move-adc` procedure:
+The following private endpoints have been added for the new `move-adc` procedure:
 
 `/private/move-adc`
 
