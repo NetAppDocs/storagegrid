@@ -129,8 +129,6 @@ After a few minutes, this page updates to display the status of the expansion pr
 +
 NOTE: During the "Installing grid nodes" step for a new appliance, the StorageGRID Appliance Installer shows installation moving from Stage 3 to Stage 4, Finalize Installation. When Stage 4 completes, the controller is rebooted.
 +
-image::../media/grid_expansion_progress.png[This image is explained by the surrounding text.]
-+
 NOTE: A site expansion includes an additional task to configure Cassandra for the new site.
 
 . As soon as the *Download recovery package* link appears, download the recovery package file.
@@ -155,8 +153,6 @@ CAUTION: Don't reboot any Storage Nodes during either the "Expanding the Cassand
 --
 
 If you are adding Storage Nodes to an existing site, review the percentage shown in the  "Starting Cassandra and streaming data" status message.
-
-image::../media/grid_expansion_starting_cassandra.png[Grid Expansion > Starting Cassandra and streaming data]
 
 This percentage estimates how complete the Cassandra streaming operation is, based on the total amount of Cassandra data available and the amount that has already been written to the new node.
 
