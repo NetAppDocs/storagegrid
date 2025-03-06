@@ -150,12 +150,16 @@ You can import one or more federated users, up to a maximum of 100 users, direct
 
 . Select *ACCESS MANAGEMENT* > *Users*. 
 . Select *Import federated users*.
-. Enter the UUID or username for one or more federated users, and select *Import*.
+. Enter the UUID or username for one or more federated users.
++
+For multiple entries, add each UUID or username on a new line. 
+
+. Select *Import*.
 +
 The federated user information displays on the Users page.
-. If the import into the Users field fails for one or more users:
+. If the import into the Users field fails for one or more users, the *Users not imported* panel displays:
 .. Select *Copy Users*.
-.. Retry the import by selecting *Previous*, and pasting the copied users to the *Import federated users* field.
+.. Retry the import by selecting *Previous*, and pasting the copied users into the *Import federated users* panel.
 
 == Duplicate local user
 
