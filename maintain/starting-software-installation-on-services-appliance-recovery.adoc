@@ -43,8 +43,6 @@ To install StorageGRID software on a services appliance:
 `https://_Controller_IP_:8443`
 +
 The StorageGRID Appliance Installer Home page appears.
-+
-image::../media/services_appliance_installer_gateway_node.png[Appliance Installer Home Page]
 
 . To install a Primary Admin Node:
  .. In the This Node section, for *Node Type*, select *Primary Admin*.
@@ -55,9 +53,7 @@ If the version of software that is ready to install is correct, skip ahead to th
 
  .. If you need to upload a different version of software, under the *Advanced* menu, select *Upload StorageGRID Software*.
 +
-TheUpload StorageGRID Software page appears.
-+
-image::../media/upload_sw_for_pa_on_sga1000.png[Screenshot described by surrounding text]
+The Upload StorageGRID Software page appears.
 
  .. Click *Browse* to upload the *Software Package* and *Checksum File* for StorageGRID software.
 +
