@@ -19,7 +19,7 @@ If you want to change the configuration of StorageGRID AutoSupport, make your ch
 * You have the link:admin-group-permissions.html[Root access permission].
 * If you will use HTTPS for sending AutoSupport packages, you have provided outbound internet access to the primary Admin Node, either directly or link:configuring-admin-proxy-settings.html[using a proxy server] (inbound connections not required).
 * If HTTP is selected on the StorageGRID AutoSupport page, you have link:configuring-admin-proxy-settings.html[configured a proxy server] to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers will reject packages sent using HTTP.
-
+//11mar2025: SG still allows HTTP. In Aug 2023 (SG 11.9), setting up a proxy was introduced.
 * If you will use SMTP as the protocol for AutoSupport packages, you have configured an SMTP mail server.
 
 .About this task
