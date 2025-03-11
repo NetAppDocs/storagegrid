@@ -14,5 +14,9 @@ This release of StorageGRID introduces the following features and functional cha
 == Security
 
 === Security enhancement for encrypted passwords on disk
-
 Improved password security, including a highly increased hash round count for SHA512 password hashes.
+
+== S3 buckets
+
+=== Branch buckets
+You can now link:../tenant/manage-branch-bucket-html[create branch buckets] for an S3 bucket. A branch bucket provides access to S3 bucket objects as they existed at a certain time. A branch bucket isn't the same as a backup.
