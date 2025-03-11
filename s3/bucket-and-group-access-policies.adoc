@@ -682,7 +682,11 @@ s3:ListBucketVersions permissions
 | 
 s3:PutObject
 
-| Compares to the `object-lock-mode` expanded from the request header in the PutObject and CopyObject request.
+s3:CopyObject
+
+s3:CreateMultipartUpload
+
+| Compares to the `object-lock-mode` expanded from the request header in the PutObject, CopyObject, and CreateMultipartUpload request.
 
 | s3:object-lock-mode
 | 
