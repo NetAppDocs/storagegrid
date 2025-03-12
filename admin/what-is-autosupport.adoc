@@ -11,13 +11,13 @@ summary: 'The AutoSupport feature enables StorageGRID to send health and status 
 [.lead]
 The AutoSupport feature enables StorageGRID to send health and status packages to NetApp technical support.
 
-Using AutoSupport can significantly speed up problem determination and resolution. Technical support can also monitor the storage needs of your system and help you determine if you need to add new nodes or sites. Optionally, you can configure AutoSupport packages to be sent to one additional destination.
+Using AutoSupport helps solve problems faster. Technical support can monitor your system's storage needs and help determine if you need to add new nodes or sites. Optionally, AutoSupport can send packages to one additional destination.
 
 StorageGRID has two types of AutoSupport:
 
 * *StorageGRID AutoSupport* reports StorageGRID software issues. Enabled by default when you first install StorageGRID. You can link:configure-autosupport-grid-manager.html[change the default AutoSupport configuration] if needed.
 +
-NOTE: If StorageGRID AutoSupport is not enabled, a message appears on the Grid Manager dashboard. The message includes a link to the AutoSupport configuration page. If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
+NOTE: If StorageGRID AutoSupport isn't enabled, a message appears on the Grid Manager dashboard. The message includes a link to the AutoSupport configuration page. If you close the message, it won't appear again until your browser cache is cleared, even if AutoSupport remains disabled.
 
 * *Appliance hardware AutoSupport* reports StorageGRID appliance issues. You must link:configure-autosupport-grid-manager.html#autosupport-for-appliances[configure hardware AutoSupport on each appliance].
 

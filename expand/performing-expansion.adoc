@@ -31,7 +31,7 @@ Performing the expansion includes these main user tasks:
 
 . Configure the expansion.
 . Start the expansion.
-. Download a new Recovery Package file.
+. Download a new recovery package file.
 . Monitor the expansion steps and stages until all new nodes are installed and configured and all services have started.
 +
 CAUTION: Some expansion steps and stages might take a significant amount of time to run on a large grid. For example, streaming Cassandra to a new Storage Node might take only a few minutes if the Cassandra database is empty. However, if the Cassandra database includes a large amount of object metadata, this stage might take several hours or longer. Don't reboot any Storage Nodes during the either the "Expanding the Cassandra cluster" or "Starting Cassandra and streaming data" stages.
@@ -129,20 +129,18 @@ After a few minutes, this page updates to display the status of the expansion pr
 +
 NOTE: During the "Installing grid nodes" step for a new appliance, the StorageGRID Appliance Installer shows installation moving from Stage 3 to Stage 4, Finalize Installation. When Stage 4 completes, the controller is rebooted.
 +
-image::../media/grid_expansion_progress.png[This image is explained by the surrounding text.]
-+
 NOTE: A site expansion includes an additional task to configure Cassandra for the new site.
 
-. As soon as the *Download Recovery Package* link appears, download the Recovery Package file.
+. As soon as the *Download recovery package* link appears, download the recovery package file.
 +
-You must download an updated copy of the Recovery Package file as soon as possible after making grid topology changes to the StorageGRID system. The Recovery Package file allows you to restore the system if a failure occurs.
+You must download an updated copy of the recovery package file as soon as possible after making grid topology changes to the StorageGRID system. The recovery package file allows you to restore the system if a failure occurs.
 
  .. Select the download link.
  .. Enter the provisioning passphrase, and select *Start Download*.
  .. When the download completes, open the `.zip` file and confirm that you can access the contents, including the `Passwords.txt` file.
- .. Copy the downloaded Recovery Package file (`.zip`) to two safe, secure, and separate locations.
+ .. Copy the downloaded recovery package file (`.zip`) to two safe, secure, and separate locations.
 +
-CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 . If you are adding Storage Nodes to an existing site or adding a site, monitor the Cassandra stages, which occur when services are started on the new grid nodes. 
 +
@@ -155,8 +153,6 @@ CAUTION: Don't reboot any Storage Nodes during either the "Expanding the Cassand
 --
 
 If you are adding Storage Nodes to an existing site, review the percentage shown in the  "Starting Cassandra and streaming data" status message.
-
-image::../media/grid_expansion_starting_cassandra.png[Grid Expansion > Starting Cassandra and streaming data]
 
 This percentage estimates how complete the Cassandra streaming operation is, based on the total amount of Cassandra data available and the amount that has already been written to the new node.
 
