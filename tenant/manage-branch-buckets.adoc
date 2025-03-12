@@ -85,6 +85,8 @@ Your StorageGRID administrator manages the available regions. A bucket's region 
 
 == Manage settings
 
+The settings for a branch bucket don't affect the object versions in the base bucket.
+
 .Steps
 
 . If the global S3 Object Lock setting is enabled, optionally enable S3 Object Lock for the branch bucket. To enable S3 Object Lock, the branch bucket must be a read-write bucket.
@@ -126,7 +128,11 @@ Object count limit is the maximum number of objects the branch bucket can contai
 The branch bucket is created and added to the table on the Buckets page.
 
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view branch bucket details] and perform additional configuration.
-+
-You can create a branch bucket from a branch bucket.
-+
+
+== Branch bucket operations and settings
+
+You can create a branch bucket from an existing branch bucket.
+
 If you delete objects in a branch bucket, the base bucket objects won't be affected.
+
+Cross-grid replication and platform services aren't supported in StorageGRID 12.0
