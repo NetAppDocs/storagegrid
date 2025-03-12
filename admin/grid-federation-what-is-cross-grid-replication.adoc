@@ -147,7 +147,7 @@ If an S3 client issues a PutObjectTagging or DeleteObjectTagging request, `501 N
 
 PutObjectRetention and PutObjectLegalHold requests aren't fully supported for objects in buckets that have cross-grid replication enabled.
 
-If an S3 client issues a PutObjectRetention or PutObjectLegalHold request, the request sent to the source object is accepted but isn't replicated to the destination object.
+If an S3 client issues a PutObjectRetention or PutObjectLegalHold request, the source object's settings are modified, but the changes aren't applied to the destination.
 
 === How segmented objects are replicated
 
