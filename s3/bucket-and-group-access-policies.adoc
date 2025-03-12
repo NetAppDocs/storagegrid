@@ -617,6 +617,9 @@ Condition operators are categorized as follows:
 
 | Null
 | Checks if a condition key is present in the current request context.
+
+| IfExists
+| Appended to any condition operator, except the Null condition, to check for absence of that condition key. Returns TRUE if the condition key is not present.
 |===
 
 === Supported condition keys
