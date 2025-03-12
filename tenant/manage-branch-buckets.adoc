@@ -16,10 +16,9 @@ You create a branch bucket from an existing bucket. After you create a branch bu
 
 You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
 
-Machine learning
+Machine learning?
 
-Code version control
-
+Code version control?
 
 CAUTION: A branch bucket doesn't serve as a backup, but provides access to protected data. You must continue to use link:../ilm/managing-objects-with-s3-object-lock.html[S3 Object Lock] or link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] to protect data.
 
@@ -77,13 +76,9 @@ Your StorageGRID administrator manages the available regions. A bucket's region 
 
 | Branch bucket type
 |
-* Read-write
+* *Read-write*: You can modify the contents and settings of the branch bucket. For example, you can add new objects or object versions to the branch bucket, and you can modify settings such as bucket policies.
 
-You can modify the contents and settings of the branch bucket. For example, you can add new objects or object versions to the branch bucket, and you can modify settings such as bucket policies.
-
-* Read-only
-
-You can't modify the branch bucket. It will contain only objects and settings from the base bucket. 
+* *Read-only*: You can't modify the branch bucket. It will contain only objects and settings from the base bucket. 
 |===
 
 . Select *Continue*.
@@ -94,7 +89,7 @@ You can't modify the branch bucket. It will contain only objects and settings fr
 
 . If the global S3 Object Lock setting is enabled, optionally enable S3 Object Lock for the branch bucket. To enable S3 Object Lock, the branch bucket must be a read-write bucket.
 +
-Enable S3 Object Lock for a bucket only if you need to keep objects for fixed amount of time, for example, to meet certain regulatory requirements. S3 Object Lock is a permanent setting that helps you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely. 
+Enable S3 Object Lock for a branch bucket only if you need to keep objects for fixed amount of time, for example, to meet certain regulatory requirements. S3 Object Lock is a permanent setting that helps you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely. 
 +
 CAUTION: After the S3 Object Lock setting is enabled for a bucket, it can't be disabled. Anyone with the correct permissions can add objects to this bucket that can't be changed. You might not be able to delete these objects or the bucket itself.
 +
@@ -122,7 +117,7 @@ Capacity limit is the maximum capacity available for this bucket's objects. This
 +
 If no limit is set, the capacity for this bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
 
-. [[object-count-limit]]Optionally, select *Enable object count limit*.
+. Optionally, select *Enable object count limit*.
 +
 Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). If no limit is set, the object count is unlimited.
 
@@ -131,3 +126,7 @@ Object count limit is the maximum number of objects the branch bucket can contai
 The branch bucket is created and added to the table on the Buckets page.
 
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view branch bucket details] and perform additional configuration.
++
+You can create a branch bucket from a branch bucket.
++
+If you delete objects in a branch bucket, the base bucket objects won't be affected.

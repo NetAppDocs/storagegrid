@@ -22,7 +22,7 @@ NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objec
 
 * If each tenant will have 5,000 buckets, each Storage Node in the grid has a minimum of 64 GB of RAM.
 +
-NOTE: Each grid can have a maximum of 100,000 buckets.
+NOTE: Each grid can have a maximum of 100,000 buckets, including link:../tenant/manage-branch-buckets.html[branch buckets].
 
 == Access the wizard
 
@@ -74,7 +74,12 @@ Your StorageGRID administrator manages the available regions. A bucket's region 
 
 . Optionally, enable object versioning for the bucket.
 +
-Enable object versioning if you want to store every version of each object in this bucket. You can then retrieve previous versions of an object as needed. You must enable object versioning if the bucket will be used for cross-grid replication.
+Enable object versioning if you want to store every version of each object in this bucket. You can then retrieve previous versions of an object as needed.
++
+You must enable object versioning if:
++
+* The bucket will be used for cross-grid replication.
+* You want to create a link:../tenant/manage-branch-buckets.html[branch bucket] from this bucket.
 
 . If the global S3 Object Lock setting is enabled, optionally enable S3 Object Lock for the bucket to store objects using a write-once-read-many (WORM) model. 
 +
