@@ -153,10 +153,10 @@ For multiple entries, add each UUID or username on a new line.
 If the import into the Users field fails for one or more users, perform the following steps:
 
 .. Select *Copy users*.
-.. Retry the import by selecting *Previous* and pasting the copied users into the *Import federated users* panel.
+.. Retry the import by selecting *Previous* and pasting the copied users into the *Import federated users* dialog box.
 
 +
-After you close the *Import federated users* panel, the federated user information displays on the Users page for the successfully imported users.
+After you close the *Import federated users* dialog box, the federated user information displays on the Users page for the successfully imported users.
 
 == Duplicate a user
 You can duplicate an existing user to create a new user with the same permissions.
