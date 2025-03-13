@@ -93,7 +93,7 @@ The grid node configuration form appears.
 | Whether this Storage Node will run the Administrative Domain Controller (ADC) service. The ADC service keeps track of the location and availability of grid services. At least three Storage Nodes at each site must include the ADC service.
 
 * Select *Yes* if the Storage Node you are replacing includes the ADC service. Because you can't decommission a Storage Node if too few ADC services would remain, this setting ensures that a new ADC service is available before the old service is removed.
-* You can move the ADC service from one Storage Node to another to ensure the ADC service quorum is met.
+* You can link:../upgrade/changes-to-grid-management-api.html#new-private-endpoints-for-move-adc[move the ADC service from one Storage Node to another] to ensure the ADC service quorum is met.
 * Select *Automatic* to let the system determine whether this node requires the ADC service.
 
 Learn about the link:../maintain/understanding-adc-service-quorum.html[ADC quorum].

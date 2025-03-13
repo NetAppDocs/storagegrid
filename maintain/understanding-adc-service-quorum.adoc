@@ -24,5 +24,5 @@ For example, suppose a site currently includes six Storage Nodes with ADC servic
 
 If you need to decommission a Storage Node, you can continue to meet the ADC quorum requirement by:
 
-* Using the Move ADC procedure.
+* link:../upgrade/changes-to-grid-management-api.html#new-private-endpoints-for-move-adc[Moving the ADC service to another Storage Node].
 * Adding a new Storage Node in an link:../expand/index.html[expansion] and specifying that it should have an ADC service. Then, you can decommission the existing Storage Node.
