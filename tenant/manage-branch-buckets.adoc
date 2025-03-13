@@ -2,14 +2,14 @@
 permalink: tenant/manage-branch-buckets.html
 sidebar: sidebar
 keywords: how to create branch bucket
-summary: 'A branch bucket provides access to objects in an existing bucket as they existed at a certain time. Use the Tenant Manager to create and view branch buckets.'
+summary: 'A branch bucket provides access to objects in a bucket as they existed at a certain time. Use the Tenant Manager to create and view branch buckets.'
 ---
 = Manage branch buckets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-A branch bucket provides access to objects in an existing bucket as they existed at a certain time. Use the Tenant Manager to create and view branch buckets.
+A branch bucket provides access to objects in a bucket as they existed at a certain time. Use the Tenant Manager to create and view branch buckets.
 
 .About this task
 You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the base bucket. When you perform operations on the base bucket, the results on the branch bucket depend on the operation and the type of branch bucket you've created.
@@ -72,7 +72,7 @@ Your StorageGRID administrator manages the available regions. A bucket's region 
 *Note*: You can't change the region after creating the branch bucket.
 
 | Before time
-| The branch bucket will provide access to object versions created in the base bucket earlier than the Before time.
+| The branch bucket provides access to object versions created in the base bucket earlier than the Before time.
 
 | Branch bucket type
 |
