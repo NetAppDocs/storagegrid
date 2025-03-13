@@ -16,3 +16,15 @@ This release of StorageGRID introduces the following features and functional cha
 === Security enhancement for encrypted passwords on disk
 
 Improved password security, including a highly increased hash round count for SHA512 password hashes.
+
+== S3 consistency
+
+=== Quorum consistency for new 12.0 installations
+When you configure strong-global consistency on a new 12.0 installation, QUORUM semantics are used.
+
+If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the existing EACH_QUORUM/LOCAL_QUORUM (EQ/LQ) semantics when you configure strong-global consistency.
+
+
+Document procedure on how to change between them if needed
+
+Describe the 2 site case and its special considerations
