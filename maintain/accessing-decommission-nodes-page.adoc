@@ -50,7 +50,7 @@ If a grid node can be decommissioned, this column includes a green check mark, a
 
 | No, at least one grid node is disconnected.
 
-*Note:* This message is shown for connected grid nodes only.
+*Note*: This message is shown for connected grid nodes only.
 | You can't decommission a connected grid node if any grid node is disconnected.
 
 The *Health* column includes one of these icons for grid nodes that are disconnected:
@@ -64,7 +64,7 @@ The *Health* column includes one of these icons for grid nodes that are disconne
 
 | No, one or more required nodes is currently disconnected and must be recovered.
 
-*Note:* This message is shown for disconnected grid nodes only.
+*Note*: This message is shown for disconnected grid nodes only.
 | You can't decommission a disconnected grid node if one or more required nodes is also disconnected (for example, a Storage Node that is required for the ADC quorum).
 |
 .. Review the Decommission Possible messages for all disconnected nodes.
@@ -72,16 +72,16 @@ The *Health* column includes one of these icons for grid nodes that are disconne
   *** If the Health of a required node is Administratively Down, bring the node back online.
   *** If the health of a required node is Unknown, perform a node recovery procedure to recover the required node.
 
-| No, member of HA group(s): _group name_. Before you can decommission this node, you must remove it from all HA groups.
+| No, member of HA group: _group name_. Before you can decommission this node, you must remove it from all HA groups.
 | You can't decommission an Admin Node or a Gateway Node if a node interface belongs to a high availability (HA) group.
 | Edit the HA group to remove the node's interface or remove the entire HA group. See link:../admin/configure-high-availability-group.html[Configure high availability groups].
 
 | No, site _x_ requires a minimum of _n_ Storage Nodes with ADC services.
-| *Storage Nodes only.* You can't decommission a Storage Node if insufficient nodes would remain at the site to support ADC quorum requirements.
-| Perform an expansion. Add a new Storage Node to the site, and specify that it should have an ADC service. See information about the link:understanding-adc-service-quorum.html[ADC quorum].
+| *Storage Nodes only* (combined or metadata-only Storage Nodes). You can't decommission a Storage Node if insufficient nodes would remain at the site to support ADC quorum requirements. However, you can move the ADC service to another Storage Node.
+| Move the ADC service or perform an expansion by adding a new Storage Node to the site and specifying that it should have an ADC service. Refer to link:understanding-adc-service-quorum.html[ADC quorum].
 
 | No, one or more erasure-coding profiles need at least _n_ Storage Nodes. If the profile is not used in an ILM rule, you can deactivate it.
-| *Storage Nodes only.* You can't decommission a Storage Node unless enough nodes would remain for the existing erasure-coding profiles.
+| *Storage Nodes only*. You can't decommission a Storage Node unless enough nodes would remain for the existing erasure-coding profiles.
 
 For example, if an erasure-coding profile exists for 4+2 erasure coding, at least 6 Storage Nodes must remain.
 
