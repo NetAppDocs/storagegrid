@@ -9,7 +9,7 @@ summary: 'You can configure cross-origin resource sharing \(CORS\) for an S3 buc
 :imagesdir: ../media/
 
 [.lead]
-You can enable cross-origin resource sharing (CORS) for management API requests to a StorageGRID domain if you want data in the StorageGRID domain to be accessible to another domain at the management interface level.
+You can enable cross-origin resource sharing (CORS) for management API requests to a StorageGRID domain if you want data in the StorageGRID domain to be accessible at the management interface level to another domain.
 
 .Before you begin
 
@@ -18,12 +18,12 @@ You can enable cross-origin resource sharing (CORS) for management API requests 
 
 .About this task
 
-Cross-origin resource sharing (CORS) is a security mechanism that allows client web applications in one domain to access resources in a different domain. For example, you have data in a StorageGRID domain that you want to make accessible to build a Grid Manager in domain `\http://www.example.com`. By enabling CORS in the StorageGRID domain for `\http://www.example.com` for "Grid Manager", the StorageGRID domain responds to Grid Management API requests from `\http://www.example.com`.  
+CORS is a security mechanism that allows client web applications in one domain to access resources in a different domain. For example, suppose you have data in a StorageGRID domain that you want to make accessible to build a Grid Manager in domain `\http://www.example.com`. By enabling CORS in the StorageGRID domain for `\http://www.example.com` and "Grid Manager", the StorageGRID domain responds to Grid Management API requests from `\http://www.example.com`.  
 
-The following support is available for CORS at the management interface level:
+The following requests are supported for CORS at the management interface level:
 
 * Management API (mgmt-api) requests
-* Support for `application/json` and `multipart/formdata` requests for `Content-Type`
+* `application/json` and `multipart/formdata` requests for `Content-Type`
 
 .Steps
 
