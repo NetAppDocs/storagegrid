@@ -65,12 +65,10 @@ For more information, see the https://docs.aws.amazon.com/AmazonS3/latest/usergu
 
 *Note*: You can't change the name after creating the branch bucket.
 
-| Region 
+| Region (can't modify for branch buckets)
 | The branch bucket's region.
 
-Your StorageGRID administrator manages the available regions. A bucket's region can affect the data-protection policy applied to objects. By default, all buckets are created in the `us-east-1` region.
-
-*Note*: You can't change the region after creating the branch bucket.
+The branch bucket's region must match the region for the base bucket, so this field is disabled for branch buckets.
 
 | Before time
 | The branch bucket provides access to object versions created in the base bucket earlier than the Before time.
