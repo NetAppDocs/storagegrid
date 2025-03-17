@@ -117,4 +117,4 @@ The bucket is created and added to the table on the Buckets page.
 
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view bucket details] and perform additional configuration.
 
-You can also link:../tenant/manage-branch-bucket.html[create branch buckets] as needed.
+You can also link:../tenant/manage-branch-buckets.html[create branch buckets] as needed.
