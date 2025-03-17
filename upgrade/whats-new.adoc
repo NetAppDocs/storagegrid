@@ -20,11 +20,6 @@ Improved password security, including a highly increased hash round count for SH
 == S3 consistency
 
 === Quorum consistency for new 12.0 installations
-When you configure strong-global consistency on a new 12.0 installation, QUORUM semantics are used.
+Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when strong-global consistency is set. The new behavior for strong-global consistency tolerates a single site failure for grids with three sites or more, but all client reads will incur cross-site latency. If you need to revert to the previous behavior for strong-global consistency, follow <link> for instructions.
 
-If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the existing EACH_QUORUM/LOCAL_QUORUM (EQ/LQ) semantics when you configure strong-global consistency.
-
-
-Document procedure on how to change between them if needed
-
-Describe the 2 site case and its special considerations
+If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the existing behavior for strong-global consistency.
