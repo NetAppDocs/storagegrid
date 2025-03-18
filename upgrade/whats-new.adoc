@@ -14,6 +14,7 @@ This release of StorageGRID introduces the following features and functional cha
 == Security
 
 === Security enhancement for encrypted passwords on disk
+Improved password security, including a highly increased hash round count for SHA512 password hashes.
 
 Improved password security, including a highly increased hash round count for SHA512 password hashes.
 
@@ -23,3 +24,8 @@ Improved password security, including a highly increased hash round count for SH
 Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when strong-global consistency is set. The new behavior for strong-global consistency tolerates a single site failure for grids with three sites or more, but all client reads will incur cross-site latency. If you need to revert to the previous behavior for strong-global consistency, follow <link> for instructions.
 
 If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the existing behavior for strong-global consistency.
+
+== User interface
+
+=== Dark theme
+Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
