@@ -14,5 +14,9 @@ This release of StorageGRID introduces the following features and functional cha
 == Security
 
 === Security enhancement for encrypted passwords on disk
-
 Improved password security, including a highly increased hash round count for SHA512 password hashes.
+
+== User interface
+
+=== Dark theme
+Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
