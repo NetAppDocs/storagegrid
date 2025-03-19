@@ -1,0 +1,41 @@
+---
+permalink: maintain/move-adc-service.html
+sidebar: sidebar
+keywords: storagegrid, move adc, adc quorum
+summary: 'You can move the ADC service to another Storage Node.'
+---
+= Move the ADC service
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+
+.Before you begin
+* You have the Maintenance or Root access permission
+* Restrictions
+** The source node has to be a ADC node
+** The target node has to be a non-ADC node
+** The target node cannot be a data-only node
+** The source node and target node has to be from the same site.
+
+.About this task
+Use this procedure when you want:
+
+* To decommission a node that is an ADC node
+* Convert an ADC node to a data-only node
+* Another node running ADC related tasks
+
+Moves the ADC (and RSM, ACCT as they are depended on ADC) services from one node to another node on the same site
+Both node will reboot in sequence.
+
+.Steps
+. Note down the node ids of the ADC node that need to have the ADC services moved from (referred to as sourceNodeId on SwaggerDoc) and to (referred as targetNodeId on SwaggerDoc)
++
+The procedure is only available in the SwaggerDoc API private endpoints page for now.
++
+Details on how to send a request to start the procedure can be found on the SwaggerDoc API page: `POST /private/move-adc/start`.
+
+. Monitor or retry the procedure if there are any errors via swaggerDoc SwaggerDoc API page.
+
+NOTE: Download a recovery package after provisioning.
