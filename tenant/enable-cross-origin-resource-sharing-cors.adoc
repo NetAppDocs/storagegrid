@@ -9,21 +9,18 @@ summary: 'You can configure cross-origin resource sharing \(CORS\) for an S3 buc
 :imagesdir: ../media/
 
 [.lead]
-You can enable cross-origin resource sharing (CORS) for management API requests to a StorageGRID domain if you want data in the StorageGRID domain to be accessible at the management interface level to another domain.
+You can enable cross-origin resource sharing (CORS) for management API requests to StorageGRID, if you want data in StorageGRID to be accessible using management APIs to another domain.
 
 .Before you begin
 
-* You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * The link:tenant-management-permissions.html[Root access permission] provides access to all CORS configuration requests.
 
 .About this task
 
-CORS is a security mechanism that allows client web applications in one domain to access resources in a different domain. For example, suppose you have data in a StorageGRID domain that you want to make accessible to build a Grid Manager in domain `\http://www.example.com`. By enabling CORS in the StorageGRID domain for `\http://www.example.com` and "Grid Manager", the StorageGRID domain responds to Grid Management API requests from `\http://www.example.com`.  
+CORS is a security mechanism that allows client web applications in one domain to access resources in a different domain. For example, suppose you want to build a monitoring dashboard for StorageGRID in domain `\http://www.example.com`. By enabling CORS in StorageGRID for `\http://www.example.com` and "Grid Manager", the StorageGRID domain responds to Grid Management API requests from `\http://www.example.com`.  
 
-The following requests are supported for CORS at the management interface level:
-
-* Management API (mgmt-api) requests
-* `application/json` and `multipart/formdata` requests for `Content-Type`
+Management API (mgmt-api) requests with `application/json` or `multipart/formdata` requests for `Content-Type` are supported for CORS.
 
 .Steps
 
@@ -35,5 +32,6 @@ The following requests are supported for CORS at the management interface level:
 . Enter the URL for the other domain in the *Domains* field.
 +
 Select *Add another domain* if you want to enable CORS in StorageGRID for more than one domain.
+. Select *Save*. 
 
 // 2025 MAR 12, SGWS-34427
