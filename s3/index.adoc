@@ -44,7 +44,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 | Release| Comments
 
 |12.0
-|Added support for cross-origin resource sharing (CORS) for Grid Manager and Tenant Manager. This allows you to view Grid Manager data and use Tenant Manager APIs in other trusted domains. link:../tenant/enable-cross-origin-resource-sharing-cors.html[Learn more].
+|Added support for cross-origin resource sharing (CORS) for a management interface. This allows another domain to access data in StorageGRID using management APIs. link:../tenant/enable-cross-origin-resource-sharing-cors.html[Learn more].
 
 | 11.9
 | 

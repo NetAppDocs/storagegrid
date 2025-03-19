@@ -85,8 +85,8 @@ entries:
       url: "/tenant/update-default-retention-settings.html"
     - title: Configure CORS for buckets and objects
       url: "/tenant/configuring-cross-origin-resource-sharing-cors.html"
-    - title: Enable CORS for GRID Manager and Tenant Manager
-      url: "/tenant/enable-cross-origin-resource-sharing-cors.html"
+    - title: Enable CORS for a management interface
+      url: "/tenant/enable-cross-origin-resource-sharing-cors-for-management-interface.html"
     - title: Delete objects in bucket
       url: "/tenant/deleting-s3-bucket-objects.html"
     - title: Delete bucket
