@@ -140,6 +140,8 @@ The branch bucket is created and added to the table on the Buckets page.
 
 You can create a branch bucket from an existing branch bucket.
 
+A multipart uploaded object is included in a branch bucket if the ingest was initiated before the base bucket's before timestamp, regardless of when the upload completes.
+
 If you delete object versions from a branch bucket, StorageGRID creates a delete marker only in the branch bucket. The base bucket object versions won't be affected.
 
 Cross-grid replication and platform services aren't supported for branch buckets in StorageGRID 12.0.
