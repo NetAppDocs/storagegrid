@@ -118,8 +118,8 @@ For each grid federation connection, the *Last error* column shows the most rece
 * The destination bucket was re-created by a different account.	
 * The destination bucket has versioning suspended.
 * The destination bucket was re-created by the same account but is now unversioned.
-* The source object has S3 Object Lock headers that don't comply with the destination grid's tenant-level retention settings and restrictions.
-* The source object has S3 Object Lock headers and S3 Object Lock is disabled on the destination bucket. 
+* The source object has S3 Object Lock settings that don't comply with the destination grid's tenant-level retention settings.
+* The source object has S3 Object Lock settings and S3 Object Lock is disabled on the destination bucket. 
 
 .Recommended actions
 If an error message appears in the *Last error* column, follow these steps:
