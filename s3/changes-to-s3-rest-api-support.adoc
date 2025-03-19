@@ -15,9 +15,6 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |===
 | Release| Comments
 
-|12.0
-|Added support for cross-origin resource sharing (CORS) for a management interface. This allows another domain to access data in StorageGRID using management APIs. link:../tenant/enable-cross-origin-resource-sharing-for-management-interface.html[Learn more].
-
 |11.8
 |
 * Added support for `ExpiredObjectDeleteMarker` in a PutBucketLifecycleConfiguration operation, which deletes expired object delete markers.
