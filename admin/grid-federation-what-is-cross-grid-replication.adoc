@@ -23,7 +23,6 @@ If a tenant account has the *Use grid federation connection* permission to use o
 
 * Must have the same name but can have different regions
 * Must have versioning enabled
-* Must have S3 Object Lock disabled
 * Must be empty
 
 After both buckets have been created, cross-grid replication can be configured for either or both buckets.
@@ -137,6 +136,34 @@ When determining how to encrypt replicated objects, StorageGRID applies these ru
 . If the destination bucket does not have an encryption setting, use the destination's grid-wide encryption setting, if configured.
 . If a grid-wide setting is not present, don't encrypt the destination object.
 
+[how-objects-with-retention-settings=are-replicated]
+== How objects with retention settings are replicated
+
+You can configure Cross-grid replication between StorageGRID buckets with S3 Object Lock enabled under the following circumstances.
+
+[cols="1a,1a" options="header"]
+|===
+a| When S3 Object Lock on the source is...
+a| And S3 Object Lock on the destination is...
+a| Enabled
+a| Enabled
+a| Disabled
+a| Enabled
+|===
+
+The objects at the destination are locked according to the retention setting on the destination bucket. 
+
+When the source has S3 Object Lock enabled:
+
+* You can use either `x-amz-object-lock-mode` or `x-amz-object-lock-retain-until-date` to set the retention on the destination bucket, or set a default retention.
++ 
+The default retention settings should match on the sources and destination buckets.
+
+* There isn’t a default legal hold setting on the destination bucket. You can use `x-amz-object-lock-legal-hold `to set the legal hold status. 
+* The destination tenant and bucket should support the source S3 Object Lock settings. 
+
+When the source has S3 Object Lock disabled, only the destination has S3 Object Lock retention settings and only if the destination bucket has a default retention setting. In this case, the destination object doesn’t have a legal hold setting.
+
 === PutObjectTagging and DeleteObjectTagging aren't supported
 
 PutObjectTagging and DeleteObjectTagging requests aren't supported for objects in buckets that have cross-grid replication enabled.
@@ -147,4 +174,5 @@ If an S3 client issues a PutObjectTagging or DeleteObjectTagging request, `501 N
 
 The source grid's maximum segment size applies to objects replicated to the destination grid. When objects are replicated to another grid, the *Maximum Segment Size* setting (*CONFIGURATION* > *System* > *Storage options*) of the source grid will be used on both grids. For example, suppose the maximum segment size for the source grid is 1 GB, while the maximum segment size of the destination grid is 50 MB. If you ingest a 2-GB object on the source grid, that object is saved as two 1-GB segments. It will also be replicated to the destination grid as two 1-GB segments, even though that grid's maximum segment size is 50 MB. 
 
+// 2025 MAR 18, SGWS-34598
 // 2024 JULY 1, SGRIDDOC-48
