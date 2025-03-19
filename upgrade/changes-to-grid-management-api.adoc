@@ -17,7 +17,7 @@ To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid M
 
 == New private endpoints for Move ADC
 
-The following private endpoints have been added to allow you to move the ADC service from one Storage Node to another:
+The following private endpoints have been added to allow you to move the ADC service from one Storage Node to another on the same site:
 
 `/private/move-adc`
 
