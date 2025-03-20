@@ -26,7 +26,7 @@ Use the Move ADC procedure when you want to:
 * Convert an ADC node to a data-only node
 * Add a node to run ADC-related tasks
 
-When you decommission a Storage Node or convert an ADC node to a data-only node, you might need to use the Move ADC procedure to ensure that the link:../maintain/understanding-adc-service-quorum.html[ADC quorum is maintained].
+When you want to decommission a Storage Node or link:../maintain/convert-to-data-only-node.html[convert a Storage Node to a data-only node], first you might need to use the Move ADC procedure. You'll need to ensure that the link:../maintain/understanding-adc-service-quorum.html[ADC quorum is maintained].
 
 This procedure moves the ADC, RSM, IDNT, ACCT, and RSM services from one Storage Node to another on the same site. The RSM and ACCT services are dependent on the ADC service, so they automatically move when the ADC service moves.
 
