@@ -104,7 +104,6 @@ Learn about the link:../maintain/understanding-adc-service-quorum.html[ADC quoru
 Storage grades are used by ILM storage pools, so your selection can affect which objects will be placed on the Storage Node. 
 |===
 
-
 .. As required, modify the settings for the Grid Network, Admin Network, and Client Network.
 *** *IPv4 Address (CIDR)*: The CIDR network address for the network interface. For example: 172.16.10.100/24
 +
@@ -119,7 +118,6 @@ The approved grid node moves to the Approved Nodes list.
 *** To modify the properties of an approved grid node, select its radio button, and select *Edit*.
 *** To move an approved grid node back to the Pending Nodes list, select its radio button, and select *Reset*.
 *** To permanently remove an approved grid node, power the node off. Then, select its radio button, and select *Remove*.
-
 
 .. Repeat these steps for each pending grid node you want to approve.
 +

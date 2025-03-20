@@ -28,7 +28,7 @@ Use the Move ADC procedure when you want to:
 
 When you decommission a Storage Node or convert an ADC node to a data-only node, you might need to use the Move ADC procedure to ensure that the link:../maintain/understanding-adc-service-quorum.html[ADC quorum is maintained].
 
-This procedure moves the ADC, RSM, and ACCT services from one Storage Node to another on the same site. The RSM and ACCT services are dependent on the ADC service, so they automatically move when the ADC service moves.
+This procedure moves the ADC, RSM, IDNT, ACCT, and RSM services from one Storage Node to another on the same site. The RSM and ACCT services are dependent on the ADC service, so they automatically move when the ADC service moves.
 
 .Steps
 . Record the node IDs of the source and target nodes.
@@ -40,9 +40,9 @@ In the Grid Management API, the source node ID is referred to as `sourceNodeId`.
 . Select *Go to private API documentation*.
 
 . Select the `POST /private/move-adc/start` operation. Refer to link:../admin/using-grid-management-api.html#issue-api-requests[Issue API requests] for more information.
++
+Each node will reboot during the procedure.
 
-. If errors occur, select `GET /private/move-adc` to monitor the procedure, or select `POST /private/move-adc/retry` to retry the procedure.
+. You can use `GET /private/move-adc` to monitor the procedure. If errors occur, select `POST /private/move-adc/retry` to retry the procedure.
 
-When the procedure is complete, each node will reboot.
-
-link:../maintain/downloading-recovery-package.html[Download a recovery package] after completing this procedure.
+. link:../maintain/downloading-recovery-package.html[Download a recovery package] after completing this procedure.
