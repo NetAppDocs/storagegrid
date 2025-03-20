@@ -60,6 +60,8 @@ When installing data-only nodes, the grid must contain the following:
 * At least one combined or data-only Storage Node _per site_
 * A minimum of three combined or metadata-only Storage Nodes _per site_
 
+You can convert a Storage Node that doesn't contain the <<adc-service,ADC service>> to a data-only Storage Node. Refer to link:../maintain/convert-to-data-only-node.html[Convert a Storage Node to a data-only node].
+
 == Primary services for Storage Nodes
 The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
 
@@ -72,7 +74,7 @@ NOTE: Some services, such as the ADC service and the RSM service, typically exis
 | Account (acct)
 | Manages tenant accounts.
 
-| Administrative Domain Controller (ADC)
+| [[adc-service]]Administrative Domain Controller (ADC)
 | Maintains topology and grid-wide configuration.
 
 *Note*: Data-only Storage Nodes don't host the ADC service.

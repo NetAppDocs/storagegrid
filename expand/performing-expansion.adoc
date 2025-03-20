@@ -103,7 +103,6 @@ Learn about the link:../maintain/understanding-adc-service-quorum.html[ADC quoru
 Storage grades are used by ILM storage pools, so your selection can affect which objects will be placed on the Storage Node. 
 |===
 
-
 .. As required, modify the settings for the Grid Network, Admin Network, and Client Network.
 *** *IPv4 Address (CIDR)*: The CIDR network address for the network interface. For example: 172.16.10.100/24
 +
