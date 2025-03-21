@@ -2,14 +2,14 @@
 permalink: audit/whea-swift-head.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, WHEA, Swift HEAD
-summary: 'When a Swift client issues a HEAD transaction, a request is made to check for the existence of an account, container, or object, and retrieve any relevant metadata. This message is issued by the server if the transaction is successful.'
+summary: 'When a Swift client issues a HEAD operation, a request is made to check for the existence of an account, container, or object, and retrieve any relevant metadata. This message is issued by the server if the operation is successful.'
 ---
 = WHEA: Swift HEAD
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When a Swift client issues a HEAD transaction, a request is made to check for the existence of an account, container, or object, and retrieve any relevant metadata. This message is issued by the server if the transaction is successful.
+When a Swift client issues a HEAD operation, a request is made to check for the existence of an account, container, or object, and retrieve any relevant metadata. This message is issued by the server if the operation is successful.
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -40,7 +40,7 @@ RSLT
 a|
 Result Code
 a|
-Result of the HEAD transaction. Result is always:
+Result of the HEAD operation. Result is always:
 
 SUCS: successful
 
@@ -93,3 +93,4 @@ Swift Account User
 a|
 The Swift account username that uniquely identifies the client performing the transaction.
 |===
+// 2025-02-26, SGRIDOC-144

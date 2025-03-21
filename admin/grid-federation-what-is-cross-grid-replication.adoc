@@ -176,6 +176,12 @@ PutObjectTagging and DeleteObjectTagging requests aren't supported for objects i
 
 If an S3 client issues a PutObjectTagging or DeleteObjectTagging request, `501 Not Implemented` is returned. The message is `Put(Delete) ObjectTagging isn't available for buckets that have cross-grid replication configured`.
 
+=== PutObjectRetention and PutObjectLegalHold aren't supported
+
+PutObjectRetention and PutObjectLegalHold requests aren't fully supported for objects in buckets that have cross-grid replication enabled.
+
+If an S3 client issues a PutObjectRetention or PutObjectLegalHold request, the source object's settings are modified, but the changes aren't applied to the destination.
+
 === How segmented objects are replicated
 
 The source grid's maximum segment size applies to objects replicated to the destination grid. When objects are replicated to another grid, the *Maximum Segment Size* setting (*CONFIGURATION* > *System* > *Storage options*) of the source grid is used on both grids. For example, suppose the maximum segment size for the source grid is 1 GB, while the maximum segment size of the destination grid is 50 MB. If you ingest a 2-GB object on the source grid, that object is saved as two 1-GB segments. It's also replicated to the destination grid as two 1-GB segments, even though that grid's maximum segment size is 50 MB. 
