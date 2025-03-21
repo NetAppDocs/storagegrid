@@ -2,14 +2,14 @@
 permalink: maintain/downloading-recovery-package.html
 sidebar: sidebar
 keywords: storagegrid, recovery package
-summary: 'The Recovery Package file allows you to restore the StorageGRID system if a failure occurs.'
+summary: 'The recovery package file allows you to restore the StorageGRID system if a failure occurs.'
 ---
-= Download Recovery Package
+= Download recovery package
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The Recovery Package file allows you to restore the StorageGRID system if a failure occurs.
+The recovery package file allows you to restore the StorageGRID system if a failure occurs.
 
 .Before you begin
 
@@ -17,7 +17,7 @@ The Recovery Package file allows you to restore the StorageGRID system if a fail
 * You have the provisioning passphrase.
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 
-Download the current Recovery Package file before making grid topology changes to the StorageGRID system or before upgrading software. Then, download a new copy of the Recovery Package after making grid topology changes or after upgrading software.
+Download the current recovery package file before making grid topology changes to the StorageGRID system or before upgrading software. Then, download a new copy of the recovery package after making grid topology changes or after upgrading software.
 
 .Steps
 
@@ -27,6 +27,6 @@ Download the current Recovery Package file before making grid topology changes t
 The download starts immediately.
 
 . When the download completes, open the `.zip` file and confirm that you can access the contents, including the `Passwords.txt` file.
-. Copy the downloaded Recovery Package file (`.zip`) to two safe, secure, and separate locations.
+. Copy the downloaded recovery package file (`.zip`) to two safe, secure, and separate locations.
 +
-CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.

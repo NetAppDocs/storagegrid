@@ -1,24 +1,24 @@
 ---
-permalink: s3/consistency-controls.html
+permalink: s3/consistency.html
 sidebar: sidebar
 keywords: consistency, consistency control, consistency values
 summary: 'Consistency provides a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. You can change the consistency as required by your application.'
 ---
-= Consistency values
+= Consistency
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Consistency provides a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. You can change the consistency as required by your application.
 
-By default, StorageGRID guarantees read-after-write consistency for newly created objects. Any GET following a successfully completed PUT will be able to read the newly written data. Overwrites of existing objects, metadata updates, and deletes are eventually consistent. Overwrites generally take seconds or minutes to propagate, but can take up to 15 days.
+By default, StorageGRID guarantees read-after-write consistency for newly created objects. Any GET following a successfully completed PUT will be able to read the newly written data. Overwrites of existing objects, metadata updates, and deletes are eventually consistent.
 
 If you want to perform object operations at a different consistency, you can:
 
-* Specify a consistency for <<bucket-consistency-control,each bucket>>.
+* Specify a consistency for <<bucket-consistency,each bucket>>.
 * Specify a consistency for <<api-operation-consistency-control,each API operation>>.
 * Change the default grid-wide consistency by performing one of the following tasks:
-** In the Grid Manager, go to *CONFIGURATION* > *System* > *Storage settings* > *Default consistency*.
+** In the Grid Manager, go to *CONFIGURATION* > *System* > *Storage settings* > *Default bucket consistency*.
 ** link:../admin/using-grid-management-api.html[Use the `grid-config` endpoint of the Grid Management private API].
 +
 NOTE: A change to the grid-wide consistency applies only to buckets created after the setting was changed. To determine the details of a change, see the audit log located at `/var/local/log` (search for *consistencyLevel*).
@@ -61,7 +61,7 @@ Consistency-Control: strong-site
 
 NOTE: You must use the same consistency for both the PutObject and GetObject operations.
 
-== [[bucket-consistency-control]]Specify consistency for bucket
+== [[bucket-consistency]]Specify consistency for bucket
 
 To set the consistency for bucket, you can use the StorageGRID link:put-bucket-consistency-request.html[PUT Bucket consistency] request. Or you can link:../tenant/manage-bucket-consistency.html#change-bucket-consistency[change a bucket's consistency] from the Tenant Manager.
 
@@ -71,7 +71,7 @@ When setting the consistency for a bucket, be aware of the following:
 * The consistency for an individual API operation overrides the consistency for the bucket.
 * In general, buckets should use the default consistency, "Read-after-new-write." If requests aren't working correctly, change the application client behavior if possible. Or, configure the client to specify the consistency for each API request. Set the consistency at the bucket level only as a last resort.
 
-== [[how-consistency-controls-and-ILM-rules-interact]]How consistency and ILM rules interact to affect data protection
+== [[how-consistency-and-ILM-rules-interact]]How consistency and ILM rules interact to affect data protection
 
 Both your choice of consistency and your ILM rule affect how objects are protected. These settings can interact.
 

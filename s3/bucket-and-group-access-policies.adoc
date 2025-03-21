@@ -678,6 +678,18 @@ s3:ListBucket and
 s3:ListBucketVersions permissions
 | Will compare to the max-keys parameter specified in a ListObjects or ListObjectVersions request.
 
+| s3:object-lock-mode
+| 
+s3:PutObject
+
+| Compares to the `object-lock-mode` expanded from the request header in the PutObject and CopyObject request.
+
+| s3:object-lock-mode
+| 
+s3:PutObjectRetention
+
+| Compares to the `object-lock-mode` expanded from the XML body in the PutObjectRetention request.
+
 | s3:object-lock-remaining-retention-days
 | s3:PutObject
 | Compares to the retain-until-date specified in the `x-amz-object-lock-retain-until-date` request header or computed from the bucket default retention period to make sure that these values are within the allowable range for the following requests:
