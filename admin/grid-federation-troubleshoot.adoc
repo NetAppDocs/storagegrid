@@ -110,15 +110,16 @@ When link:../monitor/grid-federation-monitor-connections.html[viewing a grid fed
 image::../media/grid-federation-last-error.png[Screenshot showing a message in the Last error column of a grid federation connection]
 
 .Details
-For each grid federation connection, the *Last error* column shows the most recent error to occur, if any, when a tenant's data was being replicated to the other grid. This column only shows the last cross-grid replication error to occur; previous errors that might have occurred will not be shown.
-An error in this column might occur for one of these reasons:
+For each grid federation connection, the *Last error* column shows the most recent error to occur, if any, when a tenant's data was being replicated to the other grid. This column shows only the last cross-grid replication error to occur; previous errors that might have occurred aren't shown. An error in this column might occur for one of these reasons:
 
-* The source object version was not found.
-* The source bucket was not found.
+* The source object version wasn't found.
+* The source bucket wasn't found.
 * The destination bucket was deleted.
 * The destination bucket was re-created by a different account.	
 * The destination bucket has versioning suspended.
 * The destination bucket was re-created by the same account but is now unversioned.
+* The source object has S3 Object Lock settings that don't comply with the destination grid's tenant-level retention settings.
+* The source object has S3 Object Lock settings, and S3 Object Lock is disabled on the destination bucket. 
 
 .Recommended actions
 If an error message appears in the *Last error* column, follow these steps:
@@ -203,5 +204,4 @@ This alert indicates that cross-grid replication requests are pending because a 
 
 Cross-grid replication will proceed as normal after the issue is resolved.
 
-
-
+// 2025 Mar 7, SGWS-34925
