@@ -150,7 +150,7 @@ a| Disabled
 a| Enabled
 |===
 
-When the source bucket has S3 Object Lock enabled: 
+When S3 Object Lock on the source bucket is enabled: 
 
 * The retention settings are locked for the objects at the destination in this order:
 +
@@ -165,7 +165,7 @@ The default retention from the destination doesn’t override the retention sett
 
 * An error occurs if the destination tenant or bucket doesn’t support the source object's S3 Object Lock settings. Refer to link:../admin/grid-federation-troubleshoot.html#cross-grid-replication-alerts-and-errors[Cross-grid replication alerts and errors.]
 
-When the source bucket has S3 Object Lock disabled:
+When S3 Object Lock on the source bucket is disabled:
 
 * You can configure the default retention on the destination bucket to apply S3 Object Lock retention settings to the destination object.
 * The destination object cannot set a legal hold status.
