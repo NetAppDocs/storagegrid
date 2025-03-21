@@ -16,11 +16,12 @@ To increase performance, you can convert a non-ADC Storage Node to a data-only S
 * You have the link:admin-group-permissions.html[Maintenance or Root access permission].
 * The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
 * The Storage Node isn't a metadata-only node or a data-only node.
+* There is enough metadata space on other nodes at the site to accommodate the metadata that will migrate from the Storage Node you are converting.
 
 .About this task
-Use this procedure to convert one or more Storage Nodes that don't contain the ADC service into data-only nodes.
+Use this procedure to convert one or more combined or metadata-only Storage Nodes that don't contain the ADC service into data-only nodes. The Storage Nodes must be on the same site.
 
-In addition to converting the Storage Node, this procedure decommissions Cassandra from the node. All metadata will migrate to combined or metadata-only Storage Nodes.
+In addition to converting the Storage Node, this procedure decommissions Cassandra from the node. All metadata will migrate to combined or metadata-only Storage Nodes. Depending on the amount of metadata that needs to migrate to other nodes, this procedure could take a long time.
 
 .Steps
 . Record the node IDs of the non-ADC Storage Nodes you want to convert.

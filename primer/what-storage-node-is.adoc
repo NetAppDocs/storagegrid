@@ -25,8 +25,6 @@ You can select the Storage Node type in these situations:
 * When initially installing a Storage Node
 * When you add a Storage Node during StorageGRID system expansion
 
-NOTE: You can't change the type after the Storage Node installation is complete.
-
 Data and metadata Storage Node (combined)::
 By default, all new Storage Nodes will store both object data and metadata. This type of Storage Node is called a _combined_ Storage Node.
 
