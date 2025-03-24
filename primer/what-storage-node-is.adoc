@@ -25,10 +25,10 @@ You can select the Storage Node type in these situations:
 * When initially installing a Storage Node
 * When you add a Storage Node during StorageGRID system expansion
 
-Data and metadata Storage Node (combined)::
+=== Data and metadata Storage Node (combined)
 By default, all new Storage Nodes will store both object data and metadata. This type of Storage Node is called a _combined_ Storage Node.
 
-Metadata-only Storage Node::
+=== Metadata-only Storage Node
 Using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for those objects. Additionally, metadata-only Storage Nodes hosted on high-performance appliances can increase performance.
 
 Metadata-only Storage Nodes have specific hardware requirements:
@@ -49,14 +49,8 @@ When installing metadata-only nodes, the grid must also contain a minimum number
 
 NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service>> and can process S3 client requests, StorageGRID performance might not increase.
 
-Data-only Storage Node::
-Using a Storage Node exclusively for data can make sense if your Storage Nodes have differing performance characteristics. For example, to potentially increase performance, you could have data-only, high-capacity spinning-disk Storage Nodes accompanied by metadata-only high-performance Storage Nodes.
-
-When installing data-only nodes, the grid must contain the following:
-
-* A minimum of two combined or data-only Storage Nodes _per grid_
-* At least one combined or data-only Storage Node _per site_
-* A minimum of three combined or metadata-only Storage Nodes _per site_
+=== Data-only Storage Node
+include::../_include/data-only-storage-node.adoc[]
 
 You can convert a Storage Node that doesn't contain the <<adc-service,ADC service>> to a data-only Storage Node. Refer to link:../maintain/convert-to-data-only-node.html[Convert a Storage Node to a data-only node].
 
