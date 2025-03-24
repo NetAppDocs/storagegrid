@@ -13,7 +13,7 @@ This section describes how the StorageGRID system implements S3 REST API operati
 
 The following conditions apply to all object operations:
 
-* StorageGRID link:consistency-controls.html[consistency values] are supported by all operations on objects, with the exception of the following:
+* StorageGRID link:consistency.html[consistency values] are supported by all operations on objects, with the exception of the following:
  ** GetObjectAcl
  ** `OPTIONS /`
  ** PutObjectLegalHold
