@@ -165,8 +165,7 @@ This alert indicates that tenant objects can't be replicated between the buckets
 . For each bucket that has cross-grid replication enabled, confirm the following:
 
 * There is a corresponding bucket for the same tenant on the other grid (must use the exact name). 
-* Both buckets have object versioning enabled (versioning can't be suspended on either grid).
-* Both buckets have S3 Object Lock disabled. 
+* Both buckets have object versioning enabled (versioning can't be suspended on either grid). 
 * Neither bucket is in the *Deleting objects: read-only* state.
 
 . To confirm that the issue was resolved, see the instructions in link:../monitor/grid-federation-monitor-connections.html[Monitor grid federation connections] to review the cross-grid replication metrics, or perform these steps:
