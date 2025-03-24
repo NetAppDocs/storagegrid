@@ -33,4 +33,7 @@ Management API (mgmt-api) requests with `application/json` or `multipart/formdat
 Select *Add another domain* if you want to enable CORS in StorageGRID for more than one domain.
 . Select *Save*. 
 
+.Related information
+link:configuring-cross-origin-resource-sharing-for-buckets-and-objects.html[Configure StorageGRID CORS for buckets and objects]
+
 // 2025 MAR 12, SGWS-34427
