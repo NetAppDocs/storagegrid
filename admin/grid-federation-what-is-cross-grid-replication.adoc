@@ -135,10 +135,10 @@ When determining how to encrypt replicated objects, StorageGRID applies these ru
 . If the destination bucket doesn't have an encryption setting, use the destination's grid-wide encryption setting, if configured.
 . If a grid-wide setting isn't present, don't encrypt the destination object.
 
-[cgr-with-ol]
+[[cgr-with-ol]]
 === Cross-grid replication with S3 Object Lock
 
-You can configure Cross-grid replication between StorageGRID buckets with S3 Object Lock enabled under the following circumstances.
+You can configure cross-grid replication between StorageGRID buckets with S3 Object Lock enabled under the following circumstances.
 
 [cols="1a,1a" options="header"]
 |===
@@ -152,14 +152,18 @@ a| Enabled
 
 When S3 Object Lock on the source bucket is enabled: 
 
-* The retention settings are locked for the objects at the destination in this order:
+* The objects are locked with retention settings at the destination in this order:
 +
-. The source object's retention header values for: `x-amz-object-lock-mode`and `x-amz-object-lock-retain-until-date`
+. The source object's retention header values for: 
++
+`x-amz-object-lock-mode`
++
+`x-amz-object-lock-retain-until-date`
 . The source bucket's default retention, if set. 
 . The destination bucket's default retention, if set.
 
 +
-The default retention from the destination doesn’t override the retention settings replicated from the source object.
+The destination bucket's default retention doesn’t override the retention settings replicated from the source object.
 
 * You can set the legal hold status for the destination object by using `x-amz-object-lock-legal-hold` when uploading the object.
 
@@ -168,7 +172,7 @@ The default retention from the destination doesn’t override the retention sett
 When S3 Object Lock on the source bucket is disabled:
 
 * You can configure the default retention on the destination bucket to apply S3 Object Lock retention settings to the destination object.
-* The destination object cannot set a legal hold status.
+* The destination object can't set a legal hold status.
 
 === PutObjectTagging and DeleteObjectTagging aren't supported
 
