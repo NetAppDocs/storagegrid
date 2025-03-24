@@ -16,7 +16,7 @@ You must create at least one endpoint of the correct type before you can enable 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * Platform services were enabled for your tenant account by a StorageGRID administrator.
 * You belong to a user group that has the link:tenant-management-permissions.html[Manage endpoints or Root access permission].
-* The resource referenced by the platform services endpoint have been created:
+* The resource referenced by the platform services endpoint has been created:
  ** CloudMirror replication: S3 bucket
  ** Event notification: Amazon Simple Notification Service (Amazon SNS), Kafka topic, or webhook endpoint
  ** Search notification: Elasticsearch index, if the destination cluster isn't configured to automatically create indexes.
@@ -247,9 +247,12 @@ Select *Use delegation taken authentication* if the username and password are de
 +
 [role="tabbed-block"]
 ====
-. All endpoints
+.Most endpoints
 --
+Verify TLS connection for Search integration, CloudMirror replication, Amazon SNS, or Kafka endpoints.
+
 [cols="1a,2a" options="header"]
+
 |===
 | Type of certificate verification| Description
 | TLS
@@ -266,8 +269,10 @@ Select *Use delegation taken authentication* if the username and password are de
 
 |===
 --
-.Webhook endpoints
+.Webhook endpoints only
 --
+Verify TLS connection for webhook endpoints.
+
 [cols="1a,2a" options="header"]
 |===
 | Type of certificate verification| Description
