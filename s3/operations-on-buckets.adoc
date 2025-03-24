@@ -23,7 +23,7 @@ See the following for more information:
 
 * link:../admin/configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names]
 
-The ListObjects (GET Bucket) and ListObjectVersions (GET Bucket object versions) operations support StorageGRID link:consistency-controls.html[consistency values].
+The ListObjects (GET Bucket) and ListObjectVersions (GET Bucket object versions) operations support StorageGRID link:consistency.html[consistency values].
 
 You can check whether updates to last access time are enabled or disabled for individual buckets. See 
 link:get-bucket-last-access-time-request.html[GET Bucket last access time].
