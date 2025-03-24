@@ -12,7 +12,7 @@ summary: 'This release of StorageGRID introduces the following features and func
 This release of StorageGRID introduces the following features and functional changes.
 
 == Cross-grid replication with S3 Object Lock
-You can configure cross-grid replication between buckets with S3 Object Lock enabled. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[How objects with retention settings are replicated].
+You can configure cross-grid replication between buckets with S3 Object Lock enabled. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[Cross-grid replication with S3 Object Lock].
 
 NetApp recommends using this feature only between StorageGRID 12.0 source and destination buckets. However, this feature is supported between StorageGRID 11.9 buckets with S3 Object Lock disabled and StorageGRID 12.0 buckets with S3 Object Lock enabled.
 

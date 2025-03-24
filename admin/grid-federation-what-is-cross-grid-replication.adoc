@@ -33,7 +33,7 @@ link:../tenant/grid-federation-manage-cross-grid-replication.html[Manage cross-g
 
 == How cross-grid replication works
 
-You can configure Cross-grid replication to occur in one direction or in both directions.
+You can configure cross-grid replication to occur in one direction or in both directions.
 
 === Replication in one direction
 
@@ -167,7 +167,7 @@ The destination bucket's default retention doesn’t override the retention sett
 
 * You can set the legal hold status for the destination object by using `x-amz-object-lock-legal-hold` when uploading the object.
 
-* An error occurs if the destination tenant or bucket doesn’t support the source object's S3 Object Lock settings. Refer to link:../admin/grid-federation-troubleshoot.html#cross-grid-replication-alerts-and-errors[Cross-grid replication alerts and errors.]
+* An error occurs if the destination tenant or bucket doesn’t support the source object's S3 Object Lock settings. Refer to link:../admin/grid-federation-troubleshoot.html#cross-grid-replication-alerts-and-errors[Cross-grid replication alerts and errors.]
 
 When S3 Object Lock on the source bucket is disabled:
 
