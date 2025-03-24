@@ -249,7 +249,7 @@ Select *Use delegation taken authentication* if the username and password are de
 ====
 .Most endpoints
 --
-Verify TLS connection for Search integration, CloudMirror replication, Amazon SNS, or Kafka endpoints.
+Verify the TLS connection for Search integration, CloudMirror replication, Amazon SNS, or Kafka endpoints.
 
 [cols="1a,2a" options="header"]
 
@@ -271,7 +271,7 @@ Verify TLS connection for Search integration, CloudMirror replication, Amazon SN
 --
 .Webhook endpoints only
 --
-Verify TLS connection for webhook endpoints.
+Verify the TLS connection for webhook endpoints.
 
 [cols="1a,2a" options="header"]
 |===
