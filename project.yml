@@ -102,6 +102,8 @@ sidebar:
               url: "/maintain/understanding-adc-service-quorum.html"
             - title: Move ADC service
               url: "/maintain/move-adc-service.html"
+            - title: Convert to data-only node
+              url: "/maintain/convert-to-data-only-node.html"
             - title: Review ILM policy and storage configuration
               url: "/maintain/reviewing-ilm-policy-and-storage-configuration.html"
             - title: Consolidate Storage Nodes
