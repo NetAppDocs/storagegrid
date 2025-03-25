@@ -23,7 +23,9 @@ include::../_include/data-only-storage-node.adoc[]
 .About this task
 Use this procedure to convert one or more combined or metadata-only Storage Nodes that don't contain the ADC service into data-only nodes. The Storage Nodes must be on the same site.
 
-In addition to converting the Storage Node, this procedure decommissions Cassandra from the node. All metadata will migrate to combined or metadata-only Storage Nodes. Depending on the amount of metadata that needs to migrate to other nodes, this procedure could take a few days per node to complete.
+In addition to converting the Storage Node, this procedure decommissions Cassandra from the node. All metadata will migrate to combined or metadata-only Storage Nodes. Depending on the amount of metadata that needs to migrate, this procedure could take up to several days per node to complete.
+
+TIP: Generally, you can convert up to 10 nodes at a time if the metadata usage per node is less than 1 TB. If the metadata usage per node is more than 1 TB, convert up to 5 nodes per procedure instead. 
 
 .Steps
 . Record the node IDs of the non-ADC Storage Nodes you want to convert.
