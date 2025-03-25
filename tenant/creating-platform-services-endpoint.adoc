@@ -249,6 +249,7 @@ Select *Use delegation taken authentication* if the username and password are de
 ====
 .Most endpoints
 --
+[[anchor-test]]
 Verify the TLS connection for Search integration, CloudMirror replication, Amazon SNS, or Kafka endpoints.
 
 [cols="1a,2a" options="header"]
@@ -281,6 +282,8 @@ Verify the TLS connection for webhook endpoints.
 
 | mTLS
 | Validates the client and server for Mutual TLS connections to the endpoint resource.
+
+When you select mTLS, additional options become available. Refer to <<anchor-test,anchor test>> .
 
 | Disabled
 | The certificate used for the TLS connection isn't verified. This option isn't secure.
