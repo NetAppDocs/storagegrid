@@ -67,7 +67,7 @@ For Kafka endpoints, you can use the following credentials:
 --
 ====
 
-** Security certificate (if using a custom CA certificate)
+** Security certificate (if certificate verification is required)
 * If the Elasticsearch security features are enabled, you have the monitor cluster privilege for connectivity testing, and either the write index privilege or both the index and delete index privileges for document updates.
 
 .Steps
@@ -123,7 +123,7 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 . Select *Continue*.
 . Select a value for *Authentication type*.
 +
-NOTE: There step doesn't apply to webhook endpoints. If you want authentication for webhook endpoints, NetApp recommends configuring Mutual Transport Layer Security (TLS).
+NOTE: This step doesn't apply to webhook endpoints. If you want authentication for webhook endpoints, NetApp recommends configuring Mutual Transport Layer Security (TLS) in <<verify-certs, Step 9>>.
 +
 [role="tabbed-block"]
 ====
@@ -243,13 +243,12 @@ Select *Use delegation taken authentication* if the username and password are de
 ====
 
 . Select *Continue*.
-. Select a radio button for *Verify certificates* to choose how TLS connection to the endpoint is verified.
+. [[verify-certs]]Select a radio button for *Verify certificates* to choose how the TLS connection to the endpoint is verified.
 +
 [role="tabbed-block"]
 ====
 .Most endpoints
 --
-[[anchor-test]]
 Verify the TLS connection for Search integration, CloudMirror replication, Amazon SNS, or Kafka endpoints.
 
 [cols="1a,2a" options="header"]
@@ -257,13 +256,13 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 |===
 | Type of certificate verification| Description
 | TLS
-| Validates the server for TLS connections to the endpoint resource.
+| Validates the server certificate for TLS connections to the endpoint resource.
 
 | Disabled
-| The certificate used for the TLS connection isn't verified. This option isn't secure.
+| Certificate verification is disabled. This option isn't secure.
 
 | Use custom CA certificate
-| Use a custom security certificate. If you select this setting, copy and paste the custom security certificate in the *CA Certificate* text box.
+| The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
 
 | Use operating system CA certificate
 | Use the default Grid CA certificate installed on the operating system to secure connections.
@@ -278,21 +277,39 @@ Verify the TLS connection for webhook endpoints.
 |===
 | Type of certificate verification| Description
 | TLS
-| Validates the server for TLS connections to the endpoint resource.
+| Validates the server certificate for TLS connections to the endpoint resource.
 
 | mTLS
-| Validates the client and server for Mutual TLS connections to the endpoint resource.
+| Validates the client and server certificates for Mutual TLS connections to the endpoint resource.
 
-When you select mTLS, additional options become available. Refer to <<anchor-test,anchor test>> .
+When you select mTLS, <<mtls-options,additional connection options>> become available.
 
 | Disabled
-| The certificate used for the TLS connection isn't verified. This option isn't secure.
+| Certificate verification is disabled. This option isn't secure.
 
 | Use custom CA certificate
-| Use a custom security certificate. If you select this setting, copy and paste the custom security certificate in the *CA Certificate* text box.
+| The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
 
-| Use operating system CA certificate
-| Use the default Grid CA certificate installed on the operating system to secure connections.
+
+|===
+
+[[mtls-options]]
+These options become available when you select mTLS.
+[cols="1a,2a" options="header"]
+|===
+| Type of certificate verification| Description
+
+| Do not verify server certificate
+| Disables the server certificate verification, which means the server's identity isn't verified. This option isn't secure.
+
+| Client certificate
+| The client certificate is used to verify the client's identity when connecting to the endpoint.
+
+| Client private key
+| The private key for the client certificate. If encrypted, it must use the traditional format PKCS #1 (PKCS #8 format isn't supported).
+
+| Client private key passphrase
+| The passphrase for decrypting the client private key. If the private key isn't encrypted, leave this blank.
 
 |===
 --
