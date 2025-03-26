@@ -25,12 +25,15 @@ NOTE: A change to the grid-wide consistency applies only to buckets created afte
 
 == Consistency values
 
-The consistency affects how the metadata that StorageGRID uses to track objects is distributed between nodes, and therefore the availability of objects for client requests.
+The consistency affects how the metadata that StorageGRID uses to track objects is distributed between nodes. Consistency affects the availability of objects for client requests.
 
 You can set the consistency for a bucket or an API operation to one of the following values:
 
 * *All*: All nodes receive the data immediately, or the request will fail.
-* *Strong-global*: Guarantees read-after-write consistency for all client requests across all sites.
+* *Strong-global*: Guarantees read-after-write consistency for all client requests across all sites, with the following exceptions when Quorum semantics are configured:
+** Two-site grids won't have site failure tolerance. Those grids will incur cross-site latency for all requests.
+** For two-site grids, account usage won't be updated when a site is down.
+** This feature doesn't change the behavior of GET Bucket consistency and PUT Bucket consistency operations. These operations won't work with one site down.
 * *Strong-site*: Guarantees read-after-write consistency for all client requests within a site.
 * *Read-after-new-write*: (Default) Provides read-after-write consistency for new objects and eventual consistency for object updates. Offers high availability and data protection guarantees. Recommended for most cases.
 * *Available*: Provides eventual consistency for both new objects and object updates. For S3 buckets, use only as required (for example, for a bucket that contains log values that are rarely read, or for HEAD or GET operations on keys that don't exist). Not supported for S3 FabricPool buckets.
