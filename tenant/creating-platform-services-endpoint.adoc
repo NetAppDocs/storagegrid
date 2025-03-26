@@ -18,7 +18,7 @@ You must create at least one endpoint of the correct type before you can enable 
 * You belong to a user group that has the link:tenant-management-permissions.html[Manage endpoints or Root access permission].
 * The resource referenced by the platform services endpoint has been created:
  ** CloudMirror replication: S3 bucket
- ** Event notification: Amazon Simple Notification Service (Amazon SNS), Kafka topic, or webhook endpoint
+ ** Event notification: Amazon Simple Notification Service (Amazon SNS) topic, Kafka topic, or webhook endpoint
  ** Search notification: Elasticsearch index, if the destination cluster isn't configured to automatically create indexes.
 * You have the information about the destination resource:
  ** Host and port for the Uniform Resource Identifier (URI)
