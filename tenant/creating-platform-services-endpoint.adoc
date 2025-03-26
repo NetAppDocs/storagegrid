@@ -282,8 +282,6 @@ Verify the TLS connection for webhook endpoints.
 | mTLS
 | Validates the client and server certificates for Mutual TLS connections to the endpoint resource.
 
-When you select mTLS, <<mtls-options,additional connection options>> become available.
-
 | Disabled
 | Certificate verification is disabled. This option isn't secure.
 
@@ -293,8 +291,7 @@ When you select mTLS, <<mtls-options,additional connection options>> become avai
 
 |===
 
-[[mtls-options]]
-These options become available when you select mTLS.
+When you select *mTLS*, these options become available.
 [cols="1a,2a" options="header"]
 |===
 | Type of certificate verification| Description
