@@ -2,14 +2,14 @@
 permalink: admin/configuring-sso.html
 sidebar: sidebar
 keywords: configure single sign on, sso, SAML
-summary: 'When single sign-on \(SSO\) is enabled, users can only access the Grid Manager, the Tenant Manager, the Grid Management API, or the Tenant Management API if their credentials are authorized using the SSO sign-in process implemented by your organization. Local users cannot sign in to StorageGRID.'
+summary: 'When single sign-on \(SSO\) is enabled, users can access the Grid Manager, the Tenant Manager, the Grid Management API, or the Tenant Management API only if their credentials are authorized using the SSO sign-in process implemented by your organization. Local users can't sign in to StorageGRID.'
 ---
 = Configure single sign-on
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When single sign-on (SSO) is enabled, users can only access the Grid Manager, the Tenant Manager, the Grid Management API, or the Tenant Management API if their credentials are authorized using the SSO sign-in process implemented by your organization. Local users can't sign in to StorageGRID.
+When single sign-on (SSO) is enabled, users can access the Grid Manager, the Tenant Manager, the Grid Management API, or the Tenant Management API only if their credentials are authorized using the SSO sign-in process implemented by your organization. Local users can't sign in to StorageGRID.
 
 == How single sign-on works
 
