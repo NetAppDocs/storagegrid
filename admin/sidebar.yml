@@ -60,14 +60,14 @@ entries:
       url: "/admin/managing-users.html"
     - title: Use single sign-on (SSO)
       entries:
-      - title: Configure single sign-on
-        url: "/admin/configuring-sso.html"
+      - title: How single sign-on works
+        url: "/admin/how-sso-works.html"
       - title: Requirements for single sign-on
         url: "/admin/requirements-for-sso.html"
       - title: Confirm federated users can sign in
         url: "/admin/confirming-federated-users-can-sign-in.html"
-      - title: Use sandbox mode
-        url: "/admin/using-sandbox-mode.html"
+      - title: Configure single sign-on
+        url: "/admin/configure-sso.html"
       - title: Create relying party trusts in AD FS
         url: "/admin/creating-relying-party-trusts-in-ad-fs.html"
       - title: Create enterprise applications in Azure
