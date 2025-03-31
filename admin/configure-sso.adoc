@@ -80,7 +80,9 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 
 . Select *Continue*. The Provide relying party identifier page appears.
 
-. Complete the fields in the Provide relying party identifier page based on the SSO type you selected.
+== [[enter-sandbox-mode]]Provide relying party identifier
+
+. Complete the fields on the Provide relying party identifier page based on the SSO type you selected.
 // start tabbed block
 +
 [role="tabbed-block"]
@@ -96,7 +98,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 +
 NOTE: You must create a relying party trust for each Admin Node in your StorageGRID system. Having a relying party trust for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
-.. Select *Save*.
+.. Select *Save and enter sandbox mode*.
 
 --
 .Entra ID
@@ -106,9 +108,7 @@ NOTE: You must create a relying party trust for each Admin Node in your StorageG
 
 * For example, if your grid has only one Admin Node and you don't anticipate adding more Admin Nodes in the future, enter `SG` or `StorageGRID`.
 
-* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. This generates a table that shows an enterprise application name for each Admin Node in your system, based on the node's hostname.
-+
-image::../media/sso_status_sandbox_mode_azure.png[Single Sign-on, Sandbox mode enabled, Relying party identifiers shown for several Admin Nodes]
+* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows an enterprise application name for each Admin Node in your system, based on the node's hostname.
 +
 NOTE: You must create an enterprise application for each Admin Node in your StorageGRID system. Having an enterprise application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -116,7 +116,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 .. From Entra ID, copy the federation metadata URL for each enterprise application. Then, paste this URL into the corresponding *Federation metadata URL* field in StorageGRID.
 
-.. After you have copied and pasted a federation metadata URL for all Admin Nodes, select *Save*.
+.. After you have copied and pasted a federation metadata URL for all Admin Nodes, select *Save and enter sandbox mode*.
 
 --
 .PingFederate
@@ -126,7 +126,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 * For example, if your grid has only one Admin Node and you don't anticipate adding more Admin Nodes in the future, enter `SG` or `StorageGRID`.
 
-* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. This generates a table that shows the SP connection ID for each Admin Node in your system, based on the node's hostname.
+* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows the SP connection ID for each Admin Node in your system, based on the node's hostname.
 +
 NOTE: You must create an SP connection for each Admin Node in your StorageGRID system. Having an SP connection for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -138,18 +138,16 @@ Use the following format:
 https://<Federation Service Name>:<port>/pf/federation_metadata.ping?PartnerSpId=<SP Connection ID>
 ----
 
-.. Select *Save*.
+.. Select *Save and enter sandbox mode*.
 --
 ====
 // end tabbed area
 
 == Configure relying party trusts, enterprise applications, or SP connections
 
-When the configuration is saved, the Sandbox mode confirmation notice appears. This notice confirms that sandbox mode is now enabled and provides overview instructions.
+After you save the configuration and enter sandbox mode, you can complete and test the configuration for the SSO type you selected.
 
-StorageGRID can remain in sandbox mode as long as required. However, when *Sandbox Mode* is selected on the Single Sign-on page, SSO is disabled for all StorageGRID users. Only local users can sign in.
-
-Follow these steps to configure relying party trusts (Active Directory), complete enterprise applications (Entra ID), or configure SP connections (PingFederate).
+StorageGRID can remain in sandbox mode as long as required. However, SSO will be disabled for all StorageGRID users. Only local users can sign in.
 
 // start tabbed area
 
@@ -163,14 +161,13 @@ Follow these steps to configure relying party trusts (Active Directory), complet
 
 . Go to Active Directory Federation Services (AD FS).
 
-. Create one or more relying party trusts for StorageGRID, using each relying party identifier shown in the table on the StorageGRID Single Sign-on page.
+. Create one or more relying party trusts for StorageGRID, using each relying party identifier shown in the table on the Configure SSO page.
 +
 You must create one trust for each Admin Node shown in the table.
 +
 For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.html[Create relying party trusts in AD FS].
 
 --
-
 .Entra ID 
 --
 
@@ -187,7 +184,6 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.htm
 . Follow the steps in link:../admin/creating-enterprise-application-azure.html[Create enterprise applications in Entra ID] to upload the SAML metadata file for each Admin Node into its corresponding Entra ID enterprise application.
 
 --
-
 .PingFederate
 --
 
@@ -201,19 +197,15 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.htm
 
 . Go to PingFederate.
 
-. link:../admin/creating-sp-connection-ping.html[Create one or more service provider (SP) connections for StorageGRID]. Use the SP connection ID for each Admin Node (shown in the table on the StorageGRID Single Sign-on page) and the SAML metadata you downloaded for that Admin Node. 
+. link:../admin/creating-sp-connection-ping.html[Create one or more service provider (SP) connections for StorageGRID]. Use the SP connection ID for each Admin Node (shown in the table on the Configure SSO page) and the SAML metadata you downloaded for that Admin Node. 
 +
 You must create one SP connection for each Admin Node shown in the table.
-
-
-
 --
-
 ====
 
 // end tabbed area
 
-== Test SSO connections
+== [[test-sso]]Test configuration
 
 Before you enforce the use of single sign-on for your entire StorageGRID system, you should confirm that single sign-on and single logout are correctly configured for each Admin Node.
 
@@ -225,7 +217,7 @@ Before you enforce the use of single sign-on for your entire StorageGRID system,
 .Active Directory
 --
 .Steps
-. From the StorageGRID Single Sign-on page, locate the link in the Sandbox mode message. 
+. From the StorageGRID Configure SSO page, locate the link in the sandbox mode message. 
 +
 The URL is derived from the value you entered in the *Federation service name* field.
 +
@@ -268,7 +260,7 @@ image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logo
 .PingFederate 
 --
 .Steps
-. From the StorageGRID Single Sign-on page, select the first link in the Sandbox mode message. 
+. From the Configure SSO page, select the first link in the Sandbox mode message. 
 +
 Select and test one link at a time.
 +
@@ -305,6 +297,4 @@ TIP: When SSO is enabled, all users must use SSO to access the Grid Manager, the
 Single sign-on is now enabled.
 
 TIP: If you are using the Entra ID Portal and you access StorageGRID from the same computer you use to access Entra ID, ensure that the Entra ID Portal user is also an authorized StorageGRID user (a user in a federated group that has been imported into StorageGRID) or log out of the Entra ID Portal before attempting to sign in to StorageGRID. 
-
-
 

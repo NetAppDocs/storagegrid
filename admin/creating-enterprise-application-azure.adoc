@@ -15,9 +15,9 @@ You use Azure AD to create an enterprise application for each Admin Node in your
 
 * You have started configuring single sign-on for StorageGRID and you selected *Azure* as the SSO type.
 
-* *Sandbox mode* is selected on the Single sign-on page in Grid Manager. See link:../admin/using-sandbox-mode.html[Use sandbox mode].
+* You have link:../admin/configure-sso.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
 
-* You have the *Enterprise application name* for each Admin Node in your system. You can copy these values from the Admin Node details table on the StorageGRID Single Sign-on page.
+* You have the *Enterprise application name* for each Admin Node in your system. You can copy these values from the Admin Node details table on the Configure SSO page.
 +
 NOTE: You must create an enterprise application for each Admin Node in your StorageGRID system. Having an enterprise application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -26,7 +26,6 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 * You have an Azure account with an active subscription.
 
 * You have one of the following roles in the Azure account: Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
-
 
 == Access Azure AD
 
@@ -40,7 +39,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 == Create enterprise applications and save StorageGRID SSO configuration
 
-To save the SSO configuration for Azure in StorageGRID, you must use Azure to create an enterprise application for each Admin Node. You will copy the federation metadata URLs from Azure and paste them into the corresponding *Federation metadata URL* fields on the StorageGRID Single Sign-on page. 
+To save the SSO configuration for Azure in StorageGRID, you must use Azure to create an enterprise application for each Admin Node. You will copy the federation metadata URLs from Azure and paste them into the corresponding *Federation metadata URL* fields on the Configure SSO page. 
 
 .Steps
 
@@ -50,7 +49,7 @@ To save the SSO configuration for Azure in StorageGRID, you must use Azure to cr
 
 .. Select *Create your own application*.
 
-.. For the name, enter the *Enterprise application name* you copied from the Admin Node details table on the StorageGRID Single Sign-on page.
+.. For the name, enter the *Enterprise application name* you copied from the Admin Node details table on the Configure SSO page.
 
 .. Leave the *Integrate any other application you don't find in the gallery (Non-gallery)* radio button selected.
 
@@ -62,14 +61,12 @@ To save the SSO configuration for Azure in StorageGRID, you must use Azure to cr
 
 .. Copy the *App Federation Metadata Url*, which you can find under *Step 3 SAML Signing Certificate*. 
 
-.. Go to the StorageGRID Single Sign-on page, and paste the URL in the *Federation metadata URL* field that corresponds to the *Enterprise application name* you used.
+.. Go to the Configure SSO page, and paste the URL in the *Federation metadata URL* field that corresponds to the *Enterprise application name* you used.
 
-. After you have pasted a federation metadata URL for each Admin Node and made all other needed changes to the SSO configuration, select *Save* on the StorageGRID Single Sign-on page.
+. After you have pasted a federation metadata URL for each Admin Node and made all other needed changes to the SSO configuration, select *Save* on the Configure SSO page.
 
 == Download SAML metadata for every Admin Node
 After the SSO configuration is saved, you can download a SAML metadata file for each Admin Node in your StorageGRID system. 
-
-
 
 .Steps
 
@@ -98,7 +95,6 @@ NOTE: You might need to refresh the Enterprise applications page to see applicat
 .. Select the *Upload metadata file* button and select the SAML metadata file you downloaded for the corresponding Admin Node. 
 .. After the file loads, select *Save* and then select *X* to close the pane. You are returned to the Set up Single Sign-On with SAML page. 
 
-. Follow the steps in link:../admin/using-sandbox-mode.html[Use sandbox mode] to test each application.
-
+. link:../admin/configure-sso-html#test-sso[Test each application].
 
 
