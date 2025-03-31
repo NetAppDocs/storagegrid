@@ -1,5 +1,5 @@
 settings:
-  name: "StorageGRID 12.0"
+  name: "StorageGRID"
   search: "storagegrid-enable,storagegrid,storagegrid-appliances"
   internal:
     pdf_enabled: true
@@ -8,6 +8,17 @@ settings:
     pdf_enabled: true
     harmony_enabled: true
     hide_language_selector: false
+  versions:
+    - version-number: "11.9"
+      url: /storagegrid
+    - version-number: "11.8"
+      url: /storagegrid-118      
+    - version-number: "11.7"
+      url: /storagegrid-117         
+    - version-number: "11.6"
+      url: /storagegrid-116    
+    - version-number: "11.5" 
+      url: /storagegrid-115    
 sidebar:
   entries:
     - title: 'StorageGRID 12.0 Docs'
@@ -89,6 +100,10 @@ sidebar:
               url: "/maintain/considerations-for-decommissioning-storage-nodes.html"
             - title: ADC quorum
               url: "/maintain/understanding-adc-service-quorum.html"
+            - title: Move ADC service
+              url: "/maintain/move-adc-service.html"
+            - title: Convert to data-only node
+              url: "/maintain/convert-to-data-only-node.html"
             - title: Review ILM policy and storage configuration
               url: "/maintain/reviewing-ilm-policy-and-storage-configuration.html"
             - title: Consolidate Storage Nodes
@@ -367,8 +382,6 @@ sidebar:
       url: "/storagegrid-enable.html"
     - title: StorageGRID and BlueXP
       url: "/storagegrid-bluexp.html"
-    - title: Other versions
-      url: "/earlier-versions.html"
     - title: Legal notices
       url: "/legal-notices.html"
 product-family:

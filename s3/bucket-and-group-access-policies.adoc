@@ -617,6 +617,9 @@ Condition operators are categorized as follows:
 
 | Null
 | Checks if a condition key is present in the current request context.
+
+| IfExists
+| Appended to any condition operator, except the Null condition, to check for absence of that condition key. Returns TRUE if the condition key is not present.
 |===
 
 === Supported condition keys
@@ -682,7 +685,7 @@ s3:ListBucketVersions permissions
 | 
 s3:PutObject
 
-| Compares to the `object-lock-mode` expanded from the request header in the PutObject and CopyObject request.
+| Compares to the `object-lock-mode` expanded from the request header in the PutObject, CopyObject, and CreateMultipartUpload request.
 
 | s3:object-lock-mode
 | 
@@ -716,6 +719,13 @@ s3:PutObjectTagging
 
 s3:PutObjectVersionTagging
 | Will require a specific tag key and value when the object request includes tagging.
+
+| s3:x-amz-server-side-encryption-customer-algorithm
+| 
+s3:PutObject
+
+| Compares to the `sse-customer-algorithm` or to the `copy-source-sse-customer-algorithm` expanded from the request header in the PutObject, CopyObject, CreateMultipartUpload, UploadPart, UploadPartCopy, and CompleteMultipartUpload request.
+
 |===
 
 == Specify variables in a policy

@@ -11,6 +11,11 @@ summary: 'This release of StorageGRID introduces the following features and func
 [.lead]
 This release of StorageGRID introduces the following features and functional changes.
 
+== Cross-grid replication with S3 Object Lock
+You can configure cross-grid replication between buckets with S3 Object Lock enabled. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[How objects with retention settings are replicated].
+
+NetApp recommends using this feature only between StorageGRID 12.0 source and destination buckets. However, this feature is supported between StorageGRID 11.9 buckets with S3 Object Lock disabled and StorageGRID 12.0 buckets with S3 Object Lock enabled.
+
 == Security
 
 === Security enhancement for encrypted passwords on disk
@@ -20,3 +25,8 @@ Improved password security, including a highly increased hash round count for SH
 
 === Branch buckets
 You can now link:../tenant/manage-branch-bucket-html[create branch buckets] for an S3 bucket. A branch bucket provides access to S3 bucket objects as they existed at a certain time. A branch bucket isn't the same as a backup.
+
+== User interface
+
+=== Dark theme
+Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
