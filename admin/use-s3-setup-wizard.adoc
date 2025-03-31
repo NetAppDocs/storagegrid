@@ -26,7 +26,7 @@ Obtain IP addresses and set up VLAN interfaces:: If you will configure a high av
 +
 If you plan to use a virtual LAN to segregate the traffic from the S3 application, you have already configured the VLAN interface. See link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces].
 
-Configure identity federation and SSO:: If you plan to use identity federation or single sign-on (SSO) for your StorageGRID system, you have enabled these features. You also know which federated group should have root access for the tenant account that the S3 application will use. See link:../admin/using-identity-federation.html[Use identity federation] and link:../admin/configuring-sso.html[Configure single sign-on].
+Configure identity federation and SSO:: If you plan to use identity federation or single sign-on (SSO) for your StorageGRID system, you have enabled these features. You also know which federated group should have root access for the tenant account that the S3 application will use. See link:../admin/using-identity-federation.html[Use identity federation] and link:../admin/how-sso-works.html[Configure single sign-on].
 
 Obtain and configure domain names:: You know which fully qualified domain name (FQDN) to use for StorageGRID. Domain name server (DNS) entries will map this FQDN to the virtual IP (VIP) addresses of the HA group that you create using the wizard.
 +

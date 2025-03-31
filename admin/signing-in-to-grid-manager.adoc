@@ -19,7 +19,7 @@ If Admin Nodes are included in a high availability (HA) group, you connect using
 
 === Use SSO
 
-The sign-in steps are slightly different if link:configuring-sso.html[single sign-on (SSO) has been configured].
+The sign-in steps are slightly different if link:how-sso-works.html[single sign-on (SSO) has been configured].
 
 
 == Sign in to Grid Manager on first Admin Node
