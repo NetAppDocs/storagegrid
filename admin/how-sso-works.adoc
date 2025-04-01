@@ -11,13 +11,11 @@ summary: 'When single sign-on (SSO) is enabled, users can access the Grid Manage
 [.lead]
 When single sign-on (SSO) is enabled, users can access the Grid Manager, Tenant Manager, Grid Management API, or Tenant Management API only if their credentials are authorized using the SSO sign-in process implemented by your organization. Local users can't sign in to StorageGRID.
 
-== How single sign-on works
-
 The StorageGRID system supports single sign-on (SSO) using the Security Assertion Markup Language 2.0 (SAML 2.0) standard.
 
 Before enabling single sign-on (SSO), review how the StorageGRID sign-in and sign-out processes are affected when SSO is enabled.
 
-=== Sign in when SSO is enabled
+== Sign in when SSO is enabled
 
 When SSO is enabled and you sign in to StorageGRID, you are redirected to your organization's SSO page to validate your credentials.
 
@@ -53,7 +51,7 @@ NOTE: If the service account is inaccessible, you can still sign in, as long as 
 +
 You don't need to reenter your SSO credentials.
 
-=== Sign out when SSO is enabled
+== Sign out when SSO is enabled
 
 When SSO is enabled for StorageGRID, what happens when you sign out depends on what you are signed in to and where you are signing out from.
 
