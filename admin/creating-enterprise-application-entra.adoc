@@ -1,5 +1,5 @@
 ---
-permalink: admin/creating-enterprise-application-entra-id.html
+permalink: admin/creating-enterprise-application-entra.html
 sidebar: sidebar
 keywords: enterprise application, entra id, single sign on, sso
 summary: 'You use Entra ID to create an enterprise application for each Admin Node in your system.'
