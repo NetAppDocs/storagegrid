@@ -1,19 +1,19 @@
 ---
-permalink: admin/creating-enterprise-application-azure.html
+permalink: admin/creating-enterprise-application-entra-id.html
 sidebar: sidebar
-keywords: enterprise application, azure ad, single sign on, sso
-summary: 'You use Azure AD to create an enterprise application for each Admin Node in your system.'
+keywords: enterprise application, entra id, single sign on, sso
+summary: 'You use Entra ID to create an enterprise application for each Admin Node in your system.'
 ---
-= Create enterprise applications in Azure AD
+= Create enterprise applications in Entra ID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You use Azure AD to create an enterprise application for each Admin Node in your system.
+You use Entra ID to create an enterprise application for each Admin Node in your system.
 
 .Before you begin
 
-* You have started configuring single sign-on for StorageGRID and you selected *Azure* as the SSO type.
+* You have started configuring single sign-on for StorageGRID and you selected *Entra* as the SSO type.
 
 * You have link:../admin/configure-sso.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
 
@@ -21,31 +21,31 @@ You use Azure AD to create an enterprise application for each Admin Node in your
 +
 NOTE: You must create an enterprise application for each Admin Node in your StorageGRID system. Having an enterprise application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
-* You have experience creating enterprise applications in Azure Active Directory.
+* You have experience creating enterprise applications in Entra Active Directory.
 
-* You have an Azure account with an active subscription.
+* You have an Entra account with an active subscription.
 
-* You have one of the following roles in the Azure account: Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
+* You have one of the following roles in the Entra account: Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
 
-== Access Azure AD
+== Access Entra ID
 
 .Steps
 
-. Log in to the https://portal.azure.com[Azure Portal^].
+. Log in to the https://portal.azure.com[Entra Portal^].
 
-. Navigate to https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade[Azure Active Directory^].
+. Navigate to https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade[Entra Active Directory^].
 
 . Select https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/Overview/menuId/[Enterprise applications^].
 
 == Create enterprise applications and save StorageGRID SSO configuration
 
-To save the SSO configuration for Azure in StorageGRID, you must use Azure to create an enterprise application for each Admin Node. You will copy the federation metadata URLs from Azure and paste them into the corresponding *Federation metadata URL* fields on the Configure SSO page. 
+To save the SSO configuration for Entra in StorageGRID, you must use Entra to create an enterprise application for each Admin Node. You will copy the federation metadata URLs from Entra and paste them into the corresponding *Federation metadata URL* fields on the Configure SSO page. 
 
 .Steps
 
 . Repeat the following steps for each Admin Node.
 
-.. In the Azure Enterprise applications pane, select *New application*.
+.. In the Entra Enterprise applications pane, select *New application*.
 
 .. Select *Create your own application*.
 
@@ -75,15 +75,15 @@ After the SSO configuration is saved, you can download a SAML metadata file for 
 .. Sign in to StorageGRID from the Admin Node.
 .. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
 .. Select the button to download the SAML metadata for that Admin Node. 
-.. Save the file, which you will upload into Azure AD.
+.. Save the file, which you will upload into Entra ID.
 
 == Upload SAML metadata to each enterprise application
 
-After downloading a SAML metadata file for each StorageGRID Admin Node, perform the following steps in Azure AD:
+After downloading a SAML metadata file for each StorageGRID Admin Node, perform the following steps in Entra ID:
 
 .Steps
 
-. Return to the Azure Portal.
+. Return to the Entra Portal.
 . Repeat these steps for each enterprise application:
 +
 NOTE: You might need to refresh the Enterprise applications page to see applications you previously added in the list.
