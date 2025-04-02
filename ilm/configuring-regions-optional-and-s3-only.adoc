@@ -65,8 +65,8 @@ You can now select these regions from the Advanced filters section in step 1 of 
 --
 
 .Default region
-The *Default region* tab displays the currently defined default region, which you can modify.
 --
+The *Default region* tab displays the currently defined default region, which you can modify.
 [start=2]
 . To change the default region, select the region name from the available options in the *Default region* drop-down list.
 . Select *Save*.
