@@ -25,3 +25,14 @@ Improved password security, including a highly increased hash round count for SH
 
 === Dark theme
 Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
+
+== Maintenance and recovery
+
+=== Recovery on non-primary Admin Node
+You can now perform the following tasks from non-primary Admin Nodes:
+
+* Recovery of any type of node
+* Collect logs
+* Download a recovery package
+* Additionally, you no longer have to upload a recovery package to a non-primary Admin Node to recover the primary Admin Node
+
