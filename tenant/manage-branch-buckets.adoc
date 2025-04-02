@@ -43,9 +43,11 @@ NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objec
 
 . Select *View buckets* from the dashboard, or select  *STORAGE (S3)* > *Buckets*.
 
-. Select the bucket you want to create a branch from.
+. Select the bucket you want to create a branch from (the "base bucket").
 
-. On the bucket details page, select *Create branch bucket*.
+. On the bucket details page, select *Branches* > *Create branch bucket*.
++
+The *Create branch bucket* button is disabled if the base bucket doesn't have versioning enabled. 
 
 == Enter details
 
@@ -135,6 +137,8 @@ NOTE: This setting applies only to objects directly ingested into the branch buc
 The branch bucket is created and added to the table on the Buckets page.
 
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view branch bucket details] and perform additional configuration.
++
+On the Bucket details page, some configuration options are disabled for read-only buckets.
 
 == Branch bucket operations and settings
 
