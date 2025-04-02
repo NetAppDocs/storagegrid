@@ -49,7 +49,7 @@ The Regions page appears, with the *All regions* and *Default region* tabs.
 ====
 .All regions
 --
-The *All regions* tab displays the currently defined regions listed and defined default region, which you can't remove. 
+The *All regions* tab displays the currently defined regions listed and defined default region, which you can't modify or remove. 
 [start =2]
 . To add a region, select *Add another region*.
 . Enter the name of a region that you want to use when creating S3 buckets.

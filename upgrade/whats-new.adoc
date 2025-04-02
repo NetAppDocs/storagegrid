@@ -25,3 +25,9 @@ Improved password security, including a highly increased hash round count for SH
 
 === Dark theme
 Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
+
+== Grid Manager enhancements
+
+=== Configure regions enhancement
+
+The Regions page in Grid Manager now includes a *Default region* tab. You can use this tab to change the defined default region for S3 buckets. link:../ilm/configuring-regions-optional-and-s3-only.html[Learn more].
