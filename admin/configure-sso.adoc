@@ -179,7 +179,7 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.htm
 .. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
 .. Download and save the SAML metadata for that node.
 
-. Go to the Entra ID Portal.
+. Go to the Azure portal.
 
 . Follow the steps in link:../admin/creating-enterprise-application-azure.html[Create enterprise applications in Entra ID] to upload the SAML metadata file for each Admin Node into its corresponding Entra ID enterprise application.
 
@@ -217,16 +217,12 @@ Before you enforce the use of single sign-on for your entire StorageGRID system,
 .Active Directory
 --
 .Steps
-. From the StorageGRID Configure SSO page, locate the link in the sandbox mode message. 
+. From the Configure SSO page, locate the link on the Test configuration step of the wizard. 
 +
 The URL is derived from the value you entered in the *Federation service name* field.
-+
-image::../media/sso_sandbox_mode_url.gif[URL for identity provider sign-on page]
 
 . Select the link, or copy and paste the URL into a browser, to access your identity provider's sign-on page.
 . To confirm you can use SSO to sign in to StorageGRID, select *Sign in to one of the following sites*, select the relying party identifier for your primary Admin Node, and select *Sign in*.
-+
-image::../media/sso_sandbox_mode_testing.gif[Test relying party trusts in SSO Sandbox Mode]
 
 . Enter your federated username and password.
  ** If the SSO sign-in and logout operations are successful, a success message appears.
@@ -238,7 +234,7 @@ image::../media/sso_sandbox_mode_testing.gif[Test relying party trusts in SSO Sa
 .Entra ID
 --
 .Steps
-. Go to the Single sign-on page in the Entra ID portal.
+. Go to the Single sign-on page in the Azure portal.
 
 . Select *Test this application*. 
 
@@ -250,7 +246,6 @@ image::../media/sso_sandbox_mode_testing.gif[Test relying party trusts in SSO Sa
 
 . Repeat these steps to verify the SSO connection for each Admin Node in your grid.
 
-
 --
 .PingFederate 
 --
@@ -258,8 +253,6 @@ image::../media/sso_sandbox_mode_testing.gif[Test relying party trusts in SSO Sa
 . From the Configure SSO page, select the first link in the Sandbox mode message. 
 +
 Select and test one link at a time.
-+
-image::../media/sso_sandbox_mode_enabled_ping.png[Single sign-on, Sandbox mode notification for Ping Federate]
 
 .  Enter the credentials of a federated user. 
 
@@ -270,7 +263,6 @@ image::../media/sso_sandbox_mode_enabled_ping.png[Single sign-on, Sandbox mode n
 . Select the next link to verify the SSO connection for each Admin Node in your grid.
 +
 If you see a Page Expired message, select the *Back* button in your browser and resubmit your credentials.
-
 --
 ====
 
@@ -282,12 +274,12 @@ TIP: When SSO is enabled, all users must use SSO to access the Grid Manager, the
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
-. Change the SSO Status to *Enabled*.
-. Select *Save*.
-. Review the warning message, and select *OK*.
+. From the Test configuration step of the configure SSO wizard, select *Enable SSO*.
+. Review the warning message, and select *Enable SSO*.
 +
-Single sign-on is now enabled.
+Single sign-on is now enabled. The Single sign-on page appears and now includes the details for the SSO you just configured.
+. To edit the configuration, select *Edit*.
+. To disable single sign-on, select *Disable SSO*.
 
-TIP: If you are using the Entra ID Portal and you access StorageGRID from the same computer you use to access Entra ID, ensure that the Entra ID Portal user is also an authorized StorageGRID user (a user in a federated group that has been imported into StorageGRID) or log out of the Entra ID Portal before attempting to sign in to StorageGRID. 
+TIP: If you are using the Azure Portal and you access StorageGRID from the same computer you use to access Entra ID, ensure that the Azure portal user is also an authorized StorageGRID user (a user in a federated group that has been imported into StorageGRID or log out of the Azure portal before attempting to sign in to StorageGRID. 
 
