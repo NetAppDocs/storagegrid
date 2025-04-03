@@ -50,7 +50,7 @@ Sandbox mode makes it easy to perform this back-and-forth configuration and to t
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Single sign-on*. The Single Sign-on page appears.
+. Select *CONFIGURATION* > *Access control* > *Single sign-on*. The Single sign-on page appears.
 +
 NOTE: If the Configure SSO settings button is disabled, confirm you have configured the identity provider as the federated identity source. Refer to link:requirements-for-sso.html[Requirements and considerations for single sign-on].
 
@@ -207,7 +207,7 @@ You must create one SP connection for each Admin Node shown in the table.
 
 == [[test-sso]]Test configuration
 
-Before you enforce the use of single sign-on for your entire StorageGRID system, you should confirm that single sign-on and single logout are correctly configured for each Admin Node.
+Before you enforce the use of single sign-on for your entire StorageGRID system, confirm that single sign-on and single logout are correctly configured for each Admin Node.
 
 // start tabbed area
 
@@ -230,12 +230,9 @@ image::../media/sso_sandbox_mode_testing.gif[Test relying party trusts in SSO Sa
 
 . Enter your federated username and password.
  ** If the SSO sign-in and logout operations are successful, a success message appears.
-+
-image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logout test success message]
 
  ** If the SSO operation is unsuccessful, an error message appears. Fix the issue, clear the browser's cookies, and try again.
 . Repeat these steps to verify the SSO connection for each Admin Node in your grid.
-
 
 --
 .Entra ID
@@ -248,8 +245,6 @@ image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logo
 . Enter the credentials of a federated user.
 
 ** If the SSO sign-in and logout operations are successful, a success message appears.
-+
-image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logout test success message]
 
 ** If the SSO operation is unsuccessful, an error message appears. Fix the issue, clear the browser's cookies, and try again.
 
@@ -264,13 +259,11 @@ image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logo
 +
 Select and test one link at a time.
 +
-image::../media/sso_sandbox_mode_enabled_ping.png[Single Sign-on, Sandbox mode notification for Ping Federate]
+image::../media/sso_sandbox_mode_enabled_ping.png[Single sign-on, Sandbox mode notification for Ping Federate]
 
 .  Enter the credentials of a federated user. 
 
- ** If the SSO sign-in and logout operations are successful, a success message appears.
-+
-image::../media/sso_sandbox_mode_sign_in_success.gif[SSO authentication and logout test success message]
+** If the SSO sign-in and logout operations are successful, a success message appears.
 
 ** If the SSO operation is unsuccessful, an error message appears. Fix the issue, clear the browser's cookies, and try again.
 
