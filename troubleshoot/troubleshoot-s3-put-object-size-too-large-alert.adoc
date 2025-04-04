@@ -28,12 +28,11 @@ Determine which tenants use objects that are larger than 5 GiB, so you can notif
 .. Enter the password listed in the `Passwords.txt` file.
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
-.. Enter `cd /var/local/log`
+.. Change to the directory where the audit logs are located.
 +
-[NOTE]
-====
+--
 include::../_include/location-auditlog-files.adoc[]
-====
+--
 
 .. Identify which tenants are using objects larger than 5 GiB.
 ... Enter `zgrep SPUT * | egrep "CSIZ\(UI64\):([5-9]|[1-9][0-9]+)[0-9]{9}"`
@@ -81,5 +80,6 @@ Jan  5 18:33:41 BHAVNAJ-DC1-S1-2-65 ADE: |12220829 1870864574 S3RQ %CEA 2023-01-
  
 . Ignore the alert for one week if the application has been changed.
 
+// 2025 MAR 10, SGRIDDOC-110
 // 2024 OCT 8: SGRIDDOC-104
 // 2024 AUG 22, SGRIDDOC-88
