@@ -106,7 +106,7 @@ Capacity limit is the maximum capacity available for this bucket's objects. This
 +
 If no limit is set, the capacity for this bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
 
-. Optionally, select *Enable object count limit* and enter an integer of at least 1 and no more than 1,000,000,000,000,000,000.
+. [[object-count-limit]]Optionally, select *Enable object count limit* and enter an integer of at least 1 and no more than 1,000,000,000,000,000,000.
 +
 Object count limit is the maximum number of objects this bucket can contain. This value represents a logical amount (object count). If no limit is set, the object count is unlimited.
 
