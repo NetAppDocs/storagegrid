@@ -13,9 +13,7 @@ You can use this procedure to add or update the display names used for your grid
 
 .Before you begin
 
-* From the *primary Admin Node*, you are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-+
-NOTE: You can add or update display names from a non-primary Admin Node, but you must be signed in to the primary Admin Node to download a recovery package. 
+* From any Admin Node, you are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * You have the provisioning passphrase.
 * You understand the requirements and best practices for display names. See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes].
