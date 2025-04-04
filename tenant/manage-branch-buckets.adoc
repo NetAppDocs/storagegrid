@@ -30,7 +30,7 @@ CAUTION: A branch bucket doesn't serve as a backup, but provides access to prote
 
 .Before you begin
 
-* The base bucket you want to create a branch from has versioning enabled.
+* The base bucket you want to create a branch from has link:../tenant/changing-bucket-versioning.html[versioning enabled].
 * You're the owner of the base bucket.
 * You've signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the Root access or Manage all buckets link:tenant-management-permissions.html[permission]. These permissions override the permissions settings in group or bucket policies. 
@@ -148,4 +148,4 @@ A multipart uploaded object is included in a branch bucket if the ingest was ini
 
 If you delete object versions from a branch bucket, StorageGRID creates a delete marker only in the branch bucket. The base bucket object versions won't be affected.
 
-Cross-grid replication and platform services aren't supported for branch buckets in StorageGRID 12.0.
+Cross-grid replication and platform services aren't supported for branch buckets starting in StorageGRID 12.0.
