@@ -31,8 +31,5 @@ Dark theme and system theme settings are available in the User menu of the Grid 
 === Recovery on non-primary Admin Node
 You can now perform the following tasks from non-primary Admin Nodes:
 
-* Recovery of any type of node
-* Collect logs
-* Download a recovery package
-* Additionally, you no longer have to upload a recovery package to a non-primary Admin Node to recover the primary Admin Node
-
+* Recover other grid nodes
+* Recover the primary Admin Node (recovery package upload not required)
