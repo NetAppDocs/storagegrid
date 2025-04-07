@@ -61,7 +61,10 @@ After endpoints have been created, platform service request errors can occur for
 
 If StorageGRID encounters a recoverable error, the platform service request will be retried until it succeeds.
 
-Other errors are unrecoverable. For example, an unrecoverable error occurs if the endpoint is deleted.
+Other errors are unrecoverable. For example, unrecoverable errors might occur for the following reasons: 
+
+* The endpoint is deleted.
+* A webhook endpoint responds to a failed notification request with a `400 Bad Request` error.
 
 If StorageGRID encounters an unrecoverable endpoint error:
 
@@ -113,4 +116,5 @@ For additional information see link:../tenant/troubleshooting-platform-services-
 
 link:../troubleshoot/index.html[Troubleshoot StorageGRID system]
 
+// 2025 APR 7, SGWS-33482
 // 2023 SEP 25, SGWS-25330

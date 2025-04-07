@@ -30,7 +30,7 @@ Note the following requirements and characteristics when configuring event notif
 
 * Although event notification can be configured on a bucket with S3 Object Lock enabled, the S3 Object Lock metadata (including Retain Until Date and Legal Hold status) of the objects won't be included in the notification messages.
 
-* After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Amazon SNS topic, Kafka topic, or webhook endpoint used as the destination endpoint.
+* After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Amazon SNS topic, Kafka topic, or webhook endpoint used as the destination.
 
 * If you enable event notifications for a bucket that contains objects, notifications are sent only for actions that are performed after the notification configuration is saved.
 
@@ -74,7 +74,7 @@ NOTE: Platform services must be enabled for each tenant account by a StorageGRID
 +
 In the example, an event notification is sent whenever an object is created with the `images/` prefix.
 
- .. Confirm that a notification has been delivered to the destination Amazon SNS or Kafka topic.
+ .. Confirm that a notification has been delivered to the destination Amazon SNS topic, Kafka topic, or webhook endpoint.
 +
 For example, if your destination topic is hosted on the Amazon SNS, you could configure the service to send you an email when the notification is delivered.
 +

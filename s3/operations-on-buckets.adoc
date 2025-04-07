@@ -182,7 +182,7 @@ See link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuratio
 (previously named PUT Bucket notification)
 | Configures notifications for the bucket using the notification configuration XML included in the request body. You should be aware of the following implementation details:
 
-* StorageGRID supports Amazon Simple Notification Service (Amazon SNS)topics, Kafka topics, or webhook endpoints as destinations. Simple Queue Service (SQS) or Amazon Lambda endpoints aren't supported.
+* StorageGRID supports Amazon Simple Notification Service (Amazon SNS) topics, Kafka topics, or webhook endpoints as destinations. Simple Queue Service (SQS) or AWS Lambda endpoints aren't supported.
 * The destination for notifications must be specified as the URN of an StorageGRID endpoint. Endpoints can be created using the Tenant Manager or the Tenant Management API.
 +
 The endpoint must exist for notification configuration to succeed. If the endpoint does not exist, a `400 Bad Request` error is returned with the code `InvalidArgument`.

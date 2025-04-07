@@ -110,7 +110,12 @@ Specify a Kafka endpoint:
 ----
 urn:mysite:kafka:optional:optional:kafka-topic-name
 ----
-
++
+Sepcify a webhook endpoint:
++
+----
+urn:mysite:webhook:optional:optional:webhook-name
+----
 * Search integration:
 +
 ----
@@ -119,4 +124,5 @@ urn:mysite:es:optional:optional:domain-name/index-name/type-name
 +
 NOTE: For locally-hosted search integration endpoints, the `domain-name` element can be any string as long as the URN of the endpoint is unique.
 
+// 2025 APR 7, SGWS-33482
 // 2023 SEP 15, SGWS-25330

@@ -20,7 +20,7 @@ For example, tenants might configure the following types of destination endpoint
 * A locally-hosted Kafka cluster
 * An external or locally-hosted webhook endpoint that supports HTTP POST notification requests. 
 +
-This can be hosted on various web servers, frameworks, or data processing tools such as Fluentd.
+This endpoint can be hosted on various web servers, frameworks, or data processing tools such as Fluentd.
 * A locally-hosted S3 bucket on the same or another instance of StorageGRID
 * An external endpoint, such as an endpoint on Amazon Web Services.
 
