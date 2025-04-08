@@ -60,7 +60,7 @@ If the tenant account has the *Use grid federation connection* permission and yo
 
 *** A blue banner indicating that if you edit or delete this group, your changes will not be synced to the other grid.
 
-. Edit group settings as needed. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] and link:creating-groups-for-swift-tenant.html[Create groups for a Swift tenant] for details about what to enter.
+. Edit group settings as needed. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] or details about what to enter.
 
 .. In the Overview section, change the display name by selecting the name or the edit icon image:../media/icon_edit_tm.png[Edit icon].
 
@@ -104,7 +104,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 . Select *Actions* > *Duplicate group*.
 
-. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] or link:creating-groups-for-swift-tenant.html[Create groups for a Swift tenant] for details about what to enter.
+. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] for details about what to enter.
 
 . Select *Create group*.
 
@@ -135,3 +135,5 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 A confirmation dialog box appears.
 
 . Select *Delete group* or *Delete groups*.
+
+// 2025 APR 8, SGWS-33007
