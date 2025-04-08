@@ -36,7 +36,7 @@ NOTE: Some error messages in the *Last error* column might include a logID in pa
 
 == Issues related to proxy servers
 
-If you have configured a link:configuring-storage-proxy-settings.html[storage proxy] between Storage Nodes and platform service endpoints, errors might occur if your proxy service does not allow messages from StorageGRID. To resolve these issues, check the settings of your proxy server to ensure that platform service-related messages aren't blocked.
+If you have configured a link:configuring-storage-proxy-settings.html[storage proxy] between Storage Nodes and platform service endpoints, errors might occur if your proxy service doesn't allow messages from StorageGRID. To resolve these issues, check the settings of your proxy server to ensure that platform service-related messages aren't blocked.
 
 == Determine if an error has occurred
 
@@ -56,7 +56,7 @@ To check the status of services:
 After endpoints have been created, platform service request errors can occur for various reasons. Some errors are recoverable with user intervention. For example, recoverable errors might occur for the following reasons:
 
 * The user's credentials have been deleted or have expired.
-* The destination bucket does not exist.
+* The destination bucket doesn't exist.
 * The notification can't be delivered.
 
 If StorageGRID encounters a recoverable error, the platform service request will be retried until it succeeds.
@@ -64,7 +64,7 @@ If StorageGRID encounters a recoverable error, the platform service request will
 Other errors are unrecoverable. For example, unrecoverable errors might occur for the following reasons: 
 
 * The endpoint is deleted.
-* A webhook endpoint responds to a failed notification request with a `400 Bad Request` error.
+* A webhook endpoint responds to a notification request with a `400 Bad Request` error.
 
 If StorageGRID encounters an unrecoverable endpoint error:
 
@@ -76,7 +76,7 @@ If StorageGRID encounters an unrecoverable endpoint error:
 
 == Platform services messages can't be delivered
 
-If the destination encounters an issue that prevents it from accepting platform services messages, the client operation on the bucket succeeds, but the platform services message is not delivered. For example, this error might happen if credentials are updated on the destination such that StorageGRID can no longer authenticate to the destination service.
+If the destination encounters an issue that prevents it from accepting platform services messages, the client operation on the bucket succeeds, but the platform services message isn't delivered. For example, this error might happen if credentials are updated on the destination such that StorageGRID can no longer authenticate to the destination service.
 
 Check for related alerts.
 

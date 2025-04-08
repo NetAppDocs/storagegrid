@@ -32,14 +32,14 @@ The next element of the URN specifies the type of platform service, as follows:
 | `s3`
 
 | Notifications
-|`sns` or `kafka`
+|`sns`, `kafka`, or `webhook`
 
 | Search integration
 | `es`
 |===
 For example, to continue specifying the URN for a CloudMirror endpoint hosted on StorageGRID, you would add `s3` to get `urn:sgws:s3`.
 
-The final element of the URN identifies the specific target resource at the destination URI.
+For most endpoints, the final element of the URN identifies the specific target resource at the destination URI, for example, `sns-topic-name`. For webhook endpoints, the final element is the destination URI itself.
 
 [cols="1a,2a" options="header"]
 |===
@@ -48,7 +48,9 @@ The final element of the URN identifies the specific target resource at the dest
 | `bucket-name`
 
 | Notifications
-| `sns-topic-name` or `kafka-topic-name`
+| `sns-topic-name`, `kafka-topic-name`, or `webhook-name`
+
+*Note:* For webhook endpoints, the webhook name can be any string, as long as the URN of the endpoint is unique.
 
 |Search integration
 a| `domain-name/index-name/type-name`
@@ -111,7 +113,7 @@ Specify a Kafka endpoint:
 urn:mysite:kafka:optional:optional:kafka-topic-name
 ----
 +
-Sepcify a webhook endpoint:
+Specify a webhook endpoint:
 +
 ----
 urn:mysite:webhook:optional:optional:webhook-name
