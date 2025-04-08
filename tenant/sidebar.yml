@@ -38,8 +38,6 @@ entries:
       entries:
       - title: Create S3 groups
         url: "/tenant/creating-groups-for-s3-tenant.html"
-      - title: Create Swift groups
-        url: "/tenant/creating-groups-for-swift-tenant.html"
       - title: Tenant management permissions
         url: "/tenant/tenant-management-permissions.html"  
       - title: Manage groups
