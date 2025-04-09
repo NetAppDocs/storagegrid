@@ -87,7 +87,7 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 |===
 . [[installation_section_step]]In the Installation section, confirm that the current state is Ready to start installation of node name and that the *Start Installation* button is enabled.
 +
-If the *Start Installation* button isn't enabled, you might need to change the network configuration or port settings. For instructions, see the maintenance instructions for your appliance.
+If the *Start Installation* button isn't enabled, you might need to change the network configuration or port settings. Refer to the maintenance instructions for your appliance.
 
 . From the StorageGRID Appliance Installer home page, click *Start Installation*.
 +
