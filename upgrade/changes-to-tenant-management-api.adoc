@@ -16,6 +16,6 @@ NOTE: You can continue to use deprecated versions of the Tenant Management API w
 To learn more, go to link:../tenant/understanding-tenant-management-api.html[Understand the Tenant Management API].
 
 == New API for object replication
- You can use the `/org/cross-grid-replication/{versionId}/replicate` API to manually replicate pre-existing objects on a bucket that has cross-grid replication newly configured.
+You can use the `/org/cross-grid-replication/{versionId}/replicate` API to manually replicate objects on an existing bucket that has cross-grid replication newly configured.
 
 // 2024 JUL 10, SGWS-31727
