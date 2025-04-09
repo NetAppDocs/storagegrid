@@ -77,7 +77,7 @@ For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 +
 If the metadata is missing, confirm that the Federation metadata address is correct, or enter the values manually.
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and link:../admin/configure-sso-html#test-sso[test all relying party trusts] to confirm they're configured correctly.
+. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they're configured correctly.
 
 == Create a relying party trust by importing federation metadata
 
@@ -118,7 +118,7 @@ For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 +
 If the metadata is missing, confirm that the Federation metadata address is correct, or enter the values manually.
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and link:../admin/configure-sso-html#test-sso[test all relying party trusts] to confirm they are configured correctly.
+. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they are configured correctly.
 
 == Create a relying party trust manually
 
@@ -189,4 +189,4 @@ NOTE: Using the Admin Node's default certificate (`server.crt`) is not recommend
 The Relying Party properties are saved and closed.
 
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and link:../admin/configure-sso-html#test-sso[test all relying party trusts] to confirm they are configured correctly.
+. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they are configured correctly.

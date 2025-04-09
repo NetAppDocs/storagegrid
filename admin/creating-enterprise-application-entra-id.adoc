@@ -95,6 +95,6 @@ NOTE: You might need to refresh the Enterprise applications page to see applicat
 .. Select the *Upload metadata file* button and select the SAML metadata file you downloaded for the corresponding Admin Node. 
 .. After the file loads, select *Save* and then select *X* to close the pane. You are returned to the Set up Single Sign-On with SAML page. 
 
-. link:../admin/configure-sso-html#test-sso[Test each application].
+. link:../admin/configure-sso.html#test-sso[Test each application].
 
 

@@ -94,7 +94,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 
 * For example, if your grid has only one Admin Node and you don't anticipate adding more Admin Nodes in the future, enter `SG` or `StorageGRID`.
 
-* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows the relying party identifier for each Admin Node in your system, based on the node's hostname.
+* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows the relying party identifier for each Admin Node in the grid, based on the node's hostname.
 +
 NOTE: You must create a relying party trust for each Admin Node in your StorageGRID system. Having a relying party trust for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -147,7 +147,7 @@ https://<Federation Service Name>:<port>/pf/federation_metadata.ping?PartnerSpId
 
 After you save the configuration and enter sandbox mode, you can complete and test the configuration for the SSO type you selected.
 
-StorageGRID can remain in sandbox mode as long as required. However, SSO will be disabled for all StorageGRID users. Only local users can sign in.
+StorageGRID can remain in sandbox mode as long as required. However, only federated users and local users can sign in.
 
 // start tabbed area
 
