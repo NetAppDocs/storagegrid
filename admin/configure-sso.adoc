@@ -88,7 +88,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 [role="tabbed-block"]
 ====
 
-.Active Directory[[enter-sandbox-mode-adfs]]
+.Active Directory
 --
 .. Specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each relying party trust in AD FS.
 
