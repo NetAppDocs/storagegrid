@@ -28,7 +28,7 @@ The provisioning passphrase is required for many installation and maintenance pr
 . Enter your current provisioning passphrase.
 . Enter the new passphrase. The passphrase must contain at least 8 and no more than 32 characters. Passphrases are case-sensitive.
 +
-CAUTION: Store the provisioning passphrase in a secure location. It is required for installation, expansion, and maintenance procedures.
+CAUTION: Store the provisioning passphrase in a secure location. It's required for installation, expansion, and maintenance procedures.
 
 . Re-enter the new passphrase, and select *Save*.
 +
