@@ -100,11 +100,15 @@ The *Default retention period* indicates how long new objects added to this buck
 +
 A _maximum_ retention period, which can be a value from 1 day to 100 years, is set when the grid administrator creates the tenant. When you set a _default_ retention period, it can't exceed the value set for the maximum retention period. If needed, ask your grid administrator to increase or decrease the maximum retention period.
 
-. [[capacity-limit]]Optionally, select *Enable capacity limit*.
+. [[capacity-limit]]Optionally, select *Enable capacity limit*, enter a value, and select the capacity unit.
 +
 Capacity limit is the maximum capacity available for this bucket's objects. This value represents a logical amount (object size), not a physical amount (size on disk).
 +
 If no limit is set, the capacity for this bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
+
+. [[object-count-limit]]Optionally, select *Enable object count limit* and enter an integer of at least 1 and no more than 1,000,000,000,000,000,000.
++
+Object count limit is the maximum number of objects this bucket can contain. This value represents a logical amount (object count). If no limit is set, the object count is unlimited.
 
 . Select *Create bucket*.
 +
