@@ -60,7 +60,7 @@ Date created:: The date and time the bucket was created. This column is hidden b
 
 .. View the summary information at the top of the web page to confirm the details for the bucket, such as Region and Object count.
 
-.. View the Capacity limit usage bar. If the usage is 100% or near 100%, consider increasing the limit or deleting some objects.
+.. View the Capacity limit usage and Object count limit usage bars. If usage is 100% or near 100%, consider increasing the limit or deleting some objects.
 
 .. As needed, select *Delete objects in bucket* and *Delete bucket*.
 +
@@ -81,6 +81,7 @@ Pay close attention to the cautions that appear when you select each of these op
 ** link:manage-bucket-consistency.html[Manage bucket consistency]
 ** link:enabling-or-disabling-last-access-time-updates.html[Last access time updates]
 ** link:../tenant/creating-s3-bucket.html#capacity-limit[Capacity limit]
+** link:../tenant/creating-s3-bucket.html#object-count-limit[Object count limit]
 ** link:changing-bucket-versioning.html[Object versioning]
 ** link:using-s3-object-lock.html[S3 Object Lock]
 ** link:update-default-retention-settings.html[Default bucket retention]
