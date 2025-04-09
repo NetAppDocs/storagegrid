@@ -15,7 +15,7 @@ You must use Active Directory Federation Services (AD FS) to create a relying pa
 
 * You have configured single sign-on for StorageGRID and you selected *AD FS* as the SSO type.
 
-* You have link:../admin/configure-sso.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
+* You have link:../admin/configure-sso.html#enter-sandbox-mode-adfs[entered sandbox mode] in Grid Manager.
 
 * You know the fully qualified domain name (or the IP address) and the relying party identifier for each Admin Node in your system. You can find these values in the Admin Nodes detail table on the StorageGRID Configure SSO page.
 +

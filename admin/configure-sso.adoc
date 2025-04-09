@@ -88,7 +88,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 [role="tabbed-block"]
 ====
 
-.Active Directory
+.Active Directory[[enter-sandbox-mode-adfs]]
 --
 .. Specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each relying party trust in AD FS.
 
@@ -112,7 +112,7 @@ NOTE: You must create a relying party trust for each Admin Node in your StorageG
 +
 NOTE: You must create an enterprise application for each Admin Node in your StorageGRID system. Having an enterprise application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
-.. Follow the steps in link:../admin/creating-enterprise-application-azure.html[Create enterprise applications in Entra ID] to create an enterprise application for each Admin Node listed in the table.
+.. Follow the steps in link:../admin/creating-enterprise-application-entra-id.html[Create enterprise applications in Entra ID] to create an enterprise application for each Admin Node listed in the table.
 
 .. From Entra ID, copy the federation metadata URL for each enterprise application. Then, paste this URL into the corresponding *Federation metadata URL* field in StorageGRID.
 
@@ -181,7 +181,7 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.htm
 
 . Go to the Azure portal.
 
-. Follow the steps in link:../admin/creating-enterprise-application-azure.html[Create enterprise applications in Entra ID] to upload the SAML metadata file for each Admin Node into its corresponding Entra ID enterprise application.
+. Follow the steps in link:../admin/creating-enterprise-application-entra-id.html[Create enterprise applications in Entra ID] to upload the SAML metadata file for each Admin Node into its corresponding Entra ID enterprise application.
 
 --
 .PingFederate
