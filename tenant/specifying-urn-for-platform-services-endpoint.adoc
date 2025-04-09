@@ -39,7 +39,9 @@ The next element of the URN specifies the type of platform service, as follows:
 |===
 For example, to continue specifying the URN for a CloudMirror endpoint hosted on StorageGRID, you would add `s3` to get `urn:sgws:s3`.
 
-For most endpoints, the final element of the URN identifies the specific target resource at the destination URI, for example, `sns-topic-name`. For webhook endpoints, the final element is the destination URI itself.
+For most endpoints, the final element of the URN identifies the specific target resource at the destination URI, for example, `sns-topic-name`. 
+
+For webhook endpoints, the target resource is the destination URI itself.
 
 [cols="1a,2a" options="header"]
 |===

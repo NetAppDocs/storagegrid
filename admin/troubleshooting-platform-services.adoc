@@ -36,7 +36,7 @@ NOTE: Some error messages in the *Last error* column might include a logID in pa
 
 == Issues related to proxy servers
 
-If you have configured a link:configuring-storage-proxy-settings.html[storage proxy] between Storage Nodes and platform service endpoints, errors might occur if your proxy service doesn't allow messages from StorageGRID. To resolve these issues, check the settings of your proxy server to ensure that platform service-related messages aren't blocked.
+If you've configured a link:configuring-storage-proxy-settings.html[storage proxy] between Storage Nodes and platform service endpoints, errors might occur if your proxy service doesn't allow messages from StorageGRID. To resolve these issues, check the settings of your proxy server to ensure that platform service-related messages aren't blocked.
 
 == Determine if an error has occurred
 
@@ -64,7 +64,7 @@ If StorageGRID encounters a recoverable error, the platform service request will
 Other errors are unrecoverable. For example, unrecoverable errors might occur for the following reasons: 
 
 * The endpoint is deleted.
-* A webhook endpoint responds to a notification request with a `400 Bad Request` error.
+* A webhook endpoint destination responds to a notification request with a `400 Bad Request` error.
 
 If StorageGRID encounters an unrecoverable endpoint error:
 
