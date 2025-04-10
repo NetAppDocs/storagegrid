@@ -138,21 +138,28 @@ A confirmation dialog box appears.
 
 == Set up AssumeRole
 
-With AssumeRole you can allow a trusted user to access S3 resources and perform permitted S3 actions. Trusted users receive temporary security credentials that are valid for a limited duration. You provide users with a temporary access key and you can set their session to between 15 minutes and 12 hours. The default session is 1 hour. When you remove the user from the group's S3 trust policy, their AssumeRole permissions are terminated.
+StorageGRID groups can be used similarly to AWS IAM roles. In StorageGRID, users are placed into groups, and the group policy defines the permissions for those users. In AWS, users are assigned to IAM roles, and the AWS permissions policy defines permissions for those users.
+
+AssumeRole allows users, not belonging to a given group, to temporarily assume the role of a user in that group. You must be an administrator to set up AssumeRole. To set up AssumeRole, add a user to the group's S3 trust policy. When the user performs an AssumeRole request, they are provided with temporary security credentials that can be used to perform actions and access resources as specified by the group policy.
+
+Temporary security credentials (access key, secret access key, and session token) are valid for a limited duration. The session is between 15 minutes and 12 hours, and the default session is 1 hour. When you remove the user from the group's S3 trust policy, their AssumeRole permissions are terminated. You can specify additional permissions in the S3 session policy.
 
 .Steps
 
 . Select *ACCESS MANAGEMENT* > *Groups*.
 
-. Select the role group.
+. Select the group.
 
 . Select the S3 trust policy tab.
 
-. Add your S3 trust policy.
+. Add your S3 trust policy, including a list of users that can perform AssumeRole.
 
 . Select *Save changes*.
 
-NOTE: The key difference between AssumeRole StorageGrid and AssumeRole AWS is that in StorageGrid we create groups, and in AWS, we create roles. 
-It is useful to think of a StorageGrid group as a role group. 
+_Insert David's example here._
 
-// 2025-03-28, jira SGWS-34003
+Once configured, users listed in the S3 trust policy can perform AssumeRole and will receive credentials.
+Permissions are determined by a combination of group policy, bucket policy, and session policy. For more information see link:../s3/bucket-and-group-access-policies.html[Use bucket and group access policies].
+
+
+// 2025-04-10, jira SGWS-34003
