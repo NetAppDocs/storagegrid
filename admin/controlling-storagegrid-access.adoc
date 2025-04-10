@@ -25,7 +25,7 @@ Optionally, you can configure a group to be read-only. Users in a read-only grou
 
 == Enable single sign-on
 
-The StorageGRID system supports single sign-on (SSO) using the Security Assertion Markup Language 2.0 (SAML 2.0) standard. After you link:configuring-sso.html[configure and enable SSO], all users must be authenticated by an external identity provider before they can access the Grid Manager, the Tenant Manager, the Grid Management API, or the Tenant Management API. Local users can't sign in to StorageGRID.
+The StorageGRID system supports single sign-on (SSO) using the Security Assertion Markup Language 2.0 (SAML 2.0) standard. After you link:how-sso-works.html[configure and enable SSO], all users must be authenticated by an external identity provider before they can access the Grid Manager, the Tenant Manager, the Grid Management API, or the Tenant Management API. Local users can't sign in to StorageGRID.
 
 == Change provisioning passphrase
 
