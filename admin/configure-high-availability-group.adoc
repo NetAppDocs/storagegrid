@@ -9,7 +9,7 @@ summary: 'You can configure high availability \(HA\) groups to provide highly av
 :imagesdir: ../media/
 
 [.lead]
-You can configure high availability (HA) groups to provide highly available access to the services on Admin Nodes or Gateway Nodes.
+You can configure high availability (HA) groups to provide highly available access to the services on Admin Nodes or Gateway Nodes. 
 
 .Before you begin
 
