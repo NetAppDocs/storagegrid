@@ -79,7 +79,7 @@ The branch bucket's region must match the region for the base bucket, so this fi
 
 | Branch bucket type
 |
-* *Read-write*: You can add or delete objects or object versions in the branch bucket, and you can modify bucket options and bucket access. For example, you can add new objects or object versions to the branch bucket, and you can modify settings such as bucket policies.
+* *Read-write*: You can add or delete objects or object versions in the branch bucket.
 
 * *Read-only*: You can't modify objects in the branch bucket.
 |===
