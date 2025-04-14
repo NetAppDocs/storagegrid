@@ -40,5 +40,5 @@ entries:
   - title: Troubleshoot external syslog server
     url: "/troubleshoot/troubleshooting-syslog-server.html"  
   - title: Change I/O prioritization
-    url: "../troubleshoot/manage-io-prioritization.html"
+    url: "/troubleshoot/manage-io-prioritization.html"
       
