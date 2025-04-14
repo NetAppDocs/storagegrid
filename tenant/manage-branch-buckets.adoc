@@ -14,7 +14,7 @@ A branch bucket provides access to objects in a bucket as they existed at a cert
 A branch bucket provides access to protected data, but doesn't serve as a backup. To continue to protect data, use these features on base buckets:
 
 * link:../tenant/using-s3-object-lock.html[S3 Object Lock]
-* link:../admin/grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] for base buckets without branch buckets
+* link:../admin/grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] for base buckets
 * link:../tenant/manage-bucket-policy.html[Bucket policies] for versioned buckets to clean up old object versions
 
 .About this task
@@ -94,7 +94,7 @@ The settings for a branch bucket don't affect the object versions in the base bu
 
 . If the global S3 Object Lock setting is enabled, optionally enable S3 Object Lock for the branch bucket. To enable S3 Object Lock, the branch bucket must be a read-write bucket.
 +
-Enable S3 Object Lock for a branch bucket only if you need to keep objects for fixed amount of time, for example, to meet certain regulatory requirements. S3 Object Lock is a permanent setting that helps you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely. 
+Enable S3 Object Lock for a branch bucket only if you need to keep objects for a fixed amount of time, for example, to meet certain regulatory requirements. S3 Object Lock is a permanent setting that helps you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely. 
 +
 CAUTION: After the S3 Object Lock setting is enabled for a bucket, it can't be disabled. Anyone with the correct permissions can add objects to the branch bucket that can't be changed. You might not be able to delete these objects or the branch bucket itself.
 
@@ -134,7 +134,7 @@ The branch bucket is created and added to the table on the Buckets page.
 
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view branch bucket details] and perform additional configuration.
 +
-On the Bucket details page, some configuration options are disabled for read-only buckets.
+On the Bucket details page, some configuration options related to the modification of objects are disabled for read-only buckets.
 
 == Branch bucket operations and settings
 
@@ -144,4 +144,4 @@ A multipart uploaded object is included in a branch bucket if the ingest was ini
 
 If you delete object versions from a branch bucket, StorageGRID creates a delete marker only in the branch bucket. The base bucket object versions won't be affected.
 
-Cross-grid replication and platform services aren't supported for branch buckets starting in StorageGRID 12.0.
+Cross-grid replication and platform services aren't supported for branch buckets.
