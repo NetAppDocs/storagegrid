@@ -18,11 +18,14 @@ A branch bucket provides access to protected data, but doesn't serve as a backup
 * link:../tenant/manage-bucket-policy.html[Bucket policies] for versioned buckets to clean up old object versions
 
 .About this task
-You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the base bucket. When you perform operations on the base bucket, the results on the branch bucket depend on the operation and the type of branch bucket you've created.
+You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the base bucket. Additionally, you can create a branch bucket from another branch bucket. When you perform operations on the base bucket, the results on the branch bucket depend on the operation and the type of branch bucket you've created.
 
 You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
 
 CAUTION: A branch bucket doesn't serve as a backup, but provides access to protected data. You must continue to use link:../ilm/managing-objects-with-s3-object-lock.html[S3 Object Lock] or link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] to protect data.
+
+Cross-grid replication isn't supported for branch buckets.
+
 
 .Before you begin
 
@@ -136,12 +139,3 @@ The branch bucket is created and added to the table on the Buckets page.
 +
 On the Bucket details page, some configuration options related to the modification of objects are disabled for read-only buckets.
 
-== Branch bucket operations and settings
-
-You can create a branch bucket from an existing branch bucket.
-
-A multipart uploaded object is included in a branch bucket if the ingest was initiated before the base bucket's before timestamp, regardless of when the upload completes.
-
-If you delete object versions from a branch bucket, StorageGRID creates a delete marker only in the branch bucket. The base bucket object versions won't be affected.
-
-Cross-grid replication and platform services aren't supported for branch buckets.
