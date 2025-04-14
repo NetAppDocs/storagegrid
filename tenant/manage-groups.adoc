@@ -138,11 +138,14 @@ A confirmation dialog box appears.
 
 == Set up AssumeRole
 
-StorageGRID groups can be used similarly to AWS IAM roles. In StorageGRID, users are placed into groups, and the group policy defines the permissions for those users. In AWS, users are assigned to IAM roles, and the AWS permissions policy defines permissions for those users.
+.Before you begin
+You must be an administrator to set up AssumeRole.
 
-AssumeRole allows users, not belonging to a given group, to temporarily assume the role of a user in that group. You must be an administrator to set up AssumeRole. To set up AssumeRole, add a user to the group's S3 trust policy. When the user performs an AssumeRole request, they are provided with temporary security credentials that can be used to perform actions and access resources as specified by the group policy.
+.About this task
 
-Temporary security credentials (access key, secret access key, and session token) are valid for a limited duration. The session is between 15 minutes and 12 hours, and the default session is 1 hour. When you remove the user from the group's S3 trust policy, their AssumeRole permissions are terminated. You can specify additional permissions in the S3 session policy.
+To set up AssumeRole, create the target group to be assumed, if the group does not already exist. Edit the group's S3 policy to specify the permitted actions by assuming this group. 
+
+Temporary security credentials created from assuming this group are valid for a limited duration. The session is between 15 minutes and 12 hours, and the default session is 1 hour. When you remove the user from the group's S3 trust policy, the user can no longer assume this group. 
 
 .Steps
 
@@ -159,7 +162,7 @@ Temporary security credentials (access key, secret access key, and session token
 _Insert David's example here._
 
 Once configured, users listed in the S3 trust policy can perform AssumeRole and will receive credentials.
-Permissions are determined by a combination of group policy, bucket policy, and session policy. For more information see link:../s3/bucket-and-group-access-policies.html[Use bucket and group access policies].
+The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/bucket-and-group-access-policies.html[Use bucket and group access policies].
 
 
 // 2025-04-10, jira SGWS-34003
