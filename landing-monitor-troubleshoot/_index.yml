@@ -42,3 +42,5 @@ indexpage:
       url: ../monitor/running-diagnostics.html        
     - title: Troubleshoot common issues
       url: ../troubleshoot/index.html
+    - title: Change I/O prioritization
+      url: "/troubleshoot/manage-io-prioritization.html"
