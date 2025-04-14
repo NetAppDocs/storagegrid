@@ -43,4 +43,4 @@ indexpage:
     - title: Troubleshoot common issues
       url: ../troubleshoot/index.html
     - title: Change I/O prioritization
-      url: "/troubleshoot/manage-io-prioritization.html"
+      url: "../troubleshoot/manage-io-prioritization.html"
