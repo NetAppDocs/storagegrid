@@ -26,10 +26,10 @@ CAUTION: A branch bucket doesn't serve as a backup, but provides access to prote
 
 .Before you begin
 
-* The base bucket you want to create a branch from has link:../tenant/changing-bucket-versioning.html[versioning enabled].
-* You're the owner of the base bucket.
 * You've signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the Root access or Manage all buckets link:tenant-management-permissions.html[permission]. These permissions override the permissions settings in group or bucket policies. 
+* The base bucket you want to create a branch from has link:../tenant/changing-bucket-versioning.html[versioning enabled].
+* You're the owner of the base bucket.
 +
 NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objects can be granted by link:../s3/bucket-and-group-access-policies.html[bucket policy or group policy].
 
