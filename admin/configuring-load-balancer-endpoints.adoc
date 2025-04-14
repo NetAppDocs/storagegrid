@@ -43,7 +43,7 @@ link:../admin/configuring-custom-server-certificate-for-storage-node.html[Config
 [[create-lb-endpoint]]
 == Create a load balancer endpoint
 
-Each S3 client load balancer endpoint specifies a port, a client type (S3), and a network protocol (HTTP or HTTPS). Management interface load balancer endpoints specifies a port, interface type, and untrusted Client Network.
+Each S3 client load balancer endpoint specifies a port, a client type (S3), and a network protocol (HTTP or HTTPS). Management interface load balancer endpoints specify a port, interface type, and untrusted Client Network.
 
 === Access the wizard
 
