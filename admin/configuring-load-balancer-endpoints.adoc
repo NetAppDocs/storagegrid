@@ -50,7 +50,7 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 .Steps
 
 . Select *CONFIGURATION* > *Network* > *Load balancer endpoints*.
-. To create an endpoint for an S3 or Swift client, select the *S3 or Swift client* tab.
+. To create an endpoint for an S3 or client, select the *S3 client* tab.
 . To create an endpoint for access to the Grid Manager, Tenant Manager, or both, select the *Management interface* tab.
 . Select *Create*.
 
@@ -66,7 +66,7 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 [role="tabbed-block"]
 ====
 
-.S3 or Swift client
+.S3 client
 --
 [cols="1a,3a" options="header"]
 |===
@@ -81,7 +81,7 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, unless you have freed up port 8443. Then you can use port 8443 as an S3 endpoint, and the port will be configured on both Gateway and Admin Nodes.
 
 | Client type
-| The type of client application that will use this endpoint, either *S3* or *Swift*.
+| Must be *S3*.
 
 | Network protocol
 | The network protocol that clients will use when connecting to this endpoint.

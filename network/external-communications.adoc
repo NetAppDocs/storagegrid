@@ -242,26 +242,12 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Storage Nodes
 | S3 client traffic directly to Storage Nodes (HTTPS).
 
-| 18083
-| TCP
-| HTTPS
-| Swift clients
-| Storage Nodes
-| Swift client traffic directly to Storage Nodes (HTTPS).
-
 | 18084
 | TCP
 | HTTP
 | S3 clients
 | Storage Nodes
 | S3 client traffic directly to Storage Nodes (HTTP).
-
-| 18085
-| TCP
-| HTTP
-| Swift clients
-| Storage Nodes
-| Swift client traffic directly to Storage Nodes (HTTP).
 
 | 23000-23999
 | TCP

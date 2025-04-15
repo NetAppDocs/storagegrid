@@ -57,9 +57,7 @@ TIP: If this admin group doesn't exist on both grids before you create the tenan
 If you are creating a tenant that will use a grid federation connection, optionally, use this field to help identify which is the source tenant and which is the destination tenant. For example, this description for a tenant created on Grid 1 will also appear for the tenant replicated to Grid 2: "This tenant was created on Grid 1."
 
 | Client type
-| The type of client protocol this tenant will use, either *S3* or *Swift*.
-
-*Note*: Support for Swift client applications has been deprecated and will be removed in a future release.
+| Must be *S3*.
 
 | Storage quota (optional)
 | If you want this tenant to have a storage quota, a numerical value for the quota and the units.
