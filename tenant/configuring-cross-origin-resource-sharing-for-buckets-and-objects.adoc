@@ -1,5 +1,5 @@
 ---
-permalink: tenant/configuring-cross-origin-resource-sharing-cors.html
+permalink: tenant/configuring-cross-origin-resource-sharing-for-buckets-and-objects.html
 sidebar: sidebar
 keywords: how to configure cross-origin resource sharing, cors
 summary: 'You can configure cross-origin resource sharing \(CORS\) for an S3 bucket if you want that bucket and objects in that bucket to be accessible to web applications in other domains.'
@@ -76,3 +76,8 @@ The bucket details page appears.
 . Clear the *Enable CORS* checkbox.
 
 . Select *Save changes*.
+
+.Related information
+link:enable-cross-origin-resource-sharing-for-management-interface.html[Enable StorageGRID CORS for a management interface]
+
+// 2025 MAR 24, SGWS-33919 
