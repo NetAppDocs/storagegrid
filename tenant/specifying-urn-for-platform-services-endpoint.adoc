@@ -50,9 +50,9 @@ For webhook endpoints, the target resource is the destination URI itself.
 | `bucket-name`
 
 | Notifications
-| `sns-topic-name`, `kafka-topic-name`, or `webhook-name`
+| `sns-topic-name` or `kafka-topic-name`
 
-*Note:* For webhook endpoints, the webhook name can be any string, as long as the URN of the endpoint is unique.
+*Note:* For webhook endpoints, the final element of the URN can be any string, as long as the URN of the endpoint is unique.
 
 |Search integration
 a| `domain-name/index-name/type-name`
