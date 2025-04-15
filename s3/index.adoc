@@ -43,6 +43,9 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |===
 | Release| Comments
 
+| 12.0
+| 
+
 | 11.9
 | 
 * Added support for pre-calculated SHA-256 checksum values for the following requests and supported headers. You can use this feature to verify the integrity of uploaded objects:
@@ -129,3 +132,5 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |Initial support of the S3 REST API by the StorageGRID system.The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
 
 |===
+
+// sgws34003-mairead-15april

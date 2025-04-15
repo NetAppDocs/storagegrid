@@ -23,6 +23,11 @@ StorageGRID now supports short term credentials using link:../ilm/creating-cloud
 
 Using long-term credentials to access S3 buckets poses security risks if these credentials are compromised. Short-term credentials have a limited lifespan, which reduces the risk of unauthorized access.
 
+== Tenant groups enhancements
+
+=== AssumeRole
+You now have greater control over managing temporary credentials in tenant groups with AssumeRole. AssumeRole allows a user, who is not a member of a particular group, to temporarily assume the role of a user in that group.
+
 === S3 Object Lock buckets
 You can now link:../ilm/creating-cloud-storage-pool.html[configure a Cloud Storage Pool using an Amazon S3 endpoint]. S3 Object Lock helps prevent accidental or malicious deletion of objects. If you tier data from StorageGRID to Amazon S3, having object lock enabled on both systems enhances data protection across the data's lifecycle.
 
@@ -103,3 +108,5 @@ The Erasure-coding profiles page is now located at *CONFIGURATION* > *System* > 
 
 === Search enhancements
 The link:../primer/exploring-grid-manager.html#search-field[search field in the Grid Manager] now includes better matching logic, allowing you to find pages by searching for common abbreviations and by the names of certain settings within a page. You can also search for more types of items, like nodes, users, and tenant accounts.
+
+// sgws34003-mairead-15april
