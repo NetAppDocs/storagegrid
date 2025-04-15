@@ -170,7 +170,7 @@ After you apply or stage changes, a new recovery package is generated as a resul
 
 == Temporarily changing the LACP PDU rate
 
-To perform maintenance operations on network components installed in your appliance, such as upgrading NIC firmware, you can check the current LACP PDU rate setting. You can alos non-persistently toggle the LACP PDU rate between fast and slow, if required.
+To perform maintenance operations on network components installed in your appliance, such as upgrading NIC firmware, you can check the current LACP PDU rate setting. You can also non-persistently toggle the LACP PDU rate between fast and slow, if required.
 
 NOTE: To make permanent changes to the LACP PDU rate, see https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-network-links.html[Configure network links^].
 
