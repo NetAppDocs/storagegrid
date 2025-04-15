@@ -13,16 +13,19 @@ Platform services include CloudMirror replication, event notifications, and the 
 
 If you enable platform services for S3 tenant accounts, you must configure your grid so that tenants can access the external resources necessary to use these services.
 
-Platform services aren't supported for link:../tenant/manage-branch-buckets.html[branch buckets].
-
 == CloudMirror replication
 The StorageGRID CloudMirror replication service is used to mirror specific objects from a StorageGRID bucket to a specified external destination.
 
 For example, you might use CloudMirror replication to mirror specific customer records into Amazon S3 and then leverage AWS services to perform analytics on your data.
 
-NOTE: CloudMirror replication has some important similarities and differences with the cross-grid replication feature. To learn more, see link:../admin/grid-federation-compare-cgr-to-cloudmirror.html[Compare cross-grid replication and CloudMirror replication].
+CloudMirror replication has some important similarities and differences with the cross-grid replication feature. To learn more, see link:../admin/grid-federation-compare-cgr-to-cloudmirror.html[Compare cross-grid replication and CloudMirror replication].
 
-NOTE: CloudMirror replication is not supported if the source bucket has S3 Object Lock enabled.
+[NOTE]
+====
+* CloudMirror replication isn't supported if the source bucket has S3 Object Lock enabled.
+
+* CloudMirror replication isn't supported for link:../tenant/manage-branch-buckets.html[branch buckets].
+====
 
 == Notifications
 Per-bucket event notifications are used to send notifications about specific actions performed on objects to a specified external Kafka cluster or Amazon Simple Notification Service.
