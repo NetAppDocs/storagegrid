@@ -528,9 +528,13 @@ m| configure-storagegrid.blank.json
 |===
 
 * You have created a `configure-storagegrid.json` configuration file. To create this file, you can modify the example configuration file (`configure-storagegrid.sample.json`) or the blank configuration file (`configure-storagegrid.blank.json`).
-+
+
+CAUTION: Store the management password and provisioning passphrase from the passwords section of the modified `configure-storagegrid.json` configuration file in a secure location. These passwords are required for installation, expansion, and maintenance procedures. You should also back up the modified `configure-storagegrid.json` configuration file and store it in a secure location.
+
+.About this task
+
 You can use the `configure-storagegrid.py` Python script and the `configure-storagegrid.json` grid configuration file to automate the configuration of your StorageGRID system.
-+
+
 NOTE: You can also configure the system using the Grid Manager or the Installation API.
 
 .Steps
