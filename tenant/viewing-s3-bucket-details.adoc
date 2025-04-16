@@ -91,3 +91,5 @@ Pay close attention to the cautions that appear when you select each of these op
 * *Bucket access*: View or change option settings. You must have specific access permissions.
 ** Configure link:configuring-cross-origin-resource-sharing-for-buckets-and-objects.html[CORS for buckets and objects] so the bucket and objects in the bucket will be accessible to web applications in other domains.
 ** link:../tenant/manage-bucket-policy.html[Control user access] for an S3 bucket and objects in that bucket.
+
+* *Branches*: View the list of branch buckets for the bucket. link:../tenant/manage-branch-buckets.html[Create a new branch bucket or manage branch buckets].
