@@ -36,14 +36,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 |===
 | Port| TCP or UDP| Protocol| From| To| Details
 
-| 22
-| TCP
-| SSH
-| Service laptop
-| All nodes
-| SSH or console access is required for procedures with console steps. Optionally, you can use port 2022 instead of 22.
-
-
 | 25
 | TCP
 | SMTP
@@ -180,13 +172,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Appliance
 | KMS
 | Key Management Interoperability Protocol (KMIP) external traffic from appliances configured for node encryption to the Key Management Server (KMS), unless a different port is specified on the KMS configuration page of the StorageGRID Appliance Installer.
-
-| 8022
-| TCP
-| SSH
-| Service laptop
-| All nodes
-| SSH on port 8022 grants access to the base operating system on appliance and virtual node platforms for support and troubleshooting. This port is not used for Linux-based (bare metal) nodes and is not required to be accessible between grid nodes or during normal operations.
 
 | 8443
 | TCP
