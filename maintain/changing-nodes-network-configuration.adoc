@@ -191,11 +191,11 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 
 . To check the current LACP PDU rate setting, enter the following command: 
 +
-`run-each-node --parallel --service ldr --port 8022 '/usr/sbin/set-lacp-rate.sh --lacprate'`
+`run-each-node --parallel --port 8022 '/usr/sbin/set-lacp-rate.sh --lacprate'`
 
 . To temporarily change the LACP PDU rate, enter the following command: 
 +
-`run-each-node --parallel --service ldr --port 8022 '/usr/sbin/set-lacp-rate.sh --lacprate _<speed>_'`
+`run-each-node --parallel --port 8022 '/usr/sbin/set-lacp-rate.sh --lacprate _<speed>_'`
 +
 where `_<version-number>_` is `fast` or `slow`.
 
