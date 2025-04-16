@@ -38,9 +38,9 @@ indexpage:
     links:
     - title: Review support metrics
       url: ../monitor/reviewing-support-metrics.html
+    - title: Change I/O prioritization
+      url: "../monitor/manage-io-prioritization.html"
     - title: Run diagnostics
       url: ../monitor/running-diagnostics.html        
     - title: Troubleshoot common issues
       url: ../troubleshoot/index.html
-    - title: Change I/O prioritization
-      url: "../troubleshoot/manage-io-prioritization.html"

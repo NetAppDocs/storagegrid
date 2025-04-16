@@ -39,6 +39,4 @@ entries:
     url: "/troubleshoot/troubleshooting-network-hardware-and-platform-issues.html"
   - title: Troubleshoot external syslog server
     url: "/troubleshoot/troubleshooting-syslog-server.html"  
-  - title: Change I/O prioritization
-    url: "/troubleshoot/manage-io-prioritization.html"
       
