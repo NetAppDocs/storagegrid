@@ -43,23 +43,24 @@ An invalid region can result if you use a region as an advanced filter in an ILM
 
 . Select *ILM* > *Regions*.
 +
-The Regions page appears, with the *All regions* and *Default region* tabs.
-
+The Regions page appears.
+. Select the *All regions* or *Default region* tab.
++
 [role="tabbed-block"]
 ====
 .All regions
 --
-The *All regions* tab displays the currently defined regions listed and defined default region, which you can't modify or remove. 
+The *All regions* tab lists the currently defined regions, including defined default region, which you can't modify or remove. 
 [start =2]
-. To add a region, select *Add another region*.
-. Enter the name of a region that you want to use when creating S3 buckets.
+.. To add a region, select *Add another region*.
+.. Enter the name of a region that you want to use when creating S3 buckets.
 +
 You must use this exact region name as the LocationConstraint request element when you create the corresponding S3 bucket.
 
-. To remove an unused region, select the delete icon image:../media/icon-x-to-remove.png[Remove icon].
+.. To remove an unused region, select the delete icon image:../media/icon-x-to-remove.png[Remove icon].
 +
 An error message appears if you attempt to remove a region that is currently used in any policy (active or inactive).
-. When you are done making changes, select *Save*.
+.. When you are done making changes, select *Save*.
 +
 You can now select these regions from the Advanced filters section in step 1 of the Create ILM rule wizard. See link:create-ilm-rule-enter-details.html#use-advanced-filters-in-ilm-rules[Use advanced filters in ILM rules].
 --
@@ -68,8 +69,8 @@ You can now select these regions from the Advanced filters section in step 1 of 
 --
 The *Default region* tab displays the currently defined default region, which you can modify.
 [start=2]
-. To change the default region, select the region name from the available options in the *Default region* drop-down list.
-. Select *Save*.
+.. To change the default region, select the region name from the available options in the *Default region* drop-down list.
+.. Select *Save*.
 --
 ====
 
