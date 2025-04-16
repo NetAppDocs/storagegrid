@@ -1,5 +1,5 @@
 settings:
-  name: "StorageGRID"
+  name: "StorageGRID software"
   search: "storagegrid-enable,storagegrid,storagegrid-appliances"
   internal:
     pdf_enabled: true
@@ -21,7 +21,7 @@ settings:
       url: /storagegrid-115    
 sidebar:
   entries:
-    - title: 'StorageGRID 12.0 Docs'
+    - title: 'StorageGRID 12.0 documentation'
       url: /index.html
     - title: StorageGRID appliances
       url: "/storagegrid-hardware.html"
