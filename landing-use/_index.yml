@@ -44,8 +44,12 @@ indexpage:
       url:  ../tenant/what-platform-services-are.html
     - title: S3 Object Lock
       url:  ../tenant/using-s3-object-lock.html
-  - title: Use S3 REST API
+  - title: Use STS REST API
     links:
+    - title: "AssumeRole"  
+      url: ../s3/assume-role.html      
+  - title: Use S3 REST API
+    links:      
     - title: "Quick reference: Supported S3 API requests"
       url: ../s3/quick-reference-support-for-aws-apis.html
     - title: Operations on buckets
