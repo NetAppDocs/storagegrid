@@ -29,11 +29,36 @@ As a general best practice, each site in your StorageGRID system should include 
 
 A load balancer endpoint defines the port and the network protocol (HTTPS or HTTP) that incoming and outgoing client application requests will use to access those nodes that contain the Load Balancer service. The endpoint also defines the client type (S3), the binding mode, and optionally a list of allowed or blocked tenants. 
 
-To create a load balancer endpoint, either select *CONFIGURATION* > *Network* > *Load balancer endpoints* or complete the FabricPool and S3 setup wizard. For instructions:
+To create a load balancer endpoint, either use the Grid Manager or complete the S3 setup and FabricPool wizards:
 
 * link:configuring-load-balancer-endpoints.html[Configure load balancer endpoints]
 * link:use-s3-setup-wizard-steps.html[Use the S3 setup wizard]
 * link:../fabricpool/use-fabricpool-setup-wizard-steps.html[Use the FabricPool setup wizard]
+
+=== Considerations for load balancer caching
+
+Caching significantly improves performance when a workload operates on a subset of data and accesses objects multiple times. Load balancer caching is available only for Gateway Nodes.
+
+As you're creating load balancer endpoints, enable caching only for workloads that are cacheable. Workloads that access un-cached data more often than cached data will perform worse than if they had not been serviced by the cache. In some cases, workloads with high overwrite and eviction rates might also exceed warrantied drive-write endurance.
+
+Examples of workloads that aren't good candidates for caching::
++
+* Fabric Pool
+* Backup applications
+* Storage tiering
+
+Examples of workloads that might be good candidates for caching::
++
+* AI/ML training
+* Content Distribution Networks (CDN)
+* Media asset management
+* Video production
+
+link:../audit/index.html[Review audit logs] to determine if an existing workload would be a good candidate for caching. For a given time period, determine what percentage of GETs are for unique objects. To be suitable for caching, this value should be below 50%. 
+
+Consider adding additional endpoints or nodes for caching individual workloads that are good candidates for caching.
+
+For more information about load balancer caching, contact technical support.
 
 === Considerations for the port
 The port for a load balancer endpoint defaults to 10433 for the first endpoint you create, but you can specify any unused external port between 1 and 65535. If you use port 80 or 443, the endpoint will use the Load Balancer service on Gateway Nodes only. These ports are reserved on Admin Nodes. If you use the same port for more than one endpoint, you must specify a different binding mode for each endpoint.

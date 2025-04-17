@@ -11,8 +11,6 @@ summary: 'Load balancer endpoints determine the ports and network protocols S3 c
 [.lead]
 Load balancer endpoints determine the ports and network protocols S3 clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.
 
-TIP: Swift details have been removed from this version of the doc site. See https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-client-connections.html[Configure S3 and Swift client connections^].
-
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
@@ -50,7 +48,7 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 .Steps
 
 . Select *CONFIGURATION* > *Network* > *Load balancer endpoints*.
-. To create an endpoint for an S3 or Swift client, select the *S3 or Swift client* tab.
+. To create an endpoint for an S3 client, select the *S3 client* tab.
 . To create an endpoint for access to the Grid Manager, Tenant Manager, or both, select the *Management interface* tab.
 . Select *Create*.
 
@@ -66,7 +64,7 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 [role="tabbed-block"]
 ====
 
-.S3 or Swift client
+.S3 client
 --
 [cols="1a,3a" options="header"]
 |===
@@ -80,15 +78,15 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 
 If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, unless you have freed up port 8443. Then you can use port 8443 as an S3 endpoint, and the port will be configured on both Gateway and Admin Nodes.
 
-| Client type
-| The type of client application that will use this endpoint, either *S3* or *Swift*.
-
 | Network protocol
 | The network protocol that clients will use when connecting to this endpoint.
 
 *  Select *HTTPS* for secure, TLS encrypted communication (recommended). You must attach a security certificate before you can save the endpoint.
 
 * Select *HTTP* for less secure, unencrypted communication. Use HTTP only for a non-production grid.
+
+| Enable caching
+| Enable or disable link:../admin/managing-load-balancing.html#considerations-for-load-balancer-caching[caching on the Gateway Nodes] for this load balancer endpoint. 
 |===
 
 --
