@@ -16,16 +16,14 @@ StorageGRID uses two types of security certificates:
 * *Server certificates* are required when you use HTTPS connections. Server certificates are used to establish secure connections between clients and servers, authenticating the identity of a server to its clients and providing a secure communication path for data. The server and the client each have a copy of the certificate.
 * *Client certificates* authenticate a client or user identity to the server, providing more secure authentication than passwords alone. Client certificates don't encrypt data.
 
-When a client connects to the server using HTTPS, the server responds with the server certificate, which contains a public key. The client compares the server signature to the signature on its copy of the certificate. If the signatures match, the client starts a session with the server using the same public key.
+When a client connects to the server using HTTPS, the server responds with the server certificate, which contains a public key. The client verifies this certificate by comparing the server signature to the signature on its copy of the certificate. If the signatures match, the client starts a session with the server using the same public key.
 
 StorageGRID functions as the server for some connections (such as the load balancer endpoint) or as the client for other connections (such as the CloudMirror replication service).
 
 [[gridca_details]]
 *Default Grid CA certificate*
 
-StorageGRID has a built-in certificate authority (CA) that generates an internal Grid CA certificate during system installation. The Grid CA certificate is used, by default, to secure internal StorageGRID traffic. An external certificate authority (CA) can issue custom certificates that are fully compliant with your organization's information security policies.
-
-Use the Grid CA certificate for non-production environments. For production, use custom certificates signed by an external certificate authority. Unsecured connections with no certificate are supported but not recommended.
+StorageGRID includes a built-in certificate authority (CA) that generates an internal Grid CA certificate during system installation. The Grid CA certificate is used, by default, to secure internal StorageGRID traffic. An external certificate authority (CA) can issue custom certificates that are fully compliant with your organization's information security policies. Although you can use the Grid CA certificate for a non-production environment, the best practice for a production environment is to use custom certificates signed by an external certificate authority. Unsecured connections with no certificate are also supported but aren't recommended.
 
 * Custom CA certificates don't remove the internal certificates; however, the custom certificates should be the ones specified for verifying server connections.
 * All custom certificates must meet the link:../harden/hardening-guideline-for-server-certificates.html[system hardening guidelines for server certificates].
@@ -401,7 +399,7 @@ link:../tenant/editing-platform-services-endpoint.html[Edit platform services en
 | Server
 | Authenticates the connection between identity federation services, such as Active Directory Federation Services (AD FS), and StorageGRID that are used for single sign-on (SSO) requests.
 | *CONFIGURATION* > *Access control* > *Single sign-on*
-| link:how-sso-works.html[Configure single sign-on]
+| link:configuring-sso.html[Configure single sign-on]
 
 |===
 
@@ -416,7 +414,7 @@ In this example, StorageGRID acts as the server.
 . You configure an S3 client connection to the load balancer endpoint and upload the same certificate to the client.
 . When the client wants to save or retrieve data, it connects to the load balancer endpoint using HTTPS.
 . StorageGRID responds with the server certificate, which contains a public key, and with a signature based on the private key.
-. The client compares the server signature to the signature on its copy of the certificate. If the signatures match, the client starts a session using the same public key.
+. The client verifies this certificate by comparing the server signature to the signature on its copy of the certificate. If the signatures match, the client starts a session using the same public key.
 . The client sends object data to StorageGRID.
 
 === Example 2: External key management server (KMS)

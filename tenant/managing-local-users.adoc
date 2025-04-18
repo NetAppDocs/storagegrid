@@ -9,7 +9,7 @@ summary: 'You can create local users and assign them to local groups to determin
 :imagesdir: ../media/
 
 [.lead]
-You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root". Although you can add and remove local users, you can't remove the root user.
+You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root." Although you can add and remove local users, you can't remove the root user.
 
 NOTE: If single sign-on (SSO) is enabled for your StorageGRID system, local users will not be able to sign in to the Tenant Manager or the Tenant Management API, although they can use client applications to access the tenant's resources, based on group permissions.
 
@@ -142,27 +142,6 @@ You can't change the username.
 
 . Confirm that you selected *Save changes* for each section you changed.
 
-== Import federated users
-
-You can import one or more federated users, up to a maximum of 100 users, directly into the Users page.
-
-.Steps
-
-. Select *ACCESS MANAGEMENT* > *Users*. 
-. Select *Import federated users*.
-. Enter the UUID or username for one or more federated users.
-+
-For multiple entries, add each UUID or username on a new line. 
-
-. Select *Import*.
-+
-If the import into the Users field fails for one or more users, perform the following steps:
-
-.. Select *Copy users*.
-.. Retry the import by selecting *Previous* and pasting the copied users into the *Import federated users* dialog box.
-
-+
-After you close the *Import federated users* dialog box, the federated user information displays on the Users page for the successfully imported users.
 
 == Duplicate local user
 
@@ -192,7 +171,6 @@ To retry a clone that failed:
 
 For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
 
-
 == Delete one or more local users
 
 You can permanently delete one or more local users who no longer need to access the StorageGRID tenant account.
@@ -212,5 +190,3 @@ NOTE: You must use the federated identity source to delete federated users.
 A confirmation dialog box appears.
 
 . Select *Delete user* or *Delete users*.
-
-// 2025 FEB 26, SGWS-34007

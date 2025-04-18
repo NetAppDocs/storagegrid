@@ -11,7 +11,7 @@ summary: 'You can use StorageGRID logs to troubleshoot issues.'
 [.lead]
 You can use StorageGRID logs to troubleshoot issues. 
 
-NOTE: If you want to send your logs to an external syslog server or change the destination of audit information such as the `bycast.log` and `nms.log`, see link:../monitor/configure-audit-messages.html#[Configure audit messages and external syslog server].
+NOTE: If you want to send your logs to an external syslog server or change the destination of audit information such as the `bycast.log` and `nms.log`, see link:../monitor/configure-audit-messages.html#[Configure audit messages and log destinations].
 
 == General StorageGRID logs
 

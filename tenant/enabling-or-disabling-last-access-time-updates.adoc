@@ -49,12 +49,6 @@ h|Object added to ILM evaluation queue?
 h|Last access time updated?
 h|Object added to ILM evaluation queue?
 
-|Request to retrieve an object's metadata when a HEAD operation is issued
-|No
-|No
-|No
-|No 
-
 |Request to retrieve an object, its access control list, or its metadata
 |No
 |No
@@ -110,4 +104,3 @@ The bucket details page appears.
 . Select *Save changes*.
 
 // 2024 JULY 24, SGRIDDOC-83
-// 2025-02-20, SGWS-34787

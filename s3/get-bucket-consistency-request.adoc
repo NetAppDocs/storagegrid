@@ -66,4 +66,4 @@ Content-Type: application/xml
 
 .Related information
 
-link:consistency.html[Consistency]
+link:consistency-controls.html[Consistency values]

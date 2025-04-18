@@ -40,7 +40,7 @@ Exporting the logs to the syslog server provides these capabilities:
 
 * Better visibility into requests that were blocked by traffic classifiers at the load balancer.
 
-To export the logs, refer to link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
+To export the logs, refer to link:../monitor/configure-audit-messages.html[Configure audit messages and log destinations].
 
 == Log file categories
 
@@ -151,7 +151,7 @@ m| system-commands.txt
 | Output of StorageGRID container commands. Contains system information, such as networking and disk usage.
 
 m| synchronize-recovery-package
-| Related to maintaining consistency of the latest recovery package across all Admin Nodes and Storage Nodes that host the ADC service.
+| Related to maintaining consistency of the latest Recovery Package across all Admin Nodes and Storage Nodes that host the ADC service.
 |===
 
 
