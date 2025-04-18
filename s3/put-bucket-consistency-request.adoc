@@ -55,4 +55,4 @@ Host: _host_
 
 .Related information
 
-link:consistency-controls.html[Consistency values]
+link:consistency.html[Consistency]

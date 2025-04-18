@@ -56,7 +56,7 @@ Here is a brief summary of the consistency values that are available in StorageG
 * *Read-after-new-write*: Provides read-after-write consistency for new objects and eventual consistency for object updates. Offers high availability and data protection guarantees. Recommended for most cases.
 * *Available*: Provides eventual consistency for both new objects and object updates. For S3 buckets, use only as required (for example, for a bucket that contains log values that are rarely read, or for HEAD or GET operations on keys that don't exist). Not supported for S3 FabricPool buckets.
 
-NOTE: Before selecting a consistency value, link:../s3/consistency-controls.html[read the full description of consistency]. You should understand the benefits and limitations before changing the default value.
+NOTE: Before selecting a consistency value, link:../s3/consistency.html[read the full description of consistency]. You should understand the benefits and limitations before changing the default value.
 
 == Example of how consistency and ILM rules can interact
 
