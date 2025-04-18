@@ -23,7 +23,7 @@ Any combination of platform services can be configured for a single S3 bucket. F
 TIP: The use of platform services must be enabled for each tenant account by a StorageGRID administrator using the Grid Manager or the Grid Management API.
 
 == How platform services are configured
-Platform services communicate with external endpoints that you configure using the link:configuring-platform-services-endpoints.html[Tenant Manager] or the link:understanding-tenant-management-api.html[Tenant Management API]. Each endpoint represents an external destination, such as a StorageGRID S3 bucket, an Amazon Web Services bucket, an Amazon SNS topic, a webhook endpoint, or an Elasticsearch cluster hosted locally, on AWS, or elsewhere.
+Platform services communicate with external endpoints that you configure using the link:configuring-platform-services-endpoints.html[Tenant Manager] or the link:understanding-tenant-management-api.html[Tenant Management API]. Each endpoint represents an external destination, such as a StorageGRID S3 bucket, an Amazon Web Services bucket, an Amazon SNS topic, or an Elasticsearch cluster hosted locally, on AWS, or elsewhere.
 
 After you create an external endpoint, you can enable a platform service for a bucket by adding XML configuration to the bucket. The XML configuration identifies the objects that the bucket should act on, the action that the bucket should take, and the endpoint that the bucket should use for the service.
 
@@ -138,6 +138,5 @@ In contrast, the CloudMirror service does replicate PutObjectTagging requests or
 | Replication is not supported for source or destination buckets with S3 Object Lock enabled.
 |===
 
-// 2025 MAR 31, SGWS-33482
 // 2024 JUN 28, SGRIDDOC-67
 // 2023 SEP 25, SGWS-27676

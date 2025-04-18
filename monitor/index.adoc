@@ -33,7 +33,7 @@ These instructions describe how to:
 ** link:grid-federation-monitor-connections.html[Grid federation connections]
 * link:managing-alerts.html[Manage alerts]
 * link:logs-files-reference.html[View log files]
-* link:configure-audit-messages.html[Configure audit messages and external syslog server]
+* link:configure-audit-messages.html[Configure audit messages and log destinations]
 * link:considerations-for-external-syslog-server.html[Use an external syslog server] to collect audit information
 * link:using-snmp-monitoring.html[Use SNMP for monitoring]
 * link:using-charts-and-reports.html[Obtain additional StorageGRID data], including metrics and diagnostics

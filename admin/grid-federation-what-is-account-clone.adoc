@@ -31,7 +31,7 @@ If either StorageGRID system in the grid federation connection uses SSO, both gr
 
 . Configure the same identity source for both grids. See link:using-identity-federation.html[Use identity federation].
 
-. Configure the same SSO identity provider (IdP) for both grids. See link:how-sso-works.html[Configure single sign-on].
+. Configure the same SSO identity provider (IdP) for both grids. See link:configuring-sso.html[Configure single sign-on].
 
 . link:managing-admin-groups.html[Create the same admin group] on both grids by importing the same federated group.
 +

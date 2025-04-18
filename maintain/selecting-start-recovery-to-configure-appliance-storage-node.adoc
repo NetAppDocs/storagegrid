@@ -18,6 +18,7 @@ You must select Start Recovery in the Grid Manager to configure an appliance Sto
 * You have the provisioning passphrase.
 * You have deployed a recovery appliance Storage Node.
 * You have the start date of any repair jobs for erasure-coded data.
+* You have verified that the Storage Node has not been rebuilt within the last 15 days.
 
 .Steps
 

@@ -71,8 +71,6 @@ When objects are versioned, object delete requests don't delete the current vers
 
 Even though the object has not been removed, StorageGRID behaves as though the current version of the object is no longer available. Requests to that object return 404 NotFound. However, because noncurrent object data has not been removed, requests that specify a noncurrent version of the object can succeed.
 
-If a client deletes an object version with a version ID from a link:../tenant/manage-branch-buckets.html[branch bucket], StorageGRID hides the existence of the object version but doesn't create a delete marker in the branch bucket. If a client deletes an object without a version ID from a branch bucket, StorageGRID creates a delete marker in the branch bucket according to standard S3 behavior.
-
 To free space when deleting versioned objects, or to remove delete markers, use one of the following:
 
 * *S3 client request*: Specify the object version ID in the S3 DELETE Object request (`DELETE /object?versionId=ID`). Keep in mind that this request only removes object copies for the specified version (the other versions are still taking up space).
