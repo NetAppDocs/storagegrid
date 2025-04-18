@@ -11,7 +11,7 @@ summary: 'You must create at least one tenant account to control access to the s
 [.lead]
 You must create at least one tenant account to control access to the storage in your StorageGRID system.
 
-The steps for creating a tenant account vary based on whether link:using-identity-federation.html[identity federation] and link:configuring-sso.html[single sign-on] are configured and whether the Grid Manager account you use to create the tenant account belongs to an admin group with the Root access permission.
+The steps for creating a tenant account vary based on whether link:using-identity-federation.html[identity federation] and link:how-sso-works.html[single sign-on] are configured and whether the Grid Manager account you use to create the tenant account belongs to an admin group with the Root access permission.
 
 .Before you begin
 

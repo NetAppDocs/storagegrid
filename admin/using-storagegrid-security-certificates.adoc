@@ -401,7 +401,7 @@ link:../tenant/editing-platform-services-endpoint.html[Edit platform services en
 | Server
 | Authenticates the connection between identity federation services, such as Active Directory Federation Services (AD FS), and StorageGRID that are used for single sign-on (SSO) requests.
 | *CONFIGURATION* > *Access control* > *Single sign-on*
-| link:configuring-sso.html[Configure single sign-on]
+| link:how-sso-works.html[Configure single sign-on]
 
 |===
 

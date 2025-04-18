@@ -44,7 +44,7 @@ To install StorageGRID software on a services appliance:
 +
 The StorageGRID Appliance Installer Home page appears.
 
-. To install a Primary Admin Node:
+. To install a primary Admin Node:
  .. In the This Node section, for *Node Type*, select *Primary Admin*.
  .. In the *Node Name* field, enter the same name that was used for the node you are recovering, and click *Save*.
  .. In the Installation section, check the software version listed under Current state
@@ -60,14 +60,14 @@ The Upload StorageGRID Software page appears.
 The files are automatically uploaded after you select them.
 
  .. Click *Home* to return to the StorageGRID Appliance Installer Home page.
-. To install a Gateway Node or non-Primary Admin Node:
+. To install a Gateway Node or non-primary Admin Node:
  .. In the This Node section, for *Node Type*, select *Gateway* or *Non-Primary Admin*, depending on the type of node you are restoring.
  .. In the *Node Name* field, enter the same name that was used for the node you are recovering, and click *Save*.
  .. In the Primary Admin Node connection section, determine whether you need to specify the IP address for the primary Admin Node.
 +
 The StorageGRID Appliance Installer can discover this IP address automatically, assuming the primary Admin Node, or at least one other grid node with ADMIN_IP configured, is present on the same subnet.
 
- .. If this IP address is not shown or you need to change it, specify the address:
+ .. If this IP address isn't shown or you need to change it, specify the address:
 
 +
 [cols="1a,2a" options="header"]
@@ -87,7 +87,7 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 |===
 . [[installation_section_step]]In the Installation section, confirm that the current state is Ready to start installation of node name and that the *Start Installation* button is enabled.
 +
-If the *Start Installation* button is not enabled, you might need to change the network configuration or port settings. For instructions, see the maintenance instructions for your appliance.
+If the *Start Installation* button isn't enabled, you might need to change the network configuration or port settings. Refer to the maintenance instructions for your appliance.
 
 . From the StorageGRID Appliance Installer home page, click *Start Installation*.
 +
