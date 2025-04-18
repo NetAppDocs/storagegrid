@@ -54,9 +54,9 @@ NOTE: If the link:enabling-s3-object-lock-globally.html[global S3 Object Lock se
 ====
 //end tabbed block
 
-* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e768d4da-da88-413c-bbaa-b1ff00874d10[Video: ILM policies overview^]
-+
-image::../media/video-screenshot-ilm-policies-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e768d4da-da88-413c-bbaa-b1ff00874d10" alt="Video: ILM policies overview", window=_blank]
+* Optionally, you have watched the video:
+
+video::e768d4da-da88-413c-bbaa-b1ff00874d10[panopto, title="ILM policies overview"]
 
 See also link:ilm-policy-overview.html[Use ILM policies].
 

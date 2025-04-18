@@ -820,6 +820,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 * `Content-Disposition`
 * `Content-Encoding`
 * `Content-Language`
+* `Expires`
 * `x-amz-checksum-sha256`
 * `x-amz-server-side-encryption`
 * `x-amz-storage-class`
@@ -968,5 +969,6 @@ None
 .StorageGRID documentation
 link:upload-part-copy.html[UploadPartCopy]
 
+// 2025 APR 8, SGRIDDOC-135
 // 2024 AUG 22, SGRIDDOC-94
 // 2023 OCT 26, SGWS-27431
