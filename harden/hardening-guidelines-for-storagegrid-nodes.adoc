@@ -99,6 +99,6 @@ include::../_include/enable-disable-ipmi.adoc[]
 
 * For appliance models containing SED, FDE, or FIPS NL-SAS drives that you manage with SANtricity System Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[enable and configure SANtricity Drive Security^].
 
-* For appliance models containing SED or FIPS NVMe SSDs that you manage using the StorageGRID Appliance Installer and Grid Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[enable and configure StorageGRID drive encryption^].
+* For appliance models containing SED or FIPS NVMe SSDs that you manage using the StorageGRID Appliance Installer and Grid Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-drive-encryption[enable and configure StorageGRID drive encryption^].
 
-* For appliances without SED, FDE, or FIPS drives, enable and configure StorageGRID software node encryption https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-node-encryption[using a Key Management Server (KMS)^].
+* For appliances without SED, FDE, or FIPS drives, use a Key Management Server (KMS) to  https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-node-encryption[enable and configure StorageGRID software node encryption^].

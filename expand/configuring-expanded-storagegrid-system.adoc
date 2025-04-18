@@ -45,7 +45,7 @@ link:rebalancing-erasure-coded-data-after-adding-storage-nodes.html[Rebalance er
 . If you added an Admin Node:
 
 .. If single sign-on (SSO) is enabled for your StorageGRID system, create a relying party trust for the new Admin Node. You can't sign in to the node until you create this relying party trust. See
-link:../admin/configuring-sso.html[Configure single sign-on].
+link:../admin/configure-sso.html[Configure single sign-on].
 
 .. If you plan to use the Load Balancer service on Admin Nodes, optionally add the new Admin Node to an HA group. Select *CONFIGURATION* > *Network* > *High availability groups* to review the list of existing HA groups and to add the new node. See link:../admin/configure-high-availability-group.html[Configure high availability groups].
 
