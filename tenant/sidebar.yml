@@ -69,8 +69,6 @@ entries:
       url: "/tenant/creating-s3-bucket.html"       
     - title: View bucket details
       url: "/tenant/viewing-s3-bucket-details.html"
-    - title: Manage branch buckets
-      url: "/tenant/manage-branch-buckets.html"       
     - title: Apply ILM policy tag to bucket
       url: "/tenant/ilm-policy-tags.html"
     - title: Manage bucket policy
@@ -85,10 +83,8 @@ entries:
       url: "/tenant/using-s3-object-lock.html"  
     - title: Update S3 Object Lock default retention
       url: "/tenant/update-default-retention-settings.html"
-    - title: Configure CORS for buckets and objects
-      url: "/tenant/configuring-cross-origin-resource-sharing-for-buckets-and-objects.html"
-    - title: Enable CORS for a management interface
-      url: "/tenant/enable-cross-origin-resource-sharing-for-management-interface.html"
+    - title: Configure cross-origin resource sharing (CORS)
+      url: "/tenant/configuring-cross-origin-resource-sharing-cors.html"
     - title: Delete objects in bucket
       url: "/tenant/deleting-s3-bucket-objects.html"
     - title: Delete bucket
