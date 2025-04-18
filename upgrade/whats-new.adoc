@@ -21,7 +21,18 @@ NetApp recommends using this feature only between StorageGRID 12.0 source and de
 === Security enhancement for encrypted passwords on disk
 Improved password security, including a highly increased hash round count for SHA512 password hashes.
 
+== S3 buckets
+
+=== Branch buckets
+You can now link:../tenant/manage-branch-bucket-html[create branch buckets] for an S3 bucket. A branch bucket provides access to S3 bucket objects as they existed at a certain time. A branch bucket isn't the same as a backup.
+
 == User interface
 
 === Dark theme
 Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
+
+== Grid Manager enhancements
+
+=== Configure regions enhancement
+
+The Regions page in Grid Manager now includes a *Default region* tab. You can use this tab to change the defined default region for S3 buckets. link:../ilm/configuring-regions-optional-and-s3-only.html[Learn more].
