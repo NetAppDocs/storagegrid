@@ -24,9 +24,7 @@ NOTE: If you want to create the default ILM rule for a policy, follow the link:c
 * If you need to create a compliant rule for use with S3 Object Lock, you are familiar with the link:requirements-for-s3-object-lock.html[requirements for S3 Object Lock].
 * Optionally, you have watched the video:
 +
-video::9872d38f-80b3-4ad4-9f79-b1ff008760c7[panopto, title="Video: ILM rules overview"]
-+
-image::../media/video-screenshot-ilm-rules-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9872d38f-80b3-4ad4-9f79-b1ff008760c7" alt="Video: ILM rules overview", window=_blank]
+video::9872d38f-80b3-4ad4-9f79-b1ff008760c7[panopto, title="ILM rules overview"]
 
 .About this task
 
