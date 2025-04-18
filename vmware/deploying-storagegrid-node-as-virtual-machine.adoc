@@ -149,7 +149,7 @@ NOTE: If you are recovering a grid node, you must enter the name of the node you
 
 .. Use the *Temporary installation password* drop-down to specify a temporary installation password, so that you can access the VM console or the StorageGRID Installation API, or use SSH, before the new node joins the grid.
 +
-NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console-password.html[node console password], which is listed in the `Passwords.txt` file in the recovery package. 
+NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console-password.html[node console password], which is listed in the `Passwords.txt` file in the Recovery Package. 
 
 *** *Use node name*: The value you provided for the *Node name* field is used as the temporary installation password.
 *** *Use custom password*: A custom password is used as the temporary installation password.

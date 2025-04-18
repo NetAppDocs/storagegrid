@@ -29,19 +29,19 @@ Each Gateway Node or Admin Node might only require a few minutes or an hour to r
 
 .Steps
 
-. As soon as a new recovery package has been generated, download the file.
+. As soon as a new Recovery Package has been generated, download the file.
 +
-image::../media/decommission_site_step_6_recovery_package.png[Site Decommission Step 6 recovery package]
+image::../media/decommission_site_step_6_recovery_package.png[Site Decommission Step 6 Recovery Package]
 +
-NOTE: Download the recovery package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
+NOTE: Download the Recovery Package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
 
  .. Select the link in the message, or select *MAINTENANCE* > *System* > *Recovery package*.
  .. Download the `.zip` file.
 +
-See the instructions for link:downloading-recovery-package.html[downloading the recovery package].
+See the instructions for link:downloading-recovery-package.html[downloading the Recovery Package].
 
 +
-NOTE: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+NOTE: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 . Using the Data Movement chart, monitor the movement of object data from this site to other sites.
 +

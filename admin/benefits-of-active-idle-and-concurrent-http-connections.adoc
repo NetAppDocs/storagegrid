@@ -19,7 +19,7 @@ You can identify the performance benefits for the following types of HTTP connec
 
 == Benefits of keeping idle HTTP connections open
 
-Keep HTTP connections open when client applications are idle to allow later transactions. Keep an idle HTTP connection open for a maximum of 10 minutes. StorageGRID might automatically close an HTTP connection that's open and idle for longer than 10 minutes.
+You should keep HTTP connections open even when client applications are idle to allow client applications to perform subsequent transactions over the open connection. Based on system measurements and integration experience, you should keep an idle HTTP connection open for a maximum of 10 minutes. StorageGRID might automatically close an HTTP connection that is kept open and idle for longer than 10 minutes.
 
 Open and idle HTTP connections provide the following benefits:
 
@@ -30,7 +30,7 @@ Reduced latency is the main advantage, especially for the amount of time require
 * Increased data transfer rate by priming the TCP/IP slow-start algorithm with previously performed transfers
 * Instantaneous notification of several classes of fault conditions that interrupt connectivity between the client application and the StorageGRID system
 
-Decide how long to keep an idle connection open by balancing slow start benefits and resource allocation.
+Determining how long to keep an idle connection open is a trade‐off between the benefits of slow start that is associated with the existing connection and the ideal allocation of the connection to internal system resources.
 
 == Benefits of active HTTP connections
 
@@ -43,7 +43,7 @@ For client connections to Storage Nodes, limiting active HTTP connections provid
 * Enables optimal load balancing across the StorageGRID system.
 +
 
-Over time, an HTTP connection might no longer be optimal as load balancing requirements change. The system performs its best load balancing when client applications establish a separate HTTP connection for each transaction, but this method negates the valuable gains associated with persistent connections.
+Over time, an HTTP connection might no longer be optimal as load balancing requirements change. The system performs its best load balancing when client applications establish a separate HTTP connection for each transaction, but this negates the much more valuable gains associated with persistent connections.
 +
 
 * Allows client applications to direct HTTP transactions to LDR services that have available space.
@@ -69,9 +69,9 @@ The StorageGRID system can perform parallel transactions and increase aggregate 
 
 Client applications should establish multiple HTTP connections. When a client application has to perform a transaction, it can select and immediately use any established connection that is not currently processing a transaction.
 
-Each StorageGRID system's topology has different peak throughput for concurrent transactions and connections. Peak throughput depends on computing, network, storage resources, WAN links, and the number of servers, services and applications the StorageGRID system supports.
+Each StorageGRID system's topology has different peak throughput for concurrent transactions and connections before performance begins to degrade. Peak throughput depends on factors such as computing resources, network resources, storage resources, and WAN links. The number of servers and services and the number of applications that the StorageGRID system supports are also factors.
 
-StorageGRID systems often support multiple client applications. Keep this in mind when you determine the maximum number of concurrent connections. If the client application consists of multiple software entities that each establish connections to the StorageGRID system, add up all the connections across the entities. You might have to adjust the maximum number of concurrent connections in the following situations:
+StorageGRID systems often support multiple client applications. You should keep this in mind when you determine the maximum number of concurrent connections used by a client application. If the client application consists of multiple software entities that each establish connections to the StorageGRID system, you should add up all the connections across the entities. You might have to adjust the maximum number of concurrent connections in the following situations:
 
 * The StorageGRID system's topology affects the maximum number of concurrent transactions and connections that the system can support.
 * Client applications that interact with the StorageGRID system over a network with limited bandwidth might have to reduce the degree of concurrency to ensure that individual transactions are completed in a reasonable time.
@@ -82,3 +82,5 @@ StorageGRID systems often support multiple client applications. Keep this in min
 You can use separate pools of HTTP connections for read and write operations and control how much of a pool to use for each. Separate pools of HTTP connections enable you to better control transactions and balance loads.
 
 Client applications can create loads that are retrieve-dominant (read) or store-dominant (write). With separate pools of HTTP connections for read and write transactions, you can adjust how much of each pool to dedicate for read or write transactions.
+
+

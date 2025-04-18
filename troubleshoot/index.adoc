@@ -23,26 +23,26 @@ This table provides examples of the types of information that you might collect 
 |===
 | Question| Example response
 
-| What is the StorageGRID system doing or not doing? What are its symptoms?
-| Client applications are reporting that objects can't be ingested into StorageGRID.
+|What is the StorageGRID system doing or not doing? What are its symptoms?
+|Client applications are reporting that objects can't be ingested into StorageGRID.
 
-| When did the problem start?
-| Object ingest was first denied at about 14:50 on January 8, 2020.
+|When did the problem start?
+|Object ingest was first denied at about 14:50 on January 8, 2020.
 
-| How did you first notice the problem?
-| Notified by client application. Also received alert email notifications.
+|How did you first notice the problem?
+|Notified by client application. Also received alert email notifications.
 
-| Does the problem happen consistently, or only sometimes?
-| Problem is ongoing.
+|Does the problem happen consistently, or only sometimes?
+|Problem is ongoing.
 
-| If the problem happens regularly, what steps cause it to occur
-| Problem happens every time a client tries to ingest an object.
+|If the problem happens regularly, what steps cause it to occur
+|Problem happens every time a client tries to ingest an object.
 
-| If the problem happens intermittently, when does it occur? Record the times of each incident that you are aware of.
-| Problem is not intermittent.
+|If the problem happens intermittently, when does it occur? Record the times of each incident that you are aware of.
+|Problem is not intermittent.
 
-| Have you seen this problem before? How often have you had this problem in the past?
-| This is the first time I have seen this issue.
+|Have you seen this problem before? How often have you had this problem in the past?
+|This is the first time I have seen this issue.
 |===
 
 == Assess the risk and impact on the system
@@ -55,17 +55,17 @@ This table summarizes the impact the example problem is having on system operati
 |===
 | Question| Example response
 
-| Can the StorageGRID system ingest content?
-| No.
+|Can the StorageGRID system ingest content?
+|No.
 
-| Can client applications retrieve content?
-| Some objects can be retrieved and others can't.
+|Can client applications retrieve content?
+|Some objects can be retrieved and others can't.
 
-| Is data at risk?
-| No.
+|Is data at risk?
+|No.
 
-| Is the ability to conduct business severely affected?
-| Yes, because client applications can't store objects to the StorageGRID system and data can't be retrieved consistently.
+|Is the ability to conduct business severely affected?
+|Yes, because client applications can't store objects to the StorageGRID system and data can't be retrieved consistently.
 |===
 
 == Collect data
@@ -75,56 +75,87 @@ After you have defined the problem and have assessed its risk and impact, collec
 [cols="1a,2a,1a" options="header"]
 |===
 | Type of data to collect| Why collect this data| Instructions
+|
+Create timeline of recent changes
+|
+Changes to your StorageGRID system, its configuration, or its environment can cause new behavior.
+|
 
-| Create timeline of recent changes
-| Changes to your StorageGRID system, its configuration, or its environment can cause new behavior.
-| * <<create_timeline,Create a timeline of recent changes>>
+* <<create_timeline,Create a timeline of recent changes>>
 
-| Review alerts
-| Alerts can help you quickly determine the root cause of a problem by providing important clues as to the underlying issues that might be causing it.
+|
+Review alerts
+|
+Alerts can help you quickly determine the root cause of a problem by providing important clues as to the underlying issues that might be causing it.
 
 Review the list of current alerts to see if StorageGRID has identified the root cause of a problem for you.
 
 Review alerts triggered in the past for additional insights.
 
-| * link:../monitor/monitoring-system-health.html#view-current-and-resolved-alerts[View current and resolved alerts]
+|
+* link:../monitor/monitoring-system-health.html#view-current-and-resolved-alerts[View current and resolved alerts]
 
-| Monitor events
-| Events include any system error or fault events for a node, including errors such as network errors. Monitor events to learn more about issues or to help with troubleshooting.
-| * link:../monitor/monitoring-events.html[Monitor events]
+|
+Monitor events
+|
+Events include any system error or fault events for a node, including errors such as network errors. Monitor events to learn more about issues or to help with troubleshooting.
+|
+* link:../monitor/monitoring-events.html[Monitor events]
 
-| Identify trends using charts and text reports
-| Trends can provide valuable clues about when issues first appeared, and can help you understand how quickly things are changing.
-| 
+|
+Identify trends using charts and text reports
+|
+Trends can provide valuable clues about when issues first appeared, and can help you understand how quickly things are changing.
+|
+
 * link:../monitor/using-charts-and-reports.html[Use charts and graphs]
 
 * link:../monitor/types-of-text-reports.html[Use text reports]
 
-| Establish baselines
-| Collect information about the normal levels of various operational values. These baseline values, and deviations from these baselines, can provide valuable clues.
-| * <<establish-baselines,Establish baselines>>
+|
+Establish baselines
+|
+Collect information about the normal levels of various operational values. These baseline values, and deviations from these baselines, can provide valuable clues.
+|
 
-| Perform ingest and retrieval tests
-| To troubleshoot performance issues with ingest and retrieval, use a workstation to store and retrieve objects. Compare results against those seen when using the client application.
-| * link:../monitor/monitoring-put-and-get-performance.html[Monitor PUT and GET performance]
+* <<establish-baselines,Establish baselines>>
 
-| Review audit messages
-| Review audit messages to follow StorageGRID operations in detail. The details in audit messages can be useful for troubleshooting many types of issues, including performance issues.
-| * link:../monitor/reviewing-audit-messages.html[Review audit messages]
+|
+Perform ingest and retrieval tests
+|
+To troubleshoot performance issues with ingest and retrieval, use a workstation to store and retrieve objects. Compare results against those seen when using the client application.
+|
 
-| Check object locations and storage integrity
-| If you are having storage problems, verify that objects are being placed where you expect. Check the integrity of object data on a Storage Node.
-| 
+* link:../monitor/monitoring-put-and-get-performance.html[Monitor PUT and GET performance]
+
+|
+Review audit messages
+|
+Review audit messages to follow StorageGRID operations in detail. The details in audit messages can be useful for troubleshooting many types of issues, including performance issues.
+|
+
+* link:../monitor/reviewing-audit-messages.html[Review audit messages]
+
+|
+Check object locations and storage integrity
+|
+If you are having storage problems, verify that objects are being placed where you expect. Check the integrity of object data on a Storage Node.
+|
+
 * link:../monitor/monitoring-object-verification-operations.html[Monitor object verification operations]
 * link:../troubleshoot/confirming-object-data-locations.html[Confirm object data locations]
 * link:../troubleshoot/verifying-object-integrity.html[Verify object integrity]
 
-| Collect data for technical support
-| Technical support might ask you to collect data or review specific information to help troubleshoot issues.
-| 
+|
+Collect data for technical support
+|
+Technical support might ask you to collect data or review specific information to help troubleshoot issues.
+|
+
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
 * link:../monitor/manually-triggering-autosupport-message.html[Manually trigger an AutoSupport package]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
+
 |===
 
 === [[create_timeline]]Create a timeline of recent changes
@@ -139,15 +170,15 @@ Create a table of recent changes to your system that includes information about 
 [cols="1a,1a,2a" options="header"]
 |===
 | Time of change| Type of change| Details
-| For example:
+|For example:
 
 * When did you start the node recovery?
 * When did the software upgrade complete?
 * Did you interrupt the process?
 
-| What happened? What did you do?
+|What happened? What did you do?
 
-| Document any relevant details about the change. For example:
+|Document any relevant details about the change. For example:
 
 * Details of the network changes.
 * Which hotfix was installed.
@@ -188,61 +219,62 @@ You can establish baselines for your system by recording the normal levels of va
 [cols="1a,1a,2a" options="header"]
 |===
 | Property| Value| How to obtain
-| Average storage consumption
-| GB consumed/day
+|Average storage consumption
+|GB consumed/day
 
 Percent consumed/day
 
-| Go to the Grid Manager. On the Nodes page, select the entire grid or a site and go to the Storage tab.
+|Go to the Grid Manager. On the Nodes page, select the entire grid or a site and go to the Storage tab.
 
 On the Storage Used - Object Data chart, find a period where the line is fairly stable. Position your cursor over the chart to estimate how much storage is consumed each day
 
 You can collect this information for the entire system or for a specific data center.
 
-| Average metadata consumption
-| GB consumed/day
+|Average metadata consumption
+|GB consumed/day
 
 Percent consumed/day
 
-| Go to the Grid Manager. On the Nodes page, select the entire grid or a site and go to the Storage tab.
+|Go to the Grid Manager. On the Nodes page, select the entire grid or a site and go to the Storage tab.
 
 On the Storage Used - Object Metadata chart, find a period where the line is fairly stable. Position your cursor over the chart to estimate how much metadata storage is consumed each day
 
 You can collect this information for the entire system or for a specific data center.
 
-| Rate of S3/Swift operations
-| Operations/second
+|Rate of S3/Swift operations
+|Operations/second
 
-| On the Grid Manager dashboard, select *Performance* > *S3 operations* or *Performance* > *Swift operations*.
+|On the Grid Manager dashboard, select *Performance* > *S3 operations* or *Performance* > *Swift operations*.
 
 To see ingest and retrieval rates and counts for a specific site or node, select *NODES* > *_site or Storage Node_* > *Objects*. Position your cursor over the Ingest and Retrieve chart for S3.
 
-| Failed S3/Swift operations
-| Operations
+|Failed S3/Swift operations
+|Operations
 
-| Select *SUPPORT* > *Tools* > *Grid topology*. On the Overview tab in the API Operations section, view the value for S3 Operations - Failed or Swift Operations - Failed.
+|Select *SUPPORT* > *Tools* > *Grid topology*. On the Overview tab in the API Operations section, view the value for S3 Operations - Failed or Swift Operations - Failed.
 
-| ILM evaluation rate
-| Objects/second
-| From the Nodes page, select *_grid_* > *ILM*.
+|ILM evaluation rate
+|Objects/second
+|From the Nodes page, select *_grid_* > *ILM*.
 
 On the ILM Queue chart, find a period where the line is fairly stable. Position your cursor over the chart to estimate a baseline value for *Evaluation rate* for your system.
 
-| ILM scan rate
-| Objects/second
-| Select *NODES* > *_grid_* > *ILM*.
+|ILM scan rate
+|Objects/second
+|Select *NODES* > *_grid_* > *ILM*.
 
 On the ILM Queue chart, find a period where the line is fairly stable. Position your cursor over the chart to estimate a baseline value for *Scan rate* for your system.
 
-| Objects queued from client operations
-| Objects/second
-| Select *NODES* > *_grid_* > *ILM*.
+|Objects queued from client operations
+|Objects/second
+|Select *NODES* > *_grid_* > *ILM*.
 
 On the ILM Queue chart, find a period where the line is fairly stable. Position your cursor over the chart to estimate a baseline value for *Objects queued (from client operations)* for your system.
 
-| Average query latency
-| Milliseconds
-| Select *NODES* > *_Storage Node_* > *Objects*. In the Queries table, view the value for Average Latency.
+|Average query latency
+|Milliseconds
+|Select *NODES* > *_Storage Node_* > *Objects*. In the Queries table, view the value for Average Latency.
+
 |===
 
 == Analyze data
@@ -265,55 +297,57 @@ If you can't resolve the problem on your own, contact technical support. Before 
 | Item
 | Notes
 
-| 
-| Problem statement
-| What are the problem symptoms? When did the problem start? Does it happen consistently or intermittently? If intermittently, what times has it occurred?
+|
+|Problem statement
+|What are the problem symptoms? When did the problem start? Does it happen consistently or intermittently? If intermittently, what times has it occurred?
 
 <<define_problem,Define the problem>>
 
-| 
-| Impact assessment
-| What is the severity of the problem? What is the impact to the client application?
+|
+|Impact assessment
+|What is the severity of the problem? What is the impact to the client application?
 
 * Has the client connected successfully before?
 * Can the client ingest, retrieve, and delete data?
 
-| 
-| StorageGRID System ID
-| Select *MAINTENANCE* > *System* > *License*. The StorageGRID System ID is shown as part of the current license.
+|
+|StorageGRID System ID
+|Select *MAINTENANCE* > *System* > *License*. The StorageGRID System ID is shown as part of the current license.
 
-| 
-| Software version
-| From the top of the Grid Manager, select the help icon and select *About* to see the StorageGRID version.
+|
+|Software version
+|From the top of the Grid Manager, select the help icon and select *About* to see the StorageGRID version.
 
-| 
-| Customization
-| Summarize how your StorageGRID system is configured. For example, list the following:
+|
+|Customization
+|Summarize how your StorageGRID system is configured. For example, list the following:
 
 * Does the grid use storage compression, storage encryption, or compliance?
 * Does ILM make replicated or erasure-coded objects? Does ILM ensure site redundancy? Do ILM rules use the Balanced, Strict, or Dual Commit ingest behaviors?
 
-| 
-| Log files and system data
-| Collect log files and system data for your system. Select *SUPPORT* > *Tools* > *Logs*.
+|
+|Log files and system data
+|Collect log files and system data for your system. Select *SUPPORT* > *Tools* > *Logs*.
 
 You can collect logs for the entire grid, or for selected nodes.
 
-If you are collecting logs only for selected nodes, be sure to include at least one Storage Node that has the ADC service. The first three Storage Nodes installed at a site include the ADC service.
+If you are collecting logs only for selected nodes, be sure to include at least one Storage Node that has the ADC service. (The first three Storage Nodes at a site include the ADC service.)
 
-| 
-| Baseline information
-| Collect baseline information regarding ingest operations, retrieval operations, and storage consumption.
+link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
+
+|
+|Baseline information
+|Collect baseline information regarding ingest operations, retrieval operations, and storage consumption.
 
 <<establish-baselines,Establish baselines>>
 
-| 
-| Timeline of recent changes
-| Create a timeline that summarizes any recent changes to the system or its environment.
+|
+|Timeline of recent changes
+|Create a timeline that summarizes any recent changes to the system or its environment.
 
 <<create_timeline,Create a timeline of recent changes>>
 
-| 
-| History of efforts to diagnose the issue
-| If you have taken steps to diagnose or troubleshoot the issue yourself, make sure to record the steps you took and the outcome.
+|
+|History of efforts to diagnose the issue
+|If you have taken steps to diagnose or troubleshoot the issue yourself, make sure to record the steps you took and the outcome.
 |===
