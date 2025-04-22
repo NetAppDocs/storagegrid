@@ -58,6 +58,7 @@ sidebar:
       entries:
       - section: tenant
       - section: s3
+      - section: STS      
       - section: swift
     - title: Monitor and troubleshoot
       url: "/landing-monitor-troubleshoot/index.html"  
