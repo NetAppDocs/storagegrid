@@ -11,7 +11,7 @@ summary: 'Input/output (I/O) prioritization allows you to change the relative pr
 [.lead]
 Input/output (I/O) prioritization allows you to change the relative priorities for I/O operations on the grid. 
 
-By default, the client PUT and GET I/O traffic used during the removal of erasure-coded (EC) data is given the highest priority. By lowering the priority of this traffic, other I/O tasks can possibly complete faster. The effectiveness of I/O prioritization changes is impacted by the rate of client requests, network traffic fluctuations, and other ongoing network tasks. 
+By default, client PUT and GET I/O traffic is given the highest priority over background activities such as purging erasure-coded (EC) data or EC repair. By lowering the priority of this I/O traffic, other tasks can possibly complete faster. The effectiveness of I/O prioritization changes is impacted by the rate of client requests, network traffic fluctuations, and other ongoing network tasks. 
 
 .Before you begin
 
@@ -22,16 +22,20 @@ By default, the client PUT and GET I/O traffic used during the removal of erasur
 .Steps
 
 . Select *SUPPORT* > *I/O prioritization*.
-. Select an EC repair priority:
+. (Optional) Change priorities from the default values. For example:
 +
-* *Critical*: EC repairs complete as soon as possible
-* *Background (Default)*: EC repairs complete without disrupting other grid operations
+* EC repair priority:
+
+** *Critical*: EC repairs complete as soon as possible
+** *Background (Default)*: EC repairs complete without disrupting other grid operations
 +
 NOTE: Use the default Background repair priority for grids that have RAID-based nodes.
-. If the EC repair priority is set to Background, select the EC purge priority for background operations that purge EC data:
+
+* EC purge priority for background operations that purge EC data:
 +
-* *High*: 
-* *Medium*: 
-* *Low (Default)*: 
+** *High* 
+** *Medium*
+** *Low (Default)* 
+
 . Select *Save*.
 . Monitor the link:../monitor/commonly-used-prometheus-metrics.html#where-are-prometheus-metrics-used[metrics] to assess the effect of prioritization changes.
