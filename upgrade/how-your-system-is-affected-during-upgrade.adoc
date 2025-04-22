@@ -11,9 +11,11 @@ summary: 'Learn how your StorageGRID system will be affected during upgrade.'
 [.lead]
 Learn how your StorageGRID system will be affected during upgrade.
 
-== SSH protection is enabled by default
+== External SSH access is disabled
 
-SSH access remains open during the upgrade. When the upgrade completes, SSH access is closed by default. This enables SSH protection. You can use the *Block SSH"* tab available on the *Grid Manager* > *Security Settings* page to disable SSH protection by opening the SSH port to external access. Refer to <link>. SSH access between grid nodes isn't blocked during the upgrade.
+External SSH access remains open during the upgrade. When the upgrade completes, external SSH access is disabled by default. After upgrading, you can use the *Block SSH* tab available on the *Grid Manager* > *Security Settings* page to enable manage exteral SSH access. Refer to link:../admin/manage-ssh-access.htmlk[Manage external SSH access]. 
+
+During the upgrade, SSH access between grid nodes isn't blocked.
 
 == StorageGRID upgrades are non-disruptive
 

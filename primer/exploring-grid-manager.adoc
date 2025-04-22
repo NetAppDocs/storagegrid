@@ -101,7 +101,7 @@ Security tasks include:
 * link:../admin/using-storagegrid-security-certificates.html[Managing security certificates]
 * link:../admin/manage-firewall-controls.html[Managing internal firewall controls]
 * link:../admin/kms-configuring.html[Configuring key management servers]
-* Configuring security settings including the link:../admin/manage-tls-ssh-policy.html[TLS and SSH policy], link:../admin/changing-network-options-object-encryption.html[network and object security options], and link:../admin/changing-browser-session-timeout-interface.html[interface security settings].
+* Configuring security settings including the link:../admin/manage-tls-ssh-policy.html[TLS and SSH policy], link:../admin/changing-network-options-object-encryption.html[network and object security options], link:../admin/changing-browser-session-timeout-interface.html[interface security settings], and link:../admin/manage-ssh-access.html[SSH access options].
 * Configuring the settings for a link:../admin/configuring-storage-proxy-settings.html[storage proxy] or an link:../admin/configuring-admin-proxy-settings.html[admin proxy] 
 
 === System tasks
