@@ -21,7 +21,7 @@ settings:
       url: /storagegrid-115    
 sidebar:
   entries:
-    - title: 'StorageGRID 12.0 Docs'
+    - title: 'StorageGRID 12.0 software'
       url: /index.html
     - title: StorageGRID appliances
       url: "/storagegrid-hardware.html"
