@@ -33,7 +33,7 @@ Diagnostic statuses are independent of current alerts and might not indicate ope
 +
 The Diagnostics page appears and lists the results for each diagnostic check.  The results are sorted by severity (Caution, Attention, and then Normal). Within each severity, the results are sorted alphabetically.
 +
-In this example, one diagnostic has an Attention status, and three diagnostics have a Normal status.
+In this example, all diagnostics have a Normal status.
 +
 image::../media/support_diagnostics_page.png[Support Diagnostics Page]
 
@@ -47,15 +47,17 @@ Details about the diagnostic and its current results appear. The following detai
 +
 NOTE: You can't change these thresholds.
 
- ** *Status values*: A graph and table (table not shown in screenshot) showing the status and the value of the diagnostic throughout the StorageGRID system. In this example, the current CPU utilization for every node in a StorageGRID system is shown. All node values are below the Attention and Caution thresholds, so the overall status of the diagnostic is Normal.
-+
-image::../media/support_diagnostics_cpu_utilization.png[Diagnostics status values example]
+ ** *Status values*: A table showing the status and the value of the diagnostic throughout the StorageGRID system.
+In this example, the current CPU utilization for every node in a StorageGRID system is shown. All node values are below the Attention and Caution thresholds, so the overall status of the diagnostic is Normal.
 
-. *Optional*: To see Grafana charts related to this diagnostic, select *Grafana dashboard*.
++
+image::../media/support_diagnostics_cpu_utilization.png[Support Diagnostics CPU Utilization]
+
+. *Optional*: To see Grafana charts related to this diagnostic, click the *Grafana dashboard* link.
 +
 This link is not displayed for all diagnostics.
 +
-The related Grafana dashboard appears. In this example, the Node dashboard appears showing CPU utilization over time for this node as well as other Grafana charts for the node.
+The related Grafana dashboard appears. In this example, the Node dashboard appears showing CPU Utilization over time for this node as well as other Grafana charts for the node.
 +
 NOTE: You can also access the pre-constructed Grafana dashboards from the Grafana section of the *SUPPORT* > *Tools* > *Metrics* page.
 +

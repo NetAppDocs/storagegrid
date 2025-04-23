@@ -52,7 +52,7 @@ Here is a brief summary of the consistency values that are available in StorageG
 
 include::../_include/consistency-descriptions.adoc[]
 
-NOTE: Before selecting a consistency value, link:../s3/consistency.html[read the full description of consistency]. You should understand the benefits and limitations before changing the default value.
+NOTE: Before selecting a consistency value, link:../s3/consistency-controls.html[read the full description of consistency]. You should understand the benefits and limitations before changing the default value.
 
 == Example of how consistency and ILM rules can interact
 
