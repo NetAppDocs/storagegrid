@@ -2,9 +2,13 @@
 Suppose you have a three-site grid with the following ILM rule and the following consistency:
 
 *	*ILM rule*: Create three object copies, one at the local site and one at each remote site. Use Strict ingest behavior.
-*	*Consistency*: Strong-global (object metadata is immediately distributed to all sites).
+*	*Consistency*: Strong-global (object metadata is immediately distributed to multiple sites).
 
-When a client stores an object to the grid, StorageGRID makes all three object copies and distributes metadata to all three sites before returning success to the client.
+When a client stores an object to the grid, StorageGRID makes all three object copies and does one of the following before returning success to the client:
+
+* Distributes metadata to local as well as remote sites
+* Distributes metadata to at least two sites
+* Distributes metadata to multiple sites
 
 The object is fully protected against loss at the time of the ingest successful message. For example, if the local site is lost shortly after ingest, copies of both the object data and the object metadata still exist at the remote sites. The object is fully retrievable from the other sites.
 
