@@ -112,6 +112,25 @@ In this case, you can either set the `Consistency-Control` header in the PutBuck
 
 NOTE: If you set the consistency to a different value to work around a temporary situation, be sure to set the bucket-level setting back to its original value when you are done. Otherwise, all future bucket requests will use the modified setting.
 
+== Use session policy
+
+=== What is session policy?
+
+A session policy is an inline policy that allows you to specify an optional parameter during group assumption that limits permissions granted by the group's S3 policy. The permissions of the session are the intersection of the role’s identity-based policies and the session policy. Session policy provides more precise control over temporary credentials, helps meet compliance requirements, and offers flexibility by defining permissions dynamically based on the session context. You can specify session policy by using the sesssion policy parameter with the AssumeRole API.
+
+=== Example of session policy
+
+In the following example the statement is using the... This example shows a policy statement saved in a json file: my-session-policy.json:... 
+
+----
+{
+"Statement": [
+
+{ "Effect":"Allow", "Action":"s3:GetObject", "Resource": "arn:aws:s3:::bucket1/*" }
+]
+}
+----
+
 == Use ARN in policy statements
 
 In policy statements, the ARN is used in Principal and Resource elements.
