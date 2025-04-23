@@ -18,6 +18,7 @@ After replacing a Storage Node, you must select Start Recovery in the Grid Manag
 * You have the provisioning passphrase.
 * You have deployed and configured the replacement node.
 * You have the start date of any repair jobs for erasure-coded data.
+* You have verified that the Storage Node has not been rebuilt within the last 15 days.
 
 .About this task
 

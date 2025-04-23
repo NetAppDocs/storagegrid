@@ -15,7 +15,7 @@ You can use this procedure to add or update the display names used for your grid
 
 * From the *primary Admin Node*, you are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 +
-NOTE: You can add or update display names from a non-primary Admin Node, but you must be signed in to the primary Admin Node to download a recovery package. 
+NOTE: You can add or update display names from a non-primary Admin Node, but you must be signed in to the primary Admin Node to download a Recovery Package. 
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * You have the provisioning passphrase.
 * You understand the requirements and best practices for display names. See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and nodes].
@@ -136,14 +136,14 @@ A success message is shown. The new display names are now used throughout Grid M
 
 // end tabbed area
 
-=== [[download-recovery-package]]Download the recovery package
+=== [[download-recovery-package]]Download the Recovery Package
 
-When you are done renaming items, download and save a new recovery package. The new display names for the items you renamed are included in the `Passwords.txt` file.
+When you are done renaming items, download and save a new Recovery Package. The new display names for the items you renamed are included in the `Passwords.txt` file.
 
 .Steps
 
 . Enter the provisioning passphrase.
-. Select *Download recovery package*.
+. Select *Download Recovery Package*.
 +
 The download starts immediately.
 
@@ -151,7 +151,7 @@ The download starts immediately.
 
 . Copy the `sgws-recovery-package-_id-revision_.zip` file to two safe, secure, and separate locations.
 +
-CAUTION:	The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION:	The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 . Select *Finish* to return to the first step.
 
@@ -203,6 +203,6 @@ A success message is shown. The display names for these items are no longer used
 --
 ====
 
-. <<download-recovery-package,Download and save a new recovery package>>.
+. <<download-recovery-package,Download and save a new Recovery Package>>.
 +
 Display names for the items you reverted are no longer included in the `Passwords.txt` file.

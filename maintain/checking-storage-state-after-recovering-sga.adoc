@@ -18,6 +18,13 @@ After recovering an appliance Storage Node, you must verify that the desired sta
 
 .Steps
 
-. Select *NODES* > *_Storage Node_* > *Tasks*.
-. If the *Storage state* drop-down list is set to Read-only or Offline, select *Online*.
-. Select *Save*.
+. Select *SUPPORT* > *Tools* > *Grid topology*.
+. Check the values of *Recovered Storage Node* > *LDR* > *Storage* > *Storage State -- Desired* and *Storage State -- Current*.
++
+The value of both attributes should be Online.
+
+. If the Storage State -- Desired is set to Read-only, complete the following steps:
+ .. Click the *Configuration* tab.
+ .. From the *Storage State -- Desired* drop-down list, select *Online*.
+ .. Click *Apply Changes*.
+ .. Click the *Overview* tab and confirm that the values of *Storage State -- Desired* and *Storage State -- Current* are updated to Online.
