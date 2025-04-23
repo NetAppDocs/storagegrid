@@ -44,8 +44,6 @@ indexpage:
       links:
       - title: Use a tenant account
         url: /tenant/index.html
-      - title: Use STS REST API
-        url: /sts/index.html              
       - title: Use S3 REST API
         url: /s3/index.html
       - title: Use Swift REST API (end of life)
