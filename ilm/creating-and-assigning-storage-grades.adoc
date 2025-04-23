@@ -20,7 +20,7 @@ When you first install StorageGRID, the *Default* storage grade is automatically
 
 Using custom storage grades allows you to create ILM storage pools that contain only a specific type of Storage Node. For example, you might want certain objects to be stored on your fastest Storage Nodes, such as StorageGRID all-flash storage appliances.
 
-NOTE: Storage Nodes can be configured during installation to contain object data and metadata ("combined" Storage Node), only object metadata, or only object data. Metadata-only Storage Nodes can't be assigned a storage grade. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
+NOTE: Storage Nodes can be configured during installation to contain only object metadata and not object data. Metadata-only Storage Nodes can't be assigned a storage grade. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 
 If storage grade is not a concern (for example, all Storage Nodes are identical), you can skip this procedure and use the *includes all storage grades* selection for the storage grade when you link:creating-storage-pool.html[create storage pools]. Using this selection ensures that the storage pool will include every Storage Node at the site, regardless of its storage grade.
 

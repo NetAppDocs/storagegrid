@@ -18,9 +18,6 @@ For example, tenants might configure the following types of destination endpoint
 * A locally-hosted Elasticsearch cluster
 * A local application that supports receiving Amazon Simple Notification Service messages
 * A locally-hosted Kafka cluster
-* An external or locally-hosted webhook endpoint that supports HTTP POST notification requests. 
-+
-This endpoint can be hosted on various web servers, frameworks, or data processing tools such as Fluentd.
 * A locally-hosted S3 bucket on the same or another instance of StorageGRID
 * An external endpoint, such as an endpoint on Amazon Web Services.
 
@@ -42,5 +39,4 @@ If you use a non-transparent proxy server, you must also link:configuring-storag
 
 link:../tenant/index.html[Use a tenant account]
 
-// 2025 MAR 31, SGWS-33482
 // 2023 SEP 15, SGWS-25330

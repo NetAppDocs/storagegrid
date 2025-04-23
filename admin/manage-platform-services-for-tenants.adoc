@@ -13,19 +13,17 @@ Platform services include CloudMirror replication, event notifications, and the 
 
 If you enable platform services for S3 tenant accounts, you must configure your grid so that tenants can access the external resources necessary to use these services.
 
-Platform services aren't supported for link:../tenant/manage-branch-buckets.html[branch buckets].
-
 == CloudMirror replication
 The StorageGRID CloudMirror replication service is used to mirror specific objects from a StorageGRID bucket to a specified external destination.
 
 For example, you might use CloudMirror replication to mirror specific customer records into Amazon S3 and then leverage AWS services to perform analytics on your data.
 
-CloudMirror replication has some important similarities and differences with the cross-grid replication feature. To learn more, see link:../admin/grid-federation-compare-cgr-to-cloudmirror.html[Compare cross-grid replication and CloudMirror replication].
+NOTE: CloudMirror replication has some important similarities and differences with the cross-grid replication feature. To learn more, see link:../admin/grid-federation-compare-cgr-to-cloudmirror.html[Compare cross-grid replication and CloudMirror replication].
 
-NOTE: CloudMirror replication isn't supported if the source bucket has S3 Object Lock enabled.
+NOTE: CloudMirror replication is not supported if the source bucket has S3 Object Lock enabled.
 
 == Notifications
-Per-bucket event notifications are used to send notifications about specific actions performed on objects to a specified external Kafka cluster, webhook endpoint, or Amazon Simple Notification Service.
+Per-bucket event notifications are used to send notifications about specific actions performed on objects to a specified external Kafka cluster or Amazon Simple Notification Service.
 
 For example, you could configure alerts to be sent to administrators about each object added to a bucket, where the objects represent log files associated with a critical system event.
 
@@ -56,5 +54,4 @@ Before using platform services, be aware of the following recommendations:
 
 * link:../monitor/index.html[Monitor StorageGRID]
 
-// 2025 MAR 31, SGWS-33482
 // 2023 SEP 25, SGWS-25330

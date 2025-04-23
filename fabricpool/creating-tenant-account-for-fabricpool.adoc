@@ -58,7 +58,7 @@ FabricPool tenants don't typically need to use S3 Select.
 
 .. Optionally, select *Use grid federation connection* to allow the tenant to use a link:../admin/grid-federation-overview.html[grid federation connection] for account clone and cross-grid replication. Then, select the grid federation connection to use.
 
-. For the Define root access step, specify which user will have the initial Root access permission for the tenant account, based on whether your StorageGRID system uses link:../admin/using-identity-federation.html[identity federation], link:../admin/how-sso-works.html[single sign-on (SSO)], or both. 
+. For the Define root access step, specify which user will have the initial Root access permission for the tenant account, based on whether your StorageGRID system uses link:../admin/using-identity-federation.html[identity federation], link:../admin/configuring-sso.html[single sign-on (SSO)], or both. 
 +
 [cols="1a,2a" options="header"]
 |===

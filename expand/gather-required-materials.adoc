@@ -30,7 +30,7 @@ For details, see the instructions for <<download-and-extract-install-files,downl
 * link:../admin/web-browser-requirements.html[Supported web browser]
 
 | `Passwords.txt` file
-| Contains the passwords required to access grid nodes on the command line. Included in the recovery package.
+| Contains the passwords required to access grid nodes on the command line. Included in the Recovery Package.
 
 | Provisioning passphrase
 | The passphrase is created and documented when the StorageGRID system is first installed. The provisioning passphrase is not in the `Passwords.txt` file.
