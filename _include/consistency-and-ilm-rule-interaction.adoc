@@ -1,4 +1,4 @@
-//shared in ilm/advantages-disadvantages-of-ingest-options.adoc and s3/consistency.adoc//
+//shared in ilm/advantages-disadvantages-of-ingest-options.adoc and s3/consistency-controls.adoc//
 Suppose you have a two-site grid with the following ILM rule and the following consistency:
 
 * *ILM rule*: Create two object copies, one at the local site and one at a remote site. Use Strict ingest behavior.

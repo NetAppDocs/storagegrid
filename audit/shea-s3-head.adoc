@@ -2,14 +2,14 @@
 permalink: audit/shea-s3-head.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SHEA, S3 HEAD
-summary: 'When an S3 client issues a HEAD operation, a request is made to check for the existence of an object or bucket and retrieve the metadata about an object. This message is issued by the server if the operation is successful.'
+summary: 'When an S3 client issues a HEAD transaction, a request is made to check for the existence of an object or bucket and retrieve the metadata about an object. This message is issued by the server if the transaction is successful.'
 ---
 = SHEA: S3 HEAD
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When an S3 client issues a HEAD operation, a request is made to check for the existence of an object or bucket and retrieve the metadata about an object. This message is issued by the server if the operation is successful.
+When an S3 client issues a HEAD transaction, a request is made to check for the existence of an object or bucket and retrieve the metadata about an object. This message is issued by the server if the transaction is successful.
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -132,4 +132,3 @@ Version ID
 a|
 The version ID of the specific version of an object that was requested. Operations on buckets and objects in unversioned buckets don't include this field.
 |===
-// 2025-02-26, SGRIDOC-144

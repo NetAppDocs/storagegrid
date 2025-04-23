@@ -21,7 +21,7 @@ indexpage:
     - title: Admin group permissions
       url: ../admin/admin-group-permissions.html
     - title: Configure single sign-on
-      url:  ../admin/how-sso-works.html
+      url:  ../admin/configuring-sso.html
   - title: Use grid federation
     links:
     - title: What is grid federation?

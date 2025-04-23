@@ -12,8 +12,8 @@ entries:
     entries:
     - title: Conflicting client requests
       url: "/s3/conflicting-client-requests.html"
-    - title: Consistency
-      url: "/s3/consistency.html"
+    - title: Consistency values
+      url: "/s3/consistency-controls.html"
     - title: Object versioning
       url: "/s3/object-versioning.html"
     - title: Use S3 REST API to configure S3 Object Lock

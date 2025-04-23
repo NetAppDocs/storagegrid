@@ -1,5 +1,5 @@
 settings:
-  name: "StorageGRID"
+  name: "StorageGRID software"
   search: "storagegrid-enable,storagegrid,storagegrid-appliances"
   internal:
     pdf_enabled: true
@@ -21,7 +21,7 @@ settings:
       url: /storagegrid-115    
 sidebar:
   entries:
-    - title: 'StorageGRID 12.0 Docs'
+    - title: 'StorageGRID 12.0 software'
       url: /index.html
     - title: StorageGRID appliances
       url: "/storagegrid-hardware.html"
@@ -82,7 +82,7 @@ sidebar:
       entries:
       - title: Grid maintenance
         url: "/maintain/index.html"
-      - title: Download recovery package
+      - title: Download Recovery Package
         url: "/maintain/downloading-recovery-package.html"
       - title: Decommission nodes or site
         entries:
@@ -100,10 +100,6 @@ sidebar:
               url: "/maintain/considerations-for-decommissioning-storage-nodes.html"
             - title: ADC quorum
               url: "/maintain/understanding-adc-service-quorum.html"
-            - title: Move ADC service
-              url: "/maintain/move-adc-service.html"
-            - title: Convert to data-only node
-              url: "/maintain/convert-to-data-only-node.html"
             - title: Review ILM policy and storage configuration
               url: "/maintain/reviewing-ilm-policy-and-storage-configuration.html"
             - title: Consolidate Storage Nodes

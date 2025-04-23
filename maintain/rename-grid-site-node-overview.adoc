@@ -71,7 +71,7 @@ Included in parentheses when the item is renamed:
 
 `admin@DISPLAY-NAME(SYSTEM-NAME):~ $`
 
-| `Passwords.txt` file in the recovery package
+| `Passwords.txt` file in the Recovery Package
 | Shown as `Server Name`
 | Shown as `Display Name`
 
