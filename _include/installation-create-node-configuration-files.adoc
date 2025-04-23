@@ -706,6 +706,8 @@ Examples:
 
 === Port remap keys
 
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[removing port remaps on bare metal hosts].
+
 ==== PORT_REMAP
 [cols="4a,2a" option="header"]
 |===
