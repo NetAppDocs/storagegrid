@@ -87,7 +87,7 @@ If you are performing an expansion or recovery operation:
 
 If you need to remap any of the node's ports, don't power on the new node until the port remap configuration is complete.
 
-NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, see link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[removing port remaps on bare metal hosts].
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 
 .Steps
 
