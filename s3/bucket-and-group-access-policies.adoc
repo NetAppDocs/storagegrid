@@ -116,17 +116,18 @@ NOTE: If you set the consistency to a different value to work around a temporary
 
 === What is session policy?
 
-A session policy is an inline policy that allows you to specify an optional parameter during group assumption that limits permissions granted by the group's S3 policy. The permissions of the session are the intersection of the role’s identity-based policies and the session policy. Session policy provides more precise control over temporary credentials, helps meet compliance requirements, and offers flexibility by defining permissions dynamically based on the session context. You can specify session policy by using the sesssion policy parameter with the AssumeRole API.
+A session policy is an access policy that restricts the permissions available during a specific session, such as when a user assumes a group. It's an inline policy passed during the session, setting a limit on the overall permissions available, even if the group itself has broader permissions. Think of it as a temporary, more granular permission set that overrides the role's standard permissions for that specific session. 
 
 === Example of session policy
 
-In the following example the statement is using the... This example shows a policy statement saved in a json file: my-session-policy.json:... 
+Explain the example here.
+ The session policy can be saved in a json file while calling the AssumeRole API.
 
 ----
 {
 "Statement": [
-
 { "Effect":"Allow", "Action":"s3:GetObject", "Resource": "arn:aws:s3:::bucket1/*" }
+
 ]
 }
 ----
