@@ -81,6 +81,7 @@ m| /var/local/log/nms.log
 * Contains XML bundle updates resulting from configuration changes made in the system.
 * Contains error messages related to the attribute downsampling done once a day.
 * Contains Java web server error messages, for example, page generation errors and HTTP Status 500 errors.
+* Includes logs related to the Autosupport feature
 | Admin Nodes
 
 m| /var/local/log/nms.errlog
