@@ -2,23 +2,23 @@
 permalink: admin/manage-ssh-access.html
 sidebar: sidebar
 keywords: security, external, ssh, access
-summary: 'You can manage SSH protection by enabling or disabling external SSH access.'
+summary: 'Manage SSH protection by blocking or allowing external SSH access.'
 ---
 = Manage external SSH access
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can manage SSH protection by enabling or disabling external SSH access.
+Manage SSH protection by blocking or allowing external SSH access.
 
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have link:admin-group-permissions.html[Root access permission].
 
-.About this task
+.About this task 
 
-External SSH access is disabled by default. NetApp recommends keeping this access disabled to enhance system security. You can enable external SSH access when it’s required, for example, to perform troubleshooting tasks. 
+To enhance system security, external SSH access is blocked by default. If you need to perform tasks that require inbound SSH access, such as troubleshooting, temporarily allow external SSH access. 
 
 .Steps
 . Select *CONFIGURATION* > *Security* > *Security settings*.
@@ -27,5 +27,6 @@ External SSH access is disabled by default. NetApp recommends keeping this acces
 .. Select the checkbox to block access (default).
 .. Unselect the checkbox to allow access.
 . Select *Save*.
+. If you've allowed external SSH access for a specific task, block access when you are finished with the task.
 
 // 2025 APR 22, SGWS-35048
