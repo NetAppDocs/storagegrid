@@ -1,10 +1,10 @@
 ---
 permalink: admin/requirements-for-sso.html
 sidebar: sidebar
-keywords: sso requirements, single sign on requirements, identity federation requirements for sso, pingfederate, azure ad, ad fs
+keywords: sso requirements, single sign on requirements, identity federation requirements for sso, pingfederate, entra id, ad fs
 summary: 'Before enabling single sign-on for a StorageGRID system, review the requirements and considerations.'
 ---
-= Requirements and considerations for single sign-on
+= Requirements and considerations for SSO
 :icons: font
 :imagesdir: ../media/
 
@@ -16,7 +16,7 @@ Before enabling single sign-on (SSO) for a StorageGRID system, review the requir
 StorageGRID supports the following SSO identity providers (IdP):
 
 * Active Directory Federation Service (AD FS)
-* Azure Active Directory (Azure AD)
+* Entra ID
 * PingFederate
 
 You must configure identity federation for your StorageGRID system before you can configure an SSO identity provider. The type of LDAP service you use for identity federation controls which type of SSO you can implement.
@@ -26,12 +26,12 @@ You must configure identity federation for your StorageGRID system before you ca
 | Configured LDAP service type |Options for SSO identity provider
 
 | Active Directory
-|* Active Directory
-* Azure
+| * Active Directory
+* Entra ID
 * PingFederate
 
-| Azure
-| Azure
+| Entra ID
+| Entra ID
 
 |===
 

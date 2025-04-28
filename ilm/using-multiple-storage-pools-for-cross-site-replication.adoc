@@ -17,7 +17,7 @@ Replication and erasure coding require different storage pool configurations:
 
 * To use erasure coding for site-loss protection, link:guidelines-for-creating-storage-pools.html#guidelines-for-storage-pools-used-for-erasure-coded-copies[create storage pools that consist of multiple sites]. Then create ILM rules that use one storage pool consisting of multiple sites and any available erasure-coding schema.
 
-CAUTION: When configuring your StorageGRID deployment for site-loss protection, you must also take into account the effects of link:data-protection-options-for-ingest.html[ingest options] and link:../s3/consistency-controls.html[consistency].
+CAUTION: When configuring your StorageGRID deployment for site-loss protection, you must also take into account the effects of link:data-protection-options-for-ingest.html[ingest options] and link:../s3/consistency.html[consistency].
 
 == Replication example
 

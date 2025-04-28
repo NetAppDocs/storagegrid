@@ -8,7 +8,7 @@ The audit log directory and applicable nodes depend on your audit destination se
 | Local nodes (default)
 | `/var/local/log/localaudit.log`
 | Admin Nodes/local nodes
-|* Admin Nodes (Primary and Non-Primary): `/var/local/audit/export/audit.log`
+|* Admin Nodes (primary and non-primary): `/var/local/audit/export/audit.log`
 * All nodes: The `/var/local/log/localaudit.log` file is typically empty or missing in this mode.
 | External syslog server
 | `/var/local/log/localaudit.log`

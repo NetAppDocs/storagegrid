@@ -56,7 +56,7 @@ NOTE: Metrics that include ``_private_`` in their names are intended for interna
 * *ntp-servers*: Operations to list or update external Network Time Protocol (NTP) servers.
 * *objects*: Operations on objects and object metadata.
 * *recovery*: Operations for the recovery procedure.
-* *recovery-package*: Operations to download the Recovery Package.
+* *recovery-package*: Operations to download the recovery package.
 * *regions*: Operations to view and create regions.
 * *s3-object-lock*: Operations on global S3 Object Lock settings.
 * *server-certificate*: Operations to view and update Grid Manager server certificates.
