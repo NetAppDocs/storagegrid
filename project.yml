@@ -187,7 +187,7 @@ sidebar:
             url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
         - title: Port remap procedures
           entries: 
-          - title: Remove port remaps
+          - title: Remove port remaps on StorageGRID appliances
             url: "/maintain/removing-port-remaps.html"
           - title: Remove port remaps on bare metal hosts
             url: "/maintain/removing-port-remaps-on-bare-metal-hosts.html"

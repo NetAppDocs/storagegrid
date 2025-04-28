@@ -18,6 +18,8 @@ If enterprise networking policies restrict access to any of the ports, you can d
 * Use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports.
 * Remap ports when deploying nodes. However, you should not remap load balancer endpoints. See the information about port remapping for your StorageGRID node:
 
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps.html[Remove port remaps on StorageGRID appliances] or link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
+
 ** link:../rhel/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Red Hat Enterprise Linux]
 
 ** link:../ubuntu/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Ubuntu or Debian]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, remove port remap, removing port remap, port remap
 summary: 'If you want to configure an endpoint for the Load Balancer service, and you want to use a port that has already been configured as the Mapped-To Port of a port remap, you must first remove the existing port remap, or the endpoint will not be effective. You must run a script on each Admin Node and Gateway Node that has conflicting remapped ports to remove all of the node’s port remaps.'
 ---
-= Remove port remaps
+= Remove port remaps on StorageGRID appliances
 :icons: font
 :imagesdir: ../media/
 
