@@ -108,7 +108,7 @@ Running provisioning...
 
 Updating grid network configuration on Name
 ----
-. Download a new Recovery Package from the Grid Manager.
+. Download a new recovery package from the Grid Manager.
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
