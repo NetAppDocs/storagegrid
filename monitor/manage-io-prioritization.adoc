@@ -11,31 +11,20 @@ summary: 'Input/output (I/O) prioritization allows you to change the relative pr
 [.lead]
 Input/output (I/O) prioritization allows you to change the relative priorities for I/O operations on the grid. 
 
-By default, client PUT and GET I/O traffic is given the highest priority over background activities such as purging erasure-coded (EC) data or EC repair. By lowering the priority of this I/O traffic, other tasks can possibly complete faster. The effectiveness of I/O prioritization changes is impacted by the rate of client requests, network traffic fluctuations, and other ongoing network tasks. 
+By default, client PUT and GET I/O traffic is given the highest priority over background activities such as purging erasure-coded (EC) data or EC repair. By increasing the priority of purging erasure-coded (EC) data or EC repair activities, these tasks can possibly complete faster. The effectiveness of I/O prioritization changes is impacted by the rate of client requests, network traffic fluctuations, and other ongoing network tasks. 
 
 .Before you begin
 
 * Review the I/O prioritization page, to determine which options might impact your grid.
 * Assess whether the ongoing client traffic can safely handle longer wait times or client timeouts.
-* Be prepared to monitor the effect of the prioritization change and adjust as necessary. These changes might need hours to take effect.
+* Be prepared to monitor the effect of the prioritization change and adjust as necessary. These changes are implemented quickly but their effect might need hours to become visible.
 
 .Steps
 
 . Select *SUPPORT* > *I/O prioritization*.
-. (Optional) Change priorities from the default values. For example:
+. (Optional) Change the EC repair priority and the EC purge priority, for background operations that purge EC data, from their default values.
 +
-* EC repair priority:
-
-** *Critical*: EC repairs complete as soon as possible
-** *Background (Default)*: EC repairs complete without disrupting other grid operations
-+
-NOTE: Use the default Background repair priority for grids that have RAID-based nodes.
-
-* EC purge priority for background operations that purge EC data:
-+
-** *High* 
-** *Medium*
-** *Low (Default)* 
+NOTE: Use the default Background EC repair priority for grids that have RAID-based nodes.
 
 . Select *Save*.
 . Monitor the link:../monitor/commonly-used-prometheus-metrics.html#where-are-prometheus-metrics-used[metrics] to assess the effect of prioritization changes.
