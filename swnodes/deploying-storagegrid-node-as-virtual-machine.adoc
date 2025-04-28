@@ -87,6 +87,8 @@ If you are performing an expansion or recovery operation:
 
 If you need to remap any of the node's ports, don't power on the new node until the port remap configuration is complete.
 
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
+
 .Steps
 
 . Using VCenter, deploy an OVF template.
@@ -199,6 +201,8 @@ NOTE: Don't remap the ports used in load balancer endpoints.
 
  .. In the *Properties* table, locate PORT_REMAP_INBOUND and PORT_REMAP.
  .. To symmetrically map both inbound and outbound communications for a port, select *PORT_REMAP*.
++
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 +
 NOTE: If only PORT_REMAP is set, the mapping that you specify applies to both inbound and outbound communications. If PORT_REMAP_INBOUND is also specified, PORT_REMAP applies only to outbound communications.
 
