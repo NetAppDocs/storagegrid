@@ -44,7 +44,7 @@ NOTE: Commenting out a failed volume in the `/etc/fstab` file is insufficient. T
  ** When storage volume 0 is unmounted, prompts and messages will indicate that the Cassandra service is being stopped.
  ** You will be prompted to rebuild the Cassandra database if it is necessary.
   *** Review the warnings. If none of them apply, rebuild the Cassandra database. Enter: *y*
-  *** If more than one Storage Node is offline or if another Storage Node has been rebuilt in the last 15 days. Enter: *n*
+  *** If more than one Storage Node is offline. Enter: *n*
 +
 The script will exit without rebuilding Cassandra. Contact technical support.
  ** For each rangedb drive on the Storage Node, when you are asked: `Reformat the rangedb drive _<name>_ (device _<major number>:<minor number>_)? [y/n]?`, enter one of the following responses:

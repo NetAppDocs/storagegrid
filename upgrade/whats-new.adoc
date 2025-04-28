@@ -2,7 +2,11 @@
 permalink: upgrade/whats-new.html
 sidebar: sidebar
 keywords: what is new in StorageGRID 12.0
+<<<<<<< HEAD
 summary: 'This release of StorageGRID introduces the following features.'
+=======
+summary: 'This release of StorageGRID introduces the following features and functional changes.'
+>>>>>>> parent of 407bb98 (Merge pull request #264 from NetAppDocs/revert-261-revert-258-update-repo-names-titles-lh)
 ---
 = What's new in StorageGRID 12.0
 :icons: font
