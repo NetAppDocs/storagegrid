@@ -37,3 +37,4 @@ These instructions describe how to:
 * link:considerations-for-external-syslog-server.html[Use an external syslog server] to collect audit information
 * link:using-snmp-monitoring.html[Use SNMP for monitoring]
 * link:using-charts-and-reports.html[Obtain additional StorageGRID data], including metrics and diagnostics
+* link:manage-io-prioritization.html[Change I/O prioritization] to change the relative priorities for I/O operations
