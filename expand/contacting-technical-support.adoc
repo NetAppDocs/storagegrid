@@ -17,7 +17,9 @@ Before you contact technical support, collect the required log files to assist i
 . Connect to the expansion node that has experienced failures:
  .. Enter the following command:``ssh -p 8022 admin@_grid_node_IP_``
 +
-NOTE: Port 8022 is the SSH port of the base OS, while port 22 is the SSH port of the container engine running StorageGRID.
+Port 8022 is the SSH port of the base OS, while port 22 is the SSH port of the container engine running StorageGRID. 
++
+NOTE: External SSH access is blocked by default. To temporarily allow external SSH access, refer to link: https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[Manage external SSH access].
 
  .. Enter the password listed in the `Passwords.txt` file.
  .. Enter the following command to switch to root: `su -`
@@ -47,3 +49,5 @@ a|
 * `/etc/storagegrid/nodes/<node-name>.conf` (for each failed node)
 * `/var/log/storagegrid/nodes/<node-name>.log` (for each failed node; might not exist)
 |===
+
+// 2025 APR 29, SGWS-35050
