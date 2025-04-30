@@ -26,10 +26,10 @@ If any StorageGRID nodes are deployed on Linux hosts, link:linux-installing-rpm-
 [role="quick-margin-para"]
 From the primary Admin Node, access the StorageGRID Upgrade page and upload the upgrade file and the hotfix file, if required.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Download recovery package
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Download Recovery Package
 
 [role="quick-margin-para"]
-Download the current recovery package before you start the upgrade.
+Download the current Recovery Package before you start the upgrade.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Run upgrade prechecks
 
@@ -43,10 +43,10 @@ Upgrade prechecks help you detect issues, so you can resolve them before you sta
 
 When you start the upgrade, the prechecks are run again and the primary Admin Node is upgraded automatically. You can't access the Grid Manager while the primary Admin Node is being upgraded. Audit logs will also be unavailable. This upgrade can take up to 30 minutes.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Download recovery package
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Download Recovery Package
 
 [role="quick-margin-para"]
-After the primary Admin Node has been upgraded, download a new recovery package.
+After the primary Admin Node has been upgraded, download a new Recovery Package.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven] Approve nodes
 

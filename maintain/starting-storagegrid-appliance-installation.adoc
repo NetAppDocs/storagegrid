@@ -29,7 +29,7 @@ To install StorageGRID on an appliance Storage Node:
 * You specify or confirm the IP address of the primary Admin Node and the hostname (system name) of the node.
 * You start the installation and wait as volumes are configured and the software is installed.
 +
-NOTE: When recovering an appliance Storage Node, reinstall it with the same storage type as the original appliance (combined, metadata-only, or data-only). If you specify a different storage type, the recovery will fail and require reinstallation of the appliance with the correct storage type specified.
+NOTE: When recovering an appliance Storage Node, reinstall it with the same storage type as the original appliance (Combined, Metadata-only, or Data-only). If you specify a different storage type, the recovery will fail and require reinstallation of the appliance with the correct storage type specified.
 * Partway through the process, the installation pauses. To resume the installation, you must sign into the Grid Manager and configure the pending Storage Node as a replacement for the failed node.
 * After you have configured the node, the appliance installation process completes, and the appliance is rebooted.
 
@@ -70,6 +70,8 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 If the *Start Installation* button is not enabled, you might need to change the network configuration or port settings. For instructions, see the maintenance instructions for your appliance.
 
 . From the StorageGRID Appliance Installer home page, click *Start Installation*.
++
+image::../media/appliance_installer_home_start_installation_enabled.gif[This figure is described by the surrounding text.]
 +
 The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 +

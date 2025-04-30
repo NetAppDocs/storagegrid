@@ -85,9 +85,9 @@ The node is connected to the grid.
 
 *Resolved alerts*: You can search and view a history of alerts that have been resolved.
 
-Optionally, you have watched the video:
+Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2eea81c5-8323-417f-b0a0-b1ff008506c1[Video: Alerts overview^]
 
-video::2eea81c5-8323-417f-b0a0-b1ff008506c1[panopto, title="Alerts overview"]
+image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2eea81c5-8323-417f-b0a0-b1ff008506c1" alt="Video: Alerts overview", window=_blank]
 
 The following table describes the information shown in the Grid Manager for current and resolved alerts.
 

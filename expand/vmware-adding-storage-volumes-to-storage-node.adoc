@@ -69,12 +69,15 @@ The status is updated automatically.
 +
 `Ctrl+C`
 . Verify that the Storage Node is online:
-.. Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-.. Select *NODES* > *_Storage Node_* > *Tasks*.
-.. If the *Storage state* drop-down list is set to Read-only or Offline, select *Online*.
-.. Select *Save*.
-. To see the new object stores, select *Storage*.
-. View the details in the *Volumes* table.
+ .. Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+ .. Select *SUPPORT* > *Tools* > *Grid topology*.
+ .. Select *_site_* > *_Storage Node_* > *LDR* > *Storage*.
+ .. Select the *Configuration* tab and then the *Main* tab.
+ .. If the *Storage State - Desired* drop-down list is set to Read-only or Offline, select *Online*.
+ .. Select *Apply Changes*.
+. To see the new object stores:
+ .. Select *NODES* > *_site_* > *_Storage Node_* > *Storage*.
+ .. View the details in the *Object Stores* table.
 
 .Result
 You can use the expanded capacity of the Storage Nodes to save object data.

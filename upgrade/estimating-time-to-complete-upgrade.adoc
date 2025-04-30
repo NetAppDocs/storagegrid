@@ -37,7 +37,7 @@ Running the upgrade prechecks before starting the upgrade lets you resolve any e
 | 
 
 | Upgrade other grid nodes
-| The software on all other grid nodes is upgraded in the order in which you approve the nodes. One Admin or Gateway Node is upgraded at the same time as one Storage Node.
+| The software on all other grid nodes is upgraded, in the order in which you approve the nodes. Every node in your system will be brought down one at a time.
 | 15 minutes to 1 hour per node, with appliance nodes requiring the most time
 
 *Note*: For appliance nodes, the StorageGRID Appliance Installer is automatically updated to the latest release.

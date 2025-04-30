@@ -20,7 +20,7 @@ You enable notifications for a bucket by creating notification configuration XML
 
 .About this task
 
-You configure event notifications by associating notification configuration XML with a source bucket. The notification configuration XML follows S3 conventions for configuring bucket notifications, with the destination Amazon SNS topic, Kafka topic, or webhook endpoint specified as the URN of an endpoint.
+You configure event notifications by associating notification configuration XML with a source bucket. The notification configuration XML follows S3 conventions for configuring bucket notifications, with the destination Kafka or Amazon SNS topic specified as the URN of an endpoint.
 
 For general information about event notifications and how to configure them, refer to the https://docs.aws.amazon.com/s3/[Amazon documentation^]. For information about how StorageGRID implements the S3 bucket notification configuration API, refer to the link:../s3/index.html[instructions for implementing S3 client applications].
 
@@ -30,7 +30,7 @@ Note the following requirements and characteristics when configuring event notif
 
 * Although event notification can be configured on a bucket with S3 Object Lock enabled, the S3 Object Lock metadata (including Retain Until Date and Legal Hold status) of the objects won't be included in the notification messages.
 
-* After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Amazon SNS topic, Kafka topic, or webhook endpoint used as the destination.
+* After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Amazon SNS or Kafka topic used as the destination endpoint.
 
 * If you enable event notifications for a bucket that contains objects, notifications are sent only for actions that are performed after the notification configuration is saved.
 
@@ -74,7 +74,7 @@ NOTE: Platform services must be enabled for each tenant account by a StorageGRID
 +
 In the example, an event notification is sent whenever an object is created with the `images/` prefix.
 
- .. Confirm that a notification has been delivered to the destination Amazon SNS topic, Kafka topic, or webhook endpoint.
+ .. Confirm that a notification has been delivered to the destination Amazon SNS or Kafka topic.
 +
 For example, if your destination topic is hosted on the Amazon SNS, you could configure the service to send you an email when the notification is delivered.
 +
@@ -121,9 +121,10 @@ If the notification is received at the destination topic, you have successfully 
 
 .Related information
 
-* link:understanding-notifications-for-buckets.html[Understand notifications for buckets]
-* link:../s3/index.html[Use S3 REST API]
-* link:creating-platform-services-endpoint.html[Create platform services endpoint]
+link:understanding-notifications-for-buckets.html[Understand notifications for buckets]
 
-// 2025 MAR 31, SGWS-33482
+link:../s3/index.html[Use S3 REST API]
+
+link:creating-platform-services-endpoint.html[Create platform services endpoint]
+
 // 2023 SEP 15, SGWS-25330
