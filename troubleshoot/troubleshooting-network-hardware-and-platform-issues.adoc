@@ -115,7 +115,7 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 |The node. The default is the local node.
 |===
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you're finished the task.
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you've finished the task.
 
 == Node network reception frame error alert
 
