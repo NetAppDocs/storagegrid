@@ -23,7 +23,7 @@ NOTE: This procedure does not work for a StorageGRID system deployed as a contai
 
 .Steps
 
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[temporarily allow external SSH access].
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[temporarily allow access].
 
 . Log in to the node.
  .. Enter the following command: `ssh -p 8022 admin@node_IP`
