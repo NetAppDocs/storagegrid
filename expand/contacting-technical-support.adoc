@@ -19,7 +19,7 @@ Before you contact technical support, collect the required log files to assist i
 +
 Port 8022 is the SSH port of the base OS, while port 22 is the SSH port of the container engine running StorageGRID. 
 +
-NOTE: External SSH access is blocked by default. To temporarily allow external SSH access, refer to link: https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[Manage external SSH access].
+NOTE: External SSH access is blocked by default. To temporarily allow external SSH access, refer to link:https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[Manage external SSH access].
 
  .. Enter the password listed in the `Passwords.txt` file.
  .. Enter the following command to switch to root: `su -`
