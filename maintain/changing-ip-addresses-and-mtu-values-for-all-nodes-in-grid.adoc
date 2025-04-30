@@ -29,7 +29,7 @@ NOTE: If the existing NTP servers will not be accessible to the grid on the new 
 +
 NOTE: If the existing DNS servers will not be accessible to the grid on the new IP addresses, add the new DNS servers before you perform the change-ip procedure.
 +
-NOTE: If SSO is enabled for your StorageGRID system and any relying party trusts were configured using Admin Node IP addresses (instead of fully qualified domain names, as recommended), be prepared to update or reconfigure these relying party trusts in Active Directory Federation Services (AD FS) immediately after you change IP addresses. See link:../admin/configuring-sso.html[Configure single sign-on].
+NOTE: If SSO is enabled for your StorageGRID system and any relying party trusts were configured using Admin Node IP addresses (instead of fully qualified domain names, as recommended), be prepared to update or reconfigure these relying party trusts in Active Directory Federation Services (AD FS) immediately after you change IP addresses. See link:../admin/configure-sso.html[Configure single sign-on].
 +
 NOTE: If necessary, add the new subnet for the new IP addresses.
 
@@ -98,7 +98,7 @@ NOTE: The entire grid must be shut down, so that all nodes are down at the same 
 . After the grid starts up successfully:
  .. If you added new NTP servers, delete the old NTP server values.
  .. If you added new DNS servers, delete the old DNS server values.
-. Download the new Recovery Package from the Grid Manager.
+. Download the new recovery package from the Grid Manager.
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 

@@ -253,7 +253,7 @@ link:../tenant/creating-s3-bucket.html[Create S3 bucket].
 +
 Tenant names don't need to be unique. When the tenant account is created, it receives a unique, numeric account ID.
 
-. Define root access for the tenant account, based on whether your StorageGRID system uses link:using-identity-federation.html[identity federation], link:configuring-sso.html[single sign-on (SSO)], or both. 
+. Define root access for the tenant account, based on whether your StorageGRID system uses link:using-identity-federation.html[identity federation], link:how-sso-works.html[single sign-on (SSO)], or both. 
 +
 [cols="1a,2a" options="header"]
 |===

@@ -140,8 +140,6 @@ If the *Start Installation* button is not enabled, you might need to change the 
 
 . From the StorageGRID Appliance Installer home page, select *Start Installation*.
 +
-image::../media/appliance_installer_home_start_installation_enabled.gif[This image is described by the surrounding text.]
-+
 The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 
 . If your expansion includes multiple appliance nodes, repeat the previous steps for each appliance.
@@ -151,8 +149,6 @@ NOTE: If you need to deploy multiple appliance Storage Nodes at one time, you ca
 . If you need to manually access the Monitor Installation page, select *Monitor Installation* from the menu bar.
 +
 The Monitor Installation page shows the installation progress.
-+
-image::../media/monitor_installation_configure_storage.gif[This image is explained by the surrounding text.]
 +
 The blue status bar indicates which task is currently in progress. Green status bars indicate tasks that have completed successfully.
 +
@@ -173,6 +169,4 @@ During this stage, the installer copies the base operating system image for Stor
 . Continue monitoring the installation progress until a message appears in the console window, prompting you to use the Grid Manager to approve the node.
 +
 NOTE: Wait until all nodes you added in this expansion are ready for approval before going to the Grid Manager to approve the nodes.
-+
-image::../media/monitor_installation_install_sgws.gif[This image is explained by the surrounding text.]
 
