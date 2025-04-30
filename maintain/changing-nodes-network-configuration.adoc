@@ -168,6 +168,6 @@ After you apply or stage changes, a new recovery package is generated as a resul
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you've finished changing the node network configuration.
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you're finished changing the node network configuration.
 
 // 2025 APR 30, SGWS-34284

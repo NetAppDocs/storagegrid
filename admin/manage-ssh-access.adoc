@@ -27,6 +27,5 @@ To enhance system security, external SSH access is blocked by default. If you ne
 .. Select the checkbox to block access (default).
 .. Unselect the checkbox to allow access.
 . Select *Save*.
-. If you've allowed external SSH access for a specific task, block access when you are finished with the task.
 
 // 2025 APR 22, SGWS-35048

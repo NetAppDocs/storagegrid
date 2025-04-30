@@ -130,7 +130,7 @@ This LED is on when cached data needs to be written to the drives. You must wait
 +
 The StorageGRID grid has now been shut down.
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you've finished shutting down the nodes.
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you're finished shutting down the nodes.
 
 == Start up grid nodes
 
