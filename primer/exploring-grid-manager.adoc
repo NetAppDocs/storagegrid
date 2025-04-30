@@ -128,7 +128,7 @@ Access control tasks include:
 * link:../admin/managing-users.html[Managing admin users]
 * Changing the link:../admin/changing-provisioning-passphrase.html[provisioning passphrase] or link:../admin/change-node-console-password.html[node console passwords]
 * link:../admin/using-identity-federation.html[Using identity federation]
-* link:../admin/configuring-sso.html[Configuring SSO]
+* link:../admin/how-sso-works.html[Configure SSO]
 
 == Maintenance menu
 

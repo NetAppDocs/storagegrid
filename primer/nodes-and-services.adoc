@@ -90,7 +90,7 @@ The following is a complete list of StorageGRID services.
 
 | Cassandra
 |	Manages the distributed database for object metadata.
-|	Storage Nodes (except Data-only)
+|	Storage Nodes (except data-only)
 
 | Cassandra Reaper
 | Performs automatic repairs of object metadata.
