@@ -16,10 +16,10 @@ You must create at least one endpoint of the correct type before you can enable 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * Platform services were enabled for your tenant account by a StorageGRID administrator.
 * You belong to a user group that has the link:tenant-management-permissions.html[Manage endpoints or Root access permission].
-* The resource referenced by the platform services endpoint has been created:
+* The resource referenced by the platform services endpoint have been created:
  ** CloudMirror replication: S3 bucket
- ** Event notification: Amazon Simple Notification Service (Amazon SNS) topic, Kafka topic, or webhook endpoint
- ** Search notification: Elasticsearch index, if the destination cluster isn't configured to automatically create indexes.
+ ** Event notification: Amazon Simple Notification Service (Amazon SNS) or Kafka topic
+ ** Search notification: Elasticsearch index, if the destination cluster is not configured to automatically create indexes.
 * You have the information about the destination resource:
  ** Host and port for the Uniform Resource Identifier (URI)
 +
@@ -67,7 +67,7 @@ For Kafka endpoints, you can use the following credentials:
 --
 ====
 
-** Security certificate (if certificate verification is required)
+** Security certificate (if using a custom CA certificate)
 * If the Elasticsearch security features are enabled, you have the monitor cluster privilege for connectivity testing, and either the write index privilege or both the index and delete index privileges for document updates.
 
 .Steps
@@ -78,7 +78,7 @@ For Kafka endpoints, you can use the following credentials:
 
 . Enter a display name to briefly describe the endpoint and its purpose.
 +
-The type of platform service that the endpoint supports is shown beside the endpoint name when it's listed on the Endpoints page, so you don't need to include that information in the name.
+The type of platform service that the endpoint supports is shown beside the endpoint name when it is listed on the Endpoints page, so you don't need to include that information in the name.
 
 . In the *URI* field, specify the Unique Resource Identifier (URI) of the endpoint.
 +
@@ -122,8 +122,6 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 
 . Select *Continue*.
 . Select a value for *Authentication type*.
-+
-NOTE: If you want authentication for webhook endpoints, configure Mutual Transport Layer Security (TLS) in <<verify-certs, Step 9>>.
 +
 [role="tabbed-block"]
 ====
@@ -243,74 +241,20 @@ Select *Use delegation taken authentication* if the username and password are de
 ====
 
 . Select *Continue*.
-. [[verify-certs]]Select a radio button for *Verify certificates* to choose how the TLS connection to the endpoint is verified.
+. Select a radio button for *Verify server* to choose how TLS connection to the endpoint is verified.
 +
-[role="tabbed-block"]
-====
-.Most endpoints
---
-Verify the TLS connection for Search integration, CloudMirror replication, Amazon SNS, or Kafka endpoints.
-
 [cols="1a,2a" options="header"]
-
 |===
 | Type of certificate verification| Description
-| TLS
-| Validates the server certificate for TLS connections to the endpoint resource.
-
-| Disabled
-| Certificate verification is disabled. This option isn't secure.
-
 | Use custom CA certificate
-| The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
+| Use a custom security certificate. If you select this setting, copy and paste the custom security certificate in the *CA Certificate* text box.
 
 | Use operating system CA certificate
 | Use the default Grid CA certificate installed on the operating system to secure connections.
 
+| Do not verify certificate
+| The certificate used for the TLS connection is not verified. This option is not secure.
 |===
---
-.Webhook endpoints only
---
-Verify the TLS connection for webhook endpoints.
-
-[cols="1a,2a" options="header"]
-|===
-| Type of certificate verification| Description
-| TLS
-| Validates the server certificate for TLS connections to the endpoint resource.
-
-| mTLS
-| Validates the client and server certificates for Mutual TLS connections to the endpoint resource.
-
-| Disabled
-| Certificate verification is disabled. This option isn't secure.
-
-| Use custom CA certificate
-| The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
-
-
-|===
-
-When you select *mTLS*, these options become available.
-[cols="1a,2a" options="header"]
-|===
-| Type of certificate verification| Description
-
-| Do not verify server certificate
-| Disables the server certificate verification, which means the server's identity isn't verified. This option isn't secure.
-
-| Client certificate
-| The client certificate is used to verify the client's identity when connecting to the endpoint.
-
-| Client private key
-| The private key for the client certificate. If encrypted, it must use the traditional format PKCS #1 (PKCS #8 format isn't supported).
-
-| Client private key passphrase
-| The passphrase for decrypting the client private key. If the private key isn't encrypted, leave this blank.
-
-|===
---
-====
 
 . Select *Test and create endpoint*.
 * A success message appears if the endpoint can be reached using the specified credentials. The connection to the endpoint is validated from one node at each site.
@@ -330,6 +274,5 @@ After you have configured an endpoint, you can use its URN to configure a platfo
 
 * link:configuring-search-integration-service.html[Configure search integration service]
 
-// 2025 MAR 21, SGWS-35516
 // 2024 MAR 19, SGRIDDOC-7
 // 2023 SEP 15, SGWS-25330
