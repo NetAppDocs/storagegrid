@@ -72,3 +72,7 @@ Enter command [`add search <domain>|remove search <domain>|add nameserver <ip>`]
 . [[close_cmd_shell]]Close the command shell on the server: `exit`
 . For each grid node, repeat the steps from <<log_in_to_node,logging into the node>> through <<close_cmd_shell,closing the command shell>>.
 . When you no longer require passwordless access to other servers, remove the private key from the SSH agent. Enter: `ssh-add -D`
+
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you've finished modifying the DNS configuration.
+
+// 2025 APR 30, SGWS-34284

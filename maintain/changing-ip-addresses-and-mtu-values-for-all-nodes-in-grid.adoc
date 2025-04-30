@@ -102,8 +102,12 @@ NOTE: The entire grid must be shut down, so that all nodes are down at the same 
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you've finished changing IP addresses.
+
 .Related information
 
 * link:adding-to-or-changing-subnet-lists-on-grid-network.html[Add to or change subnet lists on Grid Network]
 
 * link:shutting-down-grid-node.html[Shut down grid node]
+
+// 2025 APR 30, SGWS-34284

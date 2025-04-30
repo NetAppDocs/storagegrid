@@ -115,6 +115,8 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 |The node. The default is the local node.
 |===
 
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you've finished the task.
+
 == Node network reception frame error alert
 
 *Node network reception frame error* alerts can be caused by connectivity issues between StorageGRID and your network hardware. This alert clears on its own after the underlying problem is addressed.
@@ -329,4 +331,6 @@ storagegrid node stop node-name
 ----
 storagegrid node start node-name
 ----
+
+// 2025 APR 30, SGWS-34284
 // 2024 FEB 22, SGRIDDOC-49

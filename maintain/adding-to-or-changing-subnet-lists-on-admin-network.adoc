@@ -112,3 +112,6 @@ Updating grid network configuration on Name
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you've finished adding or changing subnet lists.
+
+// 2025 APR 30, SGWS-34284
