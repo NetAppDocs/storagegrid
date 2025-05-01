@@ -25,7 +25,7 @@
 +
 A full scan doesn't guarantee that ILM has been applied to all objects.
 
-** *Repairs attempted*: The total number of object repair operations for replicated data that have been attempted. This count increments each time a Storage Node tries to repair a high-risk object. High-risk ILM repairs are prioritized if the grid becomes busy.
+** *Repairs attempted*: The total number of attempted object repair operations for replicated data that are considered high risk. High-risk objects are any objects with one copy remaining, whether specified by the ILM policy or as a result of lost copies. This count increments each time a Storage Node tries to repair a high-risk object. High-risk ILM repairs are prioritized if the grid becomes busy.
 +
 
 The same object repair might increment again if replication failed after the repair. +
