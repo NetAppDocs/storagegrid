@@ -161,13 +161,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | AWS
 | Cloud Storage Pools requests sent to AWS targets that use HTTPS. Grid administrators can override the default HTTPS port setting of 443 when configuring a Cloud Storage Pool.
 
-| 2022
-| TCP
-| SSH
-| Service laptop
-| All nodes
-| SSH or console access is required for procedures with console steps. Optionally, you can use port 22 instead of 2022.
-
 | 5353
 | UDP
 | mDNS
