@@ -21,8 +21,12 @@ StorageGRID supports the following specific versions of S3 and HTTP.
 |===
 | Item| Version
 
+| STS AssumeRole API specification
+| https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html[Amazon Web Services (AWS) documentation: Amazon Assumerole API Reference]
+
+
 | S3 API specification
-| http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^]
+| http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[AWS documentation: Amazon Simple Storage Service API Reference^]
 
 
 | HTTP
@@ -45,6 +49,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 
 | 12.0
 | 
+* Added support for STS AssumeRole and session policy. You can set up AssumeRole under tenant groups. 
 
 | 11.9
 | 
@@ -133,4 +138,4 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 
 |===
 
-// sgws34003-mairead-15april
+// sgws34003-mairead-1 may

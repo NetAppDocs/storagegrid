@@ -1,0 +1,29 @@
+---
+permalink: s3/example-session-policies.html
+sidebar: sidebar
+keywords: session policy examples
+summary: 'Use the examples in this section to build StorageGRID sesssion policies.'
+---
+= Example session policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the following example to build StorageGRID session policies.
+
+== Example: Set up a session policy that allows object retrieval
+
+In this example, the session's principal is allowed to retrieve objects from bucket1. The session policy can be saved in a json file while calling the AssumeRole API.
+
+----
+{
+  "Statement": [
+    {
+      "Action": "s3:GetObject",
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::bucket1/*"
+    }
+  ]
+}
+----
+// sgws34003-mairead-1 may
