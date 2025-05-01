@@ -268,7 +268,7 @@ Create a new tenant and bucket or select an existing tenant.
 
 . To create a new tenant and bucket, enter a *Tenant name*. For example, `FabricPool tenant`.
 
-. Define root access for the tenant account, based on whether your StorageGRID system uses link:../admin/using-identity-federation.html[identity federation], link:../admin/configuring-sso.html[single sign-on (SSO)], or both. 
+. Define root access for the tenant account, based on whether your StorageGRID system uses link:../admin/using-identity-federation.html[identity federation], link:../admin/how-sso-works.html[single sign-on (SSO)], or both. 
 +
 [cols="1a,3a" options="header"]
 |===

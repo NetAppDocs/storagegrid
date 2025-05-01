@@ -27,20 +27,4 @@ NOTE: Contact technical support if a task does not finish or release its lock.
 
 . Refer to link:../network/internal-grid-node-communications.html[Internal grid node communications] and link:../network/external-communications.html[External communications] to ensure that all required ports for StorageGRID 11.9 are opened before you upgrade.
 +
-NOTE: No additional ports are required when upgrading to StorageGRID 11.9.
-+
-The following required port was added in StorageGRID 11.7. Make sure it's available before you upgrade to StorageGRID 11.9.
-+
-[cols="1a,2a" options=header] 
-|===
-| Port| Description
-
-| 18086 
-| TCP port used for S3 requests from the StorageGRID load balancer to LDR and the new LDR service.
-
-Before upgrading, confirm that this port is open from all grid nodes to all Storage Nodes.  
-
-Blocking this port will cause S3 service interruptions after upgrade to StorageGRID 11.9.
-|===
-
-CAUTION: If you have opened any custom firewall ports, you are notified during the upgrade precheck. You must contact technical support before proceeding with the upgrade.
+NOTE: No additional ports are required when upgrading to StorageGRID 12.0.

@@ -42,7 +42,7 @@ If you plan to use a virtual LAN to segregate FabricPool traffic, you have alrea
 
 === Configure identity federation and SSO
 
-If you plan to use identity federation or single sign-on (SSO) for your StorageGRID system, you have enabled these features. You also know which federated group should have root access for the tenant account that ONTAP will use. See link:../admin/using-identity-federation.html[Use identity federation] and link:../admin/configuring-sso.html[Configure single sign-on].
+If you plan to use identity federation or single sign-on (SSO) for your StorageGRID system, you have enabled these features. You also know which federated group should have root access for the tenant account that ONTAP will use. See link:../admin/using-identity-federation.html[Use identity federation] and link:../admin/how-sso-works.html[Configure single sign-on].
 
 === Obtain and configure domain names
 
