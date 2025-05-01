@@ -1,5 +1,0 @@
----
-permalink: admin/configuring-sso.html
-redirect: admin/how-sso-works.html
----
-// 2025-03-28, SGWS-33961

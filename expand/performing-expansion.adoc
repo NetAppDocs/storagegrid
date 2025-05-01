@@ -31,7 +31,7 @@ Performing the expansion includes these main user tasks:
 
 . Configure the expansion.
 . Start the expansion.
-. Download a new recovery package file.
+. Download a new Recovery Package file.
 . Monitor the expansion steps and stages until all new nodes are installed and configured and all services have started.
 +
 CAUTION: Some expansion steps and stages might take a significant amount of time to run on a large grid. For example, streaming Cassandra to a new Storage Node might take only a few minutes if the Cassandra database is empty. However, if the Cassandra database includes a large amount of object metadata, this stage might take several hours or longer. Don't reboot any Storage Nodes during the either the "Expanding the Cassandra cluster" or "Starting Cassandra and streaming data" stages.
@@ -90,10 +90,9 @@ The grid node configuration form appears.
 * Select *Client* to manually assign the Client NTP role to the node.
 
 | ADC Service (combined or metadata-only Storage Nodes)
-| Whether this Storage Node will run the Administrative Domain Controller (ADC) service. The ADC service keeps track of the location and availability of grid services. At least three Storage Nodes at each site must include the ADC service.
+| Whether this Storage Node will run the Administrative Domain Controller (ADC) service. The ADC service keeps track of the location and availability of grid services. At least three Storage Nodes at each site must include the ADC service. You can't add the ADC service to a node after it is deployed.
 
-* Select *Yes* if the Storage Node you are replacing includes the ADC service. Because you can't decommission a Storage Node if too few ADC services would remain, this setting ensures that a new ADC service is available before the old service is removed.
-* You can link:../maintain/move-adc-service.html[move the ADC service to another Storage Node on the same site] to ensure the ADC service quorum is met.
+* Select *Yes* if the Storage Node you are replacing includes the ADC service. Because you can't decommission a Storage Node if too few ADC services would remain, this ensures that a new ADC service is available before the old service is removed.
 * Select *Automatic* to let the system determine whether this node requires the ADC service.
 
 Learn about the link:../maintain/understanding-adc-service-quorum.html[ADC quorum].
@@ -103,6 +102,7 @@ Learn about the link:../maintain/understanding-adc-service-quorum.html[ADC quoru
 
 Storage grades are used by ILM storage pools, so your selection can affect which objects will be placed on the Storage Node. 
 |===
+
 
 .. As required, modify the settings for the Grid Network, Admin Network, and Client Network.
 *** *IPv4 Address (CIDR)*: The CIDR network address for the network interface. For example: 172.16.10.100/24
@@ -119,6 +119,7 @@ The approved grid node moves to the Approved Nodes list.
 *** To move an approved grid node back to the Pending Nodes list, select its radio button, and select *Reset*.
 *** To permanently remove an approved grid node, power the node off. Then, select its radio button, and select *Remove*.
 
+
 .. Repeat these steps for each pending grid node you want to approve.
 +
 NOTE: If possible, you should approve all pending grid notes and perform a single expansion. More time will be required if you perform multiple small expansions.
@@ -128,18 +129,20 @@ After a few minutes, this page updates to display the status of the expansion pr
 +
 NOTE: During the "Installing grid nodes" step for a new appliance, the StorageGRID Appliance Installer shows installation moving from Stage 3 to Stage 4, Finalize Installation. When Stage 4 completes, the controller is rebooted.
 +
+image::../media/grid_expansion_progress.png[This image is explained by the surrounding text.]
++
 NOTE: A site expansion includes an additional task to configure Cassandra for the new site.
 
-. As soon as the *Download recovery package* link appears, download the recovery package file.
+. As soon as the *Download Recovery Package* link appears, download the Recovery Package file.
 +
-You must download an updated copy of the recovery package file as soon as possible after making grid topology changes to the StorageGRID system. The recovery package file allows you to restore the system if a failure occurs.
+You must download an updated copy of the Recovery Package file as soon as possible after making grid topology changes to the StorageGRID system. The Recovery Package file allows you to restore the system if a failure occurs.
 
  .. Select the download link.
  .. Enter the provisioning passphrase, and select *Start Download*.
  .. When the download completes, open the `.zip` file and confirm that you can access the contents, including the `Passwords.txt` file.
- .. Copy the downloaded recovery package file (`.zip`) to two safe, secure, and separate locations.
+ .. Copy the downloaded Recovery Package file (`.zip`) to two safe, secure, and separate locations.
 +
-CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 . If you are adding Storage Nodes to an existing site or adding a site, monitor the Cassandra stages, which occur when services are started on the new grid nodes. 
 +
@@ -152,6 +155,8 @@ CAUTION: Don't reboot any Storage Nodes during either the "Expanding the Cassand
 --
 
 If you are adding Storage Nodes to an existing site, review the percentage shown in the  "Starting Cassandra and streaming data" status message.
+
+image::../media/grid_expansion_starting_cassandra.png[Grid Expansion > Starting Cassandra and streaming data]
 
 This percentage estimates how complete the Cassandra streaming operation is, based on the total amount of Cassandra data available and the amount that has already been written to the new node.
 

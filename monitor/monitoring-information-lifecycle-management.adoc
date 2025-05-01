@@ -42,17 +42,17 @@ NOTE: The charts on the *NODES* page will be replaced with the corresponding das
  ** *Objects queued (from all operations)*: The total number of objects awaiting ILM evaluation.
  ** *Scan rate (objects/sec)*: The rate at which objects in the grid are scanned and queued for ILM.
  ** *Evaluation rate (objects/sec)*: The current rate at which objects are being evaluated against the ILM policy in the grid.
-
+. In the ILM Queue section, look at the following attributes.
 +
 NOTE: The ILM queue section is included for the grid only. This information is not shown on the ILM tab for a site or Storage Node.
-. In the ILM Queue section, look at the following attributes.
+
  ** *Scan period - estimated*: The estimated time to complete a full ILM scan of all objects.
 +
 NOTE: A full scan does not guarantee that ILM has been applied to all objects.
 
  ** *Repairs attempted*: The total number of object repair operations for replicated data that have been attempted. This count increments each time a Storage Node tries to repair a high-risk object. High-risk ILM repairs are prioritized if the grid becomes busy.
 +
-The same object repair might increment again if replication failed after the repair. +
-These attributes can be useful when you are monitoring the progress of Storage Node volume recovery. If the number of Repairs attempted has stopped increasing and a full scan has been completed, the repair has probably completed.
+NOTE: The same object repair might increment again if replication failed after the repair.
 
-. Alternatively, submit a Prometheus query for `storagegrid_ilm_scan_period_estimated_minutes` and `storagegrid_ilm_repairs_attempted`.
++
+These attributes can be useful when you are monitoring the progress of Storage Node volume recovery. If the number of Repairs attempted has stopped increasing and a full scan has been completed, the repair has probably completed.

@@ -15,9 +15,9 @@ You must use Active Directory Federation Services (AD FS) to create a relying pa
 
 * You have configured single sign-on for StorageGRID and you selected *AD FS* as the SSO type.
 
-* You have link:../admin/configure-sso.html#enter-sandbox-mode-adfs[entered sandbox mode] in Grid Manager.
+* *Sandbox mode* is selected on the Single sign-on page in Grid Manager. See link:../admin/using-sandbox-mode.html[Use sandbox mode].
 
-* You know the fully qualified domain name (or the IP address) and the relying party identifier for each Admin Node in your system. You can find these values in the Admin Nodes detail table on the StorageGRID Configure SSO page.
+* You know the fully qualified domain name (or the IP address) and the relying party identifier for each Admin Node in your system. You can find these values in the Admin Nodes detail table on the StorageGRID Single Sign-on page.
 +
 NOTE: You must create a relying party trust for each Admin Node in your StorageGRID system. Having a relying party trust for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -25,13 +25,17 @@ NOTE: You must create a relying party trust for each Admin Node in your StorageG
 * You are using the AD FS Management snap-in, and you belong to the Administrators group.
 * If you are creating the relying party trust manually, you have the custom certificate that was uploaded for the StorageGRID management interface, or you know how to log in to an Admin Node from the command shell.
 
+
 .About this task
 
 These instructions apply to Windows Server 2016 AD FS. If you are using a different version of AD FS, you will notice slight differences in the procedure. See the Microsoft AD FS documentation if you have questions.
 
+
 == Create a relying party trust using Windows PowerShell
 
+
 You can use Windows PowerShell to quickly create one or more relying party trusts.
+
 
 .Steps
 
@@ -77,11 +81,12 @@ For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 +
 If the metadata is missing, confirm that the Federation metadata address is correct, or enter the values manually.
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they're configured correctly.
+. When you are done, return to StorageGRID and test all relying party trusts to confirm they are configured correctly. See link:using-sandbox-mode.html[Use Sandbox mode] for instructions.
 
 == Create a relying party trust by importing federation metadata
 
 You can import the values for each relying party trust by accessing the SAML metadata for each Admin Node.
+
 
 .Steps
 
@@ -118,7 +123,7 @@ For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 +
 If the metadata is missing, confirm that the Federation metadata address is correct, or enter the values manually.
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they are configured correctly.
+. When you are done, return to StorageGRID and test all relying party trusts to confirm they are configured correctly. See link:using-sandbox-mode.html[Use Sandbox mode] for instructions.
 
 == Create a relying party trust manually
 
@@ -189,4 +194,4 @@ NOTE: Using the Admin Node's default certificate (`server.crt`) is not recommend
 The Relying Party properties are saved and closed.
 
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they are configured correctly.
+. When you are done, return to StorageGRID and test all relying party trusts to confirm they are configured correctly. See link:using-sandbox-mode.html[Use sandbox mode] for instructions.

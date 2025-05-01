@@ -66,4 +66,4 @@ Every object version stored will contribute to the `ObjectCount` and `DataBytes`
 
 .Related information
 
-link:consistency.html[Consistency]
+link:consistency-controls.html[Consistency values]

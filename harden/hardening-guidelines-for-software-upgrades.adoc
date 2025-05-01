@@ -23,7 +23,7 @@ Consult the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matri
 
 == Upgrades to external services
 
-External services can have vulnerabilities that affect StorageGRID indirectly. Ensure that the services StorageGRID depends on are kept up to date. These services include LDAP, KMS (or KMIP server), DNS, and NTP.
+External services can have vulnerabilities that affect StorageGRID indirectly. You should ensure that the services that StorageGRID depends on are kept up to date. These services include LDAP, KMS (or KMIP server), DNS, and NTP.
 
 For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
 
