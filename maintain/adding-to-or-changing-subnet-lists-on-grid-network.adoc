@@ -21,6 +21,7 @@ NOTE: If you are making changes to the Grid Network Subnet List only, use the Gr
 
 .Steps
 
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[temporarily allow access].
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
  .. Enter the password listed in the `Passwords.txt` file.
