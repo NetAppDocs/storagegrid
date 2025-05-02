@@ -86,7 +86,9 @@ If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, u
 * Select *HTTP* for less secure, unencrypted communication. Use HTTP only for a non-production grid.
 
 | Enable caching
-| Enable or disable link:../admin/managing-load-balancing.html#considerations-for-load-balancer-caching[caching on the Gateway Nodes] for this load balancer endpoint. 
+| Enable or disable link:../admin/managing-load-balancing.html#considerations-for-load-balancer-caching[caching on the Gateway Nodes] for this load balancer endpoint.
+
+If issues occur with caching, refer to link:../troubleshoot/troubleshooting-load-balancer-caching.html[Troubleshoot load balancer caching].
 |===
 
 --

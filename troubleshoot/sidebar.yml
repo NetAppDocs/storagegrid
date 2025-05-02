@@ -38,5 +38,9 @@ entries:
   - title: Troubleshoot network, hardware, and platform issues
     url: "/troubleshoot/troubleshooting-network-hardware-and-platform-issues.html"
   - title: Troubleshoot external syslog server
-    url: "/troubleshoot/troubleshooting-syslog-server.html"  
+    url: "/troubleshoot/troubleshooting-syslog-server.html"
+  - title: Troubleshoot load balancer caching
+    url: "/troubleshoot/troubleshooting-load-balancer-caching.html"
+
+   
       

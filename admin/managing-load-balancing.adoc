@@ -37,22 +37,24 @@ To create a load balancer endpoint, either use the Grid Manager or complete the 
 
 === Considerations for load balancer caching
 
-Caching significantly improves performance when a workload operates on a subset of data and accesses objects multiple times. Load balancer caching is available only for Gateway Nodes.
+Caching significantly improves performance when a workload operates on a subset of data and accesses objects multiple times. Additionally, caching provides remote access to object storage without a full grid deployment. Load balancer caching is available only for Gateway Nodes.
 
 As you're creating load balancer endpoints, enable caching only for workloads that are cacheable. Workloads that access un-cached data more often than cached data will perform worse than if they had not been serviced by the cache. In some cases, workloads with high overwrite and eviction rates might also exceed warrantied drive-write endurance.
+
+Examples of workloads that might be good candidates for caching::
++
+* Data lakes
+* High-performance computing (HPC)
+* AI/ML training
+* Content Distribution Networks (CDN)
+* Media asset management
+* Video production
 
 Examples of workloads that aren't good candidates for caching::
 +
 * Fabric Pool
 * Backup applications
 * Storage tiering
-
-Examples of workloads that might be good candidates for caching::
-+
-* AI/ML training
-* Content Distribution Networks (CDN)
-* Media asset management
-* Video production
 
 link:../audit/index.html[Review audit logs] to determine if an existing workload would be a good candidate for caching. For a given time period, determine what percentage of GETs are for unique objects. To be suitable for caching, this value should be below 50%. 
 
