@@ -46,14 +46,14 @@ CAUTION: Add the privileged IP address before you block ports 443 and 8443. Any 
 After you save your configuration, all external ports on the Admin Node in your grid will be blocked for all hosts except the jump host. You can then use the jump host to perform maintenance tasks on your grid more securely.
 
 === Example 2: Lock down sensitive ports
-Suppose you want to lock down sensitive ports and the service on that port (for example, SSH on port 22). You could use the following general steps: 
+Suppose you want to lock down sensitive ports and the service on that port. You could use the following general steps: 
 
 . Use the Privileged address list tab to grant access only to the hosts that need access to the service.
 . Use the Manage external access tab to block all ports. 
 
 CAUTION: Add the privileged IP address before you block access to any ports assigned to access Grid Manager and Tenant manager (preset ports are 443 and 8443). Any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. 
 
-After you save your configuration, port 22 and SSH service will be available to hosts on the privileged address list. All other hosts will be denied access to the service no matter what interface the request comes from.
+After you save your configuration, the sensitive port and the service on that port is available to hosts on the privileged address list. All other hosts are denied access to the service no matter what interface the request comes from.
 
 === Example 3: Disable access to unused services
 At a network level, you could disable some services that you don't intend to use. For example, to block HTTP S3 client traffic, you would use the toggle on the Manage external access tab to block port 18084. 
@@ -94,3 +94,5 @@ Suppose you want to allow Grid Manager access only on a specific subnet. You wou
 . Use the Manage external access tab to block all external ports (with or without privileged IP addresses set for hosts outside that subnet).
 
 After you save your configuration, only hosts on the subnet you specified can access the Grid Manager. All other hosts are are blocked. 
+
+// 2025 APR 15, SGWS-35050
