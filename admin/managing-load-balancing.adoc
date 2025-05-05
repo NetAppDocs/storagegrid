@@ -64,6 +64,10 @@ CAUTION: If any content to be served by the cache requires encryption at rest, h
 
 For more information about load balancer caching, contact technical support.
 
+.Related information
+
+link:../troubleshoot/troubleshooting-load-balancer-caching.html[Troubleshoot load balancer caching]
+
 === Considerations for the port
 The port for a load balancer endpoint defaults to 10433 for the first endpoint you create, but you can specify any unused external port between 1 and 65535. If you use port 80 or 443, the endpoint will use the Load Balancer service on Gateway Nodes only. These ports are reserved on Admin Nodes. If you use the same port for more than one endpoint, you must specify a different binding mode for each endpoint.
 
