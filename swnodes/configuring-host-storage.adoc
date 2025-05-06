@@ -2,14 +2,14 @@
 permalink: swnodes/configuring-host-storage.html
 sidebar: sidebar
 keywords: how to configure host storage
-summary: 'You must allocate block storage volumes to each host.'
+summary: 'You must allocate block storage volumes to each Linux host.'
 ---
-= Configure host storage (RHEL, Ubuntu, or Debian)
+= Configure host storage (Linux)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must allocate block storage volumes to each host.
+You must allocate block storage volumes to each Linux host.
 
 .Before you begin
 
@@ -17,6 +17,8 @@ You have reviewed the following topics, which provide information you need to ac
 
 * link:storage-and-performance-requirements.html[Storage and performance requirements]
 * link:node-container-migration-requirements.html[Node container migration requirements]
+
+include::../_include/linux-distributions.adoc[]
 
 .About this task
 

@@ -2,18 +2,20 @@
 permalink: swnodes/installing-linux.html
 sidebar: sidebar
 keywords: how to install Linux
-summary: 'You must install StorageGRID on all RHEL, Ubuntu, or Debian grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.'
+summary: 'You must install StorageGRID on all Linux grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.'
 ---
-= Install Linux (RHEL, Ubuntu, or Debian)
+= Install Linux
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must install StorageGRID on all RHEL, Ubuntu, or Debian grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.
+You must install StorageGRID on all Linux grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.
 
 .Before you begin
 
 Ensure your operating system meets StorageGRID's minimum kernel version requirements, as listed below. Use the command `uname -r` to get your operating system's kernel version, or consult with your OS vendor.
+
+include::../_include/linux-distributions.adoc[]
 
 [role="tabbed-block"]
 ====

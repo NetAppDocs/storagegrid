@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure container engine storage volume, Docker, Podman
 summary: 'Before installing the Docker or Podman container engine, you might need to format the storage volume and mount it.'
 ---
-= Configure container engine storage volume (RHEL, Ubuntu, or Debian)
+= Configure container engine storage volume (Linux)
 :icons: font
 :imagesdir: ../media/
 
@@ -12,6 +12,8 @@ summary: 'Before installing the Docker or Podman container engine, you might nee
 Before installing the Docker or Podman container engine, you might need to format the storage volume and mount it.
 
 NOTE: Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release.
+
+include::../_include/linux-distributions.adoc[]
 
 .About this task
 

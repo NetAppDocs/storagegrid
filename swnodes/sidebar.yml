@@ -18,9 +18,9 @@ entries:
       url: "/swnodes/cpu-and-ram-requirements.html"
     - title: Storage and performance requirements
       url: "/swnodes/storage-and-performance-requirements.html"
-    - title: Node container migration requirements (RHEL, Ubuntu, or Debian) 
+    - title: Node container migration requirements (Linux) 
       url: "/swnodes/node-container-migration-requirements.html"
-    - title: Prepare the hosts (RHEL, Ubuntu, or Debian)
+    - title: Prepare the hosts (Linux)
       entries:
       - title: How host-wide settings change
         url: "/swnodes/how-host-wide-settings-change.html"
@@ -48,17 +48,17 @@ entries:
     entries:
     - title: Collect information about your deployment environment (VMware)
       url: "/swnodes/collecting-information-about-your-deployment-environment.html"
-    - title: Create node configuration files for deployment (RHEL, Ubuntu, or Debian)
+    - title: Create node configuration files for deployment (Linux)
       url: "/swnodes/creating-node-configuration-files.html"
     - title: How grid nodes discover the primary Admin Node
       url: "/swnodes/how-grid-nodes-discover-primary-admin-node.html"
     - title: Deploy a StorageGRID node as a virtual machine (VMware)
       url: "/swnodes/deploying-storagegrid-node-as-virtual-machine.html"
-    - title: Example node configuration files (RHEL, Ubuntu, or Debian)
+    - title: Example node configuration files (Linux)
       url: "/swnodes/example-node-configuration-files.html"
     - title: Validate the StorageGRID configuration (RHEL, Ubuntu, and Debian)
       url: "/swnodes/validating-storagegrid-configuration.html"
-    - title: Start the StorageGRID host service (RHEL, Ubuntu, or Debian)
+    - title: Start the StorageGRID host service (Linux)
       url: "/swnodes/starting-storagegrid-host-service.html"
   - title: Configure grid and complete installation
     entries:

@@ -4,12 +4,14 @@ sidebar: sidebar
 keywords: how to configure the host network
 summary: 'After completing the Linux installation on your hosts, you might need to perform some additional configuration to prepare a set of network interfaces on each host that are suitable for mapping into the StorageGRID nodes you will deploy later.'
 ---
-= Configure the host network (RHEL, Ubuntu, or Debian)
+= Configure the host network (Linux)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 After completing the Linux installation on your hosts, you might need to perform some additional configuration to prepare a set of network interfaces on each host that are suitable for mapping into the StorageGRID nodes you will deploy later.
+
+include::../_include/linux-distributions.adoc[]
 
 .Before you begin
 

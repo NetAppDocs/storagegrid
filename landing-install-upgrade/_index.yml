@@ -14,11 +14,11 @@ indexpage:
     links:
     - title: Prepare materials
       url: ../swnodes/required-materials.html
-    - title: Automate RHEL, Ubuntu, or Debian installation
+    - title: Automate Linux installation
       url: ../swnodes/automating-installation.html
     - title: Automate VMware installation
       url: ../swnodes/automating-grid-node-deployment-in-vmware-vsphere.html
-    - title: Deploy RHEL, Ubuntu, or Debian
+    - title: Deploy Linux
       url: ../swnodes/creating-node-configuration-files.html
     - title: Deploy VMware
       url: ../swnodes/collecting-information-about-your-deployment-environment.html

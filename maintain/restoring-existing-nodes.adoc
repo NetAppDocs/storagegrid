@@ -32,7 +32,7 @@ If it is not possible to import missing nodes, you must re-create their grid con
 
 You must then validate the grid configuration file, and resolve any networking or storage issues that might occur before going on to restart StorageGRID. When you re-create the configuration file for a node, you must use the same name for the replacement node that was used for the node you are recovering.
 
-See the link:../swnodes/index.html[RHEL, Ubuntu, or Debian installation instructions] for more information about the location of the `/var/local` volume for a node.
+See the link:../swnodes/index.html[Linux installation instructions] for more information about the location of the `/var/local` volume for a node.
 
 .Steps
 

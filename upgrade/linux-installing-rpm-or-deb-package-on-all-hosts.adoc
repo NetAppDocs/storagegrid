@@ -63,7 +63,7 @@ Perform these steps before upgrading StorageGRID software.
 . Extract the RPM or DEB packages from the installation file.
 . Install the RPM or DEB packages on all Linux hosts.
 +
-See the steps for installing StorageGRID host services for RHEL, Ubuntu, or Debian in link:../swnodes/installing-storagegrid-webscale-host-services.html[Install StorageGRID host services].
+See the steps for installing StorageGRID host services for Linux in link:../swnodes/installing-storagegrid-webscale-host-services.html[Install StorageGRID host services].
 +
 The new packages are installed as additional packages.
 

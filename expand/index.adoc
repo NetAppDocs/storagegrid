@@ -47,7 +47,7 @@ Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding st
 * link:deploying-new-grid-nodes.html#vmware-deploy-grid-nodes[VMware]
 * link:deploying-new-grid-nodes.html#linux-deploy-grid-nodes[Linux]
 +
-NOTE: "Linux" refers to a RHEL, Ubuntu, or Debian deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+include::../_include/linux-distributions.adoc[]
 
 . link:performing-expansion.html[Perform the expansion].
 
@@ -69,7 +69,7 @@ NOTE: "Linux" refers to a RHEL, Ubuntu, or Debian deployment. For a list of supp
 * link:deploying-new-grid-nodes.html#vmware-deploy-grid-nodes[VMware]
 * link:deploying-new-grid-nodes.html#linux-deploy-grid-nodes[Linux]
 +
-NOTE: "Linux" refers to a RHEL, Ubuntu, or Debian deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+include::../_include/linux-distributions.adoc[]
 
 . link:performing-expansion.html[Perform the expansion].
 
