@@ -39,10 +39,20 @@ To create a load balancer endpoint, either use the Grid Manager or complete the 
 
 Caching significantly improves performance when a workload operates on a subset of data and accesses objects multiple times. Additionally, caching provides remote access to object storage without a full grid deployment. Load balancer caching is available only for Gateway Nodes.
 
-As you're creating load balancer endpoints, enable caching only for workloads that are cacheable. Workloads that access un-cached data more often than cached data will perform worse than if they had not been serviced by the cache. In some cases, workloads with high overwrite and eviction rates might also exceed warrantied drive-write endurance.
+As you're creating load balancer endpoints:
 
-Examples of workloads that might be good candidates for caching::
-+
+* Enable caching only for workloads that are cacheable. Workloads that access un-cached data more often than cached data will perform worse than if they had not been serviced by the cache. In some cases, workloads with high overwrite and eviction rates might also exceed warrantied drive-write endurance.
+
+* Consider adding additional endpoints or nodes for caching individual workloads that are good candidates for caching.
+
+* Use distinct endpoints for cacheable and un-cacheable workloads. This separation ensures that caching mechanisms are applied appropriately and don't interfere with non-cacheable data processing.
+
+* Evaluate a potential cacheable workload by directing it to the cache-enabled endpoint. Monitor and verify the cache hit rate to determine the suitability of the workload for caching. This assessment helps in optimizing performance and ensuring efficient use of cache resources.
+
+* link:../audit/index.html[Review audit logs] to determine if an existing workload would be a good candidate for caching. For a given time period, determine what percentage of GETs are for unique objects. To be suitable for caching, this value should be below 50%.
+
+==== Examples of workloads that might be good candidates for caching
+
 * Data lakes
 * High-performance computing (HPC)
 * AI/ML training
@@ -50,23 +60,49 @@ Examples of workloads that might be good candidates for caching::
 * Media asset management
 * Video production
 
-Examples of workloads that aren't good candidates for caching::
-+
+==== Examples of workloads that aren't good candidates for caching
+
 * Fabric Pool
 * Backup applications
 * Storage tiering
 
-link:../audit/index.html[Review audit logs] to determine if an existing workload would be a good candidate for caching. For a given time period, determine what percentage of GETs are for unique objects. To be suitable for caching, this value should be below 50%. 
-
-Consider adding additional endpoints or nodes for caching individual workloads that are good candidates for caching.
-
 CAUTION: If any content to be served by the cache requires encryption at rest, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[enable node or drive encryption^] on the cache node.
 
-For more information about load balancer caching, contact technical support.
+==== Types of objects and requests that won't be cached
+
+*	Objects uploaded with SSE or SSE-C
+*	GET requests with the following parameters, headers, or conditions:
+
+** `response-content-encoding`
+** `partNumber`
+** Conditional headers
+** `If-Match`
+** `If-Modified-Since`
+** `If-None-Match`
+** `If-Unmodified-Since`
+** `x-amz-server-side-encryption-customer-key` or other SSE-C headers
+** `acl`
+** `attributes`
+** `legal-hold`
+** `retention`
+** `tagging`
+** `torrent`
+** `versionId`
+** `uploadId`
+** Requests to the root resource `"/"`
+** Requests to a bucket root. Both for virtual-hosted-style and path-style requests.
+** Requests for the StorageGRID internal `x-ntap-sg-validate` query parameter
+
+Any requests that aren't cached are forwarded to an upstream LDR as if the cache were not enabled.
+
+NOTE: Multiple object versions can be cached.
+
 
 .Related information
 
-link:../troubleshoot/troubleshooting-load-balancer-caching.html[Troubleshoot load balancer caching]
+* link:../troubleshoot/troubleshooting-load-balancer-caching.html[Troubleshoot load balancer caching]
+
+* For more information about load balancer caching, contact technical support.
 
 === Considerations for the port
 The port for a load balancer endpoint defaults to 10433 for the first endpoint you create, but you can specify any unused external port between 1 and 65535. If you use port 80 or 443, the endpoint will use the Load Balancer service on Gateway Nodes only. These ports are reserved on Admin Nodes. If you use the same port for more than one endpoint, you must specify a different binding mode for each endpoint.
