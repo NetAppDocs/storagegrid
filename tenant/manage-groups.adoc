@@ -182,7 +182,7 @@ Temporary security credentials created from assuming this group are valid for a 
 ----
 
 Once configured, users listed in the S3 trust policy can perform AssumeRole and will receive credentials.
-The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/bucket-and-group-access-policies.html[Use bucket and group access policies].
+The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/manage-access-policies.html[Use access policies].
 
 
 // 2025-05-6, jira SGWS-34003
