@@ -67,7 +67,7 @@ image::../media/change_ip_tool_aesl_sample_input.gif[change ip tool aesl example
 --
 . When ready, enter *q* to go back to the main menu screen. Your changes are held until cleared or applied.
 +
-NOTE: If you selected any of the "all" node selection modes in step 2, press *Enter* (without *q*) to get to the next node in the list.
+NOTE: If you selected any of the "all" node selection modes in step 3, press *Enter* (without *q*) to get to the next node in the list.
 
 . Choose one of the following:
  ** Select option *5* to show edits in output that is isolated to show only the changed item. Changes are highlighted in green (additions) or red (deletions), as shown in the example output below:
