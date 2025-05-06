@@ -13,7 +13,9 @@ You must understand the storage requirements for StorageGRID nodes, so you can p
 
 Storage and performance requirements vary based on your software-based node implementation.
 
-== RHEL, Ubuntu, and Debian requirements
+== Linux requirements
+
+include::../_include/linux-distributions.adoc[]
 
 StorageGRID nodes require three logical categories of storage:
 
@@ -241,7 +243,7 @@ NOTE: Depending on the audit level configured, the size of user inputs such as S
 [[storage_req_SN]]
 == Specific storage requirements for Storage Nodes
 
-RHEL, Ubuntu, Debian, and VMware have the same storage requirements for storage nodes.
+Linux and VMware have the same storage requirements for storage nodes.
 
 A software-based Storage Node can have 1 to 16 storage volumes--3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
 

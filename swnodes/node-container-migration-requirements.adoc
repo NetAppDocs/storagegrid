@@ -4,12 +4,14 @@ sidebar: sidebar
 keywords: how to migrate a node
 summary: 'The node migration feature allows you to manually move a node from one host to another. Typically, both hosts are in the same physical data center.'
 ---
-= Node container migration requirements (RHEL, Ubuntu, and Debian)
+= Node container migration requirements (Linux)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 The node migration feature allows you to manually move a node from one host to another. Typically, both hosts are in the same physical data center.
+
+include::../_include/linux-distributions.adoc[]
 
 Node migration allows you to perform physical host maintenance without disrupting grid operations. You move all StorageGRID nodes, one at a time, to another host before taking the physical host offline. Migrating nodes requires only a short downtime for each node and should not affect operation or availability of grid services.
 

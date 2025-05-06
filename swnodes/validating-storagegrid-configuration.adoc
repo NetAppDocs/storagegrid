@@ -4,12 +4,14 @@ sidebar: sidebar
 keywords: how to validate StorageGRID configuration
 summary: 'After creating configuration files in /etc/storagegrid/nodes for each of your StorageGRID nodes, you must validate the contents of those files.'
 ---
-= Validate the StorageGRID configuration (RHEL, Ubuntu, and Debian)
+= Validate the StorageGRID configuration (Linux)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 After creating configuration files in `/etc/storagegrid/nodes` for each of your StorageGRID nodes, you must validate the contents of those files.
+
+include::../_include/linux-distributions.adoc[]
 
 To validate the contents of the configuration files, run the following command on each host:
 

@@ -2,17 +2,19 @@
 permalink: swnodes/index.html
 sidebar: sidebar
 keywords: about ubuntu, ubuntu overview, vnware, red hat enterprise linux, rhel, quick start
-summary: 'Follow these high-level steps to install a RHEL, Ubuntu, Debian, or VMware StorageGRID node.'
+summary: 'Follow these high-level steps to install a Linux or VMware StorageGRID node.'
 ---
 = Quick start for installing StorageGRID on a software-based node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow these high-level steps to install a Red Hat Enterprise Linux (RHEL), Ubuntu, Debian, or VMware StorageGRID node.
+Follow these high-level steps to install a Linux or VMware StorageGRID node.
 
 // Start snippet: Quick start headings as block titles
 // 1 placeholder per entry: Heading text here
+
+include::../_include/linux-distributions.adoc[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Preparation
 
@@ -25,7 +27,7 @@ Follow these high-level steps to install a Red Hat Enterprise Linux (RHEL), Ubun
 * (VMware only) Install and configure link:software-requirements.html[VMware vSphere Hypervisor, vCenter, and the ESX hosts].
 * Prepare the required link:cpu-and-ram-requirements.html[CPU and RAM].
 * Provide for link:storage-and-performance-requirements.html[storage and performance requirements].
-* (RHEL, Ubuntu, and Debian only) link:how-host-wide-settings-change.html[Prepare the Linux servers] that will host your StorageGRID nodes.
+* (Linux only) link:how-host-wide-settings-change.html[Prepare the Linux servers] that will host your StorageGRID nodes.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Deployment
 
@@ -33,7 +35,7 @@ Follow these high-level steps to install a Red Hat Enterprise Linux (RHEL), Ubun
 Deploy grid nodes. When you deploy grid nodes, they are created as part of the StorageGRID system and connected to one or more networks.
 
 [role="quick-margin-list"]
-* (RHEL, Ubuntu, and Debian only) To deploy software-based grid nodes on the hosts you prepared in step 1, use the Linux command line and link:creating-node-configuration-files.html[node configuration files].
+* (Linux only) To deploy software-based grid nodes on the hosts you prepared in step 1, use the Linux command line and link:creating-node-configuration-files.html[node configuration files].
 * (VMware only) Use the VMware vSphere Web Client, a .vmdk file, and a set of .ovf file templates to link:collecting-information-about-your-deployment-environment.html[deploy the software-based nodes as virtual machines (VMs)] on the servers you prepared in step 1.
 * To deploy StorageGRID appliance nodes, follow the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Quick start for hardware installation^].
 

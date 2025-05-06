@@ -56,7 +56,7 @@ entries:
       url: "/swnodes/deploying-storagegrid-node-as-virtual-machine.html"
     - title: Example node configuration files (Linux)
       url: "/swnodes/example-node-configuration-files.html"
-    - title: Validate the StorageGRID configuration (RHEL, Ubuntu, and Debian)
+    - title: Validate the StorageGRID configuration (Linux)
       url: "/swnodes/validating-storagegrid-configuration.html"
     - title: Start the StorageGRID host service (Linux)
       url: "/swnodes/starting-storagegrid-host-service.html"
