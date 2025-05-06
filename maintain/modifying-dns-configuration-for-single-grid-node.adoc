@@ -14,7 +14,7 @@ Rather than configure the DNS globally for the entire deployment, you can run a 
 In general, you should use the *MAINTENANCE* > *Network* > *DNS servers* option on the Grid Manager to configure DNS servers. Only use the following script if you need to use different DNS servers for different grid nodes.
 
 .Steps
-
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[temporarily allow access].
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
  .. Enter the password listed in the `Passwords.txt` file.
@@ -72,3 +72,7 @@ Enter command [`add search <domain>|remove search <domain>|add nameserver <ip>`]
 . [[close_cmd_shell]]Close the command shell on the server: `exit`
 . For each grid node, repeat the steps from <<log_in_to_node,logging into the node>> through <<close_cmd_shell,closing the command shell>>.
 . When you no longer require passwordless access to other servers, remove the private key from the SSH agent. Enter: `ssh-add -D`
+
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you're finished modifying the DNS configuration.
+
+// 2025 APR 30, SGWS-34284
