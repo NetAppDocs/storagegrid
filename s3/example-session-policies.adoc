@@ -13,7 +13,7 @@ Use the following example to build StorageGRID session policies.
 
 == Example: Set up a session policy that allows object retrieval
 
-In this example, the session's principal is allowed to retrieve objects from bucket1. The session policy can be saved in a json file while calling the AssumeRole API.
+In this example, the session's principal is allowed to retrieve objects from bucket1. The session policy can be provided as a JSON file while calling the AssumeRole API.
 
 ----
 {

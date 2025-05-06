@@ -24,6 +24,8 @@ StorageGRID supports the following specific versions of S3 and HTTP.
 | STS AssumeRole API specification
 | https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html[Amazon Web Services (AWS) documentation: Amazon Assumerole API Reference]
 
+For more information about AssumeRole, see https://review.docs.netapp.com/us-en/storagegrid_sgws34003-mairead-27march/tenant/manage-groups.html#delete-one-or-more-groups:~:text=Delete%20groups.-,Set%20up%20AssumeRole,-Before%20you%20begin [Set up AssumeRole]
+
 
 | S3 API specification
 | http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[AWS documentation: Amazon Simple Storage Service API Reference^]
@@ -49,7 +51,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 
 | 12.0
 | 
-* Added support for STS AssumeRole and session policy. You can set up AssumeRole under tenant groups. 
+* Added support for STS AssumeRole and session policy. See link:example-session-policies.html[an example of a session policy]. You can set up AssumeRole under tenant groups. 
 
 | 11.9
 | 
