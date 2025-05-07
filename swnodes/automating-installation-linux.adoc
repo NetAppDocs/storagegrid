@@ -1,10 +1,10 @@
 ---
-permalink: swnodes/automating-installation.html
+permalink: swnodes/automating-installation-linux.html
 sidebar: sidebar
-keywords: how to automate ubuntu or debian installation
-summary: 'You can automate the installation of the StorageGRID host service and the configuration of grid nodes.'
+keywords: how to automate linux installation
+summary: 'You can automate the Linux installation of the StorageGRID host service and the configuration of grid nodes.'
 ---
-= Automate the installation (Ubuntu or Debian)
+= Automate the installation (Linux)
 :icons: font
 :imagesdir: ../media/
 
@@ -13,35 +13,53 @@ You can automate the installation of the StorageGRID host service and the config
 
 .About this task
 
+NOTE: "Linux" refers to a RHEL, Ubuntu, or Debian deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+
 Automating the deployment might be useful in any of the following cases:
 
 * You already use a standard orchestration framework, such as Ansible, Puppet, or Chef, to deploy and configure physical or virtual hosts.
 * You intend to deploy multiple StorageGRID instances.
 * You are deploying a large, complex StorageGRID instance.
 
-The StorageGRID host service is installed by a package and driven by configuration files that can be created interactively during a manual installation, or prepared ahead of time (or programmatically) to enable automated installation using standard orchestration frameworks. StorageGRID provides optional Python scripts for automating the configuration of StorageGRID appliances, and the whole StorageGRID system (the "grid"). You can use these scripts directly, or you can inspect them to learn how to use the StorageGRID Installation REST API in grid deployment and configuration tools you develop yourself.
+The StorageGRID host service is installed by a package and driven by configuration files. You can create the configuration files using one of these methods:
+
+* link:creating-node-configuration-files.html[Create the configuration files] interactively during a manual installation.
+* Prepare the configuration files ahead of time (or programmatically) to enable automated installation using standard orchestration frameworks, as describe in this article.
++
+StorageGRID provides optional Python scripts for automating the configuration of StorageGRID appliances and the entire StorageGRID system (the "grid"). You can use these scripts directly, or you can inspect them to learn how to use the link:overview-of-installation-rest-api.html[StorageGRID installation REST API] in grid deployment and configuration tools you develop yourself.
 
 == Automate the installation and configuration of the StorageGRID host service
 
 You can automate the installation of the StorageGRID host service using standard orchestration frameworks such as Ansible, Puppet, Chef, Fabric, or SaltStack.
 
-The StorageGRID host service is packaged in a DEB and is driven by configuration files that can be prepared ahead of time (or programmatically) to enable automated installation. If you already use a standard orchestration framework to install and configure Ubuntu or Debian, adding StorageGRID to your playbooks or recipes should be straightforward.
+The StorageGRID host service is packaged in a DEB (Ubuntu or Debian) or an RPM (RHEL) and is driven by configuration files that you can prepare ahead of time (or programmatically) to enable automated installation. If you already use a standard orchestration framework to install and configure your Linux deployment, adding StorageGRID to your playbooks or recipes should be straightforward.
 
-You can automate these tasks:
-
-. Installing Linux
-. Configuring Linux
-. Configuring host network interfaces to meet StorageGRID requirements
-. Configuring host storage to meet StorageGRID requirements
-. Installing Docker
-. Installing the StorageGRID host service
-. Creating StorageGRID node configuration files in `/etc/storagegrid/nodes`
-. Validating StorageGRID node configuration files
-. Starting the StorageGRID host service
+You can automate all of the steps for preparing the hosts and deploying virtual grid nodes.
 
 === Example Ansible role and playbook
 
 Example Ansible role and playbook are supplied with the installation archive in the `/extras` folder. The Ansible playbook shows how the `storagegrid` role prepares the hosts and installs StorageGRID onto the target servers. You can customize the role or playbook as necessary.
+
+NOTE: The example playbook does not include the steps required to create network devices before starting the StorageGRID host service. Add these steps before finalizing and using the playbook.
+
+[role="tabbed-block"]
+====
+
+.RHEL
+--
+
+For RHEL, the installation tasks in the provided `storagegrid` role example use the `ansible.builtin.dnf` module to perform the installation from the local RPM files or a remote Yum repository. If the module is unavailable or not supported, you might need to edit the appropriate Ansible tasks in the following files to use the `yum` or `ansible.builtin.yum` module:
+
+* `roles/storagegrid/tasks/rhel_install_from_repo.yml`
+* `roles/storagegrid/tasks/rhel_install_from_local.yml`
+
+--
+
+.Ubuntu or Debian
+--
+TBD - Need example
+--
+====
 
 == Automate the configuration of StorageGRID
 
@@ -58,7 +76,7 @@ m|configure-storagegrid.py
 |Python script used to automate the configuration
 
 m|configure-storagegrid.sample.json
-a|Example configuration file for use with the script
+|Example configuration file for use with the script
 
 m|configure-storagegrid.blank.json
 |Blank configuration file for use with the script
@@ -117,7 +135,3 @@ Your StorageGRID system is installed and configured when a confirmation message 
 ----
 StorageGRID has been configured and installed.
 ----
-
-.Related information
-
-link:overview-of-installation-rest-api.html[Installation REST API]

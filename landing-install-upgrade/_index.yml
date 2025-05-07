@@ -15,7 +15,7 @@ indexpage:
     - title: Prepare materials
       url: ../swnodes/required-materials.html
     - title: Automate Linux installation
-      url: ../swnodes/automating-installation.html
+      url: ../swnodes/automating-installation-linux.html
     - title: Automate VMware installation
       url: ../swnodes/automating-grid-node-deployment-in-vmware-vsphere.html
     - title: Deploy Linux

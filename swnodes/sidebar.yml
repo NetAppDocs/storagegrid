@@ -38,10 +38,8 @@ entries:
         url: "/swnodes/installing-storagegrid-webscale-host-services.html"
   - title: Automate the installation
     entries:
-    - title: Automate installation (RHEL)
-      url: "/swnodes/automating-installation-rhel.html"
-    - title: Automate installation (Ubuntu or Debian)
-      url: "/swnodes/automating-installation.html"
+    - title: Automate installation (Linux)
+      url: "/swnodes/automating-installation-linux.html"
     - title: Automate installation (VMware)
       url: "/swnodes/automating-grid-node-deployment-in-vmware-vsphere.html"
   - title: Deploy virtual grid nodes
