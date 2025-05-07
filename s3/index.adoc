@@ -22,9 +22,9 @@ StorageGRID supports the following specific versions of STS, S3 and HTTP.
 | Item| Version
 
 | STS AssumeRole API specification
-| https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html[Amazon Web Services (AWS) documentation: Amazon Assumerole API Reference]
+| https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html[Amazon Web Services (AWS) documentation: Amazon Assumerole API Reference^]
 
-For more information about AssumeRole, see link:../tenant/manage-groups/set-up-assumerole.html[Set up AssumeRole]
+For more information about AssumeRole, see link:../tenant/manage-groups/set-up-assumerole.html[Set up AssumeRole].
 
 
 | S3 API specification

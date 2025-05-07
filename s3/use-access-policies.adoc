@@ -13,7 +13,7 @@ StorageGRID uses the Amazon Web Services (AWS) policy language to allow S3 tenan
 
 == Access policy overview
 
-There are two kinds of access policies supported by StorageGRID.
+There are three kinds of access policies supported by StorageGRID.
 
 * *Bucket policies*, which are managed using the GetBucketPolicy, PutBucketPolicy, and DeleteBucketPolicy S3 API operations or the Tenant Manager or Tenant Management API. Bucket policies are attached to buckets, so they are configured to control access by users in the bucket owner account or other accounts to the bucket and the objects in it. A bucket policy applies to only one bucket and possibly multiple groups.
 * *Group policies*, which are configured using the Tenant Manager or Tenant Management API. Group policies are attached to a group in the account, so they are configured to allow that group to access specific resources owned by that account. A group policy applies to only one group and possibly multiple buckets.
@@ -113,11 +113,9 @@ In this case, you can either set the `Consistency-Control` header in the PutBuck
 
 NOTE: If you set the consistency to a different value to work around a temporary situation, be sure to set the bucket-level setting back to its original value when you are done. Otherwise, all future bucket requests will use the modified setting.
 
-== Use session policy
+== What is session policy ?
 
-=== What is session policy?
-
-A session policy is an access policy that restricts the permissions available during a specific session, such as when a user assumes a group. It's an inline policy passed during the session, setting a limit on the overall permissions available, even if the group itself has broader permissions. Think of it as a temporary, more granular permission set that overrides the role's standard permissions for that specific session. 
+A session policy is an access policy that restricts the permissions available during a specific session, such as when a user assumes a group. It is an inline policy passed during the session, setting a limit on the overall permissions available, even if the group itself has broader permissions. Think of it as a temporary, more granular permission set that overrides the role's standard permissions for that specific session.
 
 
 == Use ARN in policy statements

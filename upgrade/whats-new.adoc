@@ -37,7 +37,7 @@ You can now link:../ilm/creating-cloud-storage-pool.html[configure a Cloud Stora
 == Tenant groups
 
 === AssumeRole
-newly added API trust policy, new API. to support AssumeRole API.configure s3 trust policy. link:../tenant/manage-groups.html[Manage groups]
+StorageGrid now supports link:../tenant/manage-groups/set-up-assumerole.html[AssumeRole]. You can now configure a new S3 trust policy to support the AssumeRole API.
 
 == Multi-tenancy
 
@@ -117,4 +117,4 @@ The Erasure-coding profiles page is now located at *CONFIGURATION* > *System* > 
 === Search enhancements
 The link:../primer/exploring-grid-manager.html#search-field[search field in the Grid Manager] now includes better matching logic, allowing you to find pages by searching for common abbreviations and by the names of certain settings within a page. You can also search for more types of items, like nodes, users, and tenant accounts.
 
-// sgws34003-mairead-15april
+// 2025-5-7, sgws34003

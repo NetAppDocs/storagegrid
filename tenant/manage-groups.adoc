@@ -153,11 +153,11 @@ Temporary security credentials created from assuming this group are valid for a 
 
 . Select the group.
 
-. Select the S3 trust policy tab.
+. Select the *S3 trust policy* tab.
 
 . Add your S3 trust policy, including a list of users that can perform AssumeRole.
 
-. Select the S3 policy tab.
+. Select the *S3 policy* tab.
 
 . Edit the S3 policy to specify only the required S3 actions for the trusted users added in this group's S3 trust policy.
 
@@ -181,8 +181,7 @@ Temporary security credentials created from assuming this group are valid for a 
 }
 ----
 
-Once configured, users listed in the S3 trust policy can perform AssumeRole and will receive credentials.
-The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/manage-access-policies.html[Use access policies].
-
+Once configured, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
+The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/use-access-policies.html[Use access policies].
 
 // 2025-05-6, jira SGWS-34003
