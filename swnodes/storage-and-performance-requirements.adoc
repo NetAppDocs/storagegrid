@@ -78,7 +78,7 @@ a|12 TB (4 TB/LUN, minimum)
 
 Maximum tested LUN size: 39 TB.
 
- See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
+See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
 
 a|Storage Node (metadata-only)
 a|Object metadata
