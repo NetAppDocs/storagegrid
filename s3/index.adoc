@@ -21,8 +21,14 @@ StorageGRID supports the following specific versions of S3 and HTTP.
 |===
 | Item| Version
 
+| STS AssumeRole API specification
+| https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html[Amazon Web Services (AWS) documentation: Amazon Assumerole API Reference]
+
+For more information about AssumeRole, see link:../tenant/manage-groups/set-up-assumerole.html[Set up AssumeRole]
+
+
 | S3 API specification
-| http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^]
+| http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[AWS documentation: Amazon Simple Storage Service API Reference^]
 
 
 | HTTP
@@ -45,6 +51,10 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 
 |12.0
 |Added support for cross-origin resource sharing (CORS) for a management interface, which allows another domain to access data in StorageGRID using management APIs. link:../tenant/enable-cross-origin-resource-sharing-for-management-interface.html[Learn more].
+
+| 12.0
+| 
+* Added support for STS AssumeRole and session policy. See link:example-session-policies.html[an example of a session policy]. You can set up AssumeRole under tenant groups. 
 
 | 11.9
 | 
@@ -132,3 +142,5 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |Initial support of the S3 REST API by the StorageGRID system.The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
 
 |===
+
+// sgws34003-mairead-6 may

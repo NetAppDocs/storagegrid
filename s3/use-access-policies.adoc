@@ -1,10 +1,10 @@
 ---
-permalink: s3/bucket-and-group-access-policies.html
+permalink: s3/use-access-policies.html
 sidebar: sidebar
-keywords: bucket access policies, group access policies
+keywords: bucket access policies, group access policies, session policies
 summary: ''
 ---
-= Use bucket and group access policies
+= Use access policies
 :icons: font
 :imagesdir: ../media/
 
@@ -17,8 +17,9 @@ There are two kinds of access policies supported by StorageGRID.
 
 * *Bucket policies*, which are managed using the GetBucketPolicy, PutBucketPolicy, and DeleteBucketPolicy S3 API operations or the Tenant Manager or Tenant Management API. Bucket policies are attached to buckets, so they are configured to control access by users in the bucket owner account or other accounts to the bucket and the objects in it. A bucket policy applies to only one bucket and possibly multiple groups.
 * *Group policies*, which are configured using the Tenant Manager or Tenant Management API. Group policies are attached to a group in the account, so they are configured to allow that group to access specific resources owned by that account. A group policy applies to only one group and possibly multiple buckets.
+* *Session policies*, which are included as part of making an AssumeRole request. Session policies only apply to the given session, further defining the permissions which the user has, in addition to those granted by group and bucket policy.
 
-NOTE: There is no difference in priority between group and bucket policies.
+NOTE: There is no difference in priority between group, bucket and session policies.
 
 StorageGRID bucket and group policies follow a specific grammar defined by Amazon. Inside each policy is an array of policy statements, and each statement contains the following elements:
 
@@ -111,6 +112,13 @@ As required, you can change the consistency guarantees for bucket policy updates
 In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
 
 NOTE: If you set the consistency to a different value to work around a temporary situation, be sure to set the bucket-level setting back to its original value when you are done. Otherwise, all future bucket requests will use the modified setting.
+
+== Use session policy
+
+=== What is session policy?
+
+A session policy is an access policy that restricts the permissions available during a specific session, such as when a user assumes a group. It's an inline policy passed during the session, setting a limit on the overall permissions available, even if the group itself has broader permissions. Think of it as a temporary, more granular permission set that overrides the role's standard permissions for that specific session. 
+
 
 == Use ARN in policy statements
 
