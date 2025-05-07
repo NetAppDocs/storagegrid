@@ -66,7 +66,7 @@ The interfaces you add are displayed on the VLAN interfaces page and on the HA g
 
 You must collect the following information for virtual machine-based Storage Nodes:
 
-* The number and size of storage volumes (storage LUNs) you plan to add. See link:storage-and-performance-requirements.html[Storage and performance requirements]."
+* The number and size of storage volumes (storage LUNs) you plan to add. See link:storage-and-performance-requirements.html[Storage and performance requirements].
 
 == Grid configuration information
 

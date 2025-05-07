@@ -149,7 +149,7 @@ For details about this task, see the general link:../admin/managing-load-balanci
 | The StorageGRID port you want to use for load balancing. This field defaults to 10433 for the first endpoint you create, but you can enter any unused external port. If you enter 80 or 443, the endpoint is configured only on Gateway Nodes, because these ports are reserved on Admin Nodes.
 
 *Note:* Ports used by other grid services aren't permitted. See the 
-link:../network/network-port-reference.html[Network port reference].
+link:../network/internal-grid-node-communications.html[Network port reference].
 
 | Client type
 | Must be *S3*.
@@ -268,7 +268,7 @@ Create a new tenant and bucket or select an existing tenant.
 
 . To create a new tenant and bucket, enter a *Tenant name*. For example, `FabricPool tenant`.
 
-. Define root access for the tenant account, based on whether your StorageGRID system uses link:../admin/using-identity-federation.html[identity federation], link:../admin/configuring-sso.html[single sign-on (SSO)], or both. 
+. Define root access for the tenant account, based on whether your StorageGRID system uses link:../admin/using-identity-federation.html[identity federation], link:../admin/how-sso-works.html[single sign-on (SSO)], or both. 
 +
 [cols="1a,3a" options="header"]
 |===

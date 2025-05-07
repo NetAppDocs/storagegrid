@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disable sso, disable single sign on
 summary: 'You can disable single sign-on \(SSO\) if you no longer want to use this functionality. You must disable single sign-on before you can disable identity federation.'
 ---
-= Disable single sign-on
+= Disable SSO
 :icons: font
 :imagesdir: ../media/
 

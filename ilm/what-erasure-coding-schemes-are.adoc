@@ -50,7 +50,7 @@ NOTE: You can't use erasure coding if the storage pool includes two sites.
 
 * The storage pool should include at least `_k+m_ +1` Storage Nodes that can store object data.
 +
-NOTE: Storage Nodes can be configured during installation to contain only object metadata and not object data. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
+NOTE: Storage Nodes can be configured during installation to contain object data and metadata ("combined" Storage Node), only object metadata, or only object data. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 +
 The minimum number of Storage Nodes required is `k+m`. However, having at least one additional Storage Node can help prevent ingest failures or ILM backlogs if a required Storage Node is temporarily unavailable.
 

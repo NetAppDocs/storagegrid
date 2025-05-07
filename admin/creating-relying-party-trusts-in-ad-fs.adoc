@@ -15,9 +15,9 @@ You must use Active Directory Federation Services (AD FS) to create a relying pa
 
 * You have configured single sign-on for StorageGRID and you selected *AD FS* as the SSO type.
 
-* *Sandbox mode* is selected on the Single sign-on page in Grid Manager. See link:../admin/using-sandbox-mode.html[Use sandbox mode].
+* You have link:../admin/configure-sso.html#enter-sandbox-mode-adfs[entered sandbox mode] in Grid Manager.
 
-* You know the fully qualified domain name (or the IP address) and the relying party identifier for each Admin Node in your system. You can find these values in the Admin Nodes detail table on the StorageGRID Single Sign-on page.
+* You know the fully qualified domain name (or the IP address) and the relying party identifier for each Admin Node in your system. You can find these values in the Admin Nodes detail table on the StorageGRID Configure SSO page.
 +
 NOTE: You must create a relying party trust for each Admin Node in your StorageGRID system. Having a relying party trust for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
@@ -25,17 +25,13 @@ NOTE: You must create a relying party trust for each Admin Node in your StorageG
 * You are using the AD FS Management snap-in, and you belong to the Administrators group.
 * If you are creating the relying party trust manually, you have the custom certificate that was uploaded for the StorageGRID management interface, or you know how to log in to an Admin Node from the command shell.
 
-
 .About this task
 
 These instructions apply to Windows Server 2016 AD FS. If you are using a different version of AD FS, you will notice slight differences in the procedure. See the Microsoft AD FS documentation if you have questions.
 
-
 == Create a relying party trust using Windows PowerShell
 
-
 You can use Windows PowerShell to quickly create one or more relying party trusts.
-
 
 .Steps
 
@@ -43,7 +39,7 @@ You can use Windows PowerShell to quickly create one or more relying party trust
 . At the PowerShell command prompt, enter the following command:
 
 +
-`Add-AdfsRelyingPartyTrust -Name "_Admin_Node_Identifer_" -MetadataURL "https://_Admin_Node_FQDN_/api/saml-metadata"
+`Add-AdfsRelyingPartyTrust -Name "_Admin_Node_Identifer_" -MetadataURL "https://_Admin_Node_FQDN_/api/saml-metadata"`
 +
  ** For `_Admin_Node_Identifier_`, enter the Relying Party Identifier for the Admin Node, exactly as it appears on the Single Sign-on page. For example, `SG-DC1-ADM1`.
  ** For `_Admin_Node_FQDN_`, enter the fully qualified domain name for the same Admin Node. (If necessary, you can use the node's IP address instead. However, if you enter an IP address here, be aware that you must update or recreate this relying party trust if that IP address ever changes.)
@@ -81,12 +77,11 @@ For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 +
 If the metadata is missing, confirm that the Federation metadata address is correct, or enter the values manually.
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and test all relying party trusts to confirm they are configured correctly. See link:using-sandbox-mode.html[Use Sandbox mode] for instructions.
+. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they're configured correctly.
 
 == Create a relying party trust by importing federation metadata
 
 You can import the values for each relying party trust by accessing the SAML metadata for each Admin Node.
-
 
 .Steps
 
@@ -123,7 +118,7 @@ For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 +
 If the metadata is missing, confirm that the Federation metadata address is correct, or enter the values manually.
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and test all relying party trusts to confirm they are configured correctly. See link:using-sandbox-mode.html[Use Sandbox mode] for instructions.
+. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they are configured correctly.
 
 == Create a relying party trust manually
 
@@ -188,10 +183,10 @@ For `_Admin_Node_FQDN_`, enter the Admin Node's fully qualified domain name. (If
 *** If you have the custom management certificate you uploaded to StorageGRID, select that certificate.
 *** If you don't have the custom certificate, log in to the Admin Node, go the `/var/local/mgmt-api` directory of the Admin Node, and add the `custom-server.crt` certificate file.
 +
-*Note:* Using the Admin Node's default certificate (`server.crt`) is not recommended. If the Admin Node fails, the default certificate will be regenerated when you recover the node, and you will need to update the relying party trust.
-.. Select *Apply*, and select *OK*.
+NOTE: Using the Admin Node's default certificate (`server.crt`) is not recommended. If the Admin Node fails, the default certificate will be regenerated when you recover the node, and you will need to update the relying party trust.
+.. Select *Apply*, and select *OK*. 
 +
 The Relying Party properties are saved and closed.
 
 . Repeat these steps to configure a relying party trust for all of the Admin Nodes in your StorageGRID system.
-. When you are done, return to StorageGRID and test all relying party trusts to confirm they are configured correctly. See link:using-sandbox-mode.html[Use sandbox mode] for instructions.
+. When you are done, return to StorageGRID and link:../admin/configure-sso.html#test-sso[test all relying party trusts] to confirm they are configured correctly.

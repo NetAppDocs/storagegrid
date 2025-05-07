@@ -37,7 +37,7 @@ This example shows typical output from the `audit-sum` tool. This example shows 
 
 The `audit-sum` tool provides counts and times for the following S3, Swift, and ILM audit messages in an audit log.
 
-NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that is not listed here, check the previous versions of this topic for older SG releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/using-audit-sum-tool.html[StorageGRID 11.8 Using audit sum tool documentation].
+NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that is not listed here, check the previous versions of this topic for older SG releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/using-audit-sum-tool.html[StorageGRID 11.8 Using audit sum tool documentation^].
 
 [cols=3*,options="header",cols="14,43,43"]
 |===

@@ -50,6 +50,6 @@ TIP: While you can create and manage S3 buckets with the Tenant Manager, you mus
 
 .Related information
 
-link:../admin/index.html[Administer StorageGRID]
+* link:../admin/index.html[Administer StorageGRID]
 
-link:../s3/index.html[Use S3 REST API]
+* link:../s3/index.html[Use S3 REST API]

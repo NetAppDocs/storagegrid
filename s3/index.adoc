@@ -49,6 +49,9 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |===
 | Release| Comments
 
+|12.0
+|Added support for cross-origin resource sharing (CORS) for a management interface, which allows another domain to access data in StorageGRID using management APIs. link:../tenant/enable-cross-origin-resource-sharing-for-management-interface.html[Learn more].
+
 | 12.0
 | 
 * Added support for STS AssumeRole and session policy. See link:example-session-policies.html[an example of a session policy]. You can set up AssumeRole under tenant groups. 

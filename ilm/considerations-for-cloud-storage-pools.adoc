@@ -20,7 +20,7 @@ If you plan to use a Cloud Storage Pool to move objects out of the StorageGRID s
 * The following platform, authentication, and protocol combinations with S3 Object lock aren't supported for Cloud Storage Pools:
 +
 ** *Platforms*: Google Cloud Platform and Azure
-** *Authentication types*: IAM Roles Anywhere and anonymous access 
+** *Authentication types*: Anonymous access 
 ** *Protocol*: HTTP
 
 == Considerations for the ports used for Cloud Storage Pools
@@ -102,7 +102,7 @@ Don't use Azure Blob storage lifecycle management for the container used with a 
 
 .Related information
 
-* link:creating-cloud-storage-pool.html[Create a Cloud Storage Pool]
+link:creating-cloud-storage-pool.html[Create a Cloud Storage Pool]
 
 // 2024 JUN 14, SGWS-31273
 // 2024 JULY 15, SGRIDDOC-80

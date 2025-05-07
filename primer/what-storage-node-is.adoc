@@ -25,13 +25,22 @@ You can select the Storage Node type in these situations:
 * When initially installing a Storage Node
 * When you add a Storage Node during StorageGRID system expansion
 
-NOTE: You can't change the type after the Storage Node installation is complete.
-
-Data and metadata Storage Node (combined)::
+=== Data and metadata Storage Node (combined)
 By default, all new Storage Nodes will store both object data and metadata. This type of Storage Node is called a _combined_ Storage Node.
 
-Metadata-only Storage Node::
+=== Metadata-only Storage Node
 Using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for those objects. Additionally, metadata-only Storage Nodes hosted on high-performance appliances can increase performance.
+
+Metadata-only Storage Nodes have specific hardware requirements:
+
+* When using StorageGRID appliances, metadata-only nodes can be configured only on SGF6112 appliances with twelve 1.9 TB or twelve 3.8 TB drives.
+* When using software-based nodes, metadata-only node resources must match the existing Storage Nodes resources. For example: 
+** If the existing StorageGRID site is using SG6000 or SG6100 appliances, the software-based metadata-only nodes must meet the following minimum requirements:
+*** 128 GB RAM
+*** 8 core CPU
+*** 8 TB SSD or equivalent storage for the Cassandra database (rangedb/0)
+** If the existing StorageGRID site is using virtual Storage Nodes with 24 GB RAM, 8 core CPU, and 3 TB or 4TB of metadata storage, the software-based metadata-only nodes should use similar resources (24 GB RAM, 8 core CPU, and 4TB of metadata storage (rangedb/0). 
+* When adding a new StorageGRID site, the new site total metadata capacity should, at minimum, match existing StorageGRID sites and new site resources should match the Storage Nodes at existing StorageGRID sites.
 
 When installing metadata-only nodes, the grid must also contain a minimum number of nodes for data storage:
 
@@ -40,14 +49,10 @@ When installing metadata-only nodes, the grid must also contain a minimum number
 
 NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service>> and can process S3 client requests, StorageGRID performance might not increase.
 
-Data-only Storage Node::
-Using a Storage Node exclusively for data can make sense if your Storage Nodes have differing performance characteristics. For example, to potentially increase performance, you could have data-only, high-capacity spinning-disk Storage Nodes accompanied by metadata-only high-performance Storage Nodes.
+=== Data-only Storage Node
+include::../_include/data-only-storage-node.adoc[]
 
-When installing data-only nodes, the grid must contain the following:
-
-* A minimum of two combined or data-only Storage Nodes _per grid_
-* At least one combined or data-only Storage Node _per site_
-* A minimum of three combined or metadata-only Storage Nodes _per site_
+You can convert a Storage Node that doesn't contain the <<adc-service,ADC service>> to a data-only Storage Node. Refer to link:../maintain/convert-to-data-only-node.html[Convert a Storage Node to a data-only node].
 
 == Primary services for Storage Nodes
 The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
@@ -61,7 +66,7 @@ NOTE: Some services, such as the ADC service and the RSM service, typically exis
 | Account (acct)
 | Manages tenant accounts.
 
-| Administrative Domain Controller (ADC)
+| [[adc-service]]Administrative Domain Controller (ADC)
 | Maintains topology and grid-wide configuration.
 
 *Note*: Data-only Storage Nodes don't host the ADC service.

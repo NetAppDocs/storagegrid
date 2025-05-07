@@ -1,4 +1,4 @@
 ---
 permalink: tenant/json-generated-by-search-integration-service.html
-redirect: storagegrid-119/tenant/configuring-search-integration-service.html
+redirect: storagegrid/tenant/configuring-search-integration-service.html
 ---

@@ -13,7 +13,7 @@ If necessary, you can manually verify the files in the StorageGRID installation 
 
 .Before you begin
 
-* You have link:../vmware/downloading-and-extracting-storagegrid-installation-files.html#vmware-download-verification-package[downloaded the verification package] from the https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads page for StorageGRID^].
+You have link:../vmware/downloading-and-extracting-storagegrid-installation-files.html#vmware-download-verification-package[downloaded the verification package] from the https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads page for StorageGRID^].
 
 .Steps
 

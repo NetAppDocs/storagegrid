@@ -15,15 +15,17 @@ You must install StorageGRID on all Ubuntu or Debian grid hosts. For a list of s
 
 Ensure your operating system meets StorageGRID's minimum kernel version requirements, as listed below. Use the command `uname -r` to get your operating system's kernel version, or consult with your OS vendor.
 
+*Note:* Support for Ubuntu versions 18.04 and 20.04 have been deprecated and will be removed in a future release.
+
 [cols="1a,2a,3a" options="header"]
 |===
 | Ubuntu version| Minimum kernel version| Kernel package name
 
-| 18.04.6
+| 18.04.6 (deprecated)
 | 5.4.0-150-generic
 | linux-image-5.4.0-150-generic/bionic-updates,bionic-security,now 5.4.0-150.167~18.04.1
 
-| 20.04.5
+| 20.04.5 (deprecated)
 | 5.4.0-131-generic
 | linux-image-5.4.0-131-generic/focal-updates,now 5.4.0-131.147
 
@@ -36,11 +38,13 @@ Ensure your operating system meets StorageGRID's minimum kernel version requirem
 | linux-image-6.8.0-31-generic/noble,now 6.8.0-31.31
 |===
 
+*Note:* Support for Debian version 11 has been deprecated and will be removed in a future release.
+
 [cols="1a,2a,2a" options="header"]
 |===
 | Debian version| Minimum kernel version| Kernel package name
 
-| 11
+| 11 (deprecated)
 | 5.10.0-18-amd64
 | linux-image-5.10.0-18-amd64/stable,now 5.10.150-1
 

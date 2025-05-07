@@ -15,9 +15,8 @@ You must allocate block storage volumes to each host.
 
 You have reviewed the following topics, which provide information you need to accomplish this task:
 
-link:storage-and-performance-requirements.html[Storage and performance requirements]
-
-link:node-container-migration-requirements.html[Node container migration requirements]
+* link:storage-and-performance-requirements.html[Storage and performance requirements]
+* link:node-container-migration-requirements.html[Node container migration requirements]
 
 .About this task
 
@@ -97,6 +96,6 @@ NOTE: Support for Docker as the container engine for software-only deployments i
 
 .Related information
 
-link:storage-and-performance-requirements.html[Storage and performance requirements]
+* link:storage-and-performance-requirements.html[Storage and performance requirements]
 
-link:node-container-migration-requirements.html[Node container migration requirements]
+* link:node-container-migration-requirements.html[Node container migration requirements]

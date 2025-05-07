@@ -91,7 +91,7 @@ Ingest behavior controls whether object copies are immediately placed according 
 
 * link:data-protection-options-for-ingest.html[Ingest options]
 * link:advantages-disadvantages-of-ingest-options.html[Advantages, disadvantages, and limitations of the ingest options]
-* link:../s3/consistency-controls.html#how-consistency-controls-and-ILM-rules-interact[How consistency and ILM rules interact to affect data protection]
+* link:../s3/consistency.html#how-consistency-and-ILM-rules-interact[How consistency and ILM rules interact to affect data protection]
 
 == Example ILM rule
 

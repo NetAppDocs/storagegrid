@@ -11,7 +11,7 @@ summary: 'You can use StorageGRID logs to troubleshoot issues.'
 [.lead]
 You can use StorageGRID logs to troubleshoot issues. 
 
-NOTE: If you want to send your logs to an external syslog server or change the destination of audit information such as the `bycast.log` and `nms.log`, see link:../monitor/configure-audit-messages.html#[Configure audit messages and log destinations].
+NOTE: If you want to send your logs to an external syslog server or change the destination of audit information such as the `bycast.log` and `nms.log`, see link:../monitor/configure-audit-messages.html#[Configure audit messages and external syslog server].
 
 == General StorageGRID logs
 
@@ -266,6 +266,6 @@ m| /var/local/log/update-utcn.log
 
 .Related information
 
-link:about-bycast-log.html[About the bycast.log]
+* link:about-bycast-log.html[About the bycast.log]
 
-link:../s3/index.html[Use S3 REST API]
+* link:../s3/index.html[Use S3 REST API]

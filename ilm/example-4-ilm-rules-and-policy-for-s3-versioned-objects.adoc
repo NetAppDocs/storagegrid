@@ -21,7 +21,7 @@ NOTE: To perform ILM policy simulation on a noncurrent version of an object, you
 
 .Related information
 
-* link:how-objects-are-deleted.html[How objects are deleted]
+link:how-objects-are-deleted.html[How objects are deleted]
 
 
 == ILM rule 1 for example 4: Save three copies for 10 years
