@@ -32,7 +32,7 @@ To access the logs, you can link:collecting-log-files-and-system-data.html[colle
 
 Exporting the logs to the syslog server provides these capabilities:
 
-* Receive a list of all Grid Manager and Tenant Manager requests, in addition to S3 and Swift requests.
+* Receive a list of all Grid Manager and Tenant Manager requests, in addition to S3 requests.
 
 * Better visibility into S3 requests that return errors, without the performance impact caused by audit logging methods.
 
@@ -108,7 +108,7 @@ m| nginx-gw
 ** These messages are prefixed with `cgr:` when exported using syslog.
 ** The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
 
-*	`endpoint-access.log.gz`: S3 and Swift requests to load balancer endpoints.
+*	`endpoint-access.log.gz`: S3 requests to load balancer endpoints.
 **	These messages are prefixed with `endpoint:` when exported using syslog.
 **	The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
 

@@ -15,7 +15,7 @@ A grid has only one active policy at a time. A policy can contain multiple rules
 
 ILM rules define:
 
-* Which objects should be stored. A rule can apply to all objects, or you can specify filters to identify which objects a rule applies to. For example, a rule can apply only to objects associated with certain tenant accounts, specific S3 buckets or Swift containers, or specific metadata values.
+* Which objects should be stored. A rule can apply to all objects, or you can specify filters to identify which objects a rule applies to. For example, a rule can apply only to objects associated with certain tenant accounts, specific S3 buckets, or specific metadata values.
 * The storage type and location. Objects can be stored on Storage Nodes or in Cloud Storage Pools.
 * The type of object copies made. Copies can be replicated or erasure-coded.
 * For replicated copies, the number of copies made.

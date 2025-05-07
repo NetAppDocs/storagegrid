@@ -85,7 +85,7 @@ If enterprise networking policies restrict access to any of these ports, you can
 | TCP
 | All nodes
 | Storage Nodes
-| S3- and Swift-related internal traffic.
+| S3-related internal traffic.
 
 | 1504
 | TCP
@@ -212,12 +212,6 @@ If enterprise networking policies restrict access to any of these ports, you can
 | Admin/Storage Nodes
 | Storage Nodes
 | S3-related internal traffic.
-
-| 18083
-| TCP
-| All nodes
-| Storage Nodes
-| Swift-related internal traffic.
 
 | 18086
 | TCP

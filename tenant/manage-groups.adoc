@@ -70,8 +70,6 @@ If the tenant account has the *Use grid federation connection* permission and yo
 
 *** If you are editing an S3 group, optionally select a different S3 group policy or enter the JSON string for a custom policy, as required.
 
-*** If you are editing a Swift group, optionally select or clear the *Swift Administrator* checkbox.
-
 . To add one or more existing local users to the group:
 .. Select the Users tab.
 +
