@@ -143,7 +143,7 @@ You must be an administrator to set up AssumeRole.
 
 .About this task
 
-To set up AssumeRole, create the target group to be assumed, if the group does not already exist. Edit the group's S3 policy to specify the permitted actions of assuming this group. Edit the group's S3 trust policy to specify the trusted users allowed to assume the group with the AssumeRole API.
+To set up AssumeRole, create the target group to be assumed, if the group doesn't already exist. Edit the group's S3 policy to specify the permitted actions of assuming this group. Edit the group's S3 trust policy to specify the trusted users allowed to assume the group with the AssumeRole API.
 
 Temporary security credentials created from assuming this group are valid for a limited duration. The session is between 15 minutes and 12 hours, and the default session is 1 hour. When you remove the user from the group's S3 trust policy, the user can no longer assume this group. 
 
@@ -181,7 +181,7 @@ Temporary security credentials created from assuming this group are valid for a 
 }
 ----
 
-Once configured, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
+After configuration is complete, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
 The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/use-access-policies.html[Use access policies].
 
 // 2025-05-6, jira SGWS-34003
