@@ -1,15 +1,15 @@
 ---
 permalink: s3/example-session-policies.html
 sidebar: sidebar
-keywords: session policy examples
-summary: 'Use the examples in this section to build StorageGRID sesssion policies.'
+keywords: session policy example
+summary: 'Use the example in this section to build StorageGRID sesssion policies.'
 ---
-= Example session policies
+= Session policy example
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use the following example to build StorageGRID session policies.
+Use the following example to build a StorageGRID session policy.
 
 == Example: Set up a session policy that allows object retrieval
 
@@ -26,4 +26,4 @@ In this example, the session's principal is allowed to retrieve objects from buc
   ]
 }
 ----
-// sgws34003-mairead-1 may
+// sgws34003-mairead-8 may
