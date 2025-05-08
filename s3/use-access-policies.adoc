@@ -879,6 +879,8 @@ PUT#1 -------> PUT#2 ---X (denied)
 
 * link:example-group-policies.html[Example group policies]
 
+* link:example-session-policies.html[Example session policy]
+
 * link:../ilm/index.html[Manage objects with ILM]
 
 * link:../tenant/index.html[Use a tenant account]

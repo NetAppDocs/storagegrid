@@ -22,6 +22,6 @@ If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will ke
 == Tenant groups
 
 === AssumeRole
-StorageGRID now supports link:../tenant/manage-groups/.html#set-up-assumerole[AssumeRole]. You can now configure a new S3 trust policy to support the AssumeRole API.
+StorageGRID now supports link:../tenant/manage-groups.html#set-up-assumerole[Set up AssumeRole]. You can now configure a new S3 trust policy to support the AssumeRole API.
 
 // 2025-5-8, sgws34003
