@@ -15,7 +15,7 @@ Support for the S3 REST API enables you to connect service-oriented applications
 
 == Supported versions
 
-StorageGRID supports the following specific versions of STS, S3 and HTTP.
+StorageGRID supports the following specific versions of STS, S3 and HTTP:
 
 [cols="1a,1a" options="header"]
 |===
