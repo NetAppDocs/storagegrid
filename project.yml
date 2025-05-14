@@ -142,29 +142,29 @@ sidebar:
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
-        - title: Node procedures
-          entries:
-          - title: Node maintenance procedures
-            pdf-filename: Node procedures
-            url: "/maintain/grid-node-procedures.html"
-          - title: Move ADC service
-            url: "/maintain/move-adc-service.html"
-          - title: Convert to data-only node
-            url: "/maintain/convert-to-data-only-node.html"
-        - title: 'Reboot, shutdown, and power procedures'
-          entries:
-          - title: Perform rolling reboot 
-            url: "/maintain/rolling-reboot-procedure.html"               
-          - title: Reboot node from Tasks tab
-            url: "/maintain/rebooting-grid-node-from-grid-manager.html"
-          - title: Reboot node from command shell
-            url: "/maintain/rebooting-grid-node-from-command-shell.html"
-          - title: Shut down node
-            url: "/maintain/shutting-down-grid-node.html"
-          - title: Power down host
-            url: "/maintain/powering-down-host.html"
-          - title: Power off and power on all nodes
-            url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
+      - title: Node procedures
+        entries:
+        - title: Node maintenance procedures
+          pdf-filename: Node procedures
+          url: "/maintain/grid-node-procedures.html"
+        - title: Move ADC service
+          url: "/maintain/move-adc-service.html"
+        - title: Convert to data-only node
+          url: "/maintain/convert-to-data-only-node.html"
+      - title: 'Reboot, shutdown, and power procedures'
+        entries:
+        - title: Perform rolling reboot 
+          url: "/maintain/rolling-reboot-procedure.html"               
+        - title: Reboot node from Tasks tab
+          url: "/maintain/rebooting-grid-node-from-grid-manager.html"
+        - title: Reboot node from command shell
+          url: "/maintain/rebooting-grid-node-from-command-shell.html"
+        - title: Shut down node
+          url: "/maintain/shutting-down-grid-node.html"
+        - title: Power down host
+          url: "/maintain/powering-down-host.html"
+        - title: Power off and power on all nodes
+          url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
         - title: Port remap procedures
           entries: 
           - title: Remove port remaps on StorageGRID appliances
