@@ -60,6 +60,12 @@ As you're creating load balancer endpoints:
 * Media asset management
 * Video production
 
+[NOTE]
+====
+* Multiple object versions can be cached.
+* Range read operations are supported.
+====
+
 ==== Examples of workloads that aren't good candidates for caching
 
 * Fabric Pool
@@ -70,33 +76,19 @@ CAUTION: If any content to be served by the cache requires encryption at rest, h
 
 ==== Types of objects and requests that won't be cached
 
-*	Objects uploaded with SSE or SSE-C
-*	GET requests with the following parameters, headers, or conditions:
-
-** `response-content-encoding`
-** `partNumber`
-** Conditional headers
+*	The `response-content-encoding` query parameter
+*	The `partNumber` query parameter
+*	Conditional headers
 ** `If-Match`
 ** `If-Modified-Since`
 ** `If-None-Match`
 ** `If-Unmodified-Since`
-** `x-amz-server-side-encryption-customer-key` or other SSE-C headers
-** `acl`
-** `attributes`
-** `legal-hold`
-** `retention`
-** `tagging`
-** `torrent`
-** `versionId`
-** `uploadId`
-** Requests to the root resource `"/"`
-** Requests to a bucket root. Both for virtual-hosted-style and path-style requests.
-** Requests for the StorageGRID internal `x-ntap-sg-validate` query parameter
+*	Requests that were encrypted at rest with any of the following:
+** SSE (server-side encryption with StorageGRID-managed keys)
+** SSE-C (server-side encryption with customer-provided keys)
+** Stored object encryption 
 
 Any requests that aren't cached are forwarded to an upstream LDR as if the cache were not enabled.
-
-NOTE: Multiple object versions can be cached.
-
 
 .Related information
 
