@@ -142,10 +142,11 @@ sidebar:
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
-        - title: Node maintenance procedures
-          pdf-filename: Node procedures
-          url: "/maintain/grid-node-procedures.html"
+        - title: Node procedures
           entries:
+          - title: Node maintenance procedures
+            pdf-filename: Node procedures
+            url: "/maintain/grid-node-procedures.html"
           - title: Move ADC service
             url: "/maintain/move-adc-service.html"
           - title: Convert to data-only node
