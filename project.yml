@@ -171,7 +171,7 @@ sidebar:
             url: "/maintain/removing-port-remaps.html"
           - title: Remove port remaps on bare metal hosts
             url: "/maintain/removing-port-remaps-on-bare-metal-hosts.html"
-        - title: 
+        - title: Server Manager procedures
           entries:
           - title: View Server Manager status and version
             url: "/maintain/viewing-server-manager-status-and-version.html"
