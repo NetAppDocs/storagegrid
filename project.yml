@@ -100,10 +100,6 @@ sidebar:
               url: "/maintain/considerations-for-decommissioning-storage-nodes.html"
             - title: ADC quorum
               url: "/maintain/understanding-adc-service-quorum.html"
-            - title: Move ADC service
-              url: "/maintain/move-adc-service.html"
-            - title: Convert to data-only node
-              url: "/maintain/convert-to-data-only-node.html"
             - title: Review ILM policy and storage configuration
               url: "/maintain/reviewing-ilm-policy-and-storage-configuration.html"
             - title: Consolidate Storage Nodes
@@ -146,12 +142,35 @@ sidebar:
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
-      - title: Node procedures
-        entries:
         - title: Node maintenance procedures
           pdf-filename: Node procedures
           url: "/maintain/grid-node-procedures.html"
-        - title: Server Manager procedures
+          entries:
+          - title: Move ADC service
+            url: "/maintain/move-adc-service.html"
+          - title: Convert to data-only node
+            url: "/maintain/convert-to-data-only-node.html"
+        - title: 'Reboot, shutdown, and power procedures'
+          entries:
+          - title: Perform rolling reboot 
+            url: "/maintain/rolling-reboot-procedure.html"               
+          - title: Reboot node from Tasks tab
+            url: "/maintain/rebooting-grid-node-from-grid-manager.html"
+          - title: Reboot node from command shell
+            url: "/maintain/rebooting-grid-node-from-command-shell.html"
+          - title: Shut down node
+            url: "/maintain/shutting-down-grid-node.html"
+          - title: Power down host
+            url: "/maintain/powering-down-host.html"
+          - title: Power off and power on all nodes
+            url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
+        - title: Port remap procedures
+          entries: 
+          - title: Remove port remaps on StorageGRID appliances
+            url: "/maintain/removing-port-remaps.html"
+          - title: Remove port remaps on bare metal hosts
+            url: "/maintain/removing-port-remaps-on-bare-metal-hosts.html"
+        - title: 
           entries:
           - title: View Server Manager status and version
             url: "/maintain/viewing-server-manager-status-and-version.html"
@@ -175,26 +194,6 @@ sidebar:
             url: "/maintain/using-donotstart-file.html"
           - title: Troubleshoot Server Manager
             url: "/maintain/accessing-server-manager-log-file.html"
-        - title: 'Reboot, shutdown, and power procedures'
-          entries:
-          - title: Perform rolling reboot 
-            url: "/maintain/rolling-reboot-procedure.html"               
-          - title: Reboot node from Tasks tab
-            url: "/maintain/rebooting-grid-node-from-grid-manager.html"
-          - title: Reboot node from command shell
-            url: "/maintain/rebooting-grid-node-from-command-shell.html"
-          - title: Shut down node
-            url: "/maintain/shutting-down-grid-node.html"
-          - title: Power down host
-            url: "/maintain/powering-down-host.html"
-          - title: Power off and power on all nodes
-            url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
-        - title: Port remap procedures
-          entries: 
-          - title: Remove port remaps on StorageGRID appliances
-            url: "/maintain/removing-port-remaps.html"
-          - title: Remove port remaps on bare metal hosts
-            url: "/maintain/removing-port-remaps-on-bare-metal-hosts.html"
       - title: Network procedures
         entries:
         - title: Update subnets for Grid Network
