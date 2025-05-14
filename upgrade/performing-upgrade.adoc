@@ -203,3 +203,7 @@ NOTE: The upgrade from StorageGRID 11.8 to 11.9 does not require a Cassandra dat
 . Verify that grid operations have returned to normal:
  .. Check that the services are operating normally and that there are no unexpected alerts.
  .. Confirm that client connections to the StorageGRID system are operating as expected.
+
+.Related information
+
+link:how-your-system-is-affected-during-upgrade.html[Learn about how your system is affected during the upgrade].

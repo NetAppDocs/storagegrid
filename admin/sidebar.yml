@@ -130,7 +130,9 @@ entries:
       - title: Configure network and object security
         url: "/admin/changing-network-options-object-encryption.html"  
       - title: Change interface security settings
-        url: "/admin/changing-browser-session-timeout-interface.html"      
+        url: "/admin/changing-browser-session-timeout-interface.html"  
+      - title: Manage SSH access
+        url: "/admin/manage-ssh-access.html"      
     - title: Configure key management servers
       entries:
       - title: What is key management server
