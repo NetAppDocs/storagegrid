@@ -115,7 +115,7 @@ NOTE: If you set the consistency to a different value to work around a temporary
 
 == What is session policy ?
 
-A session policy is an access policy that restricts the permissions available during a specific session, such as when a user assumes a group. The group itself might have broader permissions. A session policy's temporary, more granular set of permissions restricts further the group's standard permissions.
+A session policy is an access policy that temporarily restricts the permissions available during a specific session, such as when a user assumes a group. The group itself might have broader permissions. 
 
 
 == Use ARN in policy statements
@@ -886,4 +886,4 @@ PUT#1 -------> PUT#2 ---X (denied)
 * link:../tenant/index.html[Use a tenant account]
 
 // 2023 OCT 5, SGWS-27457
-// 2025 May 13, SGWS-34003
+// 2025 May 14, SGWS-34003
