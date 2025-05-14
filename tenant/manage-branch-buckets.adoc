@@ -24,7 +24,11 @@ You can use a branch bucket to remove corrupt objects by creating a branch bucke
 
 CAUTION: A branch bucket doesn't serve as a backup, but provides access to protected data. You must continue to use link:../ilm/managing-objects-with-s3-object-lock.html[S3 Object Lock] or link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] to protect data.
 
-Cross-grid replication isn't supported for branch buckets.
+Note the following characteristics of branch buckets:
+
+* You can access branch buckets by using link:../tenant/use-s3-console.html[S3 Console to download objects].
+* A branch bucket adheres to existing link:../s3/bucket-and-group-access-policies.html[access policies] and link:../ilm/access-create-ilm-rule-wizard.html[ILM rules] for the corresponding base bucket.
+* Cross-grid replication isn't supported for branch buckets.
 
 
 .Before you begin
@@ -85,6 +89,8 @@ The branch bucket's region must match the region for the base bucket, so this fi
 * *Read-write*: You can add or delete objects or object versions in the branch bucket.
 
 * *Read-only*: You can't modify objects in the branch bucket.
+
+*Note*: You can set the branch bucket type to read-only only if the branch bucket is empty. If the type for an existing branch bucket is set to read-write and you haven't written to the it, you can change the type to read-only.
 |===
 
 . Select *Continue*.
