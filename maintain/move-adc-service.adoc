@@ -1,7 +1,7 @@
 ---
 permalink: maintain/move-adc-service.html
 sidebar: sidebar
-keywords: move adc
+keywords: storagegrid, move adc, adc quorum
 summary: 'You can move the ADC service to another Storage Node on the same site.'
 ---
 = Move the ADC service
