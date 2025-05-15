@@ -33,7 +33,7 @@ Background verification runs at a continuous rate that is designed not to interf
 
 If the system detects a corrupt object that it can't correct automatically (because the corruption prevents the object from being identified), the *Unidentified corrupt object detected* alert is triggered.
 
-If background verification can't replace a corrupted object because it can't locate another copy, the *Objects lost* alert is triggered.
+If background verification can't replace a corrupted object because it can't locate another copy, the *Objects potentially lost* alert is triggered.
 
 == What is object existence check?
 
@@ -117,8 +117,8 @@ If the number of Missing object copies detected is greater than 100, there might
 
 .	After the job has completed, take any additional required actions:
 *	If Missing object copies detected is zero, then no issues were found. No action is required.
-*	If Missing object copies detected is greater than zero and the *Objects lost* alert has not been triggered, then all missing copies were repaired by the system. Verify that any hardware issues have been corrected to prevent future damage to object copies.
-* If Missing object copies detected is greater than zero and the *Objects lost* alert has been triggered, then data integrity could be affected. Contact technical support.
+*	If Missing object copies detected is greater than zero and the *Objects potentially lost* alert has not been triggered, then all missing copies were repaired by the system. Verify that any hardware issues have been corrected to prevent future damage to object copies.
+* If Missing object copies detected is greater than zero and the *Objects potentially lost* alert has been triggered, then data integrity could be affected. Contact technical support.
 * You can investigate lost object copies by using grep to extract the LLST audit messages: `grep LLST audit_file_name`.
 +
 This procedure is similar to the one for link:../troubleshoot/investigating-lost-objects.html[investigating lost objects], although for object copies you search for `LLST` instead of `OLST`.
