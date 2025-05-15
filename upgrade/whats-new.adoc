@@ -18,3 +18,10 @@ Fresh installations of StorageGRID 12.0 and later will default to using Quorum s
 
 If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency. If you want to enable Quorum semantics, follow <link> for instructions.
 
+
+== Tenant groups
+
+=== AssumeRole
+You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. 
+
+// 2025-5-8, sgws34003
