@@ -14,7 +14,7 @@ This release of StorageGRID introduces the following features and functional cha
 == S3 consistency
 
 === Quorum consistency for new 12.0 installations
-Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set. The new behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. The performance characteristics of Quorum semantics will differ depending on client application workload. If you need to revert to the previous behavior for strong-global consistency, follow https://kb.netapp.com/hybrid/StorageGRID/Object_Mgmt/Configuring_StorageGRID_quorum_semantics_for_strong-global_consistency[Enable or disable Quorum semantics^] for instructions.
+Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set. The new behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. The performance characteristics of Quorum semantics will differ depending on client application workload. If you need to revert to the previous behavior for strong-global consistency, follow https://kb.netapp.com/hybrid/StorageGRID/Object_Mgmt/Configuring_StorageGRID_quorum_semantics_for_strong-global_consistency[Configure StorageGRID Quorum semantics for strong-global consistency^] for instructions.
 
 If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency.
 
