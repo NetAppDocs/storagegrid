@@ -63,7 +63,7 @@ Admin: # grep OLST audit.log
 | Object <object_identifier> not found
 | If the object isn't found, the message "ERROR":"" is returned.
 
-If the object isn't found, <<reset-lost-obj-count,reset the Lost object count>> to clear the alert. The lack of an object indicates that the object was intentionally deleted.
+If the object isn't found, <<reset-lost-obj-count,reset the Objects potentially lost counter>> to clear the alert. The lack of an object indicates that the object was intentionally deleted.
 
 | Locations > 0
 | If there are locations listed in the output, the *Objects potentially lost* alert might be a false positive.
@@ -72,7 +72,7 @@ Confirm that the objects exist. Use the Node ID and filepath listed in the outpu
 
 (The procedure for link:searching-for-and-restoring-potentially-lost-objects.html[searching for potentially lost objects] explains how to use the Node ID to find the correct Storage Node.)
 
-If the objects exist, <<reset-lost-obj-count,reset the Lost object count>> to clear the alert.
+If the objects exist, <<reset-lost-obj-count,reset the Objects potentially lost counter>> to clear the alert.
 
 |Locations = 0
 |If there are no locations listed in the output, the object is potentially missing. You can try to link:searching-for-and-restoring-potentially-lost-objects.html[search for and restore the object] yourself, or you can contact technical support.
@@ -80,10 +80,10 @@ If the objects exist, <<reset-lost-obj-count,reset the Lost object count>> to cl
 Technical support might ask you to determine if there is a storage recovery procedure in progress. See the information about link:../maintain/restoring-volume.html[restoring object data using Grid Manager] and link:../maintain/restoring-object-data-to-storage-volume.html[restoring object data to a storage volume].
 |===
 
-. [[reset-lost-obj-count]]After you address lost object issues, reset the Lost object count to ensure alerts aren't false positives:
+. [[reset-lost-obj-count]]After you address lost object issues, reset the Objects potentially lost counter to ensure alerts aren't false positives:
 .. Select *NODES*.
 .. Select *_Storage Node_* > *Tasks*.
-.. In the Objects potentially lost section, select *Reset*.
+.. In the Reset Objects potentially lost counter section, select *Reset*.
 
 // 2025 MAR 10, SGRIDDOC-110
 // 2024 OCT 8: SGRIDDOC-104

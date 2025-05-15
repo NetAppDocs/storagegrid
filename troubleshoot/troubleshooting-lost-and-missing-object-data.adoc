@@ -20,4 +20,4 @@ If this retrieval is successful, the StorageGRID system replaces the missing cop
 
 You should investigate all *Objects potentially lost* alerts immediately to determine the root cause of the loss and to determine if the object might still exist in an offline, or otherwise currently unavailable, Storage Nodes. See link:../troubleshoot/investigating-lost-objects.html[Investigate lost objects].
 
-In the case where object data without copies is lost, there is no recovery solution. However, you must reset the Lost objects counter to prevent known lost objects from masking any new lost objects. See link:resetting-lost-and-missing-object-counts.html[Reset lost and missing object counts].
+In the case where object data without copies is lost, there is no recovery solution. However, you must link:../troubleshoot/investigating-lost-objects.html#reset-lost-obj-count[reset the Objects potentially lost counter] to prevent known lost objects from masking any new lost objects.
