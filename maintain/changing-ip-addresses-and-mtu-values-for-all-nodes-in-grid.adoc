@@ -33,6 +33,8 @@ NOTE: If SSO is enabled for your StorageGRID system and any relying party trusts
 +
 NOTE: If necessary, add the new subnet for the new IP addresses.
 
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
+
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
  .. Enter the password listed in the `Passwords.txt` file.
@@ -102,8 +104,12 @@ NOTE: The entire grid must be shut down, so that all nodes are down at the same 
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished changing the IP addresses.
+
 .Related information
 
 * link:adding-to-or-changing-subnet-lists-on-grid-network.html[Add to or change subnet lists on Grid Network]
 
 * link:shutting-down-grid-node.html[Shut down grid node]
+
+// 2025 APR 30, SGWS-34284

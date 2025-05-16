@@ -14,7 +14,14 @@ This release of StorageGRID introduces the following features and functional cha
 == S3 consistency
 
 === Quorum consistency for new 12.0 installations
-Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set. The new behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. The performance characteristics of Quorum semantics will differ depending on client application workload. If you need to revert to the previous behavior for strong-global consistency, follow <link> for instructions.
+Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set. The new behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. The performance characteristics of Quorum semantics will differ depending on client application workload. If you need to revert to the previous behavior for strong-global consistency, follow https://kb.netapp.com/hybrid/StorageGRID/Object_Mgmt/Configuring_StorageGRID_quorum_semantics_for_strong-global_consistency[Configure StorageGRID Quorum semantics for strong-global consistency^] for instructions.
 
-If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency. If you want to enable Quorum semantics, follow <link> for instructions.
+If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency.
 
+
+== Tenant groups
+
+=== AssumeRole
+You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. 
+
+// 2025-5-8, sgws34003
