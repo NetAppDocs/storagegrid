@@ -273,7 +273,7 @@ NOTE: If you assign less than 500 GB to volume 0 (non-production use only), 10% 
 *** 128 GB RAM
 *** 8 core CPU
 *** 8 TB SSD or equivalent storage for the Cassandra database (rangedb/0)
-** If the existing StorageGRID site is using virtual Storage Nodes with 24 GB RAM, 8 core CPU, and 3 TB or 4TB of metadata storage, the software-based metadata-only nodes should use similar resources (24 GB RAM, 8 core CPU, and 4TB of metadata storage (rangedb/0). 
+** If the existing StorageGRID site is using virtual Storage Nodes with 24 GB RAM, 8 core CPU, and 3 TB or 4TB of metadata storage, the software-based metadata-only nodes should use similar resources (24 GB RAM, 8 core CPU, and 4TB of metadata storage (rangedb/0)). 
 +
 When adding a new StorageGRID site, the new site total metadata capacity should, at minimum, match existing StorageGRID sites and new site resources should match the Storage Nodes at existing StorageGRID sites.
 
