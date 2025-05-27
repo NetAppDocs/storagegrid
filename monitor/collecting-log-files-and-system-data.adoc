@@ -12,7 +12,7 @@ summary: 'You can retrieve StorageGRID log files and system data, including conf
 You can retrieve StorageGRID log files and system data, including configuration data, and send them to technical support.
 
 .Before you begin
-* You are signed in to the Grid Manager on the primary Admin Node using a link:../admin/web-browser-requirements.html[supported web browser].
+* You are signed in to the Grid Manager on any Admin Node using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 * You have the provisioning passphrase.
 
@@ -32,7 +32,7 @@ You can sort by node name, site, and node type. The Site and Node type columns c
 
 . Select the date and time range of the data to be included in the log files.
 +
-If you select a very long time period or collect logs from all nodes in a large grid, the log archive could become too large to be stored on a node, or too large to be collected to the primary Admin Node for download. If either scenario occurs, restart log collection with a smaller set of data.
+If you select a very long time period or collect logs from all nodes in a large grid, the log archive could become too large to be stored on a node, or too large to be collected by an Admin Node for download. If either scenario occurs, restart log collection with a smaller set of data.
 
 . Select the types of logs you want to collect.
 +
