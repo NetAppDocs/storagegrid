@@ -61,7 +61,7 @@ For more information, see the https://docs.aws.amazon.com/AmazonS3/latest/usergu
 
 | The bucket's region.
 
-Your StorageGRID administrator manages the available regions. A bucket's region can affect the data-protection policy applied to objects. By default, all buckets are created in the `us-east-1` region.
+Your StorageGRID administrator manages the available regions. A bucket's region can affect the data-protection policy applied to objects. By default, all buckets are created in the `us-east-1` region. If the default region is configured to a region other than `us-east-1`, this other region is initially selected in the drop-down.
 
 *Note*: You can't change the region after creating the bucket.
 
@@ -122,3 +122,5 @@ The bucket is created and added to the table on the Buckets page.
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view bucket details] and perform additional configuration.
 
 You can also link:../tenant/manage-branch-buckets.html[create branch buckets] as needed.
+
+// 2025 MAY 16, SGWS-34290
