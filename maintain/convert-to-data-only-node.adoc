@@ -1,7 +1,7 @@
 ---
 permalink: maintain/convert-to-data-only-node.html
 sidebar: sidebar
-keywords: storagegrid, recover, stop services, power down host, power off host
+keywords: storagegrid, convert node, data-only node
 summary: 'To increase performance, you can convert slower non-ADC Storage Nodes to data-only Storage Nodes.'
 ---
 = Convert a Storage Node to a data-only node

@@ -37,7 +37,7 @@ TIP: You can't change the bucket name after creating the bucket.
   
 .. Select the region for this bucket.
 +
-By default, all buckets are created in the `us-east-1` region.
+By default, all buckets are created in the `us-east-1` region. If the default region is configured to a region other than `us-east-1`, this other region is initially selected in the drop-down.
 
 .. Select *Continue*.
 
@@ -54,3 +54,5 @@ NOTE: Don't select *Enable object versioning* for the FabricPool bucket. Similar
 You will enter these values in ONTAP when you configure StorageGRID as a FabricPool cloud tier.
 +
 TIP: If you generate a new access key and secret access key in StorageGRID in the future, enter the new keys into ONTAP before deleting the old values from StorageGRID. Otherwise, ONTAP might temporarily lose its access to StorageGRID.
+
+// 2025 MAY 16, SGWS-34290

@@ -34,11 +34,6 @@ Full support for AWS Signature Version 2
 Support for AWS Signature Version 4, with the following exceptions:
 
 * When you provide the actual payload checksum value in `x-amz-content-sha256`, the value is accepted without validation, as if the value `UNSIGNED-PAYLOAD` had been provided for the header. When you provide an `x-amz-content-sha256` header value that implies `aws-chunked` streaming (for example, STREAMING-AWS4-HMAC-SHA256-PAYLOAD), the chunk signatures aren't verified against the chunk data.
-
-a|
-x-amz-security-token
-a|
-Not implemented. Returns `XNotImplemented`.
 |===
 
 == Common response headers
@@ -55,3 +50,4 @@ Not used
 |===
 
 // 2024 AUG 29, SGRIDDOC-92
+// 2025 apr 15, SGWS-34003
