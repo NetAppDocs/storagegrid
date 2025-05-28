@@ -162,7 +162,7 @@ NOTE: The temporary installation password is only used during node installation.
 .. In the *Grid Network (eth0)* section, select STATIC or DHCP for the *Grid network IP configuration*.
   *** If you select STATIC, enter the *Grid network IP*, *Grid network mask*, *Grid network gateway*, and *Grid network MTU*.
   *** If you select DHCP, the *Grid network IP*, *Grid network mask*, and *Grid network gateway* are automatically assigned.
-.. In the *Primary Admin IP* field, enter the IP address of the primary Admin Node for the Grid Network.
+.. In the *Primary Admin IP* field, enter the IP address of the primary Admin Node, if available, for the Grid Network. If the primary Admin Node isn't available, enter the IP of the non-primary Admin Node you want to use for recovery.
 +
 NOTE: This step does not apply if the node you are deploying is the primary Admin Node.
 +
