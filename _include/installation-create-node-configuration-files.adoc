@@ -48,7 +48,7 @@ The following table defines the values for all supported keys. Each key has one 
 |===
 | Value| Designation
 
-| Grid Network IPv4 address of the Admin Node you want to use to install or recover the Linux-based node. For recovery, use the IP of the primary Admin Node if available; otherwise, use the IP of a non-primary Admin node. If you omit this parameter, the node attempts to discover a primary Admin Node using mDNS.
+| Grid Network IPv4 address of the Admin Node you want to use to install the Linux-based node. For recovery, use the IP of the primary Admin Node if available; otherwise, use the IP of a non-primary Admin node. If you omit this parameter, the node attempts to discover a primary Admin Node using mDNS.
 
 link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node]
 
