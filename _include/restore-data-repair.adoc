@@ -2,7 +2,7 @@
 
 == Find hostname for Storage Node
 
-. Log in to the primary Admin Node:
+. Log in to any Admin Node:
 .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
 .. Enter the password listed in the `Passwords.txt` file.
 .. Enter the following command to switch to root: `su -`

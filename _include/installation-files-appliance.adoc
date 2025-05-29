@@ -1,5 +1,7 @@
 //installation files for appliances - used in expand and maintain
 
+NOTE: For appliance installation, these files are required only if you need to avoid network traffic. The appliance can download the required files from the Admin Node where you perform the recovery procedure.
+
 [cols="1a,1a" options="header"]
 |===
 | Path and file name| Description
@@ -14,4 +16,3 @@ MD5 checksum for the file `/debs/storagegridwebscale-
 images-version-SHA.deb`.
 |===
 
-NOTE: For appliance installation, these files are only required if you need to avoid network traffic. The appliance can download the required files from the primary Admin Node.
