@@ -60,15 +60,15 @@ If the tenant account has the *Use grid federation connection* permission and yo
 
 *** A blue banner indicating that if you edit or delete this group, your changes will not be synced to the other grid.
 
-. Edit group settings as needed. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] or details about what to enter.
+. Edit group settings as needed. Refer to link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] for details about what to enter.
 
 .. In the Overview section, change the display name by selecting the name or the edit icon image:../media/icon_edit_tm.png[Edit icon].
 
 .. On the *Group permissions* tab, update the permissions, and select *Save changes*.
 
 .. On the *Group policy* tab, make any changes, and select *Save changes*.
-
-*** If you are editing an S3 group, optionally select a different S3 group policy or enter the JSON string for a custom policy, as required.
++
+Optionally select a different S3 group policy or enter the JSON string for a custom policy as required.
 
 . To add one or more existing local users to the group:
 .. Select the Users tab.

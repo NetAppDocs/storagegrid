@@ -50,7 +50,7 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 .Steps
 
 . Select *CONFIGURATION* > *Network* > *Load balancer endpoints*.
-. To create an endpoint for an S3 or client, select the *S3 client* tab.
+. To create an endpoint for an S3 client, select the *S3 client* tab.
 . To create an endpoint for access to the Grid Manager, Tenant Manager, or both, select the *Management interface* tab.
 . Select *Create*.
 

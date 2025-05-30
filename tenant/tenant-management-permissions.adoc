@@ -36,7 +36,7 @@ You can assign the following permissions to a group.
 
 | View all buckets
 | 
-*S3 tenants*: Allows users to view all buckets and bucket configurations.
+Allows users to view all buckets and bucket configurations.
 
 | 
 Users who don't have either the View all buckets or the Manage all buckets permission don't see the *Buckets* menu option.
@@ -45,7 +45,7 @@ This permission is superseded by the Manage all buckets permission. It doesn't a
 
 | Manage all buckets
 |
-*S3 tenants*: Allows users to use the Tenant Manager and the Tenant Management API to create and delete S3 buckets and to manage the settings for all S3 buckets in the tenant account, regardless of S3 bucket or group policies.
+Allows users to use the Tenant Manager and the Tenant Management API to create and delete S3 buckets and to manage the settings for all S3 buckets in the tenant account, regardless of S3 bucket or group policies.
 
 | 
 Users who don't have either the View all buckets or the Manage all buckets permission don't see the *Buckets* menu option.
