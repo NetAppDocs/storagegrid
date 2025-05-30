@@ -430,7 +430,7 @@ Logs are periodically rotated. Use an S3 bucket to store logs for an extended pe
 . Select *Log location* > *Use a bucket*.
 . Select the *Enable archive logs* checkbox.
 . If the listed tenant and bucket aren't the ones you want to use, select *Change tenant and bucket*, and then select either *Create tenant and bucket* or *Select tenant and bucket*.
-+
+
 //tabbed blocks start here
 [role="tabbed-block"]
 ====
