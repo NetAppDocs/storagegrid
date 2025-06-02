@@ -439,7 +439,7 @@ Logs are periodically rotated. Use an S3 bucket to store logs for an extended pe
 .. Enter a new tenant name.
 .. Enter and confirm a password for the new tenant.
 .. Enter a new bucket name.
-..Select *Create and enable*.
+.. Select *Create and enable*.
 --
 //end create, begin select
 .Select tenant and bucket
