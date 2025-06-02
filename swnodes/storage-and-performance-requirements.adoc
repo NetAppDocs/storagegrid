@@ -194,7 +194,6 @@ a|*Container pool:* 300 GB
 [options="header"]
 |===
 | Type of node| LUN purpose| Number of LUNs| LUN size
-|Storage Node
 
 a|Storage Node
 a|OS volume
