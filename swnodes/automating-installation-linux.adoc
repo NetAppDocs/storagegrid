@@ -57,7 +57,7 @@ For RHEL, the installation tasks in the provided `storagegrid` role example use 
 
 .Ubuntu or Debian
 --
-TBD - Need example
+For Ubuntu or Debian, the installation tasks in the provided `storagegrid` role example use the `ansible.builtin.apt` module to perform the installation from the local DEB files or a remote apt repository.
 --
 ====
 
