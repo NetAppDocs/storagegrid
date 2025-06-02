@@ -57,7 +57,10 @@ For RHEL, the installation tasks in the provided `storagegrid` role example use 
 
 .Ubuntu or Debian
 --
-For Ubuntu or Debian, the installation tasks in the provided `storagegrid` role example use the `ansible.builtin.apt` module to perform the installation from the local DEB files or a remote apt repository.
+For Ubuntu or Debian, the installation tasks in the provided `storagegrid` role example use the `ansible.builtin.apt` module to perform the installation from the local DEB files or a remote apt repository. If the module is unavailable or not supported, you might need to edit the appropriate Ansible tasks in the following files to use the `yum` or `ansible.builtin.yum` module:
+
+* `roles/storagegrid/tasks/deb_install_from_repo.yml`
+* `roles/storagegrid/tasks/deb_install_from_local.yml`
 --
 ====
 
