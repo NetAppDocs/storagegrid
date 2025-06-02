@@ -125,8 +125,6 @@ entries:
       url: "/monitor/collecting-log-files-and-system-data.html"
     - title: Manually trigger an AutoSupport package
       url: "/monitor/manually-triggering-autosupport-message.html"
-    - title: View the Grid Topology tree
-      url: "/monitor/viewing-grid-topology-tree.html"
     - title: Review support metrics
       url: "/monitor/reviewing-support-metrics.html"
     - title: Change I/O prioritization

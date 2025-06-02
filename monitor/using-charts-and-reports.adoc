@@ -59,8 +59,6 @@ image::../media/state_graph.gif[State Graph]
 
 * link:viewing-nodes-page.html[View the Nodes page]
 
-* link:viewing-grid-topology-tree.html[View the Grid Topology tree]
-
 * link:reviewing-support-metrics.html[Review support metrics]
 
 == Chart legend

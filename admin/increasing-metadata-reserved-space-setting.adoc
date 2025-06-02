@@ -13,9 +13,7 @@ You might be able to increase the Metadata Reserved Space system setting if your
 
 .What you'll need
 * You are signed in to the Grid Manager using a link:web-browser-requirements.html[supported web browser].
-* You have the link:admin-group-permissions.html[Root Access permission or the Grid Topology Page Configuration and Other Grid Configuration permissions].
-
-NOTE: The Grid topology page has been deprecated and will be removed in a future release.
+* You have the link:admin-group-permissions.html[Root Access permission or the Other grid configuration permission].
 
 .About this task
 
