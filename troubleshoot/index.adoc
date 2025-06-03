@@ -89,17 +89,6 @@ Review alerts triggered in the past for additional insights.
 
 | * link:../monitor/monitoring-system-health.html#view-current-and-resolved-alerts[View current and resolved alerts]
 
-| Monitor events
-| Events include any system error or fault events for a node, including errors such as network errors. Monitor events to learn more about issues or to help with troubleshooting.
-| * link:../monitor/monitoring-events.html[Monitor events]
-
-| Identify trends using charts and text reports
-| Trends can provide valuable clues about when issues first appeared, and can help you understand how quickly things are changing.
-| 
-* link:../monitor/using-charts-and-reports.html[Use charts and graphs]
-
-* link:../monitor/types-of-text-reports.html[Use text reports]
-
 | Establish baselines
 | Collect information about the normal levels of various operational values. These baseline values, and deviations from these baselines, can provide valuable clues.
 | * <<establish-baselines,Establish baselines>>

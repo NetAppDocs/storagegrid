@@ -121,7 +121,7 @@ If the number of Missing object copies detected is greater than 100, there might
 * If Missing object copies detected is greater than zero and the *Objects potentially lost* alert has been triggered, then data integrity could be affected. Contact technical support.
 * You can investigate lost object copies by using grep to extract the LLST audit messages: `grep LLST audit_file_name`.
 +
-This procedure is similar to the one for link:../troubleshoot/investigating-lost-objects.html[investigating lost objects], although for object copies you search for `LLST` instead of `OLST`.
+This procedure is similar to the one for link:../troubleshoot/investigating-potentially-lost-objects.html[investigating potentially lost objects], although for object copies you search for `LLST` instead of `OLST`.
 
 .	If you selected the strong-site or strong-global consistency for the job, wait approximately three weeks for metadata consistency and then rerun the job on the same volumes again.
 +

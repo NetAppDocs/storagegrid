@@ -1,5 +1,5 @@
 ---
-permalink: troubleshoot/investigating-lost-objects.html
+permalink: troubleshoot/investigating-potentially-lost-objects.html
 sidebar: sidebar
 keywords: lost objects, investigating, objects
 summary: 'When the *Objects potentially lost* alert is triggered, you must investigate immediately. Collect information about the affected objects and contact technical support.'

@@ -113,7 +113,7 @@ This permission provides access to the *ILM* > *Object metadata lookup* page.
 
 == Other grid configuration
 
-This permission provides access to additional grid configuration options:
+This permission provides access to these additional grid configuration options:
 
 * *ILM*:
 ** Storage grades
