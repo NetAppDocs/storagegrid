@@ -9,7 +9,7 @@ summary: 'If you have configured and enabled single sign-on (SSO) and you use Az
 :imagesdir: ../media/
 
 [.lead]
-If you have link:../admin/configuring-sso.html[configured and enabled single sign-on (SSO)] and you use Azure as the SSO provider, you can use two example scripts to obtain an authentication token that is valid for the Grid Management API or the Tenant Management API.
+If you have link:../admin/how-sso-works.html[configured and enabled single sign-on (SSO)] and you use Azure as the SSO provider, you can use two example scripts to obtain an authentication token that is valid for the Grid Management API or the Tenant Management API.
 
 == Sign in to the API if Azure single sign-on is enabled
  

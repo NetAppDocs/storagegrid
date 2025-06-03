@@ -21,6 +21,7 @@ NOTE: If you are making changes to the Grid Network Subnet List only, use the Gr
 
 .Steps
 
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
  .. Enter the password listed in the `Passwords.txt` file.
@@ -104,7 +105,7 @@ NOTE: If you use the *stage* option, restart the node as soon as possible after 
 If you were unaware that the proposed changes require nodes to be restarted, you can defer the changes to minimize user impact. Selecting *cancel* returns you to the main menu and preserves your changes so you can apply them later.
 
 +
-After you apply or stage changes, a new Recovery Package is generated as a result of the grid configuration change.
+After you apply or stage changes, a new recovery package is generated as a result of the grid configuration change.
 . If configuration is stopped due to errors, the following options are available:
  ** To terminate the IP change procedure and return to the main menu, enter *a*.
  ** To retry the operation that failed, enter *r*.
@@ -113,9 +114,13 @@ After you apply or stage changes, a new Recovery Package is generated as a resul
 The failed operation can be retried later by selecting option *10* (Apply Changes) from the main menu. The IP change procedure will not be complete until all operations have completed successfully.
 
  ** If you had to manually intervene (to reboot a node, for example) and are confident that the action the tool thinks has failed was actually completed successfully, enter *f* to mark it as successful and move to the next operation.
-. Download a new Recovery Package from the Grid Manager.
+. Download a new recovery package from the Grid Manager.
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
 +
-CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished adding to or changing the subnet lists.
+
+// 2025 APR 30, SGWS-34284

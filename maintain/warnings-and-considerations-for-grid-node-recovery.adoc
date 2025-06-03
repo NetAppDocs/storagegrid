@@ -13,7 +13,7 @@ If a grid node fails, you must recover it as soon as possible. You must review a
 
 CAUTION: StorageGRID is a distributed system composed of multiple nodes working with each other. Don't use disk snapshots to restore grid nodes. Instead, refer to the recovery and maintenance procedures for each type of node.
 
-NOTE: If an entire StorageGRID site has failed, contact technical support. Technical support will work with you to develop and execute a site recovery plan that maximizes the amount of data that is recovered and meets your business objectives. See link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
+NOTE: If an entire StorageGRID site has failed, contact technical support. Technical support will work with you to develop and execute a site recovery plan that maximizes the amount of data that is recovered and meets your business objectives. Refer to link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 Some of the reasons for recovering a failed grid node as soon as possible include the following:
 
@@ -31,8 +31,8 @@ All of the following conditions are assumed when recovering grid nodes:
 
 * The failed physical or virtual hardware has been replaced and configured.
 * The StorageGRID Appliance Installer version on the replacement appliance matches the software version of your StorageGRID system, as described in https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html[Verify and upgrade StorageGRID Appliance Installer version^].
-* If you are recovering a grid node other than the primary Admin Node, there is connectivity between the grid node being recovered and the primary Admin Node.
-* If you are recovering an appliance Storage Node, you must specify the same storage type as the original appliance (Combined, Metadata-only, or Data-only) during appliance installation. If you specify a different storage type, the recovery will fail and require reinstallation of the appliance with the correct storage type specified.
+* If you are recovering a grid node other than the primary Admin Node, there is connectivity between the grid node being recovered and the Admin Node managing the recovery procedure.
+* If you are recovering an appliance Storage Node, you must specify the same storage type as the original appliance (combined, metadata-only, or data-only) during appliance installation. If you specify a different storage type, the recovery will fail and require reinstallation of the appliance with the correct storage type specified.
 
 == Order of node recovery if a server hosting more than one grid node fails
 
