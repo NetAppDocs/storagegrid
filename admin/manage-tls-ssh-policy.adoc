@@ -32,29 +32,51 @@ image::../media/securitysettings_tls_ssh_policies_current.png[TLS and SSH polici
 
 . Review the tiles to learn about the available policies.
 +
-[cols="1a,2a" options="header"]
-|===
-| Policy
-| Description
+[role="tabbed-block"]
+====
 
-| Modern compatibility (default)
-| Use the default policy if you need strong encryption and unless you have special requirements. This policy is compatible with most TLS and SSH clients. 
 
-| Legacy compatibility
-| Use this policy if you need additional compatibility options for older clients. The additional options in this policy might make it less secure than the Modern compatibility policy.
+.Modern compatibility (default)
+--
+Use the default policy if you need strong encryption and unless you have special requirements. This policy is compatible with most TLS and SSH clients. 
+--
 
-| Common Criteria
-| Use this policy if you require Common Criteria certification.
+.Legacy compatibility
+--
+Use the Legacy compatibility policy if you need additional compatibility options for older clients. The additional options in this policy might make it less secure than the Modern compatibility policy.
+--
 
-| FIPS strict
-| Use this policy if you require Common Criteria certification and need to use the NetApp Cryptographic Security Module 3.0.8 for external client connections to load balancer endpoints, Tenant Manager, and Grid Manager. Using this policy might reduce performance.
+.Common Criteria
+--
+Use the Common Criteria policy if you require Common Criteria certification.
+--
 
-*Note*: After you select this policy, all nodes must be link:../maintain/rolling-reboot-procedure.html[rebooted in a rolling fashion] to activate the NetApp Cryptographic Security Module. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
+.FIPS strict
+--
+Use the FIPS strict policy if you require Common Criteria certification and need to use the NetApp Cryptographic Security Module (NCSM) 3.0.8 for external client connections to load balancer endpoints, Tenant Manager, and Grid Manager. Using this policy might reduce performance.
 
-| Custom
-| Create a custom policy if you need to apply your own ciphers.
+*Note*: After you select this policy, all nodes must be link:../maintain/rolling-reboot-procedure.html[rebooted in a rolling fashion] to activate the NCSM. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
+--
+.Custom
+--
+Create a custom policy if you need to apply your own ciphers.
 
-|===
+If your StorageGRID appliance has FIPS 140 cryptography requirements, enable `fipsMode` mode so that the NCSM and NetApp StorageGRID Kernel Crypto API (KCAPI) modules are used in the following operations:
+
+* NCSM 3.0.8:
+** TLS connections between the following services: ADC, AMS, CMN, DDS, LDR, SSM, NMS, mgmt-api, nginx, nginx-gw, and cache-svc
+** TLS connections between clients and the nginx-gw service (load balancer endpoints)
+** TLS connections between clients and the LDR service
+** Object content encryption for SSE-S3, SSE-C, and the Stored object encryption setting
+** SSH connections
+* KCAPI 6.1.129-1-ntap1-amd64 - CAVP certificates A6242 through A6257:
+** This KCAPI module is present only on VM and StorageGRID appliance platforms
+** Entopy collection (Entropy Certificate E223)
+** Node Encryption full system encryption
+
+*Note*: When you enable `fipsMode`, you're prompted to link:../maintain/rolling-reboot-procedure.html[reboot in a rolling fashion] to activate the NetApp Cryptographic Security Module. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
+--
+====
 
 . To see details about each policy's ciphers, protocols, and algorithms, select *View details*. 
 
