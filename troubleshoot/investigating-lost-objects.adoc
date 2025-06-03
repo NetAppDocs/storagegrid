@@ -70,12 +70,10 @@ If the object isn't found, <<reset-lost-obj-count,reset the Objects potentially 
 
 Confirm that the objects exist. Use the Node ID and filepath listed in the output to confirm that the object file is in the listed location.
 
-(The procedure for link:searching-for-and-restoring-potentially-lost-objects.html[searching for potentially lost objects] explains how to use the Node ID to find the correct Storage Node.)
-
 If the objects exist, <<reset-lost-obj-count,reset the Objects potentially lost counter>> to clear the alert.
 
 |Locations = 0
-|If there are no locations listed in the output, the object is potentially missing. You can try to link:searching-for-and-restoring-potentially-lost-objects.html[search for and restore the object] yourself, or you can contact technical support.
+|If there are no locations listed in the output, the object is potentially missing. Contact technical support.
 
 Technical support might ask you to determine if there is a storage recovery procedure in progress. See the information about link:../maintain/restoring-volume.html[restoring object data using Grid Manager] and link:../maintain/restoring-object-data-to-storage-volume.html[restoring object data to a storage volume].
 |===
