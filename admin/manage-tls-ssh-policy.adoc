@@ -30,7 +30,7 @@ The *TLS and SSH policies* tab shows the available policies. The currently activ
 +
 image::../media/securitysettings_tls_ssh_policies_current.png[TLS and SSH policies]
 
-. Review the tiles to learn about the available policies.
+. Review the tabs to learn about the available policies.
 +
 [role="tabbed-block"]
 ====
