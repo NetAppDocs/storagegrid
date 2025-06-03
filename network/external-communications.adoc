@@ -22,9 +22,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 
 ** link:../rhel/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Red Hat Enterprise Linux]
 
-** link:../ubuntu/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Ubuntu or Debian]
-
-** link:../vmware/deploying-storagegrid-node-as-virtual-machine.html#vmware-remap-ports[Remap ports for StorageGRID on VMware]
+** link:../swnodes/deploying-storagegrid-node-as-virtual-machine.html#vmware-remap-ports[Remap ports for StorageGRID on VMware]
 
 ** https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
 

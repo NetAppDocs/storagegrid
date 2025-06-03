@@ -37,11 +37,9 @@ sidebar:
     - title: 'Install, upgrade, and hotfix'
       url: "/landing-install-upgrade/index.html"  
       entries:
-      - title: Install appliances
+      - title: Install appliance-based nodes
         url: "/storagegrid-hardware.html" 
-      - section: rhel
-      - section: ubuntu
-      - section: vmware
+      - section: swnodes
       - section: upgrade
       - title: Apply StorageGRID hotfix
         entries:

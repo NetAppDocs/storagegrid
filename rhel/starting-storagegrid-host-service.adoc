@@ -1,14 +1,4 @@
 ---
 permalink: rhel/starting-storagegrid-host-service.html
-sidebar: sidebar
-keywords: how to start host service
-summary: 'To start your StorageGRID nodes, and ensure they restart after a host reboot, you must enable and start the StorageGRID host service.'
+redirect: storagegrid/swnodes/starting-storagegrid-host-service.html
 ---
-= Start the StorageGRID host service
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
-To start your StorageGRID nodes, and ensure they restart after a host reboot, you must enable and start the StorageGRID host service.
-
-include::../_include/starting-storagegrid-host-service.adoc[]

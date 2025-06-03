@@ -1,4 +1,4 @@
-//installation files for Red Hat Enterprise Linux - used in rhel, expand, maintain
+//installation files for RHEL - used in rhel, expand, maintain
 
 [cols="1a,1a" options="header"]
 |===

@@ -76,7 +76,7 @@ Use the `.zip` file if you are running Windows.
 |===
 | Platform| Installation archive
 
-|Red Hat Enterprise Linux
+|RHEL
 m|
 include::../_include/installation-archives-rhel.adoc[]
 
@@ -95,26 +95,32 @@ include::../_include/installation-archives-vmware.adoc[]
 +
 The paths listed in the step for each platform are relative to the top-level directory installed by the archive file.
 
-=== Red Hat Enterprise Linux
+. If you are recovering a link:../swnodes/index.html[software-based node], select the appropriate files:
++
+[role="tabbed-block"]
+====
 
-If you are recovering a link:../rhel/index.html[Red Hat Enterprise Linux system], select the appropriate files.
+.RHEL
+--
 
 include::../_include/installation-files-rhel.adoc[]
+--
 
-===  Ubuntu or Debian
-
-If you are recovering an link:../ubuntu/index.html[Ubuntu or Debian system], select the appropriate files.
+.Ubuntu or Debian
+--
 
 include::../_include/installation-files-ubuntu.adoc[]
+--
 
-=== VMware
-
-If you are recovering a link:../vmware/index.html[VMware system], select the appropriate files.
+.VMware
+--
 
 include::../_include/installation-files-vmware.adoc[]
+--
+====
 
-=== StorageGRID appliance
-
-If you are recovering a StorageGRID appliance-based system, select the appropriate files.
+[start=10]
+. If you are recovering a StorageGRID appliance-based system, select the appropriate files.
++
 
 include::../_include/installation-files-appliance.adoc[]
