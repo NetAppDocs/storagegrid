@@ -47,7 +47,7 @@ Other types of nodes, such as Admin Nodes or Gateway Nodes, can be deployed on t
 
 NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[grid node recovery] procedures for each type of node.
 
-== Number of storage volumes for each host
+== Number of storage volumes for each node
 
 The following table shows the number of storage volumes (LUNs) required for each host and the minimum size required for each LUN, based on which nodes will be deployed on that host.
 
@@ -66,7 +66,7 @@ a|Total number of nodes × 100 GB
 a|`/var/local` volume
 a|System data
 a|1 for each node on this host
-a|90 GB
+a|100 GB
 
 a|Storage Node
 a|Object data
@@ -117,7 +117,7 @@ Each node host requires a 100 GB LUN for the OS.
 |
 Storage Node
 a|100 GB
-a|90 GB
+a|100 GB
 a|4,000 GB
 
 a|Admin Node
@@ -127,13 +127,13 @@ a|_not applicable_
 
 a|Gateway Node
 a|100 GB
-a|90 GB
+a|100 GB
 a|_not applicable_
 |===
 
 == Example: Calculating the storage requirements for a host or virtual machine
 
-Suppose you plan to deploy three nodes on the same host or virtual machine: one Storage Node, one Admin Node, and one Gateway Node. You should provide a minimum of nine storage volumes to the host. You will need a minimum of 300 GB of performance-tier storage for the node containers, 670 GB of performance-tier storage for system data and transaction logs, and 12 TB of capacity-tier storage for object data.
+Suppose you plan to deploy three nodes on the same host or virtual machine: one Storage Node, one Admin Node, and one Gateway Node. You should provide a minimum of nine storage volumes to the host. You will need a minimum of 300 GB of performance-tier storage for the node containers, 700 GB of performance-tier storage for system data and transaction logs, and 12 TB of capacity-tier storage for object data.
 
 [role="tabbed-block"]
 ====
