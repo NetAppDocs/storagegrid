@@ -122,7 +122,7 @@ a|4,000 GB
 
 a|Admin Node
 a|100 GB
-a|490 GB (3 LUNs)
+a|500 GB (3 LUNs)
 a|_not applicable_
 
 a|Gateway Node
