@@ -36,7 +36,7 @@ All of the following conditions are assumed when recovering grid nodes:
 
 == Order of node recovery if a server hosting more than one grid node fails
 
-If a server that is hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node, you must recover that node first. Recovering the primary Admin Node first prevents other node recoveries from halting as they wait to contact the primary Admin Node.
+If a server that is hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node, you must recover that node first.
 
 == IP addresses for recovered nodes
 
