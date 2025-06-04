@@ -106,5 +106,9 @@ Depending on your requirements, you can use more than one encryption method at a
 
 If only a small portion of your objects require encryption, consider controlling encryption at the bucket or individual object level instead. Enabling multiple levels of encryption has an additional performance cost.
 
+.Related information
+link:manage-tls-ssh-policy.html[Learn about the FIPS certified encryption options].
+
+// 2025 JUN 5, SGWS-35312
 // 2024 JUL 22, SGRIDDOC-77
 // 2023 JUN 13, SGRIDDOC-7
