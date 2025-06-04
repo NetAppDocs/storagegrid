@@ -27,7 +27,7 @@ NOTE: Repair the hardware and properly attach the disks before running the `rebo
 
 CAUTION: Identify failed storage volumes carefully. You will use this information to verify which volumes must be reformatted. After a volume has been reformatted, data on the volume can't be recovered.
 
-To correctly recover failed storage volumes, you need to know both the device names of the failed storage volumes and their volume IDs.
+To recover failed storage volumes, you need to know both the device names of the failed storage volumes and their volume IDs.
 
 At installation, each storage device is assigned a file system universal unique identifier (UUID) and is mounted to a rangedb directory on the Storage Node using that assigned file system UUID. The file system UUID and the rangedb directory are listed in the `/etc/fstab` file. The Mount point, Device name, and size of the volume are displayed in the Grid Manager.
 
