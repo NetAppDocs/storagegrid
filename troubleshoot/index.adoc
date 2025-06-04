@@ -89,17 +89,6 @@ Review alerts triggered in the past for additional insights.
 
 | * link:../monitor/monitoring-system-health.html#view-current-and-resolved-alerts[View current and resolved alerts]
 
-| Monitor events
-| Events include any system error or fault events for a node, including errors such as network errors. Monitor events to learn more about issues or to help with troubleshooting.
-| * link:../monitor/monitoring-events.html[Monitor events]
-
-| Identify trends using charts and text reports
-| Trends can provide valuable clues about when issues first appeared, and can help you understand how quickly things are changing.
-| 
-* link:../monitor/using-charts-and-reports.html[Use charts and graphs]
-
-* link:../monitor/types-of-text-reports.html[Use text reports]
-
 | Establish baselines
 | Collect information about the normal levels of various operational values. These baseline values, and deviations from these baselines, can provide valuable clues.
 | * <<establish-baselines,Establish baselines>>
@@ -210,17 +199,12 @@ On the Storage Used - Object Metadata chart, find a period where the line is fai
 
 You can collect this information for the entire system or for a specific data center.
 
-| Rate of S3/Swift operations
+| Rate of S3 operations
 | Operations/second
 
-| On the Grid Manager dashboard, select *Performance* > *S3 operations* or *Performance* > *Swift operations*.
+| On the Grid Manager dashboard, select *Performance* > *S3 operations for Storage Nodes*.
 
-To see ingest and retrieval rates and counts for a specific site or node, select *NODES* > *_site or Storage Node_* > *Objects*. Position your cursor over the Ingest and Retrieve chart for S3.
-
-| Failed S3/Swift operations
-| Operations
-
-| Select *SUPPORT* > *Tools* > *Grid topology*. On the Overview tab in the API Operations section, view the value for S3 Operations - Failed or Swift Operations - Failed.
+To see ingest and retrieval rates and counts for a specific site or node, select *NODES* > *_site or Storage Node_* > *Objects*. Position your cursor over the S3 ingest and retrieve chart.
 
 | ILM evaluation rate
 | Objects/second

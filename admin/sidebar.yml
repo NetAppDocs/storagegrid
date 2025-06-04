@@ -292,5 +292,3 @@ entries:
       url: "/admin/using-multiple-admin-nodes.html"
     - title: Identify the primary Admin Node
       url: "/admin/identifying-primary-admin-node.html"
-    - title: View notification status and queues
-      url: "/admin/viewing-notification-status-and-queues.html"

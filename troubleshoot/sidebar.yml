@@ -19,10 +19,8 @@ entries:
       - title: Methods for retrieving objects
         pdf-filename: Troubleshoot lost and missing object data
         url: "/troubleshoot/troubleshooting-lost-and-missing-object-data.html"    
-      - title: Investigate lost objects
-        url: "/troubleshoot/investigating-lost-objects.html"
-      - title: Search for and restore potentially lost objects
-        url: "/troubleshoot/searching-for-and-restoring-potentially-lost-objects.html"
+      - title: Investigate potentially lost objects
+        url: "/troubleshoot/investigating-potentially-lost-objects.html"
     - title: Troubleshoot the Low object data storage alert
       url: "/troubleshoot/troubleshooting-low-object-data-storage-alert.html"
     - title: Troubleshoot Low read-only watermark override alerts

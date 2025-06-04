@@ -177,7 +177,6 @@ From the Tools section of the Support menu, you can:
 
 * link:../admin/configure-autosupport-grid-manager.html[Configure AutoSupport]
 * link:../monitor/running-diagnostics.html[Run diagnostics] on the current state of the grid
-* link:../monitor/viewing-grid-topology-tree.html[Access the Grid Topology tree] to view detailed information about grid nodes, services, and attributes
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
 +
@@ -192,7 +191,6 @@ The information about legacy alarms has been removed from this version of the do
 From the Other section of the Support menu, you can:
 
 * Manage link:../admin/manage-link-costs.html[link cost]
-* View link:../admin/viewing-notification-status-and-queues.html[Network Management System (NMS)] entries
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]
 
 // 2025 APR 30, SGWS-34284

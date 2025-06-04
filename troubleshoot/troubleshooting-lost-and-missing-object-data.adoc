@@ -18,6 +18,6 @@ If this retrieval is successful, the StorageGRID system replaces the missing cop
 * For replicated copies, if another copy can't be retrieved, the object is considered lost, and the alert is triggered.
 * For erasure-coded copies, if a copy can't be retrieved from the expected location, the Corrupt Copies Detected (ECOR) attribute is incremented by one before an attempt is made to retrieve a copy from another location. If no other copy is found, the alert is triggered.
 
-You should investigate all *Objects potentially lost* alerts immediately to determine the root cause of the loss and to determine if the object might still exist in an offline, or otherwise currently unavailable, Storage Nodes. See link:../troubleshoot/investigating-lost-objects.html[Investigate lost objects].
+You should investigate all *Objects potentially lost* alerts immediately to determine the root cause of the loss and to determine if the object might still exist in an offline, or otherwise currently unavailable, Storage Nodes. See link:../troubleshoot/investigating-potentially-lost-objects.html[Investigate potentially lost objects].
 
-In the case where object data without copies is lost, there is no recovery solution. However, you must link:../troubleshoot/investigating-lost-objects.html#reset-lost-obj-count[reset the Objects potentially lost counter] to prevent known lost objects from masking any new lost objects.
+In the case where object data without copies is lost, there is no recovery solution. However, you must link:../troubleshoot/investigating-potentially-lost-objects.html#reset-lost-obj-count[reset the Objects potentially lost counter] to prevent known lost objects from masking any new lost objects.

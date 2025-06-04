@@ -20,11 +20,11 @@ NOTE: If you want to send your logs to an external syslog server or change the d
 | File name| Notes| Found on
 
 m| /var/local/log/bycast.log
-| The primary StorageGRID troubleshooting file. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_Site_* > *_Node_* > *SSM* > *Events*.
+| The primary StorageGRID troubleshooting file.
 | All nodes
 
 m| /var/local/log/bycast-err.log
-| Contains a subset of `bycast.log` (messages with severity ERROR and CRITICAL). CRITICAL messages are also displayed in the system. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_Site_* > *_Node_* > *SSM* > *Events*.
+| Contains a subset of `bycast.log` (messages with severity ERROR and CRITICAL). CRITICAL messages are also displayed in the system.
 | All nodes
 
 m| /var/local/core/
