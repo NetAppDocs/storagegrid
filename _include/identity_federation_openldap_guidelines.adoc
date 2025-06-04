@@ -3,7 +3,7 @@
 
 If you want to use an OpenLDAP server for identity federation, you must configure specific settings on the OpenLDAP server.
 
-CAUTION: For identity sources that aren't ActiveDirectory or Azure, StorageGRID will not automatically block S3 access to users who are disabled externally. To block S3 access, delete any S3 keys for the user or remove the user from all groups.
+CAUTION: For identity sources that aren't Active Directory or Microsoft Entra ID, StorageGRID will not automatically block S3 access to users who are disabled externally. To block S3 access, delete any S3 keys for the user or remove the user from all groups.
 
 === Memberof and refint overlays
 

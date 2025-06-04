@@ -33,7 +33,7 @@ entries:
         entries:
         - title: Active Directory
           url: "/admin/use-api-if-sso-is-enabled-adfs.html"
-        - title: Azure
+        - title: Entra ID
           url: "/admin/use-api-if-sso-is-enabled-azure.html"
         - title: PingFederate
           url: "/admin/use-api-if-sso-is-enabled-ping.html"  

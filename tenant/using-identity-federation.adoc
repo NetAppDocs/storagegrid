@@ -13,13 +13,13 @@ Using identity federation makes setting up tenant groups and users faster, and i
 
 == Configure identity federation for Tenant Manager
 
-You can configure identity federation for the Tenant Manager if you want tenant groups and users to be managed in another system such as Active Directory, Azure Active Directory (Azure AD), OpenLDAP, or Oracle Directory Server.
+You can configure identity federation for the Tenant Manager if you want tenant groups and users to be managed in another system such as Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server.
 
 .Before you begin
 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the link:tenant-management-permissions.html[Root access permission].
-* You are using Active Directory, Azure AD, OpenLDAP, or Oracle Directory Server as the identity provider.
+* You are using Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server as the identity provider.
 +
 NOTE: If you want to use an LDAP v3 service that is not listed, contact technical support.
 

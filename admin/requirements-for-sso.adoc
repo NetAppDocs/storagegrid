@@ -16,7 +16,7 @@ Before enabling single sign-on (SSO) for a StorageGRID system, review the requir
 StorageGRID supports the following SSO identity providers (IdP):
 
 * Active Directory Federation Service (AD FS)
-* Entra ID
+* Microsoft Entra ID
 * PingFederate
 
 You must configure identity federation for your StorageGRID system before you can configure an SSO identity provider. The type of LDAP service you use for identity federation controls which type of SSO you can implement.
@@ -50,13 +50,13 @@ NOTE: Windows Server 2016 should be using the https://support.microsoft.com/en-u
 * Transport Layer Security (TLS) 1.2 or 1.3
 * Microsoft .NET Framework, version 3.5.1 or higher
 
-=== Considerations for Azure
+=== Considerations for Entra ID
 
-If you use Azure as the SSO type and users have user principal names that don't use the sAMAccountName as the prefix, login issues can occur if StorageGRID loses its connection with the LDAP server. To allow users to sign in, you must restore the connection to the LDAP server.
+If you use Entra ID as the SSO type and users have user principal names that don't use the sAMAccountName as the prefix, login issues can occur if StorageGRID loses its connection with the LDAP server. To allow users to sign in, you must restore the connection to the LDAP server.
 
 == Server certificate requirements
 
-By default, StorageGRID uses a management interface certificate on each Admin Node to secure access to the Grid Manager, the Tenant Manager, the Grid Management API, and the Tenant Management API. When you configure relying party trusts (AD FS), enterprise applications (Azure), or service provider connections (PingFederate) for StorageGRID, you use the server certificate as the signature certificate for StorageGRID requests.
+By default, StorageGRID uses a management interface certificate on each Admin Node to secure access to the Grid Manager, the Tenant Manager, the Grid Management API, and the Tenant Management API. When you configure relying party trusts (AD FS), enterprise applications (Entra ID), or service provider connections (PingFederate) for StorageGRID, you use the server certificate as the signature certificate for StorageGRID requests.
 
 If you have not already link:configuring-custom-server-certificate-for-grid-manager-tenant-manager.html[configured a custom certificate for the management interface], you should do so now. When you install a custom server certificate, it is used for all Admin Nodes, and you can use it in all StorageGRID relying party trusts, enterprise applications, or SP connections.
 

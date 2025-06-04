@@ -13,12 +13,12 @@ Using identity federation makes setting up groups and users faster, and it allow
 
 == Configure identity federation for Grid Manager
 
-You can configure identity federation in the Grid Manager if you want admin groups and users to be managed in another system such as Active Directory, Azure Active Directory (Azure AD), OpenLDAP, or Oracle Directory Server.
+You can configure identity federation in the Grid Manager if you want admin groups and users to be managed in another system such as Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server.
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have link:admin-group-permissions.html[specific access permissions].
-* You are using Active Directory, Azure AD, OpenLDAP, or Oracle Directory Server as the identity provider.
+* You are using Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server as the identity provider.
 +
 NOTE: If you want to use an LDAP v3 service that is not listed, contact technical support.
 * If you plan to use OpenLDAP, you must configure the OpenLDAP server. See <<Guidelines for configuring an OpenLDAP server>>.
@@ -26,7 +26,7 @@ NOTE: If you want to use an LDAP v3 service that is not listed, contact technica
 * If you plan to use Transport Layer Security (TLS) for communications with the LDAP server, the identity provider is using TLS 1.2 or 1.3. See link:supported-ciphers-for-outgoing-tls-connections.html[Supported ciphers for outgoing TLS connections].
 
 .About this task
-You can configure an identity source for the Grid Manager if you want to import groups from another system such as Active Directory, Azure AD, OpenLDAP, or Oracle Directory Server. You can import the following types of groups:
+You can configure an identity source for the Grid Manager if you want to import groups from another system such as Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server. You can import the following types of groups:
 
 * Admin groups. The users in admin groups can sign in to the Grid Manager and perform tasks, based on the management permissions assigned to the group.
 * Tenant user groups for tenants that don't use their own identity source. Users in tenant groups can sign in to the Tenant Manager and perform tasks, based on the permissions assigned to the group in the Tenant Manager. See link:creating-tenant-account.html[Create tenant account] and link:../tenant/index.html[Use a tenant account] for details.
