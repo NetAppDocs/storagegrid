@@ -425,7 +425,7 @@ New logs are sent to the destinations you selected. Existing logs remain in thei
 
 === [[use-bucket]]Use a bucket
 
-Logs are periodically rotated. Use an S3 bucket to store logs for an extended period of time.
+Logs are periodically rotated. Use an S3 bucket in the same grid to store logs for an extended period of time.
 
 . Select *Log location* > *Use a bucket*.
 . Select the *Enable archive logs* checkbox.
