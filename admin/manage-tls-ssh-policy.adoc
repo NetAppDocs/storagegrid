@@ -76,7 +76,7 @@ The NetApp StorageGRID Kernel Crypto API module is present only on VM and Storag
 --
 Create a custom policy if you need to apply your own ciphers.
 
-Optionally, if your StorageGRID appliance has FIPS 140 cryptography requirements, enable the FIPS mode feature to use the NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module:
+Optionally, if your StorageGRID has FIPS 140 cryptography requirements, enable the FIPS mode feature to use the NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module:
 
 .. Set the `fipsMode` parameter to `true`.
 
