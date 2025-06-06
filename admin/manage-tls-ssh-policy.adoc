@@ -38,7 +38,7 @@ image::../media/securitysettings_tls_ssh_policies_current.png[TLS and SSH polici
 
 .Modern compatibility (default)
 --
-Use the default policy if you need strong encryption and unless you have special requirements. This policy is compatible with most TLS and SSH clients. 
+Use the default policy if you need strong encryption and you don't have special requirements. This policy is compatible with most TLS and SSH clients. 
 --
 
 .Legacy compatibility
