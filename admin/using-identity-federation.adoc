@@ -46,3 +46,5 @@ include::../_include/identity_federation_disable_steps.adoc[]
 
 == Guidelines for configuring an OpenLDAP server
 include::../_include/identity_federation_openldap_guidelines.adoc[]
+
+// 2025 JUN 10, SGWS-33778

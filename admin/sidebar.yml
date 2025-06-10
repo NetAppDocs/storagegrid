@@ -34,7 +34,7 @@ entries:
         - title: Active Directory
           url: "/admin/use-api-if-sso-is-enabled-adfs.html"
         - title: Entra ID
-          url: "/admin/use-api-if-sso-is-enabled-azure.html"
+          url: "/admin/use-api-if-sso-is-enabled-entra-id.html"
         - title: PingFederate
           url: "/admin/use-api-if-sso-is-enabled-ping.html"  
       - title: Deactivate features with the API

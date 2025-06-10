@@ -97,4 +97,4 @@ NOTE: You might need to refresh the Enterprise applications page to see applicat
 
 . link:../admin/configure-sso.html#test-sso[Test each application].
 
-
+// 2025 JUN 10, SGWS-33778

@@ -170,3 +170,4 @@ You can delete an admin group when you want to remove the group from the system,
 . Select *Actions* > *Delete group*.
 . Select *Delete groups*.
 
+// 2025 JUN 10, SGWS-33778

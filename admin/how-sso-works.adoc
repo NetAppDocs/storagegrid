@@ -83,3 +83,5 @@ TIP: The table summarizes what happens when you sign out if you are using a sing
 | Tenant Manager
 | The Tenant Manager only. You must also sign out of the Grid Manager to sign out of SSO.
 |===
+
+// 2025 JUN 10, SGWS-33778

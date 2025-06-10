@@ -67,3 +67,5 @@ You can access an Admin Node's server certificate by logging in to the command s
 == Port requirements
 
 Single sign-on (SSO) is not available on the restricted Grid Manager or Tenant Manager ports. You must use the default HTTPS port (443) if you want users to authenticate with single sign-on. See link:controlling-access-through-firewalls.html[Control access at external firewall].
+
+// 2025 JUN 10, SGWS-33778
