@@ -19,7 +19,7 @@ Use the VMware OVF Tool to automate the deployment of grid nodes.
 
 * You have access to a Linux/Unix system with Bash 3.2 or later.
 * You have VMware vSphere with vCenter
-* You have VMware OVF Tool 4.1 installed and correctly configured.
+* You have VMware OVF Tool installed and correctly configured.
 * You know the username and password to access VMware vSphere using the OVF Tool
 * You have the sufficient permissions to deploy VMs from OVF files and power them on, and permissions to create additional volumes to attach to the VMs. See the `ovftool` documentation for details.
 * You know the virtual infrastructure (VI) URL for the location in vSphere where you want to deploy the StorageGRID virtual machines. This URL will typically be a vApp, or Resource Pool. For example: `vi://vcenter.example.com/vi/sgws`
