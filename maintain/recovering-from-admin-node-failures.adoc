@@ -20,4 +20,3 @@ Always follow the correct recovery procedure for the Admin Node you are recoveri
 * link:recovering-from-primary-admin-node-failures.html[Recover from primary Admin Node failures]
 * link:recovering-from-non-primary-admin-node-failures.html[Recover from non-primary Admin Node failures]
 
-//replace workflow with table/steps?

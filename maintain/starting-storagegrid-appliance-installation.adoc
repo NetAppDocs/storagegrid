@@ -50,19 +50,27 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 [cols="1a,2a" options="header"]
 |===
 | Option| Steps
-|Manual IP entry
-|.. Clear the *Enable Admin Node discovery* checkbox.
- .. Enter the IP address manually.
- .. Click *Save*.
- .. Wait while the connection state for the new IP address becomes "ready."
+| Manual IP entry
+| .. Clear the *Enable Admin Node discovery* checkbox.
+.. Manually enter the IP address.
 
-|Automatic discovery of all connected primary Admin Nodes
-|.. Select the *Enable Admin Node discovery* checkbox.
- .. From the list of discovered IP addresses, select the primary Admin Node for the grid where this appliance Storage Node will be deployed.
- .. Click *Save*.
- .. Wait while the connection state for the new IP address becomes "ready."
+*Note*: For installation, manually enter the IP address of the Admin Node you want to use to install the node. For recovery, use the IP of the primary Admin Node if available; otherwise, use the IP of a non-primary Admin node.
 
+.. Select *Save*.
+.. Wait while the connection state for the new IP address becomes "ready."
+
+| Automatic discovery of all connected primary Admin Nodes
+| .. Select the *Enable Admin Node discovery* checkbox.
+.. From the list of discovered IP addresses, select the Admin Node for the grid where this appliance Storage Node will be deployed.
+
+*Note*: For recovery, use the IP of the primary Admin Node if available; otherwise, use the IP of a non-primary Admin node.
+
+.. Select *Save*.
+.. Wait while the connection state for the new IP address becomes "ready."
 |===
+
+// IPv4 address of the Admin Node you want to use to install or recover the Linux-based node. For recovery, use the IP of the primary Admin Node if available; otherwise, use the IP of a non-primary Admin node.
+
 
 . In the *Node Name* field, enter the same hostname (system name) that was used for the node you are recovering, and click *Save*.
 . In the Installation section, confirm that the current state is "Ready to start installation of `_node name_` into grid with Primary Admin Node `_admin_ip_`" and that the *Start Installation* button is enabled.

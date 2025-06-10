@@ -101,10 +101,12 @@ entries:
           url: "/s3/deprecated-get-bucket-compliance-request.html"
         - title: Deprecated - PUT Bucket compliance request
           url: "/s3/deprecated-put-bucket-compliance-request.html"
-  - title: Bucket and group access policies
+  - title: Manage access policies
     entries:
-    - title: Use bucket and group access policies
-      url: "/s3/bucket-and-group-access-policies.html"
+    - title: Use access policies
+      url: "/s3/use-access-policies.html"
+    - title: Example session policies
+      url: "/s3/example-session-policies.html"
     - title: Example bucket policies
       url: "/s3/example-bucket-policies.html"
     - title: Example group policies

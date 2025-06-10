@@ -17,13 +17,7 @@ You have the `Passwords.txt` file.
 
 .About this task
 
-*Linux:* If you are adding a grid node to the Admin Network or Client Network for the first time, and you did not previously configure ADMIN_NETWORK_TARGET or CLIENT_NETWORK_TARGET in the node configuration file, you must do so now.
-
-See the StorageGRID installation instructions for your Linux operating system:
-
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-
-* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
+*Linux:* If you are adding a grid node to the Admin Network or Client Network for the first time, and you did not previously configure ADMIN_NETWORK_TARGET or CLIENT_NETWORK_TARGET in the node configuration file, you must do so now. See the StorageGRID link:../swnodes/index.html[installation instructions] for your Linux operating system.
 
 *Appliances:* On StorageGRID appliances, if the Client or Admin Network was not configured in the StorageGRID Appliance Installer during the initial installation, the network can't be added by using only the Change IP tool. First, you must https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/placing-appliance-into-maintenance-mode.html[place the appliance in maintenance mode^], configure the links, return the appliance to normal operating mode, and then use the Change IP tool to modify the network configuration. See the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-network-links.html[procedure for configuring network links^].
 
@@ -44,7 +38,7 @@ NOTE: Any changes you make to the network using the Change IP tool are propagate
 
 .Steps
 
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[temporarily allow access].
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
 
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
@@ -170,7 +164,7 @@ After you apply or stage changes, a new recovery package is generated as a resul
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_sgws34284-pc-16apr2025/admin/manage-ssh-access.html[block access] when you're finished changing the node network configuration.
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished changing the node network configuration.
 
 == Temporarily changing the LACP PDU rate
 

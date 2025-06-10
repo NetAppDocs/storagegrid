@@ -24,7 +24,7 @@ These instructions apply if you are using Active Directory as the SSO identity p
 
 To obtain an authentication token, you can use one of the following examples:
 
-* The `storagegrid-ssoauth.py` Python script, which is located in the StorageGRID installation files directory (`./rpms` for Red Hat Enterprise Linux, `./debs` for Ubuntu or Debian, and `./vsphere` for VMware).
+* The `storagegrid-ssoauth.py` Python script, which is located in the StorageGRID installation files directory (`./rpms` for RHEL, `./debs` for Ubuntu or Debian, and `./vsphere` for VMware).
 * An example workflow of curl requests.
 +
 The curl workflow might time out if you perform it too slowly. You might see the error: `A valid SubjectConfirmation was not found on this Response`.

@@ -11,7 +11,7 @@ summary: 'Grid maintenance tasks include decommissioning a node or site, renamin
 [.lead]
 Grid maintenance tasks include decommissioning a node or site, renaming a grid, node or site, and maintaining networks. You can also perform host and middleware procedures and grid node procedures.
 
-NOTE: In these instructions, "Linux" refers to a Red Hat® Enterprise Linux®, Ubuntu®, or Debian® deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
+NOTE: In these instructions, "Linux" refers to a Red Hat® Enterprise Linux® (RHEL), Ubuntu®, or Debian® deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
 
 == Before you begin
 

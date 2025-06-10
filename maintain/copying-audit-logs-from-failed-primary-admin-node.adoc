@@ -21,7 +21,7 @@ NOTE: If the audit logs aren't accessible on the failed Admin Node now, you migh
 
 .Steps
 
-. Log in to the failed Admin Node if possible. Otherwise, log in to the primary Admin Node or another Admin Node, if available.
+. Log in to the failed primary Admin Node, if possible. Otherwise, log in to any available Admin Node.
  .. Enter the following command: `ssh admin@_grid_node_IP_`
  .. Enter the password listed in the `Passwords.txt` file.
  .. Enter the following command to switch to root: `su -`
