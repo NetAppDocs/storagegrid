@@ -26,19 +26,6 @@ Not all audit messages generated during a retrieve transaction are listed in the
 | link:sget-s3-get.html[SGET: S3 GET]
 |===
 
-== Swift retrieval audit messages
-
-[cols="1a,1a,2a,1a,1a" options="header"]
-|===
-| Code| Name| Description| Trace| See
-|WGET
-|Swift GET
-|Request made to retrieve an object from a container.
-|CBID, WCON, WOBJ
-| link:wget-swift-get.html[WGET: Swift GET]
-|===
-
-
 == Example: S3 object retrieval
 
 When an S3 client retrieves an object from a Storage Node (LDR service), an audit message is generated and saved to the audit log.
