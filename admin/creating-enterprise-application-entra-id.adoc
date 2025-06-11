@@ -23,7 +23,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 * You have experience creating enterprise applications in Entra ID.
 
-* You have an Azure account with an active subscription.
+* You have an Entra ID account with an active subscription.
 
 * You have one of the following roles in the Entra ID account: Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
 
@@ -97,4 +97,4 @@ NOTE: You might need to refresh the Enterprise applications page to see applicat
 
 . link:../admin/configure-sso.html#test-sso[Test each application].
 
-
+// 2025 JUN 10, SGWS-33778
