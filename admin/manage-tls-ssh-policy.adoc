@@ -80,7 +80,7 @@ Optionally, if your StorageGRID has FIPS 140 cryptography requirements, enable t
 
 .. Set the `fipsMode` parameter to `true`.
 
-.. When prompted, link:../maintain/rolling-reboot-procedure.htmllink:../maintain/rolling-reboot-procedure.html[perform a rolling reboot] for all nodes to activate the cryptography modules. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
+.. When prompted, link:../maintain/rolling-reboot-procedure.html[perform a rolling reboot] for all nodes to activate the cryptography modules. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
 
 .. Select *Support* > *Diagnostics* to view the active FIPS module versions.
 
