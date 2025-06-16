@@ -63,12 +63,18 @@ The NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 mo
 ** TLS connections between clients and the LDR service
 ** Object content encryption for SSE-S3, SSE-C, and the Stored object encryption setting
 ** SSH connections
+
+For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838[Certificate #4838^].
+
 * NetApp StorageGRID Kernel Crypto API module
 +
 The NetApp StorageGRID Kernel Crypto API module is present only on VM and StorageGRID appliance platforms.
 
 ** Entropy collection
 ** Node encryption
+
++
+For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation-search?searchMode=implementation&product=NetApp+StorageGRID+Kernel+Crypto+API&productType=-1&ipp=50[Certificates #A6242 through #A6257^] and link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/certificate/223[Entropy Certificate #E223].
 
 *Note*: After you select this policy, link:../maintain/rolling-reboot-procedure.html[perform a rolling reboot] for all nodes to activate the NCSM. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
 --
