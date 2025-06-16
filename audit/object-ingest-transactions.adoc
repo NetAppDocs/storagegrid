@@ -11,7 +11,7 @@ summary: 'You can identify client ingest transactions in the audit log by locati
 [.lead]
 You can identify client ingest transactions in the audit log by locating S3 API-specific audit messages.
 
-Not all audit messages generated during an ingest transaction are listed in the following tables. Only the messages required to trace the ingest transaction are included.
+Not all audit messages generated during an ingest transaction are listed in the following table. Only the messages required to trace the ingest transaction are included.
 
 == S3 ingest audit messages
 

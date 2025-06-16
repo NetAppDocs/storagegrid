@@ -23,7 +23,7 @@ image::../media/dashboard_data_and_metadata_space_usage_breakdown.png[Dashboard 
 
 The Storage usage panel on the Tenant Manager dashboard displays the following:
 
-* A list of the largest buckets (S3) for the tenant
+* A list of the largest S3 buckets for the tenant
 * A bar chart that represents the relative sizes of the largest buckets or containers
 * The total amount of space used and, if a quota is set, the amount and percentage of space remaining
 
