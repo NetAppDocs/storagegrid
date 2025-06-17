@@ -75,7 +75,7 @@ The NetApp StorageGRID Kernel Crypto API module is present only on VM and Storag
 ** Node encryption
 
 +
-For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation-search?searchMode=implementation&product=NetApp+StorageGRID+Kernel+Crypto+API&productType=-1&ipp=50[Certificates #A6242 through #A6257^] and link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/certificate/223[Entropy Certificate #E223].
+For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation-search?searchMode=implementation&product=NetApp+StorageGRID+Kernel+Crypto+API&productType=-1&ipp=50[Certificates #A6242 through #A6257^] and link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/certificate/223[Entropy Certificate #E223^].
 
 *Note*: After you select this policy, link:../maintain/rolling-reboot-procedure.html[perform a rolling reboot] for all nodes to activate the NCSM. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
 --
