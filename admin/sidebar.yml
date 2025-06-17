@@ -235,6 +235,8 @@ entries:
       url: "/admin/viewing-ip-addresses.html"
     - title: Configure VLAN interfaces
       url: "/admin/configure-vlan-interfaces.html"  
+    - title: Enable CORS for a management interface
+      url: "/admin/enable-cross-origin-resource-sharing-for-management-interface.html"
     - title: Manage traffic classification policies
       entries:
       - title: What is traffic classification policy
