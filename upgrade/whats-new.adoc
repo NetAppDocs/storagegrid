@@ -11,6 +11,80 @@ summary: 'This release of StorageGRID introduces the following features and func
 [.lead]
 This release of StorageGRID introduces the following features and functional changes.
 
+// Jon's text
+
+== Capacity
+Supports one trillion objects, which is three times the previous limit. 
+
+== Security 
+* Allows customer password policies to allow customers to enforce their own security standards.
+
+* Stronger data encryption and integrity protection provide improved security and performance. 
+
+* Increased security of stored passwords to reduce the risk of unauthorized access. 
+
+* SSH blocked by default to enhance security while allowing controlled access. 
+
+== Appliances 
+* Significantly increased storage capacity and cost efficiency with 122 TB QLC drives. 
+
+* Automated drive firmware upgrades enhance system reliability and reduce maintenance overhead. 
+
+* Allows conversion of existing Storage Nodes into data-only Storage Nodes to optimize resources improve system flexibility. 
+
+== AI and machine learning
+
+* Branch buckets allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
+
+* An S3 caching layer enhances performance for AI/ML training.
+
+== Federation 
+
+* You can now modify the default region for S3 buckets. This capability provides greater flexibility in managing data locale and compliance. 
+
+* Cross-grid replication has been enhanced to achieve feature parity between internal and external replication, enabling better scalability and the concept of grid federation for exabyte-scale storage.
+
+* New API endpoints for replicating individual objects: Enables precise control over data replication, enhancing data management. 
+
+CGR with S3 Object Lock: Ensures data immutability and compliance with regulatory requirements. 
+
+S3 API 
+
+Support for Roles and Assume Roles: Enhances security by enabling fine-grained access control and temporary permissions. The introduction of assume role functionality will provide short-term credentials for enhanced security and flexible access control, similar to Amazon's feature. 
+
+Support Condition Keys: Allows more granular access policies, improving security and compliance. 
+
+x-amz-side-encryption-customer-algorithm: Supports customer-specified encryption algorithms for enhanced data security. 
+
+S3:object-lock-mode: Provides data protection by enforcing write-once-read-many (WORM) policies. 
+
+Multi-tenancy 
+
+QoS – 2500 Traffic Classifiers: Enables detailed traffic management, ensuring consistent performance. 
+
+Per Bucket Object Count Quota: Allows better control and management of storage resources. 
+
+Manageability 
+
+Faster Decommissioning: Reduces time and complexity in decommissioning nodes, improving operational efficiency. 
+
+Improved Strong Grid Consistency: Ensures higher data reliability and consistency across the grid. 
+
+Notifications via Webhooks to Support Additional Receivers (FluentIO): A new webhook integration for bucket event notifications will support more developer workflows, enabling automated downstream processes. 
+
+User Triggered ASUP: Empowers users to initiate automated support uploads, enhancing support responsiveness. 
+
+Reduce Appliance Reboot Time: Minimizes downtime, improving overall system availability. 
+
+Allow to Move ADC to Another Node: Increases flexibility and resilience in managing administrative nodes. 
+
+Allow Any Admin Node to Recover Any Other Node: Enhances system recovery and fault tolerance, improving overall reliability. 
+
+
+
+
+
+//
 == Node recovery from non-primary Admin Node
 You can now link:../maintain/selecting-node-recovery-procedure.html[recover any node] except the primary Admin Node from a non-primary Admin Node.
 
