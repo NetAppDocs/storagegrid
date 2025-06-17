@@ -279,7 +279,7 @@ If you can't resolve the problem on your own, contact technical support. Before 
 
 | 
 | Log files and system data
-| Collect log files and system data for your system. Select *SUPPORT* > *Tools* > *Logs Collection*.
+| Collect log files and system data for your system. Select *SUPPORT* > *Tools* > *Log Collection*.
 
 You can collect logs for the entire grid, or for selected nodes.
 
