@@ -1,7 +1,7 @@
 ---
 permalink: audit/client-read-audit-messages.html
 sidebar: sidebar
-keywords: storagegrid, audit, message, messages, client read, S3SL, SGET, SHEA, WGET, WHEA, S3, swift
+keywords: storagegrid, audit, message, messages, client read, S3SL, SGET, SHEA, WGET, WHEA, S3
 summary: 'Client read audit messages are logged when an S3 client application makes a request to retrieve an object.'
 ---
 = Client read audit messages
@@ -43,20 +43,5 @@ a|
 S3 client
 a|
 link:shea-s3-head.html[SHEA: S3 HEAD]
-a|
-WGET
-a|
-Swift GET: Logs a successful transaction to retrieve an object or list the objects in a container.
-a|
-Swift client
-a|
-link:wget-swift-get.html[WGET: Swift GET]
-a|
-WHEA
-a|
-Swift HEAD: Logs a successful transaction to check for the existence of an object or container.
-a|
-Swift client
-a|
-link:whea-swift-head.html[WHEA: Swift HEAD]
+
 |===

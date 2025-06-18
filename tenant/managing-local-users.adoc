@@ -27,8 +27,6 @@ You can create a local user and assign them to one or more local groups to contr
 
 S3 users who don't belong to any groups don't have management permissions or S3 group policies applied to them. These users might have S3 bucket access granted through a bucket policy.
 
-Swift users who don't belong to any groups don't have management permissions or Swift container access.
-
 === Access the Create user wizard
 
 .Steps

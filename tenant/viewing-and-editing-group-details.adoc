@@ -37,9 +37,6 @@ You can't change a group's unique name. You can't edit the display name for a fe
  .. Optionally, update the permissions.
  .. For group policy, make the appropriate changes for your S3 tenant.
   *** If you are editing a group for an S3 tenant, optionally select a different S3 group policy. If you select a custom S3 policy, update the JSON string as required.
-  *** If you are editing a group for a Swift tenant, optionally select or clear the *Swift Administrator* checkbox.
-+
-For more information about the Swift Administrator permission, see the instructions for creating groups for a Swift tenant.
  .. Optionally, add or remove users.
 
 . Confirm that you have selected *Save changes* for each section you changed.
@@ -48,4 +45,4 @@ For more information about the Swift Administrator permission, see the instructi
 
 * link:creating-groups-for-s3-tenant.html[Create groups for S3 tenant]
 
-* link:creating-groups-for-swift-tenant.html[Create groups for Swift tenant]
+// 2025 APR 8, SGWS-33007

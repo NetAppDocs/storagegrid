@@ -78,6 +78,9 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 
 If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, unless you have freed up port 8443. Then you can use port 8443 as an S3 endpoint, and the port will be configured on both Gateway and Admin Nodes.
 
+| Client type
+| Must be *S3*.
+
 | Network protocol
 | The network protocol that clients will use when connecting to this endpoint.
 

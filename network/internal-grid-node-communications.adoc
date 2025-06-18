@@ -87,7 +87,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | TCP
 | All nodes
 | Storage Nodes
-| S3- and Swift-related internal traffic.
+| S3-related internal traffic.
 
 | 1504
 | TCP
@@ -214,12 +214,6 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | Admin/Storage Nodes
 | Storage Nodes
 | S3-related internal traffic.
-
-| 18083
-| TCP
-| All nodes
-| Storage Nodes
-| Swift-related internal traffic.
 
 | 18086
 | TCP

@@ -35,7 +35,7 @@ This example shows typical output from the `audit-sum` tool. This example shows 
   SPUT                  1771398        0.011        1770.563           0.487
 ----
 
-The `audit-sum` tool provides counts and times for the following S3, Swift, and ILM audit messages in an audit log.
+The `audit-sum` tool provides counts and times for the following S3 and ILM audit messages in an audit log.
 
 NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that is not listed here, check the previous versions of this topic for older SG releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/using-audit-sum-tool.html[StorageGRID 11.8 Using audit sum tool documentation^].
 
@@ -63,21 +63,6 @@ NOTE: Audit codes are removed from the product and documentation as features are
 | S3 PUT: Logs a successful transaction to create a new object or bucket.
 | link:sput-s3-put.html[SPUT: S3 PUT]
 
-| WDEL
-| Swift DELETE: Logs a successful transaction to delete an object or container.
-| link:wdel-swift-delete.html[WDEL: Swift DELETE]
-
-| WGET
-| Swift GET: Logs a successful transaction to retrieve an object or list the objects in a container.
-| link:wget-swift-get.html[WGET: Swift GET]
-
-| WHEA
-| Swift HEAD: Logs a successful transaction to check for the existence of an object or container.
-| link:whea-swift-head.html[WHEA: Swift HEAD]
-
-| WPUT
-| Swift PUT: Logs a successful transaction to create a new object or container.
-| link:wput-swift-put.html[WPUT: Swift PUT]
 |===
 
 The `audit-sum` tool can do the following:
