@@ -14,17 +14,6 @@ Before upgrading a StorageGRID system, verify the system is ready to accommodate
 .Steps
 . Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 . Check for and resolve any active alerts.
-
-. Confirm that no conflicting grid tasks are active or pending.
- .. Select *SUPPORT* > *Tools* > *Grid topology*.
- .. Select *_site_* > *_primary Admin Node_* > *CMN* > *Grid Tasks* > *Configuration*.
-+
-Information lifecycle management evaluation (ILME) tasks are the only grid tasks that can run concurrently with the software upgrade.
-
- .. If any other grid tasks are active or pending, wait for them to finish or release their lock.
-+
-NOTE: Contact technical support if a task does not finish or release its lock.
-
 . Refer to link:../network/internal-grid-node-communications.html[Internal grid node communications] and link:../network/external-communications.html[External communications] to ensure that all required ports for StorageGRID 11.9 are opened before you upgrade.
 +
 NOTE: No additional ports are required when upgrading to StorageGRID 12.0.

@@ -11,17 +11,21 @@ summary: 'This release of StorageGRID introduces the following features and func
 [.lead]
 This release of StorageGRID introduces the following features and functional changes.
 
-== Cross-grid replication with S3 Object Lock
-You can configure cross-grid replication between buckets with S3 Object Lock enabled. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[How objects with retention settings are replicated].
+== Node recovery from non-primary Admin Node
+You can now link:../maintain/selecting-node-recovery-procedure.html[recover any node] except the primary Admin Node from a non-primary Admin Node.
 
-NetApp recommends using this feature only between StorageGRID 12.0 source and destination buckets. However, this feature is supported between StorageGRID 11.9 buckets with S3 Object Lock disabled and StorageGRID 12.0 buckets with S3 Object Lock enabled.
+== S3
+=== Branch buckets
+You can now link:../tenant/manage-branch-bucket-html[create branch buckets] for an S3 bucket. A branch bucket provides access to S3 bucket objects as they existed at a certain time.
 
-== Security
+=== Quorum consistency for new 12.0 installations
+Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set. The new behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. The performance characteristics of Quorum semantics will differ depending on client application workload. If you need to revert to the previous behavior for strong-global consistency, follow https://kb.netapp.com/hybrid/StorageGRID/Object_Mgmt/Configuring_StorageGRID_quorum_semantics_for_strong-global_consistency[Configure StorageGRID Quorum semantics for strong-global consistency^] for instructions.
 
-=== Security enhancement for encrypted passwords on disk
-Improved password security, including a highly increased hash round count for SHA512 password hashes.
+If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency.
 
-== User interface
+== Tenant groups
 
-=== Dark theme
-Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
+=== AssumeRole
+You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. 
+
+// 2025-5-8, sgws34003

@@ -101,7 +101,7 @@ Security tasks include:
 * link:../admin/using-storagegrid-security-certificates.html[Managing security certificates]
 * link:../admin/manage-firewall-controls.html[Managing internal firewall controls]
 * link:../admin/kms-configuring.html[Configuring key management servers]
-* Configuring security settings including the link:../admin/manage-tls-ssh-policy.html[TLS and SSH policy], link:../admin/changing-network-options-object-encryption.html[network and object security options], and link:../admin/changing-browser-session-timeout-interface.html[interface security settings].
+* Configuring security settings including the link:../admin/manage-tls-ssh-policy.html[TLS and SSH policy], link:../admin/changing-network-options-object-encryption.html[network and object security options], link:../admin/changing-browser-session-timeout-interface.html[interface security settings], and link:../admin/manage-ssh-access.html[SSH access options].
 * Configuring the settings for a link:../admin/configuring-storage-proxy-settings.html[storage proxy] or an link:../admin/configuring-admin-proxy-settings.html[admin proxy] 
 
 === System tasks
@@ -128,7 +128,7 @@ Access control tasks include:
 * link:../admin/managing-users.html[Managing admin users]
 * Changing the link:../admin/changing-provisioning-passphrase.html[provisioning passphrase] or link:../admin/change-node-console-password.html[node console passwords]
 * link:../admin/using-identity-federation.html[Using identity federation]
-* link:../admin/configuring-sso.html[Configuring SSO]
+* link:../admin/how-sso-works.html[Configure SSO]
 
 == Maintenance menu
 
@@ -177,7 +177,6 @@ From the Tools section of the Support menu, you can:
 
 * link:../admin/configure-autosupport-grid-manager.html[Configure AutoSupport]
 * link:../monitor/running-diagnostics.html[Run diagnostics] on the current state of the grid
-* link:../monitor/viewing-grid-topology-tree.html[Access the Grid Topology tree] to view detailed information about grid nodes, services, and attributes
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
 +
@@ -192,5 +191,6 @@ The information about legacy alarms has been removed from this version of the do
 From the Other section of the Support menu, you can:
 
 * Manage link:../admin/manage-link-costs.html[link cost]
-* View link:../admin/viewing-notification-status-and-queues.html[Network Management System (NMS)] entries
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]
+
+// 2025 APR 30, SGWS-34284

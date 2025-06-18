@@ -75,6 +75,7 @@ The *Grid Network MTU mismatch* alert is triggered when the maximum transmission
 The differences in MTU settings could indicate that some, but not all, eth0 networks are configured for jumbo frames. An MTU size mismatch of greater than 1000 might cause network performance problems.
 
 .Steps
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
 . List the MTU settings for eth0 on all nodes.
  ** Use the query provided in the Grid Manager.
  ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{device="eth0"}`
@@ -114,6 +115,8 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 |`-n node, --node node`
 |The node. The default is the local node.
 |===
+
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you've finished the task.
 
 == Node network reception frame error alert
 
@@ -204,17 +207,17 @@ You might see issues with network connectivity for StorageGRID nodes hosted on L
 
 === MAC address cloning
 
-In some cases, network issues can be resolved by using MAC address cloning. If you are using virtual hosts, set the value of the MAC address cloning key for each of your networks to "true" in your node configuration file. This setting causes the MAC address of the StorageGRID container to use the MAC address of the host. To create node configuration files, see the instructions for link:../rhel/creating-node-configuration-files.html[Red Hat Enterprise Linux] or link:../ubuntu/creating-node-configuration-files.html[Ubuntu or Debian].
+In some cases, network issues can be resolved by using MAC address cloning. If you are using virtual hosts, set the value of the MAC address cloning key for each of your networks to "true" in your node configuration file. This setting causes the MAC address of the StorageGRID container to use the MAC address of the host. See the instructions to link:../swnodes/creating-node-configuration-files.html[create node configuration files].
 
 NOTE: Create separate virtual network interfaces for use by the Linux host OS. Using the same network interfaces for the Linux host OS and the StorageGRID container might cause the host OS to become unreachable if promiscuous mode has not been enabled on the hypervisor.
 
-For more information about enabling MAC cloning, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
+For more information, see the instructions for link:../swnodes/configuring-host-network.html[enabling MAC cloning].
 
 === Promiscuous mode
 
 If you don't want to use MAC address cloning and would rather allow all interfaces to receive and transmit data for MAC addresses other than the ones assigned by the hypervisor, ensure that the security properties at the virtual switch and port group levels are set to *Accept* for Promiscuous Mode, MAC Address Changes, and Forged Transmits. The values set on the virtual switch can be overridden by the values at the port group level, so ensure that settings are the same in both places.
 
-For more information about using Promiscuous Mode, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
+For more information about using Promiscuous Mode, see the instructions for link:../swnodes/configuring-host-network.html[how to configure the host network].
 
 == Linux: Node status is "orphaned"
 
@@ -329,4 +332,6 @@ storagegrid node stop node-name
 ----
 storagegrid node start node-name
 ----
+
+// 2025 APR 30, SGWS-34284
 // 2024 FEB 22, SGRIDDOC-49

@@ -9,7 +9,7 @@ summary: 'You can configure high availability \(HA\) groups to provide highly av
 :imagesdir: ../media/
 
 [.lead]
-You can configure high availability (HA) groups to provide highly available access to the services on Admin Nodes or Gateway Nodes.
+You can configure high availability (HA) groups to provide highly available access to the services on Admin Nodes or Gateway Nodes. 
 
 .Before you begin
 
@@ -18,10 +18,11 @@ You can configure high availability (HA) groups to provide highly available acce
 * If you plan to use a VLAN interface in an HA group, you have created the VLAN interface. See link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces].
 * If you plan to use an access interface for a node in an HA group, you have created the interface:
 
-** *Red Hat Enterprise Linux (before installing the node)*: link:../rhel/creating-node-configuration-files.html[Create node configuration files]
-** *Ubuntu or Debian (before installing the node)*: link:../ubuntu/creating-node-configuration-files.html[Create node configuration files]
-** *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Linux: Add trunk or access interfaces to a node]
-** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[VMware: Add trunk or access interfaces to a node]
+** *Linux (before installing the node)*: link:../swnodes/creating-node-configuration-files.html[Create node configuration files]
+** *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
+** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
+
+include::../_include/linux-distributions.adoc[]
 
 == Create a high availability group
 

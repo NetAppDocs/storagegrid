@@ -48,7 +48,7 @@ The following table defines the values for all supported keys. Each key has one 
 |===
 | Value| Designation
 
-| Grid Network IPv4 address of the primary Admin Node for the grid to which this node belongs. Use the same value you specified for GRID_NETWORK_IP for the grid node with NODE_TYPE = VM_Admin_Node and ADMIN_ROLE = Primary. If you omit this parameter, the node attempts to discover a primary Admin Node using mDNS.
+| Grid Network IPv4 address of the Admin Node you want to use to install the Linux-based node. For recovery, use the IP of the primary Admin Node if available; otherwise, use the IP of a non-primary Admin node. If you omit this parameter, the node attempts to discover a primary Admin Node using mDNS.
 
 link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node]
 
@@ -198,11 +198,8 @@ Set the key to "true" to cause the StorageGRID container use the MAC address of 
 
 *Best practice:* In networks where promiscuous mode would be required, use the ADMIN_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
-For more details on MAC cloning:
+For more details on MAC cloning for Linux, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
-* link:../rhel/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Red Hat Enterprise Linux)]
-
-* link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Ubuntu or Debian)]
 | Best practice
 |===
 
@@ -467,11 +464,8 @@ Set the key to "true" to cause the StorageGRID container to use the MAC address 
 
 *Best practice:* In networks where promiscuous mode would be required, use the CLIENT_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
-For more details on MAC cloning:
+For more details on MAC cloning for Linux, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
-* link:../rhel/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Red Hat Enterprise Linux)]
-
-* link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Ubuntu or Debian)]
 | Best practice
 |===
 
@@ -606,11 +600,8 @@ Set the value of the key to "true" to cause the StorageGRID container to use the
 
 *Best practice:* In networks where promiscuous mode would be required, use the GRID_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
-For more details on MAC cloning:
+For more details on MAC cloning for Linux, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
-* link:../rhel/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Red Hat Enterprise Linux)]
-
-* link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning (Ubuntu or Debian)]
 | Best practice
 |===
 
@@ -714,6 +705,8 @@ Examples:
 
 
 === Port remap keys
+
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 
 ==== PORT_REMAP
 [cols="4a,2a" option="header"]

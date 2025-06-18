@@ -29,9 +29,11 @@ NOTE: If the existing NTP servers will not be accessible to the grid on the new 
 +
 NOTE: If the existing DNS servers will not be accessible to the grid on the new IP addresses, add the new DNS servers before you perform the change-ip procedure.
 +
-NOTE: If SSO is enabled for your StorageGRID system and any relying party trusts were configured using Admin Node IP addresses (instead of fully qualified domain names, as recommended), be prepared to update or reconfigure these relying party trusts in Active Directory Federation Services (AD FS) immediately after you change IP addresses. See link:../admin/configuring-sso.html[Configure single sign-on].
+NOTE: If SSO is enabled for your StorageGRID system and any relying party trusts were configured using Admin Node IP addresses (instead of fully qualified domain names, as recommended), be prepared to update or reconfigure these relying party trusts in Active Directory Federation Services (AD FS) immediately after you change IP addresses. See link:../admin/configure-sso.html[Configure single sign-on].
 +
 NOTE: If necessary, add the new subnet for the new IP addresses.
+
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
 
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
@@ -102,8 +104,12 @@ NOTE: The entire grid must be shut down, so that all nodes are down at the same 
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished changing the IP addresses.
+
 .Related information
 
 * link:adding-to-or-changing-subnet-lists-on-grid-network.html[Add to or change subnet lists on Grid Network]
 
 * link:shutting-down-grid-node.html[Shut down grid node]
+
+// 2025 APR 30, SGWS-34284

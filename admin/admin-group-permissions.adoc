@@ -38,12 +38,6 @@ This permission provides access to the *Change root password* option on the Tena
 
 NOTE: To grant access to the Tenants page, which contains the *Change root password* option, also assign the *Tenant accounts* permission.
 
-== Grid topology page configuration
-
-This permission provides access to the Configuration tabs on the *SUPPORT* > *Tools* > *Grid topology* page.
-
-NOTE: The Grid topology page has been deprecated and will be removed in a future release.
-
 == ILM
 
 This permission provides access to the following *ILM* menu options:
@@ -56,7 +50,7 @@ This permission provides access to the following *ILM* menu options:
 * Regions
 * Object metadata lookup
 
-NOTE: Users must have the *Other grid configuration* and *Grid topology page configuration* permissions to manage storage grades.
+NOTE: Users must have the *Other grid configuration* permission to manage storage grades.
 
 == Maintenance
 
@@ -119,9 +113,7 @@ This permission provides access to the *ILM* > *Object metadata lookup* page.
 
 == Other grid configuration
 
-This permission provides access to additional grid configuration options.
-
-TIP: To see these additional options, users must also have the *Grid topology page configuration* permission.
+This permission provides access to these additional grid configuration options:
 
 * *ILM*:
 ** Storage grades

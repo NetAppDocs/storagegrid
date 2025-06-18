@@ -22,7 +22,7 @@ Use the rename procedure to correct typos, to implement a different naming conve
 == Where do system and display names appear?
 The following table summarizes where system names and display names are shown in the StorageGRID user interface and in StorageGRID files.
 
-[cols="2a,2a,3a" options="header"]
+[cols="1a,1a,3a" options="header"]
 |===
 // header row
 | Location
@@ -47,10 +47,6 @@ The following table summarizes where system names and display names are shown in
 | *NODES* > *Overview* tab for a node
 | Always shown 
 | Shown only if the item is renamed
-
-| Legacy pages in the Grid Manager (for example, *SUPPORT* > *Grid Topology*)
-| Shown 
-| Not shown
 
 | *node-health* API
 | Always returned

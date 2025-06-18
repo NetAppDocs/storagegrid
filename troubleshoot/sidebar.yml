@@ -19,12 +19,8 @@ entries:
       - title: Methods for retrieving objects
         pdf-filename: Troubleshoot lost and missing object data
         url: "/troubleshoot/troubleshooting-lost-and-missing-object-data.html"    
-      - title: Investigate lost objects
-        url: "/troubleshoot/investigating-lost-objects.html"
-      - title: Search for and restore potentially lost objects
-        url: "/troubleshoot/searching-for-and-restoring-potentially-lost-objects.html"
-      - title: Reset lost and missing object counts
-        url: "/troubleshoot/resetting-lost-and-missing-object-counts.html"
+      - title: Investigate potentially lost objects
+        url: "/troubleshoot/investigating-potentially-lost-objects.html"
     - title: Troubleshoot the Low object data storage alert
       url: "/troubleshoot/troubleshooting-low-object-data-storage-alert.html"
     - title: Troubleshoot Low read-only watermark override alerts
@@ -38,5 +34,9 @@ entries:
   - title: Troubleshoot network, hardware, and platform issues
     url: "/troubleshoot/troubleshooting-network-hardware-and-platform-issues.html"
   - title: Troubleshoot external syslog server
-    url: "/troubleshoot/troubleshooting-syslog-server.html"  
+    url: "/troubleshoot/troubleshooting-syslog-server.html"
+  - title: Troubleshoot load balancer caching
+    url: "/troubleshoot/troubleshooting-load-balancer-caching.html"
+
+   
       

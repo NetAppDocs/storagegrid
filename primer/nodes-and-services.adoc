@@ -43,13 +43,7 @@ See the following to learn about the available appliances:
 
 === Software-based nodes
 
-Software-based grid nodes can be deployed as VMware virtual machines or within container engines on a Linux host.
-
-* Virtual machine (VM) in VMware vSphere: See link:../vmware/index.html[Install StorageGRID on VMware].
-
-* Within a container engine on Red Hat Enterprise Linux: See link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux].
-
-* Within a container engine on Ubuntu or Debian: See link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian].
+Software-based grid nodes can be deployed as VMware virtual machines or within container engines on a Linux host. See link:../swnodes/index.html[Install StorageGRID on software-based nodes].
 
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to determine the supported versions.
 
@@ -90,7 +84,7 @@ The following is a complete list of StorageGRID services.
 
 | Cassandra
 |	Manages the distributed database for object metadata.
-|	Storage Nodes (except Data-only)
+|	Storage Nodes (except data-only)
 
 | Cassandra Reaper
 | Performs automatic repairs of object metadata.
