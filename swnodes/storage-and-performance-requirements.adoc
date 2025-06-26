@@ -241,9 +241,9 @@ a|*System data:* 700 GB
 
 Linux and VMware have the same storage requirements for storage nodes.
 
-A software-based Storage Node can have 1 to 16 storage volumes -- 3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
+A software-based Storage Node can have 1 to 48 storage volumes -- 3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
 
-NOTE: An appliance Storage Node can have up to 48 storage volumes.
+NOTE: An appliance Storage Node can also have up to 48 storage volumes.
 
 As shown in the figure, StorageGRID reserves space for object metadata on storage volume 0 of each Storage Node. Any remaining space on storage volume 0 and any other storage volumes in the Storage Node are used exclusively for object data.
 
