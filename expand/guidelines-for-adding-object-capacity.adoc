@@ -18,7 +18,7 @@ Before adding storage volumes to existing Storage Nodes, review the following gu
 * You must examine your current ILM rules to determine where and when to link:../expand/adding-storage-volumes-to-storage-nodes.html[add storage volumes] to increase the storage available for link:../ilm/what-replication-is.html[replicated objects] or link:../ilm/what-erasure-coding-schemes-are.html[erasure-coded objects].
 
 * You can't increase the metadata capacity of your system by adding storage volumes because object metadata is stored only on volume 0.
-* Each software-based Storage Node can support a maximum of 16 storage volumes. If you need to add capacity beyond that, you must add new Storage Nodes.
+* Each software-based Storage Node can support a maximum of 48 storage volumes. If you need to add capacity beyond that, you must add new Storage Nodes.
 * You can add one or two expansion shelves to each SG6060 appliance. Each expansion shelf adds 16 storage volumes. With both expansion shelves installed, the SG6060 can support a total of 48 storage volumes.
 * You can add one or two expansion shelves to each SG6160 appliance. Each expansion shelf adds 60 storage volumes. With both expansion shelves installed, the SG6160 can support a total of 180 storage volumes.
 * You can't add storage volumes to any other storage appliance.
