@@ -2,14 +2,14 @@
 permalink: expand/adding-storage-volumes-to-storage-nodes.html
 sidebar: sidebar
 keywords: storage volumes, expand, expansion, add, storage nodes, adding storage capacity
-summary: 'You can expand the storage capacity of Storage Nodes that have 16 or fewer storage volumes by adding additional storage volumes. You might need to add storage volumes to more than one Storage Node to satisfy ILM requirements for replicated or erasure-coded copies.'
+summary: 'You can expand the storage capacity of Storage Nodes that have 48 or fewer storage volumes by adding additional storage volumes. You might need to add storage volumes to more than one Storage Node to satisfy ILM requirements for replicated or erasure-coded copies.'
 ---
 = Add storage volumes to Storage Nodes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can expand the storage capacity of Storage Nodes that have 16 or fewer storage volumes by adding additional storage volumes. You might need to add storage volumes to more than one Storage Node to satisfy ILM requirements for replicated or erasure-coded copies.
+You can expand the storage capacity of Storage Nodes that have 48 or fewer storage volumes by adding additional storage volumes. You might need to add storage volumes to more than one Storage Node to satisfy ILM requirements for replicated or erasure-coded copies.
 
 .Before you begin
 
@@ -20,7 +20,7 @@ NOTE: These instructions apply to software-based Storage Nodes only. See https:/
 
 .About this task
 
-The underlying storage of a Storage Node is divided into storage volumes. Storage volumes are block-based storage devices that are formatted by the StorageGRID system and mounted to store objects. Each Storage Node can support up to 16 storage volumes, which are called _object stores_ in the Grid Manager.
+The underlying storage of a Storage Node is divided into storage volumes. Storage volumes are block-based storage devices that are formatted by the StorageGRID system and mounted to store objects. Each Storage Node can support up to 48 storage volumes, which are called _object stores_ in the Grid Manager.
 
 NOTE: Object metadata is always stored in object store 0.
 
