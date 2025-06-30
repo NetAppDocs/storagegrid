@@ -241,7 +241,7 @@ a|*System data:* 700 GB
 
 Linux and VMware have the same storage requirements for storage nodes.
 
-A software-based Storage Node can have 1 to 48 storage volumes -- 3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
+A software-based Storage Node can have 1 to 48 storage volumes; 3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
 
 NOTE: An appliance Storage Node can also have up to 48 storage volumes.
 
