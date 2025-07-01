@@ -2,14 +2,14 @@
 permalink: expand/linux-adding-direct-attached-or-san-volumes-to-storage-node.html
 sidebar: sidebar
 keywords: expansion, Linux, add storage volumes
-summary: 'If a Storage Node includes fewer than 16 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.'
+summary: 'If a Storage Node includes fewer than 48 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.'
 ---
 = Linux: Add direct-attached or SAN volumes to Storage Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If a Storage Node includes fewer than 16 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.
+If a Storage Node includes fewer than 48 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.
 
 .Before you begin
 
