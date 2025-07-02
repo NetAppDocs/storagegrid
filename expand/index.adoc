@@ -26,14 +26,6 @@ Follow the steps for the type of expansion you're performing:
 [role="tabbed-block"]
 ====
 
-.Add storage volumes
---
-
-Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].
-
---
-//end Add volumes, begin add nodes
-
 .Add grid nodes
 --
 
@@ -54,7 +46,15 @@ include::../_include/linux-distributions.adoc[]
 . link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
 
 --
-//end add grid nodes, start add new site
+//end add grid nodes, begin add volumes
+
+.Add storage volumes
+--
+
+Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].
+
+--
+//end Add volumes, begin add new site
 
 .Add new site
 --
