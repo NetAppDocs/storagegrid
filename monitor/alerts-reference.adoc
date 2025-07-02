@@ -178,7 +178,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Node cannot forward logs to the external syslog server.
 
 | Large audit queue
-| The disk queue for audit messages is full. If this condition is not addressed, S3 or Swift operations might fail.
+| The disk queue for audit messages is full. If this condition is not addressed, S3 operations might fail.
 
 | Logs are being added to the on-disk queue
 | Node cannot forward logs to the external syslog server and the on-disk queue is filling up.
@@ -339,8 +339,8 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Expiration of client certificate
 | One or more client certificates are about to expire.
 
-| Expiration of global server certificate for S3 and Swift
-| The global server certificate for S3 and Swift is about to expire.
+| Expiration of global server certificate for S3
+| The global server certificate for S3 is about to expire.
 
 | Expiration of load balancer endpoint certificate
 | One or more load balancer endpoint certificates are about to expire.
@@ -484,7 +484,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Alert name| Description
 
 | Low audit log disk capacity
-| The space available for audit logs is low. If this condition is not addressed, S3 or Swift operations might fail.
+| The space available for audit logs is low. If this condition is not addressed, S3 operations might fail.
 
 | Low available node memory
 | The amount of RAM available on a node is low.
@@ -511,7 +511,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | The space available on the root disk is low.
 
 | Low system data capacity
-| The space available for /var/local is low. If this condition is not addressed, S3 or Swift operations might fail.
+| The space available for /var/local is low. If this condition is not addressed, S3 operations might fail.
 
 | Low tmp directory free space
 | The space available in the /tmp directory is low.
