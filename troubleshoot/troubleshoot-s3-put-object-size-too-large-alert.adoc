@@ -65,7 +65,7 @@ audit.log:2023-01-05T18:47:05.525999 [AUDT:[RSLT(FC32):SUCS][CNID(UI64):16729436
 ----
 
 . If Client Writes aren't Normal, use the tenant ID from the alert to identify the tenant:
-.. Go to *SUPPORT* > *Tools* > *Logs*. Collect application logs for the Storage Node in the alert. Specify 15 minutes before and after the alert. Refer to link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data].
+.. Go to *SUPPORT* > *Tools* > *Log collection*. Collect application logs for the Storage Node in the alert. Specify 15 minutes before and after the alert. Refer to link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data].
 .. Extract the file and go to `bycast.log`:
 +
 `/GID<grid_id>_<time_stamp>/<site_node>/<time_stamp>/grid/bycast.log`
