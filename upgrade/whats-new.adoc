@@ -13,15 +13,9 @@ This release of StorageGRID introduces the following features and functional cha
 
 == Cassandra updates
 
-StorageGRID now uses Hyper-Converged Database (HCD) Cassandra for metadata storage. This version of Cassandra uses disk space more efficiently.
+StorageGRID now uses a newer version of Cassandra for metadata storage. This version of Cassandra uses disk space more efficiently.
 
-HCD is...and helps with...
-
-When you upgrade to StorageGRID 12.0, metadata load per node will decrease by an estimated 20% to 40%. Exact space savings will vary by system. Savings on disk space isn't guaranteed.
-
-Based on the upgrade to HCD, StorageGRID will perform a metadata format update. This process takes one to three days after you upgrade to StorageGRID 12.0. You won't be able to run any other streaming maintenance procedures during this time.
-
-Storage Node recovery procedure changes...
+After you upgrade to StorageGRID 12.0, a metadata format update will occur in the background for one to three days. You won't be able to run any other streaming maintenance procedures during this time.
 
 == Node recovery from non-primary Admin Node
 You can now link:../maintain/selecting-node-recovery-procedure.html[recover any node] except the primary Admin Node from a non-primary Admin Node.

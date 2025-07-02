@@ -14,6 +14,8 @@ You can upgrade to StorageGRID 11.9 and apply the latest hotfix for that release
 .Before you begin
 You have reviewed all of the considerations and completed all of the planning and preparation steps.
 
+CAUTION: Do not start the upgrade if you urgently need to expand your storage to increase capacity (if your storage is almost full). Complete the upgrade procedure in a timely manner. If a recovery is required, contact technical support.
+
 == Access StorageGRID Upgrade page
 
 As a first step, access the StorageGRID Upgrade page in the Grid Manager.
@@ -206,4 +208,4 @@ NOTE: The upgrade from StorageGRID 11.8 to 11.9 does not require a Cassandra dat
 
 .Related information
 
-link:how-your-system-is-affected-during-upgrade.html[Learn about how your system is affected during the upgrade].
+link:how-your-system-is-affected-during-upgrade.html[How your system is affected during the upgrade]
