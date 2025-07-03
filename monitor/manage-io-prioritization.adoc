@@ -24,7 +24,7 @@ By default, client PUT and GET I/O traffic is given the highest priority over ba
 . Select *SUPPORT* > *I/O prioritization*.
 . (Optional) Change the EC purge and repair priority, for background operations that purge EC data, from their default values.
 +
-NOTE: Use the default Background EC repair priority for grids that have RAID-based nodes.
+NOTE: Use the default low EC purge and repair priority for grids that have RAID-based nodes.
 
 . Select *Save*.
 . Monitor the link:../monitor/commonly-used-prometheus-metrics.html#where-are-prometheus-metrics-used[metrics] to assess the effect of prioritization changes.
