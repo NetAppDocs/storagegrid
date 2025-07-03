@@ -62,7 +62,7 @@ Running the upgrade prechecks before starting the upgrade lets you resolve any e
 | Upgrade database
 | The upgrade process checks each node to verify that the Cassandra database doesn't need to be updated.
 | 10 seconds per node or a few minutes for the entire grid
-| The upgrade to StorageGRID 12.0 requires a Cassandra database upgrade. After you upgrade from StorageGRID 11.9 to 12.0, a metadata format update will occur in the background for one to three days. You won't be able to run any other streaming maintenance procedures during this time.
+| The upgrade to StorageGRID 12.0 includes a Cassandra database upgrade. After you upgrade from StorageGRID 11.9 to 12.0, a metadata format update will occur in the background for one to three days. During this time, certain maintenance procedures, such as expansion, will be disabled.
 
 For future StorageGRID feature releases, the Cassandra database update step might take several days to complete.
 
