@@ -52,8 +52,8 @@ Providing *Bind username format* is recommended because it can allow users to si
 +
 Enter one of these patterns:
 +
-*** *UserPrincipalName pattern (Active Directory and Entra ID)*: `[USERNAME]@_example_.com`
-*** *Down-level logon name pattern (Active Directory and Entra ID)*: `_example_\[USERNAME]`
+*** *UserPrincipalName pattern (AD and Entra ID)*: `[USERNAME]@_example_.com`
+*** *Down-level logon name pattern (AD and Entra ID)*: `_example_\[USERNAME]`
 *** *Distinguished name pattern*: `CN=[USERNAME],CN=Users,DC=_example_,DC=com`
 +
 Include *[USERNAME]* exactly as written.
