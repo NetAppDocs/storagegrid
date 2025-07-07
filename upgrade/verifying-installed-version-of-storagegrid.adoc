@@ -42,12 +42,10 @@ Refer to the link:../maintain/storagegrid-hotfix-procedure.html[StorageGRID hotf
 
 == [[example-upgrade-path]]Example: Upgrade to StorageGRID 12.0 from version 11.8
 
-The following example shows the steps to upgrade from StorageGRID version 11.7 to version 11.9 in preparation for a StorageGRID 12.0 upgrade. 
+The following example shows the steps to upgrade from StorageGRID version 11.8 to version 11.9 in preparation for a StorageGRID 12.0 upgrade. 
 
 Download and install software in the following sequence to prepare your system for upgrade:
 
-. Upgrade to the StorageGRID 11.7.0 major release.
-. Apply the latest StorageGRID 11.7.0._y_ hotfix.
 . Upgrade to the StorageGRID 11.8.0 major release.
 . Apply the latest StorageGRID 11.8.0._y_ hotfix.
 . Upgrade to the StorageGRID 11.9.0 major release.
