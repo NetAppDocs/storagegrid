@@ -25,14 +25,6 @@ entries:
       url: "/expand/adding-new-site.html"
   - title: Gather required materials
     url: "/expand/gather-required-materials.html"
-  - title: Add storage volumes
-    entries:
-    - title: 'Add storage volumes to Storage Nodes'
-      url: "/expand/adding-storage-volumes-to-storage-nodes.html"
-    - title: 'VMware: Add storage volumes to Storage Node'
-      url: "/expand/vmware-adding-storage-volumes-to-storage-node.html"
-    - title: 'Linux: Add direct-attached or SAN volumes to Storage Node'
-      url: "/expand/linux-adding-direct-attached-or-san-volumes-to-storage-node.html"
   - title: Add grid nodes or site
     entries:
     - title: Add grid nodes to existing site or add new site
@@ -43,6 +35,14 @@ entries:
       url: "/expand/deploying-new-grid-nodes.html"
     - title: Perform expansion
       url: "/expand/performing-expansion.html"
+  - title: Add storage volumes
+    entries:
+    - title: 'Add storage volumes to Storage Nodes'
+      url: "/expand/adding-storage-volumes-to-storage-nodes.html"
+    - title: 'VMware: Add storage volumes to Storage Node'
+      url: "/expand/vmware-adding-storage-volumes-to-storage-node.html"
+    - title: 'Linux: Add direct-attached or SAN volumes to Storage Node'
+      url: "/expand/linux-adding-direct-attached-or-san-volumes-to-storage-node.html"
   - title: Configure expanded system
     entries:
     - title: Configuration steps
