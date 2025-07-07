@@ -67,96 +67,65 @@ m| activeAlertCount
 m| .1.3.6.1.4.1. +
 789.28669.1.3
 | Integer32
-| read-only
+| Read-only
 | NETAPP-STORAGEGRID-MIB
 | The number of active alerts in the activeAlertTable.
 
 m| activeAlertTable
 m| .1.3.6.1.4.1. +
 789.28669.1.4
-| SEQUENCE OF ActiveAlertEntry
-| not-accessible
+| Sequence of ActiveAlertEntry
+| Not-accessible
 | NETAPP-STORAGEGRID-MIB
 | A table of active alerts in StorageGRID.
 
-m| activeAlertId
+m| activeAlertEntry
 m| .1.3.6.1.4.1. +
-789.28669.1.4.1.1
-| SEQUENCE 
-| not-accessible
+789.28669.1.4.1
+| Sequence
+| Not-accessible
 | NETAPP-STORAGEGRID-MIB
 | A single StorageGRID alert, indexed by alert ID.
+
+m| activeAlertId
+m| .1.3.6.1.4.1. + 
+789.28669.1.4.1.1
+| Octet string
+| Read-only
+| NETAPP-STORAGEGRID-MIB
+| The ID of the alert. Only unique in the current set of active alerts.
 
 m| activeAlertName
 m| .1.3.6.1.4.1. +
 789.28669.1.4.1.2
-| OCTET STRING
-| read-only
+| Octet string
+| Read-only
 | NETAPP-STORAGEGRID-MIB
-| The ID of the alert. Only unique in the current set of active alerts.
+| The name of the alert.
 
 m| activeAlertInstance
 m| .1.3.6.1.4.1. +
 789.28669.1.4.1.3
-| OCTET STRING
-| read-only
-|  NETAPP-STORAGEGRID-MIB
-|The name of the alert.
+| Octet string
+| Read-only
+| NETAPP-STORAGEGRID-MIB
+| The name of the entity that generated the alert, typically the node name.
 
 m| activeAlertSeverity
 m| .1.3.6.1.4.1. +
 789.28669.1.4.1.4
-| OCTET STRING
-| read-only
-| NETAPP-STORAGEGRID-MIB
-| The name of the entity that generated the alert, typically the node name.
-
-m| activeAlertStartTime
-m| .1.3.6.1.4.1. +
-789.28669.1.4.1.5
-| OCTET STRING
-| read-only
+| Octet string
+| Read-only
 | NETAPP-STORAGEGRID-MIB
 | The severity of the alert.
 
 m| activeAlertStartTime
 m| .1.3.6.1.4.1. + 
 789.28669.1.4.1.5
-| DateAndTime 
-| read-only
+| Date and time
+| Read-only
 | NETAPP-STORAGEGRID-MIB
 | The time the alert was triggered.
-
-|===
-
-== Notification types (Traps)
-
-All notifications include the following variables as varbinds:
-
-* activeAlertId
-* activeAlertName
-* activeAlertInstance
-* activeAlertSeverity
-* activeAlertStartTime
-
-[cols="1a,1a,2a" options="header"]
-|===
-| Notification type| Object ID (OID)| Description
-
-m| activeMinorAlert
-m| .1.3.6.1.4.1. +
-789.28669.0.6
-|	An alert with minor severity
-
-m| activeMajorAlert
-m| .1.3.6.1.4.1. +
-789.28669.0.7
-| 	An alert with major severity
-
-m| activeCriticalAlert
-m| .1.3.6.1.4.1. +
-789.28669.0.8
-|	An alert with critical severity
 |===
 
 // 2025 JULY 4, SGRIDDOC-168

@@ -145,6 +145,8 @@ To set up AssumeRole, create the target group to be assumed, if the group doesn'
 
 Temporary security credentials created from assuming this group are valid for a limited duration. The session is between 15 minutes and 12 hours, and the default session is 1 hour. When you remove the user from the group's S3 trust policy, the user can no longer assume this group. 
 
+NOTE: s3Trust" is a new policy attribute added to the tenant group in 12.0. As part of Account clone, when cloning a tenant group from a 12.0 grid (source) to a 11.9 grid (destination), it'll fail with error, 'unrecognized attribute, "s3Trust"' on the 11.9 grid, hence, the clone fails. The failure is visible on the source grid. And the clone is retry able
+
 .Steps
 
 . Select *ACCESS MANAGEMENT* > *Groups*.
