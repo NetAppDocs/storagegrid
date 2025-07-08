@@ -72,7 +72,7 @@ a|Storage Node
 a|Object data
 a|3 for each Storage Node on this host
 
-*Note:* A software-based Storage Node can have 1 to 48 storage volumes; at least 3 storage volumes are recommended.
+*Note:* A Linux software-based Storage Node can have 1 to 48 storage volumes. A VMware software-based Storage Node can have 1 to 16 storage volumes. At least 3 storage volumes are recommended.
 
 a|12 TB (4 TB/LUN, minimum)
 
