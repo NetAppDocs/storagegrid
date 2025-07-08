@@ -88,3 +88,12 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 * The ability for any Admin Node to link:../maintain/selecting-node-recovery-procedure.html[recover any other node] (except the primary Admin Node) enhances system recovery and fault tolerance, improving overall reliability.
 
+.Items from IE notes
+
+== User interface (Grid Manager)
+
+=== Dark theme
+Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
+
+=== Audit and syslog server page revised
+Refactor of current Audit and syslog server page, with additions for storing logs in a system bucket for backup purposes
