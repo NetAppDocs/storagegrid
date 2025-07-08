@@ -11,101 +11,80 @@ summary: 'This release of StorageGRID introduces the following features and func
 [.lead]
 This release of StorageGRID introduces the following features and functional changes.
 
-// Jon's text
-
-== Capacity
-Supports one trillion objects, which is three times the previous limit. 
-
-== Security 
-* Allows customer password policies to allow customers to enforce their own security standards.
-
-* Stronger data encryption and integrity protection provide improved security and performance. 
-
-* Increased security of stored passwords to reduce the risk of unauthorized access. 
-
-* SSH blocked by default to enhance security while allowing controlled access. 
-
 == Appliances 
 * Significantly increased storage capacity and cost efficiency with 122 TB QLC drives. 
 
 * Automated drive firmware upgrades enhance system reliability and reduce maintenance overhead. 
 
-* Allows conversion of existing Storage Nodes into data-only Storage Nodes to optimize resources improve system flexibility. 
+* Allows conversion of existing Storage Nodes into data-only Storage Nodes to optimize resources and improve system flexibility.
 
-== AI and machine learning
+== Capacity
+StorageGRID now supports one trillion objects, which is three times the previous limit. 
 
-* Branch buckets allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
+== Cassandra updates
+StorageGRID now uses a newer version of Cassandra for metadata storage. This version of Cassandra uses disk space more efficiently.
+
+After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a metadata format update will occur in the background for one to three days. During this time, certain maintenance procedures, such as expansion, will be disabled.
+
+== Security 
+* Password policies allow customers to enforce their own security standards.
+
+* Stronger data encryption and integrity protection provide improved security and performance. 
+
+* Increased security of stored passwords reduce the risk of unauthorized access. 
+
+* link:../admin/manage-ssh-access.html[SSH is blocked by default] to enhance security while allowing controlled access. 
+
+== Artificial intelligence (AI) and machine learning (ML)
+* link:../tenant/manage-branch-bucket-html[Branch buckets] allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
 
 * An S3 caching layer enhances performance for AI/ML training.
 
 == Federation 
+* You can now link:../ilm/configuring-regions-optional-and-s3-only.html[modify the default region] for S3 buckets. This capability provides greater flexibility in managing data locale and compliance. 
 
-* You can now modify the default region for S3 buckets. This capability provides greater flexibility in managing data locale and compliance. 
+* Cross-grid replication
+** link:grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] has been enhanced to achieve feature parity between internal and external replication, enabling better scalability and the concept of grid federation for exabyte-scale storage.
+** Cross-grid replication with S3 Object Lock Ensures data immutability and compliance with regulatory requirements.
 
-* Cross-grid replication has been enhanced to achieve feature parity between internal and external replication, enabling better scalability and the concept of grid federation for exabyte-scale storage.
+* *QUESTION: No endpoints listed in changes-to-grid-management-api?* New API endpoints for replicating individual objects to enable precise control over data replication. 
 
-* New API endpoints for replicating individual objects: Enables precise control over data replication, enhancing data management. 
+== S3 API 
+* Configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API].
+** Enhances security by enabling granular access control and temporary permissions.
+** The AssumeRole function provides short-term credentials for enhanced security and flexible access control, similar to Amazon's feature.
 
-CGR with S3 Object Lock: Ensures data immutability and compliance with regulatory requirements. 
+* *QUESTION: What's new for 12.0? Condition keys have been around since at least 11.2* Support for condition keys: Allows more granular access policies to improve security and compliance. 
 
-S3 API 
+* *QUESTION: New for 12.0?* The x-amz-side-encryption-customer-algorithm supports customer-specified encryption algorithms for enhanced data security. 
 
-Support for Roles and Assume Roles: Enhances security by enabling fine-grained access control and temporary permissions. The introduction of assume role functionality will provide short-term credentials for enhanced security and flexible access control, similar to Amazon's feature. 
+* *QUESTION: New for 12.0?* S3:object-lock-mode provides data protection by enforcing write-once-read-many (WORM) policies. 
 
-Support Condition Keys: Allows more granular access policies, improving security and compliance. 
+== Multi-tenancy 
 
-x-amz-side-encryption-customer-algorithm: Supports customer-specified encryption algorithms for enhanced data security. 
+* *QUESTION: Not mentioned in docs?* Quality of service (QoS): 2,500 traffic classifiers enable detailed traffic management to ensure consistent performance.
 
-S3:object-lock-mode: Provides data protection by enforcing write-once-read-many (WORM) policies. 
+* *QUESTION: New for 12.0?* Per-bucket object count quota allows for better control and management of storage resources. 
 
-Multi-tenancy 
+== Manageability 
 
-QoS – 2500 Traffic Classifiers: Enables detailed traffic management, ensuring consistent performance. 
+* Faster link:../maintain/decommission-procedure.html[decommissioning] reduces time and complexity to improve operational efficiency. 
 
-Per Bucket Object Count Quota: Allows better control and management of storage resources. 
+* Improved behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. 
+** Ensures higher data reliability and consistency across the grid. 
+** Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set.
+** Performance characteristics of Quorum semantics will differ depending on client application workload.
+** If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency.
 
-Manageability 
+NOTE: If you need to revert to the previous behavior for strong-global consistency, follow https://kb.netapp.com/hybrid/StorageGRID/Object_Mgmt/Configuring_StorageGRID_quorum_semantics_for_strong-global_consistency[Configure StorageGRID Quorum semantics for strong-global consistency^] for instructions.
 
-Faster Decommissioning: Reduces time and complexity in decommissioning nodes, improving operational efficiency. 
+* Notifications via Webhooks to Support Additional Receivers (FluentIO): A new webhook integration for bucket event notifications will support more developer workflows, enabling automated downstream processes. 
 
-Improved Strong Grid Consistency: Ensures higher data reliability and consistency across the grid. 
+* link:../admin/configure-autosupport-grid-manager.html[User-triggered AutoSupport] empowers users to initiate support uploads to enhance support responsiveness. 
 
-Notifications via Webhooks to Support Additional Receivers (FluentIO): A new webhook integration for bucket event notifications will support more developer workflows, enabling automated downstream processes. 
+* Reduced https://docs.netapp.com/us-en/storagegrid-appliances/index.html[appliance^] reboot time minimizes downtime to improve overall system availability. 
 
-User Triggered ASUP: Empowers users to initiate automated support uploads, enhancing support responsiveness. 
+* link:../maintain/move-adc-service.html[The ability to move the ADC service] to another node increases flexibility and resilience in managing administrative nodes. 
 
-Reduce Appliance Reboot Time: Minimizes downtime, improving overall system availability. 
+* The ability for any Admin Node to link:../maintain/selecting-node-recovery-procedure.html[recover any other node] (except the primary Admin Node) enhances system recovery and fault tolerance, improving overall reliability.
 
-Allow to Move ADC to Another Node: Increases flexibility and resilience in managing administrative nodes. 
-
-Allow Any Admin Node to Recover Any Other Node: Enhances system recovery and fault tolerance, improving overall reliability. 
-
-
-
-
-
-//
-== Cassandra updates
-
-StorageGRID now uses a newer version of Cassandra for metadata storage. This version of Cassandra uses disk space more efficiently.
-
-After you upgrade from StorageGRID 11.9 to 12.0, a metadata format update will occur in the background for one to three days. During this time, certain maintenance procedures, such as expansion, will be disabled.
-
-== Node recovery from non-primary Admin Node
-You can now link:../maintain/selecting-node-recovery-procedure.html[recover any node] except the primary Admin Node from a non-primary Admin Node.
-
-== S3
-=== Branch buckets
-You can now link:../tenant/manage-branch-bucket-html[create branch buckets] for an S3 bucket. A branch bucket provides access to S3 bucket objects as they existed at a certain time.
-
-=== Quorum consistency for new 12.0 installations
-Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set. The new behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. The performance characteristics of Quorum semantics will differ depending on client application workload. If you need to revert to the previous behavior for strong-global consistency, follow https://kb.netapp.com/hybrid/StorageGRID/Object_Mgmt/Configuring_StorageGRID_quorum_semantics_for_strong-global_consistency[Configure StorageGRID Quorum semantics for strong-global consistency^] for instructions.
-
-If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency.
-
-== Tenant groups
-
-=== AssumeRole
-You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. 
-
-// 2025-5-8, sgws34003
