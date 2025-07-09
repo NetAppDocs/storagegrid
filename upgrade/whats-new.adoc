@@ -26,9 +26,6 @@ If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will ke
 == Tenant groups
 
 === AssumeRole
-You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. 
+You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API].
 
-NOTE: The Account clone process can't clone S3 trust policy when you clone a tenant group from a StorageGRID 12.0 source to a StorageGRID 11.9 destination. The clone process fails with an `unrecognized attribute, "s3Trust" error` on the destination. To avoid this error, upgrade the destination to version 12.0 and retry the clone operation using the link:../tenant/grid-federation-account-clone.html[UI] or link:../tenant/grid-federation-clone-keys-with-api.html[API].
-
-// 2025 JULY 8, SGRIDDOC-169
 // 2025-5-8, sgws34003
