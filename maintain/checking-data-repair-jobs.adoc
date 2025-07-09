@@ -11,6 +11,8 @@ summary: 'Before decommissioning a grid node, you must confirm that no data repa
 [.lead]
 Before decommissioning a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission procedure.
 
+See link:../expand/index.html[Expansion types] for details on how to expand a grid node.
+
 .About this task
 If you need to decommission a disconnected Storage Node, you will also complete these steps after the decommission procedure completes to ensure the data repair job has completed successfully. You must ensure that any erasure-coded fragments that were on the removed node have been restored successfully.
 
@@ -45,3 +47,4 @@ link:../maintain/restoring-volume.html[Restore object data using Grid Manager].
 Use the `--repair-id` option to specify the Repair ID. For example, if you want to retry a repair with repair ID 949292, run this command: `repair-data start-ec-node-repair --repair-id 949292`
 
  .. Continue to track the status of EC data repairs until the State for all repairs is `Completed`.
+// 2025-07-09, STORAGEGRIDDOC 161

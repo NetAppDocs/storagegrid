@@ -11,6 +11,8 @@ summary: 'You can expand the capacity or capabilities of your StorageGRID system
 [.lead]
 You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.
 
+Before decommissioning or expanding a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission or expansion procedure. See link:../maintain/checking-data-repair-jobs.html[Check data repair jobs] for guidance on decommissioning a grid node.
+
 A StorageGRID expansion allows you to add:
 
 * Storage volumes to Storage Nodes
@@ -78,3 +80,4 @@ include::../_include/linux-distributions.adoc[]
 --
 ====
 //end tabbed blocks
+// 2025-07-09, STORAGEGRIDDOC 161
