@@ -27,7 +27,8 @@ NOTE: Use the `.zip` file if you are running Windows on the service laptop.
 
 . Save the installation archive.
 
-. [[download-verification-package]]If you need to verify the installation archive:
+. [[download-verification-package]] Code signature verification is manual on a Linux node. Optionally, if you need to verify the installation archive:
+
 .. Download the StorageGRID code signature verification package. The file name for this package uses the format `StorageGRID_<version-number>_Code_Signature_Verification_Package.tar.gz`, where `<version-number>` is the StorageGRID software version.
 .. Follow the steps to link:download-files-verify.html[manually verify the installation files]. 
 
@@ -57,3 +58,5 @@ include::../_include/installation-files-vmware.adoc[]
 --
 
 ====
+
+// 2025 JULY 9, SGRIDDOC-171

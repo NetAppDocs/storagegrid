@@ -43,7 +43,7 @@ NOTE: If you needed to download and install an RPM or DEB package on all Linux h
 
 . Select *Browse* to upload the version upgrade file to StorageGRID: `NetApp_StorageGRID_11.9.0_Software_uniqueID.upgrade`
 +
-When the upload and validation process is done, a green check mark appears next to the file name.
+When the upload and code signature verification is done, a green check mark appears next to the file name.
 
 . If you downloaded a hotfix file, select *Browse* to upload that file. The hotfix will be automatically applied as part of the version upgrade.
 
