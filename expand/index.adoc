@@ -11,7 +11,7 @@ summary: 'You can expand the capacity or capabilities of your StorageGRID system
 [.lead]
 You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.
 
-Before decommissioning or expanding a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission or expansion procedure. See link:../maintain/checking-data-repair-jobs.html[Check data repair jobs] for guidance on decommissioning a grid node.
+Before expanding a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission or expansion procedure. Refer to link:../maintain/checking-data-repair-jobs.html[Check data repair jobs].
 
 A StorageGRID expansion allows you to add:
 
@@ -51,9 +51,9 @@ Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding st
 +
 include::../_include/linux-distributions.adoc[]
 
-. link:performing-expansion.html[Perform the expansion].
+.. link:performing-expansion.html[Perform the expansion].
 
-. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
+.. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
 
 --
 //end add grid nodes, start add new site
@@ -73,9 +73,9 @@ include::../_include/linux-distributions.adoc[]
 +
 include::../_include/linux-distributions.adoc[]
 
-. link:performing-expansion.html[Perform the expansion].
+.. link:performing-expansion.html[Perform the expansion].
 
-. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
+.. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
 
 --
 ====

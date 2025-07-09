@@ -19,6 +19,8 @@ To remove a grid node or a site, you perform one of the following decommission p
 +
 CAUTION: Before performing a disconnected site decommission, contact your NetApp account representative. NetApp will review your requirements before enabling all steps in the Decommission Site wizard. You should not attempt a disconnected site decommission if you believe it might be possible to recover the site or to recover object data from the site.
 
+Before decommissioning a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission procedure. Refer to link:../maintain/checking-data-repair-jobs.html[Check data repair jobs]
+// 2025-07-09, STORAGEGRIDDOC 161
 
 
 

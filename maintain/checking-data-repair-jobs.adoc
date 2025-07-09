@@ -9,9 +9,9 @@ summary: 'Before decommissioning a grid node, you must confirm that no data repa
 :imagesdir: ../media/
 
 [.lead]
-Before decommissioning a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission procedure.
+Before decommissioning or expanding a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission procedure.
 
-See link:../expand/index.html[Expansion types] for details on how to expand a grid node.
+Refer to link:../expand/index.html[Expansion types] for details on how to expand a grid node.
 
 .About this task
 If you need to decommission a disconnected Storage Node, you will also complete these steps after the decommission procedure completes to ensure the data repair job has completed successfully. You must ensure that any erasure-coded fragments that were on the removed node have been restored successfully.
