@@ -59,10 +59,7 @@ m| base-os-logs
 m| bundles
 | Global configuration information (bundles).
 
-
-m| cache-svc.log
-
-service-err.log
+m| cache-svc
 | Cache service logs (only on Gateway Nodes).
 
 m| cassandra
