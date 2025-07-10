@@ -66,7 +66,7 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 
 | Can collect log files and system data from one or more nodes
 | Yes
-| No
+| Yes
 
 | Sends alert notifications, AutoSupport packages, and SNMP traps and informs
 | Yes. Acts as the <<preferred-sender,preferred sender>>.
