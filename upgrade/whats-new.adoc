@@ -27,8 +27,6 @@ StorageGRID now uses a newer version of Cassandra for metadata storage. This ver
 After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a metadata format update will occur in the background for one to three days. During this time, certain maintenance procedures, such as expansion, will be disabled.
 
 == Security 
-* Password policies allow customers to enforce their own security standards.
-
 * Stronger data encryption and integrity protection provide improved security and performance. 
 
 * Increased security of stored passwords reduce the risk of unauthorized access. 
@@ -43,16 +41,12 @@ After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a m
 == Federation 
 * You can now link:../ilm/configuring-regions-optional-and-s3-only.html[modify the default region] for S3 buckets. This capability provides greater flexibility in managing data locale and compliance. 
 
-* Cross-grid replication
-** link:grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] has been enhanced to achieve feature parity between internal and external replication, enabling better scalability and the concept of grid federation for exabyte-scale storage.
-** Cross-grid replication with S3 Object Lock Ensures data immutability and compliance with regulatory requirements.
+* link:grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] has been enhanced to achieve feature parity between internal and external replication, enabling better scalability and the concept of grid federation for exabyte-scale storage.
 
 * *QUESTION: No endpoints listed in changes-to-grid-management-api?* New API endpoints for replicating individual objects to enable precise control over data replication. 
 
 == S3 API 
-* Configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API].
-** Enhances security by enabling granular access control and temporary permissions.
-** The AssumeRole function provides short-term credentials for enhanced security and flexible access control, similar to Amazon's feature.
+* You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
 
 * *QUESTION: What's new for 12.0? Condition keys have been around since at least 11.2* Support for condition keys: Allows more granular access policies to improve security and compliance. 
 
@@ -71,9 +65,7 @@ After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a m
 * Faster link:../maintain/decommission-procedure.html[decommissioning] reduces time and complexity to improve operational efficiency. 
 
 * Improved behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. 
-** Ensures higher data reliability and consistency across the grid. 
 ** Fresh installations of StorageGRID 12.0 and later will default to using Quorum semantics when link:../s3/consistency.html[strong-global consistency] is set.
-** Performance characteristics of Quorum semantics will differ depending on client application workload.
 ** If you upgrade from StorageGRID 11.9 to StorageGRID 12.0, upgraded grids will keep the previous behavior for strong-global consistency.
 
 NOTE: If you need to revert to the previous behavior for strong-global consistency, follow https://kb.netapp.com/hybrid/StorageGRID/Object_Mgmt/Configuring_StorageGRID_quorum_semantics_for_strong-global_consistency[Configure StorageGRID Quorum semantics for strong-global consistency^] for instructions.
@@ -87,8 +79,6 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 * link:../maintain/move-adc-service.html[The ability to move the ADC service] to another node increases flexibility and resilience in managing administrative nodes. 
 
 * The ability for any Admin Node to link:../maintain/selecting-node-recovery-procedure.html[recover any other node] (except the primary Admin Node) enhances system recovery and fault tolerance, improving overall reliability.
-
-.Items from IE notes
 
 == User interface (Grid Manager)
 
