@@ -19,4 +19,5 @@ If you have a more complex ILM policy that includes rules that place objects in 
 
 Charting how quickly overall storage capacity is being consumed can help you understand how much storage to add in the expansion, and when the additional storage space will be required. You can use the Grid Manager to link:../monitor/monitoring-storage-capacity.html[monitor and chart storage capacity].
 
-When planning the timing of an expansion, remember to consider how long it might take to procure and install additional storage.
+When planning the timing of an expansion, remember to consider how long it might take to procure and install additional storage. To simplify expansion planning, consider adding Storage Nodes when existing Storage Nodes reach 70% capacity.
+// 2025-25-6, StorageGridDoc 161

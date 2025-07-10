@@ -31,7 +31,7 @@ After you have decided to add storage volumes and have determined which Storage 
 
 * To add one or two expansion shelves to an SG6160 storage appliance, go to https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/adding-expansion-shelf-to-deployed-sg6160.html[Add expansion shelf to deployed SG6160^]
 
-* For a software-based node, follow the instructions for 
+* For a software-based node, follow the instructions for
 link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].
 
 == Guidelines for adding Storage Nodes
@@ -43,8 +43,9 @@ Before adding Storage Nodes to existing sites, review the following guidelines a
 * You should not add more than 10 Storage Nodes in a single expansion procedure.
 * You can add Storage Nodes to more than one site in a single expansion procedure.
 * You can add Storage Nodes and other types of nodes in a single expansion procedure.
-* Before starting the expansion procedure, you must confirm that all data-repair operations performed as part of a recovery are complete. See link:../maintain/checking-data-repair-jobs.html[Check data repair jobs]. 
+* Before starting the expansion procedure, you must confirm that all data-repair operations performed as part of a recovery are complete. See link:../maintain/checking-data-repair-jobs.html[Check data repair jobs].
 * If you need to remove Storage Nodes before or after performing an expansion, you should not decommission more than 10 Storage Nodes in a single Decommission Node procedure.
+* Add sufficient Storage Nodes to maintain underlying storage I/O performance. Write operations will be distributed among Storage Nodes based on available storage capacity. If the expanded Storage Nodes have significantly more available storage capacity, those nodes will receive significantly more writes. In particular, when the existing Storage Nodes are nearly full, new writes will rely only on the expanded Storage Nodes. Read and delete operations will be handled according to your specific workload.
 
 == Guidelines for ADC service on Storage Nodes
 
@@ -56,3 +57,4 @@ When configuring the expansion, you must choose whether to include the Administr
 * Adding the ADC service to every Storage Node is not recommended. Including too many ADC services can cause slowdowns due to the increased amount of communication between nodes.
 * A single grid should not have more than 48 Storage Nodes with the ADC service. This is equivalent to 16 sites with three ADC services at each site.
 * In general, when you select the *ADC Service* setting for a new node, you should select *Automatic*. Select *Yes* only if the new node will replace another Storage Node that includes the ADC service. Because you can't decommission a Storage Node if too few ADC services would remain, selecting *Yes* ensures that a new ADC service is available before the old service is removed.
+// 2025-2-7, StorageGridDoc 161
