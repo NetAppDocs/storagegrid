@@ -59,7 +59,7 @@ From the Alerts menu, you can do the following to link:../monitor/managing-alert
 
 The link:../monitor/viewing-nodes-page.html[Nodes page] displays information about the entire grid, each site in the grid, and each node at a site.
 
-The Nodes home page displays combined metrics for the entire grid. To view information for a particular site or node, select the site or node.
+To view information for a particular site or node, select the site or node.
 
 == Tenants page
 
@@ -92,8 +92,10 @@ Network tasks include:
 * link:../admin/managing-high-availability-groups.html[Managing high availability groups]
 * link:../admin/managing-load-balancing.html[Managing load balancer endpoints]
 * link:../admin/configuring-s3-api-endpoint-domain-names.html[Configuring S3 endpoint domain names]
-* link:../admin/managing-traffic-classification-policies.html[Managing traffic classification policies]
 * link:../admin/configure-vlan-interfaces.html[Configuring VLAN interfaces]
+* link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Enabling CORS for a management interface]
+* link:../admin/managing-traffic-classification-policies.html[Managing traffic classification policies]
+
 
 === Security tasks
 Security tasks include:

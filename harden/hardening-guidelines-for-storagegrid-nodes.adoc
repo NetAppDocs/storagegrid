@@ -50,6 +50,12 @@ For all StorageGRID nodes, avoid running StorageGRID on the same physical hardwa
 
 Don't allow untrusted users to access StorageGRID nodes over the network when the nodes are being installed. Nodes aren't fully secure until they have joined the grid.
 
+== Limit physical access to hardware
+
+You must limit physical access to StorageGRID hardware appliance nodes as well as VMware virtual machine hosts and Linux hosts running StorageGRID to authorized administrators only. Some examples of physical access controls include locks, guards, physical barriers, and video surveillance.
+
+Hardware appliance nodes are designed to be installed and operated only by authorized administrators. Don't allow un-authorized administrators to access hardware appliance nodes.
+
 == Guidelines for Admin Nodes
 
 Admin Nodes provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager or the Tenant Manager, you are connecting to an Admin Node.
@@ -102,3 +108,8 @@ include::../_include/enable-disable-ipmi.adoc[]
 * For appliance models containing SED or FIPS NVMe SSDs that you manage using the StorageGRID Appliance Installer and Grid Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-drive-encryption[enable and configure StorageGRID drive encryption^].
 
 * For appliances without SED, FDE, or FIPS drives, use a Key Management Server (KMS) to  https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-node-encryption[enable and configure StorageGRID software node encryption^].
+
+.Related information
+link:https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html[Learn about drive security in SANtricity System Manager^]
+
+// 2025 JULY 10, SGRIDDOC-170

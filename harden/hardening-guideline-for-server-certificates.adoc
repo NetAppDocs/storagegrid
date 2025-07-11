@@ -9,7 +9,7 @@ summary: 'You should replace the default certificates created during installatio
 :imagesdir: ../media/
 
 [.lead]
-You should replace the default certificates created during installation and select the appropriate security policy for TLS and SSH connections.
+You should control SSH access, replace default TLS certificates, and select the appropriate security policy for TLS and SSH connections.
 
 == Hardening guidelines for certificates
 
@@ -39,6 +39,12 @@ In addition, clients should use strict hostname checking when communicating with
 
 You can select a security policy to determine which protocols and ciphers are used to establish secure TLS connections with client applications and secure SSH connections to internal StorageGRID services.
 
-The security policy controls how TLS and SSH encrypt data in motion. As a best practice, you should disable encryption options that aren't required for application compatibility. Use the default Modern policy, unless your system needs to be Common Criteria-compliant or you need to use other ciphers.
+The security policy controls how TLS and SSH encrypt data in motion. As a best practice, you should disable encryption options that aren't required for application compatibility. Use the default Modern policy, unless your system needs to be Common Criteria-compliant, FIPS 140-2 compliant, or you need to use other ciphers
 
 See link:../admin/manage-tls-ssh-policy.html[Manage the TLS and SSH policy] for details and instructions.
+
+== Manage external SSH access 
+
+To enhance system security, external SSH access is blocked by default. Only enable SSH access when you need to perform tasks that require inbound SSH access, such as troubleshooting. See link:../admin/manage-ssh-access.html[Manage external SSH access] for details and instructions.
+
+// 2025 JULY 10, SGRIDDOC-170
