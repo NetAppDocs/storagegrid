@@ -156,7 +156,7 @@ For multiple entries, add each UUID or username on a new line.
 +
 If the import into the Users field fails for one or more users, perform the following steps:
 
-.. Select *Copy users*.
+.. Expand the *Users not imported* and select *Copy users*.
 .. Retry the import by selecting *Previous* and pasting the copied users into the *Import federated users* dialog box.
 
 +
