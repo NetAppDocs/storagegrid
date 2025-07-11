@@ -17,10 +17,10 @@ include::../_include/linux-distributions.adoc[]
 
 .About this task
 
-You can skip these steps if you plan to use local storage for the Docker or Podman storage volume and have sufficient space available on the host partition containing:
+You can skip these steps if you plan to use the root volume for the Docker or Podman storage volume and have sufficient space available on the host partition containing:
 
-* RHEL: `/var/lib/docker` for Docker and `/var/lib/containers` for Podman
-* Ubuntu or Debian: `/var/lib`
+* Podman: `/var/lib/containers`
+* Docker: `/var/lib/docker`
 
 .Steps
 

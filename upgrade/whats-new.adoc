@@ -11,6 +11,12 @@ summary: 'This release of StorageGRID introduces the following features and func
 [.lead]
 This release of StorageGRID introduces the following features and functional changes.
 
+== Cassandra updates
+
+StorageGRID now uses a newer version of Cassandra for metadata storage. This version of Cassandra uses disk space more efficiently.
+
+After you upgrade from StorageGRID 11.9 to 12.0, a metadata format update will occur in the background for one to three days. During this time, certain maintenance procedures, such as expansion, will be disabled.
+
 == Node recovery from non-primary Admin Node
 You can now link:../maintain/selecting-node-recovery-procedure.html[recover any node] except the primary Admin Node from a non-primary Admin Node.
 
