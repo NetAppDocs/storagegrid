@@ -59,7 +59,7 @@ From the Alerts menu, you can do the following to link:../monitor/managing-alert
 
 The link:../monitor/viewing-nodes-page.html[Nodes page] displays information about the entire grid, each site in the grid, and each node at a site.
 
-To view information for a particular site or node, select the site or node.
+The Nodes home page displays combined metrics for the entire grid. To view information for a particular site or node, select the site or node.
 
 == Tenants page
 
