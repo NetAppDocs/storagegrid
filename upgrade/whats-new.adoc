@@ -84,13 +84,10 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 * link:../admin/manage-ssh-access.html[SSH is blocked by default] to enhance security while allowing controlled access. 
 
-== User interface (Grid Manager)
+== User interface
 
-=== Dark theme
-Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
+* Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
 
-=== Audit and syslog server page revised
-Refactor of current Audit and syslog server page, with additions for storing logs in a system bucket for backup purposes
+* Audit and syslog server page refactored, with additions for storing logs in a system bucket for backup purposes.
 
-=== Grid Topology page removed
-The legacy Grid Topology page was removed. Over the past several StorageGRID releases, the operations and metrics available from that page were migrated to other pages in the Grid Manager.
+* The legacy Grid Topology page was removed. Over the past several StorageGRID releases, the operations and metrics available from that page were migrated to other pages in the Grid Manager.
