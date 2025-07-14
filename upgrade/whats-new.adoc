@@ -18,6 +18,11 @@ This release of StorageGRID introduces the following features and functional cha
 
 * Allows conversion of existing Storage Nodes into data-only Storage Nodes to optimize resources and improve system flexibility.
 
+== Artificial intelligence (AI) and machine learning (ML)
+* link:../tenant/manage-branch-bucket-html[Branch buckets] allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
+
+* An S3 caching layer enhances performance for AI/ML training.
+
 == Capacity
 StorageGRID now supports one trillion objects, which is three times the previous limit. 
 
@@ -26,18 +31,6 @@ StorageGRID now uses a newer version of Cassandra for metadata storage. This ver
 
 After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a metadata format update will occur in the background for one to three days. During this time, certain maintenance procedures, such as expansion, will be disabled.
 
-== Security 
-* Stronger data encryption and integrity protection provide improved security and performance. 
-
-* Increased security of stored passwords reduce the risk of unauthorized access. 
-
-* link:../admin/manage-ssh-access.html[SSH is blocked by default] to enhance security while allowing controlled access. 
-
-== Artificial intelligence (AI) and machine learning (ML)
-* link:../tenant/manage-branch-bucket-html[Branch buckets] allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
-
-* An S3 caching layer enhances performance for AI/ML training.
-
 == Federation 
 * You can now link:../admin/managing-users.html#import-federated-users[import up to 100 federated users] into StorageGRID.
 
@@ -45,24 +38,9 @@ After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a m
 
 * link:grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] has been enhanced to achieve feature parity between internal and external replication, enabling better scalability and the concept of grid federation for exabyte-scale storage.
 
-* *QUESTION: No endpoints listed in changes-to-grid-management-api?* New API endpoints for replicating individual objects to enable precise control over data replication. 
-
-== S3 API 
-* *QUESTION: What's new for 12.0? Condition keys have been around since at least 11.2* Support for condition keys: Allows more granular access policies to improve security and compliance. 
-
-* *QUESTION: New for 12.0?* The x-amz-side-encryption-customer-algorithm supports customer-specified encryption algorithms for enhanced data security. 
-
-* *QUESTION: New for 12.0?* S3:object-lock-mode provides data protection by enforcing write-once-read-many (WORM) policies. 
-
-== Tenant groups
-* You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
-
-* *QUESTION: Not mentioned in docs?* Quality of service (QoS): 2,500 traffic classifiers enable detailed traffic management to ensure consistent performance.
-
-* *QUESTION: New for 12.0?* Per-bucket object count quota allows for better control and management of storage resources. 
+* *QUESTION: No endpoints listed in changes-to-grid-management-api?* New API endpoints for replicating individual objects to enable precise control over data replication.
 
 == Manageability 
-
 * Faster link:../maintain/decommission-procedure.html[decommissioning] reduces time and complexity to improve operational efficiency. 
 
 * Improved behavior for strong-global consistency provides site failure tolerance for client requests when grids have three or more sites. 
@@ -85,6 +63,27 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 * You can link:../maintain/move-adc-service.html[move the ADC service] before you decommission a Storage Node or convert a Storage Node to a data-only node.
 
+== S3 API 
+* *QUESTION: What's new for 12.0? Condition keys have been around since at least 11.2* Support for condition keys: Allows more granular access policies to improve security and compliance. 
+
+* *QUESTION: New for 12.0?* The x-amz-side-encryption-customer-algorithm supports customer-specified encryption algorithms for enhanced data security. 
+
+* *QUESTION: New for 12.0?* S3:object-lock-mode provides data protection by enforcing write-once-read-many (WORM) policies. 
+
+== Tenant groups
+* You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
+
+* *QUESTION: Not mentioned in docs?* Quality of service (QoS): 2,500 traffic classifiers enable detailed traffic management to ensure consistent performance.
+
+* *QUESTION: New for 12.0?* Per-bucket object count quota allows for better control and management of storage resources. 
+
+== Security 
+* Stronger data encryption and integrity protection provide improved security and performance. 
+
+* Increased security of stored passwords reduce the risk of unauthorized access. 
+
+* link:../admin/manage-ssh-access.html[SSH is blocked by default] to enhance security while allowing controlled access. 
+
 == User interface (Grid Manager)
 
 === Dark theme
@@ -92,3 +91,6 @@ Dark theme and system theme settings are available in the User menu of the Grid 
 
 === Audit and syslog server page revised
 Refactor of current Audit and syslog server page, with additions for storing logs in a system bucket for backup purposes
+
+=== Grid Topology page removed
+The legacy Grid Topology page was removed. Over the past several StorageGRID releases, the operations and metrics available from that page were migrated to other pages in the Grid Manager.

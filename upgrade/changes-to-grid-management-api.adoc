@@ -33,9 +33,6 @@ The following private endpoints have been added to allow you to link:../maintain
 
 `/private/convert-to-data-only-node/retry`
 
-== Grid Topology page removed
-The legacy Grid Topology page was removed. Over time, the operations and metrics available from that page were migrated to other pages in the Grid Manager.
-
 
 // 2024-07-2, jira SWGS-31283
 // 2024-07-11, SGWS-32010
