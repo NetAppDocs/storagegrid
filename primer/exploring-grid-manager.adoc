@@ -92,10 +92,8 @@ Network tasks include:
 * link:../admin/managing-high-availability-groups.html[Managing high availability groups]
 * link:../admin/managing-load-balancing.html[Managing load balancer endpoints]
 * link:../admin/configuring-s3-api-endpoint-domain-names.html[Configuring S3 endpoint domain names]
-* link:../admin/configure-vlan-interfaces.html[Configuring VLAN interfaces]
-* link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Enabling CORS for a management interface]
 * link:../admin/managing-traffic-classification-policies.html[Managing traffic classification policies]
-
+* link:../admin/configure-vlan-interfaces.html[Configuring VLAN interfaces]
 
 === Security tasks
 Security tasks include:
