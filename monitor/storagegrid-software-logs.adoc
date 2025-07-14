@@ -131,6 +131,11 @@ m| /var/local/log/ams.errlog
 | 
 | Admin Nodes
 
+m| /var/local/log/cache-svc.log +
+/var/local/log/cache-svc.errlog
+| Cache service logs.
+| Gateway Nodes
+
 m| /var/local/log/cassandra/system.log
 | Information for the metadata store (Cassandra database) that can be used if problems occur when adding new Storage Nodes, or if the nodetool repair task stalls.
 | Storage Nodes

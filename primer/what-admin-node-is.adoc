@@ -56,6 +56,10 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 | Yes
 | No
 
+| Can download recovery package
+| Yes
+| Yes
+
 | Can perform EC rebalance after Storage Node expansion
 | Yes
 | No
@@ -66,14 +70,20 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 
 | Can collect log files and system data from one or more nodes
 | Yes
+| Yes
+
+| Can recover Storage, Gateway, and non-primary Admin Nodes
+| Yes
+| Yes
+
+| Can recover primary Admin Node
+| Yes
 | No
 
 | Sends alert notifications, AutoSupport packages, and SNMP traps and informs
 | Yes. Acts as the <<preferred-sender,preferred sender>>.
 | Yes. Acts as a standby sender.
 |===
-
-
 
 == [[preferred-sender]]Preferred sender Admin Node
 
