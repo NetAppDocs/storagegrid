@@ -46,15 +46,16 @@ After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a m
 * *QUESTION: No endpoints listed in changes-to-grid-management-api?* New API endpoints for replicating individual objects to enable precise control over data replication. 
 
 == S3 API 
-* You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
-
 * *QUESTION: What's new for 12.0? Condition keys have been around since at least 11.2* Support for condition keys: Allows more granular access policies to improve security and compliance. 
 
 * *QUESTION: New for 12.0?* The x-amz-side-encryption-customer-algorithm supports customer-specified encryption algorithms for enhanced data security. 
 
 * *QUESTION: New for 12.0?* S3:object-lock-mode provides data protection by enforcing write-once-read-many (WORM) policies. 
 
-== Multi-tenancy 
+== Tenant groups
+* You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
++
+The account clone process can't clone S3 trust policy when you clone a tenant group from a StorageGRID 12.0 source to a StorageGRID 11.9 destination. The clone process fails with an unrecognized attribute, "s3Trust" error on the destination. To avoid this error, either upgrade the destination to version 11.9.0.6, which contains the hotfix for this issue, or upgrade to version 12.0 before you start the account clone process.
 
 * *QUESTION: Not mentioned in docs?* Quality of service (QoS): 2,500 traffic classifiers enable detailed traffic management to ensure consistent performance.
 
