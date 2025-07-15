@@ -90,7 +90,7 @@ entries:
       url: "/monitor/deployment-and-maintenance-logs.html"
     - title: About the bycast.log
       url: "/monitor/about-bycast-log.html"
-  - title: Configure audit message and log destinations
+  - title: Configure log management
     entries:      
     - title: Considerations for external syslog server
       url: "/monitor/considerations-for-external-syslog-server.html"  
