@@ -4,13 +4,13 @@
 | Web browser| Minimum supported version
 
 | Google Chrome
-| 119
+| 136
 
 | Microsoft Edge
-| 119
+| 136
 
 | Mozilla Firefox
-| 119
+| 138
 |===
 
 You should set the browser window to a recommended width.
