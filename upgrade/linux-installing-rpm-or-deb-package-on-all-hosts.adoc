@@ -57,7 +57,7 @@ You will be prompted to upload the hotfix file on the StorageGRID Upgrade page w
 
 . Code signature verification is manual on a Linux node. Optionally, verify the installation archive:
 .. Download the StorageGRID code signature verification package. The file name for this package uses the format `StorageGRID_<version-number>_Code_Signature_Verification_Package.tar.gz`, where `<version-number>` is the StorageGRID software version.
-.. Follow the steps to link:download-files-verify.html[manually verify the installation files].
+.. Follow the steps to link:../swnodes/download-files-verify.html[manually verify the installation files].
 
 == Install archive on all Linux hosts
 Perform these steps before upgrading StorageGRID software.
