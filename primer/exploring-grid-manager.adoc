@@ -57,9 +57,7 @@ From the Alerts menu, you can do the following to link:../monitor/managing-alert
 
 == Nodes page
 
-The link:../monitor/viewing-nodes-page.html[Nodes page] displays information about the entire grid, each site in the grid, and each node at a site.
-
-The Nodes home page displays combined metrics for the entire grid. To view information for a particular site or node, select the site or node.
+The link:../monitor/viewing-nodes-page.html[Nodes page] displays information about the entire grid, each site in the grid, and each node at a site. To view information for a particular site or node, select the site or node.
 
 == Tenants page
 
@@ -89,18 +87,19 @@ The Configuration menu allows you to specify network settings, security settings
 
 Network tasks include:
 
-* link:../admin/managing-high-availability-groups.html[Managing high availability groups]
-* link:../admin/managing-load-balancing.html[Managing load balancer endpoints]
-* link:../admin/configuring-s3-api-endpoint-domain-names.html[Configuring S3 endpoint domain names]
-* link:../admin/managing-traffic-classification-policies.html[Managing traffic classification policies]
-* link:../admin/configure-vlan-interfaces.html[Configuring VLAN interfaces]
+* link:../admin/managing-high-availability-groups.html[Manage high availability groups]
+* link:../admin/managing-load-balancing.html[Manage load balancer endpoints]
+* link:../admin/configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names]
+* link:../admin/managing-traffic-classification-policies.html[Manage traffic classification policies]
+* link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces]
+* link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Enable StorageGRID CORS for a management interface]
 
 === Security tasks
 Security tasks include:
 
-* link:../admin/using-storagegrid-security-certificates.html[Managing security certificates]
-* link:../admin/manage-firewall-controls.html[Managing internal firewall controls]
-* link:../admin/kms-configuring.html[Configuring key management servers]
+* link:../admin/using-storagegrid-security-certificates.html[Manage security certificates]
+* link:../admin/manage-firewall-controls.html[Manage internal firewall controls]
+* link:../admin/kms-configuring.html[Configure key management servers]
 * Configuring security settings including the link:../admin/manage-tls-ssh-policy.html[TLS and SSH policy], link:../admin/changing-network-options-object-encryption.html[network and object security options], link:../admin/changing-browser-session-timeout-interface.html[interface security settings], and link:../admin/manage-ssh-access.html[SSH access options].
 * Configuring the settings for a link:../admin/configuring-storage-proxy-settings.html[storage proxy] or an link:../admin/configuring-admin-proxy-settings.html[admin proxy] 
 
@@ -109,7 +108,7 @@ System tasks include:
 
 * Using link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems.
 * Optionally, enabling the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option.
-* link:../ilm/managing-objects-with-s3-object-lock.html[Managing S3 Object Lock]
+* link:../ilm/managing-objects-with-s3-object-lock.html[Manage S3 Object Lock]
 * Understanding Storage settings such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
 * link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles].
 
@@ -117,17 +116,17 @@ System tasks include:
 
 Monitoring tasks include:
 
-* link:../monitor/configure-audit-messages.html[Configuring audit messages and log destinations]
-* link:../monitor/using-snmp-monitoring.html[Using SNMP monitoring]
+* link:../monitor/configure-audit-messages.html[Configure audit messages and log destinations]
+* link:../monitor/using-snmp-monitoring.html[Use SNMP monitoring]
 
 === Access control tasks
 
 Access control tasks include:
 
-* link:../admin/managing-admin-groups.html[Managing admin groups]
-* link:../admin/managing-users.html[Managing admin users]
+* link:../admin/managing-admin-groups.html[Manage admin groups]
+* link:../admin/managing-users.html[Manage admin users]
 * Changing the link:../admin/changing-provisioning-passphrase.html[provisioning passphrase] or link:../admin/change-node-console-password.html[node console passwords]
-* link:../admin/using-identity-federation.html[Using identity federation]
+* link:../admin/using-identity-federation.html[Use identity federation]
 * link:../admin/how-sso-works.html[Configure SSO]
 
 == Maintenance menu
@@ -150,7 +149,7 @@ Maintenance tasks include:
 
 System maintenance tasks you can perform include:
 
-* link:../admin/viewing-storagegrid-license-information.html[Viewing StorageGRID license information] or link:../admin/updating-storagegrid-license-information.html[updating license information]
+* link:../admin/viewing-storagegrid-license-information.html[View StorageGRID license information] or link:../admin/updating-storagegrid-license-information.html[update license information]
 * Generating and downloading the link:../maintain/downloading-recovery-package.html[recovery package]
 * Performing StorageGRID software updates, including software upgrades, hotfixes, and updates to the SANtricity OS software on selected appliances
 
@@ -163,9 +162,9 @@ System maintenance tasks you can perform include:
 
 Network maintenance tasks you can perform include:
 
-* link:../maintain/configuring-dns-servers.html[Configuring DNS servers]
-* link:../maintain/updating-subnets-for-grid-network.html[Updating Grid Network subnets]
-* link:../maintain/configuring-ntp-servers.html[Managing NTP servers]
+* link:../maintain/configuring-dns-servers.html[Configure DNS servers]
+* link:../maintain/updating-subnets-for-grid-network.html[Update Grid Network subnets]
+* link:../maintain/configuring-ntp-servers.html[Manage NTP servers]
 
 == Support menu
 
@@ -182,15 +181,15 @@ From the Tools section of the Support menu, you can:
 +
 NOTE: The tools available from the *Metrics* option are intended for use by technical support. Some features and menu items within these tools are intentionally non-functional.
 
-=== Alarms (legacy)
-
-The information about legacy alarms has been removed from this version of the documentation. Refer to https://docs.netapp.com/us-en/storagegrid-118/monitor/managing-alerts-and-alarms.html[Manage alerts and alarms (StorageGRID 11.8 documentation)^].
-
 === Other
 
 From the Other section of the Support menu, you can:
 
+* Configure link:../monitor/manage-io-prioritization.html[I/O prioritization]
+* Configure link:../admin/configure-autosupport-grid-manager.html[AutoSupport email setup (legacy)]
 * Manage link:../admin/manage-link-costs.html[link cost]
+* Manage NMS entities
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]
+*
 
 // 2025 APR 30, SGWS-34284
