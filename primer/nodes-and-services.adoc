@@ -13,7 +13,7 @@ The basic building block of a StorageGRID system is the grid node. Nodes contain
 
 == Types of grid nodes
 
-The StorageGRID system uses four types of grid nodes:
+The StorageGRID system uses three types of grid nodes:
 
 Admin Nodes:: Provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
 +
@@ -22,7 +22,9 @@ Admin Nodes can also be used to load balance S3 client traffic.
 See link:what-admin-node-is.html[What is an Admin Node?]
 
 Storage Nodes:: Manage and store object data and metadata. Each site in your StorageGRID system must have at least three Storage Nodes.
-+
+
+During initial installation of a new Storage Node, you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store metadata].
+
 See link:what-storage-node-is.html[What is a Storage Node?]
 
 Gateway Nodes (optional):: Provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent.
@@ -46,8 +48,6 @@ See the following to learn about the available appliances:
 Software-based grid nodes can be deployed as VMware virtual machines or within container engines on a Linux host. See link:../swnodes/index.html[Install StorageGRID on software-based nodes].
 
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to determine the supported versions.
-
-During initial installation of a new software-based Storage Node you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store metadata].
 
 [[storagegrid-services]]
 == StorageGRID services
