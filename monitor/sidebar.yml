@@ -90,11 +90,11 @@ entries:
       url: "/monitor/deployment-and-maintenance-logs.html"
     - title: About the bycast.log
       url: "/monitor/about-bycast-log.html"
-  - title: Configure log management
+  - title: Configure audit messages and external syslog server
     entries:      
     - title: Considerations for external syslog server
       url: "/monitor/considerations-for-external-syslog-server.html"  
-    - title: Configure audit messages and external syslog server
+    - title: Configure log management
       url: "/monitor/configure-audit-messages.html" 
   - title: Use SNMP monitoring
     entries:

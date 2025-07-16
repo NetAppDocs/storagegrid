@@ -115,7 +115,7 @@ NOTE: Audit protocol request headers are logged only if the audit level for *Cli
 
 By default, audit messages and logs are saved on the nodes where they're generated. They're periodically rotated and eventually deleted to prevent them from consuming excessive disk space. If you want to save audit messages and a subset of logs externally, <<use-external-syslog-server,use an external syslog server>>.
 
-If you want to save the log files internally, choose a tenant and bucket for log storage.
+If you want to save the log files internally, choose a tenant and bucket for log storage and enable log archival.
 
 === [[use-external-syslog-server]]Use an external syslog server
 
