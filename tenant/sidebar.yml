@@ -42,8 +42,8 @@ entries:
         url: "/tenant/tenant-management-permissions.html"  
       - title: Manage groups
         url: "/tenant/manage-groups.html"
-    - title: Manage local users
-      url: "/tenant/managing-local-users.html"
+    - title: Manage users
+      url: "/tenant/manage-users.html"
   - title: Manage S3 access keys
     entries:
     - title: Tenant access keys

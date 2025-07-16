@@ -72,7 +72,7 @@ For security reasons, when a tenant account is cloned from the tenant's source g
 .Recommended actions
 Before the root user can sign in to the tenant's destination grid, a grid administrator must first link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] on the destination grid.
 
-Before a cloned local user can sign in to the tenant's destination grid, the root user for the cloned tenant must add a password for the user on the destination grid. For instructions, see link:../tenant/managing-local-users.html[Manage local users] in the instructions for using the Tenant Manager.
+Before a cloned local user can sign in to the tenant's destination grid, the root user for the cloned tenant must add a password for the user on the destination grid. For instructions, see link:../tenant/manage-users.html[Manage users] in the instructions for using the Tenant Manager.
 
 === Tenant created without a clone
 
