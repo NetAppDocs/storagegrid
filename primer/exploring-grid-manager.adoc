@@ -38,8 +38,8 @@ You can use *Search* to find entries in the sidebar of the Grid Manager and on t
 
 The help menu image:../media/icon-help-menu-bar.png[help icon on the menu bar] provides access to:
 
-* The link:../fabricpool/use-fabricpool-setup-wizard.html[FabricPool] and link:../admin/use-s3-setup-wizard.html[S3 setup] wizard 
-* The StorageGRID documentation center for the current release
+* The link:../fabricpool/use-fabricpool-setup-wizard.html[FabricPool] and link:../admin/use-s3-setup-wizard.html[S3 setup] wizards 
+* The StorageGRID documentation site for the current release
 * link:../admin/using-grid-management-api.html[API documentation]
 * Information about which version of StorageGRID is currently installed
 
@@ -100,17 +100,18 @@ Security tasks include:
 * link:../admin/using-storagegrid-security-certificates.html[Manage security certificates]
 * link:../admin/manage-firewall-controls.html[Manage internal firewall controls]
 * link:../admin/kms-configuring.html[Configure key management servers]
-* Configuring security settings including the link:../admin/manage-tls-ssh-policy.html[TLS and SSH policy], link:../admin/changing-network-options-object-encryption.html[network and object security options], link:../admin/changing-browser-session-timeout-interface.html[interface security settings], and link:../admin/manage-ssh-access.html[SSH access options].
-* Configuring the settings for a link:../admin/configuring-storage-proxy-settings.html[storage proxy] or an link:../admin/configuring-admin-proxy-settings.html[admin proxy] 
+* Configure security settings, including the link:../admin/manage-tls-ssh-policy.html[TLS and SSH policy], link:../admin/changing-network-options-object-encryption.html[network and object security options], link:../admin/changing-browser-session-timeout-interface.html[interface security settings], and link:../admin/manage-ssh-access.html[SSH access options]
+* Configure settings for a link:../admin/configuring-storage-proxy-settings.html[storage proxy] or an link:../admin/configuring-admin-proxy-settings.html[admin proxy] 
 
 === System tasks
 System tasks include:
 
-* Using link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems.
-* Optionally, enabling the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option.
+* Use link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems
+* Optionally, enable the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option
+* Optionally, configure the link:../s3/consistency.html[default bucket consistency setting]
 * link:../ilm/managing-objects-with-s3-object-lock.html[Manage S3 Object Lock]
-* Understanding Storage settings such as link:../admin/what-object-segmentation-is.html[object segmentation] and link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks].
-* link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles].
+* Understand Storage settings such as link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks]
+* link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles
 
 === Monitoring tasks
 
@@ -125,7 +126,7 @@ Access control tasks include:
 
 * link:../admin/managing-admin-groups.html[Manage admin groups]
 * link:../admin/managing-users.html[Manage admin users]
-* Changing the link:../admin/changing-provisioning-passphrase.html[provisioning passphrase] or link:../admin/change-node-console-password.html[node console passwords]
+* Change the link:../admin/changing-provisioning-passphrase.html[provisioning passphrase] or link:../admin/change-node-console-password.html[node console passwords]
 * link:../admin/using-identity-federation.html[Use identity federation]
 * link:../admin/how-sso-works.html[Configure SSO]
 
@@ -142,7 +143,7 @@ Maintenance tasks include:
 * link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[Grid node recovery procedures] to replace a failed node and restore data
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
-* Performing a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes
+* Perform a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes
 * link:../maintain/restoring-volume.html[Volume restoration operations]
 
 === System
