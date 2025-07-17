@@ -22,9 +22,9 @@ Admin Nodes can also be used to load balance S3 client traffic.
 See link:what-admin-node-is.html[What is an Admin Node?]
 
 Storage Nodes:: Manage and store object data and metadata. Each site in your StorageGRID system must have at least three Storage Nodes.
-
++
 During initial installation of a new Storage Node, you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store metadata].
-
++
 See link:what-storage-node-is.html[What is a Storage Node?]
 
 Gateway Nodes (optional):: Provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent.

@@ -111,7 +111,7 @@ System tasks include:
 * Optionally, configure the link:../s3/consistency.html[default bucket consistency setting]
 * link:../ilm/managing-objects-with-s3-object-lock.html[Manage S3 Object Lock]
 * Understand Storage settings such as link:../admin/what-storage-volume-watermarks-are.html[storage volume watermarks]
-* link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles
+* link:../ilm/manage-erasure-coding-profiles.html[Manage erasure-coding profiles]
 
 === Monitoring tasks
 
@@ -191,6 +191,5 @@ From the Other section of the Support menu, you can:
 * Manage link:../admin/manage-link-costs.html[link cost]
 * Manage NMS entities
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]
-*
 
 // 2025 APR 30, SGWS-34284
