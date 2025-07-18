@@ -10,7 +10,7 @@ Before you disable identity federation, you should be aware of the following:
 * Federated users will be unable to sign in.
 * Federated users who are currently signed in will retain access to the StorageGRID system until their session expires, but they will be unable to sign in after their session expires.
 * Synchronization between the StorageGRID system and the identity source won't occur, and alerts won't be raised for accounts that havn't been synchronized.
-* The *Enable identity federation* checkbox is disabled if single sign-on (SSO) is set to *Enabled* or *Sandbox Mode*. The SSO Status on the Single Sign-on page must be *Disabled* before you can disable identity federation. See link:../admin/disabling-single-sign-on.html[Disable single sign-on].
+* The *Enable identity federation* checkbox is disabled if the single sign-on (SSO) status is *Enabled* or *Sandbox Mode*. The SSO Status on the Single Sign-on page must be *Disabled* before you can disable identity federation. See link:../admin/disabling-single-sign-on.html[Disable single sign-on].
 
 .Steps
 
