@@ -189,7 +189,8 @@ From the Other section of the Support menu, you can:
 * Configure link:../monitor/manage-io-prioritization.html[I/O prioritization]
 * Configure link:../admin/configure-autosupport-grid-manager.html[AutoSupport email setup (legacy)]
 * Manage link:../admin/manage-link-costs.html[link cost]
-* Manage NMS entities
+* View node service IDs
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]
+
 
 // 2025 APR 30, SGWS-34284
