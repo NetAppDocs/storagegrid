@@ -34,7 +34,7 @@ Advantages of the StorageGRID system include the following:
 * Support for software or hardware-based deployment. You can deploy StorageGRID on any of the following:
  ** Virtual machines running in VMware.
  ** Container engines on Linux hosts.
- ** StorageGRID engineered appliances. 
+ ** StorageGRID-engineered appliances. 
  *** Storage appliances provide object storage. 
  *** Services appliances provide grid administration and load balancing services.
 * Compliant with the relevant storage requirements of these regulations:

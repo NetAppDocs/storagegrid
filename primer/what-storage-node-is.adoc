@@ -66,10 +66,12 @@ NOTE: Some services, such as the ADC service and the RSM service, typically exis
 | Account (acct)
 | Manages tenant accounts.
 
+Data-only Storage Nodes don't host this service.
+
 | [[adc-service]]Administrative Domain Controller (ADC)
 | Maintains topology and grid-wide configuration.
 
-*Note*: Data-only Storage Nodes don't host the ADC service.
+Data-only Storage Nodes don't host this service.
 
 // Start snippet: collapsible block
 .Details
@@ -91,12 +93,12 @@ The connection of each grid node lets the ADC service gather topology informatio
 | Cassandra
 | Stores and protects object metadata.
 
-*Note*: Data-only Storage Nodes don't host the Cassandra service.
+Data-only Storage Nodes don't host this service.
 
 | Cassandra Reaper
 | Performs automatic repairs of object metadata.
 
-*Note*: Data-only Storage Nodes don't host the Cassandra Reaper service.
+Data-only Storage Nodes don't host this service.
 
 | Chunk
 | Manages erasure-coded data and parity fragments.
@@ -120,6 +122,8 @@ The DDS service tracks the total number of objects ingested into the StorageGRID
 
 | Identity (idnt)
 | Federates user identities from LDAP and Active Directory.
+
+Data-only Storage Nodes don't host this service.
 
 | [[ldr-service]]Local Distribution Router (LDR)
 | Processes object storage protocol requests and manages object data on disk. 
@@ -161,6 +165,8 @@ To ensure redundancy and thus protection against loss, three copies of object me
 
 | Replicated State Machine (RSM)
 | Ensures that S3 platform services requests are sent to their respective endpoints.
+
+Data-only Storage Nodes don't host this service.
 
 | Server Status Monitor (SSM)
 | Monitors the operating system and underlying hardware.
