@@ -40,7 +40,7 @@ In the Grid Management API, the source node ID is referred to as `sourceNodeId`.
 
 . Select the `POST /private/move-adc/start` operation. Refer to link:../admin/using-grid-management-api.html#issue-api-requests[Issue API requests] for more information.
 +
-Each node will reboot during the procedure.
+During the procedure, the two nodes will reboot in sequence. The source node reboots first, followed by the target node.
 
 . You can use `GET /private/move-adc` to monitor the procedure. If errors occur, select `POST /private/move-adc/retry` to retry the procedure.
 
