@@ -34,6 +34,10 @@ You might need to schedule downtime to apply an upgrade if loss of connectivity 
 
 NOTE: You can use multiple gateways and high availability (HA) groups to provide automatic failover during the upgrade process. See the instructions for link:../admin/configure-high-availability-group.html[configuring high availability groups].
 
+== Background repairs paused on grids with mixed-version nodes
+
+Background repairs don't run during upgrade when the grid contains mixed-version nodes. Any inconsistencies that occur during a site outage won't be repaired until the upgrade is complete.
+
 == Appliance firmware is upgraded
 
 During the StorageGRID 12.0 upgrade:
