@@ -20,6 +20,12 @@ During installation, you can select the type of Storage Node you want to install
 * Metadata-only Storage Node
 * Data-only Storage Node
 
+When selecting which Storage Nodes to use in your topology, keep in mind that the grid must contain the following:
+
+* A minimum of two combined or data-only Storage Nodes per grid
+* At least one combined or data-only Storage Node per site
+* A minimum of three combined or metadata-only Storage Nodes per site
+
 You can select the Storage Node type in these situations:
 
 * When initially installing a Storage Node
