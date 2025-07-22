@@ -34,6 +34,6 @@ The following private endpoints have been added to allow you to link:../maintain
 `/private/convert-to-data-only-node/retry`
 
 
-// 2024-07-2, jira SWGS-31283
+// 2024-07-2, SWGS-31283
 // 2024-07-11, SGWS-32010
 // 2025-02-24, SWGS-34787
