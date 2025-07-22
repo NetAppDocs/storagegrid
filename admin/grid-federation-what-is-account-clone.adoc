@@ -13,8 +13,6 @@ Account clone is the automatic replication of a tenant account, tenant groups, t
 
 Account clone is required for link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication]. Cloning account information from a source StorageGRID system to a destination StorageGRID system ensures that tenant users and groups can access the corresponding buckets and objects on either grid.
 
-NOTE: The account clone process can't clone S3 trust policy when you clone a tenant group from a StorageGRID 12.0 source to a StorageGRID 11.9 destination. The clone process fails with an unrecognized attribute, "s3Trust" error on the destination. To avoid this error, either upgrade the destination to version 11.9.0.6, which contains the hotfix for this issue, or upgrade to version 12.0 before you start the account clone process.
-
 == Workflow for account clone
 
 The workflow diagram shows the steps that grid administrators and permitted tenants will perform to set up account clone. These steps are performed after the link:grid-federation-create-connection.html[grid federation connection is configured].

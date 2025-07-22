@@ -34,9 +34,9 @@ After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a m
 
 * You can now link:../ilm/configuring-regions-optional-and-s3-only.html[modify the default region] for S3 buckets. This capability provides greater flexibility in managing data locale and compliance. 
 
-* link:grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] has been enhanced to achieve feature parity between internal and external replication, enabling better scalability and the concept of grid federation for exabyte-scale storage.
-
-* Cross-grid replication is now supported for source and destination buckets with S3 Object Lock enabled.
+* You can configure cross-grid replication between buckets with S3 Object Lock enabled. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[Cross-grid replication with S3 Object Lock].
++
+NetApp recommends using this feature only between StorageGRID 12.0 source and destination buckets. However, this feature is supported between StorageGRID 11.9 source buckets with S3 Object Lock disabled and StorageGRID 12.0 destination buckets with S3 Object Lock enabled.
 
 == Manageability 
 * Improved link:../maintain/decommission-procedure.html[decommission procedure] reduces time and complexity to enhance operational efficiency.
@@ -61,6 +61,8 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 == Tenant groups
 * You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
++
+NOTE: The account clone process can't clone an S3 trust policy when you clone a tenant group from a StorageGRID 12.0 source to a StorageGRID 11.9 destination. The clone process fails with an unrecognized attribute, "s3Trust error" on the destination. To avoid this error, either upgrade the destination to version 11.9.0.6, which contains the hotfix for this issue, or upgrade to version 12.0 before you start the account clone process.
 
 * Per-bucket object count quota allows for better control and management of storage resources. 
 
