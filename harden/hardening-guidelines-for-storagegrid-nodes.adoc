@@ -19,7 +19,7 @@ You can enable or disable remote IPMI access for all appliances containing a BMC
 ** Clear the *Enable remote IPMI access* checkbox to disable IPMI access to the BMC.
 ** Select the *Enable remote IPMI access* checkbox to enable IPMI access to the BMC.
 
-For additional information about BMC hardening, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
+For additional information about BMC hardening, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)^] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
 
 == Firewall configuration
 
