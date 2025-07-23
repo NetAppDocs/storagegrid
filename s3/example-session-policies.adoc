@@ -13,7 +13,7 @@ Use the following example to build a StorageGRID session policy.
 
 == Example: Set up a session policy that allows object retrieval
 
-In this example, the session's principal is only allowed to retrieve objects from bucket1. All other actions are implicitly denied, except for StorageGRID specific actions, like using the link:use-access-policies/#use-putoverwriteobject-permission[s3:PutOverwriteObject]permission. The session policy can be provided as a JSON file while calling the AssumeRole API.
+In this example, the session's principal is only allowed to retrieve objects from bucket1. All other actions are implicitly denied, except for StorageGRID specific actions, like using the link:use-access-policies/#use-putoverwriteobject-permission[s3:PutOverwriteObject] permission. The session policy can be provided as a JSON file while calling the AssumeRole API.
 
 ----
 {
