@@ -40,7 +40,7 @@ For example, do not use the following subnet ranges for the Grid Network, Admin 
 
 .Steps
 
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-external-ssh-access.html[temporarily allow access].
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
  .. Enter the password listed in the `Passwords.txt` file.
@@ -140,6 +140,6 @@ The failed operation can be retried later by selecting option *10* (Apply Change
 +
 CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished adding to or changing the subnet lists.
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-external-ssh-access.html[block access] when you're finished adding to or changing the subnet lists.
 
 // 2025 APR 30, SGWS-34284

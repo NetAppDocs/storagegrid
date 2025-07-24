@@ -29,7 +29,7 @@ NOTE: If required, you can link:linux-migrating-grid-node-to-new-host.html[migra
 
 .Steps
 
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
+. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-external-ssh-access.html[temporarily allow access].
 
 . Stop all client applications from accessing the grid.
 . [[log_in_to_gn]]Log in to each Gateway Node:
@@ -132,7 +132,7 @@ This LED is on when cached data needs to be written to the drives. You must wait
 +
 The StorageGRID grid has now been shut down.
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished shutting down the nodes.
+. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-external-ssh-access.html[block access] when you're finished shutting down the nodes.
 
 == Start up grid nodes
 
