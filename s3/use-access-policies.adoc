@@ -115,7 +115,7 @@ NOTE: If you set the consistency to a different value to work around a temporary
 
 == What is session policy ?
 
-A session policy is an access policy that temporarily restricts the permissions available during a specific session, such as when a user assumes a group. The group itself might have broader permissions, but a session policy can only allow a subset of permissions and it cannot grant additional permissions.
+A session policy is an access policy that temporarily restricts the permissions available during a specific session, such as when a user assumes a group. A session policy can only allow a subset of permissions, and it can't grant additional permissions. The group itself might have broader permissions.
 
 
 == Use ARN in policy statements
