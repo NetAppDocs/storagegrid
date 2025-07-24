@@ -68,8 +68,6 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 == Tenant groups
 * You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
-+
-NOTE: The account clone process can't clone an S3 trust policy when you clone a tenant group from a StorageGRID 12.0 source to a StorageGRID 11.9 destination. The clone process fails with an unrecognized attribute, "s3Trust error" on the destination. To avoid this error, either upgrade the destination to version 11.9.0.6, which contains the hotfix for this issue, or upgrade to version 12.0 before you start the account clone process.
 
 * Per-bucket object count quota allows for better control and management of storage resources. 
 
