@@ -104,7 +104,7 @@ Follow these guidelines to secure any hardware appliance nodes in your StorageGR
 +
 You can establish a VLAN to isolate BMC network connections to limit the endpoints that can communicate with the BMC and restrict BMC internet access. For additional information about enforcing VLAN separation, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)^] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
 +
-If a secure, trusted, internal management network is not available, leave the BMC management port unconnected or blocked, unless a BMC connection is requested by technical support.
+If a secure, trusted, internal management network isn't available, leave the BMC management port unconnected or blocked, unless a BMC connection is requested by technical support.
 * If the appliance supports remote management of the controller hardware over Ethernet using the Intelligent Platform Management Interface (IPMI) standard, block untrusted traffic on port 623. 
 +
 include::../_include/enable-disable-ipmi.adoc[]
