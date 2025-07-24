@@ -60,7 +60,7 @@ A warning appears stating that your browser's connection might be lost temporari
 +
 When the hotfix starts:
 
- .. The hotfix validations are run.
+ .. The hotfix validations are run, including code signature verification.
 +
 NOTE: If any errors are reported, resolve them, re-upload the hotfix file, and select *Start* again.
 
@@ -101,3 +101,4 @@ When the hotfix has been successfully installed on all nodes, the Hotfix Install
 +
 The procedure is not complete until the hotfix is successfully applied to all nodes. You can safely retry the hotfix process as many times as required until it is complete.
 
+// 2025 JULY 9, SGRIDDOC-171

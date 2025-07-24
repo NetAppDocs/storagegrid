@@ -59,6 +59,9 @@ m| base-os-logs
 m| bundles
 | Global configuration information (bundles).
 
+m| cache-svc
+| Cache service logs (only on Gateway Nodes).
+
 m| cassandra
 | Cassandra database information and Reaper repair logs.
 
@@ -79,6 +82,9 @@ m| install
 
 m| Lambda-arbitrator
 | Logs related to the S3 Select proxy request.
+
+m| leakd
+| Logs from leakd service.
 
 m| lumberjack.log
 | Debug messages related to log collection.
