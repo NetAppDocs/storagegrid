@@ -9,18 +9,16 @@ summary: 'A StorageGRID system consists of multiple types of grid nodes at one o
 :imagesdir: ../media/
 
 [.lead]
-A StorageGRID system consists of multiple types of grid nodes at one or more data center sites. 
-
-A StorageGRID system has certain requirements for the number of nodes and sites in a deployment:
+A StorageGRID system consists of multiple types of grid nodes at one or more data center sites. A StorageGRID system has certain requirements for the number of nodes and sites in a deployment:
 
 * The maximum number of nodes per grid is 200.
 * The maximum number of sites per deployment is 16.
 * The minimum number of Admin Nodes per grid is one.
 * The minimum number of Storage Nodes per site is three.
 
-See the link:nodes-and-services.html[descriptions of grid node types].
+Learn about the link:nodes-and-services.html[grid node types].
 
-For additional information about StorageGRID network topology, requirements, and grid communications, see the link:../network/index.html[Networking guidelines].
+For additional information about StorageGRID network topology, requirements, and grid communications, refer to the link:../network/index.html[Networking guidelines].
 
 == Deployment topologies
 
