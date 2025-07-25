@@ -9,7 +9,7 @@ summary: 'You can create local users and assign them to local groups to determin
 :imagesdir: ../media/
 
 [.lead]
-You can create local users and assign them to local groups to determine which features these users can access. You can also import federated users The Tenant Manager includes one predefined local user, named "root". Although you can add and remove local users, you can't remove the root user.
+You can create local users and assign them to local groups to determine which features these users can access. You can also import federated users. The Tenant Manager includes one predefined local user, named "root". Although you can add and remove local users, you can't remove the root user.
 
 NOTE: If single sign-on (SSO) is enabled for your StorageGRID system, local users will not be able to sign in to the Tenant Manager or the Tenant Management API, although they can use client applications to access the tenant's resources, based on group permissions.
 

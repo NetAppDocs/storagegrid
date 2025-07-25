@@ -132,7 +132,7 @@ entries:
       - title: Change interface security settings
         url: "/admin/changing-browser-session-timeout-interface.html"  
       - title: Manage external SSH access
-        url: "/admin/manage-ssh-access.html"      
+        url: "/admin/manage-external-ssh-access.html"      
     - title: Configure key management servers
       entries:
       - title: What is key management server
