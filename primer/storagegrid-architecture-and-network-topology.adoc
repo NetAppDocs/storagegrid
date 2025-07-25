@@ -9,7 +9,14 @@ summary: 'A StorageGRID system consists of multiple types of grid nodes at one o
 :imagesdir: ../media/
 
 [.lead]
-A StorageGRID system consists of multiple types of grid nodes at one or more data center sites.
+A StorageGRID system consists of multiple types of grid nodes at one or more data center sites. 
+
+A StorageGRID system has certain requirements for the number of nodes and sites in a deployment:
+
+* The maximum number of nodes per grid is 200.
+* The maximum number of sites per deployment is 16.
+* The minimum number of Admin Nodes per grid is one.
+* The minimum number of Storage Nodes per site is 3.
 
 See the link:nodes-and-services.html[descriptions of grid node types].
 
@@ -50,3 +57,5 @@ S3 clients store and retrieve objects in StorageGRID. Other clients are used to 
 S3 clients can connect to a Gateway Node or an Admin Node to use the load-balancing interface to Storage Nodes. Alternatively, S3 clients can connect directly to Storage Nodes using HTTPS.
 
 Objects can be stored within StorageGRID on software or hardware-based Storage Nodes, or in Cloud Storage Pools, which consist of external S3 buckets or Azure Blob storage containers.
+
+// 2025 JULY 25, SGRIDDOC-182
