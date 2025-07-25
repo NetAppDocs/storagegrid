@@ -16,7 +16,7 @@ A StorageGRID system has certain requirements for the number of nodes and sites 
 * The maximum number of nodes per grid is 200.
 * The maximum number of sites per deployment is 16.
 * The minimum number of Admin Nodes per grid is one.
-* The minimum number of Storage Nodes per site is 3.
+* The minimum number of Storage Nodes per site is three.
 
 See the link:nodes-and-services.html[descriptions of grid node types].
 
