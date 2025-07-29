@@ -64,9 +64,11 @@ entries:
   - title: Manage S3 buckets
     entries:
     - title: Create bucket
-      url: "/tenant/creating-s3-bucket.html"       
+      url: "/tenant/creating-s3-bucket.html"
     - title: View bucket details
       url: "/tenant/viewing-s3-bucket-details.html"
+    - title: What is a branch bucket
+      url: "/tenant/what-is-branch-bucket.html"
     - title: Manage branch buckets
       url: "/tenant/manage-branch-buckets.html"       
     - title: Apply ILM policy tag to bucket
