@@ -16,7 +16,7 @@ After you add Storage Nodes, you can use the erasure coding (EC) rebalance proce
 
 * You have completed the expansion steps to add the new Storage Nodes.
 * You have reviewed the link:considerations-for-rebalancing-erasure-coded-data.html[considerations for rebalancing erasure-coded data].
-* You understand that replicated object data will not be moved by this procedure and that the EC rebalance procedure does not consider the replicated data usage on each Storage Node when determining where to move erasure-coded data.
+* You understand that replicated object data won't be moved by this procedure and that the EC rebalance procedure doesn't move replicated data. However, replicated data is considered when determining where to move EC data.
 * You have the `Passwords.txt` file.
 
 .What happens when this procedure runs
@@ -34,12 +34,6 @@ You can rerun the procedure after all volumes are back online.
 * When the EC rebalance procedure is running, the performance of ILM operations and S3 client operations might be impacted. 
 +
 NOTE: S3 API operations to upload objects (or object parts) might fail during the EC rebalance procedure if they require more than 24 hours to complete. Long-duration PUT operations will fail if the applicable ILM rule uses Balanced or Strict placement on ingest. The following error will be reported: `500 Internal Server Error`.
-
-* During this procedure all nodes have a storage capacity limit of 80%. Nodes that exceed this limit, but still store below the target data partition, are excluded from:
-** The site imbalance value
-** Any job completion conditions
-+
-NOTE: The target data partition is calculated by dividing the total data for a site by the number of nodes. 
 
 * *Job completion conditions*. The EC rebalance procedure is considered complete when any of the following is true:
 
@@ -99,7 +93,7 @@ To get help on the rebalance-data command:
 
 ** If `State` is `In progress`, the EC rebalance operation is still running. You should periodically monitor the procedure until it completes.
 +
-Use the `Site Imbalance` value to assess how unbalanced erasure-code data usage is across the Storage Nodes at the site. This value can range from 1.0 to 0, with 0 indicating that erasure-coding data usage is completely balanced across all Storage Nodes at the site.
+Go to the Nodes page to assess the data distribution across the Storage Nodes in the site.
 + 
 The EC rebalance job is considered complete and will stop when the data in all nodes is within a 5% deviation of the target data partition.   
 
