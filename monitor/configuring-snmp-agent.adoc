@@ -255,6 +255,8 @@ NOTE: For trap destinations, it is recommended that you create a USM user for ea
 
 NOTE: SNMPv3 _inform_ destinations must have users with engine IDs. SNMPv3 _trap_ destination can't have users with engine IDs.
 
+These steps don't apply if you are only using SNMPv1 or SNMPv2c.
+
 .Steps
 
 . Select *Create*.
