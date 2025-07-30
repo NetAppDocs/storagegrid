@@ -189,6 +189,8 @@ If you selected SNMPv3 as the version, complete these fields.
 . Return to the Trap destinations tab, select the saved destination from the table, and select *Edit*.
 . Select the user.
 
+NOTE:: Create a USM user for each Admin Node in case the primary Admin Node goes down.
+
 |===
 
 --
