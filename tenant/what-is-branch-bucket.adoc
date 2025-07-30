@@ -2,14 +2,16 @@
 permalink: tenant/what-is-branch-bucket.html
 sidebar: sidebar
 keywords: how to create branch bucket
-summary: 'A branch bucket provides access to objects in a bucket as they existed at a certain time, provided they still exist in the bucket.'
+summary: 'A branch bucket provides access to objects in a bucket as they existed at a certain time.'
 ---
 = What is a branch bucket?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-A branch bucket provides access to objects in a bucket as they existed at a certain time, provided they still exist in the bucket.
+A branch bucket provides access to objects in a bucket as they existed at a certain time.
+
+You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the _base bucket_. Additionally, you can create a branch bucket from another branch bucket. When you perform operations on the base bucket, the results on the branch bucket depend on the operation and the type of branch bucket you've created.
 
 A branch bucket provides access to protected data, but doesn't serve as a backup. To continue to protect data, use these features on base buckets:
 
@@ -17,21 +19,16 @@ A branch bucket provides access to protected data, but doesn't serve as a backup
 * link:../admin/grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] for base buckets
 * link:../tenant/manage-bucket-policy.html[Bucket policies] for versioned buckets to clean up old object versions
 
-You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the base bucket. Additionally, you can create a branch bucket from another branch bucket. When you perform operations on the base bucket, the results on the branch bucket depend on the operation and the type of branch bucket you've created.
-
-You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
-
-CAUTION: A branch bucket doesn't serve as a backup, but provides access to protected data. You must continue to use link:../ilm/managing-objects-with-s3-object-lock.html[S3 Object Lock] or link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] to protect data.
-
 Note the following characteristics of branch buckets:
 
-* You can access branch buckets by using link:../tenant/use-s3-console.html[S3 Console to download objects].
+* You can access the objects in branch buckets by using link:../tenant/use-s3-console.html[S3 Console to download objects].
 * A branch bucket adheres to the existing link:../s3/bucket-and-group-access-policies.html[access policies] and link:../ilm/access-create-ilm-rule-wizard.html[ILM rules] specified for the corresponding base bucket.
 * Cross-grid replication isn't supported for branch buckets.
 * Platform services aren't supported for branch buckets.
 
 == Examples for branch bucket usage
 
+You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
 
 == Branch buckets and object deletions
 
@@ -65,3 +62,5 @@ The delete marker would have been created after the branch bucket's `beforeTime`
 |	HEAD/GET returns specific object version (base bucket object not affected)
 |	HEAD/GET returns Object version doesn't exist
 |===
+
+Also refer to link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].

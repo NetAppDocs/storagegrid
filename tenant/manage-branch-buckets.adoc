@@ -2,16 +2,14 @@
 permalink: tenant/manage-branch-buckets.html
 sidebar: sidebar
 keywords: how to create branch bucket
-summary: 'Use the Tenant Manager to create and view branch buckets.'
+summary: 'Use the Tenant Manager to create and view details for branch buckets.'
 ---
 = Manage branch buckets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use the Tenant Manager to create and view branch buckets. 
-
-CAUTION: A branch bucket doesn't serve as a backup, but provides access to protected data. You must continue to use link:../ilm/managing-objects-with-s3-object-lock.html[S3 Object Lock] or link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] to protect data.
+Use the Tenant Manager to create and view details for branch buckets. 
 
 .Before you begin
 
