@@ -72,8 +72,6 @@ The table provides a high-level summary of what is supported for each SNMP versi
 | Default trap community or a custom community string for each trap destination
 | USM user for each trap destination
 
-Create a USM user for each Admin Node in case the primary Admin Node goes down.
-
 |===
 
 == Limitations

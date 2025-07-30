@@ -189,8 +189,6 @@ If you selected SNMPv3 as the version, complete these fields.
 . Return to the Trap destinations tab, select the saved destination from the table, and select *Edit*.
 . Select the user.
 
-NOTE:: Create a USM user for each Admin Node in case the primary Admin Node goes down.
-
 |===
 
 --
@@ -253,9 +251,9 @@ The agent address is created and added to the table.
 
 If you are using SNMPv3, use the USM users tab in the Other configurations section to define the USM users who are authorized to query the MIB or to receive traps and informs.
 
-NOTE: SNMPv3 _inform_ destinations must have users with engine IDs. SNMPv3 _trap_ destination can't have users with engine IDs.
+NOTE: For trap destinations, it is recommended that you create a USM user for each Admin Node. If each Admin Node does not have a USM user, your management system might stop receiving notifications if the primary Admin Node goes down.
 
-These steps don't apply if you are only using SNMPv1 or SNMPv2c.
+NOTE: SNMPv3 _inform_ destinations must have users with engine IDs. SNMPv3 _trap_ destination can't have users with engine IDs.
 
 .Steps
 
