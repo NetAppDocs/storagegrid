@@ -34,7 +34,7 @@ After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a m
 
 * You can now link:../ilm/configuring-regions-optional-and-s3-only.html[modify the default region] for S3 buckets. This capability provides greater flexibility in managing data locale and compliance. 
 
-* You can configure cross-grid replication between buckets with S3 Object Lock enabled. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[Cross-grid replication with S3 Object Lock].
+* You can now configure cross-grid replication between buckets with S3 Object Lock enabled. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[Cross-grid replication with S3 Object Lock].
 +
 NetApp recommends using this feature only between StorageGRID 12.0 source and destination buckets. However, this feature is supported between StorageGRID 11.9 source buckets with S3 Object Lock disabled and StorageGRID 12.0 destination buckets with S3 Object Lock enabled.
 
@@ -74,6 +74,6 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 == User interface
 * Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
 
-* link:../monitor/configure-audit-messages.html[Audit and syslog server page] refactored, with additions for storing logs in a system bucket for backup purposes.
+* link:../monitor/configure-audit-messages.html[The audit and syslog server page] has been refactored, with additions for storing logs in a system bucket for backup purposes.
 
 * The legacy Grid Topology page was removed. Over the past several StorageGRID releases, the operations and metrics available from that page were migrated to other pages in the Grid Manager, particularly to the link:../monitor/viewing-nodes-page.html[Nodes page].
