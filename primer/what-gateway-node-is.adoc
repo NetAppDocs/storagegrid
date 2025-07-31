@@ -25,6 +25,9 @@ The following table shows the primary services for Gateway Nodes; however, this 
 |===
 | Service| Key function
 
+| Cache Service
+|	Manages a local cache of object content.
+
 | High Availability
 | Manages high availability virtual IP addresses for groups of Admin Nodes and Gateway Nodes.
 

@@ -13,15 +13,18 @@ To increase performance, you can convert slower non-ADC Storage Nodes to data-on
 
 include::../_include/data-only-storage-node.adoc[]
 
+When converting data-only nodes, the grid must contain a minimum of three combined or metadata-only Storage Nodes per site.
+
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
 * The Storage Node isn't a metadata-only node or a data-only node.
-* There is enough metadata space on other nodes at the site to accommodate the metadata that will migrate from the Storage Node you are converting.
+* The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
+* There is enough metadata space on other nodes at the site (or you've link:../expand/index.html[expanded your grid]) to accommodate the metadata that will migrate from the Storage Node you are converting.
 
 .About this task
-Use this procedure to convert one or more combined Storage Nodes that don't contain the ADC service into data-only nodes. The Storage Nodes must be on the same site.
+Use this procedure to convert one or more combined Storage Nodes that don't contain the ADC service into data-only nodes.
 
 In addition to converting the Storage Node, this procedure decommissions Cassandra from the node. All metadata will migrate to combined or metadata-only Storage Nodes. Depending on the amount of metadata that needs to migrate, this procedure could take up to several days per node to complete.
 
