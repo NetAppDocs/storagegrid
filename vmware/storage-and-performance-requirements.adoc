@@ -61,7 +61,7 @@ Maximum tested LUN size: 39 TB.
 
 Minimum size per LUN: 4 TB
 
-*Note*: There is no maximum size for the single LUN. Excess capacity is saved for future use. 
+Maximum tested LUN size: 39 TB. 
 
 *Note*: Only one rangedb is required for metadata-only Storage Nodes.
 
