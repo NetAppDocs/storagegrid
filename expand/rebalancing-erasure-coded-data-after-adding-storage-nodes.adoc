@@ -16,7 +16,7 @@ After you add Storage Nodes, you can use the erasure coding (EC) rebalance proce
 
 * You have completed the expansion steps to add the new Storage Nodes.
 * You have reviewed the link:considerations-for-rebalancing-erasure-coded-data.html[considerations for rebalancing erasure-coded data].
-* You understand that replicated object data won't be moved by this procedure and that the EC rebalance procedure doesn't move replicated data. However, replicated data is considered when determining where to move EC data.
+* You understand that replicated object data won't be moved by this procedure.
 * You have the `Passwords.txt` file.
 
 .What happens when this procedure runs
