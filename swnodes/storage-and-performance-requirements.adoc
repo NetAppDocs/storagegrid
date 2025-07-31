@@ -85,7 +85,7 @@ a|Object metadata
 a|1
 a|4 TB/LUN, minimum
 
-*Note*: There is no maximum size for the single LUN. Excess capacity is saved for future use.
+Maximum tested LUN size: 39 TB.
 
 See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
 
