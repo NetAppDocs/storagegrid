@@ -699,7 +699,6 @@ Examples:
 | Optional
 |===
 
-[port-remap-keys]
 === Port remap keys
 
 NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].

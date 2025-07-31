@@ -20,7 +20,7 @@ If enterprise networking policies restrict access to any of the ports, you can d
 
 NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps.html[Remove port remaps on StorageGRID appliances] or link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 
-** link:../rhel/creating-node-configuration-files.html#port-remap-keys[Port remap keys for StorageGRID on Red Hat Enterprise Linux]
+** link:../rhel/creating-node-configuration-files.html[Port remap keys for StorageGRID on Red Hat Enterprise Linux]
 
 ** link:../swnodes/deploying-storagegrid-node-as-virtual-machine.html#vmware-remap-ports[Remap ports for StorageGRID on VMware]
 
