@@ -38,7 +38,7 @@ The SANtricity System Manager home page appears.
 +
 image::../media/autosupport_santricity_home_page.png[AutoSupport SANtricity home page]
 
-. Select *SUPPORT* > *Support center* > *AutoSupport*.
+. Select *Support* > *Support center* > *AutoSupport*.
 +
 The AutoSupport operations page appears.
 +

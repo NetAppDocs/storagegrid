@@ -59,7 +59,7 @@ You can view the current storage watermark settings in the Grid Manager.
 
 .Steps
 
-. Select *SUPPORT* > *Other* > *Storage watermarks*. 
+. Select *Support* > *Other* > *Storage watermarks*. 
 .	On the Storage watermarks page, look at the Use optimized values checkbox.
 
 * If the checkbox is selected, all three watermarks are optimized for every storage volume on every Storage Node, based on the size of the Storage Node and the relative capacity of the volume.
@@ -74,7 +74,7 @@ When you specify custom watermark settings, you must enter values greater than 0
 
 StorageGRID uses two Prometheus metrics to show the optimized values it has calculated for the storage volume soft read-only watermark. You can view the minimum and maximum optimized values for each Storage Node in your grid.
 
-. Select *SUPPORT* > *Tools* > *Metrics*.
+. Select *Support* > *Tools* > *Metrics*.
 
 . In the Prometheus section, select the link to access the Prometheus user interface.
 

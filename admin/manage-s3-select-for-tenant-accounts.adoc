@@ -50,4 +50,4 @@ CAUTION: SelectObjectContent requests can decrease load-balancer performance for
 
 See the link:../s3/use-s3-select.html[instructions for using S3 Select].
 
-To view link:../monitor/reviewing-support-metrics.html[Grafana charts] for S3 Select operations over time, select *SUPPORT* > *Tools* > *Metrics* in the Grid Manager.
+To view link:../monitor/reviewing-support-metrics.html[Grafana charts] for S3 Select operations over time, select *Support* > *Tools* > *Metrics* in the Grid Manager.

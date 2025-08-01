@@ -73,7 +73,7 @@ Users must have the Maintenance permission to use these options:
  ** Recovery package
  ** Software update
 
-* *SUPPORT* > *Tools*:
+* *Support* > *Tools*:
  ** Logs
 
 Users who don't have the Maintenance permission can view, but not edit, these pages:
@@ -103,7 +103,7 @@ This permission provides access to options for managing alerts. Users must have 
 
 This permission provides access to:
 
-* *SUPPORT* > *Tools* > *Metrics* page
+* *Support* > *Tools* > *Metrics* page
 * Custom Prometheus metrics queries using the *Metrics* section of the Grid Management API
 * Grid Manager dashboard cards that contain metrics
 
@@ -118,7 +118,7 @@ This permission provides access to these additional grid configuration options:
 * *ILM*:
 ** Storage grades
 * *Configuration* > *System*:
-* *SUPPORT* > *Other*:
+* *Support* > *Other*:
 ** Link cost
 
 == Storage appliance administrator

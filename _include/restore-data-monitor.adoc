@@ -41,7 +41,7 @@ To monitor the repair of erasure-coded data and retry any requests that might ha
 
 . Determine the status of erasure-coded data repairs:
 
-** Select *SUPPORT* > *Tools* > *Metrics* to view the estimated time to completion and the completion percentage for the current job. Then, select *EC Overview* in the Grafana section. Look at the *Grid EC Job Estimated Time to Completion* and *Grid EC Job Percentage Completed* dashboards.
+** Select *Support* > *Tools* > *Metrics* to view the estimated time to completion and the completion percentage for the current job. Then, select *EC Overview* in the Grafana section. Look at the *Grid EC Job Estimated Time to Completion* and *Grid EC Job Percentage Completed* dashboards.
  
 ** Use this command to see the status of a specific `repair-data` operation:
 +

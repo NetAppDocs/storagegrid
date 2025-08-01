@@ -135,7 +135,7 @@ See link:../audit/index.html[Review audit logs] for more information.
 == Use Prometheus metrics
 Optionally, use Prometheus metrics to report on tenant activity.
 
-* In the Grid Manager, select *SUPPORT* > *Tools* > *Metrics*. You can use existing dashboards, such as S3 Overview, to review client activities.
+* In the Grid Manager, select *Support* > *Tools* > *Metrics*. You can use existing dashboards, such as S3 Overview, to review client activities.
 +
 NOTE: The tools available on the Metrics page are primarily intended for use by technical support. Some features and menu items within these tools are intentionally non-functional.
 

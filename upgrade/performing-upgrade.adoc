@@ -31,7 +31,7 @@ As a first step, access the StorageGRID Upgrade page in the Grid Manager.
 
 The update path on the StorageGRID Upgrade page indicates which major versions (for example, 12.0.0) and hotfixes (for example, 12.0.0.1) you must install to get to the latest StorageGRID release. You should install the recommended versions and hotfixes in the order shown.
 
-TIP: If no update path is shown, your browser might not be able to access the NetApp Support Site, or the *Check for software updates* checkbox on the AutoSupport page (*SUPPORT* > *Tools* > *AutoSupport* > *Settings*) might be disabled. 
+TIP: If no update path is shown, your browser might not be able to access the NetApp Support Site, or the *Check for software updates* checkbox on the AutoSupport page (*Support* > *Tools* > *AutoSupport* > *Settings*) might be disabled. 
 
 .Steps
 
