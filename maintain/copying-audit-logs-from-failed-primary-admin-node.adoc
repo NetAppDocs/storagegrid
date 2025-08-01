@@ -35,7 +35,15 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 +
 (or `cd /var/local/audit/export` on earlier systems)
 
-. Rename the source `localaudit.log` file to a unique numbered file name. For example, rename the `localaudit.log` file to `2025-10-22.txt.1`.
+. Rename the source log file to a unique numbered file name.
++
+[NOTE]
+====
+* If the log file is in the `/var/local/log` directory, its name is `localaudit.log`.
+* If the log file is in the `/var/local/audit/export` directory, its name is `audit.log`.
+====
++
+For example, rename the `localaudit.log` file to `2025-10-22.txt.1`.
 +
 ----
 ls -l
