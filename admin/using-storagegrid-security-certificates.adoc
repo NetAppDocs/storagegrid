@@ -294,7 +294,7 @@ a|
 * If communications with the SMTP server requires Transport Layer Security (TLS), you must specify the email server CA certificate.
 * Specify a client certificate only if the SMTP email server requires client certificates for authentication.
 
-| *ALERTS* > *Email setup*
+| *Alerts* > *Email setup*
 | link:../monitor/email-alert-notifications.html[Set up email notifications for alerts]
 
 |===

@@ -34,7 +34,7 @@ In this condition:
 If a major or minor *Low object data storage* alert is triggered, you should perform an expansion procedure as soon as possible.
 
 .Steps
-. Select *ALERTS* > *Current*.
+. Select *Alerts* > *Current*.
 +
 The Alerts page appears.
 
