@@ -11,7 +11,7 @@ summary: 'The Tenant Manager dashboard provides an overview of a tenant accountâ
 [.lead]
 The Tenant Manager dashboard provides an overview of a tenant account's configuration and the amount of space used by objects in the tenant's S3 buckets. If the tenant has a quota, the dashboard shows how much of the quota is used and how much is remaining. If there are any errors related to the tenant account, the errors are shown on the dashboard.
 
-NOTE: The size of all objects belonging to this tenant includes incomplete and in-progress multipart uploads. The size does not include the additional space required for replicated and erasure-coded copies. The Space used values are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status.
+NOTE: The size of all objects belonging to this tenant includes incomplete and in-progress multipart uploads. The size doesn't include the additional space required for replicated and erasure-coded copies. The Space used values are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status.
 
 When objects have been uploaded, the dashboard looks like the following example:
 
