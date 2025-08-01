@@ -67,7 +67,7 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 * link:../admin/manage-ssh-access.html[SSH is blocked by default] to enhance security while allowing controlled access.
 
 == Tenant groups
-* You can now configure a new S3 trust policy to support the AssumeRole API. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
+* You can now link:../tenant/manage-groups.html[configure a new S3 trust policy] to support the AssumeRole API. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
 
 * Per-bucket object count quota allows for better control and management of storage resources.
 
