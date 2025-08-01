@@ -38,7 +38,7 @@ When you configure identify federation, you provide the values StorageGRID needs
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Identity federation*.
+. Select *Access Management* > *Identity federation*.
 include::../_include/identity_federation_configure_steps.adoc[]
 
 == Force synchronization with identity source

@@ -31,7 +31,7 @@ S3 users who don't belong to any groups don't have management permissions or S3 
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 +
 If your tenant account has the *Use grid federation connection* permission, a blue banner indicates that this is the tenant's source grid. Any local users you create on this grid will be cloned to the other grid in the connection.
 +
@@ -88,7 +88,7 @@ If your tenant account has the *Use grid federation connection* permission and y
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 
 . Review the information provided on the Users page, which lists basic information for all local and federated users for this tenant account.
 +
@@ -146,7 +146,7 @@ You can import one or more federated users, up to a maximum of 100 users, direct
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*. 
+. Select *Access Management* > *Users*. 
 . Select *Import federated users*.
 . Enter the UUID or username for one or more federated users.
 +
@@ -170,7 +170,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 
 . Select the checkbox for the user you want to duplicate.
 
@@ -201,7 +201,7 @@ NOTE: You must use the federated identity source to delete federated users.
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 
 . Select the checkbox for each user you want to delete.
 

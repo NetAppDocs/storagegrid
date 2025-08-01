@@ -17,7 +17,7 @@ You can delete a group from the system. Any users who belong only to that group 
 * You belong to a user group that has the Root access permission. See link:tenant-management-permissions.html[Tenant management permissions].
 
 .Steps
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Select the checkbox for each group you want to delete.
 . Select *Actions* > *Delete group*.

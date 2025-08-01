@@ -24,7 +24,7 @@ Before you enable single sign-on (SSO), you must confirm that at least one feder
 TIP: When you enable SSO, an identity source configured in the Tenant Manager is overridden by the identity source configured in the Grid Manager. Users belonging to the tenant's identity source will no longer be able to sign in unless they have an account with the Grid Manager identity source.
 
  .. Sign in to the Tenant Manager for each tenant account.
- .. Select *ACCESS MANAGEMENT* > *Identity federation*.
+ .. Select *Access Management* > *Identity federation*.
  .. Confirm that the *Enable identity federation* checkbox is not selected.
  .. If it is, confirm that any federated groups that might be in use for this tenant account are no longer required, clear the checkbox, and select *Save*.
 
@@ -43,7 +43,7 @@ TIP: When you enable SSO, an identity source configured in the Tenant Manager is
 The Tenant page appears.
 
  .. Select the tenant account, select *Sign in*, and sign in to the tenant account as the local root user.
- .. From the Tenant Manager, select *ACCESS MANAGEMENT* > *Groups*.
+ .. From the Tenant Manager, select *Access Management* > *Groups*.
  .. Ensure that at least one federated group from the Grid Manager has been assigned the Root access permission for this tenant.
  .. Sign out.
  .. Confirm you can sign back in to the tenant as a user in the federated group.
