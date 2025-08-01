@@ -34,7 +34,7 @@ TIP: When you enable SSO, an identity source configured in the Tenant Manager is
  .. Sign out.
  .. Confirm you can sign back in to the Grid Manager as a user in the federated group.
 . If there are existing tenant accounts, confirm that a federated user who has Root access permission can sign in:
- .. From the Grid Manager, select *TENANTS*.
+ .. From the Grid Manager, select *Tenants*.
  .. Select the tenant account, and select *Actions* > *Edit*.
  .. On the Enter details tab, select *Continue*.
  .. If the *Use own identity source* checkbox is selected, uncheck the box and select *Save*.

@@ -88,7 +88,7 @@ This issue can occur if updates to the Connection status are delayed, which migh
 
 . Follow the instructions to test a grid federation connection in link:grid-federation-manage-connection.html[Manage grid federation connections] to confirm the issue has been fixed.
 
-. From the tenant's source grid, select *TENANTS*.
+. From the tenant's source grid, select *Tenants*.
 
 . Locate the tenant account that failed to be cloned.
 

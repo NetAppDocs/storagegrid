@@ -23,7 +23,7 @@ The Tenants page shows basic information for all current tenant accounts.
 
 .Steps
 
-. Select *TENANTS*.
+. Select *Tenants*.
 
 . Review the information shown on the Tenant pages.
 +

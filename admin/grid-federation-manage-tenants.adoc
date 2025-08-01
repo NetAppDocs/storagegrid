@@ -47,7 +47,7 @@ You can see details for a tenant that is permitted to use a grid federation conn
 
 .Steps
 
-. Select *TENANTS*.
+. Select *Tenants*.
 
 . From the Tenants page, select the tenant name to view the tenant details page.
 + 
@@ -138,7 +138,7 @@ After cross-grid replication is disabled for tenant buckets, you can remove the 
 --
 .Tenants page
 --
-.. Select *TENANTS*.
+.. Select *Tenants*.
 .. Select the tenant's name to display the details page.
 .. On the *Grid federation* tab, select radio button for the connection. 
 .. Select *Remove permission*.
