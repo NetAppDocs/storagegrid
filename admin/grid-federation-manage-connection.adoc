@@ -33,7 +33,7 @@ NOTE: While the connection is being edited, account clone or cross-grid replicat
 +
 NOTE: When you edit a grid federation connection, StorageGRID attempts to save a "candidate configuration" file on all Admin Nodes on the first grid. If this file can't be saved to all Admin Nodes, a warning message appears when you select *Save and test*.
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 
 . Edit the connection details using the *Actions* menu on the Grid federation page or the details page for a specific connection. See link:grid-federation-create-connection.html[Create grid federation connections] for what to enter.
 
@@ -90,7 +90,7 @@ Finish editing the connection by uploading the verification file on the other gr
 
 . Sign in to the Grid Manager from the primary Admin Node.
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 
 . Select *Upload verification file* to access the upload page. 
 
@@ -117,7 +117,7 @@ If the connection can be established using the edited values, a success message 
 
 . Sign in to the Grid Manager from the primary Admin Node.
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 
 . Test the connection using the *Actions* menu on the Grid federation page or the details page for a specific connection.
 +
@@ -175,7 +175,7 @@ If the certificates on either end of the connection expire, the connection will 
 .Steps
 
 . Sign in to the Grid Manager from the primary Admin Node on either grid.
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 . From either tab on the Grid federation page, select the connection name to display its details.
 . Select the *Certificates* tab.
 . Select *Rotate certificates*.
@@ -204,7 +204,7 @@ Before removing a connection, note the following:
 .Steps
 
 . Starting from either grid, sign in to the Grid Manager from the primary Admin Node.
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 . Select the connection name to display its details.
 . On the *Permitted tenants* tab, determine if the connection is being used by any tenants.
 . If any tenants are listed, instruct all tenants to link:../tenant/grid-federation-manage-cross-grid-replication.html[disable cross-grid replication] for all of their buckets on both grids in the connection. 
@@ -217,7 +217,7 @@ After cross-grid replication has been disabled for all tenant buckets, remove th
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 
 . Select the connection name to display its details.
 
@@ -253,7 +253,7 @@ A success message appears. This grid federation connection can no longer be used
 
 . From the other grid in the connection, sign in to the Grid Manager from the primary Admin Node.
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 . Select the connection name to display its details.
 . Select *Remove* and *Yes*.
 . Select *Force remove* to remove the connection from this grid.

@@ -22,7 +22,7 @@ The Grid federation page shows basic information about all grid federation conne
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 +
 The Grid federation page appears. 
 

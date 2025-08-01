@@ -24,7 +24,7 @@ Even if no limits are set for a traffic classification policy, metrics are colle
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *Traffic classification*.
+. Select *Configuration* > *Network* > *Traffic classification*.
 +
 
 The Traffic classification policies page appears, and the existing policies are listed in the table.

@@ -56,10 +56,10 @@ NOTE: Users must have the *Other grid configuration* permission to manage storag
 
 Users must have the Maintenance permission to use these options:
 
-* *CONFIGURATION* > *Access control*:
+* *Configuration* > *Access control*:
 ** Grid passwords
 
-* *CONFIGURATION* > *Network*:
+* *Configuration* > *Network*:
 ** S3 endpoint domain names
 
 * *MAINTENANCE* > *Tasks*:
@@ -86,13 +86,13 @@ Users who don't have the Maintenance permission can view, but not edit, these pa
 * *MAINTENANCE* > *System*:
  ** License
 
-* *CONFIGURATION* > *Network*:
+* *Configuration* > *Network*:
 ** S3 endpoint domain names
 
-* *CONFIGURATION* > *Security*:
+* *Configuration* > *Security*:
 ** Certificates
 
-* *CONFIGURATION* > *Monitoring*:
+* *Configuration* > *Monitoring*:
  ** Audit and syslog server
 
 == Manage alerts
@@ -117,7 +117,7 @@ This permission provides access to these additional grid configuration options:
 
 * *ILM*:
 ** Storage grades
-* *CONFIGURATION* > *System*:
+* *Configuration* > *System*:
 * *SUPPORT* > *Other*:
 ** Link cost
 

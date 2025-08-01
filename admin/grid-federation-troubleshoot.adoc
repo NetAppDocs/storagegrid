@@ -148,7 +148,7 @@ This alert indicates that tenant objects can't be replicated between the buckets
 .Recommended actions
 
 . Sign in to the grid where the alert was triggered.
-. Go to *CONFIGURATION* > *System* > *Grid federation*, and locate the connection name listed in the alert.
+. Go to *Configuration* > *System* > *Grid federation*, and locate the connection name listed in the alert.
 
 . On the Permitted tenants tab, look at the *Last error* column to determine which tenant accounts have errors.
 

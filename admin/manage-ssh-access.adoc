@@ -21,7 +21,7 @@ Manage SSH access for inbound traffic into the grid by blocking or allowing exte
 To enhance system security, external SSH access is blocked by default. If you need to perform tasks that require inbound SSH access, such as troubleshooting, temporarily allow external access. When you've finished the task, block external access.
 
 .Steps
-. Select *CONFIGURATION* > *Security* > *Security settings*.
+. Select *Configuration* > *Security* > *Security settings*.
 . Select the *Block SSH* tab.
 . Use the *Block inbound SSH access* option to manage external SSH access:
 .. Select the checkbox to block access (default).

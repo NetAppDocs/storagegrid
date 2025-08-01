@@ -75,12 +75,12 @@ You can establish connections from client applications to any of the IP addresse
 +
 NOTE: If you are viewing an Admin Node or a Gateway Node and it is the active node in a high availability group, the virtual IP address of the HA group is shown on eth2.
 . To find the virtual IP address of a high availability group:
- .. Select *CONFIGURATION* > *Network* > *High availability groups*.
+ .. Select *Configuration* > *Network* > *High availability groups*.
  .. In the table, note the virtual IP address of the HA group.
 
 . To find the port number of a Load Balancer endpoint:
 
-.. Select *CONFIGURATION* > *Network* > *Load balancer endpoints*.
+.. Select *Configuration* > *Network* > *Load balancer endpoints*.
 .. Note the port number for the endpoint you want to use.
 +
 NOTE: If the port number is 80 or 443, the endpoint is configured only on Gateway Nodes, because those ports are reserved on Admin Nodes. All other ports are configured on both Gateway Nodes and Admin Nodes.

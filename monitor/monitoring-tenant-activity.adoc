@@ -107,7 +107,7 @@ If traffic classification policies are in place for a tenant, review the network
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *Traffic classification*.
+. Select *Configuration* > *Network* > *Traffic classification*.
 +
 The Traffic Classification Policies page appears, and the existing policies are listed in the table.
 

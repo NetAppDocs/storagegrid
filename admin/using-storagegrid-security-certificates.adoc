@@ -41,7 +41,7 @@ You can access information about all StorageGRID certificates in a single locati
 
 .Steps
 
-. From Grid Manager, select *CONFIGURATION* > *Security* > *Certificates*.
+. From Grid Manager, select *Configuration* > *Security* > *Certificates*.
 +
 image::security_certificates.png["Certificates page"]
 
@@ -199,7 +199,7 @@ This certificate also authenticates Grid Management API and Tenant Management AP
 You can use the default certificate created during installation or upload a custom certificate.
 
 a|
-*CONFIGURATION* > *Security* > *Certificates*, select the *Global* tab, and then select *Management interface certificate*
+*Configuration* > *Security* > *Certificates*, select the *Global* tab, and then select *Management interface certificate*
 a|
 link:configuring-custom-server-certificate-for-grid-manager-tenant-manager.html[Configure management interface certificates]
 |===
@@ -213,7 +213,7 @@ Server
 a|
 Authenticates secure S3 client connections to a Storage Node and to load balancer endpoints (optional).
 a|
-*CONFIGURATION* > *Security* > *Certificates*, select the *Global* tab, and then select *S3 API certificate*
+*Configuration* > *Security* > *Certificates*, select the *Global* tab, and then select *S3 API certificate*
 a|
 link:configuring-custom-server-certificate-for-storage-node.html[Configure S3 API certificates]
 |===
@@ -235,7 +235,7 @@ Installed on each client, allowing StorageGRID to authenticate external client a
 * Allows secure monitoring of StorageGRID using external tools.
 
 a|
-*CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab
+*Configuration* > *Security* > *Certificates* and then select the *Client* tab
 a|
 link:configuring-administrator-client-certificates.html[Configure client certificates]
 |===
@@ -254,7 +254,7 @@ You can also use a custom version of the global <<S3 API certificate>> certifica
 *Note:* The certificate used for load balancer authentication is the most used certificate during normal StorageGRID operation.
 
 a|
-*CONFIGURATION* > *Network* > *Load balancer endpoints*
+*Configuration* > *Network* > *Load balancer endpoints*
 a|
 
 * link:configuring-load-balancer-endpoints.html[Configure load balancer endpoints]
@@ -312,7 +312,7 @@ a|
 
 *Note:* An external syslog server certificate is not required for TCP, RELP/TCP, and UDP connections to an external syslog server.
 
-| *CONFIGURATION* > *Monitoring* > *Audit and syslog server*
+| *Configuration* > *Monitoring* > *Audit and syslog server*
 | link:../monitor/configure-audit-messages.html#use-external-syslog-server[Use an external syslog server]
 
 
@@ -330,7 +330,7 @@ a|
 | Server and client
 | Authenticate and encrypt information sent between the current StorageGRID system and another grid in a grid federation connection.
 
-| *CONFIGURATION* > *System* > *Grid federation*
+| *Configuration* > *System* > *Grid federation*
 | * link:grid-federation-create-connection.html[Create grid federation connections]
 * link:grid-federation-manage-connection.html#rotate_grid_fed_certificates[Rotate connection certificates]
 
@@ -350,7 +350,7 @@ a|
 | Server
 | Authenticates the connection between StorageGRID and an external identity provider, such as Active Directory, OpenLDAP, or Oracle Directory Server. Used for identity federation, which allows admin groups and users to be managed by an external system.
 
-| *CONFIGURATION* > *Access Control* > *Identity federation*
+| *Configuration* > *Access Control* > *Identity federation*
 | link:using-identity-federation.html[Use identity federation]
 
 |===
@@ -366,7 +366,7 @@ a|
 
 | Server and client
 | Authenticates the connection between StorageGRID and an external key management server (KMS), which provides encryption keys to StorageGRID appliance nodes.
-| *CONFIGURATION* > *Security* > *Key management server*
+| *Configuration* > *Security* > *Key management server*
 | link:kms-adding.html[Add key management server (KMS)]
 
 |===
@@ -400,7 +400,7 @@ link:../tenant/editing-platform-services-endpoint.html[Edit platform services en
 
 | Server
 | Authenticates the connection between identity federation services, such as Active Directory Federation Services (AD FS), and StorageGRID that are used for single sign-on (SSO) requests.
-| *CONFIGURATION* > *Access control* > *Single sign-on*
+| *Configuration* > *Access control* > *Single sign-on*
 | link:how-sso-works.html[Configure single sign-on]
 
 |===

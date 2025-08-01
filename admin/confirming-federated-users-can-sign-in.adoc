@@ -29,7 +29,7 @@ TIP: When you enable SSO, an identity source configured in the Tenant Manager is
  .. If it is, confirm that any federated groups that might be in use for this tenant account are no longer required, clear the checkbox, and select *Save*.
 
 . Confirm that a federated user can access the Grid Manager:
- .. From Grid Manager, select *CONFIGURATION* > *Access control* > *Admin groups*.
+ .. From Grid Manager, select *Configuration* > *Access control* > *Admin groups*.
  .. Ensure that at least one federated group has been imported from the Active Directory identity source and that it has been assigned the Root access permission.
  .. Sign out.
  .. Confirm you can sign back in to the Grid Manager as a user in the federated group.

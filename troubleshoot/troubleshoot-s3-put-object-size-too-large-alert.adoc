@@ -19,7 +19,7 @@ Determine which tenants use objects that are larger than 5 GiB, so you can notif
 
 .Steps
 
-. Go to *CONFIGURATION* > *Monitoring* > *Audit and syslog server*.
+. Go to *Configuration* > *Monitoring* > *Audit and syslog server*.
  
 . If Client Writes are Normal, access the audit log:
 .. Enter `ssh admin@_primary_Admin_Node_IP_`
