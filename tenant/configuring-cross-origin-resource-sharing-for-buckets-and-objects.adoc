@@ -78,6 +78,7 @@ The bucket details page appears.
 . Select *Save changes*.
 
 .Related information
-link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Enable StorageGRID CORS for a management interface]
+link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Configure StorageGRID CORS for a management interface]
+
 
 // 2025 MAR 24, SGWS-33919 

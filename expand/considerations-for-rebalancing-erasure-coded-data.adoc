@@ -22,9 +22,9 @@ The EC rebalance procedure:
 * Only moves erasure-coded object data. It does not move replicated object data.
 * Redistributes the data within a site. It does not move data between sites.
 * Redistributes data among all Storage Nodes at a site. It does not redistribute data within storage volumes.
-* Does not consider the replicated data usage on each Storage Node when determining where to move erasure-coded data.
-* Redistributes erasure-coded data evenly between Storage Nodes without considering the relative capacities of each node.
-* Will not distribute erasure-coded data to Storage Nodes that are more than 80% full.
+* Attempts to distribute the same number of bytes to each node. Nodes that contain more replicated data will  store less erasure-coded data after rebalance is complete.
+* Redistributes erasure-coded data evenly between Storage Nodes without considering the relative capacities of each node. Replicated data is included in the calculation.
+* Won't distribute erasure-coded data to Storage Nodes that are more than 80% full.
 * Might decrease the performance of ILM operations and S3 client operations when it runs&#8212;additional resources are required to redistribute the erasure-coding fragments. 
 
 When the EC rebalance procedure is complete:
@@ -35,13 +35,17 @@ When the EC rebalance procedure is complete:
 
 ** Replicated object copies will continue to consume space on the existing nodes&#8212;the EC rebalance procedure does not move replicated data.
 
-** Larger-capacity nodes will be relatively less full than smaller-capacity nodes, even though all nodes will end up with approximately the same amount of erasure-coded data.
+** Larger-capacity nodes will be relatively less full than smaller-capacity nodes, even though all nodes will end up with approximately the same amount of data.
 +
 For example, suppose three 200-TB nodes are each filled to 80% (200 &#215; 0.8 = 160 TB on each node, or 480 TB for the site). If you add a 400-TB node and run the rebalance procedure, all nodes will now have approximately the same amount of erasure-code data (480/4 = 120 TB). However, the Used (%) for the larger node will be less than the Used (%) for the smaller nodes.
 +
 image::../media/used_space_with_larger_node.png[Used space before expansion]
 
 == When to rebalance erasure-coded data
+
+The EC rebalance procedure redistributes existing erasure-coded data to ensure nodes don't become or stay full. The procedure helps to ensure that EC encoding can continue on the site.
+
+Run the rebalance procedure when there's a concerning bias in the data distribution on a site and the site stores mostly EC data (since replicated data cannot be moved by rebalance).
 
 Consider the following scenario:
 
@@ -134,5 +138,4 @@ You must terminate the EC rebalance procedure before running other maintenance p
 == How EC rebalance procedure interacts with ILM
 
 While the EC rebalance procedure is running, avoid making ILM changes that might change the location of existing erasure-coded objects. For example, don't start using an ILM rule that has a different erasure-coding profile. If you need to make such ILM changes, you should terminate the EC rebalance procedure.
-
 

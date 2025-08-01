@@ -17,7 +17,8 @@ When converting data-only nodes, the grid must contain a minimum of three combin
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the link:admin-group-permissions.html[Maintenance or Root access permission].
+* You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
+* The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
 * The Storage Node isn't a metadata-only node or a data-only node.
 * The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
 * There is enough metadata space on other nodes at the site (or you've link:../expand/index.html[expanded your grid]) to accommodate the metadata that will migrate from the Storage Node you are converting.
