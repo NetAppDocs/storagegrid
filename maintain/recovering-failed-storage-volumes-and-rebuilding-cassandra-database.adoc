@@ -16,8 +16,8 @@ You must run a script that reformats and remounts storage on failed storage volu
 * The system drives on the server are intact.
 * The cause of the failure has been identified and, if necessary, replacement storage hardware has already been acquired.
 * The total size of the replacement storage is the same as the original.
-* You have checked that a Storage Node decommissioning is not in progress, or you have paused the node decommission procedure. (In the Grid Manager, select *MAINTENANCE* > *Tasks* > *Decommission*.)
-* You have checked that an expansion is not in progress. (In the Grid Manager, select *MAINTENANCE* > *Tasks* > *Expansion*.)
+* You have checked that a Storage Node decommissioning is not in progress, or you have paused the node decommission procedure. (In the Grid Manager, select *Maintenance* > *Tasks* > *Decommission*.)
+* You have checked that an expansion is not in progress. (In the Grid Manager, select *Maintenance* > *Tasks* > *Expansion*.)
 * You have link:reviewing-warnings-about-storage-volume-recovery.html[reviewed the warnings about storage volume recovery].
 
 .Steps

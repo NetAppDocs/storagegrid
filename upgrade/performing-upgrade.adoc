@@ -23,7 +23,7 @@ As a first step, access the StorageGRID Upgrade page in the Grid Manager.
 .Steps
 
 . Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-. Select *MAINTENANCE* > *System* > *Software update*.
+. Select *Maintenance* > *System* > *Software update*.
 
 . From the StorageGRID upgrade tile, select *Upgrade*.
 

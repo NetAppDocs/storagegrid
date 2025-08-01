@@ -30,11 +30,11 @@ You can restore object data for a failed storage volume or Storage Node using Gr
 
 .About this task
 
-After you have replaced the drives and performed the manual steps to format the volumes, Grid Manager displays the volumes as candidates for restoration on the *MAINTENANCE* > *Volume restoration* > *Nodes to restore* tab.
+After you have replaced the drives and performed the manual steps to format the volumes, Grid Manager displays the volumes as candidates for restoration on the *Maintenance* > *Volume restoration* > *Nodes to restore* tab.
 
 Whenever possible, restore object data using the Volume restoration page in the Grid Manager. You can either <<enable-auto-restore-mode,enable automatic restore mode>> to automatically start volume restoration when the volumes are ready to be restored or <<manually-restore,manually perform volume restoration>>. Follow these guidelines:
 
-* If the volumes are listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, restore object data as described in the steps below. The volumes will be listed if:
+* If the volumes are listed at *Maintenance* > *Volume restoration* > *Nodes to restore*, restore object data as described in the steps below. The volumes will be listed if:
 ** Some, but not all, storage volumes in a node have failed
 ** All storage volumes in a node have failed and are being replaced with the same number of volumes or more volumes
 
@@ -67,7 +67,7 @@ When you enable Automatic restore mode, volume restoration automatically starts 
 
 .Steps
 
-. In Grid Manager go to *MAINTENANCE* > *Volume restoration*.
+. In Grid Manager go to *Maintenance* > *Volume restoration*.
 . Select the *Nodes to restore* tab, then slide the toggle for *Automatic restore mode* to the enabled position.
 . When the confirmation dialog box appears, review the details.
 +
@@ -90,7 +90,7 @@ Follow these steps to restore a failed volume or node.
 
 .Steps
 
-. In Grid Manager go to *MAINTENANCE* > *Volume restoration*.
+. In Grid Manager go to *Maintenance* > *Volume restoration*.
 
 . Select the *Nodes to restore* tab, then slide the toggle for *Automatic restore mode* to the disabled position.
 +

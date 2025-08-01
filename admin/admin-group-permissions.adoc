@@ -62,13 +62,13 @@ Users must have the Maintenance permission to use these options:
 * *Configuration* > *Network*:
 ** S3 endpoint domain names
 
-* *MAINTENANCE* > *Tasks*:
+* *Maintenance* > *Tasks*:
  ** Decommission
  ** Expansion
  ** Object existence check
  ** Recovery
  
-* *MAINTENANCE* > *System*:
+* *Maintenance* > *System*:
 
  ** Recovery package
  ** Software update
@@ -78,12 +78,12 @@ Users must have the Maintenance permission to use these options:
 
 Users who don't have the Maintenance permission can view, but not edit, these pages:
 
-* *MAINTENANCE* > *Network*:
+* *Maintenance* > *Network*:
  ** DNS servers
  ** Grid Network
  ** NTP servers
 
-* *MAINTENANCE* > *System*:
+* *Maintenance* > *System*:
  ** License
 
 * *Configuration* > *Network*:

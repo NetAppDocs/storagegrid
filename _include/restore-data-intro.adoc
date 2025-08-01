@@ -4,9 +4,9 @@
 
 Whenever possible, restore object data using the *Volume restoration* page in the Grid Manager.
 
-* If the volumes are listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, restore object data using the link:../maintain/restoring-volume.html[Volume restoration page in the Grid Manager].
+* If the volumes are listed at *Maintenance* > *Volume restoration* > *Nodes to restore*, restore object data using the link:../maintain/restoring-volume.html[Volume restoration page in the Grid Manager].
 
-* If the volumes aren't listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, follow the steps below for using the `repair-data` script to restore object data.
+* If the volumes aren't listed at *Maintenance* > *Volume restoration* > *Nodes to restore*, follow the steps below for using the `repair-data` script to restore object data.
 +
 If the recovered Storage Node contains fewer volumes than the node it is replacing, you must use the `repair-data` script.
 

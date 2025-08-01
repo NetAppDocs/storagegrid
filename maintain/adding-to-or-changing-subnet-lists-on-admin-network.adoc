@@ -129,7 +129,7 @@ Running provisioning...
 Updating grid network configuration on Name
 ----
 . Download a new recovery package from the Grid Manager.
- .. Select *MAINTENANCE* > *System* > *Recovery package*.
+ .. Select *Maintenance* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
 . If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished adding to or changing the subnet lists.

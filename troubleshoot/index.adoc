@@ -264,7 +264,7 @@ If you can't resolve the problem on your own, contact technical support. Before 
 
 | 
 | StorageGRID System ID
-| Select *MAINTENANCE* > *System* > *License*. The StorageGRID System ID is shown as part of the current license.
+| Select *Maintenance* > *System* > *License*. The StorageGRID System ID is shown as part of the current license.
 
 | 
 | Software version
