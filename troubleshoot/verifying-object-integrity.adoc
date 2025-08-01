@@ -54,7 +54,7 @@ You create and run one object existence check job at a time. When you create a j
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
-* You have ensured that the Storage Nodes you want to check are online. Select *NODES* to view the table of nodes. Ensure that no alert icons appear next to the node name for the nodes you want to check.
+* You have ensured that the Storage Nodes you want to check are online. Select *Nodes* to view the table of nodes. Ensure that no alert icons appear next to the node name for the nodes you want to check.
 * You have ensured that the following procedures are *not* running on the nodes you want to check:
 ** Grid expansion to add a Storage Node
 ** Storage Node decommission

@@ -147,7 +147,7 @@ This script finds any new storage volumes and prompts you to format them.
 The `setup_rangedbs.sh` script runs automatically.
 . Verify that the Storage Node's storage state is online:
 .. Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-.. Select *NODES* > *_Storage Node_* > *Tasks*.
+.. Select *Nodes* > *_Storage Node_* > *Tasks*.
 .. If the *Storage state* drop-down list is set to Read-only or Offline, select *Online*.
 .. Select *Save*.
 . To see the new object stores, select *Storage*.

@@ -12,11 +12,11 @@
 `repair-data show-replicated-repair-status`
 
 * To determine if repairs are complete:
-. Select *NODES* > *_Storage Node being repaired_* > *ILM*.
+. Select *Nodes* > *_Storage Node being repaired_* > *ILM*.
 . Review the attributes in the Evaluation section. When repairs are complete, the *Awaiting - All* attribute indicates 0 objects.
 
 * To monitor the repair in more detail:
-. Select *NODES*.
+. Select *Nodes*.
 . Select *_grid name_* > *ILM*.
 . Position your cursor over the ILM queue graph to see the value of the *Scan rate (objects/sec)* attribute, which is the rate at which objects in the grid are scanned and queued for ILM.
 . In the ILM Queue section, look at the following attributes:

@@ -265,7 +265,7 @@ You might need to enable IPv6 support in the kernel if you have installed Storag
 .About this task
 To see the IPv6 address that has been assigned to a grid node:
 
-. Select *NODES* and select the node.
+. Select *Nodes* and select the node.
 . Select *Show additional IP addresses* next to *IP Addresses* on the Overview tab.
 
 If the IPv6 address is not shown and the node is installed on a Linux host, follow these steps to enable IPv6 support in the kernel.

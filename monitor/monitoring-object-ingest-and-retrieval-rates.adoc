@@ -21,7 +21,7 @@ You can monitor object ingest and retrieval rates as well as metrics for object 
 
 . Refer to the S3 charts, which summarize the number of client operations performed by Storage Nodes and the number of API requests received by Storage Nodes during the selected time frame.
 
-. Select *NODES* to access the Nodes page.
+. Select *Nodes* to access the Nodes page.
 
 . From the Nodes home page (grid level), select the *Objects* tab.
 +

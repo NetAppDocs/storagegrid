@@ -96,7 +96,7 @@ image::../media/vlan-create-parent-interfaces.png[VLAN create wizard parent inte
 
 . Select *Save*.
 
-. Wait up to 5 minutes for the new interface to appear as a selection on the High availability groups page and to be listed in the *Network interfaces* table for the node (*NODES* > *_parent interface node_* > *Network*). 
+. Wait up to 5 minutes for the new interface to appear as a selection on the High availability groups page and to be listed in the *Network interfaces* table for the node (*Nodes* > *_parent interface node_* > *Network*). 
 
 == Edit a VLAN interface
 

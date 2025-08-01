@@ -35,7 +35,7 @@ If the error is not resolved automatically, go to the next step.
 
 . If your StorageGRID system has more than one Admin Node, try signing in to the Grid Manager from another Admin Node to check the status of an unavailable Admin Node.
 
-* If you are able to sign in, you can use the *Dashboard*, *NODES*, *Alerts*, and *SUPPORT* options to help determine the cause of the error.
+* If you are able to sign in, you can use the *Dashboard*, *Nodes*, *Alerts*, and *SUPPORT* options to help determine the cause of the error.
 * If you have only one Admin Node or you still can't sign in, go to the next step.
 
 . Determine if the node's hardware is offline.

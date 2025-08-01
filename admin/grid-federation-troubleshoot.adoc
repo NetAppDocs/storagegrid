@@ -55,7 +55,7 @@ When you edit a grid federation connection, StorageGRID attempts to save a "cand
 
 .Recommended actions
 
-. From the grid you are using to edit the connection, select *NODES*.
+. From the grid you are using to edit the connection, select *Nodes*.
 . Confirm that all Admin Nodes for that grid are online.
 . If any nodes are offline, bring them back online and try editing the connection again.
 

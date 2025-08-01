@@ -39,7 +39,7 @@ The table includes the following information for each node:
 * Storage grade
 * Storage usage: The percentage of the total usable space for object data that has been used for the Storage Node.
 +
-NOTE: The same Storage usage (%) value is also shown in the Storage Used - Object Data chart for each Storage Node (select *NODES* > *_Storage Node_* > *Storage*).
+NOTE: The same Storage usage (%) value is also shown in the Storage Used - Object Data chart for each Storage Node (select *Nodes* > *_Storage Node_* > *Storage*).
 
 . View the *ILM usage* tab to determine if the storage pool is currently being used in any ILM rules or erasure-coding profiles.
 

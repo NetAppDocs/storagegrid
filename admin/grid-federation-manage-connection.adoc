@@ -29,7 +29,7 @@ NOTE: While the connection is being edited, account clone or cross-grid replicat
 
 . Sign in to the Grid Manager from the primary Admin Node on either grid.
 
-. Select *NODES* and confirm that all other Admin Nodes in your system are online.
+. Select *Nodes* and confirm that all other Admin Nodes in your system are online.
 +
 NOTE: When you edit a grid federation connection, StorageGRID attempts to save a "candidate configuration" file on all Admin Nodes on the first grid. If this file can't be saved to all Admin Nodes, a warning message appears when you select *Save and test*.
 

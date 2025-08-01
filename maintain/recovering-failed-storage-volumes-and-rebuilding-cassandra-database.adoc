@@ -26,7 +26,7 @@ You must run a script that reformats and remounts storage on failed storage volu
 +
 Don't remount the volumes in this step. The storage is remounted and added to `/etc/fstab` in a later step.
 
-. In the Grid Manager, go to *NODES* > `*appliance Storage Node*` > *Hardware*. In the StorageGRID Appliance section of the page, verify that the Storage RAID mode is healthy.
+. In the Grid Manager, go to *Nodes* > `*appliance Storage Node*` > *Hardware*. In the StorageGRID Appliance section of the page, verify that the Storage RAID mode is healthy.
 
 . Log in to the failed Storage Node:
  .. Enter the following command: `ssh admin@_grid_node_IP_`

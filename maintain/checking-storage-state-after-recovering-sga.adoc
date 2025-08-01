@@ -18,6 +18,6 @@ After recovering an appliance Storage Node, you must verify that the desired sta
 
 .Steps
 
-. Select *NODES* > *_Storage Node_* > *Tasks*.
+. Select *Nodes* > *_Storage Node_* > *Tasks*.
 . If the *Storage state* drop-down list is set to Read-only or Offline, select *Online*.
 . Select *Save*.

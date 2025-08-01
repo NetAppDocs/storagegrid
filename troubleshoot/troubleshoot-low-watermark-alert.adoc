@@ -66,7 +66,7 @@ You can resolve the *Low read-only watermark override* alert by updating custom 
 
 .Steps
 
-. Select *NODES*.
+. Select *Nodes*.
 
 . For each site in the grid, expand the list of nodes.
 
@@ -106,7 +106,7 @@ The last column shows the maximum optimized value of the soft read-only watermar
 
 .Steps
 
-. Select *NODES*.
+. Select *Nodes*.
 
 . Repeat these steps for each online Storage Node:
 .. Select *_Storage Node_* > *Storage*.
