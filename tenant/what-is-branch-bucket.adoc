@@ -28,10 +28,18 @@ Note the following characteristics of branch buckets:
 
 == Examples for branch bucket usage
 
-You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
+* You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
 
-== Branch buckets and object deletions
+* You're saving data in a versioned bucket. There was an accidental vulnerability that caused many unwanted objects to be ingested after time _T_. You can create a branch bucket for the Before time value, _T_, and redirect client operations to that branch bucket. Then, only objects ingested after the Before time _T_ are exposed to clients.
 
+== Operations on objects in branch buckets 
+
+* A PUT object operation on a branch bucket creates an object in the branch.
+
+* A GET object operation on a branch bucket retrieves an object from the branch. If the object doesn't exist in the branch bucket, the object is retrieved from the base bucket.
+
+* Object deletions from branch buckets occur as follows: 
++
 [cols="1a,1a,2a,2a,2a" options="header"]
 |===
 | Operation|	Target|	Result|	Object visibility in base bucket|	Object visibility in branch bucket
