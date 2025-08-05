@@ -19,7 +19,7 @@ Follow these steps to access the MIB files.
 
 .Steps
 
-. Select *CONFIGURATION* > *Monitoring* > *SNMP agent*.
+. Select *Configuration* > *Monitoring* > *SNMP agent*.
 . On the SNMP agent page, select the file you want to download:
 +
 * *NETAPP-STORAGEGRID-MIB.txt*: Defines the alert table and notifications (traps) accessible on all Admin Nodes.

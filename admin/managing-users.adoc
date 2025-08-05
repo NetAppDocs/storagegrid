@@ -32,7 +32,7 @@ NOTE: If single sign-on (SSO) is enabled, local users can't sign in to StorageGR
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Admin users*.
+. Select *Configuration* > *Access control* > *Admin users*.
 . Select *Create user*.
 
 === Enter user credentials
@@ -142,7 +142,7 @@ You can import one or more federated users, up to a maximum of 100 users, direct
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Admin users*. 
+. Select *Configuration* > *Access control* > *Admin users*. 
 . Select *Import federated users*.
 . Enter the UUID or username for one or more federated users.
 +

@@ -24,7 +24,7 @@ For details about this task, see link:../admin/managing-high-availability-groups
 * If you plan to use a VLAN, you have created the VLAN interface. See link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces].
 
 .Steps
-. Select *CONFIGURATION* > *Network* > *High availability groups*.
+. Select *Configuration* > *Network* > *High availability groups*.
 . Select *Create*.
 . For the *Enter details* step, complete the following fields.
 +

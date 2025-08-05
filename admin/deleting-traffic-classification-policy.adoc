@@ -18,7 +18,7 @@ You can delete a traffic classification policy if you no longer need it. Make su
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *Traffic classification*.
+. Select *Configuration* > *Network* > *Traffic classification*.
 +
 The Traffic classification policies page appears with the existing policies listed in a table.
 

@@ -17,8 +17,8 @@ You must manually run two scripts to remount preserved storage volumes and refor
 +
 Running the `sn-remount-volumes` script might help you identify additional failed storage volumes.
 
-* You have checked that a Storage Node decommissioning is not in progress, or you have paused the node decommission procedure. (In the Grid Manager, select *MAINTENANCE* > *Tasks* > *Decommission*.)
-* You have checked that an expansion is not in progress. (In the Grid Manager, select *MAINTENANCE* > *Tasks* > *Expansion*.)
+* You have checked that a Storage Node decommissioning is not in progress, or you have paused the node decommission procedure. (In the Grid Manager, select *Maintenance* > *Tasks* > *Decommission*.)
+* You have checked that an expansion is not in progress. (In the Grid Manager, select *Maintenance* > *Tasks* > *Expansion*.)
 
 CAUTION: Contact technical support if more than one Storage Node is offline. Don't run the `sn-recovery-postinstall.sh` script.
 

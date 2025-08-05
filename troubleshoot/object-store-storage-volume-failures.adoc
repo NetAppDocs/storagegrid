@@ -11,7 +11,7 @@ summary: 'The underlying storage on a Storage Node is divided into object stores
 [.lead]
 The underlying storage on a Storage Node is divided into object stores. Object stores are also known as storage volumes.
 
-You can view object store information for each Storage Node. Select *NODES* > *_Storage Node_* > *Storage*.
+You can view object store information for each Storage Node. Select *Nodes* > *_Storage Node_* > *Storage*.
 
 image::../media/nodes_page_storage_nodes_storage_tables.png[Nodes Page Storage Node Storage Tables]
 

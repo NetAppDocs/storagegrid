@@ -29,7 +29,7 @@ CAUTION: The S3 buckets and objects belonging to a user can be accessed using th
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 . Select the user whose S3 access keys you want to manage.
 +
 The user detail page appears.

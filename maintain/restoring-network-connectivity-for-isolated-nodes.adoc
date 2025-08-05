@@ -16,7 +16,7 @@ Under certain circumstances, one or more groups of nodes might not be able to co
 Node isolation is indicated by:
 
 * Alerts, such as *Unable to communicate with node* (*Alerts* > *Current*)
-* Connectivity-related diagnostics (*SUPPORT* > *Tools* > *Diagnostics*)
+* Connectivity-related diagnostics (*Support* > *Tools* > *Diagnostics*)
 
 Some of the consequences of having isolated nodes include the following:
 

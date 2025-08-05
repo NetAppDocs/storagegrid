@@ -25,7 +25,7 @@ All nodes in the grid use the same SNMP configuration.
 As a first step, enable the StorageGRID SMNP agent and provide basic information.
 
 .Steps
-. Select *CONFIGURATION* > *Monitoring* > *SNMP agent*.
+. Select *Configuration* > *Monitoring* > *SNMP agent*.
 +
 The SNMP agent page appears.
 

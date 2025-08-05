@@ -18,7 +18,7 @@ Because a single custom management interface certificate is used for all Admin N
 
 You need to complete configuration on the server, and depending on the root certificate authority (CA) you are using, users might also need to install the Grid CA certificate in the web browser they will use to access the Grid Manager and the Tenant Manager.
 
-NOTE: To ensure that operations aren't disrupted by a failed server certificate, the *Expiration of server certificate for Management Interface* alert is triggered when this server certificate is about to expire. As required, you can view when the current certificate expires by selecting *CONFIGURATION* > *Security* > *Certificates* and looking at the Expiration date for the management interface certificate on the Global tab.
+NOTE: To ensure that operations aren't disrupted by a failed server certificate, the *Expiration of server certificate for Management Interface* alert is triggered when this server certificate is about to expire. As required, you can view when the current certificate expires by selecting *Configuration* > *Security* > *Certificates* and looking at the Expiration date for the management interface certificate on the Global tab.
 
 [NOTE]
 ====
@@ -34,7 +34,7 @@ To add a custom management interface certificate, you can provide your own certi
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates*.
+. Select *Configuration* > *Security* > *Certificates*.
 . On the *Global* tab, select *Management interface certificate*.
 . Select *Use custom certificate*.
 
@@ -139,7 +139,7 @@ You can download or copy the certificate PEM as required.
 You can revert to using the default management interface certificate for Grid Manager and Tenant Manager connections.
 
 .Steps
-. Select *CONFIGURATION* > *Security* > *Certificates*.
+. Select *Configuration* > *Security* > *Certificates*.
 . On the *Global* tab, select *Management interface certificate*.
 . Select *Use default certificate*.
 +
@@ -192,7 +192,7 @@ Include the BEGIN and the END tags in your selection.
 . Log out of the command shell. `$ exit`
 . Confirm the certificate was configured:
  .. Access the Grid Manager.
- .. Select *CONFIGURATION* > *Security* > *Certificates*
+ .. Select *Configuration* > *Security* > *Certificates*
  .. On the *Global* tab, select *Management interface certificate*.
 . Configure your management client to use the public certificate you copied. Include the BEGIN and END tags.
 
@@ -202,7 +202,7 @@ You can save or copy the management interface certificate contents for use elsew
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates*.
+. Select *Configuration* > *Security* > *Certificates*.
 . On the *Global* tab, select *Management interface certificate*.
 . Select the *Server* or *CA bundle* tab and then download or copy the certificate.
 +

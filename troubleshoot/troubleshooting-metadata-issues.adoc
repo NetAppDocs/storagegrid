@@ -43,7 +43,7 @@ CAUTION: When object metadata is using 90% or more of the allowed metadata space
 CAUTION: If the size of volume 0 is smaller than the Metadata Reserved Space storage option (for example, in a non-production environment), the calculation for the *Low metadata storage* alert might be inaccurate.
 
 .Steps
-. Select *ALERTS* > *Current*.
+. Select *Alerts* > *Current*.
 . From the table of alerts, expand the *Low metadata storage* alert group, if required, and select the specific alert you want to view.
 . Review the details in the alert dialog box.
 . If a major or critical *Low metadata storage* alert has been triggered, perform an expansion to add Storage Nodes immediately.

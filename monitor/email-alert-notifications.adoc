@@ -21,7 +21,7 @@ The email setup used for alert notifications is not used for AutoSupport package
 If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport packages, and SNMP traps and informs. If the primary Admin Node becomes unavailable, notifications are temporarily sent by other Admin Nodes. See link:../primer/what-admin-node-is.html[What is an Admin Node?].
 
 .Steps
-. Select *ALERTS* > *Email setup*.
+. Select *Alerts* > *Email setup*.
 +
 The Email Setup page appears.
 
@@ -205,7 +205,7 @@ If the *Email notification failure* alert is triggered or you are unable to rece
 
 .Steps
 . Verify your settings.
- .. Select *ALERTS* > *Email setup*.
+ .. Select *Alerts* > *Email setup*.
  .. Verify that the Email (SMTP) Server settings are correct.
  .. Verify that you have specified valid email addresses for the recipients.
 . Check your spam filter, and make sure that the email was not sent to a junk folder.

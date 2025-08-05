@@ -72,7 +72,7 @@ a|Storage Node
 a|Object data
 a|3 for each Storage Node on this host
 
-*Note:* A software-based Storage Node can have 1 to 48 storage volumes; at least 3 storage volumes are recommended.
+*Note:* A Linux software-based Storage Node can have 1 to 48 storage volumes. A VMware software-based Storage Node can have 1 to 16 storage volumes. At least 3 storage volumes are recommended.
 
 a|12 TB (4 TB/LUN, minimum)
 
@@ -85,7 +85,7 @@ a|Object metadata
 a|1
 a|4 TB/LUN, minimum
 
-*Note*: There is no maximum size for the single LUN. Excess capacity is saved for future use.
+Maximum tested LUN size: 39 TB.
 
 See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
 
@@ -239,9 +239,12 @@ a|*System data:* 700 GB
 [[storage_req_SN]]
 == Specific storage requirements for Storage Nodes
 
-Linux and VMware have the same storage requirements for storage nodes.
+Linux and VMware have different storage requirements for storage nodes:
 
-A software-based Storage Node can have 1 to 48 storage volumes; 3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
+* A Linux software-based Storage Node can have 1 to 48 storage volumes
+* A VMware software-based Storage Node can have 1 to 16 storage volumes
+* Three or more storage volumes are recommended. 
+* Each storage volume should be 4 TB or larger.
 
 NOTE: An appliance Storage Node can also have up to 48 storage volumes.
 

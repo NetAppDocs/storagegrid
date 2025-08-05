@@ -19,7 +19,7 @@ You can disable SNMP notifications, update community strings, or add or remove a
 See link:configuring-snmp-agent.html[Configure the SNMP agent] for details about each field on the SNMP agent page. You must select *Save* at the bottom of the page to commit any changes you make on each tab.
 
 .Steps
-. Select *CONFIGURATION* > *Monitoring* > *SNMP agent*.
+. Select *Configuration* > *Monitoring* > *SNMP agent*.
 +
 The SNMP agent page appears.
 

@@ -21,7 +21,7 @@ By default, client PUT and GET I/O traffic is given the highest priority over ba
 
 .Steps
 
-. Select *SUPPORT* > *I/O prioritization*.
+. Select *Support* > *I/O prioritization*.
 . (Optional) Change the EC purge and repair priority, for background operations that purge EC data, from their default values.
 +
 NOTE: Use the default low EC purge and repair priority for grids that have RAID-based nodes.

@@ -21,7 +21,7 @@ Download the current recovery package file before making grid topology changes t
 
 .Steps
 
-. Select *MAINTENANCE* > *System* > *Recovery package*.
+. Select *Maintenance* > *System* > *Recovery package*.
 . Enter the provisioning passphrase, and select *Start download*.
 +
 The download starts immediately.

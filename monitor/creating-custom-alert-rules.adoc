@@ -39,7 +39,7 @@ For example, to test the expression `node_memory_MemTotal_bytes < 24000000000`, 
 
 .Steps
 
-. Select *ALERTS* > *Rules*.
+. Select *Alerts* > *Rules*.
 +
 The Alert Rules page appears.
 

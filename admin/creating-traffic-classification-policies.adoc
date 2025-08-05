@@ -20,7 +20,7 @@ You can create traffic classification policies if you want to monitor, and optio
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *Traffic classification*.
+. Select *Configuration* > *Network* > *Traffic classification*.
 
 . Select *Create*.
 

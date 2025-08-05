@@ -48,7 +48,7 @@ Some platform services issues might cause client operations on the S3 bucket to 
 
 To check the status of services:
 
-. Select *NODES* > *_site_* > *_Storage Node_* > *Overview*.
+. Select *Nodes* > *_site_* > *_Storage Node_* > *Overview*.
 . Check for active alerts in the Alerts table.
 . Resolve any active alerts. As needed, contact technical support.
 
@@ -93,7 +93,7 @@ CloudMirror requests are more likely to be affected by the performance of the de
 
 To view the request failure rate for platform services:
 
-. Select *NODES*.
+. Select *Nodes*.
 . Select *_site_* > *Platform Services*.
 . View the Request error rate chart.
 +
