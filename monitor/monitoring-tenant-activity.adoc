@@ -29,7 +29,7 @@ The Tenants page shows basic information for all current tenant accounts.
 +
 The Logical space used, Quota usage, Quota, and Object count are listed for each tenant. If a quota is not set for a tenant, the Quota usage and Quota fields contain a dash (&#8212;).
 +
-NOTE: The space used values are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status.
+NOTE: The logical size of all objects belonging to this tenant includes incomplete and in-progress multipart uploads. The size doesn't include additional physical space used for ILM policies. The Space used values are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status.
 +
 image::../media/tenant_accounts_page.png[Tenant Accounts page]
 
@@ -66,6 +66,8 @@ image::../media/tenant_usage_modal.png[Tenant usage modal]
 . Review the tenant overview at the top of the page.
 +
 This section of the details page provides summary information for the tenant, including the tenant's object count, quota usage, logical space used, and quota setting.
++
+NOTE: The logical size of all objects belonging to this tenant includes incomplete and in-progress multipart uploads. The size doesn't include additional physical space used for ILM policies. The Space used values are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status.
 
 . From the *Space breakdown* tab, review the *Space consumption* chart.
 +
