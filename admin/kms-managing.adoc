@@ -22,7 +22,7 @@ You can view information about each key management server (KMS) in your StorageG
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Key management server*.
+. Select *Configuration* > *Security* > *Key management server*.
 +
 The Key management server page appears and shows the following information:
 
@@ -101,7 +101,7 @@ CAUTION: You must address any certificate issues as soon as possible to maintain
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Key management server*.
+. Select *Configuration* > *Security* > *Key management server*.
 
 . In the table, look at the value for Certificate expiration for each KMS.
 
@@ -127,7 +127,7 @@ You can view information about the appliance nodes in your StorageGRID system th
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Key management server*.
+. Select *Configuration* > *Security* > *Key management server*.
 +
 The Key Management Server page appears. The Configuration Details tab shows any key management servers that have been configured.
 
@@ -198,7 +198,7 @@ You might need to edit the configuration of a key management server, for example
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Key management server*.
+. Select *Configuration* > *Security* > *Key management server*.
 +
 The Key management server page appears and shows all key management servers that have been configured.
 +
@@ -285,7 +285,7 @@ You can remove a KMS in these cases:
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Key management server*.
+. Select *Configuration* > *Security* > *Key management server*.
 +
 The Key management server page appears and shows all key management servers that have been configured.
 . Select the KMS you want to remove, and select *Actions* > *Remove*.

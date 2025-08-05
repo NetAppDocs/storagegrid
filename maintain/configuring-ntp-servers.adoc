@@ -43,7 +43,7 @@ Follow these steps to add, update, or remove NTP servers.
 
 .Steps
 
-. Select *MAINTENANCE* > *Network* > *NTP servers*.
+. Select *Maintenance* > *Network* > *NTP servers*.
 
 . In the Servers section, add, update, or remove NTP server entries, as necessary.
 +

@@ -46,7 +46,7 @@ NOTE: If you don't add S3 endpoint domain names and the list is empty, support f
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *S3 endpoint domain names*.
+. Select *Configuration* > *Network* > *S3 endpoint domain names*.
 
 . Enter the domain name in the *Domain name 1* field. Select *Add another domain name* to add more domain names.
 
@@ -67,7 +67,7 @@ If you change a name used by S3 applications, virtual-hosted-style requests will
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *S3 endpoint domain names*.
+. Select *Configuration* > *Network* > *S3 endpoint domain names*.
 . Select the domain name field you want to edit and make the necessary changes.
 . Select *Save*.
 . Select *Yes* to confirm your change.
@@ -78,7 +78,7 @@ If you remove a name used by S3 applications, virtual-hosted-style requests will
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *S3 endpoint domain names*.
+. Select *Configuration* > *Network* > *S3 endpoint domain names*.
 . Select the delete icon image:../media/icon-x-to-remove.png[delete icon] next to the domain name.
 . Select *Yes* to confirm the deletion.
 

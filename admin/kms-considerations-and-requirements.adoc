@@ -27,7 +27,7 @@ You must ensure that each appliance node that uses node encryption has network a
 
 Communications between the appliance nodes and the configured KMS use secure TLS connections. StorageGRID can support either the TLS 1.2 or TLS 1.3 protocol when it makes KMIP connections to a KMS or KMS cluster, based on what the KMS supports and which link:manage-tls-ssh-policy.html[TLS and SSH policy] you are using.
 
-StorageGRID negotiates the protocol and cipher (TLS 1.2) or cipher suite (TLS 1.3) with the KMS when it makes the connection. To see which protocol versions and ciphers/cipher suites are available, review the `tlsOutbound` section of the grid's active TLS and SSH policy (*CONFIGURATION* > *Security* *Security settings*).
+StorageGRID negotiates the protocol and cipher (TLS 1.2) or cipher suite (TLS 1.3) with the KMS when it makes the connection. To see which protocol versions and ciphers/cipher suites are available, review the `tlsOutbound` section of the grid's active TLS and SSH policy (*Configuration* > *Security* *Security settings*).
 
 
 == Which appliances are supported?

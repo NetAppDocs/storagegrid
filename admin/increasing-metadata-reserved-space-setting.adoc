@@ -32,10 +32,10 @@ For a detailed explanation of how the Metadata Reserved Space setting affects th
 
 .Steps
 . Determine the current Metadata Reserved Space setting.
- .. Select *CONFIGURATION* > *System* > *Storage settings*.
+ .. Select *Configuration* > *System* > *Storage settings*.
  .. Note the value of *Metadata Reserved Space*.
 . Ensure you have enough available space on storage volume 0 of each Storage Node to increase this value.
- .. Select *NODES*.
+ .. Select *Nodes*.
  .. Select the first Storage Node in the grid.
  .. Select the Storage tab.
  .. In the Volumes section, locate the */var/local/rangedb/0* entry.
@@ -47,7 +47,7 @@ For example, if the Metadata Reserved Space setting is currently 4 TB and you wa
   *** If one or more Storage Nodes do not have enough available space, the Metadata Reserved Space value cannot be increased. Do not continue with this procedure.
   *** If each Storage Node has enough available space on volume 0, go to the next step.
 . Ensure you have at least 128 GB of RAM on each Storage Node.
- .. Select *NODES*.
+ .. Select *Nodes*.
  .. Select the first Storage Node in the grid.
  .. Select the *Hardware* tab.
  .. Hover your cursor over the Memory Usage chart. Ensure that *Total Memory* is at least 128 GB.
@@ -55,7 +55,7 @@ For example, if the Metadata Reserved Space setting is currently 4 TB and you wa
   *** If one or more Storage Nodes do not have enough available total memory, the Metadata Reserved Space value cannot be increased. Do not continue with this procedure.
   *** If each Storage Node has at least 128 GB of total memory, go to the next step.
 . Update the Metadata Reserved Space setting.
- .. Select *CONFIGURATION* > *System* > *Storage settings*.
+ .. Select *Configuration* > *System* > *Storage settings*.
  .. Select *Metadata Reserved Space*.
  .. Enter the new value.
 +

@@ -22,7 +22,7 @@ include::../_include/tenant-settings-delay.adoc[]
 
 .Steps
 
-. Select *TENANTS*.
+. Select *Tenants*.
 +
 image::../media/tenant_accounts_page.png[Tenant Accounts page]
 

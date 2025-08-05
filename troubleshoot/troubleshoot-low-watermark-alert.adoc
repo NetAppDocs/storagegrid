@@ -66,7 +66,7 @@ You can resolve the *Low read-only watermark override* alert by updating custom 
 
 .Steps
 
-. Select *NODES*.
+. Select *Nodes*.
 
 . For each site in the grid, expand the list of nodes.
 
@@ -84,7 +84,7 @@ StorageGRID uses two Prometheus metrics to show the optimized values it has calc
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *Metrics*.
+. Select *Support* > *Tools* > *Metrics*.
 
 . In the Prometheus section, select the link to access the Prometheus user interface.
 
@@ -106,7 +106,7 @@ The last column shows the maximum optimized value of the soft read-only watermar
 
 .Steps
 
-. Select *NODES*.
+. Select *Nodes*.
 
 . Repeat these steps for each online Storage Node:
 .. Select *_Storage Node_* > *Storage*.
@@ -125,7 +125,7 @@ NOTE: The same custom watermark values are applied to every storage volume on ev
 
 .Steps
 
-. Go to *SUPPORT* > *Other* > *Storage watermarks*.
+. Go to *Support* > *Other* > *Storage watermarks*.
 . Select the *Use optimized values* checkbox.
 . Select *Save*.
 

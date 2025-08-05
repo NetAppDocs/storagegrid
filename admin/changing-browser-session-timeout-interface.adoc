@@ -37,7 +37,7 @@ Controls whether a stack trace is returned in Grid Manager and Tenant Manager AP
 This option is disabled by default, but you might want to enable this functionality for a test environment. In general, you should leave stack trace disabled in production environments to avoid revealing internal software details when API errors occur.
 
 .Steps
-. Select *CONFIGURATION* > *Security* > *Security settings*.
+. Select *Configuration* > *Security* > *Security settings*.
 . Select the *Interface* tab.
 . To change the setting for browser inactivity timeout:
 

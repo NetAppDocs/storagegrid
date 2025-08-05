@@ -17,6 +17,6 @@ After recovering the system drive for a Storage Node, you must verify that the d
 * The Storage Node has been recovered, and data recovery is complete.
 
 .Steps
-. Select *NODES* > *_Storage Node_* > *Tasks*.
+. Select *Nodes* > *_Storage Node_* > *Tasks*.
 . If the *Storage state* drop-down list is set to Read-only or Offline, select *Online*.
 . Select *Save*.

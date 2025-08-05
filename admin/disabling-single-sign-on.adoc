@@ -18,7 +18,7 @@ You can disable single sign-on (SSO) if you no longer want to use this functiona
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
+. Select *Configuration* > *Access control* > *Single sign-on*.
 +
 The Single Sign-on page appears.
 

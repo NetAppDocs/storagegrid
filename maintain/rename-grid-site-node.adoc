@@ -29,7 +29,7 @@ To start, select the items you want to rename.
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Rename grid, sites, and nodes*.
+. Select *Maintenance* > *Tasks* > *Rename grid, sites, and nodes*.
 . For the *Select names* step, select the items you want to rename.
 +
 [cols="1a,2a" options="header"]
@@ -158,7 +158,7 @@ You can revert a renamed grid, site, or node back to its original system name. W
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Rename grid, sites, and nodes*.
+. Select *Maintenance* > *Tasks* > *Rename grid, sites, and nodes*.
 . For the *Select names* step, select any items you want to revert back to system names.
 
 . Select *Continue*.

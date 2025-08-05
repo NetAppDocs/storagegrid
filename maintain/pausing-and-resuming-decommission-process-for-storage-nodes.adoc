@@ -20,7 +20,7 @@ NOTE: The *Pause* button is enabled only when the ILM evaluation or erasure-code
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Decommission*.
+. Select *Maintenance* > *Tasks* > *Decommission*.
 +
 The Decommission page appears.
 

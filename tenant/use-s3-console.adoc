@@ -39,7 +39,7 @@ If using S3 Console results in operations taking too long (for example, minutes 
 
 .Steps
 
-. Select *STORAGE* > *Buckets* > *_bucket name_*.
+. Select *Storage* > *Buckets* > *_bucket name_*.
 . Select the S3 Console tab.
 . Paste the access key ID and secret access key into the fields. Otherwise, select *Upload access keys* and select your `.csv` file.
 . Select *Sign in*.

@@ -19,7 +19,7 @@ You must update the license information for your StorageGRID system any time the
 
 .Steps
 
-. Select *MAINTENANCE* > *System* > *License*.
+. Select *Maintenance* > *System* > *License*.
 . In the Update license section, select *Browse*.
 . Locate and select the new license file (`.txt`).
 +
