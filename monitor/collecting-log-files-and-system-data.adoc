@@ -64,7 +64,7 @@ If you receive an error message about log size, try collecting logs for a shorte
 +
 The `.tar.gz` file contains all log files from all grid nodes where log collection was successful. The combined `.tar.gz` file contains one log file archive for each grid node.
 +
-The subject of the AutoSupport package is `USER_TRIGGERED_Support_BUNDLE`.
+The subject of the AutoSupport package is `USER_TRIGGERED_SUPPORT_BUNDLE`.
 
 . Select *Finish*.
 +

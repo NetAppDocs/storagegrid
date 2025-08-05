@@ -84,7 +84,7 @@ Bucket Tagging Configuration +
 Versioning Configuration
 | Provides configuration details and statistics at the bucket level. Example of bucket configurations include platform services, compliance, and bucket consistency.
 
-| GRID-ConfigurationS.XML
+| GRID-CONFIGURATIONS.XML
 | Attribute ID +
 Attribute Name +
 Value +

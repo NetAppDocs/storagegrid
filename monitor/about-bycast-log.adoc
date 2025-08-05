@@ -515,11 +515,11 @@ The following table lists the numerical error codes in `bycast.log`.
 |Protocol not available
 
 |093
-|EPROTONOSupport
+|EPROTONOSUPPORT
 |Protocol not supported
 
 |094
-|ESOCKTNOSupport
+|ESOCKTNOSUPPORT
 |Socket type not supported
 
 |095
@@ -527,11 +527,11 @@ The following table lists the numerical error codes in `bycast.log`.
 |Operation not supported on transport endpoint
 
 |096
-|EPFNOSupport
+|EPFNOSUPPORT
 |Protocol family not supported
 
 |097
-|EAFNOSupport
+|EAFNOSUPPORT
 |Address family not supported by protocol
 
 |098
