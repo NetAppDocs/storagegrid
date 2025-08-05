@@ -84,7 +84,3 @@ indexpage:
         url: https://netapp.com/blog/
       - title: NetApp community
         url: https://community.netapp.com/
-    - title: Legacy versions
-      links:
-      - title: StorageGRID 11.4 documentation
-        url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63374
