@@ -121,7 +121,7 @@ Sites +
 Nodes
 | Grid information.
 
-| ILM-Configuration.XML
+| ILM-CONFIGURATION.XML
 | Attribute ID +
 Attribute Name +
 Value +
@@ -220,7 +220,7 @@ Table ID +
 Table name
 | High-level system status data that summarizes StorageGRID usage information. Provides details such as name of grid, names of sites, number of Storage Nodes per grid and per site, license type, license capacity and usage, software support terms, and details of S3 operations.
 
-| SYSTEM-Alerts.XML
+| SYSTEM-ALERTS.XML
 | Name +
 Severity +
 Node name +
