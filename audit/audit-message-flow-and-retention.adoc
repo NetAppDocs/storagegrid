@@ -13,11 +13,7 @@ All StorageGRID services generate audit messages during normal system operation.
 
 == Audit message flow
 
-Audit messages are saved on the nodes that generated them (local node) by default. The audit information generated on every local node is stored in /var/local/log/localaudit.log.
-
-If you select "AdminNodes/local Nodes", audit message are stored on the Admin Node in /var/local/audit/export/audit.log.
-
-Audit messages are processed by those Storage Nodes and Admin Nodes that have an Administrative Domain Controller (ADC) service
+Audit messages are processed by Admin Nodes and by those Storage Nodes that have an Administrative Domain Controller (ADC) service.
 
 As shown in the audit message flow diagram, each StorageGRID node sends its audit messages to one of the ADC services at the data center site. The ADC service is automatically enabled for the first three Storage Nodes installed at each site.
 

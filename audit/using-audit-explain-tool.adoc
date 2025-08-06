@@ -44,7 +44,7 @@ The `audit-explain` tool can do the following:
 +
 `audit-explain audit.log 2019-08-12.txt.gz 2019-08-13.txt.gz`
 +
-`audit-explain /var/local/log/*`
+`audit-explain /var/local/audit/export/*`
 
 * Accept input from a pipe, which allows you to filter and preprocess the input using the `grep` command or other means. For example:
 +
