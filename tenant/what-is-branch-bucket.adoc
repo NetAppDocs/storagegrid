@@ -11,7 +11,7 @@ summary: 'A branch bucket provides access to objects in a bucket as they existed
 [.lead]
 A branch bucket provides access to objects in a bucket as they existed at a certain time.
 
-You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the _base bucket_. Additionally, you can create a branch bucket from another branch bucket. When you perform operations on the base bucket, the results on the branch bucket depend on the operation and the type of branch bucket you've created.
+You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the _base bucket_. Additionally, you can create a branch bucket from another branch bucket.
 
 A branch bucket provides access to protected data, but doesn't serve as a backup. To continue to protect data, use these features on base buckets:
 

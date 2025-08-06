@@ -18,9 +18,9 @@ To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid M
 == New endpoints for branch buckets
 The following endpoints have been added to allow you to link:../tenant/what-is-branch-bucket.html[manage branch buckets]:
 
-`/containers/put_org_containers/branchBucketName`
+`GET /org/containers/{branchBucketName}/branch`
 
-`/containers/get_org_containers/branchBucketName`
+`PUT /org/containers/{branchBucketName}/branch`
 
 == New private endpoints for Move ADC
 The following private endpoints have been added to allow you to link:../maintain/move-adc-service.html[move the ADC service] from one Storage Node to another on the same site:
