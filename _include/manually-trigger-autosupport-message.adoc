@@ -4,7 +4,7 @@
 * You have the Root access or Other grid configuration permission.
 
 .Steps
-. Select *SUPPORT* > *Tools* > *AutoSupport*.
+. Select *Support* > *Tools* > *AutoSupport*.
 
 . On the *Actions* tab, select *Send User-Triggered AutoSupport*.
 +

@@ -37,7 +37,7 @@ Performing the expansion includes these main user tasks:
 CAUTION: Some expansion steps and stages might take a significant amount of time to run on a large grid. For example, streaming Cassandra to a new Storage Node might take only a few minutes if the Cassandra database is empty. However, if the Cassandra database includes a large amount of object metadata, this stage might take several hours or longer. Don't reboot any Storage Nodes during the either the "Expanding the Cassandra cluster" or "Starting Cassandra and streaming data" stages.
 
 .Steps
-. Select *MAINTENANCE* > *Tasks* > *Expansion*.
+. Select *Maintenance* > *Tasks* > *Expansion*.
 +
 The Grid Expansion page appears. The Pending Nodes section lists the nodes that are ready to be added.
 +

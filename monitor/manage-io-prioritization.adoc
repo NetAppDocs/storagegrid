@@ -11,7 +11,7 @@ summary: 'Input/output (I/O) prioritization allows you to change the relative pr
 [.lead]
 Input/output (I/O) prioritization allows you to change the relative priorities for I/O operations on the grid. 
 
-By default, client PUT and GET I/O traffic is given the highest priority over background activities such as purging erasure-coded (EC) data or EC repair. By increasing the priority of purging erasure-coded (EC) data or EC repair activities, these tasks can possibly complete faster. The effectiveness of I/O prioritization changes is impacted by the rate of client requests, network traffic fluctuations, and other ongoing network tasks. 
+By default, client PUT and GET I/O traffic is given the highest priority over background activities such as purging erasure-coded (EC) data and EC repair. By increasing the priority of purging erasure-coded (EC) data and EC repair activities, these tasks can possibly complete faster. The effectiveness of I/O prioritization changes is impacted by the rate of client requests, network traffic fluctuations, and other ongoing network tasks. 
 
 .Before you begin
 
@@ -21,10 +21,10 @@ By default, client PUT and GET I/O traffic is given the highest priority over ba
 
 .Steps
 
-. Select *SUPPORT* > *I/O prioritization*.
-. (Optional) Change the EC repair priority and the EC purge priority, for background operations that purge EC data, from their default values.
+. Select *Support* > *I/O prioritization*.
+. (Optional) Change the EC purge and repair priority, for background operations that purge EC data, from their default values.
 +
-NOTE: Use the default Background EC repair priority for grids that have RAID-based nodes.
+NOTE: Use the default low EC purge and repair priority for grids that have RAID-based nodes.
 
 . Select *Save*.
 . Monitor the link:../monitor/commonly-used-prometheus-metrics.html#where-are-prometheus-metrics-used[metrics] to assess the effect of prioritization changes.

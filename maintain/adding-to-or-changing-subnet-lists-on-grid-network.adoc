@@ -19,6 +19,25 @@ You can add, delete, or change subnets in the Grid Network Subnet List. Changes 
 
 NOTE: If you are making changes to the Grid Network Subnet List only, use the Grid Manager to add or change the network configuration. Otherwise, use the Change IP tool if the Grid Manager is inaccessible due to a network configuration issue, or you are performing both a Grid Network routing change and other network changes at the same time.
 
+[NOTE]
+====
+Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
+
+* 192.168.130.101
+* 192.168.131.101
+* 192.168.130.102
+* 192.168.131.102
+* 198.51.100.2
+* 198.51.100.4
+
+For example, do not use the following subnet ranges for the Grid Network, Admin Network, or Client Network of any node:
+
+* 192.168.130.0/24 because this subnet range contains the IP addresses 192.168.130.101 and 192.168.130.102 
+* 192.168.131.0/24 because this subnet range contains the IP addresses 192.168.131.101 and 192.168.131.102
+* 198.51.100.0/24 because this subnet range contains the IP addresses 198.51.100.2 and 198.51.100.4
+====
+
+
 .Steps
 
 . External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
@@ -115,7 +134,7 @@ The failed operation can be retried later by selecting option *10* (Apply Change
 
  ** If you had to manually intervene (to reboot a node, for example) and are confident that the action the tool thinks has failed was actually completed successfully, enter *f* to mark it as successful and move to the next operation.
 . Download a new recovery package from the Grid Manager.
- .. Select *MAINTENANCE* > *System* > *Recovery package*.
+ .. Select *Maintenance* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
 +

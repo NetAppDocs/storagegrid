@@ -18,7 +18,7 @@ Primary admin node recovery is complete.
 .Steps
  
  . Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
- . Select *NODES*.
+ . Select *Nodes*.
  . From the list on the left, select the primary Admin Node.
  . On the Overview tab, note the version displayed in the *Software Version* field.
  . Select any other grid node.

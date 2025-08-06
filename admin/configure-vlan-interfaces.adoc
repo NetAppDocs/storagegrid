@@ -52,7 +52,7 @@ You can use the Grid Manager to create VLAN interfaces that allow clients to acc
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *VLAN interfaces*.
+. Select *Configuration* > *Network* > *VLAN interfaces*.
 
 . Select *Create*.
 
@@ -96,7 +96,7 @@ image::../media/vlan-create-parent-interfaces.png[VLAN create wizard parent inte
 
 . Select *Save*.
 
-. Wait up to 5 minutes for the new interface to appear as a selection on the High availability groups page and to be listed in the *Network interfaces* table for the node (*NODES* > *_parent interface node_* > *Network*). 
+. Wait up to 5 minutes for the new interface to appear as a selection on the High availability groups page and to be listed in the *Network interfaces* table for the node (*Nodes* > *_parent interface node_* > *Network*). 
 
 == Edit a VLAN interface
 
@@ -116,7 +116,7 @@ For example, suppose VLAN 200 is attached to parent interfaces on Nodes A and B.
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *VLAN interfaces*.
+. Select *Configuration* > *Network* > *VLAN interfaces*.
 
 . Select the checkbox for the VLAN interface you want to edit. Then, select *Actions* > *Edit*.
 
@@ -144,7 +144,7 @@ To avoid any disruptions in client traffic, consider doing one of the following:
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *VLAN interfaces*.
+. Select *Configuration* > *Network* > *VLAN interfaces*.
 
 . Select the checkbox for each VLAN interface you want to remove. Then, select *Actions* > *Delete*.
 

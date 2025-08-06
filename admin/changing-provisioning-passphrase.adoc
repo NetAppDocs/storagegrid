@@ -22,7 +22,7 @@ Use this procedure to change the StorageGRID provisioning passphrase. The passph
 The provisioning passphrase is required for many installation and maintenance procedures, and for link:../maintain/downloading-recovery-package.html[downloading the recovery package]. The provisioning passphrase is not listed in the `Passwords.txt` file. Make sure to document the provisioning passphrase and keep it in a safe and secure location.
 
 .Steps
-. Select *CONFIGURATION* > *Access control*> *Grid passwords*.
+. Select *Configuration* > *Access control*> *Grid passwords*.
 
 . Under *Change provisioning passphrase*, select *Make a change*
 . Enter your current provisioning passphrase.

@@ -57,7 +57,7 @@ You can update the link costs between data center sites to reflect latency betwe
 
 .Steps
 
-. Select *SUPPORT* > *Other* > *Link cost*.
+. Select *Support* > *Other* > *Link cost*.
 +
 image::../media/configuring_link_costs.png[Link Cost]
 

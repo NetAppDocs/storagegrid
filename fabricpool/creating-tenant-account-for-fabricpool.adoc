@@ -21,7 +21,7 @@ For details about this task, see link:../admin/creating-tenant-account.html[Crea
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 .Steps
-. Select *TENANTS*.
+. Select *Tenants*.
 
 . Select *Create*.
 

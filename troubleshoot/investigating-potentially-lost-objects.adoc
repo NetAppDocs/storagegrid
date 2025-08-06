@@ -21,8 +21,10 @@ The *Objects potentially lost* alert indicates that, according to the available 
 
 Investigate lost object alerts immediately. You might need to take action to prevent further data loss. In some cases, you might be able to restore a lost object if you take prompt action.
 
+CAUTION: If more than 10 objects are reported lost, contact technical support. Don't follow this procedure yourself.
+
 .Steps
-. Select *NODES*.
+. Select *Nodes*.
 . Select *_Storage Node_* > *Objects*.
 . Review the number of Lost objects shown in the Object counts table.
 +
@@ -79,10 +81,11 @@ Technical support might ask you to determine if there is a storage recovery proc
 |===
 
 . [[reset-lost-obj-count]]After you address lost object issues, reset the Objects potentially lost counter to ensure alerts aren't false positives:
-.. Select *NODES*.
+.. Select *Nodes*.
 .. Select *_Storage Node_* > *Tasks*.
 .. In the Reset Objects potentially lost counter section, select *Reset*.
 
+// 2025 JULY 9, SGRIDDOC-164
 // 2025 MAR 10, SGRIDDOC-110
 // 2024 OCT 8: SGRIDDOC-104
 // 2024 SEP 11: SGRIDDOC-96

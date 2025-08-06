@@ -27,7 +27,7 @@ Admin groups allow you to determine which users can access which features and op
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Admin groups*.
+. Select *Configuration* > *Access control* > *Admin groups*.
 
 . Select *Create group*.
 

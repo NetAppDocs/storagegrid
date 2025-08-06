@@ -54,7 +54,7 @@ You create and run one object existence check job at a time. When you create a j
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
-* You have ensured that the Storage Nodes you want to check are online. Select *NODES* to view the table of nodes. Ensure that no alert icons appear next to the node name for the nodes you want to check.
+* You have ensured that the Storage Nodes you want to check are online. Select *Nodes* to view the table of nodes. Ensure that no alert icons appear next to the node name for the nodes you want to check.
 * You have ensured that the following procedures are *not* running on the nodes you want to check:
 ** Grid expansion to add a Storage Node
 ** Storage Node decommission
@@ -71,7 +71,7 @@ An object existence check job can take days or weeks to complete, depending on t
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Object existence check*.
+. Select *Maintenance* > *Tasks* > *Object existence check*.
 
 . Select *Create job*. The Create an object existence check job wizard appears.
 .	Select the nodes containing the volumes you want to verify. To select all online nodes, select the *Node name* checkbox in the column header.
@@ -127,7 +127,7 @@ This procedure is similar to the one for link:../troubleshoot/investigating-pote
 +
 When StorageGRID has had time to achieve metadata consistency for the nodes and volumes included in the job, rerunning the job could clear erroneously reported missing object copies or cause additional object copies to be checked if they were missed.
 +
-.. Select *MAINTENANCE* > *Object existence check* > *Job history*.
+.. Select *Maintenance* > *Object existence check* > *Job history*.
 .. Determine which jobs are ready to be rerun:
 ... Look at the *End time* column to determine which jobs were run more than three weeks ago.
 ... For those jobs, scan the Consistency control column for strong-site or strong-global.

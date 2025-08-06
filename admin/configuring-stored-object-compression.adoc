@@ -33,6 +33,6 @@ NOTE: If you need to compress objects and your client application must use range
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Storage settings* > *Object compression*.
+. Select *Configuration* > *System* > *Storage settings* > *Object compression*.
 . Select the *Compress stored objects* checkbox.
 . Select *Save*.

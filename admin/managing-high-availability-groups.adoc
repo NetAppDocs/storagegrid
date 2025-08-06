@@ -44,7 +44,7 @@ Similarly, during normal operation, any lower priority interfaces for the HA gro
 
 == View the current HA group status of a node
 
-To see if a node is assigned to an HA group and determine its current status, select *NODES* > *_node_*. 
+To see if a node is assigned to an HA group and determine its current status, select *Nodes* > *_node_*. 
 
 If the *Overview* tab includes an entry for *HA groups*, the node is assigned to the HA groups listed. The value after the group name is the current status of the node in the HA group:
 

@@ -16,13 +16,13 @@ Using identity federation makes setting up groups and users faster, and it allow
 You can configure identity federation in the Grid Manager if you want admin groups and users to be managed in another system such as Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server.
 
 .Before you begin
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have link:admin-group-permissions.html[specific access permissions].
-* You are using Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server as the identity provider.
+* You're signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+* You've link:admin-group-permissions.html[specific access permissions].
+* You're using Active Directory, Microsoft Entra ID, OpenLDAP, or Oracle Directory Server as the identity provider.
 +
-NOTE: If you want to use an LDAP v3 service that is not listed, contact technical support.
+NOTE: If you want to use an LDAP v3 service that isn't listed, contact technical support.
 * If you plan to use OpenLDAP, you must configure the OpenLDAP server. See <<Guidelines for configuring an OpenLDAP server>>.
-* If you plan to enable single sign-on (SSO), you have reviewed the link:requirements-for-sso.html[requirements and considerations for single sign-on].
+* If you plan to enable single sign-on (SSO), you've reviewed the link:requirements-for-sso.html[requirements and considerations for single sign-on].
 * If you plan to use Transport Layer Security (TLS) for communications with the LDAP server, the identity provider is using TLS 1.2 or 1.3. See link:supported-ciphers-for-outgoing-tls-connections.html[Supported ciphers for outgoing TLS connections].
 
 .About this task
@@ -35,7 +35,7 @@ You can configure an identity source for the Grid Manager if you want to import 
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Identity federation*.
+. Select *Configuration* > *Access control* > *Identity federation*.
 include::../_include/identity_federation_configure_steps.adoc[]
 
 == Force synchronization with the identity source

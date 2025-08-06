@@ -24,7 +24,7 @@ NOTE: Some StorageGRID services have not been updated to use the ciphers in thes
 == Select a security policy
 
 .Steps
-. Select *CONFIGURATION* > *Security* > *Security settings*.
+. Select *Configuration* > *Security* > *Security settings*.
 + 
 The *TLS and SSH policies* tab shows the available policies. The currently active policy is noted by a green check mark on the policy tile.
 +

@@ -27,15 +27,15 @@ Use the ILM tab on the Grid Manager dashboard to monitor ILM operations:
 +
 Temporary spikes in the ILM queue (Objects) card on the dashboard are to be expected. But if the queue continues to increase and never declines, the grid needs more resources to operate efficiently: either more Storage Nodes, or, if the ILM policy places objects in remote locations, more network bandwidth.
 
-== Use the NODES page
+== Use the Nodes page
 
 .Steps
 
-Additionally, investigate ILM queues using the *NODES* page:
+Additionally, investigate ILM queues using the *Nodes* page:
 
-NOTE: The charts on the *NODES* page will be replaced with the corresponding dashboard cards in a future StorageGRID release.
+NOTE: The charts on the *Nodes* page will be replaced with the corresponding dashboard cards in a future StorageGRID release.
 
-. Select *NODES*.
+. Select *Nodes*.
 . Select *_grid name_* > *ILM*.
 . Position your cursor over the ILM queue graph to see the value of following attributes at a given point in time:
  ** *Objects queued (from client operations)*: The total number of objects awaiting ILM evaluation because of client operations (for example, ingest).

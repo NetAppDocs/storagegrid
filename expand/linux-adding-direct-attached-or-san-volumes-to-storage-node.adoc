@@ -2,14 +2,14 @@
 permalink: expand/linux-adding-direct-attached-or-san-volumes-to-storage-node.html
 sidebar: sidebar
 keywords: expansion, Linux, add storage volumes
-summary: 'If a Storage Node includes fewer than 16 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.'
+summary: 'If a Storage Node includes fewer than 48 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.'
 ---
 = Linux: Add direct-attached or SAN volumes to Storage Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If a Storage Node includes fewer than 16 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.
+If a Storage Node includes fewer than 48 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.
 
 .Before you begin
 
@@ -147,7 +147,7 @@ This script finds any new storage volumes and prompts you to format them.
 The `setup_rangedbs.sh` script runs automatically.
 . Verify that the Storage Node's storage state is online:
 .. Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-.. Select *NODES* > *_Storage Node_* > *Tasks*.
+.. Select *Nodes* > *_Storage Node_* > *Tasks*.
 .. If the *Storage state* drop-down list is set to Read-only or Offline, select *Online*.
 .. Select *Save*.
 . To see the new object stores, select *Storage*.

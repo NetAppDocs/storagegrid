@@ -16,7 +16,7 @@ You can remove a custom alert rule if you no longer want to use it.
 * You have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission].
 
 .Steps
-. Select *ALERTS* > *Rules*.
+. Select *Alerts* > *Rules*.
 +
 The Alert Rules page appears.
 

@@ -22,7 +22,7 @@ You can view the list of all default and custom alert rules to learn which condi
 video::2eea81c5-8323-417f-b0a0-b1ff008506c1[panopto, title="Alerts overview"]
 
 .Steps
-. Select *ALERTS* > *Rules*.
+. Select *Alerts* > *Rules*.
 +
 The Alert Rules page appears.
 +
