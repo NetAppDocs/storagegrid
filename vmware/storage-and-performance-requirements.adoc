@@ -48,7 +48,7 @@ NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the 
 
 3 LUNs for each Storage Node on this host
 
-*Note*: A Storage Node can have 1 to 48 storage LUNs; at least 3 storage LUNs are recommended.
+*Note*: A Storage Node can have 1 to 16 storage LUNs; at least 3 storage LUNs are recommended.
 
 Minimum size per LUN: 4 TB
 
@@ -61,7 +61,7 @@ Maximum tested LUN size: 39 TB.
 
 Minimum size per LUN: 4 TB
 
-*Note*: There is no maximum size for the single LUN. Excess capacity is saved for future use. 
+Maximum tested LUN size: 39 TB. 
 
 *Note*: Only one rangedb is required for metadata-only Storage Nodes.
 
@@ -73,7 +73,7 @@ NOTE: Depending on the audit level configured, the size of user inputs such as S
 
 == Storage requirements for Storage Nodes
 
-A software-based Storage Node can have 1 to 48 storage volumes; 3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
+A software-based Storage Node can have 1 to 16 storage volumes; 3 or more storage volumes are recommended. Each storage volume should be 4 TB or larger.
 
 NOTE: An appliance Storage Node can also have up to 48 storage volumes.
 
