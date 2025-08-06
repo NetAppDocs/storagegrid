@@ -35,7 +35,11 @@ At installation, each storage device is assigned a file system universal unique 
 
 . Complete the following steps to record the failed storage volumes and their device names:
 .. Select *NODES* > *_site_* > *_failed Storage Node_* > *Storage*.
-.. Scroll down to the Volumes table and record the Mount point, Device, Size, and `object_store_ID` for each volume with a status of Unknown or Offline.
+.. Scroll down to locate the Volumes table and Object stores table and record the following information for each volume with a status of Unknown or Offline.
++
+From the Volumes table, record the Mount point, Device, and Size.
++ 
+From the Object stores table, record the `object_store_ID`.
 +
 The `object_store_ID` is the ID of the failed storage volume. For example, specify `0` in the command for an object store with ID 0000.
 . Log in to the failed Storage Node:
