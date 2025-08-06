@@ -114,9 +114,9 @@ Use the `help (-h)` option to see the available options. For example:
 When you are logged in as root, the prompt changes from `$` to `#`.
 
 . If you want to analyze all messages related to write, read, head, and delete operations, follow these steps:
-.. Enter the following command, where `/var/local/log/audit.log` represents the name and the location of the file or files you want to analyze:
+.. Enter the following command, where `/var/local/audit/export/audit.log` represents the name and the location of the file or files you want to analyze:
 +
-`$ audit-sum /var/local/log/audit.log`
+`$ audit-sum /var/local/audit/export/audit.log`
 +
 This example shows typical output from the `audit-sum` tool. This example shows how long protocol operations took.
 +
@@ -263,3 +263,4 @@ The results show that SPUT operations for buckets have different performance cha
   SPUT.ldt002                  1564563        0.000         999.972           0.352
 ----
 
+// 2025 AUG 6, SGRIDDOC-172
