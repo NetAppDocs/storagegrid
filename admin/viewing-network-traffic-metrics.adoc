@@ -24,7 +24,7 @@ Even if no limits are set for a traffic classification policy, metrics are colle
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *Traffic classification*.
+. Select *Configuration* > *Network* > *Traffic classification*.
 +
 
 The Traffic classification policies page appears, and the existing policies are listed in the table.
@@ -60,8 +60,8 @@ NOTE: When requests are complete, this chart only shows bandwidth usage. For slo
 * Write request rate by object size: The rate for PUT/POST/DELETE requests matching this policy. Positioning on an individual cell shows per second rates. Rates shown in the hover view are truncated to integer counts and might report 0 when there are non-zero requests in the bucket.
 * Read request rate by object size: The rate for GET/HEAD requests matching this policy. Positioning on an individual cell shows per second rates. Rates shown in the hover view are truncated to integer counts and might report 0 when there are non-zero requests in the bucket. 
 
-. Alternatively, access the graphs from the *SUPPORT* menu.
- .. Select *SUPPORT* > *Tools* > *Metrics*.
+. Alternatively, access the graphs from the *Support* menu.
+ .. Select *Support* > *Tools* > *Metrics*.
  .. Select *Traffic Classification Policy* from the *Grafana* section.
  .. Select the policy from the menu on the upper left of the page.
  .. Position the cursor over a graph to see a pop-up that shows the date and time of the sample, object sizes that are aggregated into the count, and the number of requests per second during that time period.

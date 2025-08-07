@@ -69,13 +69,13 @@ The sign-in screen that appears depends on whether single sign-on (SSO) has been
 * If StorageGRID is using SSO and this is the first time you have accessed the URL on this browser:
 
 .. Select *Sign in*. You can leave the 0 in the Account field.
-.. Enter your standard SSO credentials on your organization's SSO sign-in page. For example:
+.. Enter your standard SSO credentials on your organization's SSO sign-in page. 
++
+For example, if StorageGRID is using SSO and you have previously accessed the Grid Manager or a tenant account:
 
-* If StorageGRID is using SSO and you have previously accessed the Grid Manager or a tenant account:
-
-.. Enter *0* (the account ID for the Grid Manager) or select *Grid Manager* if it appears in the list of recent accounts.
-.. Select *Sign in*.
-.. Sign in with your standard SSO credentials on your organization's SSO sign-in page.
+... Enter *0* (the account ID for the Grid Manager) or select *Grid Manager* if it appears in the list of recent accounts.
+... Select *Sign in*.
+... Sign in with your standard SSO credentials on your organization's SSO sign-in page.
 --
 ====
 

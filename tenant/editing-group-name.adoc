@@ -17,7 +17,7 @@ You can edit the display name for a group. You can't edit the unique name for a 
 * You belong to a user group that has the Root access permission. See link:tenant-management-permissions.html[Tenant management permissions].
 
 .Steps
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 . Select the checkbox for the group whose display name you want to edit.
 . Select *Actions* > *Edit group name*.
 +

@@ -71,7 +71,7 @@ sudo dpkg --install /tmp/storagegrid-webscale-images-version-SHA.deb
 sudo dpkg --install /tmp/storagegrid-webscale-service-version-SHA.deb
 ----
 +
-NOTE: Python 2.7 must already be installed before the StorageGRID packages can be installed. The `sudo dpkg --install /tmp/storagegrid-webscale-images-version-SHA.deb` command will fail until you have done so.
+NOTE: Python 3 must already be installed before the StorageGRID packages can be installed. The `sudo dpkg --install /tmp/storagegrid-webscale-images-version-SHA.deb` command will fail until you have done so.
 
 --
 ====

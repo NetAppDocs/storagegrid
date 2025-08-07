@@ -50,7 +50,7 @@ Sandbox mode makes it easy to perform this back-and-forth configuration and to t
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Single sign-on*. The Single sign-on page appears.
+. Select *Configuration* > *Access control* > *Single sign-on*. The Single sign-on page appears.
 +
 NOTE: If the Configure SSO settings button is disabled, confirm you have configured the identity provider as the federated identity source. Refer to link:requirements-for-sso.html[Requirements and considerations for single sign-on].
 
@@ -176,7 +176,7 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.htm
 
 . Then, for any other Admin Nodes in your grid, repeat these steps:
 .. Sign in to the node.
-.. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
+.. Select *Configuration* > *Access control* > *Single sign-on*.
 .. Download and save the SAML metadata for that node.
 
 . Go to the Azure portal.
@@ -192,7 +192,7 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.htm
 
 . Then, for any other Admin Nodes in your grid, repeat these steps:
 .. Sign in to the node.
-.. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
+.. Select *Configuration* > *Access control* > *Single sign-on*.
 .. Download and save the SAML metadata for that node.
 
 . Go to PingFederate.

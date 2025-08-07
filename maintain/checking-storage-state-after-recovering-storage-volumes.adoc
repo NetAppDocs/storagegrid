@@ -18,6 +18,6 @@ After recovering storage volumes, you must verify that the desired state of the 
 
 .Steps
 
-. Select *NODES* > *_Storage Node_* > *Tasks*.
+. Select *Nodes* > *_Storage Node_* > *Tasks*.
 . If the *Storage state* drop-down list is set to Read-only or Offline, select *Online*.
 . Select *Save*.

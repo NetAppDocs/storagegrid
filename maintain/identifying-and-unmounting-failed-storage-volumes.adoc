@@ -34,7 +34,7 @@ At installation, each storage device is assigned a file system universal unique 
 .Steps
 
 . Complete the following steps to record the failed storage volumes and their device names:
- .. Select *NODES* > *_site_* > *_failed Storage Node_* > *Storage*.
+ .. Select *Nodes* > *_site_* > *_failed Storage Node_* > *Storage*.
  .. Scroll down to the Volumes table and record the Mount point, Device, and Size for each volume with a status of Unknown or Offline.
 . Log in to the failed Storage Node:
 .. Enter the following command: `ssh admin@_grid_node_IP_`

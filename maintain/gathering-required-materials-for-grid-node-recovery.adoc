@@ -32,7 +32,7 @@ Before performing maintenance procedures, you must ensure you have the necessary
 
 The contents of the `.zip` file are updated each time the system is modified. You are directed to store the most recent version of the recovery package in a secure location after making such changes. Use the most recent copy to recover from grid failures.
 
-When logged in to any Admin Node, use the Grid Manager to download a recovery package. Select *MAINTENANCE* > *System* > *Recovery package*.
+When logged in to any Admin Node, use the Grid Manager to download a recovery package. Select *Maintenance* > *System* > *Recovery package*.
 
 If you can't access the Grid Manager, you can find encrypted copies of the recovery package on some Storage Nodes that contain the ADC service. On each Storage Node, examine this location for the recovery package: `/var/local/install/sgws-recovery-package-_grid-id_-_revision_.zip.gpg` Use the recovery package with the highest revision number.
 

@@ -20,7 +20,7 @@ CAUTION: Use caution when you decommission Storage Nodes in a grid containing so
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Decommission*.
+. Select *Maintenance* > *Tasks* > *Decommission*.
 . Select *Decommission Nodes*.
 +
 The Decommission Nodes page appears. From this page, you can:
