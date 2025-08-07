@@ -13,7 +13,7 @@ If your tenant account was assigned the *Use grid federation connection* permiss
 
 == Workflow for cross-grid replication
 
-The workflow diagram summarizes the steps you perform to configure cross-grid replication between buckets on two grids. These steps are described in more detail below.
+The workflow diagram summarizes the steps you perform to configure cross-grid replication between buckets on two grids. These steps are described in more detail below the diagram.
 
 image::../media/grid-federation-cgr-workflow.png[Cross-grid replication workflow]
 
