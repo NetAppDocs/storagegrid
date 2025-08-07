@@ -11,6 +11,8 @@ summary: 'The audit share contains the active audit.log file and any compressed 
 [.lead]
 The audit share contains the active `audit.log` file and any compressed audit log files. You can access audit log files directly from the command line of the Admin Node.
 
+The `audit.log` file remains empty unless StorageGRID is configured for "Admin Nodes/local nodes" or "Admin Node and external syslog server". For more information, refer to link:../monitor/configure-audit-messages.html#select-audit-information-destinations[Select audit information destinations].
+
 .Before you begin
 
 * You have link:../admin/admin-group-permissions.html[specific access permissions].

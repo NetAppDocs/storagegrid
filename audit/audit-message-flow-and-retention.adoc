@@ -13,7 +13,7 @@ All StorageGRID services generate audit messages during normal system operation.
 
 == Audit message flow
 
-Audit messages are processed by Admin Nodes and by those Storage Nodes that have an Administrative Domain Controller (ADC) service.
+Audit messages are processed by Admin Nodes when StorageGRID is configured for "Admin Nodes/local nodes" or "Admin Node and external syslog server" and by those Storage Nodes that have an Administrative Domain Controller (ADC) service.
 
 As shown in the audit message flow diagram, each StorageGRID node sends its audit messages to one of the ADC services at the data center site. The ADC service is automatically enabled for the first three Storage Nodes installed at each site.
 
