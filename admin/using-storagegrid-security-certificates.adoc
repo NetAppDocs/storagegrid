@@ -168,7 +168,7 @@ You can:
 
 * link:../ilm/creating-cloud-storage-pool.html[Specify a Cloud Storage Pool certificate for S3, C2S S3, or Azure]
 * link:../monitor/email-alert-notifications.html[Specify a certificate for alert email notifications]
-* link:../monitor/configure-audit-messages.html#use-external-syslog-server[Use a certificate for an external syslog server]
+* link:../monitor/configure-log-management.html#use-external-syslog-server[Use a certificate for an external syslog server]
 * link:grid-federation-manage-connection.html#rotate-connection-certificates[Rotate grid federation connection certificates]
 * link:using-identity-federation.html[View and edit an identity federation certificate]
 * link:kms-adding.html[Upload key management server (KMS) server and client certificates]

@@ -74,6 +74,6 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 == User interface
 * Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
 
-* link:../monitor/configure-audit-messages.html[The audit and syslog server page] has been refactored, with additions for storing logs in a system bucket for backup purposes.
+* The Audit and syslog server page, renamed link:../monitor/configure-log-management.html[Log management], has been refactored, with additions for storing logs in a system bucket for backup purposes.
 
 * The legacy Grid Topology page was removed. Over the past several StorageGRID releases, the operations and metrics available from that page were migrated to other pages in the Grid Manager, particularly to the link:../monitor/viewing-nodes-page.html[Nodes page].
