@@ -57,7 +57,7 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 * The ability for any Admin Node to link:../maintain/selecting-node-recovery-procedure.html[recover any other node] (except the primary Admin Node) enhances system recovery and fault tolerance, improving overall reliability.
 
-* Users can now use an S3 bucket to link:../monitor/configure-audit-messages.html#use-a-bucket[store audit logs for a long period of time].
+* Users can now use an S3 bucket to link:../monitor/configure-log-management.html#use-a-bucket[store audit logs for a long period of time].
 
 == Security 
 * Stronger data encryption and integrity protection provide improved security and performance. 

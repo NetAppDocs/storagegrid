@@ -313,7 +313,7 @@ a|
 *Note:* An external syslog server certificate is not required for TCP, RELP/TCP, and UDP connections to an external syslog server.
 
 | *Configuration* > *Monitoring* > *Audit and syslog server*
-| link:../monitor/configure-audit-messages.html#use-external-syslog-server[Use an external syslog server]
+| link:../monitor/configure-log-management.html#use-external-syslog-server[Use an external syslog server]
 
 
 |===

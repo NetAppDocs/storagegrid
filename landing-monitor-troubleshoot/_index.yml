@@ -26,8 +26,8 @@ indexpage:
       url: ../monitor/using-snmp-monitoring.html
   - title: Use audit messages and other logs
     links:
-    - title: Configure audit messages
-      url: ../monitor/configure-audit-messages.html
+    - title: Configure log management
+      url: ../monitor/configure-log-management.html
     - title: Use external syslog server
       url: ../monitor/considerations-for-external-syslog-server.html
     - title: Review audit logs

@@ -117,7 +117,7 @@ System tasks include:
 
 Monitoring tasks include:
 
-* link:../monitor/configure-audit-messages.html[Configure audit messages and log destinations]
+* link:../monitor/configure-log-management.html[Configure log management]
 * link:../monitor/using-snmp-monitoring.html[Use SNMP monitoring]
 
 === Access control tasks
