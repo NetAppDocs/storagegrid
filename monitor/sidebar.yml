@@ -95,7 +95,7 @@ entries:
     - title: Considerations for external syslog server
       url: "/monitor/considerations-for-external-syslog-server.html"  
     - title: Configure log management
-      url: "/monitor/configure-audit-messages.html" 
+      url: "/monitor/configure-log-management.html" 
   - title: Use SNMP monitoring
     entries:
     - title: SNMP monitoring

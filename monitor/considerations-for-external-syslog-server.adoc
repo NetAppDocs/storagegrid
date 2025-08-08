@@ -31,7 +31,7 @@ NOTE: To maximize the options for full data recovery in the event of a failure o
 
 == How to configure an external syslog server
 
-To learn how to configure an external syslog server, see link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
+To learn how to configure an external syslog server, see link:../monitor/configure-log-management[Configure log management and external syslog server].
 
 If you plan to configure use the TLS or RELP/TLS protocol, you must have the following certificates:
 
