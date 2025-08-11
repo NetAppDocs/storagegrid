@@ -22,7 +22,8 @@ A branch bucket provides access to protected data, but doesn't serve as a backup
 Note the following characteristics of branch buckets:
 
 * You can access the objects in branch buckets by using link:../tenant/use-s3-console.html[S3 Console to download objects].
-* The base bucket's link:../s3/bucket-and-group-access-policies.html[access policies] and link:../ilm/access-create-ilm-rule-wizard.html[ILM rules] apply to objects originally ingested into the base bucket. The base bucket's access policies and ILM rules won't apply to objects specifically ingested into the branch bucket.
+* When clients access objects in a branch bucket, the branch bucket's link:../s3/bucket-and-group-access-policies.html[access policies], rather than the policies of the base bucket, determine whether access is granted or denied.
+* Objects created in a base bucket are evaluated based on how link:../ilm/access-create-ilm-rule-wizard.html[ILM rules] apply to the base bucket. Objects created in a branch bucket are evaluated based on how ILM rules apply to the branch bucket.
 * Cross-grid replication isn't supported for branch buckets.
 * Platform services aren't supported for branch buckets.
 
