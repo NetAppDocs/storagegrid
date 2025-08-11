@@ -21,7 +21,7 @@ When you edit a default alert rule, you can change the conditions for minor, maj
 CAUTION: Be careful when deciding to edit an alert rule. If you change trigger values, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 .Steps
-. Select *ALERTS* > *Rules*.
+. Select *Alerts* > *Rules*.
 +
 The Alert Rules page appears.
 

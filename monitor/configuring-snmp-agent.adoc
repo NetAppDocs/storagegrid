@@ -25,7 +25,7 @@ All nodes in the grid use the same SNMP configuration.
 As a first step, enable the StorageGRID SMNP agent and provide basic information.
 
 .Steps
-. Select *CONFIGURATION* > *Monitoring* > *SNMP agent*.
+. Select *Configuration* > *Monitoring* > *SNMP agent*.
 +
 The SNMP agent page appears.
 
@@ -250,6 +250,8 @@ The agent address is created and added to the table.
 == [[create-usm-users]]Create USM users
 
 If you are using SNMPv3, use the USM users tab in the Other configurations section to define the USM users who are authorized to query the MIB or to receive traps and informs.
+
+NOTE: For SNMPv3 _trap_ destinations, it is recommended that you create a USM user for each Admin Node. If each Admin Node does not have a USM user, your management system might stop receiving notifications if the primary Admin Node goes down.
 
 NOTE: SNMPv3 _inform_ destinations must have users with engine IDs. SNMPv3 _trap_ destination can't have users with engine IDs.
 

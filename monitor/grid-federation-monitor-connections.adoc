@@ -22,7 +22,7 @@ The Grid federation page shows basic information about all grid federation conne
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 +
 The Grid federation page appears. 
 
@@ -88,7 +88,7 @@ You can use the Cross-Grid Replication dashboard in Grafana to view Prometheus m
 
 .Steps
 
-. From the Grid Manager, select *SUPPORT* > *Tools* > *Metrics*.
+. From the Grid Manager, select *Support* > *Tools* > *Metrics*.
 +
 NOTE: The tools available on the Metrics page are intended for use by technical support. Some features and menu items within these tools are intentionally non-functional and are subject to change. See the list of link:../monitor/commonly-used-prometheus-metrics.html[commonly used Prometheus metrics].
 

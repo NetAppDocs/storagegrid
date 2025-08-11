@@ -73,7 +73,7 @@ After the SSO configuration is saved, you can download a SAML metadata file for 
 . Repeat these steps for each Admin Node.
  
 .. Sign in to StorageGRID from the Admin Node.
-.. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
+.. Select *Configuration* > *Access control* > *Single sign-on*.
 .. Select the button to download the SAML metadata for that Admin Node. 
 .. Save the file, which you will upload into Entra ID.
 

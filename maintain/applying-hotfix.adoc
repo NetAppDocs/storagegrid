@@ -24,7 +24,7 @@ The hotfix is first applied automatically to the primary Admin Node. Then, you m
 .Steps
 
 . Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-. Select *MAINTENANCE* > *System* > *Software update*.
+. Select *Maintenance* > *System* > *Software update*.
 +
 The Software Update page appears.
 +

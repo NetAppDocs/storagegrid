@@ -47,7 +47,7 @@ You can see details for a tenant that is permitted to use a grid federation conn
 
 .Steps
 
-. Select *TENANTS*.
+. Select *Tenants*.
 
 . From the Tenants page, select the tenant name to view the tenant details page.
 + 
@@ -110,7 +110,7 @@ As a first step, disable cross-grid replication for all tenant buckets.
 .Steps
 
 . Starting from either grid, sign in to the Grid Manager from the primary Admin Node.
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 . Select the connection name to display its details.
 . On the *Permitted tenants* tab, determine if the tenant is using the connection.
 . If the tenant is listed, instruct them to link:../tenant/grid-federation-manage-cross-grid-replication.html[disable cross-grid replication] for all of their buckets on both grids in the connection. 
@@ -130,7 +130,7 @@ After cross-grid replication is disabled for tenant buckets, you can remove the 
 
 .Grid federation page
 --
-.. Select *CONFIGURATION* > *System* > *Grid federation*.
+.. Select *Configuration* > *System* > *Grid federation*.
 .. Select the connection name to display its details page.
 .. On the *Permitted tenants* tab, select radio button for the tenant. 
 .. Select *Remove permission*.
@@ -138,7 +138,7 @@ After cross-grid replication is disabled for tenant buckets, you can remove the 
 --
 .Tenants page
 --
-.. Select *TENANTS*.
+.. Select *Tenants*.
 .. Select the tenant's name to display the details page.
 .. On the *Grid federation* tab, select radio button for the connection. 
 .. Select *Remove permission*.
@@ -173,7 +173,7 @@ Before removing a tenant's permission by force, note the general considerations 
 
 .Steps
 . Sign in to the Grid Manager from the primary Admin Node.
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 . Select the connection name to display its details page.
 . On the *Permitted tenants* tab, select radio button for the tenant. 
 . Select *Remove permission*.

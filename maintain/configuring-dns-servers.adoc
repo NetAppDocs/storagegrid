@@ -27,7 +27,7 @@ include::../_include/dns-server-restrictions.adoc[]
 Follow these steps to add a DNS server.
 
 .Steps
-. Select *MAINTENANCE* > *Network* > *DNS servers*.
+. Select *Maintenance* > *Network* > *DNS servers*.
 . Select *Add another server* to add a DNS server.
 . Select *Save*.
 
@@ -35,7 +35,7 @@ Follow these steps to add a DNS server.
 Follow these steps to modify a DNS server.
 
 .Steps
-. Select *MAINTENANCE* > *Network* > *DNS servers*.
+. Select *Maintenance* > *Network* > *DNS servers*.
 . Select the IP address of the server name you want to edit and make the necessary changes.
 . Select *Save*.
 
@@ -43,6 +43,6 @@ Follow these steps to modify a DNS server.
 Follow these steps to delete an IP address of a DNS server.
 
 .Steps
-. Select *MAINTENANCE* > *Network* > *DNS servers*.
+. Select *Maintenance* > *Network* > *DNS servers*.
 . Select the delete icon image:../media/icon-x-to-remove.png[delete icon] next to the IP address.
 . Select *Save*.

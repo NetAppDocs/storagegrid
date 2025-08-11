@@ -101,7 +101,7 @@ NOTE: The entire grid must be shut down, so that all nodes are down at the same 
  .. If you added new NTP servers, delete the old NTP server values.
  .. If you added new DNS servers, delete the old DNS server values.
 . Download the new recovery package from the Grid Manager.
- .. Select *MAINTENANCE* > *System* > *Recovery package*.
+ .. Select *Maintenance* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
 . If you've allowed external SSH access, link:../admin/manage-external-ssh-access.html[block access] when you're finished changing the IP addresses.

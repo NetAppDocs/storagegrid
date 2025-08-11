@@ -157,7 +157,7 @@ You can power on these nodes in any order.
 
 . Power on the hosts for all Gateway Nodes.
 . Sign in to the Grid Manager.
-. Select *NODES* and monitor the status of the grid nodes. Verify that there are no alert icons next to the node names.
+. Select *Nodes* and monitor the status of the grid nodes. Verify that there are no alert icons next to the node names.
 
 .Related information
 

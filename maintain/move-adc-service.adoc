@@ -13,7 +13,7 @@ You can move the ADC service to another Storage Node on the same site.
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have link:admin-group-permissions.html[Maintenance or Root access permission].
+* You have link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * The source node contains the ADC service.
 * The target node doesn't contain the ADC service.
 * The target node is either a metadata-only or combined (metadata and object data) node.

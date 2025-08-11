@@ -24,7 +24,7 @@ Investigate lost object alerts immediately. You might need to take action to pre
 CAUTION: If more than 10 objects are reported lost, contact technical support. Don't follow this procedure yourself.
 
 .Steps
-. Select *NODES*.
+. Select *Nodes*.
 . Select *_Storage Node_* > *Objects*.
 . Review the number of Lost objects shown in the Object counts table.
 +
@@ -81,7 +81,7 @@ Technical support might ask you to determine if there is a storage recovery proc
 |===
 
 . [[reset-lost-obj-count]]After you address lost object issues, reset the Objects potentially lost counter to ensure alerts aren't false positives:
-.. Select *NODES*.
+.. Select *Nodes*.
 .. Select *_Storage Node_* > *Tasks*.
 .. In the Reset Objects potentially lost counter section, select *Reset*.
 

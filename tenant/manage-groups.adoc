@@ -22,7 +22,7 @@ You can view and edit the basic information and details for each group.
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Review the information provided on the Groups page, which lists basic information for all local and federated groups for this tenant account.
 +
@@ -96,7 +96,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Select the checkbox for the group you want to duplicate.
 
@@ -124,7 +124,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Select the checkbox for each group you want to delete.
 
@@ -147,7 +147,7 @@ Temporary security credentials created from assuming this group are valid for a 
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Click on the group name.
 

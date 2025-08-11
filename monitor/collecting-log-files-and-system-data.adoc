@@ -22,7 +22,7 @@ Use the Grid Manager to gather link:logs-files-reference.html[log files], system
 Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. See link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
 
 .Steps
-. Select *SUPPORT* > *Tools* > *Log collection*. A table of nodes displays.
+. Select *Support* > *Tools* > *Log collection*. A table of nodes displays.
 
 . Select the grid nodes for which you want to collect log files.
 +

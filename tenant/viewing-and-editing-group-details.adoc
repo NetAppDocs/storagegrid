@@ -17,7 +17,7 @@ When you view the details for a group, you can change the group's display name, 
 * You belong to a user group that has the Root access permission.
 
 .Steps
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 . Select the name of the group whose details you want to view or edit.
 +
 Alternatively, you can select *Actions* > *View group details*.

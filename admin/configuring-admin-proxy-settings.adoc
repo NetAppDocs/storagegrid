@@ -24,7 +24,7 @@ You can configure the settings for a single admin proxy.
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Proxy settings*.
+. Select *Configuration* > *Security* > *Proxy settings*.
 +
 The Proxy Settings page appears. By default, Storage is selected in the tab menu.
 

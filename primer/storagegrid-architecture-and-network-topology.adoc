@@ -29,7 +29,7 @@ image::../media/data_center_site_single.png[Single Data Center Site]
 
 In a deployment with multiple sites, different types and numbers of StorageGRID resources can be installed at each site. For example, more storage might be required at one data center than at another.
 
-Different sites are often located in geographically different locations across different failure domains, such as an earthquake fault line or floodplain. Data sharing and disaster recovery are achieved by automated distribution of data to other sites.
+Sites are often located in geographically different locations across different failure domains, such as an earthquake fault line or floodplain. Data sharing and disaster recovery are achieved by automated distribution of data to other sites.
 
 image::../media/data_center_sites_multiple.png[Multiple Data Center Site]
 
