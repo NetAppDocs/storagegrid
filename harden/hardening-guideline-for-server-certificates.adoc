@@ -45,6 +45,6 @@ See link:../admin/manage-tls-ssh-policy.html[Manage the TLS and SSH policy] for 
 
 == Manage external SSH access 
 
-To enhance system security, external SSH access is blocked by default. Only enable SSH access when you need to perform tasks that require inbound SSH access, such as troubleshooting. Refer to link:../admin/manage-ssh-access.html[Manage external SSH access] for details and instructions.
+To enhance system security, external SSH access is blocked by default. Only enable SSH access when you need to perform tasks that require inbound SSH access, such as troubleshooting. Refer to link:../admin/manage-external-ssh-access.html[Manage external SSH access] for details and instructions.
 
 // 2025 JULY 10, SGRIDDOC-170

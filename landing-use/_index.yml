@@ -22,8 +22,8 @@ indexpage:
       url: ../tenant/creating-groups-for-s3-tenant.html
     - title: Tenant management permissions
       url: ../tenant/tenant-management-permissions.html
-    - title: Manage local users
-      url: ../tenant/managing-local-users.html
+    - title: Manage users
+      url: ../tenant/manage-users.html
   - title: Manage S3 access keys and buckets
     links:
     - title: Manage S3 access keys
