@@ -37,7 +37,6 @@ For example, do not use the following subnet ranges for the Grid Network, Admin 
 * 198.51.100.0/24 because this subnet range contains the IP addresses 198.51.100.2 and 198.51.100.4
 ====
 
-
 .Steps
 
 . External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
