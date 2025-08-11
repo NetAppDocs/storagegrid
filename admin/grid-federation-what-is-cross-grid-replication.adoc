@@ -19,9 +19,10 @@ image::../media/grid-federation-cgr-workflow.png[Cross-grid replication workflow
 
 == Requirements for cross-grid replication
 
-If a tenant account has the *Use grid federation connection* permission to use one or more link:grid-federation-overview.html[grid federation connections], a tenant user with Root access permission can create identical buckets in the corresponding tenant accounts on each grid. These buckets:
+If a tenant account has the *Use grid federation connection* permission to use one or more link:grid-federation-overview.html[grid federation connections], a tenant user with Root access permission can create buckets in the corresponding tenant accounts on each grid. These buckets:
 
-* Must have the same name but can have different regions
+* Can have different names from each other
+* Can have different regions
 * Must have versioning enabled
 * Must be empty
 

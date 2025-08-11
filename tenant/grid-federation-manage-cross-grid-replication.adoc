@@ -30,7 +30,7 @@ Before you can use cross-grid replication, you must sign in to the corresponding
 * If you're signing in to the tenant's destination grid as a local user, the root user for the tenant account has set a password for your user account on that grid.
 
 === Create two buckets
-As a first step, sign in to the corresponding tenant accounts on each grid and create two buckets.
+As a first step, sign in to the corresponding tenant accounts on each grid and create a bucket on each grid.
 
 .Steps
 
@@ -38,9 +38,11 @@ As a first step, sign in to the corresponding tenant accounts on each grid and c
 
 .. Sign in to the tenant account using the credentials of a tenant user who exists on both grids.
 +
-NOTE: If you're unable to sign in to the tenant's destination grid as a local user, confirm that the root user for the tenant account has set a password for your user account.
+If you're unable to sign in to the tenant's destination grid as a local user, confirm that the root user for the tenant account has set a password for your user account.
 
 .. Follow the instructions to link:creating-s3-bucket.html[create an S3 bucket].
++
+TIP: The bucket names and regions can be different on each grid.
 .. On the *Manage object settings* tab, select *Enable object versioning*.
 .. If S3 Object Lock is enabled for your StorageGRID system, refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#cgr-with-ol[Cross-grid replication with S3 Object Lock]. 
 .. Select *Create bucket*.
