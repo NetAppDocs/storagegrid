@@ -40,7 +40,6 @@ For example, do not use the following subnet ranges for the Grid Network, Admin 
 * 198.51.100.0/24 because this subnet range contains the IP addresses 198.51.100.2 and 198.51.100.4
 ====
 
-
 == Add a subnet
 
 .Steps

@@ -142,6 +142,12 @@ This operation returns:
 
 If the bucket contains large numbers of deleted keys that have the same prefix, the response might include some `CommonPrefixes` that don't contain keys.
 
+For the HeadObject and ListObject requests, StorageGRID returns the LastModified timestamps with different precision while AWS returns the timestamps with the same precision, as shown in the following examples: 
+
+* StorageGRID HeadObject: "LastModified": "2024-09-26T16:43:24+00:00"
+* StorageGRID ListObject: "LastModified": "2024-09-26T16:43:24.931000+00:00"
+* AWS HeadObject: "LastModified": "2023-10-17T00:19:54+00:00"
+* AWS ListObject: "LastModified": "2023-10-17T00:19:54+00:00"
 | ListObjectVersions
 
 (previously named GET Bucket Object versions)
@@ -254,5 +260,6 @@ If the default retention period is modified, the retain-until-date of existing o
 See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] for detailed information.
 |===
 
+// 2025 July 31, SGRIDDOC-183
 // 2025 MAR 31, SGWS-33482
 // 2023 SEP 15, SGWS-25330
