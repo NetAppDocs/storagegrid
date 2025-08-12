@@ -13,7 +13,7 @@ The file `/var/local/log/bycast.log` is the primary troubleshooting file for the
 
 The file `/var/local/log/bycast-err.log` is a subset of `bycast.log`. It contains messages of severity ERROR and CRITICAL.
 
-Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. See link:../monitor/configure-log-management[Configure log management and external syslog server].
+Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. See link:../monitor/configure-log-management.html[Configure log management and external syslog server].
 
 == File rotation for bycast.log
 
@@ -27,7 +27,7 @@ The rotation limit for `bycast-err.log` is seven files.
 
 NOTE: If a log file has been compressed, you must not uncompress it to the same location in which it was written. Uncompressing the file to the same location can interfere with the log rotation scripts.
 
-Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. See link:../monitor/configure-log-management[Configure log management and external syslog server].
+Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. See link:../monitor/configure-log-management.html[Configure log management and external syslog server].
 
 .Related information
 

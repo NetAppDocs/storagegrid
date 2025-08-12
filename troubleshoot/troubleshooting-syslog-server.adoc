@@ -15,7 +15,7 @@ The following table describes the error messages that might be related using to 
 For more information about sending audit information to an external syslog server, see:
 
 * link:../monitor/considerations-for-external-syslog-server.html[Considerations for using an external syslog server]
-* link:../monitor/configure-log-management[Configure log management and external syslog server]
+* link:../monitor/configure-log-management.html[Configure log management and external syslog server]
 
 [cols="1a,3a" options="header"]
 |===
