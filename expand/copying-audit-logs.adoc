@@ -2,19 +2,19 @@
 permalink: expand/copying-audit-logs.html
 sidebar: sidebar
 keywords: copy audit log, Admin Node expansion,
-summary: 'When you add a new Admin Node through an expansion procedure, its AMS service only logs events and actions that occur after it joins the system. As required, you can copy audit logs from a previously installed Admin Node to the new expansion Admin Node so that it is in sync with the rest of the StorageGRID system.'
+summary: 'When you add a new Admin Node through an expansion procedure, its AMS service only logs events and actions that occur after it joins the system. As required, you can copy audit logs from a previously installed Admin Node to the new expansion Admin Node so that it's in sync with the rest of the StorageGRID system.'
 ---
 = Copy audit logs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When you add a new Admin Node through an expansion procedure, its AMS service only logs events and actions that occur after it joins the system. As required, you can copy audit logs from a previously installed Admin Node to the new expansion Admin Node so that it is in sync with the rest of the StorageGRID system.
+When you add a new Admin Node through an expansion procedure, its AMS service only logs events and actions that occur after it joins the system. As required, you can copy audit logs from a previously installed Admin Node to the new expansion Admin Node so that it's in sync with the rest of the StorageGRID system.
 
 .Before you begin
 
-* You have completed the required expansion steps to add an Admin Node.
-* You have the `Passwords.txt` file.
+* You've completed the required expansion steps to add an Admin Node.
+* You've the `Passwords.txt` file.
 
 .About this task
 
@@ -22,12 +22,12 @@ To make historical audit messages available on a new Admin Node, you must copy t
 
 [NOTE]  
 ====
-By default, audit information is sent to the audit log on Admin Nodes. You can skip these steps if either of the following applies:
+By default, audit information is sent to the localaudit log on the local nodes. To use this procedure, you must've configured the Admin Nodes as the audit destination as follows:
 
-* You configured an external syslog server and audit logs are now being sent to the syslog server instead of to Admin Nodes.
-* You explicitly specified that audit messages should be saved only on the local nodes that generated them. 
+* You configured "Admin Nodes/local nodes" as the log destination.
+* You configured "Admin Nodes and external syslog server" as the log destination.
 
-See link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server] for details.
+Refer to link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server] for details.
 ====
 
 .Steps
@@ -45,7 +45,7 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 +
 `cd /var/local/audit/export/`
 
-. Rename the source `audit.log` file to ensure that it does not overwrite the file on the expansion Admin Node you are copying it to:
+. Rename the source `audit.log` file to ensure that it doesn't overwrite the file on the expansion Admin Node you are copying it to:
 +
 ----
 ls -l

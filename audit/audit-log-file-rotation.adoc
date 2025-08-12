@@ -9,9 +9,9 @@ summary: 'Audit logs files are saved to an Admin Node’s /var/local/audit/expor
 :imagesdir: ../media/
 
 [.lead]
-Audit logs files are saved to an Admin Node's `/var/local/audit/export/` directory. The active audit log files are named `audit.log`.
+If StorageGRID is configured for "Admin Nodes/local nodes" or "Admin Node and external syslog server", the audit logs files are saved to the Admin Node's `/var/local/audit/export/` directory. The active audit log files are named `audit.log`.
 
-NOTE: Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. See link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
+NOTE: Optionally, you can change the destination of audit logs and send audit information to an external syslog server. Local logs of audit records continue to be generated and stored when an external syslog server is configured. Refer to link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
 
 Once a day, the active `audit.log` file is saved, and a new `audit.log` file is started. The name of the saved file indicates when it was saved, in the format `_yyyy-mm-dd.txt_`. If more than one audit log is created in a single day, the file names use the date the file was saved, appended by a number, in the format `_yyyy-mm-dd.txt.n_`. For example, `2018-04-15.txt` and `2018-04-15.txt.1` are the first and second log files created and saved on 15 April 2018.
 
