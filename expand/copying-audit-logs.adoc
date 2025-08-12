@@ -24,8 +24,8 @@ To make historical audit messages available on a new Admin Node, you must copy t
 ====
 By default, audit information is sent to the localaudit log on the local nodes. To use this procedure, you must've configured the Admin Nodes as the audit destination as follows:
 
-* You configured "Admin Nodes/local nodes" as the log destination.
-* You configured "Admin Nodes and external syslog server" as the log destination.
+* You configured Admin Nodes/local nodes as the log destination.
+* You configured Admin Nodes and external syslog server as the log destination.
 
 Refer to link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server] for details.
 ====
