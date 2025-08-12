@@ -1,5 +1,5 @@
 ---
-permalink: admin/manage-ssh-access.html
+permalink: admin/manage-external-ssh-access.html
 sidebar: sidebar
 keywords: security, external, ssh, access
 summary: 'Manage SSH protection by blocking or allowing external SSH access.'

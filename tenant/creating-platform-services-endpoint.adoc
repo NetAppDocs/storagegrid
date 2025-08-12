@@ -123,7 +123,7 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 . Select *Continue*.
 . Select a value for *Authentication type*.
 +
-NOTE: If you want authentication for webhook endpoints, configure Mutual Transport Layer Security (TLS) in <<verify-certs, Step 9>>.
+NOTE: If you want authentication for webhook endpoints, configure Mutual Transport Layer Security (mTLS) in <<verify-certs,Step 9>>.
 +
 [role="tabbed-block"]
 ====
