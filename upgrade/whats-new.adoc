@@ -17,7 +17,7 @@ This release of StorageGRID introduces the following features and functional cha
 * Automated drive firmware upgrades enhance system reliability and reduce maintenance overhead. 
 
 == Artificial intelligence (AI) and machine learning (ML)
-* link:../tenant/manage-branch-buckets.html[Branch buckets] allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
+* link:../tenant/what-is-branch-bucket.html[Branch buckets] allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
 
 * An S3 caching layer enhances performance for AI/ML training.
 
