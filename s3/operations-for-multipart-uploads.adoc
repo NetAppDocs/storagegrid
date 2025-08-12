@@ -31,7 +31,7 @@ The following conditions and notes apply to all multipart upload operations:
 
 * As required, you can use link:using-server-side-encryption.html[server-side encryption] with multipart uploads. To use SSE (server-side encryption with StorageGRID-managed keys), you include the `x-amz-server-side-encryption` request header in the CreateMultipartUpload request only. To use SSE-C (server-side encryption with customer-provided keys), you specify the same three encryption key request headers in the CreateMultipartUpload request and in each subsequent UploadPart request.
 
-* A multipart uploaded object is included in a link:../tenant/manage-branch-buckets.html[branch bucket] if the ingest was initiated before the base bucket's before timestamp, regardless of when the upload completes.
+* A multipart uploaded object is included in a link:../tenant/what-is-branch-bucket.html[branch bucket] if the ingest was initiated before the base bucket's Before timestamp, regardless of when the upload completes.
 
 [cols="2a,3a" options="header"]
 |===

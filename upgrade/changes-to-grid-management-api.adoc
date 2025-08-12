@@ -15,6 +15,13 @@ NOTE: You can continue to use deprecated versions of the management API with Sto
 
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
+== New endpoints for branch buckets
+The following endpoints have been added to allow you to link:../tenant/what-is-branch-bucket.html[manage branch buckets]:
+
+`GET /org/containers/{branchBucketName}/branch`
+
+`PUT /org/containers/{branchBucketName}/branch`
+
 == New private endpoints for Move ADC
 The following private endpoints have been added to allow you to link:../maintain/move-adc-service.html[move the ADC service] from one Storage Node to another on the same site:
 
@@ -32,7 +39,6 @@ The following private endpoints have been added to allow you to link:../maintain
 `/private/convert-to-data-only-node/start`
 
 `/private/convert-to-data-only-node/retry`
-
 
 // 2024-07-2, SWGS-31283
 // 2024-07-11, SGWS-32010
