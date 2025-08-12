@@ -22,6 +22,13 @@ When converting data-only nodes, the grid must contain a minimum of three combin
 * The Storage Node isn't a metadata-only node or a data-only node.
 * The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
 * There is enough metadata space on other nodes at the site (or you've link:../expand/index.html[expanded your grid]) to accommodate the metadata that will migrate from the Storage Node you are converting.
++
+[CAUTION]
+====
+* If the metadata that migrates to other nodes on the same site exceeds the size of the link:../admin/managing-object-metadata-storage.html[metadata reserved space], the grid will become unstable.
+
+* After you start the conversion, you won't be able to expand the grid.
+====
 
 .About this task
 Use this procedure to convert one or more combined Storage Nodes that don't contain the ADC service into data-only nodes.

@@ -14,7 +14,7 @@ Before decommissioning or expanding a grid node, you must confirm that no data r
 Refer to link:../expand/index.html[Expansion types] for details on how to expand a grid node.
 
 .About this task
-If you need to decommission a disconnected Storage Node, you will also complete these steps after the decommission procedure completes to ensure the data repair job has completed successfully. You must ensure that any erasure-coded fragments that were on the removed node have been restored successfully.
+If you need to decommission a disconnected Storage Node, complete these steps after the decommission procedure finishes to ensure the data repair job has completed. You must ensure that any erasure-coded fragments that were on the removed node have been restored.
 
 These steps only apply to systems that have erasure-coded objects.
 

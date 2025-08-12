@@ -9,7 +9,7 @@ summary: 'You can enable cross-origin resource sharing (CORS) for management API
 :imagesdir: ../media/
 
 [.lead]
-You can enable cross-origin resource sharing (CORS) for management API requests to StorageGRID, if you want data in StorageGRID to be accessible using management APIs to another domain.
+As a grid administrator, you can enable cross-origin resource sharing (CORS) for management API requests to StorageGRID, if you want data in StorageGRID to be accessible using management APIs to another domain.
 
 .Before you begin
 
@@ -24,7 +24,7 @@ Management API (mgmt-api) requests with `application/json` or `multipart/formdat
 
 .Steps
 
-. Under *Network* on the StorageGRID Configuration page, select *Management interface CORS settings*.
+. In Grid Manager, go to *CONFIGURATION* > *Network* > *Management interface CORS settings*.
 . Select *Grid Manager*, *Tenant Manager*, or both options.
 * *Grid Manager*: Enables CORS for cross-domain Grid Management API requests.  
 * *Tenant Manager*: Enables CORS for cross-domain Tenant Management API requests.
@@ -36,4 +36,5 @@ Select *Add another domain* if you want to enable CORS in StorageGRID for more t
 .Related information
 link:../tenant/configuring-cross-origin-resource-sharing-for-buckets-and-objects.html[Configure StorageGRID CORS for buckets and objects]
 
+// 2025 JULY 16, SGRIDDOC-175
 // 2025 MAR 12, SGWS-34427

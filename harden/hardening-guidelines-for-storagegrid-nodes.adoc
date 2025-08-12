@@ -37,7 +37,7 @@ Specifically, you can manage these areas:
 
 While this internal firewall provides an additional layer of protection against some common threats, it does not remove the need for an external firewall.
 
-For a list of all internal and external ports used by StorageGRID, see link:../network/network-port-reference.html[Network port reference].
+For a list of all internal and external ports used by StorageGRID, see link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[StorageGRID internal ports] and link:../network/external-communications.html#ports-used-for-external-communications[Ports used for external communications].
 
 == Disable unused services
 

@@ -13,7 +13,7 @@ Platform services include CloudMirror replication, event notifications, and the 
 
 If you enable platform services for S3 tenant accounts, you must configure your grid so that tenants can access the external resources necessary to use these services.
 
-Platform services aren't supported for link:../tenant/manage-branch-buckets.html[branch buckets].
+Platform services aren't supported for link:../tenant/what-is-branch-bucket.html[branch buckets].
 
 == CloudMirror replication
 The StorageGRID CloudMirror replication service is used to mirror specific objects from a StorageGRID bucket to a specified external destination.

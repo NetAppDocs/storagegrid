@@ -99,7 +99,7 @@ Any requests that aren't cached are forwarded to an upstream LDR as if the cache
 === Considerations for the port
 The port for a load balancer endpoint defaults to 10433 for the first endpoint you create, but you can specify any unused external port between 1 and 65535. If you use port 80 or 443, the endpoint will use the Load Balancer service on Gateway Nodes only. These ports are reserved on Admin Nodes. If you use the same port for more than one endpoint, you must specify a different binding mode for each endpoint.
 
-Ports used by other grid services aren't permitted. See the link:../network/network-port-reference.html[Network port reference].
+Ports used by other grid services aren't permitted. See link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[StorageGRID internal ports].
 
 === Considerations for the network protocol
 
