@@ -54,7 +54,7 @@ The _Metadata reserved space_ is a system-wide setting that represents the amoun
 |===
 | Version used for initial StorageGRID installation| Amount of RAM on Storage Nodes| Default Metadata reserved space setting
 
-|11.5 to 11.9
+|11.5 to 12.0
 |128 GB or more on each Storage Node in the grid
 |8 TB (8,000 GB)
 
