@@ -118,6 +118,6 @@ You can also <<block-remote-ipmi,disable remote IPMI access>>.
 * For appliances without SED, FDE, or FIPS drives, use a Key Management Server (KMS) to  https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-node-encryption[enable and configure StorageGRID software node encryption^].
 
 .Related information
-link:https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html[Learn about drive security in SANtricity System Manager^]
+https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html[Learn about drive security in SANtricity System Manager^]
 
 // 2025 JULY 10, SGRIDDOC-170
