@@ -13,9 +13,9 @@ You can use the `audit-sum` tool to count the write, read, head, and delete audi
 
 .Before you begin
 
-* You've link:../admin/admin-group-permissions.html[specific access permissions].
-* You must've the `Passwords.txt` file.
-* You must know the IP address of the primary Admin Node.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
+* You have the `Passwords.txt` file.
+* You know the IP address of the primary Admin Node.
 
 .About this task
 
@@ -37,7 +37,7 @@ This example shows typical output from the `audit-sum` tool. This example shows 
 
 The `audit-sum` tool provides counts and times for the following S3 and ILM audit messages in an audit log.
 
-NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that isn't listed here, check the previous versions of this topic for older SG releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/using-audit-sum-tool.html[StorageGRID 11.8 Using audit sum tool documentation^].
+NOTE: Audit codes are removed from the product and documentation as features are deprecated. If you encounter an audit code that isn't listed here, check the previous versions of this topic for older StorageGRID releases. For example, https://docs.netapp.com/us-en/storagegrid-118/audit/using-audit-sum-tool.html[StorageGRID 11.8 Using audit sum tool^].
 
 [cols=3*,options="header",cols="14,43,43"]
 |===
@@ -195,7 +195,7 @@ In this example, the average object size for SPUT is under 2.5 MB, but the avera
   2019-09-05T09           27591        0.010        1481.867           1.354
 ----
 +
-These results show that S3 GET traffic spiked between 06:00 and 07:00. The max and average times are both considerably higher at these times as well, and they didn't ramp up gradually as the count increased. This suggests that capacity was exceeded somewhere, perhaps in the network or in the grid's ability to process requests.
+These results show that S3 GET traffic spiked between 06:00 and 07:00. The max and average times are both considerably higher during this time span, and they didn't ramp up gradually as the count increased. These metrics suggest that capacity was exceeded, possibly in the network or in the grid's ability to process requests.
 
  .. To determine what size objects were being retrieved each hour yesterday, add the size option (`-s`) to the command:
 +

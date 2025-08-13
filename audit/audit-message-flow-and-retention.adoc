@@ -11,11 +11,11 @@ summary: 'All StorageGRID services generate audit messages during normal system 
 [.lead]
 All StorageGRID services generate audit messages during normal system operation. You should understand how these audit messages move through the StorageGRID system to the `audit.log` file.
 
-The following workflows for audit messages and audit message retention is only applicable if StorageGRID is configured for "Admin Nodes/local nodes" or "Admin Node and external syslog server". If StorageGRID is configured for "Local nodes only" (default) or "External syslog server", the audit messages are saved locally on the node in the `/var/local/log/localaudit.log` file and can't be processed by Admin Nodes or Storage Nodes.
+The following workflows for audit messages and audit message retention are only applicable if StorageGRID is configured for *Admin Nodes/local nodes* or *Admin Node and external syslog server*. If StorageGRID is configured for "Local nodes only" (default) or "External syslog server", the audit messages are saved locally on the node in the `/var/local/log/localaudit.log` file and can't be processed by Admin Nodes or Storage Nodes.
 
 == Audit message flow
 
-Audit messages are processed by Admin Nodes when StorageGRID is configured for "Admin Nodes/local nodes" or "Admin Node and external syslog server" and by those Storage Nodes that have an Administrative Domain Controller (ADC) service.
+Audit messages are processed by Admin Nodes when StorageGRID is configured for *Admin Nodes/local nodes* or *Admin Node and external syslog server* and by those Storage Nodes that have an Administrative Domain Controller (ADC) service.
 
 As shown in the audit message flow diagram, each StorageGRID node sends its audit messages to one of the ADC services at the data center site. The ADC service is automatically enabled for the first three Storage Nodes installed at each site.
 
@@ -33,7 +33,7 @@ When a node generates or relays an audit message, the message is stored in an au
 
 image::../media/audit_message_retention.gif[diagram that summarizes audit message receipt at the AMS]
 
-The audit message queue can temporarily increase due to network connectivity issues or insufficient audit capacity. As the queues increase, they consume more of the available space in each node's `/var/local/` directory. If the issue persists and a node's audit message directory becomes too full, the individual nodes prioritize processing their backlog and becomes temporarily unavailable for new messages.
+The audit message queue can temporarily increase due to network connectivity issues or insufficient audit capacity. As the queues increase, they consume more of the available space in each node's `/var/local/` directory. If the issue persists and a node's audit message directory becomes too full, the individual nodes prioritize processing their backlog and become temporarily unavailable for new messages.
 
 Specifically, you might see the following behaviors:
 

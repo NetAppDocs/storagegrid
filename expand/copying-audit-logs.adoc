@@ -13,8 +13,8 @@ When you add a new Admin Node through an expansion procedure, its AMS service on
 
 .Before you begin
 
-* You've completed the required expansion steps to add an Admin Node.
-* You've the `Passwords.txt` file.
+* You have completed the required expansion steps to add an Admin Node.
+* You have the `Passwords.txt` file.
 
 .About this task
 
@@ -22,7 +22,7 @@ To make historical audit messages available on a new Admin Node, you must copy t
 
 [NOTE]  
 ====
-By default, audit information is sent to the localaudit log on the local nodes. To use this procedure, you must've configured the Admin Nodes as the audit destination as follows:
+By default, audit information is sent to the localaudit log on the local nodes. To use this procedure, you must have configured the Admin Nodes as the audit destination as follows:
 
 * You configured "Admin Nodes/local nodes" as the log destination.
 * You configured "Admin Nodes and external syslog server" as the log destination.
