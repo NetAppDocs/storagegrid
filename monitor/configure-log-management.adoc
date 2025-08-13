@@ -1,5 +1,5 @@
 ---
-permalink: monitor/configure-audit-messages.html
+permalink: monitor/configure-log-management.html
 sidebar: sidebar
 keywords: log management, audit level, external syslog server, log destinations
 summary: 'As needed, configure audit levels, protocol headers, and the location of audit messages and logs.'
@@ -121,7 +121,7 @@ If you want to save the log files internally, choose a tenant and bucket for log
 
 You can optionally configure an external syslog server to save audit logs, application logs, and security event logs to a location outside of your grid. 
 
-NOTE: If you don't want to use an external syslog server, skip this step and go to <<select-audit-information-destinations,Select audit information destinations>>.
+NOTE: If you don't want to use an external syslog server, skip this step and go to <<select-log-location,Select log location>>.
 
 TIP: If the configuration options available in this procedure aren't flexible enough to meet your requirements, additional configuration options can be applied using the `audit-destinations` endpoints, which are in the private API section of the link:../admin/using-grid-management-api.html[Grid Management API]. For example, you can use the API if you want to use different syslog servers for different groups of nodes.
 
@@ -372,7 +372,7 @@ You are returned to the *Audit and syslog server* page. A green banner indicates
 +
 NOTE: StorageGRID audit information isn't sent to the external syslog server until you select a destination that includes the external syslog server. 
 
-[[select-audit-information-destinations]]
+[[select-log-location]]
 === Select log location
 You can specify where audit logs, security event logs, link:../monitor/storagegrid-software-logs.html[StorageGRID application logs], and access logs are sent. 
 
