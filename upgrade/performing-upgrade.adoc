@@ -198,7 +198,7 @@ When all grid nodes have completed the upgrade stages, the *Upgrade other grid n
 // +
 // NOTE: The upgrade from StorageGRID 11.8 to 11.9 does not require a Cassandra database upgrade; however, the Cassandra service will be stopped and restarted on each Storage Node. For future StorageGRID feature releases, the Cassandra database update step might take several days to complete.
 . The Cassandra database upgrade starts. This upgrade will occur in the background for one to three days, and the Cassandra service will be stopped and restarted on each Storage Node. During this time, certain maintenance procedures that involve metadata streaming, such as expansion, will be disabled.
-. When the *Upgrade database* task has completed, wait a few minutes for the *Final upgrade steps* to complete.
+// . When the *Upgrade database* task has completed, wait a few minutes for the *Final upgrade steps* to complete.
 . When the *Final upgrade steps* have completed, the upgrade is done. The first step, *Select files*, is redisplayed with a green success banner.
 . Verify that grid operations have returned to normal:
  .. Check that the services are operating normally and that there are no unexpected alerts.
