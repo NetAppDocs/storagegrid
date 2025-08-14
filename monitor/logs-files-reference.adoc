@@ -40,7 +40,7 @@ Exporting the logs to the syslog server provides these capabilities:
 
 * Better visibility into requests that were blocked by traffic classifiers at the load balancer.
 
-To export the logs, refer to link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
+To export the logs, refer to link:../monitor/configure-log-management.html[Configure log management and external syslog server].
 
 == Log file categories
 

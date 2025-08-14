@@ -28,7 +28,6 @@ By default, audit information is sent to the localaudit log on the local nodes. 
 * You configured "Admin Nodes and external syslog server" as the log destination.
 
 Refer to link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server] for details.
-====
 
 .Steps
 
