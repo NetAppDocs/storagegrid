@@ -133,7 +133,7 @@ A grid node can be in one of these stages when the tables first appear:
 
 . [[approval-step]]When you are ready to select grid nodes for upgrade (or if you need to unapprove selected nodes), use these instructions:
 +
-NOTE: For a StorageGRID 12.0 upgrade, if you want to approve individual nodes instead of all nodes, best practice is to upgrade an entire site before moving on to the next site.
+NOTE: For a StorageGRID 12.0 upgrade, if you want to approve individual nodes instead of all nodes, the best practice is to upgrade an entire site before moving on to the next site.
 +
 [cols="1a,1a" options="header"]
 |===
