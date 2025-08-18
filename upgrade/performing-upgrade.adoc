@@ -109,8 +109,6 @@ If the order in which nodes are upgraded is important, approve nodes or groups o
 
 CAUTION: When the upgrade starts on a grid node, the services on that node are stopped. Later, the grid node is rebooted. To avoid service interruptions for client applications that are communicating with the node, don't approve the upgrade for a node unless you are sure that node is ready to be stopped and rebooted. As required, schedule a maintenance window or notify customers. 
 
-NOTE: Upgrade the Storage Nodes one site at a time. When you approve multiple sites at the same time, Storage Nodes will be automatically grouped by site.
-
 .Steps
 
 . For the *Upgrade other nodes* step, review the Summary, which provides the start time for the upgrade as a whole and the status for each major upgrade task.
@@ -135,7 +133,8 @@ A grid node can be in one of these stages when the tables first appear:
 
 . [[approval-step]]When you are ready to select grid nodes for upgrade (or if you need to unapprove selected nodes), use these instructions:
 +
-
+NOTE: For a StorageGRID 12.0 upgrade, if you want to approve individual nodes instead of all nodes, best practice is to upgrade an entire site before moving on to the next site.
++
 [cols="1a,1a" options="header"]
 |===
 | Task | Instruction
