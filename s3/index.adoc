@@ -138,7 +138,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |Added support for multipart upload, virtual hosted-style requests, and v4 authentication.
 
 |10.0
-|Initial support of the S3 REST API by the StorageGRID system.The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
+|Initial support of the S3 REST API by the StorageGRID system. The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
 
 |===
 // 2025-05-07, SGWS 34003
