@@ -30,7 +30,7 @@ Gateway Nodes (optional):: Provide a load-balancing interface that client applic
 See link:what-gateway-node-is.html[What is a Gateway Node?]
 
 == Hardware and software nodes
-StorageGRID nodes can be deployed as StorageGRID appliance nodes or as software-based nodes.
+StorageGRID nodes can be deployed as StorageGRID appliance nodes or as software-based nodes. The maximum number of nodes (including all node types) per grid is 220.
 
 === StorageGRID appliance nodes
 
