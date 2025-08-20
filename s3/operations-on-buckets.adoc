@@ -215,7 +215,7 @@ not included
 `urn:sgws:s3:::bucket_name`
 
 | PutBucketPolicy
-| Sets the policy attached to the bucket. See link:bucket-and-group-access-policies.html[Use bucket and group access policies].
+| Sets the policy attached to the bucket. See link:use-access-policies.html[Use bucket and group access policies].
 
 
 | PutBucketReplication
