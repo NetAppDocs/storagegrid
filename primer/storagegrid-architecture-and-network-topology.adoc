@@ -17,7 +17,7 @@ For additional information about StorageGRID network topology, requirements, and
 
 == Deployment topologies
 
-The StorageGRID system can be deployed to a single data center site or to multiple data center sites The maximum number of sites per deployment is 16.
+The StorageGRID system can be deployed to a single data center site or to multiple data center sites. The maximum number of sites per deployment is 16.
 
 === Single site
 
