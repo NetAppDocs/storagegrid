@@ -22,7 +22,7 @@ Use the Tenant Manager to create and view details for branch buckets.
 
 Note the following information for branch buckets:
 
-* Permissions to set S3 Object Lock properties of buckets or objects can be granted by link:../s3/bucket-and-group-access-policies.html[bucket policy or group policy].
+* Permissions to set S3 Object Lock properties of buckets or objects can be granted by link:../s3/use-access-policies.html[bucket policy or group policy].
 
 * If you suspend versioning on the base bucket, the contents of the base bucket will no longer be visible in its branch buckets.
 
