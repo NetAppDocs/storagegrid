@@ -51,4 +51,4 @@ Alternatively, select the name of the tag. The details page for the tag appears,
 . Select *Yes* to delete the tag.
 
 .Related information
-link:creating-ilm-policy.html#activate-ilm-policy[Learn about ILM creating policy tags]
+link:creating-ilm-policy.html#activate-ilm-policy[Learn about creating ILM policy tags]
