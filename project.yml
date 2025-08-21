@@ -378,7 +378,7 @@ sidebar:
           url: "/maintain/monitoring-services-appliance-installation.html"
       - title: How technical support recovers a site
         url: "/maintain/how-site-recovery-is-performed-by-technical-support.html"
-    - title: Enable StorageGRID
+    - title: StorageGRID solutions and resources
       url: "/storagegrid-enable.html"
     - title: StorageGRID and BlueXP
       url: "/storagegrid-bluexp.html"

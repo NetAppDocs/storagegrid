@@ -64,7 +64,7 @@ indexpage:
         url: https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/index.html
     - title: Additional instructions
       links:
-      - title: Enable StorageGRID
+      - title: StorageGRID solutions and resources
         url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
       - title: StorageGRID video library
         url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
