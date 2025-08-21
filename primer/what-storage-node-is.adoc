@@ -51,14 +51,14 @@ You can convert a Storage Node that doesn't contain the <<adc-service,ADC servic
 
 == Required Storage Nodes per grid and per site
 
-When selecting which Storage Nodes to use in your topology, keep in mind that the grid and each site in the grid must contain the following:
+When selecting which Storage Nodes to use in your topology, keep in mind that the grid or each site in the grid must contain the following:
 
-* Three <<adc-service,ADC>> Storage Nodes per site (can be any combination of combined and metadata-only Storage Nodes)
-* Single site grid: At least two object storage nodes (can be any combination of combined and data-only Storage Nodes)
-* Multi-site grid: At least one object storage node per site (can be either combined or data-only Storage Node)
+* Per site (in a single- or multi-site grid): Three <<adc-service,ADC>> Storage Nodes (can be any combination of combined and metadata-only Storage Nodes)
+* Single-site grid: At least two object Storage Nodes (can be any combination of combined and data-only)
+* Multi-site grid: At least one object Storage Node per site (can be either combined or data-only)
 * When installing metadata-only nodes:
-** Single-site grid: At least two combined or data-only Storage Nodes (can be any combination). 
-** Multi-site grid: At least one combined or data-only Storage Node _per site_ (can be any combination).
+** Single-site grid: At least two combined or data-only Storage Nodes (can be any combination)
+** Multi-site grid: At least one combined or data-only Storage Node _per site_ (can be any combination)
 
 == Primary services for Storage Nodes
 The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
