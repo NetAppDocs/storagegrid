@@ -227,8 +227,8 @@ entries:
   - title: Manage networks and connections
     entries:
     - title: Configure network settings
-      url: "/admin/configuring-network-settings.html"
       pdf-filename: Manage networks and connections
+      url: "/admin/configuring-network-settings.html"
     - title: Guidelines for StorageGRID networks
       url: "/admin/guidelines-for-storagegrid-networks.html"
     - title: View IP addresses
@@ -271,10 +271,8 @@ entries:
       url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Manage Storage Nodes
     entries:
-    - title: Storage Node management
-      pdf-filename: Manage Storage Nodes
-      url: "/admin/managing-storage-nodes.html"
     - title: Use Storage options
+      pdf-filename: Manage Storage Nodes
       entries:
       - title: What is object segmentation
         url: "/admin/what-object-segmentation-is.html"
