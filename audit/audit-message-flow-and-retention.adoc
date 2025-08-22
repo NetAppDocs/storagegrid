@@ -11,7 +11,7 @@ summary: 'All StorageGRID services generate audit messages during normal system 
 [.lead]
 All StorageGRID services generate audit messages during normal system operation. You should understand how these audit messages move through the StorageGRID system to the `audit.log` file.
 
-The following workflows for audit messages and audit message retention are only applicable if StorageGRID is configured for *Admin Nodes/local nodes* or *Admin Node and external syslog server*. If StorageGRID is configured for "Local nodes only" (default) or "External syslog server", the audit messages are saved locally on the node in the `/var/local/log/localaudit.log` file and can't be processed by Admin Nodes or Storage Nodes.
+The following workflows for audit messages and audit message retention are only applicable if StorageGRID is configured for *Admin Nodes/local nodes* or *Admin Node and external syslog server*. If StorageGRID is configured for "Local nodes only" (default) or "External syslog server", the audit messages are saved locally on each node in the `/var/local/log/localaudit.log` file and can't be processed by Admin Nodes or Storage Nodes.
 
 == Audit message flow
 

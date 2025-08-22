@@ -168,6 +168,7 @@ storagegrid_tenant_usage_quota_bytes:: The maximum amount of logical space avail
 
 [[obtain-all-metrics]]To obtain the complete list of metrics, use the Grid Management API.
 
+.Steps
 . From the top of the Grid Manager, select the help icon and select *API documentation*.
 . Locate the *metrics* operations.
 . Execute the `GET /grid/metric-names` operation.

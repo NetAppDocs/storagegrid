@@ -23,6 +23,8 @@ NOTE: The details provided for each log type are for reference only. The logs ar
 
 To access the logs, you can link:collecting-log-files-and-system-data.html[collect log files and system data] from one or more nodes as a single log file archive. Or, you can access individual log files for each grid node as follows:
 
+.Steps
+
 . Enter the following command: `ssh admin@grid_node_IP`
 . Enter the password listed in the `Passwords.txt` file.
 . Enter the following command to switch to root: `su -`
