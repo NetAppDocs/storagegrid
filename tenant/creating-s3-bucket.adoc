@@ -16,13 +16,13 @@ You can use the Tenant Manager to create S3 buckets for object data.
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the Root access or Manage all buckets link:tenant-management-permissions.html[permission]. These permissions override the permissions settings in group or bucket policies. 
 +
-NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objects can be granted by link:../s3/bucket-and-group-access-policies.html[bucket policy or group policy].
+NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objects can be granted by link:../s3/use-access-policies.html[bucket policy or group policy].
 
 * If you plan to enable S3 Object Lock for a bucket, a grid admin has enabled the global S3 Object Lock setting for the StorageGRID system, and you have reviewed the requirements for S3 Object Lock buckets and objects.
 
 * If each tenant will have 5,000 buckets, each Storage Node in the grid has a minimum of 64 GB of RAM.
 +
-NOTE: Each grid can have a maximum of 100,000 buckets, including link:../tenant/manage-branch-buckets.html[branch buckets].
+NOTE: Each grid can have a maximum of 100,000 buckets, including link:../tenant/what-is-branch-bucket.html[branch buckets].
 
 == Access the wizard
 
@@ -79,7 +79,7 @@ Enable object versioning if you want to store every version of each object in th
 You must enable object versioning if:
 +
 * The bucket will be used for cross-grid replication.
-* You want to create a link:../tenant/manage-branch-buckets.html[branch bucket] from this bucket.
+* You want to create a link:../tenant/what-is-branch-bucket.html[branch bucket] from this bucket.
 
 . If the global S3 Object Lock setting is enabled, optionally enable S3 Object Lock for the bucket to store objects using a write-once-read-many (WORM) model. 
 +
@@ -111,7 +111,7 @@ Capacity limit is the maximum capacity available for this bucket's objects. This
 +
 If no limit is set, the capacity for this bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
 
-. [[object-count-limit]]Optionally, select *Enable object count limit* and enter an integer of at least 1 and no more than 1,000,000,000,000,000,000.
+. [[object-count-limit]]Optionally, select *Enable object count limit*.
 +
 Object count limit is the maximum number of objects this bucket can contain. This value represents a logical amount (object count). If no limit is set, the object count is unlimited.
 

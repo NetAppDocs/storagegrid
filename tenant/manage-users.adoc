@@ -1,15 +1,15 @@
 ---
-permalink: tenant/managing-local-users.html
+permalink: tenant/manage-users.html
 sidebar: sidebar
 keywords: how to create local tenant users, manage users
 summary: 'You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root." Although you can add and remove local users, you cannot remove the root user.'
 ---
-= Manage local users
+= Manage users
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root". Although you can add and remove local users, you can't remove the root user.
+You can create local users and assign them to local groups to determine which features these users can access. You can also import federated users. The Tenant Manager includes one predefined local user, named "root". Although you can add and remove local users, you can't remove the root user.
 
 NOTE: If single sign-on (SSO) is enabled for your StorageGRID system, local users will not be able to sign in to the Tenant Manager or the Tenant Management API, although they can use client applications to access the tenant's resources, based on group permissions.
 
@@ -211,4 +211,5 @@ A confirmation dialog box appears.
 
 . Select *Delete user* or *Delete users*.
 
+// 2025 JULY 16, SGRIDDOC-175
 // 2025 FEB 26, SGWS-34007

@@ -2,43 +2,31 @@
 permalink: tenant/manage-branch-buckets.html
 sidebar: sidebar
 keywords: how to create branch bucket
-summary: 'A branch bucket provides access to objects in a bucket as they existed at a certain time, provided they still exist in the bucket. Use the Tenant Manager to create and view branch buckets.'
+summary: 'Use the Tenant Manager to create and view details for branch buckets.'
 ---
 = Manage branch buckets
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-A branch bucket provides access to objects in a bucket as they existed at a certain time, provided they still exist in the bucket. Use the Tenant Manager to create and view branch buckets.
-
-A branch bucket provides access to protected data, but doesn't serve as a backup. To continue to protect data, use these features on base buckets:
-
-* link:../tenant/using-s3-object-lock.html[S3 Object Lock]
-* link:../admin/grid-federation-what-is-cross-grid-replication.html[Cross-grid replication] for base buckets
-* link:../tenant/manage-bucket-policy.html[Bucket policies] for versioned buckets to clean up old object versions
-
-.About this task
-You create a branch bucket from an existing bucket. After you create a branch bucket, the original bucket it was created from is called the base bucket. Additionally, you can create a branch bucket from another branch bucket. When you perform operations on the base bucket, the results on the branch bucket depend on the operation and the type of branch bucket you've created.
-
-You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
-
-CAUTION: A branch bucket doesn't serve as a backup, but provides access to protected data. You must continue to use link:../ilm/managing-objects-with-s3-object-lock.html[S3 Object Lock] or link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] to protect data.
-
-Note the following characteristics of branch buckets:
-
-* You can access branch buckets by using link:../tenant/use-s3-console.html[S3 Console to download objects].
-* A branch bucket adheres to the existing link:../s3/bucket-and-group-access-policies.html[access policies] and link:../ilm/access-create-ilm-rule-wizard.html[ILM rules] specified for the corresponding base bucket.
-* Cross-grid replication isn't supported for branch buckets.
-* Platform services aren't supported for branch buckets.
+Use the Tenant Manager to create and view details for branch buckets. 
 
 .Before you begin
 
 * You've signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You belong to a user group that has the Root access or Manage all buckets link:tenant-management-permissions.html[permission]. These permissions override the permissions settings in group or bucket policies. 
+* You belong to a user group that has the Root access or link:tenant-management-permissions.html[Manage all buckets permission]. These permissions override the permissions settings in group or bucket policies. 
 * The base bucket you want to create a branch from has link:../tenant/changing-bucket-versioning.html[versioning enabled].
 * You're the owner of the base bucket.
-+
-NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objects can be granted by link:../s3/bucket-and-group-access-policies.html[bucket policy or group policy].
+
+.About this task
+
+Note the following information for branch buckets:
+
+* Permissions to set S3 Object Lock properties of buckets or objects can be granted by link:../s3/use-access-policies.html[bucket policy or group policy].
+
+* If you suspend versioning on the base bucket, the contents of the base bucket will no longer be visible in its branch buckets.
+
+CAUTION: After you configure and create a branch bucket, you can't change the configuration.
 
 == Create branch bucket
 
@@ -50,7 +38,7 @@ NOTE: Permissions to set or modify S3 Object Lock properties of buckets or objec
 
 . On the bucket details page, select *Branches* > *Create branch bucket*.
 +
-The *Create branch bucket* button is disabled if the base bucket doesn't have versioning enabled. 
+The *Create branch bucket* button is disabled if the base bucket doesn't have versioning enabled.
 
 == Enter details
 
@@ -84,20 +72,22 @@ The branch bucket's region must match the region for the base bucket, so this fi
 | Before time
 | The cutoff time for object versions created in the base bucket to be accessible from the branch bucket. The branch bucket provides access to object versions created earlier than Before time.
 
+Before time must be a date and time that has passed. It can't be a future date.
+
 | Branch bucket type
 |
 * *Read-write*: You can add or delete objects or object versions in the branch bucket.
 
 * *Read-only*: You can't modify objects in the branch bucket.
 
-*Note*: You can set the branch bucket type to read-only only if the branch bucket is empty. If the type for an existing branch bucket is set to read-write and you haven't written to the it, you can change the type to read-only.
+*Note*: You can set the branch bucket type to read-only only if the branch bucket is empty. If the type for an existing branch bucket is set to read-write and you haven't written to it, you can change the type to read-only.
 |===
 
 . Select *Continue*.
 
-== Manage settings
+== Manage object settings (optional)
 
-The settings for a branch bucket don't affect the object versions in the base bucket.
+The object settings for a branch bucket don't affect the object versions in the base bucket.
 
 .Steps
 

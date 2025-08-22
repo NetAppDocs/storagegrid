@@ -88,14 +88,14 @@ The StorageGRID grid has now been shut down.
 
 .Related information
 
-* link:https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 and SG6160 storage appliances^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 and SG6160 storage appliances^]
 
-* link:https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
 
-* link:https://docs.netapp.com/us-en/storagegrid-appliances/sg5800/index.html[SG5800 storage appliances^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg5800/index.html[SG5800 storage appliances^]
 
-* link:https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
 
-* link:https://docs.netapp.com/us-en/storagegrid-appliances/sg110-1100/index.html[SG110 and SG1100 services appliances^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg110-1100/index.html[SG110 and SG1100 services appliances^]
 
-* link:https://docs.netapp.com/us-en/storagegrid-appliances/sg100-1000/index.html[SG100 and SG1000 services appliances^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg100-1000/index.html[SG100 and SG1000 services appliances^]

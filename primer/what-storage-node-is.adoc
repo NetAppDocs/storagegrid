@@ -20,12 +20,6 @@ During installation, you can select the type of Storage Node you want to install
 * Metadata-only Storage Node
 * Data-only Storage Node
 
-When selecting which Storage Nodes to use in your topology, keep in mind that the grid must contain the following:
-
-* A minimum of two combined or data-only Storage Nodes per grid
-* At least one combined or data-only Storage Node per site
-* A minimum of three combined or metadata-only Storage Nodes per site
-
 You can select the Storage Node type in these situations:
 
 * When initially installing a Storage Node
@@ -46,12 +40,7 @@ Metadata-only Storage Nodes have specific hardware requirements:
 *** 8 core CPU
 *** 8 TB SSD or equivalent storage for the Cassandra database (rangedb/0)
 ** If the existing StorageGRID site is using virtual Storage Nodes with 24 GB RAM, 8 core CPU, and 3 TB or 4TB of metadata storage, the software-based metadata-only nodes should use similar resources (24 GB RAM, 8 core CPU, and 4TB of metadata storage (rangedb/0)). 
-* When adding a new StorageGRID site, the new site total metadata capacity should, at minimum, match existing StorageGRID sites and new site resources should match the Storage Nodes at existing StorageGRID sites.
-
-When installing metadata-only nodes, the grid must also contain a minimum number of nodes for data storage:
-
-* For a single-site grid, configure at least two combined or data-only Storage Nodes. 
-* For a multi-site grid, configure at least one combined or data-only Storage Node _per site_.
+* When adding a new StorageGRID site, the new site total metadata capacity should, at a minimum, match existing sites. The resources at a new site should match the Storage Nodes at existing sites.
 
 NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service>> and can process S3 client requests, StorageGRID performance might not increase.
 
@@ -59,6 +48,14 @@ NOTE: Although metadata-only Storage Nodes contain the <<ldr-service,LDR service
 include::../_include/data-only-storage-node.adoc[]
 
 You can convert a Storage Node that doesn't contain the <<adc-service,ADC service>> to a data-only Storage Node. Refer to link:../maintain/convert-to-data-only-node.html[Convert a Storage Node to a data-only node].
+
+== Required Storage Nodes per grid and per site
+
+When selecting which Storage Nodes to use in your topology, keep in mind that the grid or each site in the grid must contain the following:
+
+* Per site (in a single- or multi-site grid): Three <<adc-service,ADC>> Storage Nodes (can be any combination of combined and metadata-only Storage Nodes)
+* Single-site grid: At least two object Storage Nodes (can be any combination of combined and data-only)
+* Multi-site grid: At least one object Storage Node per site (can be either combined or data-only)
 
 == Primary services for Storage Nodes
 The following table shows the primary services for Storage Nodes; however, this table does not list all node services.

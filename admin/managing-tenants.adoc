@@ -21,7 +21,7 @@ Tenant accounts can be used to segregate stored objects by different entities. F
 
 * *Enterprise use case:* If you are administering a StorageGRID system in an enterprise application, you might want to segregate the grid's object storage by the different departments in your organization. In this case, you could create tenant accounts for the Marketing department, the Customer Support department, the Human Resources department, and so on.
 +
-NOTE: If you use the S3 client protocol, you can use S3 buckets and bucket policies to segregate objects between the departments in an enterprise. You don't need to use tenant accounts. See instructions for implementing link:../s3/bucket-and-group-access-policies.html[S3 buckets and bucket policies] for more information.
+NOTE: If you use the S3 client protocol, you can use S3 buckets and bucket policies to segregate objects between the departments in an enterprise. You don't need to use tenant accounts. See instructions for implementing link:../s3/use-access-policies.html[S3 buckets and bucket policies] for more information.
 
 * *Service provider use case:* If you are administering a StorageGRID system as a service provider, you can segregate the grid's object storage by the different entities that will lease the storage on your grid. In this case, you would create tenant accounts for Company A, Company B, Company C, and so on.
 

@@ -142,8 +142,8 @@ To use the StorageGRID Load Balancer service, select the *StorageGRID load balan
 | Port
 | The StorageGRID port you want to use for load balancing. This field defaults to 10433 for the first endpoint you create, but you can enter any unused external port. If you enter 80 or 443, the endpoint is configured only on Gateway Nodes, because these ports are reserved on Admin Nodes.
 
-*Note:* Ports used by other grid services aren't permitted. See the 
-link:../network/network-port-reference.html[Network port reference].
+*Note:* Ports used by other grid services aren't permitted. See 
+link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[StorageGRID internal ports].
 
 | Client type
 | Must be *S3*.

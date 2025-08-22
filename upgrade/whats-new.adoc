@@ -17,7 +17,7 @@ This release of StorageGRID introduces the following features and functional cha
 * Automated drive firmware upgrades enhance system reliability and reduce maintenance overhead. 
 
 == Artificial intelligence (AI) and machine learning (ML)
-* link:../tenant/manage-branch-buckets.html[Branch buckets] allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
+* link:../tenant/what-is-branch-bucket.html[Branch buckets] allow point-in-time versions of buckets that facilitate faster ransomware recovery and isolated datasets for testing and experimentation. 
 
 * An S3 caching layer enhances performance for AI/ML training.
 
@@ -28,6 +28,8 @@ StorageGRID now supports one trillion objects, which is more than double the pre
 StorageGRID now uses a newer version of Cassandra for metadata storage. This version of Cassandra uses disk space more efficiently to store more metadata.
 
 After you link:../upgrade/index.html[upgrade from StorageGRID 11.9 to 12.0], a metadata format update will occur in the background for one to three days. During this time, certain maintenance procedures that involve metadata streaming, such as expansion, will be disabled.
+
+Refer to link:../upgrade/performing-upgrade.html#upgrade-other-nodes[Upgrade other nodes].
 
 == Federation 
 * You can now link:../admin/managing-users.html#import-federated-users[import up to 100 federated users] into StorageGRID.
@@ -49,7 +51,7 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 * The ability to initiate log uploads to link:../admin/configure-autosupport-grid-manager.html[AutoSupport] helps enhance support responsiveness.
 
-* Reduced https://docs.netapp.com/us-en/storagegrid-appliances/index.html[appliance^] reboot time minimizes downtime to improve overall system availability. 
+* Reduced https://docs.netapp.com/us-en/storagegrid-appliances/index.html[appliance^] reboot time minimizes downtime to improve overall system availability.
 
 * link:../maintain/move-adc-service.html[The ability to move the ADC service] to another Storage Node increases flexibility and resilience in managing Storage Nodes that host the ADC service. You can move the ADC service before you decommission a Storage Node or convert a Storage Node to a data-only node.
 
@@ -57,23 +59,23 @@ NOTE: If you need to revert to the previous behavior for strong-global consisten
 
 * The ability for any Admin Node to link:../maintain/selecting-node-recovery-procedure.html[recover any other node] (except the primary Admin Node) enhances system recovery and fault tolerance, improving overall reliability.
 
-* Users can now use an S3 bucket to link:../monitor/configure-audit-messages.html#use-a-bucket[store audit logs for a long period of time].
+* Users can now use an S3 bucket to link:../monitor/configure-log-management.html#use-a-bucket[store audit logs for a long period of time].
 
 == Security 
 * Stronger data encryption and integrity protection provide improved security and performance. 
 
 * Increased security of stored passwords reduce the risk of unauthorized access. 
 
-* link:../admin/manage-ssh-access.html[SSH is blocked by default] to enhance security while allowing controlled access. 
+* link:../admin/manage-external-ssh-access.html[SSH is blocked by default] to enhance security while allowing controlled access.
 
 == Tenant groups
-* You can now configure a new S3 trust policy to support the link:../tenant/manage-groups.html#set-up-assumerole[AssumeRole API]. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
+* You can now link:../tenant/manage-groups.html[configure a new S3 trust policy] to support the AssumeRole API. The AssumeRole function provides short-term credentials for enhanced security and flexible access control.
 
-* Per-bucket object count quota allows for better control and management of storage resources. 
+* Per-bucket object count quota allows for better control and management of storage resources.
 
 == User interface
 * Dark theme and system theme settings are available in the User menu of the Grid Manager and Tenant Manager.
 
-* link:../monitor/configure-audit-messages.html[The audit and syslog server page] has been refactored, with additions for storing logs in a system bucket for backup purposes.
+* The Audit and syslog server page, renamed link:../monitor/configure-log-management.html[Log management], has been refactored, with additions for storing logs in a system bucket for backup purposes.
 
 * The legacy Grid Topology page was removed. Over the past several StorageGRID releases, the operations and metrics available from that page were migrated to other pages in the Grid Manager, particularly to the link:../monitor/viewing-nodes-page.html[Nodes page].
