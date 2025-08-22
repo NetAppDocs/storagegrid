@@ -56,9 +56,6 @@ When selecting which Storage Nodes to use in your topology, keep in mind that th
 * Per site (in a single- or multi-site grid): Three <<adc-service,ADC>> Storage Nodes (can be any combination of combined and metadata-only Storage Nodes)
 * Single-site grid: At least two object Storage Nodes (can be any combination of combined and data-only)
 * Multi-site grid: At least one object Storage Node per site (can be either combined or data-only)
-* When installing metadata-only nodes:
-** Single-site grid: At least two combined or data-only Storage Nodes (can be any combination)
-** Multi-site grid: At least one combined or data-only Storage Node _per site_ (can be any combination)
 
 == Primary services for Storage Nodes
 The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
