@@ -430,8 +430,7 @@ Logs are periodically rotated. Use an S3 bucket in the same grid to store logs f
 . Select *Log location* > *Use a bucket*.
 . Select the *Enable archive logs* checkbox.
 . If the listed tenant and bucket aren't the ones you want to use, select *Change tenant and bucket*, and then select either *Create tenant and bucket* or *Select tenant and bucket*.
-
-//tabbed blocks start here
++
 [role="tabbed-block"]
 ====
 .Create tenant and bucket
@@ -449,7 +448,6 @@ Logs are periodically rotated. Use an S3 bucket in the same grid to store logs f
 .. Select *Select and enable*.
 --
 ====
-//end tabbed block
 
 [start=2]
 . Select *Save*.

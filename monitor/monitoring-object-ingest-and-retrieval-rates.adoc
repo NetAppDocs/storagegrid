@@ -13,7 +13,7 @@ You can monitor object ingest and retrieval rates as well as metrics for object 
 
 .Before you begin
 
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
 .Steps
 
