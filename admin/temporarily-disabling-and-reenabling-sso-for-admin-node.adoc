@@ -46,7 +46,7 @@ The Grid Manager sign-in page is now displayed because SSO has been disabled.
 
 . Sign in with the username root and the local root user's password.
 . If you disabled SSO temporarily because you needed to correct the SSO configuration:
- .. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
+ .. Select *Configuration* > *Access control* > *Single sign-on*.
  .. Change the incorrect or out-of-date SSO settings.
  .. Select *Save*.
 +

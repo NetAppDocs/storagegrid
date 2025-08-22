@@ -75,7 +75,7 @@ The *Grid Network MTU mismatch* alert is triggered when the maximum transmission
 The differences in MTU settings could indicate that some, but not all, eth0 networks are configured for jumbo frames. An MTU size mismatch of greater than 1000 might cause network performance problems.
 
 .Steps
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
+. External SSH access is blocked by default. If required, link:../admin/manage-external-ssh-access.html[temporarily allow access].
 . List the MTU settings for eth0 on all nodes.
  ** Use the query provided in the Grid Manager.
  ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{device="eth0"}`
@@ -116,7 +116,7 @@ Use the following arguments for modifying the MTU on Linux- or VMware-based node
 |The node. The default is the local node.
 |===
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you've finished the task.
+. If you've allowed external SSH access, link:../admin/manage-external-ssh-access.html[block access] when you've finished the task.
 
 == Node network reception frame error alert
 
@@ -265,7 +265,7 @@ You might need to enable IPv6 support in the kernel if you have installed Storag
 .About this task
 To see the IPv6 address that has been assigned to a grid node:
 
-. Select *NODES* and select the node.
+. Select *Nodes* and select the node.
 . Select *Show additional IP addresses* next to *IP Addresses* on the Overview tab.
 
 If the IPv6 address is not shown and the node is installed on a Linux host, follow these steps to enable IPv6 support in the kernel.

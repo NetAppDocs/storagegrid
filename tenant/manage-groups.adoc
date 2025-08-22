@@ -22,7 +22,7 @@ You can view and edit the basic information and details for each group.
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Review the information provided on the Groups page, which lists basic information for all local and federated groups for this tenant account.
 +
@@ -96,7 +96,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Select the checkbox for the group you want to duplicate.
 
@@ -124,7 +124,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Select the checkbox for each group you want to delete.
 
@@ -147,7 +147,7 @@ Temporary security credentials created from assuming this group are valid for a 
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Click on the group name.
 
@@ -155,6 +155,7 @@ Temporary security credentials created from assuming this group are valid for a 
 
 . Add your S3 trust policy, including a list of users that can perform AssumeRole.
 
+. Select *Save changes*.
 . Select the *S3 group policy* tab.
 
 . Edit the S3 policy to specify only the required S3 actions for the trusted users added in this group's S3 trust policy.
@@ -183,4 +184,5 @@ Temporary security credentials created from assuming this group are valid for a 
 After configuration is complete, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
 The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/use-access-policies.html[Use access policies].
 
+// 2025 JULY 16, SGRIDDOC-175
 // 2025-05-12, jira SGWS-34003

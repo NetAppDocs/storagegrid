@@ -9,7 +9,9 @@ summary: 'You can configure high availability \(HA\) groups to provide highly av
 :imagesdir: ../media/
 
 [.lead]
-You can configure high availability (HA) groups to provide highly available access to the services on Admin Nodes or Gateway Nodes. 
+You can configure high availability (HA) groups to provide highly available access to the services on Admin Nodes or Gateway Nodes.
+
+NOTE: A StorageGRID system can have a maximum of 255 HA groups.
 
 .Before you begin
 
@@ -34,7 +36,7 @@ An interface must be for a Gateway Node or an Admin Node to be included in an HA
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *High availability groups*.
+. Select *Configuration* > *Network* > *High availability groups*.
 
 . Select *Create*.
 
@@ -134,7 +136,7 @@ For example, you might need to edit an HA group if you want to remove the node a
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *High availability groups*.
+. Select *Configuration* > *Network* > *High availability groups*.
 +
 The High availability groups page shows all existing HA groups.
 
@@ -172,11 +174,11 @@ To prevent client disruptions, update any affected S3 client applications before
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *High availability groups*.
+. Select *Configuration* > *Network* > *High availability groups*.
 
 .  Review the *Load balancer endpoints* column for each HA group you want to remove. If any load balancer endpoints are listed:
 
-.. Go to *CONFIGURATION* > *Network* > *Load balancer endpoints*.
+.. Go to *Configuration* > *Network* > *Load balancer endpoints*.
 .. Select the checkbox for the endpoint. 
 .. Select *Actions* > *Edit endpoint binding mode*.
 .. Update the binding mode to remove the HA group.

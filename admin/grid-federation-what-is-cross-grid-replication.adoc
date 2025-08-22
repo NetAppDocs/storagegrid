@@ -19,9 +19,10 @@ image::../media/grid-federation-cgr-workflow.png[Cross-grid replication workflow
 
 == Requirements for cross-grid replication
 
-If a tenant account has the *Use grid federation connection* permission to use one or more link:grid-federation-overview.html[grid federation connections], a tenant user with Root access permission can create identical buckets in the corresponding tenant accounts on each grid. These buckets:
+If a tenant account has the *Use grid federation connection* permission to use one or more link:grid-federation-overview.html[grid federation connections], a tenant user with Root access permission can create buckets in the corresponding tenant accounts on each grid. These buckets:
 
-* Must have the same name but can have different regions
+* Can have different names from each other
+* Can have different regions
 * Must have versioning enabled
 * Must be empty
 
@@ -188,7 +189,7 @@ If an S3 client issues a PutObjectRetention or PutObjectLegalHold request, the s
 
 === How segmented objects are replicated
 
-The source grid's maximum segment size applies to objects replicated to the destination grid. When objects are replicated to another grid, the *Maximum Segment Size* setting (*CONFIGURATION* > *System* > *Storage options*) of the source grid is used on both grids. For example, suppose the maximum segment size for the source grid is 1 GB, while the maximum segment size of the destination grid is 50 MB. If you ingest a 2-GB object on the source grid, that object is saved as two 1-GB segments. It's also replicated to the destination grid as two 1-GB segments, even though that grid's maximum segment size is 50 MB. 
+The source grid's maximum segment size applies to objects replicated to the destination grid. When objects are replicated to another grid, the *Maximum Segment Size* setting (*Configuration* > *System* > *Storage options*) of the source grid is used on both grids. For example, suppose the maximum segment size for the source grid is 1 GB, while the maximum segment size of the destination grid is 50 MB. If you ingest a 2-GB object on the source grid, that object is saved as two 1-GB segments. It's also replicated to the destination grid as two 1-GB segments, even though that grid's maximum segment size is 50 MB. 
 
 // 2025 MAR 18, SGWS-34598
 // 2024 JULY 1, SGRIDDOC-48

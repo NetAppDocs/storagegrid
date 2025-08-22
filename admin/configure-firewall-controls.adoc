@@ -36,7 +36,7 @@ For more information about external firewalls and network security, see link:../
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Firewall control*.
+. Select *Configuration* > *Security* > *Firewall control*.
 +
 The three tabs on this page are described in link:../admin/manage-firewall-controls.html[Manage firewall controls].
 

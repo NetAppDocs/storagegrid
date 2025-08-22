@@ -39,7 +39,7 @@ See link:summary-ip-addresses-and-ports-for-client-connections.html[Summary: IP 
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Security settings*.
+. Select *Configuration* > *Security* > *Security settings*.
 
 . Select the *Network and objects* tab.
 

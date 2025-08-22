@@ -44,7 +44,7 @@ The following table summarizes where system names and display names are shown in
 * Support pages (logs and diagnostics)
 * Single sign-on page, next to the Admin Node hostname in the table for Admin Node details
 
-| *NODES* > *Overview* tab for a node
+| *Nodes* > *Overview* tab for a node
 | Always shown 
 | Shown only if the item is renamed
 

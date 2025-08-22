@@ -55,7 +55,7 @@ When you edit a grid federation connection, StorageGRID attempts to save a "cand
 
 .Recommended actions
 
-. From the grid you are using to edit the connection, select *NODES*.
+. From the grid you are using to edit the connection, select *Nodes*.
 . Confirm that all Admin Nodes for that grid are online.
 . If any nodes are offline, bring them back online and try editing the connection again.
 
@@ -72,7 +72,7 @@ For security reasons, when a tenant account is cloned from the tenant's source g
 .Recommended actions
 Before the root user can sign in to the tenant's destination grid, a grid administrator must first link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] on the destination grid.
 
-Before a cloned local user can sign in to the tenant's destination grid, the root user for the cloned tenant must add a password for the user on the destination grid. For instructions, see link:../tenant/managing-local-users.html[Manage local users] in the instructions for using the Tenant Manager.
+Before a cloned local user can sign in to the tenant's destination grid, the root user for the cloned tenant must add a password for the user on the destination grid. For instructions, refer to link:../tenant/manage-users.html[Manage users] in the instructions for using the Tenant Manager.
 
 === Tenant created without a clone
 
@@ -88,7 +88,7 @@ This issue can occur if updates to the Connection status are delayed, which migh
 
 . Follow the instructions to test a grid federation connection in link:grid-federation-manage-connection.html[Manage grid federation connections] to confirm the issue has been fixed.
 
-. From the tenant's source grid, select *TENANTS*.
+. From the tenant's source grid, select *Tenants*.
 
 . Locate the tenant account that failed to be cloned.
 
@@ -148,7 +148,7 @@ This alert indicates that tenant objects can't be replicated between the buckets
 .Recommended actions
 
 . Sign in to the grid where the alert was triggered.
-. Go to *CONFIGURATION* > *System* > *Grid federation*, and locate the connection name listed in the alert.
+. Go to *Configuration* > *System* > *Grid federation*, and locate the connection name listed in the alert.
 
 . On the Permitted tenants tab, look at the *Last error* column to determine which tenant accounts have errors.
 

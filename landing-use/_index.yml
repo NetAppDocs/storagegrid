@@ -22,8 +22,8 @@ indexpage:
       url: ../tenant/creating-groups-for-s3-tenant.html
     - title: Tenant management permissions
       url: ../tenant/tenant-management-permissions.html
-    - title: Manage local users
-      url: ../tenant/managing-local-users.html
+    - title: Manage users
+      url: ../tenant/manage-users.html
   - title: Manage S3 access keys and buckets
     links:
     - title: Manage S3 access keys
@@ -53,7 +53,7 @@ indexpage:
     - title: Operations on objects
       url: ../s3/operations-on-objects.html
     - title: Bucket and group access policies
-      url: ../s3/bucket-and-group-access-policies.html
+      url: ../s3/use-access-policies.html
   - title: Use Swift REST API (end of life)
     links:
     - title: Use Swift

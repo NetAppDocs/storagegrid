@@ -40,7 +40,7 @@ Exporting the logs to the syslog server provides these capabilities:
 
 * Better visibility into requests that were blocked by traffic classifiers at the load balancer.
 
-To export the logs, refer to link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
+To export the logs, refer to link:../monitor/configure-log-management.html[Configure log management and external syslog server].
 
 == Log file categories
 
@@ -58,6 +58,9 @@ m| base-os-logs
 
 m| bundles
 | Global configuration information (bundles).
+
+m| cache-svc
+| Cache service logs (only on Gateway Nodes).
 
 m| cassandra
 | Cassandra database information and Reaper repair logs.
@@ -79,6 +82,9 @@ m| install
 
 m| Lambda-arbitrator
 | Logs related to the S3 Select proxy request.
+
+m| leakd
+| Logs from leakd service.
 
 m| lumberjack.log
 | Debug messages related to log collection.

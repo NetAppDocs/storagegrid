@@ -131,8 +131,8 @@ entries:
         url: "/admin/changing-network-options-object-encryption.html"  
       - title: Change interface security settings
         url: "/admin/changing-browser-session-timeout-interface.html"  
-      - title: Manage SSH access
-        url: "/admin/manage-ssh-access.html"      
+      - title: Manage external SSH access
+        url: "/admin/manage-external-ssh-access.html"      
     - title: Configure key management servers
       entries:
       - title: What is key management server
@@ -227,14 +227,16 @@ entries:
   - title: Manage networks and connections
     entries:
     - title: Configure network settings
-      url: "/admin/configuring-network-settings.html"
       pdf-filename: Manage networks and connections
+      url: "/admin/configuring-network-settings.html"
     - title: Guidelines for StorageGRID networks
       url: "/admin/guidelines-for-storagegrid-networks.html"
     - title: View IP addresses
       url: "/admin/viewing-ip-addresses.html"
     - title: Configure VLAN interfaces
       url: "/admin/configure-vlan-interfaces.html"  
+    - title: Enable CORS for a management interface
+      url: "/admin/enable-cross-origin-resource-sharing-for-management-interface.html"
     - title: Manage traffic classification policies
       entries:
       - title: What is traffic classification policy
@@ -269,10 +271,8 @@ entries:
       url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Manage Storage Nodes
     entries:
-    - title: Storage Node management
-      pdf-filename: Manage Storage Nodes
-      url: "/admin/managing-storage-nodes.html"
     - title: Use Storage options
+      pdf-filename: Manage Storage Nodes
       entries:
       - title: What is object segmentation
         url: "/admin/what-object-segmentation-is.html"

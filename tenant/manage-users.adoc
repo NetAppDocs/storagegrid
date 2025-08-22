@@ -1,15 +1,15 @@
 ---
-permalink: tenant/managing-local-users.html
+permalink: tenant/manage-users.html
 sidebar: sidebar
 keywords: how to create local tenant users, manage users
 summary: 'You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root." Although you can add and remove local users, you cannot remove the root user.'
 ---
-= Manage local users
+= Manage users
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root". Although you can add and remove local users, you can't remove the root user.
+You can create local users and assign them to local groups to determine which features these users can access. You can also import federated users. The Tenant Manager includes one predefined local user, named "root". Although you can add and remove local users, you can't remove the root user.
 
 NOTE: If single sign-on (SSO) is enabled for your StorageGRID system, local users will not be able to sign in to the Tenant Manager or the Tenant Management API, although they can use client applications to access the tenant's resources, based on group permissions.
 
@@ -31,7 +31,7 @@ S3 users who don't belong to any groups don't have management permissions or S3 
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 +
 If your tenant account has the *Use grid federation connection* permission, a blue banner indicates that this is the tenant's source grid. Any local users you create on this grid will be cloned to the other grid in the connection.
 +
@@ -88,7 +88,7 @@ If your tenant account has the *Use grid federation connection* permission and y
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 
 . Review the information provided on the Users page, which lists basic information for all local and federated users for this tenant account.
 +
@@ -146,7 +146,7 @@ You can import one or more federated users, up to a maximum of 100 users, direct
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*. 
+. Select *Access Management* > *Users*. 
 . Select *Import federated users*.
 . Enter the UUID or username for one or more federated users.
 +
@@ -156,7 +156,7 @@ For multiple entries, add each UUID or username on a new line.
 +
 If the import into the Users field fails for one or more users, perform the following steps:
 
-.. Select *Copy users*.
+.. Expand *Users not imported* and select *Copy users*.
 .. Retry the import by selecting *Previous* and pasting the copied users into the *Import federated users* dialog box.
 
 +
@@ -170,7 +170,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 
 . Select the checkbox for the user you want to duplicate.
 
@@ -201,7 +201,7 @@ NOTE: You must use the federated identity source to delete federated users.
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 
 . Select the checkbox for each user you want to delete.
 
@@ -211,4 +211,5 @@ A confirmation dialog box appears.
 
 . Select *Delete user* or *Delete users*.
 
+// 2025 JULY 16, SGRIDDOC-175
 // 2025 FEB 26, SGWS-34007

@@ -11,7 +11,7 @@ summary: 'You can use StorageGRID logs to troubleshoot issues.'
 [.lead]
 You can use StorageGRID logs to troubleshoot issues. 
 
-NOTE: If you want to send your logs to an external syslog server or change the destination of audit information such as the `bycast.log` and `nms.log`, see link:../monitor/configure-audit-messages.html#[Configure audit messages and external syslog server].
+NOTE: If you want to send your logs to an external syslog server or change the destination of audit information such as the `bycast.log` and `nms.log`, see link:../monitor/configure-log-management.html[Configure log management].
 
 == General StorageGRID logs
 
@@ -130,6 +130,11 @@ m| /var/local/log/adc.errlog
 m| /var/local/log/ams.errlog
 | 
 | Admin Nodes
+
+m| /var/local/log/cache-svc.log +
+/var/local/log/cache-svc.errlog
+| Cache service logs.
+| Gateway Nodes
 
 m| /var/local/log/cassandra/system.log
 | Information for the metadata store (Cassandra database) that can be used if problems occur when adding new Storage Nodes, or if the nodetool repair task stalls.

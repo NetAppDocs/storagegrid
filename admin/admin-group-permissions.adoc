@@ -56,43 +56,43 @@ NOTE: Users must have the *Other grid configuration* permission to manage storag
 
 Users must have the Maintenance permission to use these options:
 
-* *CONFIGURATION* > *Access control*:
+* *Configuration* > *Access control*:
 ** Grid passwords
 
-* *CONFIGURATION* > *Network*:
+* *Configuration* > *Network*:
 ** S3 endpoint domain names
 
-* *MAINTENANCE* > *Tasks*:
+* *Maintenance* > *Tasks*:
  ** Decommission
  ** Expansion
  ** Object existence check
  ** Recovery
  
-* *MAINTENANCE* > *System*:
+* *Maintenance* > *System*:
 
  ** Recovery package
  ** Software update
 
-* *SUPPORT* > *Tools*:
+* *Support* > *Tools*:
  ** Logs
 
 Users who don't have the Maintenance permission can view, but not edit, these pages:
 
-* *MAINTENANCE* > *Network*:
+* *Maintenance* > *Network*:
  ** DNS servers
  ** Grid Network
  ** NTP servers
 
-* *MAINTENANCE* > *System*:
+* *Maintenance* > *System*:
  ** License
 
-* *CONFIGURATION* > *Network*:
+* *Configuration* > *Network*:
 ** S3 endpoint domain names
 
-* *CONFIGURATION* > *Security*:
+* *Configuration* > *Security*:
 ** Certificates
 
-* *CONFIGURATION* > *Monitoring*:
+* *Configuration* > *Monitoring*:
  ** Audit and syslog server
 
 == Manage alerts
@@ -103,7 +103,7 @@ This permission provides access to options for managing alerts. Users must have 
 
 This permission provides access to:
 
-* *SUPPORT* > *Tools* > *Metrics* page
+* *Support* > *Tools* > *Metrics* page
 * Custom Prometheus metrics queries using the *Metrics* section of the Grid Management API
 * Grid Manager dashboard cards that contain metrics
 
@@ -117,8 +117,8 @@ This permission provides access to these additional grid configuration options:
 
 * *ILM*:
 ** Storage grades
-* *CONFIGURATION* > *System*:
-* *SUPPORT* > *Other*:
+* *Configuration* > *System*:
+* *Support* > *Other*:
 ** Link cost
 
 == Storage appliance administrator

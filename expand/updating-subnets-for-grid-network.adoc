@@ -24,9 +24,27 @@ StorageGRID maintains a list of the network subnets used to communicate between 
 
 If any of the new nodes has a Grid Network IP address on a subnet not previously used, you must add the new subnet to the Grid Network subnet list before starting the expansion. Otherwise, you will have to cancel the expansion, add the new subnet, and start the procedure again.
 
+[NOTE]
+====
+Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
+
+* 192.168.130.101
+* 192.168.131.101
+* 192.168.130.102
+* 192.168.131.102
+* 198.51.100.2
+* 198.51.100.4
+
+For example, do not use the following subnet ranges for the Grid Network, Admin Network, or Client Network of any node:
+
+* 192.168.130.0/24 because this subnet range contains the IP addresses 192.168.130.101 and 192.168.130.102 
+* 192.168.131.0/24 because this subnet range contains the IP addresses 192.168.131.101 and 192.168.131.102
+* 198.51.100.0/24 because this subnet range contains the IP addresses 198.51.100.2 and 198.51.100.4
+====
+
 .Steps
 
-. Select *MAINTENANCE* > *Network* > *Grid Network*.
+. Select *Maintenance* > *Network* > *Grid Network*.
 
 . Select *Add another subnet* to add a new subnet in CIDR notation.
 +
@@ -35,7 +53,7 @@ For example, enter `10.96.104.0/22`.
 . Enter the provisioning passphrase, and select *Save*.
 
 . Wait until the changes are applied, then download a new recovery package.
-.. Select *MAINTENANCE* > *System* > *Recovery package*.
+.. Select *Maintenance* > *System* > *Recovery package*.
 .. Enter the *Provisioning Passphrase*.
 +
 CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system. It is also used to recover the primary Admin Node.

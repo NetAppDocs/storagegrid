@@ -2,14 +2,14 @@
 permalink: ilm/configuring-regions-optional-and-s3-only.html
 sidebar: sidebar
 keywords: S3 regions, region, ilm rules
-summary: 'ILM rules can filter objects based on the regions where S3 buckets are created, allowing you to store objects from different regions in different storage locations.'
+summary: 'ILM rules can filter objects based on the optional regions where S3 buckets are created, allowing you to store objects from different regions in different storage locations.'
 ---
-= Configure regions (optional and S3 only)
+= Configure S3 regions for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-ILM rules can filter objects based on the regions where S3 buckets are created, allowing you to store objects from different regions in different storage locations.
+ILM rules can filter objects based on the optional regions where S3 buckets are created, allowing you to store objects from different regions in different storage locations.
 
 If you want to use an S3 bucket region as a filter in a rule, you must first create the regions that can be used by the buckets in your system.
 
@@ -50,7 +50,9 @@ The Regions page appears.
 ====
 .All regions
 --
-The *All regions* tab lists the currently defined regions, including the defined default region, which you can't modify or remove.
+The *All regions* tab lists the currently defined regions, including the defined default region. 
+
+NOTE: You can't remove or modify the default region in the *All regions* tab. Use the *Default region* tab to change the default region.
  
 .. To add a region, select *Add another region*.
 .. Enter the name of a region that you want to use when creating S3 buckets.

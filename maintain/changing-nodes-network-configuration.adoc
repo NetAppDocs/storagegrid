@@ -38,7 +38,7 @@ NOTE: Any changes you make to the network using the Change IP tool are propagate
 
 .Steps
 
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
+. External SSH access is blocked by default. If required, link:../admin/manage-external-ssh-access.html[temporarily allow access].
 
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
@@ -161,10 +161,10 @@ After you apply or stage changes, a new recovery package is generated as a resul
  .. Restart the affected nodes.
 . Select *0* to exit the Change IP tool after your changes are complete.
 . Download a new recovery package from the Grid Manager.
- .. Select *MAINTENANCE* > *System* > *Recovery package*.
+ .. Select *Maintenance* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished changing the node network configuration.
+. If you've allowed external SSH access, link:../admin/manage-external-ssh-access.html[block access] when you're finished changing the node network configuration.
 
 == Temporarily changing the LACP PDU rate
 

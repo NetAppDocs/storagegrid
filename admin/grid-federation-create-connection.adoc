@@ -30,7 +30,7 @@ Perform these steps on either of the two StorageGRID systems.
 
 . Sign in to the Grid Manager from the primary Admin Node on either grid.
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 
 . Select *Add connection*.
 
@@ -96,7 +96,7 @@ Perform these steps on the StorageGRID system you are connecting to (the other g
 
 . Sign in to the Grid Manager from the primary Admin Node.
 
-. Select *CONFIGURATION* > *System* > *Grid federation*.
+. Select *Configuration* > *System* > *Grid federation*.
 
 . Select *Upload verification file* to access the Upload page. 
 

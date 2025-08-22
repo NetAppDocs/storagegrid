@@ -24,7 +24,7 @@ image::../media/dashboard_health_panel_license_status.png[Dashboard Health Statu
 
 . Access the License page by doing one of the following:
 
-* Select *MAINTENANCE* > *System* > *License*.
+* Select *Maintenance* > *System* > *License*.
 * From the Health status card on the dashboard, select the License status icon or the *License* link.
 +
 This link appears only if there is an issue with the license.

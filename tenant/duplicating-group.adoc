@@ -17,7 +17,7 @@ You can create new groups more quickly by duplicating an existing group.
 * You belong to a user group that has the Root access permission. See link:tenant-management-permissions.html[Tenant management permissions].
 
 .Steps
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 . Select the checkbox for the group you want to duplicate.
 . Select *Duplicate group*. For additional details on creating a group, see the instructions for creating groups for link:creating-groups-for-s3-tenant.html[an S3 tenant].
 . Select the *Local group* tab to create a local group, or select the *Federated group* tab to import a group from the previously configured identity source.

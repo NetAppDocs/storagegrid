@@ -17,9 +17,27 @@ You can add, delete, or change the subnets in the Admin Network Subnet List of o
 
 You can add, delete, or change subnets to all nodes on the Admin Network Subnet List.
 
+[NOTE]
+====
+Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
+
+* 192.168.130.101
+* 192.168.131.101
+* 192.168.130.102
+* 192.168.131.102
+* 198.51.100.2
+* 198.51.100.4
+
+For example, do not use the following subnet ranges for the Grid Network, Admin Network, or Client Network of any node:
+
+* 192.168.130.0/24 because this subnet range contains the IP addresses 192.168.130.101 and 192.168.130.102 
+* 192.168.131.0/24 because this subnet range contains the IP addresses 192.168.131.101 and 192.168.131.102
+* 198.51.100.0/24 because this subnet range contains the IP addresses 198.51.100.2 and 198.51.100.4
+====
+
 .Steps
 
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
+. External SSH access is blocked by default. If required, link:../admin/manage-external-ssh-access.html[temporarily allow access].
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
  .. Enter the password listed in the `Passwords.txt` file.
@@ -110,9 +128,9 @@ Running provisioning...
 Updating grid network configuration on Name
 ----
 . Download a new recovery package from the Grid Manager.
- .. Select *MAINTENANCE* > *System* > *Recovery package*.
+ .. Select *Maintenance* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you're finished adding to or changing the subnet lists.
+. If you've allowed external SSH access, link:../admin/manage-external-ssh-access.html[block access] when you're finished adding to or changing the subnet lists.
 
 // 2025 APR 30, SGWS-34284

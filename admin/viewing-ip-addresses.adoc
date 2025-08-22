@@ -20,7 +20,7 @@ For information about changing IP addresses, see link:../maintain/configuring-ip
 
 .Steps
 
-. Select *NODES* > *_grid node_* > *Overview*.
+. Select *Nodes* > *_grid node_* > *Overview*.
 . Select *Show more* to the right of the IP Addresses title.
 +
 The IP addresses for that grid node are listed in a table.

@@ -14,7 +14,7 @@ If you encounter errors during the grid expansion process that you are unable to
 Before you contact technical support, collect the required log files to assist in troubleshooting.
 
 .Steps
-. External SSH access is blocked by default. If required, link:https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[temporarily allow access].
+. External SSH access is blocked by default. If required, link:../admin/manage-external-ssh-access.html[temporarily allow access].
 
 . Connect to the expansion node that has experienced failures:
  .. Enter the following command:``ssh -p 8022 admin@_grid_node_IP_``
@@ -50,6 +50,6 @@ a|
 * `/var/log/storagegrid/nodes/<node-name>.log` (for each failed node; might not exist)
 |===
 
-. If you've allowed external SSH access, https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-ssh-access.html[block access] when you've finished the task.
+. If you've allowed external SSH access, link:../admin/manage-external-ssh-access.html[block access] when you've finished the task.
 
 // 2025 APR 29, SGWS-35050

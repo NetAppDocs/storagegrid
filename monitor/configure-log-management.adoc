@@ -1,10 +1,10 @@
 ---
-permalink: monitor/configure-audit-messages.html
+permalink: monitor/configure-log-management.html
 sidebar: sidebar
 keywords: log management, audit level, external syslog server, log destinations
 summary: 'As needed, configure audit levels, protocol headers, and the location of audit messages and logs.'
 ---
-= Configure audit message settings
+= Configure log management
 :icons: font
 :imagesdir: ../media/
 
@@ -66,7 +66,7 @@ NOTE: During upgrades, audit level configurations won't be effective immediately
 
 .Steps
 
-. Select *CONFIGURATION* > *Monitoring* > *Log management*.
+. Select *Configuration* > *Monitoring* > *Log management*.
 
 . For each category of audit message, select an audit level from the drop-down list:
 +
@@ -113,15 +113,15 @@ NOTE: Audit protocol request headers are logged only if the audit level for *Cli
 
 == Configure log location
 
-By default, audit messages and logs are saved on the nodes where they're generated. If you want to save audit messages and a subset of logs externally, <<use-external-syslog-server,use an external syslog server>>.
+By default, audit messages and logs are saved on the nodes where they're generated. They're periodically rotated and eventually deleted to prevent them from consuming excessive disk space. If you want to save audit messages and a subset of logs externally, <<use-external-syslog-server,use an external syslog server>>.
 
-Logs are periodically rotated. To store logs for an extended period of time, enable archive logs, and then choose a tenant and bucket for log storage.
+If you want to save the log files internally, choose a tenant and bucket for log storage and enable log archival.
 
 === [[use-external-syslog-server]]Use an external syslog server
 
 You can optionally configure an external syslog server to save audit logs, application logs, and security event logs to a location outside of your grid. 
 
-NOTE: If you don't want to use an external syslog server, skip this step and go to <<select-audit-information-destinations,Select audit information destinations>>.
+NOTE: If you don't want to use an external syslog server, skip this step and go to <<select-log-location,Select log location>>.
 
 TIP: If the configuration options available in this procedure aren't flexible enough to meet your requirements, additional configuration options can be applied using the `audit-destinations` endpoints, which are in the private API section of the link:../admin/using-grid-management-api.html[Grid Management API]. For example, you can use the API if you want to use different syslog servers for different groups of nodes.
 
@@ -130,7 +130,7 @@ TIP: If the configuration options available in this procedure aren't flexible en
 Access the Configure external syslog server wizard and provide the information StorageGRID needs to access the external syslog server.
 
 .Steps
-. From the Audit and syslog server page, select *Configure external syslog server*. Or, if you have previously configured an external syslog server, select *Edit external syslog server*.
+. From the Local node and external server tab, select *Configure external syslog server*. Or, if you have previously configured an external syslog server, select *Edit external syslog server*.
 +
 The Configure external syslog server wizard appears.
 
@@ -372,7 +372,7 @@ You are returned to the *Audit and syslog server* page. A green banner indicates
 +
 NOTE: StorageGRID audit information isn't sent to the external syslog server until you select a destination that includes the external syslog server. 
 
-[[select-audit-information-destinations]]
+[[select-log-location]]
 === Select log location
 You can specify where audit logs, security event logs, link:../monitor/storagegrid-software-logs.html[StorageGRID application logs], and access logs are sent. 
 
@@ -454,7 +454,17 @@ Logs are periodically rotated. Use an S3 bucket in the same grid to store logs f
 [start=2]
 . Select *Save*.
 +
-Logs will be stored in the tenant and bucket you specified.
+Logs will be stored in the tenant and bucket you specified. The object key name for the logs are in this format:
++
+----
+system-logs/{node_hostname}/{absolute_path_to_log_file_on_node}--{last_modified_time}.gz
+----
++
+For example:
++
+----
+system-logs/DC1-SN1/var/local/log/localaudit.log--2025-05-12_13:41:44.gz
+----
 
 // 2024 Oct 8, SGRIDDOC-98
 // 2023 SEP 14, SGWS-28029

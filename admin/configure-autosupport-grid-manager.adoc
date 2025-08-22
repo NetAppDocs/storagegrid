@@ -44,7 +44,7 @@ The protocol you set is used for sending all types of AutoSupport packages.
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*.
+. Select *Support* > *Tools* > *AutoSupport* > *Settings*.
 
 . Select the protocol you want to use to send AutoSupport packages.
 
@@ -64,7 +64,7 @@ You can disable the automatic sending of weekly AutoSupport packages at any time
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*.
+. Select *Support* > *Tools* > *AutoSupport* > *Settings*.
 . Clear the *Enable Weekly AutoSupport* checkbox.
 . Select *Save*.
 
@@ -76,7 +76,7 @@ You can disable event-triggered AutoSupport at any time.
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*.
+. Select *Support* > *Tools* > *AutoSupport* > *Settings*.
 . Clear the *Enable Event-Triggered AutoSupport* checkbox.
 . Select *Save*.
 
@@ -90,7 +90,7 @@ Technical support can't enable or disable AutoSupport on Demand.
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*.
+. Select *Support* > *Tools* > *AutoSupport* > *Settings*.
 . Select the *HTTPS* for the protocol.
 . Select the *Enable Weekly AutoSupport* checkbox.
 . Select the *Enable AutoSupport on Demand* checkbox.
@@ -106,7 +106,7 @@ As required, you can optionally disable the check for software updates. For exam
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*.
+. Select *Support* > *Tools* > *AutoSupport* > *Settings*.
 . Clear the *Check for software updates* checkbox.
 . Select *Save*.
 
@@ -120,7 +120,7 @@ NOTE: You can't use the SMTP protocol to send AutoSupport packages to an additio
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*.
+. Select *Support* > *Tools* > *AutoSupport* > *Settings*.
 
 . Select *Enable Additional AutoSupport Destination*.
 

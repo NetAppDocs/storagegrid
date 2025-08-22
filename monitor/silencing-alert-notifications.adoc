@@ -23,7 +23,7 @@ If you have enabled the SNMP agent, silences also suppress SNMP traps and inform
 CAUTION: Be careful when deciding to silence an alert rule. If you silence an alert, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 .Steps
-. Select *ALERTS* > *Silences*.
+. Select *Alerts* > *Silences*.
 +
 The Silences page appears.
 +
@@ -78,7 +78,7 @@ a|
 Edit a silence
 a|
 
- .. Select *ALERTS* > *Silences*.
+ .. Select *Alerts* > *Silences*.
  .. From the table, select the radio button for the silence you want to edit.
  .. Select *Edit*.
  .. Change the description, the amount of time remaining, the selected severities, or the affected node.
@@ -88,7 +88,7 @@ a|
 Remove a silence
 a|
 
- .. Select *ALERTS* > *Silences*.
+ .. Select *Alerts* > *Silences*.
  .. From the table, select the radio button for the silence you want to remove.
  .. Select *Remove*.
  .. Select *OK* to confirm you want to remove this silence.

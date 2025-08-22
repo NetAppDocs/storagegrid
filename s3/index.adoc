@@ -51,7 +51,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 
 |12.0
 |
-* Added support for cross-origin resource sharing (CORS) for a management interface, which allows another domain to access data in StorageGRID using management APIs. link:../tenant/enable-cross-origin-resource-sharing-for-management-interface.html[Learn more].
+* Added support for cross-origin resource sharing (CORS) for a management interface, which allows another domain to access data in StorageGRID using management APIs. link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Learn more].
 
 * Added support for STS AssumeRole and session policy. See link:example-session-policies.html[an example of a session policy]. You can set up AssumeRole under tenant groups. 
 
@@ -138,7 +138,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |Added support for multipart upload, virtual hosted-style requests, and v4 authentication.
 
 |10.0
-|Initial support of the S3 REST API by the StorageGRID system.The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
+|Initial support of the S3 REST API by the StorageGRID system. The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
 
 |===
 // 2025-05-07, SGWS 34003

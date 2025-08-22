@@ -57,7 +57,7 @@ The following bucket settings use *strong* consistency by default. If two or mor
 * link:deleting-s3-bucket-objects.html[Background empty bucket deletion]
 * link:enabling-or-disabling-last-access-time-updates.html[Last Access Time]
 * link:../s3/create-s3-lifecycle-configuration.html[Bucket lifecycle]
-* link:../s3/bucket-and-group-access-policies.html[Bucket policy]
+* link:../s3/use-access-policies.html[Bucket policy]
 * link:../s3/operations-on-buckets.html[Bucket tagging]
 * link:changing-bucket-versioning.html[Bucket versioning]
 * link:using-s3-object-lock.html[S3 Object Lock]
