@@ -31,16 +31,16 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 . Stop the AMS service to prevent it from creating a new log file:``service ams stop``
 . Navigate to the audit export directory:
 +
-`cd /var/local/log`
+`cd /var/local/audit/export` 
 +
-(or `cd /var/local/audit/export` on earlier systems)
+(or `cd /var/local/log` on earlier systems)
 
 . Rename the source log file to a unique numbered file name.
 +
 [NOTE]
 ====
-* If the log file is in the `/var/local/log` directory, its name is `localaudit.log`.
 * If the log file is in the `/var/local/audit/export` directory, its name is `audit.log`.
+* If the log file is in the `/var/local/log` directory, its name is `localaudit.log`.
 ====
 +
 For example, rename the `localaudit.log` file to `2025-10-22.txt.1`.
@@ -59,3 +59,5 @@ When prompted, enter the password for admin.
 When prompted, enter the password for admin.
 
 . Log out as root: `exit`
+
+// 2025 AUG 6, SGRIDDOC-172
