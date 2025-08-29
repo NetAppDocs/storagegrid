@@ -243,9 +243,9 @@ Alternatively, you can activate a single policy from the *ILM* > *Policy tags* p
 --
 .Activate multiple policies
 --
-To activate multiple policies, you must create tags and assign a policy to each tag. You can create a maximum of ten tags for your grid.
+To activate multiple policies, you must create policy tags and assign a policy to each tag. You can create a maximum of 10 policy tags for your grid.
 
-TIP: When multiple tags are in use, if tenants frequently reassign policy tags to buckets, grid performance might be impacted. If you have untrusted tenants, consider using only the Default tag.
+TIP: When multiple policy tags are in use, if tenants frequently reassign policy tags to buckets, grid performance might be impacted. If you have untrusted tenants, consider using only the Default policy tag.
 
 . Select *ILM* > *Policy tags*.
 . Select *Create*.
