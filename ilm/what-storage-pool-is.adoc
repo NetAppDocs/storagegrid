@@ -13,7 +13,7 @@ A storage pool is a logical grouping of Storage Nodes.
 
 When you install StorageGRID, one storage pool per site is automatically created. You can configure additional storage pools as needed for your storage requirements.
 
-NOTE: Storage Nodes can be configured during installation to contain object data and metadata ("combined" Storage Node), only object metadata, or only object data. Metadata-only Storage Nodes can't be used in storage pools. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
+NOTE: Storage Nodes can be configured during installation to contain object data and metadata ("combined" Storage Node), only object metadata, or only object data. Metadata-only Storage Nodes can't be used in storage pools. For more information, refer to link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 
 Storage pools have two attributes:
 
