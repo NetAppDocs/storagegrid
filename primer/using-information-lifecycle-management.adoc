@@ -9,9 +9,7 @@ summary: 'You use information lifecycle management \(ILM\) to control the placem
 :imagesdir: ../media/
 
 [.lead]
-You use information lifecycle management (ILM) to control the placement, duration, and ingest behavior for all objects in your StorageGRID system. ILM rules determine how StorageGRID stores objects over time. You configure one or more ILM rules and then add them to an ILM policy.
-
-A grid has only one active policy at a time. A policy can contain multiple rules.
+You use information lifecycle management (ILM) to control the placement, duration, and ingest behavior for all objects in your StorageGRID system. ILM rules determine how StorageGRID stores objects over time. You configure one or more ILM rules and then add them to an ILM policy. A grid can have more than one active policy at a time.
 
 ILM rules define:
 
@@ -68,3 +66,5 @@ image::../media/ilm_policy_and_rules.png[ILM Policy and Rules]
 .Related information
 
 * link:../ilm/index.html[Manage objects with ILM]
+
+// 2025 SEP 22, SGRIDDOC-194
