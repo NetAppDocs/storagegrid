@@ -123,6 +123,13 @@ If enterprise networking policies restrict access to any of these ports, you can
 | Storage Nodes
 | Metadata internal traffic.
 
+| 5353
+| UDP
+| mDNS
+| All nodes
+| All nodes
+| Provides the multicast DNS (mDNS) service that is used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
+
 | 7001
 | TCP
 | Storage Nodes
@@ -221,8 +228,8 @@ If enterprise networking policies restrict access to any of these ports, you can
 
 | 18086
 | TCP
-| All grid nodes
-| All Storage Nodes
+| All nodes
+| Storage Nodes
 | Internal traffic related to LDR service.
 
 | 18200

@@ -178,6 +178,13 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | AWS
 | Cloud Storage Pools requests sent to AWS targets that use HTTPS. Grid administrators can override the default HTTPS port setting of 443 when configuring a Cloud Storage Pool.
 
+| 443
+| TCP
+| HTTP
+| Browser
+| Appliances
+| Port 443 redirects to port 8443 for the StorageGRID Appliance Installer.
+
 | 903
 | TCP
 | NFS
@@ -231,11 +238,11 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | 8443
 | TCP
 | HTTPS
-|  Browser
+| Browser
 | Admin Nodes
-| Optional. Used by web browsers and management API clients for accessing the Grid Manager. Can be used to separate Grid Manager and Tenant Manager communications.
+| Optional. Used by web browsers and management API clients for accessing the Grid Manager or StorageGRID Appliance Installer. Can be used to separate Grid Manager and Tenant Manager communications.
 
-*Note*: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. See link:../admin/configure-firewall-controls.html[Configure firewall controls] to configure privileged IP addresses.
+*Note*: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, lose access to Grid Manager unless their IP address has been added to the Privileged address list. See link:../admin/configure-firewall-controls.html[Configure firewall controls] to configure privileged IP addresses.
 
 | 9022
 | TCP
@@ -305,6 +312,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 |===
 
+// 2025 SEP 22, SGRIDDOC-195
 // 2024 AUG 12, SGIRDDOC-91
 // 2024 JULY 15, SGRIDOC-78
 // 2023 SEP 19, SGWS-25330
