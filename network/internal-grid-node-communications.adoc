@@ -210,9 +210,9 @@ If enterprise networking policies restrict access to any of these ports, you can
 
 | 18019
 | TCP
-| Storage Nodes
-| Storage Nodes
-| Chunk service internal traffic for erasure coding.
+| All nodes
+| All nodes
+| Chunk service internal traffic for erasure coding and replication
 
 | 18082
 | TCP
