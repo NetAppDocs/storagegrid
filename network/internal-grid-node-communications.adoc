@@ -125,7 +125,6 @@ If enterprise networking policies restrict access to any of these ports, you can
 
 | 5353
 | UDP
-| mDNS
 | All nodes
 | All nodes
 | Provides the multicast DNS (mDNS) service that is used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
