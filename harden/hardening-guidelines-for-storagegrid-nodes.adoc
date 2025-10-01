@@ -11,13 +11,15 @@ summary: 'StorageGRID nodes can be deployed on VMware virtual machines, within a
 [.lead]
 StorageGRID nodes can be deployed on VMware virtual machines, within a container engine on Linux hosts, or as dedicated hardware appliances. Each type of platform and each type of node has its own set of hardening best practices.
 
-== Control remote IPMI access to BMC
+== [[block-remote-ipmi]]Control remote IPMI access to BMC
 
 You can enable or disable remote IPMI access for all appliances containing a BMC. The remote IPMI interface allows low-level hardware access to your StorageGRID appliances by anyone with a BMC account and password. If you do not need remote IPMI access to the BMC, disable this option.
 
-* To control remote IPMI access to the BMC in Grid Manager, go to *CONFIGURATION* > *Security* > *Security settings* > *Appliances*:
+* To control remote IPMI access to the BMC in Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances*:
 ** Clear the *Enable remote IPMI access* checkbox to disable IPMI access to the BMC.
 ** Select the *Enable remote IPMI access* checkbox to enable IPMI access to the BMC.
+
+For additional information about BMC hardening, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)^] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
 
 == Firewall configuration
 
@@ -35,11 +37,11 @@ Specifically, you can manage these areas:
 
 While this internal firewall provides an additional layer of protection against some common threats, it does not remove the need for an external firewall.
 
-For a list of all internal and external ports used by StorageGRID, see link:../network/network-port-reference.html[Network port reference].
+For a list of all internal and external ports used by StorageGRID, see link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[StorageGRID internal ports] and link:../network/external-communications.html#ports-used-for-external-communications[Ports used for external communications].
 
 == Disable unused services
 
-For all StorageGRID nodes, you should disable or block access to unused services. For example, if you aren't planning to use DHCP, use the Grid Manager to close port 68. Select *CONFIGURATION* > *Firewall control* > *Manage external access*. Then change the Status toggle for port 68 from *Open* to *Closed*.
+For all StorageGRID nodes, you should disable or block access to unused services. For example, if you aren't planning to use DHCP, use the Grid Manager to close port 68. Select *Configuration* > *Firewall control* > *Manage external access*. Then change the Status toggle for port 68 from *Open* to *Closed*.
 
 == Virtualization, containers, and shared hardware
 
@@ -49,6 +51,12 @@ For all StorageGRID nodes, avoid running StorageGRID on the same physical hardwa
 == Protect nodes during installation
 
 Don't allow untrusted users to access StorageGRID nodes over the network when the nodes are being installed. Nodes aren't fully secure until they have joined the grid.
+
+== Limit physical access to hardware
+
+You must limit physical access to StorageGRID hardware appliance nodes as well as VMware virtual machine hosts and Linux hosts running StorageGRID to authorized administrators only. Some examples of physical access controls include locks, guards, physical barriers, and video surveillance.
+
+Hardware appliance nodes are designed to be installed and operated only by authorized administrators. Don't allow un-authorized administrators to access hardware appliance nodes.
 
 == Guidelines for Admin Nodes
 
@@ -74,7 +82,7 @@ Storage Nodes manage and store object data and metadata. Follow these guidelines
 * Don't enable outbound services for untrusted tenants. For example, when creating the account for an untrusted tenant, don't allow the tenant to use its own identity source and don't allow the use of platform services. See the steps for link:../admin/creating-tenant-account.html[creating a tenant account].
 * Use a third-party load balancer for untrusted client traffic. Third-party load balancing offers more control and additional layers of protection against attack.
 * Optionally, use a storage proxy for more control over Cloud Storage Pools and platform services communication from Storage Nodes to external services. See the steps for link:../admin/configuring-storage-proxy-settings.html[creating a storage proxy].
-* Optionally, connect to external services using the Client Network. Then, select *CONFIGURATION* > *Security* > *Firewall control* > *Untrusted Client Networks* and indicate that the Client Network on the Storage Node is untrusted. The Storage Node no longer accepts any incoming traffic on the Client Network, but it continues to allow outbound requests for Platform Services.
+* Optionally, connect to external services using the Client Network. Then, select *Configuration* > *Security* > *Firewall control* > *Untrusted Client Networks* and indicate that the Client Network on the Storage Node is untrusted. The Storage Node no longer accepts any incoming traffic on the Client Network, but it continues to allow outbound requests for Platform Services.
 
 == Guidelines for Gateway Nodes
 
@@ -82,7 +90,7 @@ Gateway Nodes provide an optional load-balancing interface that client applicati
 
 * Configure and use load balancer endpoints. See link:../admin/managing-load-balancing.html[Considerations for load balancing].
 * Use a third-party load balancer between the client and the Gateway Node or Storage Nodes for untrusted client traffic. Third-party load balancing offers more control and additional layers of protection against attack. If you do use a third-party load balancer, network traffic can still optionally be configured to go through an internal load balancer endpoint or be sent directly to Storage Nodes.
-* If you are using load balancer endpoints, optionally have clients connect over the Client Network. Then, select *CONFIGURATION* > *Security* > *Firewall control* > *Untrusted Client Networks* and indicate that the Client Network on the Gateway Node is untrusted. The Gateway Node only accepts inbound traffic on the ports explicitly configured as load balancer endpoints.
+* If you are using load balancer endpoints, optionally have clients connect over the Client Network. Then, select *Configuration* > *Security* > *Firewall control* > *Untrusted Client Networks* and indicate that the Client Network on the Gateway Node is untrusted. The Gateway Node only accepts inbound traffic on the ports explicitly configured as load balancer endpoints.
 
 [[guidelines-for-hardware-appliance-nodes]]
 == Guidelines for hardware appliance nodes
@@ -92,13 +100,24 @@ StorageGRID hardware appliances are specially designed for use in a StorageGRID 
 Follow these guidelines to secure any hardware appliance nodes in your StorageGRID system:
 
 * If the appliance uses SANtricity System Manager for storage controller management, prevent untrusted clients from accessing SANtricity System Manager over the network.
-* If the appliance has a baseboard management controller (BMC), be aware that the BMC management port allows low-level hardware access. Connect the BMC management port only to a secure, trusted, internal management network. If no such network is available, leave the BMC management port unconnected or blocked, unless a BMC connection is requested by technical support.
-* If the appliance supports remote management of the controller hardware over Ethernet using the Intelligent Platform Management Interface (IPMI) standard, block untrusted traffic on port 623.
+* If the appliance has a baseboard management controller (BMC), be aware that the BMC management port allows low-level hardware access. Connect the BMC management port only to a secure, trusted, internal management network.
++
+You can establish a VLAN to isolate BMC network connections and restrict BMC internet access to trusted networks. For additional information about enforcing VLAN separation, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)^] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
++
+If a secure, trusted, internal management network isn't available, leave the BMC management port unconnected or blocked. Technical support might request temporary access during a support case.
+* If the appliance supports remote management of the controller hardware over Ethernet using the Intelligent Platform Management Interface (IPMI) standard, block untrusted traffic on port 623. 
 +
 include::../_include/enable-disable-ipmi.adoc[]
++
+You can also <<block-remote-ipmi,disable remote IPMI access>>.
 
 * For appliance models containing SED, FDE, or FIPS NL-SAS drives that you manage with SANtricity System Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[enable and configure SANtricity Drive Security^].
 
-* For appliance models containing SED or FIPS NVMe SSDs that you manage using the StorageGRID Appliance Installer and Grid Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[enable and configure StorageGRID drive encryption^].
+* For appliance models containing SED or FIPS NVMe SSDs that you manage using the StorageGRID Appliance Installer and Grid Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-drive-encryption[enable and configure StorageGRID drive encryption^].
 
-* For appliances without SED, FDE, or FIPS drives, enable and configure StorageGRID software node encryption https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-node-encryption[using a Key Management Server (KMS)^].
+* For appliances without SED, FDE, or FIPS drives, use a Key Management Server (KMS) to  https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html#enable-node-encryption[enable and configure StorageGRID software node encryption^].
+
+.Related information
+https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html[Learn about drive security in SANtricity System Manager^]
+
+// 2025 JULY 10, SGRIDDOC-170

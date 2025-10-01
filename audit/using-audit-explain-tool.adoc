@@ -44,7 +44,7 @@ The `audit-explain` tool can do the following:
 +
 `audit-explain audit.log 2019-08-12.txt.gz 2019-08-13.txt.gz`
 +
-`audit-explain /var/local/log/*`
+`audit-explain /var/local/audit/export/*`
 
 * Accept input from a pipe, which allows you to filter and preprocess the input using the `grep` command or other means. For example:
 +
@@ -76,11 +76,12 @@ Use the `help (-h)` option to see the available options. For example:
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
 
-. Enter the following command, where `/var/local/log/audit.log` represents the name and the location of the file or files you want to analyze:
+. Enter the following command, where `/var/local/audit/export/audit.log` represents the name and the location of the file or files you want to analyze:
 +
-`$ audit-explain /var/local/log/audit.log`
+`$ audit-explain /var/local/audit/export/audit.log`
 +
 The `audit-explain` tool prints human-readable interpretations of all messages in the specified file or files.
 +
 NOTE: To reduce line lengths and to aid readability, timestamps aren't shown by default. If you want to see the timestamps, use the timestamp (`-t`) option.
 
+// 2025 AUG 6, SGRIDDOC-172

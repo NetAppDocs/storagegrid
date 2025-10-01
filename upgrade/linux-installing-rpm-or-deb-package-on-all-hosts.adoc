@@ -35,7 +35,7 @@ The downloads page for the version you selected appears. The page contains three
 
 * An RPM or DEB archive in either `.tgz` or `.zip` format. Select the `.zip` file if you are running Windows on the service laptop.
 
-** Red Hat Enterprise Linux +
+** RHEL +
 `StorageGRID-Webscale-_version_-RPM-_uniqueID_.zip` +
 `StorageGRID-Webscale-_version_-RPM-_uniqueID_.tgz`
 
@@ -55,6 +55,10 @@ The downloads page for the version you selected appears. The page contains three
 +
 You will be prompted to upload the hotfix file on the StorageGRID Upgrade page when you start the upgrade.
 
+. Code signature verification is manual on a Linux node. Optionally, verify the installation archive:
+.. Download the StorageGRID code signature verification package. The file name for this package uses the format `StorageGRID_<version-number>_Code_Signature_Verification_Package.tar.gz`, where `<version-number>` is the StorageGRID software version.
+.. Follow the steps to link:../swnodes/download-files-verify.html[manually verify the installation files].
+
 == Install archive on all Linux hosts
 Perform these steps before upgrading StorageGRID software.
 
@@ -63,11 +67,7 @@ Perform these steps before upgrading StorageGRID software.
 . Extract the RPM or DEB packages from the installation file.
 . Install the RPM or DEB packages on all Linux hosts.
 +
-See the steps for installing StorageGRID host services in the installation instructions:
-+
-* link:../rhel/installing-storagegrid-webscale-host-service.html[Red Hat Enterprise Linux: Install StorageGRID host services]
-* link:../ubuntu/installing-storagegrid-webscale-host-services.html[Ubuntu or Debian: Install StorageGRID host services]
-
+See the steps for installing StorageGRID host services for Linux in link:../swnodes/installing-storagegrid-webscale-host-services.html[Install StorageGRID host services].
 +
 The new packages are installed as additional packages.
 
@@ -83,7 +83,7 @@ To free up space on Linux hosts, you can remove the installation archives for pr
 [role="tabbed-block"]
 ====
 
-.Red Hat
+.RHEL
 --
 .. Capture the list of StorageGRID packages installed: `dnf list | grep -i storagegrid`.
 +
@@ -306,3 +306,5 @@ Deleted: f5ef895dcad0d78d0fd21a07dd132d7c7f65f45d80ee7205a4d615494e44cbb7
 --
 ====
 // end tabbed area
+
+// 2025 JULY 9, SGRIDDOC-171

@@ -19,7 +19,7 @@ When tenant users sign in to the Tenant Manager, they are connecting to an Admin
 
 After a grid administrator creates a tenant account using the Grid Manager or the Grid Management API, tenant users can sign in to the Tenant Manager.
 
-The Tenant Manager dashboard allows tenant users to monitor storage usage at a glance. The Storage usage panel contains a list of the largest buckets (S3) or containers (Swift) for the tenant. The Space used value is the total amount of object data in the bucket or container. The bar chart represents the relative sizes of these buckets or containers.
+The Tenant Manager dashboard allows tenant users to monitor storage usage at a glance. The Storage usage panel contains a list of the largest S3 buckets for the tenant. The Space used value is the total amount of object data in the bucket or container. The bar chart represents the relative sizes of these buckets or containers.
 
 The value shown above the bar chart is a sum of the space used for all of the tenant's buckets or containers. If the maximum number of gigabytes, terabytes, or petabytes available for the tenant was specified when the account was created, the amount of quota used and remaining are also shown.
 
@@ -27,7 +27,12 @@ image::../media/tenant_dashboard_with_buckets.png[Tenant Manager dashboard]
 
 == Storage menu (S3)
 
-The Storage menu is provided for S3 tenant accounts only. This menu allows S3 users to manage access keys; create, manage, and delete buckets; manage platform services endpoints; and view any grid federation connections they are permitted to use.
+This menu allows S3 users to:
+
+* Manage access keys
+* Create, manage, and delete buckets
+* Manage platform services endpoints
+* View any grid federation connections they're permitted to use
 
 === My access keys
 
@@ -36,7 +41,7 @@ S3 tenant users can manage access keys as follows:
 * Users who have the Manage your own S3 credentials permission can create or remove their own S3 access keys.
 * Users who have the Root access permission can manage the access keys for the S3 root account, their own account, and all other users. Root access keys also provide full access to the tenant's buckets and objects unless explicitly disabled by a bucket policy.
 +
-NOTE: Managing the access keys for other users takes place from the Access Management menu.
+NOTE: Managing the access keys for other users takes place from the Access management menu.
 
 === Buckets
 

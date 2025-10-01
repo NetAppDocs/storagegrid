@@ -35,7 +35,7 @@ TIP: If you need to reboot more than one node, you can use the link:../maintain/
 
 .Steps
 
-. Select *NODES*.
+. Select *Nodes*.
 . Select the grid node you want to reboot.
 . Select the *Tasks* tab.
 . Select *Reboot*.

@@ -20,7 +20,7 @@ Client write audit messages are logged when an S3 client application makes a req
 
 | OVWR
 | Object Overwrite: Logs a transaction to overwrite one object with another object.
-| S3 and Swift clients
+| S3 client
 | link:ovwr-object-overwrite.html[OVWR: Object Overwrite]
 
 | SDEL
@@ -49,13 +49,4 @@ Client write audit messages are logged when an S3 client application makes a req
 | S3 client
 | link:supd-s3-metadata-updated.html[SUPD: S3 Metadata Updated]
 
-| WDEL
-| Swift DELETE: Logs a successful transaction to delete an object or container.
-| Swift client
-| link:wdel-swift-delete.html[WDEL: Swift DELETE]
-
-| WPUT
-| Swift PUT: Logs a successful transaction to create a new object or container.
-| Swift client
-| link:wput-swift-put.html[WPUT: Swift PUT]
 |===

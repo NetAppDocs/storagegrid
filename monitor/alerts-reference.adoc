@@ -86,6 +86,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Appliance DAS drive fault detected
 | A problem was detected with a direct-attached storage (DAS) drive in the appliance.
 
+| Appliance DAS drive is in the wrong slot or node
+| A direct-attached storage (DAS) drive is in the wrong slot or node
+
 | Appliance DAS drive locator light on
 | The drive locator light for one or more direct-attached storage (DAS) drives in an appliance Storage Node is on.
 
@@ -115,6 +118,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 
 | Appliance overall power supply degraded
 | The power of a StorageGRID appliance has deviated from the recommended operating voltage.
+
+| Appliance SANtricity OS software update required
+| SANtricity software version is lower than the recommended minimum for this release of StorageGRID.
 
 | Appliance SSD critical warning
 | An appliance SSD is reporting a critical warning.
@@ -178,7 +184,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Node cannot forward logs to the external syslog server.
 
 | Large audit queue
-| The disk queue for audit messages is full. If this condition is not addressed, S3 or Swift operations might fail.
+| The disk queue for audit messages is full. If this condition is not addressed, S3 operations might fail.
 
 | Logs are being added to the on-disk queue
 | Node cannot forward logs to the external syslog server and the on-disk queue is filling up.
@@ -301,8 +307,14 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Email notification failure
 | The email notification for an alert could not be sent.
 
+| Log archival destination bucket not found
+| The log archival destination bucket is missing, which prevents logs from being archived to the destination bucket.
+
 | SNMP inform errors
 | Errors sending SNMP inform notifications to a trap destination.
+
+| SSH external access enabled
+| SSH external access has been enabled for more than 24 hours.
 
 | SSH or console login detected
 | In the past 24 hours, a user has logged in with Web Console or SSH.
@@ -339,8 +351,8 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Expiration of client certificate
 | One or more client certificates are about to expire.
 
-| Expiration of global server certificate for S3 and Swift
-| The global server certificate for S3 and Swift is about to expire.
+| Expiration of global server certificate for S3
+| The global server certificate for S3 is about to expire.
 
 | Expiration of load balancer endpoint certificate
 | One or more load balancer endpoint certificates are about to expire.
@@ -484,7 +496,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Alert name| Description
 
 | Low audit log disk capacity
-| The space available for audit logs is low. If this condition is not addressed, S3 or Swift operations might fail.
+| The space available for audit logs is low. If this condition is not addressed, S3 operations might fail.
 
 | Low available node memory
 | The amount of RAM available on a node is low.
@@ -511,7 +523,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | The space available on the root disk is low.
 
 | Low system data capacity
-| The space available for /var/local is low. If this condition is not addressed, S3 or Swift operations might fail.
+| The space available for /var/local is low. If this condition is not addressed, S3 operations might fail.
 
 | Low tmp directory free space
 | The space available in the /tmp directory is low.
@@ -522,6 +534,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 [cols="1a,2a" options="header"]
 |===
 | Alert name| Description
+
+| ADC quorum not met
+| Storage Node with ADC service is offline. Expansion and decommission operations are blocked until ADC quorum is restored.
 
 | Admin Network receive usage
 | The receive usage on the Admin Network is high.
@@ -617,14 +632,27 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Object existence check stalled
 | The object existence check job has stalled.
 
-| Objects lost
-| One or more objects have been lost from the grid.
+| Objects potentially lost
+| One or more objects potentially lost from the grid.
+
+| Orphan objects detected
+| Orphan objects have been detected.
 
 | S3 PUT object size too large
 | A client is attempting a PUT Object operation that exceeds S3 size limits.
 
 | Unidentified corrupt object detected
 | A file was found in replicated object storage that could not be identified as a replicated object.
+|===
+
+== Object corruption alerts
+
+[cols="1a,2a" options="header"]
+|===
+| Alert name| Description
+
+| Object size mismatch
+| Unexpected object size detected during object existence check procedure.
 |===
 
 == Platform services alerts
@@ -675,10 +703,10 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | The configuration of the nginx-gw service is invalid. The previous configuration is now being used.
 
 | Reboot required to disable FIPS
-| The security policy does not require FIPS mode, but the NetApp Cryptographic Security Module is enabled.
+| The security policy doesn't require FIPS mode, but FIPS modules are in use.
 
 | Reboot required to enable FIPS
-| The security policy requires FIPS mode, but the NetApp Cryptographic Security Module is disabled.
+| The security policy requires FIPS mode, but FIPS modules aren't in use.
 
 | SSH service using backup configuration
 | The configuration of the SSH service is invalid. The previous configuration is now being used.
@@ -693,4 +721,5 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Tenant quota usage high
 | A high percentage of quota space is being used. This rule is disabled by default because it might cause too many notifications.
 |===
+
 // 2024-10-17, SGRIDOC107

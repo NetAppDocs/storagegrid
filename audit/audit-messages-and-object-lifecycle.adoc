@@ -20,9 +20,6 @@ Audit messages are linked through identifiers specific to each protocol.
 | Linking S3 operations
 | S3BK (bucket), S3KY (key), or both
 
-| Linking Swift operations
-| WCON (container),  WOBJ (object), or both
-
 | Linking internal operations
 | CBID (object's internal identifier)
 |===

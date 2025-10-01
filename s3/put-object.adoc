@@ -107,6 +107,8 @@ See <<Request headers for server-side encryption>>
 
 The following request headers aren't supported:
 
+* `If-Match` 
+* `If-None-Match`
 * `x-amz-acl` 
 * `x-amz-sdk-checksum-algorithm`
 * `x-amz-trailer` 

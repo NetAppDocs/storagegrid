@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, remove port remap, removing port remap, port remap
 summary: 'If you want to configure an endpoint for the Load Balancer service, and you want to use a port that has already been configured as the Mapped-To Port of a port remap, you must first remove the existing port remap, or the endpoint will not be effective. You must run a script on each Admin Node and Gateway Node that has conflicting remapped ports to remove all of the node’s port remaps.'
 ---
-= Remove port remaps
+= Remove port remaps on StorageGRID appliances
 :icons: font
 :imagesdir: ../media/
 
@@ -23,10 +23,13 @@ NOTE: This procedure does not work for a StorageGRID system deployed as a contai
 
 .Steps
 
+. External SSH access is blocked by default. If required, link:../admin/manage-external-ssh-access.html[temporarily allow access].
+
 . Log in to the node.
  .. Enter the following command: `ssh -p 8022 admin@node_IP`
 +
-Port 8022 is the SSH port of the base OS, while port 22 is the SSH port of the container engine running StorageGRID.
+Port 8022 is the SSH port of the base OS, while port 22 is the SSH port of the container engine running StorageGRID. 
+
 
  .. Enter the password listed in the `Passwords.txt` file.
  .. Enter the following command to switch to root: `su -`
@@ -40,3 +43,6 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 
 . Repeat these steps on each Admin Node and Gateway Node that has conflicting remapped ports.
 
+. If you've allowed external SSH access, link:../admin/manage-external-ssh-access.html[block access] when you've finished removing port remaps.
+
+// 2025 APR 29, SGWS-35050

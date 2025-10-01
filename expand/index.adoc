@@ -11,6 +11,8 @@ summary: 'You can expand the capacity or capabilities of your StorageGRID system
 [.lead]
 You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.
 
+Before expanding a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission or expansion procedure. Refer to link:../maintain/checking-data-repair-jobs.html[Check data repair jobs].
+
 A StorageGRID expansion allows you to add:
 
 * Storage volumes to Storage Nodes
@@ -26,14 +28,6 @@ Follow the steps for the type of expansion you're performing:
 [role="tabbed-block"]
 ====
 
-.Add storage volumes
---
-
-Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].
-
---
-//end Add volumes, begin add nodes
-
 .Add grid nodes
 --
 
@@ -47,14 +41,22 @@ Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding st
 * link:deploying-new-grid-nodes.html#vmware-deploy-grid-nodes[VMware]
 * link:deploying-new-grid-nodes.html#linux-deploy-grid-nodes[Linux]
 +
-NOTE: "Linux" refers to a Red Hat Enterprise Linux, Ubuntu, or Debian deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+include::../_include/linux-distributions.adoc[]
 
-. link:performing-expansion.html[Perform the expansion].
+.. link:performing-expansion.html[Perform the expansion].
 
-. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
+.. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
 
 --
-//end add grid nodes, start add new site
+//end add grid nodes, begin add volumes
+
+.Add storage volumes
+--
+
+Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].
+
+--
+//end Add volumes, begin add new site
 
 .Add new site
 --
@@ -69,12 +71,13 @@ NOTE: "Linux" refers to a Red Hat Enterprise Linux, Ubuntu, or Debian deployment
 * link:deploying-new-grid-nodes.html#vmware-deploy-grid-nodes[VMware]
 * link:deploying-new-grid-nodes.html#linux-deploy-grid-nodes[Linux]
 +
-NOTE: "Linux" refers to a Red Hat Enterprise Linux, Ubuntu, or Debian deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+include::../_include/linux-distributions.adoc[]
 
-. link:performing-expansion.html[Perform the expansion].
+.. link:performing-expansion.html[Perform the expansion].
 
-. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
+.. link:configuring-expanded-storagegrid-system.html[Configure the expanded system].
 
 --
 ====
 //end tabbed blocks
+// 2025-07-09, STORAGEGRIDDOC 161

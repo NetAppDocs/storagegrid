@@ -31,7 +31,7 @@ image::../media/nodes_page_network_traffic_graph.png[Prometheus graph]
 +
 NOTE: Metrics that include _private_ in their names are intended for internal use only and are subject to change between StorageGRID releases without notice.
 
-* The *SUPPORT* > *Tools* > *Diagnostics* page and the *SUPPORT* > *Tools* > *Metrics* page: These pages, which are primarily intended for use by technical support, provide several tools and charts that use the values of Prometheus metrics.
+* The *Support* > *Tools* > *Diagnostics* page and the *Support* > *Tools* > *Metrics* page: These pages, which are primarily intended for use by technical support, provide several tools and charts that use the values of Prometheus metrics.
 +
 NOTE: Some features and menu items within the Metrics page are intentionally non-functional and are subject to change.
 
@@ -61,9 +61,9 @@ storagegrid_appliance_failed_disks:: For the storage controller in an appliance,
 
 storagegrid_appliance_storage_controller_hardware_status:: The overall status of the storage controller hardware in an appliance.
 
-storagegrid_content_buckets_and_containers:: The total number of S3 buckets and Swift containers known by this Storage Node.
+storagegrid_content_buckets_and_containers:: The total number of S3 buckets known by this Storage Node.
 
-storagegrid_content_objects:: The total number of S3 and Swift data objects known by this Storage Node. Count is valid only for data objects created by client applications that interface with the system through S3.
+storagegrid_content_objects:: The total number of S3 data objects known by this Storage Node. Count is valid only for data objects created by client applications that interface with the system through S3.
 
 storagegrid_content_objects_lost:: The total number of objects this service detects as missing from the StorageGRID system. Action should be taken to determine the cause of the loss and if recovery is possible.
 +
@@ -158,16 +158,6 @@ storagegrid_storage_utilization_total_space_bytes:: The total amount of storage 
 
 storagegrid_storage_utilization_usable_space_bytes:: The total amount of object storage space remaining. Calculated by adding together the amount of available space for all object stores on the Storage Node.
 
-storagegrid_swift_data_transfers_bytes_ingested:: The total amount of data ingested from Swift clients to this Storage Node since the attribute was last reset.
-
-storagegrid_swift_data_transfers_bytes_retrieved:: The total amount of data retrieved by Swift clients from this Storage Node since the attribute was last reset.
-
-storagegrid_swift_operations_failed:: The total number of failed Swift operations (HTTP status codes 4xx and 5xx), excluding those caused by Swift authorization failure.
-
-storagegrid_swift_operations_successful:: The total number of successful Swift operations (HTTP status code 2xx).
-
-storagegrid_swift_operations_unauthorized:: The total number of failed Swift operations that are the result of an authorization failure (HTTP status codes 401, 403, 405).
-
 storagegrid_tenant_usage_data_bytes:: The logical size of all objects for the tenant.
 
 storagegrid_tenant_usage_object_count:: The number of objects for the tenant.
@@ -178,6 +168,7 @@ storagegrid_tenant_usage_quota_bytes:: The maximum amount of logical space avail
 
 [[obtain-all-metrics]]To obtain the complete list of metrics, use the Grid Management API.
 
+.Steps
 . From the top of the Grid Manager, select the help icon and select *API documentation*.
 . Locate the *metrics* operations.
 . Execute the `GET /grid/metric-names` operation.

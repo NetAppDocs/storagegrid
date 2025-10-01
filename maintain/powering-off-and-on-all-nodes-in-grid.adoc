@@ -29,6 +29,8 @@ NOTE: If required, you can link:linux-migrating-grid-node-to-new-host.html[migra
 
 .Steps
 
+. External SSH access is blocked by default. If required, link:../admin/manage-external-ssh-access.html[temporarily allow access].
+
 . Stop all client applications from accessing the grid.
 . [[log_in_to_gn]]Log in to each Gateway Node:
  .. Enter the following command: `ssh admin@_grid_node_IP_`
@@ -130,6 +132,7 @@ This LED is on when cached data needs to be written to the drives. You must wait
 +
 The StorageGRID grid has now been shut down.
 
+. If you've allowed external SSH access, link:../admin/manage-external-ssh-access.html[block access] when you're finished shutting down the nodes.
 
 == Start up grid nodes
 
@@ -154,7 +157,7 @@ You can power on these nodes in any order.
 
 . Power on the hosts for all Gateway Nodes.
 . Sign in to the Grid Manager.
-. Select *NODES* and monitor the status of the grid nodes. Verify that there are no alert icons next to the node names.
+. Select *Nodes* and monitor the status of the grid nodes. Verify that there are no alert icons next to the node names.
 
 .Related information
 
@@ -170,3 +173,4 @@ You can power on these nodes in any order.
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
 
+// 2025 APR 30, SGWS-34284

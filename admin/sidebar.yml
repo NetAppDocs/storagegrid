@@ -33,8 +33,8 @@ entries:
         entries:
         - title: Active Directory
           url: "/admin/use-api-if-sso-is-enabled-adfs.html"
-        - title: Azure
-          url: "/admin/use-api-if-sso-is-enabled-azure.html"
+        - title: Entra ID
+          url: "/admin/use-api-if-sso-is-enabled-entra-id.html"
         - title: PingFederate
           url: "/admin/use-api-if-sso-is-enabled-ping.html"  
       - title: Deactivate features with the API
@@ -60,23 +60,23 @@ entries:
       url: "/admin/managing-users.html"
     - title: Use single sign-on (SSO)
       entries:
-      - title: Configure single sign-on
-        url: "/admin/configuring-sso.html"
-      - title: Requirements for single sign-on
+      - title: How SSO works
+        url: "/admin/how-sso-works.html"
+      - title: Requirements for SSO
         url: "/admin/requirements-for-sso.html"
       - title: Confirm federated users can sign in
         url: "/admin/confirming-federated-users-can-sign-in.html"
-      - title: Use sandbox mode
-        url: "/admin/using-sandbox-mode.html"
+      - title: Configure SSO
+        url: "/admin/configure-sso.html"
       - title: Create relying party trusts in AD FS
         url: "/admin/creating-relying-party-trusts-in-ad-fs.html"
-      - title: Create enterprise applications in Azure
-        url: "/admin/creating-enterprise-application-azure.html"          
+      - title: Create enterprise applications in Entra ID
+        url: "/admin/creating-enterprise-application-entra-id.html"          
       - title: Create SP connections in PingFederate
         url: "/admin/creating-sp-connection-ping.html"
-      - title: Disable single sign-on
+      - title: Disable SSO
         url: "/admin/disabling-single-sign-on.html"
-      - title: Temporarily disable and reenable single sign-on for one Admin Node
+      - title: Temporarily disable and reenable SSO for one Admin Node
         url: "/admin/temporarily-disabling-and-reenabling-sso-for-admin-node.html"
   - title: Use grid federation
     entries:
@@ -130,7 +130,9 @@ entries:
       - title: Configure network and object security
         url: "/admin/changing-network-options-object-encryption.html"  
       - title: Change interface security settings
-        url: "/admin/changing-browser-session-timeout-interface.html"      
+        url: "/admin/changing-browser-session-timeout-interface.html"  
+      - title: Manage external SSH access
+        url: "/admin/manage-external-ssh-access.html"      
     - title: Configure key management servers
       entries:
       - title: What is key management server
@@ -225,14 +227,16 @@ entries:
   - title: Manage networks and connections
     entries:
     - title: Configure network settings
-      url: "/admin/configuring-network-settings.html"
       pdf-filename: Manage networks and connections
+      url: "/admin/configuring-network-settings.html"
     - title: Guidelines for StorageGRID networks
       url: "/admin/guidelines-for-storagegrid-networks.html"
     - title: View IP addresses
       url: "/admin/viewing-ip-addresses.html"
     - title: Configure VLAN interfaces
       url: "/admin/configure-vlan-interfaces.html"  
+    - title: Enable CORS for a management interface
+      url: "/admin/enable-cross-origin-resource-sharing-for-management-interface.html"
     - title: Manage traffic classification policies
       entries:
       - title: What is traffic classification policy
@@ -267,10 +271,8 @@ entries:
       url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Manage Storage Nodes
     entries:
-    - title: Storage Node management
-      pdf-filename: Manage Storage Nodes
-      url: "/admin/managing-storage-nodes.html"
     - title: Use Storage options
+      pdf-filename: Manage Storage Nodes
       entries:
       - title: What is object segmentation
         url: "/admin/what-object-segmentation-is.html"
@@ -290,5 +292,3 @@ entries:
       url: "/admin/using-multiple-admin-nodes.html"
     - title: Identify the primary Admin Node
       url: "/admin/identifying-primary-admin-node.html"
-    - title: View notification status and queues
-      url: "/admin/viewing-notification-status-and-queues.html"

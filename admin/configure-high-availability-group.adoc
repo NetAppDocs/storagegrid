@@ -11,6 +11,8 @@ summary: 'You can configure high availability \(HA\) groups to provide highly av
 [.lead]
 You can configure high availability (HA) groups to provide highly available access to the services on Admin Nodes or Gateway Nodes.
 
+NOTE: A StorageGRID system can have a maximum of 255 HA groups.
+
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
@@ -18,10 +20,11 @@ You can configure high availability (HA) groups to provide highly available acce
 * If you plan to use a VLAN interface in an HA group, you have created the VLAN interface. See link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces].
 * If you plan to use an access interface for a node in an HA group, you have created the interface:
 
-** *Red Hat Enterprise Linux (before installing the node)*: link:../rhel/creating-node-configuration-files.html[Create node configuration files]
-** *Ubuntu or Debian (before installing the node)*: link:../ubuntu/creating-node-configuration-files.html[Create node configuration files]
-** *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Linux: Add trunk or access interfaces to a node]
-** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[VMware: Add trunk or access interfaces to a node]
+** *Linux (before installing the node)*: link:../swnodes/creating-node-configuration-files.html[Create node configuration files]
+** *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
+** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
+
+include::../_include/linux-distributions.adoc[]
 
 == Create a high availability group
 
@@ -33,7 +36,7 @@ An interface must be for a Gateway Node or an Admin Node to be included in an HA
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *High availability groups*.
+. Select *Configuration* > *Network* > *High availability groups*.
 
 . Select *Create*.
 
@@ -133,7 +136,7 @@ For example, you might need to edit an HA group if you want to remove the node a
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *High availability groups*.
+. Select *Configuration* > *Network* > *High availability groups*.
 +
 The High availability groups page shows all existing HA groups.
 
@@ -171,11 +174,11 @@ To prevent client disruptions, update any affected S3 client applications before
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *High availability groups*.
+. Select *Configuration* > *Network* > *High availability groups*.
 
 .  Review the *Load balancer endpoints* column for each HA group you want to remove. If any load balancer endpoints are listed:
 
-.. Go to *CONFIGURATION* > *Network* > *Load balancer endpoints*.
+.. Go to *Configuration* > *Network* > *Load balancer endpoints*.
 .. Select the checkbox for the endpoint. 
 .. Select *Actions* > *Edit endpoint binding mode*.
 .. Update the binding mode to remove the HA group.

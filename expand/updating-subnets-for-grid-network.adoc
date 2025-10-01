@@ -44,7 +44,7 @@ For example, do not use the following subnet ranges for the Grid Network, Admin 
 
 .Steps
 
-. Select *MAINTENANCE* > *Network* > *Grid Network*.
+. Select *Maintenance* > *Network* > *Grid Network*.
 
 . Select *Add another subnet* to add a new subnet in CIDR notation.
 +
@@ -52,10 +52,10 @@ For example, enter `10.96.104.0/22`.
 
 . Enter the provisioning passphrase, and select *Save*.
 
-. Wait until the changes are applied, then download a new Recovery Package.
-.. Select *MAINTENANCE* > *System* > *Recovery package*.
+. Wait until the changes are applied, then download a new recovery package.
+.. Select *Maintenance* > *System* > *Recovery package*.
 .. Enter the *Provisioning Passphrase*.
 +
-CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system. It is also used to recover the primary Admin Node.
+CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system. It is also used to recover the primary Admin Node.
 
 The subnets you have specified are configured automatically for your StorageGRID system.

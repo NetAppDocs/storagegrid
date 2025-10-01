@@ -23,39 +23,25 @@ An HA group can provide high availability only if all nodes included in the grou
 [cols="1a,2a" options="header"]
 |===
 | Purpose of HA group| Add nodes of this type to the HA group
-a|
-Access to Grid Manager
-a|
 
-* Primary Admin Node (*Primary*)
+| Access to Grid Manager
+| * Primary Admin Node (*Primary*)
 * Non-primary Admin Nodes
 
 *Note:* The primary Admin Node must be the Primary interface. Some maintenance procedures can only be performed from the primary Admin Node.
 
-a|
-Access to Tenant Manager only
-a|
+| Access to Tenant Manager only
+| * Primary or non-primary Admin Nodes
 
-* Primary or non-primary Admin Nodes
-
-a|
-S3 client access -- Load Balancer service
-a|
-
-* Admin Nodes
+| S3 client access--Load Balancer service
+| * Admin Nodes
 * Gateway Nodes
 
-a|S3 client access for link:../admin/manage-s3-select-for-tenant-accounts.html[S3 Select]
-a|* Services appliances
+| S3 client access for link:../admin/manage-s3-select-for-tenant-accounts.html[S3 Select]
+| * Services appliances
 * VMware-based software nodes
 
 *Note*: HA groups are recommended when using S3 Select, but not required.
-
-
-a|
-
-* Gateway Nodes
-
 |===
 
 == Limitations of using HA groups with Grid Manager or Tenant Manager
