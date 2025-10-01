@@ -57,15 +57,15 @@ A warning appears, indicating that you have selected a disconnected node and tha
 
 . Review the list of nodes, and click *OK*.
 +
-The decommission procedure starts, and the progress is displayed for each node. During the procedure, a new Recovery Package is generated containing the grid configuration change.
+The decommission procedure starts, and the progress is displayed for each node. During the procedure, a new recovery package is generated containing the grid configuration change.
 
-. As soon as the new Recovery Package is available, click the link or select *MAINTENANCE* > *System* > *Recovery package* to access the Recovery Package page. Then, download the `.zip` file.
+. As soon as the new recovery package is available, click the link or select *Maintenance* > *System* > *Recovery package* to access the recovery package page. Then, download the `.zip` file.
 +
-See the instructions for link:downloading-recovery-package.html[downloading the Recovery Package].
+See the instructions for link:downloading-recovery-package.html[downloading the recovery package].
 +
-NOTE: Download the Recovery Package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
+NOTE: Download the recovery package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
 +
-CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 . Periodically monitor the Decommission page to ensure that all selected nodes are decommissioned successfully.
 +

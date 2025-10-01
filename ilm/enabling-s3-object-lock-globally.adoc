@@ -28,7 +28,7 @@ NOTE: The global Compliance setting is deprecated. If you enabled this setting u
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *S3 Object Lock*.
+. Select *Configuration* > *System* > *S3 Object Lock*.
 +
 The S3 Object Lock Settings page appears. 
 

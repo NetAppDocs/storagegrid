@@ -76,11 +76,11 @@ The node decommission procedure starts, and the progress is displayed for each n
 +
 CAUTION: Don't take a Storage Node offline after the decommission procedure has started. Changing the state might result in some content not being copied to other locations.
 
-. As soon as the new Recovery Package is available, select the Recovery Package link in the banner or select *MAINTENANCE* > *System* > *Recovery package* to access the Recovery Package page. Then, download the `.zip` file.
+. As soon as the new recovery package is available, select the recovery package link in the banner or select *Maintenance* > *System* > *Recovery package* to access the recovery package page. Then, download the `.zip` file.
 +
-See link:downloading-recovery-package.html[downloading the Recovery Package].
+See link:downloading-recovery-package.html[downloading the recovery package].
 +
-NOTE: Download the Recovery Package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
+NOTE: Download the recovery package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
 
 . Periodically monitor the Decommission Nodes page to ensure that all selected nodes are decommissioned successfully.
 +
@@ -93,9 +93,7 @@ Complete these steps after you complete the node decommission procedure:
 
 . Follow the appropriate step for your platform. For example:
 
- ** *Linux*: You might want to detach the volumes and delete the node configuration files you created during installation. See 
-link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux] and 
-link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian].
+ ** *Linux*: You might want to detach the volumes and delete the node configuration files you created during installation. See link:../swnodes/index.html[Install StorageGRID on software-based nodes].
 
  ** *VMware*: You might want to use the vCenter "Delete from Disk" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
 

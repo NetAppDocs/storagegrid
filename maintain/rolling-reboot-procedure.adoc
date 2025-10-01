@@ -48,7 +48,7 @@ As your first step, access the Rolling reboot page and select the nodes you want
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Rolling reboot*.
+. Select *Maintenance* > *Tasks* > *Rolling reboot*.
 
 . Review the connection state and alert icons in the *Node name* column.
 +
@@ -108,5 +108,5 @@ You can stop the rolling reboot procedure from the primary Admin Node. When you 
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Rolling reboot*.
+. Select *Maintenance* > *Tasks* > *Rolling reboot*.
 . From the *Monitor reboot* step, select *Stop reboot procedure*.

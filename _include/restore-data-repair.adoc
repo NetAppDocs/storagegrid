@@ -2,7 +2,7 @@
 
 == Find hostname for Storage Node
 
-. Log in to the primary Admin Node:
+. Log in to any Admin Node:
 .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
 .. Enter the password listed in the `Passwords.txt` file.
 .. Enter the following command to switch to root: `su -`
@@ -34,7 +34,7 @@ This command repairs the replicated data on a Storage Node named SG-DC-SN3:
 
 `repair-data start-replicated-node-repair --nodes SG-DC-SN3`
 
-NOTE: As object data is restored, the *Objects Lost* alert is triggered if the StorageGRID system can't locate replicated object data. Alerts might be triggered on Storage Nodes throughout the system. You should determine the cause of the loss and if recovery is possible. See link:../troubleshoot/investigating-lost-objects.html[Investigate lost objects].
+NOTE: As object data is restored, the *Objects Lost* alert is triggered if the StorageGRID system can't locate replicated object data. Alerts might be triggered on Storage Nodes throughout the system. You should determine the cause of the loss and if recovery is possible. See link:../troubleshoot/investigating-potentially-lost-objects.html[Investigate potentially lost objects].
 
 --
 .Erasure-coded (EC) data

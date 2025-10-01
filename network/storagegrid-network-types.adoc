@@ -64,12 +64,7 @@ StorageGRID nodes are connected to each network using the following specific int
 | eth2
 |===
 
-For details about mapping virtual or physical ports to node network interfaces, see the installation instructions:
-
-.Software-based nodes
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
-* link:../vmware/index.html[Install StorageGRID on VMware]
+For details about mapping virtual or physical ports to node network interfaces, see link:../swnodes/index.html[Install StorageGRID on software-based nodes].
 
 .Appliance nodes
 

@@ -22,7 +22,7 @@ You can view the details of an erasure-coding profile to determine its status, t
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Erasure coding*.
+. Select *Configuration* > *System* > *Erasure coding*.
 
 . Select the profile. The detail page for the profile appears.
 
@@ -36,7 +36,7 @@ You might want to rename an erasure-coding profile to make it more obvious what 
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Erasure coding*.
+. Select *Configuration* > *System* > *Erasure coding*.
 
 . Select the profile you want to rename.
 
@@ -64,7 +64,7 @@ StorageGRID prevents you from deactivating an erasure-coding profile if either o
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Erasure coding*.
+. Select *Configuration* > *System* > *Erasure coding*.
 
 . On the Active tab, review the *Status* column to confirm that the erasure-coding profile you want to deactivate is not used in any ILM rules.
 +

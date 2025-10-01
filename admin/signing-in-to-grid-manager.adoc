@@ -19,7 +19,7 @@ If Admin Nodes are included in a high availability (HA) group, you connect using
 
 === Use SSO
 
-The sign-in steps are slightly different if link:configuring-sso.html[single sign-on (SSO) has been configured].
+The sign-in steps are slightly different if link:how-sso-works.html[single sign-on (SSO) has been configured].
 
 
 == Sign in to Grid Manager on first Admin Node
@@ -60,8 +60,6 @@ The sign-in screen that appears depends on whether single sign-on (SSO) has been
 
 .. Enter your username and password for the Grid Manager.
 .. Select *Sign In*.
-+
-image::../media/sign_in_grid_manager_no_sso.png[Sign in page]
 
 --
 
@@ -71,32 +69,17 @@ image::../media/sign_in_grid_manager_no_sso.png[Sign in page]
 * If StorageGRID is using SSO and this is the first time you have accessed the URL on this browser:
 
 .. Select *Sign in*. You can leave the 0 in the Account field.
+.. Enter your standard SSO credentials on your organization's SSO sign-in page. 
 +
-image::../media/sso_sign_in_first_time.png[Sign in screen if SSO enabled and no cookies]
+For example, if StorageGRID is using SSO and you have previously accessed the Grid Manager or a tenant account:
 
-.. Enter your standard SSO credentials on your organization's SSO sign-in page. For example:
-+
-image::../media/sso_organization_page.gif[example organization sign in page for SSO]
-
-* If StorageGRID is using SSO and you have previously accessed the Grid Manager or a tenant account:
-
-.. Enter *0* (the account ID for the Grid Manager) or select *Grid Manager* if it appears in the list of recent accounts.
-+
-image::../media/sign_in_grid_manager_sso.png[Select Grid Manager from recent account list if SSO is enabled]
-
-.. Select *Sign in*.
-
-
-.. Sign in with your standard SSO credentials on your organization's SSO sign-in page.
+... Enter *0* (the account ID for the Grid Manager) or select *Grid Manager* if it appears in the list of recent accounts.
+... Select *Sign in*.
+... Sign in with your standard SSO credentials on your organization's SSO sign-in page.
 --
-
-
-
 ====
 
 When you are signed in, the home page of the Grid Manager appears, which includes the dashboard. To learn what information is provided, see link:../monitor/viewing-dashboard.html[View and manage the dashboard].
-
-image::../media/grid_manager_dashboard.png[dashboard]
 
 == Sign into another Admin Node
 Follow these steps to sign in to another Admin Node.

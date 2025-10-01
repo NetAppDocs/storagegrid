@@ -21,7 +21,9 @@ NOTE: The details provided for each log type are for reference only. The logs ar
 
 == Access the logs
 
-To access the logs, you can link:collecting-log-files-and-system-data.html[collect log files and system data] from one or more nodes as a single log file archive. Or, if the primary Admin Node is unavailable or unable to reach a specific node, you can access individual log files for each grid node as follows:
+To access the logs, you can link:collecting-log-files-and-system-data.html[collect log files and system data] from one or more nodes as a single log file archive. Or, you can access individual log files for each grid node as follows:
+
+.Steps
 
 . Enter the following command: `ssh admin@grid_node_IP`
 . Enter the password listed in the `Passwords.txt` file.
@@ -32,7 +34,7 @@ To access the logs, you can link:collecting-log-files-and-system-data.html[colle
 
 Exporting the logs to the syslog server provides these capabilities:
 
-* Receive a list of all Grid Manager and Tenant Manager requests, in addition to S3 and Swift requests.
+* Receive a list of all Grid Manager and Tenant Manager requests, in addition to S3 requests.
 
 * Better visibility into S3 requests that return errors, without the performance impact caused by audit logging methods.
 
@@ -40,7 +42,7 @@ Exporting the logs to the syslog server provides these capabilities:
 
 * Better visibility into requests that were blocked by traffic classifiers at the load balancer.
 
-To export the logs, refer to link:../monitor/configure-audit-messages.html[Configure audit messages and log destinations].
+To export the logs, refer to link:../monitor/configure-log-management.html[Configure log management and external syslog server].
 
 == Log file categories
 
@@ -58,6 +60,9 @@ m| base-os-logs
 
 m| bundles
 | Global configuration information (bundles).
+
+m| cache-svc
+| Cache service logs (only on Gateway Nodes).
 
 m| cassandra
 | Cassandra database information and Reaper repair logs.
@@ -79,6 +84,9 @@ m| install
 
 m| Lambda-arbitrator
 | Logs related to the S3 Select proxy request.
+
+m| leakd
+| Logs from leakd service.
 
 m| lumberjack.log
 | Debug messages related to log collection.
@@ -108,7 +116,7 @@ m| nginx-gw
 ** These messages are prefixed with `cgr:` when exported using syslog.
 ** The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
 
-*	`endpoint-access.log.gz`: S3 and Swift requests to load balancer endpoints.
+*	`endpoint-access.log.gz`: S3 requests to load balancer endpoints.
 **	These messages are prefixed with `endpoint:` when exported using syslog.
 **	The format of these log messages is `[$time_iso8601] $remote_addr $status $bytes_sent $request_length $request_time "$endpointId" "$upstream_addr" "$request" "$http_host"`
 
@@ -151,7 +159,7 @@ m| system-commands.txt
 | Output of StorageGRID container commands. Contains system information, such as networking and disk usage.
 
 m| synchronize-recovery-package
-| Related to maintaining consistency of the latest Recovery Package across all Admin Nodes and Storage Nodes that host the ADC service.
+| Related to maintaining consistency of the latest recovery package across all Admin Nodes and Storage Nodes that host the ADC service.
 |===
 
 

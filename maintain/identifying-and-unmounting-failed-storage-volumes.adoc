@@ -27,41 +27,32 @@ NOTE: Repair the hardware and properly attach the disks before running the `rebo
 
 CAUTION: Identify failed storage volumes carefully. You will use this information to verify which volumes must be reformatted. After a volume has been reformatted, data on the volume can't be recovered.
 
-To correctly recover failed storage volumes, you need to know both the device names of the failed storage volumes and their volume IDs.
+To recover failed storage volumes, you need to know both the device names of the failed storage volumes and their volume IDs.
 
-At installation, each storage device is assigned a file system universal unique identifier (UUID) and is mounted to a rangedb directory on the Storage Node using that assigned file system UUID. The file system UUID and the rangedb directory are listed in the `/etc/fstab` file. The device name, rangedb directory, and the size of the mounted volume are displayed in the Grid Manager.
-
-In the following example, device `/dev/sdc` has a volume size of 4 TB, is mounted to `/var/local/rangedb/0`, using the device name `/dev/disk/by-uuid/822b0547-3b2b-472e-ad5e-e1cf1809faba` in the /`etc/fstab` file:
-
-image::../media/mounting_storage_devices.gif[Volume size example]
+At installation, each storage device is assigned a file system universal unique identifier (UUID) and is mounted to a rangedb directory on the Storage Node using that assigned file system UUID. The file system UUID and the rangedb directory are listed in the `/etc/fstab` file. The Mount point, Device name, and size of the volume are displayed in the Grid Manager.
 
 .Steps
 
 . Complete the following steps to record the failed storage volumes and their device names:
- .. Select *SUPPORT* > *Tools* > *Grid topology*.
- .. Select *site* > *failed Storage Node* > *LDR* > *Storage* > *Overview* > *Main*, and look for object stores with alarms.
+.. Select *Nodes* > *_site_* > *_failed Storage Node_* > *Storage*.
+.. Scroll down to locate the Volumes table and Object stores table and record the following information for each volume with a status of Unknown or Offline.
 +
-image::../media/ldr_storage_object_stores.gif[Object stores section]
-
- .. Select *site* > *failed Storage Node* > *SSM* > *Resources* > *Overview* > *Main*. Determine the mount point and volume size of each failed storage volume identified in the previous step.
+* From the Volumes table, record the Mount point, Device, and Size.
++ 
+* From the Object stores table, record the `object_store_ID`.
 +
-Object stores are numbered in hex notation. For example, 0000 is the first volume and 000F is the sixteenth volume. In the example, the object store with an ID of 0000 corresponds to `/var/local/rangedb/0` with device name sdc and a size of 107 GB.
-+
-image::../media/ssm_storage_volumes.gif[example showing object stores and mount points]
+The `object_store_ID` is the ID of the failed storage volume. For example, specify `0` in the command for an object store with ID 0000.
 . Log in to the failed Storage Node:
- .. Enter the following command: `ssh admin@_grid_node_IP_`
- .. Enter the password listed in the `Passwords.txt` file.
- .. Enter the following command to switch to root: `su -`
- .. Enter the password listed in the `Passwords.txt` file.
-
+.. Enter the following command: `ssh admin@_grid_node_IP_`
+.. Enter the password listed in the `Passwords.txt` file.
+.. Enter the following command to switch to root: `su -`
+.. Enter the password listed in the `Passwords.txt` file.
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
+
 . Run the following script to unmount a failed storage volume:
 +
 `sn-unmount-volume object_store_ID`
-+
-The `object_store_ID` is the ID of the failed storage volume. For example, specify `0` in the command for an object store with ID 0000.
-
 . If prompted, press *y* to stop the Cassandra service depending on storage volume 0.
 +
 NOTE: If the Cassandra service is already stopped, you aren't prompted. The Cassandra service is stopped only for volume 0.
@@ -89,3 +80,5 @@ Unmounting /var/local/rangedb/2 using umountof
 /var/local/rangedb/2 is unmounted.
 Informing LDR service of changes to storage volumes
 ----
+
+// 2025 AUG 1, SGRIDDOC-184

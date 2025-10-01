@@ -17,21 +17,23 @@ In addition to ICMP and the ports listed in the table, StorageGRID uses the Virt
 
 == Guidelines for Linux-based nodes
 
-If enterprise networking policies restrict access to any of these ports, you can remap ports at deployment time using a deployment configuration parameter. For more information about port remapping and deployment configuration parameters, see:
+If enterprise networking policies restrict access to any of these ports, you can remap ports at deployment time using a deployment configuration parameter. For more information about port remapping and deployment configuration parameters, see link:../swnodes/index.html[Install StorageGRID on software-based nodes].
 
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 
 == Guidelines for VMware-based nodes
 
 Configure the following ports only if you need to define firewall restrictions that are external to VMware networking.
 
-If enterprise networking policies restrict access to any of these ports, you can remap ports when you deploy nodes using the VMware vSphere Web Client, or by using a configuration file setting when automating grid node deployment. For more information about port remapping and deployment configuration parameters, see 
-link:../vmware/index.html[Install StorageGRID on VMware].
+If enterprise networking policies restrict access to any of these ports, you can remap ports when you deploy nodes using the VMware vSphere Web Client, or by using a configuration file setting when automating grid node deployment. For more information about port remapping and deployment configuration parameters, see the instructions for link:../swnodes/index.html[installing StorageGRID on VMware].
+
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 
 == Guidelines for appliance nodes
 
 If enterprise networking policies restrict access to any of these ports, you can remap ports using the StorageGRID Appliance Installer. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^].
+
+NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps.html[Remove port remaps on StorageGRID appliances].
 
 == StorageGRID internal ports
 
@@ -85,7 +87,7 @@ If enterprise networking policies restrict access to any of these ports, you can
 | TCP
 | All nodes
 | Storage Nodes
-| S3- and Swift-related internal traffic.
+| S3-related internal traffic.
 
 | 1504
 | TCP
@@ -212,12 +214,6 @@ If enterprise networking policies restrict access to any of these ports, you can
 | Admin/Storage Nodes
 | Storage Nodes
 | S3-related internal traffic.
-
-| 18083
-| TCP
-| All nodes
-| Storage Nodes
-| Swift-related internal traffic.
 
 | 18086
 | TCP

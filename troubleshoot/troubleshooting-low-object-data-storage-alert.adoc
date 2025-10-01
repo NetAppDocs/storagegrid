@@ -34,7 +34,7 @@ In this condition:
 If a major or minor *Low object data storage* alert is triggered, you should perform an expansion procedure as soon as possible.
 
 .Steps
-. Select *ALERTS* > *Current*.
+. Select *Alerts* > *Current*.
 +
 The Alerts page appears.
 
@@ -46,7 +46,7 @@ NOTE: Select the alert, not the heading for a group of alerts.
  ** Time triggered
  ** The name of the site and node
  ** The current values of the metrics for this alert
-. Select *NODES* > *_Storage Node or Site_* > *Storage*.
+. Select *Nodes* > *_Storage Node or Site_* > *Storage*.
 . Position your cursor over the Storage Used - Object Data graph.
 +
 The following values are shown:

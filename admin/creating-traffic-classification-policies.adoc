@@ -20,7 +20,7 @@ You can create traffic classification policies if you want to monitor, and optio
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *Traffic classification*.
+. Select *Configuration* > *Network* > *Traffic classification*.
 
 . Select *Create*.
 
@@ -95,7 +95,7 @@ For bandwidth limits, StorageGRID applies the policy that best matches the type 
 
 |===
 +
-For example, if you want to create a 40 GB/s bandwidth limit for an SLA tier, create two Aggregate bandwidth limits: GET/HEAD at 40 GB/s and PUT/POST/DELETE at 40 GB/s.
+For example, if you want to create a 4 GB/s bandwidth limit for an SLA tier, create two Aggregate bandwidth limits: GET/HEAD at 4 GB/s and PUT/POST/DELETE at 4 GB/s.
 
 . Select *Continue*.
 

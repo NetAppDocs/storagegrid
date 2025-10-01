@@ -17,12 +17,12 @@ You can view the list of all default and custom alert rules to learn which condi
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission].
 
-* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2eea81c5-8323-417f-b0a0-b1ff008506c1[Video: Alerts overview^]
+* Optionally, you have watched the video: 
 +
-image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2eea81c5-8323-417f-b0a0-b1ff008506c1" alt="Video: Alerts overview", window=_blank]
+video::2eea81c5-8323-417f-b0a0-b1ff008506c1[panopto, title="Alerts overview"]
 
 .Steps
-. Select *ALERTS* > *Rules*.
+. Select *Alerts* > *Rules*.
 +
 The Alert Rules page appears.
 +

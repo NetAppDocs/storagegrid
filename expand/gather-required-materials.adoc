@@ -30,7 +30,7 @@ For details, see the instructions for <<download-and-extract-install-files,downl
 * link:../admin/web-browser-requirements.html[Supported web browser]
 
 | `Passwords.txt` file
-| Contains the passwords required to access grid nodes on the command line. Included in the Recovery Package.
+| Contains the passwords required to access grid nodes on the command line. Included in the recovery package.
 
 | Provisioning passphrase
 | The passphrase is created and documented when the StorageGRID system is first installed. The provisioning passphrase is not in the `Passwords.txt` file.
@@ -39,10 +39,7 @@ For details, see the instructions for <<download-and-extract-install-files,downl
 |
 * link:../admin/index.html[Administer StorageGRID]
 * link:../release-notes/index.html[Release notes]
-* Installation instructions for your platform
-** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
-** link:../vmware/index.html[Install StorageGRID on VMware]
+* link:../swnodes/index.html[Installation instructions for your platform]
 
 | Current documentation for your platform
 | For supported versions, see the https://imt.netapp.com/matrix/#welcome[Interoperability Matrix Tool (IMT)^].
@@ -75,7 +72,7 @@ Use the `.zip` file if you are running Windows on the service laptop.
 |===
 | Platform| Installation archive
 
-| Red Hat Enterprise Linux
+| RHEL
 m|
 include::../_include/installation-archives-rhel.adoc[]
 
@@ -97,7 +94,7 @@ include::../_include/installation-archives-vmware.adoc[]
 +
 The paths listed in the step for each platform are relative to the top-level directory installed by the archive file.
 
-. If you are expanding a Red Hat Enterprise Linux system, select the appropriate files.
+. If you are expanding a RHEL system, select the appropriate files.
 +
 include::../_include/installation-files-rhel.adoc[]
 

@@ -28,9 +28,10 @@ You can create virtual LAN (VLAN) interfaces on Admin Nodes and Gateway Nodes an
 * If you need to add trunk interfaces, see the following for details:
 
 ** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[VMware: Add trunk or access interfaces to a node]
-** *RHEL (before installing the node)*: link:../rhel/creating-node-configuration-files.html[Create node configuration files]
-** *Ubuntu or Debian (before installing the node)*: link:../ubuntu/creating-node-configuration-files.html[Create node configuration files]
-** *RHEL, Ubuntu, or Debian (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Linux: Add trunk or access interfaces to a node]
+** *Linux (before installing the node)*: link:../swnodes/creating-node-configuration-files.html[Create node configuration files]
+** *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
+
+include::../_include/linux-distributions.adoc[]
 
 == Create a VLAN interface
 
@@ -51,7 +52,7 @@ You can use the Grid Manager to create VLAN interfaces that allow clients to acc
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *VLAN interfaces*.
+. Select *Configuration* > *Network* > *VLAN interfaces*.
 
 . Select *Create*.
 
@@ -95,7 +96,7 @@ image::../media/vlan-create-parent-interfaces.png[VLAN create wizard parent inte
 
 . Select *Save*.
 
-. Wait up to 5 minutes for the new interface to appear as a selection on the High availability groups page and to be listed in the *Network interfaces* table for the node (*NODES* > *_parent interface node_* > *Network*). 
+. Wait up to 5 minutes for the new interface to appear as a selection on the High availability groups page and to be listed in the *Network interfaces* table for the node (*Nodes* > *_parent interface node_* > *Network*). 
 
 == Edit a VLAN interface
 
@@ -115,7 +116,7 @@ For example, suppose VLAN 200 is attached to parent interfaces on Nodes A and B.
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *VLAN interfaces*.
+. Select *Configuration* > *Network* > *VLAN interfaces*.
 
 . Select the checkbox for the VLAN interface you want to edit. Then, select *Actions* > *Edit*.
 
@@ -143,7 +144,7 @@ To avoid any disruptions in client traffic, consider doing one of the following:
 
 .Steps
 
-. Select *CONFIGURATION* > *Network* > *VLAN interfaces*.
+. Select *Configuration* > *Network* > *VLAN interfaces*.
 
 . Select the checkbox for each VLAN interface you want to remove. Then, select *Actions* > *Delete*.
 

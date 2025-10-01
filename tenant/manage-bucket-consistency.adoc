@@ -57,7 +57,7 @@ The following bucket settings use *strong* consistency by default. If two or mor
 * link:deleting-s3-bucket-objects.html[Background empty bucket deletion]
 * link:enabling-or-disabling-last-access-time-updates.html[Last Access Time]
 * link:../s3/create-s3-lifecycle-configuration.html[Bucket lifecycle]
-* link:../s3/bucket-and-group-access-policies.html[Bucket policy]
+* link:../s3/use-access-policies.html[Bucket policy]
 * link:../s3/operations-on-buckets.html[Bucket tagging]
 * link:changing-bucket-versioning.html[Bucket versioning]
 * link:using-s3-object-lock.html[S3 Object Lock]
@@ -68,7 +68,7 @@ NOTE: The consistency value for bucket versioning, S3 Object Lock, and bucket en
 The following bucket settings do not use strong consistency and have higher availability for changes. Changes to these settings might take some time before having an effect.
 
 * link:considerations-for-platform-services.html[Platform services configuration: Notification, Replication, or Search integration]
-* link:configuring-cross-origin-resource-sharing-cors.html[CORS configuration]
+* link:configuring-cross-origin-resource-sharing-for-buckets-and-objects.html[Configure StorageGRID CORS for buckets and objects]
 * <<change-bucket-consistency,Change bucket consistency>>
 
 TIP: If the default consistency used when changing bucket settings does not meet the client application's requirements, you can change the consistency by using the `Consistency-Control` header for the link:../s3/put-bucket-consistency-request.html[S3 REST API] or by using the `reducedConsistency` or `force` options in the link:understanding-tenant-management-api.html[Tenant Management API].

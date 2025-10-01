@@ -40,7 +40,7 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 +
 NOTE: The Client private key must be in OpenSSL encrypted format or unencrypted private key format.
 
- .. As needed, change the method for verifying the server.
+ .. As needed, change the method for verifying certificates.
 
 . Select *Test and save changes*.
  ** A success message appears if the endpoint can be reached using the specified credentials. The connection to the endpoint is verified from one node at each site.

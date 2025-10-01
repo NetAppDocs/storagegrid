@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disable sso, disable single sign on
 summary: 'You can disable single sign-on \(SSO\) if you no longer want to use this functionality. You must disable single sign-on before you can disable identity federation.'
 ---
-= Disable single sign-on
+= Disable SSO
 :icons: font
 :imagesdir: ../media/
 
@@ -18,15 +18,13 @@ You can disable single sign-on (SSO) if you no longer want to use this functiona
 
 .Steps
 
-. Select *CONFIGURATION* > *Access control* > *Single sign-on*.
+. Select *Configuration* > *Access control* > *Single sign-on*.
 +
 The Single Sign-on page appears.
 
-. Select the *Disabled* option.
-. Select *Save*.
+. Select *Disable SSO*.
+. Select *Yes*.
 +
 A warning message appears indicating that local users will now be able to sign in.
 
-. Select *OK*.
-+
 The next time you sign in to StorageGRID, the StorageGRID Sign in page appears and you must enter the username and password for a local or federated StorageGRID user.

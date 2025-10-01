@@ -13,7 +13,7 @@ This section describes how the StorageGRID system implements S3 REST API operati
 
 The following conditions apply to all object operations:
 
-* StorageGRID link:consistency-controls.html[consistency values] are supported by all operations on objects, with the exception of the following:
+* StorageGRID link:consistency.html[consistency values] are supported by all operations on objects, with the exception of the following:
  ** GetObjectAcl
  ** `OPTIONS /`
  ** PutObjectLegalHold
@@ -21,7 +21,6 @@ The following conditions apply to all object operations:
  ** SelectObjectContent
 * Conflicting client requests, such as two clients writing to the same key, are resolved on a "latest-wins" basis. The timing for the "latest-wins" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
 * All objects in a StorageGRID bucket are owned by the bucket owner, including objects created by an anonymous user, or by another account.
-* Data objects ingested to the StorageGRID system through Swift can't be accessed through S3.
 
 The following table describes how StorageGRID implements S3 REST API object operations.
 

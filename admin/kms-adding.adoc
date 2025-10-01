@@ -30,7 +30,7 @@ In Step 1 (KMS details) of the Add a Key Management Server wizard, you provide d
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Key management server*.
+. Select *Configuration* > *Security* > *Key management server*.
 +
 The Key management server page appears with the Configuration details tab selected.
 

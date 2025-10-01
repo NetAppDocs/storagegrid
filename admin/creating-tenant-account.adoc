@@ -11,7 +11,7 @@ summary: 'You must create at least one tenant account to control access to the s
 [.lead]
 You must create at least one tenant account to control access to the storage in your StorageGRID system.
 
-The steps for creating a tenant account vary based on whether link:using-identity-federation.html[identity federation] and link:configuring-sso.html[single sign-on] are configured and whether the Grid Manager account you use to create the tenant account belongs to an admin group with the Root access permission.
+The steps for creating a tenant account vary based on whether link:using-identity-federation.html[identity federation] and link:how-sso-works.html[single sign-on] are configured and whether the Grid Manager account you use to create the tenant account belongs to an admin group with the Root access permission.
 
 .Before you begin
 
@@ -34,7 +34,7 @@ TIP: If this admin group doesn't exist on both grids before you create the tenan
 
 .Steps
 
-. Select *TENANTS*.
+. Select *Tenants*.
 
 . Select *Create*.
 
@@ -57,9 +57,7 @@ TIP: If this admin group doesn't exist on both grids before you create the tenan
 If you are creating a tenant that will use a grid federation connection, optionally, use this field to help identify which is the source tenant and which is the destination tenant. For example, this description for a tenant created on Grid 1 will also appear for the tenant replicated to Grid 2: "This tenant was created on Grid 1."
 
 | Client type
-| The type of client protocol this tenant will use, either *S3* or *Swift*.
-
-*Note*: Support for Swift client applications has been deprecated and will be removed in a future release.
+| Must be *S3*.
 
 | Storage quota (optional)
 | If you want this tenant to have a storage quota, a numerical value for the quota and the units.
@@ -189,7 +187,7 @@ The URL for the Tenant Manager has this format:
 
 | Port 443
 |
-* From the Grid Manager, select *TENANTS*, and select *Sign in* to the right of the tenant name.
+* From the Grid Manager, select *Tenants*, and select *Sign in* to the right of the tenant name.
 * Enter the tenant's URL in a web browser:
 +
 `https://_FQDN_or_Admin_Node_IP_/?accountId=_20-digit-account-id_/`
@@ -199,7 +197,7 @@ The URL for the Tenant Manager has this format:
 
 | A restricted port
 |
-* From the Grid Manager, select *TENANTS*, and select *Restricted*.
+* From the Grid Manager, select *Tenants*, and select *Restricted*.
 * Enter the tenant's URL in a web browser:
 +
 `https://_FQDN_or_Admin_Node_IP:port_/?accountId=_20-digit-account-id_`

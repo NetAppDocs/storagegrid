@@ -21,7 +21,7 @@ When an alert rule is disabled, its expressions aren't evaluated and no alerts a
 CAUTION: In general, disabling a default alert rule is not recommended. If an alert rule is disabled, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 .Steps
-. Select *ALERTS* > *Rules*.
+. Select *Alerts* > *Rules*.
 +
 The Alert Rules page appears.
 
