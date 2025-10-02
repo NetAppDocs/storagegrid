@@ -134,9 +134,9 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | HTTPS
 | Browser
 | Admin Nodes
-| Used by web browsers and management API clients for accessing the Grid Manager and Tenant Manager.
+| Used by web browsers and management API clients to access the Grid Manager and Tenant Manager.
 
-*Note*: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. See link:../admin/configure-firewall-controls.html[Configure firewall controls] to configure privileged IP addresses.
+*Note*: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. Refer to link:../admin/configure-firewall-controls.html[Configure firewall controls] to configure privileged IP addresses.
 
 | 443
 | TCP
@@ -164,7 +164,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | mDNS
 | All nodes
 | All nodes
-| Provides the multicast DNS (mDNS) service that is used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
+| Provides the multicast DNS (mDNS) service used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
 
 | 5696
 | TCP
@@ -176,18 +176,18 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | 8443
 | TCP
 | HTTPS
-| Browser
+|  Browser
 | Admin Nodes
-| Optional. Used by web browsers and management API clients for accessing the Grid Manager. Can be used to separate Grid Manager and Tenant Manager communications.
+| Optional. Used by web browsers and management API clients to access the Grid Manager. Can be used to separate Grid Manager and Tenant Manager communications.
 
-*Note*: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, lose access to Grid Manager unless their IP address has been added to the Privileged address list. See link:../admin/configure-firewall-controls.html[Configure firewall controls] to configure privileged IP addresses.
+*Note*: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, lose access to Grid Manager unless their IP address has been added to the Privileged address list. Refer to link:../admin/configure-firewall-controls.html[Configure firewall controls] to configure privileged IP addresses.
 
 | 8443
 | TCP
 | HTTPS
 | Browser
 | Appliances
-| Used by web browsers and management API clients for accessing the StorageGRID Appliance Installer.
+| Used by web browsers and management API clients to access the StorageGRID Appliance Installer.
 
 *Note*: Port 443 redirects to port 8443 for the StorageGRID Appliance Installer.
 
@@ -219,7 +219,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | HTTPS
 | Browser
 | Admin Nodes
-| Optional. Used by web browsers and management API clients for accessing the Tenant Manager. Can be used to separate Grid Manager and Tenant Manager communications.
+| Optional. Used by web browsers and management API clients to access the Tenant Manager. Can be used to separate Grid Manager and Tenant Manager communications.
 
 
 | 18082

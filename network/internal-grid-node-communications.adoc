@@ -129,7 +129,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | UDP
 | All nodes
 | All nodes
-| Provides the multicast DNS (mDNS) service that is used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
+| Provides the multicast DNS (mDNS) service used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
 
 | 7001
 | TCP
