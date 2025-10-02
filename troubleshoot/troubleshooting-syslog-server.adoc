@@ -12,6 +12,10 @@ summary: 'The following table describes the error messages that might be related
 
 The following table describes the error messages that might be related using to an external syslog server and lists corrective actions. 
 
+These errors are shown by the Configure external syslog server wizard if you have problems sending test messages to validate that the external syslog server is correctly configured.
+
+Problems at runtime might be reported by the link:../monitor/alerts-reference.html#audit-and-syslog-alerts[External syslog server forwarding error] alert. If you receive this alert, follow the instructions in the alert to resend the test messages so you can obtain detailed error messages.
+
 For more information about sending audit information to an external syslog server, see:
 
 * link:../monitor/considerations-for-external-syslog-server.html[Considerations for using an external syslog server]
