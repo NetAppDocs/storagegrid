@@ -21,7 +21,7 @@ When you install StorageGRID and add sites, a default ILM policy is automaticall
 * If your grid contains one site, the default policy contains a default rule that replicates two copies of each object at that site.
 * If your grid contains more than one site, the default rule replicates one copy of each object at each site.
 
-If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-ilm-policy.html[Create an ILM policy].
+If the default policy doesn't meet your storage requirements, you can create your own rules and policies. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-ilm-policy.html[Create an ILM policy].
 
 == One or many active ILM policies?
 You can have one or more active ILM policies at a time.
@@ -39,6 +39,8 @@ To provide different quality-of-service options to tenants, you can have more th
 ILM policy tags:: If you want to allow tenants to easily switch between multiple data protection policies on a per-bucket basis, use multiple ILM policies with _ILM policy tags_. You assign each ILM policy to a tag, then tenants tag a bucket to apply the policy to that bucket. You can set ILM policy tags on S3 buckets only.
 +
 For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
+
+NOTE: You can link:../ilm/creating-ilm-policy.html#activate-ilm-policy[create a maximum of 10 policy tags] for your grid.
 
 Default ILM policy tag:: A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to any untagged S3 buckets.
 

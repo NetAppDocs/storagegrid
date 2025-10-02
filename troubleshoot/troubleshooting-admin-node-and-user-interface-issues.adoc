@@ -35,12 +35,12 @@ If the error is not resolved automatically, go to the next step.
 
 . If your StorageGRID system has more than one Admin Node, try signing in to the Grid Manager from another Admin Node to check the status of an unavailable Admin Node.
 
-* If you are able to sign in, you can use the *Dashboard*, *NODES*, *Alerts*, and *SUPPORT* options to help determine the cause of the error.
+* If you are able to sign in, you can use the *Dashboard*, *Nodes*, *Alerts*, and *Support* options to help determine the cause of the error.
 * If you have only one Admin Node or you still can't sign in, go to the next step.
 
 . Determine if the node's hardware is offline.
 
-. If single sign-on (SSO) is enabled for your StorageGRID system, refer to the steps for link:../admin/configuring-sso.html[configuring single sign-on].
+. If single sign-on (SSO) is enabled for your StorageGRID system, refer to the steps for link:../admin/configure-sso.html[configuring single sign-on].
 +
 You might need to temporarily disable and re-enable SSO for a single Admin Node to resolve any issues.
 +
@@ -52,7 +52,7 @@ If the federated user account is not working, try signing in to the Grid Manager
 
  ** If the local user can sign in:
   ... Review alerts.
-  ... Select *CONFIGURATION* > *Access Control* > *Identity federation*.
+  ... Select *Configuration* > *Access Control* > *Identity federation*.
   ... Click *Test Connection* to validate your connection settings for the LDAP server.
   ... If the test fails, resolve any configuration errors.
  ** If the local user can't sign in and you are confident that the credentials are correct, go to the next step.

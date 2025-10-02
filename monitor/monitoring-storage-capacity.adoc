@@ -35,7 +35,7 @@ image::../media/dashboard_data_and_metadata_space_usage_breakdown.png[Data and m
 image::../media/dashboard_storage_over_time.png[Storage over time chart]
 
 . Use the Nodes page for additional details on how much storage has been used and how much storage remains available on the grid for object data and object metadata.
- .. Select *NODES*.
+ .. Select *Nodes*.
  .. Select *_grid_* > *Storage*.
 +
 image::../media/nodes_deployment_storage_tab.png[Nodes Deployment Storage tab]
@@ -61,7 +61,7 @@ Usable space is the amount of storage space available to store objects. The tota
 image::../media/calculating_watermarks.gif[Conceptual drawing for Total usable space]
 
 .Steps
-. Select *NODES* > *_Storage Node_* > *Storage*.
+. Select *Nodes* > *_Storage Node_* > *Storage*.
 +
 The graphs and tables for the node appear.
 
@@ -109,7 +109,7 @@ In some cases, the grid's object metadata capacity might be consumed faster than
 Some of the factors that can increase metadata usage include the size and quantity of user metadata and tags, the total number of parts in a multipart upload, and the frequency of changes to ILM storage locations.
 
 .Steps
-. Select *NODES* > *_Storage Node_* > *Storage*.
+. Select *Nodes* > *_Storage Node_* > *Storage*.
 
 . Position your cursor over the Storage used - object metadata graph to see the values for a specific time.
 +

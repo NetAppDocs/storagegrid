@@ -21,7 +21,7 @@ A single custom server certificate is used for all Storage Nodes, so you must sp
 
 After completing configuration on the server, you might also need to install the Grid CA certificate in the S3 API client you will use to access the system, depending on the root certificate authority (CA) you are using.
 
-NOTE: To ensure that operations aren't disrupted by a failed server certificate, the *Expiration of global server certificate for S3 API* alert is triggered when the root server certificate is about to expire. As required, you can view when the current certificate expires by selecting *CONFIGURATION* > *Security* > *Certificates* and looking at the Expiration date for the S3 API certificate on the Global tab.
+NOTE: To ensure that operations aren't disrupted by a failed server certificate, the *Expiration of global server certificate for S3 API* alert is triggered when the root server certificate is about to expire. As required, you can view when the current certificate expires by selecting *Configuration* > *Security* > *Certificates* and looking at the Expiration date for the S3 API certificate on the Global tab.
 
 You can upload or generate a custom S3 API certificate.
 
@@ -29,7 +29,7 @@ You can upload or generate a custom S3 API certificate.
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates*.
+. Select *Configuration* > *Security* > *Certificates*.
 . On the *Global* tab, select *S3 API certificate*.
 . Select *Use custom certificate*.
 . Upload or generate the certificate.
@@ -137,7 +137,7 @@ You can revert to using the default S3 API certificate for S3 client connections
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates*.
+. Select *Configuration* > *Security* > *Certificates*.
 . On the *Global* tab, select *S3 API certificate*.
 . Select *Use default certificate*.
 +
@@ -156,7 +156,7 @@ You can save or copy the S3 API certificate contents for use elsewhere.
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates*.
+. Select *Configuration* > *Security* > *Certificates*.
 . On the *Global* tab, select *S3 API certificate*.
 . Select the *Server* or *CA bundle* tab and then download or copy the certificate.
 +

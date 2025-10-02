@@ -104,7 +104,7 @@ For example, you might want to match objects that end with `.txt` or start with 
 * does not equal
 |The region where an S3 bucket was created. Use *ILM* > *Regions* to define the regions that are shown.
 
-*Note:* A value of us-east-1 will match objects in buckets created in the us-east-1 region as well as objects in buckets that have no region specified. See link:configuring-regions-optional-and-s3-only.html[Configure regions (optional and S3 only)].
+*Note:* A value of us-east-1 will match objects in buckets created in the us-east-1 region as well as objects in buckets that have no region specified. See link:configuring-regions-optional-and-s3-only.html[Configure S3 regions].
 
 |Object size
 |

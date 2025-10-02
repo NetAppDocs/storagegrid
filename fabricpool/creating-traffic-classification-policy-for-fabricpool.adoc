@@ -31,7 +31,7 @@ For example, if other S3 clients use this StorageGRID system, you should create 
 * The limits placed on other workloads should account for the behavior of those workloads. The limits imposed will also vary based on the sizing and capabilities of your grid and what the expected amount of utilization is.
 
 .Steps
-. Select *CONFIGURATION* > *Network* > *Traffic classification*.
+. Select *Configuration* > *Network* > *Traffic classification*.
 . Select *Create*.
 . Enter a name and a description (optional) for the policy and select *Continue*.
 

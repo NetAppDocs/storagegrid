@@ -23,7 +23,7 @@ To use the FabricPool setup wizard to complete this task, go to link:use-fabricp
 * You have reviewed the general link:../admin/managing-load-balancing.html[considerations for load balancing] as well as the link:best-practices-for-load-balancing.html[best practices for load balancing for FabricPool].
 
 .Steps
-. Select *CONFIGURATION* > *Network* > *Load balancer endpoints*.
+. Select *Configuration* > *Network* > *Load balancer endpoints*.
 
 . Select *Create*.
 

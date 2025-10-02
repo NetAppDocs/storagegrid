@@ -29,16 +29,77 @@ As a general best practice, each site in your StorageGRID system should include 
 
 A load balancer endpoint defines the port and the network protocol (HTTPS or HTTP) that incoming and outgoing client application requests will use to access those nodes that contain the Load Balancer service. The endpoint also defines the client type (S3), the binding mode, and optionally a list of allowed or blocked tenants. 
 
-To create a load balancer endpoint, either select *CONFIGURATION* > *Network* > *Load balancer endpoints* or complete the FabricPool and S3 setup wizard. For instructions:
+To create a load balancer endpoint, either use the Grid Manager or complete the S3 setup and FabricPool wizards:
 
 * link:configuring-load-balancer-endpoints.html[Configure load balancer endpoints]
 * link:use-s3-setup-wizard-steps.html[Use the S3 setup wizard]
 * link:../fabricpool/use-fabricpool-setup-wizard-steps.html[Use the FabricPool setup wizard]
 
+=== Considerations for load balancer caching
+
+Caching significantly improves performance when a workload operates on a subset of data and accesses objects multiple times. Additionally, caching provides remote access to object storage without a full grid deployment. Load balancer caching is available only for Gateway Nodes.
+
+As you're creating load balancer endpoints:
+
+* Enable caching only for workloads that are cacheable. Workloads that access un-cached data more often than cached data will perform worse than if they had not been serviced by the cache. In some cases, workloads with high overwrite and eviction rates might also exceed warrantied drive-write endurance.
+
+* Consider adding additional endpoints or nodes for caching individual workloads that are good candidates for caching.
+
+* Use distinct endpoints for cacheable and un-cacheable workloads. This separation ensures that caching mechanisms are applied appropriately and don't interfere with non-cacheable data processing.
+
+* Evaluate a potential cacheable workload by directing it to the cache-enabled endpoint. Monitor and verify the cache hit rate to determine the suitability of the workload for caching. This assessment helps in optimizing performance and ensuring efficient use of cache resources.
+
+* link:../audit/index.html[Review audit logs] to determine if an existing workload would be a good candidate for caching. For a given time period, determine what percentage of GETs are for unique objects. To be suitable for caching, this value should be below 50%.
+
+==== Examples of workloads that might be good candidates for caching
+
+* Data lakes
+* High-performance computing (HPC)
+* AI/ML training
+* Content Distribution Networks (CDN)
+* Media asset management
+* Video production
+
+[NOTE]
+====
+* Multiple object versions can be cached.
+* Range read operations are supported.
+====
+
+==== Examples of workloads that aren't good candidates for caching
+
+* Fabric Pool
+* Backup applications
+* Storage tiering
+
+CAUTION: If any content to be served by the cache requires encryption at rest, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[enable node or drive encryption^] on the cache node.
+
+==== Types of objects and requests that won't be cached
+
+*	The `response-content-encoding` query parameter
+*	The `partNumber` query parameter
+*	Conditional headers
+** `If-Match`
+** `If-Modified-Since`
+** `If-None-Match`
+** `If-Unmodified-Since`
+*	Requests that were encrypted at rest with any of the following:
+** SSE (server-side encryption with StorageGRID-managed keys)
+** SSE-C (server-side encryption with customer-provided keys)
+** Stored object encryption 
+
+Any requests that aren't cached are forwarded to an upstream LDR as if the cache were not enabled.
+
+.Related information
+
+* link:../troubleshoot/troubleshooting-load-balancer-caching.html[Troubleshoot load balancer caching]
+
+* For more information about load balancer caching, contact technical support.
+
 === Considerations for the port
 The port for a load balancer endpoint defaults to 10433 for the first endpoint you create, but you can specify any unused external port between 1 and 65535. If you use port 80 or 443, the endpoint will use the Load Balancer service on Gateway Nodes only. These ports are reserved on Admin Nodes. If you use the same port for more than one endpoint, you must specify a different binding mode for each endpoint.
 
-Ports used by other grid services aren't permitted. See the link:../network/network-port-reference.html[Network port reference].
+Ports used by other grid services aren't permitted. See link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[StorageGRID internal ports].
 
 === Considerations for the network protocol
 

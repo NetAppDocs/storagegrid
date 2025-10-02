@@ -759,7 +759,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 
 .Request body
 For details about the supported JSON body fields, see 
-link:bucket-and-group-access-policies.html[Use bucket and group access policies].
+link:use-access-policies.html[Use bucket and group access policies].
 
 
 //PutBucketReplication

@@ -22,7 +22,7 @@ You can view and edit the basic information and details for each group.
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Review the information provided on the Groups page, which lists basic information for all local and federated groups for this tenant account.
 +
@@ -60,17 +60,15 @@ If the tenant account has the *Use grid federation connection* permission and yo
 
 *** A blue banner indicating that if you edit or delete this group, your changes will not be synced to the other grid.
 
-. Edit group settings as needed. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] and link:creating-groups-for-swift-tenant.html[Create groups for a Swift tenant] for details about what to enter.
+. Edit group settings as needed. Refer to link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] for details about what to enter.
 
 .. In the Overview section, change the display name by selecting the name or the edit icon image:../media/icon_edit_tm.png[Edit icon].
 
 .. On the *Group permissions* tab, update the permissions, and select *Save changes*.
 
 .. On the *Group policy* tab, make any changes, and select *Save changes*.
-
-*** If you are editing an S3 group, optionally select a different S3 group policy or enter the JSON string for a custom policy, as required.
-
-*** If you are editing a Swift group, optionally select or clear the *Swift Administrator* checkbox.
++
+Optionally select a different S3 group policy or enter the JSON string for a custom policy as required.
 
 . To add one or more existing local users to the group:
 .. Select the Users tab.
@@ -98,13 +96,13 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Select the checkbox for the group you want to duplicate.
 
 . Select *Actions* > *Duplicate group*.
 
-. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] or link:creating-groups-for-swift-tenant.html[Create groups for a Swift tenant] for details about what to enter.
+. See link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] for details about what to enter.
 
 . Select *Create group*.
 
@@ -126,7 +124,7 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 .Steps
 
-. Select *ACCESS MANAGEMENT* > *Groups*.
+. Select *Access Management* > *Groups*.
 
 . Select the checkbox for each group you want to delete.
 
@@ -135,3 +133,56 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 A confirmation dialog box appears.
 
 . Select *Delete group* or *Delete groups*.
+
+== Set up AssumeRole
+
+.Before you begin
+You must be an administrator to set up AssumeRole.
+
+.About this task
+
+To set up AssumeRole, create the target group to be assumed, if the group doesn't already exist. Edit the group's S3 policy to specify the permitted actions of assuming this group. Edit the group's S3 trust policy to specify the trusted users allowed to assume the group with the AssumeRole API.
+
+Temporary security credentials created from assuming this group are valid for a limited duration. The session is between 15 minutes and 12 hours, and the default session is 1 hour. When you remove the user from the group's S3 trust policy, the user can no longer assume this group. 
+
+.Steps
+
+. Select *Access Management* > *Groups*.
+
+. Click on the group name.
+
+. Select the *S3 trust policy* tab.
+
+. Add your S3 trust policy, including a list of users that can perform AssumeRole.
+
+. Select *Save changes*.
+. Select the *S3 group policy* tab.
+
+. Edit the S3 policy to specify only the required S3 actions for the trusted users added in this group's S3 trust policy.
+
+. Select *Save changes*.
+
+=== Example of an AssumeRole S3 trust policy
+
+----
+{
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Principal": {
+                "AWS": [
+                    "urn:sgws:identity::1234567890:user/user1",
+                    "arn:aws:iam::1234567890:user/user2"
+                ]
+            }
+        }
+    ]
+}
+----
+
+After configuration is complete, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
+The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/use-access-policies.html[Use access policies].
+
+// 2025 JULY 16, SGRIDDOC-175
+// 2025-05-12, jira SGWS-34003

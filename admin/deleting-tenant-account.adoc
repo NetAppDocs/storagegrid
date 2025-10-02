@@ -20,7 +20,7 @@ You can delete a tenant account if you want to permanently remove the tenant's a
 
 .Steps
 
-. Select *TENANTS*.
+. Select *Tenants*.
 
 . Locate the tenant account or accounts you want to delete.
 +

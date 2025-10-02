@@ -11,13 +11,13 @@ summary: 'A StorageGRID system consists of multiple types of grid nodes at one o
 [.lead]
 A StorageGRID system consists of multiple types of grid nodes at one or more data center sites.
 
-See the link:nodes-and-services.html[descriptions of grid node types].
+Learn about the link:nodes-and-services.html[grid node types].
 
-For additional information about StorageGRID network topology, requirements, and grid communications, see the link:../network/index.html[Networking guidelines].
+For additional information about StorageGRID network topology, requirements, and grid communications, refer to the link:../network/index.html[Networking guidelines].
 
 == Deployment topologies
 
-The StorageGRID system can be deployed to a single data center site or to multiple data center sites.
+The StorageGRID system can be deployed to a single data center site or to multiple data center sites. The maximum number of sites per deployment is 16.
 
 === Single site
 
@@ -29,11 +29,11 @@ image::../media/data_center_site_single.png[Single Data Center Site]
 
 In a deployment with multiple sites, different types and numbers of StorageGRID resources can be installed at each site. For example, more storage might be required at one data center than at another.
 
-Different sites are often located in geographically different locations across different failure domains, such as an earthquake fault line or flood plain. Data sharing and disaster recovery are achieved by automated distribution of data to other sites.
+Sites are often located in geographically different locations across different failure domains, such as an earthquake fault line or floodplain. Data sharing and disaster recovery are achieved by automated distribution of data to other sites.
 
 image::../media/data_center_sites_multiple.png[Multiple Data Center Site]
 
-Multiple logical sites can also exist within a single data center to allow the use of distributed replication and erasure coding for increase availability and resiliency.
+Multiple logical sites can also exist within a single data center to allow the use of distributed replication and erasure coding for increased availability and resiliency.
 
 === Grid node redundancy
 
@@ -49,4 +49,6 @@ S3 clients store and retrieve objects in StorageGRID. Other clients are used to 
 
 S3 clients can connect to a Gateway Node or an Admin Node to use the load-balancing interface to Storage Nodes. Alternatively, S3 clients can connect directly to Storage Nodes using HTTPS.
 
-Objects can be stored within StorageGRID on software or hardware-based Storage Nodes, or in Cloud Storage Pools, which consist of external S3 buckets or Azure Blob storage containers.
+Objects can be stored within StorageGRID on software- or hardware-based Storage Nodes, or in Cloud Storage Pools, which consist of external S3 buckets or Azure Blob storage containers.
+
+// 2025 JULY 25, SGRIDDOC-182

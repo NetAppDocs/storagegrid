@@ -44,8 +44,10 @@ NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the A
 
 The following request headers aren't supported:
 
+* `If-Match`
+* `If-None-Match` 
 * `x-amz-sdk-checksum-algorithm`
-* `x-amz-trailer` 
+* `x-amz-trailer`
 
 == Versioning
 

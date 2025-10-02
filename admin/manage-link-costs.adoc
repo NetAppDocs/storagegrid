@@ -53,11 +53,11 @@ You can update the link costs between data center sites to reflect latency betwe
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the link:admin-group-permissions.html[Grid topology page configuration permission].
+* You have the link:admin-group-permissions.html[Other grid configuration permission].
 
 .Steps
 
-. Select *SUPPORT* > *Other* > *Link cost*.
+. Select *Support* > *Other* > *Link cost*.
 +
 image::../media/configuring_link_costs.png[Link Cost]
 

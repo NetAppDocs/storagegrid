@@ -29,7 +29,7 @@ Browser inactivity timeout is also controlled by the following:
 
 * Timeout settings for the identity provider, assuming single sign-on (SSO) is enabled for StorageGRID.
 +
-If SSO is enabled and a user's browser times out, the user must reenter their SSO credentials to access StorageGRID again. See link:configuring-sso.html[Configure single sign-on]. 
+If SSO is enabled and a user's browser times out, the user must reenter their SSO credentials to access StorageGRID again. See link:how-sso-works.html[How SSO works]. 
 
 Management API stack trace::
 Controls whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. 
@@ -37,7 +37,7 @@ Controls whether a stack trace is returned in Grid Manager and Tenant Manager AP
 This option is disabled by default, but you might want to enable this functionality for a test environment. In general, you should leave stack trace disabled in production environments to avoid revealing internal software details when API errors occur.
 
 .Steps
-. Select *CONFIGURATION* > *Security* > *Security settings*.
+. Select *Configuration* > *Security* > *Security settings*.
 . Select the *Interface* tab.
 . To change the setting for browser inactivity timeout:
 

@@ -54,7 +54,7 @@ The _Metadata reserved space_ is a system-wide setting that represents the amoun
 |===
 | Version used for initial StorageGRID installation| Amount of RAM on Storage Nodes| Default Metadata reserved space setting
 
-|11.5 to 11.9
+|11.5 to 12.0
 |128 GB or more on each Storage Node in the grid
 |8 TB (8,000 GB)
 
@@ -80,7 +80,7 @@ Follow these steps to view the Metadata reserved space setting for your StorageG
 
 .Steps
 
-. Select *CONFIGURATION* > *System* > *Storage settings*.
+. Select *Configuration* > *System* > *Storage settings*.
 . On the Storage settings page, expand the *Metadata reserved space* section.
 
 For StorageGRID 11.8 or higher, the Metadata reserved space value must be at least 100 GB and no more than 1 PB.
@@ -118,7 +118,7 @@ Follow these steps to view the actual reserved space for metadata on a particula
 
 .Steps
 
-. From the Grid Manager, select *NODES* > *_Storage Node_*.
+. From the Grid Manager, select *Nodes* > *_Storage Node_*.
 . Select the *Storage* tab.
 . Position your cursor over the Storage Used - Object Metadata chart and locate the *Actual reserved* value.
 +
@@ -126,7 +126,7 @@ image::../media/storage_used_object_metadata_actual_reserved.png[Storage Used - 
 
 In the screenshot, the *Actual reserved* value is 8 TB. This screenshot is for a large Storage Node in a new StorageGRID 11.6 installation. Because the system-wide Metadata reserved space setting is smaller than volume 0 for this Storage Node, the actual reserved space for this node equals the Metadata reserved space setting.
 
-== Example for actual reserved metadata space
+=== Example for actual reserved metadata space
 
 Suppose you install a new StorageGRID system using version 11.7 or later. For this example, assume that each Storage Node has more than 128 GB of RAM and that volume 0 of Storage Node 1 (SN1) is 6 TB. Based on these values:
 
@@ -172,7 +172,7 @@ Follow these steps to view the allowed metadata space for a Storage Node.
 
 .Steps
 
-. From the Grid Manager, select *NODES*.
+. From the Grid Manager, select *Nodes*.
 . Select the Storage Node.
 . Select the *Storage* tab.
 . Position your cursor over the Storage used - object metadata chart and locate the *Allowed* value.

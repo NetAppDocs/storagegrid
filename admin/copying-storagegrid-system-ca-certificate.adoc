@@ -22,7 +22,7 @@ If a custom server certificate has been configured, client applications should v
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates* and then select the *Grid CA* tab.
+. Select *Configuration* > *Security* > *Certificates* and then select the *Grid CA* tab.
 . In the *Certificate PEM* section, download or copy the certificate.
 +
 [role="tabbed-block"]

@@ -26,18 +26,18 @@ Before performing maintenance procedures, you must ensure you have the necessary
 * SSH client (for example, PuTTY)
 * link:../admin/web-browser-requirements.html[Supported web browser]
 
-|Recovery Package `.zip` file
-|Obtain a copy of the most recent Recovery Package `.zip` file:
+|Recovery package `.zip` file
+|Obtain a copy of the most recent recovery package `.zip` file:
 `sgws-recovery-package-_id-revision_.zip`
 
-The contents of the `.zip` file are updated each time the system is modified. You are directed to store the most recent version of the Recovery Package in a secure location after making such changes. Use the most recent copy to recover from grid failures.
+The contents of the `.zip` file are updated each time the system is modified. You are directed to store the most recent version of the recovery package in a secure location after making such changes. Use the most recent copy to recover from grid failures.
 
-If the primary Admin Node is operating normally, you can download the Recovery Package from the Grid Manager. Select *MAINTENANCE* > *System* > *Recovery package*.
+When logged in to any Admin Node, use the Grid Manager to download a recovery package. Select *Maintenance* > *System* > *Recovery package*.
 
-If you can't access the Grid Manager, you can find encrypted copies of the Recovery Package on some Storage Nodes that contain the ADC service. On each Storage Node, examine this location for the Recovery Package: `/var/local/install/sgws-recovery-package-_grid-id_-_revision_.zip.gpg` Use the Recovery Package with the highest revision number.
+If you can't access the Grid Manager, you can find encrypted copies of the recovery package on some Storage Nodes that contain the ADC service. On each Storage Node, examine this location for the recovery package: `/var/local/install/sgws-recovery-package-_grid-id_-_revision_.zip.gpg` Use the recovery package with the highest revision number.
 
 |`Passwords.txt` file
-|Contains the passwords required to access grid nodes on the command line. Included in the Recovery Package.
+|Contains the passwords required to access grid nodes on the command line. Included in the recovery package.
 
 |Provisioning passphrase
 |The passphrase is created and documented when the StorageGRID system is first installed. The provisioning passphrase is not in the `Passwords.txt` file.
@@ -76,7 +76,7 @@ Use the `.zip` file if you are running Windows.
 |===
 | Platform| Installation archive
 
-|Red Hat Enterprise Linux
+|RHEL
 m|
 include::../_include/installation-archives-rhel.adoc[]
 
@@ -91,25 +91,36 @@ include::../_include/installation-archives-vmware.adoc[]
 |===
 
 . Download and extract the archive file.
-. Follow the appropriate step for your platform to choose the files you need, based on your platform and which grid nodes you need to recover.
+. Skip to the appropriate section for your platform to choose the files you need, based on your platform and which grid nodes you need to recover.
 +
 The paths listed in the step for each platform are relative to the top-level directory installed by the archive file.
 
-. If you are recovering a link:../rhel/index.html[Red Hat Enterprise Linux system], select the appropriate files.
+. If you are recovering a link:../swnodes/index.html[software-based node], select the appropriate files:
 +
+[role="tabbed-block"]
+====
+
+.RHEL
+--
+
 include::../_include/installation-files-rhel.adoc[]
+--
+
+.Ubuntu or Debian
+--
+
+include::../_include/installation-files-ubuntu.adoc[]
+--
+
+.VMware
+--
+
+include::../_include/installation-files-vmware.adoc[]
+--
+====
 
 [start=10]
-. If you are recovering an link:../ubuntu/index.html[Ubuntu or Debian system], select the appropriate files.
-+
-include::../_include/installation-files-ubuntu.adoc[]
-
-[start=11]
-. If you are recovering a link:../vmware/index.html[VMware system], select the appropriate files.
-+
-include::../_include/installation-files-vmware.adoc[]
-
-[start=12]
 . If you are recovering a StorageGRID appliance-based system, select the appropriate files.
 +
+
 include::../_include/installation-files-appliance.adoc[]

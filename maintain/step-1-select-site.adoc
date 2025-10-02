@@ -20,7 +20,7 @@ To determine if a site can be decommissioned, start by accessing the Decommissio
 
 .Steps
 
-. Select *MAINTENANCE* > *Tasks* > *Decommission*.
+. Select *Maintenance* > *Tasks* > *Decommission*.
 . Select *Decommission Site*.
 +
 Step 1 (Select Site) of the Decommission Site wizard appears. This step includes an alphabetic list of the sites in your StorageGRID system.

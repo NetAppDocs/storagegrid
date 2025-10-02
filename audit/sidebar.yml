@@ -145,11 +145,3 @@ entries:
         url: "/audit/syst-node-stopping.html"
       - title: 'SYSU: Node Start'
         url: "/audit/sysu-node-start.html"
-      - title: 'WDEL: Swift DELETE'
-        url: "/audit/wdel-swift-delete.html"
-      - title: 'WGET: Swift GET'
-        url: "/audit/wget-swift-get.html"
-      - title: 'WHEA: Swift HEAD'
-        url: "/audit/whea-swift-head.html"
-      - title: 'WPUT: Swift PUT'
-        url: "/audit/wput-swift-put.html"

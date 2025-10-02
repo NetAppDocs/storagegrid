@@ -142,8 +142,8 @@ To use the StorageGRID Load Balancer service, select the *StorageGRID load balan
 | Port
 | The StorageGRID port you want to use for load balancing. This field defaults to 10433 for the first endpoint you create, but you can enter any unused external port. If you enter 80 or 443, the endpoint is configured only on Gateway Nodes, because these ports are reserved on Admin Nodes.
 
-*Note:* Ports used by other grid services aren't permitted. See the 
-link:../network/network-port-reference.html[Network port reference].
+*Note:* Ports used by other grid services aren't permitted. See 
+link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[StorageGRID internal ports].
 
 | Client type
 | Must be *S3*.
@@ -253,7 +253,7 @@ link:../tenant/creating-s3-bucket.html[Create S3 bucket].
 +
 Tenant names don't need to be unique. When the tenant account is created, it receives a unique, numeric account ID.
 
-. Define root access for the tenant account, based on whether your StorageGRID system uses link:using-identity-federation.html[identity federation], link:configuring-sso.html[single sign-on (SSO)], or both. 
+. Define root access for the tenant account, based on whether your StorageGRID system uses link:using-identity-federation.html[identity federation], link:how-sso-works.html[single sign-on (SSO)], or both. 
 +
 [cols="1a,2a" options="header"]
 |===

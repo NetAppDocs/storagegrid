@@ -55,7 +55,7 @@ When you edit a grid federation connection, StorageGRID attempts to save a "cand
 
 .Recommended actions
 
-. From the grid you are using to edit the connection, select *NODES*.
+. From the grid you are using to edit the connection, select *Nodes*.
 . Confirm that all Admin Nodes for that grid are online.
 . If any nodes are offline, bring them back online and try editing the connection again.
 
@@ -72,7 +72,7 @@ For security reasons, when a tenant account is cloned from the tenant's source g
 .Recommended actions
 Before the root user can sign in to the tenant's destination grid, a grid administrator must first link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] on the destination grid.
 
-Before a cloned local user can sign in to the tenant's destination grid, the root user for the cloned tenant must add a password for the user on the destination grid. For instructions, see link:../tenant/managing-local-users.html[Manage local users] in the instructions for using the Tenant Manager.
+Before a cloned local user can sign in to the tenant's destination grid, the root user for the cloned tenant must add a password for the user on the destination grid. For instructions, refer to link:../tenant/manage-users.html[Manage users] in the instructions for using the Tenant Manager.
 
 === Tenant created without a clone
 
@@ -88,7 +88,7 @@ This issue can occur if updates to the Connection status are delayed, which migh
 
 . Follow the instructions to test a grid federation connection in link:grid-federation-manage-connection.html[Manage grid federation connections] to confirm the issue has been fixed.
 
-. From the tenant's source grid, select *TENANTS*.
+. From the tenant's source grid, select *Tenants*.
 
 . Locate the tenant account that failed to be cloned.
 
@@ -110,15 +110,16 @@ When link:../monitor/grid-federation-monitor-connections.html[viewing a grid fed
 image::../media/grid-federation-last-error.png[Screenshot showing a message in the Last error column of a grid federation connection]
 
 .Details
-For each grid federation connection, the *Last error* column shows the most recent error to occur, if any, when a tenant's data was being replicated to the other grid. This column only shows the last cross-grid replication error to occur; previous errors that might have occurred will not be shown.
-An error in this column might occur for one of these reasons:
+For each grid federation connection, the *Last error* column shows the most recent error to occur, if any, when a tenant's data was being replicated to the other grid. This column shows only the last cross-grid replication error to occur; previous errors that might have occurred aren't shown. An error in this column might occur for one of these reasons:
 
-* The source object version was not found.
-* The source bucket was not found.
+* The source object version wasn't found.
+* The source bucket wasn't found.
 * The destination bucket was deleted.
 * The destination bucket was re-created by a different account.	
 * The destination bucket has versioning suspended.
 * The destination bucket was re-created by the same account but is now unversioned.
+* The source object has S3 Object Lock settings that don't comply with the destination grid's tenant-level retention settings.
+* The source object has S3 Object Lock settings, and S3 Object Lock is disabled on the destination bucket. 
 
 .Recommended actions
 If an error message appears in the *Last error* column, follow these steps:
@@ -147,7 +148,7 @@ This alert indicates that tenant objects can't be replicated between the buckets
 .Recommended actions
 
 . Sign in to the grid where the alert was triggered.
-. Go to *CONFIGURATION* > *System* > *Grid federation*, and locate the connection name listed in the alert.
+. Go to *Configuration* > *System* > *Grid federation*, and locate the connection name listed in the alert.
 
 . On the Permitted tenants tab, look at the *Last error* column to determine which tenant accounts have errors.
 
@@ -164,8 +165,7 @@ This alert indicates that tenant objects can't be replicated between the buckets
 . For each bucket that has cross-grid replication enabled, confirm the following:
 
 * There is a corresponding bucket for the same tenant on the other grid (must use the exact name). 
-* Both buckets have object versioning enabled (versioning can't be suspended on either grid).
-* Both buckets have S3 Object Lock disabled. 
+* Both buckets have object versioning enabled (versioning can't be suspended on either grid). 
 * Neither bucket is in the *Deleting objects: read-only* state.
 
 . To confirm that the issue was resolved, see the instructions in link:../monitor/grid-federation-monitor-connections.html[Monitor grid federation connections] to review the cross-grid replication metrics, or perform these steps:
@@ -203,5 +203,4 @@ This alert indicates that cross-grid replication requests are pending because a 
 
 Cross-grid replication will proceed as normal after the issue is resolved.
 
-
-
+// 2025 Mar 7, SGWS-34925

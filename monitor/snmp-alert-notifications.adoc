@@ -11,7 +11,7 @@ summary: 'If you want StorageGRID to send SNMP notifications when alerts occur, 
 [.lead]
 If you want StorageGRID to send SNMP notifications when alerts occur, you must enable the StorageGRID SNMP agent and configure one or more trap destinations.
 
-You can use the *CONFIGURATION* > *Monitoring* > *SNMP agent* option in the Grid Manager or the SNMP endpoints for the Grid Management API to enable and configure the StorageGRID SNMP agent. The SNMP agent supports all three versions of the SNMP protocol.
+You can use the *Configuration* > *Monitoring* > *SNMP agent* option in the Grid Manager or the SNMP endpoints for the Grid Management API to enable and configure the StorageGRID SNMP agent. The SNMP agent supports all three versions of the SNMP protocol.
 
 To learn how to configure the SNMP agent, see link:using-snmp-monitoring.html[Use SNMP monitoring].
 

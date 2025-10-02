@@ -20,7 +20,7 @@ You must deploy a virtual machine in VMware vSphere for each VMware node you wan
 
 .Steps
 
-. link:../vmware/deploying-storagegrid-node-as-virtual-machine.html[Deploy the new node as virtual machine] and connect it to one or more StorageGRID networks.
+. link:../swnodes/deploying-storagegrid-node-as-virtual-machine.html[Deploy the new node as virtual machine] and connect it to one or more StorageGRID networks.
 +
 When you deploy the node, you can optionally remap node ports or increase CPU or memory settings.
 
@@ -33,12 +33,7 @@ You can deploy grid nodes on new Linux hosts or on existing Linux hosts. If you 
 
 .Before you begin
 
-* You have the instructions for installing StorageGRID for your version of Linux, and you have reviewed the hardware and storage requirements.
-
-** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-
-** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
-
+* You have the instructions for installing StorageGRID for your version of Linux, and you have reviewed the link:../swnodes/index.html[hardware and storage requirements].
 
 * If you plan to deploy new grid nodes on existing hosts, you have confirmed the existing hosts have enough CPU, RAM, and storage capacity for the additional nodes.
 * You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single physical host.
@@ -140,8 +135,6 @@ If the *Start Installation* button is not enabled, you might need to change the 
 
 . From the StorageGRID Appliance Installer home page, select *Start Installation*.
 +
-image::../media/appliance_installer_home_start_installation_enabled.gif[This image is described by the surrounding text.]
-+
 The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 
 . If your expansion includes multiple appliance nodes, repeat the previous steps for each appliance.
@@ -151,8 +144,6 @@ NOTE: If you need to deploy multiple appliance Storage Nodes at one time, you ca
 . If you need to manually access the Monitor Installation page, select *Monitor Installation* from the menu bar.
 +
 The Monitor Installation page shows the installation progress.
-+
-image::../media/monitor_installation_configure_storage.gif[This image is explained by the surrounding text.]
 +
 The blue status bar indicates which task is currently in progress. Green status bars indicate tasks that have completed successfully.
 +
@@ -173,6 +164,4 @@ During this stage, the installer copies the base operating system image for Stor
 . Continue monitoring the installation progress until a message appears in the console window, prompting you to use the Grid Manager to approve the node.
 +
 NOTE: Wait until all nodes you added in this expansion are ready for approval before going to the Grid Manager to approve the nodes.
-+
-image::../media/monitor_installation_install_sgws.gif[This image is explained by the surrounding text.]
 

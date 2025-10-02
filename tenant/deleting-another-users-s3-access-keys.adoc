@@ -19,7 +19,7 @@ If you are using an S3 tenant and you have appropriate permissions, you can dele
 CAUTION: The S3 buckets and objects belonging to a user can be accessed using the access key ID and secret access key displayed for that user in the Tenant Manager. For this reason, protect access keys as you would a password. Rotate access keys on a regular basis, remove any unused keys from the account, and never share them with other users.
 
 .Steps
-. Select *ACCESS MANAGEMENT* > *Users*.
+. Select *Access Management* > *Users*.
 
 . From the Users page, select the user whose S3 access keys you want to manage.
 

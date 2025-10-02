@@ -22,7 +22,7 @@ For more information, see link:../admin/configuring-client-connections.html[Conf
 
 .Steps
 . If S3 clients connect using the Load Balancer service, check that Admin Nodes or Gateway Nodes are actively distributing traffic as you expect:
- .. Select *NODES*.
+ .. Select *Nodes*.
  .. Select a Gateway Node or Admin Node.
  .. On the *Overview* tab, check if a node interface is in an HA group and if the node interface has the role of Primary.
 +

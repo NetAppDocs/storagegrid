@@ -19,7 +19,7 @@ For more information about Admin Nodes, see link:../primer/what-admin-node-is.ht
 * You have link:admin-group-permissions.html[specific access permissions].
 
 .Steps
-. Select *NODES*.
+. Select *Nodes*.
 . Enter *primary* in the search box.
 +
 In the search results, identify the node with "Primary Admin Node" displayed in the Type column. One primary Admin Node should be listed.

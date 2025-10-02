@@ -15,7 +15,7 @@ If you need to access StorageGRID using an external monitoring tool, you must up
 
 See link:using-storagegrid-security-certificates.html[Manage security certificates] and link:configuring-custom-server-certificate-for-grid-manager-tenant-manager.html[Configure custom server certificates]. 
 
-NOTE: To ensure that operations aren't disrupted by a failed server certificate, the *Expiration of client certificates configured on the Certificates page* alert is triggered when this server certificate is about to expire. As required, you can view when the current certificate expires by selecting *CONFIGURATION* > *Security* > *Certificates* and looking at the Expiration date for the client certificate on the Client tab.
+NOTE: To ensure that operations aren't disrupted by a failed server certificate, the *Expiration of client certificates configured on the Certificates page* alert is triggered when this server certificate is about to expire. As required, you can view when the current certificate expires by selecting *Configuration* > *Security* > *Certificates* and looking at the Expiration date for the client certificate on the Client tab.
 
 NOTE: If you are using a key management server (KMS) to protect the data on specially configured appliance nodes, see the specific information about link:kms-adding.html[uploading a KMS client certificate].
 
@@ -47,7 +47,7 @@ Use this procedure to add a client certificate if a management interface certifi
 
 .Steps
 
-. In the Grid Manager, select *CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab.
+. In the Grid Manager, select *Configuration* > *Security* > *Certificates* and then select the *Client* tab.
 . Select *Add*.
 . Enter a certificate name.
 . To access Prometheus metrics using your external monitoring tool, select *Allow prometheus*.
@@ -75,7 +75,7 @@ Use this procedure to add an administrator client certificate if a management in
 .Steps
 
 . Perform the steps to link:configuring-custom-server-certificate-for-grid-manager-tenant-manager.html[configure a management interface certificate].
-. In the Grid Manager, select *CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab.
+. In the Grid Manager, select *Configuration* > *Security* > *Certificates* and then select the *Client* tab.
 . Select *Add*.
 . Enter a certificate name.
 . To access Prometheus metrics using your external monitoring tool, select *Allow prometheus*.
@@ -101,7 +101,7 @@ Use this procedure to add an administrator client certificate if a management in
 
 .Steps
 
-. In the Grid Manager, select *CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab.
+. In the Grid Manager, select *Configuration* > *Security* > *Certificates* and then select the *Client* tab.
 . Select *Add*.
 . Enter a certificate name.
 . To access Prometheus metrics using your external monitoring tool, select *Allow prometheus*.
@@ -142,7 +142,7 @@ Specify the private key file name and download location.
 +
 The new certificate appears on the Client tab.
 
-. In the Grid Manager, select *CONFIGURATION* > *Security* > *Certificates* and then select the *Global* tab.
+. In the Grid Manager, select *Configuration* > *Security* > *Certificates* and then select the *Global* tab.
 . Select *Management Interface certificate*.
 . Select *Use custom certificate*.
 
@@ -192,7 +192,7 @@ You can edit an administrator client certificate to change its name, enable or d
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab.
+. Select *Configuration* > *Security* > *Certificates* and then select the *Client* tab.
 +
 Certificate expiration dates and Prometheus access permissions are listed in the table. If a certificate will expire soon or is already expired, a message appears in the table and an alert is triggered.
 
@@ -210,7 +210,7 @@ You can upload a new certificate when the current one has expired.
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab.
+. Select *Configuration* > *Security* > *Certificates* and then select the *Client* tab.
 +
 Certificate expiration dates and Prometheus access permissions are listed in the table. If a certificate will expire soon or is already expired, a message appears in the table and an alert is triggered.
 
@@ -296,7 +296,7 @@ You can download or copy a client certificate for use elsewhere.
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab.
+. Select *Configuration* > *Security* > *Certificates* and then select the *Client* tab.
 . Select the certificate you want to copy or download.
 . Download or copy the certificate.
 +
@@ -335,7 +335,7 @@ If you no longer need an administrator client certificate, you can remove it.
 
 .Steps
 
-. Select *CONFIGURATION* > *Security* > *Certificates* and then select the *Client* tab.
+. Select *Configuration* > *Security* > *Certificates* and then select the *Client* tab.
 
 . Select the certificate you want to remove.
 

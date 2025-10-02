@@ -11,7 +11,7 @@ summary: 'You can identify object retrieve transactions in the audit log by loca
 [.lead]
 You can identify object retrieve transactions in the audit log by locating S3 API-specific audit messages.
 
-Not all audit messages generated during a retrieve transaction are listed in the following tables. Only messages required to trace the retrieve transaction are included.
+Not all audit messages generated during a retrieve transaction are listed in the following table. Only messages required to trace the retrieve transaction are included.
 
 == S3 retrieval audit messages
 
@@ -25,19 +25,6 @@ Not all audit messages generated during a retrieve transaction are listed in the
 |CBID, S3BK, S3KY
 | link:sget-s3-get.html[SGET: S3 GET]
 |===
-
-== Swift retrieval audit messages
-
-[cols="1a,1a,2a,1a,1a" options="header"]
-|===
-| Code| Name| Description| Trace| See
-|WGET
-|Swift GET
-|Request made to retrieve an object from a container.
-|CBID, WCON, WOBJ
-| link:wget-swift-get.html[WGET: Swift GET]
-|===
-
 
 == Example: S3 object retrieval
 
