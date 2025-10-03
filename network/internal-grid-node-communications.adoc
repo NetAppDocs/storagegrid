@@ -125,6 +125,12 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | Storage Nodes
 | Metadata internal traffic.
 
+| 5353
+| UDP
+| All nodes
+| All nodes
+| Provides the multicast DNS (mDNS) service used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
+
 | 7001
 | TCP
 | Storage Nodes
@@ -205,9 +211,9 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 
 | 18019
 | TCP
-| Storage Nodes
-| Storage Nodes
-| Chunk service internal traffic for erasure coding.
+| All nodes
+| All nodes
+| Chunk service internal traffic for erasure coding and replication
 
 | 18082
 | TCP
@@ -217,8 +223,8 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 
 | 18086
 | TCP
-| All grid nodes
-| All Storage Nodes
+| All nodes
+| Storage Nodes
 | Internal traffic related to LDR service.
 
 | 18200
@@ -239,5 +245,4 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 
 link:external-communications.html[External communications]
 
-
-
+// 2025 SEP 22, SGRIDDOC-195
