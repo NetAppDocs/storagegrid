@@ -9,7 +9,7 @@ summary: 'You can create virtual LAN \(VLAN\) interfaces on Admin Nodes and Gate
 :imagesdir: ../media/
 
 [.lead]
-You can create virtual LAN (VLAN) interfaces on Admin Nodes and Gateway Nodes and use them in HA groups and load balancer endpoints to isolate and partition traffic for security, flexibility, and performance. Selected nodes in the HA group can use the VLAN interface to share a virtual IP address, so that if a node in the HA group goes down, another node takes over traffic to and from the virtual IP address.
+Create virtual LAN (VLAN) interfaces on Admin Nodes and Gateway Nodes and use them in HA groups and load balancer endpoints to isolate and partition traffic for security, flexibility, and performance. The selected nodes in the HA group can use the VLAN interface to share a virtual IP address, so that if a node goes down, another node takes over traffic to and from the virtual IP address.
 
 == Considerations for VLAN interfaces
 
