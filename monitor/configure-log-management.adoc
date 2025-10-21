@@ -356,7 +356,7 @@ A green banner indicates that the configuration has been saved.
 +
 Test results continuously appear on the page until you stop the test. While the test is in progress, your audit messages continue to be sent to your previously configured destinations. 
 
-. If you receive any errors, correct them and select *Send test messages* again.
+. If you receive any errors during syslog server configuration or at runtime, correct them and select *Send test messages* again.
 +
 See link:../troubleshoot/troubleshooting-syslog-server.html[Troubleshoot an external syslog server] to help you resolve any errors.
 
