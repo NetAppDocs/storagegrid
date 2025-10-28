@@ -258,8 +258,6 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 | TLS
 | Validates the server certificate for TLS connections to the endpoint resource.
 
-*Note*: Kafka also supports the mTLS verification type.
-
 | Disabled
 | Certificate verification is disabled. This option isn't secure.
 
@@ -268,10 +266,9 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 
 | Use operating system CA certificate
 | Use the default Grid CA certificate installed on the operating system to secure connections.
-
 |===
 --
-.Webhook endpoints only
+.Webhook and Kafka endpoints
 --
 Verify the TLS connection for webhook endpoints.
 
@@ -290,7 +287,10 @@ Verify the TLS connection for webhook endpoints.
 | Use custom CA certificate
 | The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
 
+| Use operating system CA certificate
+| Use the default Grid CA certificate installed on the operating system to secure connections.
 
+*Note*: Webhook doesn't have this option.
 |===
 
 When you select *mTLS*, these options become available.
