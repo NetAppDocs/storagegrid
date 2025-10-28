@@ -9,8 +9,10 @@ settings:
     harmony_enabled: true
     hide_language_selector: false
   versions:
-    - version-number: "12.0"
+    - version-number: "12.1"
       url: /storagegrid
+    - version-number: "12.0"
+      url: /storagegrid-120
     - version-number: "11.9"
       url: /storagegrid-119  
     - version-number: "11.8"
@@ -23,7 +25,7 @@ settings:
       url: /storagegrid-115    
 sidebar:
   entries:
-    - title: 'StorageGRID 12.0 software'
+    - title: 'StorageGRID 12.1 software'
       url: /index.html
     - title: StorageGRID appliances
       url: "/storagegrid-hardware.html"
