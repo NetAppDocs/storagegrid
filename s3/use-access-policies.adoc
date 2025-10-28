@@ -726,6 +726,10 @@ s3:PutObjectTagging
 s3:PutObjectVersionTagging
 | Will require a specific tag key and value when the object request includes tagging.
 
+| s3:x-amz-copy-source
+| s3:PutObject
+| Compares to the x-amz-copy-source expanded from the request header in the PutObject and UploadPartCopy request.
+
 | s3:x-amz-server-side-encryption-customer-algorithm
 | 
 s3:PutObject
