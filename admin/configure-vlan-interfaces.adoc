@@ -9,7 +9,7 @@ summary: 'You can create virtual LAN \(VLAN\) interfaces on Admin Nodes and Gate
 :imagesdir: ../media/
 
 [.lead]
-You can create virtual LAN (VLAN) interfaces on Admin Nodes and Gateway Nodes and use them in HA groups and load balancer endpoints to isolate and partition traffic for security, flexibility, and performance.
+Create virtual LAN (VLAN) interfaces on Admin Nodes and Gateway Nodes and use them in HA groups and load balancer endpoints to isolate and partition traffic for security, flexibility, and performance. The selected nodes in the HA group can use the VLAN interfaces to share up to 10 virtual IP addresses, so that if a node goes down, another node takes over traffic to and from the virtual IP addresses.
 
 == Considerations for VLAN interfaces
 
@@ -151,3 +151,5 @@ To avoid any disruptions in client traffic, consider doing one of the following:
 . Select *Yes* to confirm your selection.
 +
 All VLAN interfaces you selected are removed. A green success banner appears on the VLAN interfaces page.
+
+// 2025 OCT 2, storagegrid-issue-27 
