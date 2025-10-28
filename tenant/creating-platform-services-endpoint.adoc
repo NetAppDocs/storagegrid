@@ -123,7 +123,7 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 . Select *Continue*.
 . Select a value for *Authentication type*.
 +
-NOTE: If you want authentication for webhook endpoints, configure Mutual Transport Layer Security (mTLS) in <<verify-certs,Step 9>>.
+NOTE: If you want authentication for webhook or Kafka endpoints, configure Mutual Transport Layer Security (mTLS) in <<verify-certs,Step 9>>.
 +
 [role="tabbed-block"]
 ====
@@ -270,7 +270,7 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 --
 .Webhook and Kafka endpoints
 --
-Verify the TLS connection for webhook endpoints.
+Verify the TLS connection for webhook or Kafka endpoints.
 
 [cols="1a,2a" options="header"]
 |===
@@ -290,7 +290,7 @@ Verify the TLS connection for webhook endpoints.
 | Use operating system CA certificate
 | Use the default Grid CA certificate installed on the operating system to secure connections.
 
-*Note*: Webhook doesn't have this option.
+*Note*: Webhook endpoints don't have this option.
 |===
 
 When you select *mTLS*, these options become available.
