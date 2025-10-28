@@ -258,6 +258,8 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 | TLS
 | Validates the server certificate for TLS connections to the endpoint resource.
 
+*Note*: Kafka also supports the mTLS verification type.
+
 | Disabled
 | Certificate verification is disabled. This option isn't secure.
 
