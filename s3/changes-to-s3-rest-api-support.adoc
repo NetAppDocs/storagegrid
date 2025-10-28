@@ -16,7 +16,7 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 | Release| Comments
 
 | 12.1
-| Added support for the `s3:x-amz-copy-source` policy condition key
+| Added support for the `s3:x-amz-copy-source` policy condition key.
 
 | 11.8
 | 
