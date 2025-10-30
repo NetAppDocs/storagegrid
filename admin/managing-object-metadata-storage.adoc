@@ -196,11 +196,11 @@ The *Allowed* value corresponds to this Prometheus metric:
 
 == Example for allowed metadata space
 
-Suppose you install a StorageGRID system using version 11.6. For this example, assume that each Storage Node has more than 128 GB of RAM and that volume 0 of Storage Node 1 (SN1) is 6 TB. Based on these values:
+Suppose you install a StorageGRID system using version 12.1. For this example, assume that each Storage Node has more than 128 GB of RAM and that volume 0 of Storage Node 1 (SN1) is 6 TB. Based on these values:
 
-* The system-wide *Metadata reserved space* is set to 8 TB. (This is the default value for StorageGRID 11.6 or higher when each Storage Node has more than 128 GB RAM.)
+* The system-wide *Metadata reserved space* is set to 20 TB. (This is the default value for StorageGRID 12.1 or higher when each Storage Node has more than 128 GB RAM.)
 * The actual reserved space for metadata for SN1 is 6 TB. (The entire volume is reserved because volume 0 is smaller than the *Metadata reserved space* setting.)
-* The allowed space for metadata on SN1 is 3 TB, based on the calculation shown in the <<table-allowed-space-for-metadata,table for allowed space for metadata>>: (Actual reserved space for metadata − 1 TB) × 75%, up to a maximum of 3.96 TB.
+* The allowed space for metadata on SN1 is 3.75 TB, based on the calculation shown in the <<table-allowed-space-for-metadata,table for allowed space for metadata>>: (Actual reserved space for metadata − 1 TB) × 75%, up to a maximum of 3.96 TB.
 
 == How Storage Nodes of different sizes affect object capacity
 
