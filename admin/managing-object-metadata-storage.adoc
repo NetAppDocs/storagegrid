@@ -60,7 +60,7 @@ The _Metadata reserved space_ is a system-wide setting that represents the amoun
 
 |11.5 to 12.0
 |128 GB or more on each Storage Node in the grid
-|20 TB (20,000 GB)
+|8 TB (8,000 GB)
 
 |
 |Less than 128 GB on any Storage Node in the grid
