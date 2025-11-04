@@ -26,6 +26,9 @@ To enhance system security, external SSH access is blocked by default. If you ne
 . Use the *Block inbound SSH access* option to manage external SSH access:
 .. Select the checkbox to block access (default).
 .. Unselect the checkbox to allow access.
++
+NOTE: SSH requires access on port 22 between the primary Admin Node and all other grid nodes. Remove access on port 22 when you complete the maintenance task.
+
 . Select *Save*.
 
 // 2025 APR 22, SGWS-35048
