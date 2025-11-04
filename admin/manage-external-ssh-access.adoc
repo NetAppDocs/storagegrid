@@ -27,7 +27,7 @@ To enhance system security, external SSH access is blocked by default. If you ne
 .. Select the checkbox to block access (default).
 .. Unselect the checkbox to allow access.
 +
-NOTE: SSH requires access on port 22 between the primary Admin Node and all other grid nodes. Remove access on port 22 when you complete the maintenance task.
+NOTE: Requires access on port 22 between the primary Admin Node and all other grid nodes. Remove access on port 22 when you complete the maintenance task.
 
 . Select *Save*.
 
