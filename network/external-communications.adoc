@@ -39,7 +39,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | 22
 | TCP
 | SSH
-| Primary Admin Nodes
+| Service laptop
 | All nodes
 | SSH or console access is required for procedures with console steps. Optionally, you can use port 2022 instead of 22.
 
