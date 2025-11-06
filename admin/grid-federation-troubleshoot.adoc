@@ -125,7 +125,9 @@ For each grid federation connection, the *Last error* column shows the most rece
 If an error message appears in the *Last error* column, follow these steps:
 
 . Review the message text.
-. Perform any recommended actions. For example, if versioning was suspended on the destination bucket for cross-grid replication, reenable versioning for that bucket.
+. Perform any recommended actions.
++
+For example, if versioning was suspended on the destination bucket for cross-grid replication, reenable versioning for that bucket. Or, if S3 Object Lock was disabled on the destination bucket for cross-grid replication, enable S3 Object Lock for that bucket.
 . Select the connection or tenant account from the table.
 . Select *Clear error*.
 . Select *Yes* to clear the message and update the system's status.

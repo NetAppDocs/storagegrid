@@ -50,7 +50,9 @@ The following table describes how StorageGRID implements S3 REST API bucket oper
 
 * You can include the `x-amz-bucket-object-lock-enabled` request header to create a bucket with S3 Object Lock enabled. See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock].
 +
-You must enable S3 Object Lock when you create the bucket. You can't add or disable S3 Object Lock after a bucket is created. S3 Object Lock requires bucket versioning, which is enabled automatically when you create the bucket.
+S3 Object Lock requires bucket versioning, which is enabled automatically when you create the bucket.
++
+You can add or disable S3 Object Lock after a bucket is created. 
 
 
 | DeleteBucket
@@ -253,7 +255,9 @@ The endpoint must exist for replication configuration to succeed. If the endpoin
 * Suspended: Disables versioning for the objects in the bucket. All objects added to the bucket receive the version ID `null`.
 
 | PutObjectLockConfiguration
-| Configures or removes the bucket default retention mode and default retention period.
+| 
+* Configures or removes the bucket default retention mode and default retention period.
+* Enables S3 Object Lock on existing buckets.
 
 If the default retention period is modified, the retain-until-date of existing object versions remains the same and is not recalculated using the new default retention period.
 

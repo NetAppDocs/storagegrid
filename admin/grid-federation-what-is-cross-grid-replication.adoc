@@ -151,6 +151,8 @@ a| Disabled
 a| Enabled
 |===
 
+CAUTION: You can enable S3 Object Lock on existing buckets, which could lead to a misconfiguration later.
+
 When S3 Object Lock on the source bucket is enabled: 
 
 * The objects are locked with retention settings at the destination in this order:
