@@ -24,6 +24,7 @@ If a tenant account has the *Use grid federation connection* permission to use o
 * Can have different names from each other
 * Can have different regions
 * Must have versioning enabled
+* Must have the same setting for S3 Object Lock (enabled or disabled)
 * Must be empty
 
 After both buckets have been created, cross-grid replication can be configured for either or both buckets.
@@ -152,6 +153,8 @@ a| Enabled
 |===
 
 CAUTION: You can enable S3 Object Lock on existing buckets, which could lead to a misconfiguration later.
+
+NOTE: When S3 Object Lock is enabled on the source bucket, make sure it's also enabled on the destination bucket. If S3 Object Lock is disabled on the destination bucket, an error occurs during replication. Refer to link:../admin/grid-federation-troubleshoot.html#cross-grid-replication-alerts-and-errors[Cross-grid replication alerts and errors].
 
 When S3 Object Lock on the source bucket is enabled: 
 
