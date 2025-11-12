@@ -52,7 +52,7 @@ The following table describes how StorageGRID implements S3 REST API bucket oper
 +
 S3 Object Lock requires bucket versioning, which is enabled automatically when you create the bucket.
 +
-You can add or disable S3 Object Lock after a bucket is created. 
+You can only enable S3 Object Lock after a bucket is created. After S3 Object Lock is enabled, you can't disable it. 
 
 
 | DeleteBucket
