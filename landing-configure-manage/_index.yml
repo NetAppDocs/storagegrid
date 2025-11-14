@@ -9,7 +9,7 @@ indexpage:
     - title: Sign in to the Grid Manager
       url: ../admin/signing-in-to-grid-manager.html
     - title: Configure AutoSupport
-      url: ../admin/configure-autosupport-grid-manager.html
+      url: ../monitor/configure-autosupport-grid-manager.html
     - title: Use the Grid Management API
       url: ../admin/using-grid-management-api.html         
   - title: Manage admin groups and users
