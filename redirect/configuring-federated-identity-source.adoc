@@ -1,0 +1,5 @@
+---
+permalink: tenant/configuring-federated-identity-source.html
+redirect: storagegrid/tenant/using-identity-federation.html
+---
+// 2025-NOV-17, SGRIDDOC-205
