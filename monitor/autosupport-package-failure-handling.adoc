@@ -9,13 +9,13 @@ summary: "Review the list of actions StorageGRID takes if an attempt to send an 
 :imagesdir: ../media/
 
 [.lead]
-Review the list of actions StorageGRID takes if an attempt to send an AutoSupport package fails
+Review the list of actions StorageGRID takes if an attempt to send an AutoSupport package fails.
 
 StorageGRID takes different actions depending on the type of AutoSupport package. You can check the status of AutoSupport packages by selecting *Support* > *Tools* > *AutoSupport* > *Results*.
 
 When the AutoSupport package fails to send, "Failed" appears on the *Results* tab of the *AutoSupport* page.
 
-NOTE: If you configured a proxy server to forward AutoSupport packages to NetApp, you should link:configuring-admin-proxy-settings.html[verify that the proxy server configuration settings are correct].
+NOTE: If you configured a proxy server to forward AutoSupport packages to NetApp, link:configuring-admin-proxy-settings.html[verify that the proxy server configuration settings are correct].
 
 == Weekly AutoSupport package failure
 
