@@ -2,14 +2,14 @@
 permalink: expand/copying-admin-node-database.html
 sidebar: sidebar
 keywords: copy Admin Node database, alert history, Admin Node expansion
-summary: 'When adding Admin Nodes through an expansion procedure, you can optionally copy the database from the primary Admin Node to the new Admin Node. Copying the database allows you to retain historical information about attributes, alerts, and alerts.'
+summary: 'When adding Admin Nodes through an expansion procedure, you can optionally copy the database from the primary Admin Node to the new Admin Node. Copying the database allows you to retain historical information about attributes and alerts.'
 ---
 = Copy Admin Node database
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When adding Admin Nodes through an expansion procedure, you can optionally copy the database from the primary Admin Node to the new Admin Node. Copying the database allows you to retain historical information about attributes, alerts, and alerts.
+When adding Admin Nodes through an expansion procedure, you can optionally copy the database from the primary Admin Node to the new Admin Node. Copying the database allows you to retain historical information about attributes and alerts.
 
 .Before you begin
 * You have completed the required expansion steps to add an Admin Node.
