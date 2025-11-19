@@ -92,13 +92,13 @@ When using locally-hosted services instead of cloud services, you can specify th
 * CloudMirror replication:
 +
 ----
-urn:mysite:s3:optional:optional:bucket-name
+urn:mysite:s3:::bucket-name
 ----
 +
 For a CloudMirror endpoint hosted on StorageGRID, you can specify a valid URN that begins with `urn:sgws`:
 +
 ----
-urn:sgws:s3:optional:optional:bucket-name
+urn:sgws:s3:::bucket-name
 ----
 
 * Notifications:
@@ -106,26 +106,26 @@ urn:sgws:s3:optional:optional:bucket-name
 Specify an Amazon Simple Notification Service endpoint:
 +
 ----
-urn:mysite:sns:optional:optional:sns-topic-name
+urn:aws:sns:region:account-id:sns-topic-name
 ----
 +
 Specify a Kafka endpoint:
 +
 ----
-urn:kafka:optional:optional:kafka-topic-name
+urn::kafka:::kafka-topic-name
 ----
 +
-NOTE: Optionally, you can include `mysite` when specifying a Kafka endpoint: `urn:mysite:kafka:optional:optional:kafka-topic-name`
+NOTE: Optionally, you can include `mysite` when specifying a Kafka endpoint: `urn:mysite:kafka:::kafka-topic-name`
 +
 Specify a webhook endpoint:
 +
 ----
-urn:mysite:webhook:optional:optional:webhook-name
+urn:mysite:webhook:::webhook-name
 ----
 * Search integration:
 +
 ----
-urn:mysite:es:optional:optional:domain-name/index-name/type-name
+urn:mysite:es:::domain-name/index-name/type-name
 ----
 +
 NOTE: For locally-hosted search integration endpoints, the `domain-name` element can be any string as long as the URN of the endpoint is unique.
