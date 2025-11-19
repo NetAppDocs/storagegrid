@@ -26,8 +26,8 @@ For additional information about BMC hardening, see the https://media.defense.go
 You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security.
 
 * In the Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *USB port access* to enable or disable the USB ports:
-** Clear the *Enable USB ports* checkbox to disable the ports.
 ** Select the *Enable USB ports* checkbox to enable the ports.
+** Clear the *Enable USB ports* checkbox to disable the ports.
 
 == Firewall configuration
 
