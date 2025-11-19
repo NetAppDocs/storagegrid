@@ -15,7 +15,7 @@ StorageGRID takes different actions depending on the type of AutoSupport package
 
 When the AutoSupport package fails to send, "Failed" appears on the *Results* tab of the *AutoSupport* page.
 
-NOTE: If you configured a proxy server to forward AutoSupport packages to NetApp, link:configuring-admin-proxy-settings.html[verify that the proxy server configuration settings are correct].
+NOTE: If you configured a proxy server to forward AutoSupport packages to NetApp, link:../admin/configuring-admin-proxy-settings.html[verify that the proxy server configuration settings are correct].
 
 == Weekly AutoSupport package failure
 
