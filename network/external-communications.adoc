@@ -36,6 +36,14 @@ NOTE: This list does not include ports that might be configured as link:../admin
 |===
 | Port| TCP or UDP| Protocol| From| To| Details
 
+| 22
+| TCP
+| SSH
+| Service laptop
+| All nodes
+| SSH or console access is required for procedures with console steps. Optionally, you can use port 2022 instead of 22.
+
+*Note*: This port is only required when you need to enable SSH access for certain maintenance operations.
 | 25
 | TCP
 | SMTP
@@ -166,6 +174,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | All nodes
 | Provides the multicast DNS (mDNS) service used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
 
+*Note*: Configuring this port is optional.
 | 5696
 | TCP
 | KMIP
@@ -245,6 +254,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 |===
 
+// 2025 NOV 3, SGRIDDOC-199
 // 2025 SEP 22, SGRIDDOC-195
 // 2025 APR 15, SGWS-35050
 // 2024 AUG 12, SGIRDDOC-91
