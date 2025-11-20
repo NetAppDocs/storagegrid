@@ -36,10 +36,12 @@ All of the following conditions are assumed when recovering grid nodes:
 
 == Order of node recovery if a server hosting more than one grid node fails
 
-If a server that is hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node, you must recover that node first.
+If a server that is hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node and no non-primary Admin Nodes exist, you must recover the primary Admin Node first.
 
 == IP addresses for recovered nodes
 
 Don't attempt to recover a node using an IP address that is currently assigned to any other node. When you deploy the new node, use the failed node's current IP address or an unused IP address.
 
 If you use a new IP address to deploy the new node and then recover the node, the new IP address will continue to be used for the recovered node. If you want to revert to the original IP address, use the Change IP tool after the recovery is complete.
+
+// 2025 NOV 18, storagegrid-issues-40
