@@ -17,8 +17,10 @@ If the global S3 Object Lock setting is enabled for your StorageGRID system, you
 
 S3 Object Lock is a permanent setting that can only be enabled when you create a bucket. You can't add or disable S3 Object Lock after a bucket is created.
 
-To enable S3 Object Lock for a bucket, use either of these methods:
+To enable S3 Object Lock for a bucket, use one of these methods:
 
+* Create the bucket using the Tenant Manager. See link:../tenant/creating-s3-bucket.html[Create S3 bucket].
+* Create the bucket using a CreateBucket request with the `x-amz-bucket-object-lock-enabled` request header. See link:operations-on-buckets.html[Operations on buckets].
 * Manage bucket settings from the Tenant Manager. See link:../tenant/update-default-retention-settings.html[Update S3 Object Lock default retention].
 * Issue a PutObjectLockConfigurationRequest for the bucket, optionally specifying the default retention.
 
