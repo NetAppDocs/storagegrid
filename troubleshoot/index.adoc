@@ -112,7 +112,7 @@ Review alerts triggered in the past for additional insights.
 | Technical support might ask you to collect data or review specific information to help troubleshoot issues.
 | 
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
-* link:../monitor/manually-triggering-autosupport-message.html[Manually trigger an AutoSupport package]
+* link:../monitor/manually-triggering-autosupport-package.html[Manually trigger an AutoSupport package]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
 |===
 

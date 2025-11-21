@@ -1,0 +1,4 @@
+---
+permalink: monitor/troubleshooting-autosupport-messages.html
+redirect: storagegrid/monitor/autosupport-package-failure-handling.html
+---

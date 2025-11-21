@@ -1,0 +1,4 @@
+---
+permalink: admin/configure-autosupport-grid-manager.html
+redirect: storagegrid/monitor/configure-autosupport-grid-manager.html
+---

@@ -6,10 +6,12 @@ indexpage:
   tiles:
   - title: Get started
     links:
+    - title: Web browser requirements
+      url: ../admin/web-browser-requirements.html
     - title: Sign in to the Grid Manager
       url: ../admin/signing-in-to-grid-manager.html
-    - title: Configure AutoSupport
-      url: ../admin/configure-autosupport-grid-manager.html
+    - title: Sign out of the Grid Manager
+      url: ../admin/signing-out-of-grid-manager.html
     - title: Use the Grid Management API
       url: ../admin/using-grid-management-api.html         
   - title: Manage admin groups and users
