@@ -167,6 +167,13 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | AWS
 | Cloud Storage Pools requests sent to AWS targets that use HTTPS. Grid administrators can override the default HTTPS port setting of 443 when configuring a Cloud Storage Pool.
 
+| 636
+| TCP/ UDP
+| LDAP
+| Storage Nodes with ADC
+| Active Directory/LDAP
+| Used for connecting to an Active Directory or LDAP server for Identity Federation.
+
 | 5353
 | UDP
 | mDNS
@@ -254,6 +261,7 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 |===
 
+// 2025 NOV 21, SGRIDDOC-205
 // 2025 NOV 3, SGRIDDOC-199
 // 2025 SEP 22, SGRIDDOC-195
 // 2025 APR 15, SGWS-35050
