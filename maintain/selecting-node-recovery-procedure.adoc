@@ -36,6 +36,4 @@ link:recovering-from-admin-node-failures.html[Recover from Admin Node failures]
 | https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-from-archive-node-failures.html[Recover from Archive Node failures (StorageGRID 11.8 doc site)^]
 |===
 
-NOTE: If a server that is hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node and no non-primary Admin Nodes exist, you must recover the primary Admin Node first. Recovering the primary Admin Node first prevents other node recoveries from halting as they wait to contact the primary Admin Node.
-
-// 2025 NOV 18, storagegrid-issues-40
+NOTE: If a server that is hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node, you must recover that node first. Recovering the primary Admin Node first prevents other node recoveries from halting as they wait to contact the primary Admin Node.
