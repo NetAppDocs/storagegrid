@@ -12,6 +12,7 @@ Tenant user::
 * Review considerations for buckets and objects with S3 Object Lock.
 * As needed, contact grid administrator to enable global S3 Object Lock setting and set permissions.
 * Create buckets with S3 Object Lock enabled.
+* Enable S3 Object Lock on existing buckets.
 * Optionally, configure default retention settings for a bucket:
 ** Default retention mode: Governance or Compliance, if allowed by the grid administrator.
 ** Default retention period: Must be less than or equal to maximum retention period set by grid administrator.

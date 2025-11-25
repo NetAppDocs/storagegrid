@@ -175,7 +175,7 @@ The Support menu provides options that help technical support analyze and troubl
 
 From the Tools section of the Support menu, you can:
 
-* link:../admin/configure-autosupport-grid-manager.html[Configure AutoSupport]
+* link:../monitor/configure-autosupport-grid-manager.html[Configure AutoSupport]
 * link:../monitor/running-diagnostics.html[Run diagnostics] on the current state of the grid
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
@@ -187,7 +187,7 @@ NOTE: The tools available from the *Metrics* option are intended for use by tech
 From the Other section of the Support menu, you can:
 
 * Configure link:../monitor/manage-io-prioritization.html[I/O prioritization]
-* Configure link:../admin/configure-autosupport-grid-manager.html[AutoSupport email setup (legacy)]
+* Configure link:../monitor/configure-autosupport-grid-manager.html[AutoSupport email setup (legacy)]
 * Manage link:../admin/manage-link-costs.html[link cost]
 * View node service IDs
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]

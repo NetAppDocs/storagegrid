@@ -16,6 +16,8 @@ indexpage:
       url:  ../monitor/monitoring-storage-capacity.html
   - title: Manage alerts and notifications
     links:
+    - title: Use AutoSupport
+      url: ../monitor/what-is-autosupport.html
     - title: Manage alerts
       url: ../monitor/managing-alerts.html
     - title: Create custom alerts
@@ -36,6 +38,8 @@ indexpage:
       url: ../monitor/logs-files-reference.html       
   - title: Diagnose and troubleshoot
     links:
+    - title: Use AutoSupport
+      url: ../monitor/what-is-autosupport.html
     - title: Review support metrics
       url: ../monitor/reviewing-support-metrics.html
     - title: Change I/O prioritization

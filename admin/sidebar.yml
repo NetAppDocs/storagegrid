@@ -256,19 +256,6 @@ entries:
       url: "/admin/benefits-of-active-idle-and-concurrent-http-connections.html" 
     - title: Manage link costs
       url: "/admin/manage-link-costs.html"
-  - title: Use AutoSupport
-    entries:
-    - title: What is AutoSupport
-      pdf-filename: Use AutoSupport
-      url: "/admin/what-is-autosupport.html"
-    - title: Configure AutoSupport
-      url: "/admin/configure-autosupport-grid-manager.html"
-    - title: Manually trigger an AutoSupport package
-      url: "/admin/manually-triggering-autosupport-message.html"
-    - title: Troubleshoot AutoSupport packages
-      url: "/admin/troubleshooting-autosupport-messages.html"
-    - title: Send E-Series AutoSupport packages through StorageGRID
-      url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Manage Storage Nodes
     entries:
     - title: Use Storage options

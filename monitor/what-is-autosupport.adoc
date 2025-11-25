@@ -1,5 +1,5 @@
 ---
-permalink: admin/what-is-autosupport.html
+permalink: monitor/what-is-autosupport.html
 sidebar: sidebar
 keywords: autosupport, technical support, storagegrid health, system status, Active IQ
 summary: 'The AutoSupport feature enables StorageGRID to send health and status packages to NetApp technical support.'

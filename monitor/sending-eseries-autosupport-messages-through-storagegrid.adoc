@@ -1,5 +1,5 @@
 ---
-permalink: admin/sending-eseries-autosupport-messages-through-storagegrid.html
+permalink: monitor/sending-eseries-autosupport-messages-through-storagegrid.html
 sidebar: sidebar
 keywords: eseries, santricity, system manager, asup, autosupport, technical support, appliance
 summary: 'You can send E-Series SANtricity System Manager AutoSupport packages to technical support through a StorageGRID Admin Node rather than the storage appliance management port.'
@@ -15,7 +15,7 @@ See https://docs.netapp.com/us-en/e-series-santricity/sm-support/autosupport-fea
 
 .Before you begin
 * You are signed into the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the link:admin-group-permissions.html[Storage appliance administrator or Root access permission].
+* You have the link:../admin/admin-group-permissions.html[Storage appliance administrator or Root access permission].
 * You have configured SANtricity AutoSupport:
 ** For SG6000 and SG5700 appliances, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[configure AutoSupport in SANtricity System Manager^]
 
