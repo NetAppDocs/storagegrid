@@ -80,7 +80,7 @@ image::../media/nodes_page_storage_used_object_data.png[Nodes Page Storage Used 
 
 . Review the Available values in the Volumes and Object stores tables, below the graphs.
 +
-NOTE: To view graphs of these values, click the chart icons image:../media/icon_chart.png[Chart Icon] in the Available columns.
+NOTE: To view graphs of these values, click the chart icons in the Available columns.
 
 . Monitor the values over time to estimate the rate at which usable storage space is being consumed.
 
