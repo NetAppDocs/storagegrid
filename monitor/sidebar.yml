@@ -37,7 +37,7 @@ entries:
     - title: View the ILM tab
       url: "/monitor/viewing-ilm-tab.html"
     - title: Use the Tasks tab
-      url: "/monitor/using-task-tab-to-reboot-grid-node.html"
+      url: "/monitor/using-task-tab.html"
     - title: View the Load balancer tab
       url: "/monitor/viewing-load-balancer-tab.html"
     - title: View the Platform services tab
