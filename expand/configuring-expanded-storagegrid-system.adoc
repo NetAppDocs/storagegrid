@@ -49,8 +49,6 @@ link:../admin/configure-sso.html[Configure single sign-on].
 
 .. If you plan to use the Load Balancer service on Admin Nodes, optionally add the new Admin Node to an HA group. Select *Configuration* > *Network* > *High availability groups* to review the list of existing HA groups and to add the new node. See link:../admin/configure-high-availability-group.html[Configure high availability groups].
 
-.. Optionally, copy the Admin Node database from the primary Admin Node to the expansion Admin Node if you want to keep the attribute and audit information consistent on each Admin Node. See link:copying-admin-node-database.html[Copy the Admin Node database].
-
 .. Optionally, copy the Prometheus database from the primary Admin Node to the expansion Admin Node if you want to keep the historical metrics consistent on each Admin Node. See  link:copying-prometheus-metrics.html[Copy Prometheus metrics].
 
 .. Optionally, copy the existing audit logs from the primary Admin Node to the expansion Admin Node if you want to keep the historical log information consistent on each Admin Node. See link:copying-audit-logs.html[Copy audit logs].
