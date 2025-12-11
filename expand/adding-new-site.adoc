@@ -31,7 +31,7 @@ For more information, see the following:
 
 * You must consider the available network bandwidth between sites, and the level of network latency. Metadata updates are continually replicated between sites even if all objects are stored only at the site where they are ingested.
 +
-link:https://fieldportal.netapp.com/s/article/TR-4889-NetApp-StorageGRID-Design-and-Implementation-Guidelines-and-Best-Practices-12-0[TR-4889: NetApp StorageGRID Design and Implementation Guidelines and Best Practices^] provides specific recommendations for network bandwidth and latency between sites. You need a Field Portal account to access the TR. If you don't have a Field Portal account, contact your NetApp account team.
+link:https://fieldportal.netapp.com/s/article/TR-4889-NetApp-StorageGRID-Design-and-Implementation-Guidelines-and-Best-Practices[TR-4889: NetApp StorageGRID Design and Implementation Guidelines and Best Practices^] provides specific recommendations for network bandwidth and latency between sites. You need a Field Portal account to access the TR. If you don't have a Field Portal account, contact your NetApp account team.
 * Because your StorageGRID system remains operational during the expansion, you must review ILM rules before starting the expansion procedure. You must ensure that object copies aren't stored to the new site until the expansion procedure is complete.
 +
 For example, before you begin the expansion, determine if any rules use the default storage pool (All Storage Nodes). If they do, you must create a new storage pool that contains the existing Storage Nodes and update your ILM rules to use the new storage pool. Otherwise, objects will be copied to the new site as soon as the first node at that site becomes active.
