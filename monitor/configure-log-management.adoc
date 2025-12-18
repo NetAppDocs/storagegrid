@@ -464,5 +464,46 @@ For example:
 system-logs/DC1-SN1/var/local/log/localaudit.log--2025-05-12_13:41:44.gz
 ----
 
+== Manage log retention
+
+You can manage how long StorageGRID retains logs by creating an ILM rule or configuring an S3 bucket lifecycle policy.
+
+[role="tabbed-block"]
+====
+.ILM rule
+--
+Create an ILM rule for the bucket and add this rule to the active ILM policy.
+
+.Steps
+
+. Select *ILM* > *Rules*.
+. Select *Create*. link:../ilm/create-ilm-rule-enter-details.html[Step 1 (Enter details)] of the Create an ILM rule wizard appears:
+.. Enter a unique name for the rule. For example: ILM Rule for archived logs.
+.. Select the log archival S3 tenant account.
+.. Specify the log archival S3 bucket.
+. In link:../ilm/create-ilm-rule-define-placements.html[Step 2 (Define placements)], define the placement for the archived logs rule. For example, the ILM rule stores one replicated copy in Site 1 and one replicated copy in Site 2 for the first year. After one year, a 2+1 erasure-coded copy is made and saved at only one site.
+. After creating the rule, add it to an active ILM policy.
+--
+
+.S3 bucket lifecycle
+--
+Configure an S3 bucket lifecycle policy on the log archival S3 bucket:
+
+{
+      "Rules": [
+        {
+            "ID": "Retail logs forever",
+            "Filter": {},
+            "Status": "Enabled"，
+            "Expiration": {}
+        }
+      ]
+}
+--
+
+When you configure an S3 bucket lifecycle policy on the log archival S3 bucket, the lifecycle expiration actions override the ILM policy for objects matching the bucket lifecycle filter. Objects that don't match the bucket lifecycle filter use the retention settings of the ILM policy. If an object matches a bucket lifecycle filter and no expiration actions are explicitly specified, the retention settings of the ILM policy aren't used and it's implied that object versions are retained forever.
+====
+
+// 2025 Dec 18, SGRIDDOC-215
 // 2024 Oct 8, SGRIDDOC-98
 // 2023 SEP 14, SGWS-28029
