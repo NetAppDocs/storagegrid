@@ -21,7 +21,7 @@ The following request headers are supported:
 
 * `x-amz-checksum-*`
 +
-NOTE: StorageGRID calculates and stores a checksum matching the type specified in the Create Multipart Upload request. The supported checksums are CRC32, CRC32C, CRC64NVME, or SHA-256.
+NOTE: StorageGRID calculates and stores a checksum that matches the type specified in the Create Multipart Upload request. The supported checksums are CRC32, CRC32C, CRC64NVME, and SHA-256.
 
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-none-match`
