@@ -37,6 +37,9 @@ StorageGRID does not parse or interpret escaped UTF-8 characters included in the
 The following request headers are supported:
 
 * `Content-Type`
+* `x-amz-checksum-algorithm`: Specify `CRC32`, `CRC32C`, `CRC64NVME`, or `SHA256`
++
+If the source object has a `checksum` or `x-amz-checksum-algorithm` is included when you copy an object, StorageGRID stores the copied object with a FULL_OBJECT checksum.
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-none-match`
@@ -79,9 +82,6 @@ The following request headers aren't supported:
 * `Content-Encoding`
 * `Content-Language`
 * `Expires`
-* `x-amz-checksum-algorithm`
-+
-When you copy an object, if the source object has a checksum, StorageGRID doesn't copy that checksum value to the new object. This behavior applies whether or not you try to use `x-amz-checksum-algorithm` in the object request.
 * `x-amz-website-redirect-location`
 
 == Storage class options
@@ -134,4 +134,5 @@ NOTE: The `server-side-encryption` value of the object can't be updated. Instead
 
 If the source bucket is versioned, you can use the `x-amz-copy-source` header to copy the latest version of an object. To copy a specific version of an object, you must explicitly specify the version to copy using the `versionId` subresource. If the destination bucket is versioned, the generated version is returned in the `x-amz-version-id` response header. If versioning is suspended for the target bucket, then `x-amz-version-id` returns a "null" value.
 
+// 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243
