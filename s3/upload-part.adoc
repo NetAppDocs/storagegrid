@@ -15,7 +15,7 @@ The UploadPart operation uploads a part in a multipart upload for an object.
 
 The following request headers are supported:
 
-NOTE: If you specified a CRC32, CRC32C, CRC64NVME, or SHA-256 checksum during the CreateMultipartUpload request, you must also include the checksum request header in each UploadPart request.
+NOTE: If you specified a CRC-32, CRC-32C, CRC-64NVME, or SHA-256 checksum during the CreateMultipartUpload request, you must also include the checksum request header in each UploadPart request.
 
 * `x-amz-checksum-crc32`
 * `x-amz-checksum-crc32c`

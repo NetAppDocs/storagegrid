@@ -37,7 +37,7 @@ StorageGRID does not parse or interpret escaped UTF-8 characters included in the
 The following request headers are supported:
 
 * `Content-Type`
-* `x-amz-checksum-algorithm`: Specify `CRC32`, `CRC32C`, `CRC-64NVME`, or `SHA256`
+* `x-amz-checksum-algorithm`: Specify `CRC-32`, `CRC-32C`, `CRC-64NVME`, or `SHA256`
 +
 When you copy an object, if the source object has a `checksum` or `x-amz-checksum-algorithm` is included, StorageGRID stores the copied object with a FULL_OBJECT checksum.
 * `x-amz-copy-source`
