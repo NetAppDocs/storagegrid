@@ -1,10 +1,10 @@
 ---
 permalink: expand/performing-expansion.html
 sidebar: sidebar
-keywords: expand, expansion procedure
+keywords: expand, expansion procedure, StorageGRID
 summary: 'When you perform the expansion, the new grid nodes are added to your existing StorageGRID deployment.'
 ---
-= Perform expansion
+= Perform grid expansion to add nodes in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

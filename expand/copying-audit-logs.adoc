@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: expand/copying-audit-logs.html
-keywords: copy audit log, Admin Node expansion,
+keywords: copy audit log, Admin Node expansion, StorageGRID
 summary: "When you add a new Admin Node through an expansion procedure, its AMS service only logs events and actions that occur after it joins the system. As required, you can copy audit logs from a previously installed Admin Node to the new expansion Admin Node so that it's in sync with the rest of the StorageGRID system."
 ---
-= Copy audit logs
+= Copy audit logs to expansion Admin Nodes in your StorageGRID system
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
 permalink: expand/adding-new-site.html
 sidebar: sidebar
-keywords: expand, expansion, new site, add site, guidelines
+keywords: expand, expansion, new site, add site, guidelines, StorageGRID
 summary: 'You can expand your StorageGRID system by adding a new site.'
 ---
-= Add a new site
+= Add a new site to expand your StorageGRID system
 :icons: font
 :imagesdir: ../media/
 

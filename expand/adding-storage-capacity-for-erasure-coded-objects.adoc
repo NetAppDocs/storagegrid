@@ -1,10 +1,10 @@
 ---
 permalink: expand/adding-storage-capacity-for-erasure-coded-objects.html
 sidebar: sidebar
-keywords: erasure coding, capacity, storage nodes, ec, expand, expansion
+keywords: erasure coding, capacity, storage nodes, ec, expand, expansion, StorageGRID
 summary: 'If your ILM policy includes a rule that makes erasure-coded copies, you must plan where to add new storage and when to add new storage. The amount of storage you add and the timing of the addition can affect the grid’s usable storage capacity.'
 ---
-= Add storage capacity for erasure-coded objects
+= Add storage capacity for erasure-coded objects in your StorageGRID system
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
 permalink: expand/adding-grid-nodes-to-add-capabilities.html
 sidebar: sidebar
-keywords: grid nodes, expand, expansion, site, add
+keywords: grid nodes, expand, expansion, site, add, StorageGRID
 summary: 'You can add redundancy or additional capabilities to a StorageGRID system by adding new grid nodes to existing sites.'
 ---
-= Add grid nodes to add capabilities to your system
+= Learn about adding grid nodes to expand capabilities in your StorageGRID system
 :icons: font
 :imagesdir: ../media/
 
