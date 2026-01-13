@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: grid node, add node, add site, expand, expansion, StorageGRID
 summary: 'Follow this procedure to add grid nodes to existing sites or to add a new site. You can only perform one type of expansion at a time.'
 ---
-= Add grid nodes or new sites to StorageGRID
+= Workflow summary for adding grid nodes or new sites to StorageGRID
 :icons: font
 :imagesdir: ../media/
 
