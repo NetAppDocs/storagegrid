@@ -2,28 +2,28 @@ section: expand
 title: Expand a grid
 url: "/landing-expand/index.html"
 entries:
-  - title: Expansion types
+  - title: Learn about expansion
     pdf-filename: Expand your StorageGRID system
     url: "/expand/index.html"
-  - title: Expansion planning guidelines
+  - title: Expansion planning
     entries:
-    - title: Add storage capacity
-      entries:
-      - title: 'Guidelines for adding object capacity'
-        url: "/expand/guidelines-for-adding-object-capacity.html"
-      - title: Expansion planning for replicated data
-        url: "/expand/adding-storage-capacity-for-replicated-objects.html"
-      - title: Expansion planning for erasure-coded data
-        url: "/expand/adding-storage-capacity-for-erasure-coded-objects.html"
-      - title: EC rebalancing after expansion
-        url: "/expand/considerations-for-rebalancing-erasure-coded-data.html"
+    - title: Expansion planning for replicated data
+      url: "/expand/adding-storage-capacity-for-replicated-objects.html"
+    - title: Expansion planning for erasure-coded data
+      url: "/expand/adding-storage-capacity-for-erasure-coded-objects.html"
+    - title: EC rebalancing after expansion
+      url: "/expand/considerations-for-rebalancing-erasure-coded-data.html"
+  - title: Expansion guidelines
+    entries:
+    - title: 'Guidelines for adding storage capacity'
+      url: "/expand/guidelines-for-adding-object-capacity.html"
     - title: Guidelines for adding metadata capacity
       url: "/expand/adding-metadata-capacity.html"
     - title: Guidelines for adding grid nodes
       url: "/expand/adding-grid-nodes-to-add-capabilities.html"
     - title: Guidelines for adding a new site
       url: "/expand/adding-new-site.html"
-  - title: Gather required materials
+  - title: Prepare for expansion
     url: "/expand/gather-required-materials.html"
   - title: Add grid nodes or site
     entries:
