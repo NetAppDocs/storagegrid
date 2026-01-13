@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: expand grid, StorageGRID
 summary: 'You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.'
 ---
-= Expand StorageGRID to add nodes, storage volumes, or sites
+= Learn about expanding your StorageGRID system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.
+Learn how to expand your StorageGRID system without interrupting operations by adding storage volumes to existing Storage Nodes, adding new grid nodes to an existing site, or adding an entire new site to increase capacity or capabilities.
 
 Before expanding a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission or expansion procedure. Refer to link:../maintain/checking-data-repair-jobs.html[Check data repair jobs].
 

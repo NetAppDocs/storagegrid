@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: expand, expansion, new site, add site, guidelines, StorageGRID
 summary: 'You can expand your StorageGRID system by adding a new site.'
 ---
-= Add a new site to expand your StorageGRID system
+= Guidelines for adding a new site in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

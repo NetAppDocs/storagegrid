@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: expansion, Linux, add storage volumes, StorageGRID
 summary: 'If a Storage Node includes fewer than 48 storage volumes, you can increase its capacity by adding new block storage devices, making them visible to the Linux hosts, and adding the new block device mappings to the StorageGRID configuration file used for the Storage Node.'
 ---
-= Add storage volumes to Linux storage nodes to expand capacity in your StorageGRID system
+= Add direct-attached or SAN volumes to Linux Storage Nodes in StorageGRID
 :imagesdir: ../media/
 
 [.lead]

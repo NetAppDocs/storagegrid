@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: expansion, configuration, StorageGRID
 summary: 'After completing an expansion, you must perform additional integration and configuration steps.'
 ---
-= Configure newly added nodes and sites in your StorageGRID system
+= Configure newly added nodes and sites in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

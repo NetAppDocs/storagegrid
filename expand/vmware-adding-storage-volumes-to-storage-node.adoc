@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: expand, expansion, storage node, add storage volumes, VMware, StorageGRID
 summary: 'If a Storage Node includes fewer than 16 storage volumes, you can increase its capacity by using VMware vSphere to add volumes.'
 ---
-= Add storage capacity to VMware nodes in StorageGRID
+= Add storage volumes to VMware Storage Nodes in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
