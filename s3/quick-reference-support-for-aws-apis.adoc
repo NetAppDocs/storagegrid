@@ -66,8 +66,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 * `x-amz-checksum-crc64nvme`
 * `x-amz-checksum-sha256`
 * `x-amz-checksum-type`
-* `x-amz-sdk-checksum-algorithm` 
-* `x-amz-trailer`
+* `x-amz-storage-class`
 
 .Request body XML tags
 StorageGRID supports these request body XML tags:
@@ -964,10 +963,6 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 
 And these additional request headers:
 
-* `x-amz-checksum-crc32`
-* `x-amz-checksum-crc32c`
-* `x-amz-checksum-crc64nvme`
-* `x-amz-checksum-sha256`
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-modified-since`
