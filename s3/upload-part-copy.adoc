@@ -19,10 +19,6 @@ This request reads and writes the object data specified in `x-amz-copy-source-ra
 
 The following request headers are supported:
 
-* `x-amz-checksum-*`
-+
-NOTE: StorageGRID calculates and stores a checksum that matches the type specified in the Create Multipart Upload request. The supported checksums are CRC-32, CRC-32C, CRC-64NVME, and SHA-256.
-
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-none-match`
 * `x-amz-copy-source-if-unmodified-since`
@@ -47,5 +43,9 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 == Versioning
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
+
+== Calculating checksums
+
+StorageGRID automatically detects if a checksum was specified during a CreateMultipartUpload request and uses this checksum in the UploadPartCopy operation. You don't need to specify a checksum in an UploadPartCopy request.
 
 // 2026 JAN 6, SGWS-39154
