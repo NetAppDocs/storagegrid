@@ -5,7 +5,7 @@ entries:
   - title: Expansion types
     pdf-filename: Expand your StorageGRID system
     url: "/expand/index.html"
-  - title: Plan expansion
+  - title: Expansion planning guidelines
     entries:
     - title: Add storage capacity
       entries:
@@ -17,9 +17,9 @@ entries:
         url: "/expand/adding-storage-capacity-for-erasure-coded-objects.html"
       - title: EC rebalancing after expansion
         url: "/expand/considerations-for-rebalancing-erasure-coded-data.html"
-    - title: Add metadata capacity
+    - title: Guidelines for adding metadata capacity
       url: "/expand/adding-metadata-capacity.html"
-    - title: Add redundancy or new capabilities
+    - title: Guidelines for adding grid nodes
       url: "/expand/adding-grid-nodes-to-add-capabilities.html"
     - title: Guidelines for adding a new site
       url: "/expand/adding-new-site.html"
