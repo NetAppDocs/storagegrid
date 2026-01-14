@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fabricPool, tenant, SSO
 summary: 'You must create a tenant account in the Grid Manager for FabricPool use.'
 ---
-= Create a tenant account for FabricPool
+= Create a tenant account for FabricPool in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FabricPool, requirements, ILM, information lifecycle management, ILM rule, ILM rules, ILM policy, erasure coding, replication, cloud storage pool, glacier
 summary: 'You can use this simple example policy as a starting point for your own ILM rules and policy.'
 ---
-= Configure ILM for FabricPool data
+= Configure StorageGRID ILM for FabricPool data
 :icons: font
 :imagesdir: ../media/
 

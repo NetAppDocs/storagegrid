@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: dns, vip, virtual ip, fqdn, server name 
 summary: 'After configuring high availability groups, load balancer endpoints, and S3 domain names, you must ensure that the DNS includes the necessary entries for StorageGRID.'
 ---
-= Configure the DNS server
+= Configure DNS server entries for StorageGRID with FabricPool
 :icons: font
 :imagesdir: ../media/
 

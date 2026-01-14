@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fabricPool, load balancer endpoint, load balancing, Layer 7, best practices, certificate, CA, certificate authority, tls, ssl
 summary: 'Before attaching StorageGRID as a FabricPool cloud tier, review the best practices for using load balancers with FabricPool.'
 ---
-= Best practices for load balancing for FabricPool
+= Best practices for StorageGRID load balancing with FabricPool
 :icons: font
 :imagesdir: ../media/
 
