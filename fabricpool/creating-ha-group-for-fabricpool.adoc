@@ -1,7 +1,7 @@
 ---
 permalink: fabricpool/creating-ha-group-for-fabricpool.html
 sidebar: sidebar
-keywords: fabricPool, high availability group, HA group, create, creating, virtual IP, VIP, active interface, backup interface
+keywords: fabricPool, StorageGRID, high availability group, HA group, create, creating, virtual IP, VIP, active interface, backup interface
 summary: 'When configuring StorageGRID for use with FabricPool, you can optionally create one or more high availability (HA) groups.
 An HA group is a collection of nodes that each contain the StorageGRID Load Balancer service. An HA group can contain Gateway Nodes, Admin Nodes, or both.'
 ---

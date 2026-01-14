@@ -1,7 +1,7 @@
 ---
 permalink: fabricpool/creating-traffic-classification-policy-for-fabricpool.html
 sidebar: sidebar
-keywords: fabricPool, traffic classification, traffic policy, QoS, quality of service
+keywords: fabricPool, StorageGRID, traffic classification, traffic policy, QoS, quality of service
 summary: 'You can optionally design a StorageGRID traffic classification policy to optimize quality of service for the FabricPool workload.'
 ---
 = Create a traffic classification policy for FabricPool in StorageGRID
