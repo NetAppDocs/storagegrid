@@ -1,35 +1,35 @@
 section: expand
-title: Expand a grid
+title: Expand grid
 url: "/landing-expand/index.html"
 entries:
-  - title: Expansion types
+  - title: Learn about expansion
     pdf-filename: Expand your StorageGRID system
     url: "/expand/index.html"
-  - title: Plan StorageGRID expansion
+  - title: Expansion planning
     entries:
-    - title: Add storage capacity
-      entries:
-      - title: 'Guidelines: Add object capacity'
-        url: "/expand/guidelines-for-adding-object-capacity.html"
-      - title: Add storage capacity for replicated objects
-        url: "/expand/adding-storage-capacity-for-replicated-objects.html"
-      - title: Add storage capacity for erasure-coded objects
-        url: "/expand/adding-storage-capacity-for-erasure-coded-objects.html"
-      - title: Considerations for rebalancing erasure-coded data
-        url: "/expand/considerations-for-rebalancing-erasure-coded-data.html"
-    - title: Add metadata capacity
+    - title: Expansion planning for replicated data
+      url: "/expand/adding-storage-capacity-for-replicated-objects.html"
+    - title: Expansion planning for erasure-coded data
+      url: "/expand/adding-storage-capacity-for-erasure-coded-objects.html"
+    - title: Learn about erasure code rebalancing after expansion
+      url: "/expand/considerations-for-rebalancing-erasure-coded-data.html"
+  - title: Expansion guidelines
+    entries:
+    - title: 'Guidelines for adding object capacity'
+      url: "/expand/guidelines-for-adding-object-capacity.html"
+    - title: Guidelines for adding metadata capacity
       url: "/expand/adding-metadata-capacity.html"
-    - title: Add redundancy or new capabilities
+    - title: Guidelines for adding grid nodes
       url: "/expand/adding-grid-nodes-to-add-capabilities.html"
-    - title: Add new site
+    - title: Guidelines for adding a new site
       url: "/expand/adding-new-site.html"
-  - title: Gather required materials
+  - title: Prepare for expansion
     url: "/expand/gather-required-materials.html"
   - title: Add grid nodes or site
     entries:
-    - title: Add grid nodes to existing site or add new site
+    - title: Workflow summary 
       url: /expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html
-    - title: Update subnets for Grid Network
+    - title: Add or update subnets to the Grid Network
       url: "/expand/updating-subnets-for-grid-network.html"
     - title: Deploy new grid nodes
       url: "/expand/deploying-new-grid-nodes.html"
@@ -39,15 +39,15 @@ entries:
     entries:
     - title: 'Add storage volumes to Storage Nodes'
       url: "/expand/adding-storage-volumes-to-storage-nodes.html"
-    - title: 'VMware: Add storage volumes to Storage Node'
+    - title: 'Add storage volumes for VMware'
       url: "/expand/vmware-adding-storage-volumes-to-storage-node.html"
-    - title: 'Linux: Add direct-attached or SAN volumes to Storage Node'
+    - title: 'Add direct-attached or SAN volumes for Linux'
       url: "/expand/linux-adding-direct-attached-or-san-volumes-to-storage-node.html"
   - title: Configure expanded system
     entries:
-    - title: Configuration steps
+    - title: Configure newly added nodes and sites
       url: "/expand/configuring-expanded-storagegrid-system.html"
-    - title: Verify that Storage Node is active
+    - title: Verify Storage Nodes are active
       url: "/expand/verifying-storage-node-is-active.html"
     - title: Copy Admin Node database
       url: "/expand/copying-admin-node-database.html"
@@ -55,7 +55,7 @@ entries:
       url: "/expand/copying-prometheus-metrics.html"
     - title: Copy audit logs
       url: "/expand/copying-audit-logs.html"
-    - title: Rebalance erasure-coded data after adding Storage Nodes
+    - title: Rebalance erasure-coded data
       url: "/expand/rebalancing-erasure-coded-data-after-adding-storage-nodes.html"
-  - title: Troubleshoot expansion
+  - title: Troubleshoot expansion errors
     url: "/expand/contacting-technical-support.html"

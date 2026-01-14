@@ -1,10 +1,10 @@
 ---
 permalink: expand/updating-subnets-for-grid-network.html
 sidebar: sidebar
-keywords: expand, expansion, add subnets, Grid Network
+keywords: expand, expansion, add subnets, Grid Network, StorageGRID
 summary: 'When you add grid nodes or a new site in an expansion, you might need to update or add subnets to the Grid Network.'
 ---
-= Update subnets for Grid Network
+= Add or update subnets to the Grid Network for expansion in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
