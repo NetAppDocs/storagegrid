@@ -29,7 +29,7 @@ entries:
     entries:
     - title: Workflow summary 
       url: /expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html
-    - title: Update subnets for Grid Network
+    - title: Add or update subnets to the Grid Network
       url: "/expand/updating-subnets-for-grid-network.html"
     - title: Deploy new grid nodes
       url: "/expand/deploying-new-grid-nodes.html"
