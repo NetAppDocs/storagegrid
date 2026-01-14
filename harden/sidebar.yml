@@ -1,7 +1,7 @@
 section: harden
 title: System hardening for StorageGRID
 entries:
-  - title: System hardening overview
+  - title: Learn about system hardening
     pdf-filename: System hardening for StorageGRID
     url: "/harden/index.html"
   - title: Hardening guidelines for upgrades

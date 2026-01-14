@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: StorageGRID, hardening guidelines, system, security
 summary: 'System hardening is the process of eliminating as many security risks as possible from a StorageGRID system.'
 ---
-= System hardening for StorageGRID
+= Learn about system hardening for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
