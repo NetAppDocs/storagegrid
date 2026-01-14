@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: networking after installation, dhcp networking
 summary: 'After completing grid node deployment and configuration, follow these guidelines for DHCP addressing and network configuration changes.'
 ---
-= Post-installation network configuration for StorageGRID
+= Post-installation guidelines for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
