@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: erasure coding, rebalance, ec rebalance, site rebalance, StorageGRID
 summary: 'If you are performing an expansion to add Storage Nodes and you use ILM rules to erasure code data, you might need to perform the EC rebalance procedure if you cannot add enough Storage Nodes for the erasure-coding scheme you are using.'
 ---
-= Learn about EC rebalancing after expansion in StorageGRID
+= Learn about erasure code (EC) rebalancing after expansion in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

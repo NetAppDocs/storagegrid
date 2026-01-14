@@ -11,11 +11,11 @@ entries:
       url: "/expand/adding-storage-capacity-for-replicated-objects.html"
     - title: Expansion planning for erasure-coded data
       url: "/expand/adding-storage-capacity-for-erasure-coded-objects.html"
-    - title: EC rebalancing after expansion
+    - title: Learn about erasure code rebalancing after expansion
       url: "/expand/considerations-for-rebalancing-erasure-coded-data.html"
   - title: Expansion guidelines
     entries:
-    - title: 'Guidelines for adding storage capacity'
+    - title: 'Guidelines for adding object capacity'
       url: "/expand/guidelines-for-adding-object-capacity.html"
     - title: Guidelines for adding metadata capacity
       url: "/expand/adding-metadata-capacity.html"

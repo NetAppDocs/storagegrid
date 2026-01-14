@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: adding storage capacity, guidelines, storage volumes, expansion, StorageGRID
 summary: 'You can expand the object storage capacity of your StorageGRID system by adding storage volumes to existing Storage Nodes or by adding new Storage Nodes to existing sites. You must add storage capacity in a way that meets the requirements of your information lifecycle management \(ILM\) policy.'
 ---
-= Guidelines for adding storage capacity in StorageGRID
+= Guidelines for adding object capacity in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
