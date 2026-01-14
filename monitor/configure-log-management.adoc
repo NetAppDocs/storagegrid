@@ -493,7 +493,7 @@ Configure an S3 bucket lifecycle policy on the log archival S3 bucket:
 {
       "Rules": [
         {
-            "ID": "Retail logs forever",
+            "ID": "Retain logs forever",
             "Filter": {},
             "Status": "Enabled"，
             "Expiration": {}
