@@ -1,7 +1,7 @@
 ---
 permalink: primer/what-storage-node-is.html
 sidebar: sidebar
-keywords: what is a storage node, how many storage nodes
+keywords: StorageGRID, what is a storage node, how many storage nodes
 summary: 'Storage Nodes manage and store object data and metadata. Storage Nodes include the services and processes required to store, move, verify, and retrieve object data and metadata on disk.'
 ---
 = What is a Storage Node?
