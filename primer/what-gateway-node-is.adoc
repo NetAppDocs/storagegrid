@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: StorageGRID, gateway nodes, api gateway
 summary: 'Gateway Nodes provide a dedicated load-balancing interface that S3 client applications can use to connect to StorageGRID. Load balancing maximizes speed and connection capacity by distributing the workload across multiple Storage Nodes. Gateway Nodes are optional.'
 ---
-= What is a Gateway Node?
+= What is a StorageGRID Gateway Node?
 :icons: font
 :imagesdir: ../media/
 

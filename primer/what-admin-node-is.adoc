@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: StorageGRID, admin nodes
 summary: 'Admin Nodes provide management services such as system configuration, monitoring, and logging. Admin Nodes can also be used to load balance S3 client traffic. Each grid must have one primary Admin Node and might have any number of non-primary Admin Nodes for redundancy.'
 ---
-= What is an Admin Node?
+= What is a StorageGRID Admin Node?
 :icons: font
 :imagesdir: ../media/
 
