@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network topology for storagegrid
 summary: 'You can configure all three networks into a network topology consisting of a private Grid Network, bounded site-specific Admin Networks, and open Client Networks. Using load balancer endpoints and untrusted Client Networks can provide additional security if needed.'
 ---
-= Topology for all three networks
+= Network topology for all three StorageGRID networks
 :icons: font
 :imagesdir: ../media/
 

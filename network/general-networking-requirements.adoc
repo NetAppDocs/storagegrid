@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: networking requirements, storagegrid networks
 summary: 'All StorageGRID deployments must be able to support the following connections.'
 ---
-= General networking requirements
+= General networking requirements for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
