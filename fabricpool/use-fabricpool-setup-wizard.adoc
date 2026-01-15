@@ -48,7 +48,7 @@ If you plan to use identity federation or single sign-on (SSO) for your StorageG
 
 * You know which fully qualified domain name (FQDN) to use for StorageGRID. Domain name server (DNS) entries will map this FQDN to the virtual IP (VIP) addresses of the HA group that you create using the wizard. See link:../fabricpool/configure-dns-server.html[Configure DNS server].
 
-* If you plan to use S3 virtual hosted-style requests, you have link:../admin/configuring-s3-api-endpoint-domain-names.html[configured S3 endpoint domain names]. ONTAP uses path-style URLs by default, but using virtual hosted-style requests is recommended.
+* If you plan to use S3 virtual-hosted-style requests, you have link:../admin/configuring-s3-api-endpoint-domain-names.html[configured S3 endpoint domain names]. ONTAP uses path-style URLs by default, but using virtual-hosted-style requests is recommended.
 
 === Review load balancer and security certificate requirements
 If you plan to use the StorageGRID load balancer, you have reviewed the general link:../admin/managing-load-balancing.html[considerations for load balancing]. You have the certificates you will upload or the values you need to generate a certificate.
