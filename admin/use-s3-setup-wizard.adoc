@@ -30,7 +30,7 @@ Configure identity federation and SSO:: If you plan to use identity federation o
 
 Obtain and configure domain names:: You know which fully qualified domain name (FQDN) to use for StorageGRID. Domain name server (DNS) entries will map this FQDN to the virtual IP (VIP) addresses of the HA group that you create using the wizard.
 +
-If you plan to use S3 virtual hosted-style requests, you should have link:../admin/configuring-s3-api-endpoint-domain-names.html[configured S3 endpoint domain names]. Using virtual hosted-style requests is recommended.
+If you plan to use S3 virtual-hosted-style requests, you should have link:../admin/configuring-s3-api-endpoint-domain-names.html[configured S3 endpoint domain names]. Using virtual-hosted-style requests is recommended.
 
 Review load balancer and security certificate requirements:: If you plan to use the StorageGRID load balancer, you have reviewed the general considerations for load balancing. You have the certificates you will upload or the values you need to generate a certificate.
 +
