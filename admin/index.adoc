@@ -11,29 +11,19 @@ summary: 'Use these instructions to configure and administer a StorageGRID syste
 [.lead]
 Use these instructions to configure and administer a StorageGRID system.
 
+== About these instructions
+The primary tasks for configuring and administering StorageGRID allow you to:
+
+* Use the Grid Manager to set up groups and users
+* Create tenant accounts to allow S3 client applications to store and retrieve objects
+* Configure and manage StorageGRID networks
+* Configure AutoSupport
+* Manage node settings
+
 == Before you begin
 * You have a general understanding of the StorageGRID system.
-* You have detailed knowledge of Linux command shells, networking, and server hardware setup and configuration.
 
-== Quick start for administering StorageGRID
+* You have fairly detailed knowledge of Linux command shells, networking, and server hardware setup and configuration.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Get started with Grid Manager
 
-[role="quick-margin-list"]
-* Decide
-* Plan
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Two] Control access to StorageGRID
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Three] Use grid federation
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Four] Manage security
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Five] Manage tenants
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Six] Configure client connections
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Seven] Manage networks and connections
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Eight] Manage Nodes
 
