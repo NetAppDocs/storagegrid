@@ -10,9 +10,9 @@ entries:
     url: "/primer/storagegrid-architecture-and-network-topology.html"
   - title: Grid nodes and services
     entries: 
-      - title: StorageGRID nodes and services
+      - title: Nodes and services
         url: "/primer/nodes-and-services.html"     
-        pdf-filename: Nodes and services 
+        pdf-filename: StorageGRID nodes and services 
       - title: What is an Admin Node
         url: "/primer/what-admin-node-is.html"
       - title: What is a Storage Node
@@ -26,13 +26,13 @@ entries:
       url: "/primer/how-storagegrid-manages-data.html"
     - title: Object lifecycle
       url: "/primer/life-of-object.html"
-    - title: How StorageGRID handles ingest
+    - title: Data ingestion
       url: "/primer/ingest-data-flow.html"
-    - title: How StorageGRID manages copies
+    - title: Copy management
       url: "/primer/copy-management.html"
-    - title: How StorageGRID handles retrieval
+    - title: Data retrieval
       url: "/primer/retrieve-data-flow.html"
-    - title: How StorageGRID handles deletion
+    - title: Data deletion
       url: "/primer/delete-data-flow.html"
     - title: Information lifecycle management
       url: "/primer/using-information-lifecycle-management.html"
