@@ -71,6 +71,9 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 .Request body XML tags
 StorageGRID supports these request body XML tags:
 
+* `ChecksumCRC32`
+* `ChecksumCRC32C`
+* `ChecksumCRC64NVME`
 * `ChecksumSHA256`
 * `CompleteMultipartUpload`
 * `ETag`

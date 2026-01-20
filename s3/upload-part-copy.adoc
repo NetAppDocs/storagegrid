@@ -44,7 +44,7 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
 
-== Supported checksums
+== S3 checksum supports
 
 StorageGRID automatically detects if a checksum was specified during a CreateMultipartUpload request and uses this checksum in the UploadPartCopy operation. You don't need to specify a checksum in an UploadPartCopy request.
 

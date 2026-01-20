@@ -39,11 +39,11 @@ The following request headers are supported:
 * `Content-Type`
 * `x-amz-checksum-algorithm`: Specify `CRC32`, `CRC32C`, `CRC64NVME`, or `SHA256`
 +
-When you copy an object, if the source object has a `checksum` or includes `x-amz-checksum-algorithm`, StorageGRID stores the copied object with a FULL_OBJECT checksum. 
+When you copy an object, if the source object has a `checksum` or includes `x-amz-checksum-algorithm`, the copied object has a FULL_OBJECT checksum. 
 +
-If the source object has a checksum but doesn't include `x-amz-checksum-algorithm` or it has an unsupported value, the copied object has a checksum of the same type as the source object. 
+If the source object has a checksum but the request doesn't include `x-amz-checksum-algorithm` or it uses an unsupported checksum value, the copied object has the same type of checksum as the source object. 
 +
-If the source object doesn't have a checksum and doesn't include `x-amz-checksum-algorithm` or it has an unsupported value, StorageGRID doesn't store the copied object with a checksum.
+If the source object doesn't have a checksum and doesn't include `x-amz-checksum-algorithm` or it uses an unsupported checksum value, the copied object doesn't have a checksum.
 
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
