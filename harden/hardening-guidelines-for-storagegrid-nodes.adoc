@@ -1,7 +1,7 @@
 ---
 permalink: harden/hardening-guidelines-for-storagegrid-nodes.html
 sidebar: sidebar
-keywords: hardening guidelines, nodes, security
+keywords: StorageGRID, hardening guidelines, nodes, security
 summary: 'StorageGRID nodes can be deployed on VMware virtual machines, within a container engine on Linux hosts, or as dedicated hardware appliances. Each type of platform and each type of node has its own set of hardening best practices.'
 ---
 = Hardening guidelines for StorageGRID nodes

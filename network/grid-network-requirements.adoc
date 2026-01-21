@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: grid network requirements
 summary: 'Follow these requirements and guidelines for the Grid Network.'
 ---
-= Grid Network requirements
+= Grid Network requirements for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
 permalink: primer/ingest-data-flow.html
 sidebar: sidebar
-keywords: object data, ingest
+keywords: StorageGRID, object data, ingest
 summary: 'An ingest, or save, operation consists of a defined data flow between the client and the StorageGRID system.'
 ---
-= Ingest data flow
+= How StorageGRID handles object ingest
 :icons: font
 :imagesdir: ../media/
 
