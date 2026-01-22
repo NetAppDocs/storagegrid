@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot the Low object data storage alert
 summary: 'The Low object data storage alert monitors how much space is available for storing object data on each Storage Node.'
 ---
-= Troubleshoot the Low object data storage alert
+= Troubleshoot the StorageGRID low object data storage alert
 :icons: font
 :imagesdir: ../media/
 

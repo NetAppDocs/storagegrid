@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot load balancer caching
 summary: 'Learn about possible issues with load balancer caching and how to troubleshoot them.'
 ---
-= Troubleshoot load balancer caching
+= Troubleshoot StorageGRID load balancer caching issues
 :icons: font
 :imagesdir: ../media/
 

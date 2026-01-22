@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot S3 PUT Object size too large alert, S3 PutObject size
 summary: 'The S3 PUT Object size too large alert is triggered if a tenant attempts a non-multipart PutObject operation that exceeds the S3 size limit of 5 GiB.'
 ---
-= Troubleshoot S3 PUT Object size too large alert
+= Troubleshoot StorageGRID S3 PUT Object size too large alerts
 :icons: font
 :imagesdir: ../media/
 
