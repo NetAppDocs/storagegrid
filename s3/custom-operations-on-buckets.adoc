@@ -9,7 +9,7 @@ summary: 'The StorageGRID system supports custom operations that are added on to
 :icons: font
 :imagesdir: ../media/
 
-[.audience]#System Administrator#
+.#System Administrator
 
 [.lead]
 The StorageGRID system supports custom operations that are added on to the S3 REST API.
