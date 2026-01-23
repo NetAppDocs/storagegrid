@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: group policy examples
 summary: 'Use the examples in this section to build StorageGRID access policies for groups.'
 ---
-= Example group policies
+= Example group policies for StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 

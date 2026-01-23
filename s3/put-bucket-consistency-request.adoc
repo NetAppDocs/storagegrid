@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: S3 REST API, S3 operations, PUT bucket consistency request
 summary: 'The PUT Bucket consistency request allows you to specify the consistency to apply to operations performed on a bucket.'
 ---
-= PUT Bucket consistency
+= PUT Bucket consistency for StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 

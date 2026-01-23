@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: bucket access policies, group access policies, session policies
 summary: ''
 ---
-= Use access policies
+= Use access policies for StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 

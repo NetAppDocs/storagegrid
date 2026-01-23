@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: object, add object, put, PutObject request
 summary: 'You can use the S3 PutObject request to add an object to a bucket.'
 ---
-= PutObject
+= PutObject for StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: s3 UploadPart operation
 summary: 'The UploadPart operation uploads a part in a multipart upload for an object.'
 ---
-= UploadPart
+= UploadPart for StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 

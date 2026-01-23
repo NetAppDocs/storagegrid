@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ListMultipartUploads, uploads, multipart uploads, bucket
 summary: 'The ListMultipartUploads operation lists in-progress multipart uploads for a bucket.'
 ---
-= ListMultipartUploads
+= ListMultipartUploads for StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: bucket policy examples
 summary: 'Use the examples in this section to build StorageGRID access policies for buckets.'
 ---
-= Example bucket policies
+= Example bucket policies for StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: bucket, buckets, operations on buckets
 summary: 'This section describes how the StorageGRID system implements S3 REST API operations for objects.'
 ---
-= Operations on objects
+= Operations on objects in StorageGRID S3
 :icons: font
 :imagesdir: ../media/
 
