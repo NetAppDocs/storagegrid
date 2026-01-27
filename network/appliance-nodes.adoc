@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: networking for appliance, port bond mode
 summary: 'You can configure the network ports on StorageGRID appliances to use the port bond modes that meet your requirements for throughput, redundancy, and failover.'
 ---
-= Appliance nodes
+= Network configuration for StorageGRID appliance nodes
 :icons: font
 :imagesdir: ../media/
 

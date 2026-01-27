@@ -1,10 +1,10 @@
 ---
 permalink: primer/delete-data-flow.html
 sidebar: sidebar
-keywords: object, delete, deletion, object lock, bucket lifecycle, expiration, ilm, placement instruction
+keywords: StorageGRID, object, delete, deletion, object lock, bucket lifecycle, expiration, ilm, placement instruction
 summary: 'All object copies are removed from the StorageGRID system when a client or tenant performs a delete operation or when the object’s lifetime expires, triggering its automatic removal. There is a defined data flow for object deletion.'
 ---
-= Delete data flow
+= How StorageGRID handles object deletion
 :icons: font
 :imagesdir: ../media/
 

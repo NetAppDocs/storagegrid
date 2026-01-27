@@ -12,7 +12,7 @@ entries:
     entries: 
       - title: Nodes and services
         url: "/primer/nodes-and-services.html"     
-        pdf-filename: Nodes and services 
+        pdf-filename: StorageGRID nodes and services 
       - title: What is an Admin Node
         url: "/primer/what-admin-node-is.html"
       - title: What is a Storage Node
@@ -24,15 +24,15 @@ entries:
     - title: What is an object
       pdf-filename: How StorageGRID manages data - overview
       url: "/primer/how-storagegrid-manages-data.html"
-    - title: The life of an object
+    - title: Object lifecycle
       url: "/primer/life-of-object.html"
-    - title: Ingest data flow
+    - title: Data ingestion
       url: "/primer/ingest-data-flow.html"
     - title: Copy management
       url: "/primer/copy-management.html"
-    - title: Retrieve data flow
+    - title: Data retrieval
       url: "/primer/retrieve-data-flow.html"
-    - title: Delete data flow
+    - title: Data deletion
       url: "/primer/delete-data-flow.html"
     - title: Information lifecycle management
       url: "/primer/using-information-lifecycle-management.html"

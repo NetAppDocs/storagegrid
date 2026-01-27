@@ -1,10 +1,10 @@
 ---
 permalink: harden/other-hardening-guidelines.html
 sidebar: sidebar
-keywords: Hardening guidelines, security
+keywords: StorageGRID, hardening guidelines, security
 summary: 'In addition to following the hardening guidelines for StorageGRID networks and nodes, you should follow the hardening guidelines for other areas of the StorageGRID system.'
 ---
-= Other hardening guidelines
+= Hardening guidelines for logs, passwords, and audit messages in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
