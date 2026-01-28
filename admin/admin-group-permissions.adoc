@@ -117,9 +117,13 @@ This permission provides access to these additional grid configuration options:
 
 * *ILM*:
 ** Storage grades
-* *Configuration* > *System*:
+* *Configuration* > *System*
 * *Support* > *Other*:
-** Link cost
+** I/O prioritization
+** Node services
+** Storage watermarks
+
+NOTE: Link cost requires Root access.
 
 == Storage appliance administrator
 
