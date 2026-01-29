@@ -29,7 +29,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 |===
 | Feature| Deprecated| End of Life| Removed| Links to earlier documentation
 
-| Legacy Alarms (_not Alerts_)
+| Alarms (_not Alerts_)
 | 11.7
 | 11.8
 | 11.9
@@ -50,6 +50,12 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.1
 | 11.6
 | 11.7
+| 
+
+| AutoSupport email setup (SMTP)
+| 
+| 
+| 
 | 
 
 | CLB service
