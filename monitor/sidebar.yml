@@ -109,6 +109,8 @@ entries:
       url: "/monitor/considerations-for-external-syslog-server.html"  
     - title: Configure log management
       url: "/monitor/configure-log-management.html" 
+  - title: Configure email notifications
+    url: "/monitor/configure-email-notifications.html"
   - title: Use SNMP monitoring
     entries:
     - title: SNMP monitoring
