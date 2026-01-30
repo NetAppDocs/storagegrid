@@ -59,7 +59,7 @@ You can update the link costs between data center sites to reflect latency betwe
 
 . Select *Support* > *Other* > *Link cost*.
 
-. For each data center listed in the Site/Link cost column, enter a cost value from 0 to 100 for the other data centers.
+. For each site listed in the Site/Link cost column, enter a cost value from 0 to 100 for the other sites.
 +
 You can't change the link cost if the source is the same as the destination.
 
