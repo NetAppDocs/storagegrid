@@ -13,7 +13,7 @@ As a StorageGRID administrator, you can configure an email server to send notifi
 
 .Before you begin
 
-* You have link:admin-group-permissions.html[specific access permissions].
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
 .Steps
