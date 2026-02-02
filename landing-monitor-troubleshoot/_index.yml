@@ -22,8 +22,8 @@ indexpage:
       url: ../monitor/managing-alerts.html
     - title: Create custom alerts
       url: ../monitor/creating-custom-alert-rules.html        
-    - title: Configure email notifications
-      url: ../monitor/configure-email-notifications.html         
+    - title: Configure email server
+      url: ../monitor/configure-email-server.html         
     - title: Use SNMP monitoring
       url: ../monitor/using-snmp-monitoring.html
   - title: Use audit messages and other logs
