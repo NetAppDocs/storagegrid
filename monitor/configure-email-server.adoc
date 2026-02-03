@@ -38,10 +38,22 @@ You are taken to the configuration page for the feature in the Grid Manager. The
 ... If the SMTP email server requires email senders to provide client certificates for authentication, select *Send client certificate*. Then provide the client certificate and private key.
 
 .. To ensure your email settings are correct, send a test email by entering the sender and recipient. Select *Send*.
++
+A confirmation message appears, indicating that a test email was sent.
 
-.. If the email fails to send, verify your email server settings and try again.
+.. Check the inboxes of all email recipients and confirm that a test email was received.
++
+NOTE: If the email is not received within a few minutes or if the *Email notification failure* alert is triggered, check your settings and try again.
 
-.. When the test email is sent successfully, select *Save* to save your email server settings.
+.. Sign in to any other Admin Nodes and send a test email to verify connectivity from all sites.
++
+NOTE: When you test alert notifications, you must sign in to every Admin Node to verify connectivity. This is in contrast to testing AutoSupport packages, where all Admin Nodes send the test email.
+
+. Select *Save*.
++
+Sending a test email doesn't save your settings. You must select *Save*.
++
+The email settings are saved.
 
 . Go to the configuration pages for the features that use the email server and complete the email notification settings.
 +
