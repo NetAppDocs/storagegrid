@@ -1,0 +1,22 @@
+---
+permalink: admin/manage-multi-admin-verify.html
+sidebar: sidebar
+keywords: multi-admin verification, mav
+summary: 'Multi-admin verification makes your system more secure and easier to manage. It provides a way to double-check important actions so that nothing happens by mistake.'
+---
+= Manage multi-admin verification
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Multi-admin verification (MAV) makes your system more secure and easier to manage. It provides a way to double-check important actions so that nothing happens by mistake.
+
+.Before you begin
+* As a MAV requester, you have the link:../admin/admin-group-permissions.html[required access permission] for the operation you want to perform.
+* As a MAV approver:
+** You have the link:../admin/admin-group-permissions.html[Manage MAV requests or Root access permission].
+** You're signed in to the Grid Manager from the primary Admin Node.
+
+.About this task
+Multi-admin verification (MAV) requires that two or more StorageGRID administrators approve certain important actions before those actions can be performed. This feature helps prevent accidental or unauthorized changes to your StorageGRID system.
+
