@@ -55,7 +55,7 @@ The protocol you set is used for sending all types of AutoSupport packages.
  ** *Verify certificate* (default): Ensures that the transmission of AutoSupport packages is secure. The NetApp support certificate is already installed with the StorageGRID software.
  ** *Do not verify certificate*: Select this option only when you have a good reason not to use certificate validation, such as when there is a temporary problem with a certificate.
 
-. If you selected *SMTP*, enter the address for the email server you set up earlier.
+. If you selected *SMTP*, use the *Sender* field to enter the address for the email server you configured earlier.
 
 . Select *Save*. All weekly, user-triggered, and event-triggered packages are sent using the selected protocol.
 
