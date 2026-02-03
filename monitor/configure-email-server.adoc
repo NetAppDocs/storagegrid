@@ -24,11 +24,9 @@ The StorageGRID features that use the email server include alerts, AutoSupport, 
 +
 The Email server page appears.
 
-. Select the pull-down, *View features that might require an email server*.
-
-. If you want to view the details and required information for configuring email notifications for a feature, select *View*.
+. Select the pull-down, *View features that might require an email server*. If you want to view the details and required information for configuring email notifications for a feature, select *View*.
 +
-You are taken to the configuration page for that feature in the Grid Manager. Each page contains a notification that you need an email server to send email notifications.
+You are taken to the configuration page for the feature in the Grid Manager. The configuration page for each feature contains a notification that you need an email server to send email notifications.
 
 . To configure an email server from the Email server page:
 
