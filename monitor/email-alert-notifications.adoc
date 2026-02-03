@@ -17,8 +17,6 @@ If you want email notifications to be sent when alerts occur, you must provide i
 * You have link:../monitor/configure-email-server.html[configured an email server].
 
 .About this task
-The email setup used for alert notifications is not used for AutoSupport packages. However, you can use the same email server for all notifications.
-
 If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport packages, and SNMP traps and informs. If the primary Admin Node becomes unavailable, notifications are temporarily sent by other Admin Nodes. See link:../primer/what-admin-node-is.html[What is an Admin Node?].
 
 .Steps

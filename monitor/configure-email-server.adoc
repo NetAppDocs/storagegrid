@@ -11,7 +11,7 @@ summary: 'As a StorageGRID administrator, you need to configure an email server 
 [.lead]
 As a StorageGRID administrator, you need to configure an email server to send notifications from the StorageGRID alert and monitoring systems that inform you, other administrators, and technical support about system events and issues.
 
-The StorageGRID features that use the email server include alerts, AutoSupport, and multi-admin verification (MAV).
+The StorageGRID features that use the email server for notifications include alerts, AutoSupport, and multi-admin verification (MAV). You can use the same email server for all notifications.
 
 .Before you begin
 
