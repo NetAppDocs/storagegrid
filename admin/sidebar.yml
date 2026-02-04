@@ -67,7 +67,11 @@ entries:
       - title: Confirm federated users can sign in
         url: "/admin/confirming-federated-users-can-sign-in.html"
       - title: Configure SSO
-        url: "/admin/configure-sso.html"
+        entries:
+        - title: Use SAML
+          url: "/admin/configure-sso-saml.html"
+        - title: Use Open ID Connect
+          url: "/admin/configure-sso-oidc.html"
       - title: Create relying party trusts in AD FS
         url: "/admin/creating-relying-party-trusts-in-ad-fs.html"
       - title: Create enterprise applications in Entra ID

@@ -1,0 +1,4 @@
+---
+permalink: admin/configure-sso-saml.html
+redirect: storagegrid/admin/configure-sso-saml-saml-saml.html
+---
