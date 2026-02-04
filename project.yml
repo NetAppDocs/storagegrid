@@ -38,10 +38,8 @@ sidebar:
         url: "/primer/quick-start.html"
     - title: 'Install, upgrade, and hotfix'
       url: "/landing-install-upgrade/index.html"  
-      entries:
-      - title: Install appliance-based nodes
-        url: "/storagegrid-hardware.html" 
-      - section: swnodes
+      entries: 
+      - section: install-nodes
       - section: upgrade
       - title: Apply StorageGRID hotfix
         entries:

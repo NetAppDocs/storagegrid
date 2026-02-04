@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/reviewing-your-configuration-and-completing-installation.html
-redirect: storagegrid/swnodes/reviewing-your-configuration-and-completing-installation.html
+redirect: storagegrid/install-nodes/reviewing-your-configuration-and-completing-installation.html
 ---

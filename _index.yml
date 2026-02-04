@@ -21,7 +21,7 @@ indexpage:
       - title: Install StorageGRID appliances
         url: https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html    
       - title: Install StorageGRID on software-based nodes
-        url: /swnodes/index.html
+        url: /install-nodes/index.html
       - title: Upgrade to new StorageGRID version
         url: /upgrade/index.html
       - title: Apply hotfix

@@ -45,7 +45,7 @@ See the following to learn about the available appliances:
 
 === Software-based nodes
 
-Software-based grid nodes can be deployed as VMware virtual machines or within container engines on a Linux host. See link:../swnodes/index.html[Install StorageGRID on software-based nodes].
+Software-based grid nodes can be deployed as VMware virtual machines or within container engines on a Linux host. See link:../install-nodes/index.html[Install StorageGRID on software-based nodes].
 
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to determine the supported versions.
 

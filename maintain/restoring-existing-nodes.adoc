@@ -32,7 +32,7 @@ If it is not possible to import missing nodes, you must re-create their grid con
 
 You must then validate the grid configuration file, and resolve any networking or storage issues that might occur before going on to restart StorageGRID. When you re-create the configuration file for a node, you must use the same name for the replacement node that was used for the node you are recovering.
 
-See the link:../swnodes/index.html[Linux installation instructions] for more information about the location of the `/var/local` volume for a node.
+See the link:../install-nodes/index.html[Linux installation instructions] for more information about the location of the `/var/local` volume for a node.
 
 .Steps
 
@@ -64,7 +64,7 @@ The `storagegrid node import` command succeeds only if the target node was shut 
 +
 NOTE: Any nodes imported with the `--force` flag will require additional recovery steps before they can rejoin the grid, as described in link:whats-next-performing-additional-recovery-steps-if-required.html[What's next: Perform additional recovery steps, if required].
 
-. For grid nodes that don't have a `/var/local` volume, re-create the node's configuration file to restore it to the host. For instructions, see link:../swnodes/creating-node-configuration-files.html[Create node configuration files].
+. For grid nodes that don't have a `/var/local` volume, re-create the node's configuration file to restore it to the host. For instructions, see link:../install-nodes/creating-node-configuration-files.html[Create node configuration files].
 +
 NOTE: When you re-create the configuration file for a node, you must use the same name for the replacement node that was used for the node you are recovering. For Linux deployments, ensure that the configuration file name contains the node name. You should use the same network interfaces, block device mappings, and IP addresses when possible. This practice minimizes the amount of data that needs to be copied to the node during recovery, which could make the recovery significantly faster (in some cases, minutes rather than weeks).
 +
@@ -119,9 +119,9 @@ Verify that you completed the steps in link:deploying-new-linux-hosts.html[Deplo
 
 If you are unable to restore or re-create the missing block device special file, you can allocate a new block device of the appropriate size and storage category and edit the node configuration file to change the value of `BLOCK_DEVICE_PURPOSE` to point to the new block device special file.
 
-Determine the appropriate size and storage category using the tables for your Linux operating system. See link:../swnodes/storage-and-performance-requirements.html[Storage and performance requirements].
+Determine the appropriate size and storage category using the tables for your Linux operating system. See link:../install-nodes/storage-and-performance-requirements.html[Storage and performance requirements].
 
-Review the recommendations for link:../swnodes/configuring-host-storage.html[configuring host storage] before proceeding with the block device replacement.
+Review the recommendations for link:../install-nodes/configuring-host-storage.html[configuring host storage] before proceeding with the block device replacement.
 
 NOTE: If you must provide a new block storage device for any of the configuration file variables starting with `BLOCK_DEVICE_` because the original block device was lost with the failed host, ensure the new block device is unformatted before attempting further recovery procedures. The new block device will be unformatted if you are using shared storage and have created a new volume. If you are unsure, run the following command against any new block storage device special files.
 

@@ -17,7 +17,7 @@ In addition to ICMP and the ports listed in the table, StorageGRID uses the Virt
 
 == Guidelines for Linux-based nodes
 
-If enterprise networking policies restrict access to any of these ports, you can remap ports at deployment time using a deployment configuration parameter. For more information about port remapping and deployment configuration parameters, see link:../swnodes/index.html[Install StorageGRID on software-based nodes].
+If enterprise networking policies restrict access to any of these ports, you can remap ports at deployment time using a deployment configuration parameter. For more information about port remapping and deployment configuration parameters, see link:../install-nodes/index.html[Install StorageGRID on software-based nodes].
 
 NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 
@@ -25,7 +25,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 
 Configure the following ports only if you need to define firewall restrictions that are external to VMware networking.
 
-If enterprise networking policies restrict access to any of these ports, you can remap ports when you deploy nodes using the VMware vSphere Web Client, or by using a configuration file setting when automating grid node deployment. For more information about port remapping and deployment configuration parameters, see the instructions for link:../swnodes/index.html[installing StorageGRID on VMware].
+If enterprise networking policies restrict access to any of these ports, you can remap ports when you deploy nodes using the VMware vSphere Web Client, or by using a configuration file setting when automating grid node deployment. For more information about port remapping and deployment configuration parameters, see the instructions for link:../install-nodes/index.html[installing StorageGRID on VMware].
 
 NOTE: Support for port remapping is deprecated and will be removed in a future release. To remove remapped ports, refer to link:../maintain/removing-port-remaps-on-bare-metal-hosts.html[Remove port remaps on bare metal hosts].
 

@@ -11,7 +11,7 @@ summary: 'Use these steps to add an interface on the Admin Network or the Client
 [.lead]
 Use these steps to add an interface on the Admin Network or the Client Network to a Linux node after it has been installed.
 
-If you did not configure ADMIN_NETWORK_TARGET or CLIENT_NETWORK_TARGET in the node configuration file on the Linux host during installation, use this procedure to add the interface. For more information about the node configuration file, see link:../swnodes/index.html[Install StorageGRID on software-based nodes].
+If you did not configure ADMIN_NETWORK_TARGET or CLIENT_NETWORK_TARGET in the node configuration file on the Linux host during installation, use this procedure to add the interface. For more information about the node configuration file, see link:../install-nodes/index.html[Install StorageGRID on software-based nodes].
 
 You perform this procedure on the Linux server hosting the node that needs the new network assignment, not inside the node. This procedure only adds the interface to the node; a validation error occurs if you attempt to specify any other network parameters.
 

@@ -9,21 +9,21 @@ indexpage:
     - title: Appliance hardware
       url: https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html
     - title: Software-based nodes
-      url: ../swnodes/index.html
+      url: ../install-nodes/index.html
   - title: Software-based nodes
     links:
     - title: Prepare materials
-      url: ../swnodes/required-materials.html
+      url: ../install-nodes/required-materials.html
     - title: Automate Linux installation
-      url: ../swnodes/automating-installation-linux.html
+      url: ../install-nodes/automating-installation-linux.html
     - title: Automate VMware installation
-      url: ../swnodes/automating-grid-node-deployment-in-vmware-vsphere.html
+      url: ../install-nodes/automating-grid-node-deployment-in-vmware-vsphere.html
     - title: Deploy Linux
-      url: ../swnodes/creating-node-configuration-files.html
+      url: ../install-nodes/creating-node-configuration-files.html
     - title: Deploy VMware
-      url: ../swnodes/collecting-information-about-your-deployment-environment.html
+      url: ../install-nodes/collecting-information-about-your-deployment-environment.html
     - title: Complete software-based node installation
-      url: ../swnodes/navigating-to-grid-manager.html
+      url: ../install-nodes/navigating-to-grid-manager.html
   - title: Upgrade or hotfix
     links:
     - title: What's new

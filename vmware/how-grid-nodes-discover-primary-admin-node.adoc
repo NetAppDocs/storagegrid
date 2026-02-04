@@ -1,4 +1,4 @@
 ---
 permalink: vmware/how-grid-nodes-discover-primary-admin-node.html
-redirect: storagegrid/swnodes/how-grid-nodes-discover-primary-admin-node.html
+redirect: storagegrid/install-nodes/how-grid-nodes-discover-primary-admin-node.html
 ---

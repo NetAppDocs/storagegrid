@@ -66,7 +66,7 @@ Optionally, you can add extra interfaces to a node. For example, you might want 
 To add trunk or access interfaces, see the following:
 
 ** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[VMware: Add trunk or access interfaces to a node]
-* *Linux (before installing the node)*: link:../swnodes/creating-node-configuration-files.html[Create node configuration files]
+* *Linux (before installing the node)*: link:../install-nodes/creating-node-configuration-files.html[Create node configuration files]
 * *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
 
 include::../_include/linux-distributions.adoc[]

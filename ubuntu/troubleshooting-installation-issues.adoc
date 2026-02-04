@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/troubleshooting-installation-issues.html
-redirect: storagegrid/swnodes/troubleshooting-installation-issues.html
+redirect: storagegrid/install-nodes/troubleshooting-installation-issues.html
 ---

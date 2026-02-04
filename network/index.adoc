@@ -41,7 +41,7 @@ After you determine which StorageGRID networks you want to use and how those net
 
 .Install software-based nodes
 
-* link:../swnodes/index.html[Install StorageGRID on software-based nodes]
+* link:../install-nodes/index.html[Install StorageGRID on software-based nodes]
 
 .Configure and administer StorageGRID software
 

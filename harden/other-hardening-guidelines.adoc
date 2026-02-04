@@ -17,7 +17,7 @@ To secure the StorageGRID system during installation, set a password on the temp
 
 For more information, refer to:
 
-* link:../swnodes/index.html[Install StorageGRID on software-based nodes]
+* link:../install-nodes/index.html[Install StorageGRID on software-based nodes]
 * https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Install StorageGRID appliance^]
 
 == Logs and audit messages

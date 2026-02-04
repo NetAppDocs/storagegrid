@@ -20,7 +20,7 @@ You must deploy a virtual machine in VMware vSphere for each VMware node you wan
 
 .Steps
 
-. link:../swnodes/deploying-storagegrid-node-as-virtual-machine.html[Deploy the new node as virtual machine] and connect it to one or more StorageGRID networks.
+. link:../install-nodes/deploying-storagegrid-node-as-virtual-machine.html[Deploy the new node as virtual machine] and connect it to one or more StorageGRID networks.
 +
 When you deploy the node, you can optionally remap node ports or increase CPU or memory settings.
 
@@ -33,7 +33,7 @@ You can deploy grid nodes on new Linux hosts or on existing Linux hosts. If you 
 
 .Before you begin
 
-* You have the instructions for installing StorageGRID for your version of Linux, and you have reviewed the link:../swnodes/index.html[hardware and storage requirements].
+* You have the instructions for installing StorageGRID for your version of Linux, and you have reviewed the link:../install-nodes/index.html[hardware and storage requirements].
 
 * If you plan to deploy new grid nodes on existing hosts, you have confirmed the existing hosts have enough CPU, RAM, and storage capacity for the additional nodes.
 * You have a plan to minimize failure domains. For example, you should not deploy all Gateway Nodes on a single physical host.
