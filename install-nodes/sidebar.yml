@@ -1,4 +1,5 @@
 section: install-nodes
+title: Install StorageGRID nodes
 entries:
   - title: Install appliance-based nodes
     url: "/storagegrid-hardware.html"
