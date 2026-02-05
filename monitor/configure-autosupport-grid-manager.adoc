@@ -49,7 +49,7 @@ To change the installation default configuration for AutoSupport, or to configur
 * *SMTP*: Use this option if you want AutoSupport packages to be emailed. You must first link:../monitor/configure-email-server.html[configure an email server].
 
 +
-The protocol you set is used for sending all types of AutoSupport packages.
+The protocol you set is used for sending all AutoSupport packages except AutoSupport on Demand, which requires the HTTPS protocol.
 
 . If you selected *HTTPS*, select whether to use a NetApp support certificate (TLS certificate) to secure the connection to the technical support server.
  ** *Verify certificate* (default): Ensures that the transmission of AutoSupport packages is secure. The NetApp support certificate is already installed with the StorageGRID software.
