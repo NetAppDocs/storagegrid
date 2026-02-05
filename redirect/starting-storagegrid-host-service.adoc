@@ -1,0 +1,4 @@
+---
+permalink: swnodes/starting-storagegrid-host-service.html
+redirect: storagegrid/install-nodes/starting-storagegrid-host-service.html
+---

@@ -1,0 +1,4 @@
+---
+permalink: swnodes/installing-linux.html
+redirect: storagegrid/install-nodes/installing-linux.html
+---

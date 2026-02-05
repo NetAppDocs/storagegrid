@@ -1,0 +1,4 @@
+---
+permalink: swnodes/validating-storagegrid-configuration.html
+redirect: storagegrid/install-nodes/validating-storagegrid-configuration.html
+---

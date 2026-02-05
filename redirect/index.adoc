@@ -1,0 +1,4 @@
+---
+permalink: swnodes/index.html
+redirect: storagegrid/install-nodes/index.html
+---

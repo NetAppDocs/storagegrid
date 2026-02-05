@@ -1,0 +1,4 @@
+---
+permalink: swnodes/specifying-domain-name-system-server-information.html
+redirect: storagegrid/install-nodes/specifying-domain-name-system-server-information.html
+---

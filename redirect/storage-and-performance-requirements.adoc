@@ -1,0 +1,4 @@
+---
+permalink: swnodes/storage-and-performance-requirements.html
+redirect: storagegrid/install-nodes/storage-and-performance-requirements.html
+---

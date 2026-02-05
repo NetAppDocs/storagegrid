@@ -1,0 +1,4 @@
+---
+permalink: swnodes/specifying-storagegrid-license-information.html
+redirect: storagegrid/install-nodes/specifying-storagegrid-license-information.html
+---

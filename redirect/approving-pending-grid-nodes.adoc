@@ -1,0 +1,4 @@
+---
+permalink: swnodes/approving-pending-grid-nodes.html
+redirect: storagegrid/install-nodes/approving-pending-grid-nodes.html
+---

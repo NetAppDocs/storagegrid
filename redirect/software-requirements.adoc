@@ -1,0 +1,4 @@
+---
+permalink: swnodes/software-requirements.html
+redirect: storagegrid/install-nodes/software-requirements.html
+---

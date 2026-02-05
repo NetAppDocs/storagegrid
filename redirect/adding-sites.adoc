@@ -1,0 +1,4 @@
+---
+permalink: swnodes/adding-sites.html
+redirect: storagegrid/install-nodes/adding-sites.html
+---

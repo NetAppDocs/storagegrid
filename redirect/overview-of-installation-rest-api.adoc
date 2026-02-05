@@ -1,0 +1,4 @@
+---
+permalink: swnodes/overview-of-installation-rest-api.html
+redirect: storagegrid/install-nodes/overview-of-installation-rest-api.html
+---
