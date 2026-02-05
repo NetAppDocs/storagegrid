@@ -62,14 +62,14 @@ entries:
         url: "/install-nodes/validating-storagegrid-configuration.html"
       - title: Start the StorageGRID host service (Linux)
         url: "/install-nodes/starting-storagegrid-host-service.html"
-      - title: Troubleshoot installation issues
-        url: "/install-nodes/troubleshooting-installation-issues.html"
-      - title: Script examples
-        entries:
-        - title: Example /etc/sysconfig/network-scripts (RHEL)
-          url: "/install-nodes/example-etc-sysconfig-network-scripts.html"
-        - title: Example /etc/network/interfaces (Ubuntu or Debian)
-          url: "/install-nodes/example-etc-network-interfaces.html"
+    - title: Troubleshoot installation issues
+      url: "/install-nodes/troubleshooting-installation-issues.html"
+    - title: Script examples
+      entries:
+      - title: Example /etc/sysconfig/network-scripts (RHEL)
+        url: "/install-nodes/example-etc-sysconfig-network-scripts.html"
+      - title: Example /etc/network/interfaces (Ubuntu or Debian)
+        url: "/install-nodes/example-etc-network-interfaces.html"
   - title: Configure grid and complete installation
     entries:
     - title: Navigate to the Grid Manager
