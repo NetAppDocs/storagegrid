@@ -17,31 +17,4 @@ Use multi-admin verification (MAV) to ensure that certain StorageGRID operations
 ** You have the link:../admin/admin-group-permissions.html[Manage MAV requests or Root access permission].
 ** You're signed in to the Grid Manager from the primary Admin Node.
 
-== Learn about multi-admin verification
-Multi-admin verification (MAV) requires that two or more StorageGRID administrators approve certain important actions before those actions can be performed. This feature helps prevent accidental or unauthorized changes to your StorageGRID system.
-
-MAV is disabled by default.
-
-To configure MAV, you'll perform these tasks:
-
-* Create one or more administrator approval groups.
-* Enable multi-admin verification functionality.
-* Add or modify rules.
-
-After initial configuration, these elements can be modified only by administrators in a MAV approval group (MAV administrators).
-
-When MAV is enabled, the completion of every protected operation requires these steps:
-
-. When a user initiates the operation, a request is generated.
-. Before the operation can be executed, at least one MAV administrator must approve.
-. Upon approval, the user is prompted and completes the operation.
-
-NOTE:	If you need to disable multi-admin verification functionality without MAV administrator approval, contact NetApp Support and mention the following NetApp Knowledge Base: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_disable_Multi-Admin_Verification_if_MAV_admin_is_unavailable[How to disable Multi-Admin Verification if MAV admin is unavailable^].
-
-== How multi-admin verification works
-Multi-admin verification consists of:
-
-* A group of one or more administrators with approval and veto powers.
-* A set of protected operations or commands in a rules table.
-* A rules engine to identify and control execution of protected operations.
 

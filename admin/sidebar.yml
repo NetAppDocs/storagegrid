@@ -78,6 +78,10 @@ entries:
         url: "/admin/disabling-single-sign-on.html"
       - title: Temporarily disable and reenable SSO for one Admin Node
         url: "/admin/temporarily-disabling-and-reenabling-sso-for-admin-node.html"
+    - title: Use multi-admin verification
+      entries:
+      - title: Learn about multi-admin verification
+        url: "/admin/about-multi-admin-verify.html"
       - title: Manage multi-admin verification
         url: "/admin/manage-multi-admin-verify.html"
   - title: Use grid federation
