@@ -1,4 +1,0 @@
----
-permalink: storagegrid-hardware.html
-redirect: storagegrid/install-nodes/storagegrid-hardware.html
----
