@@ -1,0 +1,31 @@
+---
+permalink: admin/manage-mav-admin-groups.html
+sidebar: sidebar
+keywords: multi-admin verification, mav, mav administrators, mav approval groups
+summary: 'Before you enable multi-admin verification \(MAV\), create an admin approval group containing one or more administrators to be granted approval or veto authority. After you enable multi-admin verification, any modifications to approval group membership requires approval from one of the existing qualified administrators.'
+---
+= Manage StorageGRID multi-admin verification
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you enable multi-admin verification (MAV), create an admin approval group containing one or more administrators to be granted approval or veto authority. After you enable multi-admin verification, any modifications to approval group membership requires approval from one of the existing qualified administrators.
+
+.Before you begin
+* You have the link:../admin/admin-group-permissions.html[Manage MAV requests or Root access permission].
+* You're signed in to the Grid Manager from the primary Admin Node.
+
+.About this task
+You can add existing administrators to a MAV group or create new administrators.
+
+To alert MAV administrators that approval requests are pending, you'll configure an email server and then configure MAV notifications. Without email alerts, MAV administrators must check the approval queue manually.
+
+You can configure Active Directory (AD) users as MAV administrators. The AD user must be configured as a StorageGRID administrator.
+
+.Steps
+. To create a MAV administrator group, follow the steps to link:../admin/managing-admin-groups.html[create a local or federated group].
+. For the Manage permissions step, select the appropriate Access mode (*Read-write* or *Read-only*).
+. For Group permissions, select *Root access* or *Multi-admin verification requests*.
+. Add local or federated users to the group, or create new local users and add them to the group by following the steps to link:../admin/managing-users.html#create-a-local-user[create a local user].
+
+. Select *Configuration* > *Access control* > *Multi-admin verification*.

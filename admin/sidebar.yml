@@ -83,7 +83,7 @@ entries:
       - title: Learn about multi-admin verification
         url: "/admin/about-multi-admin-verify.html"
       - title: Manage multi-admin verification
-        url: "/admin/manage-multi-admin-verify.html"
+        url: "/admin/manage-mav-admin-groups.html"
   - title: Use grid federation
     entries:
     - title: What is grid federation
