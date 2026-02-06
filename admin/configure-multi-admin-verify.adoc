@@ -1,0 +1,49 @@
+---
+permalink: admin/configure-multi-admin-verify.html
+sidebar: sidebar
+keywords: multi-admin verification, mav, mav administrators, mav approval groups
+summary: 'Managing a StorageGRID multi-admin verification (MAV) system involves creating and managing MAV administrator groups and users, enabling the MAV function, and configuring or selecting protected operations.'
+---
+= Configure StorageGRID multi-admin verification
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Configuring a StorageGRID multi-admin verification (MAV) system involves creating and managing MAV administrator groups and users, enabling the MAV function, and selecting or configuring protected operations.
+
+MAV administrators have approval and veto authority for protected operations. After you enable multi-admin verification, any modifications to approval group membership requires approval from one of the existing qualified administrators.
+
+.Before you begin
+* You have the link:../admin/admin-group-permissions.html[Manage MAV requests or Root access permission].
+* You're signed in to the Grid Manager from the primary Admin Node.
+
+== Step 1: Create MAV administrator groups and users
+You can add existing administrators to a MAV group or create new administrators.
+
+You can configure Active Directory (AD) users as MAV administrators. The AD user must be configured as a StorageGRID administrator.
+
+.Steps
+. To create a MAV administrator group, follow the steps to link:../admin/managing-admin-groups.html[create a local or federated group].
+. For Group permissions, select *Root access* or *Multi-admin verification requests*.
+. Add local or federated users to the group, or create new local users and add them to the group by following the steps to link:../admin/managing-users.html#create-a-local-user[create a local user].
+
+== Step 2: Enable or disable multi-admin verification
+You must enable multi-admin verification (MAV) explicitly. If you want to disable multi-admin verification, you need approval by administrators in a MAV approval group (MAV administrators).
+
+NOTE:	If you need to disable multi-admin verification without MAV administrator approval, contact NetApp Support and mention the following NetApp Knowledge Base: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_disable_Multi-Admin_Verification_if_MAV_admin_is_unavailable[How to disable Multi-Admin Verification if MAV admin is unavailable^].
+
+.Steps
+. Select *Configuration* > *Access control* > *Multi-admin verification* > *MAV settings*.
+. Select the *Enable MAV* checkbox to enable multi-admin verification.
+. The Approver groups section lists the MAV admin groups and approvers.
+. In the Operations section, select the checkboxes for the operations you want to protect with MAV.
+. (Optional) If you want to use email notifications to alert MAV administrators of pending approval requests:
+..  If you haven't configured an email server, follow the steps to link:../monitor/configure-email-server.html[configure an email server].
+.. Enter the email address of the email server you've configured.
+.. Enter one or more recipients for the email notifications.
+. Select *Save* to save your changes.
++
+NOTE: If you decide not to configure email notifications, MAV administrators can view the Grid Manager dashboard or check the approval queue for pending approval requests. To check the approval queue, select *Other requests* on the Multi-admin verification page.
+
+== Step 3: Manage protected operations
+After you enable multi-admin verification, you can manage the protected operations by selecting or clearing the checkboxes for the operations you want to protect with MAV.

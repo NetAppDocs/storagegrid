@@ -82,8 +82,12 @@ entries:
       entries:
       - title: Learn about multi-admin verification
         url: "/admin/about-multi-admin-verify.html"
-      - title: Manage multi-admin verification
-        url: "/admin/manage-mav-admin-groups.html"
+      - title: Configure multi-admin verification
+        url: "/admin/configure-multi-admin-verify.html"
+      - title: Request approval for protected operations
+        url: "/admin/request-mav-approval-for-protected-ops.html"
+      - title: Manage protected operations requests
+        url: "/admin/manage-mav-protected-ops-requests.html"
   - title: Use grid federation
     entries:
     - title: What is grid federation
