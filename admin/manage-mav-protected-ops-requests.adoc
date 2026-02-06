@@ -1,5 +1,5 @@
 ---
-permalink: admin/manage-mav-protected-ops-requests.htm
+permalink: admin/manage-mav-protected-ops-requests.html
 sidebar: sidebar
 keywords: multi-admin verification, mav
 summary: "As a MAV administrator, you can manage requests for MAV-protected operations in StorageGRID. You can view your own or others' pending requests, approve or reject requests, and view the history of past requests."

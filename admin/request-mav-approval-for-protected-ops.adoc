@@ -1,5 +1,5 @@
 ---
-permalink: admin/request-mav-approval-for-protected-ops.htm
+permalink: admin/request-mav-approval-for-protected-ops.html
 sidebar: sidebar
 keywords: multi-admin verification, mav
 summary: 'As a StorageGRID administrator or user, when you initiate a MAV-protected operation or command in StorageGRID, a request is generated automatically. A message appears to inform you that the operation requires approval. The operation must be approved by one or more MAV administrators.'
