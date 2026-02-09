@@ -2,7 +2,7 @@
 permalink: admin/about-multi-admin-verify.html
 sidebar: sidebar
 keywords: multi-admin verification, mav
-summary: 'As a StorageGRID administrator, you can use multi-admin verification \(MAV\) to ensure that certain operations can be performed only after approvals from designated administrators. MAV helps prevent accidental or unauthorized changes to your StorageGRID system.'
+summary: "As a StorageGRID administrator, you can use multi-admin verification (MAV) to ensure that certain operations can be performed only after approvals from designated administrators. MAV helps prevent accidental or unauthorized changes to your StorageGRID system."
 ---
 = Learn about StorageGRID multi-admin verification
 :icons: font
@@ -18,7 +18,7 @@ To configure MAV, you'll perform these tasks:
 
 * Create one or more administrator groups. MAV administrators have approval and veto authority.
 * Enable the multi-admin verification function.
-* Create or select from set of protected operations or commands in a rules table.
+* Create or select from a set of protected operations or commands in a rules table.
 
 After initial configuration, these elements can be modified only by administrators in a MAV approval group.
 

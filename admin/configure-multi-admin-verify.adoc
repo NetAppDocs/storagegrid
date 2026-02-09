@@ -2,7 +2,7 @@
 permalink: admin/configure-multi-admin-verify.html
 sidebar: sidebar
 keywords: multi-admin verification, mav, mav administrators, mav approval groups
-summary: 'Managing a StorageGRID multi-admin verification (MAV) system involves creating and managing MAV administrator groups and users, enabling the MAV function, and configuring or selecting protected operations.'
+summary: "Managing a StorageGRID multi-admin verification (MAV) system involves creating and managing MAV administrator groups and users, enabling the MAV function, and configuring or selecting protected operations."
 ---
 = Configure StorageGRID multi-admin verification
 :icons: font
@@ -11,7 +11,7 @@ summary: 'Managing a StorageGRID multi-admin verification (MAV) system involves 
 [.lead]
 Configuring a StorageGRID multi-admin verification (MAV) system involves creating and managing MAV administrator groups and users, enabling the MAV function, and selecting or configuring protected operations.
 
-MAV administrators have approval and veto authority for protected operations. After you enable multi-admin verification, any modifications to approval group membership requires approval from one of the existing qualified administrators.
+MAV administrators have approval and veto authority for protected operations. After you enable multi-admin verification, any modifications to approval group membership require approval from one of the existing qualified administrators.
 
 .Before you begin
 * You have the link:../admin/admin-group-permissions.html[Manage MAV requests or Root access permission].
@@ -30,7 +30,7 @@ You can configure Active Directory (AD) users as MAV administrators. The AD user
 == Step 2: Enable or disable multi-admin verification
 You must enable multi-admin verification (MAV) explicitly. If you want to disable multi-admin verification, you need approval by administrators in a MAV approval group (MAV administrators).
 
-NOTE:	If you need to disable multi-admin verification without MAV administrator approval, contact NetApp Support and mention the following NetApp Knowledge Base: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_disable_Multi-Admin_Verification_if_MAV_admin_is_unavailable[How to disable Multi-Admin Verification if MAV admin is unavailable^].
+NOTE: If you need to disable multi-admin verification without MAV administrator approval, contact NetApp Support and mention the following NetApp Knowledge Base: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_disable_Multi-Admin_Verification_if_MAV_admin_is_unavailable[How to disable Multi-Admin Verification if MAV admin is unavailable^].
 
 .Steps
 . Select *Configuration* > *Access control* > *Multi-admin verification* > *MAV settings*.
