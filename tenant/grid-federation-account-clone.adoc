@@ -2,14 +2,14 @@
 permalink: tenant/grid-federation-account-clone.html
 sidebar: sidebar
 keywords: account clone, cloning tenant, grid federation, cross-grid replication
-summary: 'If a tenant was created or edited to use a grid federation connection, that tenant is replicated from one StorageGRID system \(the source tenant\) to another StorageGRID system \(the replica tenant\). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant.'
+summary: "If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant."
 ---
 = Clone tenant groups and users
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If a tenant was created or edited to use a grid federation connection, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant.
+If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant.
 
 The StorageGRID system where the tenant is originally created is the tenant's _source grid_. The StorageGRID system where the tenant is replicated is the tenant's _destination grid_. Both tenant accounts have the same account ID, name, description, storage quota, and assigned permissions, but the destination tenant does not initially have a root user password. For details, see link:../admin/grid-federation-what-is-account-clone.html[What is account clone] and link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants]. 
 

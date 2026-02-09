@@ -83,7 +83,7 @@ include::../_include/tenant-account-permissions.adoc[]
 | Permission | If selected...
 
 | Grid federation connection
-| The tenant can use a grid federation connection, which:
+| The tenant can use grid federation connections, which:
 
 * Causes this tenant and all tenant groups and users added to the account to be cloned from this grid (the _source grid_) to the other grid in the selected connection (the _destination grid_). 
 
