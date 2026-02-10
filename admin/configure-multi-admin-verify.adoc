@@ -11,10 +11,10 @@ summary: "Managing a StorageGRID multi-admin verification (MAV) system involves 
 [.lead]
 Configuring a StorageGRID multi-admin verification (MAV) system involves creating and managing MAV administrator groups and users, enabling the MAV function, and selecting or configuring protected operations.
 
-MAV administrators have approval and veto authority for protected operations. After you enable multi-admin verification, any modifications to approval group membership require approval from one of the existing qualified administrators.
+MAV administrators have approval and veto authority for protected operations.
 
 .Before you begin
-* You have the link:../admin/admin-group-permissions.html[Manage MAV requests or Root access permission].
+* You have the link:../admin/admin-group-permissions.html[Root access permission].
 * You're signed in to the Grid Manager from the primary Admin Node.
 
 == Step 1: Create MAV administrator groups and users
@@ -28,9 +28,7 @@ You can configure Active Directory (AD) users as MAV administrators. The AD user
 . Add local or federated users to the group, or create new local users and add them to the group by following the steps to link:../admin/managing-users.html#create-a-local-user[create a local user].
 
 == Step 2: Enable or disable multi-admin verification
-You must enable multi-admin verification (MAV) explicitly. If you want to disable multi-admin verification, you need approval by administrators in a MAV approval group (MAV administrators).
-
-NOTE: If you need to disable multi-admin verification without MAV administrator approval, contact NetApp Support and mention the following NetApp Knowledge Base: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_disable_Multi-Admin_Verification_if_MAV_admin_is_unavailable[How to disable Multi-Admin Verification if MAV admin is unavailable^].
+You must enable multi-admin verification (MAV) explicitly. If you want to disable multi-admin verification, you must be a user with the Root access permission. If you attempt to disable MAV when there are pending MAV requests, a notification states that pending requests will be deleted.
 
 .Steps
 . Select *Configuration* > *Access control* > *Multi-admin verification* > *MAV settings*.
@@ -39,7 +37,7 @@ NOTE: If you need to disable multi-admin verification without MAV administrator 
 . In the Operations section, select the checkboxes for the operations you want to protect with MAV.
 . (Optional) If you want to use email notifications to alert MAV administrators of pending approval requests:
 ..  If you haven't configured an email server, follow the steps to link:../monitor/configure-email-server.html[configure an email server].
-.. Enter the email address of the email server you've configured.
+.. Enter the email address of the sender.
 .. Enter one or more recipients for the email notifications.
 . Select *Save* to save your changes.
 +
@@ -47,3 +45,5 @@ NOTE: If you decide not to configure email notifications, MAV administrators can
 
 == Step 3: Manage protected operations
 After you enable multi-admin verification, you can manage the protected operations by selecting or clearing the checkboxes for the operations you want to protect with MAV.
+
+NOTE: For StorageGRID 12.1, the only protected operation is ILM policy activation. You must select the checkbox for ILM policy activation if you want to enable MAV.

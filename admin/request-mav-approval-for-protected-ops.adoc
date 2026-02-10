@@ -2,14 +2,28 @@
 permalink: admin/request-mav-approval-for-protected-ops.html
 sidebar: sidebar
 keywords: multi-admin verification, mav
-summary: 'As a StorageGRID administrator or user, when you initiate a MAV-protected operation or command in StorageGRID, a request is generated automatically. A message appears to inform you that the operation requires approval. The operation must be approved by one or more MAV administrators.'
+summary: 'As a StorageGRID administrator or user, when you initiate a MAV-protected operation in StorageGRID, a request is generated automatically. A message appears to inform you that the operation requires approval.'
 ---
 = Request approval for MAV-protected operations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-As a StorageGRID administrator or user, when you initiate a MAV-protected operation or command in StorageGRID, a request is generated automatically. A message appears to inform you that the operation requires approval. The operation must be approved by one or more MAV administrators.
+As a StorageGRID administrator or user, when you initiate a MAV-protected operation in StorageGRID, a request is generated automatically. A message appears to inform you that the operation requires approval.
 
-After your request is approved, the operation or command is performed. You don't need to respond or resubmit your request after approval. If your request is rejected, the operation or command isn't performed, and you can submit a new request if needed.
+The StorageGRID system defines which operations are protected by MAV. When you initiate a MAV-protected operation, the request is sent to the MAV administrators for approval.
+
+.Steps
+
+. The StorageGRID system informs you that you've initiated a MAV-protected operation.
+
+. Check the status of your request by selecting *Configuration* > *Access control* > *Multi-admin verification* > *My requests*.
+
+. Check for pending requests by selecting *Configuration* > *Access control* > *Multi-admin verification* > *Other requests*.
+
+. To cancel an operation, select the corresponding request and then select *Withdraw*.
+
+. After a MAV administrator approves the request, the operation is performed automatically.
++
+If your request is rejected, the operation isn't performed, and you can submit a new request if needed.
 
