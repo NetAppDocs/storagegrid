@@ -11,9 +11,9 @@ summary: 'The AutoSupport feature enables your StorageGRID system to send period
 [.lead]
 The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Active IQ for predictive recommendations.
 
-By default, the StorageGRID AutoSupport feature is enabled when you first install StorageGRID. However, you must configure hardware AutoSupport on each appliance. As needed, you can change the AutoSupport configuration.
+By default, the weekly and event-triggered AutoSupport features are enabled for software-based StorageGRID systems when you first install StorageGRID. However, you must <<autosupport-for-appliances,configure hardware AutoSupport>> on each appliance. As needed, you can change the AutoSupport configuration.
 
-If you want to change the configuration of StorageGRID AutoSupport, make your changes only on the primary Admin Node. You must <<autosupport-for-appliances,configure hardware AutoSupport>> on each appliance.
+NOTE: If you want to change the configuration of StorageGRID AutoSupport, make your changes only on the primary Admin Node.
 
 .Before you begin
 
@@ -34,7 +34,7 @@ You can use any combination of the following options to send AutoSupport package
 * *User-triggered*: Manually send AutoSupport packages at any time.
 * *Log collection*: link:../monitor/collecting-log-files-and-system-data.html[manually collect log files and system data and send an AutoSupport package].
 
-== [[configure-autosupport-packages-to-be-sent]]Configure AutoSupport packages to be sent
+== [[configure-autosupport]]Configure AutoSupport
 
 To change the installation default configuration for AutoSupport, or to configure hardware AutoSupport on each StorageGRID appliance:
 
@@ -119,7 +119,7 @@ As required, you can optionally disable the check for software updates. For exam
 
 When you enable AutoSupport, heath and status packages are sent to technical support. You can specify one additional destination for all AutoSupport packages.
 
-To verify or change the protocol used to send AutoSupport packages, see the instructions to <<configure-autosupport-packages-to-be-sent,configure AutoSupport packages to be sent>>.
+To verify or change the protocol used to send AutoSupport packages, see the instructions to <<configure-autosupport,configure AutoSupport>>.
 
 NOTE: You can't use the SMTP protocol to send AutoSupport packages to an additional destination.
 
