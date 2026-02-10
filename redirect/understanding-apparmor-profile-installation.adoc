@@ -1,4 +1,0 @@
----
-permalink: swnodes/understanding-apparmor-profile-installation.html
-redirect: storagegrid/swnodes/understanding-apparmor-profile-installation.html
----
