@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/configuring-host-storage.html
+permalink: swnodes/configuring-host-storage.html
 sidebar: sidebar
 keywords: how to configure host storage
 summary: 'You must allocate block storage volumes to each Linux host.'

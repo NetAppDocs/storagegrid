@@ -1,4 +1,0 @@
----
-permalink: swnodes/downloading-and-extracting-storagegrid-installation-files.html
-redirect: storagegrid/install-nodes/downloading-and-extracting-storagegrid-installation-files.html
----

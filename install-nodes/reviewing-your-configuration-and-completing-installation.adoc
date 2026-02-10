@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/reviewing-your-configuration-and-completing-installation.html
+permalink: swnodes/reviewing-your-configuration-and-completing-installation.html
 sidebar: sidebar
 keywords: how to review your configuration and complete installation
 summary: 'You must carefully review the configuration information you have entered to ensure that the installation completes successfully.'

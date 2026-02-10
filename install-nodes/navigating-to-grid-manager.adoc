@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/navigating-to-grid-manager.html
+permalink: swnodes/navigating-to-grid-manager.html
 sidebar: sidebar
 keywords: how to navigate to Grid Manager
 summary: 'You use the Grid Manager to define all of the information required to configure your StorageGRID system.'

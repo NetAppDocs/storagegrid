@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/example-etc-sysconfig-network-scripts.html
+permalink: swnodes/example-etc-sysconfig-network-scripts.html
 sidebar: sidebar
 keywords: how to aggregate red hat linux interface, how to aggregate rhel interface, LACP bond, network scripts
 summary: 'You can use the example files to aggregate four Linux physical interfaces into a single LACP bond and then establish three VLAN interfaces subtending the bond for use as StorageGRID Grid, Admin, and Client Network interfaces.'

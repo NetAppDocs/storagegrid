@@ -55,7 +55,7 @@ include::../_include/installation-archives-vmware.adoc[]
 +
 The paths listed in the step for each platform are relative to the top-level directory installed by the archive file.
 
-. If you are recovering a link:../install-nodes/index.html[software-based node], select the appropriate files:
+. If you are recovering a link:../swnodes/index.html[software-based node], select the appropriate files:
 +
 [role="tabbed-block"]
 ====

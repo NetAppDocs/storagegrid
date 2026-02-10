@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/how-grid-nodes-discover-primary-admin-node.html
+permalink: swnodes/how-grid-nodes-discover-primary-admin-node.html
 sidebar: sidebar
 keywords: how grid nodes discover the primary Admin Node
 summary: 'Grid nodes communicate with the primary Admin Node for configuration and management. Each grid node must know the IP address of the primary Admin Node on the Grid Network.'

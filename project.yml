@@ -39,7 +39,7 @@ sidebar:
     - title: 'Install, upgrade, and hotfix'
       url: "/landing-install-upgrade/index.html"  
       entries: 
-      - section: install-nodes
+      - section: swnodes
       - section: upgrade
       - title: Apply StorageGRID hotfix
         entries:

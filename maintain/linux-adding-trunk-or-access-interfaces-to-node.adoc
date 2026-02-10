@@ -13,7 +13,7 @@ You can add extra trunk or access interfaces to a Linux node after it has been i
 
 .Before you begin
 
-* You have access to the link:../install-nodes/index.html[instructions for installing StorageGRID] on your Linux platform.
+* You have access to the link:../swnodes/index.html[instructions for installing StorageGRID] on your Linux platform.
 * You have the `Passwords.txt` file.
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 

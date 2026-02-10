@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/index.html
+permalink: swnodes/index.html
 sidebar: sidebar
 keywords: about ubuntu, ubuntu overview, vnware, red hat enterprise linux, rhel, quick start
 summary: 'Follow these high-level steps to install a Linux or VMware StorageGRID node.'

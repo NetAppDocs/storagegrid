@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/installing-storagegrid-webscale-host-services.html
+permalink: swnodes/installing-storagegrid-webscale-host-services.html
 sidebar: sidebar
 keywords: how to install StorageGRID host services
 summary: 'You use the StorageGRID package for your operating system type to install the StorageGRID host services.'

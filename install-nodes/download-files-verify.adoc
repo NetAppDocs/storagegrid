@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/download-files-verify.html
+permalink: swnodes/download-files-verify.html
 sidebar: sidebar
 keywords: installation files, how to verify files
 summary: 'If necessary, you can manually verify the files in the StorageGRID installation archive.'
@@ -13,10 +13,10 @@ If necessary, you can manually verify the files in the StorageGRID installation 
 
 .Before you begin
 
-You have link:../install-nodes/downloading-and-extracting-storagegrid-installation-files.html#download-verification-package[downloaded the verification package] from the https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads page for StorageGRID^].
+You have link:../swnodes/downloading-and-extracting-storagegrid-installation-files.html#download-verification-package[downloaded the verification package] from the https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads page for StorageGRID^].
 
 .Steps
 
 include::../_include/installation-files-verification.adoc[]
 
-. link:../install-nodes/downloading-and-extracting-storagegrid-installation-files.html[Complete the remaining steps] to extract and choose the appropriate files from the installation archive. 
+. link:../swnodes/downloading-and-extracting-storagegrid-installation-files.html[Complete the remaining steps] to extract and choose the appropriate files from the installation archive. 

@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/where-to-go-next.html
-redirect: storagegrid/install-nodes/where-to-go-next.html
+redirect: storagegrid/swnodes/where-to-go-next.html
 ---

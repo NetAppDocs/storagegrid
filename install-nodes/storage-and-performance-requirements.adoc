@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/storage-and-performance-requirements.html
+permalink: swnodes/storage-and-performance-requirements.html
 sidebar: sidebar
 keywords: storage requirements, performance requirements, host storage, host volumes, netapp ontap, fabricpool
 summary: 'You must understand the storage requirements for StorageGRID nodes, so you can provide enough space to support the initial configuration and future storage expansion.'

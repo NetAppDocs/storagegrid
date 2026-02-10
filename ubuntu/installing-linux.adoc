@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/installing-linux.html
-redirect: storagegrid/install-nodes/installing-linux.html
+redirect: storagegrid/swnodes/installing-linux.html
 ---

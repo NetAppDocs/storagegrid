@@ -1,4 +1,0 @@
----
-permalink: swnodes/configuring-host-network.html
-redirect: storagegrid/install-nodes/configuring-host-network.html
----

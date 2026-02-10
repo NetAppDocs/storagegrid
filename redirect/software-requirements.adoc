@@ -1,4 +1,4 @@
 ---
 permalink: swnodes/software-requirements.html
-redirect: storagegrid/install-nodes/software-requirements.html
+redirect: storagegrid/swnodes/software-requirements.html
 ---

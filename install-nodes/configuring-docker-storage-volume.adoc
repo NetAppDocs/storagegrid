@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/configuring-docker-storage-volume.html
+permalink: swnodes/configuring-docker-storage-volume.html
 sidebar: sidebar
 keywords: how to configure container engine storage volume, Docker, Podman
 summary: 'Before installing the Docker or Podman container engine, you might need to format the storage volume and mount it.'

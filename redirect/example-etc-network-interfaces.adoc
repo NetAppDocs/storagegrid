@@ -1,4 +1,0 @@
----
-permalink: swnodes/example-etc-network-interfaces.html
-redirect: storagegrid/install-nodes/example-etc-network-interfaces.html
----

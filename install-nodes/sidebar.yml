@@ -1,4 +1,4 @@
-section: install-nodes
+section: swnodes
 title: Install StorageGRID nodes
 entries:
   - title: Install appliance-based nodes
@@ -7,92 +7,92 @@ entries:
     entries:
     - title: Quick start
       pdf-filename: Install StorageGRID on software-based nodes
-      url: "/install-nodes/index.html"
+      url: "/swnodes/index.html"
     - title: Plan and prepare for installation on software-based nodes
       entries:
       - title: Required information and materials
-        url: "/install-nodes/required-materials.html"
+        url: "/swnodes/required-materials.html"
       - title: Download and extract StorageGRID installation files
-        url: "/install-nodes/downloading-and-extracting-storagegrid-installation-files.html"
+        url: "/swnodes/downloading-and-extracting-storagegrid-installation-files.html"
       - title: Manually verify installation files
-        url: "/install-nodes/download-files-verify.html"
+        url: "/swnodes/download-files-verify.html"
       - title: Software requirements
-        url: "/install-nodes/software-requirements.html"
+        url: "/swnodes/software-requirements.html"
       - title: CPU and RAM requirements
-        url: "/install-nodes/cpu-and-ram-requirements.html"
+        url: "/swnodes/cpu-and-ram-requirements.html"
       - title: Storage and performance requirements
-        url: "/install-nodes/storage-and-performance-requirements.html"
+        url: "/swnodes/storage-and-performance-requirements.html"
       - title: Node container migration requirements (Linux) 
-        url: "/install-nodes/node-container-migration-requirements.html"
+        url: "/swnodes/node-container-migration-requirements.html"
       - title: Prepare the hosts (Linux)
         entries:
         - title: How host-wide settings change
-          url: "/install-nodes/how-host-wide-settings-change.html"
+          url: "/swnodes/how-host-wide-settings-change.html"
         - title: Install Linux
-          url: "/install-nodes/installing-linux.html"
+          url: "/swnodes/installing-linux.html"
         - title: AppArmor profile installation (Ubuntu and Debian only)
-          url: "/install-nodes/understanding-apparmor-profile-installation.html"
+          url: "/swnodes/understanding-apparmor-profile-installation.html"
         - title: Configure the host network
-          url: "/install-nodes/configuring-host-network.html"
+          url: "/swnodes/configuring-host-network.html"
         - title: Configure host storage
-          url: "/install-nodes/configuring-host-storage.html"
+          url: "/swnodes/configuring-host-storage.html"
         - title: Configure the container engine storage volume
-          url: "/install-nodes/configuring-docker-storage-volume.html"
+          url: "/swnodes/configuring-docker-storage-volume.html"
         - title: Install StorageGRID host services
-          url: "/install-nodes/installing-storagegrid-webscale-host-services.html"
+          url: "/swnodes/installing-storagegrid-webscale-host-services.html"
     - title: Automate the software-based nodes installation
       entries:
       - title: Automate installation (Linux)
-        url: "/install-nodes/automating-installation-linux.html"
+        url: "/swnodes/automating-installation-linux.html"
       - title: Automate installation (VMware)
-        url: "/install-nodes/automating-grid-node-deployment-in-vmware-vsphere.html"
+        url: "/swnodes/automating-grid-node-deployment-in-vmware-vsphere.html"
     - title: Deploy virtual grid nodes
       entries:
       - title: Collect information about your deployment environment (VMware)
-        url: "/install-nodes/collecting-information-about-your-deployment-environment.html"
+        url: "/swnodes/collecting-information-about-your-deployment-environment.html"
       - title: Create node configuration files for deployment (Linux)
-        url: "/install-nodes/creating-node-configuration-files.html"
+        url: "/swnodes/creating-node-configuration-files.html"
       - title: How grid nodes discover the primary Admin Node
-        url: "/install-nodes/how-grid-nodes-discover-primary-admin-node.html"
+        url: "/swnodes/how-grid-nodes-discover-primary-admin-node.html"
       - title: Deploy a StorageGRID node as a virtual machine (VMware)
-        url: "/install-nodes/deploying-storagegrid-node-as-virtual-machine.html"
+        url: "/swnodes/deploying-storagegrid-node-as-virtual-machine.html"
       - title: Example node configuration files (Linux)
-        url: "/install-nodes/example-node-configuration-files.html"
+        url: "/swnodesle-node-configuration-files.html"
       - title: Validate the StorageGRID configuration (Linux)
-        url: "/install-nodes/validating-storagegrid-configuration.html"
+        url: "/swnodesegrid-configuration.html"
       - title: Start the StorageGRID host service (Linux)
-        url: "/install-nodes/starting-storagegrid-host-service.html"
+        url: "/swnodesoragegrid-host-service.html"
     - title: Troubleshoot installation issues
-      url: "/install-nodes/troubleshooting-installation-issues.html"
+      url: "/swnodesnstallation-issues.html"
     - title: Script examples
       entries:
       - title: Example /etc/sysconfig/network-scripts (RHEL)
-        url: "/install-nodes/example-etc-sysconfig-network-scripts.html"
+        url: "/swnodes-scripts.html"
       - title: Example /etc/network/interfaces (Ubuntu or Debian)
-        url: "/install-nodes/example-etc-network-interfaces.html"
+        url: "/swnodes
   - title: Configure grid and complete installation
     entries:
     - title: Navigate to the Grid Manager
-      url: "/install-nodes/navigating-to-grid-manager.html"
+      url: "/swnodes
     - title: Specify license information
-      url: "/install-nodes/specifying-storagegrid-license-information.html"
+      url: "/swnodes/specifying-storagegrid-license-information.html"
     - title: Add sites
-      url: "/install-nodes/adding-sites.html"
+      url: "/swnodes/adding-sites.html"
     - title: Specify Grid Network subnets
-      url: "/install-nodes/specifying-grid-network-subnets.html"
+      url: "/swnodes/specifying-grid-network-subnets.html"
     - title: Approve pending grid nodes
-      url: "/install-nodes/approving-pending-grid-nodes.html"
+      url: "/swnodes/approving-pending-grid-nodes.html"
     - title: Specify NTP server information
-      url: "/install-nodes/specifying-network-time-protocol-server-information.html"
+      url: "/swnodes/specifying-network-time-protocol-server-information.html"
     - title: Specify DNS server information
-      url: "/install-nodes/specifying-domain-name-system-server-information.html"
+      url: "/swnodes/specifying-domain-name-system-server-information.html"
     - title: Specify system passwords
-      url: "/install-nodes/specifying-storagegrid-system-passwords.html"
+      url: "/swnodes/specifying-storagegrid-system-passwords.html"
     - title: Review configuration and complete installation
-      url: "/install-nodes/reviewing-your-configuration-and-completing-installation.html"
+      url: "/swnodes/reviewing-your-configuration-and-completing-installation.html"
     - title: Post-installation guidelines
-      url: "/install-nodes/post-installation-guidelines.html"
+      url: "/swnodes/post-installation-guidelines.html"
   - title: Installation REST API
-    url: "/install-nodes/overview-of-installation-rest-api.html"
+    url: "/swnodes/overview-of-installation-rest-api.html"
   - title: Where to go next
-    url: "/install-nodes/where-to-go-next.html"
+    url: "/swnodes/where-to-go-next.html"

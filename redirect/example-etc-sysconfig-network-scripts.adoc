@@ -1,4 +1,0 @@
----
-permalink: swnodes/example-etc-sysconfig-network-scripts.html
-redirect: storagegrid/install-nodes/example-etc-sysconfig-network-scripts.html
----

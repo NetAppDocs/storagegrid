@@ -12,7 +12,7 @@ summary: 'If a Storage Node includes fewer than 16 storage volumes, you can incr
 If a Storage Node includes fewer than 16 storage volumes, you can increase its capacity by using VMware vSphere to add volumes.
 
 .Before you begin
-* You have access to the link:../install-nodes/index.html[instructions for installing StorageGRID for VMware deployments].
+* You have access to the link:../swnodes/index.html[instructions for installing StorageGRID for VMware deployments].
 * You have the `Passwords.txt` file.
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 

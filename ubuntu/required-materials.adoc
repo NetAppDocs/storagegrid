@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/required-materials.html
-redirect: storagegrid/install-nodes/required-materials.html
+redirect: storagegrid/swnodes/required-materials.html
 ---

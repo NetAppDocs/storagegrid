@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/cpu-and-ram-requirements.html
+permalink: swnodes/cpu-and-ram-requirements.html
 sidebar: sidebar
 keywords: cpu, ram, cpu cores
 summary: 'Before installing StorageGRID software, verify and configure the hardware so that it is ready to support the StorageGRID system.'

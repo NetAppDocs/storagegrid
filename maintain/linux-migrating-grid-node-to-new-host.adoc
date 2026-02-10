@@ -15,7 +15,7 @@ For example, you might want to migrate a node to perform OS patching and reboot.
  
 .Before you begin
 
-* You planned your StorageGRID deployment to include migration support. See link:../install-nodes/node-container-migration-requirements.html[Node container migration requirements].
+* You planned your StorageGRID deployment to include migration support. See link:../swnodes/node-container-migration-requirements.html[Node container migration requirements].
 
 * The target host is already prepared for StorageGRID use.
 
@@ -115,7 +115,7 @@ Checking for duplication of unique values... PASSED
 
 . If any validation errors occur, address them before starting the migrated node.
 +
-For troubleshooting information, see the StorageGRID link:../install-nodes/index.html[installation instructions] for your Linux operating system.
+For troubleshooting information, see the StorageGRID link:../swnodes/index.html[installation instructions] for your Linux operating system.
 
 == Start migrated node
 

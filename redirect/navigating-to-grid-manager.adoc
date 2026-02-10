@@ -1,4 +1,0 @@
----
-permalink: swnodes/navigating-to-grid-manager.html
-redirect: storagegrid/install-nodes/navigating-to-grid-manager.html
----

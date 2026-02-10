@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/specifying-domain-name-system-server-information.html
+permalink: swnodes/specifying-domain-name-system-server-information.html
 sidebar: sidebar
 keywords: how to specify domain name system server information, dns
 summary: 'You must specify DNS information for your StorageGRID system, so that you can access external servers using hostnames instead of IP addresses.'

@@ -17,7 +17,7 @@ You have the `Passwords.txt` file.
 
 .About this task
 
-*Linux:* If you are adding a grid node to the Admin Network or Client Network for the first time, and you did not previously configure ADMIN_NETWORK_TARGET or CLIENT_NETWORK_TARGET in the node configuration file, you must do so now. See the StorageGRID link:../install-nodes/index.html[installation instructions] for your Linux operating system.
+*Linux:* If you are adding a grid node to the Admin Network or Client Network for the first time, and you did not previously configure ADMIN_NETWORK_TARGET or CLIENT_NETWORK_TARGET in the node configuration file, you must do so now. See the StorageGRID link:../swnodes/index.html[installation instructions] for your Linux operating system.
 
 *Appliances:* On StorageGRID appliances, if the Client or Admin Network was not configured in the StorageGRID Appliance Installer during the initial installation, the network can't be added by using only the Change IP tool. First, you must https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/placing-appliance-into-maintenance-mode.html[place the appliance in maintenance mode^], configure the links, return the appliance to normal operating mode, and then use the Change IP tool to modify the network configuration. See the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-network-links.html[procedure for configuring network links^].
 

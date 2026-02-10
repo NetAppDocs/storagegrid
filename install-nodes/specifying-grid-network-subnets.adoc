@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/specifying-grid-network-subnets.html
+permalink: swnodes/specifying-grid-network-subnets.html
 sidebar: sidebar
 keywords: how to specify Grid Network subnets
 summary: 'You must specify the subnets that are used on the Grid Network.'

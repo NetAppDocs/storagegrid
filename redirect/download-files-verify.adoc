@@ -1,4 +1,0 @@
----
-permalink: swnodes/download-files-verify.html
-redirect: storagegrid/install-nodes/download-files-verify.html
----

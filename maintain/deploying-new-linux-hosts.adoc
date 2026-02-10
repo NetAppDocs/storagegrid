@@ -11,7 +11,7 @@ summary: 'With a few exceptions, you prepare the new hosts as you did during the
 [.lead]
 With a few exceptions, you prepare the new hosts as you did during the initial installation process.
 
-To deploy new or reinstalled physical or virtual Linux hosts, follow the procedure for preparing the hosts in the StorageGRID installation instructions for your Linux operating system. See link:../install-nodes/installing-linux.html[Install Linux].
+To deploy new or reinstalled physical or virtual Linux hosts, follow the procedure for preparing the hosts in the StorageGRID installation instructions for your Linux operating system. See link:../swnodes/installing-linux.html[Install Linux].
 
 include::../_include/linux-distributions.adoc[]
 

@@ -1,4 +1,0 @@
----
-permalink: swnodes/post-installation-guidelines.html
-redirect: storagegrid/install-nodes/post-installation-guidelines.html
----

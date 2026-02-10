@@ -1,4 +1,0 @@
----
-permalink: swnodes/automating-installation-linux.html
-redirect: storagegrid/install-nodes/automating-installation-linux.html
----

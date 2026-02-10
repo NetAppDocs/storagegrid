@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/validating-storagegrid-configuration.html
+permalink: swnodes/validating-storagegrid-configuration.html
 sidebar: sidebar
 keywords: how to validate StorageGRID configuration
 summary: 'After creating configuration files in /etc/storagegrid/nodes for each of your StorageGRID nodes, you must validate the contents of those files.'

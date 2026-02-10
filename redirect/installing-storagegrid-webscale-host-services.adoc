@@ -1,4 +1,0 @@
----
-permalink: swnodes/installing-storagegrid-webscale-host-services.html
-redirect: storagegrid/install-nodes/installing-storagegrid-webscale-host-services.html
----

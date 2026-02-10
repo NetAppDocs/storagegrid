@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/example-node-configuration-files.html
-redirect: storagegrid/install-nodes/example-node-configuration-files.html
+redirect: storagegrid/swnodes/example-node-configuration-files.html
 ---

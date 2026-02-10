@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/post-installation-guidelines.html
-redirect: storagegrid/install-nodes/post-installation-guidelines.html
+redirect: storagegrid/swnodes/post-installation-guidelines.html
 ---

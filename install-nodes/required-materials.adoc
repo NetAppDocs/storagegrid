@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/required-materials.html
+permalink: swnodes/required-materials.html
 sidebar: sidebar
 keywords: installation materials
 summary: 'Before you install StorageGRID, gather and prepare the required information and materials.'

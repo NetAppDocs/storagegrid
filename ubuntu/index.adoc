@@ -1,4 +1,4 @@
 ---
 permalink: ubuntu/index.html
-redirect: storagegrid/install-nodes/index.html
+redirect: storagegrid/swnodes/index.html
 ---

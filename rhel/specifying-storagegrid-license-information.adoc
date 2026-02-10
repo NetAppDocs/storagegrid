@@ -1,4 +1,4 @@
 ---
 permalink: rhel/specifying-storagegrid-license-information.html
-redirect: storagegrid/install-nodes/specifying-storagegrid-license-information.html
+redirect: storagegrid/swnodes/specifying-storagegrid-license-information.html
 ---

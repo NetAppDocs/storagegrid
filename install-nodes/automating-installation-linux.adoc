@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/automating-installation-linux.html
+permalink: swnodes/automating-installation-linux.html
 sidebar: sidebar
 keywords: how to automate linux installation
 summary: 'You can automate the Linux installation of the StorageGRID host service and the configuration of grid nodes.'

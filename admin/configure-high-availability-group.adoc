@@ -20,7 +20,7 @@ NOTE: A StorageGRID system can have a maximum of 255 HA groups.
 * If you plan to use a VLAN interface in an HA group, you have created the VLAN interface. See link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces].
 * If you plan to use an access interface for a node in an HA group, you have created the interface:
 
-** *Linux (before installing the node)*: link:../install-nodes/creating-node-configuration-files.html[Create node configuration files]
+** *Linux (before installing the node)*: link:../swnodes/creating-node-configuration-files.html[Create node configuration files]
 ** *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
 ** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[Add trunk or access interfaces to a node]
 

@@ -1,4 +1,0 @@
----
-permalink: swnodes/node-container-migration-requirements.html
-redirect: storagegrid/install-nodes/node-container-migration-requirements.html
----

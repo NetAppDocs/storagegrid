@@ -1,5 +1,5 @@
 ---
-permalink: install-nodes/where-to-go-next.html
+permalink: swnodes/where-to-go-next.html
 sidebar: sidebar
 keywords: after installation
 summary: 'After completing an installation, perform the required integration and configuration tasks. You can perform the optional tasks as needed.'
