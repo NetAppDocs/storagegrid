@@ -55,23 +55,23 @@ entries:
       - title: Deploy a StorageGRID node as a virtual machine (VMware)
         url: "/swnodes/deploying-storagegrid-node-as-virtual-machine.html"
       - title: Example node configuration files (Linux)
-        url: "/swnodesle-node-configuration-files.html"
+        url: "/swnodes/example-node-configuration-files.html"
       - title: Validate the StorageGRID configuration (Linux)
-        url: "/swnodesegrid-configuration.html"
+        url: "/swnodes/validating-storagegrid-configuration.html"
       - title: Start the StorageGRID host service (Linux)
-        url: "/swnodesoragegrid-host-service.html"
+        url: "/swnodes/storagegrid-host-service.html"
     - title: Troubleshoot installation issues
-      url: "/swnodesnstallation-issues.html"
+      url: "/swnodes/installation-issues.html"
     - title: Script examples
       entries:
       - title: Example /etc/sysconfig/network-scripts (RHEL)
-        url: "/swnodes-scripts.html"
+        url: "/swnodes/example-etc-sysconfig-network-scripts.html"
       - title: Example /etc/network/interfaces (Ubuntu or Debian)
-        url: "/swnodes
-  - title: Configure grid and complete installation
+        url: "/swnodes/example-etc-network-interfaces.html"
+  - title: Configure grid and complete installation"
     entries:
     - title: Navigate to the Grid Manager
-      url: "/swnodes
+      url: "/swnodes/navigating-to-grid-manager.html"
     - title: Specify license information
       url: "/swnodes/specifying-storagegrid-license-information.html"
     - title: Add sites
