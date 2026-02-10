@@ -26,7 +26,7 @@ sidebar:
     - title: 'StorageGRID 12.0 software'
       url: /index.html
     - title: StorageGRID appliances
-      url: "/swnodes/storagegrid-hardware.html"
+      url: "/storagegrid-hardware.html"
     - title: Release notes
       url: "/release-notes/index.html"
     - title: Get started
