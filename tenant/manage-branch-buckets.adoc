@@ -87,7 +87,7 @@ Choose the time range to include object versions from the base bucket. For any t
 * Minimum date: January 1, 2010
 * Maximum date: Five years from today's date
 
-Before:: The branch bucket provides access to object versions created earlier than _Before_ time. The Before time must be a date and time that has passed. It can't be a future date.
+Before:: The branch bucket provides access to object versions created earlier than _Before_ time.
 
 After:: The branch bucket provides access to object versions created later than _After_ time.
 
