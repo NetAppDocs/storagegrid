@@ -1,6 +1,8 @@
 section: swnodes
 title: Install StorageGRID nodes
 entries:
+  - title: Install appliance-based nodes
+    url: "/swnodes/storagegrid-hardware.html"
   - title: Install software-based nodes
     entries:
     - title: Quick start
