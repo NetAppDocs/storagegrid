@@ -47,3 +47,23 @@ NOTE: If you decide not to configure email notifications, MAV administrators can
 After you enable multi-admin verification, you can manage the protected operations by selecting or clearing the checkboxes for the operations you want to protect with MAV.
 
 NOTE: For StorageGRID 12.1, the only protected operation is ILM policy activation. You must select the checkbox for ILM policy activation if you want to enable MAV.
+
+== Troubleshoot MAV email notifications
+If MAV administrators do not receive email notifications for pending requests, follow these steps to resolve the issue.
+
+.Before you begin
+* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+* You have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission].
+
+.Steps
+. Verify your settings.
+ .. Select *Configuration* > *Monitoring* > *Email server*.
+ .. Verify that the Email (SMTP) Server settings are correct.
+ .. Verify that you have specified valid email addresses for the recipients.
+. Check your spam filter, and make sure that the email was not sent to a junk folder.
+. Ask your email administrator to confirm that emails from the sender address aren't being blocked.
+. Collect a log file for the Admin Node, and then contact technical support.
++
+Technical support can use the information in the logs to help determine what went wrong. For example, the prometheus.log file might show an error when connecting to the server you specified.
++
+See link:collecting-log-files-and-system-data.html[Collect log files and system data].
