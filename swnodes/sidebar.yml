@@ -70,7 +70,7 @@ entries:
         url: "/swnodes/example-etc-sysconfig-network-scripts.html"
       - title: Example /etc/network/interfaces (Ubuntu or Debian)
         url: "/swnodes/example-etc-network-interfaces.html"
-  - title: Configure grid and complete installation"
+  - title: Configure grid and complete installation
     entries:
     - title: Navigate to the Grid Manager
       url: "/swnodes/navigating-to-grid-manager.html"
