@@ -66,6 +66,9 @@ When you specify `aws-chunked` for ``Content-Encoding``StorageGRID does not veri
 +
 Chunked transfer encoding is supported if `aws-chunked` payload signing is also used.
 
+* `x-amz-checksum-crc32`
+* `x-amz-checksum-crc32c`
+* `x-amz-checksum-crc64nvme`
 * `x-amz-checksum-sha256`
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata.
 +
@@ -184,5 +187,6 @@ For details, refer to https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-hea
 * link:../ilm/index.html[Manage objects with ILM]
 * link:https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html[Amazon Simple Storage Service API Reference: PutObject^]
 
+// 2026 JAN 6, SGWS-39154
 // 2024 AUG 22, SGRIDDOC-93
 // 2024 MAY 23, SGWS-31243

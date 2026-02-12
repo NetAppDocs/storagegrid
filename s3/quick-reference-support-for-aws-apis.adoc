@@ -61,11 +61,19 @@ link:operations-for-multipart-uploads.html[Operations for multipart uploads]
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus this additional URI query parameter:
 
 * `uploadId`
-* `x-amz-checksum-sha256`	
+* `x-amz-checksum-crc32`
+* `x-amz-checksum-crc32c`
+* `x-amz-checksum-crc64nvme`
+* `x-amz-checksum-sha256`
+* `x-amz-checksum-type`
+* `x-amz-storage-class`
 
 .Request body XML tags
 StorageGRID supports these request body XML tags:
 
+* `ChecksumCRC32`
+* `ChecksumCRC32C`
+* `ChecksumCRC64NVME`
 * `ChecksumSHA256`
 * `CompleteMultipartUpload`
 * `ETag`
@@ -82,6 +90,7 @@ link:complete-multipart-upload.html[CompleteMultipartUpload]
 .URI query parameters and request headers
 StorageGRID supports all <<common-params, common parameters and headers>> for this request, plus these additional headers:
 
+* `x-amz-checksum-algorithm`
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-modified-since`
@@ -137,6 +146,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 * `Content-Language`
 * `Expires`
 * `x-amz-checksum-algorithm`
+* `x-amz-checksum-type`
 * `x-amz-server-side-encryption`
 * `x-amz-storage-class`
 * `x-amz-server-side-encryption-customer-algorithm`
@@ -821,6 +831,9 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 * `Content-Encoding`
 * `Content-Language`
 * `Expires`
+* `x-amz-checksum-crc32`
+* `x-amz-checksum-crc32c`
+* `x-amz-checksum-crc64nvme`
 * `x-amz-checksum-sha256`
 * `x-amz-server-side-encryption`
 * `x-amz-storage-class`
@@ -927,6 +940,9 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 
 And these additional request headers:
 
+* `x-amz-checksum-crc32`
+* `x-amz-checksum-crc32c`
+* `x-amz-checksum-crc64nvme`
 * `x-amz-checksum-sha256`
 * `x-amz-server-side-encryption-customer-algorithm`
 * `x-amz-server-side-encryption-customer-key`
@@ -969,6 +985,7 @@ None
 .StorageGRID documentation
 link:upload-part-copy.html[UploadPartCopy]
 
+// 2026 JAN 6, SGWS-39154
 // 2025 APR 8, SGRIDDOC-135
 // 2024 AUG 22, SGRIDDOC-94
 // 2023 OCT 26, SGWS-27431
