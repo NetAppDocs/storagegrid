@@ -33,10 +33,10 @@ The following conditions and notes apply to all multipart upload operations:
 
 * Whether a multipart uploaded object is included in a link:../tenant/what-is-branch-bucket.html[branch bucket] depends on the time the ingest was initiated and the time filter for the branch bucket:
 
-** *Before*. If the ingest was initiated before the base bucket's _Before_ timestamp, the multipart uploaded object is included, regardless of when the upload completes.
-** *After*. If the ingest was initiated after the base bucket's _After_ timestamp, the multipart uploaded object is included.
-** *Between*. If the ingest was initiated between the base bucket's _From_ and _To_ timestamps, the multipart uploaded object is included, regardless of when the upload completes.
-** *Exclude*. If the ingest was initiated before the _Exclude from_ time or after the _Exclude to_ time, the multipart uploaded object is included.
+** *Before*. If the ingest was initiated before the branch bucket's _Before_ timestamp, the multipart uploaded object is included, regardless of when the upload completes.
+** *After*. If the ingest was initiated after the branch bucket's _After_ timestamp, the multipart uploaded object is included.
+** *Between*. If the ingest was initiated between the branch bucket's _From_ and _To_ timestamps, the multipart uploaded object is included, regardless of when the upload completes.
+** *Exclude*. If the ingest was initiated before the branch bucket's _Exclude from_ time or after the _Exclude to_ time, the multipart uploaded object is included.
 
 [cols="2a,3a" options="header"]
 |===
