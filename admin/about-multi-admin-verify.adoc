@@ -20,7 +20,7 @@ To configure MAV, you'll perform these tasks:
 * Enable the multi-admin verification function.
 * Select from a set of protected operations in a rules table.
 
-After initial configuration, these elements can be modified only by users with the Root access permission.
+A user must have Root access permission to perform the initial configuration and make modifications later.
 
 == How protected operations are handled under MAV
 When MAV is enabled, the completion of every protected operation requires these steps:

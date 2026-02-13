@@ -28,7 +28,7 @@ You can configure Active Directory (AD) users as MAV administrators. The AD user
 . Add local or federated users to the group, or create new local users and add them to the group by following the steps to link:../admin/managing-users.html#create-a-local-user[create a local user].
 
 == Step 2: Enable or disable MAV
-You must enable multi-admin verification (MAV) explicitly. If you want to disable multi-admin verification, you must be a user with the Root access permission. If you attempt to disable MAV when there are pending MAV requests, a notification states that pending requests will be deleted.
+You must enable multi-admin verification (MAV) explicitly. If MAV is enabled and you decide to disable it when there are pending MAV requests, a notification states that pending requests will be deleted.
 
 .Steps
 . Select *Configuration* > *Access control* > *Multi-admin verification* > *MAV settings*.

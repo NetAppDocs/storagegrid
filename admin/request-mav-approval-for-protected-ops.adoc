@@ -21,7 +21,7 @@ The StorageGRID system defines which operations are protected by MAV. When you i
 
 . Check for pending requests by selecting *Configuration* > *Access control* > *Multi-admin verification* > *Other requests*.
 
-. To cancel an operation, select the corresponding request and then select *Withdraw*.
+. To cancel an operation, select the corresponding request and then select *Withdraw*. You can also select *Withdraw* in the My requests tab.
 
 . After a MAV administrator approves the request, the operation is performed automatically.
 +
