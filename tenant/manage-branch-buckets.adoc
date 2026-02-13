@@ -69,11 +69,6 @@ For more information, see the https://docs.aws.amazon.com/AmazonS3/latest/usergu
 
 The branch bucket's region must match the region for the base bucket, so this field is disabled for branch buckets.
 
-| Before time
-| The cutoff time for object versions created in the base bucket to be accessible from the branch bucket. The branch bucket provides access to object versions created earlier than Before time.
-
-Before time must be a date and time that has passed. It can't be a future date.
-
 | Branch bucket type
 |
 * *Read-write*: You can add or delete objects or object versions in the branch bucket.
@@ -84,6 +79,21 @@ Before time must be a date and time that has passed. It can't be a future date.
 |===
 
 . Select *Continue*.
+
+== Time filter
+
+Choose the time range to include object versions from the base bucket. For any time filter, select any date within the following range:
+
+* Minimum date: January 1, 2010
+* Maximum date: Five years from today's date
+
+Before:: The branch bucket provides access to object versions created earlier than _Before_ time.
+
+After:: The branch bucket provides access to object versions created later than _After_ time.
+
+Between:: The branch bucket provides access to object versions created between the _From_ and _To_ times.
+
+Exclude:: The branch bucket doesn't provide access to object versions created between the _Exclude from_ and _Exclude to_ times.
 
 == Manage object settings (optional)
 
