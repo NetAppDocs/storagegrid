@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: use S3 Select, S3 Select
 summary: 'StorageGRID supports the following Amazon S3 Select clauses, data types, operators, and reserved keywords for the SelectObjectContent command.'
 ---
-= Use S3 Select with StorageGRID
+= Supported Amazon S3 Select operations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

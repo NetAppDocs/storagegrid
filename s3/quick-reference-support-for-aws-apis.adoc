@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Amazon s3, API, request headers, s3 support, request syntax, supported, aws s3
 summary: 'This page summarizes how StorageGRID supports Amazon Simple Storage Service (S3) APIs.'
 ---
-= Quick reference: Supported S3 API requests in StorageGRID
+= Supported S3 API requests in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipart upload, object, object size
 summary: 'The CompleteMultipartUpload operation completes a multipart upload of an object by assembling the previously uploaded parts.'
 ---
-= How StorageGRID completes multipart uploads
+= How StorageGRID S3 REST API completes multipart uploads
 :icons: font
 :imagesdir: ../media/
 

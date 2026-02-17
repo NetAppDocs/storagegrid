@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: object version, object versioning
 summary: 'You can set the versioning state of a bucket if you want to retain multiple versions of an object. Enabling versioning for a bucket can help protect against accidental deletion of objects and enables you to retrieve and restore earlier versions of an object.'
 ---
-= Object versioning in StorageGRID S3
+= How StorageGRID uses object versioning
 :icons: font
 :imagesdir: ../media/
 

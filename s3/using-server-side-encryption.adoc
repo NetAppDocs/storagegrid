@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: server side encryption, encryption, operations on objects, objects
 summary: 'Server-side encryption allows you to protect your object data at rest. StorageGRID encrypts the data as it writes the object and decrypts the data when you access the object.'
 ---
-= Use server-side encryption for StorageGRID S3
+= How StorageGRID uses server-side encryption
 :icons: font
 :imagesdir: ../media/
 

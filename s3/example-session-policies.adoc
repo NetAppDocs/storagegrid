@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: session policy example
 summary: 'Use the example in this section to build StorageGRID sesssion policies.'
 ---
-= Session policy example for StorageGRID S3
+= StorageGRID S3 REST API session policy example
 :icons: font
 :imagesdir: ../media/
 

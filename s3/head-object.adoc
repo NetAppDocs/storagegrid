@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: HeadObject
 summary: 'You can use the S3 HeadObject request to retrieve metadata from an object without returning the object itself.'
 ---
-= HeadObject for StorageGRID S3
+= Retrieve metadata from an object in StorageGRID with the S3 HeadObject request
 :icons: font
 :imagesdir: ../media/
 
