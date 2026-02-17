@@ -53,9 +53,9 @@ Use the Common Criteria policy if you require Common Criteria certification.
 
 .FIPS strict
 --
-Use the FIPS strict policy if you require Common Criteria certification and need to use the NetApp Cryptographic Security Module (NCSM) 3.0.8 or NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module for external client connections to load balancer endpoints, Tenant Manager, and Grid Manager. Using this policy might reduce performance.
+Use the FIPS strict policy if you require Common Criteria certification and need to use the NetApp Cryptographic Security Module (NCSM) 3.1.2 or NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module for external client connections to load balancer endpoints, Tenant Manager, and Grid Manager. Using this policy might reduce performance.
 
-The NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module are used in the following operations:
+The NCSM 3.1.2 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module are used in the following operations:
 
 * NCSM
 ** TLS connections between the following services: ADC, AMS, CMN, DDS, LDR, SSM, NMS, mgmt-api, nginx, nginx-gw, and cache-svc
@@ -83,7 +83,7 @@ For more information, refer to NIST Cryptographic Algorithm Validation Program l
 --
 Create a custom policy if you need to apply your own ciphers.
 
-Optionally, if your StorageGRID has FIPS 140 cryptography requirements, enable the FIPS mode feature to use the NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module:
+Optionally, if your StorageGRID has FIPS 140 cryptography requirements, enable the FIPS mode feature to use the NCSM 3.1.2 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module:
 
 .. Set the `fipsMode` parameter to `true`.
 
