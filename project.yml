@@ -26,7 +26,7 @@ sidebar:
     - title: 'StorageGRID 12.0 software'
       url: /index.html
     - title: StorageGRID appliances
-      url: "/storagegrid-hardware.html"
+      url: "/swnodes/storagegrid-hardware.html"
     - title: Release notes
       url: "/release-notes/index.html"
     - title: Get started
@@ -38,9 +38,7 @@ sidebar:
         url: "/primer/quick-start.html"
     - title: 'Install, upgrade, and hotfix'
       url: "/landing-install-upgrade/index.html"  
-      entries:
-      - title: Install appliance-based nodes
-        url: "/storagegrid-hardware.html" 
+      entries: 
       - section: swnodes
       - section: upgrade
       - title: Apply StorageGRID hotfix
