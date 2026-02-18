@@ -48,6 +48,10 @@ After you enable multi-admin verification, you can manage the protected operatio
 
 NOTE: For StorageGRID 12.1, the only protected operation is ILM policy activation. You must select the checkbox for ILM policy activation if you want to enable MAV.
 
+A MAV request can have one of the following statuses:
+
+include::../_include/mav-status-list.adoc[]
+
 == Troubleshoot MAV email notifications
 If MAV administrators do not receive email notifications for pending requests, follow these steps to resolve the issue.
 

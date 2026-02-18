@@ -18,6 +18,8 @@ The StorageGRID system defines which operations are protected by MAV. When you i
 . The StorageGRID system informs you that you've initiated a MAV-protected operation.
 
 . Check the status of your request by selecting *Configuration* > *Access control* > *Multi-admin verification* > *My requests*.
++
+include::../_include/mav-status-list.adoc[]
 
 . Check for pending requests by selecting *Configuration* > *Access control* > *Multi-admin verification* > *Other requests*.
 
@@ -26,15 +28,3 @@ The StorageGRID system defines which operations are protected by MAV. When you i
 . After a MAV administrator approves the request, the operation is performed automatically.
 +
 If your request is rejected, the operation isn't performed, and you can submit a new request if needed.
-
-.MAV request statuses
-
-Pending:: Request has been initiated.
-
-Expired:: Request wasn't addressed within 30 days. Or a user with Root access permission disabled MAV, which mean all pending requests expire.
-
-Withdrawn:: A user withdrew their request.
-
-Approved:: A MAV administrator approved the pending request.
-
-Rejected:: A MAV administrator rejected the pending request.
