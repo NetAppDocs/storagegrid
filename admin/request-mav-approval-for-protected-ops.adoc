@@ -27,3 +27,14 @@ The StorageGRID system defines which operations are protected by MAV. When you i
 +
 If your request is rejected, the operation isn't performed, and you can submit a new request if needed.
 
+.MAV request statuses
+
+Pending:: Request has been initiated.
+
+Expired:: Request wasn't addressed within 30 days. Or a user with Root access permission disabled MAV, which mean all pending requests expire.
+
+Withdrawn:: A user withdrew their request.
+
+Approved:: A MAV administrator approved the pending request.
+
+Rejected:: A MAV administrator rejected the pending request.
