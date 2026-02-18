@@ -65,7 +65,7 @@ The NCSM 3.1.2 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 mo
 ** SSH connections
 
 +
-For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838[Certificate #4838^].
+For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40426[Certificate #A7816^].
 
 * NetApp StorageGRID Kernel Crypto API module
 +
