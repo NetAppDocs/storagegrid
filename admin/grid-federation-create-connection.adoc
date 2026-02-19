@@ -2,14 +2,14 @@
 permalink: admin/grid-federation-create-connection.html
 sidebar: sidebar
 keywords: grid federation, create connection, configure connection
-summary: 'You can create grid federation connections between two StorageGRID systems if you want to clone tenant details and replicate object data.'
+summary: "You can create grid federation connections between StorageGRID systems if you want to sync tenant details and replicate object data."
 ---
 = Create grid federation connections
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can create grid federation connections between two StorageGRID systems if you want to clone tenant details and replicate object data.
+You can create grid federation connections between StorageGRID systems if you want to sync tenant details and replicate object data.
 
 As shown in the figure, creating a grid federation connection includes steps on both grids. You add the connection on one grid and complete it on the other grid. You can start from either grid.
 
@@ -134,4 +134,4 @@ If you edit this connection, a new verification file will be created. The origin
 
 * link:../monitor/grid-federation-monitor-connections.html[Monitor the connection] as part of your normal StorageGRID monitoring activities.
 
-* link:grid-federation-troubleshoot.html[Troubleshoot the connection], including resolving any alerts and errors related to account clone and cross-grid replication.
+* link:grid-federation-troubleshoot.html[Troubleshoot the connection], including resolving any alerts and errors related to account sync and cross-grid replication.
