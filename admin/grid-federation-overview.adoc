@@ -1,15 +1,15 @@
 ---
 permalink: admin/grid-federation-overview.html
 sidebar: sidebar
-keywords: grid federation, cross-grid replication, account clone, cgr, disaster recovery
-summary: 'You can use grid federation to clone tenants and replicate their objects between two StorageGRID systems for disaster recovery.'
+keywords: grid federation, cross-grid replication, account sync, cgr, disaster recovery
+summary: "You can use grid federation to sync tenants and replicate their objects among multipleStorageGRID systems for disaster recovery."
 ---
 = What is grid federation?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use grid federation to clone tenants and replicate their objects between two StorageGRID systems for disaster recovery.
+You can use grid federation to sync tenants and replicate their objects among multiple StorageGRID systems for disaster recovery.
 
 == What is a grid federation connection?
 
@@ -31,7 +31,7 @@ For details about version requirements, refer to the link:../release-notes/index
 
 * Grid federation connections are bidirectional. After the connection is established, you can monitor and manage the connection from either grid. 
 
-* At least one grid federation connection must exist before you can use link:grid-federation-what-is-account-clone.html[account clone] or link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
+* At least one grid federation connection must exist before you can use link:grid-federation-what-is-account-clone.html[account sync] or link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
 
 === Networking and IP address requirements
 
