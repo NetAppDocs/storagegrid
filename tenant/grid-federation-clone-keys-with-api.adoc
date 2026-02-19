@@ -1,15 +1,15 @@
 ---
 permalink: tenant/grid-federation-clone-keys-with-api.html
 sidebar: sidebar
-keywords: s3 access key, secret key id, account clone, tenant manager api
-summary: If your tenant account has the Use grid federation connection permission, you can use the Tenant Management API to manually clone S3 access keys from the tenant on the source grid to the tenant on the destination grid.
+keywords: s3 access key, secret key id, account sync, tenant manager api
+summary: "If your tenant account has the Use grid federation connection permission, you can use the Tenant Management API to manually sync S3 access keys from the tenant on the source grid to the tenant on the destination grid."
 ---
-= Clone S3 access keys using the API
+= Sync S3 access keys using the API
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If your tenant account has the *Use grid federation connection* permission, you can use the Tenant Management API to manually clone S3 access keys from the tenant on the source grid to the tenant on the destination grid.
+If your tenant account has the *Use grid federation connection* permission, you can use the Tenant Management API to manually sync S3 access keys from the tenant on the source grid to the tenant on the destination grid.
 
 .Before you begin
 
@@ -17,13 +17,13 @@ If your tenant account has the *Use grid federation connection* permission, you 
 * The grid federation connection has a *Connection status* of *Connected*.
 * You are signed in to the Tenant Manager on the tenant's source grid using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the link:tenant-management-permissions.html[Manage your own S3 credentials or Root access permission].
-* If you are cloning access keys for a local user, the user already exists on both grids.
+* If you are syncing access keys for a local user, the user already exists on both grids.
 +
-NOTE: When you clone S3 access keys for a federated user, both the user and the S3 access keys are added to the destination tenant.
+NOTE: When you sync S3 access keys for a federated user, both the user and the S3 access keys are added to the destination tenant.
 
-== Clone your own access keys
+== Sync your own access keys
 
-You can clone your own access keys if you need to access the same buckets on both grids.
+You can sync your own access keys if you need to access the same buckets on both grids.
 
 .Steps
 . Using the Tenant Manager on the source grid, link:creating-your-own-s3-access-keys.html[create your own access keys] and download the `.csv` file.
@@ -49,11 +49,11 @@ image::../media/grid-federation-clone-access-key.png[Tenant Manager API entering
 
 . Select *Execute*.
 
-. Confirm that the server response code is *204*, indicating that the key was successfully cloned to the destination grid. 
+. Confirm that the server response code is *204*, indicating that the key was successfully synced to the destination grid. 
 
-== Clone another user's access keys
+== Sync another user's access keys
 
-You can clone another user's access keys if they need to access the same buckets on both grids.
+You can sync another user's access keys if they need to access the same buckets on both grids.
 
 .Steps
 
@@ -61,7 +61,7 @@ You can clone another user's access keys if they need to access the same buckets
 
 . From the top of the Tenant Manager, select the help icon and select *API documentation*.
 
-. Obtain the user ID. You will need this value to clone the other user's access keys.
+. Obtain the user ID. You will need this value to sync the other user's access keys.
 
 .. From the *users* section, select the following endpoint:
 +
@@ -73,7 +73,7 @@ You can clone another user's access keys if they need to access the same buckets
 
 .. Select *Execute*.
 
-.. Find the user whose keys you want to clone, and copy the number in the *id* field. 
+.. Find the user whose keys you want to sync, and copy the number in the *id* field. 
 
 . In the *s3* section, select the following endpoint:
 +
@@ -93,4 +93,4 @@ Be sure to retain the double quotes around the string.
 
 . Select *Execute*.
 
-. Confirm that the server response code is *204*, indicating that the key was successfully cloned to the destination grid. 
+. Confirm that the server response code is *204*, indicating that the key was successfully synced to the destination grid. 

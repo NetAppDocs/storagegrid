@@ -1,15 +1,15 @@
 ---
 permalink: admin/grid-federation-troubleshoot.html
 sidebar: sidebar
-keywords: troubleshoot, grid federation connection, account clone, cross-grid replication, alerts, errors
-summary: 'You might need to troubleshoot alerts and errors related to grid federation connections, account clone, and cross-grid replication.'
+keywords: troubleshoot, grid federation connection, account sync, cross-grid replication, alerts, errors
+summary: "You might need to troubleshoot alerts and errors related to grid federation connections, account sync, and cross-grid replication."
 ---
 = Troubleshoot grid federation errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You might need to troubleshoot alerts and errors related to grid federation connections, account clone, and cross-grid replication.
+You might need to troubleshoot alerts and errors related to grid federation connections, account sync, and cross-grid replication.
 
 == [[grid-federation-errors]]Grid federation connection alerts and errors
 
@@ -59,25 +59,25 @@ When you edit a grid federation connection, StorageGRID attempts to save a "cand
 . Confirm that all Admin Nodes for that grid are online.
 . If any nodes are offline, bring them back online and try editing the connection again.
 
-== Account clone errors
+== Account sync errors
 
-=== Can't sign in to a cloned tenant account
+=== Can't sign in to a synced tenant account
 
 .Issue
-You can't sign in to a cloned tenant account. The error message on the Tenant Manager sign-in page is "Your credentials for this account were invalid. Please try again."
+You can't sign in to a synced tenant account. The error message on the Tenant Manager sign-in page is "Your credentials for this account were invalid. Please try again."
 
 .Details
-For security reasons, when a tenant account is cloned from the tenant's source grid to the tenant's destination grid, the password you set for the tenant's local root user is not cloned. Similarly, when a tenant creates local users on its source grid, the local user passwords aren't cloned to the destination grid.
+For security reasons, when a tenant account is synced from the tenant's source grid to the tenant's destination grid, the password you set for the tenant's local root user is not synced. Similarly, when a tenant creates local users on its source grid, the local user passwords aren't synced to the destination grid.
 
 .Recommended actions
 Before the root user can sign in to the tenant's destination grid, a grid administrator must first link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] on the destination grid.
 
-Before a cloned local user can sign in to the tenant's destination grid, the root user for the cloned tenant must add a password for the user on the destination grid. For instructions, refer to link:../tenant/manage-users.html[Manage users] in the instructions for using the Tenant Manager.
+Before a synced local user can sign in to the tenant's destination grid, the root user for the synced tenant must add a password for the user on the destination grid. For instructions, refer to link:../tenant/manage-users.html[Manage users] in the instructions for using the Tenant Manager.
 
-=== Tenant created without a clone
+=== Tenant created without a sync
 
 .Issue
-You see the message "Tenant created without a clone" after creating a new tenant with the *Use grid federation connection* permission. 
+You see the message "Tenant created without a sync" after creating a new tenant with the *Use grid federation connection* permission. 
 
 .Details
 This issue can occur if updates to the Connection status are delayed, which might cause an unhealthy connection to be listed as *Connected*.
@@ -90,14 +90,14 @@ This issue can occur if updates to the Connection status are delayed, which migh
 
 . From the tenant's source grid, select *Tenants*.
 
-. Locate the tenant account that failed to be cloned.
+. Locate the tenant account that failed to be synced.
 
 . Select the tenant name to display the details page.
 
-. Select *Retry account clone*.
+. Select *Retry account sync*.
 +
-image::../media/grid-federation-retry-account-clone.png[screenshot showing an error message and the Retry account clone button]
-If the error has been resolved, the tenant account will now be cloned to the other grid.
+image::../media/grid-federation-retry-account-clone.png[screenshot showing an error message and the Retry account sync button]
+If the error has been resolved, the tenant account will now be synced to the other grid.
 
 
 == Cross-grid replication alerts and errors

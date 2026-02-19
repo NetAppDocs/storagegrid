@@ -1,42 +1,42 @@
 ---
 permalink: tenant/grid-federation-account-clone.html
 sidebar: sidebar
-keywords: account clone, cloning tenant, grid federation, cross-grid replication
-summary: "If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant."
+keywords: account sync, tenant sync, grid federation, cross-grid replication
+summary: "If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, tenant groups, users, and S3 access keys are synced across the connected grids."
 ---
-= Clone tenant groups and users
+= Sync tenant groups and users
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant.
+If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, tenant groups, users, and S3 access keys are synced across the connected grids.
 
-The StorageGRID system where the tenant is originally created is the tenant's _source grid_. The StorageGRID system where the tenant is replicated is the tenant's _destination grid_. Both tenant accounts have the same account ID, name, description, storage quota, and assigned permissions, but the destination tenant does not initially have a root user password. For details, see link:../admin/grid-federation-what-is-account-clone.html[What is account clone] and link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants]. 
+The StorageGRID system where the tenant is originally created is the tenant's _source grid_. The StorageGRID system where the tenant is replicated is the tenant's _destination grid_. Both tenant accounts have the same account ID, name, description, storage quota, and assigned permissions, but the destination tenant doesn't initially have a root user password. For details, refer to link:../admin/grid-federation-what-is-account-clone.html[Learn about account sync for grid federation] and link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants].
 
-The cloning of tenant account information is required for link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] of bucket objects. Having the same tenant groups and users on both grids ensures you can access the corresponding buckets and objects on either grid.
+The syncing of tenant account information is required for link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] of bucket objects. Having the same tenant groups and users on both grids ensures you can access the corresponding buckets and objects on either grid.
 
-== Tenant workflow for account clone
+== Tenant workflow for account sync
 
-If your tenant account has the *Use grid federation connection* permission, review the workflow diagram to see the steps you will perform to clone groups, users, and S3 access keys.
+If your tenant account has the *Use grid federation connection* permission, review the workflow diagram to see the steps you will perform to sync groups, users, and S3 access keys.
 
-image::../media/grid-federation-account-clone-workflow-tm.png[the tenant's workflow for account clone. Steps are described in the following text.]
+image::../media/grid-federation-account-clone-workflow-tm.png[the tenant's workflow for account sync. Steps are described in the following text.]
 
 These are the primary steps in the workflow:
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Sign in to tenant
 
 [role="quick-margin-para"]
-Sign in to the tenant account on the source grid (the grid where the tenant was initially created.)
+Sign in to the tenant account on any connected grid.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optionally, configure identity federation
 
 [role="quick-margin-para"]
-If your tenant account has the *Use own identity source* permission to use federated groups and users, configure the same identity source (with the same settings) for both the source and destination tenant accounts. Federated groups and users can't be cloned unless both grids are using the same identity source. For instructions, see link:using-identity-federation.html[Use identity federation]. 
+If your tenant account has the *Use own identity source* permission to use federated groups and users, configure the same identity source (with the same settings) for both the source and destination tenant accounts. Federated groups and users can't be synced unless both grids are using the same identity source. For instructions, see link:using-identity-federation.html[Use identity federation]. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create groups and users
 
 [role="quick-margin-para"]
-When creating groups and users, always start from the tenant's source grid. When you add a new group, StorageGRID automatically clones it to the destination grid.
+You can create groups and users from any connected grid. When you add a new local group, StorageGRID automatically syncs it to all connected grids. Changes to local groups (edit, delete) are also continuously synced. Federated groups are synced once at creation.
 
 [role="quick-margin-list"]
 * If identity federation is configured for the entire StorageGRID system or for your tenant account, link:creating-groups-for-s3-tenant.html[create new tenant groups] by importing federated groups from the identity source.
@@ -49,69 +49,71 @@ When creating groups and users, always start from the tenant's source grid. When
 [role="quick-margin-para"]
 You can link:creating-your-own-s3-access-keys.html[create your own access keys] or to link:creating-another-users-s3-access-keys.html[create another user's access keys] on either the source grid or the destination grid to access buckets on that grid. 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Optionally, clone S3 access keys
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Optionally, sync S3 access keys
 
 [role="quick-margin-para"]
-If you need to access buckets with the same access keys on both grids, create the access keys on the source grid and then use the Tenant Manager API to manually clone them to the destination grid. For instructions, see link:../tenant/grid-federation-clone-keys-with-api.html[Clone S3 access keys using the API].
+If you need to access buckets with the same access keys on both grids, create the access keys on the source grid and then use the Tenant Manager API to manually sync them to the destination grid. For instructions, refer to link:../tenant/grid-federation-clone-keys-with-api.html[Sync S3 access keys using the API].
 
-== How are groups, users, and S3 access keys cloned?
+== How are groups, users, and S3 access keys synced?
 
-Review this section to understand how groups, users, and S3 access keys are cloned between the tenant source grid and the tenant destination grid.
+Review this section to understand how groups, users, and S3 access keys are synced across connected grids.
 
-=== Local groups created on source grid are cloned
+=== Local groups are continuously synced
 
-After a tenant account is created and replicated to the destination grid, StorageGRID automatically clones any local groups you add to the tenant's source grid to the tenant's destination grid.
+After a tenant account is created and replicated to the destination grid, StorageGRID continuously syncs local groups across all connected grids. All changes to local groups—including create, edit, and delete operations—made on any grid are automatically replicated to all other connected grids.
 
-Both the original group and its clone have the same access mode, group permissions, and S3 group policy. For instructions, see link:creating-groups-for-s3-tenant.html[Create groups for S3 tenant].
+Both the original group and its synced copies have the same access mode, group permissions, and S3 group policy. For instructions, refer to link:creating-groups-for-s3-tenant.html[Create groups for S3 tenant].
 
-image::../media/grid-federation-account-clone.png[image showing that local groups are cloned from source grid to destination grid]
+image::../media/grid-federation-account-clone.png[image showing that local groups are synced between connected grids]
 
-NOTE: Any users you select when you create a local group on the source grid aren't included when the group is cloned to the destination grid. For this reason, don't select users when you create the group. Instead, select the group when you create the users.
+NOTE: Any users you select when you create a local group on a grid aren't included when the group is synced to other grids. For this reason, don't select users when you create the group. Instead, select the group when you create the users.
 
-=== Local users created on source grid are cloned
+=== Local users are continuously synced
 
-When you create a new local user on the source grid, StorageGRID automatically clones that user to the destination grid. Both the original user and its clone have the same full name, username, and *Deny access* setting. Both users also belong to the same groups. For instructions, see link:manage-users.html[Manage users].
+When you create a new local user on any connected grid, StorageGRID automatically syncs that user to all other connected grids. Subsequent changes—including edits, deletes, and password resets—are also continuously synced. Both the original user and its synced copies have the same full name, username, and *Deny access* setting. Both users also belong to the same groups. For instructions, refer to link:manage-users.html[Manage users].
 
-For security reasons, local user passwords aren't cloned to the destination grid. If a local user needs to access Tenant Manager on the destination grid, the root user for the tenant account must add a password for that user on the destination grid. For instructions, see link:manage-users.html[Manage users].
+For security reasons, local user passwords aren't synced to other grids. If a local user needs to access Tenant Manager on another grid, the root user for the tenant account must add a password for that user on that grid. For instructions, refer to link:manage-users.html[Manage users].
 
-image::../media/grid-federation-local-user-clone.png[image showing that local users are cloned from source grid to destination grid]
+image::../media/grid-federation-local-user-clone.png[image showing that local users are synced between connected grids]
 
-=== Federated groups created on source grid are cloned
+=== Federated groups are synced once at creation
 
-Assuming the requirements for using account clone with link:../admin/grid-federation-what-is-account-clone.html#account-clone-sso[single sign-on] and link:../admin/grid-federation-what-is-account-clone.html#account-clone-identity-federation[identity federation] have been met, federated groups that you create (import) for the tenant on the source grid are automatically cloned to the tenant on the destination grid. 
+Assuming the requirements for using account sync with link:../admin/grid-federation-what-is-account-clone.html#account-sync-sso[single sign-on] and link:../admin/grid-federation-what-is-account-clone.html#account-sync-identity-federation[identity federation] have been met, federated groups that you create (import) for the tenant on a grid are automatically synced to the tenant on all other connected grids.
 
 Both groups have the same access mode, group permissions and S3 group policy.
 
-After federated groups are created for the source tenant and cloned to the destination tenant, federated users can sign in to the tenant on either grid.
+After federated groups are created for the source tenant and synced to other grids, federated users can sign in to the tenant on any connected grid. Subsequent changes to federated groups are not automatically synced across grids.
 
-image::../media/grid-federation-federated-group-clone.png[image showing that federated groups are cloned from source grid to destination grid]
+image::../media/grid-federation-federated-group-clone.png[image showing that federated groups are synced from source grid to destination grid]
 
-=== S3 access keys can be manually cloned
+=== S3 access keys can be manually synced
 
-StorageGRID does not automatically clone S3 access keys because security is improved by having different keys on each grid. 
+StorageGRID doesn't automatically sync S3 access keys, because security is improved by having different keys on each grid. 
 
-To manage access keys on the two grids, you can do either of the following:
+To manage access keys on connected grids, you can do either of the following:
 
 * If you don't need to use the same keys for each grid, you can link:creating-your-own-s3-access-keys.html[create your own access keys] or link:creating-another-users-s3-access-keys.html[create another user's access keys] on each grid.
 
-* If you need to use the same keys on both grids, you can create keys on the source grid and then use the Tenant Manager API to manually link:../tenant/grid-federation-clone-keys-with-api.html[clone the keys] to the destination grid.
+* If you need to use the same keys for each grid, you can create keys on one grid and then use the Tenant Manager API to manually link:../tenant/grid-federation-clone-keys-with-api.html[sync the keys] to the other grids.
 
-image::../media/grid-federation-s3-access-key.png[image showing that s3 access keys can be optionally cloned from source grid to destination grid]
+image::../media/grid-federation-s3-access-key.png[image showing that s3 access keys can be optionally synced between connected grids]
 
-NOTE: When you clone S3 access keys for a federated user, both the user and the S3 access keys are cloned to the destination tenant.
+NOTE: When you sync S3 access keys for a federated user, both the user and the S3 access keys are synced to the destination tenants.
 
-=== Groups and users added to destination grid aren't cloned
+NOTE: S3 access keys owned by local users are continuously synced across connected grids, including when keys are deleted. S3 access keys owned by federated users are synced once at creation; subsequent changes, including deletes, are not replicated. You can enable or disable access key sync for each tenant connection.
 
-Cloning occurs only from the tenant's source grid to the tenant's destination grid. If you create or import groups and users on the tenant's destination grid, StorageGRID will not clone these items back the tenant's source grid. 
+=== Groups and users added to destination grid are synced
 
-image::../media/grid-federation-account-not-cloned.png[image showing that details on destination grid aren't cloned to source grid]
+Changes made on any connected grid—including creating or importing groups and users—are automatically synced to all other connected grids.
 
-=== Edited or deleted groups, users, and access keys aren't cloned
+image::../media/grid-federation-account-not-cloned.png[image showing that changes on any grid are synced to all connected grids]
 
-Cloning occurs only when you create new groups and users.
+=== Edited or deleted local groups, users, and access keys are synced
 
-If you edit or delete groups, users, or access keys on either grid, your changes will not be cloned to the other grid. 
+Changes to local groups, local users, and S3 access keys owned by local users are continuously synced across all connected grids. Synced operations include edits, deletes, and password resets.
 
-image::../media/grid-federation-account-clone-edit-delete.png[image showing that edited or deleted details aren't cloned]
+Changes to federated groups and S3 access keys owned by federated users are not synced after initial creation.
+
+image::../media/grid-federation-account-clone-edit-delete.png[image showing sync behavior for edits and deletes]
 
 
