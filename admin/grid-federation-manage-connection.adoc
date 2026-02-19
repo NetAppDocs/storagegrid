@@ -21,7 +21,7 @@ Managing grid federation connections between StorageGRID systems includes editin
 
 You can edit a grid federation connection by signing in to the primary Admin Node on either grid in the connection. After you make changes to the first grid, you must download a new verification file and upload it to the other grid.
 
-NOTE: While the connection is being edited, account sync or cross-grid replication requests will continue to use the existing connection settings. Any edits you make to the first grid are saved locally but aren't used until they have been uploaded to the second grid, saved, and tested. 
+NOTE: While the connection is being edited, account sync or cross-grid replication requests will continue to use the existing connection settings. Any edits you make to a grid are saved locally but aren't used until they have been uploaded to the other grids, saved, and tested. 
 
 === Start editing the connection
 
