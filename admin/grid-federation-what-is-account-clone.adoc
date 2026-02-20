@@ -76,13 +76,10 @@ If this permission is assigned, both the source and destination tenant accounts 
 When a new tenant with the *Use grid federation connection* permission is saved, StorageGRID automatically creates a replica of that tenant on the other grid, as follows:
 
 * Both tenant accounts have the same account ID, name, storage quota, and assigned permissions.
-* If you selected a federated group to have Root access permission for the tenant, that group is synced to the destination tenant.
-//one-time sync at creation for federated groups and users
-
+* If you selected a federated group to have Root access permission for the tenant, that group is cloned to the destination tenant. However, continuous syncing doesn't occur for federated groups and users. Only a one-time clone occurs.
 * If you selected a local user to have Root access permission for the tenant, that user and password are synced to the destination tenant.
 
-For details, see
-link:grid-federation-manage-tenants.html[Manage permitted tenants for grid federation].
+For details, refer to link:grid-federation-manage-tenants.html[Manage permitted tenants for grid federation].
 
 == Permitted tenant account workflow
 
