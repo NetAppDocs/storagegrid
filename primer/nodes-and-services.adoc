@@ -1,10 +1,10 @@
 ---
 permalink: primer/nodes-and-services.html
 sidebar: sidebar
-keywords: services, grid nodes, primary admin, storage, gateway
+keywords: StorageGRID, services, grid nodes, primary admin, storage, gateway
 summary: 'The basic building block of a StorageGRID system is the grid node. Nodes contain services, which are software modules that provide a set of capabilities to a grid node.'
 ---
-= Grid nodes and services
+= StorageGRID grid nodes and services
 :icons: font
 :imagesdir: ../media/
 

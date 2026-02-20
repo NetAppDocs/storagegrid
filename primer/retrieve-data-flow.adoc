@@ -1,10 +1,10 @@
 ---
 permalink: primer/retrieve-data-flow.html
 sidebar: sidebar
-keywords: object data, retrieve
+keywords: StorageGRID, object data, retrieve
 summary: 'A retrieve operation consists of a defined data flow between the StorageGRID system and the client. The system uses attributes to track the retrieval of the object from a Storage Node or, if necessary, a Cloud Storage Pool.'
 ---
-= Retrieve data flow
+= How StorageGRID handles object retrieval
 :icons: font
 :imagesdir: ../media/
 

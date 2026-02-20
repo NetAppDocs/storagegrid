@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: client network topology
 summary: 'Having a Client Network is optional. Using a Client Network allows client network traffic \(for example, S3\) to be separated from grid internal traffic, which allows grid networking to be more secure. Administrative traffic can be handled by either the Client or Grid Network when the Admin Network is not configured.'
 ---
-= Client Network topology
+= Client Network topology for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

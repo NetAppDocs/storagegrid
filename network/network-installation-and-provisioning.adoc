@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network install, network provisioning
 summary: 'You must understand how the Grid Network and the optional Admin and Client Networks are used during node deployment and grid configuration.'
 ---
-= Network installation and provisioning
+= Network installation and provisioning for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
