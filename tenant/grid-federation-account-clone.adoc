@@ -70,9 +70,7 @@ NOTE: Any users you select when you create a local group on a grid aren't includ
 
 === Local users are continuously synced
 
-When you create a new local user on any connected grid, StorageGRID automatically syncs that user to all other connected grids. Subsequent changes—including edits, deletes, and password resets—are also continuously synced. Both the original user and its synced copies have the same full name, username, and *Deny access* setting. Both users also belong to the same groups. For instructions, refer to link:manage-users.html[Manage users].
-
-For security reasons, local user passwords aren't synced to other grids. If a local user needs to access Tenant Manager on another grid, the root user for the tenant account must add a password for that user on that grid. For instructions, refer to link:manage-users.html[Manage users].
+When you create a new local user on any connected grid, StorageGRID automatically syncs that user to all other connected grids. Subsequent changes—including edits, deletes, and password resets—are also continuously synced. The original user and its synced copies have the same full name, username, and *Deny access* setting. The same users on each grid also belong to the same groups. For instructions, refer to link:manage-users.html[Manage users].
 
 //image::../media/grid-federation-local-user-clone.png[image showing that local users are synced between connected grids]
 

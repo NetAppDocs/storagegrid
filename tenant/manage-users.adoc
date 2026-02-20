@@ -2,7 +2,7 @@
 permalink: tenant/manage-users.html
 sidebar: sidebar
 keywords: how to create local tenant users, manage users
-summary: 'You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root." Although you can add and remove local users, you cannot remove the root user.'
+summary: "You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root." Although you can add and remove local users, you can't remove the root user."
 ---
 = Manage users
 :icons: font
@@ -33,7 +33,7 @@ S3 users who don't belong to any groups don't have management permissions or S3 
 
 . Select *Access Management* > *Users*.
 +
-If your tenant account has the *Use grid federation connection* permission, a blue banner indicates that this is the tenant's source grid. Any local users you create on this grid will be cloned to the other grid in the connection.
+If your tenant account has the *Use grid federation connection* permission, a blue banner indicates that this is the tenant's source grid. Any local users you create on this grid will be cloned to the other grids in the connection.
 +
 image::../media/grid-federation-tenant-user-banner.png[image of blue banner on User page if this is the tenant source grid]
 
@@ -94,7 +94,7 @@ If your tenant account has the *Use grid federation connection* permission and y
 +
 If the tenant account has the *Use grid federation connection* permission and you are viewing the user on the tenant's source grid:
 
-** A  banner message indicates that if you edit or remove a user, your changes will not be synced to the other grid.
+** A  banner message indicates that if you edit or remove a user, your changes will be synced to the other grids in the connection.
 ** As needed, a banner message indicates if users were not cloned to the tenant on the destination grid. You can <<clone-users,retry a user clone that failed>>.
 
 . If you want to change the user's full name:
@@ -122,7 +122,7 @@ If the tenant account has the *Use grid federation connection* permission and yo
 
 *** Cloning status, either *Success* or *Failure*
 
-*** A blue banner indicating that if you edit this user, your changes will not be synced to the other grid.
+*** A blue banner indicating that if you edit this user, your changes will be synced to the other grids in the connection.
 
 . Edit user settings as needed. See <<create-user,Create local user>> for details about what to enter.
 
@@ -195,7 +195,7 @@ For additional information, see link:grid-federation-account-clone.html[Clone te
 
 You can permanently delete one or more local users who no longer need to access the StorageGRID tenant account.
 
-NOTE: If your tenant account has the *Use grid federation connection* permission and you delete a local user, StorageGRID will not delete the corresponding user on the other grid. If you need to keep this information in sync, you must delete the same user from both grids.
+NOTE: If your tenant account has the *Use grid federation connection* permission and you delete a local user, StorageGRID will not delete the corresponding user on the other grids in the connection. If you need to keep this information in sync, you must delete the same user from both grids.
 
 NOTE: You must use the federated identity source to delete federated users.
 
