@@ -57,7 +57,7 @@ If you receive an error message about log size, try collecting logs for a shorte
 * If a "Log collection partially failed" message appears, you can retry the log collection, finish the session, download the partial log file, or send the partial log file to AutoSupport.
 --
 +
-NOTE: If you retry log collection using SSH, you are prompted to enter the provisioning passphrase.
+NOTE: You can choose to leave the Provisioning passphrase field empty for a standard retry, or you can enter the passphrase to retry using SSH. 
 
 . When log file collection is complete:
 ** Select *Download* to download the `.tar.gz` file.
