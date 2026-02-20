@@ -45,7 +45,7 @@ The following example shows the object metadata lookup results for an S3 test ob
 
 NOTE: The following screenshot is an example. Your results will vary depending on your StorageGRID version.
 
-image::../media/object_lookup_results.png[Object Lookup Results]
+image:object_lookup_results.png[Object Lookup Results]
 
 .Related information
 
