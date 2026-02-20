@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: account sync, tenant replication, disaster recovery, grid federation
 summary: "Account sync is the continuous replication of a tenant account, tenant groups, tenant users, and S3 access keys among StorageGRID systems in a grid federation connection. Changes made on any grid are automatically synced to all connected grids."
 ---
-= Learn about StorageGRIDaccount sync for grid federation
+= Learn about StorageGRID account sync for grid federation
 :icons: font
 :imagesdir: ../media/
 

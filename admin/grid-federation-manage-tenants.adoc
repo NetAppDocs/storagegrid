@@ -38,7 +38,9 @@ TIP: Before a local root user can sign in to the replicated tenant on the destin
 
 ** From any connected grid, create groups and local users, which are automatically synced to all other connected grids. See link:../tenant/grid-federation-account-clone.html[Sync tenant groups and users].
 
-** Create new S3 access keys, which can be optionally synced to other connected grids. See link:../tenant/grid-federation-clone-keys-with-api.html[Sync S3 access keys using the API].
+** Create new S3 access keys for local users, which are automatically synced to other connected grids. Refer to link:../tenant/grid-federation-clone-keys-with-api.html[Sync S3 access keys using the API].
++
+NOTE: S3 access keys for federated users are cloned one time when they're created. If these S3 access keys are edited or deleted, these changes aren't synced to other grids. You must manually edit or delete the S3 access keys on the other grids.
 
 ** Create identical buckets on both grids in the connection and enable cross-grid replication in one direction or in both directions. See link:../tenant/grid-federation-manage-cross-grid-replication.html[Manage cross-grid replication].
 
@@ -61,11 +63,11 @@ image::../media/grid-federation-tenant-detail.png[Grid federation tab from Tenan
 
 If you need to edit a tenant that has the *Use grid federation connection* permission, follow the general instructions for link:editing-tenant-account.html[editing a tenant account] and note the following:
 
-* If a tenant has the *Use grid federation connection* permission, you can edit tenant details from either grid in the connection. Changes to tenant groups, local users, and S3 access keys owned by local users are automatically synced to all connected grids. However, changes to tenant-level settings (such as name, description, or quota) are not automatically synced; you must make those edits on each grid.
+* If a tenant has the *Use grid federation connection* permission, you can edit tenant details from any grid in the connection. Changes to tenant groups, local users, and S3 access keys owned by local users are automatically synced to all connected grids. However, changes to tenant-level settings (such as name, description, or quota) aren't automatically synced; you must make those edits on each grid.
 
-* You can't clear the *Use grid federation connection* permission when you are editing a tenant.
+* You can't clear the *Use grid federation connection* permission when you're editing a tenant.
 
-* You can't select a different grid federation connection when you are editing a tenant.
+* You can't select a different grid federation connection when you're editing a tenant.
 
 == Delete a permitted tenant
 
@@ -97,7 +99,7 @@ Before removing a tenant's permission to use a grid federation connection, note 
 
 * If you want to re-enable this permission with the same grid federation connection, delete this tenant on the destination grid first; otherwise, re-enabling this permission will result in an error.
 
-NOTE: Re-enabling the *Use grid federation connection* permission makes the local grid the source grid and triggers syncing to the remote grid specified by the selected grid federation connection. If the tenant account already exists on the remote grid, syncing will result in a conflict error.
+NOTE: *DOES THIS NOTE NEED TO CHANGE?* Re-enabling the *Use grid federation connection* permission makes the local grid the source grid and triggers syncing to the remote grid specified by the selected grid federation connection. If the tenant account already exists on the remote grid, syncing will result in a conflict error.
 
 .Before you begin
 

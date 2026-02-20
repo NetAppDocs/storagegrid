@@ -67,12 +67,12 @@ When you edit a grid federation connection, StorageGRID attempts to save a "cand
 You can't sign in to a synced tenant account. The error message on the Tenant Manager sign-in page is "Your credentials for this account were invalid. Please try again."
 
 .Details
-For security reasons, when a tenant account is synced from the tenant's source grid to the tenant's destination grid, the password you set for the tenant's local root user is not synced. Similarly, when a tenant creates local users on its source grid, the local user passwords aren't synced to the destination grid.
+For security reasons, when a tenant account is synced from the tenant's source grid to the tenant's destination grid, the password you set for the tenant's local root user isn't synced. Similarly, when a tenant creates local users on its source grid, the local user passwords aren't synced to the destination grid.
 
 .Recommended actions
 Before the root user can sign in to the tenant's destination grid, a grid administrator must first link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] on the destination grid.
 
-Before a synced local user can sign in to the tenant's destination grid, the root user for the synced tenant must add a password for the user on the destination grid. For instructions, refer to link:../tenant/manage-users.html[Manage users] in the instructions for using the Tenant Manager.
+Before a synced local user can sign in to the tenant's destination grid, the root user for the synced tenant must add a password for the user on the destination grid. For instructions, refer to link:../tenant/manage-users.html[Manage users] in the Tenant Manager.
 
 === Tenant created without a sync
 
@@ -94,11 +94,7 @@ This issue can occur if updates to the Connection status are delayed, which migh
 
 . Select the tenant name to display the details page.
 
-. Select *Retry account sync*.
-+
-image::../media/grid-federation-retry-account-clone.png[screenshot showing an error message and the Retry account sync button]
-If the error has been resolved, the tenant account will now be synced to the other grid.
-
+. Select *Retry sync*. If the error has been resolved, the tenant account will now be synced to the other grid.
 
 == Cross-grid replication alerts and errors
 
