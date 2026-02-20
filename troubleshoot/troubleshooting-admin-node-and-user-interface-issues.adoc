@@ -43,8 +43,6 @@ If the error is not resolved automatically, go to the next step.
 . If single sign-on (SSO) is enabled for your StorageGRID system, refer to the steps for link:../admin/configure-sso-saml.html[configuring single sign-on].
 +
 You might need to temporarily disable and re-enable SSO for a single Admin Node to resolve any issues.
-+
-NOTE: If SSO is enabled, you can't sign on using a restricted port. You must use port 443.
 
 . Determine if the account you are using belongs to a federated user.
 +
@@ -150,3 +148,5 @@ The user interface for the Grid Manager or the Tenant Manager might not respond 
 . Clear your web browser cache.
 +
 Clearing the cache removes outdated resources used by the previous version of StorageGRID software, and permits the user interface to operate correctly again. For instructions, see the documentation for your web browser.
+
+// 2026 FEB 20, SGWS-39432

@@ -38,9 +38,6 @@ You can use the fully qualified domain name, the IP address of an Admin Node,  o
 To access the Grid Manager on a port other than the default port for HTTPS (443), include the port number in the URL:
 +
 `https://_FQDN_or_Admin_Node_IP:port_/`
-+
-NOTE: SSO is not available on the restricted Grid Manager port. You must use port 443.
-
 
 .Steps
 . Launch a supported web browser.
@@ -108,3 +105,5 @@ If StorageGRID is using SSO and you have signed in to one Admin Node, you can ac
 
 --
 ====
+
+// 2026 FEB 20, SGWS-39432
