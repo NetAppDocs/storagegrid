@@ -34,6 +34,8 @@ indexpage:
       url: ../admin/grid-federation-create-connection.html
     - title: Manage permitted tenants
       url: ../admin/grid-federation-manage-tenants.html
+    - title: Configure global namespace
+      url: ../admin/configure-global-namespace.html
   - title: Manage client connections and tenants
     links:
     - title: Configure S3 endpoint domain names  
