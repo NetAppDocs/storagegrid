@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, CBSB, Object Send Begin
 summary: 'During normal system operations, content blocks are continuously transferred between different nodes as data is accessed, replicated and retained. When transfer of a content block from one node to another is initiated, this message is issued by the source entity.'
 ---
-= CBSB: Object Send Begin
+= Learn about the CBSB object send begin audit message in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
