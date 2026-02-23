@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: bror, bucket read only request, empty bucket, audit message,
 summary: 'The LDR service generates this audit message when a bucket enters or exits read-only mode. For example, a bucket enters read-only mode while it is being emptied.'
 ---
-= BROR: Bucket Read Only Request
+= Learn about the BROR bucket read only request audit message in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
