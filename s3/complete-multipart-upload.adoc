@@ -21,11 +21,18 @@ Conflicting client requests, such as two clients writing to the same key, are re
 
 The following request headers are supported: 
 
-* `x-amz-checksum-crc32`
-* `x-amz-checksum-crc32c`
-* `x-amz-checksum-crc64nvme`
-* `x-amz-checksum-sha256`
-* `x-amz-checksum-type`
+* Checksum request headers:
++
+--
+** `x-amz-checksum-crc32`
+** `x-amz-checksum-crc32c`
+** `x-amz-checksum-crc64nvme`
+** `x-amz-checksum-sha256`
+** `x-amz-checksum-type`
+--
++
+If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+
 * `x-amz-storage-class`
 +
 The `x-amz-storage-class` header affects how many object copies StorageGRID creates if the matching ILM rule specifies the link:../ilm/data-protection-options-for-ingest.html[Dual commit or Balanced ingest option].
