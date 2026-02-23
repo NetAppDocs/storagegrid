@@ -49,10 +49,10 @@ You can create groups and users from any connected grid. When you add a new loca
 [role="quick-margin-para"]
 You can link:creating-your-own-s3-access-keys.html[create your own access keys] or to link:creating-another-users-s3-access-keys.html[create another user's access keys] on any grid to access buckets on all connected grids. 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Optionally, sync S3 access keys
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Sync S3 access keys
 
 [role="quick-margin-para"]
-If you need to access buckets with the same access keys on all grids, create the access keys on one of the grids. The access keys are automatically synced by default.
+If you need to access buckets with the same access keys on all grids, create the access keys on one of the grids. For local users, the access keys are automatically synced by default. For federated users, you must create S3 access keys on the source grid for the keys to be synced to all destination grids.
 
 == How are groups, users, and S3 access keys synced?
 
@@ -78,7 +78,7 @@ When you create a new local user on any connected grid, StorageGRID automaticall
 
 Assuming the requirements for using account sync with link:../admin/grid-federation-what-is-account-clone.html#account-sync-sso[single sign-on] and link:../admin/grid-federation-what-is-account-clone.html#account-sync-identity-federation[identity federation] have been met, federated groups that you create (import) for the tenant on a grid are automatically synced to the tenant on all other connected grids.
 
-Both groups have the same access mode, group permissions and S3 group policy.
+Both groups have the same access mode, group permissions, and S3 group policy.
 
 After federated groups are created for the source tenant and synced to other grids, federated users can sign in to the tenant on any connected grid. Subsequent changes to federated groups are not automatically synced across grids.
 
@@ -92,7 +92,7 @@ To manage access keys on connected grids, you can do either of the following:
 
 * If you don't need to use the same keys for each grid, you can disable automatic access key syncing and link:creating-your-own-s3-access-keys.html[create your own access keys] or link:creating-another-users-s3-access-keys.html[create another user's access keys] on each grid.
 
-* If you need to use the same keys for each grid, you can create keys on one grid and then use the Tenant Manager API to manually link:../tenant/grid-federation-clone-keys-with-api.html[sync the keys] to the other grids.
+* *WHAT DO WE NEED TO SAY FOR 12.1?* If you need to use the same keys for each grid, you can create keys on one grid and then use the Tenant Manager API to manually link:../tenant/grid-federation-clone-keys-with-api.html[sync the keys] to the other grids.
 
 //image::../media/grid-federation-s3-access-key.png[image showing that s3 access keys can be optionally synced between connected grids]
 
