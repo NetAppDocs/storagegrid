@@ -64,7 +64,7 @@ Complete the fields on the Provide identity provider details page.
 
 . Under *Protocol*, select *SAML*.
 . Select the *SSO type* from the drop-down list.
-. If you are using SAML and you selected Active Directory as the SSO type, enter the *Federation service name* for the identity provider, exactly as it appears in Active Directory Federation Service (AD FS).
+. If you selected Active Directory as the SSO type, enter the *Federation service name* for the identity provider, exactly as it appears in Active Directory Federation Service (AD FS).
 +
 NOTE: To locate the federation service name, go to Windows Server Manager. Select *Tools* > *AD FS Management*. From the Action menu, select *Edit Federation Service Properties*. The Federation Service Name is shown in the second field.
 . Specify which TLS certificate will be used to secure the connection when the identity provider sends SSO configuration information in response to StorageGRID requests.
@@ -73,7 +73,7 @@ NOTE: To locate the federation service name, go to Windows Server Manager. Selec
 +
 If you select this setting, copy the text of the custom certificate and and paste it in the *CA Certificate* text box.
 
-** *Do not use TLS*: Do not use a TLS certificate to secure the connection.
+** *Do not use TLS*: Don't use a TLS certificate to secure the connection.
 +
 CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the mgmt-api service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
 . Select *Continue*. The Provide relying party identifier page appears.

@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: use sandbox mode for sso, how to test single sign-on
 summary: 'You can follow the Configure SSO wizard and enter sandbox mode to configure and test single sign-on \(SSO\) before enabling it for all StorageGRID users. After SSO is enabled, you can return to sandbox mode when needed to change or retest the configuration.'
 ---
-= Configure SSO using SAML
+= Configure SSO using OIDC
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow the Configure SSO wizard for SAML and enter sandbox mode to configure and test single sign-on (SSO) before enabling it for all StorageGRID users. After you enable SSO, you can return to sandbox mode when needed to change or retest the configuration. 
+Follow the Configure SSO wizard for OIDC and enter sandbox mode to configure and test single sign-on (SSO) before enabling it for all StorageGRID users. After you enable SSO, you can return to sandbox mode when needed to change or retest the configuration. 
 
 .Before you begin
 
@@ -42,7 +42,7 @@ When SSO is enabled and a user attempts to sign in to an Admin Node, StorageGRID
 To allow StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests, you complete these tasks:
 
 . Configure settings in StorageGRID.
-. Use the SSO identity provider's software to create a relying party trust (AD FS), Enterprise Application (Entra ID), or Service Provider (PingFederate) for each Admin Node.
+. Use the SSO identity provider's software to create a relying party trust for each Admin Node.
 . Return to StorageGRID to enable SSO.
 
 Sandbox mode makes it easy to perform this back-and-forth configuration and to test all of your settings before you enable SSO. When you're using sandbox mode, users can't sign in using SSO.
@@ -71,15 +71,15 @@ Complete the fields on the Provide identity provider details page.
 +
 If you select this setting, copy the text of the custom certificate and and paste it in the *CA Certificate* text box.
 
-** *Do not use TLS*: Do not use a TLS certificate to secure the connection.
+** *Do not use TLS*: Don't use a TLS certificate to secure the connection.
 +
 CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the mgmt-api service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
 . Select *Continue*. The Provide relying party identifier page appears.
 
 
-== [[enter-sandbox-mode]]Step 3: Enter client information
+== [[enter-sandbox-mode]]Step 3: Enter the client information
 
-Complete the fields in Step 2 of the wizard based.
+Complete the fields in the Enter client information step of the wizard.
 
 .Steps
 . Specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each relying party trust in AD FS.
