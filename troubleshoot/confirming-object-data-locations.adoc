@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to confirm object location, object metadata lookup
 summary: 'Depending on the problem, you might want to confirm where object data is being stored. For example, you might want to verify that the ILM policy is performing as expected and object data is being stored where intended.'
 ---
-= Confirm StorageGRID object data locations
+= Confirm object data locations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

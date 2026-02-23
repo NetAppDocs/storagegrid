@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot the external syslog server
 summary: 'The following table describes the error messages that might be related using to an external syslog server and lists corrective actions.'
 ---
-= Troubleshoot an external syslog server for StorageGRID
+= Troubleshoot external syslog server error messages for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

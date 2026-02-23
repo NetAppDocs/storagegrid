@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: troubleshoot low soft read-only watermark override alert, optimized watermarks
 summary: 'If you use custom values for storage volume watermarks, you might need to resolve the Low read-only watermark override alert. If possible, you should update your system to start using the optimized values.'
 ---
-= Troubleshoot StorageGRID watermark override alerts
+= Resolve the watermark override alerts in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
