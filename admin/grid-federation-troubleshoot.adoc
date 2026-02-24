@@ -67,12 +67,10 @@ When you edit a grid federation connection, StorageGRID attempts to save a "cand
 You can't sign in to a synced tenant account. The error message on the Tenant Manager sign-in page is "Your credentials for this account were invalid. Please try again."
 
 .Details
-For security reasons, when a tenant account is synced from the tenant's source grid to the tenant's destination grid, the password you set for the tenant's local root user isn't synced. Similarly, when a tenant creates local users on its source grid, the local user passwords aren't synced to the destination grid.
+The password you set for the tenant's local root user and other local users are automatically synced. However, you might need to change the password for the tenant's local root user on the destination grid before you can sign in to the tenant account on that grid.
 
 .Recommended actions
 Before the root user can sign in to the tenant's destination grid, a grid administrator must first link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] on the destination grid.
-
-Before a synced local user can sign in to the tenant's destination grid, the root user for the synced tenant must add a password for the user on the destination grid. For instructions, refer to link:../tenant/manage-users.html[Manage users] in the Tenant Manager.
 
 === Tenant created without a sync
 

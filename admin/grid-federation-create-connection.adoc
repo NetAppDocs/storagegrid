@@ -34,14 +34,17 @@ Perform these steps on either of the two StorageGRID systems.
 
 . Select *Add connection*.
 
-. Enter details for the connection.
-+
+. Enter a connection name, which is a unique name to help you recognize this connection. For example, `Grid 1-Grid 2`.
+
+. If you want to link:../admin/configure-global-namespace.html[configure a global namespace], select *Enable global namespace*.
+
+. Select *Continue*.
+
+. Enter the grid details, as follows:
+
 [cols="1a,2a" options="header"]
 |===
 | Field| Description
-
-|Connection name
-|A unique name to help you recognize this connection, for example, "Grid 1-Grid 2."
 
 |FQDN or IP for this grid
 |One of the following:
@@ -69,7 +72,6 @@ StorageGRID automatically generates client and server certificates for each grid
 * The FQDN of the grid you want to connect to
 * A VIP address of an HA group on the other grid
 * An IP address of an Admin Node or Gateway Node on the other grid. The IP can be on any network that the source grid can reach.
-
 |===
 
 . Select *Save and continue*.
