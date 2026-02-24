@@ -47,20 +47,15 @@ To allow StorageGRID (the service provider) and the SSO identity provider to com
 
 Sandbox mode makes it easy to perform this back-and-forth configuration and to test all of your settings before you enable SSO. When you're using sandbox mode, users can't sign in using SSO.
 
-== Step 1: Access the wizard
-Access the wizard to configure SSO settings.
+== Step 1: Provide identity provider details
+Access the wizard and complete the fields on the Provide identity provider details page.
 
 .Steps
-
-. Select *Configuration* > *Access control* > *Single sign-on*. The Single sign-on page appears.
+. Access the wizard:
+.. Select *Configuration* > *Access control* > *Single sign-on*. The Single sign-on page appears.
 +
 NOTE: If the Configure SSO settings button is disabled, confirm you have configured the identity provider as the federated identity source. Refer to link:requirements-for-sso.html[Requirements and considerations for single sign-on].
-. Select *Configure SSO settings*. The Provide identity provider details page appears.
-
-== Step 2: Provide identity provider details
-Complete the fields on the Provide identity provider details page.
-
-.Steps
+.. Select *Configure SSO settings*. The Provide identity provider details page appears.
 
 . Under *Protocol*, select *SAML*.
 . Select the *SSO type* from the drop-down list.
@@ -79,7 +74,7 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 . Select *Continue*. The Provide relying party identifier page appears.
 
 
-== [[enter-sandbox-mode]]Step 3: Provide relying party trusts, enterprise applications, or SP connections
+== [[enter-sandbox-mode]]Step 2: Provide relying party trusts, enterprise applications, or SP connections
 
 Complete the fields in Step 2 of the wizard based on the SSO type you selected.
 
@@ -148,7 +143,7 @@ https://<Federation Service Name>:<port>/pf/federation_metadata.ping?PartnerSpId
 --
 ====
 
-== Step 4: Configure relying party trusts, enterprise applications, or SP connections
+== Step 3: Configure relying party trusts, enterprise applications, or SP connections
 
 After you save the configuration and enter sandbox mode, you can complete and test the configuration for the SSO type you selected.
 
@@ -206,7 +201,7 @@ You must create one SP connection for each Admin Node shown in the table.
 --
 ====
 
-== [[test-sso]]Step 5: Test configuration
+== [[test-sso]]Step 4: Test configuration
 
 Before you enforce the use of single sign-on for your entire StorageGRID system, confirm that single sign-on and single logout are correctly configured for each Admin Node.
 
@@ -252,7 +247,7 @@ If you see a Page Expired message, select the *Back* button in your browser and 
 --
 ====
 
-== Step 4: Enable single sign-on
+== Step 5: Enable single sign-on
 
 When you have confirmed that you can use SSO to sign in to each Admin Node, you can enable SSO for your entire StorageGRID system.
 

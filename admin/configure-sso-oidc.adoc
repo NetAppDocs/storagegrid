@@ -9,7 +9,7 @@ summary: 'You can follow the Configure SSO wizard and enter sandbox mode to conf
 :imagesdir: ../media/
 
 [.lead]
-Follow the Configure SSO wizard for OIDC and enter sandbox mode to configure and test single sign-on (SSO) before enabling it for all StorageGRID users. After you enable SSO, you can return to sandbox mode when needed to change or retest the configuration. 
+Follow the Configure SSO wizard for Open ID Connect (OIDC) and enter sandbox mode to configure and test single sign-on (SSO) before enabling it for all StorageGRID users. After you enable SSO, you can return to sandbox mode when needed to change or retest the configuration. 
 
 .Before you begin
 

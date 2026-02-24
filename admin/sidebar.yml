@@ -70,7 +70,7 @@ entries:
         entries:
         - title: Use SAML
           url: "/admin/configure-sso-saml.html"
-        - title: Use Open ID Connect
+        - title: Use OIDC
           url: "/admin/configure-sso-oidc.html"
       - title: Create relying party trusts in AD FS
         url: "/admin/creating-relying-party-trusts-in-ad-fs.html"
