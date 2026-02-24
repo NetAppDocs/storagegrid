@@ -94,7 +94,7 @@ StorageGRID can remain in sandbox mode as long as required. However, only federa
 +
 The URL is derived from the value you entered in the *Federation service name* field.
 
-. [[select-link]]elect the link, or copy and paste the URL into a new tab, to access your identity provider's sign-on page.
+. [[select-link]]Select the link, or copy and paste the URL into a new tab, to access your identity provider's sign-on page.
 
 . [[enter-credentials]]Enter your federated username and password.
 ** If the SSO sign-in and logout operations are successful, a green banner appears.
