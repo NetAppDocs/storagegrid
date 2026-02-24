@@ -45,7 +45,7 @@ If the source object has a checksum but the request doesn't include `x-amz-check
 +
 If the source object doesn't have a checksum and doesn't include `x-amz-checksum-algorithm` or it uses an unsupported checksum value, the copied object doesn't have a checksum.
 +
-If a CopyObject request doesn't specify a checksum and the source object doesn't have a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+NOTE: If a CopyObject request doesn't specify a checksum and the source object doesn't have a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
 
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`

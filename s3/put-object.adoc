@@ -68,13 +68,14 @@ Chunked transfer encoding is supported if `aws-chunked` payload signing is also 
 
 * Checksum request headers:
 +
+--
 ** `x-amz-checksum-crc32`
 ** `x-amz-checksum-crc32c`
 ** `x-amz-checksum-crc64nvme`
 ** `x-amz-checksum-sha256`
-
+--
 +
-If a PutObject request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+NOTE: If a PutObject request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
 
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata.
 +

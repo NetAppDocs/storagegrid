@@ -31,7 +31,7 @@ The following request headers are supported:
 ** `x-amz-checksum-type`
 --
 +
-If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
 
 * `x-amz-storage-class`
 +
