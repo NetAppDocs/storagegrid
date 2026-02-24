@@ -77,5 +77,6 @@ A tenant can trigger the failed replication or notification by updating the obje
 
 Refer to link:../admin/troubleshooting-platform-services.html[Troubleshoot platform services].
 
+// 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243

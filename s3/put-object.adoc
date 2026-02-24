@@ -194,6 +194,7 @@ For details, refer to https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-hea
 * link:../ilm/index.html[Manage objects with ILM]
 * link:https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html[Amazon Simple Storage Service API Reference: PutObject^]
 
+// 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 AUG 22, SGRIDDOC-93
 // 2024 MAY 23, SGWS-31243
