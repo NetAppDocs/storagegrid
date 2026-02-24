@@ -46,7 +46,7 @@ The following table describes how StorageGRID implements S3 REST API bucket oper
  ** Should not use periods in virtual hosted style requests. Periods will cause problems with server wildcard certificate verification.
 * By default, buckets are created in the `us-east-1` region; however, you can use the `LocationConstraint` request element in the request body to specify a different region. When using the `LocationConstraint` element, you must specify the exact name of a region that has been defined using the Grid Manager or the Grid Management API. Contact your system administrator if you don't know the region name you should use.
 +
-*Note*: An error will occur if your CreateBucket request uses a region that has not been defined in StorageGRID.
+*Note*: An error will occur if your CreateBucket request uses a region that hasn't been defined in StorageGRID.
 
 * You can include the `x-amz-bucket-object-lock-enabled` request header to create a bucket with S3 Object Lock enabled. See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock].
 +

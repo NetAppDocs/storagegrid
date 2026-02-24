@@ -91,6 +91,8 @@ entries:
       url: "/admin/grid-federation-compare-cgr-to-cloudmirror.html"               
     - title: Create grid federation connections
       url: "/admin/grid-federation-create-connection.html"      
+    - title: Configure global namespace
+      url: "/admin/configure-global-namespace.html"
     - title: Manage grid federation connections
       url: "/admin/grid-federation-manage-connection.html" 
     - title: Manage permitted tenants
@@ -99,8 +101,6 @@ entries:
       url: "/admin/grid-federation-troubleshoot.html" 
     - title: Identify and retry failed replication operations
       url: "/admin/grid-federation-retry-failed-replication.html"
-    - title: Configure global namespace
-      url: "/admin/configure-global-namespace.html"
   - title: Manage security
     entries:  
     - title: Security components
