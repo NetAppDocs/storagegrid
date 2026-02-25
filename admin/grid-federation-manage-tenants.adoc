@@ -73,6 +73,8 @@ If you need to edit a tenant that has the *Use grid federation connection* permi
 
 * You can't clear the *Use grid federation connection* permission when you're editing a tenant.
 
+* If you're editing a tenant on the _source grid_, you can remove the permission to use a specific grid federation connection.
+
 == Delete a permitted tenant
 
 If you need to remove a tenant that has the *Use grid federation connection* permission, follow the general instructions for link:deleting-tenant-account.html[deleting a tenant account] and note the following:
