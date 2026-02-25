@@ -22,17 +22,17 @@ Use the Tenant Manager to create and view details for branch buckets.
 
 Note the following information for branch buckets:
 
-Branch bucket depth limit:: A branch bucket can have a maximum of 20 base buckets.
+Branch bucket depth limit:: A branch bucket can have a maximum of 20 base buckets. A depth of more than 20 branch buckets can increase S3 access latency, especially for ListObjectVersions.
 +
-*	If you create a branch bucket from a base bucket that's a regular bucket (a bucket that was initially created as a base bucket), the new branch bucket has one base bucket.
-*	If the base bucket is itself a branch bucket, the new branch bucket inherits all of that branch bucket's base buckets. Users specify only one base bucket directly; the inherited base buckets are implied.
-*	The total number of base buckets (explicit and implied) can't exceed 20.
+* If you create a branch bucket from a base bucket that's a regular bucket (a bucket that was initially created as a base bucket), the new branch bucket has one base bucket.
+* If the base bucket is itself a branch bucket, the new branch bucket inherits all of that branch bucket's base buckets. Users specify only one base bucket directly; the inherited base buckets are implied.
+* The total number of base buckets (explicit and implied) can't exceed 20.
 +
 For example, assume bucket *A* is a regular bucket with versioning enabled:
 +
-**	Branch bucket *B*, created from *A*, has one base bucket: *A*.
-**	Branch bucket *C*, created from *B*, has two base buckets: *B* (explicit) and *A* (implied).
-**	Branch bucket *D*, created from *C*, has three base buckets: *C* (explicit), *B* and *A* (implied).
+** Branch bucket *B*, created from *A*, has one base bucket: *A*.
+** Branch bucket *C*, created from *B*, has two base buckets: *B* (explicit) and *A* (implied).
+** Branch bucket *D*, created from *C*, has three base buckets: *C* (explicit), *B* (implied) and *A* (implied).
 **	This pattern continues up to a maximum depth of 20 base buckets.
 
 S3 Object Lock permissions:: Permissions to set S3 Object Lock properties of buckets or objects can be granted by link:../tenant/using-s3-object-lock.html[using specific features of S3 Object Lock].
