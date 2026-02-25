@@ -83,8 +83,6 @@ entries:
     - title: What is grid federation
       pdf-filename: Use grid federation
       url: "/admin/grid-federation-overview.html"
-    - title: What is account clone 
-      url: "/admin/grid-federation-what-is-account-clone.html"
     - title: What is account sync 
       url: "/admin/grid-federation-what-is-account-sync.html"
     - title: What is cross-grid replication

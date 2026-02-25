@@ -93,7 +93,7 @@ After a tenant with the *Use grid federation connection* permission is replicate
 
 . Create groups and users on any connected grid.
 +
-When new groups or users are created on a tenant, StorageGRID automatically syncs them to the dstination tenant, but no cloning occurs from the destination back to the source. 
+When new groups or users are created on a tenant, StorageGRID automatically syncs them to the destination tenant. 
 
 . Create S3 access keys.
 
