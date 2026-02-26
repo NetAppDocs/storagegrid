@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, GTSU, Grid Task Submitted
 summary: 'This audit message indicates that a grid task has been submitted to the CMN service.'
 ---
-= GTSU: Grid Task Submitted
+= GTSU grid task submitted audit message in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
