@@ -62,6 +62,8 @@ entries:
         url: "/swnodes/validating-storagegrid-configuration.html"
       - title: Start the StorageGRID host service (Linux)
         url: "/swnodes/starting-storagegrid-host-service.html"
+    - title: Installation REST API
+      url: "/swnodes/overview-of-installation-rest-api.html"    
     - title: Troubleshoot installation issues
       url: "/swnodes/troubleshooting-installation-issues.html"
     - title: Script examples
@@ -92,7 +94,5 @@ entries:
       url: "/swnodes/reviewing-your-configuration-and-completing-installation.html"
     - title: Post-installation guidelines
       url: "/swnodes/post-installation-guidelines.html"
-  - title: Installation REST API
-    url: "/swnodes/overview-of-installation-rest-api.html"
   - title: Where to go next
     url: "/swnodes/where-to-go-next.html"
