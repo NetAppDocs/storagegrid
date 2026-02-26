@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, messages, client read, S3SL, SGET, SHEA, WGET, WHEA, S3
 summary: 'Client read audit messages are logged when an S3 client application makes a request to retrieve an object.'
 ---
-= Learn about client read audit messages in StorageGRID
+= Audit messages for client read operations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

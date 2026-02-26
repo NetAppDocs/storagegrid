@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, SPOS, S3 POST
 summary: 'When an S3 client issues a POST Object request, this message is issued by the server if the transaction is successful.'
 ---
-= SPOS: S3 POST
+= SPOS audit message for S3 POST transactions in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

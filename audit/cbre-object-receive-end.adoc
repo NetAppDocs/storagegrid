@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, CBRE, Object Receive End
 summary: 'When transfer of a content block from one node to another is completed, this message is issued by the destination entity.'
 ---
-= Learn about the CBRE object receive end audit message in StorageGRID
+= CBRE audit message for object receive end in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

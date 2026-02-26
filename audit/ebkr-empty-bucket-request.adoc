@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, EBKR, Empty Bucket Request 
 summary: 'This message indicates a user sent a request to turn empty bucket on or off (that is, to delete bucket objects or to stop deleting objects).'
 ---
-= Learn about the EBKR audit message in StorageGRID
+= EBKR audit message for empty bucket requests in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
