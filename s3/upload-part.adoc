@@ -15,12 +15,19 @@ The UploadPart operation uploads a part in a multipart upload for an object.
 
 The following request headers are supported:
 
-NOTE: If you specified a CRC-32, CRC-32C, CRC-64/NVME, or SHA-256 checksum during the CreateMultipartUpload request, you must also include the checksum request header in each UploadPart request.
+* Checksum request headers:
++
+--
+** `x-amz-checksum-crc32`
+** `x-amz-checksum-crc32c`
+** `x-amz-checksum-crc64nvme`
+** `x-amz-checksum-sha256`
+--
++
+If you specified a CRC-32, CRC-32C, CRC-64/NVME, or SHA-256 checksum during the CreateMultipartUpload request, you must also include the checksum request header in each UploadPart request.
++
+NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
 
-* `x-amz-checksum-crc32`
-* `x-amz-checksum-crc32c`
-* `x-amz-checksum-crc64nvme`
-* `x-amz-checksum-sha256`
 * `Content-Length`
 * `Content-MD5`
 
@@ -48,5 +55,6 @@ The following request headers aren't supported:
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
 
+// 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243
