@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, SDEL, S3 DELETE
 summary: 'When an S3 client issues a DELETE transaction, a request is made to remove the specified object or bucket. This message is issued by the server if the transaction is successful.'
 ---
-= SDEL: S3 DELETE
+= SDEL audit message for S3 DELETE transactions in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
