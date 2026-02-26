@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade, troubleshoot, troubleshooting, errors, upgrade precheck
 summary: 'If something goes wrong when you perform an upgrade, you might able to resolve the issue yourself. If you cannot resolve an issue, gather as much information as you can and then contact technical support.'
 ---
-= Troubleshoot upgrade issues
+= Troubleshoot StorageGRID upgrade issues
 :icons: font
 :imagesdir: ../media/
 

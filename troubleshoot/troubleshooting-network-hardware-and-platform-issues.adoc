@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot network, how to troubleshoot hardware, how to troubleshoot platform
 summary: 'There are several tasks you can perform to help determine the source of issues related to StorageGRID network, hardware, and platform issues.'
 ---
-= Troubleshoot network, hardware, and platform issues
+= Troubleshoot network, hardware, and platform issues in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
