@@ -129,7 +129,7 @@ Follow these steps to view the actual reserved space for metadata on a particula
 . Select the *Storage* tab.
 . Position your cursor over the Storage Used - Object Metadata chart and locate the *Actual reserved* value.
 +
-image::../media/storage_used_object_metadata_actual_reserved.png[Storage Used - Object Metadata - Actual Reserved]
+image::../media/storage_used_object_metadata_allowed.png[Storage Used - Object Metadata - Actual Reserved]
 
 In the screenshot, the *Actual reserved* value is 8 TB. This screenshot is for a large Storage Node in a new StorageGRID 12.1 installation. Because the system-wide Metadata reserved space setting is greater than volume 0 for this Storage Node, the entire volume is reserved.
 
@@ -169,7 +169,7 @@ The following table shows how StorageGRID calculates the *allowed metadata space
 
 |&gt; 4 TB
 |(Actual reserved space for metadata − 1 TB) × 75%, up to a maximum of 1.32 TB
-|(Actual reserved space for metadata − 1 TB) × 75%, up to a maximum of 3.96 TB
+|(Actual reserved space for metadata − 1 TB) × 75%, up to a maximum of 7.92 TB
 
 |===
 
@@ -186,7 +186,7 @@ Follow these steps to view the allowed metadata space for a Storage Node.
 +
 image::../media/storage_used_object_metadata_allowed.png[Storage Used - Object Metadata - Allowed]
 
-In the screenshot, the *Allowed* value is 3.96 TB, which is the maximum value for a Storage Node whose actual reserved space for metadata is more than 4 TB.
+In the screenshot, the *Allowed* value is 7.92 TB, which is the maximum value for a Storage Node whose actual reserved space for metadata is more than 4 TB.
 
 The *Allowed* value corresponds to this Prometheus metric:
 
@@ -198,7 +198,7 @@ Suppose you install a new StorageGRID system using version 12.1 or later. For th
 
 * The system-wide *Metadata reserved space* is set to 20 TB. (This is the default value for a new StorageGRID 12.1 or higher installation if each Storage Node has more than 128 GB RAM.)
 * The *Actual reserved* space for metadata for SN1 is 6 TB. (The entire volume is reserved because volume 0 is smaller than the *Metadata reserved space* setting.)
-* The *Allowed* space for metadata on SN1 is 3.75 TB, based on the calculation shown in the <<table-allowed-space-for-metadata,table for allowed space for metadata>>: (Actual reserved space for metadata − 1 TB) × 75%, up to a maximum of 3.96 TB.
+* The *Allowed* space for metadata on SN1 is 3.75 TB, based on the calculation shown in the <<table-allowed-space-for-metadata,table for allowed space for metadata>>: (Actual reserved space for metadata − 1 TB) × 75%, up to a maximum of 7.92 TB.
 
 == How Storage Nodes of different sizes affect object capacity
 
