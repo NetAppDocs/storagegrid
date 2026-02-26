@@ -22,7 +22,7 @@ Use the Tenant Manager to create and view details for branch buckets.
 
 Note the following information for branch buckets:
 
-Branch bucket depth limit:: A branch bucket can have a maximum of 20 base buckets. A depth of more than 20 branch buckets can increase S3 access latency, especially for ListObjectVersions.
+Branch bucket depth limit:: A branch bucket can have a maximum of 20 base buckets. As branch-bucket depth grows, S3 access latency can increase, especially for ListObjectVersions calls.
 +
 * If you create a branch bucket from a base bucket that's a regular bucket (a bucket that was initially created as a base bucket), the new branch bucket has one base bucket.
 * If the base bucket is itself a branch bucket, the new branch bucket inherits all of that branch bucket's base buckets. Users specify only one base bucket directly; the inherited base buckets are implied.
@@ -35,7 +35,7 @@ For example, assume bucket *A* is a regular bucket with versioning enabled:
 ** Branch bucket *D*, created from *C*, has three base buckets: *C* (explicit), *B* (implied) and *A* (implied).
 **	This pattern continues up to a maximum depth of 20 base buckets.
 
-S3 Object Lock permissions:: Permissions to set S3 Object Lock properties of buckets or objects can be granted by link:../tenant/using-s3-object-lock.html[using specific features of S3 Object Lock].
+S3 Object Lock permissions:: Permissions to set S3 Object Lock properties of buckets or objects can be granted by link:../tenant/using-s3-object-lock.html[bucket policy or group policy].
 
 Suspended versioning:: If you suspend versioning on the base bucket, the contents of the base bucket will no longer be visible in its branch buckets.
 
