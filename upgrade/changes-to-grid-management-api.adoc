@@ -32,7 +32,7 @@ The following private endpoints have been added to allow you to link:../maintain
 `/private/move-adc/retry`
 
 == New private endpoints for Convert to data-only node
-The following private endpoints have been added to allow you to link:../maintain/convert-to-data-only-node.html[convert one or more combined Storage Nodes] that don't contain the ADC service into data-only nodes.
+The following private endpoints have been added to allow you to link:../maintain/convert-to-data-only-node.html[convert one or more combined Storage Nodes] into data-only nodes. If a Storage Node contains the ADC service, the service is automatically moved to another Storage Node on the same site.
 
 `/private/convert-to-data-only-node`
 
