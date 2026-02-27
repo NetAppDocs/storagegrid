@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: edit storage pool
 summary: 'You can edit a storage pool to change its name or to update sites and storage grades.'
 ---
-= Edit storage pool
+= Edit a storage pool in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

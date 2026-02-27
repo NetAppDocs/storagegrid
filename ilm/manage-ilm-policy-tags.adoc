@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ILM policy tag
 summary: 'You can view ILM policy tag details, edit a tag, or remove a tag.'
 ---
-= Manage ILM policy tags
+= Manage ILM policy tags in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
