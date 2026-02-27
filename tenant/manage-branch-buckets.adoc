@@ -133,7 +133,7 @@ NOTE: This setting applies only to objects directly ingested into the branch buc
 
 . Optionally, select *Enable object count limit*.
 +
-Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). If no limit is set, the object count is unlimited.
+Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). The maximum supported object count is 48.  
 +
 NOTE: This setting applies only to objects directly ingested into the branch bucket, and not to the objects that are visible from the base bucket through the branch bucket.
 
@@ -145,3 +145,4 @@ The branch bucket is created and added to the table on the Buckets page.
 +
 On the Bucket details page, some configuration options related to the modification of objects are disabled for read-only buckets.
 
+// 2026 FEB 27, SGRIDDOC-221
