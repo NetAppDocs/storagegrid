@@ -28,7 +28,12 @@ sidebar:
     - title: StorageGRID appliances
       url: "/swnodes/storagegrid-hardware.html"
     - title: Release notes
-      url: "/release-notes/index.html"
+      url: /release-notes/index.html
+      entries:
+        - title: What's new in StorageGRID 12.0
+          url: /release-notes/whats-new.html
+        - title: Removed or deprecated features and capabilities
+          url: /release-notes/removed-or-deprecated-features.html
     - title: Get started
       url: "/landing-get-started/index.html"  
       entries:
