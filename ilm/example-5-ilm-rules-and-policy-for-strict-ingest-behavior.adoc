@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: strict ingest example, example ILM rule, information lifecycle rule examples 
 summary: 'You can use a location filter and the Strict ingest behavior in a rule to prevent objects from being saved at a particular data center location.'
 ---
-= Example 5: ILM rules and policy for Strict ingest behavior
+= ILM rules and policy for Strict ingest behavior in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
