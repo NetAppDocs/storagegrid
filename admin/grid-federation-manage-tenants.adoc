@@ -71,7 +71,7 @@ If you need to edit a tenant that has the *Use grid federation connection* permi
 
 * You can select different grid federation connections _only on the source grid_.
 
-* You can't clear the *Use grid federation connection* permission when you're editing a tenant.
+* You can clear the *Use grid federation connection* permission only when you're editing a tenant on the source grid.
 
 * If you're editing a tenant on the _source grid_, you can remove the permission to use a specific grid federation connection.
 
