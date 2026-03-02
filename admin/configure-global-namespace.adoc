@@ -13,7 +13,9 @@ Configure a global namespace across multiple StorageGRID systems to enable unifi
 
 == What is global namespace?
 
-A global namespace provides a single, unified view of S3 buckets stored across multiple StorageGRID systems. When global namespace is enabled on grid federation connections, S3 CreateBucket and ListBuckets requests targeting the global namespace endpoint can be sent to any grid's load balancer endpoint and are automatically routed to the correct grid based on the signing region in the request.
+A global namespace allows tenant access to buckets across multiple StorageGRID systems. When global namespace is enabled on grid federation connections, S3 CreateBucket and ListBuckets requests targeting the global namespace endpoint can be sent to any grid's load balancer endpoint and are automatically routed to the correct grid based on the signing region in the request.
+
+//StorageGRID doesn't enforce unique bucket names across grids in the global namespace, so buckets with the same name can exist on different grids. The signing region in the request is used to determine which grid owns the bucket and should receive the request.
 
 For example, if Grid A uses region `us-east-1` and Grid B uses region `us-west-1`, a CreateBucket request sent to any grid with `--region us-west-1` is automatically routed to Grid B.
 
@@ -21,16 +23,16 @@ For more information about grid federation, refer to link:grid-federation-overvi
 
 == Requirements for configuring global namespace
 
-* All grids in the global namespace cluster must have grid federation connections with global namespace enabled between every pair of grids.
-* The maximum number of grids in a global namespace cluster is 10.
+* All grids in a global namespace must have grid federation connections with global namespace enabled between every pair of grids.
+* The maximum number of grids that can participate in a single global namespace is 11 (the local grid and 10 remote grids).
 +
-NOTE: The maximum applies to the total number of grid federation connections, not only those with global namespace enabled.
+NOTE: This 10-grid limit is constrained by the maximum total number of grid federation connections supported by a StorageGRID deployment. The total connection limit applies to *all* grid federation connections in the deployment, including those without global namespace enabled, so you must ensure that the fully connected global namespace and any additional grid federation connections together do not exceed this overall limit.
 
 * S3 clients must use signature version 4 (SigV4) authentication. Anonymous and signature version 2 requests aren't supported for global namespace routing operations.
 
 == Number of required connections
 
-In a global namespace cluster, every pair of grids must be connected. The number of connections required depends on the number of grids:
+In a global namespace, every pair of grids must be connected. The number of connections required depends on the number of grids:
 
 [cols="1a,1a" options="header"]
 |===
@@ -62,7 +64,7 @@ In a global namespace cluster, every pair of grids must be connected. The number
 
 On each grid in the global namespace, add two S3 endpoint domain names:
 
-* A global namespace endpoint that is the same on all grids (for example, `s3.netapp.com`).
+* A global namespace endpoint that is the same on all grids (for example, `s3.example.com`).
 * A unique CNAME for the grid (for example, `s3.grid-a.netapp.com`).
 
 You will configure your external DNS so that the global namespace endpoint resolves to one or more of the grids, and the unique CNAME endpoints resolve to the specific grid.
@@ -71,7 +73,7 @@ You will configure your external DNS so that the global namespace endpoint resol
 
 . On each grid, select *Configuration* > *Network* > *S3 endpoint domain names* > *Global namespace settings*.
 
-. Add the global namespace endpoint domain name. For example: `s3.netapp.com`.
+. Add the global namespace endpoint domain name. For example: `s3.example.com`.
 
 . Add the grid's unique CNAME domain name. For example: `s3.grid-a.netapp.com`.
 
@@ -88,7 +90,9 @@ For details, refer to link:../admin/configuring-s3-api-endpoint-domain-names.htm
 
 == Step 2: Set a unique default region for each grid
 
-Each grid in the global namespace must have a unique default region. The default region identifies the grid that owns a bucket, and S3 requests must include a signing region that matches the default region of the grid they are sent to.
+Each grid in the global namespace must have a unique default region. The default region identifies the grid that owns a bucket.
+
+Create bucket and List buckets requests are routed based on this region, and all other requests must match the default region that they are sent to.
 
 For more information, refer to link:../ilm/configuring-regions-optional-and-s3-only.html[Configure S3 regions].
 
@@ -144,12 +148,12 @@ An error occurred (AuthorizationHeaderMalformed) when calling the <operation> op
 
 === CreateBucket routing
 
-CreateBucket requests sent to the global namespace endpoint (`s3.netapp.com`) can be directed to any grid's load balancer endpoint. The request is automatically routed to the grid whose default region matches the signing region in the request.
+CreateBucket requests sent to the global namespace endpoint (`s3.example.com`) can be directed to any grid's load balancer endpoint. The request is automatically routed to the grid whose default region matches the signing region in the request.
 
 For example:
 
 * Grid A has default region `us-east-1` and Grid B has default region `us-west-1`.
-* A client sends a CreateBucket request to `s3.netapp.com` with `--region us-west-1`.
+* A client sends a CreateBucket request to `s3.example.com` with `--region us-west-1`.
 * Round-robin DNS directs the request to Grid A.
 * Grid A routes the request to Grid B.
 * The bucket is created on Grid B.
@@ -171,11 +175,11 @@ StorageGRID doesn't provide a built-in DNS resolver for global namespace. You mu
 
 Your DNS resolver should:
 
-. Resolve the global namespace endpoint (for example, `s3.netapp.com`) to the load balancer endpoints of one or more grids, typically using round-robin DNS.
+. Resolve the global namespace endpoint (for example, `s3.example.com`) to the load balancer endpoints of one or more grids, typically using round-robin DNS.
 
 . Resolve each grid's unique CNAME (for example, `s3.grid-a.netapp.com`) to the load balancer endpoints for that specific grid.
 
-. For virtual-hosted-style bucket requests (for example, `_bucket_.s3.netapp.com`), determine which grid owns the bucket and resolve to the correct grid's CNAME.
+. For virtual-hosted-style bucket requests (for example, `_bucket_.s3.example.com`), determine which grid owns the bucket and resolve to the correct grid's CNAME.
 +
 To determine which grid owns a bucket, the DNS resolver can query each grid for its bucket list and use the bucket's UUID (a time-based UUID that provides ordering) to identify the grid where the bucket was created.
 
