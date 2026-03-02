@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, LLST, Location Lost
 summary: 'This message is generated whenever a location for an object copy \(replicated or erasure-coded\) cannot be found.'
 ---
-= LLST: Location Lost
+= LLST audit message for lost object copy locations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
