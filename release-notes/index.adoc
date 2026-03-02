@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: release notes
 summary: 'Obtain release-specific information about fixed issues and known issues.'
 ---
-= What's new in StorageGRID 12.0
+= Release notes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn about the new capabilities available in StorageGRID 12.0.
+Obtain release-specific information about fixed issues and known issues.
 
-For details about fixed issues, known issues, limitations, and upgrade cautions, refer to the  https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[StorageGRID 12.0 release notes]. You must sign in with your NetApp account or create an account to access the Release Notes.
+Log in to the NetApp Support Site to https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[view or download a PDF file^] containing the StorageGRID 12.0 release notes.
