@@ -78,7 +78,7 @@ The *Health* column includes one of these icons for grid nodes that are disconne
 
 | No, site _x_ requires a minimum of _n_ Storage Nodes with ADC services.
 | *Storage Nodes only* (combined or metadata-only Storage Nodes). You can't decommission a Storage Node if insufficient nodes would remain at the site to support ADC quorum requirements and the ADC service can't be automatically moved. The automatic move requires more than two ADC Storage Nodes online at the site and available non-ADC Storage Nodes on the same site.
-| Ensure that the conditions for automatic ADC service movement are met, or link:../maintain/move-adc-service.html[manually move the ADC service] to another Storage Node on the same site. You can also perform an expansion by adding a new Storage Node to the site and specifying that it should have an ADC service. Refer to link:understanding-adc-service-quorum.html[ADC quorum].
+| Ensure that the conditions for automatic ADC service movement are met (refer to link:../maintain/understanding-adc-service-quorum.html[ADC quorum]), or link:../maintain/move-adc-service.html[manually move the ADC service] to another Storage Node on the same site. You can also perform an expansion by adding a new Storage Node to the site and specifying that it should have an ADC service. Refer to link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[Workflow summary for adding grid nodes to StorageGRID].
 
 | No, one or more erasure-coding profiles need at least _n_ Storage Nodes. If the profile is not used in an ILM rule, you can deactivate it.
 | *Storage Nodes only*. You can't decommission a Storage Node unless enough nodes would remain for the existing erasure-coding profiles.
