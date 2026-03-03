@@ -47,4 +47,4 @@ After you determine which StorageGRID networks you want to use and how those net
 
 * link:../admin/index.html[Administer StorageGRID]
 
-* link:../release-notes/index.html[Release notes]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.

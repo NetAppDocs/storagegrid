@@ -25,7 +25,7 @@ image::../media/grid-federation-workflow.png[Grid federation connection workflow
 
 * The grids used for grid federation must be running StorageGRID versions that are either identical or have no more than one major version difference between them.
 +
-For details about version requirements, refer to the link:../release-notes/index.html[Release notes].
+For details about version requirements, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.
 
 * A grid can have one or more grid federation connections to other grids. Each grid federation connection is independent of any other connections. For example, if Grid 1 has one connection with Grid 2 and a second connection with Grid 3, there is no implied connection between Grid 2 and Grid 3.
 
