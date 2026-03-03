@@ -21,7 +21,7 @@ Review these topics to learn about the new features and enhancements in StorageG
 * link:how-your-system-is-affected-during-upgrade.html[How your system is affected during the upgrade]
 * link:../release-notes/whats-new.html[What's new in StorageGRID 12.0]
 * link:../release-notes/removed-or-deprecated-features.html[Removed or deprecated features]
-* link:changes-to-grid-management-api.html[Changes to the Grid Management API]
-* link:changes-to-tenant-management-api.html[Changes to the Tenant Management API]
+* link:../release-notes/changes-to-grid-management-api.html[Changes to the Grid Management API]
+* link:../release-notes/changes-to-tenant-management-api.html[Changes to the Tenant Management API]
 
 // 2025 APR 16, SGWS-34284

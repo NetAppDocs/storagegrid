@@ -4,10 +4,6 @@ entries:
   - title: Before you upgrade
     pdf-filename: Upgrade StorageGRID software 
     url: "/upgrade/index.html"
-  - title: Changes to Grid Management API
-    url: "/upgrade/changes-to-grid-management-api.html"
-  - title: Changes to Tenant Management API
-    url: "/upgrade/changes-to-tenant-management-api.html"
   - title: Plan and prepare for upgrade
     entries:
     - title: Estimate time to complete upgrade

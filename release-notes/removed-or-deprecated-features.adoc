@@ -121,5 +121,5 @@ NOTE: In certain situations, NetApp might end support for particular features so
 
 Also refer to:
 
-* link:../upgrade/changes-to-grid-management-api.html[Changes to the Grid Management API]
-* link:../upgrade/changes-to-tenant-management-api.html[Changes to the Tenant Management API]
+* link:changes-to-grid-management-api.html[Changes to the Grid Management API]
+* link:changes-to-tenant-management-api.html[Changes to the Tenant Management API]

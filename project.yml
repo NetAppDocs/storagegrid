@@ -34,6 +34,10 @@ sidebar:
           url: /release-notes/whats-new.html
         - title: Removed or deprecated features and capabilities
           url: /release-notes/removed-or-deprecated-features.html
+        - title: Changes to the Grid Management API
+          url: /release-notes/changes-to-grid-management-api.html
+        - title: Changes to the Tenant Management API
+          url: /release-notes/changes-to-tenant-management-api.html
     - title: Get started
       url: "/landing-get-started/index.html"  
       entries:
