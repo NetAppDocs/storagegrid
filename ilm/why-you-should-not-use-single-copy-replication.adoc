@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: dual commit, single commit, number of copies for replication
 summary: 'When creating an ILM rule to create replicated copies, you should always specify at least two copies for any time period in the placement instructions.'
 ---
-= Why you should not use single-copy replication
+= Risks of single-copy replication in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
