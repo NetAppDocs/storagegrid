@@ -2,14 +2,14 @@
 permalink: release-notes/removed-or-deprecated-features.html
 sidebar: sidebar
 keywords:
-summary: "StorageGRID 12.0 removes Swift API support, NFS audit export, and several previously deprecated operating system versions. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration."
+summary: "Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0.  Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration."
 ---
 = Removed or deprecated features and capabilities in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-StorageGRID 12.0 removes Swift API support, NFS audit export, and several previously deprecated operating system versions. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
+Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0.  Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
 
 == Definitions
 
