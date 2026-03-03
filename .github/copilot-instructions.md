@@ -43,3 +43,12 @@ NetApp StorageGRID is a software-defined object storage suite that supports a wi
 - **Tenant accounts:** Object storage clients operate within isolated tenant accounts. Tenants manage their own buckets, groups, users, and S3 access keys.
 - **ADC quorum:** The Administrative Domain Controller (ADC) service must maintain quorum across Storage Nodes. This constraint affects decommission and recovery procedures.
 - **Version specificity:** Always include the StorageGRID version number (e.g., 12.0) when content is version-specific. The current release is 12.0.
+
+## Typical user workflows
+
+- **New deployment:** Plan network topology (`network/`) → install software-based nodes or appliances (`swnodes/`, `rhel/`, `ubuntu/`, `vmware/`) → configure grid settings and ILM (`admin/`, `ilm/`) → harden the system (`harden/`)
+- **Upgrade:** Review release notes and removed/deprecated features (`release-notes/`) → check pre-upgrade requirements (`upgrade/`) → apply upgrade → apply hotfix if needed (`maintain/`)
+- **Day-to-day object storage:** Tenant creates buckets and S3 keys (`tenant/`) → client applications access objects via S3 API (`s3/`) → ILM policies manage object placement and lifecycle (`ilm/`)
+- **Monitoring and troubleshooting:** Review alerts and metrics (`monitor/`) → consult troubleshooting procedures (`troubleshoot/`) → review audit logs (`audit/`)
+- **Grid expansion:** Plan capacity → add nodes or a new site (`expand/`) → adjust ILM policies to use new storage (`ilm/`)
+- **Grid maintenance:** Decommission nodes or a site → recover failed nodes → rename grid elements → apply hotfixes (`maintain/`)
