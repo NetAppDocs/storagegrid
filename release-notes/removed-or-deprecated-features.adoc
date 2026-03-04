@@ -9,7 +9,7 @@ summary: "Learn about features and capabilities that have been removed or deprec
 :imagesdir: ../media/
 
 [.lead]
-Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0.  Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
+Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
 
 == Definitions
 
