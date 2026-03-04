@@ -32,7 +32,11 @@ The Decommission Nodes page appears. From this page, you can:
 +
 In this example, the Decommission Possible column indicates that you can decommission the Gateway Node and one of the four Storage Nodes.
 +
-image::../media/decommission_nodes_page_all_connected.png[Decommission Nodes page]
+image::../media/decommission_nodes_page_all_connected.png[Nodes can be decommissioned]
++
+In this example, the Decommission Possible column indicates that you can't decommission any of the nodes. The first node is the primary Admin Node, and decommissioning isn't supported for this node type. The other three nodes are Storage Nodes, and decommissioning isn't possible because they're required for the ADC quorum.
++
+image::../media/decommission_nodes_page_cannot_decommission.png[Nodes can't be decommissioned]
 
 . Review the *Decommission Possible* column for each node you want to decommission.
 +
@@ -76,8 +80,8 @@ The *Health* column includes one of these icons for grid nodes that are disconne
 | You can't decommission an Admin Node or a Gateway Node if a node interface belongs to a high availability (HA) group.
 | Edit the HA group to remove the node's interface or remove the entire HA group. See link:../admin/configure-high-availability-group.html[Configure high availability groups].
 
-| No, site _x_ requires a minimum of _n_ Storage Nodes with ADC services.
-| *Storage Nodes only* (combined or metadata-only Storage Nodes). You can't decommission a Storage Node if insufficient nodes would remain at the site to support ADC quorum requirements and the ADC service can't be automatically moved. The automatic move requires more than two ADC Storage Nodes online at the site and available non-ADC Storage Nodes on the same site.
+| No, site _x_ needs at least 3 Storage Nodes with ADC services or available non-ADC nodes to move ADC services to. ADC node decommission isn't available if any nodes are offline.
+| *Storage Nodes only* (combined or metadata-only Storage Nodes). You can't decommission a Storage Node if insufficient nodes would remain at the site to support ADC quorum requirements and the ADC service can't be automatically moved. The automatic move requires more than two ADC Storage Nodes online across the grid and available non-ADC Storage Nodes on the same site.
 | Ensure that the conditions for automatic ADC service movement are met (refer to link:../maintain/understanding-adc-service-quorum.html[ADC quorum]), or link:../maintain/move-adc-service.html[manually move the ADC service] to another Storage Node on the same site. You can also perform an expansion by adding a new Storage Node to the site and specifying that it should have an ADC service. Refer to link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[Workflow summary for adding grid nodes to StorageGRID].
 
 | No, one or more erasure-coding profiles need at least _n_ Storage Nodes. If the profile is not used in an ILM rule, you can deactivate it.
