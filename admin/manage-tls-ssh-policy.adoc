@@ -53,9 +53,9 @@ Use the Common Criteria policy if you require Common Criteria certification.
 
 .FIPS strict
 --
-Use the FIPS strict policy if you require Common Criteria certification and need to use the NetApp Cryptographic Security Module (NCSM) 3.0.8 or NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module for external client connections to load balancer endpoints, Tenant Manager, and Grid Manager. Using this policy might reduce performance.
+Use the FIPS strict policy if you require Common Criteria certification and need to use the NetApp Cryptographic Security Module (NCSM) 3.1.2 or NetApp StorageGRID Kernel Crypto API 6.12.63-1+ntap1 module for external client connections to load balancer endpoints, Tenant Manager, and Grid Manager. Using this policy might reduce performance.
 
-The NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module are used in the following operations:
+The NCSM 3.1.2 and NetApp StorageGRID Kernel Crypto API 6.12.63-1+ntap1 module are used in the following operations:
 
 * NCSM
 ** TLS connections between the following services: ADC, AMS, CMN, DDS, LDR, SSM, NMS, mgmt-api, nginx, nginx-gw, and cache-svc
@@ -65,7 +65,7 @@ The NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 mo
 ** SSH connections
 
 +
-For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838[Certificate #4838^].
+For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40426[Certificate #A7816^].
 
 * NetApp StorageGRID Kernel Crypto API module
 +
@@ -75,15 +75,19 @@ The NetApp StorageGRID Kernel Crypto API module is present only on VM and Storag
 ** Node encryption
 
 +
-For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation-search?searchMode=implementation&product=NetApp+StorageGRID+Kernel+Crypto+API&productType=-1&ipp=50[Certificates #A6242 through #A6257^] and link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/certificate/223[Entropy Certificate #E223^].
+*Note*: This module has not been submitted for certification.
+
++
+For more information, refer to NIST Cryptographic Algorithm Validation Program link:https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/certificate/223[Entropy Certificate #E223^].
 
 *Note*: After you select this policy, link:../maintain/rolling-reboot-procedure.html[perform a rolling reboot] for all nodes to activate the NCSM. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
 --
+
 .Custom
 --
 Create a custom policy if you need to apply your own ciphers.
 
-Optionally, if your StorageGRID has FIPS 140 cryptography requirements, enable the FIPS mode feature to use the NCSM 3.0.8 and NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 module:
+Optionally, if your StorageGRID has FIPS 140 cryptography requirements, enable the FIPS mode feature to use the NCSM 3.1.2 and NetApp StorageGRID Kernel Crypto API 6.12.63-1+ntap1 module:
 
 .. Set the `fipsMode` parameter to `true`.
 
@@ -144,4 +148,5 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 . From a web browser, access the Grid Manager on the same Admin Node.
 . Follow the steps in <<select-a-security-policy,Select a security policy>> to configure the policy again.
 
+// 2026 FEB 27, SGWS-40010
 // 2025 JUN 5, SGWS-35312
