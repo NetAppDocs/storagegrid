@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: after installation
 summary: 'After completing an installation, perform the required integration and configuration tasks. You can perform the optional tasks as needed.'
 ---
-= Where to go next
+= Where to go next after StorageGRID installation
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to approve pending grid nodes
 summary: 'You must approve each grid node before it can join the StorageGRID system.'
 ---
-= Approve pending grid nodes
+= Approve pending grid nodes in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
