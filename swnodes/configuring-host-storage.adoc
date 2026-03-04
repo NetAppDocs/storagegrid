@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure host storage
 summary: 'You must allocate block storage volumes to each Linux host.'
 ---
-= Configure host storage (Linux)
+= Configure host storage for Linux deployments
 :icons: font
 :imagesdir: ../media/
 

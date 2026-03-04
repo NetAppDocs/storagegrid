@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to automate linux installation
 summary: 'You can automate the Linux installation of the StorageGRID host service and the configuration of grid nodes.'
 ---
-= Automate the installation (Linux)
+= Automate StorageGRID installation and configuration on Linux
 :icons: font
 :imagesdir: ../media/
 
