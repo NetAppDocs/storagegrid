@@ -38,7 +38,7 @@ For details, see the instructions for <<download-and-extract-install-files,downl
 | StorageGRID documentation
 |
 * link:../admin/index.html[Administer StorageGRID]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release Notes^]. You must sign in with your NetApp account or create an account to access the Release Notes.
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
 * link:../swnodes/index.html[Installation instructions for your platform]
 
 | Current documentation for your platform
