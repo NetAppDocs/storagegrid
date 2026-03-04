@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to specify Grid Network subnets
 summary: 'You must specify the subnets that are used on the Grid Network.'
 ---
-= Specify Grid Network subnets
+= Specify StorageGRID Grid Network subnets
 :icons: font
 :imagesdir: ../media/
 
