@@ -21,7 +21,7 @@ NetApp StorageGRID is a software-defined object storage suite that supports a wi
 - `network/` – Networking guidelines, topology, and port reference
 - `primer/` – Introductory concepts and quick-start content
 - `redirect/` – URL redirects for pages that have moved
-- `release-notes/` – What's new and removed or deprecated features for each release
+- `release-notes/` – What's new, API changes, and removed or deprecated features for each release
 - `rhel/` – Installing StorageGRID on Red Hat Enterprise Linux
 - `s3/` – S3 REST API operations, authentication, and usage reference
 - `swift/` – Swift REST API reference (end of life)
