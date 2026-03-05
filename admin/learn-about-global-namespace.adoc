@@ -15,11 +15,56 @@ Configure a global namespace across multiple StorageGRID systems to enable unifi
 
 A global namespace allows tenant access to buckets across multiple StorageGRID systems. When global namespace is enabled on grid federation connections, S3 CreateBucket and ListBuckets requests targeting the global namespace endpoint can be sent to any grid's load balancer endpoint and are automatically routed to the correct grid based on the signing region in the request.
 
-//StorageGRID doesn't enforce unique bucket names across grids in the global namespace, so buckets with the same name can exist on different grids. The signing region in the request is used to determine which grid owns the bucket and should receive the request.
+StorageGRID doesn't enforce unique bucket names across grids in the global namespace, so buckets with the same name can exist on different grids. The signing region in the request is used to determine which grid owns the bucket and should receive the request.
 
 For example, if Grid A uses region `us-east-1` and Grid B uses region `us-west-1`, a CreateBucket request sent to any grid with `--region us-west-1` is automatically routed to Grid B.
 
 For more information about grid federation, refer to link:grid-federation-overview.html[What is grid federation?].
+
+== Global namespace example
+
+Technically it only routes Create bucket and LIST bucket requests between grids, and does not do any other routing.
+
+The customer is supposed to setup a DNS resolver to do the DNS mapping of buckets URLs to a specific grid.
+
+Grid 1
+
+* Default region: region-1
+* Default CNAME: s3.grid1.netapp.com
+* Global endpoint: s3.netapp.com
+
+Grid 2
+
+* Default region: region-2
+* Default CNAME: s3.grid2.netapp.com
+* Global endpoint: s3.netapp.com
+
+Grid 3
+
+* Default region: region-3
+* Default CNAME: s3.grid3.netapp.com
+* Global endpoint: s3.netapp.com
+
+Create Bucket + List bucket operations
+
+If I create a bucket (bucket123) with region region-2 (and targeting the global endpoint s3.netapp.com) no matter which grid gets the request it will create it on Grid 2.
+
+Create bucket bucket123.s3.netapp.com with --region region-2 will route to Grid 2.
+
+Similarly, listing the buckets will route to whatever --region you specify.
+
+List buckets for --region region-3 will route to Grid 3
+
+However you won't be able to have a "global view" of all the buckets (yet, in 12.1) you can only list the buckets for each grid individually using the region routing.
+
+//
+Bucket-specific + general object operations
+
+Once the bucket is created on a given grid, a customer's DNS resolver should (if they implement it correctly.. we don't provide instructions on how they're supposed to set one up), resolve the bucket URL to the bucket + grid cname.
+
+In the example above, the DNS resolver should resolve bucket123.s3.netapp.com to bucket123.s3.grid3.netapp.com (bucket + grid's cname). Then all requests are directly sent to that grid and we do not do any routing of these requests for them.
+
+So a PUT object to bucket123.s3.netapp.com resolves to bucket123.s3.grid3.netapp.com
 
 == Requirements for configuring global namespace
 
