@@ -9,7 +9,7 @@ summary: 'Cross-grid replication is the automatic replication of objects between
 :imagesdir: ../media/
 
 [.lead]
-Cross-grid replication is the automatic replication of objects between selected S3 buckets in two StorageGRID systems that are connected in a link:grid-federation-overview.html[grid federation connection]. link:grid-federation-what-is-account-clone.html[Account sync] is required for cross-grid replication.
+Cross-grid replication is the automatic replication of objects between selected S3 buckets in two StorageGRID systems that are connected in a link:grid-federation-overview.html[grid federation connection]. link:grid-federation-what-is-account-sync.html[Account sync] is required for cross-grid replication.
 
 == Workflow for cross-grid replication
 

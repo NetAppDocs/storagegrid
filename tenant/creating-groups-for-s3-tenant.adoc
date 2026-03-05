@@ -18,7 +18,7 @@ You can manage permissions for S3 user groups by importing federated groups or c
 
 * If you plan to import a federated group, you have link:using-identity-federation.html[configured identity federation], and the federated group already exists in the configured identity source.
 
-* If your tenant account has the *Use grid federation connection* permission, you have reviewed the workflow and considerations for link:grid-federation-account-clone.html[cloning tenant groups and users], and you are signed in to the tenant's source grid.
+* If your tenant account has the *Use grid federation connection* permission, you have reviewed the workflow and considerations for link:grid-federation-account-sync.html[syncing tenant groups and users], and you are signed in to the tenant's source grid.
 
 == Access the Create group wizard
 
@@ -28,7 +28,7 @@ As your first step, access the Create group wizard.
 
 . Select *Access Management* > *Groups*.
 
-. If your tenant account has the *Use grid federation connection* permission, confirm that a blue banner appears, indicating that new groups created on this grid will be cloned to the same tenant on the other grid in the connection. If this banner does not appear, you might be signed in to the tenant's destination grid. 
+. If your tenant account has the *Use grid federation connection* permission, confirm that a blue banner appears, indicating that new groups created on this grid will be synced to the same tenant on the other grid in the connection. If this banner does not appear, you might be signed in to the tenant's destination grid. 
 +
 image::../media/grid-federation-tenant-group-banner.png[image of blue banner on Groups page of tenant source grid]
 
@@ -114,7 +114,7 @@ For detailed information about group policies, including language syntax and exa
 == Add users (local groups only)
 You can save the group without adding users, or you can optionally add any local users that already exist.
 
-NOTE: If your tenant account has the *Use grid federation connection* permission, any users you select when you create a local group on the source grid aren't included when the group is cloned to the destination grid. For this reason, don't select users when you create the group. Instead, select the group when you create the users.
+NOTE: If your tenant account has the *Use grid federation connection* permission, any users you select when you create a local group on the source grid aren't included when the group is synced to the destination grid. For this reason, don't select users when you create the group. Instead, select the group when you create the users.
 
 .Steps
 
@@ -124,4 +124,4 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 +
 The group you created appears in the list of groups.
 +
-If your tenant account has the *Use grid federation connection* permission and you are on the tenant's source grid, the new group is cloned to the tenant's destination grid. *Success* appears as the *Cloning status* in the Overview section of the group's detail page.
+If your tenant account has the *Use grid federation connection* permission and you are on the tenant's source grid, the new group is synced to the tenant's destination grid. *Success* appears as the *Cloning status* in the Overview section of the group's detail page.

@@ -1,5 +1,5 @@
 ---
-permalink: tenant/grid-federation-account-clone.html
+permalink: tenant/grid-federation-account-sync.html
 sidebar: sidebar
 keywords: account sync, tenant sync, grid federation, cross-grid replication
 summary: "If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to all other connected StorageGRID systems (the replica tenants). After the tenant has been replicated, tenant groups, users, and S3 access keys are synced across the connected grids."
@@ -11,7 +11,7 @@ summary: "If a tenant was created or edited to use grid federation connections, 
 [.lead]
 If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to all other connected StorageGRID systems (the replica tenants). After the tenant has been replicated, tenant groups, users, and S3 access keys are synced across the connected grids.
 
-The StorageGRID system where the tenant is originally created is the tenant's _source grid_. The tenant is replicated to one or more _destination grids_. The tenant accounts on all connected grids have the same account ID, name, description, storage quota, and assigned permissions, but the destination tenants don't initially have a root user password. For details, refer to link:../admin/grid-federation-what-is-account-clone.html[Learn about account sync for grid federation] and link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants].
+The StorageGRID system where the tenant is originally created is the tenant's _source grid_. The tenant is replicated to one or more _destination grids_. The tenant accounts on all connected grids have the same account ID, name, description, storage quota, and assigned permissions, but the destination tenants don't initially have a root user password. For details, refer to link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync for grid federation] and link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants].
 
 The syncing of tenant account information is required for link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] of bucket objects. Having the same tenant groups and users on all grids ensures you can access the corresponding buckets and objects on any connected grid.
 
@@ -64,25 +64,19 @@ After a tenant account is created and replicated to the destination grid, Storag
 
 Both the original group and its synced copies have the same access mode, group permissions, and S3 group policy. For instructions, refer to link:creating-groups-for-s3-tenant.html[Create groups for S3 tenant].
 
-//image::../media/grid-federation-account-clone.png[image showing that local groups are synced between connected grids]
-
 NOTE: Any users you select when you create a local group on a grid aren't included when the group is synced to other grids. For this reason, don't select users when you create the group. Instead, select the group when you create the users.
 
 === Local users are continuously synced
 
 When you create a new local user on any connected grid, StorageGRID automatically syncs that user to all other connected grids. Subsequent changes—including edits, deletes, and password resets—are also continuously synced. The original user and its synced copies have the same full name, username, and *Deny access* setting. The same users on each grid also belong to the same groups. For instructions, refer to link:manage-users.html[Manage users].
 
-//image::../media/grid-federation-local-user-clone.png[image showing that local users are synced between connected grids]
-
 === Federated groups are synced once at creation
 
-Assuming the requirements for using account sync with link:../admin/grid-federation-what-is-account-clone.html#account-sync-sso[single sign-on] and link:../admin/grid-federation-what-is-account-clone.html#account-sync-identity-federation[identity federation] have been met, federated groups that you create (import) for the tenant on a grid are automatically synced to the tenant on all other connected grids.
+Assuming the requirements for using account sync with link:../admin/grid-federation-what-is-account-sync.html#account-sync-sso[single sign-on] and link:../admin/grid-federation-what-is-account-sync.html#account-sync-identity-federation[identity federation] have been met, federated groups that you create (import) for the tenant on a grid are automatically synced to the tenant on all other connected grids.
 
 Both groups have the same access mode, group permissions, and S3 group policy.
 
 After federated groups are created for the source tenant and synced to other grids, federated users can sign in to the tenant on any connected grid. Subsequent changes to federated groups are not automatically synced across grids.
-
-//image::../media/grid-federation-federated-group-clone.png[image showing that federated groups are synced from source grid to destination grid]
 
 === S3 access keys can be automatically or manually synced
 
@@ -92,10 +86,6 @@ To manage access keys on connected grids, you can do either of the following:
 
 * If you don't need to use the same keys for each grid, you can disable automatic access key syncing and link:creating-your-own-s3-access-keys.html[create your own access keys] or link:creating-another-users-s3-access-keys.html[create another user's access keys] on each grid.
 
-* *WHAT DO WE NEED TO SAY FOR 12.1?* If you need to use the same keys for each grid, you can create keys on one grid and then use the Tenant Manager API to manually link:../tenant/grid-federation-clone-keys-with-api.html[sync the keys] to the other grids.
-
-//image::../media/grid-federation-s3-access-key.png[image showing that s3 access keys can be optionally synced between connected grids]
-
 NOTE: When you sync S3 access keys for a federated user, both the user and the S3 access keys are synced to the destination tenants.
 
 NOTE: S3 access keys owned by local users are continuously synced across connected grids, including when keys are deleted. S3 access keys owned by federated users are synced once at creation; subsequent changes, including deletes, are not replicated. You can enable or disable access key sync for each tenant connection.
@@ -104,14 +94,8 @@ NOTE: S3 access keys owned by local users are continuously synced across connect
 
 Changes made on any connected grid—including creating or importing groups and users—are automatically synced to all other connected grids.
 
-//image::../media/grid-federation-account-not-cloned.png[image showing that changes on any grid are synced to all connected grids]
-
 === Edited or deleted local groups, users, and access keys are synced
 
 Changes to local groups, local users, and S3 access keys owned by local users are continuously synced across all connected grids. Synced operations include edits, deletes, and password resets.
 
 Changes to federated groups and S3 access keys owned by federated users are not synced after initial creation.
-
-//image::../media/grid-federation-account-clone-edit-delete.png[image showing sync behavior for edits and deletes]
-
-

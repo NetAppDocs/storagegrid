@@ -53,4 +53,3 @@ CAUTION: Don't close this dialog box until you have copied or downloaded this in
 +
 The new key is listed on the My access keys page.
 
-. If your tenant account has the *Use grid federation connection* permission, optionally use the Tenant Management API to manually clone S3 access keys from the tenant on the source grid to the tenant on the destination grid. See link:grid-federation-clone-keys-with-api.html[Clone S3 access keys using the API].

@@ -19,7 +19,7 @@ NOTE: If single sign-on (SSO) is enabled for your StorageGRID system, local user
 
 * You belong to a user group that has the link:tenant-management-permissions.html[Root access permission].
 
-* If your tenant account has the *Use grid federation connection* permission, you have reviewed the workflow and considerations for link:grid-federation-account-clone.html[cloning tenant groups and users], and you are signed in to the tenant's source grid.
+* If your tenant account has the *Use grid federation connection* permission, you have reviewed the workflow and considerations for link:grid-federation-account-sync.html[syncing tenant groups and users], and you are signed in to the tenant's source grid.
 
 == [[create-user]]Create a local user
 
@@ -76,7 +76,7 @@ Users who don't belong to any groups will have no management permissions. Permis
 
 . Select *Create user*.
 +
-If your tenant account has the *Use grid federation connection* permission and you are on the tenant's source grid, the new local user is cloned to the tenant's destination grid. *Success* appears as the *Cloning status* in the Overview section of the user's detail page.
+If your tenant account has the *Use grid federation connection* permission and you are on the tenant's source grid, the new local user is synced to the tenant's destination grid. *Success* appears as the *Cloning status* in the Overview section of the user's detail page.
 
 . Select *Finish* to return to the Users page.
 
@@ -154,7 +154,7 @@ After you close the *Import federated users* dialog box, the federated user info
 
 You can duplicate a local user to create a new user more quickly.
 
-NOTE: If your tenant account has the *Use grid federation connection* permission and you duplicate a user from the tenant's source grid, the duplicated user will be cloned to the tenant's destination grid.
+NOTE: If your tenant account has the *Use grid federation connection* permission and you duplicate a user from the tenant's source grid, the duplicated user will be synced to the tenant's destination grid.
 
 .Steps
 
@@ -168,15 +168,15 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 . Select *Create user*.
 
-== [[clone-users]]Retry user clone
+== [[sync-users]]Retry user sync
 
-To retry a clone that failed:
+To retry a sync that failed:
 
 .	Select each user that indicates _(Cloning failed)_ below the user name.
-. Select *Actions* > *Clone users*.
-. View the status of the clone operation from the details page of each user you're cloning.
+. Select *Actions* > *Sync users*.
+. View the status of the sync operation from the details page of each user you're cloning.
 
-For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
+For additional information, see link:grid-federation-account-sync.html[Sync tenant groups and users].
 
 
 == Delete one or more local users

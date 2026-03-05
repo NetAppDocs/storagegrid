@@ -31,7 +31,7 @@ For details about version requirements, refer to the link:../release-notes/index
 
 * Grid federation connections are bidirectional. After the connection is established, you can monitor and manage the connection from either grid. 
 
-* At least one grid federation connection must exist before you can use link:grid-federation-what-is-account-clone.html[account sync] or link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
+* At least one grid federation connection must exist before you can use link:grid-federation-what-is-account-sync.html[account sync] or link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
 
 === Networking and IP address requirements
 

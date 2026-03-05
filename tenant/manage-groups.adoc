@@ -30,7 +30,7 @@ If the tenant account has the *Use grid federation connection* permission and yo
 +
 * A banner message indicates that if you edit or remove a group, your changes will not be synced to the other grid.
 +
-* As needed, a banner message indicates if groups were not cloned to the tenant on the destination grid. You can <<clone-groups,retry a group clone>> that failed.
+* As needed, a banner message indicates if groups were not synced to the tenant on the destination grid. You can <<sync-groups,retry a group sync>> that failed.
 
 . If you want to change the group's name:
 
@@ -56,7 +56,7 @@ If the tenant account has the *Use grid federation connection* permission and yo
 ** Number of users in this group
 ** Additional fields if the tenant account has the *Use grid federation connection* permission and you are viewing the group on the tenant's source grid:
 
-*** Cloning status, either *Success* or *Failure*
+*** Sync status, either *Succeeded* or *Failed*
 
 *** A blue banner indicating that if you edit or delete this group, your changes will not be synced to the other grid.
 
@@ -92,7 +92,7 @@ A success message appears in the upper right.
 
 You can duplicate an existing group to create new groups more quickly.
 
-NOTE: If your tenant account has the *Use grid federation connection* permission and you duplicate a group from the tenant's source grid, the duplicated group will be cloned to the tenant's destination grid.
+NOTE: If your tenant account has the *Use grid federation connection* permission and you duplicate a group from the tenant's source grid, the duplicated group will be synced to the tenant's destination grid.
 
 .Steps
 
@@ -106,15 +106,15 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 . Select *Create group*.
 
-== [[clone-groups]]Retry group clone
+== [[sync-groups]]Retry group sync
 
-To retry a clone that failed:
+To retry a sync that failed:
 
-.	Select each group that indicates _(Cloning failed)_ below the group name.
-. Select *Actions* > *Clone groups*.
-. View the status of the clone operation from the details page of each group you're cloning.
+.	Select each group that indicates _(Sync failed)_ below the group name.
+. Select *Actions* > *Sync groups*
+. View the status of the sync operation from the details page of each group you're syncing.
 
-For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
+For additional information, see link:grid-federation-account-sync.html[Sync tenant groups and users].
 
 == Delete one or more groups
 

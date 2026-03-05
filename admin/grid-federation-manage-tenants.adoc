@@ -16,8 +16,8 @@ You can allow S3 tenant accounts to use one or more grid federation connections 
 * You are signed in to the Grid Manager on either grid using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access permission] for the grid you are signed in to. 
 * You have link:grid-federation-create-connection.html[created a grid federation connection] between two grids.
-* You have reviewed the workflows for link:grid-federation-what-is-account-clone.html[account sync] and link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
-* As required, you have already configured single sign-on (SSO) or identity federation for both grids in the connection. See link:grid-federation-what-is-account-clone.html[Learn about account sync for grid federation].
+* You have reviewed the workflows for link:grid-federation-what-is-account-sync.html[account sync] and link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
+* As required, you have already configured single sign-on (SSO) or identity federation for both grids in the connection. See link:grid-federation-what-is-account-sync.html[Learn about account sync for grid federation].
 
 == Create a permitted tenant
 If you want to allow a new or existing tenant account to use a grid federation connection for account sync and cross-grid replication, follow the general instructions to link:creating-tenant-account.html[create a new S3 tenant] or link:editing-tenant-account.html[edit a tenant account] and note the following:
@@ -36,11 +36,11 @@ TIP: Before a local root user can sign in to the replicated tenant on the destin
 
 * After the new or edited tenant is available on both grids, tenant users can perform these operations:
 
-** From any connected grid, create groups and local users, which are automatically synced to all other connected grids. See link:../tenant/grid-federation-account-clone.html[Sync tenant groups and users].
+** From any connected grid, create groups and local users, which are automatically synced to all other connected grids. See link:../tenant/grid-federation-account-sync.html[Sync tenant groups and users].
 
-** Create new S3 access keys for local users, which are automatically synced to other connected grids. Refer to link:../tenant/grid-federation-clone-keys-with-api.html[Sync S3 access keys using the API].
+** Create new S3 access keys for local users, which are automatically synced to other connected grids.
 +
-NOTE: S3 access keys for federated users are cloned one time when they're created. If these S3 access keys are edited or deleted, these changes aren't synced to other grids. You must manually edit or delete the S3 access keys on the other grids.
+NOTE: S3 access keys for federated users are synced one time when they're created. If these S3 access keys are edited or deleted, these changes aren't synced to other grids. You must manually edit or delete the S3 access keys on the other grids.
 
 ** Create identical buckets on both grids in the connection and enable cross-grid replication in one direction or in both directions. See link:../tenant/grid-federation-manage-cross-grid-replication.html[Manage cross-grid replication].
 
