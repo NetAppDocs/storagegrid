@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create ILM rule, information lifecycle rule
 summary: 'You use the Create ILM Rule wizard to create an ILM rule.'
 ---
-= Access the Create an ILM rule wizard
+= Access the Create an ILM rule wizard in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

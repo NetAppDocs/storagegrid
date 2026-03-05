@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: UploadPart, UploadPartCopy, multipart uploads, uploads,
 summary: 'The UploadPartCopy operation uploads a part of an object by copying data from an existing object as the data source.'
 ---
-= UploadPartCopy
+= Upload a part of an object in StorageGRID with the S3 UploadPartCopy operation
 :icons: font
 :imagesdir: ../media/
 
@@ -46,6 +46,7 @@ Multipart upload consists of separate operations for initiating the upload, list
 
 == S3 checksum support
 
-StorageGRID automatically detects if a checksum was specified during a CreateMultipartUpload request and uses this checksum in the UploadPartCopy operation. You don't need to specify a checksum in an UploadPartCopy request.
+StorageGRID automatically detects if a checksum was specified during a CreateMultipartUpload request and uses this checksum in the UploadPartCopy operation. You don't need to specify a checksum in an UploadPartCopy request. If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
 
+// 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154

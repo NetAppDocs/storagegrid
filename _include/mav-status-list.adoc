@@ -1,0 +1,10 @@
+//multi-admin verification (MAV) status list
+* *Pending*. Request has been initiated.
+
+* *Expired*. Request wasn't addressed within 30 days. Or a user with Root access permission disabled MAV, which means all pending requests are expired.
+
+* *Withdrawn*. A user withdrew their request.
+
+* *Approved*. A MAV administrator approved the pending request.
+
+* *Rejected*. A MAV administrator rejected the pending request.

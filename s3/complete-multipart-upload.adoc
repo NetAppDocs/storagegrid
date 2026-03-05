@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipart upload, object, object size
 summary: 'The CompleteMultipartUpload operation completes a multipart upload of an object by assembling the previously uploaded parts.'
 ---
-= CompleteMultipartUpload
+= How StorageGRID S3 REST API completes multipart uploads
 :icons: font
 :imagesdir: ../media/
 
@@ -21,11 +21,18 @@ Conflicting client requests, such as two clients writing to the same key, are re
 
 The following request headers are supported: 
 
-* `x-amz-checksum-crc32`
-* `x-amz-checksum-crc32c`
-* `x-amz-checksum-crc64nvme`
-* `x-amz-checksum-sha256`
-* `x-amz-checksum-type`
+* Checksum request headers:
++
+--
+** `x-amz-checksum-crc32`
+** `x-amz-checksum-crc32c`
+** `x-amz-checksum-crc64nvme`
+** `x-amz-checksum-sha256`
+** `x-amz-checksum-type`
+--
++
+NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+
 * `x-amz-storage-class`
 +
 The `x-amz-storage-class` header affects how many object copies StorageGRID creates if the matching ILM rule specifies the link:../ilm/data-protection-options-for-ingest.html[Dual commit or Balanced ingest option].
@@ -70,5 +77,6 @@ A tenant can trigger the failed replication or notification by updating the obje
 
 Refer to link:../admin/troubleshooting-platform-services.html[Troubleshoot platform services].
 
+// 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243
