@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: example ILM rule, information lifecycle rule examples
 summary: 'You can use the following example rules and policy to ensure that images greater than 1 MB are erasure-coded and that two copies are made of smaller images.'
 ---
-= Example 3: ILM rules and policy for better protection for image files
+= ILM rules and policy for protecting image files in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

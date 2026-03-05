@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cloud storage pool, troubleshoot
 summary: 'Use these troubleshooting steps to help resolve errors you might encounter when creating, editing, or deleting a Cloud Storage Pool.'
 ---
-= Troubleshoot Cloud Storage Pools
+= Troubleshoot Cloud Storage Pools in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

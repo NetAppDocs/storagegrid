@@ -1,0 +1,63 @@
+---
+permalink: monitor/configure-email-server.html
+sidebar: sidebar
+keywords: notifications, email, system events, technical support
+summary: 'As a StorageGRID administrator, you need to configure an email server to send notifications from the StorageGRID alert and monitoring systems that inform you, other administrators, and technical support about system events and issues.'
+---
+= Configure email server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+As a StorageGRID administrator, you need to configure an email server to send notifications from the StorageGRID alert and monitoring systems that inform you, other administrators, and technical support about system events and issues.
+
+The StorageGRID features that use the email server for notifications include alerts, AutoSupport, and multi-admin verification (MAV). You can use the same email server for all notifications.
+
+.Before you begin
+
+* You have the link:../admin/admin-group-permissions.html[Root access permission].
+* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+
+.Steps
+
+. Select *Configuration* > *Monitoring* > *Email server*.
++
+The Email server page appears.
+
+. Select the pull-down, *View features that might require an email server*. If you want to view the details and required information for configuring email notifications for a feature, select *View*.
++
+You are taken to the configuration page for the feature in the Grid Manager. The configuration page for each feature contains a notification that you need an email server to send email notifications.
+
+. To configure an email server from the Email server page:
+
+.. Enter the IP address or FQDN of the email server.
+.. Select the port number used by the email server. The default is 25.
+.. To require authentication, select *Use authentication* and enter the user name and password.
+.. To require verification of the identity of the SMTP server, select *Use Transport Layer Security (TLS)*. Then:
+... Provide a CA bundle.
+... If the SMTP email server requires email senders to provide client certificates for authentication, select *Send client certificate*. Then provide the client certificate and private key.
+
+.. To ensure your email settings are correct, send a test email by entering the sender and recipient. Select *Send*.
++
+A confirmation message appears, indicating that a test email was sent.
+
+.. Check the inboxes of all email recipients and confirm that a test email was received.
++
+NOTE: If the email is not received within a few minutes or if the *Email notification failure* alert is triggered, check your settings and try again.
+
+.. Sign in to any other Admin Nodes and send a test email to verify connectivity from all sites.
++
+NOTE: When you test alert notifications, you must sign in to every Admin Node to verify connectivity. This is in contrast to testing AutoSupport packages, where all Admin Nodes send the test email.
+
+. Select *Save*.
++
+Sending a test email doesn't save your settings. You must select *Save*.
++
+The email settings are saved.
+
+. Go to the configuration pages for the features that use the email server and complete the email notification settings.
++
+* link:../monitor/email-alert-notifications.html[Alerts]. For alerts, you can also link:../monitor/snmp-alert-notifications.html[set up SNMP notifications].
+* link:../monitor/configure-autosupport-grid-manager.html[AutoSupport]. You can send AutoSupport packages by email, HTTPS, or HTTP (HTTP isn't recommended).
+* Multi-admin verification (MAV)
+

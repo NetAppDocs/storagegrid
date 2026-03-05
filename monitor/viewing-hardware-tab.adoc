@@ -258,8 +258,6 @@ See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuri
 .. Review the Network communication section.
 +
 The Receive and Transmit tables show how many bytes and packets have been received and sent across each network as well as other receive and transmit metrics.
-+
-image::../media/nodes_page_network_communication.png[Nodes Page Network Comm]
 
 . Select *Storage* to view graphs that show the percentages of storage used over time for object data and object metadata, as well as information about disk devices, volumes, and object stores.
 +
