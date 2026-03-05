@@ -49,6 +49,17 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |===
 | Release| Comments
 
+
+|12.1
+|* Added support for pre-calculated checksum values for the following requests and supported headers:
+
+** CompleteMultipartUpload: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+** CreateMultipartUpload: `CRC32`, `CRCC32C`, and `CRCC64NVME` for `x-amz-checksum-algorithm`
+** CopyObject: `CRC32`, `CRC32C`, `CRC64NVME`, or `SHA256` for `x-amz-checksum-algorithm`
+** PutObject: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+** UploadPart: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+
+* Added support for `x-amz-checksum-type` for CreateMultipartUpload and CompleteMultipartUpload.
 |12.0
 |
 * Added support for cross-origin resource sharing (CORS) for a management interface, which allows another domain to access data in StorageGRID using management APIs. link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Learn more].
