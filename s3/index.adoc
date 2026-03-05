@@ -55,7 +55,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 
 ** CompleteMultipartUpload: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
 ** CreateMultipartUpload: `CRC32`, `CRCC32C`, and `CRCC64NVME` for `x-amz-checksum-algorithm`
-** CopyObject: `CRC32`, `CRC32C`, `CRC64NVME`, or `SHA256` for `x-amz-checksum-algorithm`
+** CopyObject: `CRC32`, `CRC32C`, `CRC64NVME`, and `SHA256` for `x-amz-checksum-algorithm`
 ** PutObject: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
 ** UploadPart: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
 
