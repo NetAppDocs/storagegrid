@@ -44,7 +44,7 @@ NOTE: If the link:enabling-s3-object-lock.html[global S3 Object Lock setting has
 --
 .S3 Object Lock enabled
 --
- ** The link:enabling-s3-object-lock-globally.html[global S3 Object Lock setting is already enabled] for the StorageGRID system.
+ ** The link:enabling-s3-object-lock.html[global S3 Object Lock setting is already enabled] for the StorageGRID system.
 
  ** You have link:what-ilm-rule-is.html[created the compliant and non-compliant ILM rules] you want to add to the policy. As required, you can save a policy, create additional rules, and then edit the policy to add the new rules.
 
