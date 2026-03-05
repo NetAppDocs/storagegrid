@@ -90,7 +90,9 @@ entries:
     - title: Compare cross-grid replication and CloudMirror replication
       url: "/admin/grid-federation-compare-cgr-to-cloudmirror.html"               
     - title: Create grid federation connections
-      url: "/admin/grid-federation-create-connection.html"      
+      url: "/admin/grid-federation-create-connection.html"
+    - title: Learn about global namespace
+      url: "/admin/learn-about-global-namespace.html"
     - title: Configure global namespace
       url: "/admin/configure-global-namespace.html"
     - title: Manage grid federation connections
