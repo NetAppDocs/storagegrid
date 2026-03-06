@@ -30,13 +30,11 @@ NOTE: The global Compliance setting is deprecated. If you enabled this setting u
 
 .Steps
 
-. Select *Configuration* > *S3 Object Lock*.
+. Select *Configuration* > *System* > *S3 Object Lock*.
 +
 The S3 Object Lock Settings page appears. 
 
 . Select *Enable S3 Object Lock* to enable S3 Object Lock for your entire StorageGRID system.
-+
-The option to allow S3 Object Lock to be enabled on existing buckets appears.
 
 . Optionally, select *Allow S3 Object Lock to be enabled on existing buckets*.
 +

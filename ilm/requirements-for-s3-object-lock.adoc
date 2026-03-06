@@ -19,6 +19,13 @@ You must review the requirements for enabling the global S3 Object Lock setting,
 * You can't enable the global S3 Object Lock unless the default rule in all active ILM policies is _compliant_ (that is, the default rule must comply with the requirements of buckets with S3 Object Lock enabled).
 * When the global S3 Object Lock setting is enabled, you can't create a new ILM policy or activate an existing ILM policy unless the default rule in the policy is compliant. After the global S3 Object Lock setting has been enabled, the ILM rules and ILM policies pages indicate which ILM rules are compliant.
 
+== Requirements for allowing S3 Object Lock to be enabled on existing buckets
+
+When the global S3 Object Lock setting is enabled, you can optionally allow users to enable S3 Object Lock on existing buckets. 
+
+* Enabling the global S3 Object Lock setting allows all S3 tenant accounts to enable S3 Object Lock on existing buckets. 
+* When S3 tenant accounts enable S3 Object Lock on an existing bucket, it might cause unintended data migration from a Cloud Storage Pool back to StorageGRID, depending on your ILM rules. You cannot stop this migration after it starts.
+
 == Requirements for compliant ILM rules
 
 If you want to enable the global S3 Object Lock setting, you must ensure that the default rule in all active ILM policies is compliant. A compliant rule satisfies the requirements of both buckets with S3 Object Lock enabled and any existing buckets that have legacy Compliance enabled:
@@ -47,3 +54,5 @@ include::../_include/s3-object-lock-requirements.adoc[]
 * link:../tenant/update-default-retention-settings.html[Update  S3 Object Lock default retention]
 * link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]
 * link:example-7-compliant-ilm-policy-for-s3-object-lock.html[Example 7: Compliant ILM policy for S3 Object Lock]
+
+// 2026 MAR 6, SGWS-38814
