@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: example ILM rule, information lifecycle rule examples
 summary: 'You can use the following example rules and policy as a starting point when defining an ILM policy to meet your object protection and retention requirements.'
 ---
-= Example 1: ILM rules and policy for object storage
+= ILM rules and policy for basic object protection and retention in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
