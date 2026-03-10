@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: firewall access, firewall ports, external firewall
 summary: 'You can open or close specific ports at the external firewall.'
 ---
-= Control access at the StorageGRID external firewall
+= Control StorageGRID access at an external firewall
 :icons: font
 :imagesdir: ../media/
 
