@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: tls cipher suites, transport layer security connections
 summary: 'The StorageGRID system supports a limited set of cipher suites for Transport Layer Security \(TLS\) connections to the external systems used for identity federation and Cloud Storage Pools.'
 ---
-= Supported ciphers for outgoing TLS connections
+= Supported ciphers for outgoing TLS connections in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
