@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage pool guidelines
 summary: 'Configure and use storage pools to protect against data loss by distributing data across multiple sites. Replicated copies and erasure-coded copies require different storage pool configurations.'
 ---
-= Guidelines for creating storage pools
+= Storage pool configuration guidelines in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

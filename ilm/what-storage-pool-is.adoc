@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: what is a storage pool
 summary: 'A storage pool is a logical grouping of Storage Nodes.'
 ---
-= What is a storage pool?
+= Learn about storage pools in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

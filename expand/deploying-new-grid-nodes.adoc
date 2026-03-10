@@ -1,10 +1,10 @@
 ---
 permalink: expand/deploying-new-grid-nodes.html
 sidebar: sidebar
-keywords: expansion, add nodes
+keywords: expansion, add nodes, StorageGRID
 summary: 'The steps for deploying new grid nodes in an expansion are the same as the steps used when the grid was first installed. You must deploy all new grid nodes before you can perform the expansion.'
 ---
-= Deploy new grid nodes
+= Deploy new grid nodes in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

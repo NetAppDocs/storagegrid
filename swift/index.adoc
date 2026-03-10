@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: openstack swift api support, swift rest api
 summary: 'Support for the Swift API has reached end of life and will be removed in a future release.'
 ---
-= Use Swift REST API
+= Swift REST API support in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

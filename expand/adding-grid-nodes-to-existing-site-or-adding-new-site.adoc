@@ -1,10 +1,10 @@
 ---
 permalink: expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html
 sidebar: sidebar
-keywords: grid node, add node, add site, expand, expansion
+keywords: grid node, add node, add site, expand, expansion, StorageGRID
 summary: 'Follow this procedure to add grid nodes to existing sites or to add a new site. You can only perform one type of expansion at a time.'
 ---
-= Add grid nodes to existing site or add new site
+= Workflow summary for adding grid nodes or new sites to StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -21,6 +21,6 @@ NOTE: You are prevented from starting an expansion while another expansion, upgr
 
 .Steps
 
-. link:updating-subnets-for-grid-network.html[Update subnets for Grid Network].
-. link:deploying-new-grid-nodes.html[Deploy new grid nodes].
-. link:performing-expansion.html[Perform expansion].
+. link:updating-subnets-for-grid-network.html[Update subnets for the Grid Network].
+. link:deploying-new-grid-nodes.html[Deploy the new grid nodes].
+. link:performing-expansion.html[Perform the expansion].
