@@ -1,0 +1,347 @@
+[
+  {
+    "fileName": "admin-group-permissions.adoc"
+  },
+  {
+    "fileName": "administering-storagegrid-system.adoc"
+  },
+  {
+    "fileName": "benefits-of-active-idle-and-concurrent-http-connections.adoc"
+  },
+  {
+    "fileName": "change-node-console-password.adoc"
+  },
+  {
+    "fileName": "change-ssh-access-passwords.adoc"
+  },
+  {
+    "fileName": "changing-browser-session-timeout-interface.adoc"
+  },
+  {
+    "fileName": "changing-network-options-object-encryption.adoc"
+  },
+  {
+    "fileName": "changing-password-for-tenant-local-root-user.adoc"
+  },
+  {
+    "fileName": "changing-provisioning-passphrase.adoc"
+  },
+  {
+    "fileName": "changing-your-password.adoc"
+  },
+  {
+    "fileName": "configuration-options-for-ha-groups.adoc"
+  },
+  {
+    "fileName": "configure-autosupport-grid-manager.adoc"
+  },
+  {
+    "fileName": "configure-firewall-controls.adoc"
+  },
+  {
+    "fileName": "configure-high-availability-group.adoc"
+  },
+  {
+    "fileName": "configure-sso.adoc"
+  },
+  {
+    "fileName": "configure-vlan-interfaces.adoc"
+  },
+  {
+    "fileName": "configuring-admin-proxy-settings.adoc"
+  },
+  {
+    "fileName": "configuring-administrator-client-certificates.adoc"
+  },
+  {
+    "fileName": "configuring-client-connections.adoc"
+  },
+  {
+    "fileName": "configuring-custom-server-certificate-for-grid-manager-tenant-manager.adoc"
+  },
+  {
+    "fileName": "configuring-custom-server-certificate-for-storage-node.adoc"
+  },
+  {
+    "fileName": "configuring-load-balancer-endpoints.adoc"
+  },
+  {
+    "fileName": "configuring-network-settings.adoc"
+  },
+  {
+    "fileName": "configuring-s3-api-endpoint-domain-names.adoc"
+  },
+  {
+    "fileName": "configuring-storage-proxy-settings.adoc"
+  },
+  {
+    "fileName": "configuring-storagegrid-certificates-for-fabricpool.adoc"
+  },
+  {
+    "fileName": "configuring-stored-object-compression.adoc"
+  },
+  {
+    "fileName": "confirming-federated-users-can-sign-in.adoc"
+  },
+  {
+    "fileName": "controlling-access-through-firewalls.adoc"
+  },
+  {
+    "fileName": "controlling-storagegrid-access.adoc"
+  },
+  {
+    "fileName": "copying-storagegrid-system-ca-certificate.adoc"
+  },
+  {
+    "fileName": "creating-enterprise-application-entra-id.adoc"
+  },
+  {
+    "fileName": "creating-relying-party-trusts-in-ad-fs.adoc"
+  },
+  {
+    "fileName": "creating-sp-connection-ping.adoc"
+  },
+  {
+    "fileName": "creating-tenant-account.adoc"
+  },
+  {
+    "fileName": "creating-traffic-classification-policies.adoc"
+  },
+  {
+    "fileName": "deactivate-features-from-api.adoc"
+  },
+  {
+    "fileName": "deleting-tenant-account.adoc"
+  },
+  {
+    "fileName": "deleting-traffic-classification-policy.adoc"
+  },
+  {
+    "fileName": "disabling-single-sign-on.adoc"
+  },
+  {
+    "fileName": "editing-tenant-account.adoc"
+  },
+  {
+    "fileName": "editing-traffic-classification-policy.adoc"
+  },
+  {
+    "fileName": "enable-cross-origin-resource-sharing-for-management-interface.adoc"
+  },
+  {
+    "fileName": "global-certificate-types.adoc"
+  },
+  {
+    "fileName": "grid-federation-compare-cgr-to-cloudmirror.adoc"
+  },
+  {
+    "fileName": "grid-federation-create-connection.adoc"
+  },
+  {
+    "fileName": "grid-federation-manage-connection.adoc"
+  },
+  {
+    "fileName": "grid-federation-manage-tenants.adoc"
+  },
+  {
+    "fileName": "grid-federation-overview.adoc"
+  },
+  {
+    "fileName": "grid-federation-retry-failed-replication.adoc"
+  },
+  {
+    "fileName": "grid-federation-troubleshoot.adoc"
+  },
+  {
+    "fileName": "grid-federation-what-is-account-clone.adoc"
+  },
+  {
+    "fileName": "grid-federation-what-is-cross-grid-replication.adoc"
+  },
+  {
+    "fileName": "grid-management-api-operations.adoc"
+  },
+  {
+    "fileName": "grid-management-api-versioning.adoc"
+  },
+  {
+    "fileName": "guidelines-for-storagegrid-networks.adoc"
+  },
+  {
+    "fileName": "how-ha-groups-are-used.adoc"
+  },
+  {
+    "fileName": "how-sso-works.adoc"
+  },
+  {
+    "fileName": "identifying-primary-admin-node.adoc"
+  },
+  {
+    "fileName": "increasing-metadata-reserved-space-setting.adoc"
+  },
+  {
+    "fileName": "index.adoc"
+  },
+  {
+    "fileName": "kms-adding.adoc"
+  },
+  {
+    "fileName": "kms-configuring-storagegrid-as-client.adoc"
+  },
+  {
+    "fileName": "kms-configuring.adoc"
+  },
+  {
+    "fileName": "kms-considerations-and-requirements.adoc"
+  },
+  {
+    "fileName": "kms-considerations-for-changing-for-site.adoc"
+  },
+  {
+    "fileName": "kms-managing.adoc"
+  },
+  {
+    "fileName": "kms-overview-of-kms-and-appliance-configuration.adoc"
+  },
+  {
+    "fileName": "manage-external-ssh-access.adoc"
+  },
+  {
+    "fileName": "manage-firewall-controls.adoc"
+  },
+  {
+    "fileName": "manage-link-costs.adoc"
+  },
+  {
+    "fileName": "manage-platform-services-for-tenants.adoc"
+  },
+  {
+    "fileName": "manage-s3-select-for-tenant-accounts.adoc"
+  },
+  {
+    "fileName": "manage-security.adoc"
+  },
+  {
+    "fileName": "manage-tls-ssh-policy.adoc"
+  },
+  {
+    "fileName": "managing-admin-groups.adoc"
+  },
+  {
+    "fileName": "managing-full-storage-nodes.adoc"
+  },
+  {
+    "fileName": "managing-high-availability-groups.adoc"
+  },
+  {
+    "fileName": "managing-load-balancing.adoc"
+  },
+  {
+    "fileName": "managing-object-metadata-storage.adoc"
+  },
+  {
+    "fileName": "managing-tenants.adoc"
+  },
+  {
+    "fileName": "managing-traffic-classification-policies.adoc"
+  },
+  {
+    "fileName": "managing-users.adoc"
+  },
+  {
+    "fileName": "manually-triggering-autosupport-message.adoc"
+  },
+  {
+    "fileName": "networking-and-ports-for-platform-services.adoc"
+  },
+  {
+    "fileName": "per-site-delivery-of-platform-services-messages.adoc"
+  },
+  {
+    "fileName": "protecting-against-cross-site-request-forgery-csrf.adoc"
+  },
+  {
+    "fileName": "requirements-for-sso.adoc"
+  },
+  {
+    "fileName": "reviewing-storagegrid-encryption-methods.adoc"
+  },
+  {
+    "fileName": "security-for-clients.adoc"
+  },
+  {
+    "fileName": "sending-eseries-autosupport-messages-through-storagegrid.adoc"
+  },
+  {
+    "fileName": "signing-in-to-grid-manager.adoc"
+  },
+  {
+    "fileName": "signing-out-of-grid-manager.adoc"
+  },
+  {
+    "fileName": "summary-ip-addresses-and-ports-for-client-connections.adoc"
+  },
+  {
+    "fileName": "supported-ciphers-for-outgoing-tls-connections.adoc"
+  },
+  {
+    "fileName": "temporarily-disabling-and-reenabling-sso-for-admin-node.adoc"
+  },
+  {
+    "fileName": "troubleshooting-autosupport-messages.adoc"
+  },
+  {
+    "fileName": "troubleshooting-platform-services.adoc"
+  },
+  {
+    "fileName": "updating-storagegrid-license-information.adoc"
+  },
+  {
+    "fileName": "use-api-if-sso-is-enabled-adfs.adoc"
+  },
+  {
+    "fileName": "use-api-if-sso-is-enabled-entra-id.adoc"
+  },
+  {
+    "fileName": "use-api-if-sso-is-enabled-ping.adoc"
+  },
+  {
+    "fileName": "use-s3-setup-wizard-steps.adoc"
+  },
+  {
+    "fileName": "use-s3-setup-wizard.adoc"
+  },
+  {
+    "fileName": "using-grid-management-api.adoc"
+  },
+  {
+    "fileName": "using-identity-federation.adoc"
+  },
+  {
+    "fileName": "using-multiple-admin-nodes.adoc"
+  },
+  {
+    "fileName": "using-storagegrid-security-certificates.adoc"
+  },
+  {
+    "fileName": "viewing-ip-addresses.adoc"
+  },
+  {
+    "fileName": "viewing-network-traffic-metrics.adoc"
+  },
+  {
+    "fileName": "viewing-storagegrid-license-information.adoc"
+  },
+  {
+    "fileName": "web-browser-requirements.adoc"
+  },
+  {
+    "fileName": "what-is-autosupport.adoc"
+  },
+  {
+    "fileName": "what-object-segmentation-is.adoc"
+  },
+  {
+    "fileName": "what-storage-volume-watermarks-are.adoc"
+  }
+]
