@@ -2200,103 +2200,18 @@
     }
   },
   {
-    "fileName": "viewing-storagegrid-license-information.adoc",
-    "originalTitle": "View StorageGRID license information",
-    "suggestedTitle": "View StorageGRID license information",
-    "titleReasoning": "No change needed. The title follows the task page pattern with an imperative verb, includes the product name naturally integrated, is clear and concise, and aligns with the user goal of viewing license information.",
-    "fileInfo": {
-      "productName": "StorageGRID",
-      "componentName": null,
-      "pageType": "Task",
-      "userGoal": "View license information for their StorageGRID system, including storage capacity and license details"
-    },
-    "abcdefCheck": {
-      "userGoalAlignment": "Yes",
-      "pageTypePattern": "Yes",
-      "productInclusion": "Yes",
-      "titleLength": "Yes",
-      "noForbiddenPatterns": "Yes",
-      "capGrammarVoice": "Yes"
-    }
+    "fileName": "viewing-storagegrid-license-information.adoc"
   },
   {
-    "fileName": "web-browser-requirements.adoc",
-    "originalTitle": "Web browser requirements",
-    "suggestedTitle": "Web browser requirements for StorageGRID",
-    "titleReasoning": "Added product name 'StorageGRID' to meet product inclusion requirement. Reference pages must include the product name for context. Using appended pattern 'for StorageGRID' since 'StorageGRID web browser requirements' sounds awkward.",
-    "fileInfo": {
-      "productName": "StorageGRID",
-      "componentName": null,
-      "pageType": "Reference",
-      "userGoal": "Look up which web browsers are supported for accessing StorageGRID"
-    },
-    "abcdefCheck": {
-      "userGoalAlignment": "Yes",
-      "pageTypePattern": "Yes",
-      "productInclusion": "No",
-      "titleLength": "Yes",
-      "noForbiddenPatterns": "Yes",
-      "capGrammarVoice": "Yes"
-    }
+    "fileName": "web-browser-requirements.adoc"
   },
   {
-    "fileName": "what-is-autosupport.adoc",
-    "originalTitle": "What is AutoSupport?",
-    "suggestedTitle": "Learn about AutoSupport in StorageGRID",
-    "titleReasoning": "Changed from 'What is' pattern to 'Learn about' pattern per concept page guidelines, and added product name 'StorageGRID' for context. The 'What is X?' pattern is not recommended; concept pages should use 'Learn about', 'How...', or descriptive noun phrases.",
-    "fileInfo": {
-      "productName": "StorageGRID",
-      "componentName": null,
-      "pageType": "Concept",
-      "userGoal": "Understand what AutoSupport is and how it works in StorageGRID"
-    },
-    "abcdefCheck": {
-      "userGoalAlignment": "Yes",
-      "pageTypePattern": "No",
-      "productInclusion": "No",
-      "titleLength": "Yes",
-      "noForbiddenPatterns": "Yes",
-      "capGrammarVoice": "Yes"
-    }
+    "fileName": "what-is-autosupport.adoc"
   },
   {
-    "fileName": "what-object-segmentation-is.adoc",
-    "originalTitle": "What is object segmentation?",
-    "suggestedTitle": "Learn about object segmentation in StorageGRID",
-    "titleReasoning": "Changed from 'What is' pattern to 'Learn about' pattern per concept page guidelines, and added product name 'StorageGRID' for context. The 'What is X?' pattern is not recommended for concept pages.",
-    "fileInfo": {
-      "productName": "StorageGRID",
-      "componentName": null,
-      "pageType": "Concept",
-      "userGoal": "Understand how StorageGRID splits large objects into smaller segments for storage optimization"
-    },
-    "abcdefCheck": {
-      "userGoalAlignment": "Yes",
-      "pageTypePattern": "No",
-      "productInclusion": "No",
-      "titleLength": "Yes",
-      "noForbiddenPatterns": "Yes",
-      "capGrammarVoice": "Yes"
-    }
+    "fileName": "what-object-segmentation-is.adoc"
   },
   {
-    "fileName": "what-storage-volume-watermarks-are.adoc",
-    "originalTitle": "What are storage volume watermarks?",
-    "suggestedTitle": "Learn about storage volume watermarks in StorageGRID",
-    "titleReasoning": "Changed from 'What are' pattern to 'Learn about' pattern per concept page guidelines, and added product name 'StorageGRID' for context. The 'What is/are X?' pattern is not recommended for concept pages.",
-    "fileInfo": {
-      "productName": "StorageGRID",
-      "componentName": null,
-      "pageType": "Concept",
-      "userGoal": "Understand how StorageGRID uses storage volume watermarks to manage Storage Node transitions between read-only and read-write states"
-    },
-    "abcdefCheck": {
-      "userGoalAlignment": "Yes",
-      "pageTypePattern": "No",
-      "productInclusion": "No",
-      "titleLength": "Yes",
-      "noForbiddenPatterns": "Yes",
-      "capGrammarVoice": "Yes"
-    }
+    "fileName": "what-storage-volume-watermarks-are.adoc"
   }
 ]
