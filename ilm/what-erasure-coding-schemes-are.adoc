@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: erasure-coding scheme
 summary: 'Erasure-coding schemes control how many data fragments and how many parity fragments are created for each object.'
 ---
-= What are erasure-coding schemes?
+= Learn about erasure-coding schemes in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
