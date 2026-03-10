@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: overview tab
 summary: 'The Overview tab provides basic information about each node. It also shows any alerts currently affecting the node.'
 ---
-= View the Overview tab in StorageGRID
+= View the StorageGRID Overview tab
 :icons: font
 :imagesdir: ../media/
 
