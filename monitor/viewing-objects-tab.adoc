@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: objects tab
 summary: 'The Objects tab provides information about S3 ingest and retrieve rates.'
 ---
-= View the Objects tab
+= View the Objects tab in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
