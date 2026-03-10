@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create branch bucket
 summary: 'A branch bucket provides access to objects in a bucket as they existed at a certain time.'
 ---
-= What is a branch bucket?
+= StorageGRID branch buckets
 :icons: font
 :imagesdir: ../media/
 
