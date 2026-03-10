@@ -17,7 +17,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "administering-storagegrid-system.adoc",
@@ -37,7 +38,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "benefits-of-active-idle-and-concurrent-http-connections.adoc",
@@ -57,7 +59,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "change-node-console-password.adoc",
@@ -77,7 +80,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "change-ssh-access-passwords.adoc",
@@ -97,7 +101,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "changing-browser-session-timeout-interface.adoc",
@@ -117,7 +122,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "changing-network-options-object-encryption.adoc",
@@ -137,7 +143,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "changing-password-for-tenant-local-root-user.adoc",
@@ -157,7 +164,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "changing-provisioning-passphrase.adoc",
@@ -177,23 +185,24 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "changing-your-password.adoc",
     "originalTitle": "Change your password",
-    "suggestedTitle": "Change your Grid Manager password",
-    "titleReasoning": "The title needs more specificity. Since this is for Grid Manager local users, 'Grid Manager password' provides better context than adding StorageGRID, which would be redundant with Grid Manager.",
+    "suggestedTitle": "Change your StorageGRID Grid Manager password",
+    "titleReasoning": "The title now includes the product name 'StorageGRID' as required. The integrated approach ('your StorageGRID Grid Manager password') reads naturally and clearly indicates this is about changing the user's own password in the Grid Manager interface of StorageGRID.",
     "fileInfo": {
       "productName": "StorageGRID",
-      "componentName": "Admin",
+      "componentName": "Grid Manager",
       "pageType": "Task",
       "userGoal": "Change their own Grid Manager password as a local user"
     },
     "abcdefCheck": {
       "userGoalAlignment": "Yes",
       "pageTypePattern": "Yes",
-      "productInclusion": "No",
+      "productInclusion": "Yes",
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
@@ -217,7 +226,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configure-autosupport-grid-manager.adoc",
@@ -237,7 +247,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configure-firewall-controls.adoc",
@@ -257,7 +268,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configure-high-availability-group.adoc",
@@ -277,7 +289,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configure-sso.adoc",
@@ -297,7 +310,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configure-vlan-interfaces.adoc",
@@ -317,7 +331,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-admin-proxy-settings.adoc",
@@ -337,7 +352,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-administrator-client-certificates.adoc",
@@ -357,7 +373,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-client-connections.adoc",
@@ -377,7 +394,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-custom-server-certificate-for-grid-manager-tenant-manager.adoc",
@@ -397,7 +415,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-custom-server-certificate-for-storage-node.adoc",
@@ -417,7 +436,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-load-balancer-endpoints.adoc",
@@ -437,7 +457,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-network-settings.adoc",
@@ -457,7 +478,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-s3-api-endpoint-domain-names.adoc",
@@ -477,7 +499,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-storage-proxy-settings.adoc",
@@ -497,7 +520,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-storagegrid-certificates-for-fabricpool.adoc",
@@ -517,7 +541,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "configuring-stored-object-compression.adoc",
@@ -537,7 +562,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "confirming-federated-users-can-sign-in.adoc",
@@ -557,7 +583,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "controlling-access-through-firewalls.adoc",
@@ -577,7 +604,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "controlling-storagegrid-access.adoc",
@@ -597,7 +625,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "copying-storagegrid-system-ca-certificate.adoc",
@@ -617,7 +646,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "creating-enterprise-application-entra-id.adoc",
@@ -637,7 +667,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "creating-relying-party-trusts-in-ad-fs.adoc",
@@ -657,7 +688,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "creating-sp-connection-ping.adoc",
@@ -677,7 +709,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "creating-tenant-account.adoc",
@@ -697,7 +730,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "creating-traffic-classification-policies.adoc",
@@ -717,7 +751,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "deactivate-features-from-api.adoc",
@@ -737,7 +772,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "deleting-tenant-account.adoc",
@@ -757,7 +793,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "deleting-traffic-classification-policy.adoc",
@@ -777,7 +814,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "disabling-single-sign-on.adoc",
@@ -797,7 +835,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "editing-tenant-account.adoc",
@@ -817,7 +856,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "editing-traffic-classification-policy.adoc",
@@ -837,7 +877,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "enable-cross-origin-resource-sharing-for-management-interface.adoc",
@@ -857,7 +898,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "global-certificate-types.adoc",
@@ -877,7 +919,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-compare-cgr-to-cloudmirror.adoc",
@@ -897,7 +940,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-create-connection.adoc",
@@ -917,7 +961,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-manage-connection.adoc",
@@ -937,7 +982,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-manage-tenants.adoc",
@@ -957,7 +1003,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-overview.adoc",
@@ -977,7 +1024,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-retry-failed-replication.adoc",
@@ -997,7 +1045,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-troubleshoot.adoc",
@@ -1017,7 +1066,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-what-is-account-clone.adoc",
@@ -1037,7 +1087,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-federation-what-is-cross-grid-replication.adoc",
@@ -1057,7 +1108,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-management-api-operations.adoc",
@@ -1077,7 +1129,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "grid-management-api-versioning.adoc",
@@ -1097,7 +1150,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "guidelines-for-storagegrid-networks.adoc",
@@ -1117,7 +1171,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "how-ha-groups-are-used.adoc",
@@ -1137,7 +1192,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "how-sso-works.adoc",
@@ -1157,7 +1213,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "identifying-primary-admin-node.adoc",
@@ -1177,7 +1234,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "increasing-metadata-reserved-space-setting.adoc",
@@ -1197,7 +1255,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "No"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "index.adoc",
@@ -1217,7 +1276,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "kms-adding.adoc",
@@ -1237,7 +1297,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "kms-configuring-storagegrid-as-client.adoc",
@@ -1257,7 +1318,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "kms-configuring.adoc",
@@ -1277,7 +1339,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "kms-considerations-and-requirements.adoc",
@@ -1297,7 +1360,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "kms-considerations-for-changing-for-site.adoc",
@@ -1317,7 +1381,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "kms-managing.adoc",
@@ -1337,7 +1402,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "kms-overview-of-kms-and-appliance-configuration.adoc",
@@ -1357,7 +1423,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manage-external-ssh-access.adoc",
@@ -1377,7 +1444,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manage-firewall-controls.adoc",
@@ -1397,7 +1465,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manage-link-costs.adoc",
@@ -1417,7 +1486,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manage-platform-services-for-tenants.adoc",
@@ -1437,7 +1507,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manage-s3-select-for-tenant-accounts.adoc",
@@ -1457,7 +1528,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manage-security.adoc",
@@ -1477,7 +1549,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manage-tls-ssh-policy.adoc",
@@ -1497,7 +1570,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-admin-groups.adoc",
@@ -1517,7 +1591,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-full-storage-nodes.adoc",
@@ -1537,7 +1612,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-high-availability-groups.adoc",
@@ -1557,7 +1633,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-load-balancing.adoc",
@@ -1577,7 +1654,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-object-metadata-storage.adoc",
@@ -1597,7 +1675,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-tenants.adoc",
@@ -1617,7 +1696,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-traffic-classification-policies.adoc",
@@ -1637,7 +1717,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "managing-users.adoc",
@@ -1657,7 +1738,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "manually-triggering-autosupport-message.adoc",
@@ -1677,7 +1759,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "networking-and-ports-for-platform-services.adoc",
@@ -1697,7 +1780,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "per-site-delivery-of-platform-services-messages.adoc",
@@ -1717,7 +1801,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "protecting-against-cross-site-request-forgery-csrf.adoc",
@@ -1737,7 +1822,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "requirements-for-sso.adoc",
@@ -1757,7 +1843,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "reviewing-storagegrid-encryption-methods.adoc",
@@ -1777,7 +1864,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "security-for-clients.adoc",
@@ -1797,7 +1885,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "sending-eseries-autosupport-messages-through-storagegrid.adoc",
@@ -1817,7 +1906,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "signing-in-to-grid-manager.adoc",
@@ -1837,7 +1927,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "signing-out-of-grid-manager.adoc",
@@ -1857,7 +1948,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "summary-ip-addresses-and-ports-for-client-connections.adoc",
@@ -1877,7 +1969,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "supported-ciphers-for-outgoing-tls-connections.adoc",
@@ -1897,7 +1990,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "temporarily-disabling-and-reenabling-sso-for-admin-node.adoc",
@@ -1917,7 +2011,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "troubleshooting-autosupport-messages.adoc",
@@ -1937,7 +2032,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "troubleshooting-platform-services.adoc",
@@ -1957,7 +2053,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "updating-storagegrid-license-information.adoc",
@@ -1977,7 +2074,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "use-api-if-sso-is-enabled-adfs.adoc",
@@ -1997,7 +2095,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "use-api-if-sso-is-enabled-entra-id.adoc",
@@ -2017,7 +2116,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "use-api-if-sso-is-enabled-ping.adoc",
@@ -2037,7 +2137,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "use-s3-setup-wizard-steps.adoc",
@@ -2057,7 +2158,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "use-s3-setup-wizard.adoc",
@@ -2077,7 +2179,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "No",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "using-grid-management-api.adoc",
@@ -2097,7 +2200,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "using-identity-federation.adoc",
@@ -2117,7 +2221,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "using-multiple-admin-nodes.adoc",
@@ -2137,7 +2242,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "using-storagegrid-security-certificates.adoc",
@@ -2157,7 +2263,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "viewing-ip-addresses.adoc",
@@ -2177,7 +2284,8 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
     "fileName": "viewing-network-traffic-metrics.adoc",
@@ -2197,21 +2305,112 @@
       "titleLength": "Yes",
       "noForbiddenPatterns": "Yes",
       "capGrammarVoice": "Yes"
-    }
+    },
+    "verification": "Yes"
   },
   {
-    "fileName": "viewing-storagegrid-license-information.adoc"
+    "fileName": "viewing-storagegrid-license-information.adoc",
+    "originalTitle": "View StorageGRID license information",
+    "suggestedTitle": "View StorageGRID license information",
+    "titleReasoning": "No change needed. The title follows the task page pattern with an imperative verb, includes the product name naturally integrated, is clear and concise, and aligns with the user goal of viewing license information.",
+    "fileInfo": {
+      "productName": "StorageGRID",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "View license information for their StorageGRID system, including storage capacity and license details"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
   },
   {
-    "fileName": "web-browser-requirements.adoc"
+    "fileName": "web-browser-requirements.adoc",
+    "originalTitle": "Web browser requirements",
+    "suggestedTitle": "Web browser requirements for StorageGRID",
+    "titleReasoning": "Added product name 'StorageGRID' to meet product inclusion requirement. Reference pages must include the product name for context. Using appended pattern 'for StorageGRID' since 'StorageGRID web browser requirements' sounds awkward.",
+    "fileInfo": {
+      "productName": "StorageGRID",
+      "componentName": null,
+      "pageType": "Reference",
+      "userGoal": "Look up which web browsers are supported for accessing StorageGRID"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "No",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
   },
   {
-    "fileName": "what-is-autosupport.adoc"
+    "fileName": "what-is-autosupport.adoc",
+    "originalTitle": "What is AutoSupport?",
+    "suggestedTitle": "Learn about AutoSupport in StorageGRID",
+    "titleReasoning": "Changed from 'What is' pattern to 'Learn about' pattern per concept page guidelines, and added product name 'StorageGRID' for context. The 'What is X?' pattern is not recommended; concept pages should use 'Learn about', 'How...', or descriptive noun phrases.",
+    "fileInfo": {
+      "productName": "StorageGRID",
+      "componentName": null,
+      "pageType": "Concept",
+      "userGoal": "Understand what AutoSupport is and how it works in StorageGRID"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "No",
+      "productInclusion": "No",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
   },
   {
-    "fileName": "what-object-segmentation-is.adoc"
+    "fileName": "what-object-segmentation-is.adoc",
+    "originalTitle": "What is object segmentation?",
+    "suggestedTitle": "Learn about object segmentation in StorageGRID",
+    "titleReasoning": "Changed from 'What is' pattern to 'Learn about' pattern per concept page guidelines, and added product name 'StorageGRID' for context. The 'What is X?' pattern is not recommended for concept pages.",
+    "fileInfo": {
+      "productName": "StorageGRID",
+      "componentName": null,
+      "pageType": "Concept",
+      "userGoal": "Understand how StorageGRID splits large objects into smaller segments for storage optimization"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "No",
+      "productInclusion": "No",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
   },
   {
-    "fileName": "what-storage-volume-watermarks-are.adoc"
+    "fileName": "what-storage-volume-watermarks-are.adoc",
+    "originalTitle": "What are storage volume watermarks?",
+    "suggestedTitle": "Learn about storage volume watermarks in StorageGRID",
+    "titleReasoning": "Changed from 'What are' pattern to 'Learn about' pattern per concept page guidelines, and added product name 'StorageGRID' for context. The 'What is/are X?' pattern is not recommended for concept pages.",
+    "fileInfo": {
+      "productName": "StorageGRID",
+      "componentName": null,
+      "pageType": "Concept",
+      "userGoal": "Understand how StorageGRID uses storage volume watermarks to manage Storage Node transitions between read-only and read-write states"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "No",
+      "productInclusion": "No",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
   }
 ]
