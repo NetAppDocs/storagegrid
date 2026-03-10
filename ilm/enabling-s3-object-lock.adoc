@@ -38,7 +38,7 @@ The S3 Object Lock Settings page appears.
 
 . Optionally, select *Allow S3 Object Lock to be enabled on existing buckets*.
 +
-CAUTION: Enabling S3 Object Lock on an existing bucket might cause unintended data migration from a Cloud Storage Pool back to StorageGRID, depending on your ILM rules. You cannot stop this migration after it starts.
+CAUTION: Enabling S3 Object Lock on an existing bucket might cause unintended data migration from a Cloud Storage Pool back to StorageGRID, depending on your ILM rules. You can't stop this migration after it starts.
 
 . Select *Apply*.
 +
