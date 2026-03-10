@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Key Management Interoperability Protocol, kmip version, kms requirements, use key management server
 summary: 'Before configuring an external key management server \(KMS\), you must understand the considerations and requirements.'
 ---
-= Key management server requirements and considerations for StorageGRID
+= StorageGRID key management server requirements and considerations
 :icons: font
 :imagesdir: ../media/
 
