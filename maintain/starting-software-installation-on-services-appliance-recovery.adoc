@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, services appliance, start software installation
 summary: 'To install a Gateway Node or Admin Node on a services appliance, you use the StorageGRID Appliance Installer, which is included on the appliance.'
 ---
-= Start StorageGRID software installation on services appliance
+= Start StorageGRID software installation on a services appliance
 :icons: font
 :imagesdir: ../media/
 
