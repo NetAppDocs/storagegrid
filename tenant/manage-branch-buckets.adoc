@@ -135,6 +135,8 @@ NOTE: This setting applies only to objects directly ingested into the branch buc
 +
 Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). The maximum supported object count is 48.
 +
+If no limit is set, the object count is unlimited.
++
 NOTE: This setting applies only to objects directly ingested into the branch bucket, and not to the objects that are visible from the base bucket through the branch bucket.
 
 . Select *Create bucket*.

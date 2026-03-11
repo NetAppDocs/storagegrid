@@ -114,7 +114,8 @@ If no limit is set, the capacity for this bucket is unlimited. Refer to link:../
 . [[object-count-limit]]Optionally, select *Enable object count limit*.
 +
 Object count limit is the maximum number of objects this bucket can contain. This value represents a logical amount (object count). The maximum supported object count is 48. 
-
++
+If no limit is set, the object count is unlimited.
 . Select *Create bucket*.
 +
 The bucket is created and added to the table on the Buckets page.
