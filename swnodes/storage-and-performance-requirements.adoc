@@ -51,7 +51,7 @@ NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the 
 
 The following table shows the number of storage volumes (LUNs) required for each host and the minimum size required for each LUN, based on which nodes will be deployed on that host.
 
-The maximum tested LUN size is 39 TB.
+The maximum tested LUN size is 100 TiB.
 
 NOTE: These numbers are for each host, not for the entire grid.
 
@@ -72,11 +72,11 @@ a|Storage Node
 a|Object data
 a|3 for each Storage Node on this host
 
-*Note:* A Linux software-based Storage Node can have 1 to 48 storage volumes. A VMware software-based Storage Node can have 1 to 16 storage volumes. At least 3 storage volumes are recommended.
+*Note:* A Linux software-based Storage Node can have 1 to 48 storage volumes. A VMware software-based Storage Node can have 1 to 48 storage volumes. At least 3 storage volumes are recommended.
 
 a|12 TB (4 TB/LUN, minimum)
 
-Maximum tested LUN size: 39 TB.
+Maximum tested LUN size: 100 TiB.
 
 See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
 
@@ -85,7 +85,7 @@ a|Object metadata
 a|1
 a|4 TB/LUN, minimum
 
-Maximum tested LUN size: 39 TB.
+Maximum tested LUN size: 100 TiB.
 
 See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
 
@@ -242,7 +242,7 @@ a|*System data:* 700 GB
 Linux and VMware have different storage requirements for storage nodes:
 
 * A Linux software-based Storage Node can have 1 to 48 storage volumes
-* A VMware software-based Storage Node can have 1 to 16 storage volumes
+* A VMware software-based Storage Node can have 1 to 48 storage volumes
 * Three or more storage volumes are recommended. 
 * Each storage volume should be 4 TB or larger.
 
@@ -280,3 +280,5 @@ When adding a new StorageGRID site, the new site total metadata capacity should,
 * When configuring different Storage Nodes for a site, use the same setting for volume 0 if possible. If a site contains Storage Nodes of different sizes, the Storage Node with the smallest volume 0 will determine the metadata capacity of that site.
 
 For details, go to link:../admin/managing-object-metadata-storage.html[Manage object metadata storage].
+
+// 2026 FEB 27, SGRIDDOC-221

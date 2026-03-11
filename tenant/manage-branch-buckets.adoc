@@ -125,7 +125,7 @@ A _maximum_ retention period, which can be a value from 1 day to 100 years, is s
 
 . Optionally, select *Enable capacity limit*.
 +
-Capacity limit is the maximum capacity available for the branch bucket. This value represents a logical amount (object size), not a physical amount (size on disk). The maximum supported object size is 100 TiB.
+Capacity limit is the maximum capacity available for the branch bucket. This value represents a logical amount (object size), not a physical amount (size on disk).
 +
 If no limit is set, the capacity for the branch bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
 +
@@ -133,9 +133,7 @@ NOTE: This setting applies only to objects directly ingested into the branch buc
 
 . Optionally, select *Enable object count limit*.
 +
-Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). The maximum supported object count is 48.
-+
-If no limit is set, the object count is unlimited.
+Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). If no limit is set, the object count is unlimited.
 +
 NOTE: This setting applies only to objects directly ingested into the branch bucket, and not to the objects that are visible from the base bucket through the branch bucket.
 
@@ -146,5 +144,3 @@ The branch bucket is created and added to the table on the Buckets page.
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view branch bucket details] and perform additional configuration.
 +
 On the Bucket details page, some configuration options related to the modification of objects are disabled for read-only buckets.
-
-// 2026 FEB 27, SGRIDDOC-221
