@@ -73,7 +73,7 @@ Pay close attention to the cautions that appear when you select each of these op
 * link:deleting-s3-bucket.html[Delete a bucket] (bucket must be empty)
 ====
 
-.. View or change settings for the bucket in each of the tabs as needed. <<update here?>>
+.. View or change settings for the bucket in each of the tabs as needed.
 +
 * *S3 Console*: View the objects for the bucket. For more information, refer to link:use-s3-console.html[Use S3 Console].
 

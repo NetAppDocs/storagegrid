@@ -125,7 +125,7 @@ A _maximum_ retention period, which can be a value from 1 day to 100 years, is s
 
 . Optionally, select *Enable capacity limit*.
 +
-Capacity limit is the maximum capacity available for the branch bucket. This value represents a logical amount (object size), not a physical amount (size on disk).
+Capacity limit is the maximum capacity available for the branch bucket. This value represents a logical amount (object size), not a physical amount (size on disk). The maximum supported object size is 100 TiB.
 +
 If no limit is set, the capacity for the branch bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
 +
@@ -133,7 +133,7 @@ NOTE: This setting applies only to objects directly ingested into the branch buc
 
 . Optionally, select *Enable object count limit*.
 +
-Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). The maximum supported object count is 48.  
+Object count limit is the maximum number of objects the branch bucket can contain. This value represents a logical amount (object count). The maximum supported object count is 48.
 +
 NOTE: This setting applies only to objects directly ingested into the branch bucket, and not to the objects that are visible from the base bucket through the branch bucket.
 

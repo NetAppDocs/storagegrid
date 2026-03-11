@@ -107,11 +107,11 @@ A _maximum_ retention period, which can be a value from 1 day to 100 years, is s
 
 . [[capacity-limit]]Optionally, select *Enable capacity limit*, enter a value, and select the capacity unit.
 +
-Capacity limit is the maximum capacity available for this bucket's objects. This value represents a logical amount (object size), not a physical amount (size on disk). The maximum supported object storage size is 100 TiB.
+Capacity limit is the maximum capacity available for this bucket's objects. This value represents a logical amount (object size), not a physical amount (size on disk). The maximum supported object size is 100 TiB.
 +
 If no limit is set, the capacity for this bucket is unlimited. Refer to link:../tenant/understanding-tenant-manager-dashboard.html#bucket-capacity-usage[Capacity limit usage] for more information.
 
-. [[object-count-limit]]Select *Enable object count limit*.
+. [[object-count-limit]]Optionally, select *Enable object count limit*.
 +
 Object count limit is the maximum number of objects this bucket can contain. This value represents a logical amount (object count). The maximum supported object count is 48. 
 
