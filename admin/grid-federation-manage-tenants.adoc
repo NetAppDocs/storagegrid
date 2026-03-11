@@ -54,7 +54,7 @@ You can see details for a tenant that is permitted to use a grid federation conn
 . From the Tenants page, select the tenant name to view the tenant details page.
 
 
-. Optionally select the *Grid federation* tab to link:../monitor/grid-federation-monitor-connections.html[monitor the grid federation connection].
+. Optionally select the *Grid federation* tab to link:../monitor/grid-federation-monitor-connections.html[monitor the grid federation connections].
 
 == Edit a permitted tenant
 

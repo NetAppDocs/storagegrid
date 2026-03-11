@@ -31,12 +31,12 @@ Sign in to the tenant account on any connected grid.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optionally, configure identity federation
 
 [role="quick-margin-para"]
-*HOW DOES THIS CHANGE FOR 12.1?* If your tenant account has the *Use own identity source* permission to use federated groups and users, configure the same identity source (with the same settings) for the source and one or more destination tenant accounts. Federated groups and users can't be synced unless all grids are using the same identity source. For instructions, see link:using-identity-federation.html[Use identity federation]. 
+If your tenant account has the *Use own identity source* permission to use federated groups and users, configure the same identity source (with the same settings) for the source and one or more destination tenant accounts. Federated groups and users can't be synced unless all grids are using the same identity source. For instructions, see link:using-identity-federation.html[Use identity federation]. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create groups and users
 
 [role="quick-margin-para"]
-You can create groups and users from any connected grid. When you add a new local group, StorageGRID automatically syncs it to all connected grids. Changes to local groups (edit, delete) are also continuously synced. Federated groups are synced once at creation.
+You can create groups and users from any connected grid. When you add a new local group, StorageGRID automatically syncs it to all connected grids. Changes to local groups (edit, delete) are also continuously synced. Federated groups are cloned once at creation.
 
 [role="quick-margin-list"]
 * If identity federation is configured for the entire StorageGRID system or for your tenant account, link:creating-groups-for-s3-tenant.html[create new tenant groups] by importing federated groups from the identity source.
@@ -98,4 +98,4 @@ Changes made on any connected grid—including creating or importing groups and 
 
 Changes to local groups, local users, and S3 access keys owned by local users are continuously synced across all connected grids. Synced operations include edits, deletes, and password resets.
 
-Changes to federated groups and S3 access keys owned by federated users are not synced after initial creation.
+Changes to federated groups and S3 access keys owned by federated users aren't synced after initial creation.
