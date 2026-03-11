@@ -85,7 +85,9 @@ include::../_include/tenant-account-permissions.adoc[]
 | Grid federation connection
 | The tenant can use grid federation connections, which:
 
-* Causes this tenant account, groups, users, and S3 access keys to be synced between this grid and the other grids in the selected connections.
+* Causes this tenant account and all tenant groups, users, and S3 access keys to be synced between this grid and the other grids in the selected connections.
++
+TIP: If needed for security or compliance reasons, you can deselect *Enable access key sync*.
 
 * Allows this tenant to configure cross-grid replication between corresponding buckets on each grid.
 
@@ -132,13 +134,9 @@ A success message appears, and the new tenant is listed on the Tenants page. To 
 +
 include::../_include/tenant-settings-delay.adoc[]
 
-. If you selected the *Use grid federation connection* permission for the tenant:
-
-.. Confirm that an identical tenant was replicated to the other grid in the connection. The tenants on both grids will have the same 20-digit account ID, name, description, quota, and permissions.
+. If you selected the *Use grid federation connection* permission for the tenant, confirm that an identical tenant was replicated to the other grid in the connection. The tenants on both grids will have the same 20-digit account ID, name, description, quota, and permissions.
 +
 NOTE: If you see an error message that indicates the tenant account was created on this grid but wasn't synced to the other grids, refer to the instructions in link:grid-federation-troubleshoot.html[Troubleshoot grid federation errors].
-
-.. If you provided a local root user password when defining root access, link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] for the replicated tenant.
 
 == Sign in to tenant (optional)
 As required, you can sign in to the new tenant now to complete the configuration, or you can sign in to the tenant later. The sign-in steps depend on whether you are signed in to the Grid Manager using the default port (443) or a restricted port. See link:controlling-access-through-firewalls.html[Control access at external firewall].

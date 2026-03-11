@@ -64,7 +64,9 @@ If *Use own identity source* is:
 * To add the *Use grid federation connection* permission:
 .. Select the *Grid federation* tab.
 .. Select the *Use grid federation connection* checkbox.
-.. Optionally, select *Sync existing local users and groups* to sync them to the remote grid. If you want, you can stop the cloning in progress or retry cloning if some local users or groups failed to be synced after the last sync operation was completed.
+.. Optionally, select *Clone existing local users and groups* to clone them to the remote grid. If you want, you can stop the cloning in progress or retry cloning if some local users or groups failed to be cloned after the last clone operation was completed.
++
+TIP: If needed for security or compliance reasons, you can deselect *Enable access key sync*.
 
 * To set a maximum retention period or allow compliance mode:
 +

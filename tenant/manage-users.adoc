@@ -76,7 +76,7 @@ Users who don't belong to any groups will have no management permissions. Permis
 
 . Select *Create user*.
 +
-If your tenant account has the *Use grid federation connection* permission and you are on the tenant's source grid, the new local user is synced to the tenant's destination grid. *Success* appears as the *Cloning status* in the Overview section of the user's detail page.
+If your tenant account has the *Use grid federation connection* permission and you are on the tenant's source grid, the new local user is synced to the tenant's destination grid. *Succeeded* appears as the *Sync status* in the Overview section of the user's detail page.
 
 . Select *Finish* to return to the Users page.
 
@@ -109,8 +109,6 @@ If your tenant account has the *Use grid federation connection* permission and y
 ** Denied access
 ** Access mode
 ** Group membership
-+
-NOTE: Additional fields might appear if the tenant account has the *Use grid federation connection* permission
 
 . Edit user settings as needed. See <<create-user,Create local user>> for details about what to enter.
 
@@ -170,14 +168,19 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 == [[sync-users]]Retry user sync
 
-To retry a sync that failed:
+If any user failed to sync, "Failed" appears in the Sync status column for the user. A banner appears above the table to indicate that one or more users failed to sync.
 
-.	Select each user that indicates _(Cloning failed)_ below the user name.
-. Select *Actions* > *Sync users*.
-. View the status of the sync operation from the details page of each user you're cloning.
+.Steps
+
+To retry syncing:
+
+. On the banner, select *Retry sync*. This operation retries syncing for all users that failed to sync.
+. To retry syncing an individual user, select the user name. On the user details page, select *Retry sync*.
+. View the status of the sync operation from the details page of each user you're syncing.
+
+If the retry is successful, "Succeeded" appears in the Sync status column for each user that was successfully synced, and the banner disappears.
 
 For additional information, see link:grid-federation-account-sync.html[Sync tenant groups and users].
-
 
 == Delete one or more local users
 

@@ -99,8 +99,5 @@ When new groups or users are created on a tenant, StorageGRID automatically sync
 
 . Optionally, sync S3 access keys from the source tenant to the destination tenant. 
 
-For details about the permitted tenant account workflow and to learn how groups, users, and S3 access keys are synced, see link:../tenant/grid-federation-account-clone.html[Sync tenant groups and users] and link:../tenant/grid-federation-clone-keys-with-api.html[Sync S3 access keys using the API].
-
-
-
+For details about the permitted tenant account workflow and to learn how groups, users, and S3 access keys are synced, refer to link:../tenant/grid-federation-account-clone.html[Sync tenant groups and users].
 
