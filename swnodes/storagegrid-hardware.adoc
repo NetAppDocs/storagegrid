@@ -4,7 +4,7 @@ permalink: swnodes/storagegrid-hardware.html
 keywords: storagegrid, software, grid
 summary: "Learn how to install, configure, and use StorageGRID appliance hardware."
 ---
-= StorageGRID appliances
+= Learn about StorageGRID appliance hardware
 :hardbreaks:
 :nofooter:
 :icons: font
