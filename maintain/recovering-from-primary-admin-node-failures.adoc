@@ -11,8 +11,6 @@ summary: 'You must complete a specific set of tasks to recover from a primary Ad
 [.lead]
 You must complete a specific set of tasks to recover from a primary Admin Node failure. The primary Admin Node hosts the Configuration Management Node (CMN) service for the grid.
 
-CAUTION: You must repair or replace a failed primary Admin Node promptly or the grid might lose its ability to ingest new objects. The exact time period depends on your rate of object ingest: if you need a more accurate assessment of the time frame for your grid, contact technical support.
-
 Follow these high-level steps to recover a primary Admin Node:
 
 . link:copying-audit-logs-from-failed-primary-admin-node.html[Copy audit logs from failed primary Admin Node]
@@ -24,3 +22,4 @@ Follow these high-level steps to recover a primary Admin Node:
 . link:restoring-prometheus-metrics-primary-admin-node.html[Restore Prometheus metrics when recovering a primary Admin Node]
 
 // 2025 NOV 18, storagegrid-issues-39
+// 2026-03-12, SGWS-34291
