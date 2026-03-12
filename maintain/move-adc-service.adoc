@@ -20,14 +20,16 @@ You can move the ADC service to another Storage Node on the same site.
 * The source node and target node are on the same site.
 
 .About this task
-Use the Move ADC procedure when you want to:
-
-* Decommission a Storage Node that hosts the ADC service
-* Convert a Storage Node that hosts the ADC service to a data-only Storage Node
-
-When you want to decommission a Storage Node or link:../maintain/convert-to-data-only-node.html[convert a Storage Node to a data-only node], first you might need to use the Move ADC procedure. You'll need to ensure that the link:../maintain/understanding-adc-service-quorum.html[ADC quorum is maintained].
+Use the Move ADC procedure to manually move the ADC service between Storage Nodes. For example, you might want to redistribute ADC services across nodes or move the ADC service to a higher-performance node.
 
 This procedure moves the ADC, IDNT, ACCT, and RSM services from one Storage Node to another on the same site. The RSM, IDNT, and ACCT services are dependent on the ADC service, so they automatically move when the ADC service moves.
+
+[NOTE]
+====
+* You don't need to manually move the ADC service before link:../maintain/convert-to-data-only-node.html[converting a Storage Node to a data-only node] or decommissioning a Storage Node. These procedures automatically move the ADC service when required. Refer to link:../maintain/understanding-adc-service-quorum.html[What is the ADC quorum?] for details about the requirements.
+
+* StorageGRID moves the ADC service to the newest Storage Nodes that meet the requirements for hosting the service.
+====
 
 .Steps
 . Record the node IDs of the source and target nodes.

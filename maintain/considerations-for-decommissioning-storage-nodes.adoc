@@ -35,7 +35,7 @@ Review the considerations for decommissioning a connected Storage Node.
 
 * You should not decommission more than 10 Storage Nodes in a single Decommission Node procedure.
 
-* The system must, at all times, include enough Storage Nodes to satisfy operational requirements, including the link:understanding-adc-service-quorum.html[ADC quorum] and the active link:reviewing-ilm-policy-and-storage-configuration.html[ILM policy]. To satisfy this restriction, you might need to add a new Storage Node in an expansion operation before you can decommission an existing Storage Node.
+* The system must, at all times, include enough Storage Nodes to satisfy operational requirements, including the link:understanding-adc-service-quorum.html[ADC quorum] and the active link:reviewing-ilm-policy-and-storage-configuration.html[ILM policy]. If a decommission would bring a site's ADC count below quorum, StorageGRID automatically moves the ADC service to available non-ADC Storage Nodes on the same site, maintaining ADC quorum. If the ADC service can't be automatically moved, you might need to link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[add a new Storage Node in an expansion operation] before you can decommission an existing Storage Node.
 +
 Use caution when you decommission Storage Nodes in a grid containing software-based metadata-only nodes. If you decommission all nodes configured to store _both_ objects and metadata, the ability to store objects is removed from the grid. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
 
