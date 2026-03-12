@@ -13,7 +13,7 @@ The StorageGRID system supports a maximum of 5,000 buckets for each S3 tenant ac
 
 Each grid can have a maximum of 100,000 buckets.
 
-To support 5,000 buckets, each Storage Node in the grid must have a minimum of 64 GB of RAM.
+If one or more tenants has approximately 5,000 buckets, each Storage Node in the grid must have a minimum of 64 GB of RAM.
 
 Bucket name restrictions follow the AWS US Standard region restrictions, but you should further restrict them to DNS naming conventions to support S3 virtual-hosted-style requests.
 
@@ -263,6 +263,7 @@ If the default retention period is modified, the retain-until-date of existing o
 See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] for detailed information.
 |===
 
+// 2026 MAR 12, SGRIDDOC-223
 // 2025 July 31, SGRIDDOC-183
 // 2025 MAR 31, SGWS-33482
 // 2023 SEP 15, SGWS-25330
