@@ -41,4 +41,4 @@ NOTE: As required to match the grid version, you can use a minor release when de
 
 . You then apply hotfix 11._A.B.y_ to the primary Admin Node.
 
-For more information, see link:configuring-replacement-primary-admin-node.html[Configure replacement primary Admin Node].
+// 2026-03-12, SGWS-34291
