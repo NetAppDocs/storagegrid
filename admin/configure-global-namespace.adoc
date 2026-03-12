@@ -124,8 +124,7 @@ The fields for the global namespace endpoint, CNAME, and default region are auto
 +
 For example, with 3 grids, you need 3 connections (Grid A–Grid B, Grid A–Grid C, Grid B–Grid C). With 4 grids, you need 6 connections. You can have a maximum of 10 grids in a global namespace. Refer to <<number-of-required-connections,Number of required connections>>.
 
-
-== Configure DNS resolution
+== [[config-dns-resolution]]Step 4: Configure DNS resolution
 
 StorageGRID doesn't provide a built-in DNS resolver for global namespace. You must configure your external DNS infrastructure to route S3 requests to the correct grid.
 
@@ -136,12 +135,8 @@ Your DNS resolver should:
 . Resolve each grid's unique CNAME (for example, `s3.grid-a.netapp.com`) to the load balancer endpoints for that specific grid.
 
 . For virtual-hosted-style bucket requests (for example, `_bucket_.s3.example.com`), determine which grid owns the bucket and resolve to the correct grid's CNAME.
-+
+
 To determine which grid owns a bucket, the DNS resolver can query each grid for its bucket list and use the bucket's UUID (a time-based UUID that provides ordering) to identify the grid where the bucket was created.
-
-== Account and access key management
-
-Tenant accounts and S3 access keys can be synchronized across all grids using link:grid-federation-what-is-account-clone.html[account clone], but global namespace also works when each grid has its own separate set of access keys. If you use separate access keys, ensure that the S3 client uses the correct access key when sending requests to each grid.
 
 == Related information
 
