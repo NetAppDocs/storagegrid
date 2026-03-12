@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: considerations for using platform services
 summary: 'Before implementing platform services, review the overview and considerations for using these services.'
 ---
-= Platform services for StorageGRID
+= Learn about platform services for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
