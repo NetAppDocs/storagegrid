@@ -51,7 +51,7 @@ NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the 
 
 The following table shows the number of storage volumes (LUNs) required for each host and the minimum size required for each LUN, based on which nodes will be deployed on that host.
 
-The maximum tested LUN size is 39 TB.
+The maximum tested LUN size is 100 TiB.
 
 NOTE: These numbers are for each host, not for the entire grid.
 
@@ -76,7 +76,7 @@ a|3 for each Storage Node on this host
 
 a|12 TB (4 TB/LUN, minimum)
 
-Maximum tested LUN size: 39 TB.
+Maximum tested LUN size: 100 TiB.
 
 See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
 
@@ -85,7 +85,7 @@ a|Object metadata
 a|1
 a|4 TB/LUN, minimum
 
-Maximum tested LUN size: 39 TB.
+Maximum tested LUN size: 100 TiB.
 
 See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
 
