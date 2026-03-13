@@ -54,20 +54,26 @@ In a global namespace, every pair of grids must be connected. The number of conn
 
 == Step 1: Add S3 endpoint domain names
 
-On each grid in the global namespace, add two S3 endpoint domain names:
+On each grid in the global namespace, you add two S3 endpoint domain names:
 
-* A global namespace endpoint that is the same on all grids (for example, `s3.example.com`).
-* A unique CNAME for the grid (for example, `s3.grid-a.netapp.com`).
+* A global namespace endpoint that's the same on all grids
+* A unique CNAME for the grid
 
-You will configure your external DNS so that the global namespace endpoint resolves to one or more of the grids, and the unique CNAME endpoints resolve to the specific grid.
+You'll configure your external DNS so that the global namespace endpoint resolves to one or more of the grids, and the unique CNAME endpoints resolve to the specific grid.
 
 .Steps
 
-. On each grid, select *Configuration* > *Network* > *S3 endpoint domain names* > *Global namespace settings*.
+. On each grid, select *Configuration* > *Network* > *S3 endpoint domain names* > *Domain names*.
 
-. Add the global namespace endpoint domain name. For example: `s3.example.com`.
+. Add a global namespace endpoint domain name that's the same on all grids. For example: `s3.example.com`.
 
-. Add the grid's unique CNAME domain name. For example: `s3.grid-a.netapp.com`.
+. Add a unique CNAME for the grid. For example, `s3.gridname.netapp.com`.
+
+. Select *Save*.
+
+. Select *Global namespace settings*.
+.. Select the global namespace endpoint.
+.. Select the grid's unique CNAME domain name.
 
 . Select *Save*.
 
@@ -134,9 +140,9 @@ Your DNS resolver should:
 
 . Resolve each grid's unique CNAME (for example, `s3.grid-a.netapp.com`) to the load balancer endpoints for that specific grid.
 
-. For virtual-hosted-style bucket requests (for example, `_bucket_.s3.example.com`), determine which grid owns the bucket and resolve to the correct grid's CNAME.
-
-To determine which grid owns a bucket, the DNS resolver can query each grid for its bucket list and use the bucket's UUID (a time-based UUID that provides ordering) to identify the grid where the bucket was created.
+. For virtual-hosted-style bucket requests (for example, `_bucket_.s3.netapp.com`), use your organization's routing policy to map bucket names to the appropriate grid's CNAME.
++
+StorageGRID doesn't provide a DNS-based mechanism to discover which grid owns a bucket. If you need automatic routing based on bucket ownership, use the link:../tenant/understanding-tenant-management-api.html[Tenant Management API] to issue ListBucket requests to return the bucket UUIDs. Maintain an internal mapping from bucket UUIDs to grids. Your external DNS should use that mapping rather than querying StorageGRID directly.
 
 == Related information
 
