@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: platform services tab
 summary: 'The Platform services tab provides information about any S3 platform service operations at a site.'
 ---
-= View the Platform services tab
+= View the StorageGRID Platform services tab
 :icons: font
 :imagesdir: ../media/
 
