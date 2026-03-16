@@ -107,14 +107,19 @@ See <<Request headers for server-side encryption>>
 
 The following request headers aren't supported:
 
-* `If-Match` 
-* `If-None-Match`
 * `x-amz-acl` 
 * `x-amz-sdk-checksum-algorithm`
 * `x-amz-trailer` 
 * `x-amz-website-redirect-location`
 +
 The `x-amz-website-redirect-location` header returns `XNotImplemented`.
+
+== Non-functional request headers
+
+The following request headers accepted but non-functional:
+
+* `If-Match` 
+* `If-None-Match`
 
 == Storage class options
 
