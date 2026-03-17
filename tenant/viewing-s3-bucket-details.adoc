@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to view bucket details
 summary: 'You can view the buckets in your tenant account.'
 ---
-= View bucket details
+= View S3 bucket details in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
