@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure event notifications, bucket notification
 summary: 'You enable notifications for a bucket by creating notification configuration XML and using the Tenant Manager to apply the XML to a bucket.'
 ---
-= Configure event notifications
+= Configure event notifications in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
