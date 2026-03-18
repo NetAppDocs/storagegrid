@@ -9,7 +9,7 @@ summary: 'You must understand the storage requirements for StorageGRID nodes, so
 :imagesdir: ../media/
 
 [.lead]
-You must understand the storage requirements for StorageGRID nodes, so you can provide enough space to support the initial configuration and future storage expansion.
+You must understand the storage requirements for StorageGRID nodes to ensure you have enough space to support the initial configuration and future storage expansion.
 
 Storage and performance requirements vary based on your software-based node implementation.
 
@@ -23,7 +23,7 @@ StorageGRID nodes require three logical categories of storage:
 * *System data* -- Performance-tier (10K SAS or SSD) storage for per-node persistent storage of system data and transaction logs, which the StorageGRID host services consume and map into individual nodes.
 * *Object data* -- Performance-tier (10K SAS or SSD) storage and capacity-tier (NL-SAS/SATA) bulk storage for the persistent storage of object data and object metadata.
 
-You must use RAID-backed block devices for all storage categories. Non-redundant disks, SSDs, or JBODs aren't supported. You can use shared or local RAID storage for any of the storage categories; however, if you want to use the node migration capability in StorageGRID, you must store both system data and object data on shared storage. For more information, see link:node-container-migration-requirements.html[Node container migration requirements].
+You must use RAID-backed block devices for all storage categories. Non-redundant disks, SSDs, or JBODs aren't supported. You can use shared or local RAID storage for any storage category. To migrate nodes in StorageGRID, you must store both system data and object data on shared storage. For more information, see link:node-container-migration-requirements.html[Node container migration requirements].
 
 == Performance requirements
 
@@ -33,7 +33,7 @@ The volumes used for the container pool, system data, and object data must have 
 
 == Requirements for hosts that use NetApp ONTAP storage
 
-If the StorageGRID node uses storage assigned from a NetApp ONTAP system, confirm that the volume doesn't have a FabricPool tiering policy enabled. Disabling FabricPool tiering for volumes used with StorageGRID nodes simplifies troubleshooting and storage operations.
+If the StorageGRID node uses storage assigned from a NetApp ONTAP system, confirm that the volume does not have a FabricPool tiering policy enabled. Disabling FabricPool tiering for volumes used with StorageGRID nodes simplifies troubleshooting and storage operations.
 
 NOTE: Never use FabricPool to tier any data related to StorageGRID back to StorageGRID itself. Tiering StorageGRID data back to StorageGRID increases troubleshooting and operational complexity.
 
@@ -41,11 +41,11 @@ NOTE: Never use FabricPool to tier any data related to StorageGRID back to Stora
 
 Each StorageGRID site requires a minimum of three Storage Nodes.
 
-NOTE: In a production deployment, don't run more than one Storage Node on a single physical or virtual host. Using a dedicated host for each Storage Node provides an isolated failure domain.
+NOTE: In a production deployment, don't run more than one Storage Node on a single physical or virtual host. A dedicated host for each Storage Node provides an isolated failure domain.
 
 You can deploy other types of nodes, such as Admin Nodes or Gateway Nodes, on the same hosts, or you can deploy them on their own dedicated hosts as required.
 
-NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[grid node recovery] procedures for each type of node.
+NOTE: You can't use disk snapshots to restore grid nodes. Instead, refer to the link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[grid node recovery] procedures for each type of node.
 
 == Number of storage volumes for each node
 
@@ -101,13 +101,13 @@ a|System data
 a|1 for each Admin Node on this host
 a|200 GB
 |===
-NOTE: Depending on the audit level configured, the size of user inputs such as S3 object key name, and how much audit log data you need to preserve, you might need to increase the size of the audit log LUN on each Admin Node. Generally, a grid generates approximately 1 KB of audit data per S3 operation, which would mean that a 200 GB LUN would support 70 million operations per day or 800 operations per second for two to three days.
+NOTE: Depending on the audit level configured, the size of user inputs such as S3 object key name, and how much audit log data you need to preserve, you might need to increase the size of the audit log LUN on each Admin Node. Generally, a grid generates approximately 1 KB of audit data per S3 operation, which means that a 200 GB LUN would support 70 million operations per day or 800 operations per second for two to three days.
 
 == Minimum storage space for a host
 
 The following table shows the minimum storage space required for each type of node. You can use this table to determine the minimum amount of storage you must provide to the host in each storage category, based on which nodes are deployed on that host.
 
-NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[grid node recovery] procedures for each type of node.
+NOTE: You can't use disk snapshots to restore grid nodes. Instead, refer to the link:../maintain/warnings-and-considerations-for-grid-node-recovery.html[grid node recovery] procedures for each type of node.
 
 Each node host requires a 100 GB LUN for the OS.
 
