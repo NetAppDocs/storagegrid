@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace linux node
 summary: 'If a failure requires that you deploy one or more new physical or virtual hosts or reinstall Linux on an existing host, deploy and configure the replacement host before you can recover the grid node. This procedure is one step of the grid node recovery process for all types of grid nodes.'
 ---
-= Replace Linux node
+= Replace a Linux node in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, subnet list, grid network
 summary: 'You can use the Change IP tool to add or change subnets on the Grid Network.'
 ---
-= Add to or change subnet lists on Grid Network
+= Add to or change subnet lists on Grid Network in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
