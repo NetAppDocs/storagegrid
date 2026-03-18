@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, system drive warning, storage node
 summary: 'Before recovering a failed system drive of a Storage Node, review the general warnings and considerations for grid node recovery and the following specific warnings.'
 ---
-= Warnings for Storage Node system drive recovery
+= Warnings for StorageGRID Storage Node system drive recovery
 :icons: font
 :imagesdir: ../media/
 

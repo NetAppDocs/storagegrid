@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: deployment, logs, Maintenance
 summary: 'You can use the deployment and maintenance logs to troubleshoot issues.'
 ---
-= Deployment and maintenance logs
+= Deployment and maintenance logs in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to assign ilm policy tag to bucket
 summary: 'Choose an ILM policy tag to assign to a bucket based on your object storage requirements.'
 ---
-= Apply an ILM policy tag to a bucket
+= Apply an ILM policy tag to a StorageGRID bucket
 :icons: font
 :imagesdir: ../media/
 

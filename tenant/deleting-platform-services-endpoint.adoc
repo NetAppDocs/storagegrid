@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to delete tenant platform services endpoint
 summary: 'You can delete an endpoint if you no longer want to use the associated platform service.'
 ---
-= Delete platform services endpoint
+= Delete a StorageGRID platform services endpoint
 :icons: font
 :imagesdir: ../media/
 
