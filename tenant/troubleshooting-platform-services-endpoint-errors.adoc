@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot platform services endpoint
 summary: 'If an error occurs when StorageGRID attempts to communicate with a platform services endpoint, a message is displayed on the dashboard. On the Platform services endpoints page, the Last error column indicates how long ago the error occurred. No error is displayed if the permissions associated with an endpoint’s credentials are incorrect.'
 ---
-= Troubleshoot platform services endpoint errors
+= Troubleshoot StorageGRID platform services endpoint errors
 :icons: font
 :imagesdir: ../media/
 

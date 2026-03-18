@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cloudmirror replication
 summary: 'You can enable CloudMirror replication for an S3 bucket if you want StorageGRID to replicate specified objects added to the bucket to one or more destination buckets.'
 ---
-= Understand CloudMirror replication service
+= Learn about the StorageGRID CloudMirror replication service
 :icons: font
 :imagesdir: ../media/
 

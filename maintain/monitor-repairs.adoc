@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore replicated data, restore erasure-coded data, recover appliance storage node, recover storage volume
 summary: 'You can monitor the status of repair jobs by using the `repair-data` script from the command line.'
 ---
-= Monitor repair-data jobs
+= Monitor StorageGRID repair-data jobs
 :icons: font
 :imagesdir: ../media/
 
