@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recovery, grid node recovery, node recovery
 summary: 'Before performing maintenance procedures, you must ensure you have the necessary materials to recover a failed grid node.'
 ---
-= Gather required materials for grid node recovery
+= Gather required materials for StorageGRID grid node recovery
 :icons: font
 :imagesdir: ../media/
 

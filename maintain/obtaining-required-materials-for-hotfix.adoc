@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, hotfix
 summary: 'Before applying a hotfix, you must obtain all required materials.'
 ---
-= Obtain required materials for hotfix
+= Obtain required materials for a StorageGRID hotfix
 :icons: font
 :imagesdir: ../media/
 
