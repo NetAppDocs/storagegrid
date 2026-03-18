@@ -18,9 +18,8 @@ When converting data-only nodes, the grid must contain a minimum of three combin
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
-* The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
 * The Storage Node isn't a metadata-only node or a data-only node.
-* The Storage Node you want to convert doesn't contain the ADC service, or you have link:../maintain/move-adc-service.html[moved the ADC service] to another node.
+* If the Storage Node contains the ADC service, more than two ADC Storage Nodes are online at the site, and non-ADC Storage Nodes are available across the grid to host the ADC service.
 * There is enough metadata space on other nodes at the site (or you've link:../expand/index.html[expanded your grid]) to accommodate the metadata that will migrate from the Storage Node you are converting.
 +
 [CAUTION]
@@ -31,11 +30,13 @@ When converting data-only nodes, the grid must contain a minimum of three combin
 ====
 
 .About this task
-Use this procedure to convert one or more combined Storage Nodes that don't contain the ADC service into data-only nodes.
+Use this procedure to convert one or more combined Storage Nodes into data-only nodes. If a Storage Node contains the ADC service, the service is automatically moved to another Storage Node on the same site during the conversion.
 
 In addition to converting the Storage Node, this procedure decommissions Cassandra from the node. All metadata will migrate to combined or metadata-only Storage Nodes. Depending on the amount of metadata that needs to migrate, this procedure could take up to several days per node to complete.
 
 TIP: Generally, you can convert up to 10 nodes at a time if the metadata usage per node is less than 1 TB. If the metadata usage per node is more than 1 TB, convert up to 5 nodes per procedure instead. 
+
+NOTE: StorageGRID moves the ADC service to the newest Storage Nodes that meet the requirements for hosting the service.
 
 .Steps
 . Record the node IDs of the non-ADC Storage Nodes you want to convert.
