@@ -259,7 +259,7 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 | Validates the server certificate for TLS connections to the endpoint resource.
 
 | Disabled
-| Certificate verification is disabled. This option isn't secure.
+| Certificate verification is disabled. This option isn't secure and isn't recommended.
 
 | Use custom CA certificate
 | The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
@@ -282,7 +282,7 @@ Verify the TLS connection for webhook or Kafka endpoints.
 | Validates the client and server certificates for Mutual TLS connections to the endpoint resource.
 
 | Disabled
-| Certificate verification is disabled. This option isn't secure.
+| Certificate verification is disabled. This option isn't secure and isn't recommended.
 
 | Use custom CA certificate
 | The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
@@ -299,7 +299,7 @@ When you select *mTLS*, these options become available.
 | Type of certificate verification| Description
 
 | Do not verify server certificate
-| Disables the server certificate verification, which means the server's identity isn't verified. This option isn't secure.
+| Disables the server certificate verification, which means the server's identity isn't verified. This option isn't secure and isn't recommended.
 
 | Client certificate
 | The client certificate is used to verify the client's identity when connecting to the endpoint.
@@ -332,6 +332,7 @@ After you have configured an endpoint, you can use its URN to configure a platfo
 
 * link:configuring-search-integration-service.html[Configure search integration service]
 
+// 2026 MAR 19, SGRIDDOC-228
 // 2025 MAR 21, SGWS-35516
 // 2024 MAR 19, SGRIDDOC-7
 // 2023 SEP 15, SGWS-25330

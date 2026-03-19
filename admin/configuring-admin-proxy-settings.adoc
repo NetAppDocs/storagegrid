@@ -44,7 +44,7 @@ CAUTION: AutoSupport on Demand, E-Series AutoSupport through StorageGRID, and Up
 +
 After you upload the CA bundle, its metadata appears.
 +
-* If you don't want to validate certificates when communicating with the admin proxy server, select *Do not verify proxy certificate*.
+* If you don't want to validate certificates when communicating with the admin proxy server, select *Do not verify proxy certificate*. This option isn't secure and isn't recommended.
 
 . Select *Save*.
 +
@@ -53,3 +53,5 @@ After the admin proxy is saved, the proxy server between Admin Nodes and technic
 NOTE: Proxy changes can take up to 10 minutes to take effect.
 
 . If you need to disable the admin proxy, clear the *Enable Admin Proxy* checkbox, and then select *Save*.
+
+// 2026 MAR 19, SGRIDDOC-228
