@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: account sync, tenant sync, grid federation, cross-grid replication
 summary: "If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to all other connected StorageGRID systems (the replica tenants). After the tenant has been replicated, tenant groups, users, and S3 access keys are synced across the connected grids."
 ---
-= Sync tenant groups and users
+= Sync tenant groups and users in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
