@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, restore, ilm policy, storage configuration
 summary: 'If you plan to decommission a Storage Node, you should review your StorageGRID system’s ILM policy before starting the decommissioning process.'
 ---
-= Review ILM policy and storage configuration
+= Review StorageGRID ILM policy and storage configuration
 :icons: font
 :imagesdir: ../media/
 

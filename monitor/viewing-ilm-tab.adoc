@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ilm tab
 summary: 'The ILM tab provides information about information lifecycle management \(ILM\) operations.'
 ---
-= View the ILM tab
+= View the StorageGRID ILM tab
 :icons: font
 :imagesdir: ../media/
 

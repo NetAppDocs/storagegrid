@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitoring, monitoring network connections, network, network performance
 summary: 'The integrity and bandwidth of the network between nodes and sites, and the resource usage by individual grid nodes, are critical to efficient operations.'
 ---
-= Monitor networking and system resources
+= Monitor networking and system resources in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

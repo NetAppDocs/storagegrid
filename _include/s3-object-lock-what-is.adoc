@@ -3,7 +3,7 @@
 == What is S3 Object Lock?
 The StorageGRID S3 Object Lock feature is an object-protection solution that is equivalent to S3 Object Lock in Amazon Simple Storage Service (Amazon S3).
 
-When the global S3 Object Lock setting is enabled for a StorageGRID system, an S3 tenant account can create buckets with or without S3 Object Lock enabled. If a bucket has S3 Object Lock enabled, bucket versioning is required and is enabled automatically.
+When the global S3 Object Lock setting is enabled for a StorageGRID system, an S3 tenant account can create buckets with or without S3 Object Lock enabled. When the allow S3 Object Lock for existing buckets setting is enabled, an S3 tenant account can enable S3 Object Lock for an existing bucket. If a bucket has S3 Object Lock enabled, bucket versioning is required and is enabled automatically. After an S3 tenant account enables S3 Object Lock for a new or existing bucket, it can't be disabled.
 
 *A bucket without S3 Object Lock* can only have objects without retention settings specified. No ingested objects will have retention settings.
  
@@ -50,3 +50,5 @@ If a bucket is created with S3 Object Lock enabled, users can optionally specify
 The default bucket settings apply only to new objects that don't have their own retention settings. Existing bucket objects aren't affected when you add or change these default settings. 
 
 See link:../tenant/creating-s3-bucket.html[Create an S3 bucket] and link:../tenant/update-default-retention-settings.html[Update S3 Object Lock default retention].
+
+// 2026 MAR 3, SGWS-38814

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, remove ilm reference
 summary: 'From Step 4 \(Remove ILM References\) of the Decommission Site wizard, you must delete or edit any unused ILM rules that refer to the site, even if the rules are not used in any ILM policy.'
 ---
-= Step 4: Remove ILM References
+= Remove ILM references to a site in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
