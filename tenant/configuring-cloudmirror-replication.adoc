@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure CloudMirror replication, replication xml
 summary: 'You enable CloudMirror replication for a bucket by creating bucket replication configuration XML and using the Tenant Manager to apply the XML to the bucket.'
 ---
-= Configure CloudMirror replication
+= Configure CloudMirror replication in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -29,8 +29,6 @@ NOTE: CloudMirror replication has important similarities and differences with th
 Note the following requirements and characteristics when configuring CloudMirror replication:
 
 * When you create and apply a valid bucket replication configuration XML, it must use the URN of an S3 bucket endpoint for each destination.
-
-* Replication is not supported for source or destination buckets with S3 Object Lock enabled.
 
 * If you enable CloudMirror replication on a bucket that contains objects, new objects added to the bucket are replicated, but the existing objects in the bucket aren't replicated. You must update existing objects to trigger replication.
 

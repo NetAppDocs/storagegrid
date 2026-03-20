@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: grid federation connection, view, clear error, last error
 summary: If your tenant account has the Use grid federation connection permission, you can view the allowed connections.
 ---
-= View grid federation connections
+= View grid federation connections in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
