@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to collect system data, how to collect logs
 summary: 'You can retrieve StorageGRID log files and system data, including configuration data, and send them to technical support.'
 ---
-= Collect log files and system data
+= Collect StorageGRID log files and system data
 :icons: font
 :imagesdir: ../media/
 

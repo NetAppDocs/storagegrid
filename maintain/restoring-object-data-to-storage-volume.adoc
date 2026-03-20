@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore replicated data, restore erasure-coded data, recover storage node, recover storage volume
 summary: 'After recovering storage volumes for a non-appliance Storage Node, you can restore the replicated or erasure-coded object data that was lost when the Storage Node failed.'
 ---
-= Restore object data to storage volume (system drive failure)
+= Restore object data to StorageGRID storage volume (system drive failure)
 :icons: font
 :imagesdir: ../media/
 

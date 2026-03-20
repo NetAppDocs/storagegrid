@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, replace storage node, replacing storage node
 summary: 'If the system drive has failed, you must first replace the Storage Node.'
 ---
-= Replace the Storage Node
+= Replace the StorageGRID Storage Node
 :icons: font
 :imagesdir: ../media/
 

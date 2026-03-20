@@ -2,9 +2,9 @@
 permalink: tenant/grid-federation-manage-cross-grid-replication.html
 sidebar: sidebar
 keywords: grid federation, cross-grid replication, use grid federation connection, replicate client delete markers, s3 bucket
-summary: 'f your tenant account was assigned the Use grid federation connection permission when it was created, you can use cross-grid replication to automatically replicate objects between buckets on the tenant source grid and buckets on the tenant destination grid. Cross-grid replication can occur in one or both directions.'
+summary: 'If your tenant account was assigned the Use grid federation connection permission when it was created, you can use cross-grid replication to automatically replicate objects between buckets on the tenant source grid and buckets on the tenant destination grid. Cross-grid replication can occur in one or both directions.'
 ---
-= Manage cross-grid replication
+= Manage cross-grid replication in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
