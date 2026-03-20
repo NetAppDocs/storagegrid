@@ -28,6 +28,10 @@ CAUTION: The 10-grid limit is constrained by the maximum total number of grid fe
 
 * S3 clients must use signature version 4 (SigV4) authentication. Anonymous and signature version 2 requests aren't supported for global namespace routing operations.
 
+** Normal signed requests are specified as described at https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-auth-using-authorization-header.html[Authenticating Requests: Using the Authorization Header (AWS Signature Version 4)].
+
+** Pre-signed requests are specified as described at https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html[Authenticating Requests: Using Query Parameters (AWS Signature Version 4)].
+
 == [[number-of-required-connections]]Number of required connections
 
 In a global namespace, every pair of grids must be connected. The number of connections required depends on the number of grids:
@@ -67,7 +71,7 @@ You'll configure your external DNS so that the global namespace endpoint resolve
 
 . Add a global namespace endpoint domain name that's the same on all grids. For example: `s3.example.com`.
 
-. Add a unique CNAME for the grid. For example, `s3.gridname.netapp.com`.
+. Add a unique CNAME for the grid. For example, `s3.company.com`.
 
 . Select *Save*.
 
@@ -94,7 +98,7 @@ CreateBucket and ListBuckets requests are routed based on this region, and all o
 
 For more information, refer to link:../ilm/configuring-regions-optional-and-s3-only.html[Configure S3 regions].
 
-CAUTION: You should create the default region before creating additional regions. When you enable global namespace settings, S3 request will fail if they don't specify the correct region. All S3 requests need to be signed with the grid's default region.
+CAUTION: Configure the default region to the unique region before you configure the S3 global namespace settings. When you enable global namespace settings, S3 request will fail if they don't specify the correct region. All S3 requests need to be signed with the grid's default region.
 
 .Steps
 

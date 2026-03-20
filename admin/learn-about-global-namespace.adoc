@@ -28,20 +28,20 @@ For more information about grid federation, refer to link:grid-federation-overvi
 .Grid 1
 
 * Default region: `region-1`
-* Default CNAME: `s3.grid1.netapp.com`
-* Global endpoint: `s3.netapp.com`
+* Default CNAME: `s3.company1.com`
+* Global endpoint: `s3.company.com`
 
 .Grid 2
 
 * Default region: `region-2`
-* Default CNAME: `s3.grid2.netapp.com`
-* Global endpoint: `s3.netapp.com`
+* Default CNAME: `s3.company2.com`
+* Global endpoint: `s3.company.com`
 
 .Grid 3
 
 * Default region: `region-3`
-* Default CNAME: `s3.grid3.netapp.com`
-* Global endpoint: `s3.netapp.com`
+* Default CNAME: `s3.company3.com`
+* Global endpoint: `s3.company.com`
 
 === CreateBucket and ListBuckets operations
 
