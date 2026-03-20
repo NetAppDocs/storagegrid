@@ -31,7 +31,7 @@ Sign in to the tenant account on any connected grid.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Optionally, configure identity federation
 
 [role="quick-margin-para"]
-If your tenant account has the *Use own identity source* permission to use federated groups and users, configure the same identity source (with the same settings) for the source and one or more destination tenant accounts. Federated groups and users can't be synced unless all grids are using the same identity source. For instructions, see link:using-identity-federation.html[Use identity federation]. 
+If your tenant account has the *Use own identity source* permission to use federated groups and users, configure the same identity source (with the same settings) for the source and one or more destination tenant accounts. Federated groups are cloned at creation time, and federated users are cloned when a key is created. For clone to happen, the same identity source must be configured on all grids. For instructions, see link:using-identity-federation.html[Use identity federation]. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create groups and users
 

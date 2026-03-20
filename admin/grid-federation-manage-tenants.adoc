@@ -70,6 +70,8 @@ If you need to edit a tenant that has the *Use grid federation connection* permi
 +
 NOTE: You can't unselect any existing connections. To remove a connection, go to the details page for the tenant, select the *Grid federation* tab, and remove the permission.
 
+* If you add a new connection while editing a tenant, this tenant will be replicated to the remote grid specified by that new connection.
+
 == Delete a permitted tenant
 
 CAUTION: If you remove either the original tenant from the source grid or the synced tenant from the destination grid, the tenant is removed from all the grids, so the account can no longer be used.
