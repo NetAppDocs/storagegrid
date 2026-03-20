@@ -50,13 +50,13 @@ You use the Privileged address list tab to grant hosts access to ports that are 
 
 Privileged IP addresses and subnets don't have internal grid access by default. Also, load balancer endpoints and additional ports opened in the Privileged address list tab are accessible even if blocked in the Manage external access tab.
 
-NOTE: Settings on the Privileged address list tab can't override settings on the Untrusted Client Network tab. 
+NOTE: The settings on the Privileged address list tab override settings on the Untrusted Client Network tab. 
 
 .Steps
 
 . On the Privileged address list tab, enter the address or IP subnet you want to grant access to closed ports. 
 
-. Optionally, select *Add another IP address or subnet in CIDR notation* to add additional privileged clients. 
+. Optionally, select *Add another IP or subnet in CIDR notation* to add additional privileged clients. 
 +
 TIP: Add as few addresses as possible to the privileged list.
 
@@ -123,3 +123,5 @@ NOTE: Use the scroll bar on the right side of the table to be sure you have view
 . Select *Save*.
 +
 The new firewall settings are immediately applied and enforced. Existing client connections might fail if load balancer endpoints have not been configured.
+
+// 2026 MAR 20, SGRIDDOC-229
