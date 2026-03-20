@@ -69,10 +69,6 @@ Use ONTAP to link:configure-ontap.html[add a cloud tier] that uses the StorageGR
 When your system is up and running, perform ongoing tasks in ONTAP and StorageGRID to manage and monitor FabricPool data tiering over time. 
 
 // End snippet
- 
-
-//image::../media/fabricpool_storagegrid_workflow.png[FabricPool StorageGRID Workflow]
-
 
 == What is FabricPool?
 
