@@ -36,7 +36,7 @@ To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[
 * When `validateChecksumForDefaultRetention` is set to `true` and default retention is enabled.
 +
 To correct this issue, edit the HTTP and HTTPS endpoint connections:
-+ 
++
 ** If you're using HTTP: Cloud Storage Pools with S3 Object Lock enabled aren't supported. Use HTTPS instead.
 ** If you're using HTTPS: Follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This action triggers the validation of the Cloud Storage Pool configuration that automatically detects and updates the S3 Object Lock flag on a Cloud Storage Pool endpoint configuration.
 
