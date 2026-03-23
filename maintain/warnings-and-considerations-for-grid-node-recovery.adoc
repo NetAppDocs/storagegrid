@@ -31,7 +31,7 @@ All of the following conditions are assumed when recovering grid nodes:
 
 * The failed physical or virtual hardware has been replaced and configured.
 * The StorageGRID Appliance Installer version on the replacement appliance matches the software version of your StorageGRID system, as described in https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html[Verify and upgrade StorageGRID Appliance Installer version^].
-* If you are recovering a grid node other than the primary Admin Node, there is connectivity between the grid node being recovered and the Admin Node managing the recovery procedure.
+* If you are recovering a grid node other than the primary Admin Node, connectivity must exist between the grid node being recovered and the primary Admin Node managing the recovery procedure. This requirement does not apply when recovering the primary Admin Node, because it manages its own recovery.
 * If you are recovering an appliance Storage Node, you must specify the same storage type as the original appliance (combined, metadata-only, or data-only) during appliance installation. If you specify a different storage type, the recovery will fail and require reinstallation of the appliance with the correct storage type specified.
 
 == Order of node recovery if a server hosting more than one grid node fails
@@ -43,3 +43,4 @@ If a server that is hosting more than one grid node fails, you can recover the n
 Don't attempt to recover a node using an IP address that is currently assigned to any other node. When you deploy the new node, use the failed node's current IP address or an unused IP address.
 
 If you use a new IP address to deploy the new node and then recover the node, the new IP address will continue to be used for the recovered node. If you want to revert to the original IP address, use the Change IP tool after the recovery is complete.
+// 2026-03-23, SGWS-34291
