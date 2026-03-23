@@ -1,0 +1,4 @@
+---
+permalink: admin/grid-federation-what-is-account-clone.html
+redirect: storagegrid/admin/grid-federation-what-is-account-sync.html
+---
