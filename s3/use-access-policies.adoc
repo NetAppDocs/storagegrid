@@ -330,13 +330,13 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 * ListObjects
 * HeadBucket
-* RestoreObject
+
 | 
 
 | s3:ListBucketMultipartUploads
 | 
 * ListMultipartUploads
-* RestoreObject
+
 | 
 
 | s3:ListBucketVersions
@@ -889,6 +889,7 @@ PUT#1 -------> PUT#2 ---X (denied)
 
 * link:../tenant/index.html[Use a tenant account]
 
+// 2026 MAR 23, SGRIDDOC-231
 // 2023 OCT 5, SGWS-27457
 // 2025 May 14, SGWS-34003
 // 2025 July 23, SGRIDDOC-180
