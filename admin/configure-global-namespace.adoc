@@ -21,7 +21,8 @@ For more information about global namespace, refer to link:learn-about-global-na
 
 == Requirements for configuring global namespace
 
-* All grids in a global namespace must have grid federation connections with global namespace enabled between every pair of grids.
+* All grids in the global namespace must have grid federation connections with global namespace enabled between every pair of grids.
+
 * The maximum number of grids that can participate in a single global namespace is 11 (the local grid and 10 remote grids).
 +
 CAUTION: The 10-grid limit is constrained by the maximum total number of grid federation connections supported by a StorageGRID deployment. The total connection limit applies to *all* grid federation connections in the deployment, including those without global namespace enabled, so you must ensure that the fully connected global namespace and any additional grid federation connections together do not exceed this overall limit.
@@ -134,7 +135,13 @@ The fields for the global namespace endpoint, CNAME, and default region are auto
 +
 For example, with 3 grids, you need 3 connections (Grid A–Grid B, Grid A–Grid C, Grid B–Grid C). With 4 grids, you need 6 connections. You can have a maximum of 10 grids in a global namespace. Refer to <<number-of-required-connections,Number of required connections>>.
 
-== [[config-dns-resolution]]Step 4: Configure DNS resolution
+== Step 4: Configure load balancer endpoints
+
+link:../admin/configuring-load-balancer-endpoints.html[Configure a load balancer endpoint] for each grid in the global namespace. Use the same port for each of these endpoints.
+
+NOTE: Make sure you configure the load balancer endpoints before you configure DNS resolution.
+
+== [[config-dns-resolution]]Step 5: Configure DNS resolution
 
 StorageGRID doesn't provide a built-in DNS resolver for global namespace. You must configure your external DNS infrastructure to route S3 requests to the correct grid.
 
