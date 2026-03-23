@@ -25,7 +25,7 @@ After resolving any underlying issues, you can determine if the error has been r
 
 If the underlying problem has been resolved, the error message is no longer displayed. However, if the underlying problem has not been fixed (or if a different error is encountered), the error message will be shown in the Last error column within a few minutes.
 
-== Error: Health check failed. Error from endpoint.
+== Error: Health check failed. Error from endpoint
 
 You might encounter this error in one of these cases:
 
