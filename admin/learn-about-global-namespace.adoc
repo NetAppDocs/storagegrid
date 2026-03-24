@@ -47,14 +47,6 @@ For more information about grid federation, refer to link:grid-federation-overvi
 
 If you create a bucket (`bucket123`) with region `region-2` and targets the global endpoint `s3.netapp.com`, any grid that receives the request will create the bucket on Grid 2.
 
-.Example for CreateBucket
-`CreateBucket bucket123.s3.netapp.com --region region-2`
-
-Similarly, `ListBuckets` allows you to view the buckets in the `--region` you specify.
-
-.Example for ListBucket
-`ListBuckets --region region-3`
-
 === Bucket-specific and general object operations
 
 After a bucket is created on a given grid, your DNS resolver will resolve the bucket URL to the bucket and grid CNAME.
