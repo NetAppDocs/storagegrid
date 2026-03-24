@@ -35,7 +35,7 @@ To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[
 
 * When you enable S3 Object Lock with default retention for your StorageGRID S3 bucket after you start using this bucket for a Cloud Storage Pool.
 +
-Contact technical support to modify the S3 Object Lock settings on the Cloud Storage Pool endpoint.
+To correct this issue, contact technical support to modify the S3 Object Lock settings on the Cloud Storage Pool endpoint.
 
 == Error: This Cloud Storage Pool contains unexpected content
 
