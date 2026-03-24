@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, primary admin node, hotfix
 summary: 'After recovering a primary admin node, determine if you need to apply a hotfix.'
 ---
-= Determine hotfix requirement for primary Admin Node
+= Determine hotfix requirement for primary Admin Node in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
