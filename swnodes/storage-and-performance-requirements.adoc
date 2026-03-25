@@ -23,7 +23,7 @@ StorageGRID nodes require three logical categories of storage:
 * *System data* -- Performance-tier (10K SAS or SSD) storage for per-node persistent storage of system data and transaction logs, which the StorageGRID host services will consume and map into individual nodes.
 * *Object data* -- Performance-tier (10K SAS or SSD) storage and capacity-tier (NL-SAS/SATA) bulk storage for the persistent storage of object data and object metadata.
 
-You must use RAID-backed block devices for all storage categories. Non-redundant disks, SSDs, or JBODs aren't supported. You can use shared or local RAID storage for any of the storage categories; however, if you want to use the node migration capability in StorageGRID, you must store both system data and object data on shared storage. For more information, see link:node-container-migration-requirements.html[Node container migration requirements].
+You must use RAID-backed block devices for all storage categories. Non-redundant disks, SSDs, or JBODs aren't supported. You can use shared or local RAID storage for any of the storage categories; however, if you want to use the node migration capability in StorageGRID, you must store both system data and object data on shared storage. For more information, refer to link:node-container-migration-requirements.html[Node container migration requirements].
 
 == Performance requirements
 
@@ -78,7 +78,7 @@ a|12 TB (4 TB/LUN, minimum)
 
 Maximum tested LUN size: 39 TB.
 
-See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
+Refer to <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
 
 a|Storage Node (metadata-only)
 a|Object metadata
@@ -87,7 +87,7 @@ a|4 TB/LUN, minimum
 
 Maximum tested LUN size: 39 TB.
 
-See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
+Refer to <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
 
 *Note*: Only one rangedb is required for metadata-only Storage Nodes.
 
@@ -254,7 +254,7 @@ image::../media/metadata_space_storage_node.png[Metadata Space Storage Node]
 
 To provide redundancy and to protect object metadata from loss, StorageGRID stores three copies of the metadata for all objects in the system at each site. The three copies of object metadata are evenly distributed across all Storage Nodes at each site.
 
-When installing a grid with metadata-only Storage Nodes, the grid must also contain a minimum number of nodes for object storage. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
+When installing a grid with metadata-only Storage Nodes, the grid must also contain a minimum number of nodes for object storage. Refer to link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
 
 * For a single-site grid, at least two Storage Nodes are configured for objects and metadata. 
 * For a multi-site grid, at least one Storage Node per site are configured for objects and metadata.
