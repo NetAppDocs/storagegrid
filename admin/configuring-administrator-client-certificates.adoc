@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: client certificates, prometheus
 summary: 'Client certificates allow authorized external clients to access the StorageGRID Prometheus database, providing a secure way for external tools to monitor StorageGRID.'
 ---
-= Configure client certificates
+= Configure client certificates in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: grid federation, manage tenant, use grid federation permission, remove permission, cross grid replication
 summary: 'You can allow S3 tenant accounts to use a grid federation connection between two StorageGRID systems. When tenants are allowed to use a connection, special steps are required to edit tenant details or to permanently remove tenant permission to use the connection.'
 ---
-= Manage the permitted tenants for grid federation
+= Manage the permitted tenants for StorageGRID grid federation
 :icons: font
 :imagesdir: ../media/
 

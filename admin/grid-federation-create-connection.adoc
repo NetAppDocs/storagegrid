@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: grid federation, create connection, configure connection
 summary: 'You can create a grid federation connection between two StorageGRID systems if you want to clone tenant details and replicate object data.'
 ---
-= Create grid federation connections
+= Create StorageGRID grid federation connections
 :icons: font
 :imagesdir: ../media/
 

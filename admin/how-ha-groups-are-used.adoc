@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ha groups, high availability group
 summary: 'You can use high availability (HA) groups to provide highly available connections to StorageGRID for object data and for administrative use.'
 ---
-= How are HA groups used?
+= How StorageGRID HA groups provide high availability
 :icons: font
 :imagesdir: ../media/
 

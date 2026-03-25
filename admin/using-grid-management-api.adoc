@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: use the Grid Management API, private API
 summary: 'You can perform system management tasks using the Grid Management REST API instead of the Grid Manager user interface. For example, you might want to use the API to automate operations or to create multiple entities, such as users, more quickly.'
 ---
-= Use the Grid Management API
+= Use the StorageGRID Grid Management API
 :icons: font
 :imagesdir: ../media/
 

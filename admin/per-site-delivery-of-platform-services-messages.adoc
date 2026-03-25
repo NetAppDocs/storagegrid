@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: platform services message delivery
 summary: 'All platform services operations are performed on a per-site basis.'
 ---
-= Per-site delivery of platform services messages
+= Per-site delivery of StorageGRID platform services messages
 :icons: font
 :imagesdir: ../media/
 
