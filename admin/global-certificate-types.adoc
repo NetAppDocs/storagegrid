@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: rsa, ecdsa, custom certificate encryption
 summary: 'The StorageGRID system supports server certificates encrypted with RSA or ECDSA (Elliptic Curve Digital Signature Algorithm).'
 ---
-= Supported server certificate types
+= Supported server certificate types in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

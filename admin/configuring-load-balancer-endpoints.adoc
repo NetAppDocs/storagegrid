@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure load balancer endpoint, how to attach certificate to load balancer endpoint
 summary: 'Load balancer endpoints determine the ports and network protocols S3 clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.'
 ---
-= Configure load balancer endpoints
+= Configure StorageGRID load balancer endpoints
 :icons: font
 :imagesdir: ../media/
 

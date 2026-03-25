@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enterprise application, entra id, single sign on, sso
 summary: 'You use Entra ID to create an enterprise application for each Admin Node in your system.'
 ---
-= Create enterprise applications in Entra ID
+= Create enterprise applications in Entra ID for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

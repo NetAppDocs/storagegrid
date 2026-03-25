@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: grid federation, cross-grid replication, account clone, cgr, disaster recovery
 summary: 'You can use grid federation to clone tenants and replicate their objects between two StorageGRID systems for disaster recovery.'
 ---
-= What is grid federation?
+= Learn about StorageGRID grid federation
 :icons: font
 :imagesdir: ../media/
 
