@@ -239,7 +239,7 @@ a|*System data:* 700 GB
 [[storage_req_SN]]
 == Specific storage requirements for Storage Nodes
 
-Linux and VMware have the following storage requirements for storage nodes:
+Linux and VMware have the following storage requirements for Storage Nodes:
 
 * A Linux software-based Storage Node can have 1 to 48 storage volumes.
 * A VMware software-based Storage Node can have 1 to 48 storage volumes.
