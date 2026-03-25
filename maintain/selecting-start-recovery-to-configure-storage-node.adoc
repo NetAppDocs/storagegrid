@@ -28,6 +28,7 @@ If the Storage Node is installed as a container on a Linux host, you must perfor
 
 .Steps
 
+. Log in to the primary Admin Node. If the primary Admin Node is unavailable, use the non-primary Admin Node, if one exists, and if it is designated as the Admin Node for the recovery procedure.
 . From the Grid Manager, select *Maintenance* > *Tasks* > *Recovery*.
 . Select the grid node you want to recover in the Pending Nodes list.
 +
@@ -52,5 +53,5 @@ If you want to retry the recovery after resetting the procedure, you must restor
 . When the Storage Node reaches the "Waiting for Manual Steps" stage, go to link:remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)].
 +
 image::../media/recovery_reset_button.gif[screenshot showing the stage "waiting for manual steps"]
-
+// 2026-03-25, SGWS-34291
 
