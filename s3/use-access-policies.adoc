@@ -415,7 +415,6 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | s3:AbortMultipartUpload
 | 
 * AbortMultipartUpload
-* RestoreObject
 | 
 
 | s3:BypassGovernanceRetention
@@ -429,7 +428,6 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 * DeleteObject
 * DeleteObjects
-* RestoreObject
 | 
 
 | s3:DeleteObjectTagging
@@ -448,7 +446,6 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 * GetObject
 * HeadObject
-* RestoreObject
 * SelectObjectContent
 | 
 
@@ -477,14 +474,13 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 
 | s3:ListMultipartUploadParts
-| ListParts, RestoreObject
+| ListParts
 | 
 
 | s3:PutObject
 | 
 * PutObject
 * CopyObject
-* RestoreObject
 * CreateMultipartUpload
 * CompleteMultipartUpload
 * UploadPart
