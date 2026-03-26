@@ -18,7 +18,7 @@ After replacing a non-primary Admin Node, you must select Start Recovery in the 
 * You have the provisioning passphrase.
 * You have deployed and configured the replacement node. 
 
-NOTE: Use this procedure to recover a failed primary Admin Node from a non-primary Admin Node.
+NOTE: You can also use the following procedure to recover a failed primary Admin Node from a non-primary Admin Node.
 
 .Steps
 

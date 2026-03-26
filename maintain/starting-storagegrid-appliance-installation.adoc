@@ -17,7 +17,7 @@ To install StorageGRID on an appliance Storage Node, you use the StorageGRID App
 * Network links and IP addresses have been configured for the appliance using the StorageGRID Appliance Installer.
 * You know the IP address for one of the following Admin Nodes: 
 ** the primary Admin Node for the StorageGRID grid
-** the IP address for the non-primary Admin Node, if one is available.
+** the non-primary Admin Node, if one is available.
 * All Grid Network subnets listed on the IP Configuration page of the StorageGRID Appliance Installer have been defined in the Grid Network Subnet List on the primary Admin Node.
 
 * You have completed these prerequisite tasks by following the installation instructions for your storage appliance. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Quick start for hardware installation^].
@@ -84,4 +84,4 @@ If the *Start Installation* button is not enabled, you might need to change the 
 The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 +
 NOTE: If you need to access the Monitor Installation page manually, click *Monitor Installation* from the menu bar. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/monitoring-appliance-installation.html[Monitor appliance installation^].
-// 2026-03-12,SGWS-34291
+// 2026-03-26,SGWS-34291
