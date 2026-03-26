@@ -29,13 +29,18 @@ If the underlying problem has been resolved, the error message is no longer disp
 
 You might encounter this error in one of these cases:
 
-* When you enable S3 Object Lock with default retention for your Amazon S3 bucket after you start using this bucket for a Cloud Storage Pool. This error occurs when the PUT operation doesn't have an HTTP header with a payload checksum value such as `Content-MD5`. This header value is required by AWS for PUT operations into buckets with S3 Object Lock enabled. 
+* When you enable S3 Object Lock with default retention for your Amazon S3 bucket after you start using this bucket for a Cloud Storage Pool. This error occurs when the PUT operation doesn't have an HTTP header with a payload checksum value, such as `Content-MD5`. This header value is required by AWS for PUT operations into buckets with S3 Object Lock enabled.
 +
-To correct this issue, follow the steps in link:editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This action triggers the validation of the Cloud Storage Pool configuration that automatically detects and updates the S3 Object Lock flag on a Cloud Storage Pool endpoint configuration.
+To correct this issue, follow the steps in link:../ilm/editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This action triggers the validation of the Cloud Storage Pool configuration that automatically detects and updates the S3 Object Lock flag on a Cloud Storage Pool endpoint configuration.
 
 * When you enable S3 Object Lock with default retention for your StorageGRID S3 bucket after you start using this bucket for a Cloud Storage Pool.
-+
-To correct this issue, contact technical support to modify the S3 Object Lock settings on the Cloud Storage Pool endpoint.
++ 
+To correct this issue:
+
+** If you're using HTTP: Cloud Storage Pools with S3 Object Lock enabled aren't supported. Edit the endpoint connection to use HTTPS instead.
+** If you're using HTTPS: Follow the steps in link:../ilm/editing-cloud-storage-pool.html[Edit a Cloud Storage Pool] without making any changes. This action triggers the validation of the Cloud Storage Pool configuration that automatically detects and updates the S3 Object Lock flag on a Cloud Storage Pool endpoint configuration.
+ 
+If there are further issues, contact technical support.
 
 == Error: This Cloud Storage Pool contains unexpected content
 
