@@ -21,7 +21,7 @@ NOTE: If StorageGRID AutoSupport isn't enabled, a message appears on the Grid Ma
 
 * *Appliance hardware AutoSupport* reports StorageGRID appliance issues. You must link:configure-autosupport-grid-manager.html#autosupport-for-appliances[configure hardware AutoSupport on each appliance].
 
-== What is Digital Advisor ?
+== What is Digital Advisor?
 
 Active IQ Digital Advisor (also known as Digital Advisor) is cloud-based and leverages predictive analytics and community wisdom from NetApp's installed base. Its continuous risk assessments, predictive alerts, prescriptive guidance, and automated actions help you prevent problems before they occur, leading to improved system health and higher system availability.
 
@@ -271,4 +271,4 @@ X-Netapp-asup-system-id +
 X-Netapp-asup-model-name +
 | AutoSupport header data.
 |===
-// 27-03-2026, SGRIDDOC-147
+// 2026-03-30, SGRIDDOC-147

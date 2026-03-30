@@ -42,4 +42,4 @@ This link appears only if there is an issue with the license.
 This date is read from the current license file and might be out of date if you extended or renewed the support service contract after obtaining the license file. To update this value, see link:updating-storagegrid-license-information.html[Update StorageGRID license information]. You can also view the actual contract end date using Digital Advisor.
 
 * Contents of the license text file
-// 27-03-2026, SGRIDDOC-147
+// 2026-03-30, SGRIDDOC-147

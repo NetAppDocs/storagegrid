@@ -1,4 +1,4 @@
-//This is the shared information about Digital Advisor for Admin and Primer topics//
+//for Monitor topics//
 
 Digital Advisor is cloud-based and leverages predictive analytics and community wisdom from NetApp's installed base. Its continuous risk assessments, predictive alerts, prescriptive guidance, and automated actions help you prevent problems before they occur, leading to improved system health and higher system availability.
 
