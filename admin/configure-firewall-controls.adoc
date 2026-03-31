@@ -27,9 +27,9 @@ StorageGRID includes an internal firewall on each node that enables you to open 
 
 Limiting the number of ports open to IP addresses outside of your grid to only those that are absolutely necessary enhances the security of your grid. You use the settings on each of the three Firewall control tabs to ensure only the needed ports are open.
 
-For more information about using firewall controls, including examples, see link:../admin/manage-firewall-controls.html[Manage firewall controls].
+For more information about using firewall controls, including examples, refer to link:../admin/manage-firewall-controls.html[Manage firewall controls].
 
-For more information about external firewalls and network security, see link:../admin/controlling-access-through-firewalls.html[Control access at external firewall].
+For more information about external firewalls and network security, refer to link:../admin/controlling-access-through-firewalls.html[Control access at external firewall].
 
 [#Access-firewall-controls]
 == Access firewall controls
@@ -60,7 +60,7 @@ NOTE: The settings on the Privileged address list tab can override the settings 
 +
 TIP: Add as few addresses as possible to the privileged list.
 
-. Optionally, select *Allow privileged IP addresses to access StorageGRID internal ports*. See link:../network/internal-grid-node-communications.html[StorageGRID internal ports]. 
+. Optionally, select *Allow privileged IP addresses to access StorageGRID internal ports*. Refer to link:../network/internal-grid-node-communications.html[StorageGRID internal ports]. 
 +
 TIP: This option removes some protections for internal services. Leave it disabled if possible.
 
