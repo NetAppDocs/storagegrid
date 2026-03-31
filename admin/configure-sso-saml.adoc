@@ -110,7 +110,7 @@ Complete the fields in the *Configure enterprise applications* step.
 +
 NOTE: You must create an enterprise application for each Admin Node in your StorageGRID system. Having an enterprise application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
-. Follow the steps in link:../admin/creating-enterprise-application-entra-id.html[Create enterprise applications in Entra ID] to create an enterprise application for each Admin Node listed in the table.
+. Follow the steps in link:../admin/creating-enterprise-application-entra-id-saml.html[Create enterprise applications in Entra ID] to create an enterprise application for each Admin Node listed in the table.
 
 . From Entra ID, copy the federation metadata URL for each enterprise application. Then, paste this URL into the corresponding *Federation metadata URL* field in StorageGRID.
 
@@ -163,7 +163,7 @@ StorageGRID can remain in sandbox mode as long as required. However, only federa
 +
 You must create one trust for each Admin Node shown in the table.
 +
-For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.html[Create relying party trusts in AD FS].
+For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs-saml.html[Create relying party trusts in AD FS].
 
 --
 .Entra ID 
@@ -179,7 +179,7 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs.htm
 
 . Go to the Azure portal.
 
-. Follow the steps in link:../admin/creating-enterprise-application-entra-id.html[Create enterprise applications in Entra ID] to upload the SAML metadata file for each Admin Node into its corresponding Entra ID enterprise application.
+. Follow the steps in link:../admin/creating-enterprise-application-entra-id-saml.html[Create enterprise applications in Entra ID] to upload the SAML metadata file for each Admin Node into its corresponding Entra ID enterprise application.
 
 --
 .PingFederate
