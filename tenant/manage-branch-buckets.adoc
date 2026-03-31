@@ -157,4 +157,3 @@ The branch bucket is created and added to the table on the Buckets page.
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view branch bucket details] and perform additional configuration.
 +
 On the Bucket details page, some configuration options related to the modification of objects are disabled for read-only buckets.
-

@@ -163,5 +163,4 @@ CAUTION: You can't reenable replication unless both buckets are empty.
 After a few moments, a success message appears. New objects added to this bucket can no longer be automatically replicated to the other grid. *Cross-grid replication* is no longer shown as a Enabled feature on the Buckets page.
 
 . If cross-grid replication was configured to occur in both directions, go to the corresponding bucket on the other grid and stop cross-grid replication in the other direction.
-
 // 2023 SEP 14, SGWS-28029
