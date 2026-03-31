@@ -53,7 +53,7 @@ NOTE: The StorageGRID system supports a maximum of 5,000 buckets for each S3 ten
 * Each label must start and end with a lowercase letter or a number and can only use lowercase letters, numbers, and hyphens.
 * Must not contain periods in virtual hosted style requests. Periods will cause problems with server wildcard certificate verification.
 
-For more information, see the https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html[Amazon Web Services (AWS) documentation on bucket naming rules^].
+For more information, refer to the https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html[Amazon Web Services (AWS) documentation on bucket naming rules^].
 
 *Note*: You can't change the bucket name after creating the bucket.
 
