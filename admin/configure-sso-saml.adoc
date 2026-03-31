@@ -195,7 +195,7 @@ For instructions, go to link:../admin/creating-relying-party-trusts-in-ad-fs-sam
 
 . Go to PingFederate.
 
-. link:../admin/creating-sp-connection-ping.html[Create one or more service provider (SP) connections for StorageGRID]. Use the SP connection ID for each Admin Node (shown in the table on the Configure SSO page) and the SAML metadata you downloaded for that Admin Node. 
+. link:../admin/creating-sp-connection-ping-saml.html[Create one or more service provider (SP) connections for StorageGRID]. Use the SP connection ID for each Admin Node (shown in the table on the Configure SSO page) and the SAML metadata you downloaded for that Admin Node. 
 +
 You must create one SP connection for each Admin Node shown in the table.
 --

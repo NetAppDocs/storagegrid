@@ -27,7 +27,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 * You have one of the following roles in the Entra ID account: Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
 
-== Access Entra ID
+== Step 1: Access Entra ID
 
 .Steps
 
@@ -37,7 +37,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 . Select https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/Overview/menuId/[Enterprise applications^].
 
-== Create enterprise applications and save StorageGRID SSO configuration
+== Step 2: Create enterprise applications and save StorageGRID SSO configuration
 
 To save the SSO configuration for Entra ID in StorageGRID, you must use Entra ID to create an enterprise application for each Admin Node. You will copy the federation metadata URLs from Entra ID and paste them into the corresponding *Federation metadata URL* fields on the Configure SSO page. 
 
@@ -65,7 +65,7 @@ To save the SSO configuration for Entra ID in StorageGRID, you must use Entra ID
 
 . After you have pasted a federation metadata URL for each Admin Node and made all other needed changes to the SSO configuration, select *Save* on the Configure SSO page.
 
-== Download SAML metadata for every Admin Node
+== Step 3: Download SAML metadata for every Admin Node
 After the SSO configuration is saved, you can download a SAML metadata file for each Admin Node in your StorageGRID system. 
 
 .Steps
@@ -77,7 +77,7 @@ After the SSO configuration is saved, you can download a SAML metadata file for 
 .. Select the button to download the SAML metadata for that Admin Node. 
 .. Save the file, which you will upload into Entra ID.
 
-== Upload SAML metadata to each enterprise application
+== Step 4: Upload SAML metadata to each enterprise application
 
 After downloading a SAML metadata file for each StorageGRID Admin Node, perform the following steps in Entra ID:
 
