@@ -106,7 +106,7 @@ Security tasks include:
 === System tasks
 System tasks include:
 
-* Use link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems
+* Use link:../admin/grid-federation-overview.html[grid federation] to sync tenant account information and replicate object data between two StorageGRID systems
 * Optionally, enable the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option
 * Optionally, configure the link:../s3/consistency.html[default bucket consistency setting]
 * link:../ilm/managing-objects-with-s3-object-lock.html[Manage S3 Object Lock]
