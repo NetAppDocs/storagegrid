@@ -23,7 +23,7 @@ StorageGRID nodes require three logical categories of storage:
 * *System data* -- Performance-tier (10K SAS or SSD) storage for per-node persistent storage of system data and transaction logs, which the StorageGRID host services consume and map into individual nodes.
 * *Object data* -- Performance-tier (10K SAS or SSD) storage and capacity-tier (NL-SAS/SATA) bulk storage for the persistent storage of object data and object metadata.
 
-You must use RAID-backed block devices for all storage categories. Non-redundant disks, SSDs, or JBODs aren't supported. You can use shared or local RAID storage for any of the storage categories; however, if you want to use the node migration capability in StorageGRID, you must store both system data and object data on shared storage. For more information, refer to link:node-container-migration-requirements.html[Node container migration requirements].
+You must use RAID-backed block devices for all storage categories. Non-redundant disks, SSDs, or JBODs aren't supported. You can use shared or local RAID storage for any storage category. To migrate nodes in StorageGRID, you must store both system data and object data on shared storage. For more information, see link:node-container-migration-requirements.html[Node container migration requirements].
 
 == Performance requirements
 
