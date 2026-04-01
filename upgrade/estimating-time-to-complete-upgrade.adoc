@@ -102,6 +102,6 @@ The estimated time for this step is 2 hours.
 
 . Add the values together.
 +
-You should allow up to 17 hours to complete the upgrade of your system to StorageGRID 12.1.0.
+You should allow up to 18 hours to complete the upgrade of your system to StorageGRID 12.1.0.
 
 NOTE: As required, you can split the maintenance window into smaller windows by approving subsets of grid nodes to upgrade in multiple sessions. For example, you might prefer to upgrade the nodes at site A in one session and then upgrade the nodes at site B in a later session. If you choose to perform the upgrade in more than one session, be aware that you can't start using the new features until all nodes have been upgraded.
