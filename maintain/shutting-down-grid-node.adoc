@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, node shutdown, shut down node, node shut down
 summary: 'You can shut down a grid node from the node’s command shell.'
 ---
-= Shut down grid node
+= Shut down StorageGRID node
 :icons: font
 :imagesdir: ../media/
 

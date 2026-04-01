@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: put, get, performance
 summary: 'You can monitor the performance of certain operations, such as object store and retrieve, to help identify changes that might require further investigation.'
 ---
-= Monitor PUT and GET performance
+= Monitor PUT and GET performance in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation REST API
 summary: 'StorageGRID provides the StorageGRID Installation API for performing installation tasks.'
 ---
-= Installation REST API
+= Learn about the StorageGRID installation REST API
 :icons: font
 :imagesdir: ../media/
 

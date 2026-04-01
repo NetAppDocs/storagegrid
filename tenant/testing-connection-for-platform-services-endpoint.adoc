@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to test platform services endpoint connection
 summary: 'If the connection to a platform service has changed, you can test the connection for the endpoint to validate that the destination resource exists and that it can be reached using the credentials you specified.'
 ---
-= Test connection for platform services endpoint
+= Test the connection for a StorageGRID platform services endpoint
 :icons: font
 :imagesdir: ../media/
 

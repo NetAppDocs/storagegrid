@@ -2,7 +2,9 @@
 
 ## Repository overview
 
-Product: StorageGRID software (current version: 12.0)
+> **Maintainer note:** Update the current version number in this file with each release. The current version is recorded in the release notes (`release-notes/`) and the `project.yml` file at the repository root.
+
+Product: StorageGRID software
 
 NetApp StorageGRID is a software-defined object storage suite that supports a wide range of use cases across public, private, and hybrid multicloud environments. It offers native support for the Amazon S3 API and automated lifecycle management to store, secure, protect, and preserve unstructured data cost effectively over long periods.
 
@@ -42,7 +44,7 @@ NetApp StorageGRID is a software-defined object storage suite that supports a wi
 - **S3 as primary API:** The Amazon S3 REST API is the primary interface for object storage clients. The Swift API is end of life.
 - **Tenant accounts:** Object storage clients operate within isolated tenant accounts. Tenants manage their own buckets, groups, users, and S3 access keys.
 - **ADC quorum:** The Administrative Domain Controller (ADC) service must maintain quorum across Storage Nodes. This constraint affects decommission and recovery procedures.
-- **Version specificity:** Always include the StorageGRID version number (e.g., 12.0) when content is version-specific. The current release is 12.0.
+- **Version specificity:** Always include the StorageGRID version number when content is version-specific. Check `release-notes/` or `project.yml` for the current release version.
 
 ## Typical user workflows
 

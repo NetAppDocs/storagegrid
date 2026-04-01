@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to remove site
 summary: 'Before using the site decommission procedure to remove a site, you must review the considerations.'
 ---
-= Considerations for removing a site
+= Site decommission considerations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
