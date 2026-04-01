@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cross-grid replication, cgr, disaster recovery, grid federation
 summary: 'Cross-grid replication is the automatic replication of objects between selected S3 buckets in two StorageGRID systems that are connected in a grid federation connection. Account clone is required for cross-grid replication.'
 ---
-= What is cross-grid replication?
+= Learn about cross-grid replication in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

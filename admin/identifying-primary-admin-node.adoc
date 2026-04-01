@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: primary admin node, configuration management node
 summary: 'The primary Admin Node provides more functionality than non-primary Admin Nodes. For example, some maintenance procedures must be performed using the primary Admin Node.'
 ---
-= Identify the primary Admin Node
+= Identify the primary Admin Node in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
