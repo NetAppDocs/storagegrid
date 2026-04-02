@@ -9,11 +9,3 @@ summary: 'After recovering storage volumes for the appliance Storage Node, you c
 :imagesdir: ../media/
 
 include::../_include/restore-object-data.adoc[]
-
-== Monitor repairs
-Monitor the status of the repair jobs, based on whether you use *replicated data*, *erasure-coded (EC) data*, or both.
-
-You can also monitor the status of volume restoration jobs in process and view a history of restoration jobs completed in 
-link:../maintain/restoring-volume.html[Grid Manager].
-
-include::../_include/restore-data-monitor.adoc[]

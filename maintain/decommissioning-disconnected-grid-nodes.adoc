@@ -76,6 +76,7 @@ Storage Nodes can take days or weeks to decommission. When all tasks are complet
 CAUTION: Don't perform this step until the nodes have shut down automatically.
 
 . If you are decommissioning a Storage Node, monitor the status of the *replicated data* and *erasure-coded (EC) data* repair jobs that are automatically started during the decommissioning process.
+
 include::../_include/restore-data-monitor.adoc[]
 
 .After you finish

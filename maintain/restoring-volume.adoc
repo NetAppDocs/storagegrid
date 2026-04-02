@@ -42,7 +42,7 @@ Whenever possible, restore object data using the Volume restoration page in the 
 The Volume restoration page in the Grid Manager also allows you to <<view-restoration-progress,monitor the volume restoration process>> and <<view-restoration-history,view restoration history>>.
 
 +
-If the recovered Storage Node contains fewer volumes than the node it is replacing, you must use the `repair-data` script.
+If the recovered Storage Node contains fewer volumes than the node it is replacing, contact technical support for assistance.
 
 You can restore two types of object data:
 
@@ -111,7 +111,7 @@ If a volume restoration can't be started, the node returns to the *Nodes to rest
 
 The *Restoration progress* tab shows the status of the volume restoration process and information about the volumes for a node being restored.
 
-Data repair rates for replicated and erasure-coded objects in all volumes are averages summarizing all restorations in process, including those restorations initiated using the `repair-data` script. The percentage of objects in those volumes that are intact and don't require restoration is also indicated.
+Data repair rates for replicated and erasure-coded objects in all volumes are averages summarizing all restorations in process. The percentage of objects in those volumes that are intact and don't require restoration is also indicated.
 
 NOTE: Replicated data restoration is dependent on the availability of resources where the replicated copies are stored. Progress of replicated data restoration is nonlinear and might take days or weeks to complete.
 

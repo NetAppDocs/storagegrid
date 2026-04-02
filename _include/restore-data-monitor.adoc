@@ -7,10 +7,6 @@
 .Replicated data
 --
 
-* To get an estimated percent completion for the replicated repair, add the `show-replicated-repair-status` option to the repair-data command.
-+
-`repair-data show-replicated-repair-status`
-
 * To determine if repairs are complete:
 . Select *Nodes* > *_Storage Node being repaired_* > *ILM*.
 . Review the attributes in the Evaluation section. When repairs are complete, the *Awaiting - All* attribute indicates 0 objects.
@@ -37,32 +33,7 @@ These attributes can be useful when you are monitoring the progress of Storage N
 .Erasure-coded (EC) data
 --
 
-To monitor the repair of erasure-coded data and retry any requests that might have failed:
-
-. Determine the status of erasure-coded data repairs:
-
-** Select *Support* > *Tools* > *Metrics* to view the estimated time to completion and the completion percentage for the current job. Then, select *EC Overview* in the Grafana section. Look at the *Grid EC Job Estimated Time to Completion* and *Grid EC Job Percentage Completed* dashboards.
- 
-** Use this command to see the status of a specific `repair-data` operation:
-+
-`repair-data show-ec-repair-status --repair-id repair ID`
-
-** Use this command to list all repairs:
-+
-`repair-data show-ec-repair-status`
-+
-The output lists information, including `repair ID`, for all previously and currently running repairs.
-
-. If the output shows that the repair operation failed, use the `--repair-id` option to retry the repair.
-+
-This command retries a failed node repair, using the repair ID 6949309319275667690:
-+
-`repair-data start-ec-node-repair --repair-id 6949309319275667690`
-+
-This command retries a failed volume repair, using the repair ID 6949309319275667690:
-+
-`repair-data start-ec-volume-repair --repair-id 6949309319275667690`
-
+To monitor the repair of erasure-coded data and retry any requests that might have failed, select *Support* > *Tools* > *Metrics* to view the estimated time to completion and the completion percentage for the current job. Then, select *EC Overview* in the Grafana section. Look at the *Grid EC Job Estimated Time to Completion* and *Grid EC Job Percentage Completed* dashboards.
 --
 ====
 // end tabbed area
