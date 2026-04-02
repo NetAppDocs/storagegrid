@@ -77,7 +77,7 @@ If the objects exist, <<reset-lost-obj-count,reset the Objects potentially lost 
 |Locations = 0
 |If there are no locations listed in the output, the object is potentially missing. Contact technical support.
 
-Technical support might ask you to determine if there is a storage recovery procedure in progress. See the information about link:../maintain/restoring-volume.html[restoring object data using Grid Manager] and link:../maintain/restoring-object-data-to-storage-volume.html[restoring object data to a storage volume].
+Technical support might ask you to determine if there is a storage recovery procedure in progress. Refer to link:../maintain/restoring-volume.html[Restore object data using Grid Manager].
 |===
 
 . [[reset-lost-obj-count]]After you address lost object issues, reset the Objects potentially lost counter to ensure alerts aren't false positives:

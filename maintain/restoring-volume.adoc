@@ -13,14 +13,14 @@ You can restore object data for a failed storage volume or Storage Node using Gr
 
 .Before you begin
 
-* You have completed either of these procedures to format failed volumes:
+* If the automatic procedure failed to remount preserved storage volumes and reformat failed storage volumes, you've performed one of these procedures:
 
 ** link:../maintain/remounting-and-reformatting-appliance-storage-volumes.html[Remount and reformat appliance storage volumes (manual steps)] 
 ** link:../maintain/remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)]
 
-* You have confirmed that the Storage Node where you are restoring objects has a Connection State of *Connected* image:../media/icon_alert_green_checkmark.png[icon alert green check mark] on the *Nodes* > *Overview* tab in the Grid Manager.
+* You've confirmed that the Storage Node where you are restoring objects has a Connection State of *Connected* image:../media/icon_alert_green_checkmark.png[icon alert green check mark] on the *Nodes* > *Overview* tab in the Grid Manager.
 
-* You have confirmed the following:
+* You've confirmed the following:
 ** A grid expansion to add a Storage Node is not in process.
 ** A Storage Node decommission is not in process or failed.
 ** A recovery of a failed storage volume is not in process.
@@ -30,7 +30,7 @@ You can restore object data for a failed storage volume or Storage Node using Gr
 
 .About this task
 
-After you have replaced the drives and performed the manual steps to format the volumes, Grid Manager displays the volumes as candidates for restoration on the *Maintenance* > *Volume restoration* > *Nodes to restore* tab.
+After you have replaced the drives and the volumes have been formatted, Grid Manager displays the volumes as candidates for restoration on the *Maintenance* > *Volume restoration* > *Nodes to restore* tab.
 
 Whenever possible, restore object data using the Volume restoration page in the Grid Manager. You can either <<enable-auto-restore-mode,enable automatic restore mode>> to automatically start volume restoration when the volumes are ready to be restored or <<manually-restore,manually perform volume restoration>>. Follow these guidelines:
 
@@ -40,13 +40,6 @@ Whenever possible, restore object data using the Volume restoration page in the 
 
 +
 The Volume restoration page in the Grid Manager also allows you to <<view-restoration-progress,monitor the volume restoration process>> and <<view-restoration-history,view restoration history>>.
-
-* If the volumes aren't listed in the Grid Manager as candidates for restoration, follow the appropriate steps for using the `repair-data` script to restore object data:
-** link:restoring-object-data-to-storage-volume.html[Restoring object data to storage volume (system drive failure)]
-** link:restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[Restore object data to storage volume where system drive is intact]
-** link:restoring-object-data-to-storage-volume-for-appliance.html[Restore object data to storage volume for appliance]
-+
-NOTE: The repair-data script is deprecated and will be removed in a future release.
 
 +
 If the recovered Storage Node contains fewer volumes than the node it is replacing, you must use the `repair-data` script.

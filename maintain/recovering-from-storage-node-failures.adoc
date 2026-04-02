@@ -17,17 +17,13 @@ Use this table to select the recovery procedure for a failed Storage Node.
 |===
 | Issue| Action| Notes
 
-| One Storage Node has failed.
-| link:../maintain/restoring-volume.html[Restore object data using Grid Manager]
-| 
-
 | More than one Storage Node has failed.
 | Contact technical support.
 | If more than one Storage Node has failed, technical support must assist with recovery to prevent Cassandra database inconsistencies that could lead to data loss. A site recovery procedure might be required.
 
 Technical support can determine when it's safe to begin recovery of a second Storage Node.
 
-*Note*: If more than one Storage Node that contains the ADC service fails at a site, you lose any pending platform service requests for that site.
+*Note*: If more than one Storage Node that contains the ADC service fails at a site, any pending platform service requests for that site will be lost.
 
 | More than one Storage Node at a site has failed or an entire site has failed. 
 | Contact technical support. It might be necessary to perform a site recovery procedure. 
@@ -38,7 +34,7 @@ Technical support can determine when it's safe to begin recovery of a second Sto
 | The recovery procedure for appliance Storage Nodes is the same for all failures.
 
 | One or more storage volumes have failed, but the system drive is intact
-| link:recovering-from-storage-volume-failure-where-system-drive-is-intact.html[ Recover from storage volume failure where system drive is intact]
+| link:recovering-from-storage-volume-failure-where-system-drive-is-intact.html[Recover from storage volume failure where system drive is intact]
 | This procedure is used for software-based Storage Nodes.
 
 | The system drive has failed.
