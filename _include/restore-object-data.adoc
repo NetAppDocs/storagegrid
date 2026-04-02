@@ -1,15 +1,7 @@
----
-permalink: maintain/restoring-volume.html
-sidebar: sidebar
-keywords: storagegrid, restore, volume
-summary: 'You can restore object data for a failed storage volume or storage node using Grid Manager. You can also use Grid Manager to monitor restoration processes in progress and display a restoration history.'
----
-= Restore StorageGRID object data using Grid Manager
-:icons: font
-:imagesdir: ../media/
+//shared procedure for restoring object data
 
 [.lead]
-You can restore object data for a failed storage volume or Storage Node using Grid Manager. You can also use Grid Manager to monitor restoration processes in progress and display a restoration history.
+You restore object data for a failed storage volume or Storage Node using Grid Manager. You can also use Grid Manager to monitor restoration processes in progress and display a restoration history.
 
 .Before you begin
 
