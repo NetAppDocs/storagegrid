@@ -2,9 +2,9 @@
 permalink: admin/creating-enterprise-application-entra-id-oidc.html
 sidebar: sidebar
 keywords: enterprise application, entra id, single sign on, sso
-summary: 'You use Entra ID to create an enterprise application for each Admin Node in your system.'
+summary: 'You use Entra ID to create an application for each Admin Node in your system.'
 ---
-= Create enterprise applications in Entra ID for OIDC
+= Create applications in Entra ID for OIDC
 :icons: font
 :imagesdir: ../media/
 
@@ -17,11 +17,11 @@ You use Entra ID to create an enterprise application for each Admin Node in your
 
 * You have link:../admin/configure-sso-oidc.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
 
-* You have the *Enterprise application name* for each Admin Node in your system. You can copy these values from the Admin Node details table on the Configure SSO page.
+* You have the *Relying party identifier*, *OpenID endpoint URL*, and *Client secret* for each Admin Node in your system. You can copy these values from the Admin Node details table on the Configure SSO page.
 +
-NOTE: You must create an enterprise application for each Admin Node in your StorageGRID system. Having an enterprise application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
+NOTE: You must create an application for each Admin Node in your StorageGRID system. Having an application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
-* You have experience creating enterprise applications in Entra ID.
+* You have experience creating applications in Entra ID.
 
 * You have an Entra ID account with an active subscription.
 
@@ -33,36 +33,48 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 . Log in to the https://portal.azure.com[Azure Portal^].
 
-. Navigate to https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade[Entra ID^].
+. Select the *StorageGRID VTC* organizational directory.
 
-. Select https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/Overview/menuId/[Enterprise applications^].
+== Step 2: Register a new application
 
-== Step 2: Create enterprise applications and save StorageGRID SSO configuration
-
-To save the SSO configuration for Entra ID in StorageGRID, you must use Entra ID to create an enterprise application for each Admin Node. You will copy the federation metadata URLs from Entra ID and paste them into the corresponding *Federation metadata URL* fields on the Configure SSO page. 
+Register a new application for each Admin Node in your system. 
 
 .Steps
 
-. Repeat the following steps for each Admin Node.
+. In the Entra ID Enterprise applications pane, select *Application registrations*.
+. Select *New registration*.
+. For the name, enter the *Relying party identifier* that you copied from the Admin Node details table on the Configure SSO page.
+. Select *Accounts in this organizational directory only (StorageGRID VTC only - Single tenant)*.
+. Enter the *OpenID endpoint URL* that you copied from the Admin Node details table on the Configure SSO page.
+. Select *Register*.
+. Navigate to the overview page for the new application registration.
+. Record the *Application (client) ID* and *Directory (tenant) ID* values for the new application.
 
-.. In the Entra ID Enterprise applications pane, select *New application*.
+== Step 3: Configure a client secret
 
-.. Select *Create your own application*.
+Register a client secret for each new application.
 
-.. For the name, enter the *Enterprise application name* you copied from the Admin Node details table on the Configure SSO page.
+.Steps
 
-.. Leave the *Integrate any other application you don't find in the gallery (Non-gallery)* radio button selected.
+. In the overview page of the new application registration, select *Certificates and secrets* > *New client secret*.
+. Enter the *Client secret* that you copied from the Admin Node details table on the Configure SSO page.
+. Set a desired expiry date.
+. Select *Add* to create the client secret.
+. Copy the *(Secret) Value*.
++
+NOTE: If you refresh or navigate away from the client secret page, you can't copy the secret value.
 
-.. Select *Create*.
+== Step 4: Set up the API permissions 
 
-.. Select the *Get started* link in the *2. Set up single sign on* box, or select the *Single sign-on* link in the left margin.
+Set up the API permissions for each new application.
 
-.. Select the *SAML* box.
+.Steps
 
-.. Copy the *App Federation Metadata Url*, which you can find under *Step 3 SAML Signing Certificate*. 
-
-.. Go to the Configure SSO page, and paste the URL in the *Federation metadata URL* field that corresponds to the *Enterprise application name* you used.
-
-. After you have pasted a federation metadata URL for each Admin Node and made all other needed changes to the SSO configuration, select *Save* on the Configure SSO page.
+. In the overview page of the new application registration, select *API permissions* > *Add a permission*.
+. Select the *Microsoft APIs* tab, then select *Microsoft Graph* for the API.
+. Select *Delegated permissions* for the permissions type.
+. Expand *OpenId permissions*, then select *email*, *offline_access*, *openid*, and *profile*.
+. Select *Add permissions*.
+. Select *Grant admin consent for StorageGRID VTC*, then select *Yes* to confirm.
 
 // 2026 MAR 31, SGWS-39432
