@@ -68,7 +68,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | 1055
 | TCP
 | All nodes
-| Non-Primary Admin Node (optional) and Primary Admin Node
+| Non-primary Admin Node (optional) and Primary Admin Node
 | Internal traffic for installation, expansion, recovery, and other maintenance procedures.
 
 | 1139
@@ -178,7 +178,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | 10342
 | TCP
 | All nodes
-| Non-Primary Admin Node (optional) and Primary Admin Node 
+| Non-primary Admin Node (optional) and Primary Admin Node
 | Internal traffic for installation, expansion, recovery, and other maintenance procedures.
 
 | 18000
