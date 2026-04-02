@@ -1,15 +1,15 @@
 ---
-permalink: upgrade/removed-or-deprecated-features.html
+permalink: release-notes/removed-or-deprecated-features.html
 sidebar: sidebar
 keywords:
-summary: 'Some features and capabilities were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.'
+summary: "Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration."
 ---
 = Removed or deprecated features and capabilities in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Some features and capabilities were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.
+Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
 
 == Definitions
 
@@ -121,5 +121,5 @@ NOTE: In certain situations, NetApp might end support for particular features so
 
 Also refer to:
 
-* link:../upgrade/changes-to-grid-management-api.html[Changes to the Grid Management API]
-* link:../upgrade/changes-to-tenant-management-api.html[Changes to the Tenant Management API]
+* link:changes-to-grid-management-api.html[Changes to the Grid Management API]
+* link:changes-to-tenant-management-api.html[Changes to the Tenant Management API]
