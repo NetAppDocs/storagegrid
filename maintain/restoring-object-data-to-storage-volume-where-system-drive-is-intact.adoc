@@ -8,4 +8,7 @@ summary: 'After recovering a storage volume on a Storage Node where the system d
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+After recovering a storage volume on a Storage Node where the system drive is intact, you can restore the replicated or erasure-coded object data that was lost when the storage volume failed.
+
 include::../_include/restore-object-data.adoc[]

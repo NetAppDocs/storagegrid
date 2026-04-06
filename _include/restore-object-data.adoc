@@ -1,8 +1,5 @@
 //shared procedure for restoring object data
 
-[.lead]
-You restore object data for a failed storage volume or Storage Node using Grid Manager. You can also use Grid Manager to monitor restoration processes in progress and display a restoration history.
-
 .Before you begin
 
 * If the automatic procedure failed to remount preserved storage volumes and reformat failed storage volumes, you've performed one of these procedures:

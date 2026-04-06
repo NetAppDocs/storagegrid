@@ -8,4 +8,7 @@ summary: 'After recovering storage volumes for the appliance Storage Node, you c
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+After recovering storage volumes for the appliance Storage Node, you can restore the replicated or erasure-coded object data that was lost when the Storage Node failed.
+
 include::../_include/restore-object-data.adoc[]

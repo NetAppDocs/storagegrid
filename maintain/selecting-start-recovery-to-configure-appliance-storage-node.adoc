@@ -33,8 +33,13 @@ image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance >
 
 . Monitor the progress of the recovery in the Recovering Grid Node table.
 +
-If the grid node reaches the "Waiting for manual steps" stage, go to link:../maintain/remounting-and-reformatting-appliance-storage-volumes.html[to remount and reformat the appliance storage volumes manually]. If the "Waiting for manual steps" message doesn't appear, it means the storage volumes have been automatically remounted and reformatted, and you can link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[restore object data to the volumes].
-+
-NOTE: At any point during the recovery, you can select *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
-+
+* If the grid node reaches the "Waiting for manual steps" stage, you must link:../maintain/remounting-and-reformatting-appliance-storage-volumes.html[remount and reformat the appliance storage volumes manually].
+
+* If the "Waiting for manual steps" message doesn't appear, it means the storage volumes have been automatically remounted and reformatted, and you can link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[restore object data to the volumes].
+
+[NOTE]
+====
+At any point during the recovery, you can select *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
+
 If you want to retry the recovery after resetting the procedure, you must restore the appliance node to a pre-installed state by running `sgareinstall` on the node.
+====
