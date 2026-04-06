@@ -75,9 +75,43 @@ Storage Nodes can take days or weeks to decommission. When all tasks are complet
 +
 CAUTION: Don't perform this step until the nodes have shut down automatically.
 
-. If you are decommissioning a Storage Node, monitor the status of the *replicated data* and *erasure-coded (EC) data* repair jobs that are automatically started during the decommissioning process.
+. If you're decommissioning a Storage Node, monitor the status of the *replicated data* and *erasure-coded (EC) data* repair jobs that are automatically started during the decommissioning process.
++
+[role="tabbed-block"]
+====
+.Replicated data
+--
 
-include::../_include/restore-data-monitor.adoc[]
+* To determine if repairs are complete:
+. Select *Nodes* > *_Storage Node being repaired_* > *ILM*.
+. Review the attributes in the Evaluation section. When repairs are complete, the *Awaiting - All* attribute indicates 0 objects.
+
+* To monitor the repair in more detail:
+. Select *Nodes*.
+. Select *_grid name_* > *ILM*.
+. Position your cursor over the ILM queue graph to see the value of the *Scan rate (objects/sec)* attribute, which is the rate at which objects in the grid are scanned and queued for ILM.
+. In the ILM Queue section, look at the following attributes:
+
+** *Scan period - estimated*: The estimated time to complete a full ILM scan of all objects.
++
+A full scan doesn't guarantee that ILM has been applied to all objects.
+
+** *Repairs attempted*: The total number of attempted object repair operations for replicated data that are considered high risk. High-risk objects are any objects with one copy remaining, whether specified by the ILM policy or as a result of lost copies. This count increments each time a Storage Node tries to repair a high-risk object. High-risk ILM repairs are prioritized if the grid becomes busy.
++
+
+The same object repair might increment again if replication failed after the repair. +
+These attributes can be useful when you are monitoring the progress of Storage Node volume recovery. If the number of repairs attempted has stopped increasing and a full scan has been completed, the repair has probably completed.
+
+. Alternatively, submit a Prometheus query for `storagegrid_ilm_scan_period_estimated_minutes` and `storagegrid_ilm_repairs_attempted`.
+
+--
+.Erasure-coded (EC) data
+--
+
+To monitor the repair of erasure-coded data and retry any requests that might have failed, select *Support* > *Tools* > *Metrics* to view the estimated time to completion and the completion percentage for the current job. Then, select *EC Overview* in the Grafana section. Look at the *Grid EC Job Estimated Time to Completion* and *Grid EC Job Percentage Completed* dashboards.
+--
+====
+// end tabbed area
 
 .After you finish
 
