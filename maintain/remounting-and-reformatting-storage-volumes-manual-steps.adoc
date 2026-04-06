@@ -158,13 +158,11 @@ Error: This volume does not belong to this node. Fix the attached volume and re-
 +
 CAUTION: If a storage volume is reported as belonging to another Storage Node, contact technical support. If you run the `sn-recovery-postinstall.sh` script, the storage volume will be reformatted, which might cause data loss.
 
- .. If any storage devices could not be mounted, make a note of the device name, and repair or replace the device.
+.. If any storage devices could not be mounted, make a note of the device name, and repair or replace the device.
 +
 NOTE: You must repair or replace any storage devices that could not be mounted.
-+
-You will use the device name to look up the volume ID, which is required input when you run the `repair-data` script to restore object data to the volume (the next procedure).
 
- .. After repairing or replacing all unmountable devices, run the `sn-remount-volumes` script again to confirm that all storage volumes that can be remounted have been remounted.
+.. After repairing or replacing all unmountable devices, run the `sn-remount-volumes` script again to confirm that all storage volumes that can be remounted have been remounted.
 
 +
 CAUTION: If a storage volume can't be mounted or is improperly formatted, and you continue to the next step, the volume and any data on the volume will be deleted. If you had two copies of object data, you will have only a single copy until you complete the next procedure (restoring object data).
