@@ -11,10 +11,10 @@ summary: 'Before decommissioning a grid node, you must confirm that no data repa
 [.lead]
 Before decommissioning or expanding a grid node, you must confirm that no data repair jobs are active. If any repairs have failed, you must restart them and allow them to complete before performing the decommission procedure.
 
-Refer to link:../expand/index.html[Expansion types] for details on how to expand a grid node.
+* Refer to link:../expand/index.html[Expansion types] for details on how to expand a grid node.
 
-Use the Grid Manager to monitor restoration processes in progress and display a restoration history. Refer to these procedures:
-+
-* link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[Restore object data to storage volume for appliance]
-* link:../maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[Restore object data to storage volume where system drive is intact]
-* link:../maintain/restoring-object-data-to-storage-volume.html[Restore object data to storage volume (system drive failure)]
+* Use the Grid Manager to monitor restoration processes in progress and display a restoration history. Refer to these procedures:
+
+** link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[Restore object data to storage volume for appliance]
+** link:../maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[Restore object data to storage volume where system drive is intact]
+** link:../maintain/restoring-object-data-to-storage-volume.html[Restore object data to storage volume (system drive failure)]
