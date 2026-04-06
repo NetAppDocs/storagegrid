@@ -34,7 +34,7 @@ Technical support can determine when it's safe to begin recovery of a second Sto
 | The recovery procedure for appliance Storage Nodes is the same for all failures.
 
 | One or more storage volumes have failed, but the system drive is intact
-| link:recovering-from-storage-volume-failure-where-system-drive-is-intact.html[Recover from storage volume failure where system drive is intact]
+| link:reviewing-warnings-about-storage-volume-recovery.html[Recover from storage volume failure where system drive is intact]
 | This procedure is used for software-based Storage Nodes.
 
 | The system drive has failed.

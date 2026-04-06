@@ -32,7 +32,7 @@ image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance >
 
 . Monitor the progress of the recovery in the Recovering Grid Node table.
 +
-NOTE: While the recovery procedure is running, you can click *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
+NOTE: While the recovery procedure is running, you can select *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
 +
 If you want to retry the recovery after resetting the procedure, you must restore the node to a pre-installed state, as follows:
 
