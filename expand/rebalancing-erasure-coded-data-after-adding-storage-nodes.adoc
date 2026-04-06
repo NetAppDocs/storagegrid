@@ -39,7 +39,7 @@ NOTE: S3 API operations to upload objects (or object parts) might fail during th
 
 ** It can't move any more erasure-coded data.
 
-** The data in all nodes is within a 5% deviation of the target data partition.     
+** The data in all nodes is within a 5% deviation of the usable space partition or available space partition.     
 
 ** The procedure has been running for 30 days. 
 
@@ -95,11 +95,11 @@ To get help on the rebalance-data command:
 +
 Go to the Nodes page to assess the data distribution across the Storage Nodes in the site.
 + 
-The EC rebalance job is considered complete and will stop when the data in all nodes is within a 5% deviation of the target data partition.   
+The EC rebalance job is considered complete and will stop when the usable space in all nodes is within a 5% deviation of the target usable space partition.   
 
 ** If `State` is `Success`, optionally <<review_object_storage,review object storage>> to see the updated details for the site.
 +
-Erasure-coded data should now be more balanced among the Storage Nodes at the site.
+Usable space should now be more balanced among the Storage Nodes at the site.
 
 
 ** If `State` is `Failure`:

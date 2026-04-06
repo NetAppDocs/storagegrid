@@ -22,8 +22,9 @@ The EC rebalance procedure:
 * Only moves erasure-coded object data. It does not move replicated object data.
 * Redistributes the data within a site. It does not move data between sites.
 * Redistributes data among all Storage Nodes at a site. It does not redistribute data within storage volumes.
-* Attempts to distribute the same number of bytes to each node. Nodes that contain more replicated data will  store less erasure-coded data after rebalance is complete.
-* Redistributes erasure-coded data evenly between Storage Nodes without considering the relative capacities of each node. Replicated data is included in the calculation.
+* Attempts to distribute bytes of data so each node has the same usable space. Nodes that contain more replicated data might store less erasure-coded data after the rebalance is complete.
+* Redistributes usable space evenly between Storage Nodes without considering the relative capacities of each node. Replicated data is included in the calculation.
+* The rebalance procedure is considered complete if it can't move any more erasure-coded data, even if the usable space is still not evenly distributed.
 * Won't distribute erasure-coded data to Storage Nodes that are more than 80% full or to metadata-only Storage Nodes.
 * Might decrease the performance of ILM operations and S3 client operations when it runs&#8212;additional resources are required to redistribute the erasure-coding fragments. 
 
