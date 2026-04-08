@@ -870,10 +870,12 @@ link:use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object L
 == https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html[PutObjectLockConfiguration^]
 
 .URI query parameters and request headers
-StorageGRID supports all <<common-params, common parameters and headers>> for this request.
+StorageGRID supports _most_ <<common-params, common parameters and headers>> for this request.
 
 .Request body
-StorageGRID supports all request body parameters defined by the Amazon S3 REST API at the time of implementation.
+StorageGRID supports _most_ request body parameters defined by the Amazon S3 REST API at the time of implementation, with the following exception:
+
+You can't use PutObjectLockConfiguration to enable S3 Object Lock on a bucket.
 
 .StorageGRID documentation
 link:use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]
