@@ -17,7 +17,7 @@ NOTE: This procedure applies to software-based Storage Nodes only. You must foll
 
 *Linux:* If you aren't sure if your system drive has failed, follow the instructions to replace the node to determine which recovery steps are required.
 
-[cols="1a,2a" options="header"]
+[cols="1a,3a" options="header"]
 |===
 | Platform
 | Procedure
@@ -30,5 +30,4 @@ NOTE: This procedure applies to software-based Storage Nodes only. You must foll
 
 | OpenStack
 | NetApp-provided virtual machine disk files and scripts for OpenStack are no longer supported for recovery operations. If you need to recover a node running in an OpenStack deployment, download the files for your Linux operating system. Then, follow the procedure for link:all-node-types-replacing-linux-node.html[replacing a Linux node].
-
 |===
