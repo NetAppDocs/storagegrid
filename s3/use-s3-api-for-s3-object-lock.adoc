@@ -67,7 +67,7 @@ You must have the `s3:PutBucketObjectLockConfiguration` permission, or be accoun
 The `Content-MD5` request header must be specified in the PUT request.
 
 ==== Request example
-This example enables S3 Object Lock for a bucket and sets the default retention mode to COMPLIANCE and the default retention period to 6 years.
+This example enables S3 Object Lock for a bucket (if your grid administrator has given permission) and sets the default retention mode to COMPLIANCE and the default retention period to 6 years.
 
 [subs="specialcharacters,quotes"]
 ----
@@ -91,7 +91,6 @@ Authorization: _authorization-string_
     </Rule>
 </ObjectLockConfiguration>
 ----
-
 
 == How to determine the default retention for a bucket
 

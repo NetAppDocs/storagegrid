@@ -253,7 +253,9 @@ The endpoint must exist for replication configuration to succeed. If the endpoin
 * Suspended: Disables versioning for the objects in the bucket. All objects added to the bucket receive the version ID `null`.
 
 | PutObjectLockConfiguration
-| Configures or removes the bucket default retention mode and default retention period.
+| 
+* Configures or removes the bucket default retention mode and default retention period.
+* If the grid administrator has given permission, enables S3 Object Lock on existing buckets.
 
 If the default retention period is modified, the retain-until-date of existing object versions remains the same and isn't recalculated using the new default retention period.
 

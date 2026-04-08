@@ -875,7 +875,7 @@ StorageGRID supports _most_ <<common-params, common parameters and headers>> for
 .Request body
 StorageGRID supports _most_ request body parameters defined by the Amazon S3 REST API at the time of implementation, with the following exception:
 
-You can't use PutObjectLockConfiguration to enable S3 Object Lock on a bucket.
+You can't use PutObjectLockConfiguration to enable S3 Object Lock on an existing bucket unless your grid administrator has given permission.
 
 .StorageGRID documentation
 link:use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]
