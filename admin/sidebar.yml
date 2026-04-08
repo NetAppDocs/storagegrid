@@ -98,9 +98,11 @@ entries:
     - title: What is cross-grid replication
       url: "/admin/grid-federation-what-is-cross-grid-replication.html"
     - title: Compare cross-grid replication and CloudMirror replication
-      url: "/admin/grid-federation-compare-cgr-to-cloudmirror.html"               
+      url: "/admin/grid-federation-compare-cgr-to-cloudmirror.html"
     - title: Create grid federation connections
       url: "/admin/grid-federation-create-connection.html"
+    - title: Automate grid federation connections
+      url: "/admin/grid-federation-automate-connections.html"
     - title: Learn about global namespace
       url: "/admin/learn-about-global-namespace.html"
     - title: Configure global namespace
