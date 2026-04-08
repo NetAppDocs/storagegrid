@@ -11,7 +11,7 @@ summary: 'If the automatic procedure fails to remount preserved storage volumes 
 [.lead]
 If the automatic procedure fails to remount preserved storage volumes and reformat failed storage volumes, you must manually run two scripts to complete those operations. The first script remounts volumes that are properly formatted as StorageGRID storage volumes. The second script reformats any unmounted volumes, rebuilds the Cassandra database, if needed, and starts services.
 
-During a Storage Node recovery, if a "Waiting for manual steps" message appears in the Grid Manager, follow these steps to remount and reformat storage volumes. If you don't see this message, the remount and reformat operations have completed automatically, and you can link:../maintain/checking-storage-state-after-recovering-storage-volumes.html[check the storage state after recovery].
+During a Storage Node recovery, if a "Waiting for manual steps" message appears in the Grid Manager, follow these steps to remount and reformat storage volumes. If you don't see this message, the remount and reformat operations have completed automatically, and you can skip _this_ procedure and link:../maintain/restoring-object-data-to-storage-volume.html[restore object data].
 
 .Before you begin
 
