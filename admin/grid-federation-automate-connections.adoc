@@ -33,7 +33,7 @@ m| manage-grid-federation.sample.json
 
 * You've created a `manage-grid-federation.json` configuration file. To create this file, you can modify the example configuration file, `manage-grid-federation.sample.json`.
 
-CAUTION: Store the grid admin passwords and provisioning passphrases from your `manage-grid-federation.json` configuration file in a secure location. If credentials are omitted from the file, the script will prompt for them interactively. You should also store a back up of the modified configuration file in a secure location.
+CAUTION: Store the grid admin passwords and provisioning passphrases from your `manage-grid-federation.json` configuration file in a secure location. If credentials are omitted from the file, the script will prompt for them interactively. You should also store a backup of the modified configuration file in a secure location.
 
 == Configuration file fields
 The JSON configuration file is an array of objects. Each object represents one grid and supports the following fields:
@@ -137,7 +137,7 @@ m| 23001
 
 | --no-verify-ssl
 | SSL verification enabled
-| Disables SSL certificate verification for local-to-grid conn
+| Disables SSL certificate verification for local-to-grid connections
 |===
 
 == Edit existing connections
