@@ -25,5 +25,60 @@ The primary tasks for configuring and administering StorageGRID allow you to:
 
 * You have fairly detailed knowledge of Linux command shells, networking, and server hardware setup and configuration.
 
+== Quick start for administering StorageGRID
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Get started with Grid Manager
 
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Two] Control access to StorageGRID
+
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Three] Use grid federation
+
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Four] Manage security
+
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Five] Manage tenants
+
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Six] Configure client connections
+
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Seven] Manage networks and connections
+
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Eight] Manage Nodes
+
+[role="quick-margin-list"]
+* Learn how to sign in and out of the Grid Manager
+* Learn about license information
+* Learn about using the API
