@@ -38,6 +38,8 @@ When the EC rebalance procedure is complete:
 
 ** Larger-capacity nodes might be relatively less full than smaller-capacity nodes, even though all nodes will end up with approximately the same amount of usable space.
 +
+For example, with a 2+1 Erasure Coding scheme, suppose three 200-TB nodes are each filled to 80% (200 × 0.8 = 160 TB on each node, or 480 TB for the site). If you add a 400-TB node and run the rebalance procedure, all the older nodes will now have approximately the same amount of erasure-code data (106.66 TB or 53% used). The new node will have (160 TB of data or 40% used). In this case, the Used (%) for the larger node will be less than the Used (%) for the smaller nodes. The rebalance procedure completes before the usable space is balanced as no more erasure-coded data can be moved without breaking the erasure-coding scheme constraints.
++
 image::../media/used_space_with_larger_node.png[Used space before expansion]
 
 == When to rebalance erasure-coded data
