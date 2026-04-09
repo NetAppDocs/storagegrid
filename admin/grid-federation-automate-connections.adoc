@@ -14,7 +14,7 @@ After you've installed and configured two or more StorageGRID systems running ve
 .Before you begin
 * All grids are running StorageGRID 12.1 or later.
 
-* You've disabled single sign-on (SSO) on every grid.
+* If single sign-on (SSO) is enabled on any grid, you've disabled it.
 
 * You have a Linux machine with Python 3.6 or later installed.
 
