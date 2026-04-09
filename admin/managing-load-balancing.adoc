@@ -19,7 +19,7 @@ The StorageGRID Load Balancer service is installed on all Admin Nodes and all Ga
 
 The Load Balancer service on each node operates independently when forwarding client traffic to the Storage Nodes. Through a weighting process, the Load Balancer service routes more requests to Storage Nodes with higher CPU availability.
 
-NOTE: Although the StorageGRID Load Balancer service is the recommended load balancing mechanism, you might want to integrate a third-party load balancer instead. For information, contact your NetApp account representative or refer to https://fieldportal.netapp.com/content/2666394[TR-4626: StorageGRID third-party and global load balancers^].
+NOTE: Although the StorageGRID Load Balancer service is the recommended load balancing mechanism, you might want to integrate a third-party load balancer instead. For information, contact your NetApp account representative or refer to https://docs.netapp.com/us-en/storagegrid-enable/technical-reports/load-balancer-index.html[Use third-party load balancers with StorageGRID^].
 
 == How many load balancing nodes do I need?
 
@@ -135,7 +135,7 @@ Subject DN: /C=Country/ST=State/O=Company,Inc./CN=s3.storagegrid.example.com
 As required, the certificate can use wildcards to represent the fully qualified domain names of all Admin Nodes and Gateway Nodes running the Load Balancer service. For example, `*.storagegrid._example_.com` uses the * wildcard to represent `adm1.storagegrid._example_.com` and `gn1.storagegrid._example_.com`. 
 
 
-If you plan to use S3 virtual hosted-style requests, the certificate must also include an *Alternative Name* entry for each link:../admin/configuring-s3-api-endpoint-domain-names.html[S3 endpoint domain name] you have configured, including any wildcard names. For example:
+If you plan to use S3 virtual-hosted-style requests, the certificate must also include an *Alternative Name* entry for each link:../admin/configuring-s3-api-endpoint-domain-names.html[S3 endpoint domain name] you have configured, including any wildcard names. For example:
 
 ----
 Alternative Name: DNS:*.s3.storagegrid.example.com

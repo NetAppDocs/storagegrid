@@ -2,14 +2,14 @@
 permalink: admin/grid-federation-what-is-cross-grid-replication.html
 sidebar: sidebar
 keywords: cross-grid replication, cgr, disaster recovery, grid federation
-summary: 'Cross-grid replication is the automatic replication of objects between selected S3 buckets in two StorageGRID systems that are connected in a grid federation connection. Account clone is required for cross-grid replication.'
+summary: 'Cross-grid replication is the automatic replication of objects between selected S3 buckets in two StorageGRID systems that are connected in a grid federation connection. Account sync is required for cross-grid replication.'
 ---
 = What is cross-grid replication?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cross-grid replication is the automatic replication of objects between selected S3 buckets in two StorageGRID systems that are connected in a link:grid-federation-overview.html[grid federation connection]. link:grid-federation-what-is-account-clone.html[Account clone] is required for cross-grid replication.
+Cross-grid replication is the automatic replication of objects between selected S3 buckets in two StorageGRID systems that are connected in a link:grid-federation-overview.html[grid federation connection]. link:grid-federation-what-is-account-sync.html[Account sync] is required for cross-grid replication.
 
 == Workflow for cross-grid replication
 
@@ -19,14 +19,18 @@ image::../media/grid-federation-cgr-workflow.png[Cross-grid replication workflow
 
 == Requirements for cross-grid replication
 
-If a tenant account has the *Use grid federation connection* permission to use one or more link:grid-federation-overview.html[grid federation connections], a tenant user with Root access permission can create buckets in the corresponding tenant accounts on each grid. These buckets:
+If a tenant account has the *Use grid federation connection* permission to use one or more link:grid-federation-overview.html[grid federation connections], a tenant user with Root access permission can create buckets ("source" and "destination" buckets) in the corresponding tenant accounts on each grid. These buckets:
 
 * Can have different names from each other
 * Can have different regions
 * Must have versioning enabled
+* Must have one of the following S3 Object Lock configurations:
+** source: *disabled*, destination: *disabled*
+** source: *enabled*, destination: *enabled*
+** source: *disabled*, destination: *enabled*
 * Must be empty
 
-After both buckets have been created, cross-grid replication can be configured for either or both buckets.
+After you've created both buckets, you can configure cross-grid replication for either or both buckets.
 
 .Learn more
 
@@ -150,6 +154,10 @@ a| Enabled
 a| Disabled
 a| Enabled
 |===
+
+CAUTION: You can enable S3 Object Lock on existing buckets, which could lead to a misconfiguration later.
+
+NOTE: When S3 Object Lock is enabled on the source bucket, make sure it's also enabled on the destination bucket. If S3 Object Lock is disabled on the destination bucket, an error occurs during replication. Refer to link:../admin/grid-federation-troubleshoot.html#cross-grid-replication-alerts-and-errors[Cross-grid replication alerts and errors].
 
 When S3 Object Lock on the source bucket is enabled: 
 

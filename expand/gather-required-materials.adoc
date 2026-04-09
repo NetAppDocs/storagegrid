@@ -1,10 +1,10 @@
 ---
 permalink: expand/gather-required-materials.html
 sidebar: sidebar
-keywords: expand, expansion, planning, storagrid files
+keywords: expand, expansion, planning, storagegrid files, StorageGRID
 summary: 'Before performing an expansion operation, gather the materials and install and configure any new hardware and networks.'
 ---
-= Gather required materials
+= Prepare to expand your StorageGRID system
 :icons: font
 :imagesdir: ../media/
 

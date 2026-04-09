@@ -112,8 +112,8 @@ entries:
       url: "/ilm/workflow-for-s3-object-lock.html"
     - title: Requirements for S3 Object Lock
       url: "/ilm/requirements-for-s3-object-lock.html"
-    - title: Enable S3 Object Lock globally
-      url: "/ilm/enabling-s3-object-lock-globally.html"
+    - title: Enable S3 Object Lock
+      url: "/ilm/enabling-s3-object-lock.html"
     - title: Resolve consistency errors when updating S3 Object Lock or legacy Compliance configuration
       url: "/ilm/resolving-consistency-errors-when-updating-bucket-s3-object-lock-configuration.html"
   - title: Example ILM rules and policies

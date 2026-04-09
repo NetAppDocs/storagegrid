@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create platform services endpoint
 summary: 'You must create at least one endpoint of the correct type before you can enable a platform service.'
 ---
-= Create platform services endpoint
+= Create a StorageGRID platform services endpoint
 :icons: font
 :imagesdir: ../media/
 
@@ -266,12 +266,11 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 
 | Use operating system CA certificate
 | Use the default Grid CA certificate installed on the operating system to secure connections.
-
 |===
 --
-.Webhook endpoints only
+.Webhook and Kafka endpoints
 --
-Verify the TLS connection for webhook endpoints.
+Verify the TLS connection for webhook or Kafka endpoints.
 
 [cols="1a,2a" options="header"]
 |===
@@ -288,7 +287,10 @@ Verify the TLS connection for webhook endpoints.
 | Use custom CA certificate
 | The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
 
+| Use operating system CA certificate
+| Use the default Grid CA certificate installed on the operating system to secure connections.
 
+*Note*: Webhook endpoints don't have this option.
 |===
 
 When you select *mTLS*, these options become available.

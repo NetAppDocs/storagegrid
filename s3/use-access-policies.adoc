@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: bucket access policies, group access policies, session policies
 summary: ''
 ---
-= Use access policies
+= How StorageGRID uses AWS policies to control access to S3 buckets and objects
 :icons: font
 :imagesdir: ../media/
 
@@ -725,6 +725,10 @@ s3:PutObjectTagging
 
 s3:PutObjectVersionTagging
 | Will require a specific tag key and value when the object request includes tagging.
+
+| s3:x-amz-copy-source
+| s3:PutObject
+| Compares to the x-amz-copy-source expanded from the request header in the PutObject and UploadPartCopy request.
 
 | s3:x-amz-server-side-encryption-customer-algorithm
 | 

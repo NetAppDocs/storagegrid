@@ -1,7 +1,7 @@
 ---
 permalink: harden/hardening-guidelines-for-storagegrid-nodes.html
 sidebar: sidebar
-keywords: hardening guidelines, nodes, security
+keywords: StorageGRID, hardening guidelines, nodes, security
 summary: 'StorageGRID nodes can be deployed on VMware virtual machines, within a container engine on Linux hosts, or as dedicated hardware appliances. Each type of platform and each type of node has its own set of hardening best practices.'
 ---
 = Hardening guidelines for StorageGRID nodes
@@ -13,13 +13,21 @@ StorageGRID nodes can be deployed on VMware virtual machines, within a container
 
 == [[block-remote-ipmi]]Control remote IPMI access to BMC
 
-You can enable or disable remote IPMI access for all appliances containing a BMC. The remote IPMI interface allows low-level hardware access to your StorageGRID appliances by anyone with a BMC account and password. If you do not need remote IPMI access to the BMC, disable this option.
+You can enable or disable remote IPMI access for all appliances containing a BMC. The remote IPMI interface allows low-level hardware access to your StorageGRID appliances by anyone with a BMC account and password. If you don't need remote IPMI access to the BMC, disable this option.
 
-* To control remote IPMI access to the BMC in Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances*:
+* To control remote IPMI access to the BMC in Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *Remote IPMI access*:
 ** Clear the *Enable remote IPMI access* checkbox to disable IPMI access to the BMC.
 ** Select the *Enable remote IPMI access* checkbox to enable IPMI access to the BMC.
 
 For additional information about BMC hardening, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)^] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
+
+== Control remote access through USB ports
+
+You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security.
+
+* In the Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *USB port access* to enable or disable the USB ports:
+** Select the *Enable USB ports* checkbox to enable the ports.
+** Clear the *Enable USB ports* checkbox to disable the ports.
 
 == Firewall configuration
 

@@ -1,10 +1,10 @@
 ---
 permalink: primer/exploring-grid-manager.html
 sidebar: sidebar
-keywords: what is the grid manager, grid manager dashboard
+keywords: StorageGRID, what is the grid manager, grid manager dashboard
 summary: 'The Grid Manager is the browser-based graphical interface that allows you to configure, manage, and monitor your StorageGRID system.'
 ---
-= Explore the Grid Manager
+= Explore the StorageGRID Grid Manager
 :icons: font
 :imagesdir: ../media/
 
@@ -106,7 +106,7 @@ Security tasks include:
 === System tasks
 System tasks include:
 
-* Use link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems
+* Use link:../admin/grid-federation-overview.html[grid federation] to sync tenant account information and replicate object data between two StorageGRID systems
 * Optionally, enable the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option
 * Optionally, configure the link:../s3/consistency.html[default bucket consistency setting]
 * link:../ilm/managing-objects-with-s3-object-lock.html[Manage S3 Object Lock]
@@ -144,7 +144,10 @@ Maintenance tasks include:
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
 * Perform a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes
-* link:../maintain/restoring-volume.html[Volume restoration operations]
+* Restoring object data
+** link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[Restore object data to storage volume for appliance]
+** link:../maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[Restore object data to storage volume where system drive is intact]
+** link:../maintain/restoring-object-data-to-storage-volume.html[Restore object data to storage volume (system drive failure)]
 
 === System
 
@@ -175,7 +178,7 @@ The Support menu provides options that help technical support analyze and troubl
 
 From the Tools section of the Support menu, you can:
 
-* link:../admin/configure-autosupport-grid-manager.html[Configure AutoSupport]
+* link:../monitor/configure-autosupport-grid-manager.html[Configure AutoSupport]
 * link:../monitor/running-diagnostics.html[Run diagnostics] on the current state of the grid
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
@@ -187,7 +190,7 @@ NOTE: The tools available from the *Metrics* option are intended for use by tech
 From the Other section of the Support menu, you can:
 
 * Configure link:../monitor/manage-io-prioritization.html[I/O prioritization]
-* Configure link:../admin/configure-autosupport-grid-manager.html[AutoSupport email setup (legacy)]
+* Configure link:../monitor/configure-autosupport-grid-manager.html[AutoSupport email setup (legacy)]
 * Manage link:../admin/manage-link-costs.html[link cost]
 * View node service IDs
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]

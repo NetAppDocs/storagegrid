@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: about s3, s3 rest api, s3 overview
 summary: 'StorageGRID supports the Simple Storage Service \(S3\) API, which is implemented as a set of Representational State Transfer \(REST\) web services.'
 ---
-= S3 REST API supported versions and updates
+= StorageGRID S3 REST API supported versions and updates
 :icons: font
 :imagesdir: ../media/
 
@@ -135,7 +135,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |Added support for group and bucket access policies, and for multipart copy (Upload Part - Copy).
 
 |10.1
-|Added support for multipart upload, virtual hosted-style requests, and v4 authentication.
+|Added support for multipart upload, virtual-hosted-style requests, and v4 authentication.
 
 |10.0
 |Initial support of the S3 REST API by the StorageGRID system. The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.

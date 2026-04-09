@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure open ldap
 summary: 'If you want to use an OpenLDAP server for identity federation, you must configure specific settings on the OpenLDAP server.'
 ---
-= Guidelines for configuring OpenLDAP server
+= Configure an OpenLDAP server for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -29,3 +29,4 @@ olcDbIndex: entryUUID eq
 In addition, ensure the fields mentioned in the help for Username are indexed for optimal performance.
 
 See the information about reverse group membership maintenance in the _OpenLDAP Software Administrator's Guide_.
+
