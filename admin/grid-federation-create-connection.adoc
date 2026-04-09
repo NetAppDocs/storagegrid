@@ -13,6 +13,8 @@ You can create grid federation connections between StorageGRID systems if you wa
 
 As shown in the figure, creating a grid federation connection includes steps on both grids. You add the connection on one grid and complete it on the other grid. You can start from either grid.
 
+TIP: Optionally, you can link:../admin/grid-federation-automate-connections.html[automate the creation, editing, and maintenance of grid federation connections].
+
 image::../media/grid-federation-create-connection.png[graphic overview of steps to create a connection on two grids]
 
 .Before you begin
