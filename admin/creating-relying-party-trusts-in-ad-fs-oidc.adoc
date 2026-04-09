@@ -9,7 +9,7 @@ summary: 'You must use Active Directory Federation Services (AD FS) to create an
 :imagesdir: ../media/
 
 [.lead]
-You must use Active Directory Federation Services (AD FS) to create an application group for each Admin Node in your system.
+You must use Active Directory Federation Services (AD FS) to create an application group for each Admin Node in your system. 
 
 .Before you begin
 
@@ -17,47 +17,50 @@ You must use Active Directory Federation Services (AD FS) to create an applicati
 
 * You have link:../admin/configure-sso-oidc.html[entered sandbox mode] in Grid Manager.
 
-* You know the fully qualified domain name (or the IP address) and the relying party identifier for each Admin Node in your system. You can find these values in the Admin Nodes detail table on the StorageGRID Configure SSO page.
+* You have the fully qualified domain name (or the IP address) and the relying party identifier for each Admin Node in your system. You can copy these values from the Admin Node details table on the link:configure-sso-oidc.html[Configure SSO page].
 +
-NOTE: You must create an application group for each Admin Node in your StorageGRID system. Having an application group for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
+NOTE: Each Admin Node in your StorageGRID system must have an application group. This ensures that users can securely sign in to and out of any Admin Node. You can create a single application group for all Admin Nodes (recommended) or a different application group for each Admin Node.
 
 * You have experience creating application groups in AD FS, or you have access to the Microsoft AD FS documentation.
 * You are using the AD FS Management snap-in, and you belong to the Administrators group.
 
 .About this task
 
-These instructions apply to Windows Server 2016 AD FS. If you are using a different version of AD FS, you will notice slight differences in the procedure. See the Microsoft AD FS documentation if you have questions.
+These instructions apply to Windows Server 2022 AD FS. If you are using a different version of AD FS, you will notice slight differences in the procedure. See the Microsoft AD FS documentation if you have questions.
 
 == Step 1: Create an application group
 
-You can use Windows PowerShell to quickly create one or more application groups.
+You can use Windows PowerShell to quickly create an application group.
 
 .Steps
-
 . From Windows Server Manager, select *Tools* > *AD FS Management*.
-+
-The AD FS management tool appears.
 . Select *Application Groups* > *Add Application Group*
-. Enter Name (ex: 'OIDC')
-. Select *Client-Server applications* > *Server application accessing a web API*, then select *Next*.
-. Record the *Client Identifier*.
-. Enter 'https://<PA IP>/api/v4/oidc-callback' for 'Redirect URI'
-. Select *Add* to add the redirect URI.
+. For *Name*, enter the relying party identifier.
+. Under Template, select *Client-Server applications* > *Server application accessing a web API*.
+. Select *Next*.
+. Record the *Client Identifier* value.
+. Under *Redirect URI*, enter the FQDN (or IP address) `callback` and `logged-out` URIs for the Admin Node:
 +
-Enter 'https://<PA IP>/api/v4/oidc-logged-out' for 'Redirect URI'
-. Select *Add* to add the redirect URI, then select *Next*.
+* `https://<FQDN>/api/v4/oidc-callback` or `https://<IP_address>/api/v4/oidc-callback`
++
+* `https://<FQDN>/api/v4/oidc-logged-out` or `https://<IP_address>/api/v4/oidc-logged-out`
+
++
+Enter the URIs for each Admin Node if you are using one application group for all Admin Nodes. If you are using a different application group for each Admin Node, only enter the URIs for the corresponding Admin Node. 
+. Select *Add*.
 . Select *Generate a shared secret*, record the value for *Secret*, then select *Next*.
-. Enter the client identifier for *Identifier*, select *Add*, then select *Next*.
-. Select *Permit everyone*. The sever application should already be selected and under *Permitted scopes*. Verify that only the following options are checked:
+. Enter the client identifier for *Identifier*.
+. Select *Add*, then select *Next*.
+. Select *Permit everyone*. 
+. Verify that the server application is selected under *Client application (caller)*. 
+. Under *Permitted scopes*, verify that only the following options are selected:
 +
 * allatclaims
 * email
 * openid
 * profile
 
-. Select *Next*.
-+
-The application group page opens.
+. Select *Next* > *Next*. 
 . Select *Close*.
 
 == Step 2: Configure issuance transform rules
@@ -65,53 +68,19 @@ The application group page opens.
 Configure the issuance transform rules for each application group.
 
 .Steps
-. In the *AD FS Management* page, right-click on the application group, then select *Properties*.
-. Select previous web API created, then select *Edit*.
-. Select the *Issuance Transform Rules* tab, then select *Add Rule ...* > *Send LDAP Attribute as Claims* to open the Claim rule template.
+. In the *AD FS Management* page, right-select the application group, then select *Properties*.
+. Select the previously created web API, then select *Edit*.
+. Select *Issuance Transform Rules* > *Add Rule ...*.
+. Under *Claim rule template:*, select *Send LDAP Attribute as Claims*.
 . Select *Next*.
-. Enter the Claim rule name.
+. Enter a Claim rule name.
 . Select *Active Directory* for Attribute store.
-. Add the following LDAP attributes mappings to the outgoing claim types:
+. Add the LDAP attribute mappings to the outgoing claim types:
 +
-"E-Mail Addresses” – “E-Mail Address”
+* `E-Mail Addresses - E-Mail Address`
 +
-"Token-Groups - Unqualified Names" - "Group"
+* `Token-Groups - Unqualified Names - Group`
 . Select *Finish*.
-. Select *Apply*> *OK*.
-+
-The properties page for the application group appears.
-. Select *OK*.
+. Select *Apply* > *OK* > *OK*.
 
-== Step 3: Set up the certificate
-Copy the CA-issued certificate in the *Trusted Root Certification Authorities* directory to the *Personal* and *Intermediate Certificate Authorities* directories in the AD server certificate manager.
-
-.Steps
-. From the Windows start menu, enter *Run*.
-. Select *Enter*, then enter *certmgr.msc*.
-. Select *Trusted Root Certification Authorities* > *Certificates*.
-. Right-select CA-issued certificate (e.g. SAML-AD2019-CA), then select *Copy*.
-. Select *Personal* > *Certificates*.
-. Right-select in central pane, then select *Paste*.
-. Select *Intermediate Certificate Authorities* > *Certificates*
-. Right-select in central pane, then select *Paste*.
-
-== Step 4: Configure AD FS hostname
-
-Configure the AD FS hostname to return the fully qualified domain name (FQDN) instead of an IP Address.
-
-.Steps
-. From the Windows start menu, right-select the PowerShell icon, and select *Run as Administrator*.
-
-. At the PowerShell command prompt, enter the following commands:
-+
-`PS C:\Users\Administrator> Set-AdfsProperties -HostName <your.adfs.fqdn.com>`
-+
-`PS C:\Users\Administrator> Restart-Service adfssrv`
-+
-`PS C:\Users\Administrator> Get-AdfsProperties | Select HostName`
-
-. Add the DNS mapping for the AD FS server, if it doesn't exist already.
-+
-To execute OIDC automation using the browser, add the DNS mapping to the `selenium_hub` and `browser.rb` files.
-+
-To execute OIDC automation using SSO authentication and manual setup using the browser, add the DNS mapping to the QA runner's `/etc/hosts` file.
+// 2026 MAR 31, SGWS-39432

@@ -17,9 +17,9 @@ You use Entra ID to create an enterprise application for each Admin Node in your
 
 * You have link:../admin/configure-sso-oidc.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
 
-* You have the *Relying party identifier*, *OpenID endpoint URL*, and *Client secret* for each Admin Node in your system. You can copy these values from the Admin Node details table on the Configure SSO page.
+* You have the relying party identifier, client secret, and fully qualified domain name (FQDN) (or IP address) for each Admin Node in your system. You can copy these values from the Admin Node details table on the link:configure-sso-oidc.html[Configure SSO page].
 +
-NOTE: You must create an application for each Admin Node in your StorageGRID system. Having an application for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
+NOTE: Each Admin Node in your StorageGRID system must have an application group. This ensures that users can securely sign in to and out of any Admin Node. You can create a single application group for all Admin Nodes (recommended) or a different application group for each Admin Node.
 
 * You have experience creating applications in Entra ID.
 
@@ -32,8 +32,8 @@ NOTE: You must create an application for each Admin Node in your StorageGRID sys
 .Steps
 
 . Log in to the https://portal.azure.com[Azure Portal^].
-
-. Select the *StorageGRID VTC* organizational directory.
+. Select link:https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview[Microsoft Entra ID^].
+. Select link:https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps[App registrations^].
 
 == Step 2: Register a new application
 
@@ -41,14 +41,15 @@ Register a new application for each Admin Node in your system.
 
 .Steps
 
-. In the Entra ID Enterprise applications pane, select *Application registrations*.
-. Select *New registration*.
-. For the name, enter the *Relying party identifier* that you copied from the Admin Node details table on the Configure SSO page.
-. Select *Accounts in this organizational directory only (StorageGRID VTC only - Single tenant)*.
-. Enter the *OpenID endpoint URL* that you copied from the Admin Node details table on the Configure SSO page.
+. In the Entra ID Enterprise applications pane, select *Application registrations* > *New registration*.
+. For *Name*, enter the relying party identifier.
+. Under *Supported account types*, select the account types that can use the application or access the API, for example, *Single tenant only - <tenant_name>*.
+. Under *Redirect URI*, select *Select a platform* > *Web*.
+. Enter the FQDN (or IP address) redirect URI for the Admin Node:  `https://<FQDN>/api/v4/oidc-callback` or `https://<IP_address>/api/v4/oidc-callback`
++
+Enter the URI for each Admin Node if you are using one application group for all Admin Nodes. If you are using a different application group for each Admin Node, only enter the URI for the corresponding Admin Node. 
 . Select *Register*.
-. Navigate to the overview page for the new application registration.
-. Record the *Application (client) ID* and *Directory (tenant) ID* values for the new application.
+. In the Overview page for the new application registration, record the *Application (client) ID* and *Directory (tenant) ID*.
 
 == Step 3: Configure a client secret
 
@@ -56,13 +57,12 @@ Register a client secret for each new application.
 
 .Steps
 
-. In the overview page of the new application registration, select *Certificates and secrets* > *New client secret*.
-. Enter the *Client secret* that you copied from the Admin Node details table on the Configure SSO page.
-. Set a desired expiry date.
+. In the Overview page for the new application registration, select *Manage* > *Certificates and secrets* > *New client secret*.
+. Enter the client secret and set a desired expiry date.
 . Select *Add* to create the client secret.
-. Copy the *(Secret) Value*.
+. Copy the secret *Value*.
 +
-NOTE: If you refresh or navigate away from the client secret page, you can't copy the secret value.
+NOTE: The secret value is not visible after you refresh or navigate from the client secret page.
 
 == Step 4: Set up the API permissions 
 
@@ -70,11 +70,23 @@ Set up the API permissions for each new application.
 
 .Steps
 
-. In the overview page of the new application registration, select *API permissions* > *Add a permission*.
-. Select the *Microsoft APIs* tab, then select *Microsoft Graph* for the API.
-. Select *Delegated permissions* for the permissions type.
+. In the Overview page for the new application registration, select *Manage* > *API permissions* > *Add a permission*.
+. Select the *Microsoft APIs* > *Microsoft Graph* > *Delegated permissions*.
 . Expand *OpenId permissions*, then select *email*, *offline_access*, *openid*, and *profile*.
 . Select *Add permissions*.
-. Select *Grant admin consent for StorageGRID VTC*, then select *Yes* to confirm.
+. Select *Grant admin consent for <tenant>*, then select *Yes*.
+
+== Step 5: Add the logged-out redirect URI
+
+Add the logged-out redirect URI for each new application.
+
+.Steps
+
+. In the Overview page for the new application registration, select *Manage* > *Authentication*.
+. Select *Add Redirect URI* > *Web*.
+. Enter the FQDN (or IP address) redirect URI for the Admin Node: `https://<FQDN>/api/v4/oidc-logged-out` or `https://<IP_address>/api/v4/oidc-logged-out`
++
+Enter the URI for each Admin Node if you are using one application group for all Admin Nodes. If you are using a different application group for each Admin Node, only enter the URI for the corresponding Admin Node.
+. Select *Configure*.
 
 // 2026 MAR 31, SGWS-39432
