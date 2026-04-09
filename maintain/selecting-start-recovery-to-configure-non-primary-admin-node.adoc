@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, non-primary admin node
 summary: 'After replacing a non-primary Admin Node, you must select Start Recovery in the Grid Manager to configure the new node as a replacement for the failed node.'
 ---
-= Select Start Recovery to configure non-primary Admin Node
+= Select Start Recovery to configure non-primary StorageGRID Admin Node
 :icons: font
 :imagesdir: ../media/
 
@@ -32,9 +32,7 @@ image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance >
 
 . Monitor the progress of the recovery in the Recovering Grid Node table.
 +
-NOTE: While the recovery procedure is running, you can click *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
-+
-image::../media/recovery_reset_warning.gif[screenshot showing the reset recovery warning dialog box]
+NOTE: While the recovery procedure is running, you can select *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
 +
 If you want to retry the recovery after resetting the procedure, you must restore the node to a pre-installed state, as follows:
 

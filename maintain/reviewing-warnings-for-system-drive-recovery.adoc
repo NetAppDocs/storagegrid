@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, system drive warning, storage node
 summary: 'Before recovering a failed system drive of a Storage Node, review the general warnings and considerations for grid node recovery and the following specific warnings.'
 ---
-= Warnings for Storage Node system drive recovery
+= Warnings for StorageGRID Storage Node system drive recovery
 :icons: font
 :imagesdir: ../media/
 
@@ -24,6 +24,6 @@ When Cassandra is rebuilt, the system uses information from other Storage Nodes.
 
 CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Don't perform the following recovery procedure. Data loss could occur. For more information, refer to link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
-CAUTION: If this Storage Node is in read-only maintenance mode to allow for the retrieval of objects by another Storage Node with failed storage volumes, recover volumes on the Storage Node with failed storage volumes before recovering this failed Storage Node. See the instructions to link:recovering-from-storage-volume-failure-where-system-drive-is-intact.html[recover from storage volume failure where system drive is intact].
+CAUTION: If this Storage Node is in read-only maintenance mode to allow for the retrieval of objects by another Storage Node with failed storage volumes, recover volumes on the Storage Node with failed storage volumes before recovering this failed Storage Node. See the instructions to link:reviewing-warnings-about-storage-volume-recovery.html[recover from storage volume failure where system drive is intact].
 
 CAUTION: If ILM rules are configured to store only one replicated copy and the copy exists on a storage volume that has failed, you will not be able to recover the object.
