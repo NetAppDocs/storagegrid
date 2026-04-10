@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: manage load balancing, balance workload, client ingest, client retrieval, distribute connection
 summary: 'You can use load balancing to handle ingest and retrieval workloads from S3 clients.'
 ---
-= Considerations for load balancing
+= Learn about StorageGRID load balancing
 :icons: font
 :imagesdir: ../media/
 

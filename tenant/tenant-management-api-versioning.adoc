@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: tenant management api version
 summary: 'The Tenant Management API uses versioning to support non-disruptive upgrades.'
 ---
-= Tenant Management API versioning
+= StorageGRID Tenant Management API versioning
 :icons: font
 :imagesdir: ../media/
 

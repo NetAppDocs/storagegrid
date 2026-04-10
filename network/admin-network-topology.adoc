@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: admin network topology, using admin network
 summary: 'Having an Admin Network is optional. One way that you can use an Admin Network and a Grid Network is to configure a routable Grid Network and a bounded Admin Network for each node.'
 ---
-= Admin Network topology
+= Admin Network topology for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

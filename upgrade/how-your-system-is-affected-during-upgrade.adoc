@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade, firmware, appliance, alert
 summary: 'Learn how your StorageGRID system will be affected during upgrade.'
 ---
-= How your system is affected during the upgrade
+= How StorageGRID upgrades affect your system
 :icons: font
 :imagesdir: ../media/
 
