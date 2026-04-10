@@ -42,4 +42,4 @@ NOTE: As required to match the grid version, you can use a minor release when de
 
 . You then apply hotfix 11._A.B.y_ to the primary Admin Node.
 
-// 2026-04-14, SGWS-34291
+// 2026-04-15, SGWS-34291
