@@ -47,4 +47,8 @@ include::../_include/identity_federation_disable_steps.adoc[]
 == Guidelines for configuring an OpenLDAP server
 include::../_include/identity_federation_openldap_guidelines.adoc[]
 
+.Related information
+
+link:../network/external-communications.html[Ports used for external communications]
+
 // 2025 JUN 10, SGWS-33778
