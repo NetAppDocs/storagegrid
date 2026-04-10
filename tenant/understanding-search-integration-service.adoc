@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to understand search integration service
 summary: 'You can enable search integration for an S3 bucket if you want to use an external search and data analysis service for your object metadata.'
 ---
-= Understand search integration service
+= Learn about the StorageGRID search integration service
 :icons: font
 :imagesdir: ../media/
 

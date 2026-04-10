@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade workflow 
 summary: 'Before starting the upgrade, review the general workflow. The StorageGRID Upgrade page guides you through the upgrade steps.'
 ---
-= Upgrade quick start
+= Quick start for StorageGRID upgrades
 :icons: font
 :imagesdir: ../media/
 

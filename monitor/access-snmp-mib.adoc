@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mib, snmp, monitoring
 summary: 'MIB files contain definitions and information about the properties of managed resources and services for the nodes in your grid. You can access MIB files that define the objects and notifications for StorageGRID. These files can be useful for monitoring your grid.'
 ---
-= Access MIB files
+= Access StorageGRID MIB files
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, corrective action, additional recovery
 summary: 'Depending on the specific actions you took to get the StorageGRID nodes running on the replacement host, you might need to perform additional recovery steps for each node.'
 ---
-= What's next: Perform additional recovery steps, if required
+= Perform additional StorageGRID node recovery steps
 :icons: font
 :imagesdir: ../media/
 
@@ -48,5 +48,5 @@ If you took *any* of these corrective actions, you must perform additional recov
 * If you added a new block device.
 * If, for any `<PURPOSE>`, the value of the `BLOCK_DEVICE_<PURPOSE>` configuration file variable refers to a block device that does not contain the same data it did before the host failure.
 
-| link:recovering-from-storage-volume-failure-where-system-drive-is-intact.html[Recover from storage volume failure where system drive is intact]
+| link:reviewing-warnings-about-storage-volume-recovery.html[Recover from storage volume failure where system drive is intact]
 |===

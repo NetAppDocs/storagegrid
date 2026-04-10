@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: get object
 summary: 'You can use the S3 GET Object request to retrieve an object from an S3 bucket.'
 ---
-= GetObject
+= Retrieve an object from a bucket in StorageGRID with the GetObject request
 :icons: font
 :imagesdir: ../media/
 
