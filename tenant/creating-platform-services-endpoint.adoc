@@ -332,6 +332,7 @@ After you have configured an endpoint, you can use its URN to configure a platfo
 
 * link:configuring-search-integration-service.html[Configure search integration service]
 
+* link:../network/external-communications.html[Ports used for external communications]
 // 2025 MAR 21, SGWS-35516
 // 2024 MAR 19, SGRIDDOC-7
 // 2023 SEP 15, SGWS-25330
