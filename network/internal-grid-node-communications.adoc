@@ -142,13 +142,13 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | 7443
 | TCP
 | All nodes
-| Non-Primary Admin Node (optional) and Primary Admin Node
+| Non-primary Admin Node (optional) and Primary Admin Node
 | Internal traffic for installation, expansion, recovery, other maintenance procedures, and error reporting.
 
 | 8011
 | TCP
 | All nodes
-| Non-Primary Admin Node (optional) and Primary Admin Node
+| Non-primary Admin Node (optional) and Primary Admin Node
 | Internal traffic for installation, expansion, recovery, and other maintenance procedures.
 
 | 8443
