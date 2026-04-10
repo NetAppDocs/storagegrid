@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: load balancer tab
 summary: 'The Load Balancer tab includes performance and diagnostic graphs related to the operation of the Load Balancer service.'
 ---
-= View the Load balancer tab
+= View the StorageGRID Load balancer tab
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
 permalink: expand/copying-admin-node-database.html
 sidebar: sidebar
-keywords: copy Admin Node database, alert history, Admin Node expansion
+keywords: copy Admin Node database, alert history, Admin Node expansion, StorageGRID
 summary: 'When adding Admin Nodes through an expansion procedure, you can optionally copy the database from the primary Admin Node to the new Admin Node. Copying the database allows you to retain historical information about attributes, alerts, and alerts.'
 ---
-= Copy Admin Node database
+= Copy the Admin Node database to new Admin Nodes in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

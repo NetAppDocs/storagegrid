@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: post, RestoreObject, object
 summary: 'You can use the S3 RestoreObject request to restore an object that is stored in a Cloud Storage Pool.'
 ---
-= RestoreObject
+= Restore an object in StorageGRID with the S3 RestoreObject request
 :icons: font
 :imagesdir: ../media/
 

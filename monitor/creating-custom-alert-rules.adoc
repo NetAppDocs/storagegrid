@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create custom alert rules
 summary: 'You can create custom alert rules to define your own conditions for triggering alerts.'
 ---
-= Create custom alert rules
+= Create custom alert rules in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

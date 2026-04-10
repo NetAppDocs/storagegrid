@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to deploy grid nodes in vsphere or vsphere web client, port, remap, port remap, vmware
 summary: 'You use VMware vSphere Web Client to deploy each grid node as a virtual machine. During deployment, each grid node is created and connected to one or more StorageGRID networks.'
 ---
-= Deploy a StorageGRID node as a virtual machine (VMware)
+= Deploy grid nodes as virtual machines for StorageGRID with VMware vSphere
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create S3 bucket
 summary: 'You can use the Tenant Manager to create S3 buckets for object data.'
 ---
-= Create an S3 bucket
+= Create a StorageGRID S3 bucket
 :icons: font
 :imagesdir: ../media/
 

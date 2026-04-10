@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: when to monitor, what to monitor
 summary: 'Even though the StorageGRID system can continue to operate when errors occur or parts of the grid are unavailable, you should monitor and address potential issues before they affect the grid’s efficiency or availability.'
 ---
-= What and when to monitor
+= What and when to monitor in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
