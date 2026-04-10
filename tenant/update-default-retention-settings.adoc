@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: update default retention for s3 object lock bucket, default retention mode, default retention period, compliance, governance
 summary: 'If you enabled S3 Object Lock when you created the bucket, you can edit the bucket to change the default retention settings. You can enable (or disable) default retention and set a default retention mode and retention period.'
 ---
-= Update S3 Object Lock default retention
+= Update S3 Object Lock default retention in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

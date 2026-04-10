@@ -2,14 +2,16 @@
 permalink: maintain/remounting-and-reformatting-appliance-storage-volumes.html
 sidebar: sidebar
 keywords: storagegrid, recover, appliance storage volume, appliance volume, remount appliance storage volume, remount volume, remounting appliance storage volume, remounting volume, reformat appliance storage volume, reformat volume, reformatting appliance storage volume, reformatting volume
-summary: 'You must manually run two scripts to remount preserved storage volumes and reformat any failed storage volumes. The first script remounts volumes that are properly formatted as StorageGRID storage volumes. The second script reformats any unmounted volumes, rebuilds the Cassandra database, if needed, and starts services.'
+summary: 'If the automatic procedure fails to remount preserved storage volumes and reformat failed storage volumes, you must manually run two scripts to complete those operations. The first script remounts volumes that are properly formatted as StorageGRID storage volumes. The second script reformats any unmounted volumes, rebuilds the Cassandra database, if needed, and starts services.'
 ---
-= Remount and reformat appliance storage volumes (manual steps)
+= Remount and reformat StorageGRID appliance storage volumes (manual steps)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must manually run two scripts to remount preserved storage volumes and reformat any failed storage volumes. The first script remounts volumes that are properly formatted as StorageGRID storage volumes. The second script reformats any unmounted volumes, rebuilds the Cassandra database, if needed, and starts services.
+If the automatic procedure fails to remount preserved storage volumes and reformat failed storage volumes, you must manually run two scripts to complete those operations. The first script remounts volumes that are properly formatted as StorageGRID storage volumes. The second script reformats any unmounted volumes, rebuilds the Cassandra database, if needed, and starts services.
+
+During a Storage Node recovery, if a "Waiting for manual steps" message appears in the Grid Manager, follow these steps to remount and reformat storage volumes. If you don't see this message, the remount and reformat operations have completed automatically, and you can skip _this_ procedure and link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[restore object data].
 
 .Before you begin
 
@@ -139,13 +141,10 @@ Error: This volume does not belong to this node. Fix the attached volume and re-
 +
 CAUTION: If a storage volume is reported as belonging to another Storage Node, contact technical support. If you run the `sn-recovery-postinstall.sh` script, the storage volume will be reformatted, which might cause data loss.
 
- .. If any storage devices could not be mounted, make a note of the device name, and repair or replace the device.
+.. If any storage devices could not be mounted, make a note of the device name, and repair or replace the device.
 +
 NOTE: You must repair or replace any storage devices that could not be mounted.
-+
-You will use the device name to look up the volume ID, which is required input when you run the `repair-data` script to restore object data to the volume (the next procedure).
-
- .. After repairing or replacing all unmountable devices, run the `sn-remount-volumes` script again to confirm that all storage volumes that can be remounted have been remounted.
+.. After repairing or replacing all unmountable devices, run the `sn-remount-volumes` script again to confirm that all storage volumes that can be remounted have been remounted.
 
 +
 CAUTION: If a storage volume can't be mounted or is improperly formatted, and you continue to the next step, the volume and any data on the volume will be deleted. If you had two copies of object data, you will have only a single copy until you complete the next procedure (restoring object data).
@@ -178,18 +177,8 @@ image::../media/recovering_cassandra.png[screenshot showing recovery progress in
 
 . After the `sn-recovery-postinstall.sh` script has started services on the node, you can restore object data to any storage volumes that were formatted by the script. 
 +
-The script asks if you want to use the Grid Manager volume restoration process.
+The script asks if you want to use the Grid Manager volume restoration process to restore object data.
 
-* In most cases, you should link:../maintain/restoring-volume.html[restore object data using Grid Manager]. Answer `y` to use the Grid Manager.
+* In most cases, you should link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[restore object data using Grid Manager]. Answer `y` to use the Grid Manager.
 
-* In rare cases, such as when instructed by technical support, or when you know that the replacement node has fewer volumes available for object storage than the original node, you must link:restoring-object-data-to-storage-volume-for-appliance.html[restore object data manually] using the `repair-data` script. If one of these cases applies, answer `n`.
-+
-[NOTE]
-====
-If you answer `n` to using the Grid Manager volume restoration process (restore object data manually):
-
-* You aren't able to restore object data using Grid Manager. 
-* You can monitor the progress of manual restoration jobs using Grid Manager.
-====
-+
-After making your selection, the script completes and the next steps to recover object data are shown. After reviewing these steps, press any key to return to the command line.
+* In rare cases, such as when you know that the replacement node has fewer volumes available for object storage than the original node, contact technical support to restore object data manually. If one of these cases applies, answer `n` and press any key to return to the command line.

@@ -2,25 +2,21 @@
 permalink: maintain/selecting-node-recovery-procedure.html
 sidebar: sidebar
 keywords: storagegrid, recover, procedure
-summary: 'You must select the correct recovery procedure for the type of node that has failed.'
+summary: 'Select the correct recovery procedure for the type of node that has failed.'
 ---
-= Select node recovery procedure
+= Select StorageGRID node recovery procedure
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must select the correct recovery procedure for the type of node that has failed.
+Select the correct recovery procedure for the type of node that has failed.
 
 [cols="1a,2a" options="header"]
 |===
 | Grid node| Recovery procedure
-| More than one Storage Node
-| Contact technical support. If more than one Storage Node has failed, technical support must assist with recovery to prevent database inconsistencies that could lead to data loss. A site recovery procedure might be required.
 
-link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site]
-
-| A single Storage Node
-| The Storage Node recovery procedure depends on the type and duration of the failure.
+| Storage Node
+| The Storage Node recovery procedure depends on the type of failure.
 
 link:recovering-from-storage-node-failures.html[Recover from Storage Node failures]
 

@@ -106,7 +106,7 @@ Security tasks include:
 === System tasks
 System tasks include:
 
-* Use link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems
+* Use link:../admin/grid-federation-overview.html[grid federation] to sync tenant account information and replicate object data between two StorageGRID systems
 * Optionally, enable the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option
 * Optionally, configure the link:../s3/consistency.html[default bucket consistency setting]
 * link:../ilm/managing-objects-with-s3-object-lock.html[Manage S3 Object Lock]
@@ -144,7 +144,10 @@ Maintenance tasks include:
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
 * Perform a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes
-* link:../maintain/restoring-volume.html[Volume restoration operations]
+* Restoring object data
+** link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[Restore object data to storage volume for appliance]
+** link:../maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[Restore object data to storage volume where system drive is intact]
+** link:../maintain/restoring-object-data-to-storage-volume.html[Restore object data to storage volume (system drive failure)]
 
 === System
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, decommission, connected nodes, decommission node
 summary: 'You can decommission and permanently remove nodes that are connected to the grid.'
 ---
-= Decommission connected grid nodes
+= Decommission connected StorageGRID nodes
 :icons: font
 :imagesdir: ../media/
 

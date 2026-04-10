@@ -36,8 +36,8 @@ indexpage:
       url: ../tenant/deleting-s3-bucket.html
   - title: Use tenant features
     links:
-    - title: Account clone
-      url: ../tenant/grid-federation-account-clone.html
+    - title: Account sync
+      url: ../tenant/grid-federation-account-sync.html
     - title: Cross-grid replication
       url: ../tenant/grid-federation-manage-cross-grid-replication.html
     - title: Platform services

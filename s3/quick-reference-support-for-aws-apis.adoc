@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Amazon s3, API, request headers, s3 support, request syntax, supported, aws s3
 summary: 'This page summarizes how StorageGRID supports Amazon Simple Storage Service (S3) APIs.'
 ---
-= Quick reference: Supported S3 API requests
+= Supported S3 API requests in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -870,10 +870,12 @@ link:use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object L
 == https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html[PutObjectLockConfiguration^]
 
 .URI query parameters and request headers
-StorageGRID supports all <<common-params, common parameters and headers>> for this request.
+StorageGRID supports _most_ <<common-params, common parameters and headers>> for this request.
 
 .Request body
-StorageGRID supports all request body parameters defined by the Amazon S3 REST API at the time of implementation.
+StorageGRID supports _most_ request body parameters defined by the Amazon S3 REST API at the time of implementation, with the following exception:
+
+You can't use PutObjectLockConfiguration to enable S3 Object Lock on an existing bucket unless your grid administrator has given permission.
 
 .StorageGRID documentation
 link:use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]

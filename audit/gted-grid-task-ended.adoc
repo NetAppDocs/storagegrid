@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, audit, message, GTED, Grid Task Ended
 summary: 'This audit message indicates that the CMN service has finished processing the specified grid task and has moved the task to the Historical table. If the result is SUCS, ABRT, or ROLF, there will be a corresponding Grid Task Started audit message. The other results indicate that processing of this grid task never started.'
 ---
-= GTED: Grid Task Ended
+= GTED audit message for ended grid tasks in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
