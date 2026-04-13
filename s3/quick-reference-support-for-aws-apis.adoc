@@ -11,9 +11,9 @@ summary: 'This page summarizes how StorageGRID supports Amazon Simple Storage Se
 [.lead]
 This page summarizes how StorageGRID supports Amazon Simple Storage Service (S3) APIs.
 
-This page includes only the S3 operations that are supported by StorageGRID. 
+This page includes only the S3 operations that are supported by StorageGRID. Any S3 operations not listed might return `501 Not Implemented` or result in unintended behavior.
 
-NOTE: To see the AWS documentation for each operation, select the link in the heading.
+TIP: To see the AWS documentation for each operation, select the link in the heading.
 
 [[common-params]]
 == Common URI query parameters and request headers
