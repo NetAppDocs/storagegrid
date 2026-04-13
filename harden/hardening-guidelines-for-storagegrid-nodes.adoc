@@ -21,6 +21,14 @@ You can enable or disable remote IPMI access for all appliances containing a BMC
 
 For additional information about BMC hardening, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)^] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
 
+== Change appliance BMC password
+
+You can change the BMC password for an appliance to limit access and improve system security.
+
+. In Grid Manager go to *Nodes* > *_grid node_* > *BMC settings*.
+. In the Change password section, enter a new BMC password between 8 and 32 characters in length in *New password* and then enter it again in *Confirm new password*.
+. Select *Save*.
+
 == Control remote access through USB ports
 
 You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security.
