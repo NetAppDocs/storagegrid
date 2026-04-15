@@ -15,7 +15,11 @@ NOTE: You can continue to use deprecated versions of the management API with Sto
 
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
+== New endpoints for changing the BMC password
 
+The following endpoint has been added to allow you to link:../harden/hardening-guidelines-for-storagegrid-nodes.html#change-appliance-bmc-password[change an appliance BMC password].
+
+`PUT /bmc-configuration/root-password`
 
 // 2024-07-2, SWGS-31283
 // 2024-07-11, SGWS-32010
