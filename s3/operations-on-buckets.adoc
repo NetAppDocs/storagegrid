@@ -37,6 +37,8 @@ The following table describes how StorageGRID implements S3 REST API bucket oper
 | CreateBucket
 | Creates a new bucket. By creating the bucket, you become the bucket owner.
 
+*Note*: Only S3 general-purpose buckets are supported. S3 directory buckets are not supported.
+
 * Bucket names must comply with the following rules:
  ** Must be unique across each StorageGRID system (not just unique within the tenant account).
  ** Must be DNS compliant.
