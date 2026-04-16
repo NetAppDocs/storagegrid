@@ -78,7 +78,7 @@ a|12 TB (4 TB/LUN, minimum)
 
 Maximum tested LUN size: 100 TiB.
 
-See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
+Refer to <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
 
 a|Storage Node (metadata-only)
 a|Object metadata
@@ -87,7 +87,7 @@ a|4 TB/LUN, minimum
 
 Maximum tested LUN size: 100 TiB.
 
-See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
+Refer to <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
 
 *Note*: Only one rangedb is required for metadata-only Storage Nodes.
 
@@ -254,7 +254,7 @@ image::../media/metadata_space_storage_node.png[Metadata Space Storage Node]
 
 To provide redundancy and to protect object metadata from loss, StorageGRID stores three copies of the metadata for all objects in the system at each site. The three copies of object metadata are evenly distributed across all Storage Nodes at each site.
 
-When installing a grid with metadata-only Storage Nodes, the grid must also contain a minimum number of nodes for object storage. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
+When installing a grid with metadata-only Storage Nodes, the grid must also contain a minimum number of nodes for object storage. Refer to link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
 
 * For a single-site grid, at least two Storage Nodes are configured for objects and metadata. 
 * For a multi-site grid, at least one Storage Node per site are configured for objects and metadata.
