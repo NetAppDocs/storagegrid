@@ -209,7 +209,9 @@ Users who have the `s3:BypassGovernanceRetention` permission can bypass the acti
 
 * Perform DeleteObject or DeleteObjects operations to delete an object version before its retention period has elapsed.
 +
-Objects that are under a legal hold can't be deleted. Legal hold must be OFF. 
+Objects that are under a legal hold can't be deleted. Legal hold must be OFF.
++
+The `x-amz-bypass-governance-retention` header has no effect on objects without S3 Object Lock.
 
 * Perform PutObjectRetention operations that change an object version's mode from GOVERNANCE to COMPLIANCE before the object's retention period has elapsed.
 +
