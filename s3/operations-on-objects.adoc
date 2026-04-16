@@ -33,7 +33,7 @@ The following table describes how StorageGRID implements S3 REST API object oper
 
 When processing a DeleteObject request, StorageGRID attempts to immediately remove all copies of the object from all stored locations. If successful, StorageGRID returns a response to the client immediately. If all copies can't be removed within 30 seconds (for example, because a location is temporarily unavailable), StorageGRID queues the copies for removal and then indicates success to the client.
 
-An object without S3 Object Lock will be deleted when the `x-amz-bypass-governance-retention` header is included.
+The `x-amz-bypass-governance-retention` header has no effect on objects without S3 Object Lock.
 
 Versioning::
 
@@ -54,7 +54,7 @@ See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S
 
 Multiple objects can be deleted in the same request message.
 
-Objects without S3 Object Lock will be deleted when the `x-amz-bypass-governance-retention` header is included.
+The `x-amz-bypass-governance-retention` header has no effect on objects without S3 Object Lock.
 
 See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] to learn how to delete object versions in GOVERNANCE mode.
 
