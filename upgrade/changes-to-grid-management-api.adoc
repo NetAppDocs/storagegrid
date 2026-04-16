@@ -24,6 +24,7 @@ The following endpoint has been added to allow you to link:../harden/hardening-g
 The following endpoints have been added to allow you to link:../maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings[change or view the BMC LAN IP settings].
 
 `PUT /grid/bmc/{node-id}/lan-ip-config`
+
 `GET /grid/bmc/{node-id}/lan-ip-config`
 
 // 2024-07-2, SWGS-31283
