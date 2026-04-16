@@ -15,11 +15,16 @@ NOTE: You can continue to use deprecated versions of the management API with Sto
 
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
-== New endpoints for changing the BMC password
+== New endpoints for changing the BMC password and LAN IP settings
 
 The following endpoint has been added to allow you to link:../harden/hardening-guidelines-for-storagegrid-nodes.html#change-appliance-bmc-password[change an appliance BMC password].
 
 `PUT /bmc-configuration/root-password`
+
+The following endpoints have been added to allow you to link:../maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings[change or view the BMC LAN IP settings].
+
+`PUT /grid/bmc/{node-id}/lan-ip-config`
+`GET /grid/bmc/{node-id}/lan-ip-config`
 
 // 2024-07-2, SWGS-31283
 // 2024-07-11, SGWS-32010
