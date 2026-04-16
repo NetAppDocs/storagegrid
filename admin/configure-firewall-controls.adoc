@@ -122,6 +122,6 @@ NOTE: Use the scroll bar on the right side of the table to be sure you have view
 
 . Select *Save*.
 +
-The new firewall settings are immediately applied and enforced. Existing client connections might fail if load balancer endpoints have not been configured.
+The new firewall settings are immediately applied and enforced. Existing client connections might fail if load balancer endpoints haven't been configured.
 
 // 2026 MAR 20, SGRIDDOC-229
