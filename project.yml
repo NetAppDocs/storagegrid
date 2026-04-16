@@ -316,6 +316,25 @@ sidebar:
             url: "/maintain/restoring-admin-node-database-primary-admin-node.html"
           - title: Restore Prometheus metrics when recovering primary Admin Node
             url: "/maintain/restoring-prometheus-metrics-primary-admin-node.html"
+        - title: Recover from primary Admin Node failures using a non-primary Admin Node
+          entries:
+          - title: Recover primary Admin Node
+            pdf-filename: Recover from primary Admin Node failures
+            url: "/maintain/recovering-from-primary-admin-node-failures.html"
+          - title: Copy audit logs from failed primary Admin Node
+            url: "/maintain/copying-audit-logs-from-failed-primary-admin-node.html"
+          - title: Replace primary Admin Node
+            url: "/maintain/replacing-primary-admin-node.html"
+          - title: Configure replacement primary Admin Node
+            url: "/maintain/configuring-replacement-primary-admin-node.html"
+          - title: Determine hotfix requirement for primary Admin Node
+            url: "/maintain/assess-hotfix-requirement-during-primary-admin-node-recovery.html"
+          - title: Restore audit log on recovered primary Admin Node
+            url: "/maintain/restoring-audit-log-on-recovered-primary-admin-node.html"
+          - title: Restore Admin Node database when recovering primary Admin Node
+            url: "/maintain/restoring-admin-node-database-primary-admin-node.html"
+          - title: Restore Prometheus metrics when recovering primary Admin Node
+            url: "/maintain/restoring-prometheus-metrics-primary-admin-node.html"            
         - title: Recover from non-primary Admin Node failures
           entries:
           - title: Recover non-primary Admin Node

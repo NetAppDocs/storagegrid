@@ -18,6 +18,7 @@ To install a Gateway Node or Admin Node on a services appliance, you use the Sto
 * If you are installing a Gateway Node or non-primary Admin Node, you know the IP address for either of the following Admin Nodes:
 ** The primary Admin Node for the StorageGRID grid
 ** A non-primary Admin Node, if one is available and if it's being used to recover the node
+* If you are recovering a node while signed in to a non-primary Admin Node, you can specify that Admin Node's IP address.
 * All Grid Network subnets listed on the IP Configuration page of the StorageGRID Appliance Installer are defined in the Grid Network Subnet List on the primary Admin Node.
 +
 See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Quick start for hardware installation^].
