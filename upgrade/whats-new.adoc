@@ -12,21 +12,65 @@ summary: 'This release of StorageGRID introduces the following features and func
 This release of StorageGRID introduces the following features and functional changes.
 
 == Appliances 
-
-
-== Artificial intelligence (AI) and machine learning (ML)
+You can now enable or disable USB ports through Grid Manager. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html#control-remote-access-through-usb-ports[Control remote access through USB ports].
 
 == Capacity
+=== Metadata allowed space
 
+Increased maximum allowed metadata value from 3.96 TB to 7.92 TB.
+
+Refer to link:../admin/managing-object-metadata-storage.html#allowed-metadata-space[Allowed metadata space].
 
 == Federation 
-
+=== Global namespace
+A global namespace allows tenant access to buckets across multiple StorageGRID systems. Refer to link:../admin/learn-about-global-namespace.html[Learn about global namespace].
 
 == Manageability 
+=== Auto-move ADC service
+link:../maintain/understanding-adc-service-quorum.html[When required to meet the ADC quorum], the ADC service will now be moved automatically when you're link:../maintain/convert-to-data-only-node.html[converting a Storage Node to a data-only node] or link:../maintain/considerations-for-decommissioning-storage-nodes.html[decommissioning a Storage Node]. 
 
+=== Primary Admin Node recovery
+You can now recover any node from a non-primary Admin Node. Refer to link:../maintain/recovering-from-primary-admin-node-failures.html[Recovering from primary Admin Node failures].
 
 == Security 
+=== Multi-admin verification
+Multi-admin verification (MAV) helps prevent accidental or unauthorized changes to your StorageGRID system. Refer to link:../admin/about-multi-admin-verify.html[Learn about StorageGRID multi-admin verification].
 
-== Tenant groups
+=== Kafka endpoints and mTLS authentication
+Mutual Transport Layer Security (mTLS) is now supported for Kafka endpoints. Refer to tenant/creating-platform-services-endpoint.html
+
+== Tenants
+=== Account sync
+The _account clone_ feature now refers to a one-time clone of specific tenant account information.
+
+_Account sync_ is a new feature that allows for the automatic and continuous replication of a tenant account, tenant groups, tenant users, and S3 access keys among the StorageGRID systems in one or more grid federation connections. Refer to link:../admin/grid-federation-what-is-account-sync.html[What is account sync?].
 
 == User interface
+
+=== Link cost page update
+StorageGRID 12.1 provides more detailed Link cost information and settings.
+
+=== Email notifications
+New common email configuration and support page in Grid Manager (for alerts, AutoSupport, and MAV)
+
+== S3
+
+=== Replication allowed for S3 Object Lock-enabled buckets
+
+=== Pre-calculated checksum values
+Added support for pre-calculated checksum values for the following requests and supported headers:
+
+* CompleteMultipartUpload: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crcc64nvme`
+* CreateMultipartUpload: `CRC32`, `CRCC32C`, and `CRCC64NVME` for `x-amz-checksum-algorithm`
+* CopyObject: `CRC32`, `CRC32C`, `CRCC64NVME`, and `SHA256` for `x-amz-checksum-algorithm`
+* PutObject: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+* UploadPart: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+
+Added support for `x-amz-checksum-type` for CreateMultipartUpload and CompleteMultipartUpload.
+
+=== Enable S3 Object Lock on existing buckets
+
+=== S3 Batch (FPVR only)
+You can use S3 batch operations to replicate existing objects in a bucket that you plan to configure for cross-grid replication.
+
+This feature requires FPVR approval for StorageGRID 12.1. To use this feature, contact your account representative.
