@@ -1,0 +1,25 @@
+---
+permalink: maintain/recovering-from-primary-admin-node-failures-using-npan.html
+sidebar: sidebar
+keywords: storagegrid, recover, primary admin node, non-primary admin node
+summary: 'Complete a specific set of tasks to recover from a primary Admin Node failure by using a non-primary Admin Node.'
+---
+= Recover from primary StorageGRID Admin Node failures using a non-primary Admin Node
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must complete a specific set of tasks to recover from a primary Admin Node failure using a non-primary Admin Node. The primary Admin Node hosts the Configuration Management Node (CMN) service for the grid.
+
+Follow these high-level steps to recover a primary Admin Node using a non-primary Admin Node:
+
+. link:copying-audit-logs-from-failed-primary-admin-node-using-npan.html[Copy audit logs from failed primary Admin Node using a non-primary Admin Node]
+. link:replacing-primary-admin-node-using-npan.html[Replace primary Admin Node using a non-primary Admin Node]
+. link:selecting-start-recovery-to-configure-non-primary-admin-node-using-npan.html[Select Start Recovery to configure non-primary Admin Node]
+. link:assess-hotfix-requirement-during-primary-admin-node-recovery-using-npan.html[Determine hotfix requirement for primary Admin Node]
+. link:restoring-audit-log-on-recovered-primary-admin-node-using-npan.html[Restore audit log on recovered primary Admin Node]
+. link:restoring-admin-node-database-primary-admin-node-using-npan.html[Restore Admin Node database when recovering primary Admin Node]
+. link:restoring-prometheus-metrics-primary-admin-node-using-npan.html[Restore Prometheus metrics when recovering primary Admin Node]
+
+// 2025 NOV 18, storagegrid-issues-39
+// 2026-03-12, SGWS-34291
