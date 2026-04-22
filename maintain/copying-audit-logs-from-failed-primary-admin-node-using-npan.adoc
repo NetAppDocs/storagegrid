@@ -8,9 +8,6 @@ summary: 'Use a non-primary Admin Node to copy audit logs from a failed primary 
 :icons: font
 :imagesdir: ../media/
 
-:icons: font
-:imagesdir: ../media/
-
 [.lead]
 If you are able to copy audit logs from the failed Admin Node, you should preserve them to maintain the grid's record of system activity and usage. You can restore the preserved audit logs to the recovered non-primary Admin Node after it is up and running.
 
