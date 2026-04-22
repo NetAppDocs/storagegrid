@@ -28,7 +28,8 @@ If you took *any* of these corrective actions, you must perform additional recov
 |===
 | Type of recovery| Next step
 |Primary Admin Node
-| link:configuring-replacement-primary-admin-node.html[Configure replacement primary Admin Node]
+| * link:configuring-replacement-primary-admin-node.html[Recover the primary Admin Node using the primary Admin Node]
+* link:selecting-start-recovery-to-configure-non-primary-admin-node.html[Recover the primary Admin Node using a non-primary Admin Node]
 
 |Non-primary Admin Node
 | link:selecting-start-recovery-to-configure-non-primary-admin-node.html[Select Start Recovery to configure non-primary Admin Node]
@@ -50,3 +51,4 @@ If you took *any* of these corrective actions, you must perform additional recov
 
 | link:reviewing-warnings-about-storage-volume-recovery.html[Recover from storage volume failure where system drive is intact]
 |===
+// 2026-04-22, SGWS-34291

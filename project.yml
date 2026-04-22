@@ -325,8 +325,8 @@ sidebar:
             url: "/maintain/copying-audit-logs-from-failed-primary-admin-node.html"
           - title: Replace primary Admin Node
             url: "/maintain/replacing-primary-admin-node.html"
-          - title: Configure replacement primary Admin Node
-            url: "/maintain/configuring-replacement-primary-admin-node.html"
+          - title: Select Start Recovery to configure non-primary Admin Node
+            url: "/maintain/selecting-start-recovery-to-configure-non-primary-admin-node.html"
           - title: Determine hotfix requirement for primary Admin Node
             url: "/maintain/assess-hotfix-requirement-during-primary-admin-node-recovery.html"
           - title: Restore audit log on recovered primary Admin Node

@@ -43,7 +43,7 @@ NOTE: After deploying the new node, you can add new virtual disks according to y
 |===
 | Type of node| Go to
 |Primary Admin Node
-| link:configuring-replacement-primary-admin-node.html[Configure replacement primary Admin Node]
+| link:selecting-start-recovery-to-configure-non-primary-admin-node.html[Select Start Recovery to configure non-primary Admin Node]
 
 |Non-primary Admin Node
 | link:selecting-start-recovery-to-configure-non-primary-admin-node.html[Select Start Recovery to configure non-primary Admin Node]
@@ -54,3 +54,4 @@ NOTE: After deploying the new node, you can add new virtual disks according to y
 |Storage Node
 | link:selecting-start-recovery-to-configure-storage-node.html[Select Start Recovery to configure Storage Node]
 |===
+// 2026-04-22, SGWS34291
