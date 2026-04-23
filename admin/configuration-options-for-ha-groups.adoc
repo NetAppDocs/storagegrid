@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: ha groups, best practices, high availability group options
 summary: 'The following diagram provides examples of different ways you can configure HA groups. Each option has advantages and disadvantages.'
 ---
-= Configuration options for HA groups
+= Configuration options for StorageGRID high-availability groups
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following diagrams provide examples of different ways you can configure HA groups. Each option has advantages and disadvantages. 
+The following diagrams provide examples of different ways you can configure high-availability (HA) groups. Each option has advantages and disadvantages.
 
 In the diagrams, blue indicates the primary interface in the HA group and yellow indicates the backup interface in the HA group.
 
