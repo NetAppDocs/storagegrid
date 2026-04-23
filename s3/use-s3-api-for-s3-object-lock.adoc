@@ -66,7 +66,7 @@ If the default retention period is modified after ingest of an object version, t
 
 You must have the `s3:PutBucketObjectLockConfiguration` permission, or be account root, to complete this operation.
 
-You must specify a `Content-MD5`  or `x-amz-checksum-*` request header in the PutObjectLockConfiguration request. However, StorageGRID doesn't validate the contents of the `x-amz-checksum-*` header for this operation.
+You must specify a `Content-MD5` or `x-amz-checksum-**` request header in the PutObjectLockConfiguration request. However, StorageGRID doesn't validate the contents of the `x-amz-checksum-**` header for this operation.
 
 ==== Request example
 This example enables S3 Object Lock for a bucket (if your grid administrator has given permission) and sets the default retention mode to COMPLIANCE and the default retention period to 6 years.
@@ -150,7 +150,7 @@ A bucket with S3 Object Lock enabled can contain a combination of objects with a
 
 Object-level retention settings are specified using the S3 REST API. The retention settings for an object override any default retention settings for the bucket.
 
-You must specify a `Content-MD5`  or `x-amz-checksum-*` request header in the request. However, StorageGRID doesn't validate the contents of the `x-amz-checksum-*` header for these operations.
+You must specify a `Content-MD5` or `x-amz-checksum-**` request header in the request. However, StorageGRID doesn't validate the contents of the `x-amz-checksum-**` header for these operations.
 
 You can specify the following settings for each object:
 
@@ -185,8 +185,8 @@ If legal hold is ON (case-sensitive), the object is placed under a legal hold. I
 
 If you use any of these request headers, be aware of these restrictions:
 
-* You must include a `Content-MD5` or `x-amz-checksum-*` request header if any `x-amz-object-lock-*` request header is present in the PutObject request. These headers aren't required for CopyObject or CreateMultipartUpload.
-* If the bucket doesn't have S3 Object Lock enabled and a `x-amz-object-lock-*` request header is present, a 400 Bad Request (InvalidRequest) error is returned.
+* You must include a `Content-MD5` or `x-amz-checksum-**` request header if any `x-amz-object-lock-**` request header is present in the PutObject request. These headers aren't required for CopyObject or CreateMultipartUpload.
+* If the bucket doesn't have S3 Object Lock enabled and a `x-amz-object-lock-**` request header is present, a 400 Bad Request (InvalidRequest) error is returned.
 * The PutObject request supports the use of `x-amz-storage-class: REDUCED_REDUNDANCY` to match AWS behavior. However, when an object is ingested into a bucket with S3 Object Lock enabled, StorageGRID will always perform a dual-commit ingest.
 * A subsequent GET or HeadObject version response will include the headers `x-amz-object-lock-mode`, `x-amz-object-lock-retain-until-date`, and `x-amz-object-lock-legal-hold`, if configured and if the request sender has the correct `s3:Get*` permissions.
 
