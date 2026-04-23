@@ -321,12 +321,12 @@ sidebar:
           - title: Recover primary Admin Node
             pdf-filename: Recover from primary Admin Node failures using a non-primary Admin Node
             url: "/maintain/recovering-from-primary-admin-node-failures-using-npan.html"
-          - title: Copy audit logs from failed primary Admin Node using a non-primary Admin Node
-            url: "/maintain/copying-audit-logs-from-failed-primary-admin-node-using-npan.html"
+          - title: Copy audit logs from failed primary Admin Node 
+            url: "/maintain/copying-audit-logs-from-failed-primary-admin-node.html"
           - title: Replace primary Admin Node using a non-primary Admin Node
             url: "/maintain/replacing-primary-admin-node-using-npan.html"
-          - title: Select Start Recovery to configure non-primary Admin Node
-            url: "/maintain/selecting-start-recovery-to-configure-non-primary-admin-node-using-npan.html"
+          - title: Select Start Recovery to configure primary Admin Node
+            url: "/maintain/selecting-start-recovery-to-configure-primary-admin-node.html"
           - title: Determine hotfix requirement for primary Admin Node
             url: "/maintain/assess-hotfix-requirement-during-primary-admin-node-recovery-using-npan.html"
           - title: Restore audit log on recovered primary Admin Node

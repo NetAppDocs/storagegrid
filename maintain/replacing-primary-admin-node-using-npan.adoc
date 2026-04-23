@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, replace, primary admin node, non-primary admin node
 summary: 'Replace a failed primary Admin Node by using a non-primary Admin Node.'
 ---
-= Replace primary Admin Node using a non-primary Admin Node
+= Replace primary Admin Node 
 :icons: font
 :imagesdir: ../media/
 

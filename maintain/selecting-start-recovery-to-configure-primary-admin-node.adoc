@@ -1,15 +1,15 @@
 ---
-permalink: maintain/selecting-start-recovery-to-configure-non-primary-admin-node-using-npan.html
+permalink: maintain/selecting-start-recovery-to-configure-primary-admin-node.html
 sidebar: sidebar
 keywords: storagegrid, start recovery, non-primary admin node
-summary: 'Select Start Recovery to configure the non-primary Admin Node during primary Admin Node recovery.'
+summary: 'Select Start Recovery to configure the primary Admin Node during primary Admin Node recovery.'
 ---
-= Select Start Recovery to configure non-primary Admin Node
+= Select Start Recovery to configure primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After replacing a non-primary Admin Node, you must select Start Recovery in the Grid Manager to configure the new node as a replacement for the failed node.
+After replacing a primary Admin Node, you must select Start Recovery in the Grid Manager to configure the new node as a replacement for the failed node.
 
 .Before you begin
 
