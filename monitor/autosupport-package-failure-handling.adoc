@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: troubleshoot autosupport, asup package
 summary: "Review the list of actions StorageGRID takes if an attempt to send an AutoSupport package fails."
 ---
-= Troubleshoot StorageGRID AutoSupport packages
+= How StorageGRID handles AutoSupport package failures
 :icons: font
 :imagesdir: ../media/
 
