@@ -37,7 +37,7 @@ Use the default settings unless otherwise specified. In some cases you can use s
 If you haven't already, create a data store to connect PingFederate to the AD FS LDAP server. 
 
 .Steps
-* Go to *System* > *Data & Credentials Stores*
+. Go to *System* > *Data & Credentials Stores*
 . Select *New Data Store*.
 . For Type, select *Directory (LDAP)*.
 . Select *Next*.
