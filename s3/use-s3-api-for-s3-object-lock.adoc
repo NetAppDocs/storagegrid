@@ -70,7 +70,6 @@ You must specify one of the following request headers in the PutObjectLockConfig
 
 ----
 Content-MD5
-
 x-amz-checksum-* 
 ----
 
@@ -195,7 +194,6 @@ If you use any of these request headers, be aware of these restrictions:
 +
 ----
 Content-MD5
-
 x-amz-checksum-*
 ----
 +
@@ -223,7 +221,6 @@ You must specify one of the following request headers in the request:
 
 ----
 Content-MD5
-
 x-amz-checksum-* 
 ----
 
