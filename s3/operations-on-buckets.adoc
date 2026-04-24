@@ -2,14 +2,14 @@
 permalink: s3/operations-on-buckets.html
 sidebar: sidebar
 keywords: bucket, buckets, operations on buckets
-summary: 'The StorageGRID system supports a maximum of 5,000 buckets for each S3 tenant account.'
+summary: 'The StorageGRID system supports a maximum of 20,000 buckets for each S3 tenant account.'
 ---
 = S3 bucket operations and implementation details in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The StorageGRID system supports a maximum of 5,000 buckets for each S3 tenant account.
+The StorageGRID system supports a maximum of 20,000 buckets for each S3 tenant account.
 
 Each grid can have a maximum of 100,000 buckets.
 
@@ -263,6 +263,7 @@ If the default retention period is modified, the retain-until-date of existing o
 Refer to link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] for detailed information.
 |===
 
+// 2026 APR 21, SGWS-40729
 // 2026 MAR 12, SGRIDDOC-223
 // 2025 July 31, SGRIDDOC-183
 // 2025 MAR 31, SGWS-33482
