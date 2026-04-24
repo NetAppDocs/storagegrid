@@ -62,6 +62,10 @@ Mutual Transport Layer Security (mTLS) is now supported for Kafka endpoints. Ref
 === Maximum number of buckets
 A StorageGRID system now supports a maximum of 20,000 buckets for each S3 tenant account.
 
+== Upgrade
+=== Time to enable features is increased
+During StorageGRID upgrade to version 12.1, the time to enable features has increased from under five minutes to an hour. Refer to link:../upgrade/estimating-time-to-complete-upgrade.html#estimate-time-to-upgrade[Estimate the time to complete a StorageGRID upgrade].
+
 == User interface
 === BMC settings page
 A new BMC Settings tab has been added to the Nodes page in Grid Manager and to allow BMC password reset and changes to the BMC LAN IP settings. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html[Change appliance BMC password] and link:../maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings[Change appliance node BMC LAN IP settings]. New API endpoints have also been added to support these functions. Refer to link:../upgrade/changes-to-grid-management-api.html[New endpoints for changing the BMC password and LAN IP settings].
@@ -74,7 +78,3 @@ StorageGRID 12.1 provides more detailed Link cost information and settings. Refe
 
 === USB port control
 You can now enable or disable USB ports through Grid Manager. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html#control-remote-access-through-usb-ports[Control remote access through USB ports].
-
-== Upgrade
-=== Time to enable features is increased
-During StorageGRID upgrade to version 12.1, the time to enable features has increased from under five minutes to an hour. Refer to link:../upgrade/estimating-time-to-complete-upgrade.html#estimate-time-to-upgrade[Estimate the time to complete a StorageGRID upgrade].
