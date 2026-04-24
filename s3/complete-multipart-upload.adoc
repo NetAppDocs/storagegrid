@@ -57,6 +57,11 @@ The following request headers aren't supported:
 
 * `If-Match`
 * `If-None-Match` 
++
+The `If-Match header` is accepted but non-functional.
+* `If-None-Match`
++
+The `If-None-Match header` is accepted but non-functional.
 
 
 == Versioning
