@@ -66,7 +66,7 @@ If the default retention period is modified after ingest of an object version, t
 
 You must have the `s3:PutBucketObjectLockConfiguration` permission, or be account root, to complete this operation.
 
-You must specify one of the following request headers in the PutObjectLockConfiguration request.
+You must specify one of the following request headers in the PutObjectLockConfiguration request:
 
 ----
 Content-MD5
@@ -190,7 +190,7 @@ If legal hold is ON (case-sensitive), the object is placed under a legal hold. I
 
 If you use any of these request headers, be aware of these restrictions:
 
-* You must include one of the following request header if any x-amz-object-lock-* request header is present in the PutObject request.
+* You must include one of the following request headers if any x-amz-object-lock-* request header is present in the PutObject request:
 +
 ----
 Content-MD5
