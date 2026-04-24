@@ -13,9 +13,9 @@ You must complete a specific set of tasks to recover from a primary Admin Node f
 
 Follow these high-level steps to recover a primary Admin Node using a non-primary Admin Node:
 
-. link:copying-audit-logs-from-failed-primary-admin-node-using-npan.html[Copy audit logs from failed primary Admin Node using a non-primary Admin Node]
-. link:replacing-primary-admin-node-using-npan.html[Replace primary Admin Node using a non-primary Admin Node]
-. link:selecting-start-recovery-to-configure-non-primary-admin-node-using-npan.html[Select Start Recovery to configure non-primary Admin Node]
+. link:copying-audit-logs-from-failed-primary-admin-node-using-npan.html[Copy audit logs from failed primary Admin Node]
+. link:replacing-primary-admin-node-using-npan.html[Replace primary Admin Node]
+. link:selecting-start-recovery-to-configure-primary-admin-node.html[Select Start Recovery to configure primary Admin Node]
 . link:assess-hotfix-requirement-during-primary-admin-node-recovery-using-npan.html[Determine hotfix requirement for primary Admin Node]
 . link:restoring-audit-log-on-recovered-primary-admin-node-using-npan.html[Restore audit log on recovered primary Admin Node]
 . link:restoring-admin-node-database-primary-admin-node-using-npan.html[Restore Admin Node database when recovering primary Admin Node]
