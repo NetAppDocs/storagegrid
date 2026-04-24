@@ -45,7 +45,7 @@ If the source object has a checksum but the request doesn't include `x-amz-check
 +
 If the source object doesn't have a checksum and doesn't include `x-amz-checksum-algorithm` or it uses an unsupported checksum value, the copied object doesn't have a checksum.
 +
-NOTE: If a CopyObject request doesn't specify a checksum and the source object doesn't have a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+NOTE: If a CopyObject request doesn't specify a checksum and the source object doesn't have a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported x-amz-checksum-algorithm values.
 
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
@@ -147,6 +147,7 @@ NOTE: The `server-side-encryption` value of the object can't be updated. Instead
 
 If the source bucket is versioned, you can use the `x-amz-copy-source` header to copy the latest version of an object. To copy a specific version of an object, you must explicitly specify the version to copy using the `versionId` subresource. If the destination bucket is versioned, the generated version is returned in the `x-amz-version-id` response header. If versioning is suspended for the target bucket, then `x-amz-version-id` returns a "null" value.
 
+// 2026 APR 24, SGIRDDOC-243
 // 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243

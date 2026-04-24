@@ -31,7 +31,7 @@ The following request headers are supported:
 ** `x-amz-checksum-type`
 --
 +
-NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported x-amz-checksum-algorithm values.
 
 * `x-amz-storage-class`
 +
@@ -82,6 +82,7 @@ A tenant can trigger the failed replication or notification by updating the obje
 
 Refer to link:../admin/troubleshooting-platform-services.html[Troubleshoot platform services].
 
+// 2026 APR 24, SGIRDDOC-243
 // 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243
