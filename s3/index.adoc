@@ -48,6 +48,16 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 [cols="1a,4a" options="header"]
 |===
 | Release| Comments
+|12.1.0
+|Added support for pre-calculated checksum values for the following requests and supported headers:
+
+* CompleteMultipartUpload: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+* CreateMultipartUpload: `CRC32`, `CRC32C`, and `CRC64NVME` for `x-amz-checksum-algorithm`
+* CopyObject: `CRC32`, `CRC32C`, `CRC64NVME`, and `SHA256` for `x-amz-checksum-algorithm`
+* PutObject: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+* UploadPart: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
+
+Added support for `x-amz-checksum-type` for CreateMultipartUpload and CompleteMultipartUpload.
 
 |12.0
 |

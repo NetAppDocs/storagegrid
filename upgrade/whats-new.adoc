@@ -51,6 +51,9 @@ The _account clone_ feature now refers to a one-time clone of specific tenant ac
 
 _Account sync_ is a new feature that allows for the automatic and continuous replication of a tenant account, tenant groups, tenant users, and S3 access keys among the StorageGRID systems in one or more grid federation connections. Refer to link:../admin/grid-federation-what-is-account-sync.html[What is account sync?].
 
+=== Maximum number of buckets
+A StorageGRID system now supports a maximum of 20,000 buckets for each S3 tenant account.
+
 == User interface
 
 === Link cost page update
@@ -66,18 +69,8 @@ A new BMC Settings tab has been added to the Nodes page in Grid Manager and to a
 
 === Replication allowed for S3 Object Lock-enabled buckets
 
-=== Pre-calculated checksum values
-Added support for pre-calculated checksum values for the following requests and supported headers:
-
-* CompleteMultipartUpload: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crcc64nvme`
-* CreateMultipartUpload: `CRC32`, `CRCC32C`, and `CRCC64NVME` for `x-amz-checksum-algorithm`
-* CopyObject: `CRC32`, `CRC32C`, `CRCC64NVME`, and `SHA256` for `x-amz-checksum-algorithm`
-* PutObject: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
-* UploadPart: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
-
-Added support for `x-amz-checksum-type` for CreateMultipartUpload and CompleteMultipartUpload.
-
 === Enable S3 Object Lock on existing buckets
+When the allow S3 Object Lock for existing buckets setting is enabled, an S3 tenant account can now enable S3 Object Lock for an existing bucket. After an S3 tenant account enables S3 Object Lock for an existing bucket, it can't be disabled.
 
 === S3 Batch (FPVR only)
 You can use S3 batch operations to replicate existing objects in a bucket that you plan to configure for cross-grid replication.
