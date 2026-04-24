@@ -14,11 +14,11 @@ StorageGRID 12.1 introduces the following features and functional changes.
 For details about fixed issues and known issues in recent StorageGRID 12.1 releases, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[StorageGRID 12.1 Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
 
 == Capacity
-=== Metadata allowed space
-Increased maximum allowed metadata value from 3.96 TB to 7.92 TB. Refer to link:../admin/managing-object-metadata-storage.html#allowed-metadata-space[Allowed metadata space].
-
 === EC rebalance now uses free space
 EC rebalance now uses free space instead of used space. Refer to link:../expand/considerations-for-rebalancing-erasure-coded-data.html#what-is-ec-rebalancing[Learn about EC rebalancing after expansion in StorageGRID].
+
+=== Metadata allowed space
+Increased maximum allowed metadata value from 3.96 TB to 7.92 TB. Refer to link:../admin/managing-object-metadata-storage.html#allowed-metadata-space[Allowed metadata space].
 
 == Federation 
 === Global namespace
@@ -30,6 +30,18 @@ link:../maintain/understanding-adc-service-quorum.html[When required to meet the
 
 === Primary Admin Node recovery
 You can now recover any node from a non-primary Admin Node. Refer to link:../maintain/recovering-from-primary-admin-node-failures.html[Recovering from primary Admin Node failures].
+
+== S3
+=== Enable S3 Object Lock on existing buckets
+When the allow S3 Object Lock for existing buckets setting is enabled, an S3 tenant account can now enable S3 Object Lock for an existing bucket. After an S3 tenant account enables S3 Object Lock for an existing bucket, it can't be disabled.
+
+=== Replication allowed for S3 Object Lock-enabled buckets
+Replication is now allowed for S3 Object Lock-enabled buckets. Refer to link:../tenant/considerations-for-platform-services.html[Learn about platform services].
+
+=== S3 Batch (FPVR only)
+You can use S3 batch operations to replicate existing objects in a bucket that you plan to configure for cross-grid replication.
+
+This feature requires FPVR approval for StorageGRID 12.1. To use this feature, contact your account representative.
 
 == Security 
 === Multi-admin verification
@@ -63,18 +75,6 @@ StorageGRID 12.1 provides more detailed Link cost information and settings. Refe
 === USB port control
 You can now enable or disable USB ports through Grid Manager. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html#control-remote-access-through-usb-ports[Control remote access through USB ports].
 
-== S3
-=== Replication allowed for S3 Object Lock-enabled buckets
-Replication is now allowed for S3 Object Lock-enabled buckets. Refer to link:../tenant/considerations-for-platform-services.html[Learn about platform services].
-
-=== Enable S3 Object Lock on existing buckets
-When the allow S3 Object Lock for existing buckets setting is enabled, an S3 tenant account can now enable S3 Object Lock for an existing bucket. After an S3 tenant account enables S3 Object Lock for an existing bucket, it can't be disabled.
-
-=== S3 Batch (FPVR only)
-You can use S3 batch operations to replicate existing objects in a bucket that you plan to configure for cross-grid replication.
-
-This feature requires FPVR approval for StorageGRID 12.1. To use this feature, contact your account representative.
-
+== Upgrade
 === Time to enable features is increased
-Time to enable features has increased from under five minutes to an hour. Refer to link:../upgrade/estimating-time-to-complete-upgrade.html#estimate-time-to-upgrade[Estimate the time to complete a StorageGRID upgrade].
-
+During StorageGRID upgrade to version 12.1, the time to enable features has increased from under five minutes to an hour. Refer to link:../upgrade/estimating-time-to-complete-upgrade.html#estimate-time-to-upgrade[Estimate the time to complete a StorageGRID upgrade].
