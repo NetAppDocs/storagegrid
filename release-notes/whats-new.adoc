@@ -54,7 +54,7 @@ The FIPS strict policy criteria have been updated. Refer to link:../admin/manage
 === Account sync
 The _account clone_ feature now refers to a one-time clone of specific tenant account information.
 
-_Account sync_ is a new feature that allows for the automatic and continuous replication of a tenant account, tenant groups, tenant users, and S3 access keys among the StorageGRID systems in one or more grid federation connections. Refer to link:../admin/grid-federation-what-is-account-sync.html[What is account sync?].
+_Account sync_ is a new feature that allows for the automatic and continuous replication of a tenant account, tenant groups, tenant users, and S3 access keys among the StorageGRID systems in one or more grid federation connections. Refer to link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync in StorageGRID].
 
 === Kafka endpoints and mTLS authentication
 Mutual Transport Layer Security (mTLS) is now supported for Kafka endpoints. Refer to link:../tenant/configuring-platform-services-endpoints.html[Configure platform services endpoints].
