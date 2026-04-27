@@ -300,7 +300,7 @@ sidebar:
         - title: Recover from primary Admin Node failures
           entries:
           - title: Recover primary Admin Node
-            pdf-filename: Recover from primary Admin Node failures
+            pdf-filename: Recover the primary Admin Node using the same primary Admin Node
             url: "/maintain/recovering-from-primary-admin-node-failures.html"
           - title: Copy audit logs from failed primary Admin Node
             url: "/maintain/copying-audit-logs-from-failed-primary-admin-node.html"
@@ -319,7 +319,7 @@ sidebar:
         - title: Recover from primary Admin Node failures using a non-primary Admin Node
           entries:
           - title: Recover primary Admin Node
-            pdf-filename: Recover from primary Admin Node failures using a non-primary Admin Node
+            pdf-filename: Recover the primary Admin Node using a non-primary Admin Node
             url: "/maintain/recovering-from-primary-admin-node-failures-using-npan.html"
           - title: Copy audit logs from failed primary Admin Node 
             url: "/maintain/copying-audit-logs-from-failed-primary-admin-node-using-npan.html"

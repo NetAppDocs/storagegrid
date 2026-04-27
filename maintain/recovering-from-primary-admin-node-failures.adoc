@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: storagegrid, recover, primary admin node failure
 summary: 'You must complete a specific set of tasks to recover from a primary Admin Node failure. The primary Admin Node hosts the Configuration Management Node \(CMN\) service for the grid.'
 ---
-= Recover from primary StorageGRID Admin Node failures
+= Recover the primary StorageGRID Admin Node using the same primary Admin Node 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You must complete a specific set of tasks to recover from a primary Admin Node failure. The primary Admin Node hosts the Configuration Management Node (CMN) service for the grid.
 
-Follow these high-level steps to recover a primary Admin Node:
+Follow these high-level steps to recover a primary Admin Node using the same primary Admin Node:
 
 . link:copying-audit-logs-from-failed-primary-admin-node.html[Copy audit logs from failed primary Admin Node]
 . link:replacing-primary-admin-node.html[Replace the primary Admin Node]
