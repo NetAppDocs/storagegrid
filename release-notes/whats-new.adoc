@@ -68,7 +68,7 @@ During StorageGRID upgrade to version 12.1, the time to enable features has incr
 
 == User interface
 === BMC settings page
-A new BMC Settings tab has been added to the Nodes page in Grid Manager and to allow BMC password reset and changes to the BMC LAN IP settings. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html[Change appliance BMC password] and link:../maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings[Change appliance node BMC LAN IP settings]. New API endpoints have also been added to support these functions. Refer to link:../upgrade/changes-to-grid-management-api.html[New endpoints for changing the BMC password and LAN IP settings].
+A new BMC Settings tab has been added to the Nodes page in Grid Manager and to allow BMC password reset and changes to the BMC LAN IP settings. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html[Change appliance BMC password] and link:../maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings[Change appliance node BMC LAN IP settings]. New API endpoints have also been added to support these functions. Refer to link:../release-notes/changes-to-grid-management-api.html[New endpoints for changing the BMC password and LAN IP settings].
 
 === Email notifications
 The Grid Manager now has a common email page to configure and manage email notifications for alerts, AutoSupport, and multi-admin verification (MAV). Refer to link:../monitor/configure-email-server.html[Configure email server].
