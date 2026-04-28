@@ -43,6 +43,9 @@ You can use S3 batch operations to replicate existing objects in a bucket that y
 
 This feature requires FPVR approval for StorageGRID 12.1. To use this feature, contact your account representative.
 
+=== Non-functional S3 REST API headers
+The If-Match and If-None-Match headers are accepted but non-functional for the S3 REST API link:../s3/put-object.html[PutObject], link:../s3/complete-multipart-upload.html[CompleteMultipartUpload], link:../s3/put-object-copy.html[CopyObject], and link:../s3/operations-on-objects.html[DeleteObject].
+
 == Security 
 === Multi-admin verification
 Multi-admin verification (MAV) helps prevent accidental or unauthorized changes to your StorageGRID system. Refer to link:../admin/about-multi-admin-verify.html[Learn about StorageGRID multi-admin verification].
