@@ -39,6 +39,8 @@ sidebar:
           url: /release-notes/changes-to-grid-management-api.html
         - title: Changes to the Tenant Management API
           url: /release-notes/changes-to-tenant-management-api.html
+        - title: Changes to S3 REST API support
+          url: /release-notes/changes-to-s3-rest-api.html
     - title: Get started
       url: "/landing-get-started/index.html"  
       entries:
