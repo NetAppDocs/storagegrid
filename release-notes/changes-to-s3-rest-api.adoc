@@ -1,0 +1,16 @@
+---
+permalink: release-notes/changes-to-s3-rest-api.html
+sidebar: sidebar
+keywords: s3 rest api, api, api version, rest api 
+summary: 'The S3 REST API used by StorageGRID is updated regularly.'
+---
+= Changes to StorageGRID S3 REST API support
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The S3 REST API used by StorageGRID is updated regularly. 
+
+include::../_include/s3-rest-api-updates.adoc[]
+
+Refer to link:../s3/index.html#supported-versions [S3 REST API supported versions and updates] for more information.
