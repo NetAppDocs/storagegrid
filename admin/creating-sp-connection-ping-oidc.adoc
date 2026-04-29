@@ -18,6 +18,8 @@ You use PingFederate to create a service provider (SP) connection for each Admin
 * You have link:../admin/configure-sso-oidc.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
 
 * You have the *SP connection ID* for each Admin Node in your system. You can find these values in the Admin Nodes detail table on the Configure SSO page.
++
+NOTE: Each Admin Node in your StorageGRID system must have an SP connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single SP connection for all Admin Nodes (recommended) or a different SP connection for each Admin Node.
 
 * You have experience creating SP connections in PingFederate Server.
 

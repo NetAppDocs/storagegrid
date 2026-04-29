@@ -148,5 +148,3 @@ The user interface for the Grid Manager or the Tenant Manager might not respond 
 . Clear your web browser cache.
 +
 Clearing the cache removes outdated resources used by the previous version of StorageGRID software, and permits the user interface to operate correctly again. For instructions, see the documentation for your web browser.
-
-// 2026 FEB 20, SGWS-39432
