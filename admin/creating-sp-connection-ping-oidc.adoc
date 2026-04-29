@@ -9,7 +9,7 @@ summary: 'You use PingFederate to create a service provider (SP) connection for 
 :imagesdir: ../media/
 
 [.lead]
-You use PingFederate to create a service provider (SP) connection for each Admin Node in your system. To speed up the process, you will import the SAML metadata from StorageGRID.
+You use PingFederate to create a service provider (SP) connection for each Admin Node in your StorageGRID system.
 
 .Before you begin
 

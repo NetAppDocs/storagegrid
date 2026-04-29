@@ -34,7 +34,7 @@ TIP: Disabling SSO for one Admin Node does not affect the SSO settings for any o
 When you are logged in as root, the prompt changes from `$` to `#`.
 . Depending on your SSO configuration, run one of the following commands: 
 +
-[role=tabs]
+[role="tabbed-block"]
 ====
 .SAML
 --
