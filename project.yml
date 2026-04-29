@@ -28,9 +28,19 @@ sidebar:
     - title: 'StorageGRID 12.1 software'
       url: /index.html
     - title: StorageGRID appliances
-      url: "/storagegrid-hardware.html"
+      url: "/swnodes/storagegrid-hardware.html"
     - title: Release notes
-      url: "/release-notes/index.html"
+      entries:
+        - title: What's new in StorageGRID 12.0
+          url: /release-notes/whats-new.html
+        - title: Removed or deprecated features and capabilities
+          url: /release-notes/removed-or-deprecated-features.html
+        - title: Changes to the Grid Management API
+          url: /release-notes/changes-to-grid-management-api.html
+        - title: Changes to the Tenant Management API
+          url: /release-notes/changes-to-tenant-management-api.html
+        - title: Changes to S3 REST API support
+          url: /release-notes/changes-to-s3-rest-api.html
     - title: Get started
       url: "/landing-get-started/index.html"  
       entries:
@@ -40,9 +50,7 @@ sidebar:
         url: "/primer/quick-start.html"
     - title: 'Install, upgrade, and hotfix'
       url: "/landing-install-upgrade/index.html"  
-      entries:
-      - title: Install appliance-based nodes
-        url: "/storagegrid-hardware.html" 
+      entries: 
       - section: swnodes
       - section: upgrade
       - title: Apply StorageGRID hotfix
@@ -263,22 +271,20 @@ sidebar:
             url: "/maintain/selecting-start-recovery-to-configure-appliance-storage-node.html"
           - title: Remount and reformat appliance storage volumes (manual steps)
             url: "/maintain/remounting-and-reformatting-appliance-storage-volumes.html"
-          - title: Restore object data to storage volume for appliance
+          - title: Restore object data to appliance storage volume
             url: "/maintain/restoring-object-data-to-storage-volume-for-appliance.html"
           - title: Check storage state after recovering appliance Storage Node
             url: "/maintain/checking-storage-state-after-recovering-sga.html"
         - title: Recover from storage volume failure where system drive is intact
+          pdf-filename: Recover from storage volume failure where system drive is intact
           entries:
-          - title: Recovery tasks
-            pdf-filename: Recover from storage volume failure where system drive is intact
-            url: "/maintain/recovering-from-storage-volume-failure-where-system-drive-is-intact.html"
           - title: Warnings for storage volume recovery
             url: "/maintain/reviewing-warnings-about-storage-volume-recovery.html"
           - title: Identify and unmount failed storage volumes
             url: "/maintain/identifying-and-unmounting-failed-storage-volumes.html"
           - title: Recover failed storage volumes and rebuild Cassandra database
             url: "/maintain/recovering-failed-storage-volumes-and-rebuilding-cassandra-database.html"
-          - title: Restore object data to storage volume where system drive is intact
+          - title: Restore object data to StorageGRID volume where system drive is intact
             url: "/maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html"
           - title: Check storage state after recovering storage volumes
             url: "/maintain/checking-storage-state-after-recovering-storage-volumes.html"
@@ -292,14 +298,10 @@ sidebar:
             url: "/maintain/selecting-start-recovery-to-configure-storage-node.html"
           - title: Remount and reformat storage volumes (manual steps)
             url: "/maintain/remounting-and-reformatting-storage-volumes-manual-steps.html"
-          - title: Restore object data to storage volume (system drive failure)
+          - title: Restore object data to storage volume
             url: "/maintain/restoring-object-data-to-storage-volume.html"
           - title: Check storage state after recovering Storage Node system drive
             url: "/maintain/checking-storage-state-after-recovering-storage-node-system-drive.html"
-        - title: Restore object data using Grid Manager
-          url: "/maintain/restoring-volume.html"
-        - title: Monitor repair-data jobs
-          url: "/maintain/monitor-repairs.html"
       - title: Recover from Admin Node failures
         entries:
         - title: Primary or non-primary Admin Node

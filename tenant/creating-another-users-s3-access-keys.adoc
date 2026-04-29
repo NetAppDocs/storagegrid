@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create other user S3 access key
 summary: 'If you are using an S3 tenant and you have the appropriate permission, you can create S3 access keys for other users, such as applications that need access to buckets and objects.'
 ---
-= Create another user's S3 access keys
+= Create another user's S3 access keys in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -54,5 +54,3 @@ CAUTION: Don't close this dialog box until you have copied or downloaded this in
 . Select *Finish*.
 +
 The new key is listed on the Access keys tab of the user details page.
-
-. If your tenant account has the *Use grid federation connection* permission, optionally use the Tenant Management API to manually clone S3 access keys from the tenant on the source grid to the tenant on the destination grid. See link:grid-federation-clone-keys-with-api.html[Clone S3 access keys using the API].

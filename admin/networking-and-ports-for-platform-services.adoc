@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: platform services, ports for platform services, 443, 80
 summary: 'If you allow an S3 tenant to use platform services, you must configure networking for the grid to ensure that platform services messages can be delivered to their destinations.'
 ---
-= Network and ports for platform services
+= Network and ports for StorageGRID platform services
 :icons: font
 :imagesdir: ../media/
 
@@ -40,7 +40,8 @@ If you use a non-transparent proxy server, you must also link:configuring-storag
 
 .Related information
 
-link:../tenant/index.html[Use a tenant account]
+* link:../tenant/index.html[Use a tenant account]
+* link:../network/external-communications.html[Ports used for external communications]
 
 // 2025 MAR 31, SGWS-33482
 // 2023 SEP 15, SGWS-25330

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitoring, monitoring network connections, network, network performance
 summary: 'The integrity and bandwidth of the network between nodes and sites, and the resource usage by individual grid nodes, are critical to efficient operations.'
 ---
-= Monitor networking and system resources
+= Monitor networking and system resources in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -39,8 +39,6 @@ image::../media/nodes_page_network_interfaces.png[Nodes Page Network Interfaces]
  .. For grid nodes, scroll down to review the *Network Communication* section of the page.
 +
 The Receive and Transmit tables show how many bytes and packets have been received and sent across each network as well as other receive and transmission metrics.
-+
-image::../media/nodes_page_network_communication.png[Nodes Page Network Comm]
 
 . Use the metrics associated with your traffic classification policies to monitor network traffic.
  .. Select *Configuration* > *Network* > *Traffic classification*.

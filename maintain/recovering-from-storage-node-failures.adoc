@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recover, storage node failure, Reaper
 summary: 'The procedure for recovering a failed Storage Node depends on the type of failure and the type of Storage Node that has failed.'
 ---
-= Recover from Storage Node failures
+= Recover from StorageGRID Storage Node failures
 :icons: font
 :imagesdir: ../media/
 
@@ -16,19 +16,17 @@ Use this table to select the recovery procedure for a failed Storage Node.
 [cols="1a,1a,1a" options="header"]
 |===
 | Issue| Action| Notes
-| * More than one Storage Node has failed.
 
+| More than one Storage Node has failed.
 | Contact technical support.
+| If more than one Storage Node has failed, technical support must assist with recovery to prevent Cassandra database inconsistencies that could lead to data loss. A site recovery procedure might be required.
 
-| Recovering more than one Storage Node might affect the integrity of the Cassandra database, which can cause data loss.
+Technical support can determine when it's safe to begin recovery of a second Storage Node.
 
-Technical support can determine when it is safe to begin recovery of a second Storage Node.
-
-*Note*: If more than one Storage Node that contains the ADC service fails at a site, you lose any pending platform service requests for that site.
+*Note*: If more than one Storage Node that contains the ADC service fails at a site, any pending platform service requests for that site will be lost.
 
 | More than one Storage Node at a site has failed or an entire site has failed. 
 | Contact technical support. It might be necessary to perform a site recovery procedure. 
-
 | Technical support will assess your situation and develop a recovery plan. See link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 | An appliance Storage Node has failed.
@@ -36,7 +34,7 @@ Technical support can determine when it is safe to begin recovery of a second St
 | The recovery procedure for appliance Storage Nodes is the same for all failures.
 
 | One or more storage volumes have failed, but the system drive is intact
-| link:recovering-from-storage-volume-failure-where-system-drive-is-intact.html[ Recover from storage volume failure where system drive is intact]
+| link:reviewing-warnings-about-storage-volume-recovery.html[Recover from storage volume failure where system drive is intact]
 | This procedure is used for software-based Storage Nodes.
 
 | The system drive has failed.

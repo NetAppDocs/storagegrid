@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure load balancer endpoint, how to attach certificate to load balancer endpoint
 summary: 'Load balancer endpoints determine the ports and network protocols S3 clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.'
 ---
-= Configure load balancer endpoints
+= Configure StorageGRID load balancer endpoints
 :icons: font
 :imagesdir: ../media/
 
@@ -77,6 +77,8 @@ Each S3 client load balancer endpoint specifies a port, a client type (S3), and 
 | The StorageGRID port you want to use for load balancing. This field defaults to 10433 for the first endpoint you create, but you can enter any unused external port from 1 to 65535.
 
 If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, unless you have freed up port 8443. Then you can use port 8443 as an S3 endpoint, and the port will be configured on both Gateway and Admin Nodes.
+
+If you're configuring load balancer endpoints for a link:../admin/configure-global-namespace.html[global namespace], use the same port for each endpoint.
 
 | Client type
 | Must be *S3*.

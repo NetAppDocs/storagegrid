@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create branch bucket
 summary: 'A branch bucket provides access to objects in a bucket as they existed at a certain time.'
 ---
-= What is a branch bucket?
+= Learn about StorageGRID branch buckets
 :icons: font
 :imagesdir: ../media/
 
@@ -32,6 +32,8 @@ Note the following characteristics of branch buckets:
 * You can use a branch bucket to remove corrupt objects by creating a branch bucket from a point in time before the corruption occurred, and then pointing applications to the branch bucket instead of to the base bucket that contains corrupt objects.
 
 * You're saving data in a versioned bucket. There was an accidental vulnerability that caused many unwanted objects to be ingested after time _T_. You can create a branch bucket for the Before time value, _T_, and redirect client operations to that branch bucket. Then, only objects ingested earlier than the Before time _T_ are exposed to clients.
+
+* You're saving data in a versioned bucket. There was an accidental vulnerability that caused many unwanted objects to be ingested between time _T1_ and _T2_. You can create a branch bucket for the _Exclude_ time values, _T1_ and _T2_, and redirect client operations to that branch bucket. Then, only objects ingested before _T1_ and after _T2_ are exposed to clients.
 
 == Operations on objects in branch buckets 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to use identity federation, how to use federated groups with Grid Manager
 summary: 'Using identity federation makes setting up groups and users faster, and it allows users to sign in to StorageGRID using familiar credentials.'
 ---
-= Use identity federation
+= Use identity federation in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -46,5 +46,9 @@ include::../_include/identity_federation_disable_steps.adoc[]
 
 == Guidelines for configuring an OpenLDAP server
 include::../_include/identity_federation_openldap_guidelines.adoc[]
+
+.Related information
+
+link:../network/external-communications.html[Ports used for external communications]
 
 // 2025 JUN 10, SGWS-33778

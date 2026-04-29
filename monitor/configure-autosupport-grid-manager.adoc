@@ -2,25 +2,27 @@
 permalink: monitor/configure-autosupport-grid-manager.html
 sidebar: sidebar
 keywords: how to configure autosupport, what is autosupport-on-demand
-summary: 'By default, the StorageGRID AutoSupport feature is enabled when you first install StorageGRID. However, you must configure hardware AutoSupport on each appliance. As needed, you can change the AutoSupport configuration.'
+summary: 'The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Digital Advisor for predictive recommendations.'
 ---
-= Configure AutoSupport
+= Configure AutoSupport in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-By default, the StorageGRID AutoSupport feature is enabled when you first install StorageGRID. However, you must configure hardware AutoSupport on each appliance. As needed, you can change the AutoSupport configuration.
+The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Digital Advisor for predictive recommendations.
 
-If you want to change the configuration of StorageGRID AutoSupport, make your changes only on the primary Admin Node. You must <<autosupport-for-appliances,configure hardware AutoSupport>> on each appliance.
+By default, the weekly and event-triggered AutoSupport features are enabled for software-based StorageGRID systems when you first install StorageGRID. However, you must <<autosupport-for-appliances,configure hardware AutoSupport>> on each appliance. As needed, you can change the AutoSupport configuration.
+
+NOTE: If you want to change the configuration of StorageGRID AutoSupport, make your changes only on the primary Admin Node.
 
 .Before you begin
 
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+* You are signed in to the Grid Manager on the primary Admin Node using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Root access permission].
 * If you will use HTTPS for sending AutoSupport packages, you have provided outbound internet access to the primary Admin Node, either directly or link:../admin/configuring-admin-proxy-settings.html[using a proxy server] (inbound connections not required).
 * If HTTP is selected on the StorageGRID AutoSupport page, you have link:../admin/configuring-admin-proxy-settings.html[configured a proxy server] to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers will reject packages sent using HTTP.
 //11mar2025: SG still allows HTTP. In Aug 2023 (SG 11.9), setting up a proxy was introduced.
-* If you will use SMTP as the protocol for AutoSupport packages, you have configured an SMTP mail server.
+* If you will use SMTP as the protocol for AutoSupport packages, you have link:../monitor/configure-email-server.html[configured an email server].
 
 .About this task
 
@@ -32,25 +34,28 @@ You can use any combination of the following options to send AutoSupport package
 * *User-triggered*: Manually send AutoSupport packages at any time.
 * *Log collection*: link:../monitor/collecting-log-files-and-system-data.html[manually collect log files and system data and send an AutoSupport package].
 
-== [[specify-protocol-for-autosupport-packages]]Specify the protocol for AutoSupport packages
+== [[configure-autosupport]]Configure AutoSupport
 
-You can use any of the following protocols for sending AutoSupport packages:
-
-* *HTTPS*: This is the default and recommended setting for new installations. This protocol uses port 443. If you want to <<Enable AutoSupport on Demand,enable the AutoSupport on Demand feature>>, you must use HTTPS.
-* *HTTP*: If you select HTTP, you must configure a proxy server to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers reject packages sent using HTTP. This protocol uses port 80. 
-* *SMTP*: Use this option if you want AutoSupport packages to be emailed.
-
-The protocol you set is used for sending all types of AutoSupport packages.
+To change the installation default configuration for AutoSupport, or to configure hardware AutoSupport on each StorageGRID appliance:
 
 .Steps
 
 . Select *Support* > *Tools* > *AutoSupport* > *Settings*.
 
 . Select the protocol you want to use to send AutoSupport packages.
++
+* *HTTPS*: This is the default and recommended setting for new installations. This protocol uses port 443. If you want to <<Enable AutoSupport on Demand,enable the AutoSupport on Demand feature>>, you must use HTTPS.
+* *HTTP*: If you select HTTP, you must link:../admin/configuring-admin-proxy-settings.html[configure a proxy server] to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers reject packages sent using HTTP. This protocol uses port 80. 
+* *SMTP*: Use this option if you want AutoSupport packages to be emailed. You must first link:../monitor/configure-email-server.html[configure an email server].
+
++
+The protocol you set is used for sending all AutoSupport packages except AutoSupport on Demand, which requires the HTTPS protocol.
 
 . If you selected *HTTPS*, select whether to use a NetApp support certificate (TLS certificate) to secure the connection to the technical support server.
  ** *Verify certificate* (default): Ensures that the transmission of AutoSupport packages is secure. The NetApp support certificate is already installed with the StorageGRID software.
  ** *Do not verify certificate*: Select this option only when you have a good reason not to use certificate validation, such as when there is a temporary problem with a certificate.
+
+. If you selected *SMTP*, use the *Sender* field to enter the address for the email server you configured earlier.
 
 . Select *Save*. All weekly, user-triggered, and event-triggered packages are sent using the selected protocol.
 
@@ -114,7 +119,7 @@ As required, you can optionally disable the check for software updates. For exam
 
 When you enable AutoSupport, heath and status packages are sent to technical support. You can specify one additional destination for all AutoSupport packages.
 
-To verify or change the protocol used to send AutoSupport packages, see the instructions to <<specify-protocol-for-autosupport-packages,specify the protocol for AutoSupport packages>>.
+To verify or change the protocol used to send AutoSupport packages, see the instructions to <<configure-autosupport,configure AutoSupport>>.
 
 NOTE: You can't use the SMTP protocol to send AutoSupport packages to an additional destination.
 
@@ -167,6 +172,8 @@ StorageGRID AutoSupport does not report hardware issues, such as DIMM or host in
 
 .Related information
 
-https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]
+* link:../network/external-communications.html[Ports used for external communications]
+* https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]
 
 // 2023 NOV 21, SGRIDDOC-29
+// 2026-03-30, SGRIDDOC-147

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: increase metadata reserved space setting
 summary: 'You might be able to increase the Metadata Reserved Space system setting if your Storage Nodes meet specific requirements for RAM and available space.'
 ---
-= Increase Metadata Reserved Space setting
+= Increase the Metadata Reserved Space setting in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: lost objects, investigating, objects
 summary: 'When the Objects potentially lost alert is triggered, you must investigate immediately. Collect information about the affected objects and contact technical support.'
 ---
-= Investigate potentially lost objects
+= Resolve the objects potentially lost alert in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -77,7 +77,11 @@ If the objects exist, <<reset-lost-obj-count,reset the Objects potentially lost 
 |Locations = 0
 |If there are no locations listed in the output, the object is potentially missing. Contact technical support.
 
-Technical support might ask you to determine if there is a storage recovery procedure in progress. See the information about link:../maintain/restoring-volume.html[restoring object data using Grid Manager] and link:../maintain/restoring-object-data-to-storage-volume.html[restoring object data to a storage volume].
+Technical support might ask you to determine if there is a storage recovery procedure in progress. Refer to:
+
+* link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[Restore object data to storage volume for appliance]
+* link:../maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[Restore object data to storage volume where system drive is intact]
+* link:../maintain/restoring-object-data-to-storage-volume.html[Restore object data to storage volume (system drive failure)]
 |===
 
 . [[reset-lost-obj-count]]After you address lost object issues, reset the Objects potentially lost counter to ensure alerts aren't false positives:

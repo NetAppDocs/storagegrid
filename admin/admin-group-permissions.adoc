@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: admin group permissions
 summary: 'When creating admin user groups, you select one or more permissions to control access to specific features of the Grid Manager. You can then assign each user to one or more of these admin groups to determine which tasks that user can perform.'
 ---
-= Admin group permissions
+= Admin group permissions in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -56,43 +56,43 @@ NOTE: Users must have the *Other grid configuration* permission to manage storag
 
 Users must have the Maintenance permission to use these options:
 
-* *Configuration* > *Access control*:
+* *Configuration* > *Access control*
 ** Grid passwords
 
-* *Configuration* > *Network*:
+* *Configuration* > *Network*
 ** S3 endpoint domain names
 
-* *Maintenance* > *Tasks*:
+* *Maintenance* > *Tasks*
  ** Decommission
  ** Expansion
  ** Object existence check
  ** Recovery
  
-* *Maintenance* > *System*:
+* *Maintenance* > *System*
 
  ** Recovery package
  ** Software update
 
-* *Support* > *Tools*:
+* *Support* > *Tools*
  ** Logs
 
 Users who don't have the Maintenance permission can view, but not edit, these pages:
 
-* *Maintenance* > *Network*:
+* *Maintenance* > *Network*
  ** DNS servers
  ** Grid Network
  ** NTP servers
 
-* *Maintenance* > *System*:
+* *Maintenance* > *System*
  ** License
 
-* *Configuration* > *Network*:
+* *Configuration* > *Network*
 ** S3 endpoint domain names
 
-* *Configuration* > *Security*:
+* *Configuration* > *Security*
 ** Certificates
 
-* *Configuration* > *Monitoring*:
+* *Configuration* > *Monitoring*
  ** Audit and syslog server
 
 == Manage alerts
@@ -115,11 +115,15 @@ This permission provides access to the *ILM* > *Object metadata lookup* page.
 
 This permission provides access to these additional grid configuration options:
 
-* *ILM*:
+* *ILM*
 ** Storage grades
-* *Configuration* > *System*:
-* *Support* > *Other*:
-** Link cost
+* *Configuration* > *System*
+* *Support* > *Other*
+** I/O prioritization
+** Node services
+** Storage watermarks
+
+NOTE: Link cost requires Root access.
 
 == Storage appliance administrator
 

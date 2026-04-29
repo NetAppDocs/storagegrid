@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create cloud storage pool
 summary: 'A Cloud Storage Pool specifies a single external Amazon S3 bucket or other S3-compatible provider or an Azure Blob storage container.'
 ---
-= Create a Cloud Storage Pool
+= Create a Cloud Storage Pool in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -189,3 +189,7 @@ When you save a Cloud Storage Pool, StorageGRID does the following:
 If Cloud Storage Pool validation fails, you receive an error message that explains why validation failed. For example, an error might be reported if there is a certificate error or if the bucket or container you specified does not already exist.
 
 . If an error occurs, see the link:troubleshooting-cloud-storage-pools.html[instructions for troubleshooting Cloud Storage Pools], resolve any issues, and then try saving the Cloud Storage Pool again.
+
+.Related information
+
+link:../network/external-communications.html[Ports used for external communications]

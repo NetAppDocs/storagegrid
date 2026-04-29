@@ -2,9 +2,9 @@
 permalink: tenant/grid-federation-manage-cross-grid-replication.html
 sidebar: sidebar
 keywords: grid federation, cross-grid replication, use grid federation connection, replicate client delete markers, s3 bucket
-summary: 'f your tenant account was assigned the Use grid federation connection permission when it was created, you can use cross-grid replication to automatically replicate objects between buckets on the tenant source grid and buckets on the tenant destination grid. Cross-grid replication can occur in one or both directions.'
+summary: 'If your tenant account was assigned the Use grid federation connection permission when it was created, you can use cross-grid replication to automatically replicate objects between buckets on the tenant source grid and buckets on the tenant destination grid. Cross-grid replication can occur in one or both directions.'
 ---
-= Manage cross-grid replication
+= Manage cross-grid replication in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -163,5 +163,4 @@ CAUTION: You can't reenable replication unless both buckets are empty.
 After a few moments, a success message appears. New objects added to this bucket can no longer be automatically replicated to the other grid. *Cross-grid replication* is no longer shown as a Enabled feature on the Buckets page.
 
 . If cross-grid replication was configured to occur in both directions, go to the corresponding bucket on the other grid and stop cross-grid replication in the other direction.
-
 // 2023 SEP 14, SGWS-28029

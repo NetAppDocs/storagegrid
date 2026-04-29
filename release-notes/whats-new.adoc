@@ -1,0 +1,34 @@
+---
+permalink: release-notes/whats-new.html
+sidebar: sidebar
+keywords: what is new in StorageGRID 12.1
+summary: 'This release of StorageGRID introduces the following features and functional changes.'
+---
+= What's new in StorageGRID 12.1
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+StorageGRID 12.1 introduces the following features and functional changes.
+
+For details about fixed issues and known issues in recent StorageGRID 12.0 releases, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[StorageGRID 12.0 Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
+
+== Appliances 
+
+
+== Artificial intelligence (AI) and machine learning (ML)
+
+== Capacity
+
+
+== Federation 
+
+
+== Manageability 
+
+
+== Security 
+
+== Tenant groups
+
+== User interface

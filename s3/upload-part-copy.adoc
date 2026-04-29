@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: UploadPart, UploadPartCopy, multipart uploads, uploads,
 summary: 'The UploadPartCopy operation uploads a part of an object by copying data from an existing object as the data source.'
 ---
-= UploadPartCopy
+= Upload a part of an object in StorageGRID with the S3 UploadPartCopy operation
 :icons: font
 :imagesdir: ../media/
 
@@ -14,6 +14,8 @@ The UploadPartCopy operation uploads a part of an object by copying data from an
 The UploadPartCopy operation is implemented with all Amazon S3 REST API behavior. Subject to change without notice.
 
 This request reads and writes the object data specified in `x-amz-copy-source-range` within the StorageGRID system.
+
+== Supported request headers
 
 The following request headers are supported:
 
@@ -41,3 +43,10 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 == Versioning
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
+
+== S3 checksum support
+
+StorageGRID automatically detects if a checksum was specified during a CreateMultipartUpload request and uses this checksum in the UploadPartCopy operation. You don't need to specify a checksum in an UploadPartCopy request. If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+
+// 2026 FEB 16, SGWS-39080
+// 2026 JAN 6, SGWS-39154

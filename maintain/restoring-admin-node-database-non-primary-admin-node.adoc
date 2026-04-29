@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, restore admin node database, restore database, non-primary admin node
 summary: 'If you want to retain the historical information about attributes and alerts on a non-primary Admin Node that has failed, you can restore the Admin Node database from the primary Admin Node.'
 ---
-= Restore Admin Node database when recovering non-primary Admin Node
+= Restore StorageGRID Admin Node database when recovering non-primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
@@ -23,7 +23,7 @@ If you want to retain the historical information about attributes and alerts on 
 If an Admin Node fails, the historical information stored in its Admin Node database is lost. This database includes the following information:
 
 * Alert history
-* Historical attribute data, which is used in in legacy-style charts on the Nodes page
+* Historical attribute data, which is used in charts on the Nodes page
 
 When you recover an Admin Node, the software installation process creates an empty Admin Node database on the recovered node. However, the new database only includes information for servers and services that are currently part of the system or added later.
 

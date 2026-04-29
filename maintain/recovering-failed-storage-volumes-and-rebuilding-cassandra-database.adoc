@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, maintenance, maintain, failed storage volumes, failed volumes, cassandra, cassandra rebuild, rebuild cassandra, cassandra database
 summary: 'You must run a script that reformats and remounts storage on failed storage volumes, and rebuilds the Cassandra database on the Storage Node if the system determines that it is necessary.'
 ---
-= Recover failed storage volumes and rebuild Cassandra database
+= Recover failed storage volumes and rebuild Cassandra database in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -75,4 +75,5 @@ Reformatting done.  Now do manual steps to
 restore copies of data.
 ----
 
-After the storage volumes are reformatted and remounted and necessary Cassandra operations are complete, you can link:../maintain/restoring-volume.html[restore object data using Grid Manager].
+.What's next?
+After the storage volumes are reformatted and remounted and necessary Cassandra operations are complete, you can link:../maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[restore object data using Grid Manager].

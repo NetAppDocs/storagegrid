@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: S3, S3 setup wizard
 summary: 'You can use the S3 setup wizard to configure StorageGRID as the object storage system for an S3 application.'
 ---
-= Use S3 setup wizard: Considerations and requirements
+= StorageGRID S3 setup wizard considerations and requirements
 :icons: font
 :imagesdir: ../media/
 
@@ -36,7 +36,7 @@ Review load balancer and security certificate requirements:: If you plan to use 
 +
 If you plan to use an external (third-party) load balancer endpoint, you have the fully qualified domain name (FQDN), port, and certificate for that load balancer.
 
-Configure any grid federation connections:: If you want to allow the S3 tenant to clone account data and replicate bucket objects to another grid using a grid federation connection, confirm the following before starting the wizard:
+Configure any grid federation connections:: If you want to allow the S3 tenant to sync account data and replicate bucket objects to another grid using a grid federation connection, confirm the following before starting the wizard:
 +
 * You have link:grid-federation-manage-connection.html[configured the grid federation connection].
 * The status of the connection is *Connected*.
