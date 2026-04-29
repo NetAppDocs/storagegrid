@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: application group, active directory, ad fs, single sign on, sso
 summary: 'You must use Active Directory Federation Services (AD FS) to create an application group for each Admin Node in your system.'
 ---
-= Create application groups in AD FS for OIDC
+= Create application groups in AD FS for OIDC in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
