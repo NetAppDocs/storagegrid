@@ -21,6 +21,13 @@ Bucket policies specify the access permissions for the bucket that the policy is
 > aws s3api put-bucket-policy --bucket examplebucket --policy _file://policy.json_
 ----
 
+In StorageGRID, the Principal:
+
+*	Will match anyone, including anonymous
+*	`{ "AWS": "*" }` will match any identity or user, excluding anonymous
+* Only applies for bucket policies
+* The principal is the account(s)/user(s) being granted or denied the permissions
+
 == Example: Allow everyone read-only access to a bucket
 
 In this example, everyone, including anonymous, is allowed to list objects in the bucket and perform GetObject operations on all objects in the bucket. All other operations will be denied. Note that this policy might not be particularly useful because no one except the account root has permissions to write to the bucket.
