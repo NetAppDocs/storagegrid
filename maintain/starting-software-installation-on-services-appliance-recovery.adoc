@@ -51,8 +51,8 @@ The StorageGRID Appliance Installer Home page appears.
  .. In the This Node section, for *Node Type*, select *Primary Admin*.
  .. In the *Node Name* field, enter the same name that was used for the node you are recovering, and click *Save*.
  .. Select an appropriate mode in the Installation Mode section. If you select the Install a node or recover this node using current configuration method, follow the Install a node or recover this node using current configuration steps. If you select the Recover this node using a non-primary Admin Node method, follow the Recover this node using a non-primary Admin Node steps.
- 
  +
+ 
  [role="tabbed-block"]
 ====
 
