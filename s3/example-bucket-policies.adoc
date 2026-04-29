@@ -23,8 +23,8 @@ Bucket policies specify the access permissions for the bucket that the policy is
 
 In StorageGRID, the Principal:
 
-*	Will match anyone, including anonymous
-*	`{ "AWS": "*" }` will match any identity or user, excluding anonymous
+* `"Principal": "*"` matches everyone, including anonymous users
+* `"Principal": { "AWS": "*" }` matches any authenticated identity or user, excluding anonymous users
 * Only applies for bucket policies
 * The principal is the account(s)/user(s) being granted or denied the permissions
 

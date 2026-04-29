@@ -185,8 +185,8 @@ Temporary security credentials created from assuming this group are valid for a 
 
 The Principal:
 
-*	Will match anyone, including anonymous
-*	`{ "AWS": "*" }` will match any identity or user, excluding anonymous
+* `"Principal": "*"` matches everyone, including anonymous users
+* `"Principal": { "AWS": "*" }` matches any authenticated identity or user, excluding anonymous users
 * Only applies for bucket policies
 * The principal is the account(s)/user(s) being granted or denied the permissions
 
