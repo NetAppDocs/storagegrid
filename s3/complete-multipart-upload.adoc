@@ -58,10 +58,10 @@ The following request headers aren't supported:
 * `If-Match`
 * `If-None-Match` 
 +
-The `If-Match header` is accepted but non-functional.
+The `If-Match header` is accepted but non-functional. Depending on your StorageGRID version and  configuration, an error message (501 Not Implemented) might display or an alert might trigger with instructions about how to enable the behavior.
 * `If-None-Match`
 +
-The `If-None-Match header` is accepted but non-functional.
+The `If-None-Match header` is accepted but non-functional. Depending on your StorageGRID version and  configuration, an error message (501 Not Implemented) might display or an alert might trigger with instructions about how to enable the behavior.
 
 
 == Versioning

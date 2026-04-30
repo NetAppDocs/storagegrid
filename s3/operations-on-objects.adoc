@@ -34,7 +34,7 @@ The following table describes how StorageGRID implements S3 REST API object oper
 Restrictions::
 
 * Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
-* The `If-None` and `If-None-Match` headers are accepted but non-functional.
+* The `If-None` and `If-None-Match` headers are accepted but non-functional. Depending on your StorageGRID version and  configuration, an error message (501 Not Implemented) might display or an alert might trigger with instructions about how to enable the behavior.
 
 The `x-amz-bypass-governance-retention` header has no effect on objects without S3 Object Lock.
 
