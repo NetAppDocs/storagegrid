@@ -29,12 +29,6 @@ NOTE: In certain situations, NetApp might end support for particular features so
 |===
 | Feature| Deprecated| End of Life| Removed| Links to earlier documentation
 
-|  Global SSE setting for AES-128 encryption
-| 
-|
-| 
-| 
-
 | Alarms, legacy (_not Alerts_)
 | 11.7
 | 11.8
@@ -135,5 +129,3 @@ Also refer to:
 
 * link:changes-to-grid-management-api.html[Changes to the Grid Management API]
 * link:changes-to-tenant-management-api.html[Changes to the Tenant Management API]
-
-// 2026 APR 30, SGRIDDOC-227
