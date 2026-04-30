@@ -9,7 +9,7 @@ summary: 'You use PingFederate to create a service provider (SP) connection for 
 :imagesdir: ../media/
 
 [.lead]
-You use PingFederate to create a service provider (SP) connection for each Admin Node in your StorageGRID system.
+You use PingFederate to create a service provider (SP) connection for each Admin Node for OpenID Connect (OIDC) in your system.
 
 .Before you begin
 
@@ -45,10 +45,10 @@ If you haven't already, create a data store to connect PingFederate to the AD FS
 . Select *Next*.
 . Under LDAP Configuration:
 +
-.. Enter the values for *Hostname*, *User DN* (username), and *Password*.
+* Enter the values for *Hostname*, *User DN* (username), and *Password*.
 +
 Use the values you used when link:../admin/using-identity-federation.html[configuring identity federation] in StorageGRID.
-.. For Active Directory, select *LDAP Type*.
+* For Active Directory, select *LDAP Type*.
 
 == Step 2: Create password credential validator[[password-validator-oidc]]
 
@@ -61,10 +61,10 @@ If you haven't already, create a password credential validator.
 .. Type: Select *LDAP Username Password Credential Validator*.
 . Select *Next*.
 . On the Instance Configuration tab, enter the following information:
-.. LDAP DATASTORE: Select the <<data-store-oidc,data store>> you created.
-.. SEARCH BASE: Enter the information for the <<data-store-oidc,LDAP configuration>>.
-.. SEARCH FILTER: Enter *sAMAccountName=${username}*.
-.. SCOPE OF SEARCH: Select *Subtree*.
+* LDAP DATASTORE: Select the <<data-store-oidc,data store>> you created.
+* SEARCH BASE: Enter the information for the <<data-store-oidc,LDAP configuration>>.
+* SEARCH FILTER: Enter *sAMAccountName=${username}*.
+* SCOPE OF SEARCH: Select *Subtree*.
 . Select *Next*.
 . On the Extended Contract tab, add the following attributes: `memberOf`, `objectGUID`, `sAMAccountName`, `sn`, and `userPrincipalName`
 . Select *Next* > *Save*.
@@ -77,8 +77,8 @@ If you haven't already, create an IdP (identity provider) adapter instance.
 . Go to *Authentication* > *Integration* > *IdP Adapters*.
 . Select *Create New Instance*.
 . On the Type tab, enter the following information:
-.. INSTANCE NAME and INSTANCE ID: You can use the same value for both.
-.. TYPE: Select *HTML Form IdP Adapter*.
+* INSTANCE NAME and INSTANCE ID: You can use the same value for both.
+* TYPE: Select *HTML Form IdP Adapter*.
 . Select *Next*.
 . On the *IdP Adapter* tab, select *Add a new row to 'Credential Validators'*.
 . Select the <<password-validator-oidc,password credential validator>> you created. 
@@ -97,9 +97,9 @@ Configure the Authorization Server to support the grant types accepted by Storag
 . Go to *System* > *Authorization Server Settings*.
 . Verify that the following options are selected for REUSE EXISTING PERSISTENT ACCESS GRANTS FOR GRANT TYPES: 
 +
-* *IMPLICIT*
-* *AUTHORIZATION CODE*
-* *RESOURCE OWNER PASSWORD CREDENTIALS*
+* IMPLICIT
+* AUTHORIZATION CODE
+* RESOURCE OWNER PASSWORD CREDENTIALS
 +
 NOTE: If your company restricts the use of RESOURCE OWNER PASSWORD CREDENTIALS, you can only use AUTHORIZATION CODE.
 . For OAuth Administrative Web Services Settings, select the <<password-validator-oidc,password credential validator>> you created.
@@ -136,8 +136,8 @@ Set up Resource Owner Credentials Mapping to ensure that user credentials are va
 . From the SOURCE PASSWORD VALIDATOR INSTANCE drop-down, select the <<password-validator-oidc,password credential validator>> you created.
 . Select *Add Mapping* > *Contract Fulfillment*.
 . Add the mapping for for USER_KEY:
-.. Under Source, select *Password Credential Validator*.
-.. Under Value, select *sAMAccountName*.
+* Under Source, select *Password Credential Validator*.
+* Under Value, select *sAMAccountName*.
 . Select *Next* > *Next* to navigate to the summary page.
 . Select *Save*.
 
@@ -164,8 +164,8 @@ StorageGRID uses access tokens to authenticate and authorize API requests in Pin
 . Navigate to *Applications* > *Access Token Management*.
 . Select *Create New Instance*. 
 . On the Type tab, enter the following information:
-.. Enter an INSTANCE NAME and INSTANCE ID. You can use the same value for both.
-.. Type: Verify that the value is *JSON Web Tokens*.
+* INSTANCE NAME and INSTANCE ID: You can use the same value for both.
+* Type: Verify that the value is *JSON Web Tokens*.
 . Select *Next*. 
 . On the Instance Configuration tab, enter the following information for Certificates: 
 * KEY ID: Enter a unique identifier for the key.
@@ -233,8 +233,8 @@ NOTE: This is a critical step. It determines which attribute values are included
 You need to customize the LDAP filter to ensure StorageGRID retrieves the user attributes based on your organization's specific Active Directory or LDAP structure. Consult with your LDAP/AD administrator to obtain the appropriate filter expression for your setup.
 . Select *Save* and review the summary.
 . On the Contract Fulfillment tab, enter the following information:
-.. Source: Select the <<data-store-oidc,LDAP data store>> you created.
-.. Value: Map each Attribute Contract to the respective value.
+* Source: Select the <<data-store-oidc,LDAP data store>> you created.
+* Value: Map each Attribute Contract to the respective value.
 . Select *Next* > *Next*.
 . Review the summary and select *Save*.
 . Go to *Applications* > *OAuth Clients* > *OpenID Connect Policy Management*.

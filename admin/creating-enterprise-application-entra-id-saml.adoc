@@ -9,7 +9,7 @@ summary: 'You use Entra ID to create an enterprise application for each Admin No
 :imagesdir: ../media/
 
 [.lead]
-You use Entra ID to create an enterprise application for each Admin Node in your system.
+You use Entra ID to create an enterprise application for each Admin Node for SAML in your system.
 
 .Before you begin
 

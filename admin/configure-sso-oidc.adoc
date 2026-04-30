@@ -25,6 +25,8 @@ Follow the Configure SSO wizard for OpenID Connect (OIDC) and enter sandbox mode
 | Active Directory Federation Service (AD FS)
 | * Active Directory
 * Entra ID
+* Keycloak
+* Okta 
 * PingFederate
 
 | Entra ID
@@ -37,7 +39,7 @@ Follow the Configure SSO wizard for OpenID Connect (OIDC) and enter sandbox mode
 To allow StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests, you complete these tasks:
 
 . Configure settings in StorageGRID.
-. Use the SSO identity provider's software to create a relying party trust for each Admin Node.
+. Use the SSO identity provider's software to configure OIDC for each Admin Node.
 . Return to StorageGRID to enable SSO.
 
 Sandbox mode makes it easy to perform this back-and-forth configuration and to test all of your settings before you enable SSO. When you're using sandbox mode, users can't sign in using SSO.
@@ -71,13 +73,13 @@ CAUTION: If you change the CA certificate, immediately link:../maintain/starting
 Complete the fields in the Enter client information step of the wizard.
 
 .Steps
-. Specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each relying party trust in AD FS.
+. Specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each OIDC configuration.
 
 * For example, if your grid has only one Admin Node and you don't anticipate adding more Admin Nodes in the future, enter `SG` or `StorageGRID`.
 
-* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows the relying party identifier for each Admin Node in the grid, based on the node's hostname.
+* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows the OIDC configuration for each Admin Node in the grid, based on the node's hostname.
 +
-NOTE: You must create a relying party trust for each Admin Node in your StorageGRID system. Having a relying party trust for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
+NOTE: You must configure OIDC for each Admin Node in your StorageGRID system. Having an OIDC configuration for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
 
 . Enter the *Client ID*, *Client secret*, and *OpenID endpoint URL* for each relying party identifier.
 
