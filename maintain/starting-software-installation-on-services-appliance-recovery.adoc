@@ -58,7 +58,9 @@ The StorageGRID Appliance Installer Home page appears.
 
 .Current configuration method
 --
+
 Install a node or recover this node using the current configuration steps.
+
 .. In the Installation section, check the software version listed under Current state. If the version of software that is ready to install is correct, skip ahead to the <<installation_section_step,Installation step>>.
 .. If you need to upload a different version of software, under the *Advanced* menu, select *Upload StorageGRID Software*. The Upload StorageGRID Software page appears.
 .. Click *Browse* to upload the *Software Package* and *Checksum File* for StorageGRID software. The files are automatically uploaded after you select them.
@@ -67,7 +69,9 @@ Install a node or recover this node using the current configuration steps.
 --
 .Non-primary Admin Node method
 --
+
 Recover this node using a non-primary Admin Node.
+
 .. In the non-primary Admin Node IP field, enter the grid network IP address of the non-primary Admin Node you want to use for the recovery, and click *Save*.
 .. If the version of software that is ready to install is correct, skip ahead to the <<installation_section_step,Installation step>>.
   
