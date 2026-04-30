@@ -48,10 +48,7 @@ Each policy element is used for a specific function:
 
 The Principal:
 
-* `"Principal": "*"` matches everyone, including anonymous users
-* `"Principal": { "AWS": "*" }` matches any authenticated identity or user, excluding anonymous users
-* Only applies for bucket policies
-* The principal is the account(s)/user(s) being granted or denied the permissions
+include::../_include/principal-in-s3-bucket-policy.adoc[]
 
 You only need to specify the Principal element in a bucket policy. For group policies, the group to which the policy is attached is the implicit Principal element.
 

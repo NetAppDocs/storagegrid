@@ -185,10 +185,7 @@ Temporary security credentials created from assuming this group are valid for a 
 
 The Principal:
 
-* `"Principal": "*"` matches everyone, including anonymous users
-* `"Principal": { "AWS": "*" }` matches any authenticated identity or user, excluding anonymous users
-* Only applies for bucket policies
-* The principal is the account(s)/user(s) being granted or denied the permissions
+include::../_include/principal-in-s3-bucket-policy.adoc[]
 
 After configuration is complete, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
 The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/use-access-policies.html[Use access policies].
