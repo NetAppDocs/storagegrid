@@ -330,6 +330,8 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 * ListObjects
 * HeadBucket
+* GetObject
+* HeadObject
 
 | 
 
@@ -712,7 +714,7 @@ s3:PutObjectRetention
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-| Will compare to the prefix parameter specified in a ListObjects or ListObjectVersions request.
+| Will compare to the prefix parameter specified in a ListObjects or ListObjectVersions request, or the key specified for GetObject or HeadObject. 
 
 | s3:RequestObjectTag/<tag-key>
 | s3:PutObject
@@ -885,6 +887,7 @@ PUT#1 -------> PUT#2 ---X (denied)
 
 * link:../tenant/index.html[Use a tenant account]
 
+// 2026 APR 30, SGRIDDOC-246
 // 2026 MAR 23, SGRIDDOC-231
 // 2023 OCT 5, SGWS-27457
 // 2025 May 14, SGWS-34003
