@@ -26,7 +26,7 @@ The following request headers are supported:
 +
 If you specified a CRC-32, CRC-32C, CRC-64/NVME, or SHA-256 checksum during the CreateMultipartUpload request, you must also include the checksum request header in each UploadPart request.
 +
-NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported x-amz-checksum-algorithm values.
+NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
 
 * `Content-Length`
 * `Content-MD5`
@@ -48,6 +48,7 @@ The following request headers aren't supported:
 
 * `x-amz-sdk-checksum-algorithm`
 * `x-amz-trailer`
+* `x-amz-checksum-sha1`
 
 == Versioning
 

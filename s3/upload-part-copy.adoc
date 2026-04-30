@@ -46,7 +46,7 @@ Multipart upload consists of separate operations for initiating the upload, list
 
 == S3 checksum support
 
-StorageGRID automatically detects if a checksum was specified during a CreateMultipartUpload request and uses this checksum in the UploadPartCopy operation. You don't need to specify a checksum in an UploadPartCopy request. If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported x-amz-checksum-algorithm values.
+StorageGRID automatically detects if a checksum was specified during a CreateMultipartUpload request and uses this checksum in the UploadPartCopy operation. You don't need to specify a checksum in an UploadPartCopy request. If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID doesn't include a checksum for the copied part when CreateMultipartUpload hasn't specified a checksum.
 
 // 2026 APR 24, SGIRDDOC-243
 // 2026 FEB 16, SGWS-39080

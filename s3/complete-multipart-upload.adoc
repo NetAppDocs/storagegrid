@@ -31,7 +31,7 @@ The following request headers are supported:
 ** `x-amz-checksum-type`
 --
 +
-NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported x-amz-checksum-algorithm values.
+NOTE: If a CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported `x-amz-checksum-algorithm` values.
 
 * `x-amz-storage-class`
 +
@@ -62,6 +62,7 @@ The `If-Match header` is accepted but non-functional.
 * `If-None-Match`
 +
 The `If-None-Match header` is accepted but non-functional.
+* `x-amz-checksum-sha1`
 
 
 == Versioning
