@@ -48,8 +48,7 @@ image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance >
 . When the Storage Node reaches the "Waiting for Manual Steps" stage, go to link:remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)].
 +
 image::../media/recovery_reset_button.gif[screenshot showing the stage "waiting for manual steps"]
-// 2026-03-31, SGWS-34291
-
 * *VMware*: Delete the deployed virtual grid node. Then, when you are ready to restart the recovery, redeploy the node.
 * *Linux*: Restart the node by running this command on the Linux host: `storagegrid node force-recovery _node-name_` 
 ====
+// 2026-03-31, SGWS-34291
