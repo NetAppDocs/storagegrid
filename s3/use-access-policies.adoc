@@ -142,7 +142,7 @@ arn:aws:iam::account_id:federated-group/group_name
 Other considerations:
 
 * You can use the asterisk (*) as a wildcard to match zero or more characters inside the object key.
-* International characters, which can be specified in the object key, should be encoded using JSON UTF-8 or using JSON \u escape sequences. Percent-encoding is not supported.
+* International characters, which can be specified in the object key, should be encoded using JSON UTF-8 or using JSON \u escape sequences. Percent-encoding isn't supported.
 +
 https://www.ietf.org/rfc/rfc2141.txt[RFC 2141 URN Syntax^]
 +
@@ -165,7 +165,7 @@ In policy statements, you can use the Resource element to specify the bucket or 
 "Resource": "arn:aws:s3:::mybucket/home/${aws:username}/*"
 ----
 
-* The resource value can specify a bucket that does not yet exist when a group policy is created.
+* The resource value can specify a bucket that doesn't yet exist when a group policy is created.
 
 
 == Specify principals in a policy
@@ -219,7 +219,7 @@ arn:aws:iam::27233906934684427525:user-uuid/de305d54-75b4-431b-adb2-eb6b9e546013
 +
 For example, suppose Alex leaves the organization and the username `Alex` is deleted. If a new Alex joins the organization and is assigned the same `Alex` username, the new user might unintentionally inherit the permissions granted to the original user.
 
-* The principal value can specify a group/user name that does not yet exist when a bucket policy is created.
+* The principal value can specify a group/user name that doesn't yet exist when a bucket policy is created.
 
 == Specify permissions in a policy
 
@@ -531,8 +531,8 @@ Possible settings for this permission include:
   *** The object's data, user-defined metadata, or S3 object tagging can't be overwritten.
   *** Any ingest operations in progress are cancelled, and an error is returned.
   *** If S3 versioning is enabled, the Deny setting prevents PutObjectTagging or DeleteObjectTagging operations from modifying the TagSet for an object and its noncurrent versions.
- ** If an existing object is not found, this permission has no effect.
-* When this permission is not present, the effect is the same as if Allow were set.
+ ** If an existing object isn't found, this permission has no effect.
+* When this permission isn't present, the effect is the same as if Allow were set.
 
 NOTE: If the current S3 policy allows overwrite, and the PutOverwriteObject permission is set to Deny, the client can't overwrite an object's data, user-defined metadata, or object tagging. In addition, if the *Prevent client modification* checkbox is selected (*Configuration* > *Security settings* > *Network and objects*), that setting overrides the setting of the PutOverwriteObject permission.
 
@@ -623,7 +623,7 @@ Condition operators are categorized as follows:
 | Checks if a condition key is present in the current request context.
 
 | IfExists
-| Appended to any condition operator, except the Null condition, to check for absence of that condition key. Returns TRUE if the condition key is not present.
+| Appended to any condition operator, except the Null condition, to check for absence of that condition key. Returns TRUE if the condition key isn't present.
 |===
 
 === Supported condition keys
@@ -634,15 +634,15 @@ Condition operators are categorized as follows:
 
 | aws:SourceIp
 | IP operators
-| Will compare to the IP address from which the request was sent. Can be used for bucket or object operations.
+| Compares to the IP address from which the request was sent. Can be used for bucket or object operations.
 
-*Note:* If the S3 request was sent through the Load Balancer service on Admin Nodes and Gateways Nodes, this will compare to the IP address upstream of the Load Balancer service.
+*Note:* If the S3 request was sent through the Load Balancer service on Admin Nodes and Gateways Nodes, this compares to the IP address upstream of the Load Balancer service.
 
-*Note*: If a third-party, non-transparent load balancer is used, this will compare to the IP address of that load balancer. Any `X-Forwarded-For` header will be ignored because its validity can't be ascertained.
+*Note*: If a third-party, non-transparent load balancer is used, this compares to the IP address of that load balancer. Any `X-Forwarded-For` header is ignored because its validity can't be ascertained.
 
 | aws:username
 | Resource/Identity
-| Will compare to the sender's username from which the request was sent. Can be used for bucket or object operations.
+| Compares to the sender's username from which the request was sent. Can be used for bucket or object operations.
 
 
 | s3:delimiter
@@ -650,7 +650,7 @@ Condition operators are categorized as follows:
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-| Will compare to the delimiter parameter specified in a ListObjects or ListObjectVersions request.
+| Compares to the delimiter parameter specified in a ListObjects or ListObjectVersions request.
 
 | s3:ExistingObjectTag/<tag-key>
 | s3:DeleteObjectTagging
@@ -676,14 +676,14 @@ s3:PutObjectTagging
 s3:PutObjectVersionAcl
 
 s3:PutObjectVersionTagging
-| Will require that the existing object has the specific tag key and value.
+| Requires that the existing object has the specific tag key and value.
 
 | s3:max-keys
 | 
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-| Will compare to the max-keys parameter specified in a ListObjects or ListObjectVersions request.
+| Compares to the max-keys parameter specified in a ListObjects or ListObjectVersions request.
 
 | s3:object-lock-mode
 | 
@@ -714,7 +714,7 @@ s3:PutObjectRetention
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-| Will compare to the prefix parameter specified in a ListObjects or ListObjectVersions request, or the key specified for GetObject or HeadObject. 
+| Compares to the prefix parameter specified in a ListObjects or ListObjectVersions request, or the key specified for GetObject or HeadObject. 
 
 | s3:RequestObjectTag/<tag-key>
 | s3:PutObject
@@ -722,7 +722,7 @@ s3:ListBucketVersions permissions
 s3:PutObjectTagging
 
 s3:PutObjectVersionTagging
-| Will require a specific tag key and value when the object request includes tagging.
+| Requires a specific tag key and value when the object request includes tagging.
 
 | s3:x-amz-copy-source
 | s3:PutObject
@@ -838,7 +838,7 @@ Sometimes a policy can grant permissions that are dangerous for security or dang
 
 | Policy grants a non-owner account (including anonymous accounts) permissions to put objects.
 | Bucket
-| Valid. Objects are owned by the creator account, and the bucket policy does not apply. The creator account must grant access permissions for the object using object ACLs.
+| Valid. Objects are owned by the creator account, and the bucket policy doesn't apply. The creator account must grant access permissions for the object using object ACLs.
 | Valid. Objects are owned by the bucket owner account. Bucket policy applies.
 |===
 
@@ -854,7 +854,7 @@ To ensure that overwrites are always denied, you can:
  ** Add a DeleteObject DENY operation to the S3 policy.
  ** Add a PutObject ALLOW operation to the S3 policy.
 
-NOTE: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "zero copies after 30 days" exists.
+NOTE: Setting DeleteObject to DENY in an S3 policy doesn't prevent ILM from deleting objects when a rule such as "zero copies after 30 days" exists.
 
 NOTE: Even when all of these rules and policies are applied, they don't guard against concurrent writes (see Situation A). They do guard against sequential completed overwrites (see Situation B).
 
