@@ -75,7 +75,7 @@ Chunked transfer encoding is supported if `aws-chunked` payload signing is also 
 ** `x-amz-checksum-sha256`
 --
 +
-NOTE: If a PutObject request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported `x-amz-checksum-algorithm` values. 
+NOTE: If a PutObject request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. 
 
 
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata.
@@ -125,7 +125,11 @@ The `If-Match header` is accepted but non-functional.
 +
 The `If-None-Match header` is accepted but non-functional.
 * `x-amz-acl`
-* `x-amz-checksum-sha1` 
+* `x-amz-checksum-md5`
+* `x-amz-checksum-sha1`
+* `x-amz-checksum-xxhash3`
+* `x-amz-checksum-xxhash64`
+* `x-amz-checksum-xxhash128`
 * `x-amz-sdk-checksum-algorithm`
 * `x-amz-trailer` 
 * `x-amz-website-redirect-location`
