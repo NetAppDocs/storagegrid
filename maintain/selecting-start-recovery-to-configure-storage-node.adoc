@@ -45,10 +45,8 @@ image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance >
 
 * If the "Waiting for manual steps" message doesn't appear, it means the storage volumes have been automatically remounted and reformatted, and you can link:../maintain/restoring-object-data-to-storage-volume.html[restore object data to the volumes].
 
-. When the Storage Node reaches the "Waiting for Manual Steps" stage, go to link:remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)].
+. When the Storage Node reaches the "Waiting for manual Steps" stage, go to link:remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)].
 +
-image::../media/recovery_reset_button.gif[screenshot showing the stage "waiting for manual steps"]
 * *VMware*: Delete the deployed virtual grid node. Then, when you are ready to restart the recovery, redeploy the node.
-* *Linux*: Restart the node by running this command on the Linux host: `storagegrid node force-recovery _node-name_` 
-====
-// 2026-03-31, SGWS-34291
+* *Linux*: Restart the node by running this command on the Linux host: `storagegrid node force-recovery _node-name_`
+// 2026-05-05, SGWS-34291
