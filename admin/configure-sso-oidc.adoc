@@ -108,8 +108,7 @@ The URL is derived from the value you entered in the *Federation service name* f
 
 When you have confirmed that you can use SSO to sign in to each Admin Node, you can enable SSO for your entire StorageGRID system.
 
-TIP:
-When SSO is enabled, all users must use SSO to access the Grid Manager, the Tenant Manager, the Grid Management API, and the Tenant Management API. Local users can no longer access StorageGRID. StorageGRID doesn't provide an example authentication script for all supported SSO providers.
+TIP: When SSO is enabled, all users must use SSO to access the Grid Manager, the Tenant Manager, the Grid Management API, and the Tenant Management API. Local users can no longer access StorageGRID. StorageGRID doesn't provide an example authentication script for all supported SSO providers.
 
 .Steps
 
