@@ -30,7 +30,7 @@ While grid nodes are updated with the new hotfix version, the actual changes in 
 After a hotfix has been applied to your grid, the primary Admin Node or a non-primary Admin Node automatically installs the same hotfix version to any nodes restored by recovery operations or added in an expansion. 
 You can recover any node (including the primary Admin Node) when you are signed in to a non-primary Admin Node. If you recover a node from a non-primary Admin Node, that Admin Node applies the hotfix to the recovered node.
 
-If you need to recover the primary Admin Node while signed in to that node, you must manually install the correct StorageGRID release and then apply the hotfix. The final StorageGRID version of the primary Admin Node must match the version of the other nodes in the grid. 
+If you need to recover the primary Admin Node from its own StorageGRID installer, you must manually install the correct StorageGRID release and then apply the hotfix. The final StorageGRID version of the primary Admin Node must match the version of the other nodes in the grid. 
 
 The following example illustrates how to apply a hotfix when recovering the primary Admin Node while you are signed in to the non-primary Admin Node:
 

@@ -28,7 +28,7 @@ If you took *any* of these corrective actions, you must perform additional recov
 |===
 | Type of recovery| Next step
 |Primary Admin Node
-| * link:configuring-replacement-primary-admin-node.html[Recover the primary Admin Node using the primary Admin Node]
+| * link:selecting-start-recovery-to-configure-primary-admin-node.html[Select Start Recovery to configure primary Admin Node]
 * link:selecting-start-recovery-to-configure-non-primary-admin-node.html[Recover the primary Admin Node using a non-primary Admin Node]
 
 |Non-primary Admin Node
