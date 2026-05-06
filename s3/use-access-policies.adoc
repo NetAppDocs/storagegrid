@@ -46,6 +46,10 @@ Each policy element is used for a specific function:
 | Principal/NotPrincipal
 | You can allow users, groups, and accounts to access specific resources and perform specific actions. If no S3 signature is included in the request, anonymous access is allowed by specifying the wildcard character (*) as the principal. By default, only the account root has access to resources owned by the account.
 
+The Principal:
+
+include::../_include/principal-in-s3-bucket-policy.adoc[]
+
 You only need to specify the Principal element in a bucket policy. For group policies, the group to which the policy is attached is the implicit Principal element.
 
 | Resource/NotResource
