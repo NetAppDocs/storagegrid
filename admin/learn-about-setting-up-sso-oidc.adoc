@@ -11,14 +11,14 @@ summary: "Set up SSO in StorageGRID using OIDC. This allows StorageGRID and the 
 [.lead]
 Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests.
 
-You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using OIDC. 
-
-To learn about setting up SSO using SAML, refer to link:configure-sso-saml.html[Configure SSO using SAML].
+You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using OIDC. To learn about setting up SSO using SAML, refer to link:configure-sso-saml.html[Configure SSO using SAML].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Configure identity provider
 
 [role="quick-margin-para"]
 You select either Active Directory or Entra ID for the identity federation LDAP service type, based on the SSO identity provider you plan to use.
+
+[role="quick-margin-para"]
 [cols="1a,1a" options="header"]  
 |===
 | Configured LDAP service type | Options for SSO identity provider
@@ -36,6 +36,8 @@ You select either Active Directory or Entra ID for the identity federation LDAP 
 
 [role="quick-margin-para"]
 Then, use the SSO identity provider's software to configure OIDC for each Admin Node in your grid.
+
+[role="quick-margin-para"]
 [cols="1a,2a" options="header"] 
 |===
 |If your identity provider is...  | You need to...
@@ -50,7 +52,7 @@ Then, use the SSO identity provider's software to configure OIDC for each Admin 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Configure SSO
 
 [role="quick-margin-para"]
-Select the Configure SSO wizard for OIDC. Configure SSO with your identity provider and enter sandbox mode to configure and test SSO before enabling it for StorageGRID users. 
+Select the Configure SSO wizard for OIDC. Then, configure SSO with your identity provider and enter sandbox mode to configure and test SSO before enabling it for StorageGRID users. 
 
 [role="quick-margin-para"]
 Learn about link:configure-sso-oidc.html[configuring SSO using OIDC]
