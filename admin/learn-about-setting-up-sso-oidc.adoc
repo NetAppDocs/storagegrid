@@ -25,7 +25,7 @@ Based on the SSO identity provider you plan to use, you select either Active Dir
 [role="quick-margin-para"]
 Use the SSO identity provider's software to configure OIDC for each Admin Node in your grid.
 
-[role="quick-margin-list]
+[role="quick-margin-list"]
 * Learn about link:creating-relying-party-trusts-in-ad-fs-oidc.html[creating an application group for each Admin Node] in Active Directory
 * Learn about link:creating-enterprise-application-entra-id-oidc.html[creating an application for each Admin Node] in Entra ID
 * Learn about link:creating-sp-connection-ping-oidc.html[creating a service provider connection for each Admin Node] in PingFederate
