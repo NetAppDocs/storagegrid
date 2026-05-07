@@ -18,7 +18,7 @@ You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow th
 [role="quick-margin-para"]
 You select either Active Directory or Entra ID for the identity federation LDAP service type, based on the SSO identity provider you plan to use.
 
-[role="quick-margin-para"]
+[role="quick-margin-list"]
 [cols="1a,1a" options="header"]  
 |===
 | Configured LDAP service type | Options for SSO identity provider
@@ -37,7 +37,7 @@ You select either Active Directory or Entra ID for the identity federation LDAP 
 [role="quick-margin-para"]
 Then, use the SSO identity provider's software to configure OIDC for each Admin Node in your grid.
 
-[role="quick-margin-para"]
+[role="quick-margin-list"]
 [cols="1a,2a" options="header"] 
 |===
 |If your identity provider is...  | You need to...
