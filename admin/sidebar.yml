@@ -68,14 +68,16 @@ entries:
         url: "/admin/confirming-federated-users-can-sign-in.html"
       - title: Set up SSO with OIDC
         entries:
-        - title: Configure SSO 
-          url: "/admin/configure-sso-oidc.html"
+        - title: Learn about 
+          url: "/admin/learn-about-setting-up-sso-oidc.html"
         - title: Create application groups in AD FS
           url: "/admin/creating-relying-party-trusts-in-ad-fs-oidc.html" 
         - title: Create applications in Entra ID
           url: "/admin/creating-enterprise-application-entra-id-oidc.html"    
         - title: SP connections in PingFederate
           url: "/admin/creating-sp-connection-ping-oidc.html"
+        - title: Configure SSO 
+          url: "/admin/configure-sso-oidc.html"
       - title: Set up SSO with SAML
         entries:
         - title: Configure SSO
