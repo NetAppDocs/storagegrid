@@ -28,7 +28,7 @@ If the Storage Node is installed as a container on a Linux host, you must perfor
 
 .Steps
 
-. Log in to the primary Admin Node. If the primary Admin Node is unavailable, use a non-primary Admin Node, if one exists, and if it is designated as the Admin Node for the recovery procedure.
+. Log in to the primary Admin Node. If the primary Admin Node is unavailable, use a non-primary Admin Node, if one exists.
 . From the Grid Manager, select *Maintenance* > *Tasks* > *Recovery*.
 . Select the grid node you want to recover in the Pending Nodes list.
 +
@@ -44,9 +44,14 @@ image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance >
 * If the grid node reaches the "Waiting for manual steps" stage, you must link:../maintain/remounting-and-reformatting-storage-volumes-manual-steps.html[remount and reformat the storage volumes manually].
 
 * If the "Waiting for manual steps" message doesn't appear, it means the storage volumes have been automatically remounted and reformatted, and you can link:../maintain/restoring-object-data-to-storage-volume.html[restore object data to the volumes].
-
-. When the Storage Node reaches the "Waiting for manual Steps" stage, go to link:remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)].
 +
+[NOTE]
+====
+At any point during the recovery, you can select *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
+
+If you want to retry the recovery after resetting the procedure, you must restore the appliance node to a pre-installed state, as follows:
+
 * *VMware*: Delete the deployed virtual grid node. Then, when you are ready to restart the recovery, redeploy the node.
 * *Linux*: Restart the node by running this command on the Linux host: `storagegrid node force-recovery _node-name_`
+====
 // 2026-05-05, SGWS-34291
