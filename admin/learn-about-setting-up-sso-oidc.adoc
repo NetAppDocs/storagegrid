@@ -16,38 +16,19 @@ You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow th
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Configure identity provider
 
 [role="quick-margin-para"]
-You select either Active Directory or Entra ID for the identity federation LDAP service type, based on the SSO identity provider you plan to use.
+Based on the SSO identity provider you plan to use, you select either Active Directory or Entra ID for the identity federation LDAP service type.
 
-[role="quick-margin-table"]
-[cols="1a,1a" options="header"]  
-|===
-| Configured LDAP service type | Options for SSO identity provider
-
-| Active Directory Federation Service (AD FS)
-| * Active Directory
-* Entra ID
-* Keycloak
-* Okta 
-* PingFederate
-
-| Entra ID
-| Entra ID
-|===
+[role="quick-margin-list"]
+* For Active Directory Federation Service (AD FS), you can use an Entra ID, Keycloak, Okta, or PingFederate identity provider.
+* For Entra ID, you can only use an Entra ID identity provider.
 
 [role="quick-margin-para"]
-Then, use the SSO identity provider's software to configure OIDC for each Admin Node in your grid.
+Use the SSO identity provider's software to configure OIDC for each Admin Node in your grid.
 
-[role="quick-margin-table"]
-[cols="1a,2a" options="header"] 
-|===
-|If your identity provider is...  | You need to...
-| Active directory
-| link:creating-relying-party-trusts-in-ad-fs-oidc.html[Create an application group for each Admin Node]
-| Entra ID
-| link:creating-enterprise-application-entra-id-oidc.html[Create an application for each Admin Node]
-| PingFederate
-| link:creating-sp-connection-ping-oidc.html[Create a service provider connection for each Admin Node]
-|===
+[role="quick-margin-list]
+* Learn about link:creating-relying-party-trusts-in-ad-fs-oidc.html[creating an application group for each Admin Node] in Active Directory
+* Learn about link:creating-enterprise-application-entra-id-oidc.html[creating an application for each Admin Node] in Entra ID
+* Learn about link:creating-sp-connection-ping-oidc.html[creating a service provider connection for each Admin Node] in PingFederate
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Configure SSO
 
