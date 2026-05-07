@@ -62,7 +62,7 @@ NOTE: You must configure OIDC for each Admin Node in your StorageGRID system. Ha
 
 After you enter sandbox mode, you can complete and test the configuration for the SSO type you selected.
 
-StorageGRID can remain in sandbox mode as long as required. However, only federated users and local users can sign in. 
+Sandbox mode makes it easy to perform the back-and-forth configuration and to test all of your settings before you enable SSO. StorageGRID can remain in sandbox mode as long as required. However, only federated users and local users can sign in.
 
 .Steps
 . From the Configure SSO page, locate the link on the Test configuration step of the wizard. 

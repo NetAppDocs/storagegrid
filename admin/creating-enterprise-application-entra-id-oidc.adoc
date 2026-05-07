@@ -13,11 +13,7 @@ You use Entra ID to create an enterprise application for each Admin Node for Ope
 
 .Before you begin
 
-* You have started configuring single sign-on for StorageGRID and you selected *Entra ID* as the SSO type.
-
-* You have link:../admin/configure-sso-oidc.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
-
-* You have the relying party identifier, client secret, and fully qualified domain name (FQDN) (or IP address) for each Admin Node in your system. You can copy these values from the Admin Node details table on the link:configure-sso-oidc.html[Configure SSO page].
+* You have the relying party identifier, client secret, and fully qualified domain name (FQDN) (or IP address) for each Admin Node in your system.
 +
 NOTE: Each Admin Node in your StorageGRID system must have an enterprise application. This ensures that users can securely sign in to and out of any Admin Node. You can create a single enterprise application for all Admin Nodes (recommended) or a different enterprise application for each Admin Node.
 
