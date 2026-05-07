@@ -110,12 +110,16 @@ The following is a complete list of StorageGRID services.
 | Monitors the grid for dynamic IP changes and updates local configurations.
 | All nodes
 
+| gdu-server
+| The backend task runner for grid maintenance and provisioning actions. Accepts requests from `mgmt-api` and other utility scripts, validates them, and dispatches each action to the appropriate GDU task handler, such as provisioning, expansion, decommission, and upgrades. Logs results and returns structured responses.
+| Admin Nodes
+
 | Grafana
 | Used for metrics visualization in the Grid Manager.
 | Admin Nodes
 
 | High Availability
-| Manages high availability virtual IPs on nodes configured on the High Availability Groups page. This service is also known as the keepalived service.
+| Manages high availability virtual IPs on nodes configured on the High Availability Groups page. This service is also known as the _keepalived_ service.
 | Admin and Gateway Nodes
 
 | Identity (idnt)
@@ -133,6 +137,10 @@ The following is a complete list of StorageGRID services.
 | LDR (Local Distribution Router)
 | Manages the storage and transfer of content within the grid.
 | Storage Nodes
+
+| mgmt-api
+| The Grid Manager backend API. Exposes authenticated REST endpoints for administering the grid (configuration, monitoring, and maintenance workflows), enforces validations and permissions, and orchestrates long-running operations by invoking services like gdu-server and other internal components. The primary control-plane API used by the UI and automation clients.
+| Admin Nodes
 
 | MISCd Information Service Control Daemon
 | Provides an interface for querying and managing services on other nodes and for managing environmental configurations on the node such as querying the state of services running on other nodes.
@@ -154,7 +162,7 @@ The following is a complete list of StorageGRID services.
 |	Publishes system-level statistics for Prometheus time series metric collection.
 |	All nodes
 
-| ntp
+| NTP
 |	Network time protocol (NTP) service.
 |	All nodes
 
