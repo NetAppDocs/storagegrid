@@ -297,7 +297,7 @@ sidebar:
         - title: Primary or non-primary Admin Node
           pdf-filename: Recover from Admin Node failures    
           url: "/maintain/recovering-from-admin-node-failures.html"
-        - title: Recover from primary Admin Node failures
+        - title: Recover from primary Admin Node failures using the same primary Admin Node
           entries:
           - title: Recover the primary Admin Node using the same primary Admin Node
             pdf-filename: Recover the primary Admin Node using the same primary Admin Node
@@ -331,8 +331,6 @@ sidebar:
             url: "/maintain/assess-hotfix-requirement-during-primary-admin-node-recovery-using-npan.html"
           - title: Restore audit log on recovered primary Admin Node
             url: "/maintain/restoring-audit-log-on-recovered-primary-admin-node-using-npan.html"
-          - title: Restore Admin Node database when recovering primary Admin Node
-            url: "/maintain/restoring-admin-node-database-primary-admin-node-using-npan.html"
           - title: Restore Prometheus metrics when recovering primary Admin Node
             url: "/maintain/restoring-prometheus-metrics-primary-admin-node-using-npan.html"            
         - title: Recover from non-primary Admin Node failures

@@ -18,7 +18,6 @@ Follow these high-level steps to recover a primary Admin Node using a non-primar
 . link:selecting-start-recovery-to-configure-primary-admin-node.html[Select Start Recovery to configure primary Admin Node]
 . link:assess-hotfix-requirement-during-primary-admin-node-recovery-using-npan.html[Determine hotfix requirement for primary Admin Node]
 . link:restoring-audit-log-on-recovered-primary-admin-node-using-npan.html[Restore audit log on recovered primary Admin Node]
-. link:restoring-admin-node-database-primary-admin-node-using-npan.html[Restore Admin Node database when recovering primary Admin Node]
 . link:restoring-prometheus-metrics-primary-admin-node-using-npan.html[Restore Prometheus metrics when recovering primary Admin Node]
 
 // 2025 NOV 18, storagegrid-issues-39

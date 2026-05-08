@@ -50,7 +50,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | 80
 | TCP
 | Appliances
-| Primary Admin Node
+| Primary Admin Node and non-primary Admin Node
 | Used by StorageGRID appliances to communicate with the primary Admin Node to start the installation.
 
 | 123
@@ -62,13 +62,13 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | 443
 | TCP
 | All nodes
-| Primary Admin Node
+| Primary Admin Node and non-primary Admin Node
 | Used for communicating status to the primary Admin Node during installation and other maintenance procedures.
 
 | 1055
 | TCP
 | All nodes
-| Non-primary Admin Node (optional) and Primary Admin Node
+| Primary Admin Node and non-primary Admin Node
 | Internal traffic for installation, expansion, recovery, and other maintenance procedures.
 
 | 1139
@@ -142,13 +142,13 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | 7443
 | TCP
 | All nodes
-| Non-primary Admin Node (optional) and Primary Admin Node
+| Primary Admin Node and non-primary Admin Node
 | Internal traffic for installation, expansion, recovery, other maintenance procedures, and error reporting.
 
 | 8011
 | TCP
 | All nodes
-| Non-primary Admin Node (optional) and Primary Admin Node
+| Primary Admin Node and non-primary Admin Node
 | Internal traffic for installation, expansion, recovery, and other maintenance procedures.
 
 | 8443
@@ -178,7 +178,7 @@ NOTE: Support for port remapping is deprecated and will be removed in a future r
 | 10342
 | TCP
 | All nodes
-| Non-primary Admin Node (optional) and Primary Admin Node
+| Primary Admin Node and non-primary Admin Node
 | Internal traffic for installation, expansion, recovery, and other maintenance procedures.
 
 | 18000
