@@ -13,10 +13,6 @@ You use PingFederate to create a service provider (SP) connection for each Admin
 
 .Before you begin
 
-* You have the *SP connection ID* for each Admin Node in your system.
-+
-NOTE: Each Admin Node in your StorageGRID system must have an SP connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single SP connection for all Admin Nodes (recommended) or a different SP connection for each Admin Node.
-
 * You have experience creating SP connections in PingFederate Server.
 
 * You have the
@@ -67,6 +63,8 @@ If you haven't already, create a password credential validator.
 
 == Step 3: Create IdP adapter instance[[adapter-instance-oidc]]
 If you haven't already, create an IdP (identity provider) adapter instance.
+
+NOTE: Each Admin Node in your StorageGRID system must have an IdP connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single IdP connection for all Admin Nodes (recommended) or a different IdP connection for each Admin Node.
 
 .Steps
 
@@ -252,6 +250,7 @@ This generates the secret key for the client. Save this key for use later.
 * REDIRECT URIS: Provide the StorageGRID return URLs in the *Redirect URI* section. These URLs should match the URLs configured in StorageGRID for OAuth: For example:
 * `\https://<Admin IP or Hostname>/api/v4/oidc-callback`
 * `\https://<Admin IP or Hostname>/api/v4/oidc-logged-out`
+
 * ALLOWED GRANT TYPES: Select the following options:
 +
 ** *Authorization Code*: This initiates the OAuth flow.

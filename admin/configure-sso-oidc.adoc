@@ -15,7 +15,7 @@ Follow the Configure SSO wizard for OpenID Connect (OIDC) and enter sandbox mode
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access permission].
-* You have configured an identity provider for your StorageGRID system.
+* You have configured the OIDC client in the SSO identity provider for your StorageGRID system.
 
 == Step 1: Provide identity provider details
 

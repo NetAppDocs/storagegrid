@@ -11,19 +11,19 @@ summary: "Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the
 [.lead]
 Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests.
 
-You set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. You follow these high-level steps to set up SSO in StorageGRID using OIDC. To learn about setting up SSO using SAML, refer to link:configure-sso-saml.html[Configure SSO using SAML].
+You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using OIDC. To learn about setting up SSO using SAML, refer to link:configure-sso-saml.html[Configure SSO using SAML].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Configure identity provider
 
 [role="quick-margin-para"]
-Based on the SSO identity provider you plan to use, you select either Active Directory or Entra ID for the identity federation LDAP service type.
+Based on the SSO identity provider you plan to use, you can select either Active Directory or Entra ID for the identity federation LDAP service type.
 
 [role="quick-margin-list"]
-* For Active Directory Federation Service (AD FS), you can use the Entra ID, Keycloak, Okta, or PingFederate identity provider.
+* For Active Directory Federation Service (AD FS), you can use the AD FS, Entra ID, Keycloak, Okta, or PingFederate identity provider.
 * For Entra ID, you can only use the Entra ID identity provider.
 
 [role="quick-margin-para"]
-You use the SSO identity provider's software to configure OIDC for each Admin Node in your grid.
+Use the SSO identity provider's software to configure OIDC for each Admin Node in your grid.
 
 [role="quick-margin-list"]
 * Learn about link:creating-relying-party-trusts-in-ad-fs-oidc.html[creating an application group for each Admin Node] in Active Directory
@@ -33,7 +33,7 @@ You use the SSO identity provider's software to configure OIDC for each Admin No
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Configure SSO
 
 [role="quick-margin-para"]
-You select the Configure SSO wizard for OIDC. Then, you configure SSO with your identity provider and enter sandbox mode to configure and test SSO before enabling it for StorageGRID users. 
+Select the Configure SSO wizard for OIDC. Then, configure SSO with your identity provider and enter sandbox mode to configure and test SSO before enabling it for StorageGRID users. 
 
 [role="quick-margin-para"]
 Learn about link:configure-sso-oidc.html[configuring SSO using OIDC]
@@ -41,7 +41,7 @@ Learn about link:configure-sso-oidc.html[configuring SSO using OIDC]
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Enable SSO
 
 [role="quick-margin-para"]
-After confirming that you can use SSO to sign in to each Admin Node, you enable SSO for all StorageGRID users.
+After confirming that you can use SSO to sign in to each Admin Node, enable SSO for all StorageGRID users.
 
 [role="quick-margin-para"]
 Learn about link:configure-sso-oidc.html#enable-sso-oidc[enabling SSO for StorageGRID users]
