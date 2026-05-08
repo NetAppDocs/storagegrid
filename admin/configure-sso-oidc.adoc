@@ -16,6 +16,7 @@ Follow the Configure SSO wizard for OpenID Connect (OIDC) and enter sandbox mode
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access permission].
 * You have configured the OIDC client in the SSO identity provider for your StorageGRID system.
+* You have link:using-identity-federation.html[configured identity federation] for your StorageGRID system. 
 
 == Step 1: Provide identity provider details
 
@@ -52,7 +53,7 @@ Complete the fields in the Enter client information step of the wizard.
 
 * If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows the OIDC configuration for each Admin Node in the grid, based on the node's hostname.
 +
-NOTE: You must configure OIDC for each Admin Node in your StorageGRID system. Having an OIDC configuration for each Admin Node ensures that users can securely sign in to and out of any Admin Node.
+NOTE: You must configure OIDC for the Admin Nodes in your StorageGRID system. This ensures that users can securely sign in to and out of any Admin Node. You can use the same OIDC configuration for all Admin Nodes (recommended) or set up a different OIDC configuration for each Admin Node.
 
 . Enter the *Client ID*, *Client secret*, and *OpenID endpoint URL* for each relying party identifier.
 
