@@ -111,7 +111,7 @@ The following is a complete list of StorageGRID services.
 | All nodes
 
 | gdu-server
-| The backend task runner for grid maintenance and provisioning actions. Accepts requests from `mgmt-api` and other utility scripts, validates them, and dispatches each action to the appropriate GDU task handler, such as provisioning, expansion, decommission, and upgrades. Logs results and returns structured responses.
+| The backend task runner for grid maintenance and provisioning actions. Accepts requests from `mgmt-api` and other utility scripts, validates them, and dispatches each action to the appropriate GDU task handler, such as provisioning, expansion, decommission, and upgrades.
 | Admin Nodes
 
 | Grafana
@@ -139,7 +139,7 @@ The following is a complete list of StorageGRID services.
 | Storage Nodes
 
 | mgmt-api
-| The Grid Manager backend API. Exposes authenticated REST endpoints for administering the grid (configuration, monitoring, and maintenance workflows), enforces validations and permissions, and orchestrates long-running operations by invoking services like gdu-server and other internal components. The primary control-plane API used by the UI and automation clients.
+| The Grid Manager backend API. Exposes authenticated REST endpoints for administering the grid (configuration, monitoring, and maintenance workflows), enforces validations and permissions, and orchestrates long-running operations. The primary control-plane API used by the Grid Manager interface and automation clients.
 | Admin Nodes
 
 | MISCd Information Service Control Daemon
