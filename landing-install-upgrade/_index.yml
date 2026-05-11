@@ -27,7 +27,7 @@ indexpage:
   - title: Upgrade or hotfix
     links:
     - title: What's new
-      url: ../upgrade/whats-new.html
+      url: ../release-notes/whats-new.html
     - title: Estimate time to complete
       url: ../upgrade/estimating-time-to-complete-upgrade.html
     - title: How your system is affected during upgrade

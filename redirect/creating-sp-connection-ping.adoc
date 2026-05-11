@@ -1,0 +1,4 @@
+---
+permalink: admin/creating-sp-connection-ping.html
+redirect: storagegrid/admin/creating-sp-connection-ping-saml.html
+---

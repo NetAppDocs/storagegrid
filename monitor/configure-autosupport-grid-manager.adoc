@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to configure autosupport, what is autosupport-on-demand
 summary: 'The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Digital Advisor for predictive recommendations.'
 ---
-= Configure AutoSupport
+= Configure AutoSupport in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
