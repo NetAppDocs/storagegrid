@@ -58,7 +58,7 @@ When prompted, enter the password for the admin user account.
 +
 When prompted, enter the password for the admin user account.
 
-. Log out as root user:`exit`
+. Log out as root user: `exit`.
 
 // 2025 AUG 6, SGRIDDOC-172
 // 2026-04-24, SGWS-34291
