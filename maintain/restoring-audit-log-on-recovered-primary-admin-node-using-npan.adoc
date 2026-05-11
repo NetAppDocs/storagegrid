@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, restore audit log, primary admin node
 summary: 'Restore the audit log on the recovered primary Admin Node by using a non-primary Admin Node.'
 ---
-= Restore audit log on recovered primary Admin Node
+= Restore the StorageGRID audit log on a recovered primary Admin Node
 :icons: font
 :imagesdir: ../media/
 

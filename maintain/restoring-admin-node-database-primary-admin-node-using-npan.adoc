@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, admin node database, primary admin node
 summary: 'Restore the Admin Node database when recovering a primary Admin Node by using a non-primary Admin Node.'
 ---
-= Restore Admin Node database when recovering primary Admin Node
+= Restore the StorageGRID Admin Node database when recovering the primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
@@ -47,12 +47,12 @@ NOTE: Copying the Admin Node database might take several hours. Some Grid Manage
   ... Enter the password listed in the `Passwords.txt` file.
  .. Stop the MI service: `service mi stop`
  .. Stop the mgmt-api service: `service mgmt-api stop`
- .. Add the SSH private key to the SSH agent. Enter:``ssh-add``
+ .. Add the SSH private key to the SSH agent. Enter:`ssh-add`
  .. Enter the SSH Access Password listed in the `Passwords.txt` file.
  .. When prompted, confirm that you want to overwrite the MI database on the recovered Admin Node.
 +
 The database and its historical data are copied to the recovered Admin Node. When the copy operation is done, the script starts the recovered Admin Node.
 
- .. When you no longer require passwordless access to other servers, remove the private key from the SSH agent. Enter:``ssh-add -D``
+ .. When you no longer require passwordless access to other servers, remove the private key from the SSH agent. Enter:`ssh-add -D`
 . Restart the services on the source Admin Node: `service servermanager start`
 // 2026-03-12, SGWS-34291

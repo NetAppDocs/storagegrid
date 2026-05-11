@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, prometheus, metrics, primary admin node
 summary: 'Restore Prometheus metrics when recovering a primary Admin Node by using a non-primary Admin Node.'
 ---
-= Restore Prometheus metrics when recovering primary Admin Node
+= Restore Prometheus metrics when recovering a StorageGRID primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
