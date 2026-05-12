@@ -183,6 +183,10 @@ Temporary security credentials created from assuming this group are valid for a 
 }
 ----
 
+The Principal:
+
+include::../_include/principal-in-s3-bucket-policy.adoc[]
+
 After configuration is complete, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
 The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/use-access-policies.html[Use access policies].
 

@@ -56,12 +56,12 @@ NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the A
 The following request headers aren't supported:
 
 * `If-Match`
-* `If-None-Match` 
 +
-The `If-Match header` is accepted but non-functional.
+The `If-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
 * `If-None-Match`
 +
-The `If-None-Match header` is accepted but non-functional.
+The `If-None-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-None-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+
 * `x-amz-checksum-md5`
 * `x-amz-checksum-sha1`
 * `x-amz-checksum-xxhash3`
