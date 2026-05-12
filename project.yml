@@ -31,7 +31,7 @@ sidebar:
       url: "/swnodes/storagegrid-hardware.html"
     - title: Release notes
       entries:
-        - title: What's new in StorageGRID 12.0
+        - title: What's new in StorageGRID 12.1
           url: /release-notes/whats-new.html
         - title: Removed or deprecated features and capabilities
           url: /release-notes/removed-or-deprecated-features.html
