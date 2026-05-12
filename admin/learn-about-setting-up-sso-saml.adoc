@@ -11,7 +11,7 @@ summary: "Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the
 [.lead]
 Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests.
 
-You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using SAML. To learn about setting up SSO using OIDC, refer to link:configure-sso-oidc.html[Configure SSO using OIDC].
+You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using SAML or learn about link:learn-about-setting-up-sso-oidc.html[setting up SSO using OIDC].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Configure SSO
 
@@ -34,9 +34,9 @@ Based on the SSO identity provider you plan to use, you can select either Active
 Use the SSO identity provider's software to configure SAML for each Admin Node in your grid. 
 
 [role="quick-margin-list"]
-* Learn about link:creating-relying-party-trusts-in-ad-fs.html[creating an application group for each Admin Node] in Active Directory
-* Learn about link:creating-enterprise-application-entra-id.html[creating an application for each Admin Node] in Entra ID
-* Learn about link:creating-sp-connection-ping.html[creating a service provider connection for each Admin Node] in PingFederate
+* Learn about link:creating-relying-party-trusts-in-ad-fs-saml.html[creating an application group for each Admin Node] in Active Directory
+* Learn about link:creating-enterprise-application-entra-id-saml.html[creating an application for each Admin Node] in Entra ID
+* Learn about link:creating-sp-connection-ping-saml.html[creating a service provider connection for each Admin Node] in PingFederate
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Test configuration
 
