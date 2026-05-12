@@ -50,6 +50,7 @@ The following request headers aren't supported:
 * `x-amz-trailer`
 * `x-amz-checksum-md5`
 * `x-amz-checksum-sha1`
+* `x-amz-checksum-sha512`
 * `x-amz-checksum-xxhash3`
 * `x-amz-checksum-xxhash64`
 * `x-amz-checksum-xxhash128`
