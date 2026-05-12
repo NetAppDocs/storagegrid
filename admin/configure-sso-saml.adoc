@@ -247,7 +247,7 @@ If you see a Page Expired message, select the *Back* button in your browser and 
 --
 ====
 
-== Step 5: Enable single sign-on
+== [[enable-sso-saml]]Step 5: Enable single sign-on
 
 When you have confirmed that you can use SSO to sign in to each Admin Node, you can enable SSO for your entire StorageGRID system.
 
