@@ -80,6 +80,8 @@ entries:
           url: "/admin/configure-sso-oidc.html"
       - title: Set up SSO with SAML
         entries:
+        - title: Learn about 
+          url: "/admin/learn-about-setting-up-sso-saml.html"
         - title: Configure SSO
           url: "/admin/configure-sso-saml.html"
         - title: Create relying party trusts in AD FS

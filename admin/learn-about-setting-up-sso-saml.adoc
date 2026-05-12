@@ -1,0 +1,56 @@
+---
+permalink: admin/learn-about-setting-up-sso-saml.html
+sidebar: sidebar
+keywords: use sandbox mode for sso, how to test single sign-on
+summary: "Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests."
+---
+= Learn about setting up SSO in StorageGRID using SAML
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests.
+
+You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using SAML. To learn about setting up SSO using OIDC, refer to link:configure-sso-oidc.html[Configure SSO using OIDC].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Configure SSO
+
+[role="quick-margin-para"]
+Select the Configure SSO wizard for SAML. Then, configure SSO with your identity provider and enter sandbox mode. 
+
+[role="quick-margin-para"]
+Learn about link:configure-sso-saml.html[configuring SSO using SAML]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Configure identity provider
+
+[role="quick-margin-para"]
+Based on the SSO identity provider you plan to use, you can select either Active Directory or Entra ID for the identity federation LDAP service type.
+
+[role="quick-margin-list"]
+* For Active Directory Federation Service (AD FS), you can use the AD FS, Entra ID, or PingFederate identity provider.
+* For Entra ID, you can only use the Entra ID identity provider.
+
+[role="quick-margin-para"]
+Use the SSO identity provider's software to configure SAML for each Admin Node in your grid. 
+
+[role="quick-margin-list"]
+* Learn about link:creating-relying-party-trusts-in-ad-fs.html[creating an application group for each Admin Node] in Active Directory
+* Learn about link:creating-enterprise-application-entra-id.html[creating an application for each Admin Node] in Entra ID
+* Learn about link:creating-sp-connection-ping.html[creating a service provider connection for each Admin Node] in PingFederate
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Test configuration
+
+[role="quick-margin-para"]
+After configuring SAML for each Admin Node, return to the Configure SSO wizard and test the configuration.
+
+[role="quick-margin-para"]
+Learn about link:configure-sso-saml.html#test-sso[testing the configuration for SSO]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Enable SSO
+
+[role="quick-margin-para"]
+Enable SSO for all StorageGRID users.
+
+[role="quick-margin-para"]
+Learn about link:configure-sso-saml.html#enable-sso-saml[enabling SSO for StorageGRID users]
+// 2026 MAY 12, SGRIDDOC-248

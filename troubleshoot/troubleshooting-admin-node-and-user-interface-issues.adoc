@@ -40,7 +40,7 @@ If the error is not resolved automatically, go to the next step.
 
 . Determine if the node's hardware is offline.
 
-. If single sign-on (SSO) is enabled for your StorageGRID system, refer to configure SSO using link:../admin/configure-sso-saml.html[SAML] or link:../admin/learn-about-setting-up-sso-oidc.html[OIDC].
+. If single sign-on (SSO) is enabled for your StorageGRID system, refer to set up SSO using link:../admin/learn-about-setting-up-sso-oidc.html[OIDC] or link:../admin/learn-about-setting-up-sso-saml.html[SAML].
 +
 You might need to temporarily disable and re-enable SSO for a single Admin Node to resolve any issues.
 
