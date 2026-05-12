@@ -17,6 +17,10 @@ For details about fixed issues and known issues in recent StorageGRID 12.1 relea
 === EC rebalance now uses free space
 EC rebalance now uses free space instead of used space. Refer to link:../expand/considerations-for-rebalancing-erasure-coded-data.html#what-is-ec-rebalancing[Learn about EC rebalancing after expansion in StorageGRID].
 
+== Control access
+=== SSO using OIDC
+You can now link:../admin/learn-about-setting-up-sso-oidc.html[set up single sign-on (SSO) in StorageGRID using OpenID Connect (OIDC)].
+
 === Metadata allowed space
 Increased maximum allowed metadata value from 3.96 TB to 7.92 TB. Refer to link:../admin/managing-object-metadata-storage.html#allowed-metadata-space[Allowed metadata space].
 
