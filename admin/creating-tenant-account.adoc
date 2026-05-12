@@ -18,7 +18,7 @@ The steps for creating a tenant account vary based on whether link:using-identit
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access or Tenant accounts permission].
 * If the tenant account will use the identity source that was configured for the Grid Manager, and you want to grant Root access permission for the tenant account to a federated group, you have imported that federated group into the Grid Manager. You don't need to assign any Grid Manager permissions to this admin group. See  link:managing-admin-groups.html[Manage admin groups].
-* If you want to allow an S3 tenant to clone account data and replicate bucket objects to another grid using a grid federation connection:
+* If you want to allow an S3 tenant to sync account data and replicate bucket objects to another grid using a grid federation connection:
 
 ** You have link:grid-federation-create-connection.html[configured the grid federation connection].
 ** The status of the connection is *Connected*.
@@ -83,9 +83,11 @@ include::../_include/tenant-account-permissions.adoc[]
 | Permission | If selected...
 
 | Grid federation connection
-| The tenant can use a grid federation connection, which:
+| The tenant can use grid federation connections, which:
 
-* Causes this tenant and all tenant groups and users added to the account to be cloned from this grid (the _source grid_) to the other grid in the selected connection (the _destination grid_). 
+* Causes this tenant account and all tenant groups, users, and S3 access keys to be synced between this grid and the other grids in the selected connections.
++
+TIP: If needed for security or compliance reasons, you can deselect *Enable access key sync*.
 
 * Allows this tenant to configure cross-grid replication between corresponding buckets on each grid.
 
@@ -132,15 +134,9 @@ A success message appears, and the new tenant is listed on the Tenants page. To 
 +
 include::../_include/tenant-settings-delay.adoc[]
 
-. If you selected the *Use grid federation connection* permission for the tenant:
-
-.. Confirm that an identical tenant was replicated to the other grid in the connection. The tenants on both grids will have the same 20-digit account ID, name, description, quota, and permissions.
+. If you selected the *Use grid federation connection* permission for the tenant, confirm that an identical tenant was replicated to the other grid in the connection. The tenants on both grids will have the same 20-digit account ID, name, description, quota, and permissions.
 +
-NOTE: If you see the error message "Tenant created without a clone," refer to the instructions in link:grid-federation-troubleshoot.html[Troubleshoot grid federation errors].
-
-.. If you provided a local root user password when defining root access, link:changing-password-for-tenant-local-root-user.html[change the password for the local root user] for the replicated tenant. 
-+
-TIP: A local root user can't sign in to Tenant Manager on the destination grid until the password is changed.
+NOTE: If you see an error message that indicates the tenant account was created on this grid but wasn't synced to the other grids, refer to the instructions in link:grid-federation-troubleshoot.html[Troubleshoot grid federation errors].
 
 == Sign in to tenant (optional)
 As required, you can sign in to the new tenant now to complete the configuration, or you can sign in to the tenant later. The sign-in steps depend on whether you are signed in to the Grid Manager using the default port (443) or a restricted port. See link:controlling-access-through-firewalls.html[Control access at external firewall].
@@ -210,4 +206,4 @@ The URL for the Tenant Manager has this format:
 
 == Configure the tenant
 
-Follow the instructions in link:../tenant/index.html[Use a tenant account] to manage tenant groups and users, S3 access keys, buckets, platform services, and account clone and cross-grid replication.
+Follow the instructions in link:../tenant/index.html[Use a tenant account] to manage tenant groups and users, S3 access keys, buckets, platform services, and account sync and cross-grid replication.

@@ -22,7 +22,7 @@ You can disable single sign-on (SSO) if you no longer want to use this functiona
 +
 The Single Sign-on page appears.
 
-. Select *Disable SSO*.
+. Select *Disable*.
 . Select *Yes*.
 +
 A warning message appears indicating that local users will now be able to sign in.

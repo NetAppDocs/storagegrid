@@ -66,31 +66,61 @@ entries:
         url: "/admin/requirements-for-sso.html"
       - title: Confirm federated users can sign in
         url: "/admin/confirming-federated-users-can-sign-in.html"
-      - title: Configure SSO
-        url: "/admin/configure-sso.html"
-      - title: Create relying party trusts in AD FS
-        url: "/admin/creating-relying-party-trusts-in-ad-fs.html"
-      - title: Create enterprise applications in Entra ID
-        url: "/admin/creating-enterprise-application-entra-id.html"          
-      - title: Create SP connections in PingFederate
-        url: "/admin/creating-sp-connection-ping.html"
+      - title: Set up SSO with OIDC
+        entries:
+        - title: Learn about 
+          url: "/admin/learn-about-setting-up-sso-oidc.html"
+        - title: Create application groups in AD FS
+          url: "/admin/creating-relying-party-trusts-in-ad-fs-oidc.html" 
+        - title: Create applications in Entra ID
+          url: "/admin/creating-enterprise-application-entra-id-oidc.html"    
+        - title: Create SP connections in PingFederate
+          url: "/admin/creating-sp-connection-ping-oidc.html"
+        - title: Configure SSO 
+          url: "/admin/configure-sso-oidc.html"
+      - title: Set up SSO with SAML
+        entries:
+        - title: Configure SSO
+          url: "/admin/configure-sso-saml.html"
+        - title: Create relying party trusts in AD FS
+          url: "/admin/creating-relying-party-trusts-in-ad-fs-saml.html"
+        - title: Create enterprise applications in Entra ID
+          url: "/admin/creating-enterprise-application-entra-id-saml.html"     
+        - title: Create SP connections in PingFederate
+          url: "/admin/creating-sp-connection-ping-saml.html"
       - title: Disable SSO
         url: "/admin/disabling-single-sign-on.html"
       - title: Temporarily disable and reenable SSO for one Admin Node
         url: "/admin/temporarily-disabling-and-reenabling-sso-for-admin-node.html"
+    - title: Use multi-admin verification
+      entries:
+      - title: Learn about multi-admin verification
+        url: "/admin/about-multi-admin-verify.html"
+      - title: Configure multi-admin verification
+        url: "/admin/configure-multi-admin-verify.html"
+      - title: Request approval for protected operations
+        url: "/admin/request-mav-approval-for-protected-ops.html"
+      - title: Manage protected operations requests
+        url: "/admin/manage-mav-protected-ops-requests.html"
   - title: Use grid federation
     entries:
     - title: What is grid federation
       pdf-filename: Use grid federation
       url: "/admin/grid-federation-overview.html"
-    - title: What is account clone 
-      url: "/admin/grid-federation-what-is-account-clone.html"
+    - title: What is account sync 
+      url: "/admin/grid-federation-what-is-account-sync.html"
     - title: What is cross-grid replication
       url: "/admin/grid-federation-what-is-cross-grid-replication.html"
     - title: Compare cross-grid replication and CloudMirror replication
-      url: "/admin/grid-federation-compare-cgr-to-cloudmirror.html"               
+      url: "/admin/grid-federation-compare-cgr-to-cloudmirror.html"
     - title: Create grid federation connections
-      url: "/admin/grid-federation-create-connection.html"      
+      url: "/admin/grid-federation-create-connection.html"
+    - title: Automate grid federation connections
+      url: "/admin/grid-federation-automate-connections.html"
+    - title: Learn about global namespace
+      url: "/admin/learn-about-global-namespace.html"
+    - title: Configure global namespace
+      url: "/admin/configure-global-namespace.html"
     - title: Manage grid federation connections
       url: "/admin/grid-federation-manage-connection.html" 
     - title: Manage permitted tenants
@@ -98,7 +128,7 @@ entries:
     - title: Troubleshoot grid federation errors
       url: "/admin/grid-federation-troubleshoot.html" 
     - title: Identify and retry failed replication operations
-      url: "/admin/grid-federation-retry-failed-replication.html"    
+      url: "/admin/grid-federation-retry-failed-replication.html"
   - title: Manage security
     entries:  
     - title: Security components
@@ -256,19 +286,6 @@ entries:
       url: "/admin/benefits-of-active-idle-and-concurrent-http-connections.html" 
     - title: Manage link costs
       url: "/admin/manage-link-costs.html"
-  - title: Use AutoSupport
-    entries:
-    - title: What is AutoSupport
-      pdf-filename: Use AutoSupport
-      url: "/admin/what-is-autosupport.html"
-    - title: Configure AutoSupport
-      url: "/admin/configure-autosupport-grid-manager.html"
-    - title: Manually trigger an AutoSupport package
-      url: "/admin/manually-triggering-autosupport-message.html"
-    - title: Troubleshoot AutoSupport packages
-      url: "/admin/troubleshooting-autosupport-messages.html"
-    - title: Send E-Series AutoSupport packages through StorageGRID
-      url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Manage Storage Nodes
     entries:
     - title: Use Storage options

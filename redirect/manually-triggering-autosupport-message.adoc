@@ -1,0 +1,4 @@
+---
+permalink: monitor/manually-triggering-autosupport-message.html
+redirect: storagegrid/monitor/manually-triggering-autosupport-package.html
+---

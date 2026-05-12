@@ -189,3 +189,7 @@ When you save a Cloud Storage Pool, StorageGRID does the following:
 If Cloud Storage Pool validation fails, you receive an error message that explains why validation failed. For example, an error might be reported if there is a certificate error or if the bucket or container you specified does not already exist.
 
 . If an error occurs, see the link:troubleshooting-cloud-storage-pools.html[instructions for troubleshooting Cloud Storage Pools], resolve any issues, and then try saving the Cloud Storage Pool again.
+
+.Related information
+
+link:../network/external-communications.html[Ports used for external communications]

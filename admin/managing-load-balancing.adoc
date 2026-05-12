@@ -135,7 +135,7 @@ Subject DN: /C=Country/ST=State/O=Company,Inc./CN=s3.storagegrid.example.com
 As required, the certificate can use wildcards to represent the fully qualified domain names of all Admin Nodes and Gateway Nodes running the Load Balancer service. For example, `*.storagegrid._example_.com` uses the * wildcard to represent `adm1.storagegrid._example_.com` and `gn1.storagegrid._example_.com`. 
 
 
-If you plan to use S3 virtual hosted-style requests, the certificate must also include an *Alternative Name* entry for each link:../admin/configuring-s3-api-endpoint-domain-names.html[S3 endpoint domain name] you have configured, including any wildcard names. For example:
+If you plan to use S3 virtual-hosted-style requests, the certificate must also include an *Alternative Name* entry for each link:../admin/configuring-s3-api-endpoint-domain-names.html[S3 endpoint domain name] you have configured, including any wildcard names. For example:
 
 ----
 Alternative Name: DNS:*.s3.storagegrid.example.com

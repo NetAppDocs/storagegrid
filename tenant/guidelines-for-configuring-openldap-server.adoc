@@ -29,3 +29,4 @@ olcDbIndex: entryUUID eq
 In addition, ensure the fields mentioned in the help for Username are indexed for optimal performance.
 
 See the information about reverse group membership maintenance in the _OpenLDAP Software Administrator's Guide_.
+

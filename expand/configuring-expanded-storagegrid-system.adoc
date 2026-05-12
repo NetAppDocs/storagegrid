@@ -44,12 +44,9 @@ link:rebalancing-erasure-coded-data-after-adding-storage-nodes.html[Rebalance er
 
 . If you added an Admin Node:
 
-.. If single sign-on (SSO) is enabled for your StorageGRID system, create a relying party trust for the new Admin Node. You can't sign in to the node until you create this relying party trust. See
-link:../admin/configure-sso.html[Configure single sign-on].
+.. If single sign-on (SSO) is enabled for your StorageGRID system, create a relying party trust for the new Admin Node. You can't sign in to the node until you create this relying party trust. Refer to configure SSO using link:../admin/configure-sso-saml.html[SAML] or link:../admin/learn-about-setting-up-sso-oidc.html[OIDC].
 
 .. If you plan to use the Load Balancer service on Admin Nodes, optionally add the new Admin Node to an HA group. Select *Configuration* > *Network* > *High availability groups* to review the list of existing HA groups and to add the new node. See link:../admin/configure-high-availability-group.html[Configure high availability groups].
-
-.. Optionally, copy the Admin Node database from the primary Admin Node to the expansion Admin Node if you want to keep the attribute and audit information consistent on each Admin Node. See link:copying-admin-node-database.html[Copy the Admin Node database].
 
 .. Optionally, copy the Prometheus database from the primary Admin Node to the expansion Admin Node if you want to keep the historical metrics consistent on each Admin Node. See  link:copying-prometheus-metrics.html[Copy Prometheus metrics].
 
