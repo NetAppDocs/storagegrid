@@ -25,8 +25,7 @@ Refer to the following for more information:
 
 The ListObjects (GET Bucket) and ListObjectVersions (GET Bucket object versions) operations support StorageGRID link:consistency.html[consistency values].
 
-You can check whether updates to last access time are enabled or disabled for individual buckets. Refer to 
-link:get-bucket-last-access-time-request.html[GET Bucket last access time].
+You can check whether updates to last access time are enabled or disabled for individual buckets. Refer to link:get-bucket-last-access-time-request.html[GET Bucket last access time].
 
 The following table describes how StorageGRID implements S3 REST API bucket operations. To perform any of these operations, the necessary access credentials must be provided for the account.
 

@@ -15,7 +15,10 @@ To install a Gateway Node or Admin Node on a services appliance, you use the Sto
 
 * The appliance is installed in a rack, connected to your networks, and powered on.
 * Network links and IP addresses are configured for the appliance using the StorageGRID Appliance Installer.
-* If you are installing a Gateway Node or non-primary Admin Node, you know the IP address of the primary Admin Node for the StorageGRID grid.
+* If you are installing a Gateway Node or a non-primary Admin Node, you know the IP address for either of the following Admin Nodes:
+** The primary Admin Node for the StorageGRID grid
+** A non-primary Admin Node, if one is available and if it's being used to recover the node
+* If you are recovering a node (including the Primary Admin Node) by using a non-primary Admin Node, you can specify that Admin Node's IP address.
 * All Grid Network subnets listed on the IP Configuration page of the StorageGRID Appliance Installer are defined in the Grid Network Subnet List on the primary Admin Node.
 +
 See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Quick start for hardware installation^].
@@ -30,8 +33,8 @@ NOTE: A recent version of StorageGRID software is preloaded onto the services ap
 
 To install StorageGRID software on a services appliance:
 
-* For a primary Admin Node, you specify the name of the node and then upload the appropriate software packages (if required).
-* For a non-primary Admin Node or a Gateway Node, you specify or confirm the IP address of the primary Admin Node and the name of the node.
+* For a primary Admin Node, you specify the name of the node and then upload the appropriate software packages (if required). If you are recovering the primary Admin Node and you have a non-primary Admin Node in your grid, you have the option of either recovering the node using a non-primary Admin Node and specifying the IP of that Admin Node or you can install or recover the node using your current configuration. 
+* For a non-primary Admin Node or a Gateway Node, you specify or confirm the IP address of the primary Admin Node and the name of the node. 
 * You start the installation and wait as volumes are configured and the software is installed.
 * Partway through the process, the installation pauses. To resume the installation, you must sign into the Grid Manager and configure the pending node as a replacement for the failed node.
 * After you have configured the node, the appliance installation process completes, and the appliance is rebooted.
@@ -47,19 +50,34 @@ The StorageGRID Appliance Installer Home page appears.
 . To install a primary Admin Node:
  .. In the This Node section, for *Node Type*, select *Primary Admin*.
  .. In the *Node Name* field, enter the same name that was used for the node you are recovering, and click *Save*.
- .. In the Installation section, check the software version listed under Current state
+ .. Select an appropriate mode from the two that are available in the Installation Mode section. You can select either the Install a node or recover this node using current configuration method or the Recover this node using a non-primary Admin Node method.
 +
-If the version of software that is ready to install is correct, skip ahead to the <<installation_section_step,Installation step>>.
 
- .. If you need to upload a different version of software, under the *Advanced* menu, select *Upload StorageGRID Software*.
+[role="tabbed-block"]
+====
+
+.Current configuration method
+--
+
+Install a node or recover this node using the current configuration.
+
+. In the Installation section, check the software version listed under Current state. If the version of software that is ready to install is correct, skip ahead to the <<installation_section_step,Installation step>>.
+. If you need to upload a different version of software, under the *Advanced* menu, select *Upload StorageGRID Software*. The Upload StorageGRID Software page appears.
+. Click *Browse* to upload the *Software Package* and *Checksum File* for StorageGRID software. The files are automatically uploaded after you select them.
+. Click *Home* to return to the StorageGRID Appliance Installer Home page.
+
+--
+.Non-primary Admin Node method
+--
+
+Recover this node using a non-primary Admin Node.
+
+. In the non-primary Admin Node IP field, enter the grid network IP address of the non-primary Admin Node you want to use for the recovery, and click *Save*.
+. If the version of software that is ready to install is correct, skip ahead to the <<installation_section_step,Installation step>>.
+  
+--
+====
 +
-The Upload StorageGRID Software page appears.
-
- .. Click *Browse* to upload the *Software Package* and *Checksum File* for StorageGRID software.
-+
-The files are automatically uploaded after you select them.
-
- .. Click *Home* to return to the StorageGRID Appliance Installer Home page.
 . To install a Gateway Node or non-primary Admin Node:
  .. In the This Node section, for *Node Type*, select *Gateway* or *Non-Primary Admin*, depending on the type of node you are restoring.
  .. In the *Node Name* field, enter the same name that was used for the node you are recovering, and click *Save*.
@@ -94,3 +112,4 @@ If the *Start Installation* button isn't enabled, you might need to change the n
 The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 +
 NOTE: If you need to access the Monitor Installation page manually, click *Monitor Installation* from the menu bar.
+// 2026-04-29,SGWS-34291

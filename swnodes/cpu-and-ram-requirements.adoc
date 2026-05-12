@@ -55,7 +55,7 @@ If you are using virtual machines as hosts and have control over the size and nu
 
 (RHEL, Debian, and Ubuntu only) For production deployments, you should not run multiple Storage Nodes on the same physical storage hardware or virtual host. Each Storage Node in a single StorageGRID deployment should be in its own isolated failure domain. You can maximize the durability and availability of object data if you ensure that a single hardware failure can only impact a single Storage Node.
 
-Refer to also link:storage-and-performance-requirements.html[Storage and performance requirements].
+Refer to link:storage-and-performance-requirements.html[Storage and performance requirements].
 
 // 2026 APR 21, SGWS-40729
 // 2026 MAR 12, SGRIDDOC-223
