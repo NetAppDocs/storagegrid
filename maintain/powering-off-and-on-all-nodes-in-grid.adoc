@@ -136,8 +136,6 @@ The StorageGRID grid has now been shut down.
 
 == Start up grid nodes
 
-CAUTION: If the entire grid has been shut down for more than 15 days, you must contact technical support before starting up any grid nodes. Don't attempt the recovery procedures that rebuild Cassandra data. Doing so might result in data loss.
-
 If possible, power on the grid nodes in this order:
 
 * Apply power to Admin Nodes first.
@@ -173,4 +171,5 @@ You can power on these nodes in any order.
 
 * https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
 
+// 2026 MAY 13, SGRIDDOC-245
 // 2025 APR 30, SGWS-34284
