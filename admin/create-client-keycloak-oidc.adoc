@@ -1,0 +1,125 @@
+---
+permalink: admin/create-client-keycloak-oidc.html
+sidebar: sidebar
+keywords: enterprise application, entra id, single sign on, sso
+summary: 'You use Keycloak to create a client connection for each Admin Node in your system.'
+---
+= Create client in Keycloak for OIDC in StorageGRID 
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use Keycloak to create a client connection for each Admin Node for OpenID Connect (OIDC) in your system.
+
+Each Admin Node in your StorageGRID system must have a client connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single client connection for all Admin Nodes (recommended) or a different client connection for each Admin Node.
+
+.Before you begin 
+* You have experience creating clients in Keycloak, or you have access to the Keycloak documentation.
+* You have a dedicated account that is used only for directory lookups.
+* You have Keycloak Administrator access.
+
+== Step 1: Create a realm
+If you haven't already, create a realm.
+
+.Steps
+. Select *Create Realm*.
+. Enter a name for the realm.
+. Select *Enabled*.
+. Select *Create*.
+
+== [[create-ldap-oidc]]Step 2: Configure LDAP provider
+Configure the LDAP provider to connect Keycloak to the AD FS LDAP server
+
+.Steps
+. Select *User federation* > *Add Ldap providers*.
+. Under the Settings tab, enter the following recommended values:
+* UI display name: Enter a unique value.
+* Vendor: *Active Directory*
+* Connection URL: `ldap://<IP_address>`
+* Connection pooling: *ON*
+* Edit mode: *READ_ONLY*
+* Users DN: For example, `CN=Users`, `DC=saml`, `DC=sgws`
+* Username LDAP attribute: *sAMAccountName*
+* RDN LDAP attribute:	*cn*
+* UUID LDAP attribute: *objectGUID*
+* User object classes:	`person`, `organizationalPerson`, `user`
+* User LDAP filter: `(sAMAccountName=*)`
+* Search scope: *Subtree*
+* Pagination: *ON*
+* Import users: *ON*
+* Sync registrations: *ON*
+* Remove invalid users during searches: *ON*
+. Under Connection and authentication settings, select *Test connection* and *Test authentication*.
+. Select *Save*.
+
+== Step 3: Configure LDAP mapping
+Configure LDAP mapping to map AD as an attribute to Keycloak.
+
+.Steps
+. Go to *User federation* > *LDAP*
+. Select the <<create-ldap-oidc,ldap>> you created. 
+. Select *Mappers* > *Add mapper* > *Create new mapper*. 
+. For Mapper Type, select *user-attribute-ldap-mapper*.
+. Select *Save*, then enter the following information:
+* User Model Attribute: *userPrincipalName*
+* LDAP Attribute: *userPrincipalName*
+* Read Only: *ON* 
+* Always Read Value From LDAP: *ON*
+* Is mandatory in LDAP: *OFF*
+* Force a Default value: *ON*
+. Select *Save*.
+
+== [[create-oidc-client]]Step 4: Create OIDC client
+Create the OIDC client for your system.
+
+.Steps
+. Go to *Clients* > *Create client*.
+. For General settings, enter the following information:
+* Client type: *OIDC Connect*
+* Client ID: Enter a unique value.
+. Select *Next*.
+. For Capability config, enter the following information:
+* Client authentication: *ON*
+* Authentication flow: *Enable*
+* Direct access grants: *Enable*
+* Service account roles: *Enable*
+. Select *Next*.
+. For Login settings, enter the redirect URIs:
+* Valid redirect URIS: `https://<IP_address>/api/v4/oidc-callback` and `https://<IP_address>/api/v4/oidc-logged-out`
+* Valid post logout redirect URIs: `https://<IP_address>/api/v4/oidc-logged-out`
+* Web origins: `https://<Admin_IP_or_FQDN>`
+. Select *Save*.
+
+== Step 5: Generate client secret 
+Generate a client secret for the OIDC client you created.
+
+.Steps
+. Go to *Clients*, then select the <<create-oidc-client,OIDC client>> you created.
+. On the *Credentials* tab, enter the following information
+* Client authenticator: *Client id and Secret*
+* Client secret: *Generate or set a client secret*
+
+== Step 6: Define scopes 
+Define the scopes in Keycloak.
+
+.Steps
+. Go to *Client Scopes* > *Create client scope*, then enter the following information:
+* Type: *None*
+* Protocol: *OpenID Connect*
+* Display on consent screen: *Enabled*
+* Include in Open ID Provide Metadata: *Enabled*
+. Select *Save*.
+. On the Mappers tab, select *Configure a new mapper* > *User Attribute*, then enter the following information:
+* User Attribute: *userPrincipalName*
+* Token Claim Name: *upn*
+* Claim JSON Type: *String*
+* Add to ID token: *ON*
+* Add to access token: *ON*
+* Add to userinfo: *ON*
+* Add to token introspection: *ON*
+. Select *Save*.
+. Go to *Client Scopes* > *Add client scope*.
+. Select the <<create-oidc-client,OIDC client>> you created.
+. Select *Add*.
+
+// 2026 MAY 13, SGRIDDOC-245
