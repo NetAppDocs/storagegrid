@@ -35,7 +35,7 @@ Configure the LDAP provider to connect Keycloak to the AD FS LDAP server
 . Under the Settings tab, enter the following recommended values:
 * UI display name: Enter a unique value.
 * Vendor: *Active Directory*
-* Connection URL: `ldap://<IP_address>`
+* Connection URL: `\https://<ldap_IP_address>`
 * Connection pooling: *ON*
 * Edit mode: *READ_ONLY*
 * Users DN: For example, `CN=Users`, `DC=saml`, `DC=sgws`
@@ -85,9 +85,9 @@ Create the OIDC client for your system.
 * Service account roles: *Enable*
 . Select *Next*.
 . For Login settings, enter the redirect URIs:
-* Valid redirect URIS: `https://<IP_address>/api/v4/oidc-callback` and `https://<IP_address>/api/v4/oidc-logged-out`
-* Valid post logout redirect URIs: `https://<IP_address>/api/v4/oidc-logged-out`
-* Web origins: `https://<Admin_IP_or_FQDN>`
+* Valid redirect URIS: `\https://<IP_address>/api/v4/oidc-callback` and `\https://<IP_address>/api/v4/oidc-logged-out`
+* Valid post logout redirect URIs: `\https://<IP_address>/api/v4/oidc-logged-out`
+* Web origins: `\https://<Admin_IP_or_FQDN>`
 . Select *Save*.
 
 == Step 5: Generate client secret 
