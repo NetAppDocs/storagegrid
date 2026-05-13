@@ -521,7 +521,7 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 |===
 
-[[use-putoverwriteobject-permission]]== Use PutOverwriteObject permission
+== [[use-putoverwriteobject-permission]]Use PutOverwriteObject permission
 
 The s3:PutOverwriteObject permission is a custom StorageGRID permission that applies to operations that create or update objects. The setting of this permission determines whether the client can overwrite an object's data, user-defined metadata, or S3 object tagging.
 
