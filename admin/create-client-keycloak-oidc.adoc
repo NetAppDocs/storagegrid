@@ -57,7 +57,7 @@ Configure LDAP mapping to map AD as an attribute to Keycloak.
 
 .Steps
 . Go to *User federation* > *LDAP*
-. Select the <<create-ldap-oidc,ldap>> you created. 
+. Select the <<create-ldap-oidc,LDAP provider>> you created. 
 . Select *Mappers* > *Add mapper* > *Create new mapper*. 
 . For Mapper Type, select *user-attribute-ldap-mapper*.
 . Select *Save*, then enter the following information:
