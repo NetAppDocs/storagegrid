@@ -1,7 +1,7 @@
 ---
 permalink: admin/create-client-keycloak-oidc.html
 sidebar: sidebar
-keywords: enterprise application, entra id, single sign on, sso
+keywords: keycloak, client, single sign on, sso
 summary: 'You use Keycloak to create a client connection for each Admin Node in your system.'
 ---
 = Create client in Keycloak for OIDC in StorageGRID 
@@ -13,7 +13,7 @@ Use Keycloak to create a client connection for each Admin Node for OpenID Connec
 
 .Before you begin 
 * You have experience creating clients in Keycloak, or you have access to the Keycloak documentation.
-* You have an account that is used only for directory lookups.
+* You have a dedicated account (Bind DN) for directory lookups and the login credentials.
 * You have Keycloak Administrator access.
 
 .About this task
@@ -29,7 +29,7 @@ Create a Keycloak realm to configure the LDAP provider and OIDC client, or use t
 . Select *Create*.
 
 == [[create-ldap-oidc]]Step 2: Configure LDAP provider
-Configure the LDAP provider so that Keycloak connects to the AD FS LDAP server
+Configure the LDAP provider so that Keycloak connects to the Active Directory Federation Service (AD FS) LDAP server.
 
 .Steps
 . Select *User federation* > *Add Ldap providers*.
@@ -39,6 +39,8 @@ Configure the LDAP provider so that Keycloak connects to the AD FS LDAP server
 * Vendor: *Active Directory*
 * Connection URL: `ldap://<ldap_IP_address>` or `ldaps://<ldap_IP_address>`
 * Connection pooling: *ON*
+* Bind DN: Enter your Bind DN
+* Bind credential: Enter password
 * Edit mode: *READ_ONLY*
 * Users DN: For example, `CN=Users`, `DC=saml`, `DC=sgws`
 * Username LDAP attribute: *sAMAccountName*
@@ -114,7 +116,7 @@ Define the scopes in Keycloak.
 * Type: *None*
 * Protocol: *OpenID Connect*
 * Display on consent screen: *Enabled*
-* Include in Open ID Provide Metadata: *Enabled*
+* Include in Open ID Provider Metadata: *Enabled*
 . Select *Save*.
 . On the Mappers tab, select *Configure a new mapper* > *User Attribute*, then enter the following information:
 * User Attribute: *userPrincipalName*
