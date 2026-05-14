@@ -9,7 +9,7 @@ summary: 'You use Keycloak to create a client connection for each Admin Node in 
 :imagesdir: ../media/
 
 [.lead]
-Use Keycloak to create a client connection for each Admin Node for OpenID Connect (OIDC) in your system.
+Use Keycloak to create a client connection for each Admin Node for OpenID Connect (OIDC) in your StorageGRID system.
 
 .Before you begin 
 * You have experience creating clients in Keycloak, or you have access to the Keycloak documentation.
