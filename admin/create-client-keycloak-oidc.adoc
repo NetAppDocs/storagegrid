@@ -11,15 +11,16 @@ summary: 'You use Keycloak to create a client connection for each Admin Node in 
 [.lead]
 Use Keycloak to create a client connection for each Admin Node for OpenID Connect (OIDC) in your system.
 
-Each Admin Node in your StorageGRID system must have a client connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single client connection for all Admin Nodes (recommended) or a different client connection for each Admin Node.
-
 .Before you begin 
 * You have experience creating clients in Keycloak, or you have access to the Keycloak documentation.
 * You have a dedicated account that is used only for directory lookups.
 * You have Keycloak Administrator access.
 
-== Step 1: Create a realm
-If you haven't already, create a realm.
+.About this task
+Each Admin Node in your StorageGRID system must have a client connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single client connection for all Admin Nodes (recommended) or a different client connection for each Admin Node.
+
+== Step 1: Optionally, create a realm
+You can create a Keycloak realm to configure the LDAP provider and OIDC client, or use the Keycloak default realm.
 
 .Steps
 . Select *Create Realm*.
@@ -32,10 +33,11 @@ Configure the LDAP provider to connect Keycloak to the AD FS LDAP server
 
 .Steps
 . Select *User federation* > *Add Ldap providers*.
-. Under the Settings tab, enter the following recommended values:
+. Under the Settings tab:
+.. Enter the following recommended values:
 * UI display name: Enter a unique value.
 * Vendor: *Active Directory*
-* Connection URL: `\https://<ldap_IP_address>`
+* Connection URL: `ldap://<ldap_IP_address>` or `ldaps://<ldap_IP_address>`
 * Connection pooling: *ON*
 * Edit mode: *READ_ONLY*
 * Users DN: For example, `CN=Users`, `DC=saml`, `DC=sgws`
@@ -49,7 +51,9 @@ Configure the LDAP provider to connect Keycloak to the AD FS LDAP server
 * Import users: *ON*
 * Sync registrations: *ON*
 * Remove invalid users during searches: *ON*
-. Under Connection and authentication settings, select *Test connection* and *Test authentication*.
+.. Select *Test connection* and *Test authentication*.
++
+You need to resolve any issues that might occur before continuing.
 . Select *Save*.
 
 == Step 3: Configure LDAP mapping
@@ -85,9 +89,12 @@ Create the OIDC client for your system.
 * Service account roles: *Enable*
 . Select *Next*.
 . For Login settings, enter the redirect URIs:
-* Valid redirect URIS: `\https://<IP_address>/api/v4/oidc-callback` and `\https://<IP_address>/api/v4/oidc-logged-out`
-* Valid post logout redirect URIs: `\https://<IP_address>/api/v4/oidc-logged-out`
-* Web origins: `\https://<Admin_IP_or_FQDN>`
++
+NOTE: If one or more load balancer endpoints are configured for the management interface, add the redirect URLs for each port. For example: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-logged-out`
+
+* Valid redirect URIS: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-logged-out`
+* Valid post logout redirect URIs: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-logged-out`
+* Web origins: `\https://<Admin_IP_address_or_FQDN>`
 . Select *Save*.
 
 == Step 5: Generate client secret 
@@ -121,5 +128,13 @@ Define the scopes in Keycloak.
 . Go to *Client Scopes* > *Add client scope*.
 . Select the <<create-oidc-client,OIDC client>> you created.
 . Select *Add*.
+
+== Step 7: Verify client configuration
+Use the information in the `well-known` configuration endpoint to verify the Keycloak client configuration.
+
+.Step
+. Collect the information in the `well-known` configuration endpoint:
++
+`\https://<keycloak_host_ip/keycloak_host_name>:<https_port>/realms/<realm_name>/.well-known/openid-configuration`
 
 // 2026 MAY 13, SGRIDDOC-245
