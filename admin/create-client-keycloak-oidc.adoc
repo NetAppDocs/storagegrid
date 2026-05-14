@@ -13,14 +13,14 @@ Use Keycloak to create a client connection for each Admin Node for OpenID Connec
 
 .Before you begin 
 * You have experience creating clients in Keycloak, or you have access to the Keycloak documentation.
-* You have a dedicated account that is used only for directory lookups.
+* You have an account that is used only for directory lookups.
 * You have Keycloak Administrator access.
 
 .About this task
 Each Admin Node in your StorageGRID system must have a client connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single client connection for all Admin Nodes (recommended) or a different client connection for each Admin Node.
 
 == Step 1: Optionally, create a realm
-You can create a Keycloak realm to configure the LDAP provider and OIDC client, or use the Keycloak default realm.
+Create a Keycloak realm to configure the LDAP provider and OIDC client, or use the Keycloak default realm.
 
 .Steps
 . Select *Create Realm*.
@@ -29,7 +29,7 @@ You can create a Keycloak realm to configure the LDAP provider and OIDC client, 
 . Select *Create*.
 
 == [[create-ldap-oidc]]Step 2: Configure LDAP provider
-Configure the LDAP provider to connect Keycloak to the AD FS LDAP server
+Configure the LDAP provider so that Keycloak connects to the AD FS LDAP server
 
 .Steps
 . Select *User federation* > *Add Ldap providers*.
@@ -53,7 +53,7 @@ Configure the LDAP provider to connect Keycloak to the AD FS LDAP server
 * Remove invalid users during searches: *ON*
 .. Select *Test connection* and *Test authentication*.
 +
-You need to resolve any issues that might occur before continuing.
+Resolve any issues that might occur before continuing.
 . Select *Save*.
 
 == Step 3: Configure LDAP mapping
