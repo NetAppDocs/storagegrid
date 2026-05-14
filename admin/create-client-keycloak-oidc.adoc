@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: keycloak, client, single sign on, sso
 summary: 'You use Keycloak to create a client connection for each Admin Node in your system.'
 ---
-= Create client in Keycloak for OIDC in StorageGRID 
+= Create clients in Keycloak for OIDC in StorageGRID 
 :icons: font
 :imagesdir: ../media/
 
