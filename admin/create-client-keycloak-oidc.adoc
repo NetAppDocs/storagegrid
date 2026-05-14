@@ -139,4 +139,7 @@ Use the information in the `well-known` configuration endpoint to verify the Key
 +
 `\https://<keycloak_host_ip/keycloak_host_name>:<https_port>/realms/<realm_name>/.well-known/openid-configuration`
 
+.What's next
+
+After creating OIDC clients, link:configure-sso-oidc.html[configure SSO using OIDC].
 // 2026 MAY 13, SGRIDDOC-245

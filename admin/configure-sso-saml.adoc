@@ -265,7 +265,7 @@ Single sign-on is now enabled. The Single sign-on page appears and now includes 
 TIP: If you are using the Azure Portal and you access StorageGRID from the same computer you use to access Entra ID, ensure that the Azure portal user is also an authorized StorageGRID user (a user in a federated group that has been imported into StorageGRID or log out of the Azure portal before attempting to sign in to StorageGRID. 
 
 .What's next?
-After configuring SSO using SAML, you configure the identity provider for the Admin Nodes.
+After configuring SSO using SAML, configure the identity provider for the Admin Nodes.
 
 [cols="1a,2a" options="header"]
 |===

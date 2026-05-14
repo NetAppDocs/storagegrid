@@ -87,5 +87,5 @@ Enter the URI for each Admin Node if you are using one application group for all
 
 .What's next
 
-After creating enterprise applications, you link:configure-sso-oidc.html[configure SSO using OIDC].
+After creating enterprise applications, link:configure-sso-oidc.html[configure SSO using OIDC].
 // 2026 MAR 31, SGWS-39432

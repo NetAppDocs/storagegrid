@@ -81,5 +81,5 @@ Configure the issuance transform rules for each application group.
 
 .What's next
 
-After creating application groups, you link:configure-sso-oidc.html[configure SSO using OIDC].
+After creating application groups, link:configure-sso-oidc.html[configure SSO using OIDC].
 // 2026 MAR 31, SGWS-39432
