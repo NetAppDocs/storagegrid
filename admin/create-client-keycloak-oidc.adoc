@@ -75,14 +75,14 @@ Configure LDAP mapping to map AD as an attribute to Keycloak.
 * Force a Default value: *ON*
 . Select *Save*.
 
-== [[create-oidc-client]]Step 4: Create OIDC client
+== [[create-client-oidc]]Step 4: Create OIDC client
 Create the OIDC client for your system.
 
 .Steps
 . Go to *Clients* > *Create client*.
 . For General settings, enter the following information:
 * Client type: *OIDC Connect*
-* Client ID: Enter a unique value.
+* Client ID: Enter a unique value. Save this value for use later.  
 . Select *Next*.
 . For Capability config, enter the following information:
 * Client authentication: *ON*
@@ -99,14 +99,14 @@ NOTE: If one or more load balancer endpoints are configured for the management i
 * Web origins: `\https://<Admin_IP_address_or_FQDN>`
 . Select *Save*.
 
-== Step 5: Generate client secret 
+== [[client-secret-oidc]]Step 5: Generate client secret 
 Generate a client secret for the OIDC client you created.
 
 .Steps
-. Go to *Clients*, then select the <<create-oidc-client,OIDC client>> you created.
+. Go to *Clients*, then select the <<create-client-oidc,OIDC client>> you created.
 . On the *Credentials* tab, enter the following information
 * Client authenticator: *Client id and Secret*
-* Client secret: *Generate or set a client secret*
+* Client secret: *Generate or set a client secret*. Save this value for use later.
 
 == Step 6: Define scopes 
 Define the scopes in Keycloak.
@@ -128,14 +128,15 @@ Define the scopes in Keycloak.
 * Add to token introspection: *ON*
 . Select *Save*.
 . Go to *Client Scopes* > *Add client scope*.
-. Select the <<create-oidc-client,OIDC client>> you created.
+. Select the <<create-client-oidc,OIDC client>> you created.
 . Select *Add*.
 
-== Step 7: Verify client configuration
-Use the information in the `well-known` configuration endpoint to verify the Keycloak client configuration.
+== Step 7: Prepare to configure SSO using OIDC
+Save the information required to configure SSO with OIDC using Keycloak in your StorageGRID system.
 
-.Step
-. Collect the information in the `well-known` configuration endpoint:
+.Steps
+. Check that you've saved the <<create-client-oidc,client ID>> and the <<client-secret-oidc,client secret>> from the OIDC client that you created.
+. Save the OpenID Connect discovery endpoint for the realm. This is available in the `well-known` configuration endpoint:
 +
 `\https://<keycloak_host_ip/keycloak_host_name>:<https_port>/realms/<realm_name>/.well-known/openid-configuration`
 
