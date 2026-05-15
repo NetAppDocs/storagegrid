@@ -40,9 +40,9 @@ CAUTION: NetApp strongly recommends that you apply the latest hotfix for each St
 
 Refer to the following upgrade example.
 
-== [[example-upgrade-path]]Example: Upgrade to StorageGRID 12.1 from version 11.8
+== [[example-upgrade-path]]Example: Upgrade to StorageGRID 12.1 from version 11.9
 
-The following example shows the steps to upgrade from StorageGRID version 11.8 to version 11.9 in preparation for a StorageGRID 12.1 upgrade. 
+The following example shows the steps to upgrade from StorageGRID version 11.9 to version 12.0 in preparation for a StorageGRID 12.1 upgrade. 
 
 Download and install software in the following sequence to prepare your system for upgrade:
 
