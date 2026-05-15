@@ -127,15 +127,16 @@ Define the scopes in Keycloak.
 * Add to userinfo: *ON*
 * Add to token introspection: *ON*
 . Select *Save*.
-. Go to *Client Scopes* > *Add client scope*.
-. Select the <<create-client-oidc,OIDC client>> you created.
+. Go to *Clients* and select the <<create-client-oidc,OIDC client>> you created.
+. Select *Client Scopes* > *Add client scope*.
+. Select the client scope you created.
 . Select *Add*.
 
 == Step 7: Prepare to configure SSO using OIDC
 Save the information required to configure SSO with OIDC using Keycloak in your StorageGRID system.
 
 .Steps
-. Check that you've saved the <<create-client-oidc,client ID>> and the <<client-secret-oidc,client secret>> from the OIDC client that you created.
+. Check that you've saved the <<create-client-oidc,client ID>> and the <<client-secret-oidc,client secret>> from the OIDC client you created.
 . Save the OpenID Connect discovery endpoint for the realm. This is available in the `well-known` configuration endpoint:
 +
 `\https://<keycloak_host_ip/keycloak_host_name>:<https_port>/realms/<realm_name>/.well-known/openid-configuration`
