@@ -94,7 +94,7 @@ You can enable S3 Object Lock when you create the bucket or at a later time.
 | Returns the lifecycle configuration for the bucket. Refer to link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration].
 
 | GetBucketLocation
-| Returns the region that was set using the `LocationConstraint` element in the CreateBucket request. If the bucket's region is `us-east-1`, an empty string is returned for the region.
+| Returns the region that was set using the `LocationConstraint` element in the CreateBucket request. If no region was set, the operation returns the default region `us-east-1`.
 
 | GetBucketNotificationConfiguration 
 
@@ -264,6 +264,7 @@ If the default retention period is modified, the retain-until-date of existing o
 Refer to link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] for detailed information.
 |===
 
+// 2026 MAY 18, SGRIDDOC-252
 // 2026 APR 21, SGWS-40729
 // 2026 MAR 12, SGRIDDOC-223
 // 2025 July 31, SGRIDDOC-183
