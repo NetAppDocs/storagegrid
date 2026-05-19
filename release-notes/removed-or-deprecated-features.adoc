@@ -29,7 +29,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 |===
 | Feature| Deprecated| End of Life| Removed| Links to earlier documentation
 
-| Alarms, legacy (_not Alerts_)
+| Legacy Alarms (_not Alerts_)
 | 11.7
 | 11.8
 | 11.9
@@ -63,12 +63,6 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.9
 | TBD
 | Support for Docker as the container engine for software-only deployments is deprecated. Docker will be replaced with another container engine in a future release. Refer to the link:../swnodes/software-requirements.html[software requirements for software-based nodes] for a list of Docker versions currently supported.
-
-| Email setup (legacy)
-| 11.9
-| 12.0
-| 12.1
-| https://docs.netapp.com/us-en/storagegrid-118/monitor/managing-alarms.html#configure-notifications-for-alarms-legacy-system[Configure notifications for alarms (legacy system) (StorageGRID 11.8)^]
 
 | NFS audit export
 | 11.8
