@@ -13,7 +13,7 @@ A StorageGRID system consists of multiple types of grid nodes at one or more dat
 
 Learn about the link:nodes-and-services.html[grid node types].
 
-For additional information about StorageGRID network topology, requirements, and grid communications, refer to the link:../network/index.html[Networking guidelines].
+For additional information about StorageGRID network topology, requirements, and grid communications, refer to link:../network/index.html[Networking guidelines].
 
 == Deployment topologies
 

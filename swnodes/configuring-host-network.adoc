@@ -15,7 +15,7 @@ include::../_include/linux-distributions.adoc[]
 
 .Before you begin
 
-* You have reviewed the link:../network/index.html[StorageGRID networking guidelines].
+* You have reviewed the information in link:../network/index.html[Networking guidelines].
 * You have reviewed the information about link:node-container-migration-requirements.html[node container migration requirements].
 * If you are using virtual hosts, you have read the <<mac_address_cloning,considerations and recommendations for MAC address cloning>> before configuring the host network.
 
