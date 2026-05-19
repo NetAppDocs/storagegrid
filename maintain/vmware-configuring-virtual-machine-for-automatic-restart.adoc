@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, vmware, automatic restart, auto restart, configure automatic restart, configure auto restart
 summary: 'If the virtual machine does not restart after VMware vSphere Hypervisor is restarted, you might need to configure the virtual machine for automatic restart.'
 ---
-= VMware: Configure virtual machine for automatic restart
+= Configure a VMware virtual machine for automatic restart in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

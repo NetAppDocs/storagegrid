@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: grid manager, sign on, log out
 summary: 'When you are done working with the Grid Manager, you must sign out to ensure that unauthorized users cannot access the StorageGRID system. Closing your browser might not sign you out of the system, based on browser cookie settings.'
 ---
-= Sign out of the Grid Manager
+= Sign out of the StorageGRID Grid Manager
 :icons: font
 :imagesdir: ../media/
 

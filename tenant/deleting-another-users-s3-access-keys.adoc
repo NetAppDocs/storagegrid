@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to delete access key for other user
 summary: 'If you are using an S3 tenant and you have appropriate permissions, you can delete another user’s S3 access keys. After an access key is deleted, it can no longer be used to access the objects and buckets in the tenant account.'
 ---
-= Delete another user's S3 access keys
+= Delete another user's S3 access keys in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

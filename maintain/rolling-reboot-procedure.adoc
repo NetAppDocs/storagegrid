@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: reboot nodes, rolling reboot procedure
 summary: 'You can perform a rolling reboot to reboot multiple grid nodes without causing a service disruption.'
 ---
-= Perform a rolling reboot
+= Perform a StorageGRID rolling reboot
 :icons: font
 :imagesdir: ../media/
 

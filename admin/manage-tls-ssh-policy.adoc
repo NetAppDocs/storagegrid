@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: TLS and SSH policy, secure connection, FIPS, Common Criteria
 summary: 'The TLS and SSH policy determines which protocols and ciphers are used to establish secure TLS connections with client applications and secure SSH connections to internal StorageGRID services.'
 ---
-= Manage the TLS and SSH policy
+= Manage the TLS and SSH policy in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
