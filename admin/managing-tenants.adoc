@@ -45,7 +45,7 @@ After you create the tenant account, tenant users can sign in to the Tenant Mana
 
 * Set up identity federation (unless the identity source is shared with the grid)
 * Manage groups and users
-* Use grid federation for account clone and cross-grid replication
+* Use grid federation for account sync and cross-grid replication
 * Manage S3 access keys
 * Create and manage S3 buckets
 * Use S3 platform services

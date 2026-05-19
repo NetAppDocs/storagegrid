@@ -23,7 +23,7 @@ If you want to retain the historical information about attributes and alerts on 
 If an Admin Node fails, the historical information stored in its Admin Node database is lost. This database includes the following information:
 
 * Alert history
-* Historical attribute data, which is used in in legacy-style charts on the Nodes page
+* Historical attribute data, which is used in charts on the Nodes page
 
 When you recover an Admin Node, the software installation process creates an empty Admin Node database on the recovered node. However, the new database only includes information for servers and services that are currently part of the system or added later.
 
@@ -55,11 +55,6 @@ NOTE: Copying the Admin Node database might take several hours. Some Grid Manage
  .. Stop the mgmt-api service: `service mgmt-api stop`
  .. Add the SSH private key to the SSH agent. Enter:``ssh-add``
  .. Enter the SSH Access Password listed in the `Passwords.txt` file.
- .. Copy the database from the source Admin Node to the recovered Admin Node: `/usr/local/mi/bin/mi-clone-db.sh Source_Admin_Node_IP`
- .. When prompted, confirm that you want to overwrite the MI database on the recovered Admin Node.
-+
-The database and its historical data are copied to the recovered Admin Node. When the copy operation is done, the script starts the recovered Admin Node.
-
  .. When you no longer require passwordless access to other servers, remove the private key from the SSH agent. Enter:``ssh-add -D``
  
 . Restart the services on the source Admin Node: `service servermanager start`

@@ -1,6 +1,19 @@
 section: monitor
 title: Monitor StorageGRID system
 entries:
+  - title: Use AutoSupport
+    entries:
+    - title: What is AutoSupport
+      pdf-filename: Use AutoSupport
+      url: "/monitor/what-is-autosupport.html"
+    - title: Configure AutoSupport
+      url: "/monitor/configure-autosupport-grid-manager.html"
+    - title: Manually trigger an AutoSupport package
+      url: "/monitor/manually-triggering-autosupport-package.html"
+    - title: How StorageGRID handles AutoSupport package failures
+      url: "/monitor/autosupport-package-failure-handling.html"
+    - title: Send E-Series AutoSupport packages through StorageGRID
+      url: "/monitor/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Monitoring tasks
     pdf-filename: Monitor StorageGRID system
     url: "/monitor/index.html" 
@@ -24,7 +37,7 @@ entries:
     - title: View the ILM tab
       url: "/monitor/viewing-ilm-tab.html"
     - title: Use the Tasks tab
-      url: "/monitor/using-task-tab-to-reboot-grid-node.html"
+      url: "/monitor/using-task-tab.html"
     - title: View the Load balancer tab
       url: "/monitor/viewing-load-balancer-tab.html"
     - title: View the Platform services tab
@@ -96,6 +109,8 @@ entries:
       url: "/monitor/considerations-for-external-syslog-server.html"  
     - title: Configure log management
       url: "/monitor/configure-log-management.html" 
+  - title: Configure email server
+    url: "/monitor/configure-email-server.html"
   - title: Use SNMP monitoring
     entries:
     - title: SNMP monitoring
@@ -117,8 +132,6 @@ entries:
       url: "/monitor/reviewing-audit-messages.html"
     - title: Collect log files and system data
       url: "/monitor/collecting-log-files-and-system-data.html"
-    - title: Manually trigger an AutoSupport package
-      url: "/monitor/manually-triggering-autosupport-message.html"
     - title: Review support metrics
       url: "/monitor/reviewing-support-metrics.html"
     - title: Change I/O prioritization

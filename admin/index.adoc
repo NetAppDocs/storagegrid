@@ -22,4 +22,8 @@ The primary tasks for configuring and administering StorageGRID allow you to:
 
 == Before you begin
 * You have a general understanding of the StorageGRID system.
+
 * You have fairly detailed knowledge of Linux command shells, networking, and server hardware setup and configuration.
+
+
+

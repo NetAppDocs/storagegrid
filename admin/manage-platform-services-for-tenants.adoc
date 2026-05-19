@@ -22,8 +22,6 @@ For example, you might use CloudMirror replication to mirror specific customer r
 
 CloudMirror replication has some important similarities and differences with the cross-grid replication feature. To learn more, see link:../admin/grid-federation-compare-cgr-to-cloudmirror.html[Compare cross-grid replication and CloudMirror replication].
 
-NOTE: CloudMirror replication isn't supported if the source bucket has S3 Object Lock enabled.
-
 == Notifications
 Per-bucket event notifications are used to send notifications about specific actions performed on objects to a specified external Kafka cluster, webhook endpoint, or Amazon Simple Notification Service.
 

@@ -40,11 +40,9 @@ If the error is not resolved automatically, go to the next step.
 
 . Determine if the node's hardware is offline.
 
-. If single sign-on (SSO) is enabled for your StorageGRID system, refer to the steps for link:../admin/configure-sso.html[configuring single sign-on].
+. If single sign-on (SSO) is enabled for your StorageGRID system, refer to set up SSO using link:../admin/learn-about-setting-up-sso-oidc.html[OIDC] or link:../admin/learn-about-setting-up-sso-saml.html[SAML].
 +
 You might need to temporarily disable and re-enable SSO for a single Admin Node to resolve any issues.
-+
-NOTE: If SSO is enabled, you can't sign on using a restricted port. You must use port 443.
 
 . Determine if the account you are using belongs to a federated user.
 +

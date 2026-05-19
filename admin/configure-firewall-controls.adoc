@@ -27,9 +27,9 @@ StorageGRID includes an internal firewall on each node that enables you to open 
 
 Limiting the number of ports open to IP addresses outside of your grid to only those that are absolutely necessary enhances the security of your grid. You use the settings on each of the three Firewall control tabs to ensure only the needed ports are open.
 
-For more information about using firewall controls, including examples, see link:../admin/manage-firewall-controls.html[Manage firewall controls].
+For more information about using firewall controls, including examples, refer to link:../admin/manage-firewall-controls.html[Manage firewall controls].
 
-For more information about external firewalls and network security, see link:../admin/controlling-access-through-firewalls.html[Control access at external firewall].
+For more information about external firewalls and network security, refer to link:../admin/controlling-access-through-firewalls.html[Control access at external firewall].
 
 [#Access-firewall-controls]
 == Access firewall controls
@@ -50,17 +50,17 @@ You use the Privileged address list tab to grant hosts access to ports that are 
 
 Privileged IP addresses and subnets don't have internal grid access by default. Also, load balancer endpoints and additional ports opened in the Privileged address list tab are accessible even if blocked in the Manage external access tab.
 
-NOTE: Settings on the Privileged address list tab can't override settings on the Untrusted Client Network tab. 
+NOTE: The settings on the Privileged address list tab can override the settings on the Untrusted Client Network tab. 
 
 .Steps
 
 . On the Privileged address list tab, enter the address or IP subnet you want to grant access to closed ports. 
 
-. Optionally, select *Add another IP address or subnet in CIDR notation* to add additional privileged clients. 
+. Optionally, select *Add another IP or a subnet in CIDR notation* to add additional privileged clients. 
 +
 TIP: Add as few addresses as possible to the privileged list.
 
-. Optionally, select *Allow privileged IP addresses to access StorageGRID internal ports*. See link:../network/internal-grid-node-communications.html[StorageGRID internal ports]. 
+. Optionally, select *Allow privileged IP addresses to access StorageGRID internal ports*. Refer to link:../network/internal-grid-node-communications.html[StorageGRID internal ports]. 
 +
 TIP: This option removes some protections for internal services. Leave it disabled if possible.
 
@@ -83,7 +83,7 @@ The tab displays a table with all of the external ports (ports that are accessib
 * Select *Open all displayed ports* to open all ports listed in the table. 
 * Select *Close all displayed ports* to close all ports listed in the table.
 +
-CAUTION: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. 
+CAUTION: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the privileged address list. 
 +
 NOTE: Use the scroll bar on the right side of the table to be sure you have viewed all available ports. Use the search field to find the settings for any external port by entering a port number. You can enter a partial port number. For example, if you enter a *2*, all ports that have the string "2" as part of their name are displayed.
 
@@ -122,4 +122,6 @@ NOTE: Use the scroll bar on the right side of the table to be sure you have view
 
 . Select *Save*.
 +
-The new firewall settings are immediately applied and enforced. Existing client connections might fail if load balancer endpoints have not been configured.
+The new firewall settings are immediately applied and enforced. Existing client connections might fail if load balancer endpoints haven't been configured.
+
+// 2026 MAR 20, SGRIDDOC-229
