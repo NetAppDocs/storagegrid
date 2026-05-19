@@ -1,0 +1,5 @@
+//This is the shared information about the Principal account/user for s3 and tenant topics
+* `"Principal": "*"` matches everyone, including anonymous (unsigned) requests
+* `"Principal": { "AWS": "*" }` matches any authenticated identity or user (doesn't match anonymous requests)
+* Only applies for bucket policies
+* The principal is the account(s)/user(s) being granted or denied the permissions

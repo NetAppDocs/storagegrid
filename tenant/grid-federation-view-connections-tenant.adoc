@@ -36,9 +36,7 @@ The Grid federation connection page appears and includes a table that summarizes
 
 | Last error
 | For each grid federation connection, the most recent error to occur, if any, when data was being replicated to the other grid. See <<clear-last-error,Clear the last error>>.
-
 |===
-
 
 . Optionally, select a bucket name to link:viewing-s3-bucket-details.html[view bucket details].
 
@@ -73,5 +71,3 @@ image::../media/grid-federation-cgr-object-example-last-error.png[grid-federatio
 NOTE: To ensure the error message is cleared, wait at least 5 minutes after the timestamp in the message before ingesting a new object.
 
 . To determine if any objects failed to be replicated because of the bucket error, see link:../admin/grid-federation-retry-failed-replication.html[Identify and retry failed replication operations]. 
-
-
