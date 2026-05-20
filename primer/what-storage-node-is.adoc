@@ -53,7 +53,7 @@ You can convert a combined Storage Node to a data-only Storage Node. If the Stor
 
 When selecting which Storage Nodes to use in your topology, keep in mind that the grid or each site in the grid must contain the following:
 
-* Per site (in a single- or multi-site grid): Three <<adc-service,ADC>> Storage Nodes (can be any combination of combined, metadata-only, and data-only Storage Nodes)
+* Per site (in a single- or multi-site grid): Three <<adc-service,ADC>> Storage Nodes (can be any combination of combined and metadata-only Storage Nodes)
 * Single-site grid: At least two object Storage Nodes (can be any combination of combined and data-only)
 * Multi-site grid: At least one object Storage Node per site (can be either combined or data-only)
 
