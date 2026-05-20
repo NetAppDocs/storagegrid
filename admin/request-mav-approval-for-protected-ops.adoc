@@ -15,15 +15,17 @@ The StorageGRID system defines which operations are protected by MAV. When you i
 
 .Steps
 
-. The StorageGRID system informs you that you've initiated a MAV-protected operation.
+The StorageGRID system informs you that you've initiated a MAV-protected operation.
 
-. Check the status of your request by selecting *Configuration* > *Access control* > *Multi-admin verification* > *My requests*.
+. As needed, perform any of the following tasks:
+
+.. Check the status of your request by selecting *Configuration* > *Access control* > *Multi-admin verification* > *My requests*.
 +
 include::../_include/mav-status-list.adoc[]
 
-. Check for pending requests by selecting *Configuration* > *Access control* > *Multi-admin verification* > *Other requests*.
+.. Check for pending requests by selecting *Configuration* > *Access control* > *Multi-admin verification* > *Other requests*.
 
-. To cancel an operation, select *My requests* >  *_the request you want to cancel_* > *Withdraw*.
+.. To cancel an operation, select *My requests* >  *_the request you want to cancel_* > *Withdraw*.
 
 After a MAV administrator approves the request, the operation is performed automatically.
 
