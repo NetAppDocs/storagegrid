@@ -18,7 +18,7 @@ To configure MAV, you'll perform these tasks:
 
 * Create one or more administrator groups. MAV administrators have approval and veto authority.
 * Enable the multi-admin verification function.
-* Select from a set of protected operations in a rules table.
+* Select from a set of protected operations.
 
 A user must have Root access permission to perform the initial configuration and make modifications later.
 

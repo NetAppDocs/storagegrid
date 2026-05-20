@@ -23,8 +23,8 @@ include::../_include/mav-status-list.adoc[]
 
 . Check for pending requests by selecting *Configuration* > *Access control* > *Multi-admin verification* > *Other requests*.
 
-. To cancel an operation, select the corresponding request and then select *Withdraw*. You can also select *Withdraw* in the My requests tab.
+. To cancel an operation, select *My requests* >  *_the request you want to cancel_* > *Withdraw*.
 
-. After a MAV administrator approves the request, the operation is performed automatically.
-+
+After a MAV administrator approves the request, the operation is performed automatically.
+
 If your request is rejected, the operation isn't performed, and you can submit a new request if needed.
