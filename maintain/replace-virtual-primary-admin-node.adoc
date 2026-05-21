@@ -9,30 +9,63 @@ summary: 'Replace the virtual primary Admin Node with an SG1000/SG100 appliance.
 :imagesdir: ../media/
 
 [.lead]
-Select the correct recovery procedure for the type of node that has failed.
+If existing Primary Admin Node runs as virtual node (i.e. VMware, non-VMware hypervisor or bare metal platform), you can replace it with SG1000 or SG100 appliance.
 
-[cols="1a,2a" options="header"]
-|===
-| Grid node| Recovery procedure
+Related information
+StorageGRID node recovery documentation 
 
-| Storage Node
-| The Storage Node recovery procedure depends on the type of failure.
+After the replacement and verified the new Primary Admin node, you must DELETE the VM or barematal container to prevent it comes back online accidentally. This could cause major interruption to the Grid. 
+Prior to schedule the replacement of Primary Admin Node, ensure no Grid maintenance procedure is in progress. If yes, wait for maintenance to complete before replacing the Primary Admin Node.
 
-link:recovering-from-storage-node-failures.html[Recover from Storage Node failures]
+Prepare SG1000/SG100 appliance
 
-| Admin Node
-| The Admin Node procedure depends on whether you need to recover the primary Admin Node or a non-primary Admin Node.
+1) Follow appliance installation guide to Install the SG1000/SG100 appliance and configure the network. 
+a. If you are using existing virtual primary Admin Node IP(s) on the appliance, perform step 7 to 12 first and shutdown existing node to avoid any network IP conflict. 
+2) ssh to appliance port 8022 using admin/bycast, enter ‘su –‘ and enter ‘netapp1! Verify the clock on the appliance, if it is not within few minutes of actual UTC time, use date command to set the correct date/time. e.g date -s "25 Nov 2020 11:14:00" 
+3) Confirm the appliance preload software version matches existing Grid version. 
+a. If not match, remove the preload software package Example: This SG1000 comes with 11.3 software and existing Grid is at 11.4
+b. Download the StorageGRID 11.4 Debian install package from NetApp support site. After download, unzip the file.
+4. Remove the installation software from appliance and upload the appropriate version
+5. Upload storagegrid-webscale-images-.deb and storagegrid-webscale-images-.deb.md5 files
+6. On Home tab, select ‘Primary Admin (with Load Balancer) as Node type and enter Node name. The node name must be same as existing Primary Admin node name. DO NOT start installation. 
 
-link:recovering-from-admin-node-failures.html[Recover from Admin Node failures]
+Replace virtual Primary Admin Node with SG1000/SG100 
 
-| Gateway Node
-| link:replacing-gateway-node.html[Recover from Gateway Node failures]
+7. Review the StorageGRID primary Admin Node recovery procedure 
+8. If SG1000/SG100 appliance cannot reuse the existing Primary Admin Node Grid IP, verify this subnet of new IP already in existing Grid network subnet list. If not, add the new subnet to Grid Network. On Grid Manager GUI, select Maintenance > Grid Network. Enter provisioning passphrase to update the subnet list.
+9. From Grid Manger GUI (GMI), select Maintenance > Recovery package. Enter ‘Provisioning Passphrase’ and download the package. You need this recovery package to recover the primary Admin Node on SG1000/SG100. 
+10. Login to existing primary admin node 
 
-| Archive Node
-| https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-from-archive-node-failures.html[Recover from Archive Node failures (StorageGRID 11.8 doc site)^]
-|===
 
-NOTE: If a server hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node and no non-primary Admin Nodes exist, you must recover the primary Admin Node first. Recovering the primary Admin Node first prevents other node recoveries from stalling as they try to contact the primary Admin Node. If a non-primary Admin Node is available, you could also use it to recover other nodes so those recoveries can proceed without contacting the primary Admin Node.
+11. Follow the recovery procedure to copy out audit logs from existing virtual primary Admin Node 
+12. On virtual primary Admin Node ssh session, enter ‘service servermanager stop’, it could take up to 15 mins to stop the service. 
+a. If using same IP (Grid/admin/client network) on appliance, enter ‘shutdown -h now’. 
+13. On SG1000/SG100 Home tab, verify node type (Primary Admin) node name (must use existing Primary Admin node name) and IP/link configuration. If using different Grid IP from existing virtual Primary Admin Node, note down the new IP. 
+14. On appliance GUI Home Tab, click ‘Start Installation’
+15. It takes about 10 mins to reach step 5 (Load StorageGRID installer)
+16. After 6 – 7 mins, the webpage will be redirected to begin the recovery procedure. DO NOT PROCEED. In certain cases, time has drifted which resulted in an NTP error during the recovery process. Verify time is current with UTC as performed earlier. 
+ssh to appliance port 8022 using admin/bycast, enter ‘su –‘ and enter ‘netapp1! 
+Verify the clock on the appliance, if it is not within few minutes of actual UTC time, use date command to set the correct date/time. e.g date -s "25 Nov 2020 11:14:00" 
+17. Return to the Webpage and Select ‘Recover a failed primary Admin Node’
+18. Upload the recovery package downloaded from step 2. Enter provisioning passphrase and click ‘Start Recovery’
+19. If the appliance is using same Grid IP as existing virtual node, you will see ‘Recovery Progress’ bar showing status
+A. If a new Grid IP is used for this appliance, you will see above screen disappears shortly after and this screen display again. 
+b. If you click ‘Start Recovery’ again, you will get this error message’. The reason is recovery already started but unable to send the update to the web GUI which is using new Grid IP.
+c. Login (ssh) to the appliance port 8022 as admin using the password from password.txt (if not working, use ‘bycast’). Enter ‘su –‘ and enter same password again. 
+d. Enter ‘tail /var/local/log/install.log’ to look at the log and should see highlighted message repeatedly. It is attempting to send the update to primary Admin Node using original virtual primaty Admin Node Grid IP. 
+e. Use ‘storagegrid node’ commands to confirm the container is running and enter the container
+f. vi /etc/hosts and update primary Admin Node entry with the new Grid IP. Save the file. 
+g. Go back to the Recovery GUI web browser and wait for few seconds and should see the recovery progress status bar. 
+20. It takes about 6 – 10 mins to complete the recovery process and start up the services. The GMI login screen will appear. 
+21. Login as usual
+22. If this primary Admin Node is using new Grid IP, use this step to update recovery package. 
+a. Login (ssh) to this node, switch to root and enter ‘change-ip’ 
+b. Select 3 – Edit admin network subnet lists, add a new subnet list to admin network. 
+c. Apply the change and this will force a new recovery package generated with updated primary Admin Node Grid IP.
+d. From Grid Manager GUI, download the latest recovery package. 
 
-// 2026 MAY 19, SGRIDDOC-209
-// 2026-04-02, SGWS-34291
+Post recovery steps – restore audit logs, mi database and Prometheus metrics 
+
+Follow StorageGRID recovery guide to perform the followings.
+The source admin node in this restore procedure is existing non-primary admin node. If the Grid does not have non-primary admin node, you can use virtual admin node (the one being replaced) if this node is on different IP as the recovered primary admin node.
+After the replacement and verified the new Primary Admin node, you must DELETE the VM or barematal container to prevent it comes back online accidentally. This could cause major interruption to the Grid.
