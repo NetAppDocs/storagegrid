@@ -13,7 +13,7 @@ Learn about features and capabilities that have been removed or deprecated in St
 
 == Definitions
 
-Deprecated:: The feature *should not* be used in new production environments. Existing production environments can continue using the feature.
+Deprecated:: You *should not* use the feature in new production environments. Existing production environments can continue using the feature.
 End of Life:: Last shipped version that supports the feature. In some cases, documentation for the feature might be removed at this stage.
 Removed:: First version that *does not* support the feature.
 
@@ -32,7 +32,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | Global SSE setting for AES-128 encryption
 | 12.1
 | 12.2
-| 12.4 
+| 12.3 
 | Beginning with StorageGRID 12.1.0. support for AES-128 encryption of new objects stored at data at rest is deprecated. Support continues for retrieval of objects stored with AES-128 encryption in StorageGRID 12.0 and earlier.
 
 | Alarms, legacy (_not Alerts_)
