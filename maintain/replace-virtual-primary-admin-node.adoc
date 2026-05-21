@@ -1,0 +1,38 @@
+---
+permalink: maintain/replace-virtual-primary-admin-node.html
+sidebar: sidebar
+keywords: storagegrid, recover, procedure
+summary: 'Replace the virtual primary Admin Node with an SG1000/SG100 appliance.'
+---
+= Replace virtual primary Admin Node with SG1000/SG100 appliance 
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Select the correct recovery procedure for the type of node that has failed.
+
+[cols="1a,2a" options="header"]
+|===
+| Grid node| Recovery procedure
+
+| Storage Node
+| The Storage Node recovery procedure depends on the type of failure.
+
+link:recovering-from-storage-node-failures.html[Recover from Storage Node failures]
+
+| Admin Node
+| The Admin Node procedure depends on whether you need to recover the primary Admin Node or a non-primary Admin Node.
+
+link:recovering-from-admin-node-failures.html[Recover from Admin Node failures]
+
+| Gateway Node
+| link:replacing-gateway-node.html[Recover from Gateway Node failures]
+
+| Archive Node
+| https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-from-archive-node-failures.html[Recover from Archive Node failures (StorageGRID 11.8 doc site)^]
+|===
+
+NOTE: If a server hosting more than one grid node fails, you can recover the nodes in any order. However, if the failed server is hosting the primary Admin Node and no non-primary Admin Nodes exist, you must recover the primary Admin Node first. Recovering the primary Admin Node first prevents other node recoveries from stalling as they try to contact the primary Admin Node. If a non-primary Admin Node is available, you could also use it to recover other nodes so those recoveries can proceed without contacting the primary Admin Node.
+
+// 2026 MAY 19, SGRIDDOC-209
+// 2026-04-02, SGWS-34291
