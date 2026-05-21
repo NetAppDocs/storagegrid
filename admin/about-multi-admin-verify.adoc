@@ -28,7 +28,3 @@ When MAV is enabled, the completion of every protected operation requires these 
 . When a user initiates the operation, a request is generated.
 . Before the operation can be performed, at least one MAV administrator must approve.
 . When approved, the MAV-protected operation is performed automatically.
-
-
-
-
