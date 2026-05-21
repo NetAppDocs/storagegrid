@@ -33,7 +33,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 12.1
 | 12.2
 | 12.3 
-| Beginning with StorageGRID 12.1.0. support for AES-128 encryption of new objects stored at data at rest is deprecated. Support continues for retrieval of objects stored with AES-128 encryption in StorageGRID 12.0 and earlier.
+| Beginning with StorageGRID 12.1.0, support for AES-128 encryption of new objects stored at data at rest is deprecated. Support continues for retrieval of objects stored with AES-128 encryption in StorageGRID 12.0 and earlier.
 
 | Alarms, legacy (_not Alerts_)
 | 11.7
