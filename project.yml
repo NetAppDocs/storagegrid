@@ -317,7 +317,14 @@ sidebar:
           - title: Replace primary Admin Node
             url: "/maintain/replacing-primary-admin-node.html"
           - title: Replace virtual primary Admin Node with SG1000/SG100 appliance
-            url: "/maintain/replace-virtual-primary-admin-node.html"
+            entries:
+            - title: Replace virtual primary Admin Node with SG1000/SG100 appliance
+              pdf-filename: Replace virtual primary Admin Node with SG1000/SG100 appliance
+              url: "/maintain/replace-virtual-primary-admin-node.html"
+            - title: Prepare the SG1000/SG100 appliance for node replacement
+              url: "/maintain/preparing-sg-appliance-for-primary-admin-node-replacement.html"
+            - title: Replace the virtual primary Admin Node
+              url: "/maintain/replacing-virtual-primary-admin-node-with-sg-appliance.html"
           - title: Configure replacement primary Admin Node
             url: "/maintain/configuring-replacement-primary-admin-node.html"
           - title: Determine hotfix requirement for primary Admin Node
