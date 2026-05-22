@@ -29,18 +29,15 @@ If any of the new nodes has a Grid Network IP address on a subnet not previously
 Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
 
 * 192.168.130.101
+* 192.168.130.121
 * 192.168.131.101
+* 192.168.131.121
 * 192.168.130.102
+* 192.168.130.122
 * 192.168.131.102
+* 192.168.131.122
 * 198.51.100.2
 * 198.51.100.4
-
-This restriction also includes local iSCSI IPv4 addresses:
-
-* 192.168.130.121
-* 192.168.131.121
-* 192.168.130.122
-* 192.168.131.122
 
 For example, do not use the following subnet ranges for the Grid Network, Admin Network, or Client Network of any node:
 
