@@ -316,15 +316,6 @@ sidebar:
             url: "/maintain/copying-audit-logs-from-failed-primary-admin-node.html"
           - title: Replace primary Admin Node
             url: "/maintain/replacing-primary-admin-node.html"
-          - title: Replace virtual primary Admin Node with SG1000/SG100 appliance
-            entries:
-            - title: Replace virtual primary Admin Node with SG1000/SG100 appliance
-              pdf-filename: Replace virtual primary Admin Node with SG1000/SG100 appliance
-              url: "/maintain/replace-virtual-primary-admin-node.html"
-            - title: Prepare the SG1000/SG100 appliance for node replacement
-              url: "/maintain/preparing-sg-appliance-for-primary-admin-node-replacement.html"
-            - title: Replace the virtual primary Admin Node
-              url: "/maintain/replacing-virtual-primary-admin-node-with-sg-appliance.html"
           - title: Configure replacement primary Admin Node
             url: "/maintain/configuring-replacement-primary-admin-node.html"
           - title: Determine hotfix requirement for primary Admin Node
@@ -391,8 +382,10 @@ sidebar:
           url: "/maintain/restoring-existing-nodes.html"
         - title: 'What&#8217;s next: Perform additional recovery steps, if required'
           url: "/maintain/whats-next-performing-additional-recovery-steps-if-required.html"
-      - title: Replace VMware node
+      - title: Replace VMware node with a recovery node
         url: "/maintain/all-node-types-replacing-vmware-node.html"
+      - title: Replace VMware node with SG1000 or SG100
+        url: "/maintain/replace-vmware-node-with-sg1000-sg100.html"
       - title: Replace failed node with services appliance
         entries:
         - title: Replacement guidelines
