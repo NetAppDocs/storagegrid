@@ -33,9 +33,8 @@ For more information, see the following:
 +
 To help avoid poor performance due to latency:
 
-** Do not use erasure coding between sites with a latency greater than 100 ms.
-+
-** The sites in your StorageGRID system should not span wide geographical distances, for example, across multiple continents.
+** Erasure coding isn't recommended between sites with a latency greater than 100 ms.
+** The sites in your StorageGRID system shouldn't span wide geographical distances, for example, across multiple continents.
 
 * Because your StorageGRID system remains operational during the expansion, you must review ILM rules before starting the expansion procedure. You must ensure that object copies aren't stored to the new site until the expansion procedure is complete.
 +
