@@ -120,7 +120,7 @@ The approved grid node moves to the Approved Nodes list.
 .. Repeat these steps for each pending grid node you want to approve.
 +
 NOTE: If possible, you should approve all pending grid notes and perform a single expansion. More time will be required if you perform multiple small expansions.
-. When you have approved all grid nodes, enter the *Provisioning Passphrase*, and select *Expand*.
+. When you have approved all grid nodes, enter the *Provisioning passphrase*, and select *Expand*.
 +
 After a few minutes, this page updates to display the status of the expansion procedure. When tasks that affect individual grid nodes are in progress, the Grid Node Status section lists the current status for each grid node.
 +
