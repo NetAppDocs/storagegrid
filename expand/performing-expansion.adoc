@@ -39,9 +39,9 @@ CAUTION: Some expansion steps and stages might take a significant amount of time
 .Steps
 . Select *Maintenance* > *Tasks* > *Expansion*.
 +
-The Grid Expansion page appears. The Pending Nodes section lists the nodes that are ready to be added.
+The Grid expansion page appears. The Pending Nodes section lists the nodes that are ready to be added.
 +
-image::../media/grid_expansion_page.png[screenshot showing Grid Expansion page]
+image::../media/grid_expansion_page.png[screenshot showing Grid expansion page]
 
 . Select *Configure Expansion*.
 +
