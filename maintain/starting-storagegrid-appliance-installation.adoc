@@ -81,7 +81,7 @@ If the *Start Installation* button is not enabled, you might need to change the 
 
 . From the StorageGRID Appliance Installer home page, select *Start installation*.
 +
-The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
+The Current state changes to "Installation is in progress," and the Monitor installation page is displayed.
 +
-NOTE: If you need to access the Monitor Installation page manually, select *Monitor installation* from the menu bar. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/monitoring-appliance-installation.html[Monitor appliance installation^].
+NOTE: If you need to access the Monitor installation page manually, select *Monitor installation* from the menu bar. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/monitoring-appliance-installation.html[Monitor appliance installation^].
 // 2026-03-31,SGWS-34291
