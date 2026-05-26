@@ -13,7 +13,7 @@ The StorageGRID Appliance Installer provides status until installation is comple
 
 .Steps
 
-. To monitor the installation progress, click *Monitor Installation* from the menu bar.
+. To monitor the installation progress, select *Monitor installation* from the menu bar.
 +
 The Monitor Installation page shows the installation progress.
 +

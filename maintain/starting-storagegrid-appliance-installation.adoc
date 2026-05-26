@@ -74,14 +74,14 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 // IPv4 address of the Admin Node you want to use to install or recover the Linux-based node. For recovery, use the IP of the primary Admin Node if available; otherwise, use the IP of a non-primary Admin node.
 
 [start=4]
-. In the *Node Name* field, enter the same hostname (system name) that was used for the node you are recovering, and click *Save*.
-. In the Installation section, confirm that the current state is "Ready to start installation of `_node name_` into grid with Primary Admin Node `_admin_ip_`" and that the *Start Installation* button is enabled.
+. In the *Node name* field, enter the same hostname (system name) that was used for the node you are recovering, and select *Save*.
+. In the Installation section, confirm that the current state is "Ready to start installation of `_node name_` into grid with Primary Admin Node `_admin_ip_`" and that the *Start installation* button is enabled.
 +
 If the *Start Installation* button is not enabled, you might need to change the network configuration or port settings. For instructions, see the maintenance instructions for your appliance.
 
-. From the StorageGRID Appliance Installer home page, click *Start Installation*.
+. From the StorageGRID Appliance Installer home page, select *Start installation*.
 +
 The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 +
-NOTE: If you need to access the Monitor Installation page manually, click *Monitor Installation* from the menu bar. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/monitoring-appliance-installation.html[Monitor appliance installation^].
+NOTE: If you need to access the Monitor Installation page manually, select *Monitor installation* from the menu bar. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/monitoring-appliance-installation.html[Monitor appliance installation^].
 // 2026-03-31,SGWS-34291

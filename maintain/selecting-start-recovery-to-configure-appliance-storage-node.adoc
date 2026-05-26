@@ -27,7 +27,7 @@ You must select Start Recovery in the Grid Manager to configure an appliance Sto
 Nodes appear in the list after they fail, but you can't select a node until it has been reinstalled and is ready for recovery.
 
 . Enter the *Provisioning Passphrase*.
-. Click *Start Recovery*.
+. Select *Start recovery*.
 +
 image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance > Recovery page]
 
