@@ -36,7 +36,7 @@ Nodes appear in the list after they fail, but you can't select a node until it h
 
 . Enter the *Provisioning passphrase*.
 . Click *Start Recovery*.
-. Monitor the progress of the recovery by selecting *Maintenance* > *Recovery* > *In Progress*.
+. Monitor the progress of the recovery by selecting *Maintenance* > *Tasks* > *Node recovery* and viewing the recovery progress.
 +
 * If the grid node reaches the "Waiting for manual steps" stage, you must link:../maintain/remounting-and-reformatting-storage-volumes-manual-steps.html[remount and reformat the storage volumes manually]. Upon completion of the manual steps, proceed to link:../maintain/restoring-object-data-to-storage-volume.html[restore object data to the volumes].
 
