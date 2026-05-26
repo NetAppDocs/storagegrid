@@ -35,8 +35,8 @@ If the Storage Node is installed as a container on a Linux host, you must perfor
 Nodes appear in the list after they fail, but you can't select a node until it has been reinstalled and is ready for recovery.
 
 . Enter the *Provisioning passphrase*.
-. Select *Start recovery*.
-. Monitor the progress of the recovery by selecting *Maintenance* > *Recovery* > *In Progress*.
+. Click *Start Recovery*.
+. Monitor the progress of the recovery by selecting *Maintenance* > *Tasks* > *Node recovery* and viewing the recovery progress.
 +
 * If the grid node reaches the "Waiting for manual steps" stage, you must link:../maintain/remounting-and-reformatting-storage-volumes-manual-steps.html[remount and reformat the storage volumes manually]. Upon completion of the manual steps, proceed to link:../maintain/restoring-object-data-to-storage-volume.html[restore object data to the volumes].
 
