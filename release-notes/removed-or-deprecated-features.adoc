@@ -9,7 +9,7 @@ summary: "Learn about features and capabilities that have been removed or deprec
 :imagesdir: ../media/
 
 [.lead]
-Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
+Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.1.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
 
 == Definitions
 
@@ -49,8 +49,8 @@ NOTE: In certain situations, NetApp might end support for particular features so
 
 *Note*: Before starting your upgrade, you must:
 
-. Decommission all Archive Nodes. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
-. Remove all Archive Node references from storage pools and ILM policies. See https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
+. Decommission all Archive Nodes. Refer to https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
+. Remove all Archive Node references from storage pools and ILM policies. Refer to https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
 
 | Audit export through CIFS/Samba
 | 11.1
