@@ -17,7 +17,7 @@ Before adding a site, review the following requirements and limitations:
 
 * You can only add one site per expansion operation.
 * You can't add grid nodes to an existing site as part of the same expansion.
-* All sites must include at least three Storage Nodes. They can be any combination of combined and metadata-only Storage Nodes. For more information, refer to link:../primer/what-storage-node-is.html#required-storage-nodes-per-grid-and-per-site[Required Storage Nodes per grid and per site].
+* All sites must include at least three Storage Nodes. They can be any combination of Storage Nodes (data-only, metadata-only, or combined), as long as three ADC services are available. For more information, refer to link:../primer/what-storage-node-is.html#required-storage-nodes-per-grid-and-per-site[Required Storage Nodes per grid and per site].
 * When you add a new site, it doesn't automatically increase the number of objects you can store. The total object capacity of a grid depends on the amount of available storage, the ILM policy, and the metadata capacity at each site.
 * When sizing a new site, you must ensure that it includes enough metadata capacity.
 +
