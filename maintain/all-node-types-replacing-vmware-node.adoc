@@ -42,11 +42,8 @@ NOTE: After deploying the new node, you can add new virtual disks according to y
 [cols="1a,2a" options="header"]
 |===
 | Type of node| Go to
-|Primary Admin Node
-| link:configuring-replacement-primary-admin-node.html[Configure replacement primary Admin Node]
-
-|Non-primary Admin Node
-| link:selecting-start-recovery-to-configure-non-primary-admin-node.html[Select Start Recovery to configure non-primary Admin Node]
+|Admin Nodes
+| link:recovering-from-admin-node-failures.html[Primary or non-primary Admin Node recovery in StorageGRID]
 
 |Gateway Node
 | link:selecting-start-recovery-to-configure-gateway-node.html[Select Start Recovery to configure Gateway Node]
@@ -54,3 +51,4 @@ NOTE: After deploying the new node, you can add new virtual disks according to y
 |Storage Node
 | link:selecting-start-recovery-to-configure-storage-node.html[Select Start Recovery to configure Storage Node]
 |===
+// 2026-04-22, SGWS34291

@@ -40,12 +40,12 @@ Background repairs don't run during upgrade when the grid contains mixed-version
 
 == Appliance firmware is upgraded
 
-During the StorageGRID 12.0 upgrade:
+During the StorageGRID 12.1 upgrade:
 
-* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version 12.0.
+* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version 12.1.
 *	SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B08.EX and BMC firmware version 4.01.07.
 *	SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B13.EC and BMC firmware version 4.75.07.
-*	SGF6112, SG6160, SG110 and SG1100 appliances are automatically upgraded to BIOS firmware version 3A14.QD and BMC firmware version 3.19.07.
+*	SGF6112, SG6160, SG110 and SG1100 appliances are automatically upgraded to BIOS firmware version 3A14.QD and BMC firmware version 3.21.07.
 
 == ILM policies are handled differently according to their status
 

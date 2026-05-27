@@ -43,7 +43,7 @@ The following request headers are supported:
 * `Content-Type`
 * `x-amz-checksum-algorithm`: Specify `CRC32`, `CRC32C`, `CRC64NVME`, or `SHA256`
 +
-NOTE: If the CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+NOTE: If the CreateMultipartUpload request doesn't specify a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object. StorageGRID ignores invalid or unsupported `x-amz-checksum-algorithm` values.
 
 * `x-amz-checksum-type`
 * `x-amz-meta-`, followed by a name-value pair containing user-defined metadata
@@ -110,6 +110,7 @@ The `x-amz-website-redirect-location` header returns `XNotImplemented`.
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
 
+// 2026 APR 24, SGIRDDOC-243
 // 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243
