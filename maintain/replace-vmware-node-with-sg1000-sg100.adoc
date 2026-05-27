@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, primary admin node, SG1000, SG100, appliance, prepare, installation software, software version
 summary: 'Before replacing a virtual primary Admin Node with an SG1000 or SG100 appliance, install the appliance hardware, configure the network, and verify that the appliance software version matches the grid.'
 ---
-= Replace VMware node in StorageGRIDwith SG1000 or SG100
+= Replace VMware node in StorageGRID with SG1000 or SG100
 :icons: font
 :imagesdir: ../media/
 
