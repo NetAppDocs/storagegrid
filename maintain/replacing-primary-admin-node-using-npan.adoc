@@ -19,8 +19,9 @@ Use the procedure that matches the replacement platform you select for the node.
 |===
 | Replacement platform| Procedure
 | VMware
-| link:all-node-types-replacing-vmware-node.html[Replace a VMware node]
+| link:all-node-types-replacing-vmware-node.html[Replace a VMware node with a recovery node]
 
+link:replace-vmware-node-with-sg1000-sg100.html[Replace VMware node with SG1000 or SG100 service appliance]
 | Linux
 | link:all-node-types-replacing-linux-node.html[Replace a Linux node]
 

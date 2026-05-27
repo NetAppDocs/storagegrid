@@ -26,8 +26,10 @@ indexpage:
     links:
     - title: Replace Linux node
       url: ../maintain/all-node-types-replacing-linux-node.html
-    - title: Replace VMware node
+    - title: Replace VMware node with a recovery node
       url: ../maintain/all-node-types-replacing-vmware-node.html
+    - title: Replace VMware node with SG1000 or SG100
+      url: ../maintain/replace-vmware-node-with-sg1000-sg100.html
     - title: Replace Linux or VMware node with services appliance
       url: ../maintain/installing-services-appliance-platform-change-only.html
     - title: Clone appliance node
