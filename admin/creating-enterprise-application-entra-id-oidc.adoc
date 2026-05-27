@@ -85,4 +85,7 @@ Add the logged-out redirect URI for each new application.
 Enter the URI for each Admin Node if you are using one application group for all Admin Nodes. If you are using a different application group for each Admin Node, only enter the URI for the corresponding Admin Node.
 . Select *Configure*.
 
+.What's next
+
+After creating enterprise applications, link:configure-sso-oidc.html[configure SSO using OIDC].
 // 2026 MAR 31, SGWS-39432
