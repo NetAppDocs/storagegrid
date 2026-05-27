@@ -137,4 +137,3 @@ Also refer to:
 * link:changes-to-tenant-management-api.html[Changes to the Tenant Management API]
 
 // 2026 MAY 21, SGRIDDOC-227
-// 2026 APR 30, SGRIDDOC-277
