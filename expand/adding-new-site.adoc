@@ -38,8 +38,8 @@ To help avoid poor performance due to latency:
 
 * Because your StorageGRID system remains operational during the expansion, you must review ILM rules before starting the expansion procedure. You must ensure that object copies aren't stored to the new site until the expansion procedure is complete.
 +
-For example, before you begin the expansion, check if any rules use the default storage pool (All Storage Nodes). If they do, create a new storage with the existing Storage Nodes and update your ILM rules to use the new storage pool. Otherwise, objects are copied to the new site as soon as the first node at that site becomes active.
+For example, before you begin the expansion, check if any rules use the default storage pool (All Storage Nodes). If they do, create a new storage pool with the existing Storage Nodes and update your ILM rules to use the new storage pool. Otherwise, objects are copied to the new site as soon as the first node at that site becomes active.
 +
-For more information about changing ILM when adding a new site, refer to the link:../ilm/example-6-changing-ilm-policy.html[example for changing an ILM policy].
+For more information about changing an ILM policy when adding a new site, refer to the link:../ilm/example-6-changing-ilm-policy.html[example for changing an ILM policy].
 
 // 2025 Dec 10, SGRIDDOC-213
