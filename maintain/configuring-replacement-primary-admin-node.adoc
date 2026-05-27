@@ -40,7 +40,7 @@ image::../media/install_or_recover_primary_admin_node.png[Install or recover Pri
  .. Select *Browse*.
  .. Locate the most recent recovery package file for your StorageGRID system, and select *Open*.
 . Enter the provisioning passphrase.
-. Select *Start Recovery*.
+. Select *Start recovery*.
 +
 The recovery process begins. The Grid Manager might become unavailable for a few minutes as the required services start. When the recovery is complete, the sign in page is displayed.
 

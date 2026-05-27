@@ -67,7 +67,7 @@ image::../media/decommission_site_step_5_ha_groups.png[Decommission Site Step 5 
 See the instructions for administering StorageGRID.
 
 +
-If all nodes are connected and no nodes in the selected site are used in an HA group, the *Provisioning Passphrase* field is enabled.
+If all nodes are connected and no nodes in the selected site are used in an HA group, the *Provisioning passphrase* field is enabled.
 
 . Enter the provisioning passphrase.
 +
