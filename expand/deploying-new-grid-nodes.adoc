@@ -109,7 +109,7 @@ a|
 
  .. Clear the *Enable Admin Node discovery* checkbox.
  .. Enter the IP address manually.
- .. Click *Save*.
+ .. Select *Save*.
  .. Wait for the connection state for the new IP address to become ready.
 
 a|
@@ -119,7 +119,7 @@ a|
  .. Select the *Enable Admin Node discovery* checkbox.
  .. Wait for the list of discovered IP addresses to be displayed.
  .. Select the primary Admin Node for the grid where this appliance Storage Node will be deployed.
- .. Click *Save*.
+ .. Select *Save*.
  .. Wait for the connection state for the new IP address to become ready.
 
 +
@@ -135,15 +135,15 @@ If the *Start Installation* button is not enabled, you might need to change the 
 
 . From the StorageGRID Appliance Installer home page, select *Start Installation*.
 +
-The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
+The Current state changes to "Installation is in progress," and the Monitor installation page is displayed.
 
 . If your expansion includes multiple appliance nodes, repeat the previous steps for each appliance.
 +
 NOTE: If you need to deploy multiple appliance Storage Nodes at one time, you can automate the installation process by using the configure-sga.py appliance installation script.
 
-. If you need to manually access the Monitor Installation page, select *Monitor Installation* from the menu bar.
+. If you need to manually access the Monitor installation page, select *Monitor Installation* from the menu bar.
 +
-The Monitor Installation page shows the installation progress.
+The Monitor installation page shows the installation progress.
 +
 The blue status bar indicates which task is currently in progress. Green status bars indicate tasks that have completed successfully.
 +
