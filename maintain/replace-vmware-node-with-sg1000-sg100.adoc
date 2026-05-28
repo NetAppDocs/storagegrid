@@ -18,16 +18,16 @@ CAUTION: After completing and verifying the node replacement, you must delete th
 * You have determined that the virtual machine can't be restored and must be replaced.
 * You have verified that there are no grid maintenance procedures in progress.
 * You have confirmed that the StorageGRID Appliance Installer version on the SG1000 or SG100 services appliance matches the software version of your StorageGRID system.
-* You have the following information about the failed node:
+* You have the following information about the existing primary Admin Node:
 +
-*Node name*: You must install the services appliance using the same node name as the failed node. The node name is the hostname (system name).
+*Node name*: You must install the services appliance using the same node name as the existing primary Admin Node. The node name is the hostname (system name).
 +
-*IP address*: You can assign the services appliance the same IP address as the failed primary Admin Node (recommended), or you can select a new unused IP address on each network.
+*IP address*: You can assign the services appliance the same IP address as the existing primary Admin Node (recommended), or you can select a new unused IP address on each network.
 * You have the provisioning passphrase.
 
 == Step 1: Replace the VMware node
 
-You first remove the failed primary Admin Node in the Grid Manager. Then, you install the SG1000 or SG100 services appliance as the new primary Admin Node using the StorageGRID Appliance Installer and recover the node. If you're using a new IP address, you can install the services appliance before you remove the failed primary Admin Node.
+You first remove the existing primary Admin Node in the Grid Manager. Then, you install the SG1000 or SG100 services appliance as the new primary Admin Node using the StorageGRID Appliance Installer and recover the node. If you're using a new IP address, you can install the services appliance before you remove the existing primary Admin Node.
 
 [role="tabbed-block"]
 ====
@@ -41,7 +41,7 @@ Replace the primary Admin Node using the existing primary Admin Node IP address.
 . [[download-recovery-package-a]]Download the recovery package from the Grid Manager:
 .. Select *Maintenance* > *Recovery package*.
 .. Enter the provisioning passphrase and download the package.
-. Log in to the failed Admin Node:
+. Log in to the existing primary Admin Node:
 .. Enter the following command: `ssh admin@grid_node_IP`
 .. Enter the password listed in the `Passwords.txt` file.
 .. Switch to root: `su -`
@@ -49,7 +49,7 @@ Replace the primary Admin Node using the existing primary Admin Node IP address.
 
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
-. link:copying-audit-logs-from-failed-primary-admin-node.html[Copy the audit logs from the failed Primary Admin Node].
+. link:copying-audit-logs-from-failed-primary-admin-node.html[Copy the audit logs from the existing primary Admin Node].
 
 . Stop Server Manager and all services on the grid node: 
 +
@@ -75,13 +75,13 @@ date -s "DD Mon YYYY HH:MM:SS"
 .. Select *Remove* to remove the installation software.
 .. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
 . On the Home tab, select *Primary Admin (with Load Balancer)* for Node type.
-. Enter the node name. The node name must match the failed virtual primary Admin Node name.
+. Enter the node name. The node name must match the existing primary Admin Node name.
 +
 IMPORTANT: Don't select *Start Installation*.
 . On the StorageGRID Appliance Installer Home tab, verify the following settings:
 * Node type is set to *Primary Admin (with Load Balancer)*
 * Node name matches the existing Primary Admin Node name
-* The IP address is the same as the failed primary Admin Node IP address.
+* The IP address is the same as the existing primary Admin Node IP address.
 
 . Select *Start Installation*.
 +
@@ -129,7 +129,7 @@ date -s "DD Mon YYYY HH:MM:SS"
 .. Select *Remove* to remove the installation software.
 .. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
 . On the StorageGRID Appliance Installer Home tab, select *Primary Admin (with Load Balancer)* as Node type.
-. Enter the node name. The node name must match the failed virtual primary Admin Node name.
+. Enter the node name. The node name must match the existing primary Admin Node name.
 +
 IMPORTANT: Don't select *Start Installation*.
 
@@ -139,7 +139,7 @@ IMPORTANT: Don't select *Start Installation*.
 . [[download-recovery-package]]Download the recovery package:
 .. Select *Maintenance* > *Recovery package*.
 .. Enter the provisioning passphrase, then download the package.
-. Log in to the failed Admin Node:
+. Log in to the existing primary Admin Node:
 .. Enter the following command: `ssh admin@grid_node_IP`
 .. Enter the password listed in the `Passwords.txt` file.
 .. Enter the following command to switch to root: `su -`
@@ -147,7 +147,7 @@ IMPORTANT: Don't select *Start Installation*.
 
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
-. link:copying-audit-logs-from-failed-primary-admin-node.html[Copy the audit logs from the failed Primary Admin Node].
+. link:copying-audit-logs-from-failed-primary-admin-node.html[Copy the audit logs from the existing Primary Admin Node].
 
 . Stop Server Manager and all services on the grid node: 
 +
@@ -198,13 +198,13 @@ tail /var/local/log/install.log
 +
 You should see the following error repeatedly: `curl: (7) Failed to connect to <primary_Admin_Node_name> port9999: No route to host`
 +
-This is the expected behavior. StorageGRID is attempting to send the update to the primary Admin Node using the failed primary Admin Node IP address.
+This is the expected behavior. StorageGRID is attempting to send the update to the primary Admin Node using the existing primary Admin Node IP address.
 .. Verify that the container is running:
 +
 `storagegrid node status`
 +
 `storagegrid node enter <primary_Admin_Node_name>` 
-.. In the `/etc/hosts` file inside the container, replace the failed primary Admin Node IP address with the new IP address. 
+.. In the `/etc/hosts` file inside the container, replace the existing primary Admin Node IP address with the new IP address. 
 .. Save the file.
 .. Return to the web browser. After a few seconds, the recovery progress bar appears.
 +

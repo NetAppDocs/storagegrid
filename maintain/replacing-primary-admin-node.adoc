@@ -11,7 +11,11 @@ summary: 'To recover a primary Admin Node, you must first replace the physical o
 [.lead]
 To recover a primary Admin Node, you must first replace the physical or virtual hardware.
 
-You can replace a failed primary Admin Node with a primary Admin Node running on the same platform, or you can replace a primary Admin Node running on VMware or a Linux host with a primary Admin Node hosted on a services appliance. You can also replace a primary Admin Node running on VMware host with an SG1000 or SG100 service appliance.
+To recover a primary Admin Node, you must first replace the physical or virtual hardware.
+
+* You can replace a failed primary Admin Node with a primary Admin Node running on the same platform.
+* You can replace a primary Admin Node running on VMware or a Linux host with a primary Admin Node hosted on a StorageGRID services appliance.
+* You can replace a primary Admin Node running on VMware host with an with SG1000 or SG100 services appliance.
 
 Use the procedure that matches the replacement platform you select for the node. After you complete the node replacement procedure (which is suitable for all node types), that procedure will direct you to the next step for primary Admin Node recovery.
 
