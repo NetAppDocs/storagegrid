@@ -49,7 +49,7 @@ The StorageGRID Appliance Installer Home page appears.
 
 . To install a primary Admin Node:
  .. In the This Node section, for *Node Type*, select *Primary Admin*.
- .. In the *Node Name* field, enter the same name that was used for the node you are recovering, and click *Save*.
+ .. In the *Node name* field, enter the same name that was used for the node you are recovering, and select *Save*.
  .. Select an appropriate mode from the two that are available in the Installation Mode section. You can select either the Install a node or recover this node using current configuration method or the Recover this node using a non-primary Admin Node method.
 +
 
@@ -62,9 +62,9 @@ The StorageGRID Appliance Installer Home page appears.
 Install a node or recover this node using the current configuration.
 
 . In the Installation section, check the software version listed under Current state. If the version of software that is ready to install is correct, skip ahead to the <<installation_section_step,Installation step>>.
-. If you need to upload a different version of software, under the *Advanced* menu, select *Upload StorageGRID Software*. The Upload StorageGRID Software page appears.
-. Click *Browse* to upload the *Software Package* and *Checksum File* for StorageGRID software. The files are automatically uploaded after you select them.
-. Click *Home* to return to the StorageGRID Appliance Installer Home page.
+. If you need to upload a different version of software, under the *Advanced* menu, select *Upload StorageGRID software*. The Upload StorageGRID Software page appears.
+. Select *Browse* to upload the *Software package* and *Checksum file* for StorageGRID software. The files are automatically uploaded after you select them.
+. Select *Home* to return to the StorageGRID Appliance Installer Home page.
 
 --
 .Non-primary Admin Node method
@@ -72,7 +72,7 @@ Install a node or recover this node using the current configuration.
 
 Recover this node using a non-primary Admin Node.
 
-. In the non-primary Admin Node IP field, enter the grid network IP address of the non-primary Admin Node you want to use for the recovery, and click *Save*.
+. In the non-primary Admin Node IP field, enter the grid network IP address of the non-primary Admin Node you want to use for the recovery, and select *Save*.
 . If the version of software that is ready to install is correct, skip ahead to the <<installation_section_step,Installation step>>.
   
 --
@@ -80,7 +80,7 @@ Recover this node using a non-primary Admin Node.
 +
 . To install a Gateway Node or non-primary Admin Node:
  .. In the This Node section, for *Node Type*, select *Gateway* or *Non-Primary Admin*, depending on the type of node you are restoring.
- .. In the *Node Name* field, enter the same name that was used for the node you are recovering, and click *Save*.
+ .. In the *Node name* field, enter the same name that was used for the node you are recovering, and select *Save*.
  .. In the Primary Admin Node connection section, determine whether you need to specify the IP address for the primary Admin Node.
 +
 The StorageGRID Appliance Installer can discover this IP address automatically, assuming the primary Admin Node, or at least one other grid node with ADMIN_IP configured, is present on the same subnet.
@@ -94,22 +94,22 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 |Manual IP entry
 |.. Clear the *Enable Admin Node discovery* checkbox.
  .. Enter the IP address manually.
- .. Click *Save*.
+ .. Select *Save*.
  .. Wait while the connection state for the new IP address becomes "ready."
 
 |Automatic discovery of all connected primary Admin Nodes
 |.. Select the *Enable Admin Node discovery* checkbox.
  .. From the list of discovered IP addresses, select the primary Admin Node for the grid where this services appliance will be deployed.
- .. Click *Save*.
+ .. Select *Save*.
  .. Wait while the connection state for the new IP address becomes "ready."
 |===
 . [[installation_section_step]]In the Installation section, confirm that the current state is Ready to start installation of node name and that the *Start Installation* button is enabled.
 +
 If the *Start Installation* button isn't enabled, you might need to change the network configuration or port settings. Refer to the maintenance instructions for your appliance.
 
-. From the StorageGRID Appliance Installer home page, click *Start Installation*.
+. From the StorageGRID Appliance Installer home page, select *Start installation*.
 +
-The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
+The Current state changes to "Installation is in progress," and the Monitor installation page is displayed.
 +
-NOTE: If you need to access the Monitor Installation page manually, click *Monitor Installation* from the menu bar.
+NOTE: If you need to access the Monitor installation page manually, select *Monitor installation* from the menu bar.
 // 2026-04-29,SGWS-34291

@@ -261,4 +261,8 @@ This generates the secret key for the client. Save this key for use later.
 * Front-Channel Logout URI, Back-Channel Logout URI, and Post-Logout Redirect URI: Add the StorageGRID logout URI: `\https://<Admin IP or Hostname>/api/v4/oidc-logged-out`
 . Select *Save*.
 
+.What's next
+
+After creating SP connections, link:configure-sso-oidc.html[configure SSO using OIDC].
+
 // 2026 APRIL 21, SGWS-39432

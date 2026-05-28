@@ -51,15 +51,15 @@ CAUTION: Be careful when choosing to decommission more than one disconnected gri
 +
 The *Start Decommission* button is enabled.
 
-. Click *Start Decommission*.
+. Select *Start decommission*.
 +
 A warning appears, indicating that you have selected a disconnected node and that object data will be lost if the node has the only copy of an object.
 
-. Review the list of nodes, and click *OK*.
+. Review the list of nodes, and select *OK*.
 +
 The decommission procedure starts, and the progress is displayed for each node. During the procedure, a new recovery package is generated containing the grid configuration change.
 
-. As soon as the new recovery package is available, click the link or select *Maintenance* > *System* > *Recovery package* to access the recovery package page. Then, download the `.zip` file.
+. As soon as the new recovery package is available, select the link or select *Maintenance* > *System* > *Recovery package* to access the recovery package page. Then, download the `.zip` file.
 +
 See the instructions for link:downloading-recovery-package.html[downloading the recovery package].
 +

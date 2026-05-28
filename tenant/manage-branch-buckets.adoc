@@ -97,8 +97,8 @@ The branch bucket's region must match the region for the base bucket, so this fi
 
 Choose the time range to include object versions from the base bucket. For any time filter, select any date within the following range:
 
-* Minimum date: January 1, 2010
-* Maximum date: Five years from today's date
+* Minimum date: January 1, 2010 (UTC)
+* Maximum date: Five years from today's date (UTC)
 
 Before:: The branch bucket provides access to object versions created earlier than _Before_ time.
 

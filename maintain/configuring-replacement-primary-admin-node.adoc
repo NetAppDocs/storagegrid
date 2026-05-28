@@ -32,15 +32,15 @@ The replacement node must be configured as the primary Admin Node for your Stora
 
 * If a password has not been set, optionally set a password to secure the StorageGRID installer.
 
-. Click *Recover a failed primary Admin Node*.
+. Select *Recover a failed primary Admin Node*.
 +
 image::../media/install_or_recover_primary_admin_node.png[Install or recover Primary Admin Node]
 
 . Upload the most recent backup of the recovery package:
- .. Click *Browse*.
- .. Locate the most recent recovery package file for your StorageGRID system, and click *Open*.
+ .. Select *Browse*.
+ .. Locate the most recent recovery package file for your StorageGRID system, and select *Open*.
 . Enter the provisioning passphrase.
-. Click *Start Recovery*.
+. Select *Start recovery*.
 +
 The recovery process begins. The Grid Manager might become unavailable for a few minutes as the required services start. When the recovery is complete, the sign in page is displayed.
 
