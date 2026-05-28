@@ -46,6 +46,7 @@ Replace the primary Admin Node using the existing primary Admin Node IP address.
 .. Enter the password listed in the `Passwords.txt` file.
 .. Switch to root: `su -`
 .. Enter the password listed in the `Passwords.txt` file.
+
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
 . link:copying-audit-logs-from-failed-primary-admin-node.html[Copy the audit logs from the failed Primary Admin Node].
@@ -74,7 +75,7 @@ date -s "DD Mon YYYY HH:MM:SS"
 .. Select *Remove* to remove the installation software.
 .. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
 . On the Home tab, select *Primary Admin (with Load Balancer)* for Node type.
-. Enter the node name. The node name must be identical to the existing virtual primary Admin Node name.
+. Enter the node name. The node name must match the failed virtual primary Admin Node name.
 +
 IMPORTANT: Don't select *Start Installation*.
 . On the StorageGRID Appliance Installer Home tab, verify the following settings:
@@ -87,7 +88,7 @@ IMPORTANT: Don't select *Start Installation*.
 Allow approximately ten minutes for the installation to reach the *Load StorageGRID installer* step. 
 +
 After six to seven minutes, the browser redirects to start the recovery. 
-. Check that the appliance clock is correct to avoid NTP errors during recovery. 
+. Check that the appliance clock is correct. 
 .. Use SSH to connect to port 8022:
 ... Enter the command: `ssh -p 8022 admin@_grid_node_IP_`.
 ... Switch to root: `su -`
@@ -128,7 +129,7 @@ date -s "DD Mon YYYY HH:MM:SS"
 .. Select *Remove* to remove the installation software.
 .. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
 . On the StorageGRID Appliance Installer Home tab, select *Primary Admin (with Load Balancer)* as Node type.
-. Enter the node name. The node name must be identical to the existing virtual primary Admin Node name.
+. Enter the node name. The node name must match the failed virtual primary Admin Node name.
 +
 IMPORTANT: Don't select *Start Installation*.
 
@@ -143,6 +144,7 @@ IMPORTANT: Don't select *Start Installation*.
 .. Enter the password listed in the `Passwords.txt` file.
 .. Enter the following command to switch to root: `su -`
 .. Enter the password listed in the `Passwords.txt` file.
+
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
 . link:copying-audit-logs-from-failed-primary-admin-node.html[Copy the audit logs from the failed Primary Admin Node].
