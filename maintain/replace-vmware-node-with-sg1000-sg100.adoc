@@ -1,8 +1,8 @@
 ---
 permalink: maintain/replace-vmware-node-with-sg1000-sg100.html
 sidebar: sidebar
-keywords: storagegrid, recover, primary admin node, SG1000, SG100, appliance, prepare, installation software, software version
-summary: 'Before replacing a virtual primary Admin Node with an SG1000 or SG100 appliance, install the appliance hardware, configure the network, and verify that the appliance software version matches the grid.'
+keywords: storagegrid, recover, primary admin node, SG1000, SG100, appliance, services, prepare, installation, software
+summary: 'Replace a primary Admin Node running as a VMware node with an SG1000 or SG100 services appliance.'
 ---
 = Replace VMware node in StorageGRID with SG1000 or SG100
 :icons: font
@@ -22,7 +22,7 @@ CAUTION: After completing and verifying the node replacement, you must delete th
 +
 *Node name*: You must install the services appliance using the same node name as the failed node. The node name is the hostname (system name).
 +
-*IP addresses*: You can assign the services appliance the same IP addresses as the failed primary Admin Node (recommended), or you can select a new unused IP address on each network.
+*IP address*: You can assign the services appliance the same IP address as the failed primary Admin Node (recommended), or you can select a new unused IP address on each network.
 * You have the provisioning passphrase.
 
 == Step 1: Replace the VMware node
@@ -56,35 +56,8 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 shutdown -h now
 ----
 +
-The service can take up to 15 minutes to stop.
+Allow up to 15 minutes for the services to stop.
 . link:https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html[Install the SG1000 or SG100 services appliance^].
-. Use SSH to connect to port 8022:
-+
-.. Enter the command: `ssh -p 8022 admin@_grid_node_IP_`.
-.. Switch to root: `su -`
-.. Enter `netapp1!`.
-. Verify that the appliance clock is within a few minutes of the current Coordinated Universal Time (UTC). If required, set the correct date and time:
-+
-----
-date -s "DD Mon YYYY HH:MM:SS"
-----
-
-. Verify that the preloaded software version on the appliance matches the StorageGRID version running on the grid. If the versions don't match, remove the preloaded software package from the appliance:
-.. Download the correct StorageGRID Debian installation package from the link:https://mysupport.netapp.com/site/[NetApp Support Site^].
-.. Remove the the installation software from appliance.
-.. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
-. On the StorageGRID Appliance Installer Home tab, select *Primary Admin (with Load Balancer)* as Node type
-. Enter the node name. The node name must be identical to the existing virtual primary Admin Node name.
-+
-IMPORTANT: Don't select *Start Installation*.
-. On the StorageGRID Appliance Installer Home tab, verify the following settings:
-* Node type is set to *Primary Admin*
-* Node name matches the existing Primary Admin Node name
-* The IP address.
-
-. Select *Start Installation*.
-+
-Allow approximately ten minutes for the installation to reach the *Load StorageGRID installer* step. After six to seven minutes, the browser redirects to start the recovery. 
 . Check that the appliance clock is correct to avoid NTP errors during recovery. 
 .. Use SSH to connect to port 8022:
 ... Enter the command: `ssh -p 8022 admin@_grid_node_IP_`.
@@ -96,12 +69,41 @@ Allow approximately ten minutes for the installation to reach the *Load StorageG
 date -s "DD Mon YYYY HH:MM:SS"
 ----
 
+. Go to *Upload StorageGRID Software* in the StorageGRID Appliance Installer and check that the preloaded software version on the appliance matches the StorageGRID version running on the grid. If the versions don't match:
+.. Download the correct StorageGRID Debian installation package from the link:https://mysupport.netapp.com/site/[NetApp Support Site^].
+.. Select *Remove* to remove the installation software.
+.. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
+. On the Home tab, select *Primary Admin (with Load Balancer)* for Node type.
+. Enter the node name. The node name must be identical to the existing virtual primary Admin Node name.
++
+IMPORTANT: Don't select *Start Installation*.
+. On the StorageGRID Appliance Installer Home tab, verify the following settings:
+* Node type is set to *Primary Admin (with Load Balancer)*
+* Node name matches the existing Primary Admin Node name
+* The IP address is the same as the failed primary Admin Node IP address.
+
+. Select *Start Installation*.
++
+Allow approximately ten minutes for the installation to reach the *Load StorageGRID installer* step. 
++
+After six to seven minutes, the browser redirects to start the recovery. 
+. Check that the appliance clock is correct to avoid NTP errors during recovery. 
+.. Use SSH to connect to port 8022:
+... Enter the command: `ssh -p 8022 admin@_grid_node_IP_`.
+... Switch to root: `su -`
+... Enter `netapp1!`.
+.. Verify that the appliance clock is within a few minutes of the current UTC. If required, set the correct date and time:
++
+----
+date -s "DD Mon YYYY HH:MM:SS"
+----
+
 . Return to the web browser and select *Recover a failed primary Admin Node*.
 
 . Upload the <<download-recovery-package-a,recovery package you downloaded>>. 
 . Enter the provisioning passphrase and select *Start Recovery*.
 +
-The recovery progress bar appears. It takes six to ten minutes to complete the recovery process and start up the services.
+The recovery progress bar appears. Allow six to ten minutes for the recovery process to complete and the services to start.
 . Log in to Grid Manager when prompted.
 --
 .Use new IP address
@@ -116,13 +118,16 @@ Replace the primary Admin Node using a new IP address.
 ... Switch to root: `su -`
 ... Enter `netapp1!`.
 .. Verify that the appliance clock is within a few minutes of the current Coordinated Universal Time (UTC). If required, set the correct date and time:
-+-
++
+----
+date -s "DD Mon YYYY HH:MM:SS"
+----
 
-. Verify that the preloaded software version on the appliance matches the StorageGRID version running on the grid. If the versions don't match, remove the preloaded software package from the appliance:
+. Go to *Upload StorageGRID Software* in the StorageGRID Appliance Installer and check that the preloaded software version on the appliance matches the StorageGRID version running on the grid. If the versions don't match:
 .. Download the correct StorageGRID Debian installation package from the link:https://mysupport.netapp.com/site/[NetApp Support Site^].
-.. Remove the the installation software from appliance.
+.. Select *Remove* to remove the installation software.
 .. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
-. On the StorageGRID Appliance Installer Home tab, select *Primary Admin (with Load Balancer)* as Node type
+. On the StorageGRID Appliance Installer Home tab, select *Primary Admin (with Load Balancer)* as Node type.
 . Enter the node name. The node name must be identical to the existing virtual primary Admin Node name.
 +
 IMPORTANT: Don't select *Start Installation*.
@@ -148,15 +153,18 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 service servermanager stop
 ----
 +
-The services can take up to 15 minutes to stop.
-. On the StorageGRID Appliance Installer Home tab, verify the following settings:
-* Node type is set to *Primary Admin*
+Allow up to 15 minutes for the services to stop.
+. On the StorageGRID Appliance Installer Home tab:
+.. Verify the following settings:
+* Node type is set to *Primary Admin (with Load Balancer)*
 * Node name matches the existing Primary Admin Node name
-* Record the new IP address.
+.. Record the new IP address.
 
 . Select *Start Installation*.
 +
-Allow approximately 10 minutes for the installation to reach the *Load StorageGRID installer* step. After six to seven minutes, the browser redirects to begin the recovery procedure. 
+Allow approximately 10 minutes for the installation to reach the *Load StorageGRID installer* step.
++
+After six to seven minutes, the browser redirects to begin the recovery procedure. 
 
 . Check that the appliance clock is correct. 
 .. Use SSH to connect to port 8022:
@@ -174,7 +182,7 @@ date -s "DD Mon YYYY HH:MM:SS"
 . Upload the <<download-recovery-package,recovery package you downloaded>>. 
 . Enter the provisioning passphrase and select *Start Recovery*.
 +
-The Primary Admin Node Recovery page disappears, then reappears. If you select *Start Recovery* again, a `500: Internal Server Error` appears because the recovery has started but can't send the update to the Grid Manager because it's using the new IP address. Resolve this issue by updating the primary Admin Node IP address in the `/etc/hosts` file:
+The Primary Admin Node Recovery page disappears, then reappears. If you select *Start Recovery* again, a `500: Internal Server Error` appears because the recovery has started but can't send the update to the Grid Manager, which is using the new IP address. Resolve this issue by updating the primary Admin Node IP address in the `/etc/hosts` file:
 
 .. Use SSH to connect to port 8022:
 ... Enter the command: `ssh -p 8022 admin@_grid_node_IP_`.
@@ -186,15 +194,15 @@ The Primary Admin Node Recovery page disappears, then reappears. If you select *
 tail /var/local/log/install.log
 ----
 +
-You should see the following error repeatedly: `curl: (7) Failed to connect to amd-test-primary-admin port9999: No route to host`
+You should see the following error repeatedly: `curl: (7) Failed to connect to <primary_Admin_Node_name> port9999: No route to host`
 +
-This is expected behavior. StorageGRID is attempting to send the update to primary Admin Node using failed primary Admin Node IP address.
+This is the expected behavior. StorageGRID is attempting to send the update to the primary Admin Node using the failed primary Admin Node IP address.
 .. Verify that the container is running:
 +
 `storagegrid node status`
 +
-`storagegrid node enter amd-test-primary-admin` 
-.. In the `/etc/hosts` file inside the container, replace the old primary Admin Node IP address with the new IP address. 
+`storagegrid node enter <primary_Admin_Node_name>` 
+.. In the `/etc/hosts` file inside the container, replace the failed primary Admin Node IP address with the new IP address. 
 .. Save the file.
 .. Return to the web browser. After a few seconds, the recovery progress bar appears.
 +
@@ -204,12 +212,12 @@ Allow six to ten minutes for the recovery process to complete and the services t
 .. Log in to the primary Admin Node:
 ... Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
 ... Switch to root: `su -`
-... Enter the entering following command: `change-ip`
+... Enter the following command: `change-ip`
 
 .. Select option *3 – Edit admin network subnet lists*, then add the new subnet.
 
 +
-StorageGRID automatically generates a new recovery package with the updated primary Admin Node IP address.
+StorageGRID automatically generates a new recovery package with the new primary Admin Node IP address.
 . Download the latest recovery package from the Grid Manager.
 
 --
@@ -224,6 +232,6 @@ Use an existing non-primary Admin Node as the source Admin Node for the restore 
 . link:restoring-audit-log-on-recovered-primary-admin-node.html[Restore the audit log].
 . link:restoring-admin-node-database-primary-admin-node.html[Restore the Admin Node database].
 . link:restoring-prometheus-metrics-primary-admin-node-using-npan.html[Restore Prometheus metrics].
-. Verifying that the new primary Admin Node is functioning correctly, then delete the original VM node or bare-metal container immediately. 
+. Verify that the new primary Admin Node is functioning correctly. Then, delete the original VM node or bare-metal container immediately. 
 
 // 2026 MAY 21, SGRIDDOC-260

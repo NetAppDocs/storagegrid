@@ -1,5 +1,5 @@
 ---
-permalink: maintain/replace-primary-admin-node.html
+permalink: maintain/replacing-primary-admin-node.html
 sidebar: sidebar
 keywords: storagegrid, recover, replace primary admin node, replacing primary admin node, primary admin node
 summary: 'To recover a primary Admin Node, you must first replace the physical or virtual hardware.'
