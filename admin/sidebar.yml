@@ -76,6 +76,8 @@ entries:
           url: "/admin/creating-enterprise-application-entra-id-oidc.html"    
         - title: Create clients in Keycloak
           url: "/admin/create-client-keycloak-oidc.html"
+        - title: Create application groups in Okta
+          url: "/admin/create-client-okta-oidc.html"
         - title: Create SP connections in PingFederate
           url: "/admin/creating-sp-connection-ping-oidc.html"
         - title: Configure SSO 

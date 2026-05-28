@@ -1,0 +1,114 @@
+---
+permalink: admin/create-client-okta-oidc.html
+sidebar: sidebar
+keywords: okta, application, single sign on, sso
+summary: 'You use Okta to create application groups for the Admin Nodes in your system.'
+---
+= Create application groups in Okta for OIDC in StorageGRID 
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use Okta to create an application group for each Admin Node for OpenID Connect (OIDC) in your StorageGRID system.
+
+.Before you begin 
+* You have experience creating applications in Okta, or you have access to the Okta documentation.
+* You have Okta Administrator access.
+
+.About this task
+Each Admin Node in your StorageGRID system must have an application. This ensures that users can securely sign in to and out of any Admin Node. You can create a single application for all Admin Nodes (recommended) or a different application for each Admin Node.
+
+== Step 1: Create an Okta application
+Create an Okta application.
+
+.Steps
+. In Okta, go to *Applications* > *Applications*.
+. Select *Create App Integration*, then enter the following information:
+* Sign-in method: *OIDC - OpenID Connect*
+* Application type: *Web Application*
+. Select *Next*, then enter a name for the application in the app integration field.
+. Verify the Authorization Code is selected (default) for Core grants.
+. Add the sign-in and sign-out redirect URIs for each Admin Node:
++
+* Sign-in redirect URI: `\<https://<admin> IP>/api/v4/oidc-callback`
+* Sign-out redirect URI: `\<https://<admin> IP>/api/v4/oidc-logged-out`
+. Save the client ID and client secret values for use later.
+
+== Step 2: Create an API access token
+
+.Steps
+. In Okta, go to *Security* > *API* > *Tokens*.
+. Select *Create token*.
+. Assign a name, then set *API calls made with this token must originate from* to *Any IP*.
+. Select *Create token*. Save the token value for use later.
++
+NOTE: You can't access the token value after you navigate away from the Tokens page.
+
+== Step 3: Optionally, add a federate group
+Create a Federate Group or use an existing group containing a user in the Active Directory Federation Service (AD FS) server.
+
+.Steps
+
+. In GRID Manager, select *Configuration* > *Admin groups* > *Create group* > *Federate Group*.
+. Enter the AD FS server group name.
+. Select *Read-write* access mode and *Root access* permissions.
+. Select *Create group*.
+
+== Step 4: Import AD FS server group and user
+Install the Okta Active Directory using the AD FS Server.
+
+.Steps
+. In Okta, go to *Directory* > *Directory Integrations* > *Add Directory*. 
+. Select *Add Active Directory*. Then, follow the setup process immediately. 
++
+NOTE: If you delay, the setup might stall and you will need to start over.
+
+.. Select the Active Directory domain.
+.. Create an OktaService account instead of linking an existing user.
+.. Select both the organizational units that contain the users and the organizational units that contain the groups.
+.. Select User Principal Name (UPN) which uses the AD UPN as the Okta username. For example: user@domain.com 
+. Run the *Okta AD Agent Management Utility* search and confirm that the `The agent is running` status message appears.
++
+The client must be running whenever you want to execute an AD FS server sync and import with Okta.
+. Go to *Directory* > *Directory Integrations* 
+. Select the directory integration that you created. 
+. Select *Import* > *Import Now*.
+. Select the user that you want to import, then select *Confirm Assignments*.
+. Go to *Directory* > *People* and confirm that the user was imported successfully.
++
+If the user status is not Active, select *Activate* and keep refreshing page until the user has the Active status. 
+. Go to *Directory* > *Groups* and confirm that the group for the imported user was automatically imported. 
+. Select the group and verify that the imported user is part of this group.
+
+== Step 5: Add imported AD FS server group and users
+Set up a claim to include AD FS server groups in the access token. Then, test that the claim includes the imported group for the imported user and application.
+
+.Steps
+. Go to *Directory* > *Groups*.
+. Select the imported group for the imported user.
+. Select *Applications* > *Assign applications* > *Assign*.
+. Go to *Security* > *API*.
+. Select the *default* authorization server. 
+. Select *Claims* > *Add Claim*. Then, create a claim with the following credentials:
+
+* Name: *groups*
+* Include in token type: *ID Token - Always*
+* Value type: *Expression*
+* Value: `Groups.startsWith("active_directory","",100)`
+* Include in: *Any scope*
+. Go to *Security* > *API*.
+. Select the *default* authorization server.
+. Select *Token Preview* tab and enter the following credentials for Request Properties:
+* OAuth/OIDC client: <application name>
+* Grant type: Authorization Code
+* User: Imported user (e-mail address)
+* Scopes: email, profile, openid
+. Select *Execute*.
++
+On the Preview id_token tab of, the imported group appears in the Payload.
+
+.What's next
+
+After creating application groups, link:configure-sso-oidc.html[configure SSO using OIDC].
+
+// 2026 MAY 28, SGRIDDOC-247
