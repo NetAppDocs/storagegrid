@@ -151,7 +151,7 @@ Temporary security credentials created from assuming this group are valid for a 
 
 . Select *Access Management* > *Groups*.
 
-. Click on the group name.
+. Select the group name.
 
 . Select the *S3 trust policy* tab.
 
