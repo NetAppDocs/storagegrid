@@ -42,6 +42,9 @@ When the allow S3 Object Lock for existing buckets setting is enabled, an S3 ten
 === Replication allowed for S3 Object Lock-enabled buckets
 Replication is now allowed for S3 Object Lock-enabled buckets. Refer to link:../tenant/considerations-for-platform-services.html[Learn about platform services].
 
+=== Enable cross-grid replication for non-empty buckets
+You can now enable cross-grid replication for buckets that aren't empty. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#requirements-for-cross-grid-replication[Requirements for cross-grid replication].
+
 === S3 Batch (FPVR only)
 You can use S3 batch operations to replicate existing objects in a bucket that you plan to configure for cross-grid replication.
 
