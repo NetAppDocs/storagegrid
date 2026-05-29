@@ -88,8 +88,6 @@ Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html[What 
 +
 * *Normal*: All cross-grid replication requests are included, which significantly increases the volume of the audit output.
 
-.. Review your selections. You aren't able to change these settings unless both buckets are empty.
-
 .. Select *Enable and test*.
 +
 After a few moments, a success message appears. Objects added to this bucket are now automatically replicated to the other grid. *Cross-grid replication* is shown as an enabled feature on the bucket details page.
