@@ -28,7 +28,6 @@ If a tenant account has the *Use grid federation connection* permission to use o
 ** source: *disabled*, destination: *disabled*
 ** source: *enabled*, destination: *enabled*
 ** source: *disabled*, destination: *enabled*
-* Must be empty
 
 After you've created both buckets, you can configure cross-grid replication for either or both buckets.
 
