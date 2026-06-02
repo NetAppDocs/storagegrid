@@ -136,10 +136,9 @@ Follow these steps to investigate and resolve the issue if the Email notificatio
 . Check your spam filter, and make sure that the email was not sent to a junk folder.
 . Ask your email administrator to confirm that emails from the sender address aren't being blocked.
 . Check the following items relating to email transfer:
- .. SMTP Log Monitoring: Instructions for checking outgoing mail servers for relay errors.
- .. NDR Review: Procedures for monitoring Non-Delivery Reports (bounce-backs) caused by policy violations or invalid addresses.
- .. Automated Alerts: Guidance on using Amazon SES notifications or similar "watchers" to automate failure tracking.
-. Collect a log file for the Admin Node, and then contact technical support.
+ .. Email server log monitoring: View the logs for the email server used by StorageGRID (*Configuration* > *Email server*). Search for relay errors, authentication errors, and other failures matching the time StorageGRID attempted to send an email.
+ .. Non-delivery reports (bounce-backs): If emails are not received and StorageGRID does not report a failure, the issue might be a bounce-back. Configuring the "from" address to use a valid email address will make these bounce-back reply emails visible to you.
+. Collect the log files for the Admin Node that is sending the emails. Review the /var/local/log/prometheus.log and /var/local/log/nms.log files for obvious issues you might be able to correct. If you are unable to resolve the issue contact technical support.
 +
 Technical support can use the information in the logs to help determine what went wrong. For example, the prometheus.log file might show an error when connecting to the server you specified.
 +
