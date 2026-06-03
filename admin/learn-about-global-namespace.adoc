@@ -45,17 +45,17 @@ For more information about grid federation, refer to link:grid-federation-overvi
 
 === CreateBucket and ListBuckets operations
 
-If you create a bucket (`bucket123`) with region `region-2` and targets the global endpoint `s3.netapp.com`, any grid that receives the request will create the bucket on Grid 2.
+If you create a bucket (`bucket123`) with region `region-2` and targets the global endpoint `s3.company.com`, any grid that receives the request will create the bucket on Grid 2.
 
 === Bucket-specific and general object operations
 
 After a bucket is created on a given grid, your DNS resolver will resolve the bucket URL to the bucket and grid CNAME.
 
-In the <<gns-example,example above>>, the DNS resolver should resolve `bucket123.s3.netapp.com` to `bucket123.s3.grid3.netapp.com` (bucket and grid's CNAME). In other words, all requests are sent directly to that grid without additional routing needed.
+In the <<gns-example,example above>>, the DNS resolver should resolve `bucket123.s3.company.com` to `bucket123.s3.grid3.netapp.com` (bucket and grid's CNAME). In other words, all requests are sent directly to that grid without additional routing needed.
 
 .Example
 
-`PutObject to bucket123.s3.netapp.com` resolves to `bucket123.s3.grid3.netapp.com`
+`PutObject to bucket123.s3.company.com` resolves to `bucket123.s3.grid3.netapp.com`
 
 == S3 behavior with global namespace
 
@@ -90,7 +90,7 @@ For example:
 Additional considerations for CreateBucket:
 
 * The `LocationConstraint` element can be set to any of the grid's default or non-default regions. This affects only ILM policy, not which grid creates the bucket (unlike AWS behavior with `us-east-1`).
-* The signing region in the request determines which grid creates the bucket (signing region has to match the grid's default region).
+* The signing region in the request determines which grid creates the bucket (signing region has to match the target grid's default region).
 * Presigned V4 requests are supported.
 * Anonymous and V2 requests aren't supported for global namespace routing.
 
