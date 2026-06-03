@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: use tenant account
 summary: 'A tenant account allows you to use either the Simple Storage Service (S3) REST API to store and retrieve objects in a StorageGRID system.'
 ---
-= Use a tenant account
+= Use a StorageGRID tenant account
 :icons: font
 :imagesdir: ../media/
 
@@ -39,7 +39,7 @@ After an link:../admin/creating-tenant-account.html[S3 tenant account is created
 
 * Set up identity federation (unless the identity source is shared with the grid)
 * Manage groups and users
-* Use grid federation for account clone and cross-grid replication 
+* Use grid federation for account sync and cross-grid replication 
 * Manage S3 access keys
 * Create and manage S3 buckets
 * Use S3 platform services

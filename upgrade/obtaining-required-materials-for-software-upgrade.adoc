@@ -33,7 +33,7 @@ Before you begin the software upgrade, obtain all required materials.
 Ensure your Linux operating system meets StorageGRID's minimum kernel version requirements. See link:../swnodes/installing-linux.html[Install StorageGRID on Linux hosts].
     
 |StorageGRID documentation
-|* link:../release-notes/index.html[Release notes] for StorageGRID 12.0 (sign in required). Be sure to read these carefully before starting the upgrade. 
+|* https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes. Be sure to read these carefully before starting the upgrade. 
 * https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_12.0_software_upgrade_resolution_guide[StorageGRID software upgrade resolution guide^] for the major version you are upgrading to (sign in required)
 
 * Other https://docs.netapp.com/us-en/storagegrid-family/index.html[StorageGRID documentation^], as required.

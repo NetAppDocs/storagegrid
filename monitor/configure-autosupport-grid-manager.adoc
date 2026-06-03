@@ -2,14 +2,14 @@
 permalink: monitor/configure-autosupport-grid-manager.html
 sidebar: sidebar
 keywords: how to configure autosupport, what is autosupport-on-demand
-summary: 'The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Active IQ for predictive recommendations.'
+summary: 'The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Digital Advisor for predictive recommendations.'
 ---
-= Configure AutoSupport
+= Configure AutoSupport in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Active IQ for predictive recommendations.
+The AutoSupport feature enables your StorageGRID system to send periodic and event-driven health and status messages to technical support to allow proactive monitoring and troubleshooting. StorageGRID AutoSupport also enables the use of Digital Advisor for predictive recommendations.
 
 By default, the weekly and event-triggered AutoSupport features are enabled for software-based StorageGRID systems when you first install StorageGRID. However, you must <<autosupport-for-appliances,configure hardware AutoSupport>> on each appliance. As needed, you can change the AutoSupport configuration.
 
@@ -172,6 +172,8 @@ StorageGRID AutoSupport does not report hardware issues, such as DIMM or host in
 
 .Related information
 
-https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]
+* link:../network/external-communications.html[Ports used for external communications]
+* https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]
 
 // 2023 NOV 21, SGRIDDOC-29
+// 2026-03-30, SGRIDDOC-147

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security certificates, grid CA certificate, types of certificates
 summary: 'Security certificates are small data files used to create secure, trusted connections between StorageGRID components and between StorageGRID components and external systems.'
 ---
-= Manage security certificates
+= Manage security certificates in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -172,7 +172,7 @@ You can:
 * link:grid-federation-manage-connection.html#rotate-connection-certificates[Rotate grid federation connection certificates]
 * link:using-identity-federation.html[View and edit an identity federation certificate]
 * link:kms-adding.html[Upload key management server (KMS) server and client certificates]
-* link:creating-relying-party-trusts-in-ad-fs.html#create-a-relying-party-trust-manually[Manually specify an SSO certificate for a relying party trust]
+* link:creating-relying-party-trusts-in-ad-fs-saml.html#create-a-relying-party-trust-manually[Manually specify an SSO certificate for a relying party trust]
 
 
 --

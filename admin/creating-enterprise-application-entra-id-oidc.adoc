@@ -1,0 +1,91 @@
+---
+permalink: admin/creating-enterprise-application-entra-id-oidc.html
+sidebar: sidebar
+keywords: enterprise application, entra id, single sign on, sso
+summary: 'You use Entra ID to create an application for each Admin Node in your system.'
+---
+= Create enterprise applications in Entra ID for OIDC in StorageGRID
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You use Entra ID to create an enterprise application for each Admin Node for OpenID Connect (OIDC) in your system.
+
+.Before you begin
+
+* You have the relying party identifier and fully qualified domain name (FQDN) (or IP address) for each Admin Node in your system.
++
+NOTE: Each Admin Node in your StorageGRID system must have an enterprise application. This ensures that users can securely sign in to and out of any Admin Node. You can create a single enterprise application for all Admin Nodes (recommended) or a different enterprise application for each Admin Node.
+
+* You have experience creating applications in Entra ID.
+
+* You have an Entra ID account with an active subscription.
+
+* You have one of the following roles in the Entra ID account: Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
+
+== Step 1: Access Entra ID
+
+.Steps
+
+. Log in to the https://portal.azure.com[Azure Portal^].
+. Select link:https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview[Microsoft Entra ID^].
+. Select link:https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps[App registrations^].
+
+== Step 2: Register a new application
+
+Register a new enterprise application for each Admin Node in your system. 
+
+.Steps
+
+. In the Entra ID Enterprise applications pane, select *Application registrations* > *New registration*.
+. For *Name*, enter the relying party identifier.
+. Under *Supported account types*, select the account types that can use the application or access the API, for example, *Single tenant only - <tenant_name>*.
+. Under *Redirect URI*, select *Select a platform* > *Web*.
+. Enter the FQDN (or IP address) redirect URI for the Admin Node:  `https://<FQDN>/api/v4/oidc-callback` or `https://<IP_address>/api/v4/oidc-callback`
++
+Enter the URI for each Admin Node if you are using one enterprise application for all Admin Nodes. If you are using a different enterprise application for each Admin Node, only enter the URI for the corresponding Admin Node. 
+. Select *Register*.
+. In the Overview page for the new application registration, record the *Application (client) ID* and *Directory (tenant) ID*.
+
+== Step 3: Configure a client secret
+
+Register a client secret for each new application.
+
+.Steps
+
+. In the Overview page for the new application registration, select *Manage* > *Certificates and secrets* > *New client secret*.
+. Enter the client secret and set a desired expiry date.
+. Select *Add* to create the client secret.
+. Copy the secret *Value*.
++
+NOTE: The secret value is not visible after you refresh or navigate from the client secret page.
+
+== Step 4: Set up the API permissions 
+
+Set up the API permissions for each new application.
+
+.Steps
+
+. In the Overview page for the new application registration, select *Manage* > *API permissions* > *Add a permission*.
+. Select the *Microsoft APIs* > *Microsoft Graph* > *Delegated permissions*.
+. Expand *OpenId permissions*, then select *email*, *offline_access*, *openid*, and *profile*.
+. Select *Add permissions*.
+. Select *Grant admin consent for <tenant>*, then select *Yes*.
+
+== Step 5: Add the logged-out redirect URI
+
+Add the logged-out redirect URI for each new application.
+
+.Steps
+
+. In the Overview page for the new application registration, select *Manage* > *Authentication*.
+. Select *Add Redirect URI* > *Web*.
+. Enter the FQDN (or IP address) redirect URI for the Admin Node: `https://<FQDN>/api/v4/oidc-logged-out` or `https://<IP_address>/api/v4/oidc-logged-out`
++
+Enter the URI for each Admin Node if you are using one application group for all Admin Nodes. If you are using a different application group for each Admin Node, only enter the URI for the corresponding Admin Node.
+. Select *Configure*.
+
+.What's next
+
+After creating enterprise applications, link:configure-sso-oidc.html[configure SSO using OIDC].
+// 2026 MAR 31, SGWS-39432

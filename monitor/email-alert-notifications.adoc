@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to disable alert rules, how to remove a custom alert rule
 summary: 'If you want email notifications to be sent when alerts occur, you must provide information about your SMTP server. You must also enter email addresses for the recipients of alert notifications.'
 ---
-= Set up email notifications for alerts
+= Set up email notifications for StorageGRID alerts
 :icons: font
 :imagesdir: ../media/
 
@@ -119,19 +119,26 @@ StorageGRID continues to send email notifications once every 7 days until all in
 
 == Troubleshoot alert email notifications
 
-If the *Email notification failure* alert is triggered or you are unable to receive the test email server notification, follow these steps to resolve the issue.
+Follow these steps to investigate and resolve the issue if the Email notification failure alert is triggered and you are not receiving:
+
+* Test email server notifications
+* StorageGRID alert emails
+* Multi-admin verification (MAV) emails
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Root access permission]. If you have the Manage alerts permission, you can view, but not edit, the email server configuration.
 
 .Steps
-. Verify your settings.
+. Verify your alert email settings.
  .. Verify that you have specified valid email addresses for the recipients.
  .. Select *Configuration* > *Email server* and verify that the Email (SMTP) server settings are correct.
 . Check your spam filter, and make sure that the email was not sent to a junk folder.
 . Ask your email administrator to confirm that emails from the sender address aren't being blocked.
-. Collect a log file for the Admin Node, and then contact technical support.
+. Check the following items relating to email transfer:
+ .. Email server log monitoring: View the logs for the email server used by StorageGRID (*Configuration* > *Email server*). Search for relay errors, authentication errors, and other failures matching the time StorageGRID attempted to send an email.
+ .. Non-delivery reports (bounce-backs): If emails are not received and StorageGRID does not report a failure, the issue might be a bounce-back. Configuring the "from" address to use a valid email address will make these bounce-back reply emails visible to you.
+. Collect the log files for the Admin Node that is sending the emails. Review the /var/local/log/prometheus.log and /var/local/log/nms.log files for obvious issues you might be able to correct. If you are unable to resolve the issue contact technical support.
 +
 Technical support can use the information in the logs to help determine what went wrong. For example, the prometheus.log file might show an error when connecting to the server you specified.
 +

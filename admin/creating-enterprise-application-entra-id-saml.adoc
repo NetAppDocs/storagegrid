@@ -1,21 +1,21 @@
 ---
-permalink: admin/creating-enterprise-application-entra-id.html
+permalink: admin/creating-enterprise-application-entra-id-saml.html
 sidebar: sidebar
 keywords: enterprise application, entra id, single sign on, sso
 summary: 'You use Entra ID to create an enterprise application for each Admin Node in your system.'
 ---
-= Create enterprise applications in Entra ID
+= Create enterprise applications in Entra ID for SAML in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You use Entra ID to create an enterprise application for each Admin Node in your system.
+You use Entra ID to create an enterprise application for each Admin Node for SAML in your system.
 
 .Before you begin
 
 * You have started configuring single sign-on for StorageGRID and you selected *Entra ID* as the SSO type.
 
-* You have link:../admin/configure-sso.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
+* You have link:../admin/configure-sso-saml.html#enter-sandbox-mode[entered sandbox mode] in Grid Manager.
 
 * You have the *Enterprise application name* for each Admin Node in your system. You can copy these values from the Admin Node details table on the Configure SSO page.
 +
@@ -27,7 +27,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 * You have one of the following roles in the Entra ID account: Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
 
-== Access Entra ID
+== Step 1: Access Entra ID
 
 .Steps
 
@@ -37,7 +37,7 @@ NOTE: You must create an enterprise application for each Admin Node in your Stor
 
 . Select https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/Overview/menuId/[Enterprise applications^].
 
-== Create enterprise applications and save StorageGRID SSO configuration
+== Step 2: Create enterprise applications and save StorageGRID SSO configuration
 
 To save the SSO configuration for Entra ID in StorageGRID, you must use Entra ID to create an enterprise application for each Admin Node. You will copy the federation metadata URLs from Entra ID and paste them into the corresponding *Federation metadata URL* fields on the Configure SSO page. 
 
@@ -65,7 +65,7 @@ To save the SSO configuration for Entra ID in StorageGRID, you must use Entra ID
 
 . After you have pasted a federation metadata URL for each Admin Node and made all other needed changes to the SSO configuration, select *Save* on the Configure SSO page.
 
-== Download SAML metadata for every Admin Node
+== Step 3: Download SAML metadata for every Admin Node
 After the SSO configuration is saved, you can download a SAML metadata file for each Admin Node in your StorageGRID system. 
 
 .Steps
@@ -77,7 +77,7 @@ After the SSO configuration is saved, you can download a SAML metadata file for 
 .. Select the button to download the SAML metadata for that Admin Node. 
 .. Save the file, which you will upload into Entra ID.
 
-== Upload SAML metadata to each enterprise application
+== Step 4: Upload SAML metadata to each enterprise application
 
 After downloading a SAML metadata file for each StorageGRID Admin Node, perform the following steps in Entra ID:
 
@@ -95,6 +95,6 @@ NOTE: You might need to refresh the Enterprise applications page to see applicat
 .. Select the *Upload metadata file* button and select the SAML metadata file you downloaded for the corresponding Admin Node. 
 .. After the file loads, select *Save* and then select *X* to close the pane. You are returned to the Set up Single Sign-On with SAML page. 
 
-. link:../admin/configure-sso.html#test-sso[Test each application].
+. link:../admin/configure-sso-saml.html#test-sso[Test each application].
 
 // 2025 JUN 10, SGWS-33778

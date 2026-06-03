@@ -1,6 +1,5 @@
 //shared required for S3 Object Lock buckets for Grid Manager and Tenant Manager
 
-
 == Requirements for buckets with S3 Object Lock enabled
 
 * If the global S3 Object Lock setting is enabled for the StorageGRID system, you can use the Tenant Manager, the Tenant Management API, or the S3 REST API to create buckets with S3 Object Lock enabled.
@@ -10,8 +9,6 @@
 * Optionally, you can specify a default retention mode and retention period for each bucket using the Tenant Manager, the Tenant Management API, or the S3 REST API. The bucket's default retention settings apply only to new objects added to the bucket that don't have their own retention settings. You can override these default settings by specifying a retention mode and retain-until-date for each object version when it is uploaded.
 
 * Bucket lifecycle configuration is supported for buckets with S3 Object Lock enabled.
-
-* CloudMirror replication is not supported for buckets with S3 Object Lock enabled.
 
 == Requirements for objects in buckets with S3 Object Lock enabled
 

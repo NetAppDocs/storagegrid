@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to create branch bucket
 summary: 'Use the Tenant Manager to create and view details for branch buckets.'
 ---
-= Manage branch buckets
+= Manage StorageGRID branch buckets
 :icons: font
 :imagesdir: ../media/
 
@@ -97,8 +97,8 @@ The branch bucket's region must match the region for the base bucket, so this fi
 
 Choose the time range to include object versions from the base bucket. For any time filter, select any date within the following range:
 
-* Minimum date: January 1, 2010
-* Maximum date: Five years from today's date
+* Minimum date: January 1, 2010 (UTC)
+* Maximum date: Five years from today's date (UTC)
 
 Before:: The branch bucket provides access to object versions created earlier than _Before_ time.
 
@@ -157,4 +157,3 @@ The branch bucket is created and added to the table on the Buckets page.
 . Optionally, select *Go to bucket details page* to link:viewing-s3-bucket-details.html[view branch bucket details] and perform additional configuration.
 +
 On the Bucket details page, some configuration options related to the modification of objects are disabled for read-only buckets.
-

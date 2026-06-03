@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to view support metrics, how to review support metrics
 summary: 'When troubleshooting an issue, you can work with technical support to review detailed metrics and charts for your StorageGRID system.'
 ---
-= Review support metrics
+= Review StorageGRID support metrics
 :icons: font
 :imagesdir: ../media/
 
@@ -27,13 +27,13 @@ An example of the Metrics page is shown here:
 +
 image::../media/metrics_page.png[Metrics Page]
 
-. To query the current values of StorageGRID metrics and to view graphs of the values over time, click the link in the Prometheus section.
+. To query the current values of StorageGRID metrics and to view graphs of the values over time, select the link in the Prometheus section.
 +
 The Prometheus interface appears. You can use this interface to execute queries on the available StorageGRID metrics and to graph StorageGRID metrics over time.
 +
 NOTE: Metrics that include _private_ in their names are intended for internal use only and are subject to change between StorageGRID releases without notice.
 
-. To access pre-constructed dashboards containing graphs of StorageGRID metrics over time, click the links in the Grafana section.
+. To access pre-constructed dashboards containing graphs of StorageGRID metrics over time, select the links in the Grafana section.
 +
 The Grafana interface for the link you selected appears.
 +

@@ -1,0 +1,4 @@
+---
+permalink: admin/creating-relying-party-trusts-in-ad-fs.html
+redirect: storagegrid/admin/creating-relying-party-trusts-in-ad-fs-saml.html
+---

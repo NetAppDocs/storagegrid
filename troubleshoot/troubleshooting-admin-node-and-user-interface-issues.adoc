@@ -40,11 +40,9 @@ If the error is not resolved automatically, go to the next step.
 
 . Determine if the node's hardware is offline.
 
-. If single sign-on (SSO) is enabled for your StorageGRID system, refer to the steps for link:../admin/configure-sso.html[configuring single sign-on].
+. If single sign-on (SSO) is enabled for your StorageGRID system, refer to set up SSO using link:../admin/learn-about-setting-up-sso-oidc.html[OIDC] or link:../admin/learn-about-setting-up-sso-saml.html[SAML].
 +
 You might need to temporarily disable and re-enable SSO for a single Admin Node to resolve any issues.
-+
-NOTE: If SSO is enabled, you can't sign on using a restricted port. You must use port 443.
 
 . Determine if the account you are using belongs to a federated user.
 +
@@ -53,7 +51,7 @@ If the federated user account is not working, try signing in to the Grid Manager
  ** If the local user can sign in:
   ... Review alerts.
   ... Select *Configuration* > *Access Control* > *Identity federation*.
-  ... Click *Test Connection* to validate your connection settings for the LDAP server.
+  ... Select *Test connection* to validate your connection settings for the LDAP server.
   ... If the test fails, resolve any configuration errors.
  ** If the local user can't sign in and you are confident that the credentials are correct, go to the next step.
 

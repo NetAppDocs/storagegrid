@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to troubleshoot ubuntu or debian installation
 summary: 'If any problems occur while installing your StorageGRID system, you can access the installation log files. Technical support might also need to use the installation log files to resolve issues.'
 ---
-= Troubleshoot installation issues
+= Troubleshoot StorageGRID installation issues
 :icons: font
 :imagesdir: ../media/
 
@@ -54,7 +54,7 @@ If you are certain that the VM host has sufficient resources for each grid node,
 . Adjust the resources allocated to the virtual machine:
  .. Select *CPU*, and then use the Reservation slider to adjust the MHz reserved for this virtual machine.
  .. Select *Memory*, and then use the Reservation slider to adjust the MB reserved for this virtual machine.
-. Click *OK*.
+. Select *OK*.
 . Repeat as required for other virtual machines hosted on the same VM host.
 
 *Temporary installation password was disabled*

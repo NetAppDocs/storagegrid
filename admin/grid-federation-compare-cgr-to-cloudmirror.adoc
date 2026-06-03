@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cross-grid replication, cloudmirror replication
 summary: 'As you begin using grid federation, review the similarities and differences between cross-grid replication and the StorageGRID CloudMirror replication service.'
 ---
-= Compare cross-grid replication and CloudMirror replication
+= Compare cross-grid replication and CloudMirror replication in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -29,8 +29,8 @@ CloudMirror replication creates an independent copy of an object in an independe
 
 | How is it set up?
 | . Configure a grid federation connection between two grids. 
-. Add new tenant accounts, which are  automatically cloned to the other grid. 
-. Add new tenant groups and users, which are also cloned.
+. Add new tenant accounts, which are  automatically synced to the other grid. 
+. Add new tenant groups and users, which are also synced.
 . Create corresponding buckets on each grid and enable cross-grid replication to occur in one or both directions.
 
 | . A tenant user configures CloudMirror replication by defining a CloudMirror endpoint (IP address, credentials, and so on) using the Tenant Manager or the S3 API. 

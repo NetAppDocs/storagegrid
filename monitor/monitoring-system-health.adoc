@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to monitor system health, how to view system health
 summary: 'Monitor the overall health of your StorageGRID system on a daily basis.'
 ---
-= Monitor system health
+= Monitor system health in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -173,7 +173,7 @@ CAUTION: Be careful when deciding to silence an alert rule. If an alert rule is 
  .. From the alert details, select *View conditions*.
 +
 A pop-up appears, listing the Prometheus expression for each defined severity.
- .. To close the pop-up, click anywhere outside of the pop-up.
+ .. To close the pop-up, select any location outside of the pop-up.
 
 . Optionally, select *Edit rule* to edit the alert rule that caused this alert to be triggered.
 +

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, recover, gateway node
 summary: 'After replacing a Gateway Node, you must select Start Recovery in the Grid Manager to configure the new node as a replacement for the failed node.'
 ---
-= Select Start Recovery to configure Gateway Node
+= Select Start Recovery to configure StorageGRID Gateway Node
 :icons: font
 :imagesdir: ../media/
 
@@ -20,21 +20,19 @@ After replacing a Gateway Node, you must select Start Recovery in the Grid Manag
 
 .Steps
 
-. From the Grid Manager, select *Maintenance* > *Tasks* > *Recovery*.
+. From the Grid Manager, select *Maintenance* > *Tasks* > *Node recovery*.
 . Select the grid node you want to recover in the Pending Nodes list.
 +
 Nodes appear in the list after they fail, but you can't select a node until it has been reinstalled and is ready for recovery.
 
-. Enter the *Provisioning Passphrase*.
-. Click *Start Recovery*.
+. Enter the *Provisioning passphrase*.
+. Select *Start recovery*.
 +
 image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance > Recovery page]
 
 . Monitor the progress of the recovery in the Recovering Grid Node table.
 +
-NOTE: While the recovery procedure is running, you can click *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
-+
-image::../media/recovery_reset_warning.gif[screenshot showing the reset recovery warning dialog box]
+NOTE: While the recovery procedure is running, you can select *Reset* to start a new recovery. A dialog box appears, indicating that the node will be left in an indeterminate state if you reset the procedure.
 +
 If you want to retry the recovery after resetting the procedure, you must restore the node to a pre-installed state, as follows:
 

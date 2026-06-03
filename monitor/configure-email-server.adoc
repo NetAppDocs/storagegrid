@@ -59,5 +59,4 @@ The email settings are saved.
 +
 * link:../monitor/email-alert-notifications.html[Alerts]. For alerts, you can also link:../monitor/snmp-alert-notifications.html[set up SNMP notifications].
 * link:../monitor/configure-autosupport-grid-manager.html[AutoSupport]. You can send AutoSupport packages by email, HTTPS, or HTTP (HTTP isn't recommended).
-* Multi-admin verification (MAV)
-
+* link:../admin/configure-multi-admin-verify.html[Multi-admin verification (MAV)].

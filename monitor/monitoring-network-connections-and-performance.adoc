@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitoring, monitoring network connections, network, network performance
 summary: 'The integrity and bandwidth of the network between nodes and sites, and the resource usage by individual grid nodes, are critical to efficient operations.'
 ---
-= Monitor networking and system resources
+= Monitor networking and system resources in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -47,7 +47,7 @@ The Traffic Classification Policies page appears, and the existing policies are 
 +
 image::../media/traffic_classification_policies_main_screen_w_examples.png[Traffic Policy for Graph Example]
 
- .. To view graphs that show the networking metrics associated with a policy, select the radio button to the left of the policy, and then click *Metrics*.
+ .. To view graphs that show the networking metrics associated with a policy, select the radio button to the left of the policy, and then select *Metrics*.
  .. Review the graphs to understand the network traffic associated with the policy.
 +
 If a traffic classification policy is designed to limit network traffic, analyze how often traffic is limited and decide if the policy continues to meet your needs. From time to time, link:../admin/managing-traffic-classification-policies.html[adjust each traffic classification policy as needed].

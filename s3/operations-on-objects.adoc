@@ -29,9 +29,14 @@ The following table describes how StorageGRID implements S3 REST API object oper
 | Operation| Implementation
 
 | DeleteObject
-| Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
+| When processing a DeleteObject request, StorageGRID attempts to immediately remove all copies of the object from all stored locations. If successful, StorageGRID returns a response to the client immediately. If all copies can't be removed within 30 seconds (for example, because a location is temporarily unavailable), StorageGRID queues the copies for removal and then indicates success to the client.
 
-When processing a DeleteObject request, StorageGRID attempts to immediately remove all copies of the object from all stored locations. If successful, StorageGRID returns a response to the client immediately. If all copies can't be removed within 30 seconds (for example, because a location is temporarily unavailable), StorageGRID queues the copies for removal and then indicates success to the client.
+Restrictions::
+
+* Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
+* The `If-Match` and `If-None-Match` headers behave differently depending on your StorageGRID configuration. Providing these headers might return an error message (501 Not Implemented). If the `If-Match` or `If-None-Match` headers are accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+
+The `x-amz-bypass-governance-retention` header has no effect on objects without S3 Object Lock.
 
 Versioning::
 
@@ -51,6 +56,8 @@ See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S
 | Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
 
 Multiple objects can be deleted in the same request message.
+
+The `x-amz-bypass-governance-retention` header has no effect on objects without S3 Object Lock.
 
 See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] to learn how to delete object versions in GOVERNANCE mode.
 

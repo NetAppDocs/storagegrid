@@ -56,7 +56,18 @@ NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the A
 The following request headers aren't supported:
 
 * `If-Match`
-* `If-None-Match` 
++
+The `If-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+* `If-None-Match`
++
+The `If-None-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-None-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+
+* `x-amz-checksum-md5`
+* `x-amz-checksum-sha1`
+* `x-amz-checksum-sha512`
+* `x-amz-checksum-xxhash3`
+* `x-amz-checksum-xxhash64`
+* `x-amz-checksum-xxhash128`
 
 
 == Versioning
@@ -77,6 +88,7 @@ A tenant can trigger the failed replication or notification by updating the obje
 
 Refer to link:../admin/troubleshooting-platform-services.html[Troubleshoot platform services].
 
+// 2026 APR 24, SGIRDDOC-243
 // 2026 FEB 16, SGWS-39080
 // 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243
