@@ -94,7 +94,7 @@ You can enable S3 Object Lock when you create the bucket or at a later time.
 | Returns the lifecycle configuration for the bucket. Refer to link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration].
 
 | GetBucketLocation
-| Returns the region that was set using the `LocationConstraint` element in the CreateBucket request. If the bucket's region is `us-east-1` (default), GetBucketLocation returns an empty value for `LocationConstraint`.
+| Returns the region that was set using the `LocationConstraint` element in the CreateBucket request. If the bucket's region is `us-east-1` (default), an empty value is returned for `LocationConstraint`.
 
 | GetBucketNotificationConfiguration 
 
