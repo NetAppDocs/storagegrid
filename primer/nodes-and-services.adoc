@@ -23,7 +23,7 @@ See link:what-admin-node-is.html[What is an Admin Node?]
 
 Storage Nodes:: Manage and store object data and metadata. Each site in your StorageGRID system must have at least three Storage Nodes.
 +
-During initial installation of a new Storage Node, you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store metadata or data].
+During initial installation of a new Storage Node, you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store either metadata or data].
 +
 See link:what-storage-node-is.html[What is a Storage Node?]
 
