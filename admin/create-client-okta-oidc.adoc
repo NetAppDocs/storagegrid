@@ -9,7 +9,7 @@ summary: 'You use Okta to create application groups for the Admin Nodes in your 
 :imagesdir: ../media/
 
 [.lead]
-Use Okta to create a single application group for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.
+Use Okta to create an application group for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.
 
 .Before you begin 
 * You have experience creating applications in Okta, or you have access to the Okta documentation.
