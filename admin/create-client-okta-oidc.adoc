@@ -31,13 +31,14 @@ Create an Okta application using the Okta UI.
 . Verify that Authorization Code is selected (default) for Core grants.
 . Add the sign-in and sign-out redirect URIs for each Admin Node:
 +
-* Sign-in redirect URI: `\<https://<admin_IP>/api/v4/oidc-callback`
-* Sign-out redirect URI: `\<https://<admin_IP>/api/v4/oidc-logged-out`
-
+* Sign-in redirect URI: `\<https://<admin_IP_address>:<port>/api/v4/oidc-callback`
+* Sign-out redirect URI: `\<https://<admin_IP_address>:<port>/api/v4/oidc-logged-out`
++
+NOTE: If one or more load balancer endpoints are configured for the management interface, add the redirect URIs for each port: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-logged-out`
 . Select *Save*. Save the client ID and client secret values for use later.
 
 == Step 2: Add a federate group
-Create a group or reuse an existing group from the Active Directory Federation Service (AD FS) server for StorageGRID.
+Create a group or use an existing group from the Active Directory Federation Service (AD FS) server for StorageGRID.
 
 .Steps
 
@@ -61,14 +62,14 @@ NOTE: If you delay, the setup might stall and you will need to start over.
 .. Select the User Principal Name (UPN) that uses the AD UPN as the Okta username. For example: user@domain.com 
 . Search for the *Okta AD Agent Management Utility* application. Then, run the application and confirm that the `The agent is running` status message appears.
 +
-NOTE: The OKta AD client must be running whenever you want to execute an AD FS server sync and import with Okta.
+NOTE: The Okta AD client must be running whenever you want to execute an AD FS server sync and import with Okta.
 . In Okta, go to *Directory* > *Directory Integrations*.
 . Select the directory integration that you created. 
 . Select *Import* > *Import Now*.
 . Select the user that you want to import, then select *Confirm Assignments*.
 . Go to *Directory* > *People* and confirm that the user was imported successfully.
 +
-If the user status is not Active, select *Activate* and keep refreshing page until the user has the Active status. 
+If the user status is not Active, select *Activate* and keep refreshing the page until the user has the Active status. 
 . Go to *Directory* > *Groups* and confirm that the group for the imported user was automatically imported. 
 . Select the group and verify that the imported user is part of this group.
 
