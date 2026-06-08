@@ -84,6 +84,9 @@ See <<Request headers for server-side encryption>>
 
 The following request headers aren't supported:
 
+* `Accept-Encoding`
++
+When an object doesn't store a `Content-Encoding` value, a GET request with `Accept-Encoding: gzip` automatically performs compression. This only affects `gzip` values, other values are not affected. StorageGRID doesn't support Range read operations for GET requests with `Accept-Encoding: gzip`.
 * `Cache-Control`
 * `Content-Disposition`
 * `Content-Encoding`

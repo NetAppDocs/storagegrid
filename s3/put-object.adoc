@@ -48,11 +48,14 @@ In StorageGRID, all objects are owned by the bucket owner account, including obj
 
 The following request headers are supported:
 
+* `Accept-Encoding`
++
+When an object doesn't store a `Content-Encoding` value, a GET request with `Accept-Encoding: gzip` automatically performs compression. This only affects `gzip` values, other values are not affected. StorageGRID doesn't support Range read operations for GET requests with `Accept-Encoding: gzip`.
 * `Cache-Control`
 * `Content-Disposition`
 * `Content-Encoding`
 +
-When you specify `aws-chunked` for ``Content-Encoding``StorageGRID does not verify the following items:
+When you specify `aws-chunked` for `Content-Encoding` StorageGRID does not verify the following items:
 
  ** StorageGRID does not verify the `chunk-signature` against the chunk data.
  ** StorageGRID does not verify the value that you provide for `x-amz-decoded-content-length` against the object.
