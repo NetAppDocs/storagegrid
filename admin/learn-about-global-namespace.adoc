@@ -51,11 +51,11 @@ If you create a bucket (`bucket123`) with region `region-2` and targets the glob
 
 After a bucket is created on a given grid, your DNS resolver will resolve the bucket URL to the bucket and grid CNAME.
 
-In the <<gns-example,example above>>, the DNS resolver should resolve `bucket123.s3.company.com` to `bucket123.s3.grid3.netapp.com` (bucket and grid's CNAME). In other words, all requests are sent directly to that grid without additional routing needed.
+In the <<gns-example,example above>>, the DNS resolver should resolve `bucket123.s3.company.com` to `bucket123.s3.grid3.company.com` (bucket and grid's CNAME). In other words, all requests are sent directly to that grid without additional routing needed.
 
 .Example
 
-`PutObject to bucket123.s3.company.com` resolves to `bucket123.s3.grid3.netapp.com`
+`PutObject to bucket123.s3.company.com` resolves to `bucket123.s3.grid3.company.com`
 
 == S3 behavior with global namespace
 
@@ -77,12 +77,12 @@ An error occurred (AuthorizationHeaderMalformed) when calling the <operation> op
 
 === CreateBucket routing
 
-CreateBucket requests sent to the global namespace endpoint (`s3.example.com`) can be directed to any grid's load balancer endpoint. The request is automatically routed to the grid whose default region matches the signing region in the request.
+CreateBucket requests sent to the global namespace endpoint (`s3.company.com`) can be directed to any grid's load balancer endpoint. The request is automatically routed to the grid whose default region matches the signing region in the request.
 
 For example:
 
 * Grid A has default region `us-east-1` and Grid B has default region `us-west-1`.
-* A client sends a CreateBucket request to `s3.example.com` with `--region us-west-1`.
+* A client sends a CreateBucket request to `s3.company.com` with `--region us-west-1`.
 * Round-robin DNS directs the request to Grid A.
 * Grid A routes the request to Grid B.
 * The bucket is created on Grid B.
