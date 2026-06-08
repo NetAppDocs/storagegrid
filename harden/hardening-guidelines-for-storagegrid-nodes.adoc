@@ -26,17 +26,19 @@ For additional information about BMC hardening, see the https://media.defense.go
 You can change the BMC password for an appliance to limit access and improve system security.
 
 . In Grid Manager go to *Nodes* > *_grid node_* > *BMC settings*.
-. In the Change password section, enter a new BMC password between 8 and 32 characters in length in *New password* and then enter it again in *Confirm new password*.
+. In the Change password section, enter a new BMC password between 8 and 16 characters in length in *New password* and then enter it again in *Confirm new password*.
 . Select *Save*.
 
 You can also change the BMC password using the `PUT /bmc-configuration/root-password` API.
 
 == Control external USB port access on appliances
 
-You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security.
+You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security. USB ports are enabled by default after the initial install or an upgrade.
 
 * In the Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *USB port access* to enable or disable the USB ports:
 ** Select the *Enable USB ports* checkbox and save to enable the ports.
++
+If the USB checkbox was previously unchecked and saved, select the *Enable USB ports* checkbox and reboot the appliance to enable USB ports again.
 ** Clear the *Enable USB ports* checkbox and save to disable the ports.
 
 == Firewall configuration
