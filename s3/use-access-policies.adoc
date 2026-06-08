@@ -332,10 +332,10 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 
 | s3:ListBucket
 | 
-* ListObjects
-* HeadBucket
 * GetObject
+* HeadBucket
 * HeadObject
+* ListObjects
 
 | 
 
@@ -485,10 +485,10 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 
 | s3:PutObject
 | 
-* PutObject
 * CopyObject
-* CreateMultipartUpload
 * CompleteMultipartUpload
+* CreateMultipartUpload
+* PutObject
 * UploadPart
 * UploadPartCopy
 | 
@@ -511,11 +511,11 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 
 | s3:PutOverwriteObject
 | 
-* PutObject
-* CopyObject
-* PutObjectTagging
-* DeleteObjectTagging
 * CompleteMultipartUpload
+* CopyObject
+* DeleteObjectTagging
+* PutObject
+* PutObjectTagging
 | Yes
 
 | s3:RestoreObject
@@ -523,7 +523,7 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 |===
 
-== Use PutOverwriteObject permission
+== [[use-putoverwriteobject-permission]]Use PutOverwriteObject permission
 
 The s3:PutOverwriteObject permission is a custom StorageGRID permission that applies to operations that create or update objects. The setting of this permission determines whether the client can overwrite an object's data, user-defined metadata, or S3 object tagging.
 

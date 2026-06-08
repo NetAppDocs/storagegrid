@@ -2,18 +2,18 @@
 permalink: release-notes/removed-or-deprecated-features.html
 sidebar: sidebar
 keywords:
-summary: "Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.1. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration."
+summary: "Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.1.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration."
 ---
 = Removed or deprecated features and capabilities in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.1. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
+Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.1.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration.
 
 == Definitions
 
-Deprecated:: The feature *should not* be used in new production environments. Existing production environments can continue using the feature.
+Deprecated:: You *should not* use the feature in new production environments. Existing production environments can continue using the feature.
 End of Life:: Last shipped version that supports the feature. In some cases, documentation for the feature might be removed at this stage.
 Removed:: First version that *does not* support the feature.
 
@@ -29,6 +29,12 @@ NOTE: In certain situations, NetApp might end support for particular features so
 |===
 | Feature| Deprecated| End of Life| Removed| Links to earlier documentation
 
+| Global SSE setting for AES-128 encryption
+| 12.1
+| 12.2
+| 12.3 
+| Beginning with StorageGRID 12.1.0, support for AES-128 encryption of new objects stored at data at rest is deprecated. Support continues for retrieval of stored objects that were originally encrypted with AES-128.
+
 | Alarms, legacy (_not Alerts_)
 | 11.7
 | 11.8
@@ -43,8 +49,8 @@ NOTE: In certain situations, NetApp might end support for particular features so
 
 *Note*: Before starting your upgrade, you must:
 
-. Decommission all Archive Nodes. See https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
-. Remove all Archive Node references from storage pools and ILM policies. See https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
+. Decommission all Archive Nodes. Refer to https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html[Grid node decommissioning (StorageGRID 11.8 doc site)^].
+. Remove all Archive Node references from storage pools and ILM policies. Refer to https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.9_software_upgrade_resolution_guide[NetApp Knowledge Base: StorageGRID 11.9 software upgrade resolution guide^].
 
 | Audit export through CIFS/Samba
 | 11.1
@@ -129,3 +135,5 @@ Also refer to:
 
 * link:changes-to-grid-management-api.html[Changes to the Grid Management API]
 * link:changes-to-tenant-management-api.html[Changes to the Tenant Management API]
+
+// 2026 MAY 21, SGRIDDOC-227

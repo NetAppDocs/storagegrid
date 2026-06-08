@@ -78,7 +78,7 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 
 | Can recover primary Admin Node
 | Yes
-| No
+| Yes
 
 | Sends alert notifications, AutoSupport packages, and SNMP traps and informs
 | Yes. Acts as the <<preferred-sender,preferred sender>>.
@@ -136,7 +136,7 @@ The following table shows the primary services for Admin Nodes; however, this ta
 | [[ssm]]Server Status Monitor (SSM)
 | Monitors the operating system and underlying hardware.
 |===
-
+// 2026-02-18, SGWS-34291
 
 
 

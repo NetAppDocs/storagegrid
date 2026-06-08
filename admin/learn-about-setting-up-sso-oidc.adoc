@@ -11,7 +11,7 @@ summary: "Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the
 [.lead]
 Setting up single sign-on (SSO) in StorageGRID allows StorageGRID (the service provider) and the SSO identity provider to communicate securely about user authentication requests.
 
-You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using OIDC. To learn about setting up SSO using SAML, refer to link:configure-sso-saml.html[Configure SSO using SAML].
+You can set up SSO in StorageGRID using OpenID Connect (OIDC) or SAML. Follow these high-level steps to set up SSO in StorageGRID using OIDC or learn about link:learn-about-setting-up-sso-saml.html[setting up SSO using SAML].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Configure identity provider
 
@@ -28,6 +28,7 @@ Use the SSO identity provider's software to configure OIDC for each Admin Node i
 [role="quick-margin-list"]
 * Learn about link:creating-relying-party-trusts-in-ad-fs-oidc.html[creating an application group for each Admin Node] in Active Directory
 * Learn about link:creating-enterprise-application-entra-id-oidc.html[creating an application for each Admin Node] in Entra ID
+* Learn about link:create-client-keycloak-oidc.html[creating a client for each Admin Node] in Keycloak
 * Learn about link:creating-sp-connection-ping-oidc.html[creating a service provider connection for each Admin Node] in PingFederate
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Configure SSO

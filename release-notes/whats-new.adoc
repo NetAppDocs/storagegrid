@@ -13,22 +13,81 @@ StorageGRID 12.1 introduces the following features and functional changes.
 
 For details about fixed issues and known issues in recent StorageGRID 12.1 releases, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3373065[StorageGRID 12.1 Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
 
-== Appliances 
-
-
-== Artificial intelligence (AI) and machine learning (ML)
-
 == Capacity
+=== EC rebalance now uses free space
+EC rebalance now uses free space instead of used space. Refer to link:../expand/considerations-for-rebalancing-erasure-coded-data.html#what-is-ec-rebalancing[Learn about EC rebalancing after expansion in StorageGRID].
 
+== Control access
+=== SSO using OIDC
+You can now link:../admin/learn-about-setting-up-sso-oidc.html[set up single sign-on (SSO) in StorageGRID using OpenID Connect (OIDC)].
+
+=== Metadata allowed space
+Increased maximum allowed metadata value from 3.96 TB to 7.92 TB. Refer to link:../admin/managing-object-metadata-storage.html#allowed-metadata-space[Allowed metadata space].
 
 == Federation 
+=== Global namespace
+A global namespace allows tenant access to buckets across multiple StorageGRID systems. Refer to link:../admin/learn-about-global-namespace.html[Learn about global namespace].
 
+== Manageability
+=== Auto-move ADC service
+link:../maintain/understanding-adc-service-quorum.html[When required to meet the ADC quorum], the ADC service will now be moved automatically when you're link:../maintain/convert-to-data-only-node.html[converting a Storage Node to a data-only node] or link:../maintain/considerations-for-decommissioning-storage-nodes.html[decommissioning a Storage Node]. 
 
-== Manageability 
+=== Primary Admin Node recovery
+You can now recover any node from a non-primary Admin Node. Refer to link:../maintain/recovering-from-primary-admin-node-failures.html[Recovering from primary Admin Node failures].
 
+== S3
+=== Enable S3 Object Lock on existing buckets
+When the allow S3 Object Lock for existing buckets setting is enabled, an S3 tenant account can now enable S3 Object Lock for an existing bucket. After an S3 tenant account enables S3 Object Lock for an existing bucket, it can't be disabled.
+
+=== Replication allowed for S3 Object Lock-enabled buckets
+Replication is now allowed for S3 Object Lock-enabled buckets. Refer to link:../tenant/considerations-for-platform-services.html[Learn about platform services].
+
+=== Enable cross-grid replication for non-empty buckets
+You can now enable cross-grid replication for buckets that aren't empty. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#requirements-for-cross-grid-replication[Requirements for cross-grid replication].
+
+=== S3 Batch (FPVR only)
+You can use S3 batch operations to replicate existing objects in a bucket that you plan to configure for cross-grid replication.
+
+This feature requires FPVR approval for StorageGRID 12.1. To use this feature, contact your account representative.
+
+=== Non-functional S3 REST API headers
+The If-Match and If-None-Match headers are accepted but non-functional for the S3 REST API link:../s3/put-object.html[PutObject], link:../s3/complete-multipart-upload.html[CompleteMultipartUpload], link:../s3/put-object-copy.html[CopyObject], and link:../s3/operations-on-objects.html[DeleteObject].
+
+=== Support for pre-calculated checksum values
+The S3 REST SPI now provides support for pre-calculated checksum values and the `x-amz-checksum-type` request header. Refer to link:../s3/index.html#updates-to-rest-api-support[Updates to REST API support].
 
 == Security 
+=== Multi-admin verification
+Multi-admin verification (MAV) helps prevent accidental or unauthorized changes to your StorageGRID system. Refer to link:../admin/about-multi-admin-verify.html[Learn about StorageGRID multi-admin verification].
 
-== Tenant groups
+=== Security policy updates for FIPS
+The FIPS strict policy criteria have been updated. Refer to link:../admin/manage-tls-ssh-policy.html#select-a-security-policy[Select a security policy in Manage the TLS and SSH policy].
+
+== Tenants
+=== Account sync
+The _account clone_ feature now refers to a one-time clone of specific tenant account information.
+
+_Account sync_ is a new feature that allows for the automatic and continuous replication of a tenant account, tenant groups, tenant users, and S3 access keys among the StorageGRID systems in one or more grid federation connections. Refer to link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync in StorageGRID].
+
+=== Kafka endpoints and mTLS authentication
+Mutual Transport Layer Security (mTLS) is now supported for Kafka endpoints. Refer to link:../tenant/configuring-platform-services-endpoints.html[Configure platform services endpoints].
+
+=== Maximum number of buckets
+A StorageGRID system now supports a maximum of 20,000 buckets for each S3 tenant account.
+
+== Upgrade
+=== Time to enable features is increased
+During StorageGRID upgrade to version 12.1, the time to enable features has increased from under five minutes to an hour. Refer to link:../upgrade/estimating-time-to-complete-upgrade.html#estimate-time-to-upgrade[Estimate the time to complete a StorageGRID upgrade].
 
 == User interface
+=== BMC settings page
+A new BMC Settings tab has been added to the Nodes page in Grid Manager to allow BMC password reset and changes to the BMC LAN IP settings. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html[Change appliance BMC password] and link:../maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings[Change appliance node BMC LAN IP settings]. New API endpoints have also been added to support these functions. Refer to link:../release-notes/changes-to-grid-management-api.html[New endpoints for changing the BMC password and LAN IP settings].
+
+=== Email notifications
+The Grid Manager now has a common email page to configure and manage email notifications for alerts, AutoSupport, and multi-admin verification (MAV). Refer to link:../monitor/configure-email-server.html[Configure email server].
+
+=== Link cost page update
+StorageGRID 12.1 provides more detailed Link cost information and settings. Refer to link:../admin/manage-link-costs.html[Manage link costs].
+
+=== USB port control
+You can now enable or disable USB ports through Grid Manager. Refer to link:../harden/hardening-guidelines-for-storagegrid-nodes.html#control-remote-access-through-usb-ports[Control remote access through USB ports].
