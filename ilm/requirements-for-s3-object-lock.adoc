@@ -24,7 +24,7 @@ You must review the requirements for enabling the global S3 Object Lock setting,
 
 When the global S3 Object Lock setting is enabled, you can optionally allow all S3 tenant accounts or S3 users with permissions to enable S3 Object Lock on existing buckets. When an S3 tenant account or S3 user enables S3 Object Lock on an existing bucket, it might cause unintended data migration from a Cloud Storage Pool back to StorageGRID, depending on your ILM rules.
 
-CAUTION: You can't stop this unintended data migration after it starts.
+CAUTION: You can't stop the unintended data migration after it starts.
 
 == Requirements for compliant ILM rules
 
