@@ -1,5 +1,5 @@
 ---
-permalink: admin/create-client-okta-oidc.html
+permalink: admin/create-application-okta-oidc.html
 sidebar: sidebar
 keywords: okta, application, single sign on, sso
 summary: 'You use Okta to create application groups for the Admin Nodes in your system.'
