@@ -45,7 +45,7 @@ This diagram shows how grid nodes are arranged within a StorageGRID system.
 
 image::../media/grid_nodes_and_components.png[diagram described by surrounding text]
 
-S3 clients store and retrieve objects in StorageGRID. Other clients are used to send email notifications, to access the StorageGRID management interface, and optionally to access the audit share.
+S3 clients store and retrieve objects in StorageGRID. Other clients are used to access the StorageGRID management interface and optionally to access the audit share. Additionally, StorageGRID can optionally send email alerts through an external SMTP server.
 
 S3 clients can connect to a Gateway Node or an Admin Node to use the load-balancing interface to Storage Nodes. Alternatively, S3 clients can connect directly to Storage Nodes using HTTPS.
 
