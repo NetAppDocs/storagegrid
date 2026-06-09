@@ -15,6 +15,18 @@ When an S3 client issues a PUT transaction, a request is made to create a new ob
 |===
 | Code| Field| Description
 
+| ASRS
+| Assumed Role Session URN
+| The unique identifier of the assumed role session.
+
+Present only when the S3 request is using an STS access key (from assumeRole).
+
+| ASRU
+| Assumed Role URN
+| The unique identifier of the assumed role.
+
+Present only when the S3 request is using an STS access key (from assumeRole).
+
 | CBID
 | Content Block Identifier
 | The unique identifier of the content block requested. If the CBID is unknown, this field is set to 0. Operations on buckets don't include this field.
