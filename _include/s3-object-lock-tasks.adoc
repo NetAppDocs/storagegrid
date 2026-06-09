@@ -23,8 +23,4 @@ Tenant user::
 ** Retention mode. Governance or Compliance, if allowed by the grid administrator.
 ** Retain Until Date: Must be less than or equal to what is allowed by the maximum retention period set by grid administrator.
 
-.Related information
-
-Learn about link:requirements-for-s3-object-lock.html#s3-object-lock-existing-buckets[S3 Object Lock requirements]
-
 // 2026 MAR 3, SGWS-38814
