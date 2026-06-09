@@ -27,7 +27,7 @@ The following request header is supported:
 
 * `Accept-Encoding`
 +
-When an object doesn't store a `Content-Encoding` value, a GET request with `Accept-Encoding: gzip` automatically performs compression. This only affects `gzip` values, other values are not affected. StorageGRID doesn't support Range read operations for GET requests with `Accept-Encoding: gzip`.
+When an object doesn't store a `Content-Encoding` value, a GET request with `Accept-Encoding: gzip` automatically performs compression. Values other than `gzip` don't affect the object's content encoding. StorageGRID doesn't support Range read operations for GET requests with `Accept-Encoding: gzip`.
 * `x-amz-checksum-mode`: Specify `ENABLED`
 + 
 The `Range` header isn't supported with `x-amz-checksum-mode` for GetObject. When you include `Range` in the request with `x-amz-checksum-mode` enabled, StorageGRID doesn't return a checksum value in the response.
@@ -116,6 +116,7 @@ If you are using link:../admin/grid-federation-overview.html[grid federation] an
 |===
 
 NOTE: StorageGRID does not support the `x-amz-replication-status` header.
+
 // 2026 JUNE 8, SGRIDDOC-263
 // 2024 JULY 1, SGRIDDOC-48
 // 2024 MAY 23, SGWS-31243
