@@ -45,7 +45,7 @@ For more information about grid federation, refer to link:grid-federation-overvi
 
 === CreateBucket and ListBuckets operations
 
-If you create a bucket (`bucket123`) with region `region-2` and targets the global endpoint `s3.company.com`, any grid that receives the request will create the bucket on Grid 2.
+If you create a bucket (`bucket123`) with signing region `region-2` and targets the global endpoint `s3.company.com`, any grid that receives the request will create the bucket on Grid 2.
 
 === Bucket-specific and general object operations
 
@@ -82,7 +82,7 @@ CreateBucket requests sent to the global namespace endpoint (`s3.company.com`) c
 For example:
 
 * Grid A has default region `us-east-1` and Grid B has default region `us-west-1`.
-* A client sends a CreateBucket request to `s3.company.com` with `--region us-west-1`.
+* A client sends a CreateBucket request to `s3.company.com` with signing region `--region us-west-1`.
 * Round-robin DNS directs the request to Grid A.
 * Grid A routes the request to Grid B.
 * The bucket is created on Grid B.
