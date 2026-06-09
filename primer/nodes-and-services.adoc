@@ -70,10 +70,6 @@ The following is a complete list of StorageGRID services.
 |	Monitors and logs all audited system events and transactions to a text log file.
 |	Admin Nodes
 
-| Apache Tomcat
-|	Web server for Java-based applications.
-|	Admin Nodes
-
 | Avahi Daemon
 |	Handles mDNS, which is used for name resolution and service discovery within the local network.
 |	All nodes
@@ -131,7 +127,7 @@ The following is a complete list of StorageGRID services.
 | All nodes
 
 | Load Balancer (nginx-gw)
-| Provides load balancing of S3 traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
+| Provides load balancing of S3 traffic from clients to Storage Nodes.
 | Admin and Gateway Nodes
 
 | LDR (Local Distribution Router)
@@ -151,8 +147,8 @@ The following is a complete list of StorageGRID services.
 | All nodes
 
 | nginx-gw Load Balancer
-|	Provides load balancing of S3 traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
-|	Admin and Gateway Nodes
+| Provides load balancing of S3 traffic from clients to Storage Nodes.
+| Admin and Gateway Nodes
 
 | NMS (Network Management System)
 | Powers the monitoring, reporting, and configuration options that are displayed through the Grid Manager.
