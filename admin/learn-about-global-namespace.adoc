@@ -19,7 +19,7 @@ NOTE: You should set up a DNS resolver to perform the DNS mapping of bucket URLs
 
 StorageGRID doesn't enforce unique bucket names across grids in the global namespace, so buckets with the same name can exist on different grids. The signing region in the request is used to determine which grid owns the bucket and should receive the request.
 
-For example, if Grid A uses region `us-east-1` and Grid B uses region `us-west-1`, a CreateBucket request sent to any grid with the region `--region us-west-1` is automatically routed to Grid B.
+For example, if Grid A uses region `us-east-1` and Grid B uses region `us-west-1`, a CreateBucket request sent to any grid with the region `us-west-1` is automatically routed to Grid B.
 
 For more information about grid federation, refer to link:grid-federation-overview.html[What is grid federation?].
 
@@ -82,7 +82,7 @@ CreateBucket requests sent to the global namespace endpoint (`s3.company.com`) c
 For example:
 
 * Grid A has default region `us-east-1` and Grid B has default region `us-west-1`.
-* A client sends a CreateBucket request to `s3.company.com` with signing region `--region us-west-1`.
+* A client sends a CreateBucket request to `s3.company.com` with signing region `us-west-1`.
 * Round-robin DNS directs the request to Grid A.
 * Grid A routes the request to Grid B.
 * The bucket is created on Grid B.
@@ -94,7 +94,9 @@ Additional considerations for CreateBucket:
 * Presigned V4 requests are supported.
 * Anonymous and V2 requests aren't supported for global namespace routing.
 
-ListBuckets requests sent to the global namespace endpoint are routed similarly to CreateBucket requests, using the signing region to determine the correct grid.
+Additional considerations for ListBuckets:
+
+* ListBuckets requests sent to the global namespace endpoint are routed similarly to CreateBucket requests, using the signing region to determine the correct grid.
 * Neither HEAD Bucket nor ListBuckets responses include the grid's default region. The default region is implied by the signing region, which is enforced to match the grid's default region.
 
 === Account and access key management
