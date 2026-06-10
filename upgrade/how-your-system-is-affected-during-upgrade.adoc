@@ -78,6 +78,8 @@ NOTE: Contact technical support if you need to recover a node during upgrade.
 
 * You should not manage HA groups, VLAN interfaces, or load balancer endpoints while you're upgrading.
 
+* Don't delete any HA groups until the upgrade is complete. Virtual IP addresses in other HA groups might become inaccessible.
+
 Until the *Final Upgrade Steps* task completes:
 
 * Don't perform an expansion procedure.

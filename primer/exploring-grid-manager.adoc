@@ -53,7 +53,7 @@ From the Alerts menu, you can do the following to link:../monitor/managing-alert
 * Review resolved alerts
 * Configure silences to suppress alert notifications
 * Define alert rules for conditions that trigger alerts
-* Configure the email server for alert notifications
+* Configure email notifications for StorageGRID alerts
 
 == Nodes page
 
@@ -117,6 +117,7 @@ System tasks include:
 
 Monitoring tasks include:
 
+* link:../monitor/configure-email-server.html[Configure email server]
 * link:../monitor/configure-log-management.html[Configure log management]
 * link:../monitor/using-snmp-monitoring.html[Use SNMP monitoring]
 
@@ -129,6 +130,7 @@ Access control tasks include:
 * Change the link:../admin/changing-provisioning-passphrase.html[provisioning passphrase] or link:../admin/change-node-console-password.html[node console passwords]
 * link:../admin/using-identity-federation.html[Use identity federation]
 * link:../admin/how-sso-works.html[Configure SSO]
+* link:../admin/about-multi-admin-verify.html[Configure multi-admin verification]
 
 == Maintenance menu
 

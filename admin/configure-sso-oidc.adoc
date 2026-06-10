@@ -34,7 +34,10 @@ NOTE: If the Configure SSO settings button is disabled, confirm you have configu
 ** *Use operating system CA certificate*: Use the default CA certificate installed on the operating system to secure the connection.
 ** *Use custom CA certificate*: Use a custom CA certificate to secure the connection.
 +
-If you select this setting, copy the text of the custom certificate and paste it in the *CA Certificate* text box.
+If you select this setting:
++
+.. Browse to the location of the CA certificate.
+.. Upload the CA certificate file.
 
 ** *Do not use TLS*: Don't use a TLS certificate to secure the connection.
 +
