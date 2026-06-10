@@ -19,13 +19,13 @@ When an S3 client issues a HEAD operation, a request is made to check for the ex
 | Assumed Role Session URN
 | The unique identifier of the assumed role session.
 
-Present only when the S3 request is using an STS access key (from AssumeRole).
+Present only when the S3 request is using temporary security credentials from an AssumeRole request.
 
 | ASRU
 | Assumed Role URN
 | The unique identifier of the assumed role.
 
-Present only when the S3 request is using an STS access key (from AssumeRole).
+Present only when the S3 request is using temporary security credentials from an AssumeRole request.
 
 a|
 CBID
