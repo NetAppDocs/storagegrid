@@ -65,7 +65,7 @@ After the upgrade completes, you can review any upgrade-related alerts by select
 
 == Configuration changes are restricted
 
-NOTE: This list applies specifically to upgrades from StorageGRID 12.0 to StorageGRID 12.1 or later. If you're upgrading to another StorageGRID release, refer to the list of restricted changes in the upgrade instructions for that release.
+NOTE: Configuration change restrictions are release specific. If you're upgrading to another StorageGRID release, refer to the list of restricted changes in the upgrade instructions for that release.
 
 Until the *Enable New Feature* task completes:
 
@@ -76,7 +76,7 @@ Until the *Enable New Feature* task completes:
 +
 NOTE: Contact technical support if you need to recover a node during upgrade.
 
-* You should not manage HA groups, VLAN interfaces, or load balancer endpoints while you're upgrading to StorageGRID 12.0.
+* You should not manage HA groups, VLAN interfaces, or load balancer endpoints while you're upgrading.
 
 Until the *Final Upgrade Steps* task completes:
 
