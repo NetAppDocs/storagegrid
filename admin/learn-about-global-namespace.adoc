@@ -94,10 +94,11 @@ Additional considerations for CreateBucket:
 * Presigned V4 requests are supported.
 * Anonymous and V2 requests aren't supported for global namespace routing.
 
-Additional considerations for ListBuckets:
+=== ListBuckets routing
 
-* ListBuckets requests sent to the global namespace endpoint are routed similarly to CreateBucket requests, using the signing region to determine the correct grid.
-* Neither HEAD Bucket nor ListBuckets responses include the grid's default region. The default region is implied by the signing region, which is enforced to match the grid's default region.
+ListBuckets requests sent to the global namespace endpoint are routed similarly to CreateBucket requests, using the signing region to determine the correct grid.
+
+Neither HEAD Bucket nor ListBuckets responses include the grid's default region. The default region is implied by the signing region, which is enforced to match the grid's default region.
 
 === Account and access key management
 Tenant accounts and S3 access keys can be synchronized across all grids using link:grid-federation-what-is-account-sync.html[account sync], but global namespace also works when each grid has its own separate set of access keys. If you use separate access keys, ensure that the S3 client uses the correct access key when sending requests to each grid.
