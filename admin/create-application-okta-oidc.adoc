@@ -60,7 +60,7 @@ NOTE: If you delay, the setup might stall and you will need to start over.
 .. Create an OktaService account instead of linking an existing user.
 .. Select the organizational units that contain the users and the organizational units that contain the groups.
 .. Select the User Principal Name (UPN) that uses the AD UPN as the Okta username. For example: user@domain.com 
-. Search for the *Okta AD Agent Management Utility* application. Then, run the application and confirm that the `The agent is running` status message appears.
+. Search for the *Okta AD Agent Management Utility* application. Then, run the application and confirm that the status message `The agent is running` appears..
 +
 NOTE: The Okta AD client must be running whenever you want to execute an AD FS server sync and import with Okta.
 . In Okta, go to *Directory* > *Directory Integrations*.
