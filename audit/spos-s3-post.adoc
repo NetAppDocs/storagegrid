@@ -14,6 +14,19 @@ When an S3 client issues a POST Object request, this message is issued by the se
 [cols="1a,1a,4a" options="header"]
 |===
 | Code| Field| Description
+
+| ASRS
+| Assumed Role Session URN
+| The unique identifier of the assumed role session.
+
+Present only when the S3 request is using an STS access key (from AssumeRole).
+
+| ASRU
+| Assumed Role URN
+| The unique identifier of the assumed role.
+
+Present only when the S3 request is using an STS access key (from AssumeRole).
+
 a|
 CBID
 a|
