@@ -26,18 +26,20 @@ For additional information about BMC hardening, see the https://media.defense.go
 You can change the BMC password for an appliance to limit access and improve system security.
 
 . In Grid Manager go to *Nodes* > *_grid node_* > *BMC settings*.
-. In the Change password section, enter a new BMC password between 8 and 32 characters in length in *New password* and then enter it again in *Confirm new password*.
+. In the Change password section, enter a new BMC password between 8 and 16 characters in length in *New password* and then enter it again in *Confirm new password*.
 . Select *Save*.
 
 You can also change the BMC password using the `PUT /bmc-configuration/root-password` API.
 
-== Control remote access through USB ports
+== Control external USB port access on appliances
 
-You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security.
+You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security. USB ports are enabled by default after the initial install or an upgrade.
 
 * In the Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *USB port access* to enable or disable the USB ports:
-** Select the *Enable USB ports* checkbox to enable the ports.
-** Clear the *Enable USB ports* checkbox to disable the ports.
+** Select the *Enable USB ports* checkbox and save to enable the ports.
++
+If the USB checkbox was previously unchecked and saved, select the *Enable USB ports* checkbox and reboot the appliance to enable USB ports again.
+** Clear the *Enable USB ports* checkbox and save to disable the ports.
 
 == Firewall configuration
 
@@ -96,7 +98,7 @@ For more information, see the instructions for link:../admin/index.html[administ
 
 Storage Nodes manage and store object data and metadata. Follow these guidelines to secure the Storage Nodes in your StorageGRID system.
 
-* Don't allow untrusted clients to connect directly to Storage Nodes. Use a load balancer endpoint served by a Gateway Node or a third party load balancer.
+* Don't allow untrusted clients to connect directly to Storage Nodes. Use a load balancer endpoint served by a Gateway Node or a third-party load balancer.
 * Don't enable outbound services for untrusted tenants. For example, when creating the account for an untrusted tenant, don't allow the tenant to use its own identity source and don't allow the use of platform services. See the steps for link:../admin/creating-tenant-account.html[creating a tenant account].
 * Use a third-party load balancer for untrusted client traffic. Third-party load balancing offers more control and additional layers of protection against attack.
 * Optionally, use a storage proxy for more control over Cloud Storage Pools and platform services communication from Storage Nodes to external services. See the steps for link:../admin/configuring-storage-proxy-settings.html[creating a storage proxy].

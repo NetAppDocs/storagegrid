@@ -38,9 +38,9 @@ TIP: Before a local root user can sign in to the replicated tenant on the destin
 
 ** From any connected grid, create groups and local users, which are automatically synced to all other connected grids. See link:../tenant/grid-federation-account-sync.html[Sync tenant groups and users].
 
-** Create new S3 access keys for local users, which are automatically synced to other connected grids.
+** Create new S3 access keys for local users, which are automatically synced to other connected grids when access key sync is enabled for the tenant.
 +
-NOTE: S3 access keys for federated users are synced one time when they're created. If these S3 access keys are created or deleted, these changes aren't synced to other grids. You must manually create or delete the S3 access keys on the other grids.
+NOTE: S3 access keys for federated users are cloned one time from source to target when they're created. If these S3 access keys are deleted, these changes aren't synced to other grids. You must manually delete the S3 access keys on the other grids.
 
 ** Create identical buckets on both grids in the connection and enable cross-grid replication in one direction or in both directions. See link:../tenant/grid-federation-manage-cross-grid-replication.html[Manage cross-grid replication].
 
