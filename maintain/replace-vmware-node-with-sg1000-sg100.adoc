@@ -36,8 +36,6 @@ You first remove the existing primary Admin Node in the Grid Manager. Then, you 
 Replace the primary Admin Node using the existing primary Admin Node IP address.
 
 .Steps
-. In Grid Manager, select *Maintenance* > *Grid Network*. 
-. Enter the provisioning passphrase.
 . [[download-recovery-package-a]]Download the recovery package from the Grid Manager:
 .. Select *Maintenance* > *Recovery package*.
 .. Enter the provisioning passphrase and download the package.
@@ -135,7 +133,7 @@ IMPORTANT: Don't select *Start Installation*.
 
 . Check if the subnet of the new IP address is in the grid network. If the new IP subnet isn't present, add it to the grid network:
 .. In Grid Manager, select *Maintenance* > *Grid Network*.
-.. Enter the provisioning passphrase.
+.. Enter the provisioning passphrase to update the subnet list.
 . [[download-recovery-package]]Download the recovery package:
 .. Select *Maintenance* > *Recovery package*.
 .. Enter the provisioning passphrase, then download the package.
