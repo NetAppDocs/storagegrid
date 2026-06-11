@@ -54,8 +54,8 @@ The following request headers are supported:
 +
 When you specify `aws-chunked` for `Content-Encoding`, StorageGRID doesn't verify the following items:
 
-** StorageGRID does not verify the `chunk-signature` against the chunk data.
-** StorageGRID does not verify the value that you provide for `x-amz-decoded-content-length` against the object.
+** StorageGRID doesn't verify the `chunk-signature` against the chunk data.
+** StorageGRID doesn't verify the value that you provide for `x-amz-decoded-content-length` against the object.
 
 * `Content-Language`
 * `Content-Length`
