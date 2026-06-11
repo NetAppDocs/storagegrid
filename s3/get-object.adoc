@@ -27,7 +27,7 @@ The following request headers are supported:
 
 * `Accept-Encoding`
 +
-When an object has no stored `Content-Encoding`, a GET request with `Accept-Encoding: gzip` applies impromtu compression to the response. Only `gzip` affects the GET response encoding; `deflate`, `br`, and `identity` don't. For objects that already have a stored `Content-Encoding`, StorageGRID returns the stored encoding and doesn't apply additional impromtu compression based on `Accept-Encoding`. StorageGRID doesn't support range read operations for GET requests with `Accept-Encoding: gzip`.
+When an object has no stored `Content-Encoding`, a GET request with `Accept-Encoding: gzip` applies impromptu compression to the response. Only `gzip` affects the GET response encoding; `deflate`, `br`, and `identity` don't. For objects that already have a stored `Content-Encoding`, StorageGRID returns the stored encoding and doesn't apply additional impromptu compression based on `Accept-Encoding`. StorageGRID doesn't support range read operations for GET requests with `Accept-Encoding: gzip`.
 
 * `x-amz-checksum-mode`: Specify `ENABLED`
 +
