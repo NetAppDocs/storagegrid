@@ -51,7 +51,9 @@ You can use S3 batch operations to replicate existing objects in a versioning-en
 This feature requires FPVR approval for StorageGRID 12.1. To use this feature, contact your account representative.
 
 === Non-functional S3 REST API headers
-The If-Match and If-None-Match headers are accepted but non-functional for the S3 REST API link:../s3/put-object.html[PutObject], link:../s3/complete-multipart-upload.html[CompleteMultipartUpload], link:../s3/put-object-copy.html[CopyObject], and link:../s3/operations-on-objects.html[DeleteObject].
+The `If-Match` and `If-None-Match` headers are accepted but non-functional for the S3 REST API link:../s3/put-object.html[PutObject], link:../s3/complete-multipart-upload.html[CompleteMultipartUpload], link:../s3/put-object-copy.html[CopyObject], and link:../s3/operations-on-objects.html[DeleteObject].
+
+For additional information, refer to link:../release-notes/changes-to-s3-rest-api.html[Changes to StorageGRID S3 REST API support].
 
 === Support for pre-calculated checksum values
 The S3 REST SPI now provides support for pre-calculated checksum values and the `x-amz-checksum-type` request header. Refer to link:../s3/index.html#updates-to-rest-api-support[Updates to REST API support].
