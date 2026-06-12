@@ -57,6 +57,7 @@ In a global namespace, every pair of grids must be connected. The number of conn
 | _n_ × (_n_ − 1) / 2
 |===
 
+[[configure-default-region]]
 == Step 1: Set a unique default region for each grid
 
 Each grid in the global namespace must have a unique default region. The default region identifies the grid that owns a bucket.
@@ -64,8 +65,6 @@ Each grid in the global namespace must have a unique default region. The default
 CreateBucket and ListBuckets requests are routed based on this region, and all other requests must match the default region that they are sent to.
 
 For more information, refer to link:../ilm/configuring-regions-optional-and-s3-only.html[Configure S3 regions].
-
-CAUTION: Configure the default region to the unique region before you configure the S3 global namespace settings. When you enable global namespace settings, S3 request will fail if they don't specify the correct region. All S3 requests need to be signed with the grid's default region.
 
 .Steps
 
@@ -77,7 +76,7 @@ NOTE: You can still use non-default regions, set using the `LocationConstraint` 
 
 . Set up additional regions as needed.
 
-== Step 2: Add S3 endpoint domain names
+== Step 2: Set S3global namespace settings
 
 On each grid in the global namespace, you add two S3 endpoint domain names:
 
@@ -85,6 +84,8 @@ On each grid in the global namespace, you add two S3 endpoint domain names:
 * A unique CNAME for the grid
 
 You'll configure your external DNS so that the global namespace endpoint resolves to one or more of the grids, and the unique CNAME endpoints resolve to the specific grid.
+
+CAUTION: You must <<configure-default-region,configure the default region>> before you configure the S3 global namespace settings. When you enable global namespace settings, S3 request will fail if they don't specify the correct region. All S3 requests need to be signed with the grid's default region.
 
 .Steps
 
