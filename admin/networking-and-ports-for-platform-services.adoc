@@ -2,7 +2,7 @@
 permalink: admin/networking-and-ports-for-platform-services.html
 sidebar: sidebar
 keywords: platform services, ports for platform services, 443, 80
-summary: 'If you allow an S3 tenant to use platform services, you must configure networking for the grid to ensure that platform services messages can be delivered to their destinations.'
+summary: "If you allow an S3 tenant to use platform services, you must configure networking for the grid to ensure that platform services messages can be delivered to their destinations."
 ---
 = Network and ports for StorageGRID platform services
 :icons: font

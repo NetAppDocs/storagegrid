@@ -2,7 +2,7 @@
 permalink: audit/audit-messages-main.html
 sidebar: sidebar
 keywords: storagegrid, audit, messages, message
-summary: 'Detailed descriptions of audit messages returned by the system are listed in the following sections. Each audit message is first listed in a table that groups related messages by the class of activity that the message represents. These groupings are useful both for understanding the types of activities that are audited, and for selecting the desired type of audit message filtering.'
+summary: "Detailed descriptions of audit messages returned by the system are listed in the following sections. Each audit message is first listed in a table that groups related messages by the class of activity that the message represents. These groupings are useful both for understanding the types of activities that are audited, and for selecting the desired type of audit message filtering."
 ---
 = Learn about the audit message types and codes in StorageGRID
 :icons: font

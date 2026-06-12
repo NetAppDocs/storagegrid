@@ -2,7 +2,7 @@
 permalink: admin/deleting-traffic-classification-policy.html
 sidebar: sidebar
 keywords: delete traffic classification policy
-summary: 'If you no longer need a traffic classification policy, you can delete it.'
+summary: "If you no longer need a traffic classification policy, you can delete it."
 ---
 = Delete a StorageGRID traffic classification policy
 :icons: font

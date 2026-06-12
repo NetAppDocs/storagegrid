@@ -2,7 +2,7 @@
 permalink: s3/upload-part.html
 sidebar: sidebar
 keywords: s3 UploadPart operation
-summary: 'The UploadPart operation uploads a part in a multipart upload for an object.'
+summary: "The UploadPart operation uploads a part in a multipart upload for an object."
 ---
 = Supported and unsupported request headers for S3 UploadPart operations in StorageGRID
 :icons: font

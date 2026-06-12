@@ -2,7 +2,7 @@
 permalink: maintain/obtaining-required-materials-for-hotfix.html
 sidebar: sidebar
 keywords: storagegrid, hotfix
-summary: 'Before applying a hotfix, you must obtain all required materials.'
+summary: "Before applying a hotfix, you must obtain all required materials."
 ---
 = Obtain required materials for a StorageGRID hotfix
 :icons: font

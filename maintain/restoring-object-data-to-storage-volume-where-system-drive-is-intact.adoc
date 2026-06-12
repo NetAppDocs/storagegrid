@@ -2,7 +2,7 @@
 permalink: maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html
 sidebar: sidebar
 keywords: restore replicated data, restore erasure-coded data, recover storage node, recover storage volume
-summary: 'After recovering a storage volume on a Storage Node where the system drive is intact, you can restore the replicated or erasure-coded object data that was lost when the storage volume failed.'
+summary: "After recovering a storage volume on a Storage Node where the system drive is intact, you can restore the replicated or erasure-coded object data that was lost when the storage volume failed."
 ---
 = Restore object data to StorageGRID storage volume where system drive is intact
 :icons: font

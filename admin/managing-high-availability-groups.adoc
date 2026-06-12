@@ -2,7 +2,7 @@
 permalink: admin/managing-high-availability-groups.html
 sidebar: sidebar
 keywords: manage high availability group, ha groups, admin node, gateway node, active interface, backup interface, priority order
-summary: 'High availability \(HA\) groups provide highly available data connections for S3 clients and highly available connections to the Grid Manager and the Tenant Manager.'
+summary: "High availability \\(HA\\) groups provide highly available data connections for S3 clients and highly available connections to the Grid Manager and the Tenant Manager."
 ---
 = Learn about StorageGRID high availability groups
 :icons: font

@@ -2,7 +2,7 @@
 permalink: monitor/editing-alert-rules.html
 sidebar: sidebar
 keywords: how to edit alert rules
-summary: 'You can edit an alert rule to change the trigger conditions, For a custom alert rule, you can also update the rule name, description, and recommended actions.'
+summary: "You can edit an alert rule to change the trigger conditions, For a custom alert rule, you can also update the rule name, description, and recommended actions."
 ---
 = Edit alert rules in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: admin/configuring-admin-proxy-settings.html
 sidebar: sidebar
 keywords: admin proxy, autosupport, non-transparent proxy
-summary: 'If you send AutoSupport packages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support \(AutoSupport\).'
+summary: "If you send AutoSupport packages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support \\(AutoSupport\\)."
 ---
 = Configure admin proxy settings in StorageGRID
 :icons: font

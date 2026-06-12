@@ -2,7 +2,7 @@
 permalink: admin/signing-in-to-grid-manager.html
 sidebar: sidebar
 keywords: grid manager, sign in, log in
-summary: 'You access the Grid Manager sign-in page by entering the fully qualified domain name \(FQDN\) or IP address of an Admin Node into the address bar of a supported web browser.'
+summary: "You access the Grid Manager sign-in page by entering the fully qualified domain name \\(FQDN\\) or IP address of an Admin Node into the address bar of a supported web browser."
 ---
 = Sign in to the StorageGRID Grid Manager
 :icons: font

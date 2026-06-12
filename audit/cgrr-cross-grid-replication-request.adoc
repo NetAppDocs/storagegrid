@@ -2,7 +2,7 @@
 permalink: audit/cgrr-cross-grid-replication-request.html
 sidebar: sidebar
 keywords: cgrr, cross-grid replication request, audit message,
-summary: 'This message is generated when StorageGRID attempts a cross-grid replication operation to replicate objects between buckets in a grid federation connection.'
+summary: "This message is generated when StorageGRID attempts a cross-grid replication operation to replicate objects between buckets in a grid federation connection."
 ---
 = CGRR audit message for cross-grid replication requests in StorageGRID
 :icons: font

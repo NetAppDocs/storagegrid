@@ -2,7 +2,7 @@
 permalink: audit/orlm-object-rules-met.html
 sidebar: sidebar
 keywords: audit message, ORLM, Object Rules Met, ilm rule
-summary: 'This message is generated when the object is successfully stored and copied as specified by the ILM rules.'
+summary: "This message is generated when the object is successfully stored and copied as specified by the ILM rules."
 ---
 = ORLM audit message for ILM rules met in StorageGRID
 :icons: font

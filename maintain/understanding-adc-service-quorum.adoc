@@ -2,7 +2,7 @@
 permalink: maintain/understanding-adc-service-quorum.html
 sidebar: sidebar
 keywords: storagegrid, recover, adc, adc quorum
-summary: 'You might not be able to decommission certain Storage Nodes at a site if too few Administrative Domain Controller \(ADC\) services would remain after the decommissioning.'
+summary: "You might not be able to decommission certain Storage Nodes at a site if too few Administrative Domain Controller \\(ADC\\) services would remain after the decommissioning."
 ---
 = What is the StorageGRID ADC quorum?
 :icons: font

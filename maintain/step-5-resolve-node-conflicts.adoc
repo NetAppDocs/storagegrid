@@ -2,7 +2,7 @@
 permalink: maintain/step-5-resolve-node-conflicts.html
 sidebar: sidebar
 keywords: storagegrid, recover, resolve node conflict
-summary: 'From Step 5 \(Resolve Node Conflicts\) of the Decommission Site wizard, you can determine if any nodes in your StorageGRID system are disconnected or if any nodes at the selected site belong to a high availability \(HA\) group. After any node conflicts are resolved, you start the decommission procedure from this page.'
+summary: "From Step 5 \\(Resolve Node Conflicts\\) of the Decommission Site wizard, you can determine if any nodes in your StorageGRID system are disconnected or if any nodes at the selected site belong to a high availability \\(HA\\) group. After any node conflicts are resolved, you start the decommission procedure from this page."
 ---
 = Resolve node conflicts and start site decommission in StorageGRID
 :icons: font

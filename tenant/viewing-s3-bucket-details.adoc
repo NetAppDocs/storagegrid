@@ -2,7 +2,7 @@
 permalink: tenant/viewing-s3-bucket-details.html
 sidebar: sidebar
 keywords: how to view bucket details
-summary: 'You can view the buckets in your tenant account.'
+summary: "You can view the buckets in your tenant account."
 ---
 = View S3 bucket details in StorageGRID
 :icons: font

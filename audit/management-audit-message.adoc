@@ -2,7 +2,7 @@
 permalink: audit/management-audit-message.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, management, user request, user requests
-summary: 'The Management category logs user requests to the Management API.'
+summary: "The Management category logs user requests to the Management API."
 ---
 = StorageGRID management audit messages
 :icons: font

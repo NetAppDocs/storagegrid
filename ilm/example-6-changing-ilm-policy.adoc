@@ -2,7 +2,7 @@
 permalink: ilm/example-6-changing-ilm-policy.html
 sidebar: sidebar
 keywords: change ILM policy, example ILM policy, information lifecycle policy example
-summary: 'If your data protection needs to be changed or you add new sites, you can create and activate a new ILM policy.'
+summary: "If your data protection needs to be changed or you add new sites, you can create and activate a new ILM policy."
 ---
 = How changing an ILM policy affects StorageGRID performance
 :icons: font

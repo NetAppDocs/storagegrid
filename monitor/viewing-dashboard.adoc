@@ -2,7 +2,7 @@
 permalink: monitor/viewing-dashboard.html
 sidebar: sidebar
 keywords: how to view dashboard, how to configure dashboard
-summary: 'You can use the dashboard to monitor system activities at a glance. You can create custom dashboards to monitor your implementation of StorageGRID.'
+summary: "You can use the dashboard to monitor system activities at a glance. You can create custom dashboards to monitor your implementation of StorageGRID."
 ---
 = View and manage the dashboard in StorageGRID
 :icons: font

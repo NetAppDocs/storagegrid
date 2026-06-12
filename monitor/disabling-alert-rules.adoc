@@ -2,7 +2,7 @@
 permalink: monitor/disabling-alert-rules.html
 sidebar: sidebar
 keywords: how to disable alert rules, how to remove a custom alert rule
-summary: 'You can change the enabled/disabled state for a default or custom alert rule.'
+summary: "You can change the enableddisabled state for a default or custom alert rule."
 ---
 = Disable alert rules in StorageGRID
 :icons: font

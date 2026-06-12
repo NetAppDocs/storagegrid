@@ -2,7 +2,7 @@
 permalink: ilm/example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html
 sidebar: sidebar
 keywords: retention priority, example S3 bucket lifecycle, example ILM policy
-summary: 'Depending on your lifecycle configuration, objects follow the retention settings of either the S3 bucket lifecycle or an ILM policy.'
+summary: "Depending on your lifecycle configuration, objects follow the retention settings of either the S3 bucket lifecycle or an ILM policy."
 ---
 = How S3 bucket lifecycle and ILM policy interact in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: troubleshoot/verifying-object-integrity.html
 sidebar: sidebar
 keywords: how to verify object integrity, object existence check, background verification
-summary: 'The StorageGRID system verifies the integrity of object data on Storage Nodes, checking for both corrupt and missing objects.'
+summary: "The StorageGRID system verifies the integrity of object data on Storage Nodes, checking for both corrupt and missing objects."
 ---
 = Verify the integrity of object data in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/selecting-node-recovery-procedure.html
 sidebar: sidebar
 keywords: storagegrid, recover, procedure
-summary: 'You must select the correct recovery procedure for the type of node that has failed.'
+summary: "You must select the correct recovery procedure for the type of node that has failed."
 ---
 = Select StorageGRID node recovery procedure
 :icons: font

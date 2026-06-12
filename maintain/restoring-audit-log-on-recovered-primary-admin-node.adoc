@@ -2,7 +2,7 @@
 permalink: maintain/restoring-audit-log-on-recovered-primary-admin-node.html
 sidebar: sidebar
 keywords: storagegrid, recover, restore audit log, primary admin node
-summary: 'If you were able to preserve the audit log from the failed primary Admin Node, you can copy it to the primary Admin Node you are recovering.'
+summary: "If you were able to preserve the audit log from the failed primary Admin Node, you can copy it to the primary Admin Node you are recovering."
 ---
 = Restore audit log on recovered primary StorageGRID Admin Node
 :icons: font

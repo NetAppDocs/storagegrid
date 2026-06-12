@@ -2,7 +2,7 @@
 permalink: ilm/considerations-for-cloud-storage-pools.html
 sidebar: sidebar
 keywords: what is a cloud storage pool, considerations for a cloud storage pool
-summary: 'If you plan to use a Cloud Storage Pool to move objects out of the StorageGRID system, you must review the considerations for configuring and using Cloud Storage Pools.'
+summary: "If you plan to use a Cloud Storage Pool to move objects out of the StorageGRID system, you must review the considerations for configuring and using Cloud Storage Pools."
 ---
 = Cloud Storage Pool requirements and limits in StorageGRID
 :icons: font

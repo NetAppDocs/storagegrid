@@ -2,7 +2,7 @@
 permalink: swnodes/download-files-verify.html
 sidebar: sidebar
 keywords: installation files, how to verify files
-summary: 'If necessary, you can manually verify the files in the StorageGRID installation archive.'
+summary: "If necessary, you can manually verify the files in the StorageGRID installation archive."
 ---
 = Verify StorageGRID installation files 
 :icons: font

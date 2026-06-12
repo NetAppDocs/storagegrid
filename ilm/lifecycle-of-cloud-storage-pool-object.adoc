@@ -2,7 +2,7 @@
 permalink: ilm/lifecycle-of-cloud-storage-pool-object.html
 sidebar: sidebar
 keywords: lifecycle of cloud storage pool object
-summary: 'Before implementing Cloud Storage Pools, review the lifecycle of objects that are stored in each type of Cloud Storage Pool.'
+summary: "Before implementing Cloud Storage Pools, review the lifecycle of objects that are stored in each type of Cloud Storage Pool."
 ---
 = Lifecycle of a Cloud Storage Pool object in StorageGRID
 :icons: font

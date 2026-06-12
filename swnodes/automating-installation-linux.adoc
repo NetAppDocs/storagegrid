@@ -2,7 +2,7 @@
 permalink: swnodes/automating-installation-linux.html
 sidebar: sidebar
 keywords: how to automate linux installation
-summary: 'You can automate the installation of the StorageGRID host service and the configuration of grid nodes on Linux.'
+summary: "You can automate the installation of the StorageGRID host service and the configuration of grid nodes on Linux."
 ---
 = Automate installation of StorageGRID host service and the configuration of grid nodes on Linux
 :icons: font

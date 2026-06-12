@@ -2,7 +2,7 @@
 permalink: monitor/manage-io-prioritization.html
 sidebar: sidebar
 keywords: ec repair priority, ec purge priority
-summary: 'Input/output (I/O) prioritization allows you to change the relative priorities for I/O operations on the grid.'
+summary: "Inputoutput (IO) prioritization allows you to change the relative priorities for IO operations on the grid."
 ---
 = Change I/O prioritization in StorageGRID
 :icons: font

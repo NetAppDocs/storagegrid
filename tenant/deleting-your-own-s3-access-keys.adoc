@@ -2,7 +2,7 @@
 permalink: tenant/deleting-your-own-s3-access-keys.html
 sidebar: sidebar
 keywords: how to delete S3 access key
-summary: 'If you are using an S3 tenant and you have the appropriate permission, you can delete your own S3 access keys. After an access key is deleted, it can no longer be used to access the objects and buckets in the tenant account.'
+summary: "If you are using an S3 tenant and you have the appropriate permission, you can delete your own S3 access keys. After an access key is deleted, it can no longer be used to access the objects and buckets in the tenant account."
 ---
 = Delete your own S3 access keys in StorageGRID
 :icons: font

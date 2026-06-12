@@ -2,7 +2,7 @@
 permalink: maintain/linux-adding-trunk-or-access-interfaces-to-node.html
 sidebar: sidebar
 keywords: add extra interface to node, trunk interface, access interface
-summary: 'You can add extra trunk or access interfaces to a Linux node after it has been installed. The interfaces you add are displayed on the VLAN interfaces page and the HA groups page.'
+summary: "You can add extra trunk or access interfaces to a Linux node after it has been installed. The interfaces you add are displayed on the VLAN interfaces page and the HA groups page."
 ---
 = Add trunk or access interfaces to a Linux node in StorageGRID
 :icons: font

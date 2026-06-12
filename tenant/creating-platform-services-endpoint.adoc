@@ -2,7 +2,7 @@
 permalink: tenant/creating-platform-services-endpoint.html
 sidebar: sidebar
 keywords: how to create platform services endpoint
-summary: 'You must create at least one endpoint of the correct type before you can enable a platform service.'
+summary: "You must create at least one endpoint of the correct type before you can enable a platform service."
 ---
 = Create a StorageGRID platform services endpoint
 :icons: font

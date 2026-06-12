@@ -2,7 +2,7 @@
 permalink: maintain/convert-to-data-only-node.html
 sidebar: sidebar
 keywords: storagegrid, convert node, data-only node
-summary: 'To increase performance, you can convert slower non-ADC Storage Nodes to data-only Storage Nodes.'
+summary: "To increase performance, you can convert slower non-ADC Storage Nodes to data-only Storage Nodes."
 ---
 = Convert a StorageGRID Storage Node to a data-only node
 :icons: font

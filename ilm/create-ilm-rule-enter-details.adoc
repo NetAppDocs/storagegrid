@@ -2,7 +2,7 @@
 permalink: ilm/create-ilm-rule-enter-details.html
 sidebar: sidebar
 keywords: ILM rule step 1, define basics
-summary: 'Step 1 \(Enter details\) of the Create an ILM rule wizard allows you to enter a name and description for the rule and to define filters for the rule.'
+summary: "Step 1 \\(Enter details\\) of the Create an ILM rule wizard allows you to enter a name and description for the rule and to define filters for the rule."
 ---
 = Enter details and filters for a StorageGRID ILM rule
 :icons: font

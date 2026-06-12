@@ -2,7 +2,7 @@
 permalink: release-notes/whats-new.html
 sidebar: sidebar
 keywords: what is new in StorageGRID 12.0
-summary: "StorageGRID 12.0 expands object storage capacity, improves AI/ML workload support, strengthens grid federation, simplifies system management, and enhances security across the platform."
+summary: "StorageGRID 12.0 expands object storage capacity, improves AIML workload support, strengthens grid federation, simplifies system management, and enhances security across the platform."
 ---
 = What's new in StorageGRID 12.0
 :icons: font
