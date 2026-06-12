@@ -11,7 +11,7 @@ summary: "If a tenant was created or edited to use grid federation connections, 
 [.lead]
 If a tenant was created or edited to use grid federation connections, that tenant is replicated from one StorageGRID system (the source tenant) to all other connected StorageGRID systems (the replica tenants). After the tenant has been replicated, tenant groups, users, and S3 access keys are synced across the connected grids.
 
-The StorageGRID system where the tenant is originally created is the tenant's _source grid_. The tenant is replicated to one or more _destination grids_. The tenant accounts on all connected grids have the same account ID, name, description, storage quota, and assigned permissions, but the destination tenants don't initially have a root user password. For details, refer to link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync for grid federation] and link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants].
+The StorageGRID system where the tenant is originally created is the tenant's _source grid_. The tenant is replicated to one or more _destination grids_. The tenant accounts on all connected grids have the same account ID, name, description, storage quota, assigned permissions, and root user password. For details, refer to link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync for grid federation] and link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants].
 
 The syncing of tenant account information is required for link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication] of bucket objects. Having the same tenant groups and users on all grids ensures you can access the corresponding buckets and objects on any connected grid.
 
@@ -52,7 +52,7 @@ You can link:creating-your-own-s3-access-keys.html[create your own access keys] 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Sync S3 access keys
 
 [role="quick-margin-para"]
-If you need to access buckets with the same access keys on all grids, create the access keys on one of the grids. For local users, the access keys are automatically synced by default. For federated users, you must create S3 access keys on the source grid for the keys to be synced to all destination grids.
+If you need to access buckets with the same access keys on all grids, create the access keys on one of the grids. For local users, the access keys are automatically synced by default. For federated users, you must create S3 access keys on the source grid and select *Enable access key sync* for the keys to be synced to all destination grids.
 
 == How are groups, users, and S3 access keys synced?
 
@@ -63,8 +63,6 @@ Review this section to understand how groups, users, and S3 access keys are sync
 After a tenant account is created and replicated to the destination grid, StorageGRID continuously syncs local groups across all connected grids. All changes to local groups—including create, edit, and delete operations—made on any grid are automatically replicated to all other connected grids.
 
 Both the original group and its synced copies have the same access mode, group permissions, and S3 group policy. For instructions, refer to link:creating-groups-for-s3-tenant.html[Create groups for S3 tenant].
-
-NOTE: Any users you select when you create a local group on a grid aren't included when the group is synced to other grids. For this reason, don't select users when you create the group. Instead, select the group when you create the users.
 
 === Local users are continuously synced
 
@@ -92,7 +90,7 @@ NOTE: S3 access keys owned by local users are continuously synced across connect
 
 === Groups and users added to destination grid are synced
 
-Changes made on any connected grid—including creating or importing groups and users—are automatically synced to all other connected grids.
+Changes made on any connected grid, including creating or importing local groups and users, are automatically synced to all other connected grids.
 
 === Edited or deleted local groups, users, and access keys are synced
 
