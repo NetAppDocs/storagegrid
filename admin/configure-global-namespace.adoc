@@ -76,7 +76,7 @@ NOTE: You can still use non-default regions, set using the `LocationConstraint` 
 
 . Set up additional regions as needed.
 
-== Step 2: Set S3global namespace settings
+== Step 2: Configure S3 global namespace settings
 
 On each grid in the global namespace, you add two S3 endpoint domain names:
 
