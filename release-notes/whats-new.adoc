@@ -17,16 +17,16 @@ For details about fixed issues and known issues in recent StorageGRID 12.1 relea
 === EC rebalance now uses free space
 EC rebalance now uses free space instead of used space. Refer to link:../expand/considerations-for-rebalancing-erasure-coded-data.html#what-is-ec-rebalancing[Learn about EC rebalancing after expansion in StorageGRID].
 
+=== Metadata allowed space
+You can now increase the maximum allowed metadata value from 3.96 TB to 7.92 TB. Refer to link:../admin/managing-object-metadata-storage.html#allowed-metadata-space[Allowed metadata space].
+
 == Control access
 === SSO using OIDC
 You can now link:../admin/learn-about-setting-up-sso-oidc.html[set up single sign-on (SSO) in StorageGRID using OpenID Connect (OIDC)].
 
-=== Metadata allowed space
-Increased maximum allowed metadata value from 3.96 TB to 7.92 TB. Refer to link:../admin/managing-object-metadata-storage.html#allowed-metadata-space[Allowed metadata space].
-
 == Federation 
 === Global namespace
-A global namespace allows tenant access to buckets across multiple StorageGRID systems. Refer to link:../admin/learn-about-global-namespace.html[Learn about global namespace].
+You can now set up a global namespace to allow tenants to access buckets across multiple StorageGRID systems. Refer to link:../admin/learn-about-global-namespace.html[Learn about global namespace].
 
 == Manageability
 === Auto-move ADC service
@@ -40,18 +40,20 @@ You can now recover any node from a non-primary Admin Node. Refer to link:../mai
 When the allow S3 Object Lock for existing buckets setting is enabled, an S3 tenant account can now enable S3 Object Lock for an existing bucket. After an S3 tenant account enables S3 Object Lock for an existing bucket, it can't be disabled.
 
 === Replication allowed for S3 Object Lock-enabled buckets
-Replication is now allowed for S3 Object Lock-enabled buckets. Refer to link:../tenant/considerations-for-platform-services.html[Learn about platform services].
+You can now use CloudMirror to replicate objects in S3 Object Lock-enabled buckets. Refer to link:../tenant/considerations-for-platform-services.html[Learn about platform services].
 
 === Enable cross-grid replication for non-empty buckets
 You can now enable cross-grid replication for buckets that aren't empty. Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html#requirements-for-cross-grid-replication[Requirements for cross-grid replication].
 
-=== S3 Batch (FPVR only)
-You can use S3 batch operations to replicate existing objects in a bucket that you plan to configure for cross-grid replication.
+=== S3 Batch operations (FPVR only)
+You can use S3 batch operations to replicate existing objects in a versioning-enabled bucket that you plan to configure for cross-grid replication.
 
 This feature requires FPVR approval for StorageGRID 12.1. To use this feature, contact your account representative.
 
 === Non-functional S3 REST API headers
-The If-Match and If-None-Match headers are accepted but non-functional for the S3 REST API link:../s3/put-object.html[PutObject], link:../s3/complete-multipart-upload.html[CompleteMultipartUpload], link:../s3/put-object-copy.html[CopyObject], and link:../s3/operations-on-objects.html[DeleteObject].
+The `If-Match` and `If-None-Match` headers are accepted but non-functional for the S3 REST API link:../s3/put-object.html[PutObject], link:../s3/complete-multipart-upload.html[CompleteMultipartUpload], link:../s3/put-object-copy.html[CopyObject], and link:../s3/operations-on-objects.html[DeleteObject].
+
+For additional information, refer to link:../release-notes/changes-to-s3-rest-api.html[Changes to StorageGRID S3 REST API support].
 
 === Support for pre-calculated checksum values
 The S3 REST SPI now provides support for pre-calculated checksum values and the `x-amz-checksum-type` request header. Refer to link:../s3/index.html#updates-to-rest-api-support[Updates to REST API support].
@@ -67,7 +69,7 @@ The FIPS strict policy criteria have been updated. Refer to link:../admin/manage
 === Account sync
 The _account clone_ feature now refers to a one-time clone of specific tenant account information.
 
-_Account sync_ is a new feature that allows for the automatic and continuous replication of a tenant account, tenant groups, tenant users, and S3 access keys among the StorageGRID systems in one or more grid federation connections. Refer to link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync in StorageGRID].
+_Account sync_ is a new feature that allows you to automatically and continuously replicate tenant account, tenant groups, tenant users, and S3 access keys among the StorageGRID systems in one or more grid federation connections. Refer to link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync in StorageGRID].
 
 === Kafka endpoints and mTLS authentication
 Mutual Transport Layer Security (mTLS) is now supported for Kafka endpoints. Refer to link:../tenant/configuring-platform-services-endpoints.html[Configure platform services endpoints].

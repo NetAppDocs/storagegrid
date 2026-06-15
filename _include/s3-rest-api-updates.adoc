@@ -6,6 +6,14 @@
 
 |12.1.0
 |
+* `If-Match`
++
+The `If-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+
+* `If-None-Match`
++
+The `If-None-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-None-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+
 * Added support for pre-calculated checksum values for the following requests and supported headers:
 
 ** CompleteMultipartUpload: `x-amz-checksum-crc32`, `x-amz-checksum-crc32c`, and `x-amz-checksum-crc64nvme`
