@@ -2,7 +2,7 @@
 permalink: monitor/viewing-ilm-tab.html
 sidebar: sidebar
 keywords: ilm tab
-summary: "The ILM tab provides information about information lifecycle management \\(ILM\\) operations."
+summary: "The ILM tab provides information about information lifecycle management (ILM) operations."
 ---
 = View the StorageGRID ILM tab
 :icons: font

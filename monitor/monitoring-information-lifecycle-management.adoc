@@ -2,7 +2,7 @@
 permalink: monitor/monitoring-information-lifecycle-management.html
 sidebar: sidebar
 keywords: lifecycle management, lifecycle, monitoring, ILM, information lifecycle management
-summary: "The information lifecycle management \\(ILM\\) system provides data management for all objects stored on the grid. You must monitor ILM operations to understand if the grid can handle the current load, or if more resources are needed."
+summary: "The information lifecycle management (ILM) system provides data management for all objects stored on the grid. You must monitor ILM operations to understand if the grid can handle the current load, or if more resources are needed."
 ---
 = Monitor information lifecycle management in StorageGRID
 :icons: font

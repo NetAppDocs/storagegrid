@@ -2,7 +2,7 @@
 permalink: admin/configure-vlan-interfaces.html
 sidebar: sidebar
 keywords: how to configure vlan interfaces, vlan interfaces, trunk interface
-summary: "You can create virtual LAN \\(VLAN\\) interfaces on Admin Nodes and Gateway Nodes and use them in HA groups and load balancer endpoints to isolate and partition traffic for security, flexibility, and performance."
+summary: "You can create virtual LAN (VLAN) interfaces on Admin Nodes and Gateway Nodes and use them in HA groups and load balancer endpoints to isolate and partition traffic for security, flexibility, and performance."
 ---
 = Configure VLAN interfaces in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: audit/sysu-node-start.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SYSU, Node Start
-summary: "When a service is restarted, this message is generated to indicate if the previous shutdown was clean \\(commanded\\) or disorderly \\(unexpected\\)."
+summary: "When a service is restarted, this message is generated to indicate if the previous shutdown was clean (commanded) or disorderly (unexpected)."
 ---
 = SYSU audit message for node starts in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/decommissioning-disconnected-grid-nodes.html
 sidebar: sidebar
 keywords: storagegrid, disconnected nodes, decommission node
-summary: "You might need to decommission a node that is not currently connected to the grid \\(one whose Health is Unknown or Administratively Down\\)."
+summary: "You might need to decommission a node that is not currently connected to the grid (one whose Health is Unknown or Administratively Down)."
 ---
 = Decommission disconnected StorageGRID nodes
 :icons: font

@@ -2,7 +2,7 @@
 permalink: s3/use-access-policies.html
 sidebar: sidebar
 keywords: bucket access policies, group access policies, session policies
-summary: ""
+summary: "StorageGRID uses the Amazon Web Services (AWS) policy language to allow S3 tenants to control access to buckets and objects within those buckets."
 ---
 = How StorageGRID uses AWS policies to control access to S3 buckets and objects
 :icons: font

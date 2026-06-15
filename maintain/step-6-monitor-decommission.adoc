@@ -2,7 +2,7 @@
 permalink: maintain/step-6-monitor-decommission.html
 sidebar: sidebar
 keywords: storagegrid, recover, monitor decommission, decommission
-summary: "From Step 6 \\(Monitor Decommission\\) of the Decommission Site page wizard, you can monitor the progress as the site is removed."
+summary: "From Step 6 (Monitor Decommission) of the Decommission Site page wizard, you can monitor the progress as the site is removed."
 ---
 = Monitor site decommission progress in StorageGRID
 :icons: font

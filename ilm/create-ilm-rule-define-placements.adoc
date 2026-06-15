@@ -2,7 +2,7 @@
 permalink: ilm/create-ilm-rule-define-placements.html
 sidebar: sidebar
 keywords: ilm rule step 2, define placements
-summary: "The Define placements step of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies \\(replicated or erasure-coded\\), the storage location, and the number of copies."
+summary: "The Define placements step of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies (replicated or erasure-coded), the storage location, and the number of copies."
 ---
 = Define placement instructions for a StorageGRID ILM rule
 :icons: font

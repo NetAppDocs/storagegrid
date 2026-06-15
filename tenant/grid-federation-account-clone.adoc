@@ -2,7 +2,7 @@
 permalink: tenant/grid-federation-account-clone.html
 sidebar: sidebar
 keywords: account clone, cloning tenant, grid federation, cross-grid replication
-summary: "If a tenant was created or edited to use a grid federation connection, that tenant is replicated from one StorageGRID system \\(the source tenant\\) to another StorageGRID system \\(the replica tenant\\). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant."
+summary: "If a tenant was created or edited to use a grid federation connection, that tenant is replicated from one StorageGRID system (the source tenant) to another StorageGRID system (the replica tenant). After the tenant has been replicated, any groups and users added to the source tenant are cloned to the replica tenant."
 ---
 = Clone tenant groups and users in StorageGRID
 :icons: font

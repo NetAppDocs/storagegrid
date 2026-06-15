@@ -2,7 +2,7 @@
 permalink: admin/troubleshooting-autosupport-messages.html
 sidebar: sidebar
 keywords: troubleshoot autosupport, asup package
-summary: "If an attempt to send an AutoSupport package fails, the StorageGRID system takes different actions depending on the type of AutoSupport package. You can check the status of AutoSupport packages by selecting Support \\ Tools \\ AutoSupport \\ Results."
+summary: "If an attempt to send an AutoSupport package fails, the StorageGRID system takes different actions depending on the type of AutoSupport package."
 ---
 = Troubleshoot StorageGRID AutoSupport packages
 :icons: font

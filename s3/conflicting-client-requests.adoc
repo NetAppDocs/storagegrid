@@ -2,7 +2,7 @@
 permalink: s3/conflicting-client-requests.html
 sidebar: sidebar
 keywords: conflicting client requests
-summary: "Conflicting client requests, such as two clients writing to the same key, are resolved on a \"latest-wins\" basis."
+summary: "Conflicting client requests, such as two clients writing to the same key, are resolved on a latest-wins basis."
 ---
 = How StorageGRID S3 REST API resolves conflicting client requests
 :icons: font
