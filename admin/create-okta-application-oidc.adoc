@@ -1,25 +1,25 @@
 ---
-permalink: admin/create-application-okta-oidc.html
+permalink: admin/create-okta-application-oidc.html
 sidebar: sidebar
 keywords: okta, application, single sign on, sso
-summary: 'Use Okta to create an application group for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.'
+summary: 'Create an Okta application for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.'
 ---
-= Create application group in Okta for OIDC in StorageGRID 
+= Create Okta application for OIDC in StorageGRID 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use Okta to create an application group for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.
+Create an Okta application for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.
 
 .Before you begin 
-* You have experience creating applications in Okta, or you have access to the Okta documentation.
+* You have experience creating Okta applications, or you have access to the Okta documentation.
 * You have Okta Administrator access.
 
 .About this task
-An application group must contain sign-in and sign-out redirect URIs for all Admin Nodes. This ensures that users can securely sign in to and out of any Admin Node. You can create a single application for all Admin Nodes (recommended) or a different application for each Admin Node.
+An Okta application must contain sign-in and sign-out redirect URIs for all Admin Nodes. Redirect URIs ensure that users can securely sign in to and out of any Admin Node. You can create a single Okta application for all Admin Nodes (recommended) or a different application for each Admin Node.
 
-== Step 1: Create an Okta application group
-Create an Okta application group using the Okta UI.
+== Step 1: Create an Okta application
+Create an Okta application using the Okta UI.
 
 .Steps
 . In Okta, go to *Applications* > *Applications*.
@@ -27,7 +27,7 @@ Create an Okta application group using the Okta UI.
 * Sign-in method: *OIDC - OpenID Connect*
 * Application type: *Web Application*
 . Select *Next*.
-. Enter a name for the application group in the App Integration field.
+. Enter a name for the application in the App Integration field.
 . Verify that Authorization Code is selected (default) for Core grants.
 . Add the sign-in and sign-out redirect URIs for each Admin Node:
 +
@@ -74,7 +74,7 @@ If the user status isn't Active, select *Activate* and keep refreshing the page 
 . Select the group and verify that the imported user is part of this group.
 
 == Step 4: Set up a claim
-Set up a claim to include AD FS server groups in the access token. Then, verify that the claim includes the imported group for the imported user and application.
+Set up a claim to include AD FS server groups in the access token. Then, verify that the claim includes the imported group for the imported user and Okta application.
 
 .Steps
 . In Okta, go to *Directory* > *Groups*.
@@ -102,6 +102,6 @@ The imported group appears in the Preview id_token tab in the Payload.
 
 .What's next
 
-After creating an application group, link:configure-sso-oidc.html[configure SSO using OIDC].
+After creating an Okta application, link:configure-sso-oidc.html[configure SSO using OIDC].
 
 // 2026 MAY 28, SGRIDDOC-247
