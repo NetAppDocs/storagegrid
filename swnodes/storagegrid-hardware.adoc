@@ -9,7 +9,7 @@ summary: "Learn how to install, configure, and use StorageGRID appliance hardwar
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Go to https://docs.netapp.com/us-en/storagegrid-appliances/index.html[StorageGRID Appliance Documentation^] to learn how to install, configure, and maintain StorageGRID storage and services appliances.
