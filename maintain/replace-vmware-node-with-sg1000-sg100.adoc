@@ -57,33 +57,10 @@ shutdown -h now
 +
 Allow up to 15 minutes for the services to stop.
 . link:https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html[Install the SG1000 or SG100 services appliance^].
-. Check that the appliance clock is correct to avoid NTP errors during recovery. 
-.. Use SSH to connect to port 8022:
-... Enter the command: `ssh -p 8022 admin@_grid_node_IP_`.
-... Switch to root: `su -`
-... Enter `netapp1!`.
-.. Verify that the appliance clock is within a few minutes of the current Coordinated Universal Time (UTC). If required, set the correct date and time:
-+
-----
-date -s "DD Mon YYYY HH:MM:SS"
-----
 
-. Go to *Upload StorageGRID Software* in the StorageGRID Appliance Installer and check that the preloaded software version on the appliance matches the StorageGRID version running on the grid. If the versions don't match:
-.. Download the correct StorageGRID Debian installation package from the link:https://mysupport.netapp.com/site/[NetApp Support Site^].
-.. Select *Remove* to remove the installation software.
-.. Upload the `storagegrid-webscale-images-<sg-version>.deb` and `storagegrid-webscale-images-<sgversion>.deb.md5` files.
-. On the Home tab, select *Primary Admin (with Load Balancer)* for Node type.
-. Enter the node name. The node name must match the existing primary Admin Node name.
+. link:https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/deploying-services-appliance-node.html#deploy-services-appliance-as-primary-admin-node[Deploy the SG1000 or SG100 services appliance^].
 +
-IMPORTANT: Don't select *Start Installation*.
-. On the StorageGRID Appliance Installer Home tab, verify the following settings:
-* Node type is set to *Primary Admin (with Load Balancer)*
-* Node name matches the existing Primary Admin Node name
-* The IP address is the same as the existing primary Admin Node IP address.
-
-. Select *Start Installation*.
-+
-Allow approximately ten minutes for the installation to reach the *Load StorageGRID installer* step. 
+. After selecing *Start installation*, allow approximately ten minutes for the installation to reach the *Load StorageGRID installer* step. 
 +
 After six to seven minutes, the browser redirects to start the recovery. 
 . Check that the appliance clock is correct. 
@@ -134,7 +111,7 @@ IMPORTANT: Don't select *Start Installation*.
 . Check if the subnet of the new IP address is in the grid network. If the new IP subnet isn't present, add it to the grid network:
 .. In Grid Manager, select *Maintenance* > *Grid Network*.
 .. Enter the provisioning passphrase to update the subnet list.
-. [[download-recovery-package]]Download the recovery package:
+. [[download-recovery-package]]Download the recovery package from GRID Manager:
 .. Select *Maintenance* > *Recovery package*.
 .. Enter the provisioning passphrase, then download the package.
 . Log in to the existing primary Admin Node:
