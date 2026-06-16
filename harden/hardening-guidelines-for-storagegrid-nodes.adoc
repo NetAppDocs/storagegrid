@@ -38,7 +38,7 @@ You can enable the USB ports on the appliances to allow technical support access
 * In the Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *USB port access* to enable or disable the USB ports:
 ** Select the *Enable USB ports* checkbox and save to enable the ports.
 +
-If the USB checkbox was previously unchecked and saved, select the *Enable USB ports* checkbox and reboot the appliance to enable USB ports again.
+If the USB checkbox was previously unchecked and saved, select the *Enable USB ports* checkbox and save to enable USB ports again.
 ** Clear the *Enable USB ports* checkbox and save to disable the ports.
 
 == Firewall configuration
