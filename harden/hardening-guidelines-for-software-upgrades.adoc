@@ -2,7 +2,7 @@
 permalink: harden/hardening-guidelines-for-software-upgrades.html
 sidebar: sidebar
 keywords: StorageGRID, hardening guidelines, upgrades
-summary: 'You must keep your StorageGRID system and related services up to date to defend against attacks.'
+summary: "You must keep your StorageGRID system and related services up to date to defend against attacks."
 ---
 = Hardening guidelines for StorageGRID software upgrades
 :icons: font

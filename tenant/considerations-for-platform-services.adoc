@@ -2,7 +2,7 @@
 permalink: tenant/considerations-for-platform-services.html
 sidebar: sidebar
 keywords: considerations for using platform services
-summary: 'Before implementing platform services, review the overview and considerations for using these services.'
+summary: "Before implementing platform services, review the overview and considerations for using these services."
 ---
 = Learn about platform services for StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: monitor/alerts-reference.html
 sidebar: sidebar
 keywords: alerts reference
-summary: 'This reference lists the default alerts that appear in the Grid Manager. Recommended actions are in the alert message you receive.'
+summary: "This reference lists the default alerts that appear in the Grid Manager. Recommended actions are in the alert message you receive."
 ---
 = Alerts in StorageGRID
 :icons: font

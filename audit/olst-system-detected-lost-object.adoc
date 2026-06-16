@@ -2,7 +2,7 @@
 permalink: audit/olst-system-detected-lost-object.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, OLST, System Detected Lost Object
-summary: 'This message is generated when the DDS service cannot locate any copies of an object within the StorageGRID system.'
+summary: "This message is generated when the DDS service cannot locate any copies of an object within the StorageGRID system."
 ---
 = OLST audit message for system-detected lost objects in StorageGRID
 :icons: font

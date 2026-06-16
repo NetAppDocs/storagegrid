@@ -2,7 +2,7 @@
 permalink: admin/configuring-custom-server-certificate-for-grid-manager-tenant-manager.html
 sidebar: sidebar
 keywords: custom certificates, grid manager, tenant manager, management interface certificate
-summary: 'You can replace the default StorageGRID server certificate with a single custom server certificate that allows users to access the Grid Manager and the Tenant Manager without encountering security warnings. You can also revert to the default management interface certificate or generate a new one.'
+summary: "You can replace the default StorageGRID server certificate with a single custom server certificate that allows users to access the Grid Manager and the Tenant Manager without encountering security warnings. You can also revert to the default management interface certificate or generate a new one."
 ---
 = Configure management interface certificates in StorageGRID
 :icons: font

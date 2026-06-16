@@ -2,7 +2,7 @@
 permalink: admin/editing-tenant-account.html
 sidebar: sidebar
 keywords: edit tenant account, change tenant name, allow platform services, tenant quota
-summary: 'You can edit a tenant account to change the display name, storage quota, or tenant permissions.'
+summary: "You can edit a tenant account to change the display name, storage quota, or tenant permissions."
 ---
 = Edit a StorageGRID tenant account
 :icons: font

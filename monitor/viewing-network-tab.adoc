@@ -2,7 +2,7 @@
 permalink: monitor/viewing-network-tab.html
 sidebar: sidebar
 keywords: network tab
-summary: 'The Network tab displays a graph showing the network traffic received and sent across all of the network interfaces on the node, site, or grid.'
+summary: "The Network tab displays a graph showing the network traffic received and sent across all of the network interfaces on the node, site, or grid."
 ---
 = View the StorageGRID Network tab
 :icons: font

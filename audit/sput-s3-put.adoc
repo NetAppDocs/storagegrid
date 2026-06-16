@@ -2,7 +2,7 @@
 permalink: audit/sput-s3-put.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SPUT, S3 PUT
-summary: 'When an S3 client issues a PUT transaction, a request is made to create a new object or bucket. This message is issued by the server if the transaction is successful.'
+summary: "When an S3 client issues a PUT transaction, a request is made to create a new object or bucket. This message is issued by the server if the transaction is successful."
 ---
 = SPUT audit message for S3 PUT transactions in StorageGRID
 :icons: font

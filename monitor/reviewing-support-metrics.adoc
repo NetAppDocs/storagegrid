@@ -2,7 +2,7 @@
 permalink: monitor/reviewing-support-metrics.html
 sidebar: sidebar
 keywords: how to view support metrics, how to review support metrics
-summary: 'When troubleshooting an issue, you can work with technical support to review detailed metrics and charts for your StorageGRID system.'
+summary: "When troubleshooting an issue, you can work with technical support to review detailed metrics and charts for your StorageGRID system."
 ---
 = Review StorageGRID support metrics
 :icons: font

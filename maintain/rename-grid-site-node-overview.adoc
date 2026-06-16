@@ -2,7 +2,7 @@
 permalink: maintain/rename-grid-site-node-overview.html
 sidebar: sidebar
 keywords: rename grid, rename site, rename node, display name, system name
-summary: 'As required, you can change the display names that are shown throughout the Grid Manager for your entire grid, each site, and each node. You can update display names safely and whenever you need.'
+summary: "As required, you can change the display names that are shown throughout the Grid Manager for your entire grid, each site, and each node. You can update display names safely and whenever you need."
 ---
 = Use the StorageGRID rename procedure
 :icons: font

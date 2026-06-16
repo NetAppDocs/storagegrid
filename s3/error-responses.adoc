@@ -2,7 +2,7 @@
 permalink: s3/error-responses.html
 sidebar: sidebar
 keywords: error, error responses
-summary: 'The StorageGRID system supports all standard S3 REST API error responses that apply. In addition, the StorageGRID implementation adds several custom responses.'
+summary: "The StorageGRID system supports all standard S3 REST API error responses that apply. In addition, the StorageGRID implementation adds several custom responses."
 ---
 = StorageGRID S3 REST API error responses
 :icons: font

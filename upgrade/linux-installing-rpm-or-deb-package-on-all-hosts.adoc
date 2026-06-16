@@ -2,7 +2,7 @@
 permalink: upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.html
 sidebar: sidebar
 keywords: upgrade, linux, rpm, deb,
-summary: 'If any StorageGRID nodes are deployed on Linux hosts, install an additional RPM or DEB package on each of these hosts before you start the upgrade.'
+summary: "If any StorageGRID nodes are deployed on Linux hosts, install an additional RPM or DEB package on each of these hosts before you start the upgrade."
 ---
 = Download and install RPM or DEB packages on all Linux hosts for StorageGRID
 :icons: font

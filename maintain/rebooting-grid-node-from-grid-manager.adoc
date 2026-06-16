@@ -2,7 +2,7 @@
 permalink: maintain/rebooting-grid-node-from-grid-manager.html
 sidebar: sidebar
 keywords: reboot grid node, tasks tab
-summary: 'You can reboot an individual grid node from the Tasks tab on the Nodes page.'
+summary: "You can reboot an individual grid node from the Tasks tab on the Nodes page."
 ---
 = Reboot StorageGRID node from Tasks tab
 :icons: font

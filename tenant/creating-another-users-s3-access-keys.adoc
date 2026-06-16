@@ -2,7 +2,7 @@
 permalink: tenant/creating-another-users-s3-access-keys.html
 sidebar: sidebar
 keywords: how to create other user S3 access key
-summary: 'If you are using an S3 tenant and you have the appropriate permission, you can create S3 access keys for other users, such as applications that need access to buckets and objects.'
+summary: "If you are using an S3 tenant and you have the appropriate permission, you can create S3 access keys for other users, such as applications that need access to buckets and objects."
 ---
 = Create another user's S3 access keys in StorageGRID
 :icons: font

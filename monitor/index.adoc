@@ -2,7 +2,7 @@
 permalink: monitor/index.html
 sidebar: sidebar
 keywords: monitor StorageGRID
-summary: 'Monitor your StorageGRID system regularly to ensure it is performing as expected.'
+summary: "Monitor your StorageGRID system regularly to ensure it is performing as expected."
 ---
 = Monitor a StorageGRID system
 :icons: font

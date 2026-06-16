@@ -2,7 +2,7 @@
 permalink: maintain/shutting-down-grid-node.html
 sidebar: sidebar
 keywords: storagegrid, recover, node shutdown, shut down node, node shut down
-summary: 'You can shut down a grid node from the node’s command shell.'
+summary: "You can shut down a grid node from the node’s command shell."
 ---
 = Shut down StorageGRID node
 :icons: font

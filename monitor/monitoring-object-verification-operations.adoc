@@ -2,7 +2,7 @@
 permalink: monitor/monitoring-object-verification-operations.html
 sidebar: sidebar
 keywords: object, verification
-summary: 'The StorageGRID system can verify the integrity of object data on Storage Nodes, checking for both corrupt and missing objects.'
+summary: "The StorageGRID system can verify the integrity of object data on Storage Nodes, checking for both corrupt and missing objects."
 ---
 = Monitor object verification operations in StorageGRID
 :icons: font
