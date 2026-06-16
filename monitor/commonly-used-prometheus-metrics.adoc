@@ -2,7 +2,7 @@
 permalink: monitor/commonly-used-prometheus-metrics.html
 sidebar: sidebar
 keywords: prometheus, Prometheus metrics, metrics
-summary: 'Refer to this list of commonly used Prometheus metrics to better understand conditions in the default alert rules or to construct the conditions for custom alert rules.'
+summary: "Refer to this list of commonly used Prometheus metrics to better understand conditions in the default alert rules or to construct the conditions for custom alert rules."
 ---
 = Commonly used Prometheus metrics in StorageGRID
 :icons: font

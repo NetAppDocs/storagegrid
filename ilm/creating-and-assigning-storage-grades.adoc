@@ -2,7 +2,7 @@
 permalink: ilm/creating-and-assigning-storage-grades.html
 sidebar: sidebar
 keywords: what is a storage grade, create storage grade
-summary: 'Storage grades identify the type of storage used by a Storage Node. You can create storage grades if you want ILM rules to place certain objects on certain Storage Nodes.'
+summary: "Storage grades identify the type of storage used by a Storage Node. You can create storage grades if you want ILM rules to place certain objects on certain Storage Nodes."
 ---
 = Create and assign storage grades in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: monitor/storagegrid-software-logs.html
 sidebar: sidebar
 keywords: logs
-summary: 'You can use StorageGRID logs to troubleshoot issues.'
+summary: "You can use StorageGRID logs to troubleshoot issues."
 ---
 = StorageGRID software logs
 :icons: font

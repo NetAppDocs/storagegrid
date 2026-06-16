@@ -2,7 +2,7 @@
 permalink: ilm/removing-cloud-storage-pool.html
 sidebar: sidebar
 keywords: remove cloud storage pool
-summary: 'You can remove a Cloud Storage Pool if it not used in an ILM rule and it does not contain object data.'
+summary: "You can remove a Cloud Storage Pool if it not used in an ILM rule and it does not contain object data."
 ---
 = Remove a Cloud Storage Pool in StorageGRID
 :icons: font

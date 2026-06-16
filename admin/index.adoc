@@ -2,7 +2,7 @@
 permalink: admin/index.html
 sidebar: sidebar
 keywords: how to administer storagegrid
-summary: 'Use these instructions to configure and administer a StorageGRID system.'
+summary: "Use these instructions to configure and administer a StorageGRID system."
 ---
 = Administer StorageGRID
 :icons: font

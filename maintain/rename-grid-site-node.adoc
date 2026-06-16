@@ -2,7 +2,7 @@
 permalink: maintain/rename-grid-site-node.html
 sidebar: sidebar
 keywords: rename grid, rename sites, rename node, change display name, bulk rename tool
-summary: 'You can use this procedure to add or update the display names used for your grid, sites, and nodes. You can rename a single item, multiple names, or even all items at the same time. Defining or updating a display name does not affect StorageGRID operations in any way.'
+summary: "You can use this procedure to add or update the display names used for your grid, sites, and nodes. You can rename a single item, multiple names, or even all items at the same time. Defining or updating a display name does not affect StorageGRID operations in any way."
 ---
 = Add or update StorageGRID display names
 :icons: font

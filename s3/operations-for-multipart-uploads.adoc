@@ -2,7 +2,7 @@
 permalink: s3/operations-for-multipart-uploads.html
 sidebar: sidebar
 keywords: operations, multipart uploads, uploads, rest API
-summary: 'This section describes how StorageGRID supports operations for multipart uploads.'
+summary: "This section describes how StorageGRID supports operations for multipart uploads."
 ---
 = Supported multipart upload operations in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/adding-to-or-changing-subnet-lists-on-admin-network.html
 sidebar: sidebar
 keywords: storagegrid, subnet list, admin network
-summary: 'You can add, delete, or change the subnets in the Admin Network Subnet List of one or more nodes.'
+summary: "You can add, delete, or change the subnets in the Admin Network Subnet List of one or more nodes."
 ---
 = Add to or change subnet lists on Admin Network in StorageGRID
 :icons: font

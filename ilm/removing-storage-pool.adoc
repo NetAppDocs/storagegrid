@@ -2,7 +2,7 @@
 permalink: ilm/removing-storage-pool.html
 sidebar: sidebar
 keywords: remove storage pool
-summary: 'You can remove a storage pool that is not being used.'
+summary: "You can remove a storage pool that is not being used."
 ---
 = Remove a storage pool in StorageGRID
 :icons: font

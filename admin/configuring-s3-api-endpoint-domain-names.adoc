@@ -2,7 +2,7 @@
 permalink: admin/configuring-s3-api-endpoint-domain-names.html
 sidebar: sidebar
 keywords: s3 endpoint domain names, virtual-hosted-style requests
-summary: 'To support S3 virtual-hosted-style requests, you must use the Grid Manager to configure the list of S3 endpoint domain names that S3 clients connect to.'
+summary: "To support S3 virtual-hosted-style requests, you must use the Grid Manager to configure the list of S3 endpoint domain names that S3 clients connect to."
 ---
 = Configure S3 endpoint domain names in StorageGRID
 :icons: font

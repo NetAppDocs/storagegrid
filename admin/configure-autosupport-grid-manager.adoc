@@ -2,7 +2,7 @@
 permalink: admin/configure-autosupport-grid-manager.html
 sidebar: sidebar
 keywords: how to configure autosupport, what is autosupport-on-demand
-summary: 'By default, the StorageGRID AutoSupport feature is enabled when you first install StorageGRID. However, you must configure hardware AutoSupport on each appliance. As needed, you can change the AutoSupport configuration.'
+summary: "By default, the StorageGRID AutoSupport feature is enabled when you first install StorageGRID. However, you must configure hardware AutoSupport on each appliance. As needed, you can change the AutoSupport configuration."
 ---
 = Configure AutoSupport in StorageGRID
 :icons: font

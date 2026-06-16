@@ -2,7 +2,7 @@
 permalink: s3/initiate-multipart-upload.html
 sidebar: sidebar
 keywords: initiate multipart upload, CreateMultipartUpload, upload ID
-summary: 'The CreateMultipartUpload operation initiates a multipart upload for an object, and returns an upload ID.'
+summary: "The CreateMultipartUpload operation initiates a multipart upload for an object, and returns an upload ID."
 ---
 = S3 CreateMultipartUpload request headers and options in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/deploying-new-linux-hosts.html
 sidebar: sidebar
 keywords: storagegrid, deploy linux host, new host, new linux host
-summary: 'With a few exceptions, you prepare the new hosts as you did during the initial installation process.'
+summary: "With a few exceptions, you prepare the new hosts as you did during the initial installation process."
 ---
 = Deploy new Linux hosts for StorageGRID
 :icons: font

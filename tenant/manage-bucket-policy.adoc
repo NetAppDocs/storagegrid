@@ -2,7 +2,7 @@
 permalink: tenant/manage-bucket-policy.html
 sidebar: sidebar
 keywords: bucket policy, S3 bucket policy, manage bucket policy
-summary: 'You can control user access for an S3 bucket and the objects in that bucket.'
+summary: "You can control user access for an S3 bucket and the objects in that bucket."
 ---
 = Manage StorageGRID bucket policy
 :icons: font

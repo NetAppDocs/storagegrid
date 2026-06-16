@@ -2,7 +2,7 @@
 permalink: maintain/restoring-object-data-to-storage-volume-for-appliance.html
 sidebar: sidebar
 keywords: restore replicated data, restore erasure-coded data, recover appliance storage node, recover storage volume
-summary: 'After recovering storage volumes for the appliance Storage Node, you can restore the replicated or erasure-coded object data that was lost when the Storage Node failed.'
+summary: "After recovering storage volumes for the appliance Storage Node, you can restore the replicated or erasure-coded object data that was lost when the Storage Node failed."
 ---
 = Restore object data to a storage volume for a StorageGRID appliance
 :icons: font

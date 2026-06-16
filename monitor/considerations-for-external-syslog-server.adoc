@@ -2,7 +2,7 @@
 permalink: monitor/considerations-for-external-syslog-server.html
 sidebar: sidebar
 keywords: syslog server, external syslog server, sizing, sizing syslog server, audit messages
-summary: 'An external syslog server is a server outside of StorageGRID you can use to collect system audit information in a single location. Using an external syslog server enables you to reduce network traffic on your Admin Nodes and manage audit information more efficiently.'
+summary: "An external syslog server is a server outside of StorageGRID you can use to collect system audit information in a single location. Using an external syslog server enables you to reduce network traffic on your Admin Nodes and manage audit information more efficiently."
 ---
 = External syslog servers in StorageGRID
 :icons: font

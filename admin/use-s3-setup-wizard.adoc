@@ -2,7 +2,7 @@
 permalink: admin/use-s3-setup-wizard.html
 sidebar: sidebar
 keywords: S3, S3 setup wizard
-summary: 'You can use the S3 setup wizard to configure StorageGRID as the object storage system for an S3 application.'
+summary: "You can use the S3 setup wizard to configure StorageGRID as the object storage system for an S3 application."
 ---
 = StorageGRID S3 setup wizard considerations and requirements
 :icons: font

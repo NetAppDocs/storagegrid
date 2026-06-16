@@ -2,7 +2,7 @@
 permalink: swnodes/required-materials.html
 sidebar: sidebar
 keywords: installation materials
-summary: 'Before you install StorageGRID, gather and prepare the required information and materials.'
+summary: "Before you install StorageGRID, gather and prepare the required information and materials."
 ---
 = Required information and materials for StorageGRID
 :icons: font

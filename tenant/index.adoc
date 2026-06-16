@@ -2,7 +2,7 @@
 permalink: tenant/index.html
 sidebar: sidebar
 keywords: use tenant account
-summary: 'A tenant account allows you to use either the Simple Storage Service (S3) REST API to store and retrieve objects in a StorageGRID system.'
+summary: "A tenant account allows you to use either the Simple Storage Service (S3) REST API to store and retrieve objects in a StorageGRID system."
 ---
 = Use a StorageGRID tenant account
 :icons: font

@@ -2,7 +2,7 @@
 permalink: admin/viewing-ip-addresses.html
 sidebar: sidebar
 keywords: ip address, view ip addresses for nodes, what is node ip address
-summary: 'You can view the IP address for each grid node in your StorageGRID system. You can then use this IP address to log in to the grid node at the command line and perform various maintenance procedures.'
+summary: "You can view the IP address for each grid node in your StorageGRID system. You can then use this IP address to log in to the grid node at the command line and perform various maintenance procedures."
 ---
 = View IP addresses in StorageGRID
 :icons: font

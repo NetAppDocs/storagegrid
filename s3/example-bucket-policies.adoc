@@ -2,7 +2,7 @@
 permalink: s3/example-bucket-policies.html
 sidebar: sidebar
 keywords: bucket policy examples
-summary: 'Use the examples in this section to build StorageGRID access policies for buckets.'
+summary: "Use the examples in this section to build StorageGRID access policies for buckets."
 ---
 = StorageGRID S3 REST API bucket policy examples
 :icons: font

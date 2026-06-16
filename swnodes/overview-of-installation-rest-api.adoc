@@ -2,7 +2,7 @@
 permalink: swnodes/overview-of-installation-rest-api.html
 sidebar: sidebar
 keywords: installation REST API
-summary: 'StorageGRID provides the StorageGRID Installation API for performing installation tasks.'
+summary: "StorageGRID provides the StorageGRID Installation API for performing installation tasks."
 ---
 = Learn about the StorageGRID installation REST API
 :icons: font

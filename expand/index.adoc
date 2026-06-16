@@ -2,7 +2,7 @@
 permalink: expand/index.html
 sidebar: sidebar
 keywords: expand grid, StorageGRID
-summary: 'You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.'
+summary: "You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations."
 ---
 = Learn about expanding your StorageGRID system
 :icons: font

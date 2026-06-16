@@ -2,7 +2,7 @@
 permalink: admin/configuring-stored-object-compression.html
 sidebar: sidebar
 keywords: object compression, compress stored objects 
-summary: 'You can enable object compression to reduce the size of objects stored in StorageGRID, so that objects consume less storage.'
+summary: "You can enable object compression to reduce the size of objects stored in StorageGRID, so that objects consume less storage."
 ---
 = Compress stored objects in StorageGRID
 :icons: font

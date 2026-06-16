@@ -2,7 +2,7 @@
 permalink: s3/get-bucket-metadata-notification-configuration-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, GET bucket metadata notification configuration
-summary: 'The GET Bucket metadata notification configuration request allows you to retrieve the configuration XML used to configure search integration for individual buckets.'
+summary: "The GET Bucket metadata notification configuration request allows you to retrieve the configuration XML used to configure search integration for individual buckets."
 ---
 = Configure search integration in StorageGRID with the GET Bucket metadata notification configuration request
 :icons: font

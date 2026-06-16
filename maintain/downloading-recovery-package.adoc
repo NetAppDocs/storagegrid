@@ -2,7 +2,7 @@
 permalink: maintain/downloading-recovery-package.html
 sidebar: sidebar
 keywords: storagegrid, recovery package
-summary: 'The recovery package file allows you to restore the StorageGRID system if a failure occurs.'
+summary: "The recovery package file allows you to restore the StorageGRID system if a failure occurs."
 ---
 = Download the StorageGRID recovery package
 :icons: font

@@ -2,7 +2,7 @@
 permalink: ilm/requirements-for-s3-object-lock.html
 sidebar: sidebar
 keywords: requirements, s3 object lock, compliant ilm rule, compliant ilm policy
-summary: 'You must review the requirements for enabling the global S3 Object Lock setting, the requirements for creating compliant ILM rules and ILM policies, and the restrictions StorageGRID places on buckets and objects that use S3 Object Lock.'
+summary: "You must review the requirements for enabling the global S3 Object Lock setting, the requirements for creating compliant ILM rules and ILM policies, and the restrictions StorageGRID places on buckets and objects that use S3 Object Lock."
 ---
 = S3 Object Lock requirements in StorageGRID
 :icons: font

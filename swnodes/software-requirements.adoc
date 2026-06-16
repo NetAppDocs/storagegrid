@@ -2,7 +2,7 @@
 permalink: swnodes/software-requirements.html
 sidebar: sidebar
 keywords: software requirements
-summary: 'You can use a virtual machine to host any type of StorageGRID node. You need one virtual machine for each grid node.'
+summary: "You can use a virtual machine to host any type of StorageGRID node. You need one virtual machine for each grid node."
 ---
 = Software requirements for StorageGRID
 :icons: font

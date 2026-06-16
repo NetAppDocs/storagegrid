@@ -2,7 +2,7 @@
 permalink: admin/grid-management-api-operations.html
 sidebar: sidebar
 keywords: Grid Management API,  API operations
-summary: 'The Grid Management API organizes the available API operations into the following sections.'
+summary: "The Grid Management API organizes the available API operations into the following sections."
 ---
 = Grid Management API operations in StorageGRID
 :icons: font

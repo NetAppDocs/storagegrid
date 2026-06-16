@@ -2,7 +2,7 @@
 permalink: ilm/workflow-for-s3-object-lock.html
 sidebar: sidebar
 keywords: object lock workflow
-summary: 'As a grid administrator, you must coordinate closely with tenant users to ensure that the objects are protected in a manner that satisfies their retention requirements.'
+summary: "As a grid administrator, you must coordinate closely with tenant users to ensure that the objects are protected in a manner that satisfies their retention requirements."
 ---
 = S3 Object Lock workflow in StorageGRID
 :icons: font

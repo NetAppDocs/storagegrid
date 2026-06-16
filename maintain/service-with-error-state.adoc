@@ -2,7 +2,7 @@
 permalink: maintain/service-with-error-state.html
 sidebar: sidebar
 keywords: storagegrid, recover, service error state, error, error state
-summary: 'If you detect that a service has entered an error state, attempt to restart the service.'
+summary: "If you detect that a service has entered an error state, attempt to restart the service."
 ---
 = Service with an error state in StorageGRID
 :icons: font

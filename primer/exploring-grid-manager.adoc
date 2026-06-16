@@ -2,7 +2,7 @@
 permalink: primer/exploring-grid-manager.html
 sidebar: sidebar
 keywords: StorageGRID, what is the grid manager, grid manager dashboard
-summary: 'The Grid Manager is the browser-based graphical interface that allows you to configure, manage, and monitor your StorageGRID system.'
+summary: "The Grid Manager is the browser-based graphical interface that allows you to configure, manage, and monitor your StorageGRID system."
 ---
 = Explore the StorageGRID Grid Manager
 :icons: font

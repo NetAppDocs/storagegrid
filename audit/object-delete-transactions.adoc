@@ -2,7 +2,7 @@
 permalink: audit/object-delete-transactions.html
 sidebar: sidebar
 keywords: object delete transaction, S3 delete, SDEL, WDEL 
-summary: 'You can identify object delete transactions in the audit log by locating S3 API-specific audit messages.'
+summary: "You can identify object delete transactions in the audit log by locating S3 API-specific audit messages."
 ---
 = Audit messages for object delete transactions in StorageGRID
 :icons: font

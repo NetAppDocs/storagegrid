@@ -2,7 +2,7 @@
 permalink: monitor/email-alert-notifications.html
 sidebar: sidebar
 keywords: how to disable alert rules, how to remove a custom alert rule
-summary: 'If you want email notifications to be sent when alerts occur, you must provide information about your SMTP server. You must also enter email addresses for the recipients of alert notifications.'
+summary: "If you want email notifications to be sent when alerts occur, you must provide information about your SMTP server. You must also enter email addresses for the recipients of alert notifications."
 ---
 = Set up email notifications for StorageGRID alerts
 :icons: font

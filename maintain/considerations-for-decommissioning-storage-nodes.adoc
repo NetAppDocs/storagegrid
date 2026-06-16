@@ -2,7 +2,7 @@
 permalink: maintain/considerations-for-decommissioning-storage-nodes.html
 sidebar: sidebar
 keywords: storage node decommission, considerations, appliance node clone
-summary: 'Before decommissioning a Storage Node, consider whether you can clone the node instead. Then, if you do decide to decommission the node, review how StorageGRID manages objects and metadata during the decommission procedure.'
+summary: "Before decommissioning a Storage Node, consider whether you can clone the node instead. Then, if you do decide to decommission the node, review how StorageGRID manages objects and metadata during the decommission procedure."
 ---
 = Storage Node decommission considerations in StorageGRID
 :icons: font

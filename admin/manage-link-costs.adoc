@@ -2,7 +2,7 @@
 permalink: admin/manage-link-costs.html
 sidebar: sidebar
 keywords: link cost, site latency, manage link costs, prioritize sites
-summary: 'Link costs let you prioritize which data center site provides a requested service when two or more data center sites exist. You can adjust link costs to reflect latency between sites.'
+summary: "Link costs let you prioritize which data center site provides a requested service when two or more data center sites exist. You can adjust link costs to reflect latency between sites."
 ---
 = Manage link costs in StorageGRID
 :icons: font

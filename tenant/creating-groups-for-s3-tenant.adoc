@@ -2,7 +2,7 @@
 permalink: tenant/creating-groups-for-s3-tenant.html
 sidebar: sidebar
 keywords: how to create S3 tenant groups, federated group, local group
-summary: 'You can manage permissions for S3 user groups by importing federated groups or creating local groups.'
+summary: "You can manage permissions for S3 user groups by importing federated groups or creating local groups."
 ---
 = Create groups for an S3 tenant in StorageGRID
 :icons: font

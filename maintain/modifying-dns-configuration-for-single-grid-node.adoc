@@ -2,7 +2,7 @@
 permalink: maintain/modifying-dns-configuration-for-single-grid-node.html
 sidebar: sidebar
 keywords: storagegrid, recover, dns, modify dns
-summary: 'Rather than configure the DNS globally for the entire deployment, you can run a script to configure DNS differently for each grid node.'
+summary: "Rather than configure the DNS globally for the entire deployment, you can run a script to configure DNS differently for each grid node."
 ---
 = Modify DNS configuration for single StorageGRID node
 :icons: font
