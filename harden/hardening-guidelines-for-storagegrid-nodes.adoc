@@ -33,7 +33,7 @@ You can also change the BMC password using the `PUT /bmc-configuration/root-pass
 
 == Control external USB port access on appliances
 
-You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need remote USB port access, disable the ports for security. USB ports are enabled by default after the initial install or an upgrade.
+You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need USB port access, disable the ports for security. USB ports are enabled by default after the initial install or an upgrade.
 
 * In the Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *USB port access* to enable or disable the USB ports:
 ** Select the *Enable USB ports* checkbox and save to enable the ports.
