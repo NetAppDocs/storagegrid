@@ -13,11 +13,31 @@ Before enabling single sign-on (SSO) for a StorageGRID system, review the requir
 
 == Identity provider requirements
 
-StorageGRID supports the following SSO identity providers (IdP):
+StorageGRID supports several SSO identity providers (IdP).
+
+[role="tabbed-block"]
+====
+.OIDC
+--
+The following SSO IdPs are supported for OpenID Connect (OIDC):
+
+* Active Directory Federation Service (AD FS)
+* Microsoft Entra ID
+* Keycloak
+* PingFederate
+* Okta
+
+--
+
+.SAML
+--
+The following SSO IdPs are supported for Security Assertion Markup Language 2.0 (SAML 2.0):
 
 * Active Directory Federation Service (AD FS)
 * Microsoft Entra ID
 * PingFederate
+--
+====
 
 You must configure identity federation for your StorageGRID system before you can configure an SSO identity provider. The type of LDAP service you use for identity federation controls which type of SSO you can implement.
 
@@ -27,6 +47,8 @@ You must configure identity federation for your StorageGRID system before you ca
 
 | Active Directory
 | * Active Directory
+* Keycloak
+* Okta
 * Entra ID
 * PingFederate
 
@@ -34,7 +56,6 @@ You must configure identity federation for your StorageGRID system before you ca
 | Entra ID
 
 |===
-
 
 === AD FS requirements
 You can use any of the following versions of AD FS:
@@ -68,4 +89,5 @@ You can access an Admin Node's server certificate by logging in to the command s
 
 Single sign-on (SSO) is not available on the restricted Grid Manager or Tenant Manager ports. You must use the default HTTPS port (443) if you want users to authenticate with single sign-on. See link:controlling-access-through-firewalls.html[Control access at external firewall].
 
+// 2026 JUN 10, SGRIDDOC-247
 // 2025 JUN 10, SGWS-33778
