@@ -2,14 +2,14 @@
 permalink: audit/sadd-security-audit-disable.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SADD, Security Audit Disable
-summary: "This message indicates that the originating service (node ID) has turned off audit message logging; audit messages are no longer being collected or delivered."
+summary: "This message indicates that the originating service (node ID) has turned off audit message logging. StorageGRID is no longer collecting or delivering audit messages."
 ---
 = SADD audit message for security audit disable in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This message indicates that the originating service (node ID) has turned off audit message logging; audit messages are no longer being collected or delivered.
+This message indicates that the originating service (node ID) has turned off audit message logging. StorageGRID is no longer collecting or delivering audit messages.
 
 [cols="1a,1a,4a" options="header"]
 |===
