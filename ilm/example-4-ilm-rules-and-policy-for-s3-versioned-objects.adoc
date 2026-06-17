@@ -19,11 +19,6 @@ CAUTION: The following ILM rules and policy are only examples. There are many wa
 
 NOTE: To perform ILM policy simulation on a noncurrent version of an object, you must know the object version's UUID or CBID. To find the UUID and CBID, use link:verifying-ilm-policy-with-object-metadata-lookup.html[object metadata lookup] while the object is still current.
 
-.Related information
-
-link:how-objects-are-deleted.html[How objects are deleted]
-
-
 == ILM rule 1 for example 4: Save three copies for 10 years
 
 This example ILM rule stores a copy of each object at three sites for 10 years.
@@ -96,3 +91,7 @@ When you simulate the example policy, you would expect test objects to be evalua
 * Any noncurrent object versions would be matched by the first rule. If a noncurrent object version is older than 2 years, it is permanently deleted by ILM (all copies of the noncurrent version removed from the grid).
 
 * The current object version would be matched by the second rule. When the current object version has been stored for 10 years, the ILM process adds a delete marker as the current version of the object, and it makes the previous object version "noncurrent". The next time ILM evaluation occurs, this noncurrent version is matched by the first rule. As a result, the copy at Site 3 is purged and the two copies at Site 1 and Site 2 are stored for 2 more years.
+
+.Related information
+
+link:how-objects-are-deleted.html[How objects are deleted]
