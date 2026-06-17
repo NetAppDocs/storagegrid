@@ -2,7 +2,7 @@
 permalink: ilm/example-7-compliant-ilm-policy-for-s3-object-lock.html
 sidebar: sidebar
 keywords: ILM policy,S3 Object Lock
-summary: 'You can use the S3 bucket, ILM rules, and ILM policy in this example as a starting point when defining an ILM policy to meet the object protection and retention requirements for objects in buckets with S3 Object Lock enabled.'
+summary: "You can use the S3 bucket, ILM rules, and ILM policy in this example as a starting point when defining an ILM policy to meet the object protection and retention requirements for objects in buckets with S3 Object Lock enabled."
 ---
 = Compliant ILM policy for S3 Object Lock in StorageGRID
 :icons: font

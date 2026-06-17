@@ -2,7 +2,7 @@
 permalink: admin/managing-users.html
 sidebar: sidebar
 keywords: how to manage local users
-summary: 'You can view local and federated users. You can also create local users and assign them to local admin groups to determine which Grid Manager features these users can access.'
+summary: "You can view local and federated users. You can also create local users and assign them to local admin groups to determine which Grid Manager features these users can access."
 ---
 = Manage users in StorageGRID
 :icons: font

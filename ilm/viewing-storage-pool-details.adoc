@@ -2,7 +2,7 @@
 permalink: ilm/viewing-storage-pool-details.html
 sidebar: sidebar
 keywords: storage pool, view details
-summary: 'You can view the details of a storage pool to determine where the storage pool is used and to see which nodes and storage grades are included.'
+summary: "You can view the details of a storage pool to determine where the storage pool is used and to see which nodes and storage grades are included."
 ---
 = View storage pool details in StorageGRID
 :icons: font

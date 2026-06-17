@@ -2,7 +2,7 @@
 permalink: ilm/working-with-ilm-rules-and-ilm-policies.html
 sidebar: sidebar
 keywords: remove ilm rule, edit ilm rule, clone ilm rule, ilm queue
-summary: 'As your storage requirements change, you might need to put a different policy in place or modify the ILM rules associated with the policy. You can view ILM metrics to determine system performance.'
+summary: "As your storage requirements change, you might need to put a different policy in place or modify the ILM rules associated with the policy. You can view ILM metrics to determine system performance."
 ---
 = Work with ILM policies and ILM rules in StorageGRID
 :icons: font

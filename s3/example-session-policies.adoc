@@ -2,7 +2,7 @@
 permalink: s3/example-session-policies.html
 sidebar: sidebar
 keywords: session policy example
-summary: 'Use the example in this section to build StorageGRID sesssion policies.'
+summary: "Use the example in this section to build StorageGRID sesssion policies."
 ---
 = StorageGRID S3 REST API session policy example
 :icons: font

@@ -2,7 +2,7 @@
 permalink: admin/reviewing-storagegrid-encryption-methods.html
 sidebar: sidebar
 keywords: encryption, encrypting data, best practices
-summary: 'StorageGRID provides several options for encrypting data. You should review the available methods to determine which methods meet your data-protection requirements.'
+summary: "StorageGRID provides several options for encrypting data. You should review the available methods to determine which methods meet your data-protection requirements."
 ---
 = Review StorageGRID encryption methods
 :icons: font

@@ -2,7 +2,7 @@
 permalink: primer/using-information-lifecycle-management.html
 sidebar: sidebar
 keywords: StorageGRID, what is information lifecycle management, how to use ilm
-summary: 'You use information lifecycle management \(ILM\) to control the placement, duration, and ingest behavior for all objects in your StorageGRID system. ILM rules determine how StorageGRID stores objects over time. You configure one or more ILM rules and then add them to an ILM policy.'
+summary: "You use information lifecycle management (ILM) to control the placement, duration, and ingest behavior for all objects in your StorageGRID system. ILM rules determine how StorageGRID stores objects over time. You configure one or more ILM rules and then add them to an ILM policy."
 ---
 = Information lifecycle management in StorageGRID
 :icons: font

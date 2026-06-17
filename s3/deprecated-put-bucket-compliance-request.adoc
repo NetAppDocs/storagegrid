@@ -2,7 +2,7 @@
 permalink: s3/deprecated-put-bucket-compliance-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, PUT deprecated compliance requests
-summary: 'The PUT Bucket compliance request is deprecated. However, you can continue to use this request to modify the compliance settings for an existing legacy Compliant bucket.'
+summary: "The PUT Bucket compliance request is deprecated. However, you can continue to use this request to modify the compliance settings for an existing legacy Compliant bucket."
 ---
 = Deprecated PUT Bucket compliance request in StorageGRID
 :icons: font

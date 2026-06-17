@@ -2,7 +2,7 @@
 permalink: upgrade/upgrade-workflow.html
 sidebar: sidebar
 keywords: upgrade workflow 
-summary: 'Before starting the upgrade, review the general workflow. The StorageGRID Upgrade page guides you through the upgrade steps.'
+summary: "Before starting the upgrade, review the general workflow. The StorageGRID Upgrade page guides you through the upgrade steps."
 ---
 = Quick start for StorageGRID upgrades
 :icons: font

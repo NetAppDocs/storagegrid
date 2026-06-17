@@ -2,7 +2,7 @@
 permalink: audit/idel-ilm-initiated-delete.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, IDEL, ILM Initiated Delete
-summary: 'This message is generated when ILM starts the process of deleting an object.'
+summary: "This message is generated when ILM starts the process of deleting an object."
 ---
 = IDEL audit message for ILM-initiated deletions in StorageGRID
 :icons: font

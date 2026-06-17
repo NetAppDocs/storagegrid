@@ -2,7 +2,7 @@
 permalink: upgrade/performing-upgrade.html
 sidebar: sidebar
 keywords: upgrade, how to perform a software upgrade
-summary: 'You can upgrade to StorageGRID 12.0 and apply the latest hotfix for that release at the same time. The StorageGRID upgrade page provides the recommended upgrade path and links directly to the correct download pages.'
+summary: "You can upgrade to StorageGRID 12.0 and apply the latest hotfix for that release at the same time. The StorageGRID upgrade page provides the recommended upgrade path and links directly to the correct download pages."
 ---
 = Perform a StorageGRID upgrade
 :icons: font

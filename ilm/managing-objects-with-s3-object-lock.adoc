@@ -2,7 +2,7 @@
 permalink: ilm/managing-objects-with-s3-object-lock.html
 sidebar: sidebar
 keywords: s3 object lock, manage objects with object lock
-summary: 'As a grid administrator, you can enable S3 Object Lock for your StorageGRID system and implement a compliant ILM policy to help ensure that objects in specific S3 buckets are not deleted or overwritten for a specified amount of time.'
+summary: "As a grid administrator, you can enable S3 Object Lock for your StorageGRID system and implement a compliant ILM policy to help ensure that objects in specific S3 buckets are not deleted or overwritten for a specified amount of time."
 ---
 = How S3 Object Lock protects objects in StorageGRID
 :icons: font

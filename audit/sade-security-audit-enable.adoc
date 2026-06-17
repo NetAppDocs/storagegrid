@@ -2,14 +2,14 @@
 permalink: audit/sade-security-audit-enable.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SADE, Security Audit Enable
-summary: 'This message indicates that the originating service \(node ID\) has restored audit message logging; audit messages are again being collected and delivered.'
+summary: "This message indicates that the originating service (node ID) has restored audit message logging. StorageGRID is again collecting and delivering audit messages."
 ---
 = SADE audit message for security audit enable in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This message indicates that the originating service (node ID) has restored audit message logging; audit messages are again being collected and delivered.
+This message indicates that the originating service (node ID) has restored audit message logging. StorageGRID is again collecting and delivering audit messages.
 
 [cols="1a,1a,4a" options="header"]
 |===

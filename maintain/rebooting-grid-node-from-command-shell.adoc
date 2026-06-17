@@ -2,7 +2,7 @@
 permalink: maintain/rebooting-grid-node-from-command-shell.html
 sidebar: sidebar
 keywords: storagegrid, recover, reboot node, command shell reboot
-summary: 'If you need to monitor the reboot operation more closely or if you are unable to access the Grid Manager, you can log in to the grid node and run the Server Manager reboot command from the command shell.'
+summary: "If you need to monitor the reboot operation more closely or if you are unable to access the Grid Manager, you can log in to the grid node and run the Server Manager reboot command from the command shell."
 ---
 = Reboot StorageGRID node from command shell
 :icons: font

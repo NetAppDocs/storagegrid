@@ -2,7 +2,7 @@
 permalink: s3/post-object-restore.html
 sidebar: sidebar
 keywords: post, RestoreObject, object
-summary: 'You can use the S3 RestoreObject request to restore an object that is stored in a Cloud Storage Pool.'
+summary: "You can use the S3 RestoreObject request to restore an object that is stored in a Cloud Storage Pool."
 ---
 = Restore an object in StorageGRID with the S3 RestoreObject request
 :icons: font
