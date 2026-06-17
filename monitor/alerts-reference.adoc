@@ -60,7 +60,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | The two controllers in the appliance have different cache sizes.
 
 | Appliance CMOS battery fault
-| A problem was detected with the CMOS battery in the appliance.
+| A problem was detected with a CMOS battery in the appliance.
 
 | Appliance compute controller chassis temperature too high
 | The temperature of the compute controller in a StorageGRID appliance has exceeded a nominal threshold.
@@ -121,6 +121,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 
 | Appliance SANtricity OS software update required
 | SANtricity software version is lower than the recommended minimum for this release of StorageGRID.
+
+| Appliance SFP fault detected
+| An SFP fault has been detected in the compute controller of a StorageGRID appliance.
 
 | Appliance SSD critical warning
 | An appliance SSD is reporting a critical warning.
@@ -201,6 +204,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 
 | FabricPool bucket has unsupported versioning setting
 | A FabricPool bucket has versioning or S3 Object Lock enabled, which are not supported.
+
+| ListBucket permission check for Get/Head object disabled
+| ListBucket permission check for GetObject/HeadObject on non-existent keys is disabled.
 |===
 
 == Cassandra alerts
@@ -326,6 +332,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 |===
 | Alert name| Description
 
+| Chunk service high goroutine count
+| The chunk service has an unusually high number of goroutines, which might indicate a deadlock or resource leak.
+
 | EC rebalance failure
 | The EC rebalance procedure has failed or has been stopped.
 
@@ -337,6 +346,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 
 | Erasure-coded fragment verification error
 | Erasure-coded fragments can no longer be verified. Corrupt fragments might not be repaired.
+
+| Erasure-coded groups in Needs Repair state
+| One or more erasure-coded groups are in the Needs Repair state when no erasure-coded data repair is in progress.
 |===
 
 == Expiration of certificates alerts
@@ -398,9 +410,6 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 [cols="1a,2a" options="header"]
 |===
 | Alert name| Description
-
-| High Java heap use
-| A high percentage of Java heap space is being used.
 
 | High latency for metadata queries
 | The average time for Cassandra metadata queries is too long.
@@ -638,8 +647,17 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Orphan objects detected
 | Orphan objects have been detected.
 
+| S3 multipart upload part size too large
+| A client is attempting a multipart upload operation that exceeds the part size limit.
+
 | S3 PUT object size too large
 | A client is attempting a PUT Object operation that exceeds S3 size limits.
+
+| S3 requests using unsupported conditional headers
+| An S3 client is using unsupported conditional headers (If-Match or If-None-Match) for certain operations.
+
+| S3 requests using wrong region with global namespace enabled
+| An S3 client is using the wrong signing region to access this grid's buckets.
 
 | Unidentified corrupt object detected
 | A file was found in replicated object storage that could not be identified as a replicated object.
@@ -721,5 +739,3 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Tenant quota usage high
 | A high percentage of quota space is being used. This rule is disabled by default because it might cause too many notifications.
 |===
-
-// 2024-10-17, SGRIDOC107
