@@ -2,7 +2,7 @@
 permalink: s3/use-s3-select.html
 sidebar: sidebar
 keywords: use S3 Select, S3 Select
-summary: 'StorageGRID supports the following Amazon S3 Select clauses, data types, operators, and reserved keywords for the SelectObjectContent command.'
+summary: "StorageGRID supports the following Amazon S3 Select clauses, data types, operators, and reserved keywords for the SelectObjectContent command."
 ---
 = Supported Amazon S3 Select operations in StorageGRID
 :icons: font

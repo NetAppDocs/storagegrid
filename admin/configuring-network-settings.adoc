@@ -2,7 +2,7 @@
 permalink: admin/configuring-network-settings.html
 sidebar: sidebar
 keywords: network settings, vlan interface, traffic classification
-summary: 'You can configure various network settings from the Grid Manager to fine tune the operation of your StorageGRID system.'
+summary: "You can configure various network settings from the Grid Manager to fine tune the operation of your StorageGRID system."
 ---
 = Configure StorageGRID network settings
 :icons: font

@@ -2,7 +2,7 @@
 permalink: admin/configuring-storage-proxy-settings.html
 sidebar: sidebar
 keywords: storage proxy, non-transparent proxy, platform service endpoint
-summary: 'If you are using platform services or Cloud Storage Pools, you can configure a non-transparent proxy between Storage Nodes and the external S3 endpoints. For example, you might need a non-transparent proxy to allow platform services messages to be sent to external endpoints, such as an endpoint on the internet.'
+summary: "If you are using platform services or Cloud Storage Pools, you can configure a non-transparent proxy between Storage Nodes and the external S3 endpoints. For example, you might need a non-transparent proxy to allow platform services messages to be sent to external endpoints, such as an endpoint on the internet."
 ---
 = Configure a StorageGRID storage proxy
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/how-site-recovery-is-performed-by-technical-support.html
 sidebar: sidebar
 keywords: storagegrid, site recovery, technical support, tech support
-summary: 'If an entire StorageGRID site fails or if multiple Storage Nodes fail, you must contact technical support. Technical support will assess your situation, develop a recovery plan, and then recover the failed nodes or site in a way that meets your business objectives, optimizes recovery time, and prevents unnecessary data loss.'
+summary: "If an entire StorageGRID site fails or if multiple Storage Nodes fail, you must contact technical support. Technical support will assess your situation, develop a recovery plan, and then recover the failed nodes or site in a way that meets your business objectives, optimizes recovery time, and prevents unnecessary data loss."
 ---
 = How technical support recovers a StorageGRID site
 :icons: font

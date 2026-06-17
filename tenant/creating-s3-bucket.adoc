@@ -2,7 +2,7 @@
 permalink: tenant/creating-s3-bucket.html
 sidebar: sidebar
 keywords: how to create S3 bucket
-summary: 'You can use the Tenant Manager to create S3 buckets for object data.'
+summary: "You can use the Tenant Manager to create S3 buckets for object data."
 ---
 = Create a StorageGRID S3 bucket
 :icons: font

@@ -2,7 +2,7 @@
 permalink: audit/sdel-s3-delete.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SDEL, S3 DELETE
-summary: 'When an S3 client issues a DELETE transaction, a request is made to remove the specified object or bucket. This message is issued by the server if the transaction is successful.'
+summary: "When an S3 client issues a DELETE transaction, a request is made to remove the specified object or bucket. This message is issued by the server if the transaction is successful."
 ---
 = SDEL audit message for S3 DELETE transactions in StorageGRID
 :icons: font
@@ -15,12 +15,24 @@ When an S3 client issues a DELETE transaction, a request is made to remove the s
 |===
 | Code| Field| Description
 
-|CBID
-|Content Block Identifier
-|The unique identifier of the content block requested. If the CBID is unknown, this field is set to 0. Operations on buckets don't include this field.
+| ASRS
+| Assumed Role Session URN
+| The unique identifier of the assumed role session.
 
-|CNCH
-|Consistency Control Header
+Present only when the S3 request is using temporary security credentials from an AssumeRole request.
+
+| ASRU
+| Assumed Role URN
+| The unique identifier of the assumed role.
+
+Present only when the S3 request is using temporary security credentials from an AssumeRole request.
+
+| CBID
+| Content Block Identifier
+| The unique identifier of the content block requested. If the CBID is unknown, this field is set to 0. Operations on buckets don't include this field.
+
+| CNCH
+| Consistency Control Header
 |The value of the Consistency-Control HTTP request header, if present in the request.
 
 |CNID

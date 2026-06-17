@@ -2,7 +2,7 @@
 permalink: release-notes/removed-or-deprecated-features.html
 sidebar: sidebar
 keywords:
-summary: "Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration."
+summary: "Learn about features and capabilities that have been removed or deprecated in StorageGRID 12.1.0. Before you upgrade, check whether any removed or deprecated features affect your client applications or grid configuration."
 ---
 = Removed or deprecated features and capabilities in StorageGRID
 :icons: font
@@ -32,8 +32,8 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | Global SSE setting for AES-128 encryption
 | 12.1
 | 12.2
-| 12.3
-| Beginning with StorageGRID 12.1.0, support for AES-128 encryption of new objects stored at data at rest is deprecated. Support continues for retrieval of stored objects that were originally encrypted with AES-128.
+| 12.3 
+| Beginning with StorageGRID 12.1.0, support for AES-128 encryption of new stored object data at rest is deprecated. Support continues for retrieval of stored objects that were originally encrypted with AES-128.
 
 | Alarms, legacy (_not Alerts_)
 | 11.7

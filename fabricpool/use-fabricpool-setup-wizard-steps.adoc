@@ -2,7 +2,7 @@
 permalink: fabricpool/use-fabricpool-setup-wizard-steps.html
 sidebar: sidebar
 keywords: fabricPool, StorageGRID, FabricPool setup wizard, ontap system manager
-summary: 'You can use the FabricPool setup wizard to configure StorageGRID as the object storage system for a FabricPool cloud tier.'
+summary: "You can use the FabricPool setup wizard to configure StorageGRID as the object storage system for a FabricPool cloud tier."
 ---
 = Access and complete the StorageGRID FabricPool setup wizard
 :icons: font

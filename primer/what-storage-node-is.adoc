@@ -2,7 +2,7 @@
 permalink: primer/what-storage-node-is.html
 sidebar: sidebar
 keywords: StorageGRID, what is a storage node, how many storage nodes
-summary: 'Storage Nodes manage and store object data and metadata. Storage Nodes include the services and processes required to store, move, verify, and retrieve object data and metadata on disk.'
+summary: "Storage Nodes manage and store object data and metadata. Storage Nodes include the services and processes required to store, move, verify, and retrieve object data and metadata on disk."
 ---
 = What is a StorageGRID Storage Node?
 :icons: font
@@ -34,7 +34,7 @@ Using a Storage Node exclusively for metadata can make sense if your grid stores
 Metadata-only Storage Nodes have specific hardware requirements:
 
 * When using StorageGRID appliances, you can only configure metadata-only nodes on SGF6112 appliances with twelve 1.9 TB or twelve 3.8 TB drives.
-* When using software-based nodes, you must ensure that metadata-only node resources match the existing Storage Nodes. For example: 
+* When using software-based nodes, you must ensure that metadata-only node resources match the resources of the existing Storage Nodes. For example: 
 ** If the existing StorageGRID site is using SG6000 or SG6100 appliances, the software-based metadata-only nodes must meet the following minimum requirements:
 *** 128 GB RAM
 *** 8 core CPU

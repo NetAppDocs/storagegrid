@@ -2,7 +2,7 @@
 permalink: swnodes/post-installation-guidelines.html
 sidebar: sidebar
 keywords: after installation guidelines
-summary: 'After completing grid node deployment and configuration, follow these guidelines for DHCP addressing and network configuration changes.'
+summary: "After completing grid node deployment and configuration, follow these guidelines for DHCP addressing and network configuration changes."
 ---
 = Network and DHCP requirements after installing StorageGRID
 :icons: font

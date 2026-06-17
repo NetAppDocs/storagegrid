@@ -2,7 +2,7 @@
 permalink: ilm/when-to-use-cloud-storage-pools.html
 sidebar: sidebar
 keywords: use cloud storage pool, benefits of cloud storage pools
-summary: 'Using Cloud Storage Pools, you can back up or tier data to an external location. Additionally, you can back up or tier data to more than one cloud.'
+summary: "Using Cloud Storage Pools, you can back up or tier data to an external location. Additionally, you can back up or tier data to more than one cloud."
 ---
 = Cloud Storage Pool use cases in StorageGRID
 :icons: font
@@ -37,7 +37,7 @@ To implement a tiering solution:
 
 == Maintain multiple cloud endpoints
 
-You can configure multiple Cloud Storage Pool endpoints if you want to tier or back up object data to more than one cloud. The filters in your ILM rules let you specify which objects are stored in each Cloud Storage Pool. For example, you might want to store objects from some tenants or buckets in Amazon S3 Glacier and objects from other tenants or buckets in Azure Blob storage. Or, you might want to move data between Amazon S3 Glacier and Azure Blob storage.
+You can configure multiple Cloud Storage Pool endpoints if you want to tier or back up object data to more than one cloud. The filters in your ILM rules let you specify which objects are stored in each Cloud Storage Pool. For example, you might want to store objects from some tenants or buckets in Amazon S3 Glacier and objects from other tenants or buckets in Azure Blob Storage. Or, you might want to move data between Amazon S3 Glacier and Azure Blob Storage.
 
 NOTE: When using multiple Cloud Storage Pool endpoints, keep in mind that an object can be stored in only one Cloud Storage Pool at a time.
 

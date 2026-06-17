@@ -2,7 +2,7 @@
 permalink: monitor/creating-custom-alert-rules.html
 sidebar: sidebar
 keywords: how to create custom alert rules
-summary: 'You can create custom alert rules to define your own conditions for triggering alerts.'
+summary: "You can create custom alert rules to define your own conditions for triggering alerts."
 ---
 = Create custom alert rules in StorageGRID
 :icons: font

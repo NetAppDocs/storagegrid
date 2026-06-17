@@ -2,7 +2,7 @@
 permalink: admin/deactivate-features-from-api.html
 sidebar: sidebar
 keywords: deactivate features from api
-summary: 'You can use the Grid Management API to completely deactivate certain features in the StorageGRID system. When a feature is deactivated, no one can be assigned permissions to perform the tasks related to that feature.'
+summary: "You can use the Grid Management API to completely deactivate certain features in the StorageGRID system. When a feature is deactivated, no one can be assigned permissions to perform the tasks related to that feature."
 ---
 = Deactivate StorageGRID features with the API
 :icons: font

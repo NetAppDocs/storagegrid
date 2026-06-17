@@ -2,7 +2,7 @@
 permalink: swnodes/required-materials.html
 sidebar: sidebar
 keywords: installation materials
-summary: 'Before you install StorageGRID, gather and prepare the required information and materials.'
+summary: "Before you install StorageGRID, gather and prepare the required information and materials."
 ---
 = Required information and materials for StorageGRID
 :icons: font
@@ -15,7 +15,7 @@ Before you install StorageGRID, gather and prepare the required information and 
 
 Network plan:: Which networks you intend to attach to each StorageGRID node. StorageGRID supports multiple networks for traffic separation, security, and administrative convenience.
 +
-See the StorageGRID link:../network/index.html[Networking guidelines].
+Refer to link:../network/index.html[Networking guidelines].
 
 Network information:: IP addresses to assign to each grid node and the IP addresses of the DNS and NTP servers.
 

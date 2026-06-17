@@ -2,7 +2,7 @@
 permalink: audit/ilm-audit-messages.html
 sidebar: sidebar
 keywords: audit messages, ILM, IDEL, LKCU, ORLM
-summary: 'The audit messages belonging to the ILM audit category are used for events related to information lifecycle operations.'
+summary: "The audit messages belonging to the ILM audit category are used for events related to information lifecycle operations."
 ---
 = StorageGRID ILM audit messages
 :icons: font

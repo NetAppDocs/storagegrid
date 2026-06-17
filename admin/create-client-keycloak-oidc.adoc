@@ -92,7 +92,7 @@ Create the OIDC client for your system.
 . Select *Next*.
 . For Login settings, enter the redirect URIs:
 +
-NOTE: If one or more load balancer endpoints are configured for the management interface, add the redirect URLs for each port. For example: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-logged-out`
+NOTE: If one or more load balancer endpoints are configured for the management interface, add the redirect URIs for each port. For example: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-logged-out`
 
 * Valid redirect URIS: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-logged-out`
 * Valid post logout redirect URIs: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-logged-out`

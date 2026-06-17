@@ -2,7 +2,7 @@
 permalink: ilm/advantages-disadvantages-of-ingest-options.html
 sidebar: sidebar
 keywords: ingest options, balance ingest, strict ingest, dual commit ingest
-summary: 'Understanding the advantages and disadvantages of each of the three options for protecting data at ingest \(Balanced, Strict, or Dual commit\) can help you decide which one to select for an ILM rule.'
+summary: "Understanding the advantages and disadvantages of each of the three options for protecting data at ingest (Balanced, Strict, or Dual commit) can help you decide which one to select for an ILM rule."
 ---
 = Advantages, disadvantages, and limitations of ILM ingest options in StorageGRID
 :icons: font

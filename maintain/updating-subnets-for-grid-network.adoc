@@ -2,7 +2,7 @@
 permalink: maintain/updating-subnets-for-grid-network.html
 sidebar: sidebar
 keywords: storagegrid, recover, subnet, grid network, update subnets
-summary: 'StorageGRID maintains a list of the network subnets used to communicate between grid nodes on the Grid Network \(eth0\). These entries include the subnets used for the Grid Network by each site in your StorageGRID system as well as any subnets used for NTP, DNS, LDAP, or other external servers accessed through the Grid Network gateway. When you add grid nodes or a new site in an expansion, you might need to update or add subnets to the Grid Network.'
+summary: "StorageGRID maintains a list of the network subnets used to communicate between grid nodes on the Grid Network (eth0). These entries include the subnets used for the Grid Network by each site in your StorageGRID system as well as any subnets used for NTP, DNS, LDAP, or other external servers accessed through the Grid Network gateway. When you add grid nodes or a new site in an expansion, you might need to update or add subnets to the Grid Network."
 ---
 = Update subnets for StorageGRID Grid Network
 :icons: font
@@ -27,9 +27,13 @@ If you are performing an expansion activity that includes adding a new subnet, y
 Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
 
 * 192.168.130.101
+* 192.168.130.121
 * 192.168.131.101
+* 192.168.131.121
 * 192.168.130.102
+* 192.168.130.122
 * 192.168.131.102
+* 192.168.131.122
 * 198.51.100.2
 * 198.51.100.4
 

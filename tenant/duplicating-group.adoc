@@ -2,7 +2,7 @@
 permalink: tenant/duplicating-group.html
 sidebar: sidebar
 keywords: how to duplicate tenant group
-summary: 'You can create new groups more quickly by duplicating an existing group.'
+summary: "You can create new groups more quickly by duplicating an existing group."
 ---
 = Duplicate a StorageGRID tenant group
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/preparing-appliance-storage-node-for-reinstallation.html
 sidebar: sidebar
 keywords: storagegrid, recover, appliance, reinstallation appliance, reinstall appliance
-summary: 'When recovering an appliance Storage Node, you must first prepare the appliance for reinstallation of StorageGRID software.'
+summary: "When recovering an appliance Storage Node, you must first prepare the appliance for reinstallation of StorageGRID software."
 ---
 = Prepare StorageGRID appliance Storage Node for reinstallation
 :icons: font

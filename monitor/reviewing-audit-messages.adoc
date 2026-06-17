@@ -2,7 +2,7 @@
 permalink: monitor/reviewing-audit-messages.html
 sidebar: sidebar
 keywords: how to review audit messages, how to view audit messages
-summary: 'Audit messages can help you get a better understanding of the detailed operations of your StorageGRID system. You can use audit logs to troubleshoot issues and to evaluate performance.'
+summary: "Audit messages can help you get a better understanding of the detailed operations of your StorageGRID system. You can use audit logs to troubleshoot issues and to evaluate performance."
 ---
 = Review StorageGRID audit messages
 :icons: font

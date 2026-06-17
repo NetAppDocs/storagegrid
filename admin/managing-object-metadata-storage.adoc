@@ -2,7 +2,7 @@
 permalink: admin/managing-object-metadata-storage.html
 sidebar: sidebar
 keywords: object metadata, metadata capacity, best practices
-summary: 'The object metadata capacity of a StorageGRID system controls the maximum number of objects that can be stored on that system. To ensure that your StorageGRID system has adequate space to store new objects, you must understand where and how StorageGRID stores object metadata.'
+summary: "The object metadata capacity of a StorageGRID system controls the maximum number of objects that can be stored on that system. To ensure that your StorageGRID system has adequate space to store new objects, you must understand where and how StorageGRID stores object metadata."
 ---
 = Manage object metadata storage in StorageGRID
 :icons: font

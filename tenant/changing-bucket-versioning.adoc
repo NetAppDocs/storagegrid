@@ -2,7 +2,7 @@
 permalink: tenant/changing-bucket-versioning.html
 sidebar: sidebar
 keywords: how to change bucket versioning, disabled versioning, enabled versioning, suspended versioning
-summary: 'If you are using an S3 tenant, you can change the versioning state for S3 buckets.'
+summary: "If you are using an S3 tenant, you can change the versioning state for S3 buckets."
 ---
 = Change object versioning for an S3 bucket in StorageGRID
 :icons: font

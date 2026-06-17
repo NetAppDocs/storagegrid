@@ -2,7 +2,7 @@
 permalink: troubleshoot/troubleshoot-low-watermark-alert.html
 sidebar: sidebar
 keywords: troubleshoot low soft read-only watermark override alert, optimized watermarks
-summary: 'If you use custom values for storage volume watermarks, you might need to resolve the Low read-only watermark override alert. If possible, you should update your system to start using the optimized values.'
+summary: "If you use custom values for storage volume watermarks, you might need to resolve the Low read-only watermark override alert. If possible, you should update your system to start using the optimized values."
 ---
 = Resolve the watermark override alert in StorageGRID
 :icons: font

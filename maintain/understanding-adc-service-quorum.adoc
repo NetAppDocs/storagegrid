@@ -2,7 +2,7 @@
 permalink: maintain/understanding-adc-service-quorum.html
 sidebar: sidebar
 keywords: storagegrid, recover, adc, adc quorum
-summary: 'The ADC quorum ensures that a minimum number of Administrative Domain Controller \(ADC\) services remain available at each site. StorageGRID automatically moves the ADC service during decommission when needed.'
+summary: "The ADC quorum ensures that a minimum number of Administrative Domain Controller (ADC) services remain available at each site. StorageGRID automatically moves the ADC service during decommission when needed."
 ---
 = What is the StorageGRID ADC quorum?
 :icons: font

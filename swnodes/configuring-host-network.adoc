@@ -2,7 +2,7 @@
 permalink: swnodes/configuring-host-network.html
 sidebar: sidebar
 keywords: how to configure the host network
-summary: 'After completing the Linux installation on your hosts, you might need to perform some additional configuration to prepare a set of network interfaces on each host that are suitable for mapping into the StorageGRID nodes you will deploy later.'
+summary: "After completing the Linux installation on your hosts, you might need to perform some additional configuration to prepare a set of network interfaces on each host that are suitable for mapping into the StorageGRID nodes you will deploy later."
 ---
 = Configure the StorageGRID host network for Linux deployments
 :icons: font
@@ -15,7 +15,7 @@ include::../_include/linux-distributions.adoc[]
 
 .Before you begin
 
-* You have reviewed the link:../network/index.html[StorageGRID networking guidelines].
+* You have reviewed the information in link:../network/index.html[Networking guidelines].
 * You have reviewed the information about link:node-container-migration-requirements.html[node container migration requirements].
 * If you are using virtual hosts, you have read the <<mac_address_cloning,considerations and recommendations for MAC address cloning>> before configuring the host network.
 

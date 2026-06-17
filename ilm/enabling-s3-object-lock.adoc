@@ -2,7 +2,7 @@
 permalink: ilm/enabling-s3-object-lock.html
 sidebar: sidebar
 keywords: enable s3 object lock, object lock
-summary: 'If an S3 tenant account needs to comply with regulatory requirements when saving object data, you must enable S3 Object Lock for your entire StorageGRID system. Enabling the global S3 Object Lock setting allows any S3 tenant user to create and manage buckets and objects with S3 Object Lock.'
+summary: "If an S3 tenant account needs to comply with regulatory requirements when saving object data, you must enable S3 Object Lock for your entire StorageGRID system. Enabling the global S3 Object Lock setting allows any S3 tenant user to create and manage buckets and objects with S3 Object Lock."
 ---
 = Enable S3 Object Lock in StorageGRID
 :icons: font
@@ -22,7 +22,7 @@ If an S3 tenant account needs to comply with regulatory requirements when saving
 
 A grid administrator must enable the global S3 Object Lock setting to allow tenant users to create new buckets that have S3 Object Lock enabled. After this setting is enabled, it can't be disabled.
 
-A grid administrator can also enable the S3 Object Lock setting for existing buckets to allow tenant users to enable S3 Object Lock on an existing bucket. After enabling this setting, it can be disabled.
+After enabling the S3 Object Lock, a grid administrator can also allow tenant users to enable S3 Object Lock on an existing bucket. After a grid administrator enables this setting, they can disable it. For more information, refer to link:requirements-for-s3-object-lock.html#s3-object-lock-existing-buckets[S3 Object Lock requirements].
 
 Review the compliance settings of existing tenants after you enable the global S3 Object Lock setting. When you enable this setting, the S3 Object Lock per-tenant settings depend on the StorageGRID release at the time the tenant was created.
 
@@ -38,7 +38,7 @@ The S3 Object Lock Settings page appears.
 
 . Optionally, select *Allow S3 Object Lock to be enabled on existing buckets*.
 +
-CAUTION: Enabling S3 Object Lock on an existing bucket might cause unintended data migration from a Cloud Storage Pool back to StorageGRID, depending on your ILM rules. You can't stop this migration after it starts.
+CAUTION: Enabling S3 Object Lock on an existing bucket might cause unintended data migration from a Cloud Storage Pool back to StorageGRID, depending on your ILM rules. You can't stop this migration after it starts.For more information, refer to link:requirements-for-s3-object-lock.html#s3-object-lock-existing-buckets[S3 Object Lock requirements].
 
 . Select *Apply*.
 +

@@ -2,7 +2,7 @@
 permalink: expand/updating-subnets-for-grid-network.html
 sidebar: sidebar
 keywords: expand, expansion, add subnets, Grid Network, StorageGRID
-summary: 'When you add grid nodes or a new site in an expansion, you might need to update or add subnets to the Grid Network.'
+summary: "When you add grid nodes or a new site in an expansion, you might need to update or add subnets to the Grid Network."
 ---
 = Add or update subnets to the Grid Network for expansion in StorageGRID
 :icons: font
@@ -29,9 +29,13 @@ If any of the new nodes has a Grid Network IP address on a subnet not previously
 Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
 
 * 192.168.130.101
+* 192.168.130.121
 * 192.168.131.101
+* 192.168.131.121
 * 192.168.130.102
+* 192.168.130.122
 * 192.168.131.102
+* 192.168.131.122
 * 198.51.100.2
 * 198.51.100.4
 

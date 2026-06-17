@@ -2,7 +2,7 @@
 permalink: s3/configuring-tenant-accounts-and-connections.html
 sidebar: sidebar
 keywords: aws cli, test s3 client connection
-summary: 'You can use the Amazon Web Services Command Line Interface (AWS CLI) to test your connection to the system and to verify that you can read and write objects.'
+summary: "You can use the Amazon Web Services Command Line Interface (AWS CLI) to test your connection to the system and to verify that you can read and write objects."
 ---
 = Test the StorageGRID S3 REST API configuration
 :icons: font

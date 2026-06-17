@@ -2,7 +2,7 @@
 permalink: maintain/gathering-required-materials-site-decom.html
 sidebar: sidebar
 keywords: storagegrid, decommission
-summary: 'Before you decommission a site, you must obtain the following materials.'
+summary: "Before you decommission a site, you must obtain the following materials."
 ---
 = Gather required materials for StorageGRID site decommission
 :icons: font

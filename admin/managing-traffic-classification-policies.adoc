@@ -2,7 +2,7 @@
 permalink: admin/managing-traffic-classification-policies.html
 sidebar: sidebar
 keywords: QoS, quality of service, traffic classification, best practices, limit traffic, monitor traffic
-summary: 'Traffic classification policies allow you to identify and monitor different types of network traffic. These policies can assist with traffic limiting and monitoring to enhance your quality-of-service (QoS) offerings.'
+summary: "Traffic classification policies allow you to identify and monitor different types of network traffic. These policies can assist with traffic limiting and monitoring to enhance your quality-of-service (QoS) offerings."
 ---
 = Traffic classification policies in StorageGRID
 :icons: font

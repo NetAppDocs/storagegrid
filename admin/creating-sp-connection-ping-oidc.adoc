@@ -9,7 +9,7 @@ summary: 'You use PingFederate to create a service provider (SP) connection for 
 :imagesdir: ../media/
 
 [.lead]
-You use PingFederate to create a service provider (SP) connection for each Admin Node for OpenID Connect (OIDC) in your system.
+Use PingFederate to create a service provider (SP) connection for each Admin Node for OpenID Connect (OIDC) in your system.
 
 .Before you begin
 

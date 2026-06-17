@@ -100,7 +100,7 @@ You can use the `manage-grid-federation.py` Python script and the `manage-grid-f
 
 * Displays a summary of all connections and their status
 
-TIP: You can also manage grid federation connections using the Grid Manager or the Grid Management API directly.
+TIP: You can also manage grid federation connections using the Grid Manager UI or the Grid Management API directly.
 
 .Steps
 . Log in to the Linux machine you are using to run the Python script.

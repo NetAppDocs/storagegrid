@@ -2,7 +2,7 @@
 permalink: audit/metadata-update-messages.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, Metadata update, S3 metadata update, SUPD 
-summary: 'Audit messages are generated when an S3 client updates an object’s metadata.'
+summary: "Audit messages are generated when an S3 client updates an object’s metadata."
 ---
 = Audit messages for S3 object metadata updates in StorageGRID
 :icons: font

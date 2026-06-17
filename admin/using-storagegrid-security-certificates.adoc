@@ -2,7 +2,7 @@
 permalink: admin/using-storagegrid-security-certificates.html
 sidebar: sidebar
 keywords: security certificates, grid CA certificate, types of certificates
-summary: 'Security certificates are small data files used to create secure, trusted connections between StorageGRID components and between StorageGRID components and external systems.'
+summary: "Security certificates are small data files used to create secure, trusted connections between StorageGRID components and between StorageGRID components and external systems."
 ---
 = Manage security certificates in StorageGRID
 :icons: font
@@ -274,7 +274,7 @@ a|
 | Details
 
 | Server
-| Authenticates the connection from a StorageGRID Cloud Storage Pool to an external storage location, such as S3 Glacier or Microsoft Azure Blob storage. A different certificate is required for each cloud provider type.
+| Authenticates the connection from a StorageGRID Cloud Storage Pool to an external storage location, such as S3 Glacier or Microsoft Azure Blob Storage. A different certificate is required for each cloud provider type.
 | *ILM* > *Storage pools*
 | link:../ilm/creating-cloud-storage-pool.html[Create a Cloud Storage Pool]
 

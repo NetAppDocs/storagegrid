@@ -2,7 +2,7 @@
 permalink: audit/object-ingest-transactions.html
 sidebar: sidebar
 keywords:  object ingest transaction, S3 ingest, SPUT, ORLM, WPUT 
-summary: 'You can identify client ingest transactions in the audit log by locating S3 API-specific audit messages.'
+summary: "You can identify client ingest transactions in the audit log by locating S3 API-specific audit messages."
 ---
 = Audit messages for object ingest transactions in StorageGRID
 :icons: font

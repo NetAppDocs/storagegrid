@@ -2,7 +2,7 @@
 permalink: upgrade/troubleshooting-upgrade-issues.html
 sidebar: sidebar
 keywords: upgrade, troubleshoot, troubleshooting, errors, upgrade precheck
-summary: 'If something goes wrong when you perform an upgrade, you might able to resolve the issue yourself. If you cannot resolve an issue, gather as much information as you can and then contact technical support.'
+summary: "If something goes wrong when you perform an upgrade, you might able to resolve the issue yourself. If you cannot resolve an issue, gather as much information as you can and then contact technical support."
 ---
 = Troubleshoot StorageGRID upgrade issues
 :icons: font

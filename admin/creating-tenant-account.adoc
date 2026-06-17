@@ -2,7 +2,7 @@
 permalink: admin/creating-tenant-account.html
 sidebar: sidebar
 keywords: create tenant, tenant account
-summary: 'You must create at least one tenant account to control access to the storage in your StorageGRID system.'
+summary: "You must create at least one tenant account to control access to the storage in your StorageGRID system."
 ---
 = Create a StorageGRID tenant account
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/decommission-procedure.html
 sidebar: sidebar
 keywords: how to decommission
-summary: 'You can perform a decommission procedure to permanently remove grid nodes or an entire site from the StorageGRID system.'
+summary: "You can perform a decommission procedure to permanently remove grid nodes or an entire site from the StorageGRID system."
 ---
 = Decommission a StorageGRID node or site
 :icons: font

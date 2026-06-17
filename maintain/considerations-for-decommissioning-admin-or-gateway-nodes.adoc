@@ -2,7 +2,7 @@
 permalink: maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html
 sidebar: sidebar
 keywords: storagegrid, decommission admin node, decommission gateway node
-summary: 'Review the considerations for decommissioning an Admin Node or Gateway Node.'
+summary: "Review the considerations for decommissioning an Admin Node or Gateway Node."
 ---
 = StorageGRID Admin or Gateway Node decommissioning considerations
 :icons: font

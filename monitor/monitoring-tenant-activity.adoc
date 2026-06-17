@@ -2,7 +2,7 @@
 permalink: monitor/monitoring-tenant-activity.html
 sidebar: sidebar
 keywords: how to monitor tenant activity
-summary: 'All S3 client activity is associated with StorageGRID tenant accounts. You can use the Grid Manager to monitor the storage usage or network traffic for all tenants or a specific tenant. You can use the audit log or Grafana dashboards to gather more detailed information about how tenants are using StorageGRID.'
+summary: "All S3 client activity is associated with StorageGRID tenant accounts. You can use the Grid Manager to monitor the storage usage or network traffic for all tenants or a specific tenant. You can use the audit log or Grafana dashboards to gather more detailed information about how tenants are using StorageGRID."
 ---
 = Monitor tenant activity in StorageGRID
 :icons: font

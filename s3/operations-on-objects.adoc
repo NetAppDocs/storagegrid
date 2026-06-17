@@ -2,7 +2,7 @@
 permalink: s3/operations-on-objects.html
 sidebar: sidebar
 keywords: bucket, buckets, operations on buckets
-summary: 'This section describes how the StorageGRID system implements S3 REST API operations for objects.'
+summary: "This section describes how the StorageGRID system implements S3 REST API operations for objects."
 ---
 = How StorageGRID implements S3 REST API operations for objects
 :icons: font

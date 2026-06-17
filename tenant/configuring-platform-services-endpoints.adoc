@@ -2,7 +2,7 @@
 permalink: tenant/configuring-platform-services-endpoints.html
 sidebar: sidebar
 keywords: how to configure platform services endpoint
-summary: 'Before you can configure a platform service for a bucket, you must configure at least one endpoint to be the destination for the platform service.'
+summary: "Before you can configure a platform service for a bucket, you must configure at least one endpoint to be the destination for the platform service."
 ---
 = Configure platform services endpoints in StorageGRID
 :icons: font
@@ -30,8 +30,6 @@ StorageGRID supports replication endpoints that represent S3 buckets. These buck
 == Endpoints for notifications
 
 StorageGRID supports Amazon SNS, Kafka, and webhook endpoints. Simple Queue Service (SQS) and AWS Lambda endpoints aren't supported.
-
-For Kafka endpoints, Mutual TLS isn't supported. As a result, if you have `ssl.client.auth` set to `required` in your Kafka broker configuration, it might cause Kafka endpoint configuration issues.
 
 == Endpoints for the search integration service
 

@@ -2,7 +2,7 @@
 permalink: tenant/understanding-cloudmirror-replication-service.html
 sidebar: sidebar
 keywords: cloudmirror replication
-summary: 'You can enable CloudMirror replication for an S3 bucket if you want StorageGRID to replicate specified objects added to the bucket to one or more destination buckets.'
+summary: "You can enable CloudMirror replication for an S3 bucket if you want StorageGRID to replicate specified objects added to the bucket to one or more destination buckets."
 ---
 = Learn about the StorageGRID CloudMirror replication service
 :icons: font
@@ -12,6 +12,8 @@ summary: 'You can enable CloudMirror replication for an S3 bucket if you want St
 You can enable CloudMirror replication for an S3 bucket if you want StorageGRID to replicate specified objects added to the bucket to one or more external destination buckets.
 
 For example, you might use CloudMirror replication to mirror specific customer records into Amazon S3 and then leverage AWS services to perform analytics on your data.
+
+NOTE: CloudMirror replication is supported only if the source bucket has S3 Object Lock enabled and the endpoint is an Amazon or StorageGRID S3 bucket. Object Lock settings are not replicated to the bucket endpoint.
 
 == CloudMirror and ILM
 CloudMirror replication operates independently of the grid's active ILM policies. The CloudMirror service replicates objects as they are stored to the source bucket and delivers them to the destination bucket as soon as possible. Delivery of replicated objects is triggered when object ingest succeeds.

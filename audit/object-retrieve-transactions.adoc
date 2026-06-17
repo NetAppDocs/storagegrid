@@ -2,7 +2,7 @@
 permalink: audit/object-retrieve-transactions.html
 sidebar: sidebar
 keywords: object retrieve, transactions, SGET, WGET 
-summary: 'You can identify object retrieve transactions in the audit log by locating S3 API-specific audit messages.'
+summary: "You can identify object retrieve transactions in the audit log by locating S3 API-specific audit messages."
 ---
 = Audit messages for object retrieve transactions in StorageGRID
 :icons: font

@@ -2,7 +2,7 @@
 permalink: maintain/viewing-current-status-of-all-services.html
 sidebar: sidebar
 keywords: storagegrid, recover, service, status
-summary: 'You can view the current status of all services running on a grid node at any time.'
+summary: "You can view the current status of all services running on a grid node at any time."
 ---
 = View current status of all StorageGRID services
 :icons: font

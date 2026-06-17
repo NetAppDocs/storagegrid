@@ -2,7 +2,7 @@
 permalink: tenant/grid-federation-manage-cross-grid-replication.html
 sidebar: sidebar
 keywords: grid federation, cross-grid replication, use grid federation connection, replicate client delete markers, s3 bucket
-summary: 'If your tenant account was assigned the Use grid federation connection permission when it was created, you can use cross-grid replication to automatically replicate objects between buckets on the tenant source grid and buckets on the tenant destination grid. Cross-grid replication can occur in one or both directions.'
+summary: "If your tenant account was assigned the Use grid federation connection permission when it was created, you can use cross-grid replication to automatically replicate objects between buckets on the tenant source grid and buckets on the tenant destination grid. Cross-grid replication can occur in one or both directions."
 ---
 = Manage cross-grid replication in StorageGRID
 :icons: font
@@ -54,8 +54,6 @@ TIP: As required, each bucket can use a different region.
 
 === Enable cross-grid replication
 
-You must perform these steps before adding any objects to either bucket.
-
 .Steps
 
 . Starting from a grid whose objects you want to replicate, enable link:../admin/grid-federation-what-is-cross-grid-replication.html[cross-grid replication in one direction]:
@@ -89,8 +87,6 @@ Refer to link:../admin/grid-federation-what-is-cross-grid-replication.html[What 
 * *Error* (default): Only failed cross-grid replication requests are included in the audit output.
 +
 * *Normal*: All cross-grid replication requests are included, which significantly increases the volume of the audit output.
-
-.. Review your selections. You aren't able to change these settings unless both buckets are empty.
 
 .. Select *Enable and test*.
 +
@@ -134,10 +130,6 @@ Before disabling cross-grid replication, note the following:
 * If cross-grid replication was enabled for each of the buckets (that is, if replication occurs in both directions), you can disable cross-grid replication for either or both buckets. For example, you might want to disable replicating objects from `my-bucket` on Grid 1 to `my-bucket` on Grid 2, while continuing to replicate objects from `my-bucket` on Grid 2 to `my-bucket` on Grid 1.
 
 * You must disable cross-grid replication before you can remove a tenant's permission to use the grid federation connection. Refer to link:../admin/grid-federation-manage-tenants.html[Manage permitted tenants].
-
-* If you disable cross-grid replication for a bucket that contains objects, you won't be able to reenable cross-grid replication unless you delete all objects from both the source and destination buckets.
-+
-CAUTION: You can't reenable replication unless both buckets are empty.
 
 .Before you begin
 

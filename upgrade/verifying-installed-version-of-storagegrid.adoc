@@ -2,7 +2,7 @@
 permalink: upgrade/verifying-installed-version-of-storagegrid.html
 sidebar: sidebar
 keywords: storagegrid, version, current version, previous version
-summary: 'Before starting the upgrade, verify that the previous version of StorageGRID is currently installed with the latest available hotfix applied.'
+summary: "Before starting the upgrade, verify that the previous version of StorageGRID is currently installed with the latest available hotfix applied."
 ---
 = Verify the installed version of StorageGRID before upgrading
 :icons: font
@@ -13,7 +13,7 @@ Before starting the upgrade, verify that the previous version of StorageGRID is 
 
 .About this task
 
-Before you upgrade to StorageGRID 12.0, your grid must have StorageGRID 11.9.0.8 or later installed. If you are currently using a previous version of StorageGRID, you must install all previous upgrade files along with their latest hotfixes (strongly recommended) until your grid's current version is at least StorageGRID 11.9.0.8.
+Before you upgrade to StorageGRID 12.1, your grid must have StorageGRID 12.0 or later installed. If you are currently using a previous version of StorageGRID, you must install all previous upgrade files along with their latest hotfixes (strongly recommended) until your grid's current version is at least StorageGRID 12.0.0.
 
 One possible upgrade path is shown in the <<example-upgrade-path,example>>.
 
@@ -42,7 +42,7 @@ Refer to the following upgrade example.
 
 == [[example-upgrade-path]]Example: Upgrade to StorageGRID 12.0 from version 11.8
 
-The following example shows the steps to upgrade from StorageGRID version 11.8 to version 11.9 in preparation for a StorageGRID 12.0 upgrade. 
+The following example shows the steps to upgrade from StorageGRID version 11.9 to version 12.0 in preparation for a StorageGRID 12.1 upgrade. 
 
 Download and install software in the following sequence to prepare your system for upgrade:
 

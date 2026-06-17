@@ -2,7 +2,7 @@
 permalink: admin/kms-adding.html
 sidebar: sidebar
 keywords: add kms, key management server
-summary: 'You use the StorageGRID Key Management Server wizard to add each KMS or KMS cluster.'
+summary: "You use the StorageGRID Key Management Server wizard to add each KMS or KMS cluster."
 ---
 = Add a key management server in StorageGRID
 :icons: font

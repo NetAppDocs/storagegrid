@@ -2,7 +2,7 @@
 permalink: maintain/remounting-and-reformatting-storage-volumes-manual-steps.html
 sidebar: sidebar
 keywords: storagegrid, recover, appliance storage volume, appliance volume, remount manually, reformat manually
-summary: 'If the automatic procedure fails to remount preserved storage volumes and reformat failed storage volumes, you must manually run two scripts to complete those operations. The first script remounts volumes that are properly formatted as StorageGRID storage volumes. The second script reformats any unmounted volumes, rebuilds the Cassandra database, if needed, and starts services.'
+summary: "If the automatic procedure fails to remount preserved storage volumes and reformat failed storage volumes, you must manually run two scripts to complete those operations. The first script remounts volumes that are properly formatted as StorageGRID storage volumes. The second script reformats any unmounted volumes, rebuilds the Cassandra database, if needed, and starts services."
 ---
 = Remount and reformat StorageGRID storage volumes (manual steps)
 :icons: font
