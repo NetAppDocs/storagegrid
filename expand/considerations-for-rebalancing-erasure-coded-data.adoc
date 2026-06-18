@@ -56,7 +56,7 @@ Consider the following scenario:
 +
 image::../media/used_space_before_expansion.png[Used space before expansion]
 
-=== Rebalance is not required if you add enough nodes
+=== Rebalance isn't required if you add enough nodes
 
 To understand when EC rebalance is not required, suppose you added three (or more) new Storage Nodes. In this case, you don't need to perform EC rebalance. The original Storage Nodes will remain full, but new objects will now use the three new nodes for 2+1 erasure coding&#8212;the two data fragments and the one parity fragment can each be stored on a different node.
 
