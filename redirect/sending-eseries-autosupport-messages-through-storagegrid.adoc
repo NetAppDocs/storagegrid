@@ -1,4 +1,4 @@
 ---
 permalink: admin/sending-eseries-autosupport-messages-through-storagegrid.html
-permalink: storagegrid/monitor/sending-eseries-autosupport-messages-through-storagegrid.html
+redirect: storagegrid/monitor/sending-eseries-autosupport-messages-through-storagegrid.html
 ---
