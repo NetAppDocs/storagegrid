@@ -150,7 +150,7 @@ Your DNS resolver should:
 
 . Resolve the global namespace endpoint (for example, `s3.example.com`) to the load balancer endpoints of one or more grids, typically using round-robin DNS.
 
-. Resolve each grid's unique CNAME (for example, `s3.grid-a.netapp.com`) to the load balancer endpoints for that specific grid.
+. Resolve each grid's unique CNAME (for example, `s3.grid-a.example.com`) to the load balancer endpoints for that specific grid.
 
 . For virtual-hosted-style bucket requests (for example, `_bucket_.s3.netapp.com`), use your organization's routing policy to map bucket names to the appropriate grid's CNAME.
 +

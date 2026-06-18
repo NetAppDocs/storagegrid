@@ -133,7 +133,7 @@ In contrast, the CloudMirror service does replicate PutObjectTagging requests or
 | The CloudMirror service does not support objects that are encrypted with SSE-C. If you attempt to ingest an object into the source bucket for CloudMirror replication and the request includes the SSE-C request headers, the operation fails.
 
 | Bucket with S3 Object Lock enabled
-| If the source S3 bucket in StorageGRID has S3 Object Lock enabled, you should also enable S3 Object Lock for the destination bucket.
+| If the source S3 bucket in StorageGRID has S3 Object Lock enabled, you should also enable S3 Object Lock for the destination bucket with default retention configured.
 
 Replication of _object data_ is supported for source and destination buckets with S3 Object Lock enabled. However, destination buckets will maintain their own settings for object retention, and they might not provide compliance or versioning.
 |===
