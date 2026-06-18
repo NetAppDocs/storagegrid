@@ -17,7 +17,7 @@ Before you contact technical support, collect the required log files to assist i
 . External SSH access is blocked by default. If required, link:../admin/manage-external-ssh-access.html[temporarily allow access].
 
 . Connect to the expansion node that has experienced failures:
- .. Enter the following command:``ssh -p 8022 admin@_grid_node_IP_``
+ .. Enter the following command: `ssh -p 8022 admin@_grid_node_IP_`
 +
 Port 8022 is the SSH port of the base OS, while port 22 is the SSH port of the container engine running StorageGRID. 
 

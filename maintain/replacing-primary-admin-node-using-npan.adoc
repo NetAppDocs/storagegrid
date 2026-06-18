@@ -4,14 +4,16 @@ sidebar: sidebar
 keywords: storagegrid, replace, primary admin node, non-primary admin node
 summary: 'Replace a failed primary Admin Node by using a non-primary Admin Node.'
 ---
-= Replace StorageGRID primary Admin Node
+= Replace StorageGRID primary Admin Node using a non-primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To recover a primary Admin Node, you must first replace the physical or virtual hardware.
 
-You can replace a failed primary Admin Node with a primary Admin Node running on the same platform, or you can replace a primary Admin Node running on VMware or a Linux host with a primary Admin Node hosted on a StorageGRID services appliance.
+* You can replace a failed primary Admin Node with a primary Admin Node running on the same platform.
+* You can replace a primary Admin Node running on VMware or a Linux host with a primary Admin Node hosted on a StorageGRID services appliance.
+* You can replace a primary Admin Node running on VMware host with an with SG1000 or SG100 services appliance.
 
 Use the procedure that matches the replacement platform you select for the node. After you complete the node replacement procedure (which is suitable for all node types), that procedure will direct you to the next step for primary Admin Node recovery.
 
@@ -19,8 +21,9 @@ Use the procedure that matches the replacement platform you select for the node.
 |===
 | Replacement platform| Procedure
 | VMware
-| link:all-node-types-replacing-vmware-node.html[Replace a VMware node]
+| link:all-node-types-replacing-vmware-node.html[Replace a VMware node with a recovery node]
 
+link:replace-vmware-node-with-sg1000-sg100.html[Replace VMware node with SG1000 or SG100 services appliance]
 | Linux
 | link:all-node-types-replacing-linux-node.html[Replace a Linux node]
 

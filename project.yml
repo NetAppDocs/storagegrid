@@ -382,8 +382,10 @@ sidebar:
           url: "/maintain/restoring-existing-nodes.html"
         - title: 'What&#8217;s next: Perform additional recovery steps, if required'
           url: "/maintain/whats-next-performing-additional-recovery-steps-if-required.html"
-      - title: Replace VMware node
+      - title: Replace VMware node with a recovery node
         url: "/maintain/all-node-types-replacing-vmware-node.html"
+      - title: Replace VMware node with SG1000 or SG100
+        url: "/maintain/replace-vmware-node-with-sg1000-sg100.html"
       - title: Replace failed node with services appliance
         entries:
         - title: Replacement guidelines
