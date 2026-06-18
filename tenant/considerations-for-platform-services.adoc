@@ -117,7 +117,7 @@ In contrast, search integration requests are sent when objects are deleted becau
 | Bucket versioning and version IDs
 | If the source S3 bucket in StorageGRID has versioning enabled, you should also enable versioning for the destination bucket.
 
-When using versioning, note that the ordering of object versions in the destination bucket is best effort and not guaranteed by the CloudMirror service, due to limitations in the S3 protocol.
+When using versioning, note that the ordering of object versions in the destination bucket is best effort and not guaranteed by the CloudMirror service, due to limitations in the S3 protocol. Additionally, destination buckets will maintain their own settings, and they might not provide versioning.
 
 *Note*: Version IDs for the source bucket in StorageGRID aren't related to the version IDs for the destination bucket.
 
@@ -133,7 +133,9 @@ In contrast, the CloudMirror service does replicate PutObjectTagging requests or
 | The CloudMirror service does not support objects that are encrypted with SSE-C. If you attempt to ingest an object into the source bucket for CloudMirror replication and the request includes the SSE-C request headers, the operation fails.
 
 | Bucket with S3 Object Lock enabled
-| Replication of _object data_ is supported for source and destination buckets with S3 Object Lock enabled. However, destination buckets will maintain their own settings for object retention, and they might not provide compliance or versioning.
+| If the source S3 bucket in StorageGRID has S3 Object Lock enabled, you should also enable S3 Object Lock for the destination bucket with default retention configured.
+
+Replication of _object data_ is supported for source and destination buckets with S3 Object Lock enabled. However, destination buckets will maintain their own settings for object retention, and they might not provide compliance or versioning.
 |===
 
 // 2025 MAR 31, SGWS-33482

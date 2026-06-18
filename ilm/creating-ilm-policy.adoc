@@ -172,7 +172,7 @@ Simulate a policy on test objects before activating the policy and applying it t
 
 .Before you begin
 
-* You know the S3 bucket/object-key for each object you want to test.
+You know the S3 bucket/object-key for each object you want to test.
 
 .Steps
 
