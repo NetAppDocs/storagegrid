@@ -4,81 +4,74 @@ sidebar: sidebar
 keywords: how to administer storagegrid
 summary: 'Use these instructions to configure and administer a StorageGRID system.'
 ---
-= Administer StorageGRID
+= Quick start for administering StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Use these instructions to configure and administer a StorageGRID system.
 
-== About these instructions
-The primary tasks for configuring and administering StorageGRID allow you to:
-
-* Use the Grid Manager to set up groups and users
-* Create tenant accounts to allow S3 client applications to store and retrieve objects
-* Configure and manage StorageGRID networks
-* Configure AutoSupport
-* Manage node settings
-
-== Before you begin
-* You have a general understanding of the StorageGRID system.
-
-* You have fairly detailed knowledge of Linux command shells, networking, and server hardware setup and configuration.
-
-== Quick start for administering StorageGRID
+NOTE: Ensure you have a general understanding of the StorageGRID system and that you have fairly detailed knowledge of Linux command shells, networking, and server hardware setup and configuration.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Get started with Grid Manager
 
 [role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
+* link:../admin/web-browser-requirements.html[Learn basic steps for using the Grid Manager user interface]
+* link:../admin/viewing-storagegrid-license-information.html[Learn about license information]
+* link:../admin/using-grid-management-api.html[Learn about using the Grid Management API]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Two] Control access to StorageGRID
-
-[role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Three] Use grid federation
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Control access to StorageGRID
 
 [role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
+* link:../admin/controlling-storagegrid-access.html[Learn about passphrases, passwords, and permissions]
+* link:../admin/using-identity-federation.html[Configure identity federation]
+* link:../admin/managing-admin-groups.html[Manage admin groups]
+* link:../admin/managing-users.html[Manage users]
+* link:../admin/how-sso-works.html[Configure single-sign-on (SSO)]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Four] Manage security
-
-[role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Five] Manage tenants
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Use grid federation
 
 [role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
+* link:../admin/grid-federation-overview.html[Configure grid federation connections]
+* link:../admin/grid-federation-what-is-account-sync.html[Learn about account sync]
+* link:../admin/grid-federation-what-is-cross-grid-replication.html[Learn about cross-grid replication]
+* link:../admin/learn-about-global-namespace.html[Configure global namespace]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Six] Configure client connections
-
-[role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Seven] Manage networks and connections
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Manage security
 
 [role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
+* link:../admin/reviewing-storagegrid-encryption-methods.html[Review StorageGRID encryption methods]
+* link:../admin/using-storagegrid-security-certificates.html[Manage certificates]
+* link:../admin/manage-tls-ssh-policy.html[Configure security settings]
+* link:../admin/kms-configuring.html[Configure key management servers]
+* link:../admin/configuring-storage-proxy-settings.html[Manage proxy settings]
+* link:../admin/controlling-access-through-firewalls.html[Control firewalls]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[Eight] Manage Nodes
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Manage tenants
 
 [role="quick-margin-list"]
-* Learn how to sign in and out of the Grid Manager
-* Learn about license information
-* Learn about using the API
+* link:../admin/managing-tenants.html[Learn about and manage tenant accounts]
+* link:../admin/manage-platform-services-for-tenants.html[Manage platform services for tenants]
+* link:../admin/manage-s3-select-for-tenant-accounts.html[Manage S3 Select for tenant accounts]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Configure client connections
+
+[role="quick-margin-list"]
+* link:../admin/security-for-clients.html[Learn about security for S3 clients]
+* link:../admin/use-s3-setup-wizard.html[Use the S3 setup wizard]
+* link:../admin/managing-high-availability-groups.html[Manage high-availability groups]
+* link:../admin/configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven] Manage networks and connections
+
+[role="quick-margin-list"]
+* link:../admin/configuring-network-settings.html[Configure network settings]
+* link:../admin/configure-vlan-interfaces.html[Configure VLAN interfaces]
+* link:../admin/managing-traffic-classification-policies.html[Manage traffic classification policies]
+* link:../admin/manage-link-costs.html[Manage link costs]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-8.png[Eight] Manage Nodes
+
+[role="quick-margin-list"]
+* link:../admin/what-object-segmentation-is.html[Manage Storage Nodes]
+* link:../admin/using-multiple-admin-nodes.html[Manage Admin Nodes]
