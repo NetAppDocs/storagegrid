@@ -1,7 +1,7 @@
 section: admin
 title: Administer StorageGRID
 entries:
-  - title: Administration tasks
+  - title: Administration quick start
     pdf-filename: Administer a StorageGRID system
     url: "/admin/index.html"
   - title: Get started with Grid Manager

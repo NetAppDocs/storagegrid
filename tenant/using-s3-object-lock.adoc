@@ -28,4 +28,4 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 
 .Related information
 
-Learn about link:requirements-for-s3-object-lock.html#s3-object-lock-existing-buckets[S3 Object Lock requirements]
+Learn about link:../ilm/requirements-for-s3-object-lock.html#s3-object-lock-existing-buckets[S3 Object Lock requirements]

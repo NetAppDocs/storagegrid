@@ -18,6 +18,6 @@ NOTE: Storage Nodes can be configured during installation to contain object data
 Storage pools have two attributes:
 
 * *Storage grade*: For Storage Nodes, the relative performance of backing storage.
-* *Site*: The data center where objects will be stored.
+* *Site*: The data center where objects are stored.
 
 Storage pools are used in ILM rules to determine where object data is stored and the type of storage used. When you configure ILM rules for replication, you select one or more storage pools.

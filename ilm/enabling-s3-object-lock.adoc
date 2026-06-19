@@ -15,7 +15,7 @@ If an S3 tenant account needs to comply with regulatory requirements when saving
 * You have the link:../admin/admin-group-permissions.html[Root access permission].
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have reviewed the S3 Object Lock workflow, and you understand the considerations.
-* You have confirmed that the default rule in the active ILM policy is compliant. See link:creating-default-ilm-rule.html[Create a default ILM rule] for details.
+* You have confirmed that the default rule in the active ILM policy is compliant. Refer to link:creating-default-ilm-rule.html[Create a default ILM rule] for details.
 
 
 .About this task
@@ -26,7 +26,7 @@ After enabling the S3 Object Lock, a grid administrator can also allow tenant us
 
 Review the compliance settings of existing tenants after you enable the global S3 Object Lock setting. When you enable this setting, the S3 Object Lock per-tenant settings depend on the StorageGRID release at the time the tenant was created.
 
-NOTE: The global Compliance setting is deprecated. If you enabled this setting using a previous version of StorageGRID, the S3 Object Lock setting is enabled automatically. You can continue to use StorageGRID to manage the settings of existing compliant buckets; however, you can't create new compliant buckets. For details, see https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5[NetApp Knowledge Base: How to manage legacy Compliant buckets in StorageGRID 11.5^].
+NOTE: The global Compliance setting is deprecated. If you enabled this setting using a previous version of StorageGRID, the S3 Object Lock setting is enabled automatically. You can continue to use StorageGRID to manage the settings of existing compliant buckets; however, you can't create new compliant buckets. For details, refer to https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5[NetApp Knowledge Base: How to manage legacy Compliant buckets in StorageGRID 11.5^].
 
 .Steps
 
@@ -49,7 +49,7 @@ A confirmation dialog box appears and reminds you that you can't disable S3 Obje
 When you select *OK*:
 
  ** If the default rule in the active ILM policy is compliant, S3 Object Lock is now enabled for the entire grid and can't be disabled.
- ** If the default rule is not compliant, an error appears. You must create and activate a new ILM policy that includes a compliant rule as its default rule. Select *OK*. Then, create a new policy, simulate it, and activate it. See link:creating-ilm-policy.html[Create ILM policy] for instructions.
+ ** If the default rule is not compliant, an error appears. You must create and activate a new ILM policy that includes a compliant rule as its default rule. Select *OK*. Then, create a new policy, simulate it, and activate it. Refer to link:creating-ilm-policy.html[Create ILM policy] for instructions.
 
 // 2026 MAR 3, SGWS-38814
 // 2024 JUN 19, SGWS-30061

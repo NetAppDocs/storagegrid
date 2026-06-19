@@ -30,7 +30,7 @@ The `If-None-Match` header behaves differently depending on your StorageGRID con
 |
 * Added support for cross-origin resource sharing (CORS) for a management interface, which allows another domain to access data in StorageGRID using management APIs. link:../admin/enable-cross-origin-resource-sharing-for-management-interface.html[Learn more].
 
-* Added support for STS AssumeRole and session policy. See link:example-session-policies.html[an example of a session policy]. You can set up AssumeRole under tenant groups. 
+* Added support for STS AssumeRole and session policy. See link:../s3/example-session-policies.html[an example of a session policy]. You can set up AssumeRole under tenant groups. 
 
 | 11.9
 | 
@@ -57,7 +57,7 @@ The `If-None-Match` header behaves differently depending on your StorageGRID con
 
 |11.7
 |
-* Added link:quick-reference-support-for-aws-apis.html[Quick reference: Supported S3 API requests].
+* Added link:../s3/quick-reference-support-for-aws-apis.html[Quick reference: Supported S3 API requests].
 * Added support for using GOVERNANCE mode with S3 Object Lock.
 * Added support for the StorageGRID-specific `x-ntap-sg-cgr-replication-status` response header for GET Object and HEAD Object requests. This header provides an object's replication status for cross-grid replication.
 * SelectObjectContent requests now support Parquet objects.

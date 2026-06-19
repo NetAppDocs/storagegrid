@@ -11,7 +11,7 @@ summary: "Configure and use storage pools to protect against data loss by distri
 [.lead]
 Configure and use storage pools to protect against data loss by distributing data across multiple sites. Replicated copies and erasure-coded copies require different storage pool configurations.
 
-See link:using-multiple-storage-pools-for-cross-site-replication.html[Examples of enabling site-loss protection using replication and erasure coding].
+Refer to link:using-multiple-storage-pools-for-cross-site-replication.html[Examples of enabling site-loss protection using replication and erasure coding].
 
 == Guidelines for all storage pools
 
@@ -39,6 +39,6 @@ Using a storage pool for each site ensures that replicated object copies are pla
 * Distribute Storage Nodes across sites as evenly as possible. For example, to support a 6+3 erasure-coding scheme, configure a storage pool that includes at least three Storage Nodes at three sites.
 * If you have high throughput requirements, using a storage pool that includes multiple sites is not recommended if the network latency between sites is greater than 100 ms. As latency increases, the rate at which StorageGRID can create, place, and retrieve object fragments decreases sharply due to the decrease in TCP network throughput.
 +
-The decrease in throughput affects the maximum achievable rates of object ingest and retrieval (when Balanced or Strict are selected as the ingest behavior) or could lead to ILM queue backlogs (when Dual commit is selected as the ingest behavior). See link:what-ilm-rule-is.html#ilm-rule-ingest-behavior[ILM rule ingest behavior].
+The decrease in throughput affects the maximum achievable rates of object ingest and retrieval (when Balanced or Strict are selected as the ingest behavior) or could lead to ILM queue backlogs (when Dual commit is selected as the ingest behavior). Refer to link:what-ilm-rule-is.html#ilm-rule-ingest-behavior[ILM rule ingest behavior].
 +
 NOTE: If your grid includes only one site, you are prevented from using the All Storage Nodes storage pool (StorageGRID 11.6 and earlier) or the All Sites site in an erasure-coding profile. This behavior prevents the profile from becoming invalid if a second site is added.
