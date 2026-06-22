@@ -2,9 +2,9 @@
 permalink: maintain/grid-node-procedures.html
 sidebar: sidebar
 keywords: storagegrid, grid node procedure
-summary: 'You might need to perform maintenance procedures related to specific grid nodes or node services.'
+summary: "You might need to perform maintenance procedures related to specific grid nodes or node services."
 ---
-= Node maintenance procedures
+= StorageGRID node maintenance procedures
 :icons: font
 :imagesdir: ../media/
 

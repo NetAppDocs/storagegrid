@@ -2,9 +2,9 @@
 permalink: maintain/restoring-prometheus-metrics-primary-admin-node.html
 sidebar: sidebar
 keywords: storagegrid, recover, restore metrics, restore prometheus, primary admin node
-summary: 'Optionally, you can retain the historical metrics maintained by Prometheus on a primary Admin Node that has failed. The Prometheus metrics can only be restored if your StorageGRID system includes another Admin Node.'
+summary: "Optionally, you can retain the historical metrics maintained by Prometheus on a primary Admin Node that has failed. The Prometheus metrics can only be restored if your StorageGRID system includes another Admin Node."
 ---
-= Restore Prometheus metrics when recovering primary Admin Node
+= Restore Prometheus metrics when recovering primary StorageGRID Admin Node
 :icons: font
 :imagesdir: ../media/
 

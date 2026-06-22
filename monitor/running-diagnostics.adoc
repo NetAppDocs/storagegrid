@@ -2,9 +2,9 @@
 permalink: monitor/running-diagnostics.html
 sidebar: sidebar
 keywords: how to run diagnostics
-summary: 'When troubleshooting an issue, you can work with technical support to run diagnostics on your StorageGRID system and review the results.'
+summary: "When troubleshooting an issue, you can work with technical support to run diagnostics on your StorageGRID system and review the results."
 ---
-= Run diagnostics
+= Run diagnostics in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

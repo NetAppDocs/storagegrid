@@ -2,9 +2,9 @@
 permalink: s3/operations-on-the-service.html
 sidebar: sidebar
 keywords: listbuckets, get service, operations on the service
-summary: 'The StorageGRID system supports operations on the service.'
+summary: "The StorageGRID system supports operations on the service."
 ---
-= Operations on the service
+= Supported service operations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: maintain/reviewing-warnings-about-storage-volume-recovery.html
 sidebar: sidebar
 keywords: storagegrid, recover, volume warning
-summary: 'Before recovering failed storage volumes for a Storage Node, you must review the following warnings.'
+summary: "Before recovering failed storage volumes for a Storage Node, you must review the following warnings."
 ---
-= Warnings for storage volume recovery
+= Warnings for StorageGRID storage volume recovery
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: swnodes/required-materials.html
 sidebar: sidebar
 keywords: installation materials
-summary: 'Before you install StorageGRID, gather and prepare the required information and materials.'
+summary: "Before you install StorageGRID, gather and prepare the required information and materials."
 ---
-= Required information and materials
+= Required information and materials for StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -44,5 +44,5 @@ The service laptop must have:
 * link:../admin/web-browser-requirements.html[Supported web browser]
 
 StorageGRID documentation:: 
-* link:../release-notes/index.html[Release notes]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
 * link:../admin/index.html[Instructions for administering StorageGRID]

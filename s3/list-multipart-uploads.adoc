@@ -2,9 +2,9 @@
 permalink: s3/list-multipart-uploads.html
 sidebar: sidebar
 keywords: ListMultipartUploads, uploads, multipart uploads, bucket
-summary: 'The ListMultipartUploads operation lists in-progress multipart uploads for a bucket.'
+summary: "The ListMultipartUploads operation lists in-progress multipart uploads for a bucket."
 ---
-= ListMultipartUploads
+= S3 ListMultipartUploads operation and supported parameters in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

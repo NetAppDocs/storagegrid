@@ -2,7 +2,7 @@
 permalink: ilm/configuring-regions-optional-and-s3-only.html
 sidebar: sidebar
 keywords: S3 regions, region, ilm rules
-summary: 'ILM rules can filter objects based on the optional regions where S3 buckets are created, allowing you to store objects from different regions in different storage locations.'
+summary: "ILM rules can filter objects based on the optional regions where S3 buckets are created, allowing you to store objects from different regions in different storage locations."
 ---
 = Configure S3 regions for StorageGRID
 :icons: font

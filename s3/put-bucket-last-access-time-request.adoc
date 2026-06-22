@@ -2,9 +2,9 @@
 permalink: s3/put-bucket-last-access-time-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, put bucket last access time request
-summary: 'The GET Bucket last access time request allows you to determine if last access time updates are enabled or disabled for individual buckets.'
+summary: "The PUT Bucket last access time request allows you to enable or disable last access time updates for individual buckets."
 ---
-= PUT Bucket last access time
+= Enable and disable last access time updates in StorageGRID with PUT Bucket last access time request
 :icons: font
 :imagesdir: ../media/
 

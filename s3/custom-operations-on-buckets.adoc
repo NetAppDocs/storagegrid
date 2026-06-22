@@ -2,11 +2,11 @@
 permalink: s3/custom-operations-on-buckets.html
 sidebar: sidebar
 keywords: operations, buckets, custom, storagegrid bucket operations
-summary: 'The StorageGRID system supports custom operations that are added on to the S3 REST API.'
+summary: "The StorageGRID system supports custom operations that are added on to the S3 REST API."
 ---
-= StorageGRID custom operations
-:icons: font
+= Supported custom bucket operations in StorageGRID
 :imagesdir: ../media/
+
 
 [.lead]
 The StorageGRID system supports custom operations that are added on to the S3 REST API.

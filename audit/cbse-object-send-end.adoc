@@ -2,9 +2,9 @@
 permalink: audit/cbse-object-send-end.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, CBSE, Object Send End
-summary: 'When transfer of a content block from one node to another is completed, this message is issued by the source entity.'
+summary: "When transfer of a content block from one node to another is completed, this message is issued by the source entity."
 ---
-= CBSE: Object Send End
+= CBSE audit message for object send end in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

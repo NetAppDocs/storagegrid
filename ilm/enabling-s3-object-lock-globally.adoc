@@ -2,9 +2,9 @@
 permalink: ilm/enabling-s3-object-lock-globally.html
 sidebar: sidebar
 keywords: enable s3 object lock, object lock
-summary: 'If an S3 tenant account needs to comply with regulatory requirements when saving object data, you must enable S3 Object Lock for your entire StorageGRID system. Enabling the global S3 Object Lock setting allows any S3 tenant user to create and manage buckets and objects with S3 Object Lock.'
+summary: "If an S3 tenant account needs to comply with regulatory requirements when saving object data, you must enable S3 Object Lock for your entire StorageGRID system. Enabling the global S3 Object Lock setting allows any S3 tenant user to create and manage buckets and objects with S3 Object Lock."
 ---
-= Enable S3 Object Lock globally
+= Enable S3 Object Lock globally in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

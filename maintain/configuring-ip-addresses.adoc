@@ -2,9 +2,9 @@
 permalink: maintain/configuring-ip-addresses.html
 sidebar: sidebar
 keywords: configure ip address, change IP tool, ethernet, dhcp, ha group
-summary: 'You can perform network configuration by configuring IP addresses for grid nodes using the Change IP tool.'
+summary: "You can perform network configuration by configuring IP addresses for grid nodes using the Change IP tool."
 ---
-= IP address guidelines
+= StorageGRID IP address guidelines
 :icons: font
 :imagesdir: ../media/
 

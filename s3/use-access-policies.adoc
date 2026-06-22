@@ -2,9 +2,9 @@
 permalink: s3/use-access-policies.html
 sidebar: sidebar
 keywords: bucket access policies, group access policies, session policies
-summary: ''
+summary: "StorageGRID uses the Amazon Web Services (AWS) policy language to allow S3 tenants to control access to buckets and objects within those buckets."
 ---
-= Use access policies
+= How StorageGRID uses AWS policies to control access to S3 buckets and objects
 :icons: font
 :imagesdir: ../media/
 
@@ -521,7 +521,7 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 | 
 |===
 
-== Use PutOverwriteObject permission
+== [[use-putoverwriteobject-permission]]Use PutOverwriteObject permission
 
 The s3:PutOverwriteObject permission is a custom StorageGRID permission that applies to operations that create or update objects. The setting of this permission determines whether the client can overwrite an object's data, user-defined metadata, or S3 object tagging.
 

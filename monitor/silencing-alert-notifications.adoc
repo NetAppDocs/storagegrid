@@ -2,9 +2,9 @@
 permalink: monitor/silencing-alert-notifications.html
 sidebar: sidebar
 keywords: how to disable alert rules, how to remove a custom alert rule
-summary: 'Optionally, you can configure silences to temporarily suppress alert notifications.'
+summary: "Optionally, you can configure silences to temporarily suppress alert notifications."
 ---
-= Silence alert notifications
+= Silence alert notifications in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

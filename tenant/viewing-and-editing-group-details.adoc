@@ -2,9 +2,9 @@
 permalink: tenant/viewing-and-editing-group-details.html
 sidebar: sidebar
 keywords: how to view and edit group
-summary: 'When you view the details for a group, you can change the group’s display name, permissions, policies, and the users that belong to the group.'
+summary: "When you view the details for a group, you can change the group’s display name, permissions, policies, and the users that belong to the group."
 ---
-= View and edit group details
+= View and edit tenant group details in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

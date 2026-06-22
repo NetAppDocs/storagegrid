@@ -2,9 +2,9 @@
 permalink: monitor/removing-custom-alert-rules.html
 sidebar: sidebar
 keywords: how to disable alert rules, how to remove a custom alert rule
-summary: 'You can remove a custom alert rule if you no longer want to use it.'
+summary: "You can remove a custom alert rule if you no longer want to use it."
 ---
-= Remove custom alert rules
+= Remove custom alert rules in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

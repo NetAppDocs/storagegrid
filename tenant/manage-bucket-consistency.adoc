@@ -2,9 +2,9 @@
 permalink: tenant/manage-bucket-consistency.html
 sidebar: sidebar
 keywords: how to manage bucket consistency, how to change bucket consistency, read after new write, read-after-new-write, strong site, strong-site, strong global, strong-global
-summary: 'Consistency values can be used to specify the availability of bucket setting changes as well as to provide a balance between the availability of the objects within a bucket and the consistency of those objects across different Storage Nodes and sites. You can change the consistency values to be different from the default values so that client applications can meet their operational needs.'
+summary: "Consistency values can be used to specify the availability of bucket setting changes as well as to provide a balance between the availability of the objects within a bucket and the consistency of those objects across different Storage Nodes and sites. You can change the consistency values to be different from the default values so that client applications can meet their operational needs."
 ---
-= Manage bucket consistency
+= Manage StorageGRID bucket consistency
 :icons: font
 :imagesdir: ../media/
 

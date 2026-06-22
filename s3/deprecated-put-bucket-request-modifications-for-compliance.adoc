@@ -2,9 +2,9 @@
 permalink: s3/deprecated-put-bucket-request-modifications-for-compliance.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, deprecated bucket requests for compliance
-summary: 'The SGCompliance XML element is deprecated. Previously, you could include this StorageGRID custom element in the optional XML request body of CreateBucket requests to create a Compliant bucket.'
+summary: "The SGCompliance XML element is deprecated. Previously, you could include this StorageGRID custom element in the optional XML request body of CreateBucket requests to create a Compliant bucket."
 ---
-= Deprecated: CreateBucket request modifications for compliance
+= Deprecated SGCompliance element in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

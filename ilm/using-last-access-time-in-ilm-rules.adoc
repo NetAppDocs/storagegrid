@@ -2,9 +2,9 @@
 permalink: ilm/using-last-access-time-in-ilm-rules.html
 sidebar: sidebar
 keywords: last access time, ilm rule reference time
-summary: 'You can use Last access time as the reference time in an ILM rule. For example, you might want to leave objects that have been viewed in the last three months on local Storage Nodes, while moving objects that have not been viewed as recently to an off-site location. You can also use Last access time as an advanced filter if you want an ILM rule to apply only to objects that were last accessed on a specific date.'
+summary: "You can use Last access time as the reference time in an ILM rule. For example, you might want to leave objects that have been viewed in the last three months on local Storage Nodes, while moving objects that have not been viewed as recently to an off-site location. You can also use Last access time as an advanced filter if you want an ILM rule to apply only to objects that were last accessed on a specific date."
 ---
-= Use Last access time in ILM rules
+= Use Last access time in StorageGRID ILM rules
 :icons: font
 :imagesdir: ../media/
 

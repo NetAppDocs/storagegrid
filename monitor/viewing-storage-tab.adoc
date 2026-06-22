@@ -2,9 +2,9 @@
 permalink: monitor/viewing-storage-tab.html
 sidebar: sidebar
 keywords: storage tab
-summary: 'The Storage tab summarizes storage availability and other storage metrics.'
+summary: "The Storage tab summarizes storage availability and other storage metrics."
 ---
-= View the Storage tab
+= View the StorageGRID Storage tab
 :icons: font
 :imagesdir: ../media/
 

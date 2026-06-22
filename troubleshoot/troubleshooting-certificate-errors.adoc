@@ -2,9 +2,9 @@
 permalink: troubleshoot/troubleshooting-certificate-errors.html
 sidebar: sidebar
 keywords: how to troubleshoot certificate errors
-summary: 'If you see a security or certificate issue when you try to connect to StorageGRID using a web browser, an S3 client, or an external monitoring tool, you should check the certificate.'
+summary: "If you see a security or certificate issue when you try to connect to StorageGRID using a web browser, an S3 client, or an external monitoring tool, you should check the certificate."
 ---
-= Troubleshoot certificate errors
+= Troubleshoot certificate errors in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

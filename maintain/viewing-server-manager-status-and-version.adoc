@@ -2,9 +2,9 @@
 permalink: maintain/viewing-server-manager-status-and-version.html
 sidebar: sidebar
 keywords: storagegrid, recover, server manager, status, version
-summary: 'For each grid node, you can view the current status and version of Server Manager running on that grid node. You can also obtain the current status of all services running on that grid node.'
+summary: "For each grid node, you can view the current status and version of Server Manager running on that grid node. You can also obtain the current status of all services running on that grid node."
 ---
-= View Server Manager status and version
+= View StorageGRID Server Manager status and version
 :icons: font
 :imagesdir: ../media/
 

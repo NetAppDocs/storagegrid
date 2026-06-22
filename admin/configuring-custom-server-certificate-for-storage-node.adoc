@@ -2,9 +2,9 @@
 permalink: admin/configuring-custom-server-certificate-for-storage-node.html
 sidebar: sidebar
 keywords: global S3 API certificate
-summary: 'You can replace or restore the server certificate that is used for S3 client connections to Storage Nodes or to load balancer endpoints. The replacement custom server certificate is specific to your organization.'
+summary: "You can replace or restore the server certificate that is used for S3 client connections to Storage Nodes or to load balancer endpoints. The replacement custom server certificate is specific to your organization."
 ---
-= Configure S3 API certificates
+= Configure S3 API certificates in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

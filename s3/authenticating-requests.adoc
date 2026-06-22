@@ -2,9 +2,9 @@
 permalink: s3/authenticating-requests.html
 sidebar: sidebar
 keywords: authenticate requests, authenticating, requests
-summary: 'The StorageGRID system supports both authenticated and anonymous access to objects using the S3 API.'
+summary: "The StorageGRID system supports both authenticated and anonymous access to objects using the S3 API."
 ---
-= Authenticate requests
+= How StorageGRID S3 REST API authenticates requests
 :icons: font
 :imagesdir: ../media/
 

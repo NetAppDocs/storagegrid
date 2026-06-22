@@ -2,9 +2,9 @@
 permalink: audit/data-types.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, data, types, UI32, UI64, FC32, IPAD, CSTR, IPAD
-summary: 'Different data types are used to store information in audit messages.'
+summary: "Different data types are used to store information in audit messages."
 ---
-= Data types
+= Data types in StorageGRID audit messages
 :icons: font
 :imagesdir: ../media/
 

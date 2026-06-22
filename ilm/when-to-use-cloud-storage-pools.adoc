@@ -2,9 +2,9 @@
 permalink: ilm/when-to-use-cloud-storage-pools.html
 sidebar: sidebar
 keywords: use cloud storage pool, benefits of cloud storage pools
-summary: 'Using Cloud Storage Pools, you can back up or tier data to an external location. Additionally, you can back up or tier data to more than one cloud.'
+summary: "Using Cloud Storage Pools, you can back up or tier data to an external location. Additionally, you can back up or tier data to more than one cloud."
 ---
-= When to use Cloud Storage Pools
+= Cloud Storage Pool use cases in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

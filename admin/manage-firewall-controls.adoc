@@ -2,9 +2,9 @@
 permalink: admin/manage-firewall-controls.html
 sidebar: sidebar
 keywords: firewall controls, untrusted client network, privileged address, manage external access
-summary: 'StorageGRID includes an internal firewall on each node that enhances the security of your grid by enabling you to customize access to the Grid Network, Admin Network, and Client Network.'
+summary: "StorageGRID includes an internal firewall on each node that enhances the security of your grid by enabling you to customize access to the Grid Network, Admin Network, and Client Network."
 ---
-= Manage internal firewall controls
+= Manage internal firewall controls in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

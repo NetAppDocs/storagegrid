@@ -2,9 +2,9 @@
 permalink: admin/editing-traffic-classification-policy.html
 sidebar: sidebar
 keywords: edit traffic classification policy
-summary: 'You can edit a traffic classification policy to change its name or description, or to create, edit, or delete any rules or limits for the policy.'
+summary: "You can edit a traffic classification policy to change its name or description, or to create, edit, or delete any rules or limits for the policy."
 ---
-= Edit traffic classification policy
+= Edit a StorageGRID traffic classification policy
 :icons: font
 :imagesdir: ../media/
 

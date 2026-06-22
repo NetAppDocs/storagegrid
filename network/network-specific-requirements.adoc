@@ -2,7 +2,7 @@
 permalink: network/network-specific-requirements.html
 sidebar: sidebar
 keywords: network-specific requirements, network specific requirements, network requirements
-summary: 'Follow the requirements for each StorageGRID network type.'
+summary: "Follow the requirements for each StorageGRID network type."
 ---
 = Network-specific requirements for StorageGRID
 :icons: font
@@ -28,9 +28,13 @@ The following restrictions are enforced by the Grid Manager during deployment. T
 * Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
 
 ** 192.168.130.101
+** 192.168.130.121
 ** 192.168.131.101
+** 192.168.131.121
 ** 192.168.130.102
+** 192.168.130.122
 ** 192.168.131.102
+** 192.168.131.122
 ** 198.51.100.2
 ** 198.51.100.4
 

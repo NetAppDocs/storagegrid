@@ -2,9 +2,9 @@
 permalink: tenant/manage-users.html
 sidebar: sidebar
 keywords: how to create local tenant users, manage users
-summary: 'You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named "root." Although you can add and remove local users, you cannot remove the root user.'
+summary: "You can create local users and assign them to local groups to determine which features these users can access. The Tenant Manager includes one predefined local user, named root. Although you can add and remove local users, you cannot remove the root user."
 ---
-= Manage users
+= Manage StorageGRID tenant users
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: admin/manage-s3-select-for-tenant-accounts.html
 sidebar: sidebar
 keywords: s3 select, selectobjectcontent, best practices, object format, s3 select requirements
-summary: 'You can allow certain S3 tenants to use S3 Select to issue SelectObjectContent requests on individual objects.'
+summary: "You can allow certain S3 tenants to use S3 Select to issue SelectObjectContent requests on individual objects."
 ---
-= Manage S3 Select for tenant accounts
+= Manage S3 Select for tenant accounts in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

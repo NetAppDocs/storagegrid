@@ -2,9 +2,9 @@
 permalink: monitor/creating-custom-monitoring-applications.html
 sidebar: sidebar
 keywords: custom monitoring, monitoring, dashboard
-summary: 'You can build custom monitoring applications and dashboards using the StorageGRID metrics available from the Grid Management API.'
+summary: "You can build custom monitoring applications and dashboards using the StorageGRID metrics available from the Grid Management API."
 ---
-= Create custom monitoring applications
+= Create custom monitoring applications for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

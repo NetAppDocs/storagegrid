@@ -2,9 +2,9 @@
 permalink: troubleshoot/troubleshooting-metadata-issues.html
 sidebar: sidebar
 keywords: how to troubleshoot metadata issues
-summary: 'If metadata issues occur, alerts will inform you of the source of the issues and recommended actions to take. In particular, you must add new Storage Nodes if the Low metadata storage alert is triggered.'
+summary: "If metadata issues occur, alerts will inform you of the source of the issues and recommended actions to take. In particular, you must add new Storage Nodes if the Low metadata storage alert is triggered."
 ---
-= Troubleshoot metadata issues
+= Troubleshoot metadata issues in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

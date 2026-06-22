@@ -2,9 +2,9 @@
 permalink: maintain/whats-next-performing-additional-recovery-steps-if-required.html
 sidebar: sidebar
 keywords: storagegrid, recover, corrective action, additional recovery
-summary: 'Depending on the specific actions you took to get the StorageGRID nodes running on the replacement host, you might need to perform additional recovery steps for each node.'
+summary: "Depending on the specific actions you took to get the StorageGRID nodes running on the replacement host, you might need to perform additional recovery steps for each node."
 ---
-= What's next: Perform additional recovery steps, if required
+= Perform additional StorageGRID node recovery steps
 :icons: font
 :imagesdir: ../media/
 

@@ -2,7 +2,7 @@
 permalink: expand/configuring-expanded-storagegrid-system.html
 sidebar: sidebar
 keywords: expansion, configuration, StorageGRID
-summary: 'After completing an expansion, you must perform additional integration and configuration steps.'
+summary: "After completing an expansion, you must perform additional integration and configuration steps."
 ---
 = Configure newly added nodes and sites in StorageGRID
 :icons: font

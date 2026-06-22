@@ -2,9 +2,9 @@
 permalink: maintain/pausing-and-resuming-decommission-process-for-storage-nodes.html
 sidebar: sidebar
 keywords: how to pause decommission
-summary: 'If you need to perform a second maintenance procedure, you can pause the decommission procedure for a Storage Node during certain stages. After the other procedure is finished, you can resume decommissioning.'
+summary: "If you need to perform a second maintenance procedure, you can pause the decommission procedure for a Storage Node during certain stages. After the other procedure is finished, you can resume decommissioning."
 ---
-= Pause and resume decommission process for Storage Nodes
+= Pause and resume decommission process for StorageGRID Storage Nodes
 :icons: font
 :imagesdir: ../media/
 

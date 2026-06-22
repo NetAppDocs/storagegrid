@@ -2,9 +2,9 @@
 permalink: tenant/manage-groups.html
 sidebar: sidebar
 keywords: how to view and edit tenant groups, manage groups, duplicate group, remove group, edit group
-summary: 'Manage your tenant groups as needed to view, edit, or duplicate a group, and more.'
+summary: "Manage your tenant groups as needed to view, edit, or duplicate a group, and more."
 ---
-= Manage groups
+= Manage StorageGRID tenant groups
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: audit/client-write-audit-messages.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, messages, client write, OVWR, SDEL, SPOS, SPUT, SUPD, WDEL, WPUT, S3
-summary: 'Client write audit messages are logged when an S3 client application makes a request to create or modify an object.'
+summary: "Client write audit messages are logged when an S3 client application makes a request to create or modify an object."
 ---
-= Client write audit messages
+= Audit messages for client write operations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

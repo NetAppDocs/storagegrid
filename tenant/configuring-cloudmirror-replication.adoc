@@ -2,9 +2,9 @@
 permalink: tenant/configuring-cloudmirror-replication.html
 sidebar: sidebar
 keywords: how to configure CloudMirror replication, replication xml
-summary: 'You enable CloudMirror replication for a bucket by creating bucket replication configuration XML and using the Tenant Manager to apply the XML to the bucket.'
+summary: "You enable CloudMirror replication for a bucket by creating bucket replication configuration XML and using the Tenant Manager to apply the XML to the bucket."
 ---
-= Configure CloudMirror replication
+= Configure CloudMirror replication in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

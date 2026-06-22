@@ -2,9 +2,9 @@
 permalink: admin/grid-management-api-versioning.html
 sidebar: sidebar
 keywords: grid management api, api versioning
-summary: 'The Grid Management API uses versioning to support non-disruptive upgrades.'
+summary: "The Grid Management API uses versioning to support non-disruptive upgrades."
 ---
-= Grid Management API versioning
+= Grid Management API versioning in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: ilm/manage-erasure-coding-profiles.html
 sidebar: sidebar
 keywords: rename erasure-coding profile, ec profile
-summary: 'You can view the details for an erasure-coding profile and rename a profile if needed. You can deactivate an erasure-coding profile if it is not currently used in any ILM rules.'
+summary: "You can view the details for an erasure-coding profile and rename a profile if needed. You can deactivate an erasure-coding profile if it is not currently used in any ILM rules."
 ---
-= Manage erasure-coding profiles
+= Manage erasure-coding profiles in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

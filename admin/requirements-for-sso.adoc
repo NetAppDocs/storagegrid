@@ -2,9 +2,9 @@
 permalink: admin/requirements-for-sso.html
 sidebar: sidebar
 keywords: sso requirements, single sign on requirements, identity federation requirements for sso, pingfederate, entra id, ad fs
-summary: 'Before enabling single sign-on for a StorageGRID system, review the requirements and considerations.'
+summary: "Before enabling single sign-on for a StorageGRID system, review the requirements and considerations."
 ---
-= Requirements and considerations for SSO
+= Requirements and considerations for StorageGRID SSO
 :icons: font
 :imagesdir: ../media/
 

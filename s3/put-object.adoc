@@ -2,9 +2,9 @@
 permalink: s3/put-object.html
 sidebar: sidebar
 keywords: object, add object, put, PutObject request
-summary: 'You can use the S3 PutObject request to add an object to a bucket.'
+summary: "You can use the S3 PutObject request to add an object to a bucket."
 ---
-= PutObject
+= Add an object to a bucket in StorageGRID with the S3 PutObject request
 :icons: font
 :imagesdir: ../media/
 
@@ -107,8 +107,12 @@ See <<Request headers for server-side encryption>>
 
 The following request headers aren't supported:
 
-* `If-Match` 
+* `If-Match`
++
+The `If-Match header` is accepted but non-functional.
 * `If-None-Match`
++
+The `If-None-Match header` is accepted but non-functional.
 * `x-amz-acl` 
 * `x-amz-sdk-checksum-algorithm`
 * `x-amz-trailer` 

@@ -2,9 +2,9 @@
 permalink: tenant/manage-branch-buckets.html
 sidebar: sidebar
 keywords: how to create branch bucket
-summary: 'Use the Tenant Manager to create and view details for branch buckets.'
+summary: "Use the Tenant Manager to create and view details for branch buckets."
 ---
-= Manage branch buckets
+= Manage StorageGRID branch buckets
 :icons: font
 :imagesdir: ../media/
 

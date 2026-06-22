@@ -2,9 +2,9 @@
 permalink: maintain/checking-systems-condition-before-applying-hotfix.html
 sidebar: sidebar
 keywords: storagegrid, hotfix
-summary: 'You must verify the system is ready to accommodate the hotfix.'
+summary: "You must verify the system is ready to accommodate the hotfix."
 ---
-= Check system's condition before applying hotfix
+= Check system condition before applying a StorageGRID hotfix
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: maintain/configuring-replacement-primary-admin-node.html
 sidebar: sidebar
 keywords: storagegrid, primary admin node, replace primary admin node, replacing primary admin node
-summary: 'The replacement node must be configured as the primary Admin Node for your StorageGRID system.'
+summary: "The replacement node must be configured as the primary Admin Node for your StorageGRID system."
 ---
-= Configure replacement primary Admin Node
+= Configure a replacement primary Admin Node in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

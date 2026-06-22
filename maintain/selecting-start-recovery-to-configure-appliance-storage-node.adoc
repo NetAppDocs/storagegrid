@@ -2,9 +2,9 @@
 permalink: maintain/selecting-start-recovery-to-configure-appliance-storage-node.html
 sidebar: sidebar
 keywords: storagegrid, recover, appliance storage node
-summary: 'You must select Start Recovery in the Grid Manager to configure an appliance Storage Node as a replacement for the failed node.'
+summary: "You must select Start Recovery in the Grid Manager to configure an appliance Storage Node as a replacement for the failed node."
 ---
-= Select Start Recovery to configure appliance Storage Node
+= Select Start Recovery to configure StorageGRID appliance Storage Node
 :icons: font
 :imagesdir: ../media/
 

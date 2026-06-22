@@ -2,9 +2,9 @@
 permalink: tenant/guidelines-for-configuring-openldap-server.html
 sidebar: sidebar
 keywords: how to configure open ldap
-summary: 'If you want to use an OpenLDAP server for identity federation, you must configure specific settings on the OpenLDAP server.'
+summary: "If you want to use an OpenLDAP server for identity federation, you must configure specific settings on the OpenLDAP server."
 ---
-= Guidelines for configuring OpenLDAP server
+= Configure an OpenLDAP server for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

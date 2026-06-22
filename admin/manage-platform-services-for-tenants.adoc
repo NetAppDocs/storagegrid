@@ -2,9 +2,9 @@
 permalink: admin/manage-platform-services-for-tenants.html
 sidebar: sidebar
 keywords: platform service, cloudmirror replication, event notification, search integration service
-summary: 'Platform services include CloudMirror replication, event notifications, and the search integration service.'
+summary: "Platform services include CloudMirror replication, event notifications, and the search integration service."
 ---
-= What are platform services?
+= Learn about StorageGRID platform services
 :icons: font
 :imagesdir: ../media/
 

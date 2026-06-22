@@ -2,9 +2,9 @@
 permalink: maintain/recovering-from-archive-node-failures.html
 sidebar: sidebar
 keywords: recover, archive node failure, workflow
-summary: 'Support for Archive Nodes has been removed.'
+summary: "Support for Archive Nodes has been removed."
 ---
-= Recover from Archive Node failures
+= Recover from StorageGRID Archive Node failures
 :icons: font
 :imagesdir: ../media/
 

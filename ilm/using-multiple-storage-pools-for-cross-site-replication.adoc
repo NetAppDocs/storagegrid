@@ -2,9 +2,9 @@
 permalink: ilm/using-multiple-storage-pools-for-cross-site-replication.html
 sidebar: sidebar
 keywords: site-loss protection, cross-site replication, storage pools 
-summary: 'If your StorageGRID deployment includes more than one site, you can use replication and erasure coding with appropriately configured storage pools to enable site-loss protection.'
+summary: "If your StorageGRID deployment includes more than one site, you can use replication and erasure coding with appropriately configured storage pools to enable site-loss protection."
 ---
-= Enable site-loss protection
+= Site-loss protection with storage pools in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

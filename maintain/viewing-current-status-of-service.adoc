@@ -2,14 +2,14 @@
 permalink: maintain/viewing-current-status-of-service.html
 sidebar: sidebar
 keywords: storagegrid, recover, service, status
-summary: 'You can view the current status of a services running on a grid node at any time.'
+summary: "You can view the current status of a service running on a grid node at any time."
 ---
-= View current status of service
+= View current status of a StorageGRID service
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can view the current status of a services running on a grid node at any time.
+You can view the current status of a service running on a grid node at any time.
 
 .Before you begin
 

@@ -2,9 +2,9 @@
 permalink: audit/mgau-management-audit-message.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, MGAU, Management audit message
-summary: 'The Management category logs user requests to the Management API. Every request that is not a GET or HEAD request to the API logs a response with the username, IP, and type of request to the API.'
+summary: "The Management category logs user requests to the Management API. Every request that is not a GET or HEAD request to the API logs a response with the username, IP, and type of request to the API."
 ---
-= MGAU: Management audit message
+= MGAU audit message for management API requests in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

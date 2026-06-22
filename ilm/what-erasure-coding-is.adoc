@@ -2,9 +2,9 @@
 permalink: ilm/what-erasure-coding-is.html
 sidebar: sidebar
 keywords: what is erasure coding, what is ec
-summary: 'Erasure coding is one of two methods StorageGRID uses to store object data. When objects match an ILM rule that uses erasure coding, those objects are sliced into data fragments, additional parity fragments are computed, and each fragment is stored on a different Storage Node.'
+summary: "Erasure coding is one of two methods StorageGRID uses to store object data. When objects match an ILM rule that uses erasure coding, those objects are sliced into data fragments, additional parity fragments are computed, and each fragment is stored on a different Storage Node."
 ---
-= What is erasure coding? 
+= Learn about erasure coding in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

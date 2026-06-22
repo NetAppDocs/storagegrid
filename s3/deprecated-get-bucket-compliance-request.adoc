@@ -2,9 +2,9 @@
 permalink: s3/deprecated-get-bucket-compliance-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, deprecated GET compliance requests
-summary: 'The GET Bucket compliance request is deprecated. However, you can continue to use this request to determine the compliance settings currently in effect for an existing legacy Compliant bucket.'
+summary: "The GET Bucket compliance request is deprecated. However, you can continue to use this request to determine the compliance settings currently in effect for an existing legacy Compliant bucket."
 ---
-= Deprecated: GET Bucket compliance request
+= Deprecated GET Bucket compliance request in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

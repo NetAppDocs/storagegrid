@@ -2,9 +2,9 @@
 permalink: tenant/using-identity-federation.html
 sidebar: sidebar
 keywords: how to use identity federation, how to use federated groups with Tenant Manager
-summary: 'Using identity federation makes setting up tenant groups and users faster, and it allows tenant users to sign in to the tenant account using familiar credentials.'
+summary: "Using identity federation makes setting up tenant groups and users faster, and it allows tenant users to sign in to the tenant account using familiar credentials."
 ---
-= Use identity federation
+= Use identity federation in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: tenant/using-s3-object-lock.html
 sidebar: sidebar
 keywords: how to use s3 object lock
-summary: 'You can use S3 Object Lock if buckets and objects must comply with regulatory requirements for retention.'
+summary: "You can use S3 Object Lock if buckets and objects must comply with regulatory requirements for retention."
 ---
-= Use S3 Object Lock to retain objects
+= Use S3 Object Lock to retain objects in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

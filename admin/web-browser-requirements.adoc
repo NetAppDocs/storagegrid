@@ -2,9 +2,9 @@
 permalink: admin/web-browser-requirements.html
 sidebar: sidebar
 keywords: web browser requirements, supported browser, chrome, edge, firefox
-summary: 'You must use a supported web browser.'
+summary: "You must use a supported web browser."
 ---
-= Web browser requirements
+= Web browser requirements for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

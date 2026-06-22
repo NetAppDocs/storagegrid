@@ -2,9 +2,9 @@
 permalink: admin/summary-ip-addresses-and-ports-for-client-connections.html
 sidebar: sidebar
 keywords: ip addresses for client, how to connect to storagegrid, ports, vip
-summary: 'To store or retrieve objects, S3 client applications connect to the Load Balancer service, which is included on all Admin Nodes and Gateway Nodes, or to the Local Distribution Router (LDR) service, which is included on all Storage Nodes.'
+summary: "To store or retrieve objects, S3 client applications connect to the Load Balancer service, which is included on all Admin Nodes and Gateway Nodes, or to the Local Distribution Router (LDR) service, which is included on all Storage Nodes."
 ---
-= Summary: IP addresses and ports for client connections
+= IP addresses and ports for StorageGRID client connections
 :icons: font
 :imagesdir: ../media/
 

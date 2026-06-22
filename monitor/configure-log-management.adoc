@@ -2,9 +2,9 @@
 permalink: monitor/configure-log-management.html
 sidebar: sidebar
 keywords: log management, audit level, external syslog server, log destinations
-summary: 'As needed, configure audit levels, protocol headers, and the location of audit messages and logs.'
+summary: "As needed, configure audit levels, protocol headers, and the location of audit messages and logs."
 ---
-= Configure log management
+= Configure log management in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

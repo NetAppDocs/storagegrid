@@ -2,9 +2,9 @@
 permalink: admin/grid-federation-retry-failed-replication.html
 sidebar: sidebar
 keywords: grid federation, troubleshoot
-summary: 'After resolving the Cross-grid replication permanent failure alert, you should determine if any objects or delete markers failed to be replicated to the other grid. You can then reingest these objects or use the Grid Management API to retry replication.'
+summary: "After resolving the Cross-grid replication permanent failure alert, you should determine if any objects or delete markers failed to be replicated to the other grid. You can then reingest these objects or use the Grid Management API to retry replication."
 ---
-= Identify and retry failed replication operations
+= Identify and retry failed StorageGRID replication operations
 :icons: font
 :imagesdir: ../media/
 

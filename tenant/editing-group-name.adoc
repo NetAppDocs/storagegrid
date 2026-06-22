@@ -2,9 +2,9 @@
 permalink: tenant/editing-group-name.html
 sidebar: sidebar
 keywords: how to edit tenant group name
-summary: 'You can edit the display name for a group. You cannot edit the unique name for a group.'
+summary: "You can edit the display name for a group. You cannot edit the unique name for a group."
 ---
-= Edit group name
+= Edit a tenant group name in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

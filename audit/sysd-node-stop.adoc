@@ -2,9 +2,9 @@
 permalink: audit/sysd-node-stop.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SYSD, Node Stop
-summary: 'When a service is stopped gracefully, this message is generated to indicate the shutdown was requested. Typically this message is sent only after a subsequent restart, because the audit message queue is not cleared before shutdown. Look for the SYST message, sent at the beginning of the shutdown sequence, if the service has not restarted.'
+summary: "When a service is stopped gracefully, this message is generated to indicate the shutdown was requested. Typically this message is sent only after a subsequent restart, because the audit message queue is not cleared before shutdown. Look for the SYST message, sent at the beginning of the shutdown sequence, if the service has not restarted."
 ---
-= SYSD: Node Stop
+= SYSD audit message for graceful node stops in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

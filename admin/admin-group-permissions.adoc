@@ -2,9 +2,9 @@
 permalink: admin/admin-group-permissions.html
 sidebar: sidebar
 keywords: admin group permissions
-summary: 'When creating admin user groups, you select one or more permissions to control access to specific features of the Grid Manager. You can then assign each user to one or more of these admin groups to determine which tasks that user can perform.'
+summary: "When creating admin user groups, you select one or more permissions to control access to specific features of the Grid Manager. You can then assign each user to one or more of these admin groups to determine which tasks that user can perform."
 ---
-= Admin group permissions
+= Admin group permissions in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

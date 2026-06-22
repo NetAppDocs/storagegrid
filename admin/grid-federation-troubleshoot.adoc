@@ -2,9 +2,9 @@
 permalink: admin/grid-federation-troubleshoot.html
 sidebar: sidebar
 keywords: troubleshoot, grid federation connection, account clone, cross-grid replication, alerts, errors
-summary: 'You might need to troubleshoot alerts and errors related to grid federation connections, account clone, and cross-grid replication.'
+summary: "You might need to troubleshoot alerts and errors related to grid federation connections, account clone, and cross-grid replication."
 ---
-= Troubleshoot grid federation errors
+= Troubleshoot grid federation errors in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: s3/select-object-content.html
 sidebar: sidebar
 keywords: SelectObjectContent, filter object content
-summary: 'You can use the S3 SelectObjectContent request to filter the contents of an S3 object based on a simple SQL statement.'
+summary: "You can use the S3 SelectObjectContent request to filter the contents of an S3 object based on a simple SQL statement."
 ---
-= SelectObjectContent
+= Filter object data in StorageGRID with the S3 SelectObjectContent request
 :icons: font
 :imagesdir: ../media/
 
@@ -32,7 +32,7 @@ For more information see https://docs.aws.amazon.com/AmazonS3/latest/API/API_Sel
 
 == CSV request syntax example
 
-[source,asciidoc]
+[source,cli]
 ----
 POST /{Key+}?select&select-type=2 HTTP/1.1
 Host: Bucket.s3.abc-company.com
@@ -73,7 +73,7 @@ x-amz-expected-bucket-owner: ExpectedBucketOwner
 ----
 == Parquet request syntax example
 
-[source,asciidoc]
+[source,cli]
 ----
 POST /{Key+}?select&select-type=2 HTTP/1.1
 Host: Bucket.s3.abc-company.com

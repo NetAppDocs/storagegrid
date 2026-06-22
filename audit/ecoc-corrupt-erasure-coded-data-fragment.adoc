@@ -2,9 +2,9 @@
 permalink: audit/ecoc-corrupt-erasure-coded-data-fragment.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, ECOC, Corrupt Erasure-Coded Data Fragment
-summary: 'This audit message indicates that the system has detected a corrupt erasure-coded data fragment.'
+summary: "This audit message indicates that the system has detected a corrupt erasure-coded data fragment."
 ---
-= ECOC: Corrupt Erasure-Coded Data Fragment
+= ECOC audit message for corrupt erasure-coded data in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

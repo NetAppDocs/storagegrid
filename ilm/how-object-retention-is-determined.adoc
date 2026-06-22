@@ -2,9 +2,9 @@
 permalink: ilm/how-object-retention-is-determined.html
 sidebar: sidebar
 keywords: how object retention is determined
-summary: 'StorageGRID provides options for both grid administrators and individual tenant users to specify how long to store objects. In general, any retention instructions provided by a tenant user take precedence over the retention instructions provided by the grid administrator.'
+summary: "StorageGRID provides options for both grid administrators and individual tenant users to specify how long to store objects. In general, any retention instructions provided by a tenant user take precedence over the retention instructions provided by the grid administrator."
 ---
-= How object retention is determined
+= How StorageGRID determines object retention
 :icons: font
 :imagesdir: ../media/
 

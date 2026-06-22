@@ -2,9 +2,9 @@
 permalink: maintain/restoring-existing-nodes.html
 sidebar: sidebar
 keywords: recover, restore node to host, node configuration file, start host service
-summary: 'To restore a failed grid node to a new Linux host, you perform these steps to restore the node configuration file.'
+summary: "To restore a failed grid node to a new Linux host, you perform these steps to restore the node configuration file."
 ---
-= Restore grid nodes to the host
+= Restore StorageGRID nodes to the host
 :icons: font
 :imagesdir: ../media/
 

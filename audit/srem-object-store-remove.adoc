@@ -2,9 +2,9 @@
 permalink: audit/srem-object-store-remove.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, SREM, Object Store Remove
-summary: 'This message is issued when content is removed from persistent storage and is no longer accessible through regular APIs.'
+summary: "This message is issued when content is removed from persistent storage and is no longer accessible through regular APIs."
 ---
-= SREM: Object Store Remove
+= SREM audit message for object store removal in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

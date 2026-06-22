@@ -2,9 +2,9 @@
 permalink: tenant/deleting-s3-bucket.html
 sidebar: sidebar
 keywords: how to delete S3 bucket
-summary: 'You can use the Tenant Manager to delete an S3 bucket that is empty.'
+summary: "You can use the Tenant Manager to delete an S3 bucket that is empty."
 ---
-= Delete S3 bucket
+= Delete a StorageGRID S3 bucket
 :icons: font
 :imagesdir: ../media/
 

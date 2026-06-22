@@ -2,7 +2,7 @@
 permalink: network/index.html
 sidebar: sidebar
 keywords: storagegrid, network, networking, ethernet, subnet, routing
-summary: 'Use these guidelines to learn about StorageGRID architecture and networking topologies and to learn the requirements for network configuration and provisioning.'
+summary: "Use these guidelines to learn about StorageGRID architecture and networking topologies and to learn the requirements for network configuration and provisioning."
 ---
 = Networking guidelines for StorageGRID
 :icons: font
@@ -47,4 +47,4 @@ After you determine which StorageGRID networks you want to use and how those net
 
 * link:../admin/index.html[Administer StorageGRID]
 
-* link:../release-notes/index.html[Release notes]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.

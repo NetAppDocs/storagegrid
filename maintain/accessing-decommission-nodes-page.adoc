@@ -2,9 +2,9 @@
 permalink: maintain/accessing-decommission-nodes-page.html
 sidebar: sidebar
 keywords: storagegrid, decommission nodes, decommissioning nodes, maintenance task
-summary: 'When you access the Decommission Nodes page in the Grid Manager, you can see at a glance which nodes can be decommissioned.'
+summary: "When you access the Decommission Nodes page in the Grid Manager, you can see at a glance which nodes can be decommissioned."
 ---
-= Access Decommission Nodes page
+= Access Decommission Nodes page in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

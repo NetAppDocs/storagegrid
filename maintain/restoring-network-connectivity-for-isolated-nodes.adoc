@@ -2,9 +2,9 @@
 permalink: maintain/restoring-network-connectivity-for-isolated-nodes.html
 sidebar: sidebar
 keywords: storagegrid, recover, network connection, restore network connection, isolated node, restore isolated node connection
-summary: 'Under certain circumstances, one or more groups of nodes might not be able to contact the rest of the grid. For example, site- or grid-wide IP address changes can result in isolated nodes.'
+summary: "Under certain circumstances, one or more groups of nodes might not be able to contact the rest of the grid. For example, site- or grid-wide IP address changes can result in isolated nodes."
 ---
-= Restore network connectivity for isolated nodes
+= Restore network connectivity for isolated StorageGRID nodes
 :icons: font
 :imagesdir: ../media/
 

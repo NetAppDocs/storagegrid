@@ -2,9 +2,9 @@
 permalink: maintain/identifying-and-unmounting-failed-storage-volumes.html
 sidebar: sidebar
 keywords: storagegrid, storage volume, failed storage volume, unmount failed volume
-summary: 'When recovering a Storage Node with failed storage volumes, you must identify and unmount the failed volumes. You must verify that only the failed storage volumes are reformatted as part of the recovery procedure.'
+summary: "When recovering a Storage Node with failed storage volumes, you must identify and unmount the failed volumes. You must verify that only the failed storage volumes are reformatted as part of the recovery procedure."
 ---
-= Identify and unmount failed storage volumes
+= Identify and unmount failed storage volumes in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

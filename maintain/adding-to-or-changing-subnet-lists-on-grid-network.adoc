@@ -2,9 +2,9 @@
 permalink: maintain/adding-to-or-changing-subnet-lists-on-grid-network.html
 sidebar: sidebar
 keywords: storagegrid, subnet list, grid network
-summary: 'You can use the Change IP tool to add or change subnets on the Grid Network.'
+summary: "You can use the Change IP tool to add or change subnets on the Grid Network."
 ---
-= Add to or change subnet lists on Grid Network
+= Add to or change subnet lists on Grid Network in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
@@ -24,9 +24,13 @@ NOTE: If you are making changes to the Grid Network Subnet List only, use the Gr
 Do not use subnets that contain the following IPv4 addresses for the Grid Network, Admin Network, or Client Network of any node:
 
 * 192.168.130.101
+* 192.168.130.121
 * 192.168.131.101
+* 192.168.131.121
 * 192.168.130.102
+* 192.168.130.122
 * 192.168.131.102
+* 192.168.131.122
 * 198.51.100.2
 * 198.51.100.4
 

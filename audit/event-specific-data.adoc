@@ -2,9 +2,9 @@
 permalink: audit/event-specific-data.html
 sidebar: sidebar
 keywords: audit message, event, shea, s3 head
-summary: 'Each audit message in the audit log records data specific to a system event.'
+summary: "Each audit message in the audit log records data specific to a system event."
 ---
-= Event-specific data
+= Event-specific data in StorageGRID audit messages
 :icons: font
 :imagesdir: ../media/
 

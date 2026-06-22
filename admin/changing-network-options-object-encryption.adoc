@@ -2,9 +2,9 @@
 permalink: admin/changing-network-options-object-encryption.html
 sidebar: sidebar
 keywords: enable http, storage node connections
-summary: 'You can configure network and object security to encrypt stored objects, to prevent certain S3 requests, or to allow client connections to Storage Nodes to use HTTP instead of HTTPS.'
+summary: "You can configure network and object security to encrypt stored objects, to prevent certain S3 requests, or to allow client connections to Storage Nodes to use HTTP instead of HTTPS."
 ---
-= Configure network and object security
+= Configure StorageGRID network and object security
 :icons: font
 :imagesdir: ../media/
 

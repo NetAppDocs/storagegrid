@@ -2,9 +2,9 @@
 permalink: maintain/recovering-storagegrid-appliance-storage-node.html
 sidebar: sidebar
 keywords: recover, appliance storage node failure, workflow
-summary: 'The procedure for recovering a failed StorageGRID appliance Storage Node is the same whether you are recovering from the loss of the system drive or from the loss of storage volumes only.'
+summary: "The procedure for recovering a failed StorageGRID appliance Storage Node is the same whether you are recovering from the loss of the system drive or from the loss of storage volumes only."
 ---
-= Warnings for recovering appliance Storage Nodes
+= Warnings for recovering StorageGRID appliance Storage Nodes
 :icons: font
 :imagesdir: ../media/
 

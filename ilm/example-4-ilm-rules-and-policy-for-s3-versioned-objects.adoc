@@ -2,9 +2,9 @@
 permalink: ilm/example-4-ilm-rules-and-policy-for-s3-versioned-objects.html
 sidebar: sidebar
 keywords: object versions, example ILM rule, information lifecycle rule examples
-summary: 'If you have an S3 bucket with versioning enabled, you can manage the noncurrent object versions by including rules in your ILM policy that use Noncurrent time as the Reference time.'
+summary: "If you have an S3 bucket with versioning enabled, you can manage the noncurrent object versions by including rules in your ILM policy that use Noncurrent time as the Reference time."
 ---
-= Example 4: ILM rules and policy for S3 versioned objects
+= ILM rules and policies for noncurrent S3 object versions in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

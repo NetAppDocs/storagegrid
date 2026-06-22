@@ -2,9 +2,9 @@
 permalink: maintain/all-node-types-replacing-vmware-node.html
 sidebar: sidebar
 keywords: replace VMware node
-summary: 'When you recover a failed StorageGRID node that was hosted on VMware, you remove the failed node and deploy a recovery node.'
+summary: "When you recover a failed StorageGRID node that was hosted on VMware, you remove the failed node and deploy a recovery node."
 ---
-= Replace VMware node
+= Replace a VMware node in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

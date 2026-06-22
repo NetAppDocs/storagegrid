@@ -2,14 +2,14 @@
 permalink: maintain/restarting-server-manager-and-all-services.html
 sidebar: sidebar
 keywords: storagegrid, recover, server manager, restart server manager
-summary: 'You might need to restart server manager and all services running on a grid node.'
+summary: "You might need to restart Server Manager and all services running on a grid node."
 ---
-= Restart Server Manager and all services
+= Restart StorageGRID Server Manager and all services
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You might need to restart server manager and all services running on a grid node.
+You might need to restart Server Manager and all services running on a grid node.
 
 .Before you begin
 

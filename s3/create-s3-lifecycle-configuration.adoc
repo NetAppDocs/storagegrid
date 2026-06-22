@@ -2,9 +2,9 @@
 permalink: s3/create-s3-lifecycle-configuration.html
 sidebar: sidebar
 keywords: s3 lifecycle, object deletion, bucket
-summary: 'You can create an S3 lifecycle configuration to control when specific objects are deleted from the StorageGRID system.'
+summary: "You can create an S3 lifecycle configuration to control when specific objects are deleted from the StorageGRID system."
 ---
-= Create S3 lifecycle configuration
+= Learn about S3 lifecycle configuration for StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: upgrade/verifying-installed-version-of-storagegrid.html
 sidebar: sidebar
 keywords: storagegrid, version, current version, previous version
-summary: 'Before starting the upgrade, verify that the previous version of StorageGRID is currently installed with the latest available hotfix applied.'
+summary: "Before starting the upgrade, verify that the previous version of StorageGRID is currently installed with the latest available hotfix applied."
 ---
-= Verify the installed version of StorageGRID
+= Verify the installed version of StorageGRID before upgrading
 :icons: font
 :imagesdir: ../media/
 

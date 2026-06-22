@@ -2,7 +2,7 @@
 permalink: fabricpool/index.html
 sidebar: sidebar
 keywords: how to configure storagegrid for fabricpool, using fabricpool with storagegrid,
-summary: 'If you use NetApp ONTAP software, you can use NetApp FabricPool to tier inactive data to a NetApp StorageGRID object storage system.'
+summary: "If you use NetApp ONTAP software, you can use NetApp FabricPool to tier inactive data to a NetApp StorageGRID object storage system."
 ---
 = Configuration workflow for using StorageGRID with FabricPool
 :icons: font

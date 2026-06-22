@@ -2,9 +2,9 @@
 permalink: audit/ovwr-object-overwrite.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, OVWR, Object Overwrite
-summary: 'This message is generated when an external \(client-requested\) operation causes one object to be overwritten by another object.'
+summary: "This message is generated when an external (client-requested) operation causes one object to be overwritten by another object."
 ---
-= OVWR: Object Overwrite
+= OVWR audit message for object overwrites in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

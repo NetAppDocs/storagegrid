@@ -2,9 +2,9 @@
 permalink: admin/configuring-client-connections.html
 sidebar: sidebar
 keywords: s3 connection, connect to storagegrid, s3 setup wizard
-summary: 'As a grid administrator, you manage the configuration options that control how S3 client applications connect to your StorageGRID system to store and retrieve data.'
+summary: "As a grid administrator, you manage the configuration options that control how S3 client applications connect to your StorageGRID system to store and retrieve data."
 ---
-= Configure S3 client connections
+= Configure S3 client connections to StorageGRID
 :icons: font
 :imagesdir: ../media/
 

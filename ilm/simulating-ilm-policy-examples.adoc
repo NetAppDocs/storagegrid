@@ -2,9 +2,9 @@
 permalink: ilm/simulating-ilm-policy-examples.html
 sidebar: sidebar
 keywords: simulate ilm policy
-summary: 'The examples of ILM policy simulations provide guidelines for structuring and modifying simulations for your environment.'
+summary: "The examples of ILM policy simulations provide guidelines for structuring and modifying simulations for your environment."
 ---
-= Example ILM policy simulations
+= Example ILM policy simulations in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: admin/grid-federation-manage-connection.html
 sidebar: sidebar
 keywords: grid federation, edit connection, remove connection, rotate certificates
-summary: 'Managing grid federation connections between StorageGRID systems includes editing connection details, rotating the certificates, removing tenant permissions, and removing unused connections.'
+summary: "Managing grid federation connections between StorageGRID systems includes editing connection details, rotating the certificates, removing tenant permissions, and removing unused connections."
 ---
-= Manage grid federation connections
+= Manage StorageGRID grid federation connections
 :icons: font
 :imagesdir: ../media/
 

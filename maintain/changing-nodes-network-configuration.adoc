@@ -2,9 +2,9 @@
 permalink: maintain/changing-nodes-network-configuration.html
 sidebar: sidebar
 keywords: storagegrid, network configuration, node network configuration
-summary: 'You can change the network configuration of one or more nodes using the Change IP tool. You can change the configuration of the Grid Network, or add, change, or remove the Admin or Client Networks.'
+summary: "You can change the network configuration of one or more nodes using the Change IP tool. You can change the configuration of the Grid Network, or add, change, or remove the Admin or Client Networks."
 ---
-= Change node network configuration
+= Change node network configuration in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

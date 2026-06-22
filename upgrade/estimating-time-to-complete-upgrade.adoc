@@ -2,9 +2,9 @@
 permalink: upgrade/estimating-time-to-complete-upgrade.html
 sidebar: sidebar
 keywords: upgrade, time estimate, duration, cassandra upgrade
-summary: 'Consider when to upgrade, based on how long the upgrade might take. Be aware of which operations you can and cannot perform during each stage of the upgrade.'
+summary: "Consider when to upgrade, based on how long the upgrade might take. Be aware of which operations you can and cannot perform during each stage of the upgrade."
 ---
-= Estimate the time to complete an upgrade
+= Estimate the time to complete a StorageGRID upgrade
 :icons: font
 :imagesdir: ../media/
 

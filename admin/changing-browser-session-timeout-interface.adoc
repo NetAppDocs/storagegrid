@@ -2,9 +2,9 @@
 permalink: admin/changing-browser-session-timeout-interface.html
 sidebar: sidebar
 keywords: security, browser inactivity timeout, management API stack track
-summary: 'The interface security settings let you control whether users are signed out if they are inactive for more than the specified amount of time and whether a stack trace is included in API error responses.'
+summary: "The interface security settings let you control whether users are signed out if they are inactive for more than the specified amount of time and whether a stack trace is included in API error responses."
 ---
-= Change interface security settings
+= Change StorageGRID interface security settings
 :icons: font
 :imagesdir: ../media/
 

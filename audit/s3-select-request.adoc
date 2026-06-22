@@ -2,9 +2,9 @@
 permalink: audit/s3-select-request.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, S3SL, S3 Select request 
-summary: 'This message indicates a user initiated an S3 Select job.'
+summary: "This message indicates a user initiated an S3 Select job."
 ---
-= S3SL: S3 Select request
+= S3SL audit message for S3 Select requests in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: ilm/creating-storage-pool.html
 sidebar: sidebar
 keywords: create storage pool
-summary: 'You create storage pools to determine where the StorageGRID system stores object data and the type of storage used. Each storage pool includes one or more sites and one or more storage grades.'
+summary: "You create storage pools to determine where the StorageGRID system stores object data and the type of storage used. Each storage pool includes one or more sites and one or more storage grades."
 ---
-= Create a storage pool
+= Create a storage pool in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

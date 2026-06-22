@@ -2,9 +2,9 @@
 permalink: audit/audit-message-examples.html
 sidebar: sidebar
 keywords: audit message examples, audit.log, atyp, sput, s3 put
-summary: 'You can find detailed information in each audit message. All audit messages use the same format.'
+summary: "You can find detailed information in each audit message. All audit messages use the same format."
 ---
-= Audit message examples
+= StorageGRID audit message format and examples
 :icons: font
 :imagesdir: ../media/
 

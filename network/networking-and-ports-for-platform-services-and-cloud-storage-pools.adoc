@@ -2,7 +2,7 @@
 permalink: network/networking-and-ports-for-platform-services-and-cloud-storage-pools.html
 sidebar: sidebar
 keywords: networking for platform services, networking for cloud storage pools
-summary: 'If you plan to use StorageGRID platform services or Cloud Storage Pools, you must configure grid networking and firewalls to ensure that the destination endpoints can be reached.'
+summary: "If you plan to use StorageGRID platform services or Cloud Storage Pools, you must configure grid networking and firewalls to ensure that the destination endpoints can be reached."
 ---
 = Networking and ports for platform services and Cloud Storage Pools
 :icons: font

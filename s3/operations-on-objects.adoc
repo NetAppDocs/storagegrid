@@ -2,9 +2,9 @@
 permalink: s3/operations-on-objects.html
 sidebar: sidebar
 keywords: bucket, buckets, operations on buckets
-summary: 'This section describes how the StorageGRID system implements S3 REST API operations for objects.'
+summary: "This section describes how the StorageGRID system implements S3 REST API operations for objects."
 ---
-= Operations on objects
+= How StorageGRID implements S3 REST API operations for objects
 :icons: font
 :imagesdir: ../media/
 
@@ -29,9 +29,12 @@ The following table describes how StorageGRID implements S3 REST API object oper
 | Operation| Implementation
 
 | DeleteObject
-| Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
+| When processing a DeleteObject request, StorageGRID attempts to immediately remove all copies of the object from all stored locations. If successful, StorageGRID returns a response to the client immediately. If all copies can't be removed within 30 seconds (for example, because a location is temporarily unavailable), StorageGRID queues the copies for removal and then indicates success to the client.
 
-When processing a DeleteObject request, StorageGRID attempts to immediately remove all copies of the object from all stored locations. If successful, StorageGRID returns a response to the client immediately. If all copies can't be removed within 30 seconds (for example, because a location is temporarily unavailable), StorageGRID queues the copies for removal and then indicates success to the client.
+Restrictions::
+
+* Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
+* The `If-None` and `If-None-Match` headers are accepted but non-functional.
 
 Versioning::
 

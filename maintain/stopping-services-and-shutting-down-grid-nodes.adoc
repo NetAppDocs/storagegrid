@@ -2,9 +2,9 @@
 permalink: maintain/stopping-services-and-shutting-down-grid-nodes.html
 sidebar: sidebar
 keywords: recover, stop services, shut down nodes, node shutdown
-summary: 'Before you can power off a StorageGRID system, you must stop all services running on each grid node, and then shut down all VMware virtual machines, container engines, and StorageGRID appliances.'
+summary: "Before you can power off a StorageGRID system, you must stop all services running on each grid node, and then shut down all VMware virtual machines, container engines, and StorageGRID appliances."
 ---
-= Stop services and shut down grid nodes
+= Stop services and shut down StorageGRID nodes
 :icons: font
 :imagesdir: ../media/
 

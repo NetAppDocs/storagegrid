@@ -2,9 +2,9 @@
 permalink: audit/system-audit-messages.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, messages, system, ECOC, ETAF, GNRG, GNUR, GTED, GTST, GTSU, LLST, OLST, SADD, SADE, SVRF, SVRU, SYSD, SYST, SYSU, VLST
-summary: 'The audit messages belonging to the system audit category are used for events related to the auditing system itself, grid node states, system-wide task activity \(grid tasks\), and service backup operations.'
+summary: "The audit messages belonging to the system audit category are used for events related to the auditing system itself, grid node states, system-wide task activity (grid tasks), and service backup operations."
 ---
-= System audit messages
+= Audit messages for system events in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

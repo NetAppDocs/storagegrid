@@ -2,7 +2,7 @@
 permalink: admin/sending-eseries-autosupport-messages-through-storagegrid.html
 sidebar: sidebar
 keywords: eseries, santricity, system manager, asup, autosupport, technical support, appliance
-summary: 'You can send E-Series SANtricity System Manager AutoSupport packages to technical support through a StorageGRID Admin Node rather than the storage appliance management port.'
+summary: "You can send E-Series SANtricity System Manager AutoSupport packages to technical support through a StorageGRID Admin Node rather than the storage appliance management port."
 ---
 = Send E-Series AutoSupport packages through StorageGRID
 :icons: font

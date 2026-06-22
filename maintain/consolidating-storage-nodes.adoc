@@ -2,9 +2,9 @@
 permalink: maintain/consolidating-storage-nodes.html
 sidebar: sidebar
 keywords: storagegrid, storage node, consolidate storage node, consolidating storage node
-summary: 'You can consolidate Storage Nodes to reduce the Storage Node count for a site or deployment while increasing storage capacity.'
+summary: "You can consolidate Storage Nodes to reduce the Storage Node count for a site or deployment while increasing storage capacity."
 ---
-= Consolidate Storage Nodes
+= Consolidate StorageGRID Storage Nodes
 :icons: font
 :imagesdir: ../media/
 

@@ -2,9 +2,9 @@
 permalink: s3/example-group-policies.html
 sidebar: sidebar
 keywords: group policy examples
-summary: 'Use the examples in this section to build StorageGRID access policies for groups.'
+summary: "Use the examples in this section to build StorageGRID access policies for groups."
 ---
-= Example group policies
+= StorageGRID S3 REST API group policy examples
 :icons: font
 :imagesdir: ../media/
 

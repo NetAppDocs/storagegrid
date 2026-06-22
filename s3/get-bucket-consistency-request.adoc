@@ -2,9 +2,9 @@
 permalink: s3/get-bucket-consistency-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, GET bucket consistency
-summary: 'The GET Bucket consistency request allows you to determine the consistency being applied to a particular bucket.'
+summary: "The GET Bucket consistency request allows you to determine the consistency being applied to a particular bucket."
 ---
-= GET Bucket consistency
+= Retrieve bucket consistency level in StorageGRID with the GET Bucket consistency request
 :icons: font
 :imagesdir: ../media/
 

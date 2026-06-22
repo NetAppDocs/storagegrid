@@ -2,9 +2,9 @@
 permalink: tenant/configuring-search-integration-service.html
 sidebar: sidebar
 keywords: how to configure search integration service
-summary: 'You enable search integration for a bucket by creating search integration configuration XML and using the Tenant Manager to apply the XML to a bucket.'
+summary: "You enable search integration for a bucket by creating search integration configuration XML and using the Tenant Manager to apply the XML to a bucket."
 ---
-= Configure the search integration service
+= Configure the search integration service in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

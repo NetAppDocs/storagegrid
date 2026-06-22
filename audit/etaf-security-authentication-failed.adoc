@@ -2,9 +2,9 @@
 permalink: audit/etaf-security-authentication-failed.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, ETAF, Security Authentication Failed
-summary: 'This message is generated when a connection attempt using Transport Layer Security \(TLS\) has failed.'
+summary: "This message is generated when a connection attempt using Transport Layer Security (TLS) has failed."
 ---
-= ETAF: Security Authentication Failed
+= ETAF audit message for security authentication failures in StorageGRID
 :icons: font
 :imagesdir: ../media/
 

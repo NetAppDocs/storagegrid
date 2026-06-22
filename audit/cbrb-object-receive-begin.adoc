@@ -2,9 +2,9 @@
 permalink: audit/cbrb-object-receive-begin.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, CBRB, Object Receive Begin
-summary: 'During normal system operations, content blocks are continuously transferred between different nodes as data is accessed, replicated and retained. When transfer of a content block from one node to another is initiated, this message is issued by the destination entity.'
+summary: "During normal system operations, content blocks are continuously transferred between different nodes as data is accessed, replicated and retained. When transfer of a content block from one node to another is initiated, this message is issued by the destination entity."
 ---
-= CBRB: Object Receive Begin
+= CBRB audit message for object receive begin in StorageGRID
 :icons: font
 :imagesdir: ../media/
 
