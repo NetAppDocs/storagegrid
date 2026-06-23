@@ -183,7 +183,7 @@ Examples:
 |===
 | Value| Designation
 
-| Interface (This is the only supported value.)
+| DedicatedInterface (This is the only supported value.)
 | Optional
 |===
 
@@ -447,7 +447,7 @@ Examples:
 |===
 | Value| Designation
 
-| Interface (This is only supported value.)
+| DedicatedInterface (This is only supported value.)
 | Optional
 |===
 
@@ -581,7 +581,7 @@ Examples:
 |===
 | Value| Designation
 
-| Interface (This is the only supported value.)
+| DedicatedInterface (This is the only supported value.)
 | Optional
 |===
 
