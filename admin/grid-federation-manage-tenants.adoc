@@ -53,7 +53,6 @@ You can see details for a tenant that is permitted to use a grid federation conn
 
 . From the Tenants page, select the tenant name to view the tenant details page.
 
-
 . Optionally select the *Grid federation* tab to link:../monitor/grid-federation-monitor-connections.html[monitor the grid federation connections].
 
 == Edit a permitted tenant
@@ -90,7 +89,7 @@ If you need to remove a tenant that has the *Use grid federation connection* per
 
 To prevent a tenant from using a grid federation connection, you must remove the *Use grid federation connection* permission.
 
-image::../media/grid-federation-remove-permission.png[steps to remove grid federation connection]
+image:grid-federation-remove-permission.png[steps to remove grid federation connection]
 
 Before removing a tenant's permission to use a grid federation connection, note the following:
 
@@ -155,7 +154,7 @@ After cross-grid replication is disabled for tenant buckets, you can remove the 
 
 * If one or more tenant buckets still have cross-grid replication enabled, an error is displayed.
 +
-image::../media/grid-federation-remove-permission-error.png[error message shown if tenant has cgr enabled for a bucket]
+image:grid-federation-remove-permission-error.png[error message shown if tenant has cgr enabled for a bucket]
 +
 You can do either of the following:
 

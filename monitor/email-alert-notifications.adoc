@@ -44,7 +44,7 @@ After you configure the email server and enable email for alerts, email notifica
 
 Email notifications include the following information:
 
-image::../media/alerts_email_notification.png[Alerts Email Notification]
+image:alerts_email_notification.png[Alerts Email Notification]
 
 [cols="1a,6a"options="header"]
 |===
