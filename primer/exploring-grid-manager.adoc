@@ -36,7 +36,7 @@ You can use *Search* to find entries in the sidebar of the Grid Manager and on t
 
 == Help menu
 
-The help menu image:icon-help-menu-bar.png[help icon on the menu bar] provides access to:
+The help menu image:icon_help_menu_bar.png[help icon on the menu bar] provides access to:
 
 * The link:../fabricpool/use-fabricpool-setup-wizard.html[FabricPool] and link:../admin/use-s3-setup-wizard.html[S3 setup] wizards 
 * The StorageGRID documentation site for the current release
