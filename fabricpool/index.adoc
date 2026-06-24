@@ -71,7 +71,7 @@ When your system is up and running, perform ongoing tasks in ONTAP and StorageGR
 // End snippet
  
 
-//image::../media/fabricpool_storagegrid_workflow.png[FabricPool StorageGRID Workflow]
+//image:fabricpool_storagegrid_workflow.png[FabricPool StorageGRID Workflow]
 
 
 == What is FabricPool?

@@ -15,7 +15,7 @@ If your tenant account was assigned the *Use grid federation connection* permiss
 
 The workflow diagram summarizes the steps you perform to configure cross-grid replication between buckets on two grids. These steps are described in more detail below the diagram.
 
-image::../media/grid-federation-cgr-workflow.png[Cross-grid replication workflow]
+image:grid-federation-cgr-workflow.png[Cross-grid replication workflow]
 
 == Configure cross-grid replication
 
@@ -78,7 +78,7 @@ You must perform these steps before adding any objects to either bucket.
 
 * *No*: A delete marker is added to the source bucket but isn't replicated to the destination bucket. 
 +
-image::../media/grid-federation-cross-grid-replication-client-deletes.png[image showing replicate client delete on both grids]
+image:grid-federation-cross-grid-replication-client-deletes.png[image showing replicate client delete on both grids]
 +
 NOTE: If the delete request includes a version ID, that object version is permanently removed from the source bucket. StorageGRID doesn't replicate delete requests that include a version ID, so the same object version isn't deleted from the destination.
 +

@@ -41,7 +41,7 @@ CAUTION: Some expansion steps and stages might take a significant amount of time
 +
 The Grid Expansion page appears. The Pending Nodes section lists the nodes that are ready to be added.
 +
-image::../media/grid_expansion_page.png[screenshot showing Grid Expansion page]
+image:grid_expansion_page.png[screenshot showing Grid Expansion page]
 
 . Select *Configure Expansion*.
 +
@@ -55,7 +55,7 @@ The Site Selection dialog box appears.
 +
 As required, you can position your cursor over a node's *Grid Network MAC Address* to see details about that node.
 +
-image::../media/grid_node_details.png[screenshot of Grid Node details]
+image:grid_node_details.png[screenshot of Grid Node details]
 +
 NOTE: If a node is missing, confirm that it was deployed successfully.
 
