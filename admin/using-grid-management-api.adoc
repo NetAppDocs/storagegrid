@@ -32,7 +32,7 @@ The Swagger user interface provides complete details and documentation for each 
 CAUTION: Any API operations you perform using the API Documentation webpage are live operations. Be careful not to create, update, or delete configuration data or other data by mistake.
 
 .Steps
-. From the Grid Manager header, select the help icon image:icon-help-menu-bar.png[Help icon] and select *API documentation*.
+. From the Grid Manager header, select the help icon image:icon_help_menu_bar.png[Help icon] and select *API documentation*.
 
 . To perform an operation with the private API, select *Go to private API documentation* on the StorageGRID Management API page.
 +
