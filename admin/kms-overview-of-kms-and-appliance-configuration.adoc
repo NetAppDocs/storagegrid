@@ -13,7 +13,7 @@ Before you can use a key management server (KMS) to secure StorageGRID data on a
 
 The flowchart shows the high-level steps for using a KMS to secure StorageGRID data on appliance nodes.
 
-image::../media/kms_configuration_overview.png["KMS configuration workflow, which is described in the following text"]
+image:kms_configuration_overview.png["KMS configuration workflow, which is described in the following text"]
 
 The flowchart shows KMS setup and appliance setup occurring in parallel; however, you can set up the key management servers before or after you enable node encryption for new appliance nodes, based on your requirements.
 

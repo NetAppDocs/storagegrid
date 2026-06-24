@@ -34,7 +34,7 @@ CAUTION: Store the provisioning passphrase in a secure location. It's required f
 +
 The system displays a green success banner when the provisioning passphrase change is complete. 
 +
-image::../media/change_provisioning_passphrase_success.png[Success message for provisioning passphrase changed]
+image:change_provisioning_passphrase_success.png[Success message for provisioning passphrase changed]
 
 . Select *Recovery Package*.
 . Enter the new provisioning passphrase to download the new recovery package.
