@@ -19,7 +19,7 @@ The syncing of tenant account information is required for link:../admin/grid-fed
 
 If your tenant account has the *Use grid federation connection* permission, review the workflow diagram to see the steps you will perform to sync groups, users, and S3 access keys.
 
-image::../media/grid-federation-account-sync-workflow-tm.png[the tenant's workflow for account sync. Steps are described in the following text.]
+image::../media/grid_federation_account_sync_workflow_tm.png[the tenant's workflow for account sync. Steps are described in the following text.]
 
 These are the primary steps in the workflow:
 
