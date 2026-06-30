@@ -19,7 +19,7 @@ Use Keycloak to create a client connection for each Admin Node for OpenID Connec
 .About this task
 Each Admin Node in your StorageGRID system must have a client connection. This ensures that users can securely sign in to and out of any Admin Node. You can create a single client connection for all Admin Nodes (recommended) or a different client connection for each Admin Node.
 
-Use the default settings unless otherwise specified.
+Use the default settings unless otherwise specified. In some cases you can use settings required by your organization.
 
 == Step 1: Optionally, create a realm
 Create a Keycloak realm to configure the LDAP provider and OIDC client, or use the Keycloak default realm.
