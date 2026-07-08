@@ -34,6 +34,8 @@ Note the following requirements and characteristics when configuring CloudMirror
 
 * If you enable CloudMirror replication on a bucket that contains objects, new objects added to the bucket are replicated, but the existing objects in the bucket aren't replicated. You must update existing objects to trigger replication.
 
+* If you enable S3 Object Lock on the destination bucket after you configure CloudMirror replication, you might have to link:../tenant/creating-platform-services-endpoint.html[re-save the endpoint] to allow replication to resume.
+
 * If you specify a storage class in the replication configuration XML, StorageGRID uses that class when performing operations against the destination S3 endpoint. The destination endpoint must also support the specified storage class. Be sure to follow any recommendations provided by the destination system vendor.
 
 .Steps
