@@ -126,6 +126,7 @@ You can establish a VLAN to isolate BMC network connections and restrict BMC int
 +
 If a secure, trusted, internal management network isn't available, leave the BMC management port unconnected or blocked. Technical support might request temporary access during a support case.
 * If the appliance supports remote management of the controller hardware over Ethernet using the Intelligent Platform Management Interface (IPMI) standard, block untrusted traffic on port 623. 
+
 +
 You can also <<block-remote-ipmi,disable remote IPMI access>>.
 +
