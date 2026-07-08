@@ -13,8 +13,9 @@ Each audit message in the audit log records data specific to a system event.
 
 Following the opening `[AUDT:` container that identifies the message itself, the next set of attributes provide information about the event or action described by the audit message. These attributes are highlighted in the following example:
 
+[subs=+quotes]
 ====
-2018-12-05T08:24:45.921845 [AUDT:*\[RSLT\(FC32\):SUCS\]*
+2018-12-05T08:24:45.921845 [AUDT: *\[RSLT\(FC32\):SUCS\]*
 *\[TIME\(UI64\):11454\]\[SAIP\(IPAD\):"10.224.0.100"\]\[S3AI\(CSTR\):"60025621595611246499"\]*
 *\[SACC\(CSTR\):"account"\]\[S3AK\(CSTR\):"SGKH4_Nc8SO1H6w3w0nCOFCGgk__E6dYzKlumRsKJA=="\]*
 *\[SUSR\(CSTR\):"urn:sgws:identity::60025621595611246499:root"\]*
