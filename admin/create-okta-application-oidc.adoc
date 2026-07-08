@@ -18,6 +18,8 @@ Create an Okta application for all Admin Nodes for OpenID Connect (OIDC) in your
 .About this task
 An Okta application must contain sign-in and sign-out redirect URIs for all Admin Nodes. Redirect URIs ensure that users can securely sign in to and out of any Admin Node. You can create a single Okta application for all Admin Nodes (recommended) or a different application for each Admin Node.
 
+Use the default settings unless otherwise specified. In some cases you can use settings required by your organization.
+
 == Step 1: Create an Okta application
 Create an Okta application using the Okta UI.
 
