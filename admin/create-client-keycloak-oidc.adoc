@@ -108,7 +108,7 @@ Generate a client secret for the OIDC client you created.
 
 .Steps
 . Go to *Clients*, then select the <<create-client-oidc,OIDC client>> you created.
-. On the Credentials tab, enter the following information
+. On the Credentials tab, enter the following information:
 * Client authenticator: *Client Id and Secret*
 * Client secret: *Generate or set a client secret*. Save this value for use later.
 
@@ -148,7 +148,7 @@ Save the information required to configure SSO with OIDC using Keycloak in your 
 +
 Optionally include the network port:
 +
-\https://<keycloak_host_ip/keycloak_host_name>:<https_port>/realms/<realm_name>/.well-known/openid-configuration`
+`\https://<keycloak_host_ip/keycloak_host_name>:<https_port>/realms/<realm_name>/.well-known/openid-configuration`
 
 .What's next
 
