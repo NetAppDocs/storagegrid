@@ -17,7 +17,7 @@ Account sync is required for link:grid-federation-what-is-cross-grid-replication
 
 The workflow diagram shows the steps that grid administrators and permitted tenants will perform to set up account sync. These steps are performed after the link:grid-federation-create-connection.html[grid federation connection is configured].
 
-image::../media/grid-federation-account-clone-workflow.png[workflow for account sync]
+image:grid_federation_account_sync_workflow.png[workflow for account sync]
 
 == Grid admin workflow
 

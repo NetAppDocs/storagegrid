@@ -114,7 +114,7 @@ You can create a custom policy if you need to apply your own ciphers.
 
 . Select *Copy to clipboard*, and then select *Cancel*.
 +
-image:securitysettings-custom-security-policy-copy.png[copying an existing policy to create a custom policy]
+image:securitysettings_custom_security_policy_copy.png[copying an existing policy to create a custom policy]
 
 . From the *Custom policy* tile, select *Configure and use*.
 

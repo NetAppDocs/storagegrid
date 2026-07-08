@@ -7,7 +7,7 @@
 ** link:../maintain/remounting-and-reformatting-appliance-storage-volumes.html[Remount and reformat appliance storage volumes (manual steps)] 
 ** link:../maintain/remounting-and-reformatting-storage-volumes-manual-steps.html[Remount and reformat storage volumes (manual steps)]
 
-* You've confirmed that the Storage Node where you are restoring objects has a Connection State of *Connected* image:../media/icon_alert_green_checkmark.png[icon alert green check mark] on the *Nodes* > *Overview* tab in the Grid Manager.
+* You've confirmed that the Storage Node where you are restoring objects has a Connection State of *Connected* image:icon_alert_green_checkmark.png[icon alert green check mark] on the *Nodes* > *Overview* tab in the Grid Manager.
 
 * You've confirmed the following:
 ** A grid expansion to add a Storage Node isn't in process.

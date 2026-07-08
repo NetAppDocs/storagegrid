@@ -111,7 +111,7 @@ As you type, your text is highlighted wherever it is found in the names on the l
 +
 For example, suppose you want to rename all nodes that contain the string `Data-Center-1`, but you don't want to rename the `Data-Center-1` site itself.  Select image:icon_x_to_remove.png[X icon] to remove the site from the rename preview.
 +
-image:rename-bulk-rename-tool.png[Bulk rename tool before]
+image:rename_bulk_rename_tool.png[Bulk rename tool before]
 
 . In the *New string* field, enter the replacement string you want to use instead. For example, enter *DC1*.
 +
@@ -119,7 +119,7 @@ See link:../maintain/rename-grid-site-node-overview.html[Rename grid, sites, and
 +
 As you enter the replacement string, the names on the left are updated, so you can verify that the new names will be correct.
 + 
-image:rename-bulk-rename-tool-after.png[Bulk rename tool after]
+image:rename_bulk_rename_tool_after.png[Bulk rename tool after]
 
 . When you are satisfied with the names shown in the preview, select *Add names* to add the names to the table for the *Propose new names* step. 
 
