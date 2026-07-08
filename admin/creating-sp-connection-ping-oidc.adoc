@@ -23,7 +23,6 @@ https://docs.pingidentity.com/pingfederate/latest/administrators_reference_guide
 .About this task
 These instructions summarize how to configure PingFederate Server version 12.1.10 as an SSO provider for StorageGRID. If you are using another version of PingFederate, you might need to adapt these instructions. Refer to the PingFederate Server documentation for detailed instructions for your release.
 
-
 Use the default settings unless otherwise specified. In some cases you can use settings required by your organization, such as settings for authentication method.
 
 == Step 1: Create data store[[data-store-oidc]]

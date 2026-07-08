@@ -9,11 +9,11 @@ summary: "As needed, configure audit levels, protocol headers, and the location 
 :imagesdir: ../media/
 
 [.lead]
-As needed, configure audit levels, protocol headers, and the location of audit messages and logs.
+As needed, configure audit levels, protocol headers, the location of audit messages and logs, and log retention.
 
 All StorageGRID nodes generate audit messages and logs to track system activity and events. Audit messages and logs are essential tools for monitoring and troubleshooting.
 
-Optionally, you can link:../monitor/considerations-for-external-syslog-server.html[configure an external syslog server] to save audit information remotely. Using an external server minimizes the performance impact of audit message logging without reducing the completeness of audit data. An external syslog server is especially useful if you have a large grid, use multiple types of S3 applications, or want to retain all audit data.
+Optionally, you can link:../monitor/considerations-for-external-syslog-server.html[configure an external syslog server] to save audit information remotely. You can minimize the performance impact of audit message logging without reducing the completeness of audit data by using an external server. An external syslog server is especially useful if you have a large grid, use multiple types of S3 applications, or want to retain all audit data.
 
 .Before you begin
 
@@ -105,7 +105,7 @@ Use an asterisk (\*) as a wildcard to match zero or more characters. Use the esc
 
 . Select *Add another header* to create additional headers, if needed.
 +
-When HTTP headers are found in a request, they are included in the audit message under the field HTRH.
+When StorageGRID finds HTTP headers in a request, it includes them in the audit message under the field HTRH.
 +
 NOTE: Audit protocol request headers are logged only if the audit level for *Client Reads* or *Client Writes* isn't *Off*.
 
@@ -113,7 +113,7 @@ NOTE: Audit protocol request headers are logged only if the audit level for *Cli
 
 == Configure log location
 
-By default, audit messages and logs are saved on the nodes where they're generated. They're periodically rotated and eventually deleted to prevent them from consuming excessive disk space. If you want to save audit messages and a subset of logs externally, <<use-external-syslog-server,use an external syslog server>>.
+By default, audit messages and logs are saved on the nodes where they're generated. StorageGRID regularly rotates and eventually deletes audit messages and logs to prevent them from consuming excessive disk space. To save audit messages and a subset of logs externally, <<use-external-syslog-server,use an external syslog server>>.
 
 If you want to save the log files internally, choose a tenant and bucket for log storage and enable log archival.
 
@@ -188,7 +188,7 @@ Setting severity and facility values can help you aggregate the logs in customiz
 
 .. For *Severity*, select *Passthrough*, or select a severity value between 0 and 7. 
 +
-If you select a value, the selected value will be applied to all messages of this type. Information about different severities will be lost if you override severity with a fixed value.
+If you select a value, StorageGRID applies the selected value to all messages of this type. You lose details about different severities if you override severity with a fixed value.
 +
 [cols="1a,3a" options="header"]
 |===
@@ -286,16 +286,16 @@ If you select a value, it will be applied to all messages of this type. Informat
 | 6 
 | lpr (line printer subsystem)
 
-| 7 
+| 7
 | news (network news subsystem)
 
-| 8 
+| 8
 | UUCP
 
-| 9 
+| 9
 | cron (clock daemon)
 
-| 10 
+| 10
 | security (security/authorization messages)
 
 | 11 
@@ -342,7 +342,7 @@ If you select a value, it will be applied to all messages of this type. Informat
 
 ==== Send test messages
 
-Before starting to use an external syslog server, you should request that all nodes in your grid send test messages to the external syslog server. You should use these test messages to help you validate your entire log collection infrastructure before you commit to sending data to the external syslog server.
+Before using an external syslog server, request that all nodes in your grid send test messages to the external syslog server. These test messages help you validate your entire log collection infrastructure before you commit to sending data to the external syslog server.
 
 CAUTION: Don't use the external syslog server configuration until you confirm that the external syslog server received a test message from each node in your grid and that the message was processed as expected.
 
@@ -464,5 +464,48 @@ For example:
 system-logs/DC1-SN1/var/local/log/localaudit.log--2025-05-12_13:41:44.gz
 ----
 
+== Manage log retention
+
+You can manage how long StorageGRID retains logs by creating an ILM rule or configuring an S3 bucket lifecycle policy.
+
+[role="tabbed-block"]
+====
+.ILM rule
+--
+Create an ILM rule for the bucket and add this rule to the active ILM policy.
+
+.Steps
+
+. Select *ILM* > *Rules*.
+. Select *Create*. link:../ilm/create-ilm-rule-enter-details.html[Step 1 (Enter details)] of the Create an ILM rule wizard appears:
+.. Enter a unique name for the rule. For example: ILM Rule for archived logs.
+.. Select the log archival S3 tenant account.
+.. Specify the log archival S3 bucket.
+. Continue to link:../ilm/create-ilm-rule-define-placements.html[Step 2 (Define placements)] and define the placement for the archived logs rule. For example, the ILM rule stores one replicated copy in Site 1 and one replicated copy in Site 2 for the first year. After one year, a 2+1 erasure-coded copy is made and saved at only one site.
+. After creating the rule, add it to an active ILM policy.
+--
+
+.S3 bucket lifecycle
+--
+Configure an S3 bucket lifecycle policy on the log archival S3 bucket:
+
+----
+{
+      "Rules": [
+        {
+            "ID": "Retain logs forever",
+            "Filter": {},
+            "Status": "Enabled"，
+            "Expiration": {}
+        }
+      ]
+}
+----
+
+When you configure an S3 bucket lifecycle policy on the log archival S3 bucket, the lifecycle expiration actions override the ILM policy for objects matching the bucket lifecycle filter. Objects that don't match the bucket lifecycle filter use the retention settings of the ILM policy. If an object matches a bucket lifecycle filter and no expiration actions are explicitly specified, the retention settings of the ILM policy aren't used and it's implied that object versions are retained forever.
+--
+====
+
+// 2025 Dec 18, SGRIDDOC-215
 // 2024 Oct 8, SGRIDDOC-98
 // 2023 SEP 14, SGWS-28029

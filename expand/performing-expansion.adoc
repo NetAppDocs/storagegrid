@@ -53,7 +53,7 @@ The Site Selection dialog box appears.
 +
 As required, you can position your cursor over a node's *Grid Network MAC Address* to see details about that node.
 +
-image::../media/grid_node_details.png[screenshot of Grid Node details]
+image:grid_node_details.png[screenshot of Grid Node details]
 +
 NOTE: If a node is missing, confirm that it was deployed successfully.
 

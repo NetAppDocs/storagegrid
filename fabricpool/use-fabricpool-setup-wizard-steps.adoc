@@ -25,7 +25,7 @@ You can complete the FabricPool setup wizard when you start using the StorageGRI
 .Steps
 . Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
-. If the *FabricPool and S3 setup wizard* banner appears on the dashboard, select the link in the banner. If the banner no longer appears, select the help icon image:../media/icon-help-menu-bar.png[Help icon] from the header bar in the Grid Manager and select *FabricPool and S3 setup wizard*.
+. If the *FabricPool and S3 setup wizard* banner appears on the dashboard, select the link in the banner. If the banner no longer appears, select the help icon image:icon_help_menu_bar.png[Help icon] from the header bar in the Grid Manager and select *FabricPool and S3 setup wizard*.
 
 . In the FabricPool section of the FabricPool and S3 setup wizard page, select *Configure now*.
 +
@@ -322,7 +322,7 @@ During this step, you download a file that you can use to enter values into ONTA
 
 .Steps
 
-. Optionally, select the copy icon (image:../media/icon_tenant_copy_url.png[copy icon]) to copy both the access key ID and secret access key to the clipboard.
+. Optionally, select the copy icon (image:icon_tenant_copy_url.png[copy icon]) to copy both the access key ID and secret access key to the clipboard.
 +
 These values are included in the download file, but you might want to save them separately. 
 

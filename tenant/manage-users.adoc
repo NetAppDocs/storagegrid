@@ -112,7 +112,7 @@ If your tenant account has the *Use grid federation connection* permission and y
 
 . Edit user settings as needed. See <<create-user,Create local user>> for details about what to enter.
 
-.. In the Overview section, change the full name by selecting the name or the edit icon image:../media/icon_edit_tm.png[Edit icon].
+.. In the Overview section, change the full name by selecting the name or the edit icon image:icon_edit_tm.png[Edit icon].
 +
 You can't change the username.
 
