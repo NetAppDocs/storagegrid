@@ -52,7 +52,6 @@ The following table defines the values for all supported keys. Each key has one 
 
 link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node]
 
-*Note*: This value is ignored, and might be prohibited, on the primary Admin Node.
 | Best practice
 |===
 
