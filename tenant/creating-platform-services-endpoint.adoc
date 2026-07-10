@@ -320,8 +320,6 @@ When you select *mTLS*, these options become available.
 +
 NOTE: Endpoint creation fails if platform services aren't enabled for your tenant account. Contact your StorageGRID administrator.
 
-NOTE: If you enable S3 Object Lock on the destination bucket after you configure CloudMirror replication, you might have to re-save the endpoint to allow replication to resume.
-
 After you have configured an endpoint, you can use its URN to configure a platform service.
 
 .Related information
