@@ -151,4 +151,4 @@ If you have a new StorageGRID installation, allow data and metadata to accumulat
 . View the dashboard cards, Forecast of data usage by storage pool and Forecast of metadata usage by site.
 . Use these values to estimate when you will need to add new Storage Nodes for data and metadata storage.
 
-image:forecast-metadata-usage.png[Forecast of metadata usage by site]
+image:forecast_metadata_usage.png[Forecast of metadata usage by site]

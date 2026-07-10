@@ -33,8 +33,10 @@ Create an Okta application using the Okta UI.
 . Verify that Authorization Code is selected (default) for Core grants.
 . Add the sign-in and sign-out redirect URIs for each Admin Node:
 +
-* Sign-in redirect URI: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-callback`
-* Sign-out redirect URI: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-logged-out`
+* Sign-in redirect URI: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-callback`
+* Sign-out redirect URI: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-logged-out`
++
+NOTE: If one or more load balancer endpoints are configured for the management interface, add the redirect URIs for each port. For example: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-logged-out`
 
 . Select *Save*. Save the client ID and client secret values for use later.
 
@@ -106,4 +108,5 @@ The imported group appears in the Preview id_token tab in the Payload.
 
 After creating an Okta application, link:configure-sso-oidc.html[configure SSO using OIDC].
 
+// 2026 JUL 3, SGRIDDOC-273
 // 2026 MAY 28, SGRIDDOC-247

@@ -22,7 +22,7 @@ If any block storage volumes were preserved from the previous host, you might ha
 [[restore-validate-grid-nodes]]
 == Restore and validate grid nodes
 
-If you recover a node from a non-primary Admin Node, set ADMIN_IP to the Grid Network IP address of the _non-primary Admin Node_, so the recovered node registers with the non-primary Admin Node instead of the primary Admin Node. To view the rules for Admin Network keys, refer to link:../swnodes/creating-node-configuration-files.html#contents-of-a-node-configuration-file.html[Create StorageGRID node configuration files for Linux deployments].
+If you recover a node from a non-primary Admin Node, set ADMIN_IP to the Grid Network IP address of the _non-primary Admin Node_, so the recovered node registers with the non-primary Admin Node instead of the primary Admin Node. To view the rules for Admin Network keys, refer to link:../swnodes/creating-node-configuration-files.html[Create StorageGRID node configuration files for Linux deployments].
 
 You must restore the grid configuration files for any failed grid nodes, and then validate the grid configuration files and resolve any errors.
 
