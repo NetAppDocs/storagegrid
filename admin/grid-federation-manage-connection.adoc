@@ -21,7 +21,7 @@ Managing grid federation connections between StorageGRID systems includes editin
 
 You can edit a grid federation connection by signing in to the primary Admin Node on either grid in the connection. After you make changes to the first grid, you must download a new verification file and upload it to the other grid.
 
-NOTE: While the connection is being edited, account clone or cross-grid replication requests will continue to use the existing connection settings. Any edits you make to the first grid are saved locally but aren't used until they have been uploaded to the second grid, saved, and tested. 
+NOTE: While the connection is being edited, account sync or cross-grid replication requests will continue to use the existing connection settings. You must edit one connection at a time and upload one verification file to the remote grid for each connection. Edits are applied after they've been uploaded to the remote grids.
 
 === Start editing the connection
 
@@ -191,7 +191,7 @@ In general, use the same number of days for the certificates on both sides of th
 
 You can remove a grid federation connection from either grid in the connection. As shown in the figure, you must perform prerequisite steps on both grids to confirm that the connection is not being used by any tenant on either grid.
 
-image:grid-federation-remove-connection.png[steps to remove grid federation connection]
+image:grid_federation_remove_connection.png[steps to remove grid federation connection]
 
 Before removing a connection, note the following:
 

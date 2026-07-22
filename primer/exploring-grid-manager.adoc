@@ -36,7 +36,7 @@ You can use *Search* to find entries in the sidebar of the Grid Manager and on t
 
 == Help menu
 
-The help menu image:icon-help-menu-bar.png[help icon on the menu bar] provides access to:
+The help menu image:icon_help_menu_bar.png[help icon on the menu bar] provides access to:
 
 * The link:../fabricpool/use-fabricpool-setup-wizard.html[FabricPool] and link:../admin/use-s3-setup-wizard.html[S3 setup] wizards 
 * The StorageGRID documentation site for the current release
@@ -53,7 +53,7 @@ From the Alerts menu, you can do the following to link:../monitor/managing-alert
 * Review resolved alerts
 * Configure silences to suppress alert notifications
 * Define alert rules for conditions that trigger alerts
-* Configure the email server for alert notifications
+* Configure email notifications for StorageGRID alerts
 
 == Nodes page
 
@@ -106,7 +106,7 @@ Security tasks include:
 === System tasks
 System tasks include:
 
-* Use link:../admin/grid-federation-overview.html[grid federation] to clone tenant account information and replicate object data between two StorageGRID systems
+* Use link:../admin/grid-federation-overview.html[grid federation] to sync tenant account information and replicate object data between two StorageGRID systems
 * Optionally, enable the link:../admin/configuring-stored-object-compression.html[Compress stored objects] option
 * Optionally, configure the link:../s3/consistency.html[default bucket consistency setting]
 * link:../ilm/managing-objects-with-s3-object-lock.html[Manage S3 Object Lock]
@@ -117,6 +117,7 @@ System tasks include:
 
 Monitoring tasks include:
 
+* link:../monitor/configure-email-server.html[Configure email server]
 * link:../monitor/configure-log-management.html[Configure log management]
 * link:../monitor/using-snmp-monitoring.html[Use SNMP monitoring]
 
@@ -129,6 +130,7 @@ Access control tasks include:
 * Change the link:../admin/changing-provisioning-passphrase.html[provisioning passphrase] or link:../admin/change-node-console-password.html[node console passwords]
 * link:../admin/using-identity-federation.html[Use identity federation]
 * link:../admin/how-sso-works.html[Configure SSO]
+* link:../admin/about-multi-admin-verify.html[Configure multi-admin verification]
 
 == Maintenance menu
 
@@ -144,7 +146,10 @@ Maintenance tasks include:
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
 * Perform a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes
-* link:../maintain/restoring-volume.html[Volume restoration operations]
+* Restoring object data
+** link:../maintain/restoring-object-data-to-storage-volume-for-appliance.html[Restore object data to storage volume for appliance]
+** link:../maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html[Restore object data to storage volume where system drive is intact]
+** link:../maintain/restoring-object-data-to-storage-volume.html[Restore object data to storage volume (system drive failure)]
 
 === System
 
@@ -175,7 +180,7 @@ The Support menu provides options that help technical support analyze and troubl
 
 From the Tools section of the Support menu, you can:
 
-* link:../admin/configure-autosupport-grid-manager.html[Configure AutoSupport]
+* link:../monitor/configure-autosupport-grid-manager.html[Configure AutoSupport]
 * link:../monitor/running-diagnostics.html[Run diagnostics] on the current state of the grid
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
@@ -187,7 +192,6 @@ NOTE: The tools available from the *Metrics* option are intended for use by tech
 From the Other section of the Support menu, you can:
 
 * Configure link:../monitor/manage-io-prioritization.html[I/O prioritization]
-* Configure link:../admin/configure-autosupport-grid-manager.html[AutoSupport email setup (legacy)]
 * Manage link:../admin/manage-link-costs.html[link cost]
 * View node service IDs
 * Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]

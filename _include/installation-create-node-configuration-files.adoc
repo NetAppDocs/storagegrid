@@ -52,7 +52,6 @@ The following table defines the values for all supported keys. Each key has one 
 
 link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node]
 
-*Note*: This value is ignored, and might be prohibited, on the primary Admin Node.
 | Best practice
 |===
 
@@ -183,7 +182,7 @@ Examples:
 |===
 | Value| Designation
 
-| Interface (This is the only supported value.)
+| DedicatedInterface (This is the only supported value.)
 | Optional
 |===
 
@@ -195,8 +194,6 @@ Examples:
 | True or False
 
 Set the key to "true" to cause the StorageGRID container use the MAC address of the host host target interface on the Admin Network.
-
-*Best practice:* In networks where promiscuous mode would be required, use the ADMIN_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
 For more details on MAC cloning for Linux, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
@@ -449,7 +446,7 @@ Examples:
 |===
 | Value| Designation
 
-| Interface (This is only supported value.)
+| DedicatedInterface (This is only supported value.)
 | Optional
 |===
 
@@ -461,8 +458,6 @@ Examples:
 | True or False
 
 Set the key to "true" to cause the StorageGRID container to use the MAC address of the host target interface on the Client Network.
-
-*Best practice:* In networks where promiscuous mode would be required, use the CLIENT_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
 For more details on MAC cloning for Linux, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 
@@ -585,7 +580,7 @@ Examples:
 |===
 | Value| Designation
 
-| Interface (This is the only supported value.)
+| DedicatedInterface (This is the only supported value.)
 | Optional
 |===
 
@@ -597,8 +592,6 @@ Examples:
 | True or False
 
 Set the value of the key to "true" to cause the StorageGRID container to use the MAC address of the host target interface on the Grid Network.
-
-*Best practice:* In networks where promiscuous mode would be required, use the GRID_NETWORK_TARGET_TYPE_INTERFACE_CLONE_MAC key instead.
 
 For more details on MAC cloning for Linux, see link:../swnodes/configuring-host-network.html#considerations-and-recommendations-for-mac-address-cloning[Considerations and recommendations for MAC address cloning]
 

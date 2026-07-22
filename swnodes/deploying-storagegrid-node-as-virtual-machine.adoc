@@ -164,8 +164,6 @@ NOTE: The temporary installation password is only used during node installation.
   *** If you select DHCP, the *Grid network IP*, *Grid network mask*, and *Grid network gateway* are automatically assigned.
 .. In the *Primary Admin IP* field, enter the IP address of the primary Admin Node for the Grid Network.
 +
-NOTE: This step does not apply if the node you are deploying is the primary Admin Node.
-+
 If you omit the primary Admin Node IP address, the IP address will be automatically discovered if the primary Admin Node, or at least one other grid node with ADMIN_IP configured, is present on the same subnet. However, it is recommended to set the primary Admin Node IP address here.
 
  .. In the *Admin Network (eth1)* section, select STATIC, DHCP, or DISABLED for the *Admin network IP configuration*.
@@ -192,7 +190,7 @@ Note the following important guidelines:
 
 . [[vmware-remap-ports]]If you need to remap the ports used by this node, follow these steps.
 +
-You might need to remap a port if your enterprise networking policies restrict access to one or more ports that are used by StorageGRID. See the link:../network/index.html[networking guidelines] for the ports used by StorageGRID.
+You might need to remap a port if your enterprise networking policies restrict access to one or more ports that are used by StorageGRID. Refer to link:../network/index.html[Networking guidelines] for the ports used by StorageGRID.
 +
 NOTE: Don't remap the ports used in load balancer endpoints.
 
@@ -263,3 +261,4 @@ If you deployed this node as part of an expansion or recovery procedure, return 
 
 // 2024 AUG 12, SGIRDDOC-91
 // mairead-SGRIDOC59-apr9 2024
+// 2026-05-07, SGWS-34291

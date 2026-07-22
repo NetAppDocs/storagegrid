@@ -1,0 +1,197 @@
+---
+permalink: admin/grid-federation-automate-connections.html
+sidebar: sidebar
+keywords: automate, automating, automation, automatic, configuration, configure
+summary: "After you've installed and configured two or more StorageGRID systems running version 12.1 or later, you can automate the creation, editing, and maintenance of grid federation connections using the manage-grid-federation.py Python script and a JSON configuration file."
+---
+= Automate grid federation connections in StorageGRID
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you've installed and configured two or more StorageGRID systems running version 12.1 or later, you can automate the creation, editing, and maintenance of grid federation connections using the `manage-grid-federation.py` Python script and a JSON configuration file.
+
+.Before you begin
+* All grids are running StorageGRID 12.1 or later.
+
+* If single sign-on (SSO) is enabled on any grid, you've disabled it.
+
+* You have a Linux machine with Python 3.6 or later installed.
+
+* You know the location of the following files from the installation archive:
++
+[cols="1,2" options="header"]
+|===
+| Filename | Description
+
+m| manage-grid-federation.py
+| Python script used to automate grid federation connection management
+
+m| manage-grid-federation.sample.json
+| Example configuration file for use with the script
+|===
+
+* You've created a `manage-grid-federation.json` configuration file. To create this file, you can modify the example configuration file, `manage-grid-federation.sample.json`.
+
+CAUTION: Store the grid admin passwords and provisioning passphrases from your `manage-grid-federation.json` configuration file in a secure location. If credentials are omitted from the file, the script will prompt for them interactively. You should also store a backup of the modified configuration file in a secure location.
+
+== Configuration file fields
+The JSON configuration file is an array of objects. Each object represents one grid and supports the following fields:
+
+[cols="1m,1,2" options="header"]
+|===
+| Field | Required | Description
+
+| hostname
+| Yes
+| Admin Node hostname or IP address for the grid
+
+| grid_name
+| Yes
+| Display name for the grid (12 characters maximum)
+
+| username
+| No
+| Grid admin username (prompted interactively if omitted)
+
+| password
+| No
+| Grid admin password (prompted interactively if omitted)
+
+| passphrase
+| No
+| Provisioning passphrase (prompted interactively if omitted)
+
+| ca_bundle
+| No
+| Path to a custom CA certificate bundle for SSL verification
+
+| region
+| No
+| Desired default S3 region for global namespace connections
+
+| CNAME
+| No
+| Desired CNAME for global namespace connections
+
+| globalEndpoint
+| No
+| Desired global namespace endpoint
+|===
+
+NOTE: If you configure any of the global namespace fields (`region`, `CNAME`, `globalEndpoint`), you must provide all three for each grid. Ensure the regions and CNAMEs are unique across grids, and the `globalEndpoint` value is identical for all grids.
+
+.About this task
+You can use the `manage-grid-federation.py` Python script and the `manage-grid-federation.json` configuration file to automate grid federation connection management. The script performs the following operations:
+
+* Authenticates to each grid using the Grid Management API
+
+* Verifies that all grids are running StorageGRID 12.1 or later
+
+* Verifies that Single Sign-On is disabled on every grid
+
+* Retrieves existing grid federation connections and S3 configuration
+
+* Updates S3 region, CNAME, and global namespace endpoint settings when configured
+
+* Creates new grid federation connections for any grid pairs that are not yet connected
+
+* Edits existing connections when display names or global namespace settings have changed
+
+* Displays a summary of all connections and their status
+
+TIP: You can also manage grid federation connections using the Grid Manager UI or the Grid Management API directly.
+
+.Steps
+. Log in to the Linux machine you are using to run the Python script.
+
+. Change to the directory containing the script.
++
+For example:
++
+----
+cd StorageGRID-Webscale-version/platform
+----
++
+where *platform* is `debs`, `rpms`, or `vsphere`.
++
+. Run the Python script and use the configuration file you created.
++
+For example:
++
+`./manage-grid-federation.py -i manage-grid-federation.json`
++
+You can use the following command-line options:
++
+[cols="2m,1,3" options="header"]
+|===
+| Option | Default | Description
+
+| -i, --input-json-file
+| _(required)_
+| Path to the JSON configuration file containing the list of grids
+
+| -b, --base-port
+m| 23001
+| Starting port number for new grid federation connections
+
+| --no-verify-ssl
+| SSL verification enabled
+| Disables SSL certificate verification for local-to-grid connections
+|===
+
+== Edit existing connections
+If the script detects that existing connections require changes — for example, because grid display names changed or global namespace settings need to be updated — it will display a summary of the proposed edits and prompt for confirmation before proceeding.
+
+When S3 configuration updates (`region`, `CNAME`, or `globalEndpoint`) are required on grids that have global namespace enabled, the script must temporarily disable global namespace to apply the changes. In this case, the confirmation prompt will warn about the temporary routing outage:
+
+----
+*** Global Namespace Disable Required ***
+Global Namespace must be disabled to update region/CNAME/globalEndpoint settings.
+Routing requests will not work until Global Namespace is re-enabled.
+Grids requiring S3 updates: grid1.example.com, grid2.example.com
+Proceed with these edits and the temporary routing outage? [y/N]:
+----
+
+CAUTION: While global namespace is temporarily disabled during S3 configuration updates, global namespace routing requests won't function. Plan this operation during a maintenance window.
+
+.After you finish
+Your grid federation connections are established and configured when the script displays a confirmation summary similar to the following:
+
+----
+===== Newly Established Connections =====
+ • Grid-A and Grid-B — grid-a.example.com and grid-b.example.com on port 23001
+
+Total new connections: 1
+
+===== All Grid-Federation Connections =====
+  Name              Source                Target                Port   Status    Global Namespace
+  ----------------  --------------------  --------------------  -----  --------  ----------------
+  Grid-A and Grid-B grid-a.example.com    grid-b.example.com    23001  new       enabled
+
+Total connections listed: 1
+
+===== Grid S3 Configuration Summary =====
+ grid-a.example.com:
+    Default Region: us-east-1
+    CNAME: s3-a.example.com
+    Global namespace endpoint: gn.example.com
+ grid-b.example.com:
+    Default Region: us-west-1
+    CNAME: s3-b.example.com
+    Global namespace endpoint: gn.example.com
+----
+
+== Exit status
+[cols="1m,4" options="header"]
+|===
+| Code | Description
+
+| 0 
+| Script completed successfully 
+
+| 1 
+|Validation failed or a grid API call returned an error (check the log output) 
+|===
+
+NOTE: If any connections fail, the script continues processing remaining pairs and reports all failures in the Failed Connections section of the output. Review the error messages and resolve any issues before re-running the script.

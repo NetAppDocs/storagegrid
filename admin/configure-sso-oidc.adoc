@@ -1,0 +1,101 @@
+---
+permalink: admin/configure-sso-oidc.html
+sidebar: sidebar
+keywords: use sandbox mode for sso, how to test single sign-on
+summary: "You can follow the Configure SSO wizard for OIDC and enter sandbox mode to configure and test single sign-on (SSO) before enabling it for all StorageGRID users. After SSO is enabled, you can return to sandbox mode when needed to change or retest the configuration."
+---
+= Configure SSO in StorageGRID using OIDC
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow the Configure SSO wizard for OpenID Connect (OIDC) and enter sandbox mode to configure and test single sign-on (SSO) before enabling it for all StorageGRID users. After you enable SSO, you can return to sandbox mode when needed to change or retest the configuration. 
+
+.Before you begin
+
+* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+* You have the link:admin-group-permissions.html[Root access permission].
+* You have configured the OIDC client in the SSO identity provider for your StorageGRID system.
+* You have link:using-identity-federation.html[configured identity federation] for your StorageGRID system. 
+
+== Step 1: Provide identity provider details
+
+Access the wizard and complete the fields on the Provide identity provider details page.
+
+.Steps
+. Access the wizard to configure SSO settings:
+.. Select *Configuration* > *Access control* > *Single sign-on*. The Single sign-on page appears.
++
+NOTE: If the Configure SSO settings button is disabled, confirm you have configured the identity provider as the federated identity source. Refer to link:requirements-for-sso.html[Requirements and considerations for single sign-on].
+.. Select *Configure SSO settings*. The Provide identity provider details page appears.
+. Under *Protocol*, select *OIDC*.
+. Select the *SSO type* from the drop-down list.
+. Specify which TLS certificate will be used to secure the connection when the identity provider sends SSO configuration information in response to StorageGRID requests.
+** *Use operating system CA certificate*: Use the default CA certificate installed on the operating system to secure the connection.
+** *Use custom CA certificate*: Use a custom CA certificate to secure the connection.
++
+If you select this setting:
++
+.. Browse to the location of the CA certificate.
+.. Upload the CA certificate file.
+
+** *Do not use TLS*: Don't use a TLS certificate to secure the connection.
++
+CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the mgmt-api service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
+. Select *Continue*. The Provide relying party identifier page appears.
+
+
+== [[enter-sandbox-mode]]Step 2: Enter client information
+
+Complete the fields in the Enter client information step of the wizard.
+
+.Steps
+. Specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each OIDC configuration.
+
+* For example, if your grid has only one Admin Node and you don't anticipate adding more Admin Nodes in the future, enter `SG` or `StorageGRID`.
+
+* If your grid includes more than one Admin Node, include the string `[HOSTNAME]` in the identifier. For example, `SG-[HOSTNAME]`. Including this string results in a table that shows the OIDC configuration for each Admin Node in the grid, based on the node's hostname.
++
+NOTE: You must configure OIDC for the Admin Nodes in your StorageGRID system. This ensures that users can securely sign in to and out of any Admin Node. You can use the same OIDC configuration for all Admin Nodes (recommended) or set up a different OIDC configuration for each Admin Node.
+
+. Enter the *Client ID*, *Client secret*, and *OpenID endpoint URL* for each relying party identifier.
+
+. Select *Save and enter sandbox mode*.
+
+== Step 3: Test configuration
+
+After you enter sandbox mode, you can complete and test the configuration for the SSO type you selected.
+
+Sandbox mode makes it easy to perform the back-and-forth configuration and to test all of your settings before you enable SSO. StorageGRID can remain in sandbox mode as long as required. However, only federated users and local users can sign in.
+
+.Steps
+. From the Configure SSO page, locate the link on the Test configuration step of the wizard. 
++
+The URL is derived from the value you entered in the *Federation service name* field.
+
+. [[select-link]]Select the link, or copy and paste the URL into a new tab, to access your identity provider's sign-on page.
+
+. [[enter-credentials]]Enter your federated username and password.
+** If the SSO sign-in and logout operations are successful, a green banner appears.
+** If the SSO operation is unsuccessful, an error message appears. Fix the issue, clear the browser's cookies, and try again.
+. Follow the steps in the wizard to access the Test configuration page for each Admin Node in your grid. 
+. Repeat Steps <<select-link,2>> and <<enter-credentials,3>> to verify the SSO connection for each Admin Node.
+
+== [[enable-sso-oidc]]Step 4: Enable single sign-on
+
+When you have confirmed that you can use SSO to sign in to each Admin Node, you can enable SSO for your entire StorageGRID system.
+
+TIP: When SSO is enabled, all users must use SSO to access the Grid Manager, the Tenant Manager, the Grid Management API, and the Tenant Management API. Local users can no longer access StorageGRID. StorageGRID doesn't provide an example authentication script for all supported SSO providers.
+
+.Steps
+
+. From the Test configuration step of the configure SSO wizard, select *Enable SSO*.
+. Review the warning message, and select *Enable SSO*.
++
+Single sign-on is now enabled. The Single sign-on page appears and now includes the details for the SSO you just configured.
+. To edit the configuration, select *Edit*.
+. To disable single sign-on, select *Disable*.
+
+TIP: If you are using the Azure Portal and you access StorageGRID from the same computer you use to access Entra ID, ensure that the Azure portal user is also an authorized StorageGRID user (a user in a federated group that has been imported into StorageGRID or log out of the Azure portal before attempting to sign in to StorageGRID. 
+
+// 2026 FEB 4, SGWS-39432

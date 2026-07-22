@@ -1,0 +1,112 @@
+---
+permalink: admin/create-okta-application-oidc.html
+sidebar: sidebar
+keywords: okta, application, single sign on, sso
+summary: 'Create an Okta application for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.'
+---
+= Create Okta application for OIDC in StorageGRID 
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Create an Okta application for all Admin Nodes for OpenID Connect (OIDC) in your StorageGRID system.
+
+.Before you begin 
+* You have experience creating Okta applications, or you have access to the Okta documentation.
+* You have Okta Administrator access.
+
+.About this task
+An Okta application must contain sign-in and sign-out redirect URIs for all Admin Nodes. Redirect URIs ensure that users can securely sign in to and out of any Admin Node. You can create a single Okta application for all Admin Nodes (recommended) or a different application for each Admin Node.
+
+Use the default settings unless otherwise specified. In some cases you can use settings required by your organization.
+
+== Step 1: Create an Okta application
+Create an Okta application using the Okta UI.
+
+.Steps
+. In Okta, go to *Applications* > *Applications*.
+. Select *Create App Integration*, then enter the following information:
+* Sign-in method: *OIDC - OpenID Connect*
+* Application type: *Web Application*
+. Select *Next*.
+. Enter a name for the application in the App Integration field.
+. Verify that Authorization Code is selected (default) for Core grants.
+. Add the sign-in and sign-out redirect URIs for each Admin Node:
++
+* Sign-in redirect URI: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-callback`
+* Sign-out redirect URI: `\https://<Admin_IP_address_or_FQDN>/api/v4/oidc-logged-out`
++
+NOTE: If one or more load balancer endpoints are configured for the management interface, add the redirect URIs for each port. For example: `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-callback` and `\https://<Admin_IP_address_or_FQDN>:<port>/api/v4/oidc-logged-out`
+
+. Select *Save*. Save the client ID and client secret values for use later.
+
+== Step 2: Add a federate group
+Create a group or use an existing group from the Active Directory Federation Service (AD FS) server for StorageGRID.
+
+.Steps
+
+. In GRID Manager, select *Configuration* > *Admin groups* > *Create group* > *Federate Group*.
+. Enter the AD FS server group name.
+. Select *Read-write* for access mode and *Root access* for permissions.
+. Select *Create group*.
+
+== Step 3: Import AD FS server groups and users
+Install the Okta Active Directory client in the AD FS Server. Then, import the AD FS server groups and users.
+
+.Steps
+. In Okta, go to *Directory* > *Directory Integrations* > *Add Directory* > *Add Active Directory*. 
+. Select *Set Up Active Directory* > *Download Agent*.
+. Immediately follow the setup process. 
++
+NOTE: If you delay, the setup might stall and you will need to start over.
+
+.. Select the Active Directory domain.
+.. Create an OktaService account instead of linking an existing user.
+.. Select the organizational units that contain the users and the organizational units that contain the groups.
+.. Select the User Principal Name (UPN) that uses the AD UPN as the Okta username. For example: user@domain.com 
+. Search for the *Okta AD Agent Management Utility* application. Then, run the application and confirm that the status message `The agent is running` appears.
++
+NOTE: The Okta AD client must be running whenever you want to execute an AD FS server sync and import with Okta.
+. In Okta, go to *Directory* > *Directory Integrations*.
+. Select the directory integration that you created. 
+. Select *Import* > *Import Now*.
+. Select the user that you want to import, then select *Confirm Assignments*.
+. Go to *Directory* > *People* and confirm that the user was imported successfully.
++
+If the user status isn't Active, select *Activate* and keep refreshing the page until the user has the Active status. 
+. Go to *Directory* > *Groups* and confirm that the group for the imported user was automatically imported. 
+. Select the group and verify that the imported user is part of this group.
+
+== Step 4: Set up a claim
+Set up a claim to include AD FS server groups in the access token. Then, verify that the claim includes the imported group for the imported user and Okta application.
+
+.Steps
+. In Okta, go to *Directory* > *Groups*.
+. Select the imported group for the imported user.
+. Select *Applications* > *Assign applications* > *Assign*.
+. Go to *Security* > *API*.
+. Select the *default* authorization server. 
+. Select *Claims* > *Add Claim*. Then, create a claim with the following credentials:
+
+* Name: *groups*
+* Include in token type: *ID Token - Always*
+* Value type: *Expression*
+* Value: *Groups.startsWith("active_directory","",100)*
+* Include in: *Any scope*
+. Go to *Security* > *API*.
+. Select the *default* authorization server.
+. Select the *Token Preview* tab and enter the following credentials for Request Properties:
+* OAuth/OIDC client: *<application name>*
+* Grant type: *Authorization Code*
+* User: *Imported user (e-mail address)*
+* Scopes: *email, profile, openid*
+. Select *Execute*.
++
+The imported group appears in the Preview id_token tab in the Payload.
+
+.What's next
+
+After creating an Okta application, link:configure-sso-oidc.html[configure SSO using OIDC].
+
+// 2026 JUL 3, SGRIDDOC-273
+// 2026 MAY 28, SGRIDDOC-247

@@ -44,9 +44,9 @@ See https://docs.netapp.com/us-en/ontap/fabricpool/index.html[ONTAP documentatio
 | Enter a unique name for this cloud tier. You can accept the default value.
 
 | URL style
-| If you  link:../admin/configuring-s3-api-endpoint-domain-names.html[configured S3 endpoint domain names], select *Virtual Hosted-Style URL*.
+| If you  link:../admin/configuring-s3-api-endpoint-domain-names.html[configured S3 endpoint domain names], select *Virtual-Hosted-Style URL*.
  
-*Path-Style URL* is the default for ONTAP, but using virtual hosted-style requests is recommended for StorageGRID. You must use *Path-Style URL* if you provide an IP address instead of a domain name for the *Server name (FQDN)* field.
+*Path-Style URL* is the default for ONTAP, but using virtual-hosted-style requests is recommended for StorageGRID. You must use *Path-Style URL* if you provide an IP address instead of a domain name for the *Server name (FQDN)* field.
 
 | Server name (FQDN)
 | Enter the fully qualified domain name (FQDN) you are using for StorageGRID or the virtual IP (VIP) address for the StorageGRID HA group. For example, `s3.storagegrid.__company__.com`.

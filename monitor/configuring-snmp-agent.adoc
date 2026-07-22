@@ -310,3 +310,7 @@ The USM user is created and added to the table.
 . When you have completed the SNMP agent configuration, select *Save*.
 +
 The new SNMP agent configuration becomes active.
+
+.Related information
+
+link:../network/external-communications.html[Ports used for external communications]

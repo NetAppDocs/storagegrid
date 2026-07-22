@@ -28,9 +28,7 @@ You can view and edit the basic information and details for each group.
 +
 If the tenant account has the *Use grid federation connection* permission and you are viewing groups on the tenant's source grid:
 +
-* A banner message indicates that if you edit or remove a group, your changes will not be synced to the other grid.
-+
-* As needed, a banner message indicates if groups were not cloned to the tenant on the destination grid. You can <<clone-groups,retry a group clone>> that failed.
+* If any groups weren't synced to the tenant on the destination grid, follow the steps to <<sync-groups,retry a group sync>>.
 
 . If you want to change the group's name:
 
@@ -56,9 +54,9 @@ If the tenant account has the *Use grid federation connection* permission and yo
 ** Number of users in this group
 ** Additional fields if the tenant account has the *Use grid federation connection* permission and you are viewing the group on the tenant's source grid:
 
-*** Cloning status, either *Success* or *Failure*
+*** Sync status, either *Succeeded* or *Failed*
 
-*** A blue banner indicating that if you edit or delete this group, your changes will not be synced to the other grid.
+*** For federated groups, a blue banner indicates that if you edit or delete this group, your changes won't be synced to the other grid.
 
 . Edit group settings as needed. Refer to link:creating-groups-for-s3-tenant.html[Create groups for an S3 tenant] for details about what to enter.
 
@@ -92,7 +90,7 @@ A success message appears in the upper right.
 
 You can duplicate an existing group to create new groups more quickly.
 
-NOTE: If your tenant account has the *Use grid federation connection* permission and you duplicate a group from the tenant's source grid, the duplicated group will be cloned to the tenant's destination grid.
+NOTE: If your tenant account has the *Use grid federation connection* permission and you duplicate a group from the tenant's source grid, the duplicated group will be synced to the tenant's destination grid.
 
 .Steps
 
@@ -106,21 +104,25 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 . Select *Create group*.
 
-== [[clone-groups]]Retry group clone
+== [[sync-groups]]Retry group sync
 
-To retry a clone that failed:
+If any group failed to sync, "Failed" appears in the Sync status column for the group. A banner appears above the table to indicate that one or more groups failed to sync.
 
-.	Select each group that indicates _(Cloning failed)_ below the group name.
-. Select *Actions* > *Clone groups*.
-. View the status of the clone operation from the details page of each group you're cloning.
+.Steps
 
-For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
+To retry syncing:
+
+. On the banner, select *Retry sync*. This operation retries syncing for all groups that failed to sync.
+. To retry syncing an individual group, select the group name. On the group details page, select *Retry sync*.
+. View the status of the sync operation from the details page of each group you're syncing.
+
+If the retry is successful, "Succeeded" appears in the Sync status column for each group that was successfully synced, and the banner disappears.
+
+For additional information, see link:grid-federation-account-sync.html[Sync tenant groups and users].
 
 == Delete one or more groups
 
 You can delete one or more groups. Any users who belong only to a group that is deleted will no longer be able to sign in to the Tenant Manager or use the tenant account.
-
-NOTE: If your tenant account has the *Use grid federation connection* permission and you delete a group, StorageGRID will not delete the corresponding group on the other grid. If you need to keep this information in sync, you must delete the same group from both grids.
 
 .Steps
 
@@ -149,7 +151,7 @@ Temporary security credentials created from assuming this group are valid for a 
 
 . Select *Access Management* > *Groups*.
 
-. Click on the group name.
+. Select the group name.
 
 . Select the *S3 trust policy* tab.
 
@@ -180,6 +182,10 @@ Temporary security credentials created from assuming this group are valid for a 
     ]
 }
 ----
+
+The Principal:
+
+include::../_include/principal-in-s3-bucket-policy.adoc[]
 
 After configuration is complete, users listed in the S3 trust policy can perform AssumeRole and receive credentials.
 The final permissions are determined by group policy, bucket policy, and session policy. For more information see link:../s3/use-access-policies.html[Use access policies].

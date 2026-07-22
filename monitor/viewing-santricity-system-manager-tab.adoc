@@ -21,7 +21,7 @@ Using SANtricity System Manager, you can do the following:
 * Check hardware component status.
 * Perform support functions including viewing diagnostic data, and configuring E-Series AutoSupport.
 +
-NOTE: To use SANtricity System Manager to configure a proxy for E-Series AutoSupport, see link:../admin/sending-eseries-autosupport-messages-through-storagegrid.html[Send E-Series AutoSupport packages through StorageGRID].
+NOTE: To use SANtricity System Manager to configure a proxy for E-Series AutoSupport, see link:sending-eseries-autosupport-messages-through-storagegrid.html[Send E-Series AutoSupport packages through StorageGRID].
 
 To access SANtricity System Manager through Grid Manager, you must have the link:../admin/admin-group-permissions.html[Storage appliance administrator or Root access permission].
 

@@ -172,7 +172,7 @@ You can:
 * link:grid-federation-manage-connection.html#rotate-connection-certificates[Rotate grid federation connection certificates]
 * link:using-identity-federation.html[View and edit an identity federation certificate]
 * link:kms-adding.html[Upload key management server (KMS) server and client certificates]
-* link:creating-relying-party-trusts-in-ad-fs.html#create-a-relying-party-trust-manually[Manually specify an SSO certificate for a relying party trust]
+* link:creating-relying-party-trusts-in-ad-fs-saml.html#create-a-relying-party-trust-manually[Manually specify an SSO certificate for a relying party trust]
 
 
 --
@@ -274,7 +274,7 @@ a|
 | Details
 
 | Server
-| Authenticates the connection from a StorageGRID Cloud Storage Pool to an external storage location, such as S3 Glacier or Microsoft Azure Blob storage. A different certificate is required for each cloud provider type.
+| Authenticates the connection from a StorageGRID Cloud Storage Pool to an external storage location, such as S3 Glacier or Microsoft Azure Blob Storage. A different certificate is required for each cloud provider type.
 | *ILM* > *Storage pools*
 | link:../ilm/creating-cloud-storage-pool.html[Create a Cloud Storage Pool]
 

@@ -37,11 +37,9 @@ Performing the expansion includes these main user tasks:
 CAUTION: Some expansion steps and stages might take a significant amount of time to run on a large grid. For example, streaming Cassandra to a new Storage Node might take only a few minutes if the Cassandra database is empty. However, if the Cassandra database includes a large amount of object metadata, this stage might take several hours or longer. Don't reboot any Storage Nodes during the either the "Expanding the Cassandra cluster" or "Starting Cassandra and streaming data" stages.
 
 .Steps
-. Select *Maintenance* > *Tasks* > *Expansion*.
+. Select *Maintenance* > *Tasks* > *Grid expansion*.
 +
-The Grid Expansion page appears. The Pending Nodes section lists the nodes that are ready to be added.
-+
-image:grid_expansion_page.png[screenshot showing Grid Expansion page]
+The Grid expansion page appears. The Pending Nodes section lists the nodes that are ready to be added.
 
 . Select *Configure Expansion*.
 +
@@ -122,7 +120,7 @@ The approved grid node moves to the Approved Nodes list.
 .. Repeat these steps for each pending grid node you want to approve.
 +
 NOTE: If possible, you should approve all pending grid notes and perform a single expansion. More time will be required if you perform multiple small expansions.
-. When you have approved all grid nodes, enter the *Provisioning Passphrase*, and select *Expand*.
+. When you have approved all grid nodes, enter the *Provisioning passphrase*, and select *Expand*.
 +
 After a few minutes, this page updates to display the status of the expansion procedure. When tasks that affect individual grid nodes are in progress, the Grid Node Status section lists the current status for each grid node.
 +

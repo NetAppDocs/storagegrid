@@ -39,6 +39,6 @@ CAUTION: Adding or removing sites from an existing storage pool won’t move any
 . Select *Save*.
 
 .After you finish
-If you added a new site or storage grade to a storage pool used in the active ILM policy, activate a new ILM policy to force StorageGRID to use the new site or storage grade. For example, clone your existing ILM policy and then activate the clone. See link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies].
+If you added a new site or storage grade to a storage pool used in the active ILM policy, activate a new ILM policy to force StorageGRID to use the new site or storage grade. For example, clone your existing ILM policy and then activate the clone. Refer to link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies].
 
 // 2024 JULY 25, SGRIDDOC-84

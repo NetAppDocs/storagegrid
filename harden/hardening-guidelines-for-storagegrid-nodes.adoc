@@ -1,7 +1,7 @@
 ---
 permalink: harden/hardening-guidelines-for-storagegrid-nodes.html
 sidebar: sidebar
-keywords: StorageGRID, hardening guidelines, nodes, security
+keywords: StorageGRID, hardening guidelines, nodes, security, bmc password
 summary: "StorageGRID nodes can be deployed on VMware virtual machines, within a container engine on Linux hosts, or as dedicated hardware appliances. Each type of platform and each type of node has its own set of hardening best practices."
 ---
 = Hardening guidelines for StorageGRID nodes
@@ -13,13 +13,33 @@ StorageGRID nodes can be deployed on VMware virtual machines, within a container
 
 == [[block-remote-ipmi]]Control remote IPMI access to BMC
 
-You can enable or disable remote IPMI access for all appliances containing a BMC. The remote IPMI interface allows low-level hardware access to your StorageGRID appliances by anyone with a BMC account and password. If you do not need remote IPMI access to the BMC, disable this option.
+You can enable or disable remote IPMI access for all appliances containing a BMC. The remote IPMI interface allows low-level hardware access to your StorageGRID appliances by anyone with a BMC account and password. If you don't need remote IPMI access to the BMC, disable this option.
 
-* To control remote IPMI access to the BMC in Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances*:
+* To control remote IPMI access to the BMC in Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *Remote IPMI access*:
 ** Clear the *Enable remote IPMI access* checkbox to disable IPMI access to the BMC.
 ** Select the *Enable remote IPMI access* checkbox to enable IPMI access to the BMC.
 
 For additional information about BMC hardening, see the https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF[Harden Baseboard Management Controllers^] cybersecurity information sheet from the https://www.nsa.gov/[National Security Agency (NSA)^] and https://www.cisa.gov/[Cybersecurity and Infrastructure Security Agency (CISA)^].
+
+== Change appliance BMC password
+
+You can change the BMC password for an appliance to limit access and improve system security.
+
+. In Grid Manager go to *Nodes* > *_grid node_* > *BMC settings*.
+. In the Change password section, enter a new BMC password between 8 and 16 characters in length in *New password* and then enter it again in *Confirm new password*.
+. Select *Save*.
+
+You can also change the BMC password using the `PUT /bmc-configuration/root-password` API.
+
+== [[control-remote-access-through-usb-ports]]Control external USB port access on appliances
+
+You can enable the USB ports on the appliances to allow technical support access for diagnostics and troubleshooting. If you don't need USB port access, disable the ports for security. USB ports are enabled by default after the initial install or an upgrade.
+
+* In the Grid Manager, go to *Configuration* > *Security* > *Security settings* > *Appliances* > *USB port access* to enable or disable the USB ports:
+** Select the *Enable USB ports* checkbox and save to enable the ports.
++
+If the USB checkbox was previously unchecked and saved, select the *Enable USB ports* checkbox and save to enable USB ports again.
+** Clear the *Enable USB ports* checkbox and save to disable the ports.
 
 == Firewall configuration
 
@@ -78,7 +98,7 @@ For more information, see the instructions for link:../admin/index.html[administ
 
 Storage Nodes manage and store object data and metadata. Follow these guidelines to secure the Storage Nodes in your StorageGRID system.
 
-* Don't allow untrusted clients to connect directly to Storage Nodes. Use a load balancer endpoint served by a Gateway Node or a third party load balancer.
+* Don't allow untrusted clients to connect directly to Storage Nodes. Use a load balancer endpoint served by a Gateway Node or a third-party load balancer.
 * Don't enable outbound services for untrusted tenants. For example, when creating the account for an untrusted tenant, don't allow the tenant to use its own identity source and don't allow the use of platform services. See the steps for link:../admin/creating-tenant-account.html[creating a tenant account].
 * Use a third-party load balancer for untrusted client traffic. Third-party load balancing offers more control and additional layers of protection against attack.
 * Optionally, use a storage proxy for more control over Cloud Storage Pools and platform services communication from Storage Nodes to external services. See the steps for link:../admin/configuring-storage-proxy-settings.html[creating a storage proxy].
@@ -106,10 +126,11 @@ You can establish a VLAN to isolate BMC network connections and restrict BMC int
 +
 If a secure, trusted, internal management network isn't available, leave the BMC management port unconnected or blocked. Technical support might request temporary access during a support case.
 * If the appliance supports remote management of the controller hardware over Ethernet using the Intelligent Platform Management Interface (IPMI) standard, block untrusted traffic on port 623. 
-+
-include::../_include/enable-disable-ipmi.adoc[]
+
 +
 You can also <<block-remote-ipmi,disable remote IPMI access>>.
++
+include::../_include/enable-disable-ipmi.adoc[]
 
 * For appliance models containing SED, FDE, or FIPS NL-SAS drives that you manage with SANtricity System Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[enable and configure SANtricity Drive Security^].
 

@@ -11,7 +11,7 @@ summary: "You can create an S3 lifecycle configuration to control when specific 
 [.lead]
 You can create an S3 lifecycle configuration to control when specific objects are deleted from the StorageGRID system.
 
-The simple example in this section illustrates how an S3 lifecycle configuration can control when certain objects are deleted (expired) from specific S3 buckets. The example in this section is for illustration purposes only. For complete details on creating S3 lifecycle configurations, see https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html[Amazon Simple Storage Service User Guide: Object lifecycle management^]. Note that StorageGRID only supports Expiration actions; it does not support Transition actions.
+The simple example in this section illustrates how an S3 lifecycle configuration can control when certain objects are deleted (expired) from specific S3 buckets. The example in this section is for illustration purposes only. For complete details on creating S3 lifecycle configurations, see https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html[Amazon Simple Storage Service User Guide: Managing the lifecycle of objects^]. Note that StorageGRID only supports Expiration actions; it does not support Transition actions.
 
 == What lifecycle configuration is
 A lifecycle configuration is a set of rules that are applied to the objects in specific S3 buckets. Each rule specifies which objects are affected and when those objects will expire (on a specific date or after some number of days).

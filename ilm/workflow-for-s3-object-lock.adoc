@@ -14,3 +14,7 @@ As a grid administrator, you must coordinate closely with tenant users to ensure
 include::../_include/tenant-settings-delay.adoc[]
 
 include::../_include/s3-object-lock-tasks.adoc[]
+
+.Related information
+
+Learn about link:requirements-for-s3-object-lock.html#s3-object-lock-existing-buckets[S3 Object Lock requirements]

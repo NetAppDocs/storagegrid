@@ -266,12 +266,11 @@ Verify the TLS connection for Search integration, CloudMirror replication, Amazo
 
 | Use operating system CA certificate
 | Use the default Grid CA certificate installed on the operating system to secure connections.
-
 |===
 --
-.Webhook endpoints only
+.Webhook and Kafka endpoints
 --
-Verify the TLS connection for webhook endpoints.
+Verify the TLS connection for webhook or Kafka endpoints.
 
 [cols="1a,2a" options="header"]
 |===
@@ -288,7 +287,10 @@ Verify the TLS connection for webhook endpoints.
 | Use custom CA certificate
 | The custom CA certificate is used to verify the server's identity when connecting to the endpoint.
 
+| Use operating system CA certificate
+| Use the default Grid CA certificate installed on the operating system to secure connections.
 
+*Note*: Webhook endpoints don't have this option.
 |===
 
 When you select *mTLS*, these options become available.
@@ -330,6 +332,7 @@ After you have configured an endpoint, you can use its URN to configure a platfo
 
 * link:configuring-search-integration-service.html[Configure search integration service]
 
+* link:../network/external-communications.html[Ports used for external communications]
 // 2025 MAR 21, SGWS-35516
 // 2024 MAR 19, SGRIDDOC-7
 // 2023 SEP 15, SGWS-25330
