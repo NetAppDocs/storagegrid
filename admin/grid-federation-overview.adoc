@@ -1,15 +1,15 @@
 ---
 permalink: admin/grid-federation-overview.html
 sidebar: sidebar
-keywords: grid federation, cross-grid replication, account clone, cgr, disaster recovery
-summary: "You can use grid federation to clone tenants and replicate their objects between two StorageGRID systems for disaster recovery."
+keywords: grid federation, cross-grid replication, account sync, cgr, disaster recovery
+summary: "You can use grid federation to sync tenants and replicate their objects among multiple StorageGRID systems for disaster recovery."
 ---
 = Learn about StorageGRID grid federation
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use grid federation to clone tenants and replicate their objects between two StorageGRID systems for disaster recovery.
+You can use grid federation to sync tenants and replicate their objects among multiple StorageGRID systems for disaster recovery.
 
 == What is a grid federation connection?
 
@@ -19,19 +19,19 @@ A grid federation connection is a bidirectional, trusted, and secure connection 
 
 The workflow diagram summarizes the steps for configuring a grid federation connection between two grids. 
 
-image:grid-federation-workflow.png[Grid federation connection workflow]
+image:grid_federation_workflow.png[Grid federation connection workflow]
 
 == Considerations and requirements for grid federation connections
 
 * The grids used for grid federation must be running StorageGRID versions that are either identical or have no more than one major version difference between them.
 +
-For details about version requirements, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
+For details about version requirements, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP3373065[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
 
 * A grid can have one or more grid federation connections to other grids. Each grid federation connection is independent of any other connections. For example, if Grid 1 has one connection with Grid 2 and a second connection with Grid 3, there is no implied connection between Grid 2 and Grid 3.
 
 * Grid federation connections are bidirectional. After the connection is established, you can monitor and manage the connection from either grid. 
 
-* At least one grid federation connection must exist before you can use link:grid-federation-what-is-account-clone.html[account clone] or link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
+* At least one grid federation connection must exist before you can use link:grid-federation-what-is-account-sync.html[account sync] or link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
 
 === Networking and IP address requirements
 
@@ -70,7 +70,7 @@ When you configure a grid federation connection, StorageGRID automatically gener
 * Server and client certificates to authenticate and encrypt information sent from grid 1 to grid 2
 * Server and client certificates to authenticate and encrypt information sent from grid 2 to grid 1
 
-image:grid-federation-certificates.png[Grid federation certificates]
+image:grid_federation_certificates.png[Grid federation certificates]
 
 By default, the certificates are valid for 730 days (2 years). When these certificates near their expiration date, 
 the *Expiration of grid federation certificate* alert reminds you to rotate the certificates, which you can do using the Grid Manager. 

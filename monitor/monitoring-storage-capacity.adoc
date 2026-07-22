@@ -80,9 +80,7 @@ image:nodes_page_storage_used_object_data.png[Nodes Page Storage Used Object Dat
 
 . Review the Available values in the Volumes and Object stores tables, below the graphs.
 +
-NOTE: To view graphs of these values, click the chart icons image:icon_chart_new_for_11_5.png[Chart Icon] in the Available columns.
-+
-image:nodes_page_storage_tables.png[Object stores tables]
+NOTE: To view graphs of these values, select the chart icons in the Available columns.
 
 . Monitor the values over time to estimate the rate at which usable storage space is being consumed.
 
@@ -153,4 +151,4 @@ If you have a new StorageGRID installation, allow data and metadata to accumulat
 . View the dashboard cards, Forecast of data usage by storage pool and Forecast of metadata usage by site.
 . Use these values to estimate when you will need to add new Storage Nodes for data and metadata storage.
 
-image:forecast-metadata-usage.png[Forecast of metadata usage by site]
+image:forecast_metadata_usage.png[Forecast of metadata usage by site]

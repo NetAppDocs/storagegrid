@@ -23,7 +23,7 @@ Before creating your own policy, verify that the link:ilm-policy-overview.html#d
 
 NOTE: Only use the system-provided policies, 2 copies Policy (for one-site grids) or 1 Copy per Site (for multi-site grids), in test systems. For StorageGRID 11.6 and earlier, the default rule in this policy uses the All Storage Nodes storage pool, which contains all sites. If your StorageGRID system has more than one site, two copies of an object might be placed on the same site.
 
-NOTE: If the link:enabling-s3-object-lock-globally.html[global S3 Object Lock setting has been enabled], you must ensure that the ILM policy is compliant with the requirements of buckets that have S3 Object Lock enabled. In this section, follow the instructions that mention having S3 Object Lock enabled.
+NOTE: If the link:enabling-s3-object-lock.html[global S3 Object Lock setting has been enabled], you must ensure that the ILM policy is compliant with the requirements of buckets that have S3 Object Lock enabled. In this section, follow the instructions that mention having S3 Object Lock enabled.
 
 .Before you begin
 
@@ -44,7 +44,7 @@ NOTE: If the link:enabling-s3-object-lock-globally.html[global S3 Object Lock se
 --
 .S3 Object Lock enabled
 --
- ** The link:enabling-s3-object-lock-globally.html[global S3 Object Lock setting is already enabled] for the StorageGRID system.
+ ** The link:enabling-s3-object-lock.html[global S3 Object Lock setting is already enabled] for the StorageGRID system.
 
  ** You have link:what-ilm-rule-is.html[created the compliant and non-compliant ILM rules] you want to add to the policy. As required, you can save a policy, create additional rules, and then edit the policy to add the new rules.
 
@@ -172,7 +172,7 @@ Simulate a policy on test objects before activating the policy and applying it t
 
 .Before you begin
 
-* You know the S3 bucket/object-key for each object you want to test.
+You know the S3 bucket/object-key for each object you want to test.
 
 .Steps
 
@@ -188,7 +188,7 @@ CAUTION: Review any changes to the placement of existing replicated and erasure-
 
 .Results
 
-Any edits to the policy's rules will be reflected in the Simulation results and show the new match and previous match. The Simulate policy window retains the objects you tested until you select either *Clear all* or the remove icon image:icon-x-to-remove.png[Remove icon] for each object in the Simulation results list.
+Any edits to the policy's rules will be reflected in the Simulation results and show the new match and previous match. The Simulate policy window retains the objects you tested until you select either *Clear all* or the remove icon image:icon_x_to_remove.png[Remove icon] for each object in the Simulation results list.
 
 .Related information
 

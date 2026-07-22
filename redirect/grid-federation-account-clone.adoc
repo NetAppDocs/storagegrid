@@ -1,0 +1,4 @@
+---
+permalink: tenant/grid-federation-account-clone.html
+redirect: storagegrid/tenant/grid-federation-account-sync.html
+---

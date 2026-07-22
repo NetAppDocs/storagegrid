@@ -1,0 +1,108 @@
+---
+permalink: admin/learn-about-global-namespace.html
+sidebar: sidebar
+keywords: global namespace, grid federation, S3 endpoint domain names, default region, grid federation connection, multi-grid
+summary: "A global namespace allows tenant access to buckets across multiple StorageGRID systems. When global namespace is enabled on grid federation connections, S3 CreateBucket and ListBuckets requests targeting the global namespace endpoint can be sent to any grid's load balancer endpoint and are automatically routed to the correct grid based on the signing region in the request."
+---
+= Learn about global namespace for grid federation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+A global namespace allows tenant access to buckets across multiple StorageGRID systems. When global namespace is enabled on grid federation connections, S3 CreateBucket and ListBuckets requests targeting the global namespace endpoint can be sent to any grid's load balancer endpoint and are automatically routed to the correct grid based on the signing region in the request.
+
+== What is a global namespace?
+
+A global namespace allows tenant access to buckets across multiple StorageGRID systems. When global namespace is enabled on grid federation connections, S3 CreateBucket and ListBuckets requests targeting the global namespace endpoint can be sent to any grid's load balancer endpoint and are automatically routed to the correct grid based on the signing region in the request.
+
+NOTE: You should set up a DNS resolver to perform the DNS mapping of bucket URLs to a specific grid. As needed, consult your network administrator to ensure the DNS resolver is set up correctly. Refer to link:../admin/configure-global-namespace.html#config-dns-resolution[Configure DNS resolution].
+
+StorageGRID doesn't enforce unique bucket names across grids in the global namespace, so buckets with the same name can exist on different grids. The signing region in the request is used to determine which grid owns the bucket and should receive the request.
+
+For example, if Grid A uses region `us-east-1` and Grid B uses region `us-west-1`, a CreateBucket request sent to any grid with the region `us-west-1` is automatically routed to Grid B.
+
+For more information about grid federation, refer to link:grid-federation-overview.html[What is grid federation?].
+
+== [[gns-example]]Global namespace example
+
+.Grid 1
+
+* Default region: `region-1`
+* Default CNAME: `s3.region-1.company.com`
+* Global endpoint: `s3.company.com`
+
+.Grid 2
+
+* Default region: `region-2`
+* Default CNAME: `s3.region-2.company.com`
+* Global endpoint: `s3.company.com`
+
+.Grid 3
+
+* Default region: `region-3`
+* Default CNAME: `s3.region-3.company.com`
+* Global endpoint: `s3.company.com`
+
+=== CreateBucket and ListBuckets operations
+
+If you create a bucket (`bucket123`) with signing region `region-2` and targets the global endpoint `s3.company.com`, any grid that receives the request will create the bucket on Grid 2.
+
+=== Bucket-specific and general object operations
+
+After a bucket is created on a given grid, your DNS resolver will resolve the bucket URL to the bucket and grid CNAME.
+
+In the <<gns-example,example above>>, the DNS resolver should resolve `bucket123.s3.company.com` to `bucket123.s3.grid3.company.com` (bucket and grid's CNAME). In other words, all requests are sent directly to that grid without additional routing needed.
+
+.Example
+
+`PutObject to bucket123.s3.company.com` resolves to `bucket123.s3.grid3.company.com`
+
+== S3 behavior with global namespace
+
+After global namespace is fully configured, the following S3 behavior applies.
+
+=== Region enforcement
+
+All S3 requests to the global namespace endpoint, except link:../s3/operations-on-buckets.html[CreateBucket] and link:../s3/operations-on-the-service.html[ListBuckets], require that the signing region in the V4 authentication header matches the grid's default region.
+
+* If the signing region doesn't match, the request is denied with the following error:
++
+----
+An error occurred (AuthorizationHeaderMalformed) when calling the <operation> operation: The authorization header is malformed; the region '<signing-region>' is wrong; expecting '<grid-default-region>'
+----
+
+* Region enforcement applies to all buckets on the grid, including buckets that were created before global namespace was enabled.
+
+* Region enforcement applies only to V4 authentication requests. Anonymous and V2 requests aren't subject to region enforcement.
+
+=== CreateBucket routing
+
+CreateBucket requests sent to the global namespace endpoint (`s3.company.com`) can be directed to any grid's load balancer endpoint. The request is automatically routed to the grid whose default region matches the signing region in the request.
+
+For example:
+
+* Grid A has default region `us-east-1` and Grid B has default region `us-west-1`.
+* A client sends a CreateBucket request to `s3.company.com` with signing region `us-west-1`.
+* Round-robin DNS directs the request to Grid A.
+* Grid A routes the request to Grid B.
+* The bucket is created on Grid B.
+
+Additional considerations for CreateBucket:
+
+* The `LocationConstraint` element can be set to any of the grid's default or non-default regions. This affects only ILM policy, not which grid creates the bucket (unlike AWS behavior with `us-east-1`).
+* The signing region in the request determines which grid creates the bucket (signing region has to match the target grid's default region).
+* Presigned V4 requests are supported.
+* Anonymous and V2 requests aren't supported for global namespace routing.
+
+=== ListBuckets routing
+
+ListBuckets requests sent to the global namespace endpoint are routed similarly to CreateBucket requests, using the signing region to determine the correct grid.
+
+Neither HEAD Bucket nor ListBuckets responses include the grid's default region. The default region is implied by the signing region, which is enforced to match the grid's default region.
+
+=== Account and access key management
+Tenant accounts and S3 access keys can be synchronized across all grids using link:grid-federation-what-is-account-sync.html[account sync], but global namespace also works when each grid has its own separate set of access keys. If you use separate access keys, ensure that the S3 client uses the correct access key when sending requests to each grid.
+
+== What's next?
+
+Now you're ready to link:../admin/configure-global-namespace.html[configure global namespace].

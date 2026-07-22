@@ -27,7 +27,7 @@ NOTE: If a grid node is missing, confirm that it was deployed successfully and h
 +
 image:5_gmi_installer_grid_nodes_pending.gif[This image is explained by the surrounding text.]
 
-. Click *Approve*.
+. Select *Approve*.
 . In General Settings, modify settings for the following properties, as necessary:
 
 ** *Site*: The system name of the site for this grid node. 
@@ -69,7 +69,7 @@ Rebooting can take several minutes.
 
  .. Select *Configure Networking* > *Link Configuration* and enable the appropriate networks.
  .. Select *Configure Networking* > *IP Configuration* and configure the enabled networks.
- .. Return to the Home page and click *Start Installation*.
+ .. Return to the Home page and select *Start installation*.
  .. In the Grid Manager: If the node is listed in the Approved Nodes table, remove the node.
  .. Remove the node from the Pending Nodes table.
  .. Wait for the node to reappear in the Pending Nodes list.
@@ -89,7 +89,7 @@ Rebooting can take several minutes.
 
  .. Select *Configure Networking* > *Link Configuration* and enable the appropriate networks.
  .. Select *Configure Networking* > *IP Configuration* and configure the enabled networks.
- .. Return to the Home page and click *Start Installation*.
+ .. Return to the Home page and select *Start installation*.
  .. In the Grid Manager: If the node is listed in the Approved Nodes table, remove the node.
  .. Remove the node from the Pending Nodes table.
  .. Wait for the node to reappear in the Pending Nodes list.
@@ -97,7 +97,7 @@ Rebooting can take several minutes.
 +
 For additional information, see the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Quick start for hardware installation^] to locate instructions for your appliance.
 
-. Click *Save*.
+. Select *Save*.
 +
 The grid node entry moves to the Approved Nodes list.
 +
@@ -105,8 +105,8 @@ image:7_gmi_installer_grid_nodes_approved.gif[This image is explained by the sur
 
 . Repeat these steps for each pending grid node you want to approve.
 +
-You must approve all nodes that you want in the grid. However, you can return to this page at any time before you click *Install* on the Summary page. You can modify the properties of an approved grid node by selecting its radio button and clicking *Edit*.
+You must approve all nodes that you want in the grid. However, you can return to this page at any time before you select *Install* on the Summary page. You can modify the properties of an approved grid node by selecting its radio button and selecting *Edit*.
 
-. When you are done approving grid nodes, click *Next*.
+. When you are done approving grid nodes, select *Next*.
 
 // 2024 MAY 1, SGRIDDOC-28

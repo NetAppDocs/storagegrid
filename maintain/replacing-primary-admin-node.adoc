@@ -4,14 +4,18 @@ sidebar: sidebar
 keywords: storagegrid, recover, replace primary admin node, replacing primary admin node, primary admin node
 summary: "To recover a primary Admin Node, you must first replace the physical or virtual hardware."
 ---
-= Replace primary StorageGRID Admin Node
+= Replace StorageGRID primary Admin Node using the same primary Admin Node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To recover a primary Admin Node, you must first replace the physical or virtual hardware.
 
-You can replace a failed primary Admin Node with a primary Admin Node running on the same platform, or you can replace a primary Admin Node running on VMware or a Linux host with a primary Admin Node hosted on a services appliance.
+To recover a primary Admin Node, you must first replace the physical or virtual hardware.
+
+* You can replace a failed primary Admin Node with a primary Admin Node running on the same platform.
+* You can replace a primary Admin Node running on VMware or a Linux host with a primary Admin Node hosted on a StorageGRID services appliance.
+* You can replace a primary Admin Node running on VMware host with an with SG1000 or SG100 services appliance.
 
 Use the procedure that matches the replacement platform you select for the node. After you complete the node replacement procedure (which is suitable for all node types), that procedure will direct you to the next step for primary Admin Node recovery.
 
@@ -19,13 +23,15 @@ Use the procedure that matches the replacement platform you select for the node.
 |===
 | Replacement platform| Procedure
 | VMware
-| link:all-node-types-replacing-vmware-node.html[Replace a VMware node]
+| link:all-node-types-replacing-vmware-node.html[Replace a VMware node with a recovery node]
+
+link:replace-vmware-node-with-sg1000-sg100.html[Replace a VMware node with SG1000 or SG100]
 
 | Linux
 | link:all-node-types-replacing-linux-node.html[Replace a Linux node]
 
 | Services appliances
-| link:replacing-failed-node-with-services-appliance.html[Replace a services appliance]
+| link:replacing-failed-node-with-services-appliance.html[Replace a services appliance] 
 
 | OpenStack
 | NetApp-provided virtual machine disk files and scripts for OpenStack are no longer supported for recovery operations. If you need to recover a node running in an OpenStack deployment, download the files for your Linux operating system. Then, follow the procedure for link:all-node-types-replacing-linux-node.html[replacing a Linux node]. 

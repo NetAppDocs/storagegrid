@@ -27,16 +27,26 @@ NOTE: If you upgraded from StorageGRID 11.6 or earlier, the S3 PUT Object size t
 
 If a request includes (unescaped) UTF-8 values in the key name or value of user-defined metadata, StorageGRID behavior is undefined.
 
-StorageGRID does not parse or interpret escaped UTF-8 characters included in the key name or value of user-defined metadata. Escaped UTF-8 characters are treated as ASCII characters:
+StorageGRID doesn't parse or interpret escaped UTF-8 characters included in the key name or value of user-defined metadata. Escaped UTF-8 characters are treated as ASCII characters:
 
 * Requests succeed if user-defined metadata includes escaped UTF-8 characters.
-* StorageGRID does not return the `x-amz-missing-meta` header if the interpreted value of the key name or value includes unprintable characters.
+* StorageGRID doesn't return the `x-amz-missing-meta` header if the interpreted value of the key name or value includes unprintable characters.
 
 == Supported request headers
 
 The following request headers are supported:
 
 * `Content-Type`
+* `x-amz-checksum-algorithm`: Specify `CRC32`, `CRC32C`, `CRC64NVME`, or `SHA256`
++
+When you copy an object, if the source object has a `checksum` or includes `x-amz-checksum-algorithm`, the copied object has a FULL_OBJECT checksum. 
++
+If the source object has a checksum but the request doesn't include `x-amz-checksum-algorithm` or it uses an unsupported checksum value, the copied object has the same type of checksum as the source object. StorageGRID ignores invalid or unsupported `x-amz-checksum-algorithm` values.
++
+If the source object doesn't have a checksum and doesn't include `x-amz-checksum-algorithm` or it uses an unsupported checksum value, the copied object doesn't have a checksum.
++
+NOTE: If a CopyObject request doesn't specify a checksum and the source object doesn't have a checksum, StorageGRID doesn't calculate a default CRC-64/NVME checksum for an object.
+
 * `x-amz-copy-source`
 * `x-amz-copy-source-if-match`
 * `x-amz-copy-source-if-none-match`
@@ -81,13 +91,12 @@ The following request headers aren't supported:
 * `Expires`
 * `If-Match`
 +
-The `If-Match header` is accepted but non-functional.
+The `If-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+
 * `If-None-Match`
 +
-The `If-None-Match header` is accepted but non-functional.
-* `x-amz-checksum-algorithm`
-+
-When you copy an object, if the source object has a checksum, StorageGRID doesn't copy that checksum value to the new object. This behavior applies whether or not you try to use `x-amz-checksum-algorithm` in the object request.
+The `If-None-Match` header behaves differently depending on your StorageGRID configuration. Providing this header might return an error message (501 Not Implemented). If the `If-None-Match` header is accepted but non-functional, an alert might trigger with instructions about enabling the stricter 501 Not Implemented error behavior.
+
 * `x-amz-website-redirect-location`
 
 == Storage class options
@@ -108,10 +117,10 @@ NOTE: If you are ingesting an object into a bucket with S3 Object Lock enabled, 
 
 If the source bucket and key, specified in the `x-amz-copy-source` header, are different from the destination bucket and key, a copy of the source object data is written to the destination.
 
-If the source and destination match, and the `x-amz-metadata-directive` header is specified as `REPLACE`, the object's metadata is updated with the metadata values supplied in the request. In this case, StorageGRID does not re-ingest the object. This has two important consequences:
+If the source and destination match, and the `x-amz-metadata-directive` header is specified as `REPLACE`, the object's metadata is updated with the metadata values supplied in the request. In this case, StorageGRID doesn't re-ingest the object. This has two important consequences:
 
 * You can't use CopyObject to encrypt an existing object in place, or to change the encryption of an existing object in place. If you supply the `x-amz-server-side-encryption` header or the `x-amz-server-side-encryption-customer-algorithm` header, StorageGRID rejects the request and returns `XNotImplemented`.
-* The option for Ingest Behavior specified in the matching ILM rule is not used. Any changes to object placement that are triggered by the update are made when ILM is re-evaluated by normal background ILM processes.
+* The option for Ingest Behavior specified in the matching ILM rule isn't used. Any changes to object placement that are triggered by the update are made when ILM is re-evaluated by normal background ILM processes.
 +
 This means that if the ILM rule uses the Strict option for ingest behavior, no action is taken if the required object placements can't be made (for example, because a newly required location is unavailable). The updated object retains its current placement until the required placement is possible.
 
@@ -140,4 +149,7 @@ NOTE: The `server-side-encryption` value of the object can't be updated. Instead
 
 If the source bucket is versioned, you can use the `x-amz-copy-source` header to copy the latest version of an object. To copy a specific version of an object, you must explicitly specify the version to copy using the `versionId` subresource. If the destination bucket is versioned, the generated version is returned in the `x-amz-version-id` response header. If versioning is suspended for the target bucket, then `x-amz-version-id` returns a "null" value.
 
+// 2026 APR 24, SGIRDDOC-243
+// 2026 FEB 16, SGWS-39080
+// 2026 JAN 6, SGWS-39154
 // 2024 MAY 23, SGWS-31243

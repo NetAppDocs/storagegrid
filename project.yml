@@ -9,8 +9,10 @@ settings:
     harmony_enabled: true
     hide_language_selector: false
   versions:
-    - version-number: "12.0"
+    - version-number: "12.1"
       url: /storagegrid
+    - version-number: "12.0"
+      url: /storagegrid-120
     - version-number: "11.9"
       url: /storagegrid-119  
     - version-number: "11.8"
@@ -23,13 +25,13 @@ settings:
       url: /storagegrid-115    
 sidebar:
   entries:
-    - title: 'StorageGRID 12.0 software'
+    - title: 'StorageGRID 12.1 software'
       url: /index.html
     - title: StorageGRID appliances
       url: "/swnodes/storagegrid-hardware.html"
     - title: Release notes
       entries:
-        - title: What's new in StorageGRID 12.0
+        - title: What's new in StorageGRID 12.1
           url: /release-notes/whats-new.html
         - title: Removed or deprecated features and capabilities
           url: /release-notes/removed-or-deprecated-features.html
@@ -37,6 +39,8 @@ sidebar:
           url: /release-notes/changes-to-grid-management-api.html
         - title: Changes to the Tenant Management API
           url: /release-notes/changes-to-tenant-management-api.html
+        - title: Changes to S3 REST API support
+          url: /release-notes/changes-to-s3-rest-api.html
     - title: Get started
       url: "/landing-get-started/index.html"  
       entries:
@@ -267,22 +271,20 @@ sidebar:
             url: "/maintain/selecting-start-recovery-to-configure-appliance-storage-node.html"
           - title: Remount and reformat appliance storage volumes (manual steps)
             url: "/maintain/remounting-and-reformatting-appliance-storage-volumes.html"
-          - title: Restore object data to storage volume for appliance
+          - title: Restore object data to appliance storage volume
             url: "/maintain/restoring-object-data-to-storage-volume-for-appliance.html"
           - title: Check storage state after recovering appliance Storage Node
             url: "/maintain/checking-storage-state-after-recovering-sga.html"
         - title: Recover from storage volume failure where system drive is intact
+          pdf-filename: Recover from storage volume failure where system drive is intact
           entries:
-          - title: Recovery tasks
-            pdf-filename: Recover from storage volume failure where system drive is intact
-            url: "/maintain/recovering-from-storage-volume-failure-where-system-drive-is-intact.html"
           - title: Warnings for storage volume recovery
             url: "/maintain/reviewing-warnings-about-storage-volume-recovery.html"
           - title: Identify and unmount failed storage volumes
             url: "/maintain/identifying-and-unmounting-failed-storage-volumes.html"
           - title: Recover failed storage volumes and rebuild Cassandra database
             url: "/maintain/recovering-failed-storage-volumes-and-rebuilding-cassandra-database.html"
-          - title: Restore object data to storage volume where system drive is intact
+          - title: Restore object data to StorageGRID volume where system drive is intact
             url: "/maintain/restoring-object-data-to-storage-volume-where-system-drive-is-intact.html"
           - title: Check storage state after recovering storage volumes
             url: "/maintain/checking-storage-state-after-recovering-storage-volumes.html"
@@ -296,23 +298,19 @@ sidebar:
             url: "/maintain/selecting-start-recovery-to-configure-storage-node.html"
           - title: Remount and reformat storage volumes (manual steps)
             url: "/maintain/remounting-and-reformatting-storage-volumes-manual-steps.html"
-          - title: Restore object data to storage volume (system drive failure)
+          - title: Restore object data to storage volume
             url: "/maintain/restoring-object-data-to-storage-volume.html"
           - title: Check storage state after recovering Storage Node system drive
             url: "/maintain/checking-storage-state-after-recovering-storage-node-system-drive.html"
-        - title: Restore object data using Grid Manager
-          url: "/maintain/restoring-volume.html"
-        - title: Monitor repair-data jobs
-          url: "/maintain/monitor-repairs.html"
       - title: Recover from Admin Node failures
         entries:
         - title: Primary or non-primary Admin Node
           pdf-filename: Recover from Admin Node failures    
           url: "/maintain/recovering-from-admin-node-failures.html"
-        - title: Recover from primary Admin Node failures
+        - title: Recover from primary Admin Node failures using the same primary Admin Node
           entries:
-          - title: Recover primary Admin Node
-            pdf-filename: Recover from primary Admin Node failures
+          - title: Recover the primary Admin Node using the same primary Admin Node
+            pdf-filename: Recover the primary Admin Node using the same primary Admin Node
             url: "/maintain/recovering-from-primary-admin-node-failures.html"
           - title: Copy audit logs from failed primary Admin Node
             url: "/maintain/copying-audit-logs-from-failed-primary-admin-node.html"
@@ -328,6 +326,23 @@ sidebar:
             url: "/maintain/restoring-admin-node-database-primary-admin-node.html"
           - title: Restore Prometheus metrics when recovering primary Admin Node
             url: "/maintain/restoring-prometheus-metrics-primary-admin-node.html"
+        - title: Recover from primary Admin Node failures using a non-primary Admin Node
+          entries:
+          - title: Recover the primary Admin Node using a non-primary Admin Node
+            pdf-filename: Recover the primary Admin Node using a non-primary Admin Node
+            url: "/maintain/recovering-from-primary-admin-node-failures-using-npan.html"
+          - title: Copy audit logs from failed primary Admin Node 
+            url: "/maintain/copying-audit-logs-from-failed-primary-admin-node-using-npan.html"
+          - title: Replace primary Admin Node 
+            url: "/maintain/replacing-primary-admin-node-using-npan.html"
+          - title: Select Start Recovery to configure primary Admin Node
+            url: "/maintain/selecting-start-recovery-to-configure-primary-admin-node.html"
+          - title: Determine hotfix requirement for primary Admin Node
+            url: "/maintain/assess-hotfix-requirement-during-primary-admin-node-recovery-using-npan.html"
+          - title: Restore audit log on recovered primary Admin Node
+            url: "/maintain/restoring-audit-log-on-recovered-primary-admin-node-using-npan.html"
+          - title: Restore Prometheus metrics when recovering primary Admin Node
+            url: "/maintain/restoring-prometheus-metrics-primary-admin-node-using-npan.html"            
         - title: Recover from non-primary Admin Node failures
           entries:
           - title: Recover non-primary Admin Node
@@ -367,8 +382,10 @@ sidebar:
           url: "/maintain/restoring-existing-nodes.html"
         - title: 'What&#8217;s next: Perform additional recovery steps, if required'
           url: "/maintain/whats-next-performing-additional-recovery-steps-if-required.html"
-      - title: Replace VMware node
+      - title: Replace VMware node with a recovery node
         url: "/maintain/all-node-types-replacing-vmware-node.html"
+      - title: Replace VMware node with SG1000 or SG100
+        url: "/maintain/replace-vmware-node-with-sg1000-sg100.html"
       - title: Replace failed node with services appliance
         entries:
         - title: Replacement guidelines

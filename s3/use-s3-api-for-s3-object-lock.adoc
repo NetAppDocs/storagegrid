@@ -11,17 +11,19 @@ summary: "If the global S3 Object Lock setting is enabled for your StorageGRID s
 [.lead]
 If the global S3 Object Lock setting is enabled for your StorageGRID system, you can create buckets with S3 Object Lock enabled. You can specify default retention for each bucket or retention settings for each object version.
 
+NOTE: StorageGRID doesn't support the `x-amz-sdk-checksum-algorithm` request header.
+
 == How to enable S3 Object Lock for a bucket
 
 If the global S3 Object Lock setting is enabled for your StorageGRID system, you can optionally enable S3 Object Lock when you create each bucket. 
 
 S3 Object Lock is a permanent setting that can only be enabled when you create a bucket. You can't add or disable S3 Object Lock after a bucket is created.
 
-To enable S3 Object Lock for a bucket, use either of these methods:
+To enable S3 Object Lock for a bucket, use one of these methods:
 
 * Create the bucket using the Tenant Manager. See link:../tenant/creating-s3-bucket.html[Create S3 bucket].
-
 * Create the bucket using a CreateBucket request with the `x-amz-bucket-object-lock-enabled` request header. See link:operations-on-buckets.html[Operations on buckets].
+* Manage bucket settings from the Tenant Manager. See link:../tenant/update-default-retention-settings.html[Update S3 Object Lock default retention].
 
 S3 Object Lock requires bucket versioning, which is enabled automatically when the bucket is created. You can't suspend versioning for the bucket. See link:object-versioning.html[Object versioning].
 
@@ -54,22 +56,27 @@ To set the default retention for a bucket, use either of these methods:
 * Manage bucket settings from the Tenant Manager. See link:../tenant/creating-s3-bucket.html[Create an S3 bucket] and link:../tenant/update-default-retention-settings.html[Update  S3 Object Lock default retention]. 
 * Issue a PutObjectLockConfiguration request for the bucket to specify the default mode and default number of days or years. 
 
-
 === PutObjectLockConfiguration
 
 The PutObjectLockConfiguration request allows you to set and  modify the default retention mode and default retention period for a bucket that has S3 Object Lock enabled. You can also remove previously configured default retention settings.
 
-When new object versions are ingested to the bucket, the default retention mode is applied if `x-amz-object-lock-mode` and `x-amz-object-lock-retain-until-date` aren't specified. The default retention period is used to calculate the retain-until-date if `x-amz-object-lock-retain-until-date` is not specified.
+When new object versions are ingested to the bucket, the default retention mode is applied if `x-amz-object-lock-mode` and `x-amz-object-lock-retain-until-date` aren't specified. The default retention period is used to calculate the retain-until-date if `x-amz-object-lock-retain-until-date` isn't specified.
 
-If the default retention period is modified after ingest of an object version, the retain-until-date of the object version remains the same and is not recalculated using the new default retention period.
+If the default retention period is modified after ingest of an object version, the retain-until-date of the object version remains the same and isn't recalculated using the new default retention period.
 
 You must have the `s3:PutBucketObjectLockConfiguration` permission, or be account root, to complete this operation.
 
-The `Content-MD5` request header must be specified in the PUT request.
+You must specify one of the following request headers in the PutObjectLockConfiguration request:
 
+----
+Content-MD5
+x-amz-checksum-* 
+----
+
+NOTE: StorageGRID doesn't validate the contents of the x-amz-checksum-* header for this operation.
 
 ==== Request example
-This example enables S3 Object Lock for a bucket and sets the default retention mode to COMPLIANCE and the default retention period to 6 years.
+This example enables S3 Object Lock for a bucket (if your grid administrator has given permission) and sets the default retention mode to COMPLIANCE and the default retention period to 6 years.
 
 [subs="specialcharacters,quotes"]
 ----
@@ -94,7 +101,6 @@ Authorization: _authorization-string_
 </ObjectLockConfiguration>
 ----
 
-
 == How to determine the default retention for a bucket
 
 To determine if S3 Object Lock is enabled for a bucket and to see the default retention mode and retention period, use either of these methods:
@@ -106,7 +112,7 @@ To determine if S3 Object Lock is enabled for a bucket and to see the default re
 
 The GetObjectLockConfiguration request allows you to determine if S3 Object Lock is enabled for a bucket and, if it is enabled, see if there is a default retention mode and retention period configured for the bucket.
 
-When new object versions are ingested to the bucket, the default retention mode is applied if `x-amz-object-lock-mode` is not specified. The default retention period is used to calculate the retain-until-date if `x-amz-object-lock-retain-until-date` is not specified.
+When new object versions are ingested to the bucket, the default retention mode is applied if `x-amz-object-lock-mode` isn't specified. The default retention period is used to calculate the retain-until-date if `x-amz-object-lock-retain-until-date` isn't specified.
 
 You must have the `s3:GetBucketObjectLockConfiguration` permission, or be account root, to complete this operation.
 
@@ -149,7 +155,7 @@ Server: AmazonS3
 
 A bucket with S3 Object Lock enabled can contain a combination of objects with and without S3 Object Lock retention settings. 
 
-Object-level retention settings are specified using the S3 REST API. The retention settings for an object override any default retention settings for the bucket. 
+Object-level retention settings are specified using the S3 REST API. The retention settings for an object override any default retention settings for the bucket.
 
 You can specify the following settings for each object:
 
@@ -165,9 +171,7 @@ You can specify the following settings for each object:
 +
 The legal hold setting for an object is independent of the retention mode and the retain-until-date. If an object version is under a legal hold, no one can delete that version.
 
-
 To specify S3 Object Lock settings when adding an object version to a bucket, issue a link:put-object.html[PutObject], link:put-object-copy.html[CopyObject], or link:initiate-multipart-upload.html[CreateMultipartUpload] request. 
-
 
 You can use the following:
 
@@ -186,8 +190,15 @@ If legal hold is ON (case-sensitive), the object is placed under a legal hold. I
 
 If you use any of these request headers, be aware of these restrictions:
 
-* The `Content-MD5` request header is required if any `x-amz-object-lock-*` request header is present in the PutObject request. `Content-MD5` is not required for CopyObject or CreateMultipartUpload.
-* If the bucket does not have S3 Object Lock enabled and a `x-amz-object-lock-*` request header is present, a 400 Bad Request (InvalidRequest) error is returned.
+* You must include one of the following request headers if any x-amz-object-lock-* request header is present in the PutObject request:
++
+----
+Content-MD5
+x-amz-checksum-*
+----
++
+These headers aren't required for CopyObject or CreateMultipartUpload.
+* If the bucket doesn't have S3 Object Lock enabled and a x-amz-object-lock-* request header is present, a 400 Bad Request (InvalidRequest) error is returned.
 * The PutObject request supports the use of `x-amz-storage-class: REDUCED_REDUNDANCY` to match AWS behavior. However, when an object is ingested into a bucket with S3 Object Lock enabled, StorageGRID will always perform a dual-commit ingest.
 * A subsequent GET or HeadObject version response will include the headers `x-amz-object-lock-mode`, `x-amz-object-lock-retain-until-date`, and `x-amz-object-lock-legal-hold`, if configured and if the request sender has the correct `s3:Get*` permissions.
 
@@ -206,13 +217,24 @@ If the new legal-hold value is ON, the object is placed under a legal hold. If t
 ** The retain-until-date value must be in the format `2020-08-10T21:46:00Z`. Fractional seconds are allowed, but only 3 decimal digits are preserved (milliseconds precision). Other ISO 8601 formats aren't allowed.
 ** If an object version has an existing retain-until-date, you can only increase it. The new value must be in the future.
 
+You must specify one of the following request headers in the request:
+
+----
+Content-MD5
+x-amz-checksum-* 
+----
+
+NOTE: StorageGRID doesn't validate the contents of the x-amz-checksum-* header for these operations.
+
 == How to use GOVERNANCE mode
 
 Users who have the `s3:BypassGovernanceRetention` permission can bypass the active retention settings of an object that uses GOVERNANCE mode. Any DELETE or PutObjectRetention operations must include the `x-amz-bypass-governance-retention:true` request header. These users can perform these additional operations:
 
 * Perform DeleteObject or DeleteObjects operations to delete an object version before its retention period has elapsed.
 +
-Objects that are under a legal hold can't be deleted. Legal hold must be OFF. 
+Objects that are under a legal hold can't be deleted. Legal hold must be OFF.
++
+The `x-amz-bypass-governance-retention` header has no effect on objects without S3 Object Lock.
 
 * Perform PutObjectRetention operations that change an object version's mode from GOVERNANCE to COMPLIANCE before the object's retention period has elapsed.
 +

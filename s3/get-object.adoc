@@ -21,12 +21,16 @@ You can set `partNumber` to 1 for both segmented/multipart objects and  non-segm
 
 StorageGRID does not parse or interpret escaped UTF-8 characters in user-defined metadata. GET requests for an object with escaped UTF-8 characters in user-defined metadata don't return the `x-amz-missing-meta` header if the key name or value includes unprintable characters.
 
-== Supported request header
+== Supported request headers
 
-The following request header is supported:
+The following request headers are supported:
+
+* `Accept-Encoding`
++
+When an object has no stored `Content-Encoding`, a GET request with `Accept-Encoding: gzip` applies on the fly compression to the response. Only `gzip` affects the GET response encoding; `deflate`, `br`, and `identity` don't. For objects that already have a stored `Content-Encoding`, StorageGRID returns the stored encoding and doesn't apply additional on the fly compression based on `Accept-Encoding`. StorageGRID doesn't support range read operations for GET requests with `Accept-Encoding: gzip`.
 
 * `x-amz-checksum-mode`: Specify `ENABLED`
-+ 
++
 The `Range` header isn't supported with `x-amz-checksum-mode` for GetObject. When you include `Range` in the request with `x-amz-checksum-mode` enabled, StorageGRID doesn't return a checksum value in the response.
 
 == Unsupported request header
@@ -114,5 +118,6 @@ If you are using link:../admin/grid-federation-overview.html[grid federation] an
 
 NOTE: StorageGRID does not support the `x-amz-replication-status` header.
 
+// 2026 JUNE 8, SGRIDDOC-263
 // 2024 JULY 1, SGRIDDOC-48
 // 2024 MAY 23, SGWS-31243

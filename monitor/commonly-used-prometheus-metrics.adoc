@@ -13,7 +13,7 @@ Refer to this list of commonly used Prometheus metrics to better understand cond
 
 You can also <<obtain-all-metrics,obtain a complete list of all metrics>>.
 
-For details on the syntax of Prometheus queries, see https://prometheus.io/docs/prometheus/latest/querying/basics/[Querying Prometheus^].
+For details on the syntax of Prometheus queries, see https://prometheus.io/docs/prometheus/latest/querying/basics/[Querying basics^].
 
 == What are Prometheus metrics?
 

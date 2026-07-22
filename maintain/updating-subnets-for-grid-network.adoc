@@ -58,7 +58,7 @@ For example, enter `10.96.104.0/22`.
 
 . Wait until the changes are applied, then download a new recovery package.
 .. Select *Maintenance* > *System* > *Recovery package*.
-.. Enter the *Provisioning Passphrase*.
+.. Enter the *Provisioning passphrase*.
 +
 CAUTION: The recovery package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system. It is also used to recover the primary Admin Node.
 
@@ -70,20 +70,20 @@ The subnets you have specified are configured automatically for your StorageGRID
 
 . Select *Maintenance* > *Network* > *Grid Network*.
 . Select the subnet you want to edit and make the necessary changes.
-. Enter the Provisioning passphrase, and select *Save*.
+. Enter the provisioning passphrase, and select *Save*.
 . Select *Yes* in the confirmation dialog box.
 . Wait until the changes are applied, then download a new recovery package.
 .. Select *Maintenance* > *System* > *Recovery package*.
-.. Enter the *Provisioning Passphrase*.
+.. Enter the *Provisioning passphrase*.
 
 == Delete a subnet
 
 .Steps
 
 . Select *Maintenance* > *Network* > *Grid Network*.
-. Select the delete icon image:icon-x-to-remove.png[delete icon] next to the subnet.
+. Select the delete icon image:icon_x_to_remove.png[delete icon] next to the subnet.
 . Enter the Provisioning passphrase, and select *Save*.
 . Select *Yes* in the confirmation dialog box.
 . Wait until the changes are applied, then download a new recovery package.
 .. Select *Maintenance* > *System* > *Recovery package*.
-.. Enter the *Provisioning Passphrase*.
+.. Enter the *Provisioning passphrase*.

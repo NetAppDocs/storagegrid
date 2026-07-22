@@ -1,0 +1,6 @@
+---
+permalink: ilm/enabling-s3-object-lock-globally.html
+redirect: storagegrid/ilm/enabling-s3-object-lock.html
+---
+
+// 2026 MAR 3, SGWS-38814

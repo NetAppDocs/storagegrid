@@ -1,0 +1,164 @@
+---
+permalink: admin/configure-global-namespace.html
+sidebar: sidebar
+keywords: global namespace, grid federation, S3 endpoint domain names, default region, grid federation connection, multi-grid
+summary: "Configure a global namespace to allow tenant access to buckets across multiple StorageGRID systems."
+---
+= Configure a global namespace for grid federation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Configure a global namespace to allow tenant access to buckets across multiple StorageGRID systems.
+
+For more information about global namespace, refer to link:learn-about-global-namespace.html[Learn about global namespace for grid federation].
+
+.Before you begin
+
+* You are signed in to the Grid Manager on each grid using a link:../admin/web-browser-requirements.html[supported web browser].
+* You have the link:../admin/admin-group-permissions.html[Root access permission] for each grid.
+* You have reviewed the link:../admin/grid-federation-overview.html[considerations and requirements] for grid federation connections.
+
+== Requirements for configuring global namespace
+
+* All grids in the global namespace must have grid federation connections with global namespace enabled between every pair of grids.
+
+* The maximum number of grids that can participate in a single global namespace is 11 (the local grid and 10 remote grids).
++
+CAUTION: The 10-grid limit is constrained by the maximum total number of grid federation connections supported by a StorageGRID deployment. The total connection limit applies to *all* grid federation connections in the deployment, including those without global namespace enabled, so you must ensure that the fully connected global namespace and any additional grid federation connections together do not exceed this overall limit.
+
+* S3 clients must use signature version 4 (SigV4) authentication. Anonymous and signature version 2 requests aren't supported for global namespace routing operations.
+
+** Normal signed requests are specified as described at https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-auth-using-authorization-header.html[Authenticating Requests: Using the Authorization Header (AWS Signature Version 4)].
+
+** Pre-signed requests are specified as described at https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html[Authenticating Requests: Using Query Parameters (AWS Signature Version 4)].
+
+== [[number-of-required-connections]]Number of required connections
+
+In a global namespace, every pair of grids must be connected. The number of connections required depends on the number of grids:
+
+[cols="1a,1a" options="header"]
+|===
+| Number of grids | Number of connections required
+
+| 2
+| 1
+
+| 3
+| 3
+
+| 4
+| 6
+
+| 5
+| 10
+
+| _n_
+| _n_ × (_n_ − 1) / 2
+|===
+
+[[configure-default-region]]
+== Step 1: Set a unique default region for each grid
+
+Each grid in the global namespace must have a unique default region. The default region identifies the grid that owns a bucket.
+
+CreateBucket and ListBuckets requests are routed based on this region, and all other requests must match the default region that they are sent to.
+
+For more information, refer to link:../ilm/configuring-regions-optional-and-s3-only.html[Configure S3 regions].
+
+.Steps
+
+. On each grid, link:../ilm/configuring-regions-optional-and-s3-only.html[set the default region to a unique value]. For example, set Grid A to `us-east-1` and Grid B to `us-west-1`.
++
+NOTE: You can still use non-default regions, set using the `LocationConstraint` element in link:../s3/operations-on-buckets.html[CreateBucket requests], for ILM policy purposes. Non-default regions aren't validated for uniqueness across grids in the global namespace.
+
+. Repeat for every grid in the global namespace. Each grid must have a different default region.
+
+. Set up additional regions as needed.
+
+== Step 2: Configure S3 global namespace settings
+
+On each grid in the global namespace, you add two S3 endpoint domain names:
+
+* A global namespace endpoint that's the same on all grids
+* A unique CNAME for the grid
+
+You'll configure your external DNS so that the global namespace endpoint resolves to one or more of the grids, and the unique CNAME endpoints resolve to the specific grid.
+
+CAUTION: You must <<configure-default-region,configure the default region>> before you configure the S3 global namespace settings. When you enable global namespace settings, S3 request will fail if they don't specify the correct region. All S3 requests need to be signed with the grid's default region.
+
+.Steps
+
+. On each grid, select *Configuration* > *Network* > *S3 endpoint domain names* > *Domain names*.
+
+. Add a global namespace endpoint domain name that's the same on all grids. For example: `s3.example.com`.
+
+. Add a unique CNAME for the grid. For example, `s3.company.com`.
+
+. Select *Save*.
+
+. Select *Global namespace settings*.
+.. Select the global namespace endpoint.
+.. Select the grid's unique CNAME domain name.
+
+. Select *Save*.
+
+. Ensure that the server certificates used by clients include the new S3 endpoint domain names.
++
+** If clients connect to a load balancer endpoint that uses its own certificate, link:../admin/configuring-load-balancer-endpoints.html[update the certificate associated with the endpoint].
+** If clients connect to a load balancer endpoint that uses the global S3 API certificate or directly to Storage Nodes, link:../admin/use-s3-setup-wizard-steps.html[update the global S3 API certificate].
+
+. Repeat these steps on every grid in the global namespace.
+
+For details, refer to link:../admin/configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names].
+
+== Step 3: Create grid federation connections with global namespace enabled
+
+After the S3 endpoint domain names and default regions are configured on all grids, you can create grid federation connections with global namespace enabled.
+
+.About this task
+
+When you create a grid federation connection and enable global namespace, the global namespace endpoint, CNAME, and default region fields are automatically populated using the values you configured in the previous steps. The Grid Manager prevents enabling global namespace if these fields are not correctly set.
+
+CAUTION: After a grid federation connection with global namespace is created, the global namespace endpoint, CNAME, and default region for the grids in that connection can't be changed.
+
+.Steps
+
+. On the first grid, follow the steps described in link:../admin/grid-federation-create-connection.html[Create grid federation connections].
+
+. When entering connection details, select *Enable global namespace*.
++
+The fields for the global namespace endpoint, CNAME, and default region are automatically populated with the values you've configured in the previous steps. If any of the values are missing or invalid, you won't be able to enable global namespace until you resolve the issues.
+
+. Complete the connection by downloading the verification file and uploading it on the other grid.
+
+. Repeat the previous steps for every pair of grids in the global namespace.
++
+For example, with 3 grids, you need 3 connections (Grid A–Grid B, Grid A–Grid C, Grid B–Grid C). With 4 grids, you need 6 connections. You can have a maximum of 10 grids in a global namespace. Refer to <<number-of-required-connections,Number of required connections>>.
+
+== Step 4: Configure load balancer endpoints
+
+link:../admin/configuring-load-balancer-endpoints.html[Configure a load balancer endpoint] for each grid in the global namespace. Use the same port for each of these endpoints.
+
+NOTE: Make sure you configure the load balancer endpoints before you configure DNS resolution.
+
+== [[config-dns-resolution]]Step 5: Configure DNS resolution
+
+StorageGRID doesn't provide a built-in DNS resolver for global namespace. You must configure your external DNS infrastructure to route S3 requests to the correct grid.
+
+Your DNS resolver should:
+
+. Resolve the global namespace endpoint (for example, `s3.example.com`) to the load balancer endpoints of one or more grids, typically using round-robin DNS.
+
+. Resolve each grid's unique CNAME (for example, `s3.grid-a.example.com`) to the load balancer endpoints for that specific grid.
+
+. For virtual-hosted-style bucket requests (for example, `_bucket_.s3.example.com`), use your organization's routing policy to map bucket names to the appropriate grid's CNAME.
++
+StorageGRID doesn't provide a DNS-based mechanism to discover which grid owns a bucket. If you need automatic routing based on bucket ownership, use the link:../tenant/understanding-tenant-management-api.html[Tenant Management API] to issue ListBucket requests to return the bucket UUIDs. Maintain an internal mapping from bucket UUIDs to grids. Your external DNS should use that mapping rather than querying StorageGRID directly.
+
+== Related information
+
+* link:grid-federation-overview.html[What is grid federation?]
+* link:grid-federation-create-connection.html[Create grid federation connections]
+* link:configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names]
+* link:grid-federation-manage-connection.html[Manage grid federation connections]

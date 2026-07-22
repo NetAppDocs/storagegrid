@@ -22,7 +22,7 @@ Platform services require access from Storage Nodes that host the StorageGRID AD
 
 == Networking for Cloud Storage Pools
 
-Cloud Storage Pools also require access from Storage Nodes to the endpoints provided by the external service used, such as Amazon S3 Glacier or Microsoft Azure Blob storage. For information, see link:../ilm/what-cloud-storage-pool-is.html[What is a Cloud Storage Pool].
+Cloud Storage Pools also require access from Storage Nodes to the endpoints provided by the external service used, such as Amazon S3 Glacier or Microsoft Azure Blob Storage. For information, see link:../ilm/what-cloud-storage-pool-is.html[What is a Cloud Storage Pool].
 
 == Ports for platform services and Cloud Storage Pools
 

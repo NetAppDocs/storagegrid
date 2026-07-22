@@ -15,7 +15,7 @@ The basic building block of a StorageGRID system is the grid node. Nodes contain
 
 The StorageGRID system uses three types of grid nodes:
 
-Admin Nodes:: Provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
+Admin Nodes:: Provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, you must perform most maintenance procedures using the primary Admin Node.
 +
 Admin Nodes can also be used to load balance S3 client traffic.
 +
@@ -23,7 +23,7 @@ See link:what-admin-node-is.html[What is an Admin Node?]
 
 Storage Nodes:: Manage and store object data and metadata. Each site in your StorageGRID system must have at least three Storage Nodes.
 +
-During initial installation of a new Storage Node, you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store metadata].
+During initial installation of a new Storage Node, you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store either metadata or data].
 +
 See link:what-storage-node-is.html[What is a Storage Node?]
 
@@ -40,7 +40,7 @@ StorageGRID hardware appliances are specially designed for use in a StorageGRID 
 
 See the following to learn about the available appliances: 
 
-* https://docs.netapp.com/us-en/storagegrid-appliances/[StorageGRID Appliance Documentation^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/[StorageGRID appliance documentation^]
 * https://hwu.netapp.com[NetApp Hardware Universe^] 
 
 === Software-based nodes
@@ -68,10 +68,6 @@ The following is a complete list of StorageGRID services.
 
 | AMS (Audit Management System)
 |	Monitors and logs all audited system events and transactions to a text log file.
-|	Admin Nodes
-
-| Apache Tomcat
-|	Web server for Java-based applications.
 |	Admin Nodes
 
 | Avahi Daemon
@@ -110,12 +106,16 @@ The following is a complete list of StorageGRID services.
 | Monitors the grid for dynamic IP changes and updates local configurations.
 | All nodes
 
+| gdu-server
+| The backend task runner for grid maintenance and provisioning actions. Accepts requests from `mgmt-api` and other utility scripts, validates them, and dispatches each action to the appropriate GDU task handler, such as provisioning, expansion, decommission, and upgrades.
+| Admin Nodes
+
 | Grafana
 | Used for metrics visualization in the Grid Manager.
 | Admin Nodes
 
 | High Availability
-| Manages high availability virtual IPs on nodes configured on the High Availability Groups page. This service is also known as the keepalived service.
+| Manages high availability virtual IPs on nodes configured on the High Availability Groups page. This service is also known as the _keepalived_ service.
 | Admin and Gateway Nodes
 
 | Identity (idnt)
@@ -127,12 +127,16 @@ The following is a complete list of StorageGRID services.
 | All nodes
 
 | Load Balancer (nginx-gw)
-| Provides load balancing of S3 traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
+| Provides load balancing of S3 traffic from clients to Storage Nodes.
 | Admin and Gateway Nodes
 
 | LDR (Local Distribution Router)
 | Manages the storage and transfer of content within the grid.
 | Storage Nodes
+
+| mgmt-api
+| The Grid Manager backend API. Exposes authenticated REST endpoints for administering the grid (configuration, monitoring, and maintenance workflows), enforces validations and permissions, and orchestrates long-running operations. The primary control-plane API used by the Grid Manager interface and automation clients.
+| Admin Nodes
 
 | MISCd Information Service Control Daemon
 | Provides an interface for querying and managing services on other nodes and for managing environmental configurations on the node such as querying the state of services running on other nodes.
@@ -143,8 +147,8 @@ The following is a complete list of StorageGRID services.
 | All nodes
 
 | nginx-gw Load Balancer
-|	Provides load balancing of S3 traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
-|	Admin and Gateway Nodes
+| Provides load balancing of S3 traffic from clients to Storage Nodes.
+| Admin and Gateway Nodes
 
 | NMS (Network Management System)
 | Powers the monitoring, reporting, and configuration options that are displayed through the Grid Manager.
@@ -154,7 +158,7 @@ The following is a complete list of StorageGRID services.
 |	Publishes system-level statistics for Prometheus time series metric collection.
 |	All nodes
 
-| ntp
+| NTP
 |	Network time protocol (NTP) service.
 |	All nodes
 

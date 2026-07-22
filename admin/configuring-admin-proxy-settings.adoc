@@ -11,7 +11,7 @@ summary: "If you send AutoSupport packages using HTTP or HTTPS, you can configur
 [.lead]
 If you send AutoSupport packages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support (AutoSupport).
 
-For more information about AutoSupport, see link:configure-autosupport-grid-manager.html[Configure AutoSupport].
+For more information about AutoSupport, see link:../monitor/configure-autosupport-grid-manager.html[Configure AutoSupport].
 
 .Before you begin
 

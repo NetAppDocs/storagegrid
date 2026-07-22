@@ -49,8 +49,6 @@ entries:
       url: "/expand/configuring-expanded-storagegrid-system.html"
     - title: Verify Storage Nodes are active
       url: "/expand/verifying-storage-node-is-active.html"
-    - title: Copy Admin Node database
-      url: "/expand/copying-admin-node-database.html"
     - title: Copy Prometheus metrics
       url: "/expand/copying-prometheus-metrics.html"
     - title: Copy audit logs

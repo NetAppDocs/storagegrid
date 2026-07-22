@@ -15,7 +15,7 @@ Before you install StorageGRID, gather and prepare the required information and 
 
 Network plan:: Which networks you intend to attach to each StorageGRID node. StorageGRID supports multiple networks for traffic separation, security, and administrative convenience.
 +
-See the StorageGRID link:../network/index.html[Networking guidelines].
+Refer to link:../network/index.html[Networking guidelines].
 
 Network information:: IP addresses to assign to each grid node and the IP addresses of the DNS and NTP servers.
 
@@ -44,5 +44,5 @@ The service laptop must have:
 * link:../admin/web-browser-requirements.html[Supported web browser]
 
 StorageGRID documentation:: 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP3351267[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3373065[Release notes^]. You must sign in with your NetApp account or create an account to access the Release notes.
 * link:../admin/index.html[Instructions for administering StorageGRID]

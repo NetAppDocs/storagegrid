@@ -33,6 +33,8 @@ Note the following characteristics of branch buckets:
 
 * You're saving data in a versioned bucket. There was an accidental vulnerability that caused many unwanted objects to be ingested after time _T_. You can create a branch bucket for the Before time value, _T_, and redirect client operations to that branch bucket. Then, only objects ingested earlier than the Before time _T_ are exposed to clients.
 
+* You're saving data in a versioned bucket. There was an accidental vulnerability that caused many unwanted objects to be ingested between time _T1_ and _T2_. You can create a branch bucket for the _Exclude_ time values, _T1_ and _T2_, and redirect client operations to that branch bucket. Then, only objects ingested before _T1_ and after _T2_ are exposed to clients.
+
 == Operations on objects in branch buckets 
 
 * A PUT object operation on a branch bucket creates an object in the branch.

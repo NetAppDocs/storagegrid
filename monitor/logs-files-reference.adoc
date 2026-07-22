@@ -52,6 +52,9 @@ The StorageGRID log file archive contains the logs described for each category a
 |===
 | Archive location| Description
 
+m| acct-tunnel.log
+| Log for the account tunnel helper that works with the load balancer.
+
 m| audit
 | Audit messages generated during normal system operation.
 
@@ -82,6 +85,9 @@ m| hagroups
 m| install
 | `Gdu-server` and install logs.
 
+m| internal-access.log
+| Internal HTTP proxy traffic log.
+
 m| Lambda-arbitrator
 | Logs related to the S3 Select proxy request.
 
@@ -90,6 +96,9 @@ m| leakd
 
 m| lumberjack.log
 | Debug messages related to log collection.
+
+m| manage-audit.log
+| `mgmt-api` access audit logs.
 
 m| Metrics
 | Service logs for Grafana, Jaeger, node exporter, and Prometheus.
@@ -122,6 +131,10 @@ m| nginx-gw
 
 * `nginx-gw-dns-check.log`: Related to the new DNS check alert.
 
+* stream-access.log: TCP/TLS stream (layer 4) proxy sessions for the stream block.
++
+*Note*: This isn't an HTTP request log.
+
 m| ntp
 | NTP configuration file and logs.
 
@@ -146,6 +159,12 @@ m| provisioning
 m| raft
 | Logs from Raft cluster used in platform services.
 
+m| revision_history.json
+| Revision history.
+
+m| routed-s3-access.log.gz
+| Access log for grid federation traffic that is routed like S3 (global namespace/federation URLs).
+
 m| ssh
 | Logs related to SSH configuration and service.
 
@@ -155,11 +174,20 @@ m| snmp
 m| sockets-data
 | Sockets data for network debug.
 
+m| system-bucket.log
+| `update-system-bucket-configuration.log`: System bucket logs.
+
 m| system-commands.txt
 | Output of StorageGRID container commands. Contains system information, such as networking and disk usage.
 
 m| synchronize-recovery-package
 | Related to maintaining consistency of the latest recovery package across all Admin Nodes and Storage Nodes that host the ADC service.
+
+m| update-cipher-configurations.log
+| `update-cors-configurations.log`: Traces logs related to TLS/cipher and CORS changes.
+
+m| update-leakd-configurations.log
+| Orphan detection configuration log.
 |===
 
 

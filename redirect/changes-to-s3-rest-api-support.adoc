@@ -1,0 +1,4 @@
+---
+permalink: s3/changes-to-s3-rest-api-support.html
+redirect: storagegrid/s3/index.html
+---

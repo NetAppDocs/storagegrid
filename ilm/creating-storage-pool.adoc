@@ -11,7 +11,7 @@ summary: "You create storage pools to determine where the StorageGRID system sto
 [.lead]
 You create storage pools to determine where the StorageGRID system stores object data and the type of storage used. Each storage pool includes one or more sites and one or more storage grades.
 
-NOTE: When you install StorageGRID 12.0 on a new grid, storage pools are automatically created for each site. However, if you initially installed StorageGRID 11.6 or earlier, storage pools aren't automatically created for each site.
+NOTE: When you install StorageGRID 12.0 or later on a new grid, storage pools are automatically created for each site. However, if you initially installed StorageGRID 11.6 or earlier, storage pools aren't automatically created for each site.
 
 If you want to create Cloud Storage Pools to store object data outside of your StorageGRID system, see the link:what-cloud-storage-pool-is.html[information about using Cloud Storage Pools].
 
@@ -58,7 +58,7 @@ The storage grade, _includes all storage grades_, includes all Storage Nodes at 
 +
 NOTE: You are warned if you add more than one entry with different storage grades for a site.
 +
-To remove an entry, select the delete icon image:icon-x-to-remove.png[delete icon].
+To remove an entry, select the delete icon image:icon_x_to_remove.png[delete icon].
 
 . When you are satisfied with your selections, select *Save*.
 +
