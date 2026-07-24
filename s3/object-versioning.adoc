@@ -27,8 +27,19 @@ For S3 objects in versioning-enabled buckets, versioning support allows you to c
 
 NOTE: When you upload a new version of an object using a multipart upload operation, the noncurrent time for the original version of the object reflects when the multipart upload was created for the new version, not when the multipart upload was completed. In limited cases, the noncurrent time for the original version might be hours or days earlier than the time for the current version.
 
+== How object versioning uses space capacity in StorageGRID
+
+The amount of storage space used for object versioning depends on the number of times you upload an object, your ILM policy rules, and the accumulation of noncurrent versions:
+
+* When versioning is enabled on a bucket, each version of an object is stored as a complete, separate copy. If you upload a 1 GB file five times, StorageGRID stores 5 GB of raw data (five by 1 GB) for that object. 
+
+* The StorageGRID ILM policy is evaluated against each object version. For example, if you have a two-copy replication ILM rule, two copies are stored each for the current and noncurrent versions of an object. When this ILM rule is applied to a bucket with ten versions of a 1 GB object, 20 GB of physical storage is used.
+
+* Without a StorageGRID lifecycle policy or ILM rule targeting noncurrent versions, StorageGRID retains all old versions indefinitely and they continue to consume storage. This is the common cause of unexpected storage growth in versioned buckets.
+
 .Related information
 * link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted]
 * link:../ilm/example-4-ilm-rules-and-policy-for-s3-versioned-objects.html[ILM rules and policies for S3 versioned objects (Example 4)].
 
+// 2026 JUL 24, SGIRDDOC-276
 // 2024 OCT 8, SGRIDDOC-101
