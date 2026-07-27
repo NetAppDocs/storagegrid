@@ -31,9 +31,9 @@ NOTE: When you upload a new version of an object using a multipart upload operat
 
 The amount of storage space used for object versioning depends on the number of times you upload an object, your ILM policy rules, and the accumulation of noncurrent versions:
 
-* When versioning is enabled on a bucket, each version of an object is stored as a complete, separate copy. If you upload a 1 GB file five times, StorageGRID stores 5 GB of raw data (five by 1 GB) for that object. 
+* When versioning is enabled on a bucket, each version of an object is stored as a complete, separate copy. If you upload a 1 GB file five times, StorageGRID stores 5 GB of raw data (5 x 1 GB) for that object. 
 
-* The StorageGRID ILM policy is evaluated against each object version. For example, if you have a two-copy replication ILM rule, two copies are stored each for the current and noncurrent versions of an object. When this ILM rule is applied to a bucket with ten versions of a 1 GB object, 20 GB of physical storage is used.
+* The ILM policy is evaluated against each object version. For example, if you have a two-copy replication ILM rule, two copies each are stored for the current and noncurrent versions of an object. When this ILM rule is applied to a bucket with 10 versions of a 1 GB object, 20 GB of physical storage is used.
 
 * Without a StorageGRID lifecycle policy or ILM rule targeting noncurrent versions, StorageGRID retains all old versions indefinitely and they continue to consume storage. This is the common cause of unexpected storage growth in versioned buckets.
 
