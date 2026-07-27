@@ -84,7 +84,7 @@ The `NewerNoncurrentVersions` action in the bucket lifecycle configuration speci
 * *Delete objects in bucket*: Use the tenant manager to link:../tenant/deleting-s3-bucket-objects.html[delete all object versions].
 
 [[s3-delete-markers]]
-== How S3 versioned expired delete markers are removed
+== How S3 versioning expired delete markers are deleted
 
 When versioning is enabled for an S3 bucket, object delete requests don't delete the current version of the object and don't free storage space. Instead, an object delete request creates a zero-byte delete marker as the current version of the object, which makes the previous version of the object "noncurrent."
 
