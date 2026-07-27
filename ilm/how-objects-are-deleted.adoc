@@ -84,17 +84,11 @@ The `NewerNoncurrentVersions` action in the bucket lifecycle configuration speci
 * *Delete objects in bucket*: Use the tenant manager to link:../tenant/deleting-s3-bucket-objects.html[delete all object versions].
 
 [[s3-delete-markers]]
-== Learn about S3 delete markers
-
-=== What is a delete marker?
+== How S3 versioned expired delete markers are removed
 
 When versioning is enabled for an S3 bucket, object delete requests don't delete the current version of the object and don't free storage space. Instead, an object delete request creates a zero-byte delete marker as the current version of the object, which makes the previous version of the object "noncurrent."
 
-=== What is an expired delete marker?
-
 A delete marker becomes an expired delete marker when it's the current version and there are no noncurrent versions. Expired delete markers don't contain object data, but they appear in bucket listings and metrics and prevent bucket deletion.
-
-=== How to automatically remove expired object delete markers
 
 To automatically remove expired delete markers while retaining object versions, you need to configure a bucket lifecycle rule with the `Expiration` action and the `ExpiredObjectDeleteMarker` request. This action applies only to expired delete markers. When a delete marker expires, it's automatically removed, as shown in the link:example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html#use-bucket-to-lifecycle-remove-expired-delete-markers[example of using a bucket lifecycle rule to remove expired object delete markers].
 
@@ -105,11 +99,7 @@ ILM policies can't distinguish between current object versions and expired delet
 Removing expired delete markers is considered permanent and unrecoverable.
 ====
 
-=== How to delete a bucket when expired delete markers are preventing deletion
-
-If you are certain that all contents in a bucket are no longer required, use the Tenant Manager to link:../tenant/deleting-s3-bucket-objects.html[to remove all object versions, including delete markers, current versions, and noncurrent versions], from the bucket.
-
-=== Limitations with delete markers created in older versions
+If you want to delete a bucket and you are certain that all contents in a bucket are no longer required but expired markers are preventing deletion, use the Tenant Manager to link:../tenant/deleting-s3-bucket-objects.html[remove all object versions, including delete markers, current versions, and noncurrent versions], from the bucket.
 
 Delete markers created in StorageGRID 11.7 or earlier can only be removed through S3 client requests, they aren't removed by ILM, bucket lifecycle rules, or Delete objects in bucket operations.
 
