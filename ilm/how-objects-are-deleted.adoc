@@ -9,7 +9,7 @@ summary: "StorageGRID can delete objects either in direct response to a client r
 :imagesdir: ../media/
 
 [.lead]
-StorageGRID can delete objects either in direct response to a client request or automatically as a result of the expiration of an S3 bucket lifecycle or the requirements of the ILM policy. Understanding the different ways that objects can be deleted, how StorageGRID handles delete requests, and how to remove expired delete markers can help you manage objects more effectively.
+StorageGRID can delete objects either in direct response to a client request or automatically as a result of the expiration of an S3 bucket lifecycle or the requirements of the ILM policy. Understanding the different ways that objects can be deleted, how StorageGRID handles delete requests, and how to delete expired delete markers can help you manage objects more effectively.
 
 StorageGRID can use one of two methods to delete objects:
 
