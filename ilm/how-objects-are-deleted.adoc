@@ -99,7 +99,7 @@ ILM policies can't distinguish between current object versions and expired delet
 Removing expired delete markers is considered permanent and unrecoverable.
 ====
 
-If you want to delete a bucket and you are certain that all contents in a bucket are no longer required but expired markers are preventing deletion, use the Tenant Manager to link:../tenant/deleting-s3-bucket-objects.html[remove all object versions, including delete markers, current versions, and noncurrent versions], from the bucket.
+If you want to delete a bucket and you are certain that all the contents in the bucket are no longer required, but expired markers are preventing deletion, use the Tenant Manager to link:../tenant/deleting-s3-bucket-objects.html[remove all object versions, including delete markers, current versions, and noncurrent versions], from the bucket.
 
 Delete markers created in StorageGRID 11.7 or earlier can only be removed through S3 client requests, they aren't removed by ILM, bucket lifecycle rules, or Delete objects in bucket operations.
 
