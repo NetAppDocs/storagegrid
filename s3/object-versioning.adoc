@@ -41,5 +41,5 @@ The amount of storage space used for object versioning depends on the number of 
 * link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted]
 * link:../ilm/example-4-ilm-rules-and-policy-for-s3-versioned-objects.html[ILM rules and policies for S3 versioned objects (Example 4)].
 
-// 2026 JUL 24, SGIRDDOC-276
+// 2026 JUL 24, SGRIDDOC-276
 // 2024 OCT 8, SGRIDDOC-101
