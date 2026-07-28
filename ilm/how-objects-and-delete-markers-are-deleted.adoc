@@ -69,7 +69,7 @@ When versioning is enabled for an S3 bucket, StorageGRID follows Amazon S3 behav
 
 The response to an object delete request differs depending on whether the request specifies a version ID:
 
-* *No version ID*: The object delete requests without a version ID don't delete the current version of the object and don't free storage space. Instead, these object delete requests create a <<s3-delete-markers,zero-byte delete marker>> as the current version of the object, which makes the previous version of the object "noncurrent." The noncurrent objects are identified using a version ID.
+* *No version ID*: Object delete requests without a version ID don't delete the current version of the object and don't free storage space. Instead, they create a zero-byte <<s3-delete-markers,delete marker>> as the current version of the object, which makes the previous version of the object "noncurrent." The noncurrent objects are identified using a version ID.
 +
 If a client deletes an object without a version ID from a branch bucket, StorageGRID creates a delete marker in the branch bucket according to standard S3 behavior.
 +
