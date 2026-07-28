@@ -74,4 +74,4 @@ The delete marker would have been created after the branch bucket's `beforeTime`
 |	HEAD/GET returns Object version doesn't exist
 |===
 
-Also refer to link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].
+Also refer to link:../ilm/how-objects-and-delete-markers-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].

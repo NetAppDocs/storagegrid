@@ -28,8 +28,8 @@ entries:
         url: "/ilm/advantages-disadvantages-and-requirements-for-ec.html"
     - title: How object retention is determined
       url: "/ilm/how-object-retention-is-determined.html"
-    - title: How objects are deleted
-      url: "/ilm/how-objects-are-deleted.html"
+    - title: How objects and delete markers are deleted
+      url: "/ilm/how-objects-and-delete-markers-are-deleted.html"
   - title: Create and assign storage grades
     url: "/ilm/creating-and-assigning-storage-grades.html"
   - title: Use storage pools
