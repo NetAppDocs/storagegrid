@@ -98,7 +98,7 @@ When versioning is enabled for an S3 bucket, object delete requests don't delete
 
 A delete marker becomes an expired delete marker when it's the current version and there are no noncurrent versions. Expired delete markers don't contain object data, but they appear in bucket listings and metrics and prevent bucket deletion.
 
-How you delete expired delete markers depends on whether you want to use or delete a bucket:
+How you configure StorageGRID to delete expired delete markers depends on whether you want to use or delete a bucket:
 
 * *Automatic cleanup and use a bucket*: To automatically remove expired delete markers while retaining object versions, you need to configure a bucket lifecycle rule with the `Expiration` action and the `ExpiredObjectDeleteMarker` request. This action applies only to expired delete markers. When a delete marker expires, it's automatically removed, as shown in the link:example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html#use-bucket-to-lifecycle-remove-expired-delete-markers[example of using a bucket lifecycle rule to remove expired object delete markers].
 +
