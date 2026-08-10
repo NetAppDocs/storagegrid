@@ -44,6 +44,8 @@ See link:summary-ip-addresses-and-ports-for-client-connections.html[Summary: IP 
 . Select the *Network and objects* tab.
 
 . For Stored object encryption, use the *None* (default) setting if you don't want stored objects to be encrypted, or select *AES-128* or *AES-256* to encrypt stored objects.
++
+NOTE: Beginning with StorageGRID 12.1.0, support for AES-128 encryption of new stored object data at rest is deprecated. Support continues for retrieval of stored objects that were originally encrypted with AES-128.
 
 . Optionally select *Prevent client modification* if you want to prevent S3 clients from making specific requests.
 +
@@ -54,3 +56,5 @@ NOTE: If you change this setting, it will take about one minute for the new sett
 NOTE: Be careful when enabling HTTP for a production grid because requests will be sent unencrypted.
 
 . Select *Save*.
+
+// 2026 AUG 2026, storagegrid-issue-78
