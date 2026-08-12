@@ -73,7 +73,7 @@ It is important to understand how StorageGRID handles object delete requests tha
 
 Even though the object hasn't been removed from storage, StorageGRID behaves as though the current version of the object is no longer available. Requests to that object return 404 NotFound. However, because noncurrent object data hasn't been removed, requests that specify the version ID of a noncurrent object can succeed.
 
-If you issue a delete-object request without a version ID for an object in a bucket that has versioning suspended enabled, StorageGRID creates a delete marker with a null `versionId` for the object. This replaces and permanently deletes the previous null version because an object can only have one null version.
+If you issue a delete-object request without a version ID for an object in a bucket that has versioning suspended, StorageGRID creates a delete marker with a null `versionId` for the object. This replaces and permanently deletes the previous null version because an object can only have one null version.
 
 If a client deletes an object version with a version ID from a link:../tenant/what-is-branch-bucket.html#operations-in-branch-buckets[branch bucket], StorageGRID hides the existence of the object version but doesn't create a delete marker in the branch bucket. If a client deletes an object without a version ID from a branch bucket, StorageGRID creates a delete marker in the branch bucket according to standard S3 behavior.
 
@@ -97,13 +97,13 @@ When versioning is enabled for an S3 bucket, object delete requests don't delete
 
 A delete marker becomes an expired delete marker when it's the current version and there are no noncurrent versions. Expired delete markers don't contain object data, but they appear in bucket listings and metrics and prevent bucket deletion.
 
-How you configure StorageGRID to delete expired delete markers depends on whether the bucket is intended for long-term use (with or without versioning suspended enabled) or is being prepared for deletion:
+How you configure StorageGRID to delete expired delete markers depends on whether the bucket is intended for long-term use (with versioning enabled or suspended) or is being prepared for deletion:
 
-* *Automatic cleanup of expired delete markers in an existing bucket*: To automatically remove expired delete markers from a bucket without versioning suspended while retaining object versions, you need to configure a bucket lifecycle rule with the `Expiration` action and the `ExpiredObjectDeleteMarker` request. This action applies only to expired delete markers. When a delete marker expires, it's automatically removed, as shown in the link:example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html#use-bucket-to-lifecycle-remove-expired-delete-markers[example of using a bucket lifecycle rule to remove expired object delete markers].
+* *Automatic cleanup of expired delete markers in an existing bucket*: To automatically remove expired delete markers from a bucket (with versioning enabled) while retaining object versions, you need to configure a bucket lifecycle rule with the `Expiration` action and the `ExpiredObjectDeleteMarker` configuration. This action applies only to expired delete markers. When a delete marker expires, it's automatically removed, as shown in the link:example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html#use-bucket-to-lifecycle-remove-expired-delete-markers[example of using a bucket lifecycle rule to remove expired object delete markers].
 +
 CAUTION: ILM policies can't distinguish between current object versions and expired delete markers. If the goal is only to remove expired delete markers while retaining object versions, use `ExpiredObjectDeleteMarker` in a bucket lifecycle instead of an ILM policy.
 +
-If you issue a delete-object request without a version ID for an object in a bucket that has versioning suspended enabled, StorageGRID creates a delete marker with a null `versionId` for the object. This replaces and permanently deletes the previous null version because an object can only have one null version. To delete expired null-versioned delete markers, you must use `ExpiredObjectDeleteMarker` in a bucket lifecycle.
+If you issue a delete-object request without a version ID for an object in a bucket that has versioning suspended, StorageGRID creates a delete marker for the object with a version ID `NULL`. This replaces and permanently deletes the previous `NULL` version ID because an object can only have one null version. To delete expired null-versioned delete markers, you must use `ExpiredObjectDeleteMarker` in a bucket lifecycle.
 
 * *Prepare bucket for deletion*: If you want to delete a bucket and you are certain that all the contents in the bucket are no longer required, but expired markers are preventing deletion, use the Tenant Manager to link:../tenant/deleting-s3-bucket-objects.html[remove all object versions, including delete markers, current versions, and noncurrent versions], from the bucket.
 
