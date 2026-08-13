@@ -134,4 +134,6 @@ entries:
       url: "/ilm/example-7-compliant-ilm-policy-for-s3-object-lock.html"
     - title: 'Example 8: Priorities for S3 bucket lifecycle and ILM policy'
       url: "/ilm/example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html"
+    - title: 'Example 9: Delete noncurrent versions and delete markers after suspending versioning'
+      url: "/ilm/example-9-delete-noncurrent-versions-and-expired-delete-markers.html"
       

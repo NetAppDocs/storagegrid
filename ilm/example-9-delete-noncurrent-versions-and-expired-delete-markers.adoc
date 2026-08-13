@@ -1,0 +1,33 @@
+---
+permalink: ilm/example-9-delete-noncurrent-versions-and-expired-delete-markers.html
+sidebar: sidebar
+keywords: retention priority, example S3 bucket lifecycle, example ILM policy
+summary: "Depending on your lifecycle configuration, objects follow the retention settings of either the S3 bucket lifecycle or an ILM policy."
+---
+= Delete noncurrent versions and expired delete markers in StorageGRID after suspending versioning
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you suspend versioning on a bucket, you need to configure the bucket lifecycle to clean up noncurrent versions and expired null-versioned delete markers.
+
+In this example, the ILM policy is activated first, then versioning is enabled on a bucket. When objects with the same name are ingested, previous versions remain available as noncurrent versions and the delete requests create delete markers. You can access the noncurrent versions, but they use storage space. When versioning is no longer desired and you want to keep only one version of an object and free up storage used by noncurrent versions, you can suspend versioning. The noncurrent versions and delete markers remain after you suspend versioning and you need to configure a bucket lifecycle to handle them.
+
+ILM policy::
+
+Rule based on ingest-time reference (default): On Day 0, keep X copies forever
+
+Bucket Lifecycle::
+
+`"Filter": {}, "Expiration": {"ExpiredObjectDeleteMarker": true}, "NoncurrentVersionExpiration": {"NoncurrentDays": 1}`
+
+Result::
+
+The bucket lifecycle is configured to handle noncurrent versions and expired delete markers:
+* Versions that have been noncurrent for more than one day are deleted, and only the current version remains forever.
+* An object named `draftdoc` is ingested and has the version ID `NULL`.
+* If another object is ingested with the same name (`draftdoc`), it overwrites and replaces the NULL-version and immediately deletes the previous version.
+* If a delete request is made to `draftdoc` without specifying a version ID, it creates a NULL-versioned delete marker, replacing and deleting the NULL-versioned object.
+* The NULL-versioned delete marker is expired, as there are no noncurrent versions, and is deleted shortly after.
+
+// 2026 AUG 13, SGRIDDOC-276
