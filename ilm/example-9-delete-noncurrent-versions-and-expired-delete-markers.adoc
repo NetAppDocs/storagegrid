@@ -11,7 +11,11 @@ summary: "Depending on your lifecycle configuration, objects follow the retentio
 [.lead]
 When you suspend versioning on a bucket, you need to configure the bucket lifecycle to clean up noncurrent versions and expired null-versioned delete markers.
 
-In this example, the ILM policy is activated first, then versioning is enabled on a bucket. When objects with the same name are ingested, previous versions remain available as noncurrent versions and the delete requests create delete markers. You can access the noncurrent versions, but they use storage space. When versioning is no longer desired and you want to keep only one version of an object and free up storage used by noncurrent versions, you can suspend versioning. The noncurrent versions and delete markers remain after you suspend versioning and you need to configure a bucket lifecycle to handle them.
+In this example, the following actions are performed on a bucket with an active ILM policy:
+
+. Enable versioning. When objects with the same name are ingested, previous versions remain available as noncurrent versions and the delete requests create delete markers. You can access the noncurrent versions, but they use storage space. 
+. Suspend versioning when you no longer desire versioning and you want to keep only one version of an object and free up storage used by noncurrent versions. 
+. Configure a bucket lifecycle to handle the noncurrent versions and delete markers that remain after you suspend versioning.
 
 ILM policy::
 
@@ -26,8 +30,8 @@ Result::
 The bucket lifecycle is configured to handle noncurrent versions and expired delete markers:
 * Versions that have been noncurrent for more than one day are deleted, and only the current version remains forever.
 * An object named `draftdoc` is ingested and has the version ID `NULL`.
-* If another object is ingested with the same name (`draftdoc`), it overwrites and replaces the NULL-version and immediately deletes the previous version.
-* If a delete request is made to `draftdoc` without specifying a version ID, it creates a NULL-versioned delete marker, replacing and deleting the NULL-versioned object.
-* The NULL-versioned delete marker is expired, as there are no noncurrent versions, and is deleted shortly after.
+* If another object is ingested with the same name (`draftdoc`), it overwrites and replaces the null-version and immediately deletes the previous version.
+* If a delete request is made to `draftdoc` without specifying a version ID, it creates a null-versioned delete marker, replacing and deleting the null-versioned object.
+* The null-versioned delete marker is expired, as there are no noncurrent versions, and is deleted shortly after.
 
 // 2026 AUG 13, SGRIDDOC-276
