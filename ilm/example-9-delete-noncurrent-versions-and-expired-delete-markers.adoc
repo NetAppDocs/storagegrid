@@ -17,7 +17,7 @@ Example of a bucket lifecycle configuration that handles noncurrent versions and
 These steps are performed on a bucket with an active ILM policy:
 
 . Enable versioning. When objects with the same name are ingested, previous versions remain available as noncurrent versions and the delete requests create delete markers. Noncurrent versions are accessible, but they use storage space.
-. Suspend versioning because the desired state is to retain only one version and free up storage space used by noncurrent versions.
+. Suspend versioning because the desired configuration is to retain only one version and free up storage space used by noncurrent versions. This is configured in the next step.
 . Configure a bucket lifecycle to handle the noncurrent versions and delete markers that remain after versioning is suspended.
 
 ILM policy::
