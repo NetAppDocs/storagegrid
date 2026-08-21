@@ -9,8 +9,7 @@ summary: "Depending on your lifecycle configuration, objects follow the retentio
 :imagesdir: ../media/
 
 [.lead]
-When you suspend versioning on a bucket, you need to configure the bucket lifecycle to clean up noncurrent versions and expired null-versioned delete markers.
-
+When you suspend versioning on a bucket, you need to configure the bucket lifecycle to handle noncurrent versions and expired null-versioned delete markers.
 
 Example of a bucket lifecycle configuration that handles noncurrent versions and expired delete markers::
 
