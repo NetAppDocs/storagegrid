@@ -27,7 +27,7 @@ StorageGRID provides several methods for controlling when objects are retained o
 +
 NOTE: When an S3 bucket lifecycle is configured, the lifecycle expiration actions override the ILM policy for objects that match the lifecycle filter. As a result, an object might be retained on the grid even after any ILM instructions for placing the object have lapsed.
 
-See link:../ilm/how-objects-are-deleted.html[How objects are deleted] for more information.
+See link:../ilm/how-objects-and-delete-markers-are-deleted.html[How objects and delete markers are deleted] for more information.
 
 == Data flow for client deletes
 

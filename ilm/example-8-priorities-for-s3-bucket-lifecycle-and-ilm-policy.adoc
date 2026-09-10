@@ -51,6 +51,7 @@ Delete markers that start with "docs/" are removed when they become expired.
 ** After 20 days, a total of 70 days since the ingest, "video/movie" is deleted.
 ** After 30 days, a total of 100 days since the ingest and 50 days since the delete-marker was created, the expired delete-marker is deleted.
 
+[[use-bucket-to-lifecycle-remove-expired-delete-markers]]
 == Example of using bucket lifecycle to duplicate ILM and clean up expired delete markers 
 
 ILM policy::

@@ -28,8 +28,8 @@ entries:
         url: "/ilm/advantages-disadvantages-and-requirements-for-ec.html"
     - title: How object retention is determined
       url: "/ilm/how-object-retention-is-determined.html"
-    - title: How objects are deleted
-      url: "/ilm/how-objects-are-deleted.html"
+    - title: How objects and delete markers are deleted
+      url: "/ilm/how-objects-and-delete-markers-are-deleted.html"
   - title: Create and assign storage grades
     url: "/ilm/creating-and-assigning-storage-grades.html"
   - title: Use storage pools
@@ -134,4 +134,6 @@ entries:
       url: "/ilm/example-7-compliant-ilm-policy-for-s3-object-lock.html"
     - title: 'Example 8: Priorities for S3 bucket lifecycle and ILM policy'
       url: "/ilm/example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html"
+    - title: 'Example 9: Delete noncurrent versions and delete markers after suspending versioning'
+      url: "/ilm/example-9-delete-noncurrent-versions-and-expired-delete-markers.html"
       
