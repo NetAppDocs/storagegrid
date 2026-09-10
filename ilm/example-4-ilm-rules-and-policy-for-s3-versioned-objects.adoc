@@ -94,4 +94,4 @@ When you simulate the example policy, you would expect test objects to be evalua
 
 .Related information
 
-link:how-objects-are-deleted.html[How objects are deleted]
+link:how-objects-and-delete-markers-are-deleted.html[How objects and delete markers are deleted]
