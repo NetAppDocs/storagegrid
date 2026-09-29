@@ -35,6 +35,7 @@ Note the following characteristics of branch buckets:
 
 * You're saving data in a versioned bucket. There was an accidental vulnerability that caused many unwanted objects to be ingested between time _T1_ and _T2_. You can create a branch bucket for the _Exclude_ time values, _T1_ and _T2_, and redirect client operations to that branch bucket. Then, only objects ingested before _T1_ and after _T2_ are exposed to clients.
 
+[[operations-in-branch-buckets]]
 == Operations on objects in branch buckets 
 
 * A PUT object operation on a branch bucket creates an object in the branch.
@@ -74,4 +75,4 @@ The delete marker would have been created after the branch bucket's `beforeTime`
 |	HEAD/GET returns Object version doesn't exist
 |===
 
-Also refer to link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].
+Also refer to link:../ilm/how-objects-and-delete-markers-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].

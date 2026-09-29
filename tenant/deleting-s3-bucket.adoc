@@ -21,7 +21,7 @@ You can use the Tenant Manager to delete one or more S3 buckets that are empty.
 
 These instructions describe how to delete an S3 bucket using the Tenant Manager. You can also delete S3 buckets using the link:understanding-tenant-management-api.html[Tenant Management API] or the link:../s3/operations-on-buckets.html[S3 REST API].
 
-You can't delete an S3 bucket if it contains objects, noncurrent object versions, or delete markers. For information about how S3 versioned objects are deleted, see link:../ilm/how-objects-are-deleted.html[How objects are deleted].
+You can't delete an S3 bucket if it contains objects, noncurrent object versions, or delete markers. For information about how S3 versioned objects are deleted, see link:../ilm/how-objects-and-delete-markers-are-deleted.html[How objects and delete markers are deleted].
 
 .Steps
 

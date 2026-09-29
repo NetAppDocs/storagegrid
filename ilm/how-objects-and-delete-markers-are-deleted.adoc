@@ -1,0 +1,122 @@
+---
+permalink: ilm/how-objects-and-delete-markers-are-deleted.html
+sidebar: sidebar
+keywords: ILM deletion, how objects are deleted
+summary: "StorageGRID can delete objects either in direct response to a client request or automatically as a result of the expiration of an S3 bucket lifecycle or the requirements of the ILM policy. Understanding the different ways that objects can be deleted and how StorageGRID handles delete requests can help you manage objects more effectively."
+---
+= How StorageGRID deletes objects and delete markers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+StorageGRID can delete objects either in direct response to a client request or automatically as a result of the expiration of an S3 bucket lifecycle or the requirements of the ILM policy. Understanding the different ways that objects can be deleted, how StorageGRID handles delete requests, and how to delete expired delete markers can help you manage objects more effectively.
+
+StorageGRID can use one of two methods to delete objects:
+
+* *Synchronous deletion*: When StorageGRID receives a client delete request, all object copies are removed immediately. The client is informed that deletion was successful after the copies have been removed.
+* *Objects are queued for deletion*: When StorageGRID receives a delete request, the object is queued for deletion and the client is informed immediately that deletion was successful. Object copies are removed later by background ILM processing.
+
+When deleting objects, StorageGRID uses the method that optimizes delete performance, minimizes potential delete backlogs, and frees space most quickly.
+
+The table summarizes when StorageGRID uses each method.
+
+[cols="1a,3a" options="header"]
+|===
+| Method of performing deletion| When used
+
+| Objects are queued for deletion
+| When *any* of the following conditions are true:
+
+* Automatic object deletion has been triggered by one of the following events:
+** The expiration date or number of days in the lifecycle configuration for an S3 bucket is reached.
+** The last time period specified in an ILM rule elapses.
+
++
+*Note:* Objects in a bucket that has S3 Object Lock enabled can't be deleted if they are under a legal hold or if a retain-until-date has been specified but not yet met.
+
+* An S3 client requests deletion and one or more of these conditions is true:
+
+** Copies can't be deleted within 30 seconds because, for example, an object location is temporarily unavailable.
+** Background deletion queues are idle.
+
+| Objects are removed immediately (synchronous deletion)
+| When an S3 client makes a delete request and *all* of the following conditions are met:
+
+* All copies can be removed within 30 seconds.
+* Background deletion queues contain objects to process.
+|===
+
+When S3 clients make delete requests, StorageGRID begins by adding objects to the delete queue. It then switches to performing synchronous deletion. Making sure that the background deletion queue has objects to process allows StorageGRID to process deletes more efficiently, especially for low concurrency clients, while helping to prevent client delete backlogs.
+
+== Time required to delete objects
+
+The way that StorageGRID deletes objects can affect how the system appears to perform:
+
+* When StorageGRID performs synchronous deletion, it can take StorageGRID up to 30 seconds to return a result to the client. This means that deletion can appear to be happening more slowly, even though copies are actually being removed more quickly than they are when StorageGRID queues objects for deletion.
+* If you are closely monitoring delete performance during a bulk delete, you might notice that the deletion rate appears to be slow after a certain number of objects have been deleted. This change occurs when StorageGRID shifts from queuing objects for deletion to performing synchronous deletion. The apparent reduction in the deletion rate doesn't mean that object copies are being removed more slowly. On the contrary, it indicates that on average, space is now being freed more quickly.
+
+If you are deleting large numbers of objects and your priority is to free space quickly, consider using a client request to delete objects rather than deleting them using ILM or other methods. In general, space is freed more quickly when deletion is performed by clients because StorageGRID can use synchronous deletion.
+
+The amount of time required to free space after an object is deleted depends on several factors:
+
+* Whether object copies are synchronously removed or are queued for removal later (for client delete requests).
+* Other factors such as the number of objects in the grid or the availability of grid resources when object copies are queued for removal (for both client deletes and other methods).
+
+[[delete-s3-versioned-objects]]
+== How S3 versioned objects are deleted
+
+When versioning is enabled for an S3 bucket, StorageGRID follows Amazon S3 behavior when responding to object delete requests, whether those requests come from an S3 client, the expiration of an S3 bucket lifecycle, or the requirements of the ILM policy.
+
+CAUTION: Deleting objects to free storage space is considered permanent and unrecoverable.
+
+It is important to understand how StorageGRID handles object delete requests that specify a version ID, such as an <<s3-client-request,S3 client request>>, and those that don't. Object delete requests without a version ID don't delete the current version of the object and don't free storage space. Instead, they create a zero-byte <<s3-delete-markers,delete marker>> as the current version of the object, which makes the previous version of the object "noncurrent". The noncurrent objects are identified using a version ID.
+
+Even though the object hasn't been removed from storage, StorageGRID behaves as though the current version of the object is no longer available. Requests to that object return 404 NotFound. However, because noncurrent object data hasn't been removed, requests that specify the version ID of a noncurrent object can succeed.
+
+If you issue a delete-object request without a version ID for an object in a bucket that has versioning suspended, StorageGRID creates a delete marker with a null `versionId` for the object. This replaces and permanently deletes the previous null version because an object can only have one null version.
+
+If a client deletes an object version with a version ID from a link:../tenant/what-is-branch-bucket.html#operations-in-branch-buckets[branch bucket], StorageGRID hides the existence of the object version but doesn't create a delete marker in the branch bucket. If a client deletes an object without a version ID from a branch bucket, StorageGRID creates a delete marker in the branch bucket according to standard S3 behavior.
+
+Because object data is retained as noncurrent versions, deleting an object in a versioned bucket typically doesn't free storage space. To permanently remove retained noncurrent object versions and free space, use one of the following options:
+
+[[s3-client-request]]
+* *S3 client request*: Specify the object version ID in the S3 DELETE Object request (`DELETE /object?versionId=ID`). Keep in mind that this request only removes object copies for the specified version ID. If multiple noncurrent versions exist, repeat for each noncurrent version as desired.
+
+* *Bucket lifecycle*: Use the `NoncurrentVersionExpiration` action in the bucket lifecycle configuration. When the number of NoncurrentDays specified is met, StorageGRID permanently removes all copies of noncurrent object versions.
++
+The `NewerNoncurrentVersions` action in the bucket lifecycle configuration specifies the number of noncurrent versions retained in a versioned S3 bucket. If there are more noncurrent versions than `NewerNoncurrentVersions` specifies, StorageGRID removes the older versions when the NoncurrentDays value has elapsed. The `NewerNoncurrentVersions` threshold overrides lifecycle rules provided by ILM, meaning that a noncurrent object with a version within the `NewerNoncurrentVersions` threshold is retained if ILM requests its deletion.
+
+* *ILM*: Configure an ILM rule that uses "Noncurrent time" as the Reference time and applies only to older object versions. When the specified retention period expires, StorageGRID removes the matched noncurrent object versions. In link:create-ilm-rule-enter-details.html[Step 1 (Enter details) of the Create an ILM rule wizard], select *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?"
+
+* *Delete objects in bucket*: Use the tenant manager to link:../tenant/deleting-s3-bucket-objects.html[delete all object versions].
+
+[[s3-delete-markers]]
+== How S3 versioning expired delete markers are deleted
+
+When versioning is enabled for an S3 bucket, object delete requests don't delete the current version of the object and don't free storage space. Instead, an object delete request creates a zero-byte delete marker as the current version of the object, which makes the previous version of the object "noncurrent".
+
+A delete marker becomes an expired delete marker when it's the current version and there are no noncurrent versions. Expired delete markers don't contain object data, but they appear in bucket listings and metrics and prevent bucket deletion.
+
+How you configure StorageGRID to delete expired delete markers depends on whether the bucket is intended for long-term use (with versioning enabled or suspended) or is being prepared for deletion:
+
+* *Automatic cleanup of expired delete markers in an existing bucket*: To automatically remove expired delete markers from a bucket (with versioning enabled) while retaining object versions, you need to configure a bucket lifecycle rule with the `Expiration` action and the `ExpiredObjectDeleteMarker` configuration. This action applies only to expired delete markers. When a delete marker expires, it's automatically removed, as shown in the link:example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html#use-bucket-to-lifecycle-remove-expired-delete-markers[example of using a bucket lifecycle rule to remove expired object delete markers].
++
+CAUTION: ILM policies can't distinguish between current object versions and expired delete markers. If the goal is only to remove expired delete markers while retaining object versions, use `ExpiredObjectDeleteMarker` in a bucket lifecycle instead of an ILM policy.
++
+If you issue a delete-object request without a version ID for an object in a bucket that has versioning suspended, StorageGRID creates a delete marker for the object with a version ID `NULL`. This replaces and permanently deletes the previous `NULL` version ID because an object can only have one null version. To delete expired null-versioned delete markers, you must use `ExpiredObjectDeleteMarker` in a bucket lifecycle, as shown in the link:example-9-delete-noncurrent-versions-and-expired-delete-markers.html[example of deleting noncurrent versions and expired delete markers after suspending versioning].
+
+* *Prepare bucket for deletion*: If you want to delete a bucket and you are certain that all the contents in the bucket are no longer required, but expired markers are preventing deletion, use the Tenant Manager to link:../tenant/deleting-s3-bucket-objects.html[remove all object versions, including delete markers, current versions, and noncurrent versions], from the bucket.
+
+How delete markers are removed from a bucket depends on your StorageGRID version:
+
+* Delete markers from a bucket that was created in StorageGRID 11.8 or later can be removed by ILM, bucket lifecycle rules, Delete objects in bucket operations, or an explicit S3 client deletion.
+
+* Delete markers created in StorageGRID 11.7 or earlier can only be removed through S3 client requests. They aren't removed by ILM, bucket lifecycle rules, or Delete objects in bucket operations.
+
+.Related information
+
+* link:../s3/index.html[Use S3 REST API]
+
+* link:example-4-ilm-rules-and-policy-for-s3-versioned-objects.html[Example 4: ILM rules and policy for S3 versioned objects]
+
+// 2026 AUG 6, SGRIDDOC-276

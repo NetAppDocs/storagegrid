@@ -1,0 +1,6 @@
+---
+permalink: ilm/how-objects-are-deleted.html
+redirect: storagegrid/ilm/how-objects-and-delete-markers-are-deleted.html
+---
+
+// 2026 JUL 28, SGRIDDOC-276
