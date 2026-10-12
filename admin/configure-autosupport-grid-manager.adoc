@@ -112,7 +112,7 @@ As required, you can optionally disable the check for software updates. For exam
 
 == Add an additional AutoSupport destination
 
-When you enable AutoSupport, heath and status packages are sent to technical support. You can specify one additional destination for all AutoSupport packages.
+When you enable AutoSupport, health and status packages are sent to technical support. You can specify one additional destination for all AutoSupport packages.
 
 To verify or change the protocol used to send AutoSupport packages, see the instructions to <<specify-protocol-for-autosupport-packages,specify the protocol for AutoSupport packages>>.
 
