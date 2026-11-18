@@ -74,8 +74,8 @@ sudo mount docker-storage-volume-device /var/lib/docker
 * For Podman: 
 +
 ----
-sudo mkdir -p /var/lib/podman
-sudo mount container-storage-volume-device /var/lib/podman
+sudo mkdir -p /var/lib/containers
+sudo mount container-storage-volume-device /var/lib/containers
 ----
 --
 ====
